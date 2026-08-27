@@ -1,0 +1,44 @@
+registreerStof('nederlands|bbl|1|6', {
+titel:'Formuleren',
+samenvatting:[
+{kop:'6.1 De- en het-woorden',html:'<div class="box"><h4>De-woorden en het-woorden</h4><p>In het Nederlands bestaan <b>de-woorden</b> (lidwoord de) en <b>het-woorden</b> (lidwoord het). Meestal weet je vanzelf welk lidwoord bij een woord hoort. Weet je het niet zeker? Zoek het woord dan op in een (online) woordenboek.</p></div><div class="box"><h4>Zo staat het in het woordenboek</h4><div class="tblwrap"><table class="tbl"><tr><th>Woord</th><th>Afkorting</th><th>Betekenis</th></tr><tr><td>computer</td><td>de (m)</td><td>de-woord, mannelijk</td></tr><tr><td>verzameling</td><td>de (v)</td><td>de-woord, vrouwelijk</td></tr><tr><td>onderzoek</td><td>het (o)</td><td>het-woord, onzijdig</td></tr></table></div></div><div class="call sum"><b>Om te onthouden — 6.1</b><ul class="lst"><li>Woorden zijn <b>de-woorden</b> (de) of <b>het-woorden</b> (het).</li><li>Een <b>verkleinwoord</b> is altijd een <b>het-woord</b> (bijv. het spelletje).</li><li>Een woord in het <b>meervoud</b> is altijd een <b>de-woord</b> (bijv. de spellen).</li><li>Twijfel je? Zoek het woord op in een (online) woordenboek.</li></ul></div>'},
+{kop:'6.2 Verwijswoorden',html:'<div class="box"><h4>Wat zijn verwijswoorden?</h4><p>De verwijswoorden <b>deze, die, dit</b> en <b>dat</b> wijzen terug naar iets wat eerder in de tekst genoemd is.</p></div><div class="g2" style="margin-top:1rem"><div class="box"><h4>Bij een de-woord: deze / die</h4><p>Tip: de, deze en die eindigen allemaal op een <b>-e</b>.</p><p class="dim" style="margin-top:.5rem">"Dionne heeft een nieuwe fiets. <b>Die</b> wil ik ook wel."</p></div><div class="box"><h4>Bij een het-woord: dit / dat</h4><p>Tip: het, dit en dat eindigen allemaal op een <b>-t</b>.</p><p class="dim" style="margin-top:.5rem">"Ik heb een lekker recept gevonden en ik ga <b>dit</b> vanavond maken."</p></div></div><div class="call"><b>Dichtbij of ver weg:</b> je gebruikt <b>deze</b> en <b>dit</b> voor iets dichtbij, en <b>die</b> en <b>dat</b> voor iets verder weg.<br>"Deze broek is het duurst, maar die broek zit lekkerder."</div><div class="call sum"><b>Om te onthouden — 6.2</b><ul class="lst"><li><b>Verwijswoorden</b> (deze, die, dit, dat) wijzen terug naar iets dat eerder genoemd is.</li><li>Bij een <b>de-woord</b>: deze/die. Bij een <b>het-woord</b>: dit/dat.</li><li><b>Deze/dit</b> = dichtbij. <b>Die/dat</b> = verder weg.</li></ul></div>'}
+],
+begrippen:[
+['de-woord','Een zelfstandig naamwoord met het lidwoord de.',0],
+['het-woord','Een zelfstandig naamwoord met het lidwoord het.',0],
+['verkleinwoord','Een kleinere vorm van een zelfstandig naamwoord; altijd een het-woord.',0],
+['meervoud','De vorm van een woord voor meer dan één; altijd een de-woord.',0],
+['verwijswoord','Een woord (deze, die, dit, dat) dat terugwijst naar iets dat eerder genoemd is.',1],
+['deze','Verwijswoord bij een de-woord, voor iets dichtbij.',1],
+['die','Verwijswoord bij een de-woord, voor iets verder weg.',1],
+['dit','Verwijswoord bij een het-woord, voor iets dichtbij.',1],
+['dat','Verwijswoord bij een het-woord, voor iets verder weg.',1],
+['woordenboek','Naslagwerk waarin je onder andere het juiste lidwoord van een woord kunt opzoeken.',0]
+],
+cards:[
+['Wat is het verschil tussen een de-woord en een het-woord?','Een de-woord heeft het lidwoord de, een het-woord het lidwoord het.',0],
+['Is een verkleinwoord een de-woord of een het-woord?','Altijd een het-woord, bijvoorbeeld het spelletje.',0],
+['Is een meervoud een de-woord of een het-woord?','Altijd een de-woord, bijvoorbeeld de spellen.',0],
+['Wat doe je als je het lidwoord van een woord niet weet?','Je zoekt het woord op in een (online) woordenboek.',0],
+['Welke verwijswoorden gebruik je bij een de-woord?','Deze en die.',1],
+['Welke verwijswoorden gebruik je bij een het-woord?','Dit en dat.',1],
+['Welk verwijswoord gebruik je voor iets dichtbij?','Deze (bij een de-woord) of dit (bij een het-woord).',1],
+['Welk verwijswoord gebruik je voor iets verder weg?','Die (bij een de-woord) of dat (bij een het-woord).',1],
+['Wat is een handige ezelsbrug voor deze/die?','De, deze en die eindigen allemaal op -e.',1],
+['Wat is een handige ezelsbrug voor dit/dat?','Het, dit en dat eindigen allemaal op -t.',1]
+],
+quiz:[
+['Wat is een de-woord?',['Een woord met het lidwoord het','Een woord met het lidwoord de','Een werkwoord','Een verwijswoord'],1,'Een de-woord is een zelfstandig naamwoord met het lidwoord de.'],
+['Wat is altijd een het-woord?',['Een meervoud','Een verkleinwoord','Een naam','Een lidwoord'],1,'Een verkleinwoord is altijd een het-woord, bijvoorbeeld het spelletje.'],
+['Wat is altijd een de-woord?',['Een verkleinwoord','Een woord in het meervoud','Een het-woord','Een werkwoord'],1,'Een woord in het meervoud is altijd een de-woord, bijvoorbeeld de spellen.'],
+['Wat doe je als je twijfelt of iets een de- of het-woord is?',['Je raadt het gewoon','Je zoekt het op in een woordenboek','Je gebruikt altijd de','Je gebruikt altijd het'],1,'Twijfel je, zoek het woord dan op in een (online) woordenboek.'],
+['Welke verwijswoorden horen bij een de-woord?',['Dit en dat','Deze en die','Het en de','Een en de'],1,'Bij een de-woord gebruik je deze en die.'],
+['Welke verwijswoorden horen bij een het-woord?',['Deze en die','Dit en dat','De en het','Een en het'],1,'Bij een het-woord gebruik je dit en dat.'],
+['"Dionne heeft een nieuwe fiets. ... wil ik ook wel." Welk woord past?',['Dit','Dat','Die','Deze'],2,'Fiets is een de-woord en iets verder weg (niet de fiets van de spreker zelf), dus "die".'],
+['"Ik heb een lekker recept gevonden en ik ga ... vanavond maken." Welk woord past?',['Deze','Die','Dit','Dat'],2,'Recept is een het-woord en dichtbij (net genoemd), dus "dit".'],
+['Welk verwijswoord gebruik je voor iets dichtbij bij een de-woord?',['Die','Deze','Dat','Dit'],1,'Voor iets dichtbij bij een de-woord gebruik je "deze".'],
+['Welk verwijswoord gebruik je voor iets verder weg bij een het-woord?',['Dit','Deze','Die','Dat'],3,'Voor iets verder weg bij een het-woord gebruik je "dat".'],
+['Wat is de ezelsbrug voor deze/die?',['De, deze en die eindigen op -e','Deze en die zijn altijd het-woorden','Deze en die betekenen hetzelfde als dit en dat','Deze en die staan altijd vooraan de zin'],0,'De, deze en die eindigen allemaal op een -e — dat helpt je ze te onthouden.']
+]
+});

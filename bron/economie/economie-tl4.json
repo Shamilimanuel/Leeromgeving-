@@ -1,0 +1,2651 @@
+{
+  "boek": "Economie_TL4",
+  "hoofdstukken": [
+    {
+      "titel": "Inkomen en welvaart",
+      "uitleg": "<div class='box'><h4>Waar dit hoofdstuk over gaat</h4><p>Je geeft dagelijks geld uit, maar niet iedereen heeft evenveel te besteden. Je leert wat je bestedingen bepaalt, hoe inkomens verschillen, wat het verschil is tussen welvaart en welzijn, en wat inflatie met je koopkracht doet.</p></div>",
+      "subhoofdstukken": [
+        {
+          "titel": "1.1 Wat heb je te besteden?",
+          "uitleg": "<div class='box'><h4>Bestedingen en beïnvloeding</h4><p><b>Bestedingen</b> zijn de uitgaven aan goederen en diensten. Bedrijven proberen jouw bestedingen te beïnvloeden met <b>marketinginstrumenten</b>: prijs, product, plaats, promotie, personeel en presentatie (de 6 P's). Een product of boodschap is vaak gericht op een <b>doelgroep</b>: een groep consumenten met dezelfde kenmerken voor wie het bedoeld is.</p></div><div class='box'><h4>Bewust consumeren</h4><p>Bij <b>duurzaam consumeren</b> houd je bij je aankopen rekening met de gevolgen voor andere mensen en het milieu. Nadelen die we als samenleving ondervinden, bijvoorbeeld van milieuschade, noem je <b>maatschappelijke kosten</b>.</p></div><div class='box'><h4>Waar komt je inkomen vandaan?</h4><p><b>Primaire inkomens</b> zijn inkomens die je verdient door een productiefactor te leveren, dus inkomens uit arbeid (loon) en uit bezit (rente, huur). <b>Secundaire inkomens</b> zijn inkomens uit overdrachten, zoals uitkeringen, plus alle netto-inkomens.</p></div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Bestedingen zijn de uitgaven aan goederen en diensten; bedrijven sturen dit met de 6 marketinginstrumenten.</li><li>Duurzaam consumeren houdt rekening met mens en milieu.</li><li>Primaire inkomens komen uit arbeid en bezit; secundaire inkomens komen uit overdrachten.</li></ul></div>"
+        },
+        {
+          "titel": "1.2 Niet ieder inkomen is hetzelfde",
+          "uitleg": "<div class='box'><h4>Van bruto naar besteedbaar</h4><p>Het <b>besteedbaar inkomen</b> is het deel van je inkomen dat je vrij kunt uitgeven, dus na aftrek van belasting en premies.</p></div><div class='box'><h4>Het nationaal inkomen verdeeld</h4><p>Het <b>nationaal inkomen</b> is wat alle inwoners van een land samen aan inkomen hebben uit arbeid en bezit. Dit inkomen is niet gelijk verdeeld: het <b>modaal inkomen</b> is het inkomen dat het meest voorkomt, maar er zijn ook mensen die veel meer of veel minder verdienen.</p><p>Met een <b>Lorenzcurve</b> — een grafiek die de verdeling van het nationaal inkomen over de bevolking laat zien — kun je in één oogopslag zien hoe (on)gelijk inkomens in een land verdeeld zijn. Hoe verder de curve van de rechte lijn van perfecte gelijkheid af buigt, hoe ongelijker de inkomens verdeeld zijn.</p></div><div class='call warn'><b>Veelgemaakte fout:</b> verwar het modaal inkomen niet met het gemiddelde inkomen. Het modaal inkomen is het inkomen dat het vaakst voorkomt, niet het rekenkundig gemiddelde van alle inkomens.</div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Besteedbaar inkomen is wat je overhoudt na belasting en premies.</li><li>Het nationaal inkomen is ongelijk verdeeld; het modaal inkomen komt het meest voor.</li><li>De Lorenzcurve laat de inkomensverdeling van een land zien.</li></ul></div>"
+        },
+        {
+          "titel": "1.3 Wil je welvaart of welzijn?",
+          "uitleg": "<div class='box'><h4>Waar geef je voorrang aan?</h4><p>Kun je alles kopen wat je wilt? Waarschijnlijk niet, want voor het vervullen van je behoeften heb je <b>middelen</b> nodig: de belangrijkste zijn geld en tijd, en daarvan heb je maar een beperkte hoeveelheid. Heb je meer behoeften dan middelen, dan moet je <b>prioriteiten stellen</b>: kiezen welke behoeften voor jou het belangrijkst zijn.</p></div><div class='box'><h4>Waarom kost het geld?</h4><p>Wil je in je behoeften voorzien, dan heb je daar bijna altijd geld voor nodig. Dat komt doordat goederen <b>schaars</b> zijn: ze zijn er niet vanzelf, er zijn productiemiddelen (zoals machines, grond of arbeid) gebruikt om ze te maken. Daarom betaal je voor schaarse goederen een prijs. Worden goederen schaarser, dan gaat de prijs omhoog.</p></div><div class='box'><h4>Meer dan geld alleen</h4><p><b>Welvaart</b> is de mate waarin je in je behoeften kunt voorzien met schaarse middelen. <b>Welzijn</b> gaat over de kwaliteit van je leven in bredere zin: denk aan gezondheid, vrije tijd, relaties en een schoon milieu. Meer welvaart (meer produceren en consumeren) betekent niet automatisch meer welzijn — soms gaat het zelfs ten koste van elkaar, bijvoorbeeld als productie het milieu aantast.</p></div><div class='call'>Het <b>CBS</b> (Centraal Bureau voor de Statistiek) verzamelt informatie over onder andere economische veranderingen in Nederland.</div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Middelen (geld en tijd) zijn schaars, dus je moet prioriteiten stellen.</li><li>Schaarse goederen kosten geld omdat er productiemiddelen voor nodig zijn.</li><li>Welvaart = kunnen voorzien in behoeften; welzijn = brede kwaliteit van leven. Meer welvaart betekent niet automatisch meer welzijn.</li></ul></div>"
+        },
+        {
+          "titel": "1.4 Help, de prijzen stijgen!",
+          "uitleg": "<div class='box'><h4>Prijzen op de voet gevolgd</h4><p>Aan de hand van alle prijsveranderingen berekent het CBS het <b>cpi</b> (het consumentenprijsindexcijfer): dit laat zien hoeveel de prijzen gestegen zijn ten opzichte van het basisjaar. Een algemene stijging van de prijzen noem je <b>inflatie</b>. Door inflatie wordt je geld minder waard: dit heet <b>geldontwaarding</b>.</p></div><div class='box'><h4>Nominaal en reëel</h4><p>Stijgt je loon met 2%, dan is dat een <b>nominale verandering</b>: een verandering waarbij je geen rekening houdt met inflatie. Houd je wél rekening met de inflatie, dan spreek je van een <b>reële verandering</b>. Bij <b>prijscompensatie</b> stijgen de lonen precies zoveel als de prijzen, waardoor je koopkracht gelijk blijft.</p></div><div class='box'><h4>De loon-prijsspiraal</h4><p>Zorgt inflatie voor een daling van de koopkracht, dan vragen werknemers vaak om hogere lonen zodat hun koopkracht op peil blijft. Maar hogere lonen kunnen weer leiden tot hogere prijzen, waardoor er opnieuw om hogere lonen gevraagd wordt. Deze vicieuze cirkel van loon- en prijsstijgingen noem je de <b>loon-prijsspiraal</b>.</p></div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Het cpi meet prijsveranderingen ten opzichte van een basisjaar.</li><li>Nominale verandering = zonder inflatie meegerekend; reële verandering = mét inflatie meegerekend.</li><li>De loon-prijsspiraal: loonstijgingen en prijsstijgingen jagen elkaar op.</li></ul></div>"
+        }
+      ],
+      "begrippen": [
+        {
+          "term": "Bestedingen",
+          "uitleg": "De uitgaven aan goederen en diensten.",
+          "paragraaf": "1.1 Wat heb je te besteden?"
+        },
+        {
+          "term": "Doelgroep",
+          "uitleg": "Een groep consumenten met dezelfde kenmerken voor wie een product of boodschap bedoeld is.",
+          "paragraaf": "1.1 Wat heb je te besteden?"
+        },
+        {
+          "term": "Duurzaam consumeren",
+          "uitleg": "Je houdt bij jouw aankopen rekening met de gevolgen voor andere mensen en het milieu.",
+          "paragraaf": "1.1 Wat heb je te besteden?"
+        },
+        {
+          "term": "Maatschappelijke kosten",
+          "uitleg": "Alle nadelen die we als samenleving ondervinden van bijvoorbeeld milieuschade.",
+          "paragraaf": "1.1 Wat heb je te besteden?"
+        },
+        {
+          "term": "Marketinginstrumenten",
+          "uitleg": "Prijs, product, plaats, promotie, personeel en presentatie (de 6 P's).",
+          "paragraaf": "1.1 Wat heb je te besteden?"
+        },
+        {
+          "term": "Primaire inkomens",
+          "uitleg": "Inkomens die je verdient door een productiefactor te leveren: inkomens uit arbeid en uit bezit.",
+          "paragraaf": "1.1 Wat heb je te besteden?"
+        },
+        {
+          "term": "Secundaire inkomens",
+          "uitleg": "Inkomens uit overdrachten, zoals uitkeringen, plus alle netto-inkomens.",
+          "paragraaf": "1.1 Wat heb je te besteden?"
+        },
+        {
+          "term": "Besteedbaar inkomen",
+          "uitleg": "Het deel van je inkomen dat je vrij kunt uitgeven.",
+          "paragraaf": "1.2 Niet ieder inkomen is hetzelfde"
+        },
+        {
+          "term": "Nationaal inkomen",
+          "uitleg": "Wat alle inwoners van een land samen aan inkomen hebben uit arbeid en bezit.",
+          "paragraaf": "1.2 Niet ieder inkomen is hetzelfde"
+        },
+        {
+          "term": "Modaal inkomen",
+          "uitleg": "Het inkomen dat het meest voorkomt.",
+          "paragraaf": "1.2 Niet ieder inkomen is hetzelfde"
+        },
+        {
+          "term": "Lorenzcurve",
+          "uitleg": "Grafiek die de verdeling van het nationaal inkomen over de bevolking laat zien.",
+          "paragraaf": "1.2 Niet ieder inkomen is hetzelfde"
+        },
+        {
+          "term": "Middelen",
+          "uitleg": "Alles wat je nodig hebt om in je behoeften te voorzien. De belangrijkste middelen zijn geld en tijd.",
+          "paragraaf": "1.3 Wil je welvaart of welzijn?"
+        },
+        {
+          "term": "Prioriteiten stellen",
+          "uitleg": "Je kiest voor jezelf welke behoeften je het belangrijkst vindt.",
+          "paragraaf": "1.3 Wil je welvaart of welzijn?"
+        },
+        {
+          "term": "Schaars",
+          "uitleg": "Iets is schaars als het er niet vanzelf is; er zijn productiemiddelen gebruikt om het te maken.",
+          "paragraaf": "1.3 Wil je welvaart of welzijn?"
+        },
+        {
+          "term": "Welvaart",
+          "uitleg": "De mate waarin je in je behoeften kunt voorzien.",
+          "paragraaf": "1.3 Wil je welvaart of welzijn?"
+        },
+        {
+          "term": "Welzijn",
+          "uitleg": "De kwaliteit van je leven.",
+          "paragraaf": "1.3 Wil je welvaart of welzijn?"
+        },
+        {
+          "term": "CBS",
+          "uitleg": "Centraal Bureau voor de Statistiek. Verzamelt allerlei informatie, onder andere over economische veranderingen.",
+          "paragraaf": "1.3 Wil je welvaart of welzijn?"
+        },
+        {
+          "term": "Cpi",
+          "uitleg": "Het consumentenprijsindexcijfer, dat laat zien hoeveel de prijzen gestegen zijn ten opzichte van het basisjaar.",
+          "paragraaf": "1.4 Help, de prijzen stijgen!"
+        },
+        {
+          "term": "Inflatie",
+          "uitleg": "Een algemene stijging van de prijzen.",
+          "paragraaf": "1.4 Help, de prijzen stijgen!"
+        },
+        {
+          "term": "Geldontwaarding",
+          "uitleg": "Het geld zelf wordt minder waard als gevolg van inflatie.",
+          "paragraaf": "1.4 Help, de prijzen stijgen!"
+        },
+        {
+          "term": "Koopkracht",
+          "uitleg": "De hoeveelheid goederen en diensten die je met je inkomen kunt kopen.",
+          "paragraaf": "1.4 Help, de prijzen stijgen!"
+        },
+        {
+          "term": "Nominale verandering",
+          "uitleg": "Verandering van bijvoorbeeld de lonen, waarbij je geen rekening houdt met de inflatie.",
+          "paragraaf": "1.4 Help, de prijzen stijgen!"
+        },
+        {
+          "term": "Reële verandering",
+          "uitleg": "Verandering waarbij je wél rekening houdt met de inflatie.",
+          "paragraaf": "1.4 Help, de prijzen stijgen!"
+        },
+        {
+          "term": "Prijscompensatie",
+          "uitleg": "De lonen stijgen net zo veel als de prijzen, waardoor je koopkracht gelijk blijft.",
+          "paragraaf": "1.4 Help, de prijzen stijgen!"
+        },
+        {
+          "term": "Loon-prijsspiraal",
+          "uitleg": "Een vicieuze cirkel van loon- en prijsstijgingen.",
+          "paragraaf": "1.4 Help, de prijzen stijgen!"
+        }
+      ],
+      "flashcards": [
+        {
+          "vraag": "Noem de 6 marketinginstrumenten.",
+          "antwoord": "Prijs, product, plaats, promotie, personeel en presentatie.",
+          "paragraaf": "1.1 Wat heb je te besteden?"
+        },
+        {
+          "vraag": "Wat is duurzaam consumeren?",
+          "antwoord": "Bij je aankopen rekening houden met de gevolgen voor andere mensen en het milieu.",
+          "paragraaf": "1.1 Wat heb je te besteden?"
+        },
+        {
+          "vraag": "Wat is het verschil tussen primaire en secundaire inkomens?",
+          "antwoord": "Primaire inkomens komen uit arbeid of bezit; secundaire inkomens komen uit overdrachten zoals uitkeringen.",
+          "paragraaf": "1.1 Wat heb je te besteden?"
+        },
+        {
+          "vraag": "Wat is het besteedbaar inkomen?",
+          "antwoord": "Het deel van je inkomen dat je vrij kunt uitgeven.",
+          "paragraaf": "1.2 Niet ieder inkomen is hetzelfde"
+        },
+        {
+          "vraag": "Wat is het modaal inkomen?",
+          "antwoord": "Het inkomen dat het meest voorkomt.",
+          "paragraaf": "1.2 Niet ieder inkomen is hetzelfde"
+        },
+        {
+          "vraag": "Wat laat een Lorenzcurve zien?",
+          "antwoord": "De verdeling van het nationaal inkomen over de bevolking.",
+          "paragraaf": "1.2 Niet ieder inkomen is hetzelfde"
+        },
+        {
+          "vraag": "Wat zijn de twee belangrijkste middelen om in je behoeften te voorzien?",
+          "antwoord": "Geld en tijd.",
+          "paragraaf": "1.3 Wil je welvaart of welzijn?"
+        },
+        {
+          "vraag": "Waarom kost een schaars goed geld?",
+          "antwoord": "Omdat er productiemiddelen (zoals machines, grond of arbeid) nodig zijn om het te maken.",
+          "paragraaf": "1.3 Wil je welvaart of welzijn?"
+        },
+        {
+          "vraag": "Wat is het verschil tussen welvaart en welzijn?",
+          "antwoord": "Welvaart is de mate waarin je in je behoeften kunt voorzien; welzijn is de bredere kwaliteit van je leven.",
+          "paragraaf": "1.3 Wil je welvaart of welzijn?"
+        },
+        {
+          "vraag": "Wat meet het cpi?",
+          "antwoord": "Hoeveel de prijzen gestegen zijn ten opzichte van een basisjaar.",
+          "paragraaf": "1.4 Help, de prijzen stijgen!"
+        },
+        {
+          "vraag": "Wat is het verschil tussen een nominale en een reële verandering?",
+          "antwoord": "Bij een nominale verandering houd je geen rekening met inflatie; bij een reële verandering wel.",
+          "paragraaf": "1.4 Help, de prijzen stijgen!"
+        },
+        {
+          "vraag": "Wat is prijscompensatie?",
+          "antwoord": "De lonen stijgen net zo veel als de prijzen, waardoor de koopkracht gelijk blijft.",
+          "paragraaf": "1.4 Help, de prijzen stijgen!"
+        },
+        {
+          "vraag": "Wat is de loon-prijsspiraal?",
+          "antwoord": "Een vicieuze cirkel waarbij loonstijgingen en prijsstijgingen elkaar opjagen.",
+          "paragraaf": "1.4 Help, de prijzen stijgen!"
+        }
+      ],
+      "quiz": [
+        {
+          "vraag": "Welke van de volgende hoort niet bij de 6 marketinginstrumenten?",
+          "opties": [
+            "Prijs",
+            "Personeel",
+            "Politiek",
+            "Presentatie"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "De 6 P's zijn prijs, product, plaats, promotie, personeel en presentatie."
+        },
+        {
+          "vraag": "Rente op je spaargeld is een voorbeeld van...",
+          "opties": [
+            "een primair inkomen",
+            "een secundair inkomen",
+            "een uitkering",
+            "een overdrachtsinkomen"
+          ],
+          "antwoord_index": 0,
+          "uitleg": "Rente is inkomen uit bezit, en dus een primair inkomen."
+        },
+        {
+          "vraag": "Een uitkering is een voorbeeld van...",
+          "opties": [
+            "een primair inkomen",
+            "een secundair inkomen",
+            "besteedbaar inkomen",
+            "nationaal inkomen"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Uitkeringen zijn inkomens uit overdrachten: secundaire inkomens."
+        },
+        {
+          "vraag": "Wat is het besteedbaar inkomen?",
+          "opties": [
+            "Je brutoloon",
+            "Het deel van je inkomen dat je vrij kunt uitgeven",
+            "Het gemiddelde inkomen in Nederland",
+            "Je inkomen vóór belasting"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Het besteedbaar inkomen is wat je overhoudt na aftrek van belasting en premies."
+        },
+        {
+          "vraag": "Wat laat een Lorenzcurve zien?",
+          "opties": [
+            "De ontwikkeling van de inflatie",
+            "De verdeling van het nationaal inkomen over de bevolking",
+            "De hoogte van het minimumloon",
+            "De koers van de euro"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Een Lorenzcurve toont hoe (on)gelijk het nationaal inkomen over de bevolking verdeeld is."
+        },
+        {
+          "vraag": "Waarom moet je prioriteiten stellen?",
+          "opties": [
+            "Omdat je altijd genoeg geld hebt",
+            "Omdat je meer behoeften hebt dan middelen",
+            "Omdat de overheid dat verplicht",
+            "Omdat goederen nooit schaars zijn"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Omdat middelen zoals geld en tijd beperkt zijn, moet je kiezen welke behoeften voorrang krijgen."
+        },
+        {
+          "vraag": "Wat is het verschil tussen welvaart en welzijn?",
+          "opties": [
+            "Er is geen verschil",
+            "Welvaart gaat om kunnen voorzien in behoeften, welzijn om de bredere kwaliteit van leven",
+            "Welzijn gaat alleen over geld",
+            "Welvaart gaat alleen over gezondheid"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Welvaart is de mate waarin je in je behoeften kunt voorzien; welzijn omvat een breder begrip van kwaliteit van leven."
+        },
+        {
+          "vraag": "Meer welvaart betekent...",
+          "opties": [
+            "altijd ook meer welzijn",
+            "niet automatisch ook meer welzijn",
+            "altijd minder welzijn",
+            "hetzelfde als meer welzijn"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Meer produceren en consumeren (welvaart) gaat niet automatisch samen met meer kwaliteit van leven (welzijn)."
+        },
+        {
+          "vraag": "Wat meet het CBS met het cpi?",
+          "opties": [
+            "De hoogte van het nationaal inkomen",
+            "Hoeveel de prijzen gestegen zijn ten opzichte van een basisjaar",
+            "De werkloosheid",
+            "De staatsschuld"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Het cpi (consumentenprijsindexcijfer) laat de prijsstijging zien ten opzichte van een basisjaar."
+        },
+        {
+          "vraag": "Je loon stijgt met 2%, zonder rekening te houden met inflatie. Dit is een...",
+          "opties": [
+            "reële verandering",
+            "nominale verandering",
+            "prijscompensatie",
+            "loon-prijsspiraal"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Een verandering zonder rekening te houden met inflatie is een nominale verandering."
+        },
+        {
+          "vraag": "Wat gebeurt er bij prijscompensatie?",
+          "opties": [
+            "De lonen dalen",
+            "De lonen stijgen net zoveel als de prijzen",
+            "De prijzen dalen door hogere lonen",
+            "De koopkracht daalt altijd"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Bij prijscompensatie stijgen de lonen even hard als de prijzen, zodat de koopkracht gelijk blijft."
+        },
+        {
+          "vraag": "Wat is de loon-prijsspiraal?",
+          "opties": [
+            "Een eenmalige loonsverhoging",
+            "Een vicieuze cirkel van loon- en prijsstijgingen",
+            "Een daling van de staatsschuld",
+            "Een belastingmaatregel"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Bij de loon-prijsspiraal jagen loonstijgingen en prijsstijgingen elkaar steeds verder op."
+        }
+      ]
+    },
+    {
+      "titel": "Geld genoeg?",
+      "uitleg": "<div class='box'><h4>Waar dit hoofdstuk over gaat</h4><p>Geld verdienen is één ding, er verstandig mee omgaan is minstens zo belangrijk. Je leert hoe je een budgetplan maakt, wat sparen en beleggen oplevert, wat lenen je kost en welke rol banken en de ECB spelen in de geldkringloop.</p></div>",
+      "subhoofdstukken": [
+        {
+          "titel": "2.1 Hoe geef jij je geld uit?",
+          "uitleg": "<div class='box'><h4>Grip op je geld</h4><p>Een <b>budgetplan</b> is een overzicht van je verwachte inkomsten en uitgaven. Voor advies over het omgaan met geld kun je terecht bij het <b>Nibud</b> (Nationaal Instituut voor Budgetvoorlichting): deze instelling adviseert om je uitgaven te verdelen in dagelijkse uitgaven, vaste lasten en incidentele uitgaven, en om je inkomsten en uitgaven op elkaar af te stemmen.</p></div><div class='box'><h4>Sparen voor later</h4><p>Door te <b>reserveren</b> — sparen om een grote, incidentele uitgave te kunnen betalen — heb je op tijd voldoende geld voor bijvoorbeeld een nieuwe laptop of een vakantie.</p></div><div class='call'>Door bewust te kiezen waar je je geld aan uitgeeft, of bij welke bank je spaart, kun je bijdragen aan een betere wereld.</div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Een budgetplan is een overzicht van verwachte inkomsten en uitgaven.</li><li>Het Nibud adviseert over dagelijkse uitgaven, vaste lasten en incidentele uitgaven.</li><li>Reserveren is sparen voor een grote, incidentele uitgave.</li></ul></div>"
+        },
+        {
+          "titel": "2.2 Ga je sparen of beleggen?",
+          "uitleg": "<div class='box'><h4>Sparen</h4><p>Je kunt sparen voor een doel, voor de rente of uit voorzorg: dit noem je je <b>spaarmotieven</b>. Op een <b>spaardeposito</b> zet je geld voor langere tijd weg tegen een vast rentepercentage. Om de rente op zo'n spaardeposito te berekenen, gebruik je <b>enkelvoudige rente</b>: rente die telkens na afloop van een jaar apart wordt uitgekeerd, waarbij je spaartegoed zelf niet verandert.</p><p>Bij andere spaarrekeningen krijg je vaak <b>samengestelde rente</b> (rente-op-rente): wordt de rente op je spaarrekening bijgeschreven, en krijg je daar later ook weer rente over, dan groeit je spaargeld sneller dan bij enkelvoudige rente.</p></div><div class='box'><h4>Nominaal versus reëel</h4><p>De rente die de bank noemt, is de <b>nominale rente</b>. Trek je daar de inflatie van af, dan krijg je de <b>reële rente</b>: die laat zien hoe de koopkracht van je spaargeld verandert. Is de inflatie hoger dan de nominale rente, dan daalt de koopkracht van je spaargeld, ook al staat er in euro's meer op je rekening.</p></div><div class='box'><h4>Beleggen</h4><p>In plaats van sparen kun je ook <b>beleggen</b>: je koopt dan bijvoorbeeld aandelen waarvan je verwacht dat ze meer waard worden. De waardestijging bepaalt het <b>rendement</b> van je belegging: de opbrengst, meestal uitgedrukt in een percentage. Beleggen kan meer opleveren dan sparen, maar brengt ook meer risico met zich mee.</p></div><div class='call warn'><b>Veelgemaakte fout:</b> verwar nominale rente niet met reële rente. De nominale rente is het percentage dat de bank noemt; pas na aftrek van de inflatie weet je wat je spaargeld écht meer waard wordt (de reële rente).</div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Drie spaarmotieven: voor een doel, voor de rente, uit voorzorg.</li><li>Enkelvoudige rente verandert je spaartegoed niet; samengestelde rente is rente-op-rente.</li><li>Reële rente = nominale rente − inflatie. Beleggen kent meer rendement én meer risico dan sparen.</li></ul></div>"
+        },
+        {
+          "titel": "2.3 Wie leent, maakt schulden",
+          "uitleg": "<div class='box'><h4>Waarom leen je?</h4><p>Mensen kunnen verschillende <b>leenmotieven</b> hebben om een lening te willen nemen. Je kunt lenen:</p><ul class='lst'><li>om een tijdelijk geldtekort te overbruggen;</li><li>omdat je een dure aankoop niet wilt uitstellen;</li><li>omdat je onverwacht dringend geld nodig hebt;</li><li>voor het kopen van een woning.</li></ul><p>Bij een lening moet je altijd rekening houden met kosten.</p></div><div class='box'><h4>Soorten leningen</h4><p>Voor de aanschaf van een consumptiegoed kun je <b>consumptief krediet</b> nemen. <b>Kredietvormen</b> zijn de verschillende soorten leningen:</p><ul class='lst'><li>bij een bank: persoonlijke lening, doorlopend krediet, salariskrediet;</li><li>bij leveranciers: koop op afbetaling, private lease.</li></ul><p>Voor de koop van een huis sluit je een <b>hypothecaire lening</b> af. Daarbij dient het huis zelf als onderpand voor de bank.</p></div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Leenmotieven: geldtekort overbruggen, dure aankoop, onverwachte uitgave, woning kopen.</li><li>Consumptief krediet is voor consumptiegoederen; een hypothecaire lening is voor een woning.</li></ul></div>"
+        },
+        {
+          "titel": "2.4 Geld moet rollen!",
+          "uitleg": "<div class='box'><h4>Geldfuncties</h4><p>Geld heeft verschillende <b>geldfuncties</b>: het kan dienen als ruilmiddel, als rekenmiddel en als spaarmiddel.</p></div><div class='box'><h4>De rol van banken</h4><p>De uitdrukking 'geld moet rollen' laat zien dat een goed functionerend geldverkeer onmisbaar is voor onze economie. Banken bemiddelen tussen de vraag naar geld en het <b>aanbod van geld</b>. Het aanbod komt van spaarders: geld op spaarrekeningen. Zij ontvangen daarvoor rente. De <b>vraag naar geld</b> komt van gezinnen en bedrijven die willen lenen: gezinnen vooral voor consumptiegoederen, bedrijven vooral om te kunnen investeren. Zij betalen rente. <b>Rente</b> is dus de prijs voor geld.</p></div><div class='box'><h4>Wie bepaalt de rente?</h4><p>De basisrente wordt vastgesteld door de <b>ECB</b> (Europese Centrale Bank), de centrale bank van de eurozone. Neemt de vraag naar geld toe, dan stijgt de rente meestal. Commerciële banken rekenen een hogere rente voor leningen waarbij zij meer risico lopen. Banken verdienen geld door op leningen een hogere rente te vragen dan ze vergoeden op spaarrekeningen.</p></div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>De drie geldfuncties: ruilmiddel, rekenmiddel, spaarmiddel.</li><li>Aanbod van geld komt van spaarders; vraag naar geld komt van leners. Rente is de prijs voor geld.</li><li>De ECB stelt de basisrente vast; banken verdienen aan het verschil tussen leen- en spaarrente.</li></ul></div>"
+        }
+      ],
+      "begrippen": [
+        {
+          "term": "Budgetplan",
+          "uitleg": "Een overzicht van je verwachte inkomsten en uitgaven.",
+          "paragraaf": "2.1 Hoe geef jij je geld uit?"
+        },
+        {
+          "term": "Nibud",
+          "uitleg": "Nationaal Instituut voor Budgetvoorlichting. Geeft voorlichting over hoe je inkomsten en uitgaven het best op elkaar kunt afstemmen.",
+          "paragraaf": "2.1 Hoe geef jij je geld uit?"
+        },
+        {
+          "term": "Reserveren",
+          "uitleg": "Sparen om een grote, incidentele uitgave te kunnen betalen.",
+          "paragraaf": "2.1 Hoe geef jij je geld uit?"
+        },
+        {
+          "term": "Spaarmotieven",
+          "uitleg": "Redenen om te sparen: voor een doel, voor de rente of uit voorzorg.",
+          "paragraaf": "2.2 Ga je sparen of beleggen?"
+        },
+        {
+          "term": "Spaardeposito",
+          "uitleg": "Spaarrekening waarop je geld voor een afgesproken tijd vast staat tegen een vast rentepercentage.",
+          "paragraaf": "2.2 Ga je sparen of beleggen?"
+        },
+        {
+          "term": "Enkelvoudige rente",
+          "uitleg": "Rente die telkens na afloop van een jaar apart wordt uitgekeerd. Je spaartegoed zelf verandert niet.",
+          "paragraaf": "2.2 Ga je sparen of beleggen?"
+        },
+        {
+          "term": "Samengestelde rente",
+          "uitleg": "Rente-op-rente. De rente wordt na ieder jaar bijgeschreven, en het volgende jaar krijg je ook rente over die bijgeschreven rente.",
+          "paragraaf": "2.2 Ga je sparen of beleggen?"
+        },
+        {
+          "term": "Nominale rente",
+          "uitleg": "De rente waarmee de bank rekent.",
+          "paragraaf": "2.2 Ga je sparen of beleggen?"
+        },
+        {
+          "term": "Reële rente",
+          "uitleg": "De nominale rente min de inflatie. Laat zien hoe de koopkracht van je spaargeld verandert.",
+          "paragraaf": "2.2 Ga je sparen of beleggen?"
+        },
+        {
+          "term": "Beleggen",
+          "uitleg": "Je koopt iets waarvan je verwacht dat het meer waard wordt.",
+          "paragraaf": "2.2 Ga je sparen of beleggen?"
+        },
+        {
+          "term": "Rendement",
+          "uitleg": "De opbrengst van een belegging, meestal uitgedrukt in een percentage.",
+          "paragraaf": "2.2 Ga je sparen of beleggen?"
+        },
+        {
+          "term": "Leenmotieven",
+          "uitleg": "Redenen om te lenen, zoals een tijdelijk geldtekort of een dure aankoop.",
+          "paragraaf": "2.3 Wie leent, maakt schulden"
+        },
+        {
+          "term": "Consumptief krediet",
+          "uitleg": "Een lening voor de aanschaf van een consumptiegoed.",
+          "paragraaf": "2.3 Wie leent, maakt schulden"
+        },
+        {
+          "term": "Hypothecaire lening",
+          "uitleg": "Een lening voor de aankoop van een woning.",
+          "paragraaf": "2.3 Wie leent, maakt schulden"
+        },
+        {
+          "term": "Kredietvormen",
+          "uitleg": "Soorten leningen, zoals persoonlijke lening, doorlopend krediet, salariskrediet, koop op afbetaling en private lease.",
+          "paragraaf": "2.3 Wie leent, maakt schulden"
+        },
+        {
+          "term": "Geldfuncties",
+          "uitleg": "Geld kun je gebruiken als ruilmiddel, als rekenmiddel en als spaarmiddel.",
+          "paragraaf": "2.4 Geld moet rollen!"
+        },
+        {
+          "term": "Aanbod van geld",
+          "uitleg": "Geld op spaarrekeningen.",
+          "paragraaf": "2.4 Geld moet rollen!"
+        },
+        {
+          "term": "Vraag naar geld",
+          "uitleg": "Gezinnen en bedrijven willen geld lenen.",
+          "paragraaf": "2.4 Geld moet rollen!"
+        },
+        {
+          "term": "Rente",
+          "uitleg": "De prijs voor geld.",
+          "paragraaf": "2.4 Geld moet rollen!"
+        },
+        {
+          "term": "ECB",
+          "uitleg": "Europese Centrale Bank. De centrale bank van de eurozone.",
+          "paragraaf": "2.4 Geld moet rollen!"
+        }
+      ],
+      "flashcards": [
+        {
+          "vraag": "Wat is een budgetplan?",
+          "antwoord": "Een overzicht van je verwachte inkomsten en uitgaven.",
+          "paragraaf": "2.1 Hoe geef jij je geld uit?"
+        },
+        {
+          "vraag": "Waarover adviseert het Nibud?",
+          "antwoord": "Over hoe je je inkomsten en uitgaven het best op elkaar kunt afstemmen.",
+          "paragraaf": "2.1 Hoe geef jij je geld uit?"
+        },
+        {
+          "vraag": "Wat is reserveren?",
+          "antwoord": "Sparen om een grote, incidentele uitgave te kunnen betalen.",
+          "paragraaf": "2.1 Hoe geef jij je geld uit?"
+        },
+        {
+          "vraag": "Noem de drie spaarmotieven.",
+          "antwoord": "Sparen voor een doel, voor de rente, of uit voorzorg.",
+          "paragraaf": "2.2 Ga je sparen of beleggen?"
+        },
+        {
+          "vraag": "Wat is het verschil tussen enkelvoudige en samengestelde rente?",
+          "antwoord": "Bij enkelvoudige rente verandert je spaartegoed niet; bij samengestelde rente krijg je ook rente over eerder bijgeschreven rente.",
+          "paragraaf": "2.2 Ga je sparen of beleggen?"
+        },
+        {
+          "vraag": "Hoe bereken je de reële rente?",
+          "antwoord": "Nominale rente min de inflatie.",
+          "paragraaf": "2.2 Ga je sparen of beleggen?"
+        },
+        {
+          "vraag": "Wat is rendement?",
+          "antwoord": "De opbrengst van een belegging, meestal uitgedrukt in een percentage.",
+          "paragraaf": "2.2 Ga je sparen of beleggen?"
+        },
+        {
+          "vraag": "Noem twee leenmotieven.",
+          "antwoord": "Bijvoorbeeld een tijdelijk geldtekort overbruggen, of een dure aankoop niet willen uitstellen.",
+          "paragraaf": "2.3 Wie leent, maakt schulden"
+        },
+        {
+          "vraag": "Wat is consumptief krediet?",
+          "antwoord": "Een lening voor de aanschaf van een consumptiegoed.",
+          "paragraaf": "2.3 Wie leent, maakt schulden"
+        },
+        {
+          "vraag": "Wat dient als onderpand bij een hypothecaire lening?",
+          "antwoord": "Het huis zelf.",
+          "paragraaf": "2.3 Wie leent, maakt schulden"
+        },
+        {
+          "vraag": "Noem de drie geldfuncties.",
+          "antwoord": "Ruilmiddel, rekenmiddel en spaarmiddel.",
+          "paragraaf": "2.4 Geld moet rollen!"
+        },
+        {
+          "vraag": "Waar komt het aanbod van geld vandaan?",
+          "antwoord": "Van spaarders: geld op spaarrekeningen.",
+          "paragraaf": "2.4 Geld moet rollen!"
+        },
+        {
+          "vraag": "Wie stelt de basisrente vast?",
+          "antwoord": "De ECB (Europese Centrale Bank).",
+          "paragraaf": "2.4 Geld moet rollen!"
+        },
+        {
+          "vraag": "Hoe verdienen banken geld op leningen en spaarrekeningen?",
+          "antwoord": "Door een hogere rente te vragen op leningen dan ze vergoeden op spaarrekeningen.",
+          "paragraaf": "2.4 Geld moet rollen!"
+        }
+      ],
+      "quiz": [
+        {
+          "vraag": "Wat is een budgetplan?",
+          "opties": [
+            "Een lening bij de bank",
+            "Een overzicht van je verwachte inkomsten en uitgaven",
+            "Een spaarrekening met vaste rente",
+            "Een belastingaangifte"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Een budgetplan is een overzicht van je verwachte inkomsten en uitgaven."
+        },
+        {
+          "vraag": "Waarvoor kun je bij het Nibud terecht?",
+          "opties": [
+            "Voor een hypotheek",
+            "Voor advies over het omgaan met geld",
+            "Voor beleggingsadvies op de beurs",
+            "Voor het invullen van je belastingaangifte"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Het Nibud (Nationaal Instituut voor Budgetvoorlichting) geeft voorlichting over omgaan met geld."
+        },
+        {
+          "vraag": "Je zet geld opzij voor een nieuwe laptop over een half jaar. Dit heet...",
+          "opties": [
+            "beleggen",
+            "reserveren",
+            "lenen",
+            "belasting betalen"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Reserveren is sparen om een grote, incidentele uitgave te kunnen betalen."
+        },
+        {
+          "vraag": "Bij welke vorm van rente verandert je spaartegoed zelf niet?",
+          "opties": [
+            "Samengestelde rente",
+            "Enkelvoudige rente",
+            "Nominale rente",
+            "Reële rente"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Bij enkelvoudige rente wordt de rente elk jaar apart uitgekeerd; je spaartegoed zelf blijft gelijk."
+        },
+        {
+          "vraag": "De bank noemt een rente van 2,5%. De inflatie is 3%. Wat is de reële rente?",
+          "opties": [
+            "5,5%",
+            "2,5%",
+            "0,5%",
+            "-0,5%"
+          ],
+          "antwoord_index": 3,
+          "uitleg": "Reële rente = nominale rente − inflatie = 2,5% − 3% = −0,5%."
+        },
+        {
+          "vraag": "Wat is rendement?",
+          "opties": [
+            "De rente op een spaarrekening",
+            "De opbrengst van een belegging, meestal in een percentage",
+            "De prijs van een aandeel",
+            "Een korting op de premie"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Rendement is de opbrengst van een belegging, meestal uitgedrukt in een percentage."
+        },
+        {
+          "vraag": "Waarom is beleggen risicovoller dan sparen?",
+          "opties": [
+            "Omdat de bank geen rente geeft",
+            "Omdat de waarde van een belegging ook kan dalen",
+            "Omdat beleggen altijd verboden is voor particulieren",
+            "Omdat de overheid beleggen belast"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Bij beleggen kan de waarde van je inleg zowel stijgen als dalen, wat een risico is ten opzichte van sparen."
+        },
+        {
+          "vraag": "Voor de aankoop van een woning sluit je een...",
+          "opties": [
+            "consumptief krediet af",
+            "hypothecaire lening af",
+            "doorlopend krediet af",
+            "spaardeposito af"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Een hypothecaire lening is speciaal bedoeld voor de aankoop van een woning."
+        },
+        {
+          "vraag": "Welke van de volgende is geen kredietvorm bij een bank?",
+          "opties": [
+            "Persoonlijke lening",
+            "Doorlopend krediet",
+            "Private lease",
+            "Salariskrediet"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "Private lease is een kredietvorm bij een leverancier, niet bij een bank."
+        },
+        {
+          "vraag": "Wat zijn de drie geldfuncties?",
+          "opties": [
+            "Ruilmiddel, rekenmiddel, spaarmiddel",
+            "Leenmiddel, spaarmiddel, belegmiddel",
+            "Betaalmiddel, waardemiddel, wisselmiddel",
+            "Chartaal, giraal, digitaal"
+          ],
+          "antwoord_index": 0,
+          "uitleg": "De drie geldfuncties zijn ruilmiddel, rekenmiddel en spaarmiddel."
+        },
+        {
+          "vraag": "Waar komt het aanbod van geld vandaan?",
+          "opties": [
+            "Van de overheid",
+            "Van spaarders",
+            "Van de ECB alleen",
+            "Van bedrijven die investeren"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Het aanbod van geld komt van spaarders die geld op spaarrekeningen zetten."
+        },
+        {
+          "vraag": "Wie stelt de basisrente in de eurozone vast?",
+          "opties": [
+            "De Nederlandsche Bank",
+            "De ECB",
+            "De Belastingdienst",
+            "Het CBS"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "De ECB (Europese Centrale Bank) stelt de basisrente van de eurozone vast."
+        },
+        {
+          "vraag": "Hoe verdienen banken geld?",
+          "opties": [
+            "Door minder rente te vragen op leningen dan te geven op spaargeld",
+            "Door meer rente te vragen op leningen dan te geven op spaargeld",
+            "Door geen rente te rekenen",
+            "Alleen via de overheid"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Banken verdienen doordat de rente die ze vragen op leningen hoger is dan de rente die ze vergoeden op spaargeld."
+        }
+      ]
+    },
+    {
+      "titel": "Ben jij ondernemend?",
+      "uitleg": "<div class='box'><h4>Waar dit hoofdstuk over gaat</h4><p>Achter elk bedrijf zit een verhaal van kosten en opbrengsten. Je leert wat de kosten en opbrengsten van een bedrijf zijn, hoe vraag en aanbod de prijs bepalen, en hoe bedrijven macht op de markt kunnen krijgen.</p></div>",
+      "subhoofdstukken": [
+        {
+          "titel": "3.1 Wat zijn de kosten?",
+          "uitleg": "<div class='box'><h4>Om te kunnen produceren</h4><p>Om iets te produceren heb je <b>productiefactoren</b> nodig: natuur, arbeid, kapitaal en ondernemerschap. Bedrijven <b>investeren</b>: ze besteden geld aan productiemiddelen, zoals kapitaalgoederen. Door producten te bewerken, ontstaat <b>toegevoegde waarde</b>: de extra waarde die een bedrijf aan een product toevoegt.</p></div><div class='box'><h4>Vast of variabel</h4><p><b>Vaste kosten</b> veranderen niet meteen als je meer of minder gaat produceren, bijvoorbeeld de huur van je gebouw. <b>Variabele kosten</b> veranderen wél mee, bijvoorbeeld de kosten van grondstoffen.</p><p>Tel je alle kosten bij elkaar op en deel je dat door het aantal geproduceerde producten, dan krijg je de <b>kostprijs per product</b>: de gemiddelde kosten voor het maken van één product.</p></div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Vier productiefactoren: natuur, arbeid, kapitaal, ondernemerschap.</li><li>Vaste kosten veranderen niet met de productieomvang; variabele kosten wel.</li><li>Kostprijs per product = totale kosten ÷ aantal geproduceerde producten.</li></ul></div>"
+        },
+        {
+          "titel": "3.2 Wat levert het op?",
+          "uitleg": "<div class='box'><h4>Van omzet naar winst</h4><p>De <b>omzet</b> is de verkoopopbrengst: het totaalbedrag dat een bedrijf ontvangt door de verkoop van producten. Trek je daar de inkoopwaarde van af, dan hou je de <b>brutowinst</b> over: wat je overhoudt van de omzet nadat je de inkoopwaarde ervan betaald hebt.</p></div><div class='box'><h4>Productief en verantwoord</h4><p>De <b>arbeidsproductiviteit</b> is de productie per persoon in een bepaalde tijd. De <b>productiecapaciteit</b> is de maximale hoeveelheid die een bedrijf kan produceren.</p><p>Bedrijven die aan <b>maatschappelijk verantwoord ondernemen (mvo)</b> doen, houden bij hun productie zo veel mogelijk rekening met de gevolgen voor mens en milieu.</p></div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Brutowinst = omzet − inkoopwaarde.</li><li>Arbeidsproductiviteit = productie per persoon; productiecapaciteit = maximale productie.</li><li>Mvo: rekening houden met mens en milieu bij het produceren.</li></ul></div>"
+        },
+        {
+          "titel": "3.3 Vraag en aanbod",
+          "uitleg": "<div class='box'><h4>Waar vraag en aanbod elkaar ontmoeten</h4><p>Wordt de prijs van een product bepaald door vraag en aanbod, dan is er sprake van een vrije markt. Bij de <b>evenwichtsprijs</b> zijn vraag en aanbod aan elkaar gelijk. Het aantal producten dat bij die prijs gevraagd en aangeboden wordt, is de <b>evenwichtshoeveelheid</b>.</p><p>Stijgt de prijs, dan neemt het aanbod meestal toe, terwijl de vraag juist afneemt. Soms grijpt de overheid in door zelf een prijs vast te stellen, bijvoorbeeld voor huurwoningen.</p></div><div class='box'><h4>Goed kunnen vergelijken</h4><p>Een markt is <b>transparant</b> als je de aangeboden producten en prijzen goed met elkaar kunt vergelijken. Op een transparante markt is het voor kopers makkelijker om de beste deal te vinden.</p></div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Evenwichtsprijs: vraag en aanbod zijn gelijk. Evenwichtshoeveelheid: de hoeveelheid daarbij.</li><li>Bij een hogere prijs neemt het aanbod meestal toe en de vraag af.</li><li>Een transparante markt is goed te vergelijken voor kopers.</li></ul></div>"
+        },
+        {
+          "titel": "3.4 Macht op de markt?",
+          "uitleg": "<div class='box'><h4>Marktaandeel vergroten</h4><p>Het <b>marktaandeel</b> is je eigen afzet of omzet in procenten van de totale afzet of omzet op de markt. Dat kan groeien door de inzet van marketinginstrumenten, maar ook door een overname van een ander bedrijf of een <b>fusie</b>: twee bedrijven vormen dan samen één nieuw bedrijf, waardoor hun positie op de markt sterker wordt.</p></div><div class='box'><h4>Vier marktvormen</h4><p>Producten die voor klanten niet van elkaar verschillen, noem je <b>homogene goederen</b> (zoals graan). Producten waarbij het voor een klant wél verschil maakt wie het levert of van welk merk het is, noem je <b>heterogene goederen</b> (zoals kleding).</p></div><div class='tblwrap'><table class='tbl'><tr><th>Marktvorm</th><th>Aantal aanbieders</th><th>Soort product</th></tr><tr><td>Volkomen concurrentie</td><td>Veel</td><td>Homogeen</td></tr><tr><td>Monopolistische concurrentie</td><td>Veel</td><td>Heterogeen</td></tr><tr><td>Oligopolie</td><td>Klein aantal</td><td>Homogeen of heterogeen</td></tr><tr><td>Monopolie</td><td>Eén</td><td>—</td></tr></table></div><div class='call warn'><b>Veelgemaakte fout:</b> een monopolist met veel macht op de markt kan de prijs vaak verhogen zonder klanten direct te verliezen, omdat er geen alternatief is. Bij volkomen concurrentie kan een bedrijf dat juist niet: klanten stappen dan meteen over naar een concurrent.</div><div class='call'>Bij een <b>oligopolie</b> (een klein aantal aanbieders) komt het soms voor dat bedrijven stiekem verboden prijsafspraken maken om de onderlinge concurrentie te beperken. Zo'n afspraak heet een <b>kartel</b>.</div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Marktaandeel kan groeien door marketing, overname of fusie.</li><li>Vier marktvormen: volkomen concurrentie, monopolistische concurrentie, oligopolie, monopolie — van veel naar één aanbieder.</li><li>Een kartel is een verboden afspraak tussen bedrijven om concurrentie te beperken.</li></ul></div>"
+        }
+      ],
+      "begrippen": [
+        {
+          "term": "Productiefactoren",
+          "uitleg": "Alle middelen die je nodig hebt om te produceren: natuur, arbeid, kapitaal en ondernemerschap.",
+          "paragraaf": "3.1 Wat zijn de kosten?"
+        },
+        {
+          "term": "Investeren",
+          "uitleg": "Bedrijven besteden geld aan productiemiddelen, zoals kapitaalgoederen.",
+          "paragraaf": "3.1 Wat zijn de kosten?"
+        },
+        {
+          "term": "Toegevoegde waarde",
+          "uitleg": "De extra waarde die ontstaat doordat een bedrijf een product bewerkt.",
+          "paragraaf": "3.1 Wat zijn de kosten?"
+        },
+        {
+          "term": "Vaste kosten",
+          "uitleg": "Kosten die niet meteen veranderen als je meer of minder gaat produceren, bijvoorbeeld de huur van je gebouw.",
+          "paragraaf": "3.1 Wat zijn de kosten?"
+        },
+        {
+          "term": "Variabele kosten",
+          "uitleg": "Kosten die veranderen als je meer of minder gaat produceren, bijvoorbeeld grondstofkosten.",
+          "paragraaf": "3.1 Wat zijn de kosten?"
+        },
+        {
+          "term": "Kostprijs per product",
+          "uitleg": "De gemiddelde kosten voor het maken van één product.",
+          "paragraaf": "3.1 Wat zijn de kosten?"
+        },
+        {
+          "term": "Omzet",
+          "uitleg": "Verkoopopbrengst. Het totaalbedrag dat een bedrijf ontvangt door de verkoop van producten.",
+          "paragraaf": "3.2 Wat levert het op?"
+        },
+        {
+          "term": "Brutowinst",
+          "uitleg": "Wat je overhoudt van de omzet nadat je de inkoopwaarde ervan betaald hebt.",
+          "paragraaf": "3.2 Wat levert het op?"
+        },
+        {
+          "term": "Arbeidsproductiviteit",
+          "uitleg": "De productie per persoon in een bepaalde tijd.",
+          "paragraaf": "3.2 Wat levert het op?"
+        },
+        {
+          "term": "Productiecapaciteit",
+          "uitleg": "De maximale hoeveelheid die een bedrijf kan produceren.",
+          "paragraaf": "3.2 Wat levert het op?"
+        },
+        {
+          "term": "Maatschappelijk verantwoord ondernemen (mvo)",
+          "uitleg": "Bedrijven houden bij hun productie zo veel mogelijk rekening met de gevolgen voor mens en milieu.",
+          "paragraaf": "3.2 Wat levert het op?"
+        },
+        {
+          "term": "Evenwichtsprijs",
+          "uitleg": "De prijs waarbij vraag en aanbod aan elkaar gelijk zijn.",
+          "paragraaf": "3.3 Vraag en aanbod"
+        },
+        {
+          "term": "Evenwichtshoeveelheid",
+          "uitleg": "Het aantal producten dat gevraagd en aangeboden wordt bij de evenwichtsprijs.",
+          "paragraaf": "3.3 Vraag en aanbod"
+        },
+        {
+          "term": "Transparante markt",
+          "uitleg": "Een markt waarin je de aangeboden producten en prijzen goed met elkaar kunt vergelijken.",
+          "paragraaf": "3.3 Vraag en aanbod"
+        },
+        {
+          "term": "Marktaandeel",
+          "uitleg": "De afzet (of omzet) van een bedrijf in procenten van de totale afzet (of omzet) op de markt.",
+          "paragraaf": "3.4 Macht op de markt?"
+        },
+        {
+          "term": "Fusie",
+          "uitleg": "Twee bedrijven vormen samen één nieuw bedrijf.",
+          "paragraaf": "3.4 Macht op de markt?"
+        },
+        {
+          "term": "Homogene goederen",
+          "uitleg": "Producten die voor klanten niet van elkaar verschillen.",
+          "paragraaf": "3.4 Macht op de markt?"
+        },
+        {
+          "term": "Heterogene goederen",
+          "uitleg": "Producten waarbij het voor een klant verschil maakt wie het levert of van welk merk het is.",
+          "paragraaf": "3.4 Macht op de markt?"
+        },
+        {
+          "term": "Volkomen concurrentie",
+          "uitleg": "Marktvorm met veel aanbieders van homogene goederen.",
+          "paragraaf": "3.4 Macht op de markt?"
+        },
+        {
+          "term": "Monopolistische concurrentie",
+          "uitleg": "Marktvorm met veel aanbieders van heterogene goederen.",
+          "paragraaf": "3.4 Macht op de markt?"
+        },
+        {
+          "term": "Oligopolie",
+          "uitleg": "Marktvorm met een klein aantal aanbieders. Ze kunnen homogene of heterogene goederen aanbieden.",
+          "paragraaf": "3.4 Macht op de markt?"
+        },
+        {
+          "term": "Monopolie",
+          "uitleg": "Marktvorm met maar één aanbieder.",
+          "paragraaf": "3.4 Macht op de markt?"
+        },
+        {
+          "term": "Kartel",
+          "uitleg": "Verboden afspraken tussen bedrijven om hun onderlinge concurrentie te beperken.",
+          "paragraaf": "3.4 Macht op de markt?"
+        }
+      ],
+      "flashcards": [
+        {
+          "vraag": "Noem de vier productiefactoren.",
+          "antwoord": "Natuur, arbeid, kapitaal en ondernemerschap.",
+          "paragraaf": "3.1 Wat zijn de kosten?"
+        },
+        {
+          "vraag": "Wat is het verschil tussen vaste en variabele kosten?",
+          "antwoord": "Vaste kosten veranderen niet met de productieomvang; variabele kosten wel.",
+          "paragraaf": "3.1 Wat zijn de kosten?"
+        },
+        {
+          "vraag": "Hoe bereken je de kostprijs per product?",
+          "antwoord": "Totale kosten gedeeld door het aantal geproduceerde producten.",
+          "paragraaf": "3.1 Wat zijn de kosten?"
+        },
+        {
+          "vraag": "Wat is brutowinst?",
+          "antwoord": "Omzet min de inkoopwaarde.",
+          "paragraaf": "3.2 Wat levert het op?"
+        },
+        {
+          "vraag": "Wat is arbeidsproductiviteit?",
+          "antwoord": "De productie per persoon in een bepaalde tijd.",
+          "paragraaf": "3.2 Wat levert het op?"
+        },
+        {
+          "vraag": "Wat houdt maatschappelijk verantwoord ondernemen in?",
+          "antwoord": "Rekening houden met de gevolgen van je productie voor mens en milieu.",
+          "paragraaf": "3.2 Wat levert het op?"
+        },
+        {
+          "vraag": "Wanneer ontstaat de evenwichtsprijs?",
+          "antwoord": "Als vraag en aanbod aan elkaar gelijk zijn.",
+          "paragraaf": "3.3 Vraag en aanbod"
+        },
+        {
+          "vraag": "Wat is een transparante markt?",
+          "antwoord": "Een markt waarin je producten en prijzen goed met elkaar kunt vergelijken.",
+          "paragraaf": "3.3 Vraag en aanbod"
+        },
+        {
+          "vraag": "Wat gebeurt er met vraag en aanbod als de prijs stijgt?",
+          "antwoord": "Het aanbod neemt meestal toe, de vraag neemt juist af.",
+          "paragraaf": "3.3 Vraag en aanbod"
+        },
+        {
+          "vraag": "Hoe bereken je het marktaandeel?",
+          "antwoord": "Eigen afzet of omzet in procenten van de totale afzet of omzet op de markt.",
+          "paragraaf": "3.4 Macht op de markt?"
+        },
+        {
+          "vraag": "Wat is het verschil tussen homogene en heterogene goederen?",
+          "antwoord": "Bij homogene goederen maakt het voor klanten niet uit wie levert; bij heterogene goederen wel.",
+          "paragraaf": "3.4 Macht op de markt?"
+        },
+        {
+          "vraag": "Noem de vier marktvormen, van veel naar weinig aanbieders.",
+          "antwoord": "Volkomen concurrentie, monopolistische concurrentie, oligopolie, monopolie.",
+          "paragraaf": "3.4 Macht op de markt?"
+        },
+        {
+          "vraag": "Wat is een kartel?",
+          "antwoord": "Een verboden afspraak tussen bedrijven om de onderlinge concurrentie te beperken.",
+          "paragraaf": "3.4 Macht op de markt?"
+        }
+      ],
+      "quiz": [
+        {
+          "vraag": "Welke productiefactor hoort er niet bij?",
+          "opties": [
+            "Natuur",
+            "Arbeid",
+            "Marketing",
+            "Kapitaal"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "De vier productiefactoren zijn natuur, arbeid, kapitaal en ondernemerschap."
+        },
+        {
+          "vraag": "De huur van een bedrijfspand is een voorbeeld van...",
+          "opties": [
+            "variabele kosten",
+            "vaste kosten",
+            "toegevoegde waarde",
+            "brutowinst"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Huur blijft gelijk, ongeacht hoeveel je produceert: een vast kostenpost."
+        },
+        {
+          "vraag": "Grondstofkosten zijn een voorbeeld van...",
+          "opties": [
+            "vaste kosten",
+            "variabele kosten",
+            "toegevoegde waarde",
+            "omzet"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Grondstofkosten veranderen mee met de hoeveelheid die je produceert: variabele kosten."
+        },
+        {
+          "vraag": "Hoe bereken je brutowinst?",
+          "opties": [
+            "Omzet + inkoopwaarde",
+            "Omzet − inkoopwaarde",
+            "Inkoopwaarde − omzet",
+            "Omzet × inkoopwaarde"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Brutowinst = omzet − inkoopwaarde."
+        },
+        {
+          "vraag": "Wat is arbeidsproductiviteit?",
+          "opties": [
+            "Het aantal werknemers",
+            "De productie per persoon in een bepaalde tijd",
+            "De maximale productie van een bedrijf",
+            "Het salaris per werknemer"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Arbeidsproductiviteit is de productie per persoon in een bepaalde tijd."
+        },
+        {
+          "vraag": "Een bedrijf dat bij zijn productie rekening houdt met mens en milieu, doet aan...",
+          "opties": [
+            "kartelvorming",
+            "maatschappelijk verantwoord ondernemen",
+            "prijsdiscriminatie",
+            "marktwerking"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Dat is de definitie van maatschappelijk verantwoord ondernemen (mvo)."
+        },
+        {
+          "vraag": "Wanneer is er sprake van de evenwichtsprijs?",
+          "opties": [
+            "Als het aanbod groter is dan de vraag",
+            "Als de vraag groter is dan het aanbod",
+            "Als vraag en aanbod gelijk zijn",
+            "Als de overheid de prijs vaststelt"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "De evenwichtsprijs ontstaat wanneer vraag en aanbod precies gelijk zijn."
+        },
+        {
+          "vraag": "Wat gebeurt er met de vraag als de prijs van een product stijgt?",
+          "opties": [
+            "De vraag stijgt",
+            "De vraag daalt meestal",
+            "De vraag blijft altijd gelijk",
+            "De vraag verdwijnt volledig"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Bij een hogere prijs neemt de vraag meestal af."
+        },
+        {
+          "vraag": "Op een transparante markt kun je...",
+          "opties": [
+            "nooit prijzen vergelijken",
+            "producten en prijzen goed met elkaar vergelijken",
+            "alleen bij één aanbieder kopen",
+            "geen producten terugsturen"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Een transparante markt maakt het makkelijk om producten en prijzen te vergelijken."
+        },
+        {
+          "vraag": "Twee bedrijven gaan samen verder als één nieuw bedrijf. Dit heet...",
+          "opties": [
+            "een kartel",
+            "een fusie",
+            "een monopolie",
+            "privatisering"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Bij een fusie vormen twee bedrijven samen één nieuw bedrijf."
+        },
+        {
+          "vraag": "Een markt met veel aanbieders van producten die niet van elkaar verschillen, is een voorbeeld van...",
+          "opties": [
+            "monopolie",
+            "oligopolie",
+            "volkomen concurrentie",
+            "monopolistische concurrentie"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "Volkomen concurrentie is een marktvorm met veel aanbieders van homogene (identieke) goederen."
+        },
+        {
+          "vraag": "De smartphonemarkt, met een klein aantal grote merken die onderling verschillende producten aanbieden, is een voorbeeld van...",
+          "opties": [
+            "monopolie",
+            "oligopolie",
+            "volkomen concurrentie",
+            "een kartel"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Een klein aantal aanbieders van (vaak heterogene) producten is een oligopolie."
+        },
+        {
+          "vraag": "Wat is een kartel?",
+          "opties": [
+            "Een fusie tussen twee bedrijven",
+            "Een verboden afspraak tussen bedrijven om concurrentie te beperken",
+            "Een overheidsmonopolie",
+            "Een vorm van maatschappelijk verantwoord ondernemen"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Een kartel is een verboden afspraak tussen bedrijven om de onderlinge concurrentie te beperken."
+        }
+      ]
+    },
+    {
+      "titel": "Werk aan de winkel!",
+      "uitleg": "<div class='box'><h4>Waar dit hoofdstuk over gaat</h4><p>Straks ga jij ook werken, misschien in loondienst of als ondernemer. Je leert waarom mensen werken, welke ondernemingsvormen er zijn, hoe de arbeidsmarkt werkt en waarom er werkloosheid kan ontstaan.</p></div>",
+      "subhoofdstukken": [
+        {
+          "titel": "4.1 Sta je sterk in je werk?",
+          "uitleg": "<div class='box'><h4>Werk je voor het geld?</h4><p>Geld verdienen is een belangrijke reden om te willen werken. Maar er zijn meer <b>arbeidsmotieven</b>: behoefte aan sociale contacten, nuttig en zinvol bezig zijn, regelmaat in je leven hebben en nieuwe dingen leren.</p><p>Veel mensen doen daarom onbetaald werk, ook wel grijs werk genoemd: werk in het eigen huishouden, vrijwilligerswerk of mantelzorg. Wie zwart werkt, heeft geen arbeidscontract en betaalt geen belasting of sociale premies over het loon dat hij ontvangt — dat is strafbaar. Is werk helemaal niet geregistreerd, dan werk je in de informele sector.</p></div><div class='box'><h4>Bescherming van werknemers</h4><p>De <b>Algemene wet gelijke behandeling</b> verbiedt het om onderscheid te maken op basis van leeftijd, gender, afkomst, religie en seksuele geaardheid. In de <b>cao</b> (collectieve arbeidsovereenkomst) staan de afspraken per bedrijfstak over de arbeidsvoorwaarden. Iedereen vanaf 21 jaar moet in een voltijdbaan minstens het <b>minimumloon</b> verdienen.</p></div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Arbeidsmotieven zijn breder dan alleen geld: sociale contacten, zingeving, regelmaat, leren.</li><li>Zwart werk en de informele sector zijn niet geregistreerd bij de Belastingdienst.</li><li>De cao regelt arbeidsvoorwaarden per bedrijfstak; het minimumloon geldt vanaf 21 jaar.</li></ul></div>"
+        },
+        {
+          "titel": "4.2 Waar kun je werken?",
+          "uitleg": "<div class='box'><h4>In loondienst of voor jezelf</h4><p>Een <b>vaste baan</b> is een arbeidsovereenkomst voor onbepaalde tijd, zonder einddatum. Bij een <b>flexibele baan</b> heb je alleen werk wanneer een bedrijf je nodig heeft.</p><p>Een <b>zelfstandige</b> is iemand die met een eigen bedrijf zijn inkomen verdient; een <b>zzp'er</b> is een zelfstandige zonder personeel.</p></div><div class='box'><h4>Ondernemingsvormen</h4><div class='tblwrap'><table class='tbl'><tr><th>Vorm</th><th>Uitleg</th></tr><tr><td>Eenmanszaak</td><td>Onderneming met één eigenaar</td></tr><tr><td>Vof (vennootschap onder firma)</td><td>Meerdere eigenaren die samen de leiding hebben</td></tr><tr><td>Bv (besloten vennootschap)</td><td>Eén of meer eigenaren als aandeelhouder; de aandelen worden niet vrij verhandeld</td></tr><tr><td>Nv (naamloze vennootschap)</td><td>Meerdere eigenaren als aandeelhouder; de aandelen worden verhandeld op de effectenbeurs</td></tr><tr><td>Stichting</td><td>Instelling voor een maatschappelijk of ideëel doel, niet gericht op winst</td></tr></table></div><p>Aandeelhouders van een bv of nv kunnen <b>dividend</b> ontvangen: de winstuitkering aan hen.</p></div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Vaste baan: onbepaalde tijd. Flexibele baan: alleen als het bedrijf je nodig heeft.</li><li>Ondernemingsvormen: eenmanszaak, vof, bv, nv, stichting — elk met eigen eigenaarschap.</li><li>Dividend is de winstuitkering aan aandeelhouders van een bv of nv.</li></ul></div>"
+        },
+        {
+          "titel": "4.3 Kun je aan het werk?",
+          "uitleg": "<div class='box'><h4>Vraag en aanbod van arbeid</h4><p>De <b>arbeidsmarkt</b> is het geheel van vraag naar arbeid en aanbod van arbeid. Het aanbod van arbeid komt van werkenden en werkzoekenden (de beroepsbevolking); de vraag naar arbeid komt van werkgevers. <b>Loon</b> is de prijs voor arbeid.</p><p>Is de vraag naar arbeid groter dan het aanbod, dan spreek je van een <b>krappe arbeidsmarkt</b>: werkgevers hebben dan moeite om personeel te vinden.</p></div><div class='box'><h4>Werk en werkloosheid</h4><p>De <b>werkgelegenheid</b> is alle banen die er zijn. <b>Werkloosheid</b> ontstaat als het aanbod van arbeid groter is dan de vraag. Je bent <b>geregistreerd werkloos</b> als je als werkloze ingeschreven staat bij het UWV; ben je dat niet, terwijl er geen werk voor je is, dan ben je <b>verborgen werkloos</b>.</p></div><div class='call'>De <b>arbeidsparticipatie</b> is het percentage van de bevolking dat werkt of wil werken. <b>Arbeidsverdeling</b> houdt in dat personen of bedrijven werk doen waarin zij gespecialiseerd zijn.</div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Arbeidsmarkt = vraag naar arbeid (werkgevers) + aanbod van arbeid (beroepsbevolking).</li><li>Krappe arbeidsmarkt: vraag groter dan aanbod.</li><li>Geregistreerd werkloos: ingeschreven bij het UWV. Verborgen werkloos: niet ingeschreven, wel zonder werk.</li></ul></div>"
+        },
+        {
+          "titel": "4.4 Werk voor iedereen?",
+          "uitleg": "<div class='box'><h4>Verschillende soorten werkloosheid</h4><p>Werkloosheid heeft niet altijd dezelfde oorzaak:</p></div><div class='tblwrap'><table class='tbl'><tr><th>Soort werkloosheid</th><th>Oorzaak</th></tr><tr><td>Conjuncturele werkloosheid</td><td>Minder vraag naar goederen en diensten door afnemende bestedingen</td></tr><tr><td>Frictiewerkloosheid</td><td>Kortdurende werkloosheid, omdat er tijd nodig is om een nieuwe baan te vinden</td></tr><tr><td>Structurele werkloosheid</td><td>Gevolg van problemen aan de aanbodkant van de economie, bijvoorbeeld automatisering</td></tr><tr><td>Seizoenwerkloosheid</td><td>Werk kan alleen in een deel van het jaar gedaan worden</td></tr><tr><td>Regionale werkloosheid</td><td>In bepaalde gebieden hoger dan gemiddeld in het land</td></tr></table></div><div class='call warn'><b>Veelgemaakte fout:</b> denk niet dat alle werkloosheid dezelfde oplossing vraagt. Conjuncturele werkloosheid vraagt om meer bestedingen; structurele werkloosheid vraagt vaak om omscholing, omdat de oorzaak niet vanzelf verdwijnt.</div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Vijf soorten werkloosheid: conjunctureel, frictie, structureel, seizoen en regionaal.</li><li>Elke soort heeft een eigen oorzaak, en dus mogelijk een eigen oplossing.</li></ul></div>"
+        }
+      ],
+      "begrippen": [
+        {
+          "term": "Arbeidsmotieven",
+          "uitleg": "Redenen om te willen werken.",
+          "paragraaf": "4.1 Sta je sterk in je werk?"
+        },
+        {
+          "term": "Algemene wet gelijke behandeling",
+          "uitleg": "Wet die het verbiedt om onderscheid te maken op basis van leeftijd, gender, afkomst, religie en seksuele geaardheid.",
+          "paragraaf": "4.1 Sta je sterk in je werk?"
+        },
+        {
+          "term": "Cao",
+          "uitleg": "Collectieve arbeidsovereenkomst. Afspraken per bedrijfstak over de arbeidsvoorwaarden.",
+          "paragraaf": "4.1 Sta je sterk in je werk?"
+        },
+        {
+          "term": "Minimumloon",
+          "uitleg": "Het loon dat je vanaf 21 jaar minstens moet verdienen in een voltijdbaan.",
+          "paragraaf": "4.1 Sta je sterk in je werk?"
+        },
+        {
+          "term": "Vaste baan",
+          "uitleg": "Een arbeidsovereenkomst voor onbepaalde tijd, dus zonder einddatum.",
+          "paragraaf": "4.2 Waar kun je werken?"
+        },
+        {
+          "term": "Flexibele baan",
+          "uitleg": "Je hebt alleen werk wanneer een bedrijf je nodig heeft.",
+          "paragraaf": "4.2 Waar kun je werken?"
+        },
+        {
+          "term": "Zelfstandige",
+          "uitleg": "Iemand die met een eigen bedrijf zijn inkomen verdient.",
+          "paragraaf": "4.2 Waar kun je werken?"
+        },
+        {
+          "term": "Zzp'er",
+          "uitleg": "Zelfstandige zonder personeel.",
+          "paragraaf": "4.2 Waar kun je werken?"
+        },
+        {
+          "term": "Eenmanszaak",
+          "uitleg": "Onderneming met één eigenaar.",
+          "paragraaf": "4.2 Waar kun je werken?"
+        },
+        {
+          "term": "Vof",
+          "uitleg": "Vennootschap onder firma. Een onderneming met meerdere eigenaren die samen de leiding hebben.",
+          "paragraaf": "4.2 Waar kun je werken?"
+        },
+        {
+          "term": "Bv",
+          "uitleg": "Besloten vennootschap. Onderneming met één of meer eigenaren die aandeelhouder zijn; de aandelen worden niet vrij verhandeld.",
+          "paragraaf": "4.2 Waar kun je werken?"
+        },
+        {
+          "term": "Nv",
+          "uitleg": "Naamloze vennootschap. Onderneming met meerdere eigenaren die aandeelhouder zijn; de aandelen worden verhandeld op de effectenbeurs.",
+          "paragraaf": "4.2 Waar kun je werken?"
+        },
+        {
+          "term": "Stichting",
+          "uitleg": "Instelling die opgericht is om een maatschappelijk of ideëel doel te realiseren en die niet op winst gericht is.",
+          "paragraaf": "4.2 Waar kun je werken?"
+        },
+        {
+          "term": "Dividend",
+          "uitleg": "De winstuitkering van een bv of nv aan de aandeelhouders.",
+          "paragraaf": "4.2 Waar kun je werken?"
+        },
+        {
+          "term": "Arbeidsmarkt",
+          "uitleg": "Het geheel van vraag naar arbeid en aanbod van arbeid.",
+          "paragraaf": "4.3 Kun je aan het werk?"
+        },
+        {
+          "term": "Krappe arbeidsmarkt",
+          "uitleg": "De vraag naar arbeid is groter dan het aanbod.",
+          "paragraaf": "4.3 Kun je aan het werk?"
+        },
+        {
+          "term": "Loon",
+          "uitleg": "De prijs voor arbeid.",
+          "paragraaf": "4.3 Kun je aan het werk?"
+        },
+        {
+          "term": "Werkgelegenheid",
+          "uitleg": "Alle banen die er zijn.",
+          "paragraaf": "4.3 Kun je aan het werk?"
+        },
+        {
+          "term": "Werkloosheid",
+          "uitleg": "Het aanbod van arbeid is groter dan de vraag.",
+          "paragraaf": "4.3 Kun je aan het werk?"
+        },
+        {
+          "term": "Arbeidsparticipatie",
+          "uitleg": "Arbeidsdeelname. Het percentage van de bevolking dat werkt of wil werken.",
+          "paragraaf": "4.3 Kun je aan het werk?"
+        },
+        {
+          "term": "Arbeidsverdeling",
+          "uitleg": "Personen of bedrijven doen werk waarin zij gespecialiseerd zijn.",
+          "paragraaf": "4.3 Kun je aan het werk?"
+        },
+        {
+          "term": "Conjuncturele werkloosheid",
+          "uitleg": "Werkloosheid die het gevolg is van minder vraag naar goederen en diensten door afnemende bestedingen.",
+          "paragraaf": "4.4 Werk voor iedereen?"
+        },
+        {
+          "term": "Frictiewerkloosheid",
+          "uitleg": "Kortdurende werkloosheid omdat er tijd nodig is om een nieuwe baan te vinden.",
+          "paragraaf": "4.4 Werk voor iedereen?"
+        },
+        {
+          "term": "Structurele werkloosheid",
+          "uitleg": "Werkloosheid als gevolg van problemen aan de aanbodkant van de economie.",
+          "paragraaf": "4.4 Werk voor iedereen?"
+        },
+        {
+          "term": "Seizoenwerkloosheid",
+          "uitleg": "Werkloosheid doordat werk alleen in een deel van het jaar gedaan kan worden.",
+          "paragraaf": "4.4 Werk voor iedereen?"
+        },
+        {
+          "term": "Regionale werkloosheid",
+          "uitleg": "Werkloosheid die in bepaalde gebieden hoger is dan gemiddeld in het land.",
+          "paragraaf": "4.4 Werk voor iedereen?"
+        }
+      ],
+      "flashcards": [
+        {
+          "vraag": "Noem drie arbeidsmotieven naast geld.",
+          "antwoord": "Bijvoorbeeld sociale contacten, nuttig bezig zijn en regelmaat in je leven.",
+          "paragraaf": "4.1 Sta je sterk in je werk?"
+        },
+        {
+          "vraag": "Wat verbiedt de Algemene wet gelijke behandeling?",
+          "antwoord": "Onderscheid maken op basis van leeftijd, gender, afkomst, religie of seksuele geaardheid.",
+          "paragraaf": "4.1 Sta je sterk in je werk?"
+        },
+        {
+          "vraag": "Wat staat er in een cao?",
+          "antwoord": "Afspraken per bedrijfstak over de arbeidsvoorwaarden.",
+          "paragraaf": "4.1 Sta je sterk in je werk?"
+        },
+        {
+          "vraag": "Wat is het verschil tussen een vaste en een flexibele baan?",
+          "antwoord": "Een vaste baan is voor onbepaalde tijd; bij een flexibele baan werk je alleen als het bedrijf je nodig heeft.",
+          "paragraaf": "4.2 Waar kun je werken?"
+        },
+        {
+          "vraag": "Wat is het verschil tussen een bv en een nv?",
+          "antwoord": "Bij een bv worden de aandelen niet vrij verhandeld; bij een nv wel, op de effectenbeurs.",
+          "paragraaf": "4.2 Waar kun je werken?"
+        },
+        {
+          "vraag": "Wat is een stichting?",
+          "antwoord": "Een instelling voor een maatschappelijk of ideëel doel, die niet op winst gericht is.",
+          "paragraaf": "4.2 Waar kun je werken?"
+        },
+        {
+          "vraag": "Wat is dividend?",
+          "antwoord": "De winstuitkering van een bv of nv aan de aandeelhouders.",
+          "paragraaf": "4.2 Waar kun je werken?"
+        },
+        {
+          "vraag": "Wat is de arbeidsmarkt?",
+          "antwoord": "Het geheel van vraag naar arbeid (werkgevers) en aanbod van arbeid (beroepsbevolking).",
+          "paragraaf": "4.3 Kun je aan het werk?"
+        },
+        {
+          "vraag": "Wat is een krappe arbeidsmarkt?",
+          "antwoord": "Een arbeidsmarkt waarbij de vraag naar arbeid groter is dan het aanbod.",
+          "paragraaf": "4.3 Kun je aan het werk?"
+        },
+        {
+          "vraag": "Wat is het verschil tussen geregistreerd en verborgen werkloos?",
+          "antwoord": "Geregistreerd werkloos ben je als je ingeschreven staat bij het UWV; verborgen werkloos ben je als je dat niet bent, terwijl er geen werk voor je is.",
+          "paragraaf": "4.3 Kun je aan het werk?"
+        },
+        {
+          "vraag": "Wat is conjuncturele werkloosheid?",
+          "antwoord": "Werkloosheid door minder vraag naar goederen en diensten door afnemende bestedingen.",
+          "paragraaf": "4.4 Werk voor iedereen?"
+        },
+        {
+          "vraag": "Wat is structurele werkloosheid?",
+          "antwoord": "Werkloosheid als gevolg van blijvende problemen aan de aanbodkant van de economie.",
+          "paragraaf": "4.4 Werk voor iedereen?"
+        },
+        {
+          "vraag": "Wat is frictiewerkloosheid?",
+          "antwoord": "Kortdurende werkloosheid omdat er tijd nodig is om een nieuwe baan te vinden.",
+          "paragraaf": "4.4 Werk voor iedereen?"
+        }
+      ],
+      "quiz": [
+        {
+          "vraag": "Welke van de volgende is geen arbeidsmotief?",
+          "opties": [
+            "Geld verdienen",
+            "Sociale contacten",
+            "Belasting ontduiken",
+            "Nieuwe dingen leren"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "Belasting ontduiken is geen reden om te willen werken, maar een vorm van fraude."
+        },
+        {
+          "vraag": "Wat verbiedt de Algemene wet gelijke behandeling?",
+          "opties": [
+            "Onderscheid op basis van leeftijd, gender, afkomst, religie of seksuele geaardheid",
+            "Het geven van ontslag",
+            "Het aanbieden van een tijdelijk contract",
+            "Het betalen van het minimumloon"
+          ],
+          "antwoord_index": 0,
+          "uitleg": "De wet verbiedt discriminatie op deze gronden bij bijvoorbeeld solliciteren."
+        },
+        {
+          "vraag": "Wat is een vaste baan?",
+          "opties": [
+            "Een baan met een vast aantal uren per week",
+            "Een arbeidsovereenkomst voor onbepaalde tijd",
+            "Een baan bij de overheid",
+            "Een baan zonder cao"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Een vaste baan is een arbeidsovereenkomst voor onbepaalde tijd, zonder einddatum."
+        },
+        {
+          "vraag": "Bij welke ondernemingsvorm worden de aandelen verhandeld op de effectenbeurs?",
+          "opties": [
+            "Eenmanszaak",
+            "Vof",
+            "Bv",
+            "Nv"
+          ],
+          "antwoord_index": 3,
+          "uitleg": "Bij een nv (naamloze vennootschap) worden de aandelen vrij verhandeld op de effectenbeurs."
+        },
+        {
+          "vraag": "Wat is een stichting?",
+          "opties": [
+            "Een onderneming gericht op winst",
+            "Een instelling voor een maatschappelijk of ideëel doel, niet gericht op winst",
+            "Een vorm van een eenmanszaak",
+            "Een overheidsinstelling"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Een stichting is niet op winst gericht, maar op een maatschappelijk of ideëel doel."
+        },
+        {
+          "vraag": "Wat ontvangen aandeelhouders van een bv of nv als winstuitkering?",
+          "opties": [
+            "Rente",
+            "Dividend",
+            "Loon",
+            "Subsidie"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Dividend is de winstuitkering aan aandeelhouders."
+        },
+        {
+          "vraag": "Waar komt de vraag naar arbeid vandaan?",
+          "opties": [
+            "Van werkzoekenden",
+            "Van werkgevers",
+            "Van het UWV",
+            "Van vakbonden"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Werkgevers vragen arbeid; de beroepsbevolking biedt arbeid aan."
+        },
+        {
+          "vraag": "Wat is een krappe arbeidsmarkt?",
+          "opties": [
+            "Het aanbod van arbeid is groter dan de vraag",
+            "De vraag naar arbeid is groter dan het aanbod",
+            "Er is helemaal geen werkloosheid meer",
+            "Alle banen zijn flexibel"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Bij een krappe arbeidsmarkt is de vraag naar arbeid groter dan het aanbod: werkgevers hebben moeite personeel te vinden."
+        },
+        {
+          "vraag": "Je bent werkloos, maar staat niet ingeschreven bij het UWV. Je bent dan...",
+          "opties": [
+            "geregistreerd werkloos",
+            "verborgen werkloos",
+            "structureel werkloos",
+            "niet werkloos volgens de definitie"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Ben je werkloos zonder ingeschreven te staan bij het UWV, dan ben je verborgen werkloos."
+        },
+        {
+          "vraag": "Door een economische crisis dalen de bestedingen en neemt de werkloosheid toe. Dit heet...",
+          "opties": [
+            "frictiewerkloosheid",
+            "seizoenwerkloosheid",
+            "conjuncturele werkloosheid",
+            "regionale werkloosheid"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "Conjuncturele werkloosheid ontstaat door minder vraag naar goederen en diensten door afnemende bestedingen."
+        },
+        {
+          "vraag": "Werkloosheid in de ijsverkoop buiten de zomermaanden is een voorbeeld van...",
+          "opties": [
+            "structurele werkloosheid",
+            "seizoenwerkloosheid",
+            "conjuncturele werkloosheid",
+            "frictiewerkloosheid"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Seizoenwerkloosheid ontstaat doordat werk alleen in een deel van het jaar gedaan kan worden."
+        },
+        {
+          "vraag": "Je bent net afgestudeerd en zoekt nog een paar weken naar een baan. Dit heet...",
+          "opties": [
+            "structurele werkloosheid",
+            "frictiewerkloosheid",
+            "conjuncturele werkloosheid",
+            "regionale werkloosheid"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Frictiewerkloosheid is kortdurende werkloosheid omdat er tijd nodig is om een nieuwe baan te vinden."
+        }
+      ]
+    },
+    {
+      "titel": "Hoe werkt de overheid?",
+      "uitleg": "<div class='box'><h4>Waar dit hoofdstuk over gaat</h4><p>De overheid speelt een grote rol in de economie. Je leert wat de overheid doet naast burgers en bedrijven, hoe economen de economie meten en volgen, hoe sociaal Nederland is geregeld, en waar de overheid haar geld vandaan haalt en aan uitgeeft.</p></div>",
+      "subhoofdstukken": [
+        {
+          "titel": "5.1 Overheid, burgers en bedrijven",
+          "uitleg": "<div class='box'><h4>Twee sectoren</h4><p>De <b>collectieve sector</b> bestaat uit de overheid en de instellingen voor de sociale zekerheid. De <b>particuliere sector</b> bestaat uit alle burgers en bedrijven.</p></div><div class='box'><h4>Marktwerking en privatisering</h4><p>Bij <b>marktwerking</b> concurreren aanbieders van producten met elkaar op kwaliteit en prijs. Vindt de overheid dat een taak beter door de particuliere sector uitgevoerd kan worden? Dan verkoopt ze zo'n dienst of activiteit aan een particulier bedrijf: dit heet <b>privatisering</b>.</p></div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Collectieve sector = overheid + sociale zekerheid. Particuliere sector = burgers + bedrijven.</li><li>Marktwerking laat aanbieders concurreren; bij privatisering verkoopt de overheid een taak aan een particulier bedrijf.</li></ul></div>"
+        },
+        {
+          "titel": "5.2 De overheid en de economie",
+          "uitleg": "<div class='box'><h4>Hoe meet je de economie?</h4><p>Het <b>bbp</b> (bruto binnenlands product) is de totale waarde van alle goederen en diensten die in een land geproduceerd zijn. Stijgt het bbp, dan is er <b>economische groei</b>: een toename van de totale productie in een land.</p><p>Is de economische groei tijdens twee kwartalen achter elkaar lager dan in de voorgaande periode én lager dan gemiddeld? Dan spreek je van een <b>recessie</b>. Krimpt het bbp, of houdt een recessie langere tijd aan, dan is er een <b>economische crisis</b>.</p></div><div class='box'><h4>Wie geeft advies?</h4><p>Het <b>CPB</b> (Centraal Planbureau) onderzoekt de mogelijke gevolgen van economische maatregelen van de overheid. De <b>SER</b> (Sociaal-Economische Raad) adviseert de regering over sociaaleconomische onderwerpen, zoals werkgelegenheid, lonen, uitkeringen en pensioenen.</p></div><div class='box'><h4>Wie bepaalt de prijzen?</h4><p>In een <b>vrijemarkteconomie</b> bepalen vraag en aanbod de prijzen, zonder dat de overheid ingrijpt met regels of wetgeving. In een <b>sociale markteconomie</b> bepalen vraag en aanbod ook de prijzen, maar kan de overheid ingrijpen om basisbehoeften betaalbaar te houden en iedereen een redelijk bestaan te garanderen — zo werkt het in Nederland. In een <b>planeconomie</b> bepaalt de overheid juist wat er geproduceerd wordt, hoeveel, door wie en tegen welke prijs.</p></div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Bbp meet de totale productie van een land; economische groei is een stijging van het bbp.</li><li>Recessie: twee kwartalen lagere groei op rij. Aanhoudende krimp = economische crisis.</li><li>Vrijemarkteconomie: geen overheidsingrijpen. Sociale markteconomie: overheid grijpt soms in (Nederland). Planeconomie: overheid bepaalt alles.</li></ul></div>"
+        },
+        {
+          "titel": "5.3 Zijn wij sociaal?",
+          "uitleg": "<div class='box'><h4>Een vangnet voor iedereen</h4><p>De overheid heeft een <b>sociaal minimum</b> vastgesteld: het bedrag dat je minimaal nodig hebt om van te leven. <b>Sociale verzekeringen</b> beschermen je tegen verlies van inkomen: volksverzekeringen zijn er voor iedere inwoner (zoals de AOW), werknemersverzekeringen voor mensen die in loondienst werken of hebben gewerkt (zoals de WW). <b>Sociale voorzieningen</b> zijn uitkeringen die de overheid met belastinggeld betaalt, zoals de bijstand.</p></div><div class='box'><h4>Solidariteit</h4><p>Bij het <b>solidariteitsbeginsel</b> staat iedereen met een inkomen een deel daarvan af voor mensen die zelf geen inkomen kunnen verdienen. Door de sociale zekerheid en voorzieningen is Nederland een <b>verzorgingsstaat</b>: een land waarin de overheid zorgt voor goede sociale zekerheid, gezondheidszorg, huisvesting en onderwijs voor iedere burger.</p></div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Sociale verzekeringen: volksverzekeringen (iedereen) en werknemersverzekeringen (werknemers).</li><li>Sociale voorzieningen worden betaald uit belastinggeld.</li><li>Solidariteitsbeginsel: actieven dragen bij aan inkomen voor wie dat zelf niet kan.</li></ul></div>"
+        },
+        {
+          "titel": "5.4 Geld genoeg?",
+          "uitleg": "<div class='box'><h4>De rijksbegroting</h4><p>De <b>rijksbegroting</b> is de verwachte inkomsten en uitgaven van het rijk in het komende jaar. Zijn de verwachte inkomsten hoger dan de verwachte uitgaven, dan is er een begrotingsoverschot; zijn de verwachte uitgaven hoger, dan is er een begrotingstekort. In de <b>Miljoenennota</b> legt de regering uit welke keuzes zij daarbij maakt.</p><p>Moet de overheid geld tekortkomen lenen, dan ontstaat in de loop der jaren de <b>staatsschuld</b>: schuld van de overheid door te lenen in alle jaren met een begrotingstekort.</p></div><div class='box'><h4>Waar komt het geld vandaan?</h4><p><b>Directe belastingen</b> betaal je rechtstreeks aan de overheid, zoals de inkomstenbelasting. <b>Indirecte belastingen</b> zitten verwerkt in de prijs van een product, zoals btw en accijns. De belangrijkste gemeentelijke belasting is de <b>ozb</b> (onroerendezaakbelasting), die je als woningeigenaar aan de gemeente betaalt.</p></div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Begrotingsoverschot: inkomsten hoger dan uitgaven. Begrotingstekort: andersom.</li><li>De Miljoenennota licht de keuzes in de rijksbegroting toe.</li><li>Directe belastingen gaan rechtstreeks naar de overheid; indirecte belastingen zitten in de prijs.</li></ul></div>"
+        }
+      ],
+      "begrippen": [
+        {
+          "term": "Collectieve sector",
+          "uitleg": "De overheid en de instellingen voor de sociale zekerheid.",
+          "paragraaf": "5.1 Overheid, burgers en bedrijven"
+        },
+        {
+          "term": "Particuliere sector",
+          "uitleg": "Alle burgers en bedrijven.",
+          "paragraaf": "5.1 Overheid, burgers en bedrijven"
+        },
+        {
+          "term": "Marktwerking",
+          "uitleg": "Aanbieders van producten concurreren met elkaar op kwaliteit en prijs.",
+          "paragraaf": "5.1 Overheid, burgers en bedrijven"
+        },
+        {
+          "term": "Privatisering",
+          "uitleg": "De overheid verkoopt een dienst of activiteit aan de particuliere sector.",
+          "paragraaf": "5.1 Overheid, burgers en bedrijven"
+        },
+        {
+          "term": "Bbp",
+          "uitleg": "Bruto binnenlands product. De totale waarde van alle geproduceerde goederen en diensten in een land.",
+          "paragraaf": "5.2 De overheid en de economie"
+        },
+        {
+          "term": "Economische groei",
+          "uitleg": "Toename van de totale productie in een land, een stijging van het bbp.",
+          "paragraaf": "5.2 De overheid en de economie"
+        },
+        {
+          "term": "Recessie",
+          "uitleg": "De economische groei is tijdens twee kwartalen lager dan in de voorgaande periode en lager dan gemiddeld.",
+          "paragraaf": "5.2 De overheid en de economie"
+        },
+        {
+          "term": "Economische crisis",
+          "uitleg": "Het bbp krimpt of een recessie houdt langere tijd aan.",
+          "paragraaf": "5.2 De overheid en de economie"
+        },
+        {
+          "term": "CPB",
+          "uitleg": "Centraal Planbureau. Onderzoekt de mogelijke gevolgen van economische maatregelen van de overheid.",
+          "paragraaf": "5.2 De overheid en de economie"
+        },
+        {
+          "term": "SER",
+          "uitleg": "Sociaal-Economische Raad. Adviseert de regering over sociaaleconomische onderwerpen zoals werkgelegenheid, lonen, uitkeringen en pensioenen.",
+          "paragraaf": "5.2 De overheid en de economie"
+        },
+        {
+          "term": "Vrijemarkteconomie",
+          "uitleg": "Economie waarin vraag en aanbod de prijzen bepalen en de overheid niet ingrijpt met regels of wetgeving.",
+          "paragraaf": "5.2 De overheid en de economie"
+        },
+        {
+          "term": "Sociale markteconomie",
+          "uitleg": "Economie waarin vraag en aanbod de prijzen bepalen, maar de overheid kan ingrijpen om basisbehoeften betaalbaar te houden.",
+          "paragraaf": "5.2 De overheid en de economie"
+        },
+        {
+          "term": "Planeconomie",
+          "uitleg": "Economie waarin de overheid bepaalt wat er geproduceerd wordt, hoeveel, door wie en tegen welke prijs.",
+          "paragraaf": "5.2 De overheid en de economie"
+        },
+        {
+          "term": "Sociaal minimum",
+          "uitleg": "Een door de overheid vastgesteld bedrag dat je minimaal nodig hebt om van te leven.",
+          "paragraaf": "5.3 Zijn wij sociaal?"
+        },
+        {
+          "term": "Sociale verzekeringen",
+          "uitleg": "Uitkeringen die je beschermen tegen verlies van inkomen: volksverzekeringen (voor iedereen) en werknemersverzekeringen (voor werknemers).",
+          "paragraaf": "5.3 Zijn wij sociaal?"
+        },
+        {
+          "term": "Sociale voorzieningen",
+          "uitleg": "Uitkeringen die de overheid betaalt met belastinggeld.",
+          "paragraaf": "5.3 Zijn wij sociaal?"
+        },
+        {
+          "term": "Solidariteitsbeginsel",
+          "uitleg": "Iedereen met een inkomen staat een deel daarvan af voor mensen die zelf geen inkomen kunnen verdienen.",
+          "paragraaf": "5.3 Zijn wij sociaal?"
+        },
+        {
+          "term": "Verzorgingsstaat",
+          "uitleg": "Land waarin de overheid zorgt voor goede sociale zekerheid, gezondheidszorg, huisvesting en onderwijs voor iedere burger.",
+          "paragraaf": "5.3 Zijn wij sociaal?"
+        },
+        {
+          "term": "Rijksbegroting",
+          "uitleg": "De verwachte inkomsten en uitgaven van het rijk in het komende jaar.",
+          "paragraaf": "5.4 Geld genoeg?"
+        },
+        {
+          "term": "Miljoenennota",
+          "uitleg": "Een toelichting op de rijksbegroting waarin de regering haar gemaakte keuzes uitlegt.",
+          "paragraaf": "5.4 Geld genoeg?"
+        },
+        {
+          "term": "Staatsschuld",
+          "uitleg": "Schuld van de overheid die is ontstaan door te lenen in alle jaren met een begrotingstekort.",
+          "paragraaf": "5.4 Geld genoeg?"
+        },
+        {
+          "term": "Directe belastingen",
+          "uitleg": "Belastingen die je rechtstreeks aan de overheid betaalt, zoals de inkomstenbelasting.",
+          "paragraaf": "5.4 Geld genoeg?"
+        },
+        {
+          "term": "Indirecte belastingen",
+          "uitleg": "Belastingen die verwerkt zijn in de prijs van een product, zoals accijns en btw.",
+          "paragraaf": "5.4 Geld genoeg?"
+        },
+        {
+          "term": "Ozb",
+          "uitleg": "Onroerendezaakbelasting. Een belasting die je als woningeigenaar aan de gemeente moet betalen.",
+          "paragraaf": "5.4 Geld genoeg?"
+        }
+      ],
+      "flashcards": [
+        {
+          "vraag": "Wat is het verschil tussen de collectieve en de particuliere sector?",
+          "antwoord": "De collectieve sector is de overheid en de sociale zekerheid; de particuliere sector is alle burgers en bedrijven.",
+          "paragraaf": "5.1 Overheid, burgers en bedrijven"
+        },
+        {
+          "vraag": "Wat is privatisering?",
+          "antwoord": "De overheid verkoopt een dienst of activiteit aan de particuliere sector.",
+          "paragraaf": "5.1 Overheid, burgers en bedrijven"
+        },
+        {
+          "vraag": "Wat is het bbp?",
+          "antwoord": "De totale waarde van alle goederen en diensten die in een land geproduceerd zijn.",
+          "paragraaf": "5.2 De overheid en de economie"
+        },
+        {
+          "vraag": "Wanneer is er sprake van een recessie?",
+          "antwoord": "Als de economische groei twee kwartalen op rij lager is dan in de voorgaande periode én lager dan gemiddeld.",
+          "paragraaf": "5.2 De overheid en de economie"
+        },
+        {
+          "vraag": "Wat doet het CPB?",
+          "antwoord": "Het onderzoekt de mogelijke gevolgen van economische maatregelen van de overheid.",
+          "paragraaf": "5.2 De overheid en de economie"
+        },
+        {
+          "vraag": "Waarover adviseert de SER?",
+          "antwoord": "Sociaaleconomische onderwerpen zoals werkgelegenheid, lonen, uitkeringen en pensioenen.",
+          "paragraaf": "5.2 De overheid en de economie"
+        },
+        {
+          "vraag": "Wat is het verschil tussen een vrijemarkteconomie en een sociale markteconomie?",
+          "antwoord": "Bij een vrijemarkteconomie grijpt de overheid niet in; bij een sociale markteconomie kan de overheid ingrijpen om basisbehoeften betaalbaar te houden.",
+          "paragraaf": "5.2 De overheid en de economie"
+        },
+        {
+          "vraag": "Wat is het sociaal minimum?",
+          "antwoord": "Het bedrag dat je minimaal nodig hebt om van te leven, vastgesteld door de overheid.",
+          "paragraaf": "5.3 Zijn wij sociaal?"
+        },
+        {
+          "vraag": "Wat is het verschil tussen sociale verzekeringen en sociale voorzieningen?",
+          "antwoord": "Sociale verzekeringen beschermen tegen inkomensverlies (volks- en werknemersverzekeringen); sociale voorzieningen worden betaald uit belastinggeld.",
+          "paragraaf": "5.3 Zijn wij sociaal?"
+        },
+        {
+          "vraag": "Wat is een verzorgingsstaat?",
+          "antwoord": "Een land waarin de overheid zorgt voor goede sociale zekerheid, gezondheidszorg, huisvesting en onderwijs voor iedere burger.",
+          "paragraaf": "5.3 Zijn wij sociaal?"
+        },
+        {
+          "vraag": "Wat staat er in de Miljoenennota?",
+          "antwoord": "Een toelichting op de rijksbegroting waarin de regering haar keuzes uitlegt.",
+          "paragraaf": "5.4 Geld genoeg?"
+        },
+        {
+          "vraag": "Wat is het verschil tussen directe en indirecte belastingen?",
+          "antwoord": "Directe belastingen betaal je rechtstreeks (zoals inkomstenbelasting); indirecte belastingen zitten in de prijs (zoals btw).",
+          "paragraaf": "5.4 Geld genoeg?"
+        },
+        {
+          "vraag": "Wie betaalt ozb?",
+          "antwoord": "Woningeigenaren, aan de gemeente.",
+          "paragraaf": "5.4 Geld genoeg?"
+        }
+      ],
+      "quiz": [
+        {
+          "vraag": "Wat hoort bij de collectieve sector?",
+          "opties": [
+            "Alleen bedrijven",
+            "De overheid en de instellingen voor sociale zekerheid",
+            "Alleen burgers",
+            "Alleen de EU"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "De collectieve sector bestaat uit de overheid en de instellingen voor de sociale zekerheid."
+        },
+        {
+          "vraag": "Wat is privatisering?",
+          "opties": [
+            "De overheid koopt een bedrijf",
+            "De overheid verkoopt een taak aan een particulier bedrijf",
+            "Bedrijven fuseren met elkaar",
+            "De overheid verlaagt belasting"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Bij privatisering verkoopt de overheid een dienst of activiteit aan de particuliere sector."
+        },
+        {
+          "vraag": "Wat meet het bbp?",
+          "opties": [
+            "De staatsschuld",
+            "De totale waarde van alle goederen en diensten geproduceerd in een land",
+            "Het aantal werklozen",
+            "De hoogte van de belastingen"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Het bbp (bruto binnenlands product) is de totale waarde van alle productie in een land."
+        },
+        {
+          "vraag": "Wanneer spreek je van economische groei?",
+          "opties": [
+            "Als het bbp daalt",
+            "Als het bbp stijgt",
+            "Als er een recessie is",
+            "Als de staatsschuld daalt"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Economische groei is een toename van de totale productie, dus een stijging van het bbp."
+        },
+        {
+          "vraag": "Wat is een recessie?",
+          "opties": [
+            "Eén kwartaal lagere groei",
+            "Twee kwartalen op rij lagere groei dan gemiddeld",
+            "Een jaar zonder groei",
+            "Een stijging van de staatsschuld"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Een recessie is twee kwartalen op rij lagere economische groei dan de voorgaande periode én lager dan gemiddeld."
+        },
+        {
+          "vraag": "Wat doet het CPB?",
+          "opties": [
+            "Het int belasting",
+            "Het onderzoekt gevolgen van economische overheidsmaatregelen",
+            "Het geeft uitkeringen",
+            "Het bepaalt de rente"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Het CPB (Centraal Planbureau) onderzoekt de mogelijke gevolgen van economische maatregelen."
+        },
+        {
+          "vraag": "In welk economisch systeem bepaalt de overheid wat, hoeveel en tegen welke prijs er geproduceerd wordt?",
+          "opties": [
+            "Vrijemarkteconomie",
+            "Sociale markteconomie",
+            "Planeconomie",
+            "Wereldeconomie"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "In een planeconomie bepaalt de overheid alles over de productie."
+        },
+        {
+          "vraag": "Nederland heeft een...",
+          "opties": [
+            "vrijemarkteconomie",
+            "sociale markteconomie",
+            "planeconomie",
+            "gesloten economie"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Nederland is een sociale markteconomie: vraag en aanbod bepalen de prijzen, maar de overheid kan ingrijpen."
+        },
+        {
+          "vraag": "De AOW is een voorbeeld van een...",
+          "opties": [
+            "werknemersverzekering",
+            "volksverzekering",
+            "sociale voorziening",
+            "indirecte belasting"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "De AOW is een volksverzekering: iedere inwoner heeft er recht op vanaf de pensioenleeftijd."
+        },
+        {
+          "vraag": "Wat houdt het solidariteitsbeginsel in?",
+          "opties": [
+            "Iedereen betaalt evenveel belasting",
+            "Wie een inkomen heeft, draagt bij aan inkomen voor wie dat zelf niet kan",
+            "Alleen de overheid betaalt uitkeringen",
+            "Uitkeringen worden geloot"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Bij solidariteit draagt iedereen met een inkomen bij aan mensen die zelf geen inkomen kunnen verdienen."
+        },
+        {
+          "vraag": "Wat staat er in de Miljoenennota?",
+          "opties": [
+            "De belastingaangifte van burgers",
+            "Een toelichting op de rijksbegroting",
+            "De cao-afspraken",
+            "De jaarcijfers van bedrijven"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "De Miljoenennota licht de keuzes in de rijksbegroting toe."
+        },
+        {
+          "vraag": "Btw is een voorbeeld van een...",
+          "opties": [
+            "directe belasting",
+            "indirecte belasting",
+            "sociale premie",
+            "ozb"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Btw zit verwerkt in de prijs van een product: een indirecte belasting."
+        }
+      ]
+    },
+    {
+      "titel": "Iedereen betaalt belasting",
+      "uitleg": "<div class='box'><h4>Waar dit hoofdstuk over gaat</h4><p>Belasting betalen doet iedereen met een inkomen. Je leert hoe de inkomstenbelasting werkt, hoeveel belasting je over inkomen en vermogen betaalt, hoe inkomens door de overheid herverdeeld worden en waarom niet alleen inkomstenbelasting de schatkist vult.</p></div>",
+      "subhoofdstukken": [
+        {
+          "titel": "6.1 Je inkomen wordt belast",
+          "uitleg": "<div class='box'><h4>Van inkomen naar belastbaar inkomen</h4><p>Iedereen betaalt over zijn privé-inkomen <b>inkomstenbelasting</b>. Deze belasting wordt niet berekend over je hele inkomen, maar over je <b>belastbaar inkomen</b>: het inkomen waar de belasting over berekend wordt.</p><p>Sommige bedragen tellen daarbij extra mee. Heb je bijvoorbeeld een auto van de zaak die je ook privé gebruikt, dan moet je daarvoor een <b>bijtelling</b> bij je inkomen optellen. Heb je een eigen huis, dan tel je het <b>eigenwoningforfait</b> bij je inkomen op.</p><p>Andere kosten mag je juist van je inkomen aftrekken: <b>aftrekposten</b>, zoals de hypotheekrente, zorgen dat je minder belasting hoeft te betalen.</p></div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Belastbaar inkomen = inkomen waarover de belasting berekend wordt.</li><li>Bijtelling en eigenwoningforfait verhogen je belastbaar inkomen; aftrekposten verlagen het.</li></ul></div>"
+        },
+        {
+          "titel": "6.2 Hoeveel belasting betaal je?",
+          "uitleg": "<div class='box'><h4>Belasting in box 1: het schijventarief</h4><p>De belasting over je werk en woning (box 1) bereken je met het <b>schijventarief</b>: je belastbaar inkomen is verdeeld over twee schijven, elk met een eigen belastingpercentage.</p><div class='tblwrap'><table class='tbl'><tr><th>Schijf</th><th>Belastbaar inkomen</th><th>Tarief</th></tr><tr><td>1</td><td>tot € 68.508</td><td>37,1%</td></tr><tr><td>2</td><td>vanaf € 68.508</td><td>49,5%</td></tr></table></div><div class='tbl'><b>Rekenvoorbeeld</b><br>Belastbaar inkomen: € 70.000.<br>1. € 68.508 valt in schijf 1, de rest in schijf 2: € 70.000 − € 68.508 = € 1.492<br>2. Belasting schijf 1: 37,1% × € 68.508 = € 25.416<br>Belasting schijf 2: 49,5% × € 1.492 = € 738<br>3. Totale belasting in box 1: € 25.416 + € 738 = € 26.154</div><p>Omdat het tarief in schijf 2 hoger is dan in schijf 1, betalen mensen met een hoger inkomen in verhouding meer belasting: dit heet een <b>progressief belastingtarief</b>. Op je belasting kun je nog een <b>heffingskorting</b> in mindering brengen.</p></div><div class='box'><h4>Belasting in box 3: vermogen</h4><p>Je <b>vermogen</b> is het totaal van al je spaargeld en beleggingen, na aftrek van je schulden. Het eerste deel van je vermogen is <b>heffingsvrij</b>: daarover betaal je geen belasting. Over de rest betaal je <b>vermogensrendementsheffing</b>: belasting in box 3 over het <b>fictief rendement</b> — het rendement dat je volgens de overheid hebt op je spaargeld of beleggingen, ook als je in werkelijkheid meer of minder rendement behaalt.</p></div><div class='call warn'><b>Veelgemaakte fout:</b> denk niet dat je in box 3 belasting betaalt over je werkelijke rendement. De overheid rekent met een fictief rendement, dat kan afwijken van wat je echt aan rente of koerswinst hebt ontvangen.</div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Schijventarief: hoe hoger je inkomen, hoe hoger het tarief over het extra deel (progressief).</li><li>Heffingskorting verlaagt de te betalen belasting.</li><li>Vermogensrendementsheffing (box 3) rekent met een fictief rendement over je vermogen boven het heffingsvrije deel.</li></ul></div>"
+        },
+        {
+          "titel": "6.3 Eerlijk zullen we alles delen?",
+          "uitleg": "<div class='box'><h4>Actieven en inactieven</h4><p>Mensen met betaald werk worden gerekend tot de <b>actieven</b>. Van hun inkomen staan zij een deel af in de vorm van premies en belasting. Een deel daarvan gaat als uitkering naar de <b>inactieven</b>: mensen zonder betaald werk die een uitkering ontvangen, bijvoorbeeld omdat ze arbeidsongeschikt, werkloos of boven de pensioenleeftijd zijn. Zo zorgt de overheid voor een herverdeling van de inkomens.</p><p>Om de sociale zekerheid betaalbaar te houden, is het belangrijk dat er genoeg actieven zijn die premie betalen. Of dat zo is, zie je aan de verhouding tussen inactieven en actieven (de i/a ratio).</p></div><div class='box'><h4>Nivellering en vergrijzing</h4><p>Worden de inkomensverschillen in verhouding kleiner, dan spreek je van <b>nivellering</b>; worden ze groter, dan is er sprake van <b>denivellering</b>.</p><p>Een belangrijk deel van de inactieven bestaat uit AOW'ers. Door <b>vergrijzing</b> neemt het aandeel ouderen in de totale bevolking toe en stijgt de gemiddelde leeftijd. Doordat er zo steeds meer AOW-gerechtigden zijn ten opzichte van het aantal premiebetalers, staat de betaalbaarheid van de AOW onder druk.</p></div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Actieven dragen premies en belasting af; inactieven ontvangen daarvan een uitkering.</li><li>Nivellering: inkomensverschillen worden kleiner. Denivellering: ze worden groter.</li><li>Vergrijzing vergroot het aandeel ouderen, wat de AOW onder druk zet.</li></ul></div>"
+        },
+        {
+          "titel": "6.4 Iedereen betaalt mee",
+          "uitleg": "<div class='box'><h4>Niet alleen inkomstenbelasting</h4><p>Bij de inkomstenbelasting past de overheid het <b>draagkrachtbeginsel</b> toe: wie in staat is veel te betalen, moet in verhouding ook meer betalen. Bij het <b>profijtbeginsel</b> betaal je juist voor het gebruik van goederen of diensten die de overheid levert, zoals de <b>motorrijtuigenbelasting</b> (wegenbelasting): belasting voor het bezit van een auto.</p></div><div class='box'><h4>Belastingontduiking</h4><p>De overheid heeft belastinginkomsten nodig om goed te kunnen functioneren. Toch betalen sommige mensen met opzet te weinig belasting, bijvoorbeeld door bij de belastingaangifte onjuiste informatie te geven. Dit noem je <b>belastingontduiking</b>, en het is strafbaar.</p></div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Draagkrachtbeginsel: betalen naar vermogen. Profijtbeginsel: betalen naar gebruik.</li><li>Belastingontduiking is het opzettelijk verkeerd informeren van de overheid, en is strafbaar.</li></ul></div>"
+        }
+      ],
+      "begrippen": [
+        {
+          "term": "Inkomstenbelasting",
+          "uitleg": "Belasting die iedereen over zijn privé-inkomen moet betalen.",
+          "paragraaf": "6.1 Je inkomen wordt belast"
+        },
+        {
+          "term": "Belastbaar inkomen",
+          "uitleg": "Het inkomen waar de belasting over berekend wordt.",
+          "paragraaf": "6.1 Je inkomen wordt belast"
+        },
+        {
+          "term": "Bijtelling",
+          "uitleg": "Bedrag dat je bij je inkomen moet optellen als je een auto van de zaak ook privé gebruikt.",
+          "paragraaf": "6.1 Je inkomen wordt belast"
+        },
+        {
+          "term": "Eigenwoningforfait",
+          "uitleg": "Bedrag dat je bij je inkomen moet optellen als je een eigen huis bezit.",
+          "paragraaf": "6.1 Je inkomen wordt belast"
+        },
+        {
+          "term": "Aftrekposten",
+          "uitleg": "Bepaalde kosten die je op je inkomen in mindering mag brengen, zoals de hypotheekrente.",
+          "paragraaf": "6.1 Je inkomen wordt belast"
+        },
+        {
+          "term": "Schijventarief",
+          "uitleg": "De twee tarieven waarmee je de belasting over je belastbaar inkomen berekent.",
+          "paragraaf": "6.2 Hoeveel belasting betaal je?"
+        },
+        {
+          "term": "Progressief belastingtarief",
+          "uitleg": "Het belastingpercentage wordt hoger naarmate het inkomen toeneemt.",
+          "paragraaf": "6.2 Hoeveel belasting betaal je?"
+        },
+        {
+          "term": "Heffingskorting",
+          "uitleg": "Een korting op het bedrag dat je aan inkomstenbelasting moet betalen.",
+          "paragraaf": "6.2 Hoeveel belasting betaal je?"
+        },
+        {
+          "term": "Vermogen",
+          "uitleg": "Het totaal van al je spaargeld en beleggingen na aftrek van je schulden.",
+          "paragraaf": "6.2 Hoeveel belasting betaal je?"
+        },
+        {
+          "term": "Heffingsvrij vermogen",
+          "uitleg": "Het eerste deel van je vermogen waarover je geen belasting hoeft te betalen.",
+          "paragraaf": "6.2 Hoeveel belasting betaal je?"
+        },
+        {
+          "term": "Vermogensrendementsheffing",
+          "uitleg": "Belasting in box 3 over inkomen uit vermogen, zoals spaargeld en beleggingen.",
+          "paragraaf": "6.2 Hoeveel belasting betaal je?"
+        },
+        {
+          "term": "Fictief rendement",
+          "uitleg": "Het rendement dat je volgens de overheid hebt op je spaargeld of beleggingen.",
+          "paragraaf": "6.2 Hoeveel belasting betaal je?"
+        },
+        {
+          "term": "Actieven",
+          "uitleg": "Mensen met betaald werk.",
+          "paragraaf": "6.3 Eerlijk zullen we alles delen?"
+        },
+        {
+          "term": "Inactieven",
+          "uitleg": "Mensen zonder betaald werk die een uitkering ontvangen, bijvoorbeeld omdat ze arbeidsongeschikt, werkloos of boven de pensioenleeftijd zijn.",
+          "paragraaf": "6.3 Eerlijk zullen we alles delen?"
+        },
+        {
+          "term": "Nivellering",
+          "uitleg": "De verschillen tussen de inkomens worden in verhouding kleiner.",
+          "paragraaf": "6.3 Eerlijk zullen we alles delen?"
+        },
+        {
+          "term": "Denivellering",
+          "uitleg": "De verschillen tussen de inkomens worden in verhouding groter.",
+          "paragraaf": "6.3 Eerlijk zullen we alles delen?"
+        },
+        {
+          "term": "Vergrijzing",
+          "uitleg": "Het aandeel ouderen in de totale bevolking neemt toe en de gemiddelde leeftijd van de bevolking stijgt.",
+          "paragraaf": "6.3 Eerlijk zullen we alles delen?"
+        },
+        {
+          "term": "Draagkrachtbeginsel",
+          "uitleg": "Degene die in staat is veel te betalen, moet in verhouding meer betalen.",
+          "paragraaf": "6.4 Iedereen betaalt mee"
+        },
+        {
+          "term": "Profijtbeginsel",
+          "uitleg": "Je betaalt voor het gebruik van goederen of diensten die de overheid levert.",
+          "paragraaf": "6.4 Iedereen betaalt mee"
+        },
+        {
+          "term": "Motorrijtuigenbelasting",
+          "uitleg": "Wegenbelasting. Belasting die je betaalt voor het bezit van een auto.",
+          "paragraaf": "6.4 Iedereen betaalt mee"
+        },
+        {
+          "term": "Belastingontduiking",
+          "uitleg": "Het opzettelijk verkeerd informeren van de overheid om minder belasting te hoeven betalen.",
+          "paragraaf": "6.4 Iedereen betaalt mee"
+        }
+      ],
+      "flashcards": [
+        {
+          "vraag": "Wat is het belastbaar inkomen?",
+          "antwoord": "Het inkomen waar de belasting over berekend wordt.",
+          "paragraaf": "6.1 Je inkomen wordt belast"
+        },
+        {
+          "vraag": "Wanneer krijg je een bijtelling?",
+          "antwoord": "Als je een auto van de zaak ook privé gebruikt.",
+          "paragraaf": "6.1 Je inkomen wordt belast"
+        },
+        {
+          "vraag": "Wat zijn aftrekposten?",
+          "antwoord": "Kosten die je van je inkomen mag aftrekken, zoals de hypotheekrente, zodat je minder belasting betaalt.",
+          "paragraaf": "6.1 Je inkomen wordt belast"
+        },
+        {
+          "vraag": "Wat is een progressief belastingtarief?",
+          "antwoord": "Het belastingpercentage wordt hoger naarmate het inkomen toeneemt.",
+          "paragraaf": "6.2 Hoeveel belasting betaal je?"
+        },
+        {
+          "vraag": "Wat is een heffingskorting?",
+          "antwoord": "Een korting op het bedrag dat je aan inkomstenbelasting moet betalen.",
+          "paragraaf": "6.2 Hoeveel belasting betaal je?"
+        },
+        {
+          "vraag": "Wat is heffingsvrij vermogen?",
+          "antwoord": "Het eerste deel van je vermogen waarover je geen belasting hoeft te betalen.",
+          "paragraaf": "6.2 Hoeveel belasting betaal je?"
+        },
+        {
+          "vraag": "Wat is fictief rendement?",
+          "antwoord": "Het rendement dat je volgens de overheid hebt op je spaargeld of beleggingen, gebruikt om de vermogensrendementsheffing te berekenen.",
+          "paragraaf": "6.2 Hoeveel belasting betaal je?"
+        },
+        {
+          "vraag": "Wat is het verschil tussen actieven en inactieven?",
+          "antwoord": "Actieven hebben betaald werk; inactieven hebben geen betaald werk en ontvangen een uitkering.",
+          "paragraaf": "6.3 Eerlijk zullen we alles delen?"
+        },
+        {
+          "vraag": "Wat is het verschil tussen nivellering en denivellering?",
+          "antwoord": "Bij nivellering worden inkomensverschillen kleiner; bij denivellering worden ze groter.",
+          "paragraaf": "6.3 Eerlijk zullen we alles delen?"
+        },
+        {
+          "vraag": "Wat is vergrijzing?",
+          "antwoord": "Het aandeel ouderen in de bevolking neemt toe en de gemiddelde leeftijd stijgt.",
+          "paragraaf": "6.3 Eerlijk zullen we alles delen?"
+        },
+        {
+          "vraag": "Wat is het verschil tussen het draagkracht- en het profijtbeginsel?",
+          "antwoord": "Draagkrachtbeginsel: betalen naar wat je kunt missen. Profijtbeginsel: betalen omdat je ergens gebruik van maakt.",
+          "paragraaf": "6.4 Iedereen betaalt mee"
+        },
+        {
+          "vraag": "Wat is belastingontduiking?",
+          "antwoord": "Het opzettelijk verkeerd informeren van de overheid om minder belasting te betalen; dit is strafbaar.",
+          "paragraaf": "6.4 Iedereen betaalt mee"
+        }
+      ],
+      "quiz": [
+        {
+          "vraag": "Waarover wordt de inkomstenbelasting berekend?",
+          "opties": [
+            "Je brutoloon",
+            "Je belastbaar inkomen",
+            "Je vermogen",
+            "Je spaargeld"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "De inkomstenbelasting wordt berekend over je belastbaar inkomen, niet zomaar over je hele inkomen."
+        },
+        {
+          "vraag": "Waarom krijg je een bijtelling bij een auto van de zaak?",
+          "opties": [
+            "Omdat je de auto zakelijk gebruikt",
+            "Omdat je de auto ook privé gebruikt",
+            "Omdat de auto duur is",
+            "Omdat je de auto leaset"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Bijtelling geldt als je een auto van de zaak ook privé gebruikt."
+        },
+        {
+          "vraag": "Een belastbaar inkomen van € 70.000 valt in...",
+          "opties": [
+            "alleen schijf 1",
+            "alleen schijf 2",
+            "deels schijf 1, deels schijf 2",
+            "geen enkele schijf"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "€ 68.508 valt in schijf 1, de rest (€ 1.492) in schijf 2."
+        },
+        {
+          "vraag": "Wat betekent een progressief belastingtarief?",
+          "opties": [
+            "Iedereen betaalt evenveel belasting",
+            "Hogere inkomens betalen in verhouding meer belasting",
+            "Lagere inkomens betalen in verhouding meer belasting",
+            "De belasting daalt bij een hoger inkomen"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Bij een progressief tarief stijgt het belastingpercentage naarmate het inkomen toeneemt."
+        },
+        {
+          "vraag": "Waarover betaal je vermogensrendementsheffing?",
+          "opties": [
+            "Je brutoloon",
+            "Je fictief rendement op vermogen boven het heffingsvrije deel",
+            "Je hypotheekrente",
+            "Je premies"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "In box 3 betaal je belasting over een fictief rendement op je vermogen boven het heffingsvrije deel."
+        },
+        {
+          "vraag": "Wat is het heffingsvrij vermogen?",
+          "opties": [
+            "Al je vermogen",
+            "Het deel van je vermogen waarover je geen belasting betaalt",
+            "Je totale schulden",
+            "Je jaarlijkse rente-inkomsten"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Het heffingsvrij vermogen is het eerste deel van je vermogen waarover je geen belasting hoeft te betalen."
+        },
+        {
+          "vraag": "Wat is het verschil tussen actieven en inactieven?",
+          "opties": [
+            "Actieven werken niet, inactieven wel",
+            "Actieven hebben betaald werk, inactieven ontvangen een uitkering",
+            "Er is geen verschil",
+            "Actieven betalen geen belasting"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Actieven verdienen hun eigen inkomen; inactieven ontvangen een uitkering, betaald door de premies en belasting van actieven."
+        },
+        {
+          "vraag": "Wat gebeurt er bij denivellering?",
+          "opties": [
+            "Inkomensverschillen worden kleiner",
+            "Inkomensverschillen worden groter",
+            "Iedereen krijgt hetzelfde inkomen",
+            "De staatsschuld daalt"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Bij denivellering worden de verschillen tussen inkomens in verhouding groter."
+        },
+        {
+          "vraag": "Wat is een gevolg van vergrijzing voor de AOW?",
+          "opties": [
+            "De AOW wordt goedkoper",
+            "Er zijn steeds meer AOW-gerechtigden ten opzichte van premiebetalers",
+            "Er zijn minder ouderen",
+            "De AOW verdwijnt volledig"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Door vergrijzing groeit het aantal AOW-gerechtigden sneller dan het aantal premiebetalers, wat de betaalbaarheid onder druk zet."
+        },
+        {
+          "vraag": "Motorrijtuigenbelasting is gebaseerd op het...",
+          "opties": [
+            "draagkrachtbeginsel",
+            "profijtbeginsel",
+            "solidariteitsbeginsel",
+            "progressiebeginsel"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Je betaalt motorrijtuigenbelasting omdat je een auto bezit en van de weg gebruikmaakt: het profijtbeginsel."
+        },
+        {
+          "vraag": "Wat is belastingontduiking?",
+          "opties": [
+            "Legaal minder belasting betalen via aftrekposten",
+            "Opzettelijk onjuiste informatie geven om minder belasting te betalen",
+            "Belasting te veel betalen",
+            "Een korting op de inkomstenbelasting"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Belastingontduiking is het opzettelijk verkeerd informeren van de overheid en is strafbaar."
+        }
+      ]
+    },
+    {
+      "titel": "Nederland en het buitenland",
+      "uitleg": "<div class='box'><h4>Waar dit hoofdstuk over gaat</h4><p>Nederland is een echt handelsland. Je leert wat dat betekent, of landen vrij mogen handelen, wat Nederland aan de EU heeft, en waarom de wereld steeds kleiner lijkt te worden door internationale handel.</p></div>",
+      "subhoofdstukken": [
+        {
+          "titel": "7.1 Nederland handelsland",
+          "uitleg": "<div class='box'><h4>Open of gesloten economie</h4><p>De <b>exportquote</b> is de totale uitvoerwaarde als percentage van het nationaal inkomen; de <b>importquote</b> is de totale invoerwaarde als percentage van het nationaal inkomen. Een land met veel in- en uitvoer in verhouding tot het nationaal inkomen (dus een hoge import- en exportquote) is een <b>open economie</b> — zoals Nederland. Een land met weinig in- en uitvoer (een lage import- en exportquote) is een <b>gesloten economie</b>.</p></div><div class='box'><h4>Wederuitvoer en de wisselkoers</h4><p>Bij <b>wederuitvoer</b> worden goederen eerst ingevoerd en daarna onbewerkt, of na een korte bewerking, doorverkocht aan het buitenland. Nederlandse exportinkomsten zijn vaak hoger dan de uitgaven aan import, waardoor er een overschot ontstaat op de betalingsbalans.</p><p>Stijgt de koers van de euro ten opzichte van vreemde valuta, dan wordt het voor Nederland goedkoper om te importeren. Voor buitenlandse bedrijven worden onze producten dan juist duurder, waardoor onze export kan afnemen.</p></div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Open economie: hoge import- en exportquote (Nederland). Gesloten economie: lage quotes.</li><li>Wederuitvoer: onbewerkt doorverkopen na import.</li><li>Een hogere eurokoers maakt importeren goedkoper en exporteren moeilijker.</li></ul></div>"
+        },
+        {
+          "titel": "7.2 Kunnen we vrij handelen?",
+          "uitleg": "<div class='box'><h4>Elk land zijn eigen specialiteit</h4><p>Landen leveren producten die zij het best en goedkoopst kunnen maken: dit heet de <b>internationale arbeidsverdeling</b>. Zonder beperkingen heet dit <b>vrijhandel</b>: in- en uitvoer van producten zonder handelsbelemmeringen.</p></div><div class='box'><h4>Bescherming van de eigen markt</h4><p>Om de eigen productie en werkgelegenheid te beschermen tegen buitenlandse concurrentie, kunnen landen <b>protectiemaatregelen</b> nemen (ook wel protectionisme of handelsbelemmeringen): bijvoorbeeld een maximum stellen aan de import, invoerrechten heffen, een invoerverbod instellen of exportsubsidie geven.</p></div><div class='call'>De <b>WTO</b> (World Trade Organization, de Wereldhandelsorganisatie) ziet toe op vrije en eerlijke wereldhandel en probeert handelsconflicten tussen landen op te lossen.</div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Internationale arbeidsverdeling: elk land maakt waar het goed en goedkoop in is.</li><li>Protectiemaatregelen beschermen de eigen markt tegen buitenlandse concurrentie.</li><li>De WTO bevordert vrije en eerlijke wereldhandel.</li></ul></div>"
+        },
+        {
+          "titel": "7.3 Nederland en de EU",
+          "uitleg": "<div class='box'><h4>Eén markt zonder grenzen</h4><p>De Europese Unie heeft een <b>interne markt</b>: een gemeenschappelijke markt waarbij binnengrenzen tussen lidstaten geen rol spelen voor de handel. Hierdoor is er vrij verkeer van goederen en diensten, van personen en van kapitaal.</p></div><div class='box'><h4>Gelijke regels</h4><p>De EU wil dat wetten en regels tussen lidstaten zo veel mogelijk op elkaar worden afgestemd en gelijkgetrokken, zodat er sprake is van eerlijke concurrentie tussen de lidstaten. Dit proces noem je <b>harmonisatie</b>.</p></div><div class='box'><h4>Eén munt</h4><p>De <b>EMU</b> (Economische en Monetaire Unie, ook wel Europese Monetaire Unie genoemd) bestaat uit de EU-landen die met de euro een gezamenlijke munteenheid hebben.</p></div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>De interne markt kent vrij verkeer van goederen/diensten, personen en kapitaal.</li><li>Harmonisatie stemt wetten en regels tussen EU-landen op elkaar af.</li><li>De EMU is de groep EU-landen met de euro als gezamenlijke munt.</li></ul></div>"
+        },
+        {
+          "titel": "7.4 De wereld wordt kleiner",
+          "uitleg": "<div class='box'><h4>Steeds meer verbonden</h4><p>Door toename van wereldwijde contacten en handel raken mensen en bedrijven over de hele wereld steeds meer met elkaar verbonden: dit heet <b>globalisering</b>. Als gevolg hiervan verschuift productie vaak naar landen waar dat goedkoop is.</p></div><div class='box'><h4>Handelsverdragen</h4><p>Om de handel tussen de Europese Unie en andere landen te bevorderen, kunnen landen met elkaar een <b>handelsverdrag</b> afsluiten: afspraken om de wederzijdse handel te bevorderen. De EU let daarbij ook op of er in de andere landen op een eerlijke en duurzame manier wordt geproduceerd.</p><p>De <b>internationale concurrentiepositie</b> van een land laat zien hoe goed dat land in staat is om beter en/of goedkoper te produceren dan andere landen. Door te blijven investeren in bijvoorbeeld onderwijs en gezondheidszorg kan Nederland een goede internationale concurrentiepositie behouden.</p></div><div class='call warn'><b>Veelgemaakte fout:</b> denk niet dat globalisering alleen voordelen heeft. Een nadeel is bijvoorbeeld dat vooral laagopgeleide werknemers in de productie hun baan kunnen verliezen als bedrijven productie verplaatsen naar landen waar arbeid goedkoper is.</div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Globalisering: wereldwijde contacten en handel nemen toe.</li><li>Handelsverdragen bevorderen handel tussen de EU en andere landen.</li><li>De internationale concurrentiepositie bepaalt hoe goed een land het doet ten opzichte van andere landen.</li></ul></div>"
+        }
+      ],
+      "begrippen": [
+        {
+          "term": "Open economie",
+          "uitleg": "Een land met veel in- en uitvoer in verhouding tot het nationaal inkomen. Het land heeft een hoge import- en exportquote.",
+          "paragraaf": "7.1 Nederland handelsland"
+        },
+        {
+          "term": "Gesloten economie",
+          "uitleg": "Een land met weinig in- en uitvoer in verhouding tot het nationaal inkomen. Het land heeft een lage import- en exportquote.",
+          "paragraaf": "7.1 Nederland handelsland"
+        },
+        {
+          "term": "Exportquote",
+          "uitleg": "De totale uitvoerwaarde als percentage van het nationaal inkomen.",
+          "paragraaf": "7.1 Nederland handelsland"
+        },
+        {
+          "term": "Importquote",
+          "uitleg": "De totale invoerwaarde als percentage van het nationaal inkomen.",
+          "paragraaf": "7.1 Nederland handelsland"
+        },
+        {
+          "term": "Wederuitvoer",
+          "uitleg": "Goederen worden eerst ingevoerd en onbewerkt, of na een korte bewerking, doorverkocht aan het buitenland.",
+          "paragraaf": "7.1 Nederland handelsland"
+        },
+        {
+          "term": "Internationale arbeidsverdeling",
+          "uitleg": "Landen leveren producten die zij het best en goedkoopst kunnen maken.",
+          "paragraaf": "7.2 Kunnen we vrij handelen?"
+        },
+        {
+          "term": "Vrijhandel",
+          "uitleg": "In- en uitvoer van producten zonder handelsbelemmeringen.",
+          "paragraaf": "7.2 Kunnen we vrij handelen?"
+        },
+        {
+          "term": "Protectiemaatregelen",
+          "uitleg": "Handelsbelemmeringen, protectionisme. Maatregelen om de productie en werkgelegenheid in het eigen land te beschermen tegen buitenlandse concurrentie.",
+          "paragraaf": "7.2 Kunnen we vrij handelen?"
+        },
+        {
+          "term": "WTO",
+          "uitleg": "World Trade Organization, Wereldhandelsorganisatie. Ziet toe op vrije en eerlijke wereldhandel.",
+          "paragraaf": "7.2 Kunnen we vrij handelen?"
+        },
+        {
+          "term": "Interne markt",
+          "uitleg": "Gemeenschappelijke markt. Voor de handel spelen binnengrenzen tussen EU-lidstaten geen rol.",
+          "paragraaf": "7.3 Nederland en de EU"
+        },
+        {
+          "term": "Harmonisatie",
+          "uitleg": "Het op elkaar afstemmen en gelijktrekken van wetten en regels.",
+          "paragraaf": "7.3 Nederland en de EU"
+        },
+        {
+          "term": "EMU",
+          "uitleg": "Economische en Monetaire Unie. Een groep landen binnen de Europese Unie met een gezamenlijke munteenheid, de euro.",
+          "paragraaf": "7.3 Nederland en de EU"
+        },
+        {
+          "term": "Globalisering",
+          "uitleg": "Door toename van wereldwijde contacten en handel raken mensen en bedrijven over de hele wereld steeds meer met elkaar verbonden.",
+          "paragraaf": "7.4 De wereld wordt kleiner"
+        },
+        {
+          "term": "Handelsverdrag",
+          "uitleg": "Handelsakkoord. Afspraken die landen onderling maken om de wederzijdse handel te bevorderen.",
+          "paragraaf": "7.4 De wereld wordt kleiner"
+        },
+        {
+          "term": "Internationale concurrentiepositie",
+          "uitleg": "Hoe een land in staat is om beter en/of goedkoper te produceren dan andere landen.",
+          "paragraaf": "7.4 De wereld wordt kleiner"
+        }
+      ],
+      "flashcards": [
+        {
+          "vraag": "Wat is een open economie?",
+          "antwoord": "Een land met veel in- en uitvoer in verhouding tot het nationaal inkomen, zoals Nederland.",
+          "paragraaf": "7.1 Nederland handelsland"
+        },
+        {
+          "vraag": "Wat is het verschil tussen de exportquote en de importquote?",
+          "antwoord": "De exportquote is de uitvoerwaarde als percentage van het nationaal inkomen; de importquote is de invoerwaarde als percentage.",
+          "paragraaf": "7.1 Nederland handelsland"
+        },
+        {
+          "vraag": "Wat is wederuitvoer?",
+          "antwoord": "Goederen die eerst ingevoerd en daarna onbewerkt (of licht bewerkt) weer doorverkocht worden aan het buitenland.",
+          "paragraaf": "7.1 Nederland handelsland"
+        },
+        {
+          "vraag": "Wat is internationale arbeidsverdeling?",
+          "antwoord": "Landen leveren vooral producten die zij het best en goedkoopst kunnen maken.",
+          "paragraaf": "7.2 Kunnen we vrij handelen?"
+        },
+        {
+          "vraag": "Wat is vrijhandel?",
+          "antwoord": "In- en uitvoer van producten zonder handelsbelemmeringen.",
+          "paragraaf": "7.2 Kunnen we vrij handelen?"
+        },
+        {
+          "vraag": "Waartoe dienen protectiemaatregelen?",
+          "antwoord": "Om de productie en werkgelegenheid in het eigen land te beschermen tegen buitenlandse concurrentie.",
+          "paragraaf": "7.2 Kunnen we vrij handelen?"
+        },
+        {
+          "vraag": "Wat doet de WTO?",
+          "antwoord": "Ze ziet toe op vrije en eerlijke wereldhandel.",
+          "paragraaf": "7.2 Kunnen we vrij handelen?"
+        },
+        {
+          "vraag": "Wat houdt de interne markt van de EU in?",
+          "antwoord": "Vrij verkeer van goederen/diensten, personen en kapitaal, zonder dat binnengrenzen een rol spelen.",
+          "paragraaf": "7.3 Nederland en de EU"
+        },
+        {
+          "vraag": "Wat is harmonisatie?",
+          "antwoord": "Het op elkaar afstemmen en gelijktrekken van wetten en regels tussen EU-landen.",
+          "paragraaf": "7.3 Nederland en de EU"
+        },
+        {
+          "vraag": "Wat is de EMU?",
+          "antwoord": "De groep EU-landen met de euro als gezamenlijke munteenheid.",
+          "paragraaf": "7.3 Nederland en de EU"
+        },
+        {
+          "vraag": "Wat is globalisering?",
+          "antwoord": "De toename van wereldwijde contacten en handel, waardoor mensen en bedrijven wereldwijd meer met elkaar verbonden raken.",
+          "paragraaf": "7.4 De wereld wordt kleiner"
+        },
+        {
+          "vraag": "Wat is een handelsverdrag?",
+          "antwoord": "Afspraken die landen onderling maken om de wederzijdse handel te bevorderen.",
+          "paragraaf": "7.4 De wereld wordt kleiner"
+        },
+        {
+          "vraag": "Wat bepaalt de internationale concurrentiepositie van een land?",
+          "antwoord": "Hoe goed en/of goedkoop dat land kan produceren vergeleken met andere landen.",
+          "paragraaf": "7.4 De wereld wordt kleiner"
+        }
+      ],
+      "quiz": [
+        {
+          "vraag": "Nederland heeft een hoge import- en exportquote. Dit betekent dat Nederland een...",
+          "opties": [
+            "gesloten economie is",
+            "open economie is",
+            "planeconomie is",
+            "vrijemarkteconomie is"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Een hoge import- en exportquote betekent veel in- en uitvoer in verhouding tot het nationaal inkomen: een open economie."
+        },
+        {
+          "vraag": "Nederland importeert cacao en verkoopt die onbewerkt door aan Duitsland. Dit heet...",
+          "opties": [
+            "vrijhandel",
+            "wederuitvoer",
+            "protectionisme",
+            "harmonisatie"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Wederuitvoer is het onbewerkt (of licht bewerkt) doorverkopen van geïmporteerde goederen."
+        },
+        {
+          "vraag": "Stijgt de koers van de euro, dan wordt het voor Nederland...",
+          "opties": [
+            "duurder om te importeren",
+            "goedkoper om te importeren",
+            "onmogelijk om te exporteren",
+            "verplicht om te importeren"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Bij een hogere eurokoers krijg je meer vreemde valuta voor je euro's, dus wordt importeren goedkoper."
+        },
+        {
+          "vraag": "Wat is internationale arbeidsverdeling?",
+          "opties": [
+            "Elk land maakt dezelfde producten",
+            "Elk land maakt vooral producten waarin het goed en goedkoop is",
+            "Landen wisselen werknemers uit",
+            "Landen verdelen hun beroepsbevolking"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Bij internationale arbeidsverdeling specialiseert elk land zich in producten die het goed en goedkoop kan maken."
+        },
+        {
+          "vraag": "Welke maatregel is geen protectiemaatregel?",
+          "opties": [
+            "Invoerrechten heffen",
+            "Een invoerverbod instellen",
+            "Vrijhandel toepassen",
+            "Een importmaximum stellen"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "Vrijhandel is juist het tegenovergestelde van protectiemaatregelen."
+        },
+        {
+          "vraag": "Wat is de taak van de WTO?",
+          "opties": [
+            "Belasting innen voor landen",
+            "Toezien op vrije en eerlijke wereldhandel",
+            "De rente vaststellen",
+            "Ontwikkelingshulp verstrekken"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "De WTO (Wereldhandelsorganisatie) ziet toe op vrije en eerlijke wereldhandel."
+        },
+        {
+          "vraag": "Wat houdt de interne markt van de EU in?",
+          "opties": [
+            "Alleen vrij verkeer van goederen",
+            "Vrij verkeer van goederen/diensten, personen en kapitaal tussen lidstaten",
+            "Een verbod op handel met niet-EU-landen",
+            "Eén belastingtarief voor alle EU-landen"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "De interne markt kent vrij verkeer van goederen en diensten, personen en kapitaal."
+        },
+        {
+          "vraag": "Wat is harmonisatie binnen de EU?",
+          "opties": [
+            "Het invoeren van één taal",
+            "Het op elkaar afstemmen van wetten en regels tussen lidstaten",
+            "Het afschaffen van alle grenzen",
+            "Het gelijktrekken van lonen"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Harmonisatie is het op elkaar afstemmen en gelijktrekken van wetten en regels."
+        },
+        {
+          "vraag": "Welke landen horen bij de EMU?",
+          "opties": [
+            "Alle EU-landen",
+            "De EU-landen die de euro als munt gebruiken",
+            "Alleen Nederland, Duitsland en Frankrijk",
+            "Alle Europese landen"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "De EMU bestaat uit de EU-landen die de euro als gezamenlijke munteenheid hebben."
+        },
+        {
+          "vraag": "Wat is globalisering?",
+          "opties": [
+            "De toename van wereldwijde contacten en handel",
+            "Het sluiten van landsgrenzen",
+            "Een handelsverdrag tussen twee landen",
+            "Het invoeren van protectiemaatregelen"
+          ],
+          "antwoord_index": 0,
+          "uitleg": "Globalisering is de toename van wereldwijde contacten en handel, waardoor landen meer met elkaar verbonden raken."
+        },
+        {
+          "vraag": "Wat is een nadeel van globalisering?",
+          "opties": [
+            "Er is minder keuze voor consumenten",
+            "Laagopgeleide werknemers in de productie kunnen hun baan verliezen",
+            "Landen kunnen niet meer specialiseren",
+            "Producten worden altijd duurder"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Doordat productie verschuift naar landen waar arbeid goedkoper is, kunnen laagopgeleide werknemers in het eigen land hun baan verliezen."
+        },
+        {
+          "vraag": "Wat bepaalt de internationale concurrentiepositie van een land?",
+          "opties": [
+            "Alleen de hoeveelheid grondstoffen",
+            "Hoe goed en/of goedkoop het land kan produceren vergeleken met andere landen",
+            "Het aantal inwoners",
+            "De hoogte van de staatsschuld"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "De internationale concurrentiepositie hangt af van hoe goed en/of goedkoop een land kan produceren vergeleken met andere landen."
+        }
+      ]
+    },
+    {
+      "titel": "Ontwikkelingslanden",
+      "uitleg": "<div class='box'><h4>Waar dit hoofdstuk over gaat</h4><p>Niet elk land is even welvarend. Je leert hoe je welvaart tussen landen vergelijkt, wat een ontwikkelingsland kenmerkt, waarom sommige landen een economische achterstand hebben, en hoe landen en mensen kunnen bijdragen aan het bestrijden van armoede.</p></div>",
+      "subhoofdstukken": [
+        {
+          "titel": "8.1 Verschillen in welvaart",
+          "uitleg": "<div class='box'><h4>Welvaart vergelijken</h4><p>In een land is er welvaart als de inwoners in veel van hun behoeften kunnen voorzien. Je kunt de welvaart tussen landen eenvoudig vergelijken door te kijken naar het <b>inkomen per hoofd van de bevolking</b>: het gemiddelde inkomen per inwoner van een land. Je berekent dit door het nationaal inkomen te delen door het aantal inwoners.</p></div><div class='box'><h4>Welvaart is meer dan inkomen</h4><p>Wil je een goede uitspraak doen over de welvaart van een land, dan zegt het inkomen per hoofd alleen te weinig. Je moet ook rekening houden met:</p><ul class='lst'><li>hoe de welvaart over de bevolking verdeeld is (gelijk of ongelijk);</li><li>hoe hoog de prijzen in een land zijn, dus wat de koopkracht van het inkomen is;</li><li>hoe groot de informele productie is (productie die niet geregistreerd wordt, zoals zwart werk of zelfvoorziening);</li><li>of er voldoende en kwalitatief goede collectieve voorzieningen zijn, zoals onderwijs en gezondheidszorg.</li></ul></div><div class='call'>De Wereldbank stelt de armoedegrens op een inkomen van $ 1,90 per dag. Deze grens is voor iedereen ter wereld hetzelfde, ook al verschilt de koopkracht van dat bedrag sterk per land.</div><div class='call warn'><b>Veelgemaakte fout:</b> denk niet dat een hoger inkomen per hoofd van de bevolking altijd meer welvaart voor iedereen betekent. Bij een ongelijke inkomensverdeling kan een hoog gemiddelde samengaan met veel armoede.</div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Inkomen per hoofd van de bevolking = nationaal inkomen ÷ aantal inwoners.</li><li>Welvaart hangt ook af van inkomensverdeling, koopkracht, informele productie en collectieve voorzieningen.</li></ul></div>"
+        },
+        {
+          "titel": "8.2 Wat is een ontwikkelingsland?",
+          "uitleg": "<div class='box'><h4>Kenmerken van ontwikkelingslanden</h4><p>Naast een laag inkomen per inwoner en een ongelijke inkomensverdeling, zie je in veel ontwikkelingslanden:</p><ul class='lst'><li>veel werkloosheid;</li><li>ondervoeding;</li><li>snelle bevolkingsgroei;</li><li>veel analfabetisme (een deel van de bevolking kan niet lezen en schrijven);</li><li>beperkte technische ontwikkeling;</li><li>een eenzijdige economische structuur: de inkomens zijn vaak afhankelijk van één productiesector, meestal de landbouw.</li></ul></div><div class='box'><h4>Veel van hetzelfde: monocultuur</h4><p>In Nederland zijn alle vier de productiesectoren goed ontwikkeld. In ontwikkelingslanden is dat vaak anders: daar is sprake van een <b>monocultuur</b>. Een land met een monocultuur is voor zijn (export)inkomsten sterk afhankelijk van slechts één of enkele producten, meestal landbouwproducten zoals katoen, rijst, koffie- of cacaobonen.</p><p>Vergeleken met de hoogwaardige industriële producten van rijke landen is de toegevoegde waarde van deze landbouwproducten laag. Het gevolg: ontwikkelingslanden hebben lage exportinkomsten, en landen met een monocultuur lopen een groot risico — een groot deel van hun exportinkomsten kan wegvallen zonder dat zij daar zelf veel invloed op hebben, bijvoorbeeld door een mislukte oogst.</p></div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Kenmerken van ontwikkelingslanden: laag inkomen, ongelijke verdeling, werkloosheid, ondervoeding, snelle bevolkingsgroei, analfabetisme, beperkte techniek, eenzijdige economie.</li><li>Monocultuur: sterk afhankelijk van één of enkele exportproducten, meestal landbouw.</li></ul></div>"
+        },
+        {
+          "titel": "8.3 Hoe boekt een land vooruitgang?",
+          "uitleg": "<div class='box'><h4>Waardoor is een land arm?</h4><p>De economische achterstand van ontwikkelingslanden op rijke landen heeft verschillende oorzaken:</p><ul class='lst'><li>gebrek aan goed onderwijs en daardoor minder technische kennis;</li><li>een slechte infrastructuur, waardoor vervoer en communicatie moeilijk zijn;</li><li>een bevolking die sneller groeit dan de economie, waardoor de beperkte welvaart met steeds meer mensen gedeeld moet worden;</li><li>hoge schulden, met hoge rentelasten als gevolg;</li><li>protectiemaatregelen van rijke westerse landen, die ten koste gaan van de exportmogelijkheden van ontwikkelingslanden;</li><li>natuurrampen en conflicten, zoals burgeroorlogen;</li><li>corrupte regeringen en dictators, waardoor welvaart niet terechtkomt bij wie het het hardst nodig heeft.</li></ul></div><div class='box'><h4>Eerlijk ruilen?</h4><p>In Nederland kunnen we de import van goederen en diensten betalen met de opbrengsten van de export. Voor ontwikkelingslanden is dat lastiger: zij exporteren vaak goedkopere producten, zoals rijst, cacao of katoen, terwijl ze relatief dure producten, zoals machines, moeten importeren.</p><p>De verhouding tussen de prijs van exportproducten en de prijs van importproducten noem je de <b>ruilvoet</b>. Voor veel ontwikkelingslanden wordt de ruilvoet slechter: om hun import te kunnen betalen, moeten ze steeds meer producten exporteren. Op de prijs van hun grondstoffen hebben ze weinig invloed, want die wordt bepaald door vraag en aanbod op de wereldmarkt — en door wisselende oogsten kunnen die prijzen sterk schommelen.</p></div><div class='call warn'><b>Veelgemaakte fout:</b> een 'verslechterde ruilvoet' betekent niet dat een land minder exporteert. Het betekent dat een land voor dezelfde hoeveelheid import steeds méér moet exporteren, omdat de prijs van zijn exportproducten relatief is gedaald ten opzichte van de prijs van zijn importproducten.</div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Oorzaken van economische achterstand: onderwijs, infrastructuur, bevolkingsgroei, schulden, protectiemaatregelen, rampen/conflicten, corruptie.</li><li>Ruilvoet = prijs exportproducten ÷ prijs importproducten. Een slechtere ruilvoet betekent meer export nodig voor dezelfde import.</li></ul></div>"
+        },
+        {
+          "titel": "8.4 Hoe dragen we ons steentje bij?",
+          "uitleg": "<div class='box'><h4>Help armoede de wereld uit</h4><p>Alleen door samenwerking kunnen landen armoede wereldwijd helpen bestrijden. Er zijn verschillende organisaties waarin landen samenwerken tegen armoede, bijvoorbeeld de <b>Verenigde Naties (VN)</b>, de Wereldbank en het <b>Internationaal Monetair Fonds (IMF)</b>. Deelnemende landen stellen geld beschikbaar waarmee deze organisaties het armoedeprobleem kunnen bestrijden. Binnen de VN en de EU is afgesproken dat landen ten minste 0,7% van hun nationaal inkomen aan ontwikkelingssamenwerking besteden.</p><p>Daarnaast zijn er goededoelenorganisaties die afhankelijk zijn van giften van burgers, zoals Oxfam Novib, Cordaid en Edukans. Zij werken vooral samen met lokale hulporganisaties in ontwikkelingslanden.</p></div><div class='box'><h4>Kleine lening, groot verschil</h4><p>Een <b>microkrediet</b> is een kleine lening die verstrekt wordt aan kleine ondernemers in ontwikkelingslanden die niet bij grote banken kunnen lenen. Zo kunnen zij een eigen, vaak duurzame, onderneming starten en een zelfstandig bestaan opbouwen.</p></div><div class='box'><h4>Zelf iets doen</h4><p>Nederland combineert hulp steeds vaker met handel, bijvoorbeeld door subsidie te geven aan Nederlandse bedrijven die in een ontwikkelingsland investeren. Door maatschappelijk verantwoord te ondernemen, dragen bedrijven bij aan betere arbeidsomstandigheden in arme landen. Als consument kun je zelf voor <b>fairtrade</b>-producten kiezen, zodat boeren in arme landen een eerlijke prijs voor hun producten krijgen.</p></div><div class='call'>Het ene probleem in een ontwikkelingsland houdt vaak het andere in stand: een <b>vicieuze cirkel</b>. Bijvoorbeeld: weinig inkomen leidt tot weinig onderwijs, wat weer leidt tot weinig inkomen. Om zo'n cirkel te doorbreken is gerichte hulp nodig.</div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Internationale organisaties als de VN, de Wereldbank en het IMF bestrijden samen armoede.</li><li>Microkrediet geeft kleine ondernemers in ontwikkelingslanden toegang tot een lening.</li><li>Fairtrade en maatschappelijk verantwoord ondernemen zijn manieren om zelf bij te dragen.</li><li>Een vicieuze cirkel houdt armoede in stand: het ene probleem veroorzaakt het andere.</li></ul></div>"
+        }
+      ],
+      "begrippen": [
+        {
+          "term": "Inkomen per hoofd van de bevolking",
+          "uitleg": "Het gemiddelde inkomen per inwoner van een land: het nationaal inkomen gedeeld door het aantal inwoners.",
+          "paragraaf": "8.1 Verschillen in welvaart"
+        },
+        {
+          "term": "Armoedegrens",
+          "uitleg": "De grens die de Wereldbank stelt op een inkomen van $ 1,90 per dag, wereldwijd gelijk.",
+          "paragraaf": "8.1 Verschillen in welvaart"
+        },
+        {
+          "term": "Informele productie",
+          "uitleg": "Productie die niet geregistreerd wordt, zoals zwart werk of zelfvoorziening.",
+          "paragraaf": "8.1 Verschillen in welvaart"
+        },
+        {
+          "term": "Monocultuur",
+          "uitleg": "Een land is voor zijn (export)inkomsten sterk afhankelijk van slechts één of enkele producten, meestal landbouwproducten.",
+          "paragraaf": "8.2 Wat is een ontwikkelingsland?"
+        },
+        {
+          "term": "Analfabetisme",
+          "uitleg": "Een deel van de bevolking kan niet lezen en schrijven.",
+          "paragraaf": "8.2 Wat is een ontwikkelingsland?"
+        },
+        {
+          "term": "Eenzijdige economische structuur",
+          "uitleg": "De inkomens van een land zijn vaak afhankelijk van één productiesector, meestal de landbouw.",
+          "paragraaf": "8.2 Wat is een ontwikkelingsland?"
+        },
+        {
+          "term": "Ruilvoet",
+          "uitleg": "De verhouding tussen de prijs van exportproducten en de prijs van importproducten.",
+          "paragraaf": "8.3 Hoe boekt een land vooruitgang?"
+        },
+        {
+          "term": "Protectiemaatregelen",
+          "uitleg": "Handelsbelemmeringen van rijke landen die ten koste gaan van de exportmogelijkheden van ontwikkelingslanden.",
+          "paragraaf": "8.3 Hoe boekt een land vooruitgang?"
+        },
+        {
+          "term": "Vicieuze cirkel",
+          "uitleg": "De oorzaak van het ene probleem is een gevolg van een ander probleem.",
+          "paragraaf": "8.4 Hoe dragen we ons steentje bij?"
+        },
+        {
+          "term": "Microkrediet",
+          "uitleg": "Een kleine lening die verstrekt wordt aan kleine ondernemers in ontwikkelingslanden die niet kunnen lenen bij de grote banken.",
+          "paragraaf": "8.4 Hoe dragen we ons steentje bij?"
+        },
+        {
+          "term": "Verenigde Naties (VN)",
+          "uitleg": "Internationale organisatie waarin landen onder andere samenwerken om armoede te bestrijden.",
+          "paragraaf": "8.4 Hoe dragen we ons steentje bij?"
+        },
+        {
+          "term": "Internationaal Monetair Fonds (IMF)",
+          "uitleg": "Internationale organisatie die samen met andere landen het armoedeprobleem helpt bestrijden.",
+          "paragraaf": "8.4 Hoe dragen we ons steentje bij?"
+        },
+        {
+          "term": "Fairtrade",
+          "uitleg": "Handel waarbij producenten in ontwikkelingslanden een eerlijke prijs voor hun producten krijgen.",
+          "paragraaf": "8.4 Hoe dragen we ons steentje bij?"
+        }
+      ],
+      "flashcards": [
+        {
+          "vraag": "Hoe bereken je het inkomen per hoofd van de bevolking?",
+          "antwoord": "Nationaal inkomen gedeeld door het aantal inwoners.",
+          "paragraaf": "8.1 Verschillen in welvaart"
+        },
+        {
+          "vraag": "Waarop stelt de Wereldbank de armoedegrens?",
+          "antwoord": "Op een inkomen van $ 1,90 per dag, wereldwijd gelijk.",
+          "paragraaf": "8.1 Verschillen in welvaart"
+        },
+        {
+          "vraag": "Noem drie zaken naast inkomen per hoofd die de welvaart van een land bepalen.",
+          "antwoord": "Bijvoorbeeld de inkomensverdeling, de koopkracht, de informele productie en de kwaliteit van collectieve voorzieningen.",
+          "paragraaf": "8.1 Verschillen in welvaart"
+        },
+        {
+          "vraag": "Noem drie kenmerken van een ontwikkelingsland.",
+          "antwoord": "Bijvoorbeeld veel werkloosheid, snelle bevolkingsgroei en een eenzijdige economische structuur.",
+          "paragraaf": "8.2 Wat is een ontwikkelingsland?"
+        },
+        {
+          "vraag": "Wat is een monocultuur?",
+          "antwoord": "Een land is voor zijn exportinkomsten sterk afhankelijk van slechts één of enkele producten, meestal landbouw.",
+          "paragraaf": "8.2 Wat is een ontwikkelingsland?"
+        },
+        {
+          "vraag": "Noem drie oorzaken van de economische achterstand van ontwikkelingslanden.",
+          "antwoord": "Bijvoorbeeld gebrek aan onderwijs, slechte infrastructuur en hoge schulden.",
+          "paragraaf": "8.3 Hoe boekt een land vooruitgang?"
+        },
+        {
+          "vraag": "Wat is de ruilvoet?",
+          "antwoord": "De verhouding tussen de prijs van exportproducten en de prijs van importproducten.",
+          "paragraaf": "8.3 Hoe boekt een land vooruitgang?"
+        },
+        {
+          "vraag": "Wat betekent een verslechterde ruilvoet voor een ontwikkelingsland?",
+          "antwoord": "Het land moet steeds meer producten exporteren om dezelfde hoeveelheid import te kunnen betalen.",
+          "paragraaf": "8.3 Hoe boekt een land vooruitgang?"
+        },
+        {
+          "vraag": "Noem twee internationale organisaties die armoede bestrijden.",
+          "antwoord": "Bijvoorbeeld de Verenigde Naties, de Wereldbank en het IMF.",
+          "paragraaf": "8.4 Hoe dragen we ons steentje bij?"
+        },
+        {
+          "vraag": "Wat is een microkrediet?",
+          "antwoord": "Een kleine lening voor kleine ondernemers in ontwikkelingslanden die niet bij grote banken kunnen lenen.",
+          "paragraaf": "8.4 Hoe dragen we ons steentje bij?"
+        },
+        {
+          "vraag": "Hoeveel van het nationaal inkomen hebben VN en EU afgesproken aan ontwikkelingssamenwerking te besteden?",
+          "antwoord": "Ten minste 0,7%.",
+          "paragraaf": "8.4 Hoe dragen we ons steentje bij?"
+        },
+        {
+          "vraag": "Wat is fairtrade?",
+          "antwoord": "Handel waarbij producenten in ontwikkelingslanden een eerlijke prijs voor hun producten krijgen.",
+          "paragraaf": "8.4 Hoe dragen we ons steentje bij?"
+        },
+        {
+          "vraag": "Wat is een vicieuze cirkel?",
+          "antwoord": "Een situatie waarin de oorzaak van het ene probleem een gevolg is van een ander probleem.",
+          "paragraaf": "8.4 Hoe dragen we ons steentje bij?"
+        }
+      ],
+      "quiz": [
+        {
+          "vraag": "Hoe bereken je het inkomen per hoofd van de bevolking?",
+          "opties": [
+            "Nationaal inkomen × aantal inwoners",
+            "Nationaal inkomen ÷ aantal inwoners",
+            "Export ÷ import",
+            "Bbp × inflatie"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Inkomen per hoofd = nationaal inkomen gedeeld door het aantal inwoners."
+        },
+        {
+          "vraag": "Op welk bedrag stelt de Wereldbank de wereldwijde armoedegrens?",
+          "opties": [
+            "$ 1,90 per dag",
+            "$ 19,00 per dag",
+            "$ 190 per maand",
+            "$ 1,90 per uur"
+          ],
+          "antwoord_index": 0,
+          "uitleg": "De Wereldbank hanteert een armoedegrens van $ 1,90 per dag, voor iedereen ter wereld gelijk."
+        },
+        {
+          "vraag": "Waarom zegt het inkomen per hoofd van de bevolking niet alles over de welvaart van een land?",
+          "opties": [
+            "Omdat het nooit klopt",
+            "Omdat het geen rekening houdt met bijvoorbeeld inkomensverdeling en koopkracht",
+            "Omdat het altijd te hoog is",
+            "Omdat ontwikkelingslanden geen nationaal inkomen hebben"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Voor een goed beeld van welvaart moet je ook naar inkomensverdeling, koopkracht, informele productie en voorzieningen kijken."
+        },
+        {
+          "vraag": "Wat is een monocultuur?",
+          "opties": [
+            "Een land met veel verschillende exportproducten",
+            "Een land dat sterk afhankelijk is van één of enkele exportproducten",
+            "Een land zonder landbouw",
+            "Een land met alleen industrie"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Bij een monocultuur is een land sterk afhankelijk van slechts één of enkele producten voor zijn exportinkomsten."
+        },
+        {
+          "vraag": "Welke van de volgende is geen kenmerk van een ontwikkelingsland?",
+          "opties": [
+            "Snelle bevolkingsgroei",
+            "Hoge arbeidsproductiviteit door veel technologie",
+            "Veel analfabetisme",
+            "Een eenzijdige economische structuur"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Ontwikkelingslanden hebben juist vaak een beperkte technische ontwikkeling en dus een lage arbeidsproductiviteit."
+        },
+        {
+          "vraag": "Wat is de ruilvoet?",
+          "opties": [
+            "De rente op internationale leningen",
+            "De verhouding tussen de prijs van export- en importproducten",
+            "De wisselkoers van de euro",
+            "De hoeveelheid ontwikkelingshulp"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "De ruilvoet is de verhouding tussen de prijs van exportproducten en de prijs van importproducten."
+        },
+        {
+          "vraag": "Wat betekent een verslechterende ruilvoet voor een ontwikkelingsland?",
+          "opties": [
+            "Het moet minder exporteren voor dezelfde import",
+            "Het moet meer exporteren om dezelfde import te kunnen betalen",
+            "De import wordt goedkoper",
+            "De export wordt duurder"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Bij een verslechterde ruilvoet moet een land steeds meer exporteren om dezelfde hoeveelheid import te kunnen betalen."
+        },
+        {
+          "vraag": "Welke van de volgende is geen oorzaak van economische achterstand?",
+          "opties": [
+            "Slechte infrastructuur",
+            "Hoge schulden",
+            "Veel technische ontwikkeling",
+            "Corrupte regeringen"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "Veel technische ontwikkeling zou juist helpen tegen economische achterstand; de andere opties zijn wél oorzaken."
+        },
+        {
+          "vraag": "Welke organisatie helpt landen bij het bestrijden van armoede?",
+          "opties": [
+            "De WTO alleen",
+            "De Verenigde Naties",
+            "De ACM",
+            "Het CBS"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "De Verenigde Naties (samen met bijvoorbeeld de Wereldbank en het IMF) helpt landen bij armoedebestrijding."
+        },
+        {
+          "vraag": "Wat is een microkrediet?",
+          "opties": [
+            "Een grote lening voor multinationals",
+            "Een kleine lening voor ondernemers in ontwikkelingslanden",
+            "Een subsidie van de EU",
+            "Een vorm van ontwikkelingshulp in voedsel"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Een microkrediet is een kleine lening voor kleine ondernemers in ontwikkelingslanden die niet bij grote banken terecht kunnen."
+        },
+        {
+          "vraag": "Wat kun je als consument doen om boeren in ontwikkelingslanden te steunen?",
+          "opties": [
+            "Zo goedkoop mogelijk inkopen",
+            "Fairtrade-producten kopen",
+            "Alleen lokale producten kopen",
+            "Nooit producten uit ontwikkelingslanden kopen"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Door fairtrade-producten te kopen, krijgen boeren in ontwikkelingslanden een eerlijkere prijs."
+        },
+        {
+          "vraag": "Wat is een vicieuze cirkel?",
+          "opties": [
+            "Een handelsverdrag tussen twee landen",
+            "Een situatie waarin het ene probleem het andere veroorzaakt",
+            "Een vorm van protectionisme",
+            "Een internationale organisatie"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Een vicieuze cirkel is een situatie waarin de oorzaak van het ene probleem een gevolg is van een ander probleem."
+        }
+      ]
+    }
+  ]
+}

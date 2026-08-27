@@ -1,0 +1,1105 @@
+{
+  "boek": "Rekenen_BBL4.pdf",
+  "hoofdstukken": [
+    {
+      "titel": "Getallen",
+      "uitleg": "<div class='box'><h4>Waar dit hoofdstuk over gaat</h4><p>In dit hoofdstuk leer je werken met getallen: waar ze staan op de getallenlijn, wat elk cijfer in een getal waard is, hoe je afrondt en hoe je grote getallen zoals miljoenen en miljarden leest. Je leert ook de juiste volgorde bij berekeningen met haakjes en hoe je een ontbrekend getal in een som terugvindt.</p></div>",
+      "subhoofdstukken": [
+        {
+          "titel": "1.1 Getallenlijn",
+          "uitleg": "<div class='box'><h4>De lengte van een getallenlijn berekenen</h4><p>Een getallenlijn begint bij een getal en eindigt bij een getal. De lengte van de getallenlijn bereken je met <b>eindgetal min begingetal</b>. Een getallenlijn die begint bij 60 en eindigt bij 100 is dus 100 &minus; 60 = 40 lang.</p></div><div class='g2'><div class='box'><h4>Stap 1: tel de stukjes</h4><p>Kijk in hoeveel gelijke stukjes de getallenlijn is verdeeld. Bij de lijn van 60 tot 100 zijn dat bijvoorbeeld 10 stukjes.</p></div><div class='box'><h4>Stap 2: bereken één stukje</h4><p>Deel de lengte van de getallenlijn door het aantal stukjes: 40 : 10 = 4. Elk stukje is dus 4 lang. Zo kun je bij elk streepje het bijbehorende getal invullen.</p></div></div><div class='call'><b>Voorbeeld</b> Een getallenlijn loopt van 4,6 tot 4,8. De lengte is 4,8 &minus; 4,6 = 0,2. De lijn is verdeeld in 4 stukjes, dus elk stukje is 0,2 : 4 = 0,05 lang. Een pijl die 3 stukjes na 4,6 staat, wijst dan naar 4,6 + 3 &times; 0,05 = 4,75.</div><div class='call warn'><b>Veelgemaakte fout:</b> Bij een getallenlijn met decimale getallen vergeten leerlingen vaak dat een stukje ook een decimaal getal kan zijn, zoals 0,05. Reken altijd eerst de lengte en het aantal stukjes uit voordat je de waarde van één stukje bepaalt.</div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Lengte van de getallenlijn = eindgetal &minus; begingetal</li><li>Waarde van één stukje = lengte : aantal stukjes</li><li>Werkt hetzelfde bij hele getallen en bij decimale getallen</li></ul></div>"
+        },
+        {
+          "titel": "1.2 Waarde cijfers in getal",
+          "uitleg": "<div class='box'><h4>Elk cijfer heeft een eigen waarde</h4><p>In een getal staat elk cijfer op een eigen plaats: eenheden, tientallen, honderdtallen, duizendtallen, en na de komma tienden en honderdsten. De waarde van een cijfer hangt af van de plaats waar het staat.</p></div><div class='tblwrap'><table class='tbl'><tr><th>Getal 7306,59</th><th>Plaats</th><th>Waarde</th></tr><tr><td>7</td><td>duizendtal</td><td>7 &times; 1000 = 7000</td></tr><tr><td>3</td><td>honderdtal</td><td>3 &times; 100 = 300</td></tr><tr><td>0</td><td>tiental</td><td>0 &times; 10 = 0</td></tr><tr><td>6</td><td>eenheid</td><td>6 &times; 1 = 6</td></tr><tr><td>5</td><td>tiende</td><td>5 &times; 0,1 = 0,5</td></tr><tr><td>9</td><td>honderdste</td><td>9 &times; 0,01 = 0,09</td></tr></table></div><div class='call'>Bij het getal 1205637 is de 1 bijvoorbeeld 1 miljoen waard, de 2 is 200 duizend waard en de 5 is 5 duizend waard: elk cijfer telt mee volgens zijn eigen plaats in het getal.</div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Ga vanaf de komma naar links: eenheid, tiental, honderdtal, duizendtal, ...</li><li>Ga vanaf de komma naar rechts: tiende, honderdste, duizendste, ...</li><li>Waarde van een cijfer = cijfer &times; de waarde van zijn plaats</li></ul></div>"
+        },
+        {
+          "titel": "1.3 Afronden",
+          "uitleg": "<div class='box'><h4>Afronden op ronde getallen</h4><p>Bij afronden kijk je naar welk rond getal het dichtst in de buurt ligt. Ligt een getal precies in het midden tussen twee ronde getallen, dan rond je altijd naar boven af.</p></div><div class='g2'><div class='box'><h4>Voorbeeld: naar boven</h4><p>Rond 867 af op honderdtallen. 867 ligt tussen 800 en 900, en dichter bij 900. Dus 867 is afgerond op honderdtallen 900.</p></div><div class='box'><h4>Voorbeeld: naar beneden</h4><p>Rond 45497 af op duizendtallen. 45497 ligt tussen 45000 en 46000, en dichter bij 45000. Dus 45497 is afgerond op duizendtallen 45000.</p></div></div><div class='box'><h4>Afronden op decimalen</h4><p>Wil je afronden op decimalen, kijk dan naar het eerste cijfer achter de komma dat je weglaat. Is dat cijfer 5 of hoger, dan rond je naar boven af. Is dat cijfer 4 of lager, dan rond je naar beneden af.</p></div><div class='call'>Voorbeeld: 24,7036 afgerond op twee decimalen. Het derde cijfer achter de komma is een 3, dus je rondt naar beneden af: 24,70. Bij 2,8076 afgerond op drie decimalen kijk je naar het vierde cijfer, een 6, dus je rondt naar boven af: 2,808.</div><div class='call warn'><b>Veelgemaakte fout:</b> Bij het getal 8,5324 afgerond op een heel getal kijken leerlingen soms naar het hele decimale deel in plaats van alleen naar het eerste cijfer achter de komma. Je kijkt alleen naar die ene eerste decimaal: dat is een 5, dus je rondt naar boven af naar 9.</div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Kijk naar het eerste cijfer dat je weglaat</li><li>5 of hoger: naar boven. 4 of lager: naar beneden</li><li>Precies in het midden: altijd naar boven afronden</li></ul></div>"
+        },
+        {
+          "titel": "1.4 Grote getallen",
+          "uitleg": "<div class='box'><h4>Grote getallen in cijfers en woorden</h4><p>Grote getallen zijn in cijfers moeilijk te lezen. Daarom schrijf je ze vaak als een combinatie van cijfers en een woord: duizend, miljoen of miljard.</p></div><div class='tblwrap'><table class='tbl'><tr><th>Woord</th><th>Waarde</th></tr><tr><td>1 duizend</td><td>1.000</td></tr><tr><td>1 miljoen</td><td>1.000.000</td></tr><tr><td>1 miljard</td><td>1.000.000.000</td></tr></table></div><div class='call'><b>Voorbeeld</b> De oppervlakte van Nederland is 4.152.600 hectare. Verdeel het getal van achteren in groepjes van drie cijfers: 4|152|600. De 4 staat op de miljoenenplaats, dus je schrijft 4,152600 miljoen. Afgerond op één decimaal is dat 4,2 miljoen.</div><div class='box'><h4>Ton als geldbedrag</h4><p>Bij grote geldbedragen kom je ook de eenheid <b>ton</b> tegen. 1 ton is €100.000. Zo is 5,4 ton gelijk aan 5,4 &times; 100.000 = €540.000.</p></div><div class='call warn'><b>Veelgemaakte fout:</b> Verwissel het aantal cijfers niet: duizend heeft drie nullen, miljoen heeft zes nullen en miljard heeft negen nullen. Verdeel een groot getal altijd eerst van achteren naar voren in groepjes van drie cijfers, dat voorkomt fouten.</div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Verdeel een groot getal van achteren naar voren in groepjes van 3 cijfers</li><li>1 duizend = 1.000, 1 miljoen = 1.000.000, 1 miljard = 1.000.000.000</li><li>1 ton = €100.000</li></ul></div>"
+        },
+        {
+          "titel": "1.5 Berekeningen met haakjes",
+          "uitleg": "<div class='box'><h4>Rekenvolgorde met haakjes</h4><p>Staan er haakjes in een berekening, dan bereken je altijd eerst wat tussen de haakjes staat. Pas daarna doe je de rest van de berekening.</p></div><div class='g2'><div class='box'><h4>Voorbeeld 1</h4><p>Bereken (6 + 3) &times; (8 &minus; 5). Eerst de haakjes: 6 + 3 = 9 en 8 &minus; 5 = 3. Dan vermenigvuldigen: 9 &times; 3 = 27.</p></div><div class='box'><h4>Voorbeeld 2</h4><p>Bereken 7 &times; (5 + 3). Eerst de haakjes: 5 + 3 = 8. Dan vermenigvuldigen: 7 &times; 8 = 56.</p></div></div><div class='call warn'><b>Veelgemaakte fout:</b> Op de rekenmachine vergeten leerlingen soms de haakjes zelf in te toetsen, waardoor de rekenmachine in de verkeerde volgorde rekent. Toets de haakjes altijd mee in, ook als de som eenvoudig lijkt.</div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Wat tussen haakjes staat, bereken je altijd eerst</li><li>Toets haakjes ook op de rekenmachine in</li></ul></div>"
+        },
+        {
+          "titel": "1.6 Ontbrekende getal berekenen",
+          "uitleg": "<div class='box'><h4>Het ontbrekende getal terugrekenen</h4><p>Soms mis je een getal in een berekening, zoals in 672,6 &minus; … = 131,9. Je vindt het ontbrekende getal met de omgekeerde bewerking.</p></div><div class='g2'><div class='box'><h4>Bij aftrekken</h4><p>Staat het ontbrekende getal na een min, dan trek je af: 672,6 &minus; 131,9 = 540,7. Dus 672,6 &minus; 540,7 = 131,9.</p></div><div class='box'><h4>Bij vermenigvuldigen</h4><p>Staat het ontbrekende getal na een keer-teken, dan deel je: bij 86,9 &times; … = 460,57 reken je 460,57 : 86,9 = 5,3.</p></div></div><div class='call'>De omgekeerde bewerking van optellen is aftrekken, en de omgekeerde bewerking van vermenigvuldigen is delen. Zo vind je altijd het ontbrekende getal terug.</div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Ontbrekend getal bij + of &minus;: gebruik de omgekeerde bewerking (&minus; of +)</li><li>Ontbrekend getal bij &times; of :: gebruik de omgekeerde bewerking (: of &times;)</li></ul></div>"
+        }
+      ],
+      "begrippen": [
+        {
+          "term": "Getallenlijn",
+          "uitleg": "Een lijn waarop getallen op volgorde en op de juiste afstand van elkaar staan.",
+          "paragraaf": "1.1 Getallenlijn"
+        },
+        {
+          "term": "Begingetal en eindgetal",
+          "uitleg": "Het getal waar een getallenlijn begint en het getal waar hij eindigt; het verschil ertussen is de lengte van de lijn.",
+          "paragraaf": "1.1 Getallenlijn"
+        },
+        {
+          "term": "Plaatswaarde",
+          "uitleg": "De waarde die een cijfer heeft door de plek waar het in een getal staat, bijvoorbeeld eenheid, tiental of honderdtal.",
+          "paragraaf": "1.2 Waarde cijfers in getal"
+        },
+        {
+          "term": "Tiende en honderdste",
+          "uitleg": "De plaatsen direct na de komma in een getal, gebruikt voor decimale waarden kleiner dan 1.",
+          "paragraaf": "1.2 Waarde cijfers in getal"
+        },
+        {
+          "term": "Afronden",
+          "uitleg": "Een getal vervangen door een rond getal dat er dichtbij ligt, zodat het makkelijker te onthouden of te gebruiken is.",
+          "paragraaf": "1.3 Afronden"
+        },
+        {
+          "term": "Decimaal",
+          "uitleg": "Een cijfer achter de komma van een getal.",
+          "paragraaf": "1.3 Afronden"
+        },
+        {
+          "term": "Duizend",
+          "uitleg": "Het getal 1.000.",
+          "paragraaf": "1.4 Grote getallen"
+        },
+        {
+          "term": "Miljoen",
+          "uitleg": "Het getal 1.000.000.",
+          "paragraaf": "1.4 Grote getallen"
+        },
+        {
+          "term": "Miljard",
+          "uitleg": "Het getal 1.000.000.000.",
+          "paragraaf": "1.4 Grote getallen"
+        },
+        {
+          "term": "Ton (geldbedrag)",
+          "uitleg": "Een geldbedrag van €100.000.",
+          "paragraaf": "1.4 Grote getallen"
+        },
+        {
+          "term": "Rekenvolgorde",
+          "uitleg": "De volgorde waarin je de onderdelen van een berekening moet uitrekenen; wat tussen haakjes staat gaat altijd eerst.",
+          "paragraaf": "1.5 Berekeningen met haakjes"
+        },
+        {
+          "term": "Ontbrekend getal",
+          "uitleg": "Het onbekende getal in een berekening, dat je terugvindt met de omgekeerde bewerking.",
+          "paragraaf": "1.6 Ontbrekende getal berekenen"
+        },
+        {
+          "term": "Omgekeerde bewerking",
+          "uitleg": "De bewerking die het tegenovergestelde doet van een andere bewerking, zoals aftrekken bij optellen en delen bij vermenigvuldigen.",
+          "paragraaf": "1.6 Ontbrekende getal berekenen"
+        }
+      ],
+      "flashcards": [
+        {
+          "vraag": "Hoe bereken je de lengte van een getallenlijn?",
+          "antwoord": "Eindgetal min begingetal.",
+          "paragraaf": "1.1 Getallenlijn"
+        },
+        {
+          "vraag": "Hoe bereken je de waarde van één stukje op een getallenlijn?",
+          "antwoord": "De lengte van de getallenlijn delen door het aantal stukjes.",
+          "paragraaf": "1.1 Getallenlijn"
+        },
+        {
+          "vraag": "Wat is de plaatswaarde van het cijfer 7 in het getal 7306,59?",
+          "antwoord": "7 duizendtal, dus 7 x 1000 = 7000.",
+          "paragraaf": "1.2 Waarde cijfers in getal"
+        },
+        {
+          "vraag": "Welke plaats staat direct rechts van de komma?",
+          "antwoord": "De tienden.",
+          "paragraaf": "1.2 Waarde cijfers in getal"
+        },
+        {
+          "vraag": "Waarnaar rond je af als een getal precies in het midden ligt tussen twee ronde getallen?",
+          "antwoord": "Altijd naar boven.",
+          "paragraaf": "1.3 Afronden"
+        },
+        {
+          "vraag": "Waar kijk je naar bij het afronden op decimalen?",
+          "antwoord": "Naar het eerste cijfer achter de komma dat je weglaat.",
+          "paragraaf": "1.3 Afronden"
+        },
+        {
+          "vraag": "Hoeveel nullen heeft 1 miljoen?",
+          "antwoord": "Zes nullen: 1.000.000.",
+          "paragraaf": "1.4 Grote getallen"
+        },
+        {
+          "vraag": "Hoeveel euro is 1 ton?",
+          "antwoord": "€100.000.",
+          "paragraaf": "1.4 Grote getallen"
+        },
+        {
+          "vraag": "Hoe verdeel je een groot getal om het makkelijker te lezen?",
+          "antwoord": "Van achteren naar voren in groepjes van drie cijfers.",
+          "paragraaf": "1.4 Grote getallen"
+        },
+        {
+          "vraag": "Wat bereken je altijd eerst in een som met haakjes?",
+          "antwoord": "Wat tussen de haakjes staat.",
+          "paragraaf": "1.5 Berekeningen met haakjes"
+        },
+        {
+          "vraag": "Wat is de omgekeerde bewerking van vermenigvuldigen?",
+          "antwoord": "Delen.",
+          "paragraaf": "1.6 Ontbrekende getal berekenen"
+        },
+        {
+          "vraag": "Wat is de omgekeerde bewerking van optellen?",
+          "antwoord": "Aftrekken.",
+          "paragraaf": "1.6 Ontbrekende getal berekenen"
+        }
+      ],
+      "quiz": [
+        {
+          "vraag": "Een getallenlijn loopt van 60 tot 100 en is verdeeld in 10 stukjes. Hoe lang is één stukje?",
+          "opties": [
+            "2",
+            "4",
+            "10",
+            "40"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "De lengte van de getallenlijn is 100 - 60 = 40. Verdeeld over 10 stukjes is elk stukje 40 : 10 = 4 lang."
+        },
+        {
+          "vraag": "Een getallenlijn loopt van 4,6 tot 4,8 en is verdeeld in 4 stukjes. Welk getal hoort bij het punt 3 stukjes na 4,6?",
+          "opties": [
+            "4,65",
+            "4,70",
+            "4,75",
+            "4,80"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "Eén stukje is (4,8 - 4,6) : 4 = 0,05. Na 3 stukjes kom je uit op 4,6 + 3 x 0,05 = 4,75."
+        },
+        {
+          "vraag": "Wat is de waarde van het cijfer 3 in het getal 7306,59?",
+          "opties": [
+            "3",
+            "30",
+            "300",
+            "3000"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "De 3 staat op de honderdtallenplaats, dus de waarde is 3 x 100 = 300."
+        },
+        {
+          "vraag": "Rond 867 af op honderdtallen.",
+          "opties": [
+            "800",
+            "850",
+            "900",
+            "1000"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "867 ligt tussen 800 en 900 en dichter bij 900, dus 867 wordt afgerond op honderdtallen 900."
+        },
+        {
+          "vraag": "Rond 45.497 af op duizendtallen.",
+          "opties": [
+            "44.000",
+            "45.000",
+            "45.500",
+            "46.000"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "45.497 ligt tussen 45.000 en 46.000 en dichter bij 45.000, dus het wordt afgerond op 45.000."
+        },
+        {
+          "vraag": "24,7036 wordt afgerond op twee decimalen. Wat is het antwoord?",
+          "opties": [
+            "24,69",
+            "24,70",
+            "24,71",
+            "24,80"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Het derde cijfer achter de komma is een 3, dus je rondt naar beneden af: 24,70."
+        },
+        {
+          "vraag": "8,5324 wordt afgerond op een heel getal. Wat is het antwoord?",
+          "opties": [
+            "8",
+            "8,5",
+            "9",
+            "10"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "Het eerste cijfer achter de komma is een 5, dus je rondt naar boven af: 9."
+        },
+        {
+          "vraag": "Hoeveel is 1 miljard?",
+          "opties": [
+            "1.000",
+            "1.000.000",
+            "1.000.000.000",
+            "10.000.000"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "1 miljard is een 1 met negen nullen: 1.000.000.000."
+        },
+        {
+          "vraag": "Een villa kost €2.567.000. Hoeveel miljoen euro is dat, afgerond op één decimaal?",
+          "opties": [
+            "2,5 miljoen",
+            "2,6 miljoen",
+            "2,57 miljoen",
+            "3,0 miljoen"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "2.567.000 is 2,567 miljoen, en dat wordt afgerond op één decimaal 2,6 miljoen."
+        },
+        {
+          "vraag": "Hoeveel euro is 5,4 ton?",
+          "opties": [
+            "€5.400",
+            "€54.000",
+            "€540.000",
+            "€5.400.000"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "1 ton is €100.000, dus 5,4 ton is 5,4 x 100.000 = €540.000."
+        },
+        {
+          "vraag": "Bereken (6 + 3) x (8 - 5).",
+          "opties": [
+            "17",
+            "27",
+            "33",
+            "72"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Eerst de haakjes: 6 + 3 = 9 en 8 - 5 = 3. Dan vermenigvuldigen: 9 x 3 = 27."
+        },
+        {
+          "vraag": "Bereken het ontbrekende getal in 672,6 - … = 131,9.",
+          "opties": [
+            "131,9",
+            "540,7",
+            "560,3",
+            "804,5"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Je gebruikt de omgekeerde bewerking: 672,6 - 131,9 = 540,7."
+        },
+        {
+          "vraag": "Bereken het ontbrekende getal in 86,9 x … = 460,57.",
+          "opties": [
+            "3,9",
+            "5,3",
+            "5,5",
+            "53"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Je gebruikt de omgekeerde bewerking: 460,57 : 86,9 = 5,3."
+        }
+      ]
+    },
+    {
+      "titel": "Meten en meetkunde",
+      "uitleg": "<div class='box'><h4>Waar dit hoofdstuk over gaat</h4><p>Dit hoofdstuk gaat over rekenen met tijd, tijdsduur en snelheid, over het omrekenen van digitale opslag en over het omrekenen van munteenheden. Je leert bijvoorbeeld hoe laat iemand moet vertrekken, hoe snel iemand fietst en hoeveel euro een vreemde munt waard is.</p></div>",
+      "subhoofdstukken": [
+        {
+          "titel": "2.1 Rekenen met tijd",
+          "uitleg": "<div class='box'><h4>Eenheden van tijd</h4><p>Tijd reken je om tussen verschillende eenheden: seconden, minuten, uren, dagen, weken, maanden, kwartalen en jaren. Om goed te kunnen rekenen met tijd moet je precies weten hoeveel van de ene eenheid in de andere past.</p></div><div class='tblwrap'><table class='tbl'><tr><th>Eenheid</th><th>Gelijk aan</th></tr><tr><td>1 minuut</td><td>60 seconden</td></tr><tr><td>1 uur</td><td>60 minuten</td></tr><tr><td>1 dag</td><td>24 uur</td></tr><tr><td>1 week</td><td>7 dagen</td></tr><tr><td>1 kwartaal</td><td>3 maanden</td></tr><tr><td>1 jaar</td><td>12 maanden = 4 kwartalen</td></tr></table></div><div class='call'><b>Voorbeeld</b> 220 seconden zijn 3 minuten (3 x 60 = 180 seconden), met nog 220 - 180 = 40 seconden erbij. Dus 220 seconden = 3 minuten en 40 seconden.</div><div class='box'><h4>Abonnementen vergelijken</h4><p>Je kunt uitrekenen welke betaalwijze het voordeligst is door alles om te rekenen naar dezelfde periode, bijvoorbeeld een jaar. Een maandabonnement van €17,50 kost per jaar 12 x €17,50 = €210. Een kwartaalabonnement van €50 kost per jaar 4 x €50 = €200. Het kwartaalabonnement is dan €10 per jaar voordeliger.</p></div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Ken de omrekeningen tussen seconden, minuten, uren, dagen, weken, maanden, kwartalen en jaren uit je hoofd</li><li>Om abonnementen te vergelijken reken je ze om naar dezelfde periode, bijvoorbeeld een jaar</li></ul></div>"
+        },
+        {
+          "titel": "2.2 Rekenen met tijdsduur",
+          "uitleg": "<div class='box'><h4>Tijdsduur berekenen</h4><p>Weet je de begintijd en de eindtijd, dan kun je de tijdsduur berekenen. Je rekent handig via de hele uren.</p></div><div class='call'><b>Voorbeeld</b> Bert begint om 8:15 uur met zijn lessen en gaat om 14:25 uur naar huis. Van 8:15 uur tot 9:00 uur is 45 minuten. Van 9:00 uur tot 14:00 uur is 5 uur. Van 14:00 uur tot 14:25 uur is 25 minuten. Samen: 45 minuten + 5 uur + 25 minuten = 5 uur en 70 minuten = 6 uur en 10 minuten. Bert is dus 6 uur en 10 minuten op school geweest.</div><div class='box'><h4>De begintijd terugrekenen</h4><p>Wil je uitrekenen hoe laat iemand moet vertrekken, dan trek je de reistijd van de aankomsttijd af. Trek eerst de hele uren eraf en reken daarna de resterende minuten terug, net zoals bij het optellen.</p></div><div class='call'><b>Voorbeeld</b> Mark wil om 9:15 uur op zijn werk zijn en zijn reistijd is 1 uur en 58 minuten. Eerst het hele uur eraf: 9:15 uur - 1 uur = 8:15 uur. Dan 15 minuten terug naar 8:00 uur, en de resterende 58 - 15 = 43 minuten er ook nog af: 8:00 uur - 43 minuten = 7:17 uur. Mark moet dus uiterlijk om 7:17 uur vertrekken.</div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Tijdsduur = eindtijd - begintijd, reken handig via de hele uren</li><li>Begintijd = eindtijd - tijdsduur, trek eerst de hele uren af en werk daarna de minuten weg</li></ul></div>"
+        },
+        {
+          "titel": "2.3 Rekenen met snelheid",
+          "uitleg": "<div class='box'><h4>Snelheid berekenen</h4><p>Wanneer je weet hoelang je over een afstand doet, kun je de snelheid berekenen. Twee belangrijke eenheden van snelheid zijn kilometer per uur (km/uur) en meter per seconde (m/s). Je deelt de afstand door de tijd.</p></div><div class='call'><b>Voorbeeld</b> Jarmila loopt de 400 m in 44,99 seconden. Haar snelheid in m/s bereken je met 400 : 44,99 = 8,89 m/s (afgerond op twee decimalen).</div><div class='box'><h4>Snelheid omrekenen</h4><p>Met het getal 3,6 reken je m/s om naar km/uur en andersom. Van m/s naar km/uur vermenigvuldig je met 3,6. Van km/uur naar m/s deel je door 3,6.</p></div><div class='tblwrap'><table class='tbl'><tr><th>Van</th><th>Naar</th><th>Bewerking</th></tr><tr><td>m/s</td><td>km/uur</td><td>x 3,6</td></tr><tr><td>km/uur</td><td>m/s</td><td>: 3,6</td></tr></table></div><div class='call'><b>Voorbeeld</b> 50 km/uur omgerekend naar m/s: 50 : 3,6 = 13,9 m/s (afgerond op één decimaal).</div><div class='call warn'><b>Veelgemaakte fout:</b> Leerlingen verwisselen soms of ze moeten delen of vermenigvuldigen met 3,6. Ga van km/uur naar m/s, dan wordt het getal kleiner, dus je deelt. Ga van m/s naar km/uur, dan wordt het getal groter, dus je vermenigvuldigt.</div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Snelheid = afstand : tijd</li><li>m/s naar km/uur: keer 3,6. km/uur naar m/s: gedeeld door 3,6</li></ul></div>"
+        },
+        {
+          "titel": "2.4 Afstand en tijd berekenen",
+          "uitleg": "<div class='box'><h4>Vuistregels gebruiken</h4><p>Als je de precieze snelheid niet weet, gebruik je een vuistregel: je fietst ongeveer 15 km in een uur en je loopt ongeveer 5 km in een uur. Met deze vuistregels schat je de reistijd of de afgelegde afstand.</p></div><div class='call'><b>Voorbeeld</b> Caithlin rijdt met de scooter 37,5 km en rijdt 25 km/uur. De rit duurt 37,5 : 25 = 1,5 uur, dat is 1 uur en 30 minuten.</div><div class='call'><b>Voorbeeld</b> Jeroen wandelt elke dag 1 uur en 30 minuten (1,5 uur) met zijn hond. Met de vuistregel van 5 km per uur loopt hij per dag 1,5 x 5 = 7,5 km, en per week 7,5 x 7 = 52,5 km, dus ongeveer 53 km per week.</div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Vuistregel fietsen: ongeveer 15 km per uur</li><li>Vuistregel lopen: ongeveer 5 km per uur</li><li>Tijd = afstand : snelheid, en afstand = snelheid x tijd</li></ul></div>"
+        },
+        {
+          "titel": "2.5 Eenheden van informatie",
+          "uitleg": "<div class='box'><h4>Digitale opslag omrekenen</h4><p>De opslagcapaciteit van telefoons, tablets en harde schijven wordt gemeten in kilobyte (kB), megabyte (MB), gigabyte (GB) en terabyte (TB). Deze eenheden moet je uit je hoofd kennen.</p></div><div class='tblwrap'><table class='tbl'><tr><th>Eenheid</th><th>Gelijk aan</th></tr><tr><td>1 MB</td><td>1000 kB</td></tr><tr><td>1 GB</td><td>1000 MB</td></tr><tr><td>1 TB</td><td>1000 GB</td></tr></table></div><div class='call'><b>Voorbeeld</b> Simon koopt een externe harde schijf van 3 TB om films van 6 GB op te slaan. Eerst reken je 3 TB om naar GB: 3 x 1000 = 3000 GB. Dan bereken je hoe vaak 6 GB hierin past: 3000 : 6 = 500. Er passen dus 500 films op de harde schijf.</div><div class='call warn'><b>Veelgemaakte fout:</b> Vergeet niet dat elke stap tussen kB, MB, GB en TB een factor 1000 is, niet 1024 zoals soms elders gebruikt wordt. Reken in deze opgaven altijd met 1000.</div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>1 MB = 1000 kB, 1 GB = 1000 MB, 1 TB = 1000 GB</li><li>Reken eerst om naar dezelfde eenheid voordat je gaat delen of vermenigvuldigen</li></ul></div>"
+        },
+        {
+          "titel": "2.6 Munteenheden",
+          "uitleg": "<div class='box'><h4>Munteenheden omrekenen</h4><p>Buiten Europa gebruik je meestal een andere munteenheid dan de euro. De wisselkoers geeft aan hoeveel van die munteenheid één euro waard is. Met een schema kun je makkelijk omrekenen.</p></div><div class='call'><b>Voorbeeld</b> 1 euro = 1,1129 Amerikaanse dollar. Mary Ann heeft 75 Amerikaanse dollar nodig. Omdat je van dollar naar euro gaat, deel je: 75 : 1,1129 = €67,59 (afgerond op twee decimalen).</div><div class='box'><h4>Welke kant op: keer of delen</h4><p>Ga je van euro naar een andere munteenheid, dan vermenigvuldig je met de wisselkoers. Ga je van de andere munteenheid terug naar euro, dan deel je door de wisselkoers.</p></div><div class='call warn'><b>Veelgemaakte fout:</b> Leerlingen vermenigvuldigen soms terwijl ze eigenlijk moeten delen. Bedenk steeds: reken je naar de vreemde munt toe, dan wordt het bedrag meestal groter (keer), en reken je terug naar euro, dan wordt het bedrag kleiner (delen).</div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Van euro naar vreemde munt: vermenigvuldig met de wisselkoers</li><li>Van vreemde munt naar euro: deel door de wisselkoers</li><li>Rond het eindantwoord in euro's af op twee decimalen</li></ul></div>"
+        }
+      ],
+      "begrippen": [
+        {
+          "term": "Tijdsduur",
+          "uitleg": "De hoeveelheid tijd tussen een begintijd en een eindtijd.",
+          "paragraaf": "2.2 Rekenen met tijdsduur"
+        },
+        {
+          "term": "Begintijd en eindtijd",
+          "uitleg": "Het tijdstip waarop iets begint en het tijdstip waarop iets eindigt; hiermee bereken je de tijdsduur.",
+          "paragraaf": "2.2 Rekenen met tijdsduur"
+        },
+        {
+          "term": "Kwartaal",
+          "uitleg": "Een periode van 3 maanden, een kwart van een jaar.",
+          "paragraaf": "2.1 Rekenen met tijd"
+        },
+        {
+          "term": "Abonnement",
+          "uitleg": "Een vaste betaalregeling voor een dienst, bijvoorbeeld per maand, kwartaal, half jaar of jaar.",
+          "paragraaf": "2.1 Rekenen met tijd"
+        },
+        {
+          "term": "Snelheid",
+          "uitleg": "De afgelegde afstand gedeeld door de tijd die daarvoor nodig was, bijvoorbeeld in km/uur of m/s.",
+          "paragraaf": "2.3 Rekenen met snelheid"
+        },
+        {
+          "term": "km/uur",
+          "uitleg": "Kilometer per uur, een eenheid van snelheid.",
+          "paragraaf": "2.3 Rekenen met snelheid"
+        },
+        {
+          "term": "m/s",
+          "uitleg": "Meter per seconde, een eenheid van snelheid.",
+          "paragraaf": "2.3 Rekenen met snelheid"
+        },
+        {
+          "term": "Vuistregel",
+          "uitleg": "Een handig, ongeveer geldend getal dat je gebruikt om snel een schatting te maken, bijvoorbeeld 5 km per uur lopen.",
+          "paragraaf": "2.4 Afstand en tijd berekenen"
+        },
+        {
+          "term": "kB, MB, GB, TB",
+          "uitleg": "Eenheden van digitale opslag: kilobyte, megabyte, gigabyte en terabyte, elk 1000 keer groter dan de vorige.",
+          "paragraaf": "2.5 Eenheden van informatie"
+        },
+        {
+          "term": "Opslagcapaciteit",
+          "uitleg": "De hoeveelheid gegevens die op een apparaat of schijf past.",
+          "paragraaf": "2.5 Eenheden van informatie"
+        },
+        {
+          "term": "Munteenheid",
+          "uitleg": "Het soort geld dat in een land gebruikt wordt, bijvoorbeeld de euro of de Amerikaanse dollar.",
+          "paragraaf": "2.6 Munteenheden"
+        },
+        {
+          "term": "Wisselkoers",
+          "uitleg": "Het getal dat aangeeft hoeveel van een andere munteenheid één euro waard is.",
+          "paragraaf": "2.6 Munteenheden"
+        }
+      ],
+      "flashcards": [
+        {
+          "vraag": "Hoeveel seconden zitten er in 1 minuut?",
+          "antwoord": "60 seconden.",
+          "paragraaf": "2.1 Rekenen met tijd"
+        },
+        {
+          "vraag": "Hoeveel kwartalen zitten er in een jaar?",
+          "antwoord": "4 kwartalen.",
+          "paragraaf": "2.1 Rekenen met tijd"
+        },
+        {
+          "vraag": "Hoe bereken je de tijdsduur als je de begin- en eindtijd weet?",
+          "antwoord": "Je rekent het verschil uit, handig via de hele uren.",
+          "paragraaf": "2.2 Rekenen met tijdsduur"
+        },
+        {
+          "vraag": "Hoe bereken je hoe laat iemand moet vertrekken als je de aankomsttijd en de reistijd weet?",
+          "antwoord": "Je trekt de reistijd van de aankomsttijd af, eerst de hele uren en dan de minuten.",
+          "paragraaf": "2.2 Rekenen met tijdsduur"
+        },
+        {
+          "vraag": "Hoe bereken je de snelheid als je de afstand en de tijd weet?",
+          "antwoord": "Snelheid = afstand gedeeld door tijd.",
+          "paragraaf": "2.3 Rekenen met snelheid"
+        },
+        {
+          "vraag": "Hoe reken je m/s om naar km/uur?",
+          "antwoord": "Vermenigvuldig met 3,6.",
+          "paragraaf": "2.3 Rekenen met snelheid"
+        },
+        {
+          "vraag": "Hoe reken je km/uur om naar m/s?",
+          "antwoord": "Deel door 3,6.",
+          "paragraaf": "2.3 Rekenen met snelheid"
+        },
+        {
+          "vraag": "Wat is de vuistregel voor lopen?",
+          "antwoord": "Ongeveer 5 km per uur.",
+          "paragraaf": "2.4 Afstand en tijd berekenen"
+        },
+        {
+          "vraag": "Wat is de vuistregel voor fietsen?",
+          "antwoord": "Ongeveer 15 km per uur.",
+          "paragraaf": "2.4 Afstand en tijd berekenen"
+        },
+        {
+          "vraag": "Hoeveel MB is 1 GB?",
+          "antwoord": "1000 MB.",
+          "paragraaf": "2.5 Eenheden van informatie"
+        },
+        {
+          "vraag": "Hoeveel GB is 1 TB?",
+          "antwoord": "1000 GB.",
+          "paragraaf": "2.5 Eenheden van informatie"
+        },
+        {
+          "vraag": "Wat vermenigvuldig of deel je als je van euro naar een vreemde munt rekent?",
+          "antwoord": "Je vermenigvuldigt met de wisselkoers.",
+          "paragraaf": "2.6 Munteenheden"
+        }
+      ],
+      "quiz": [
+        {
+          "vraag": "Hoeveel is 220 seconden in minuten en seconden?",
+          "opties": [
+            "2 minuten en 20 seconden",
+            "3 minuten en 20 seconden",
+            "3 minuten en 40 seconden",
+            "4 minuten en 0 seconden"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "3 minuten is 180 seconden. Er blijven 220 - 180 = 40 seconden over, dus 220 seconden is 3 minuten en 40 seconden."
+        },
+        {
+          "vraag": "Een maandabonnement kost €17,50 per maand, een kwartaalabonnement €50 per kwartaal. Welke is per jaar voordeliger en met hoeveel?",
+          "opties": [
+            "Maandabonnement, €10 voordeliger",
+            "Kwartaalabonnement, €10 voordeliger",
+            "Kwartaalabonnement, €50 voordeliger",
+            "Ze zijn precies even duur"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Het maandabonnement kost 12 x 17,50 = 210 euro per jaar, het kwartaalabonnement 4 x 50 = 200 euro. Het kwartaalabonnement is dus 210 - 200 = 10 euro per jaar voordeliger."
+        },
+        {
+          "vraag": "Bert begint om 8:15 uur op school en gaat om 14:25 uur naar huis. Hoelang is hij op school geweest?",
+          "opties": [
+            "5 uur en 50 minuten",
+            "6 uur en 10 minuten",
+            "6 uur en 25 minuten",
+            "5 uur en 25 minuten"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Van 8:15 tot 9:00 uur is 45 minuten, van 9:00 tot 14:00 uur is 5 uur, en van 14:00 tot 14:25 uur is 25 minuten. Samen is dat 5 uur en 70 minuten, oftewel 6 uur en 10 minuten."
+        },
+        {
+          "vraag": "Mark wil om 9:15 uur op zijn werk zijn en zijn reistijd is 1 uur en 58 minuten. Hoe laat moet hij uiterlijk vertrekken?",
+          "opties": [
+            "7:07 uur",
+            "7:17 uur",
+            "7:27 uur",
+            "8:17 uur"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "9:15 uur min 1 uur is 8:15 uur. Daarvan gaan nog 58 minuten af: eerst 15 minuten naar 8:00 uur, dan nog 43 minuten naar 7:17 uur."
+        },
+        {
+          "vraag": "Jarmila loopt de 400 m in 44,99 seconden. Wat is haar snelheid in m/s, afgerond op twee decimalen?",
+          "opties": [
+            "8,79 m/s",
+            "8,89 m/s",
+            "8,99 m/s",
+            "9,09 m/s"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Snelheid is afstand gedeeld door tijd: 400 : 44,99 = 8,89 m/s."
+        },
+        {
+          "vraag": "Hoe reken je 50 km/uur om naar m/s?",
+          "opties": [
+            "50 x 3,6",
+            "50 : 3,6",
+            "50 + 3,6",
+            "50 - 3,6"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Van km/uur naar m/s deel je door 3,6: 50 : 3,6 = 13,9 m/s."
+        },
+        {
+          "vraag": "Jeroen wandelt 1 uur en 30 minuten per dag met de vuistregel van 5 km per uur. Hoeveel km wandelt hij ongeveer per week?",
+          "opties": [
+            "7,5 km",
+            "37,5 km",
+            "52,5 km",
+            "75 km"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "1,5 uur x 5 km/uur = 7,5 km per dag, en 7,5 x 7 dagen = 52,5 km per week."
+        },
+        {
+          "vraag": "Simon heeft een harde schijf van 3 TB voor films van 6 GB per stuk. Hoeveel films passen er ongeveer op?",
+          "opties": [
+            "50",
+            "500",
+            "5000",
+            "18"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "3 TB is 3 x 1000 = 3000 GB. 3000 : 6 = 500 films passen erop."
+        },
+        {
+          "vraag": "Hoeveel kB is 1 GB?",
+          "opties": [
+            "1000 kB",
+            "10.000 kB",
+            "100.000 kB",
+            "1.000.000 kB"
+          ],
+          "antwoord_index": 3,
+          "uitleg": "1 GB is 1000 MB, en 1 MB is 1000 kB, dus 1 GB is 1000 x 1000 = 1.000.000 kB."
+        },
+        {
+          "vraag": "1 euro = 1,1129 Amerikaanse dollar. Mary Ann heeft 75 dollar nodig. Hoeveel euro betaalt zij daarvoor, afgerond op twee decimalen?",
+          "opties": [
+            "€65,49",
+            "€67,59",
+            "€75,00",
+            "€83,50"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Van dollar naar euro deel je door de wisselkoers: 75 : 1,1129 = €67,59."
+        },
+        {
+          "vraag": "Je wilt euro's omrekenen naar Zweedse kronen. Wat doe je met de wisselkoers?",
+          "opties": [
+            "Vermenigvuldigen",
+            "Delen",
+            "Optellen",
+            "Aftrekken"
+          ],
+          "antwoord_index": 0,
+          "uitleg": "Ga je van euro naar een vreemde munt, dan vermenigvuldig je met de wisselkoers."
+        }
+      ]
+    },
+    {
+      "titel": "Verhoudingen",
+      "uitleg": "<div class='box'><h4>Waar dit hoofdstuk over gaat</h4><p>In dit hoofdstuk werk je met breuken, schaal, recepten, verhoudingen en negatieve getallen. Steeds gaat het om het verband tussen twee of meer hoeveelheden: hoe groot is het echte gebouw ten opzichte van het model, hoeveel ingrediënten heb je nodig voor meer of minder personen, en hoe reken je met getallen onder nul.</p></div>",
+      "subhoofdstukken": [
+        {
+          "titel": "3.1 Rekenen met breuken",
+          "uitleg": "<div class='box'><h4>Breuken vereenvoudigen</h4><p>Een breuk vereenvoudig je door de teller en de noemer door hetzelfde getal te delen, tot het niet meer kleiner kan. Zo wordt een breuk overzichtelijker zonder dat de waarde verandert.</p></div><div class='call'><b>Voorbeeld</b> Bij een rechthoek die verdeeld is in 20 hokjes waarvan er 8 gekleurd zijn, hoort de breuk 8/20. Deel teller en noemer door 4: 8/20 = 2/5.</div><div class='box'><h4>Breuk naar procent</h4><p>Om een breuk om te rekenen naar procenten, deel je de teller door de noemer en vermenigvuldig je met 100.</p></div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Vereenvoudigen: teller en noemer door hetzelfde getal delen</li><li>Breuk naar procent: teller : noemer x 100%</li></ul></div>"
+        },
+        {
+          "titel": "3.2 Breuken optellen en aftrekken",
+          "uitleg": "<div class='box'><h4>Breuken met gelijke noemers</h4><p>Zijn de noemers van twee breuken gelijk, dan kun je de breuken direct optellen of aftrekken. Je telt dan alleen de tellers bij elkaar op of trekt ze van elkaar af, en vereenvoudigt de uitkomst als dat kan.</p></div><div class='box'><h4>Breuken met ongelijke noemers</h4><p>Zijn de noemers niet gelijk, dan maak je de noemers eerst gelijk. Je kunt bijvoorbeeld van 1/4 wel 2/8 maken, zodat je de breuk kunt optellen bij een breuk met noemer 8.</p></div><div class='call'><b>Voorbeeld</b> Een grote pizza is verdeeld in 8 stukken. Ashia eet 1/8 deel en Nafuna eet de helft, dat is 4/8 deel. Samen eten ze 1/8 + 4/8 = 5/8 deel van de pizza. Er blijft dus 3/8 deel over.</div><div class='call warn'><b>Veelgemaakte fout:</b> Tellers bij elkaar optellen zonder eerst de noemers gelijk te maken geeft een verkeerd antwoord. Maak altijd eerst de noemers gelijk voor je de tellers optelt of aftrekt.</div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Gelijke noemers: tel of trek alleen de tellers</li><li>Ongelijke noemers: maak eerst de noemers gelijk</li></ul></div>"
+        },
+        {
+          "titel": "3.3 Schaal",
+          "uitleg": "<div class='box'><h4>Van model naar echt en terug</h4><p>Een schaal zoals 1 : 25 betekent dat 1 cm op het model gelijk is aan 25 cm in het echt. Wil je van het model naar de echte maat, dan vermenigvuldig je met het tweede getal van de schaal. Wil je van de echte maat naar het model, dan deel je erdoor.</p></div><div class='call'><b>Voorbeeld</b> De Domtoren in Utrecht is 112 m hoog. In Madurodam staat een model op schaal 1 : 25. Het model is kleiner dan de toren, dus je deelt: 112 m : 25 = 4,48 m. Het model van de Domtoren is dus 4,48 m hoog.</div><div class='g2'><div class='box'><h4>Model &rarr; echt</h4><p>Vermenigvuldig de modelmaat met het tweede getal van de schaal.</p></div><div class='box'><h4>Echt &rarr; model</h4><p>Deel de echte maat door het tweede getal van de schaal.</p></div></div><div class='call warn'><b>Veelgemaakte fout:</b> Vermenigvuldigen in plaats van delen (of andersom) is de meest gemaakte fout bij schaal. Bedenk eerst of het model groter of kleiner moet worden dan het gegeven getal, dan weet je welke bewerking je nodig hebt.</div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Schaal 1 : n betekent: 1 op het model staat voor n in het echt</li><li>Model &rarr; echt: vermenigvuldigen met n. Echt &rarr; model: delen door n</li></ul></div>"
+        },
+        {
+          "titel": "3.4 Rekenen met recepten",
+          "uitleg": "<div class='box'><h4>Recepten omrekenen</h4><p>Recepten in kookboeken staan meestal voor 4 personen. Kook je voor meer of minder personen, dan reken je de hoeveelheden om. Je zoekt eerst hoeveel je voor 1 persoon nodig hebt en vermenigvuldigt dat met het aantal personen waarvoor je kookt.</p></div><div class='call'><b>Voorbeeld</b> Amara bakt pannenkoeken voor 26 personen. Een recept voor 4 personen gebruikt 500 g pannenkoekenmix. Voor 1 persoon is dat 500 : 4 = 125 g. Voor 26 personen heeft ze dan 125 x 26 = 3250 g pannenkoekenmix nodig.</div><div class='box'><h4>Verpakkingen omrekenen</h4><p>Weet je de totale hoeveelheid die je nodig hebt, dan bereken je met een deling hoeveel pakken, potten of zakjes je moet kopen. Rond daarbij altijd naar boven af: je kunt geen half pak kopen.</p></div><div class='call'><b>Voorbeeld</b> Bjorn heeft 1500 g zalmfilet nodig en een pak bevat 400 g. Hij berekent 1500 : 400 = 3,75, dus moet hij 4 pakken zalmfilet kopen.</div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Bereken eerst de hoeveelheid voor 1 persoon, vermenigvuldig daarna met het gewenste aantal personen</li><li>Bij het aantal verpakkingen rond je altijd naar boven af</li></ul></div>"
+        },
+        {
+          "titel": "3.5 Verhoudingen",
+          "uitleg": "<div class='box'><h4>Verhoudingstabel gebruiken</h4><p>Bij een verhouding zoals 3 : 10 (siroop : water) kun je een verhoudingstabel maken. Onderaan de tabel zet je de verhoudingsgetallen, daarna zoek je met welk getal je moet vermenigvuldigen om bij de gevraagde totale hoeveelheid te komen.</p></div><div class='call'><b>Voorbeeld</b> Je maakt limonade met 3 delen siroop en 10 delen water, in totaal 13 delen. Wil je 500 ml limonade maken, dan is 1 deel gelijk aan 500 : 13 &asymp; 38,46 ml. Siroop: 3 x 38,46 &asymp; 150 ml. Water: 10 x 38,46 &asymp; 550 ml.</div><div class='box'><h4>Beton mengen</h4><p>Ook bij het mengen van materialen zoals beton gebruik je een verhouding. Cement, zand, grint en water in de verhouding 2 : 4 : 6 : 1 heeft in totaal 2 + 4 + 6 + 1 = 13 delen.</p></div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Tel eerst alle delen van de verhouding bij elkaar op</li><li>Bereken de waarde van 1 deel door de totale hoeveelheid te delen door het totaal aantal delen</li><li>Vermenigvuldig elk verhoudingsgetal met de waarde van 1 deel</li></ul></div>"
+        },
+        {
+          "titel": "3.6 Rekenen met negatieve getallen",
+          "uitleg": "<div class='box'><h4>Rekenen met de getallenlijn</h4><p>Bij het optellen en aftrekken van negatieve getallen kun je een getallenlijn gebruiken. Optellen is een stap naar rechts, aftrekken is een stap naar links.</p></div><div class='g2'><div class='box'><h4>Optellen bij een negatief getal</h4><p>Bereken -6 + 4. Je begint bij -6 en gaat 4 stappen naar rechts: -6 + 4 = -2.</p></div><div class='box'><h4>Aftrekken van een negatief getal</h4><p>Bereken -6 - 2. Je begint bij -6 en gaat 2 stappen naar links: -6 - 2 = -8.</p></div></div><div class='box'><h4>Temperatuurverschil</h4><p>Het verschil tussen twee temperaturen bereken je door de laagste van de hoogste af te trekken. Was het gisteren 4 °C en vandaag -3 °C, dan is het verschil 4 - (-3) = 7 graden.</p></div><div class='call warn'><b>Veelgemaakte fout:</b> Bij twee minnen achter elkaar, zoals bij min en min, wordt het vaak fout gedaan. Gebruik de getallenlijn: aftrekken van een negatief getal is hetzelfde als optellen, dus je gaat juist naar rechts.</div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Optellen: naar rechts op de getallenlijn. Aftrekken: naar links op de getallenlijn</li><li>Temperatuurverschil = hoogste temperatuur min laagste temperatuur</li></ul></div>"
+        }
+      ],
+      "begrippen": [
+        {
+          "term": "Breuk",
+          "uitleg": "Een deel van een geheel, geschreven als teller boven een streep en noemer eronder.",
+          "paragraaf": "3.1 Rekenen met breuken"
+        },
+        {
+          "term": "Teller en noemer",
+          "uitleg": "De teller is het getal boven de streep van een breuk, de noemer het getal eronder.",
+          "paragraaf": "3.1 Rekenen met breuken"
+        },
+        {
+          "term": "Vereenvoudigen",
+          "uitleg": "Een breuk kleiner maken door teller en noemer door hetzelfde getal te delen, zonder de waarde te veranderen.",
+          "paragraaf": "3.1 Rekenen met breuken"
+        },
+        {
+          "term": "Gelijknamige breuken",
+          "uitleg": "Breuken met dezelfde noemer, die je direct kunt optellen of aftrekken.",
+          "paragraaf": "3.2 Breuken optellen en aftrekken"
+        },
+        {
+          "term": "Schaal",
+          "uitleg": "De verhouding tussen een afstand op een model of kaart en de werkelijke afstand, bijvoorbeeld 1 : 25.",
+          "paragraaf": "3.3 Schaal"
+        },
+        {
+          "term": "Verhoudingstabel",
+          "uitleg": "Een tabel waarmee je hoeveelheden in een vaste verhouding kunt berekenen.",
+          "paragraaf": "3.5 Verhoudingen"
+        },
+        {
+          "term": "Verhouding",
+          "uitleg": "Het vaste verband tussen twee of meer hoeveelheden, bijvoorbeeld 2 : 4 : 6 : 1.",
+          "paragraaf": "3.5 Verhoudingen"
+        },
+        {
+          "term": "Negatief getal",
+          "uitleg": "Een getal kleiner dan nul, bijvoorbeeld -5.",
+          "paragraaf": "3.6 Rekenen met negatieve getallen"
+        },
+        {
+          "term": "Temperatuurverschil",
+          "uitleg": "Het verschil tussen twee temperaturen, berekend door de laagste van de hoogste af te trekken.",
+          "paragraaf": "3.6 Rekenen met negatieve getallen"
+        },
+        {
+          "term": "Recept omrekenen",
+          "uitleg": "De hoeveelheden van een recept aanpassen aan een ander aantal personen dan waarvoor het recept oorspronkelijk bedoeld is.",
+          "paragraaf": "3.4 Rekenen met recepten"
+        }
+      ],
+      "flashcards": [
+        {
+          "vraag": "Hoe vereenvoudig je een breuk?",
+          "antwoord": "Door teller en noemer door hetzelfde getal te delen.",
+          "paragraaf": "3.1 Rekenen met breuken"
+        },
+        {
+          "vraag": "Hoe reken je een breuk om naar procenten?",
+          "antwoord": "Teller delen door noemer en vermenigvuldigen met 100.",
+          "paragraaf": "3.1 Rekenen met breuken"
+        },
+        {
+          "vraag": "Kun je 1/8 en 4/8 direct optellen? Waarom?",
+          "antwoord": "Ja, want de noemers zijn gelijk.",
+          "paragraaf": "3.2 Breuken optellen en aftrekken"
+        },
+        {
+          "vraag": "Wat moet je doen voor je breuken met ongelijke noemers optelt?",
+          "antwoord": "Eerst de noemers gelijk maken.",
+          "paragraaf": "3.2 Breuken optellen en aftrekken"
+        },
+        {
+          "vraag": "Wat betekent een schaal van 1 : 25?",
+          "antwoord": "1 cm op het model staat voor 25 cm in het echt.",
+          "paragraaf": "3.3 Schaal"
+        },
+        {
+          "vraag": "Ga je van model naar echt: vermenigvuldig je of deel je door het schaalgetal?",
+          "antwoord": "Je vermenigvuldigt.",
+          "paragraaf": "3.3 Schaal"
+        },
+        {
+          "vraag": "Hoe bereken je de hoeveelheid voor 1 persoon bij een recept voor 4 personen?",
+          "antwoord": "De hoeveelheid delen door 4.",
+          "paragraaf": "3.4 Rekenen met recepten"
+        },
+        {
+          "vraag": "Hoe rond je af bij het aantal verpakkingen dat je moet kopen?",
+          "antwoord": "Altijd naar boven.",
+          "paragraaf": "3.4 Rekenen met recepten"
+        },
+        {
+          "vraag": "Hoe bereken je de waarde van 1 deel in een verhoudingstabel?",
+          "antwoord": "De totale hoeveelheid delen door het totaal aantal delen.",
+          "paragraaf": "3.5 Verhoudingen"
+        },
+        {
+          "vraag": "Ga je op de getallenlijn naar links of naar rechts bij optellen?",
+          "antwoord": "Naar rechts.",
+          "paragraaf": "3.6 Rekenen met negatieve getallen"
+        },
+        {
+          "vraag": "Hoe bereken je het verschil tussen twee temperaturen?",
+          "antwoord": "De laagste temperatuur van de hoogste aftrekken.",
+          "paragraaf": "3.6 Rekenen met negatieve getallen"
+        }
+      ],
+      "quiz": [
+        {
+          "vraag": "Een rechthoek heeft 20 hokjes waarvan er 8 gekleurd zijn. Wat is de vereenvoudigde breuk?",
+          "opties": [
+            "4/10",
+            "2/5",
+            "1/4",
+            "8/20"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "8/20 vereenvoudig je door teller en noemer door 4 te delen: 8/20 = 2/5."
+        },
+        {
+          "vraag": "Een grote pizza is verdeeld in 8 stukken. Ashia eet 1/8 en Nafuna eet de helft (4/8). Welk deel blijft er over?",
+          "opties": [
+            "2/8",
+            "3/8",
+            "4/8",
+            "5/8"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Samen eten ze 1/8 + 4/8 = 5/8. Er blijft dus 8/8 - 5/8 = 3/8 over."
+        },
+        {
+          "vraag": "Waarom kun je 1/4 en 3/8 niet direct optellen?",
+          "opties": [
+            "De tellers zijn ongelijk",
+            "De noemers zijn ongelijk",
+            "Het zijn geen echte breuken",
+            "Je kunt ze wel direct optellen"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "De noemers 4 en 8 zijn niet gelijk, dus je moet ze eerst gelijk maken voor je kunt optellen."
+        },
+        {
+          "vraag": "De Domtoren is 112 m hoog. Een model staat op schaal 1 : 25. Hoe hoog is het model?",
+          "opties": [
+            "2,80 m",
+            "4,48 m",
+            "44,8 m",
+            "2800 m"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Het model is kleiner dan de toren, dus je deelt: 112 : 25 = 4,48 m."
+        },
+        {
+          "vraag": "Een model staat op schaal 1 : 50 en is 2 m hoog. Hoe hoog is het echte gebouw?",
+          "opties": [
+            "0,04 m",
+            "4 m",
+            "52 m",
+            "100 m"
+          ],
+          "antwoord_index": 3,
+          "uitleg": "Van model naar echt vermenigvuldig je met het schaalgetal: 2 x 50 = 100 m."
+        },
+        {
+          "vraag": "Een recept voor 4 personen gebruikt 500 g mix. Hoeveel heb je nodig voor 26 personen?",
+          "opties": [
+            "1300 g",
+            "2000 g",
+            "3250 g",
+            "13000 g"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "Voor 1 persoon is dat 500 : 4 = 125 g. Voor 26 personen: 125 x 26 = 3250 g."
+        },
+        {
+          "vraag": "Je hebt 1500 g zalmfilet nodig en een pak bevat 400 g. Hoeveel pakken moet je kopen?",
+          "opties": [
+            "3",
+            "3,75",
+            "4",
+            "5"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "1500 : 400 = 3,75. Omdat je geen deel van een pak kunt kopen, rond je naar boven af naar 4 pakken."
+        },
+        {
+          "vraag": "Je mengt siroop en water in de verhouding 3 : 10 voor 500 ml limonade. Hoeveel delen zijn er in totaal?",
+          "opties": [
+            "10",
+            "13",
+            "30",
+            "500"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Het totaal aantal delen is 3 + 10 = 13 delen."
+        },
+        {
+          "vraag": "Beton bestaat uit cement, zand, grint en water in de verhouding 2 : 4 : 6 : 1. Hoeveel delen zijn er in totaal?",
+          "opties": [
+            "11",
+            "12",
+            "13",
+            "14"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "2 + 4 + 6 + 1 = 13 delen in totaal."
+        },
+        {
+          "vraag": "Bereken -6 + 4.",
+          "opties": [
+            "-10",
+            "-2",
+            "2",
+            "10"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Je begint bij -6 en gaat 4 stappen naar rechts (optellen): -6 + 4 = -2."
+        },
+        {
+          "vraag": "Bereken -6 - 2.",
+          "opties": [
+            "-8",
+            "-4",
+            "4",
+            "8"
+          ],
+          "antwoord_index": 0,
+          "uitleg": "Je begint bij -6 en gaat 2 stappen naar links (aftrekken): -6 - 2 = -8."
+        },
+        {
+          "vraag": "Gisteren was het 4 °C, vandaag -3 °C. Wat is het temperatuurverschil?",
+          "opties": [
+            "1 graad",
+            "3 graden",
+            "4 graden",
+            "7 graden"
+          ],
+          "antwoord_index": 3,
+          "uitleg": "Het verschil bereken je met de hoogste temperatuur min de laagste: 4 - (-3) = 7 graden."
+        }
+      ]
+    },
+    {
+      "titel": "Verbanden",
+      "uitleg": "<div class='box'><h4>Waar dit hoofdstuk over gaat</h4><p>Dit hoofdstuk gaat over het verband tussen twee grootheden: een tabel met regelmaat en een formule die daarbij hoort. Je leert een tabel aflezen en invullen, een formule gebruiken om een tabel in te vullen, en andersom een formule opstellen bij een tabel met regelmaat. Ook werk je met formules die haakjes of een deelstreep bevatten.</p></div>",
+      "subhoofdstukken": [
+        {
+          "titel": "4.1 Tabellen",
+          "uitleg": "<div class='box'><h4>De regelmaat in een tabel zoeken</h4><p>Een tabel met twee rijen, bijvoorbeeld tijd en bedrag, kan een vaste regelmaat hebben: elke stap verandert de waarde met hetzelfde getal. Die regelmaat gebruik je om de tabel verder in te vullen.</p></div><div class='call'><b>Voorbeeld</b> Bij een spaarrekening staat na 0 maanden €255, na 1 maand €275 en na 2 maanden €295. De regelmaat is: elke maand komt er €20 bij. Na 3 maanden staat er dus 295 + 20 = €315 op de rekening.</div><div class='box'><h4>Een dalende tabel</h4><p>Een tabel kan ook een regelmaat hebben waarbij de waarde juist steeds kleiner wordt, bijvoorbeeld bij de voorraad meel in een bakkerij die elke dag afneemt.</p></div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Zoek eerst het verschil tussen twee opeenvolgende waarden in de tabel</li><li>Gebruik dat verschil om de tabel verder in te vullen, stijgend of dalend</li></ul></div>"
+        },
+        {
+          "titel": "4.2 Formules",
+          "uitleg": "<div class='box'><h4>Een woordformule invullen</h4><p>Een formule zoals hoogte (cm) = 75 + 25 &times; tijd (jaren) is een woordformule. Er is een verband tussen de tijd in jaren en de hoogte in centimeters. Weet je de tijd, dan kun je de hoogte berekenen door het getal in te vullen op de plaats van tijd.</p></div><div class='call'><b>Voorbeeld</b> Eelco koopt coniferen die groeien volgens de formule hoogte (cm) = 75 + 25 &times; tijd (jaren). Na 15 jaar is de hoogte 75 + 25 &times; 15 = 450 cm.</div><div class='box'><h4>Een grootheid komt meerdere keren voor</h4><p>In sommige formules komt dezelfde grootheid meer dan één keer voor, bijvoorbeeld hoogte = 6 &times; afstand &minus; afstand &times; afstand. Vul dan overal hetzelfde getal in op de plaats van die grootheid.</p></div><div class='call'><b>Voorbeeld</b> Bij een afstand van 4 m is de hoogte 6 &times; 4 &minus; 4 &times; 4 = 24 &minus; 16 = 8 m.</div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Vul het gegeven getal in op de plaats van de grootheid die je kent</li><li>Komt een grootheid meerdere keren voor, vul die dan overal hetzelfde getal in</li></ul></div>"
+        },
+        {
+          "titel": "4.3 Formule en tabel",
+          "uitleg": "<div class='box'><h4>Met een formule een tabel invullen</h4><p>Bij een formule kun je een tabel invullen. Je vult steeds het getal uit de bovenste rij van de tabel in de formule in en maakt de berekening.</p></div><div class='call'><b>Voorbeeld</b> De huurprijs van een kampeerboerderij volgt de formule bedrag (€) = 540 : aantal voetbalsters. Bij 10 voetbalsters is het bedrag 540 : 10 = €54. Bij 20 voetbalsters is het bedrag 540 : 20 = €27.</div><div class='box'><h4>Controleren met een berekening</h4><p>Je kunt met een berekening laten zien dat een tabelwaarde klopt door het gegeven getal in de formule in te vullen en uit te rekenen of je op dezelfde waarde uitkomt als in de tabel.</p></div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Vul steeds de bovenste waarde van de tabel in de formule in</li><li>Reken de uitkomst uit en zet die in de onderste rij van de tabel</li></ul></div>"
+        },
+        {
+          "titel": "4.4 Formules met haakjes",
+          "uitleg": "<div class='box'><h4>Haakjes in een formule</h4><p>Een formule kan haakjes bevatten, zoals inkomsten = 182,40 + 6,45 &times; (tijd &minus; 29). Vul je een getal in voor tijd, reken dan eerst wat tussen de haakjes staat, en vergeet de haakjes niet in te toetsen op je rekenmachine.</p></div><div class='call'><b>Voorbeeld</b> Jochem werkt 39 uur in november. Zijn inkomsten zijn 182,40 + 6,45 &times; (39 &minus; 29) = 182,40 + 6,45 &times; 10 = 182,40 + 64,50 = €246,90.</div><div class='box'><h4>Temperatuur omrekenen</h4><p>Ook de formule temperatuur in °C = 5 &times; (temperatuur in °F &minus; 32) : 9 bevat haakjes. Bereken eerst wat tussen de haakjes staat, dan de vermenigvuldiging, en tot slot de deling.</p></div><div class='call warn'><b>Veelgemaakte fout:</b> Op de rekenmachine de haakjes vergeten in te toetsen geeft een compleet ander en fout antwoord. Toets een formule met haakjes altijd in één keer in, inclusief de haakjes.</div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Reken eerst wat tussen de haakjes staat</li><li>Vergeet de haakjes niet op je rekenmachine</li></ul></div>"
+        },
+        {
+          "titel": "4.5 Formules met deelstreep",
+          "uitleg": "<div class='box'><h4>Formules met een deelstreep</h4><p>In een formule kan een deelstreep staan, bijvoorbeeld maandloon = (52 &times; weekloon) : 12. Gebruik dan de breukentoets op je rekenmachine, zodat de hele teller eerst wordt uitgerekend en pas daarna gedeeld wordt door de noemer.</p></div><div class='call'><b>Voorbeeld</b> Olga verdient €265,45 per week. Haar maandloon is (52 &times; 265,45) : 12 = 13803,40 : 12 = €1150,28 (afgerond op twee decimalen).</div><div class='call warn'><b>Veelgemaakte fout:</b> Zonder breukentoets wordt soms alleen het laatste deel van de teller gedeeld door de noemer, in plaats van de hele teller. Gebruik daarom altijd de breukentoets of zet extra haakjes om de volledige teller.</div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Bij een deelstreep gebruik je de breukentoets op de rekenmachine</li><li>De hele teller wordt eerst berekend, pas daarna deel je door de noemer</li></ul></div>"
+        },
+        {
+          "titel": "4.6 Formule maken bij tabel",
+          "uitleg": "<div class='box'><h4>Van tabel naar formule</h4><p>Bij een tabel met regelmaat kun je zelf een formule maken. Onder in de tabel staat de grootheid waarmee de formule begint, en het begingetal staat onder de 0. De regelmaat in de tabel geeft het getal waarmee je vermenigvuldigt of dat je optelt of aftrekt.</p></div><div class='call'><b>Voorbeeld</b> Bij een kopieerapparaat staat de voorraad papier op 3000 A4'tjes bij 0 uur, en neemt elk uur met 500 af. De formule wordt dan: aantal A4'tjes = 3000 &minus; 500 &times; tijd (uren).</div><div class='box'><h4>Stijgende regelmaat</h4><p>Stijgt de tabel juist, dan komt er een plus in de formule in plaats van een min. Het huren van een ATB kost €25 bij 0 dagen, en stijgt daarna elke dag met €55: bedrag (€) = 25 + 55 &times; tijd (dagen).</p></div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Begingetal = de waarde die onder de 0 in de tabel staat</li><li>Stijggetal of daalgetal = het verschil tussen twee opeenvolgende stappen</li><li>Dalende tabel: min in de formule. Stijgende tabel: plus in de formule</li></ul></div>"
+        }
+      ],
+      "begrippen": [
+        {
+          "term": "Tabel",
+          "uitleg": "Een overzicht van bij elkaar horende waarden van twee grootheden, bijvoorbeeld tijd en bedrag.",
+          "paragraaf": "4.1 Tabellen"
+        },
+        {
+          "term": "Regelmaat",
+          "uitleg": "Het vaste verschil tussen opeenvolgende waarden in een tabel.",
+          "paragraaf": "4.1 Tabellen"
+        },
+        {
+          "term": "Formule",
+          "uitleg": "Een rekenregel die het verband tussen twee grootheden beschrijft, bijvoorbeeld hoogte (cm) = 75 + 25 x tijd (jaren).",
+          "paragraaf": "4.2 Formules"
+        },
+        {
+          "term": "Woordformule",
+          "uitleg": "Een formule waarin de grootheden met woorden benoemd zijn, zoals 'hoogte' en 'tijd'.",
+          "paragraaf": "4.2 Formules"
+        },
+        {
+          "term": "Grootheid",
+          "uitleg": "Iets wat je kunt meten of berekenen, zoals tijd, hoogte, snelheid of bedrag.",
+          "paragraaf": "4.2 Formules"
+        },
+        {
+          "term": "Breukentoets",
+          "uitleg": "De toets op de rekenmachine waarmee je een formule met een deelstreep in één keer correct kunt invoeren.",
+          "paragraaf": "4.5 Formules met deelstreep"
+        },
+        {
+          "term": "Begingetal",
+          "uitleg": "De waarde in een tabel die hoort bij tijd of aantal gelijk aan 0.",
+          "paragraaf": "4.6 Formule maken bij tabel"
+        },
+        {
+          "term": "Stijggetal",
+          "uitleg": "Het getal waarmee een waarde in een tabel bij elke stap toeneemt.",
+          "paragraaf": "4.6 Formule maken bij tabel"
+        },
+        {
+          "term": "Daalgetal",
+          "uitleg": "Het getal waarmee een waarde in een tabel bij elke stap afneemt.",
+          "paragraaf": "4.6 Formule maken bij tabel"
+        },
+        {
+          "term": "Deelstreep",
+          "uitleg": "De horizontale streep in een breuk of formule die aangeeft dat de teller door de noemer gedeeld moet worden.",
+          "paragraaf": "4.5 Formules met deelstreep"
+        }
+      ],
+      "flashcards": [
+        {
+          "vraag": "Hoe vind je de regelmaat in een tabel?",
+          "antwoord": "Door te kijken naar het verschil tussen twee opeenvolgende waarden.",
+          "paragraaf": "4.1 Tabellen"
+        },
+        {
+          "vraag": "Wat vul je in een formule in op de plaats van een grootheid?",
+          "antwoord": "Het gegeven getal voor die grootheid.",
+          "paragraaf": "4.2 Formules"
+        },
+        {
+          "vraag": "Wat doe je als een grootheid meerdere keren in een formule voorkomt?",
+          "antwoord": "Je vult overal hetzelfde getal in.",
+          "paragraaf": "4.2 Formules"
+        },
+        {
+          "vraag": "Wat vul je in de formule in om een tabel in te vullen?",
+          "antwoord": "De waarde uit de bovenste rij van de tabel.",
+          "paragraaf": "4.3 Formule en tabel"
+        },
+        {
+          "vraag": "Wat bereken je eerst in een formule met haakjes?",
+          "antwoord": "Wat tussen de haakjes staat.",
+          "paragraaf": "4.4 Formules met haakjes"
+        },
+        {
+          "vraag": "Wat gebruik je op je rekenmachine bij een formule met een deelstreep?",
+          "antwoord": "De breukentoets.",
+          "paragraaf": "4.5 Formules met deelstreep"
+        },
+        {
+          "vraag": "Wat is het begingetal van een tabel?",
+          "antwoord": "De waarde die hoort bij 0.",
+          "paragraaf": "4.6 Formule maken bij tabel"
+        },
+        {
+          "vraag": "Welk teken komt er in de formule bij een dalende tabel?",
+          "antwoord": "Een min.",
+          "paragraaf": "4.6 Formule maken bij tabel"
+        },
+        {
+          "vraag": "Welk teken komt er in de formule bij een stijgende tabel?",
+          "antwoord": "Een plus.",
+          "paragraaf": "4.6 Formule maken bij tabel"
+        },
+        {
+          "vraag": "Wat is het daalgetal in een tabel?",
+          "antwoord": "Het getal waarmee de waarde elke stap afneemt.",
+          "paragraaf": "4.6 Formule maken bij tabel"
+        }
+      ],
+      "quiz": [
+        {
+          "vraag": "Een spaarrekening geeft €255 bij 0 maanden, €275 bij 1 maand en €295 bij 2 maanden. Hoeveel staat er na 3 maanden?",
+          "opties": [
+            "€300",
+            "€305",
+            "€315",
+            "€320"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "De regelmaat is elke maand +€20. Na 3 maanden: 295 + 20 = €315."
+        },
+        {
+          "vraag": "Coniferen groeien volgens hoogte (cm) = 75 + 25 x tijd (jaren). Hoe hoog zijn ze na 15 jaar?",
+          "opties": [
+            "375 cm",
+            "400 cm",
+            "450 cm",
+            "475 cm"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "75 + 25 x 15 = 75 + 375 = 450 cm."
+        },
+        {
+          "vraag": "Bij de trap van een bal hoort hoogte = 6 x afstand - afstand x afstand. Wat is de hoogte bij een afstand van 4 m?",
+          "opties": [
+            "2 m",
+            "8 m",
+            "20 m",
+            "24 m"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "6 x 4 - 4 x 4 = 24 - 16 = 8 m."
+        },
+        {
+          "vraag": "De huurprijs volgt bedrag (€) = 540 : aantal voetbalsters. Wat is het bedrag bij 20 voetbalsters?",
+          "opties": [
+            "€10,80",
+            "€27",
+            "€54",
+            "€560"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "540 : 20 = 27, dus het bedrag is €27."
+        },
+        {
+          "vraag": "Jochem verdient volgens inkomsten = 182,40 + 6,45 x (tijd - 29) en werkt 39 uur. Wat verdient hij?",
+          "opties": [
+            "€182,40",
+            "€246,90",
+            "€251,55",
+            "€64,50"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Eerst de haakjes: 39 - 29 = 10. Dan 6,45 x 10 = 64,50. Samen: 182,40 + 64,50 = €246,90."
+        },
+        {
+          "vraag": "Wat bereken je altijd eerst in een formule met haakjes?",
+          "opties": [
+            "De vermenigvuldiging",
+            "De deling",
+            "Wat tussen de haakjes staat",
+            "Het laatste getal"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "Net als bij gewone berekeningen bereken je bij een formule met haakjes altijd eerst wat tussen de haakjes staat."
+        },
+        {
+          "vraag": "Olga verdient €265,45 per week. Haar maandloon is (52 x weekloon) : 12. Wat is haar maandloon, afgerond op twee decimalen?",
+          "opties": [
+            "€1150,28",
+            "€1104,38",
+            "€3186,00",
+            "€22,12"
+          ],
+          "antwoord_index": 0,
+          "uitleg": "(52 x 265,45) : 12 = 13803,40 : 12 = €1150,28."
+        },
+        {
+          "vraag": "Wat gebruik je op de rekenmachine om een formule met een deelstreep in één keer goed uit te rekenen?",
+          "opties": [
+            "De procenttoets",
+            "De breukentoets",
+            "De wortelteken-toets",
+            "De haakjestoets"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Bij een deelstreep gebruik je de breukentoets, zodat de hele teller eerst wordt berekend en pas daarna gedeeld wordt."
+        },
+        {
+          "vraag": "Een voorraad papier begint op 3000 A4'tjes en neemt elk uur met 500 af. Welke formule hoort hierbij?",
+          "opties": [
+            "aantal A4'tjes = 3000 + 500 x tijd",
+            "aantal A4'tjes = 3000 - 500 x tijd",
+            "aantal A4'tjes = 500 - 3000 x tijd",
+            "aantal A4'tjes = 3000 x 500 x tijd"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "De tabel daalt met 500 per uur, dus het begingetal 3000 min 500 keer de tijd: aantal A4'tjes = 3000 - 500 x tijd (uren)."
+        },
+        {
+          "vraag": "Het huren van een ATB kost €25 bij 0 dagen en stijgt elke dag met €55. Welke formule hoort hierbij?",
+          "opties": [
+            "bedrag = 25 - 55 x tijd",
+            "bedrag = 55 - 25 x tijd",
+            "bedrag = 25 + 55 x tijd",
+            "bedrag = 55 + 25 x tijd"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "De tabel stijgt, dus er komt een plus in de formule: bedrag (€) = 25 + 55 x tijd (dagen), met 25 als begingetal en 55 als stijggetal."
+        }
+      ]
+    }
+  ]
+}

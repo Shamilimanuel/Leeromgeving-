@@ -1,0 +1,1917 @@
+{
+  "boek": "Rekenen_BBL1",
+  "hoofdstukken": [
+    {
+      "titel": "Optellen",
+      "uitleg": "<div class='box'><h4>Wat leer je in dit hoofdstuk?</h4><p>Je leert getallen afronden op ronde getallen, schattend optellen en optellen onder elkaar: van optellingen tot honderd tot optellingen met getallen die een verschillend aantal cijfers hebben.</p></div><div class='call'>Bij elke optelling maak je eerst een schatting. Daarna zet je de getallen onder elkaar en tel je op, van achteren naar voren. Tot slot controleer je of je antwoord bij de schatting past.</div>",
+      "subhoofdstukken": [
+        {
+          "titel": "Afronden op ronde getallen",
+          "uitleg": "<div class='box'><h4>Waarde van cijfers</h4><p>Het getal 42305 bestaat uit vijf cijfers. Elk cijfer heeft een waarde. De plaats van een cijfer geeft die waarde aan.</p><div class='tblwrap'><table class='tbl'><tr><th>4</th><th>2</th><th>3</th><th>0</th><th>5</th></tr><tr><td>tienduizendtallen</td><td>duizendtallen</td><td>honderdtallen</td><td>tientallen</td><td>eenheden</td></tr><tr><td>4 x 10.000 = 40.000</td><td>2 x 1.000 = 2.000</td><td>3 x 100 = 300</td><td>0 x 10 = 0</td><td>5 x 1 = 5</td></tr></table></div></div><div class='box'><h4>Afronden op ronde getallen</h4><p>Bij optellen ga je het antwoord eerst schatten. Dan is het handig om de getallen af te ronden op ronde getallen. Je kijkt naar het ronde getal dat het dichtst bij ligt. Ligt een getal precies in het midden, dan rond je naar boven af.</p></div><div class='g2'><div class='box'><h4>Voorbeeld: afronden op tientallen</h4><p><b>Opgave</b> Rond 45 af op tientallen.<br><b>Aanpak</b> 45 ligt tussen de tientallen 40 en 50. Het ligt precies in het midden, dus je rondt naar boven af.<br><b>Uitwerking</b> 45 is afgerond op tientallen <b>50</b>.</p></div><div class='box'><h4>Voorbeeld: afronden op duizendtallen</h4><p><b>Opgave</b> Rond 5497 af op duizendtallen.<br><b>Aanpak</b> 5497 ligt tussen de duizendtallen 5000 en 6000. Het ligt dichter bij 5000.<br><b>Uitwerking</b> 5497 is afgerond op duizendtallen <b>5000</b>.</p></div></div><div class='call warn'><b>Veelgemaakte fout:</b> een getal dat precies in het midden ligt (zoals 45 bij tientallen, of 450 bij honderdtallen) rond je altijd naar <b>boven</b> af, ook al lijkt naar beneden soms logisch.</div><div class='tblwrap'><table class='tbl'><tr><th>Opgave</th><th>Afgerond</th></tr><tr><td>143 afronden op honderdtallen</td><td>100</td></tr><tr><td>450 afronden op honderdtallen</td><td>500 (midden, dus naar boven)</td></tr><tr><td>20.567 afronden op tienduizendtallen</td><td>20.000</td></tr><tr><td>Assen: 67.061 inwoners op tienduizendtallen</td><td>70.000</td></tr><tr><td>Anna's scooter: € 2749 op duizendtallen</td><td>€ 3000</td></tr></table></div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Kijk naar welk rond getal het dichtst bij ligt.</li><li>Ligt het getal precies in het midden? Rond dan naar boven af.</li><li>Je gebruikt afronden om straks een schatting te maken bij het optellen.</li></ul></div>"
+        },
+        {
+          "titel": "Optellen tot honderd",
+          "uitleg": "<div class='g2'><div class='box'><h4>Theorie: schatten bij optellen</h4><p>Een schatting maken gaat zo: maak van de getallen die je optelt ronde getallen, tel die ronde getallen bij elkaar op en gebruik in je antwoord het is-ongeveer-teken &#8776;.</p></div><div class='box'><h4>Voorbeeld: schattend optellen</h4><p><b>Opgave</b> Schat het antwoord van 29 + 64.<br><b>Aanpak</b> 29 wordt afgerond op tientallen 30, 64 wordt afgerond op tientallen 60.<br><b>Uitwerking</b> 29 + 64 &#8776; 30 + 60 = <b>90</b>.</p></div></div><div class='box'><h4>Theorie: optellen tot honderd onder elkaar</h4><p>Bij optellen onder elkaar maak je eerst een schatting van het antwoord. Dan zet je de getallen onder elkaar en tel je ze op. Je begint achteraan, bij de eenheden. Na de berekening kijk je of je antwoord bij de schatting past.</p><div class='tblwrap'><table class='tbl'><tr><th>Stap</th><th>Voorbeeld: 38 + 54</th></tr><tr><td>Schatting</td><td>40 + 50 = 90</td></tr><tr><td>Eenheden</td><td>8 + 4 = 12 &rarr; 2 opschrijven, 1 onthouden</td></tr><tr><td>Tientallen</td><td>1 + 3 + 5 = 9 &rarr; 9 opschrijven</td></tr><tr><td>Antwoord</td><td><b>92</b> (past bij de schatting van 90)</td></tr></table></div></div><div class='call'>Voorbeeld: Mara koopt een jas van &euro;38 en een broek van &euro;53. Schatting: 40 + 50 = &euro;90. Precies: 38 + 53 = &euro;91.</div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Eerst schatten, dan pas onder elkaar optellen.</li><li>Begin altijd achteraan bij de eenheden.</li><li>Kom je op 10 of meer? Schrijf het laatste cijfer op en onthoud de rest bij de volgende kolom.</li></ul></div>"
+        },
+        {
+          "titel": "Optellen over de honderd",
+          "uitleg": "<div class='box'><h4>Theorie: optellen over de honderd onder elkaar</h4><p>Ook bij optellen over de honderd maak je eerst een schatting van het antwoord. Dan zet je de getallen onder elkaar en tel je ze op. Je begint achteraan met de eenheden. Na de berekening kijk je of je antwoord klopt met de schatting.</p></div><div class='box'><h4>Voorbeeld</h4><p><b>Opgave</b> Bereken 88 + 54.<br><b>Uitwerking</b> Schatting: 90 + 50 = 140. Eenheden: 8 + 4 = 12, 2 opschrijven en 1 onthouden. Tientallen: 1 + 8 + 5 = 14. Antwoord: <b>142</b> (past bij de schatting).</p></div><div class='tblwrap'><table class='tbl'><tr><th>Context</th><th>Berekening</th><th>Antwoord</th></tr><tr><td>Mischa verdient €87 (week 1) en €79 (week 2)</td><td>87 + 79</td><td>€166</td></tr><tr><td>Klas 1C (89) en 1D (73) loten</td><td>89 + 73</td><td>162 loten</td></tr><tr><td>Klas 1B (19) en 1C (25) leerlingen</td><td>19 + 25</td><td>44 leerlingen</td></tr><tr><td>Alex: €47 gespaard + €39 autowassen</td><td>47 + 39</td><td>€86</td></tr></table></div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>De werkwijze is hetzelfde als bij optellen tot honderd: schatten, onder elkaar zetten, optellen, controleren.</li><li>Het antwoord komt nu boven de honderd uit.</li></ul></div>"
+        },
+        {
+          "titel": "Optellen tot duizend",
+          "uitleg": "<div class='box'><h4>Theorie: optellen tot duizend onder elkaar</h4><p>Ook bij optellingen met drie cijfers onder elkaar maak je eerst een schatting van het antwoord. Dan zet je de getallen onder elkaar en tel je ze op. Je begint achteraan met de eenheden. Na de berekening kijk je of je antwoord klopt met de schatting.</p></div><div class='g2'><div class='box'><h4>Voorbeeld</h4><p><b>Opgave</b> Bereken 378 + 264.<br><b>Uitwerking</b> Schatting: 400 + 300 = 700. Eenheden: 8+4=12 (2, onthoud 1). Tientallen: 1+7+6=14 (4, onthoud 1). Honderdtallen: 1+3+2=6. Antwoord: <b>642</b>.</p></div><div class='box'><h4>Demian koopt een fiets</h4><p>Demian koopt een fiets van &euro;765. Hij koopt ook een regenpak en fietstassen samen voor &euro;139.<br>Schatting: 800 + 100 = &euro;900.<br>Precies: 765 + 139 = <b>&euro;904</b>.</p></div></div><div class='tblwrap'><table class='tbl'><tr><th>Berekening</th><th>Antwoord</th></tr><tr><td>429 + 289</td><td>718</td></tr><tr><td>621 + 284</td><td>905</td></tr><tr><td>381 + 529</td><td>910</td></tr><tr><td>687 km + 259 km (Stein op vakantie)</td><td>946 km</td></tr></table></div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Met drie cijfers krijg je een extra kolom: de honderdtallen.</li><li>Blijf achteraan beginnen en steeds controleren met de schatting.</li></ul></div>"
+        },
+        {
+          "titel": "Optellen boven duizend",
+          "uitleg": "<div class='box'><h4>Theorie: optellen boven duizend onder elkaar</h4><p>Ook bij optellingen met vier cijfers onder elkaar maak je eerst een schatting van het antwoord. Dan zet je de getallen onder elkaar en tel je ze op. Je begint achteraan met de eenheden. Na de berekening kijk je of je antwoord klopt met de schatting.</p></div><div class='box'><h4>Voorbeeld</h4><p><b>Opgave</b> Bereken 2878 + 6274.<br><b>Uitwerking</b> Schatting: 3000 + 6000 = 9000. Eenheden: 8+4=12 (2, onthoud 1). Tientallen: 1+7+7=15 (5, onthoud 1). Honderdtallen: 1+8+2=11 (1, onthoud 1). Duizendtallen: 1+2+6=9. Antwoord: <b>9152</b>.</p></div><div class='tblwrap'><table class='tbl'><tr><th>Context</th><th>Berekening</th><th>Antwoord</th></tr><tr><td>FC Emmen: bezoekers 12 en 26 maart</td><td>3469 + 5625</td><td>9094 bezoekers</td></tr><tr><td>Extra oefening</td><td>2329 + 1678</td><td>4007</td></tr><tr><td>3676 + 4394</td><td>3676 + 4394</td><td>8070</td></tr><tr><td>Donar Groningen: bezoekers twee wedstrijden</td><td>3778 + 4350</td><td>8128 bezoekers</td></tr></table></div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Met vier cijfers tel je ook de duizendtallen op.</li><li>Hoe meer cijfers, hoe belangrijker de schatting vooraf om fouten op te sporen.</li></ul></div>"
+        },
+        {
+          "titel": "Optellen met verschillend aantal cijfers",
+          "uitleg": "<div class='box'><h4>Theorie</h4><p>Bij optellingen met een verschillend aantal cijfers maak je eerst een schatting. Daarna schrijf je het eerste getal op en het tweede getal eronder. Je begint achteraan, zodat de eenheden onder de eenheden komen, de tientallen onder de tientallen, enzovoort. Dan tel je de getallen op. Na de berekening kijk je of je antwoord klopt met de schatting.</p></div><div class='box'><h4>Voorbeeld</h4><p><b>Opgave</b> Bereken 4578 + 674.<br><b>Aanpak</b> Het kleinste getal heeft 3 cijfers, dus rond je bij de schatting af op honderdtallen: 4600 + 700 = 5300.<br><b>Uitwerking</b> Zet de getallen goed onder elkaar (eenheden onder eenheden). Antwoord: <b>5252</b>.</p></div><div class='call warn'><b>Veelgemaakte fout:</b> getallen met een verschillend aantal cijfers niet goed uitlijnen. Zet altijd de laatste cijfers (de eenheden) recht onder elkaar, ook al zijn de getallen verschillend lang.</div><div class='tblwrap'><table class='tbl'><tr><th>Context</th><th>Berekening</th><th>Antwoord</th></tr><tr><td>329 + 3678</td><td>329 + 3678</td><td>4007</td></tr><tr><td>Rik spaart voor motor: €6575 + verkoop scooter €845</td><td>6575 + 845</td><td>€7420</td></tr><tr><td>24389 + 8658</td><td>24389 + 8658</td><td>33.047</td></tr></table></div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Lijn de getallen altijd uit op de eenheden, niet op de eerste cijfers.</li><li>Rond bij de schatting af op de grootte van het kleinste getal.</li></ul></div>"
+        }
+      ],
+      "begrippen": [
+        {
+          "term": "Afronden",
+          "uitleg": "Een getal vervangen door het dichtstbijzijnde ronde getal, bijvoorbeeld op tientallen of honderdtallen.",
+          "paragraaf": "Afronden op ronde getallen"
+        },
+        {
+          "term": "Rond getal",
+          "uitleg": "Een getal dat eindigt op een of meer nullen, zoals 40, 300 of 5000.",
+          "paragraaf": "Afronden op ronde getallen"
+        },
+        {
+          "term": "Cijfer",
+          "uitleg": "Een van de tekens 0 tot en met 9 waarmee je getallen opschrijft.",
+          "paragraaf": "Afronden op ronde getallen"
+        },
+        {
+          "term": "Tiental, honderdtal, duizendtal",
+          "uitleg": "De plaats van een cijfer in een getal bepaalt zijn waarde: tientallen, honderdtallen, duizendtallen, enzovoort.",
+          "paragraaf": "Afronden op ronde getallen"
+        },
+        {
+          "term": "Schatten",
+          "uitleg": "Van tevoren een ongeveer-antwoord bepalen door met ronde getallen te rekenen.",
+          "paragraaf": "Optellen tot honderd"
+        },
+        {
+          "term": "Is ongeveer (&#8776;)",
+          "uitleg": "Het teken dat je gebruikt bij een schatting, in plaats van het is-gelijk-teken.",
+          "paragraaf": "Optellen tot honderd"
+        },
+        {
+          "term": "Optellen onder elkaar",
+          "uitleg": "Een manier om op te tellen waarbij je de getallen recht onder elkaar zet en van achteren (de eenheden) naar voren rekent.",
+          "paragraaf": "Optellen tot honderd"
+        },
+        {
+          "term": "Eenheden",
+          "uitleg": "De laatste kolom van een getal, de kolom met de waarde 1.",
+          "paragraaf": "Optellen tot honderd"
+        },
+        {
+          "term": "Onthouden (bij optellen)",
+          "uitleg": "Als de som van een kolom 10 of meer is, schrijf je het laatste cijfer op en tel je de rest mee bij de volgende kolom.",
+          "paragraaf": "Optellen over de honderd"
+        },
+        {
+          "term": "Getallenlijn",
+          "uitleg": "Een lijn waarop getallen in de juiste volgorde staan, gebruikt om af te ronden.",
+          "paragraaf": "Afronden op ronde getallen"
+        },
+        {
+          "term": "Uitlijnen",
+          "uitleg": "De getallen bij een optelling zo onder elkaar zetten dat eenheden onder eenheden staan, tientallen onder tientallen, enzovoort.",
+          "paragraaf": "Optellen met verschillend aantal cijfers"
+        },
+        {
+          "term": "Controleren met de schatting",
+          "uitleg": "Na het uitrekenen kijken of je precieze antwoord ongeveer bij je eerdere schatting past.",
+          "paragraaf": "Optellen tot duizend"
+        }
+      ],
+      "flashcards": [
+        {
+          "vraag": "Hoe rond je 45 af op tientallen?",
+          "antwoord": "45 ligt precies in het midden tussen 40 en 50, dus je rondt naar boven af: 50.",
+          "paragraaf": "Afronden op ronde getallen"
+        },
+        {
+          "vraag": "Rond 5497 af op duizendtallen.",
+          "antwoord": "5000, want 5497 ligt dichter bij 5000 dan bij 6000.",
+          "paragraaf": "Afronden op ronde getallen"
+        },
+        {
+          "vraag": "Wat is de eerste stap bij een optelling die je moet uitrekenen?",
+          "antwoord": "Eerst een schatting maken door de getallen af te ronden.",
+          "paragraaf": "Optellen tot honderd"
+        },
+        {
+          "vraag": "Bereken 38 + 54.",
+          "antwoord": "92",
+          "paragraaf": "Optellen tot honderd"
+        },
+        {
+          "vraag": "Bereken 88 + 54.",
+          "antwoord": "142",
+          "paragraaf": "Optellen over de honderd"
+        },
+        {
+          "vraag": "Wat doe je als een kolom bij het optellen 12 als uitkomst geeft?",
+          "antwoord": "Je schrijft de 2 op en onthoudt de 1 voor de volgende kolom.",
+          "paragraaf": "Optellen over de honderd"
+        },
+        {
+          "vraag": "Bereken 378 + 264.",
+          "antwoord": "642",
+          "paragraaf": "Optellen tot duizend"
+        },
+        {
+          "vraag": "Demian koopt een fiets van €765 en spullen voor €139. Hoeveel betaalt hij in totaal?",
+          "antwoord": "€904",
+          "paragraaf": "Optellen tot duizend"
+        },
+        {
+          "vraag": "Bereken 2878 + 6274.",
+          "antwoord": "9152",
+          "paragraaf": "Optellen boven duizend"
+        },
+        {
+          "vraag": "Hoeveel kolommen (eenheden, tientallen, honderdtallen, duizendtallen) reken je uit bij een optelling met vier cijfers?",
+          "antwoord": "Vier kolommen.",
+          "paragraaf": "Optellen boven duizend"
+        },
+        {
+          "vraag": "Waar moet je op letten als je 4578 en 674 onder elkaar optelt?",
+          "antwoord": "Je moet de eenheden onder de eenheden zetten, ook al heeft 674 minder cijfers.",
+          "paragraaf": "Optellen met verschillend aantal cijfers"
+        },
+        {
+          "vraag": "Bereken 4578 + 674.",
+          "antwoord": "5252",
+          "paragraaf": "Optellen met verschillend aantal cijfers"
+        }
+      ],
+      "quiz": [
+        {
+          "vraag": "Rond 143 af op honderdtallen.",
+          "opties": [
+            "100",
+            "140",
+            "150",
+            "200"
+          ],
+          "antwoord_index": 0,
+          "uitleg": "143 ligt tussen 100 en 200 en ligt dichter bij 100.",
+          "paragraaf": "Afronden op ronde getallen"
+        },
+        {
+          "vraag": "Rond 450 af op honderdtallen.",
+          "opties": [
+            "400",
+            "450",
+            "500",
+            "0"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "450 ligt precies in het midden tussen 400 en 500, dus je rondt naar boven af: 500.",
+          "paragraaf": "Afronden op ronde getallen"
+        },
+        {
+          "vraag": "Assen heeft 67.061 inwoners. Hoeveel is dat afgerond op tienduizendtallen?",
+          "opties": [
+            "60.000",
+            "67.000",
+            "70.000",
+            "68.000"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "67.061 ligt tussen 60.000 en 70.000 en ligt dichter bij 70.000.",
+          "paragraaf": "Afronden op ronde getallen"
+        },
+        {
+          "vraag": "Anna koopt een scooter van €2749. Hoeveel is dat afgerond op duizendtallen?",
+          "opties": [
+            "€2000",
+            "€2700",
+            "€3000",
+            "€2500"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "2749 ligt dichter bij 3000 dan bij 2000.",
+          "paragraaf": "Afronden op ronde getallen"
+        },
+        {
+          "vraag": "Schat het antwoord van 29 + 64.",
+          "opties": [
+            "80",
+            "90",
+            "93",
+            "100"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "29 wordt 30 en 64 wordt 60, dus 30 + 60 = 90.",
+          "paragraaf": "Optellen tot honderd"
+        },
+        {
+          "vraag": "Bereken 38 + 54.",
+          "opties": [
+            "82",
+            "88",
+            "92",
+            "94"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "8 + 4 = 12 (2 opschrijven, 1 onthouden), 1 + 3 + 5 = 9. Antwoord: 92.",
+          "paragraaf": "Optellen tot honderd"
+        },
+        {
+          "vraag": "Mara koopt een jas van €38 en een broek van €53. Wat betaalt ze in totaal?",
+          "opties": [
+            "€81",
+            "€91",
+            "€93",
+            "€101"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "38 + 53 = 91.",
+          "paragraaf": "Optellen tot honderd"
+        },
+        {
+          "vraag": "Bereken 88 + 54.",
+          "opties": [
+            "132",
+            "138",
+            "142",
+            "144"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "8 + 4 = 12 (2 opschrijven, 1 onthouden), 1 + 8 + 5 = 14. Antwoord: 142.",
+          "paragraaf": "Optellen over de honderd"
+        },
+        {
+          "vraag": "Mischa verdient €87 in de eerste week en €79 in de tweede week. Hoeveel is dat samen?",
+          "opties": [
+            "€156",
+            "€160",
+            "€166",
+            "€176"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "87 + 79 = 166.",
+          "paragraaf": "Optellen over de honderd"
+        },
+        {
+          "vraag": "Klas 1C verkocht 89 loten en klas 1D 73 loten. Hoeveel loten is dat samen?",
+          "opties": [
+            "152",
+            "158",
+            "160",
+            "162"
+          ],
+          "antwoord_index": 3,
+          "uitleg": "89 + 73 = 162.",
+          "paragraaf": "Optellen over de honderd"
+        },
+        {
+          "vraag": "Bereken 378 + 264.",
+          "opties": [
+            "632",
+            "642",
+            "652",
+            "644"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "8 + 4 = 12 (2, onthoud 1), 1 + 7 + 6 = 14 (4, onthoud 1), 1 + 3 + 2 = 6. Antwoord: 642.",
+          "paragraaf": "Optellen tot duizend"
+        },
+        {
+          "vraag": "Demian koopt een fiets van €765 en accessoires voor €139. Wat betaalt hij in totaal?",
+          "opties": [
+            "€894",
+            "€904",
+            "€914",
+            "€804"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "765 + 139 = 904.",
+          "paragraaf": "Optellen tot duizend"
+        },
+        {
+          "vraag": "Bereken 429 + 289.",
+          "opties": [
+            "698",
+            "708",
+            "718",
+            "728"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "429 + 289 = 718.",
+          "paragraaf": "Optellen tot duizend"
+        },
+        {
+          "vraag": "Stein rijdt 687 km en daarna nog 259 km. Hoeveel kilometer heeft hij gereden?",
+          "opties": [
+            "936 km",
+            "946 km",
+            "946 km",
+            "956 km"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "687 + 259 = 946.",
+          "paragraaf": "Optellen tot duizend"
+        },
+        {
+          "vraag": "Bereken 2878 + 6274.",
+          "opties": [
+            "9142",
+            "9152",
+            "9052",
+            "9252"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "8+4=12 (2, onthoud 1), 1+7+7=15 (5, onthoud 1), 1+8+2=11 (1, onthoud 1), 1+2+6=9. Antwoord: 9152.",
+          "paragraaf": "Optellen boven duizend"
+        },
+        {
+          "vraag": "Op 12 maart komen er 3469 bezoekers bij FC Emmen en op 26 maart 5625. Hoeveel bezoekers is dat samen?",
+          "opties": [
+            "9084",
+            "9094",
+            "9194",
+            "8994"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "3469 + 5625 = 9094.",
+          "paragraaf": "Optellen boven duizend"
+        },
+        {
+          "vraag": "Donar trok bij twee wedstrijden 3778 en 4350 bezoekers. Hoeveel bezoekers waren dat samen?",
+          "opties": [
+            "8118",
+            "8128",
+            "8028",
+            "8228"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "3778 + 4350 = 8128.",
+          "paragraaf": "Optellen boven duizend"
+        },
+        {
+          "vraag": "Bereken 4578 + 674.",
+          "opties": [
+            "5242",
+            "5252",
+            "5152",
+            "5352"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Zet de eenheden onder elkaar: 4578 + 674 = 5252.",
+          "paragraaf": "Optellen met verschillend aantal cijfers"
+        },
+        {
+          "vraag": "Rik heeft €6575 gespaard en stort er €845 bij van de verkoop van zijn scooter. Hoeveel staat er nu op zijn rekening?",
+          "opties": [
+            "€7320",
+            "€7420",
+            "€7520",
+            "€7410"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "6575 + 845 = 7420.",
+          "paragraaf": "Optellen met verschillend aantal cijfers"
+        },
+        {
+          "vraag": "Bereken 24.389 + 8658.",
+          "opties": [
+            "32.047",
+            "33.047",
+            "33.147",
+            "31.047"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "24.389 + 8658 = 33.047.",
+          "paragraaf": "Optellen met verschillend aantal cijfers"
+        }
+      ]
+    },
+    {
+      "titel": "Aftrekken",
+      "uitleg": "<div class='box'><h4>Wat leer je in dit hoofdstuk?</h4><p>Je leert schattend aftrekken en aftrekken onder elkaar: van aftrekkingen tot honderd tot aftrekkingen met een verschillend aantal cijfers.</p></div><div class='call'>De aanpak is steeds hetzelfde: eerst schatten, dan de getallen onder elkaar zetten en van achteren naar voren aftrekken. Kun je in een kolom niet aftrekken? Dan leen je 1 van de kolom ernaast.</div>",
+      "subhoofdstukken": [
+        {
+          "titel": "Aftrekken tot honderd",
+          "uitleg": "<div class='box'><h4>Schattend aftrekken</h4><p>Ook bij aftrekken maak je eerst een schatting. Je rondt beide getallen af op tientallen en gebruikt het teken &#8776;.</p><p><b>Voorbeeld</b> Indra koopt een jurk van &euro;86 en krijgt &euro;25 korting. Schatting: 90 &minus; 30 = &euro;60. Precies: 86 &minus; 25 = <b>&euro;61</b>.</p></div><div class='box'><h4>Aftrekken onder elkaar</h4><p><b>Opgave</b> Bereken 93 &minus; 54.<br><b>Aanpak</b> Maak de schatting (rond af op tientallen), zet de getallen onder elkaar, kijk of het antwoord bij de schatting past.<br><b>Uitwerking</b> Schatting: 90 &minus; 50 = 40. Eenheden: 3 &minus; 4 kan niet, dus leen je 1 tiental: 13 &minus; 4 = 9. Tientallen: (9 &minus; 1) &minus; 5 = 3. Antwoord: <b>39</b>.</p></div><div class='call warn'><b>Veelgemaakte fout:</b> vergeten dat je bij de tiental-kolom 1 moet aftrekken van het getal waar je van leende.</div><div class='tblwrap'><table class='tbl'><tr><th>Berekening</th><th>Antwoord</th></tr><tr><td>72 &minus; 49</td><td>23</td></tr><tr><td>69 &minus; 24</td><td>45</td></tr><tr><td>Fennah: €76 gespaard, tennisracket €47</td><td>€29 over</td></tr><tr><td>Thomas: €87 gespaard, VR-bril €59</td><td>€28 over</td></tr></table></div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Kun je een kolom niet aftrekken? Leen dan 1 van de kolom ernaast.</li><li>Controleer altijd met je schatting.</li></ul></div>"
+        },
+        {
+          "titel": "Aftrekken over de honderd",
+          "uitleg": "<div class='box'><h4>Voorbeeld</h4><p><b>Opgave</b> Bereken 135 &minus; 57.<br><b>Aanpak</b> Schatting: rond af op tientallen (140 &minus; 60 = 80). Zet de getallen onder elkaar en trek af.<br><b>Uitwerking</b> Eenheden: 5 &minus; 7 kan niet, leen 1 tiental: 15 &minus; 7 = 8. Tientallen: (2 &minus; 1) &minus; 5 kan niet, leen 1 honderdtal: 12 &minus; 5 = 7. Antwoord: <b>78</b>.</p></div><div class='tblwrap'><table class='tbl'><tr><th>Context</th><th>Berekening</th><th>Antwoord</th></tr><tr><td>Klas 1C en 1D: 184 loten samen, 1D verkocht er 76</td><td>184 &minus; 76</td><td>108 loten</td></tr><tr><td>Volleybal Setup (146 leden) vs Smash (87 leden)</td><td>146 &minus; 87</td><td>59 leden meer</td></tr><tr><td>Luuk fietste van 76 naar 123 op de kilometerteller</td><td>123 &minus; 76</td><td>47 km</td></tr><tr><td>134 &minus; 65</td><td>134 &minus; 65</td><td>69</td></tr><tr><td>165 &minus; 88</td><td>165 &minus; 88</td><td>77</td></tr></table></div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Dezelfde werkwijze als bij aftrekken tot honderd, nu met een uitkomst boven de honderd bij het startgetal.</li><li>Je kunt soms twee keer moeten lenen.</li></ul></div>"
+        },
+        {
+          "titel": "Aftrekken tot duizend",
+          "uitleg": "<div class='box'><h4>Theorie: aftrekken tot duizend onder elkaar</h4><p>Ook bij aftrekkingen met drie cijfers onder elkaar maak je eerst een schatting van het antwoord. Dan zet je de getallen onder elkaar en trek je ze af. Je begint achteraan met de eenheden. Na de berekening kijk je of je antwoord klopt met de schatting.</p></div><div class='box'><h4>Voorbeeld</h4><p><b>Opgave</b> Bereken 772 &minus; 284.<br><b>Uitwerking</b> Schatting: 800 &minus; 300 = 500. Eenheden: 2 &minus; 4 kan niet, leen 1: 12 &minus; 4 = 8. Tientallen: (6 &minus; 1) &minus; 8 kan niet, leen 1: 16 &minus; 8 = 8. Honderdtallen: (6 &minus; 1) &minus; 2 = 4. Antwoord: <b>488</b>.</p></div><div class='tblwrap'><table class='tbl'><tr><th>Context</th><th>Berekening</th><th>Antwoord</th></tr><tr><td>Eva verdient €183 in twee weken, week 1 was €89</td><td>183 &minus; 89</td><td>€94</td></tr><tr><td>829 &minus; 289</td><td>829 &minus; 289</td><td>540</td></tr><tr><td>Trap Domtoren: 465 treden, 318 tot het carillon</td><td>465 &minus; 318</td><td>147 treden</td></tr><tr><td>Trap Martinitoren: 311 treden, 163 tot de klokkenzolder</td><td>311 &minus; 163</td><td>148 treden</td></tr><tr><td>Tess: 500 g snoep, al 315 g in de zak</td><td>500 &minus; 315</td><td>185 g nog bij</td></tr></table></div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Met drie cijfers kun je twee keer achter elkaar moeten lenen.</li><li>Reken van achteren (eenheden) naar voren (honderdtallen).</li></ul></div>"
+        },
+        {
+          "titel": "Aftrekken boven duizend",
+          "uitleg": "<div class='box'><h4>Theorie: aftrekken boven duizend onder elkaar</h4><p>Ook bij aftrekkingen met vier cijfers onder elkaar maak je eerst een schatting van het antwoord. Dan zet je de getallen onder elkaar en trek je ze af. Je begint achteraan met de eenheden. Na de berekening kijk je of je antwoord klopt met de schatting.</p></div><div class='box'><h4>Voorbeeld</h4><p><b>Opgave</b> Bereken 6274 &minus; 2878.<br><b>Uitwerking</b> Schatting: 6000 &minus; 3000 = 3000. Na het lenen in elke kolom kom je op <b>3396</b> uit.</p></div><div class='tblwrap'><table class='tbl'><tr><th>Context</th><th>Berekening</th><th>Antwoord</th></tr><tr><td>FC Volendam: bezoekers 12 en 26 maart</td><td>6125 &minus; 3384</td><td>2741 meer</td></tr><tr><td>Eiland Wadoog: 932 inwoners, Midstad 495</td><td>932 &minus; 495</td><td>437</td></tr><tr><td>4329 &minus; 2478</td><td>4329 &minus; 2478</td><td>1851</td></tr><tr><td>7456 &minus; 3374</td><td>7456 &minus; 3374</td><td>4082</td></tr><tr><td>Bram: stappenteller van 4379 naar 9453</td><td>9453 &minus; 4379</td><td>5074 stappen</td></tr><tr><td>Nora en Milan: kilometerteller van 7468 naar 9217</td><td>9217 &minus; 7468</td><td>1749 km</td></tr></table></div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Bij vier cijfers reken je vier kolommen uit: eenheden, tientallen, honderdtallen, duizendtallen.</li></ul></div>"
+        },
+        {
+          "titel": "Aftrekken met verschillend aantal cijfers",
+          "uitleg": "<div class='box'><h4>Aanpak</h4><p>Het kleinste getal heeft vaak minder cijfers dan het grootste. Rond bij de schatting af op de grootte van het kleinste getal. Zet de getallen op de juiste manier onder elkaar (eenheden onder eenheden) en kijk of je antwoord klopt met de schatting.</p></div><div class='box'><h4>Voorbeeld</h4><p>Mei-Lan verstuurde in september 524 berichtjes en in oktober maar 89. Hoeveel minder is dat? Schatting: 500 &minus; 100 = 400. Precies: 524 &minus; 89 = <b>435</b>.</p></div><div class='tblwrap'><table class='tbl'><tr><th>Context</th><th>Berekening</th><th>Antwoord</th></tr><tr><td>Vader van Timo: auto €15.499, oude auto ingeruild voor €5750</td><td>15.499 &minus; 5750</td><td>€9749</td></tr><tr><td>Noah: €2155 op spaarrekening, koopt ski's voor €349</td><td>2155 &minus; 349</td><td>€1806</td></tr><tr><td>Andorp (974 inwoners) en Drecht (4253 inwoners)</td><td>4253 &minus; 974</td><td>3279 meer</td></tr><tr><td>Rianne: kilometerteller van 9843 naar 12.132</td><td>12.132 &minus; 9843</td><td>2289 km</td></tr><tr><td>Popconcert: 4379 (vrijdag) en 9475 (zaterdag) bezoekers</td><td>9475 &minus; 4379</td><td>5096 meer</td></tr></table></div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Zet altijd de eenheden onder de eenheden, ongeacht hoeveel cijfers een getal heeft.</li></ul></div>"
+        },
+        {
+          "titel": "Puzzelen",
+          "uitleg": "<div class='box'><h4>Oefenen met aftrekken</h4><p>In deze paragraaf oefen je het aftrekken dat je in dit hoofdstuk hebt geleerd in puzzelvorm: je zoekt een ontbrekend getal of gebruikt de antwoorden om een woord of zin te vinden. Er komt geen nieuwe theorie bij; je gebruikt de aanpak van de vorige paragrafen.</p></div><div class='tblwrap'><table class='tbl'><tr><th>Ontbrekend getal</th><th>Antwoord</th></tr><tr><td>300 &minus; ___ = 220</td><td>80</td></tr><tr><td>450 &minus; ___ = 410</td><td>40</td></tr><tr><td>230 &minus; ___ = 190</td><td>40</td></tr><tr><td>125 &minus; 65</td><td>60</td></tr><tr><td>100 &minus; 55</td><td>45</td></tr></table></div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Bij een ontbrekend getal in een aftrekking kun je het opgeteld terugrekenen.</li></ul></div>"
+        }
+      ],
+      "begrippen": [
+        {
+          "term": "Aftrekken",
+          "uitleg": "Het verschil tussen twee getallen berekenen.",
+          "paragraaf": "Aftrekken tot honderd"
+        },
+        {
+          "term": "Schattend aftrekken",
+          "uitleg": "Beide getallen afronden en daarmee snel een ongeveer-antwoord bepalen.",
+          "paragraaf": "Aftrekken tot honderd"
+        },
+        {
+          "term": "Aftrekken onder elkaar",
+          "uitleg": "De getallen recht onder elkaar zetten en van achteren naar voren aftrekken.",
+          "paragraaf": "Aftrekken tot honderd"
+        },
+        {
+          "term": "Lenen",
+          "uitleg": "1 overnemen van de kolom ernaast als je in een kolom niet kunt aftrekken.",
+          "paragraaf": "Aftrekken tot honderd"
+        },
+        {
+          "term": "Aftrektal",
+          "uitleg": "Het getal waar je van aftrekt, bijvoorbeeld de 93 in 93 - 54.",
+          "paragraaf": "Aftrekken tot honderd"
+        },
+        {
+          "term": "Aftrekker",
+          "uitleg": "Het getal dat je aftrekt, bijvoorbeeld de 54 in 93 - 54.",
+          "paragraaf": "Aftrekken tot honderd"
+        },
+        {
+          "term": "Verschil",
+          "uitleg": "De uitkomst van een aftrekking.",
+          "paragraaf": "Aftrekken over de honderd"
+        },
+        {
+          "term": "Uitlijnen bij aftrekken",
+          "uitleg": "De eenheden onder de eenheden zetten, ook als de getallen een verschillend aantal cijfers hebben.",
+          "paragraaf": "Aftrekken met verschillend aantal cijfers"
+        },
+        {
+          "term": "Controleren",
+          "uitleg": "Na het aftrekken kijken of het precieze antwoord bij de eerdere schatting past.",
+          "paragraaf": "Aftrekken tot duizend"
+        },
+        {
+          "term": "Ontbrekend getal",
+          "uitleg": "Een onbekend getal in een som dat je moet terugrekenen, bijvoorbeeld in 300 - ___ = 220.",
+          "paragraaf": "Puzzelen"
+        }
+      ],
+      "flashcards": [
+        {
+          "vraag": "Indra koopt een jurk van €86 met €25 korting. Wat is een goede schatting van wat ze betaalt?",
+          "antwoord": "Ongeveer €60 (90 - 30).",
+          "paragraaf": "Aftrekken tot honderd"
+        },
+        {
+          "vraag": "Bereken 93 - 54.",
+          "antwoord": "39",
+          "paragraaf": "Aftrekken tot honderd"
+        },
+        {
+          "vraag": "Wat doe je als je in een kolom niet kunt aftrekken, zoals 3 - 4?",
+          "antwoord": "Je leent 1 van de kolom ernaast, dan wordt het 13 - 4.",
+          "paragraaf": "Aftrekken tot honderd"
+        },
+        {
+          "vraag": "Bereken 135 - 57.",
+          "antwoord": "78",
+          "paragraaf": "Aftrekken over de honderd"
+        },
+        {
+          "vraag": "Bereken 772 - 284.",
+          "antwoord": "488",
+          "paragraaf": "Aftrekken tot duizend"
+        },
+        {
+          "vraag": "Hoeveel treden is het van de klokkenzolder tot de top van de Martinitoren, als de toren 311 treden heeft en de klokkenzolder op 163 treden zit?",
+          "antwoord": "311 - 163 = 148 treden.",
+          "paragraaf": "Aftrekken tot duizend"
+        },
+        {
+          "vraag": "Bereken 6274 - 2878.",
+          "antwoord": "3396",
+          "paragraaf": "Aftrekken boven duizend"
+        },
+        {
+          "vraag": "Bram had 4379 stappen en na het bezorgen 9453. Hoeveel stappen zette hij tijdens het bezorgen?",
+          "antwoord": "9453 - 4379 = 5074 stappen.",
+          "paragraaf": "Aftrekken boven duizend"
+        },
+        {
+          "vraag": "Waarom rond je bij een aftrekking met een verschillend aantal cijfers af op de grootte van het kleinste getal?",
+          "antwoord": "Omdat dat de schatting nauwkeuriger en makkelijker maakt.",
+          "paragraaf": "Aftrekken met verschillend aantal cijfers"
+        },
+        {
+          "vraag": "Bereken 524 - 89.",
+          "antwoord": "435",
+          "paragraaf": "Aftrekken met verschillend aantal cijfers"
+        },
+        {
+          "vraag": "Los op: 300 - ___ = 220.",
+          "antwoord": "80",
+          "paragraaf": "Puzzelen"
+        }
+      ],
+      "quiz": [
+        {
+          "vraag": "Indra koopt een jurk van €86 en krijgt €25 korting. Wat betaalt ze precies?",
+          "opties": [
+            "€59",
+            "€60",
+            "€61",
+            "€64"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "86 - 25 = 61.",
+          "paragraaf": "Aftrekken tot honderd"
+        },
+        {
+          "vraag": "Bereken 93 - 54.",
+          "opties": [
+            "29",
+            "39",
+            "41",
+            "49"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "13 - 4 = 9 (na lenen), 8 - 5 = 3. Antwoord: 39.",
+          "paragraaf": "Aftrekken tot honderd"
+        },
+        {
+          "vraag": "Fennah had €76 gespaard en koopt een tennisracket van €47. Hoeveel houdt ze over?",
+          "opties": [
+            "€19",
+            "€29",
+            "€31",
+            "€39"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "76 - 47 = 29.",
+          "paragraaf": "Aftrekken tot honderd"
+        },
+        {
+          "vraag": "Bereken 72 - 49.",
+          "opties": [
+            "13",
+            "23",
+            "27",
+            "33"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "72 - 49 = 23.",
+          "paragraaf": "Aftrekken tot honderd"
+        },
+        {
+          "vraag": "Bereken 135 - 57.",
+          "opties": [
+            "68",
+            "78",
+            "82",
+            "88"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "135 - 57 = 78.",
+          "paragraaf": "Aftrekken over de honderd"
+        },
+        {
+          "vraag": "Volleybalvereniging Setup heeft 146 leden en Smash heeft 87 leden. Hoeveel meer leden heeft Setup?",
+          "opties": [
+            "49",
+            "59",
+            "69",
+            "63"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "146 - 87 = 59.",
+          "paragraaf": "Aftrekken over de honderd"
+        },
+        {
+          "vraag": "Klas 1C en 1D verkochten samen 184 loten, klas 1D verkocht er 76. Hoeveel verkocht klas 1C?",
+          "opties": [
+            "98",
+            "104",
+            "108",
+            "112"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "184 - 76 = 108.",
+          "paragraaf": "Aftrekken over de honderd"
+        },
+        {
+          "vraag": "Bereken 772 - 284.",
+          "opties": [
+            "478",
+            "488",
+            "498",
+            "512"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "772 - 284 = 488.",
+          "paragraaf": "Aftrekken tot duizend"
+        },
+        {
+          "vraag": "Eva verdiende in twee weken €183, in de eerste week €89. Hoeveel verdiende ze in de tweede week?",
+          "opties": [
+            "€84",
+            "€94",
+            "€104",
+            "€96"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "183 - 89 = 94.",
+          "paragraaf": "Aftrekken tot duizend"
+        },
+        {
+          "vraag": "De trap van de Domtoren heeft 465 treden, na 318 treden ben je bij het carillon. Hoeveel treden is het nog naar boven?",
+          "opties": [
+            "137",
+            "147",
+            "153",
+            "157"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "465 - 318 = 147.",
+          "paragraaf": "Aftrekken tot duizend"
+        },
+        {
+          "vraag": "Bereken 6274 - 2878.",
+          "opties": [
+            "3286",
+            "3396",
+            "3406",
+            "3496"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "6274 - 2878 = 3396.",
+          "paragraaf": "Aftrekken boven duizend"
+        },
+        {
+          "vraag": "Bij FC Volendam komen op 12 maart 3384 en op 26 maart 6125 bezoekers. Hoeveel meer bezoekers waren er op 26 maart?",
+          "opties": [
+            "2631",
+            "2741",
+            "2851",
+            "2641"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "6125 - 3384 = 2741.",
+          "paragraaf": "Aftrekken boven duizend"
+        },
+        {
+          "vraag": "Op het eiland Wadoog wonen 932 mensen, in Midstad 495. Hoeveel mensen wonen op de rest van het eiland?",
+          "opties": [
+            "417",
+            "427",
+            "437",
+            "447"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "932 - 495 = 437.",
+          "paragraaf": "Aftrekken boven duizend"
+        },
+        {
+          "vraag": "De kilometerteller van Nora en Milan stond bij vertrek op 7468 en bij terugkomst op 9217. Hoeveel kilometer reden ze?",
+          "opties": [
+            "1639",
+            "1749",
+            "1859",
+            "1949"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "9217 - 7468 = 1749.",
+          "paragraaf": "Aftrekken boven duizend"
+        },
+        {
+          "vraag": "Mei-Lan verstuurde in september 524 en in oktober 89 berichtjes. Hoeveel minder was dat in oktober?",
+          "opties": [
+            "425",
+            "435",
+            "445",
+            "415"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "524 - 89 = 435.",
+          "paragraaf": "Aftrekken met verschillend aantal cijfers"
+        },
+        {
+          "vraag": "De vader van Timo koopt een auto van €15.499 en ruilt zijn oude auto in voor €5750. Hoeveel moet hij betalen?",
+          "opties": [
+            "€9639",
+            "€9749",
+            "€9849",
+            "€9949"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "15.499 - 5750 = 9749.",
+          "paragraaf": "Aftrekken met verschillend aantal cijfers"
+        },
+        {
+          "vraag": "Andorp heeft 974 inwoners en Drecht 4253. Hoeveel meer inwoners heeft Drecht?",
+          "opties": [
+            "3179",
+            "3279",
+            "3379",
+            "3269"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "4253 - 974 = 3279.",
+          "paragraaf": "Aftrekken met verschillend aantal cijfers"
+        },
+        {
+          "vraag": "Bij een popconcert waren er 4379 bezoekers op vrijdag en 9475 op zaterdag. Hoeveel meer bezoekers waren er op zaterdag?",
+          "opties": [
+            "4996",
+            "5096",
+            "5196",
+            "5106"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "9475 - 4379 = 5096.",
+          "paragraaf": "Aftrekken met verschillend aantal cijfers"
+        },
+        {
+          "vraag": "Los op: 300 - ___ = 220.",
+          "opties": [
+            "70",
+            "80",
+            "90",
+            "120"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "300 - 80 = 220.",
+          "paragraaf": "Puzzelen"
+        },
+        {
+          "vraag": "Los op: 450 - ___ = 410.",
+          "opties": [
+            "30",
+            "40",
+            "50",
+            "60"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "450 - 40 = 410.",
+          "paragraaf": "Puzzelen"
+        }
+      ]
+    },
+    {
+      "titel": "Vermenigvuldigen",
+      "uitleg": "<div class='box'><h4>Wat leer je in dit hoofdstuk?</h4><p>Je leert de tafels tot tien, schatten bij vermenigvuldigen en vermenigvuldigen onder elkaar: van een cijfer keer twee cijfers tot twee cijfers keer twee cijfers.</p></div><div class='call'>Bij vermenigvuldigen met nullen tel je eerst de nullen weg, reken je het kale sommetje uit en zet je de nullen er daarna weer achter.</div>",
+      "subhoofdstukken": [
+        {
+          "titel": "Tafels tot tien",
+          "uitleg": "<div class='box'><h4>Tafels uit je hoofd</h4><p>Om snel te kunnen vermenigvuldigen, moet je de tafels van 1 tot en met 10 uit je hoofd kennen. Bijvoorbeeld de tafel van 6: 1x6=6, 2x6=12, 3x6=18, tot en met 10x6=60.</p></div><div class='box'><h4>Voorbeeld</h4><p>Ghazi doet vakantiewerk: 9 dagen lang 8 uur per dag. Hoeveel uur werkt hij? 9 x 8 = <b>72 uur</b>.</p></div><div class='call'>Lotte denkt aan twee getallen onder de tien. Vermenigvuldigd geven ze 21 (3 x 7). Opgeteld geven ze dan 3 + 7 = 10.</div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Ken je de tafels uit je hoofd, dan kun je veel sneller rekenen.</li><li>Fabrizzio werkte 4 dagen 8 uur per dag: 4 x 8 = 32 uur.</li></ul></div>"
+        },
+        {
+          "titel": "Schatten bij vermenigvuldigen",
+          "uitleg": "<div class='g2'><div class='box'><h4>Theorie: rekenen met nullen</h4><p>Bij 6 x 40 zie je één nul achter de 4. Eerst bereken je 6 x 4 = 24, dan zet je de nul erachter: 6 x 40 = <b>240</b>.<br>Bij 3 x 900 zie je twee nullen. Eerst 3 x 9 = 27, dan de nullen erachter: 3 x 900 = <b>2700</b>.<br>Bij 5 x 8000 zie je drie nullen. Eerst 5 x 8 = 40, dan de nullen erachter: 5 x 8000 = <b>40.000</b>.</p></div><div class='box'><h4>Theorie: nullen tellen bij twee ronde getallen</h4><p>Bij 400 x 80 tel je drie nullen. Eerst 4 x 8 = 32, dan de nullen erachter: 400 x 80 = <b>32.000</b>.<br>Bij 50 x 8000 tel je vier nullen. Eerst 5 x 8 = 40, dan de nullen erachter: 50 x 8000 = <b>400.000</b>.</p></div></div><div class='box'><h4>Theorie en voorbeeld: schatten bij vermenigvuldigen</h4><p>Bij de vermenigvuldiging 7 x 62 kun je een schatting maken door 62 af te ronden op tientallen: 7 x 62 &#8776; 7 x 60 = 420.</p><p><b>Opgave</b> Schat het antwoord van a) 8 x 59 en b) 5 x 283.<br><b>Aanpak</b> a) Rond 59 af op tientallen. b) Rond 283 af op honderdtallen.<br><b>Uitwerking</b> a) 8 x 59 &#8776; 8 x 60 = 480. b) 5 x 283 &#8776; 5 x 300 = 1500.</p></div><div class='call warn'><b>Veelgemaakte fout:</b> bij het afronden op tientallen of honderdtallen tel je de nullen van het andere getal in de vermenigvuldiging niet mee. Rond alleen het getal af waarmee je schat.</div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Streep bij het rekenen met ronde getallen eerst de nullen weg, reken uit, zet ze er weer achter.</li><li>Bij een schatting rond je het lastigste getal af op tientallen of honderdtallen.</li></ul></div>"
+        },
+        {
+          "titel": "Eén cijfer x twee cijfers",
+          "uitleg": "<div class='box'><h4>Voorbeeld</h4><p><b>Opgave</b> Bereken 7 x 83.<br><b>Aanpak</b> Zet de getallen onder elkaar: 83 boven, 7 eronder. Maak de vermenigvuldigingen en begin achteraan.<br><b>Uitwerking</b> 7 x 3 = 21 (1 opschrijven, 2 onthouden). 7 x 8 = 56, plus de 2 die je onthield is 58. Antwoord: <b>581</b>.</p></div><div class='call'>Tim rekent 6 x 32 uit door eerst 6 x 30 = 180 en dan 6 x 2 = 12 te doen, en telt ze op: 180 + 12 = <b>192</b>. Dat mag: je splitst het getal in tientallen en eenheden.</div><div class='tblwrap'><table class='tbl'><tr><th>Berekening</th><th>Antwoord</th></tr><tr><td>7 x 86</td><td>602</td></tr><tr><td>8 x 77</td><td>616</td></tr><tr><td>Emma verdient €28 per dag, werkt 9 dagen</td><td>€252</td></tr><tr><td>Liam: €38 per uur, 6 uur les</td><td>€228</td></tr></table></div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Begin achteraan (bij de eenheden) en onthoud een eventueel tiental voor de volgende kolom.</li></ul></div>"
+        },
+        {
+          "titel": "Eén cijfer x drie cijfers",
+          "uitleg": "<div class='box'><h4>Voorbeeld</h4><p><b>Opgave</b> Bereken 7 x 873.<br><b>Uitwerking</b> 7 x 3 = 21 (1 opschrijven, 2 onthouden). 7 x 7 = 49, plus 2 = 51 (1 opschrijven, 5 onthouden). 7 x 8 = 56, plus 5 = 61. Antwoord: <b>6111</b>.</p></div><div class='call'>Lynn rekent 6 x 372 uit door 6 x 300 = 1800, 6 x 70 = 420 en 6 x 2 = 12 op te tellen: 1800 + 420 + 12 = <b>2232</b>.</div><div class='tblwrap'><table class='tbl'><tr><th>Context</th><th>Berekening</th><th>Antwoord</th></tr><tr><td>Thom huurt 3 weken een vakantiehuisje voor €245 per week</td><td>3 x 245</td><td>€735</td></tr></table></div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Bij drie cijfers reken je drie keer een vermenigvuldiging uit en tel je steeds het onthouden getal erbij op.</li></ul></div>"
+        },
+        {
+          "titel": "Eén cijfer x vier cijfers",
+          "uitleg": "<div class='box'><h4>Voorbeeld</h4><p><b>Opgave</b> Bereken 8 x 8273.<br><b>Uitwerking</b> 8 x 3 = 24 (4 opschrijven, 2 onthouden). 8 x 7 = 56 + 2 = 58 (8 opschrijven, 5 onthouden). 8 x 2 = 16 + 5 = 21 (1 opschrijven, 2 onthouden). 8 x 8 = 64 + 2 = 66. Antwoord: <b>66.184</b>.</p></div><div class='call'>Anniek rekent 6 x 3872 uit door 6 x 3000 = 18.000, 6 x 800 = 4800, 6 x 70 = 420 en 6 x 2 = 12 op te tellen: 18.000 + 4800 + 420 + 12 = <b>23.232</b>.</div><div class='tblwrap'><table class='tbl'><tr><th>Context</th><th>Berekening</th><th>Antwoord</th></tr><tr><td>Karin verdient €473 per maand, in 4 maanden</td><td>4 x 473</td><td>€1892</td></tr><tr><td>Jesse verkoopt 8 e-bikes van €2489</td><td>8 x 2489</td><td>€19.912</td></tr></table></div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Bij vier cijfers werk je net zo, maar dan met vier vermenigvuldigingen achter elkaar.</li></ul></div>"
+        },
+        {
+          "titel": "Twee cijfers x twee cijfers",
+          "uitleg": "<div class='box'><h4>Voorbeeld</h4><p><b>Opgave</b> Bereken 48 x 73 (of 73 x 48, dat geeft hetzelfde antwoord).<br><b>Aanpak</b><br>1. Zet de getallen onder elkaar.<br>2. Vermenigvuldig eerst met de eenheden: 8 x 3 = 24 (4 opschrijven, 2 onthouden), 8 x 7 = 56 + 2 = 58. Dat geeft 584.<br>3. Zet een 0 en vermenigvuldig met de tientallen: 4 x 3 = 12 (2 opschrijven, 1 onthouden), 4 x 7 = 28 + 1 = 29. Dat geeft 2920.<br>4. Tel de twee uitkomsten op: 584 + 2920 = <b>3504</b>.</p></div><div class='call'>Jay rekent 30 x 42 uit door 30 x 40 = 1200 en 30 x 2 = 60 op te tellen: 1200 + 60 = <b>1260</b>.</div><div class='tblwrap'><table class='tbl'><tr><th>Context</th><th>Berekening</th><th>Antwoord</th></tr><tr><td>58 x 24</td><td>58 x 24</td><td>1392</td></tr><tr><td>72 x 56</td><td>72 x 56</td><td>4032</td></tr><tr><td>94 x 59</td><td>94 x 59</td><td>5546</td></tr><tr><td>Francien koopt 18 kaartjes van €42</td><td>18 x 42</td><td>€756</td></tr><tr><td>Theater De Vlonder: 34 rijen van 38 stoelen</td><td>34 x 38</td><td>1292 stoelen</td></tr></table></div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Vermenigvuldig eerst met de eenheden, dan met de tientallen (met een 0 erachter), en tel de twee tussenuitkomsten op.</li></ul></div>"
+        }
+      ],
+      "begrippen": [
+        {
+          "term": "Vermenigvuldigen",
+          "uitleg": "Een getal een aantal keer bij zichzelf optellen, bijvoorbeeld 6 x 8 is 8 keer het getal 6 bij elkaar optellen.",
+          "paragraaf": "Tafels tot tien"
+        },
+        {
+          "term": "Tafel",
+          "uitleg": "Een rijtje vermenigvuldigingen met hetzelfde getal, zoals de tafel van 6: 1x6, 2x6, 3x6, enzovoort.",
+          "paragraaf": "Tafels tot tien"
+        },
+        {
+          "term": "Factor",
+          "uitleg": "Een van de getallen die je met elkaar vermenigvuldigt.",
+          "paragraaf": "Tafels tot tien"
+        },
+        {
+          "term": "Product",
+          "uitleg": "De uitkomst van een vermenigvuldiging.",
+          "paragraaf": "Tafels tot tien"
+        },
+        {
+          "term": "Nullen wegstrepen",
+          "uitleg": "Bij vermenigvuldigen met ronde getallen eerst de nullen weglaten, uitrekenen en de nullen er daarna weer achter zetten.",
+          "paragraaf": "Schatten bij vermenigvuldigen"
+        },
+        {
+          "term": "Schatten bij vermenigvuldigen",
+          "uitleg": "Een getal afronden voordat je vermenigvuldigt, om snel een ongeveer-antwoord te krijgen.",
+          "paragraaf": "Schatten bij vermenigvuldigen"
+        },
+        {
+          "term": "Vermenigvuldigen onder elkaar",
+          "uitleg": "Een manier om te vermenigvuldigen waarbij je de getallen onder elkaar zet en van achteren naar voren rekent.",
+          "paragraaf": "Eén cijfer x twee cijfers"
+        },
+        {
+          "term": "Splitsen (bij vermenigvuldigen)",
+          "uitleg": "Een getal opdelen in tientallen, honderdtallen enzovoort en die apart vermenigvuldigen, zoals Tim doet bij 6 x 32.",
+          "paragraaf": "Eén cijfer x twee cijfers"
+        },
+        {
+          "term": "Onthouden (bij vermenigvuldigen)",
+          "uitleg": "Als een tussenuitkomst 10 of meer is, schrijf je het laatste cijfer op en tel je de rest mee bij de volgende kolom.",
+          "paragraaf": "Eén cijfer x drie cijfers"
+        },
+        {
+          "term": "Tussenuitkomst",
+          "uitleg": "Het resultaat van een deel van de berekening, zoals 584 en 2920 bij 48 x 73, die je daarna optelt.",
+          "paragraaf": "Twee cijfers x twee cijfers"
+        }
+      ],
+      "flashcards": [
+        {
+          "vraag": "Ghazi werkt 9 dagen, 8 uur per dag. Hoeveel uur werkt hij?",
+          "antwoord": "9 x 8 = 72 uur.",
+          "paragraaf": "Tafels tot tien"
+        },
+        {
+          "vraag": "Bereken 6 x 40.",
+          "antwoord": "240",
+          "paragraaf": "Schatten bij vermenigvuldigen"
+        },
+        {
+          "vraag": "Bereken 3 x 900.",
+          "antwoord": "2700",
+          "paragraaf": "Schatten bij vermenigvuldigen"
+        },
+        {
+          "vraag": "Bereken 5 x 8000.",
+          "antwoord": "40.000",
+          "paragraaf": "Schatten bij vermenigvuldigen"
+        },
+        {
+          "vraag": "Schat het antwoord van 7 x 62.",
+          "antwoord": "7 x 60 = 420.",
+          "paragraaf": "Schatten bij vermenigvuldigen"
+        },
+        {
+          "vraag": "Bereken 7 x 83.",
+          "antwoord": "581",
+          "paragraaf": "Eén cijfer x twee cijfers"
+        },
+        {
+          "vraag": "Tim rekent 6 x 32 uit door 6 x 30 en 6 x 2 apart te doen. Wat is het antwoord?",
+          "antwoord": "180 + 12 = 192.",
+          "paragraaf": "Eén cijfer x twee cijfers"
+        },
+        {
+          "vraag": "Bereken 7 x 873.",
+          "antwoord": "6111",
+          "paragraaf": "Eén cijfer x drie cijfers"
+        },
+        {
+          "vraag": "Bereken 8 x 8273.",
+          "antwoord": "66.184",
+          "paragraaf": "Eén cijfer x vier cijfers"
+        },
+        {
+          "vraag": "Jesse verkoopt 8 e-bikes van €2489. Hoeveel euro is dat totaal?",
+          "antwoord": "8 x 2489 = €19.912.",
+          "paragraaf": "Eén cijfer x vier cijfers"
+        },
+        {
+          "vraag": "Bereken 48 x 73.",
+          "antwoord": "3504",
+          "paragraaf": "Twee cijfers x twee cijfers"
+        },
+        {
+          "vraag": "Jay rekent 30 x 42 uit door 30 x 40 en 30 x 2 apart te doen. Wat is het antwoord?",
+          "antwoord": "1200 + 60 = 1260.",
+          "paragraaf": "Twee cijfers x twee cijfers"
+        }
+      ],
+      "quiz": [
+        {
+          "vraag": "Bereken 6 x 40.",
+          "opties": [
+            "24",
+            "240",
+            "2400",
+            "60"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "6 x 4 = 24, dan de nul erachter: 240.",
+          "paragraaf": "Schatten bij vermenigvuldigen"
+        },
+        {
+          "vraag": "Bereken 5 x 8000.",
+          "opties": [
+            "4000",
+            "40.000",
+            "400.000",
+            "4.000.000"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "5 x 8 = 40, dan de drie nullen erachter: 40.000.",
+          "paragraaf": "Schatten bij vermenigvuldigen"
+        },
+        {
+          "vraag": "Bereken 400 x 80.",
+          "opties": [
+            "3200",
+            "32.000",
+            "320.000",
+            "3.200"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "4 x 8 = 32, dan de drie nullen erachter: 32.000.",
+          "paragraaf": "Schatten bij vermenigvuldigen"
+        },
+        {
+          "vraag": "Schat het antwoord van 8 x 59.",
+          "opties": [
+            "420",
+            "440",
+            "480",
+            "500"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "59 rond je af op 60: 8 x 60 = 480.",
+          "paragraaf": "Schatten bij vermenigvuldigen"
+        },
+        {
+          "vraag": "Schat het antwoord van 5 x 283.",
+          "opties": [
+            "1000",
+            "1400",
+            "1500",
+            "1600"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "283 rond je af op 300: 5 x 300 = 1500.",
+          "paragraaf": "Schatten bij vermenigvuldigen"
+        },
+        {
+          "vraag": "Ghazi doet 9 dagen vakantiewerk, 8 uur per dag. Hoeveel uur werkt hij?",
+          "opties": [
+            "62",
+            "70",
+            "72",
+            "81"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "9 x 8 = 72.",
+          "paragraaf": "Tafels tot tien"
+        },
+        {
+          "vraag": "Bereken 7 x 83.",
+          "opties": [
+            "571",
+            "581",
+            "591",
+            "601"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "7 x 3 = 21 (1, onthoud 2), 7 x 8 = 56 + 2 = 58. Antwoord: 581.",
+          "paragraaf": "Eén cijfer x twee cijfers"
+        },
+        {
+          "vraag": "Emma verdient €28 per dag en werkt 9 dagen. Hoeveel verdient ze?",
+          "opties": [
+            "€242",
+            "€252",
+            "€262",
+            "€270"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "28 x 9 = 252.",
+          "paragraaf": "Eén cijfer x twee cijfers"
+        },
+        {
+          "vraag": "Bereken 7 x 86.",
+          "opties": [
+            "592",
+            "602",
+            "612",
+            "622"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "7 x 86 = 602.",
+          "paragraaf": "Eén cijfer x twee cijfers"
+        },
+        {
+          "vraag": "Bereken 6 x 372 op de manier van Lynn (splitsen).",
+          "opties": [
+            "2132",
+            "2212",
+            "2232",
+            "2322"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "6 x 300 = 1800, 6 x 70 = 420, 6 x 2 = 12. Samen: 1800 + 420 + 12 = 2232.",
+          "paragraaf": "Eén cijfer x drie cijfers"
+        },
+        {
+          "vraag": "Bereken 7 x 873.",
+          "opties": [
+            "6021",
+            "6111",
+            "6211",
+            "6311"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "7 x 3 = 21, 7 x 7 + 2 = 51, 7 x 8 + 5 = 61. Antwoord: 6111.",
+          "paragraaf": "Eén cijfer x drie cijfers"
+        },
+        {
+          "vraag": "Thom huurt 3 weken een vakantiehuisje van €245 per week. Wat betaalt hij totaal?",
+          "opties": [
+            "€615",
+            "€715",
+            "€735",
+            "€745"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "3 x 245 = 735.",
+          "paragraaf": "Eén cijfer x drie cijfers"
+        },
+        {
+          "vraag": "Bereken 8 x 8273.",
+          "opties": [
+            "65.184",
+            "66.184",
+            "66.184",
+            "67.184"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "8 x 3=24, 8x7+2=58, 8x2+5=21, 8x8+2=66. Antwoord: 66.184.",
+          "paragraaf": "Eén cijfer x vier cijfers"
+        },
+        {
+          "vraag": "Karin verdient €473 per maand. Hoeveel verdient ze in 4 maanden?",
+          "opties": [
+            "€1782",
+            "€1892",
+            "€1902",
+            "€1992"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "4 x 473 = 1892.",
+          "paragraaf": "Eén cijfer x vier cijfers"
+        },
+        {
+          "vraag": "Jesse verkoopt 8 e-bikes van €2489 per stuk. Hoeveel euro is dat samen?",
+          "opties": [
+            "€18.912",
+            "€19.812",
+            "€19.912",
+            "€20.912"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "8 x 2489 = 19.912.",
+          "paragraaf": "Eén cijfer x vier cijfers"
+        },
+        {
+          "vraag": "Bereken 48 x 73.",
+          "opties": [
+            "3404",
+            "3504",
+            "3604",
+            "3514"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "8x3=24 (4, onthoud2), 8x7+2=58 → 584; 4x3=12 (2,onthoud1), 4x7+1=29 → 2920; 584+2920=3504.",
+          "paragraaf": "Twee cijfers x twee cijfers"
+        },
+        {
+          "vraag": "Bereken 30 x 42 op de manier van Jay (splitsen).",
+          "opties": [
+            "1160",
+            "1220",
+            "1260",
+            "1320"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "30 x 40 = 1200, 30 x 2 = 60. Samen: 1260.",
+          "paragraaf": "Twee cijfers x twee cijfers"
+        },
+        {
+          "vraag": "Francien koopt 18 kaartjes van €42. Wat betaalt ze totaal?",
+          "opties": [
+            "€696",
+            "€726",
+            "€756",
+            "€776"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "18 x 42 = 756.",
+          "paragraaf": "Twee cijfers x twee cijfers"
+        },
+        {
+          "vraag": "Theater De Vlonder heeft 34 rijen van 38 stoelen. Hoeveel stoelen zijn dat?",
+          "opties": [
+            "1192",
+            "1252",
+            "1292",
+            "1332"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "34 x 38 = 1292.",
+          "paragraaf": "Twee cijfers x twee cijfers"
+        },
+        {
+          "vraag": "Bereken 58 x 24.",
+          "opties": [
+            "1292",
+            "1352",
+            "1392",
+            "1432"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "58 x 24 = 1392.",
+          "paragraaf": "Twee cijfers x twee cijfers"
+        }
+      ]
+    },
+    {
+      "titel": "Delen",
+      "uitleg": "<div class='box'><h4>Wat leer je in dit hoofdstuk?</h4><p>Je leert het verband tussen delen en vermenigvuldigen, delen met ronde getallen, delen met splitsen en staartdelingen, zowel tot als boven honderd.</p></div><div class='call'>Delen is het omgekeerde van vermenigvuldigen: weet je dat 8 x 6 = 48, dan weet je ook dat 48 : 6 = 8.</div>",
+      "subhoofdstukken": [
+        {
+          "titel": "Delen en vermenigvuldigen",
+          "uitleg": "<div class='box'><h4>Theorie</h4><p>Bij de deling 48 : 6 gebruik je de tafel van 6 om het antwoord te vinden. Je weet dat 8 x 6 = 48. Dus 48 : 6 = <b>8</b>.</p></div><div class='box'><h4>Voorbeeld</h4><p>Rens scoorde in 8 wedstrijden 72 punten. Hoeveel is dat gemiddeld per wedstrijd? 72 : 8 = <b>9 punten</b>.</p></div><div class='tblwrap'><table class='tbl'><tr><th>Context</th><th>Berekening</th><th>Antwoord</th></tr><tr><td>Judith werkt 6 uur en verdient €24</td><td>24 : 6</td><td>€4 per uur</td></tr><tr><td>42 : 6 (want 6 x 7 = 42)</td><td>42 : 6</td><td>7</td></tr></table></div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Ken je de tafels, dan kun je een deling er meteen uit aflezen.</li><li>Vermenigvuldigen en delen horen bij elkaar: bij elke tafelsom hoort ook een deling.</li></ul></div>"
+        },
+        {
+          "titel": "Delen met ronde getallen",
+          "uitleg": "<div class='box'><h4>Theorie: nullen wegstrepen</h4><p>In de deling 6000 : 30 staan veel nullen. Je maakt de deling makkelijker door nullen weg te strepen. Kijk naar het getal met de minste nullen: dat is hier 30, met één nul. Streep bij beide getallen één nul weg: 600 : 3. Je krijgt dan 600 : 3 = 200.</p><p>Bij 24.000 : 800 staan twee nullen bij 800. Streep bij beide getallen twee nullen weg: 240 : 8. Je krijgt dan 240 : 8 = 30.</p></div><div class='box'><h4>Voorbeeld</h4><p><b>Opgave</b> Bereken a) 45.000 : 500 en b) 320.000 : 4000.<br><b>Aanpak</b> Streep de nullen weg (kijk naar het getal met de minste nullen) en maak daarna de deling.<br><b>Uitwerking</b> a) 450 : 5 = 90. b) 320 : 4 = <b>80</b>.</p></div><div class='tblwrap'><table class='tbl'><tr><th>Context</th><th>Berekening</th><th>Antwoord</th></tr><tr><td>Muziekschool De Fluit: 40-lessenkaart voor €360</td><td>360 : 40</td><td>€9 per les</td></tr><tr><td>Zwembad De Waterrat: 30-lessenkaart voor €210</td><td>210 : 30</td><td>€7 per les</td></tr><tr><td>Jos: 800.000 km in 40 jaar rijbewijs</td><td>800.000 : 40</td><td>20.000 km per jaar</td></tr><tr><td>400 brugklassers, schoolreis kost €12.000</td><td>12.000 : 400</td><td>€30 per leerling</td></tr></table></div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Streep bij beide getallen evenveel nullen weg als het getal met de minste nullen heeft.</li></ul></div>"
+        },
+        {
+          "titel": "Delen met splitsen",
+          "uitleg": "<div class='box'><h4>Voorbeeld</h4><p>Joep maakt de deling 96 : 3. Hij zegt: 'Eerst maak ik de deling 90 : 3 en dan de deling 6 : 3. De antwoorden tel ik op.'<br>90 : 3 = 30 en 6 : 3 = 2, samen 30 + 2 = <b>32</b>.</p></div><div class='g2'><div class='box'><h4>Splitsen: 69 : 3</h4><p>60 : 3 = 20<br>9 : 3 = 3<br>69 : 3 = 20 + 3 = <b>23</b></p></div><div class='box'><h4>Splitsen: 128 : 4</h4><p>120 : 4 = 30<br>8 : 4 = 2<br>128 : 4 = 30 + 2 = <b>32</b></p></div></div><div class='tblwrap'><table class='tbl'><tr><th>Context</th><th>Berekening</th><th>Antwoord</th></tr><tr><td>Lana en zes vriendinnen (7 personen) betalen €147 entree</td><td>147 : 7</td><td>€21 per persoon</td></tr><tr><td>Thomas verdient €186 in 2 weken vakantiewerk</td><td>186 : 2</td><td>€93 per week</td></tr></table></div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Splits het deeltal handig, bijvoorbeeld in een rond tiental en de rest, en tel de twee deeluitkomsten op.</li></ul></div>"
+        },
+        {
+          "titel": "Staartdeling tot honderd",
+          "uitleg": "<div class='box'><h4>Theorie: staartdeling maken tot honderd</h4><p>Een deling kun je ook maken met een staartdeling. Je deelt dan cijfer voor cijfer, van voren naar achteren.</p></div><div class='box'><h4>Voorbeeld</h4><p><b>Opgave</b> Bereken 96 : 3 als staartdeling.<br><b>Uitwerking</b> 9 : 3 = 3 (3 past 3 keer in 9, rest 0). Haal de volgende cijfer erbij: 6. 6 : 3 = 2 (rest 0). Antwoord: <b>32</b>.</p></div><div class='tblwrap'><table class='tbl'><tr><th>Context</th><th>Berekening</th><th>Antwoord</th></tr><tr><td>85 : 5</td><td>85 : 5</td><td>17</td></tr><tr><td>76 : 4</td><td>76 : 4</td><td>19</td></tr><tr><td>96 : 6</td><td>96 : 6</td><td>16</td></tr><tr><td>Yara verdient €68, krijgt €4 per uur</td><td>68 : 4</td><td>17 uur</td></tr><tr><td>Meneer Jansen trakteert 84 leerlingen, dozen van 7 ijsjes</td><td>84 : 7</td><td>12 dozen</td></tr></table></div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Bij een staartdeling begin je vooraan, niet achteraan zoals bij optellen en aftrekken.</li></ul></div>"
+        },
+        {
+          "titel": "Staartdeling boven honderd",
+          "uitleg": "<div class='box'><h4>Theorie: staartdeling maken boven honderd</h4><p>Je kunt ook een staartdeling maken met getallen boven honderd. Je deelt weer cijfer voor cijfer, van voren naar achteren, en gebruikt de bijpassende tafel.</p></div><div class='box'><h4>Voorbeeld</h4><p><b>Opgave</b> Bereken 384 : 6.<br><b>Uitwerking</b> 3 past niet in 6, dus gebruik je 38: 6 past 6 keer in 38 (6 x 6 = 36, rest 2). Haal de 4 erbij: 24. 6 past 4 keer in 24 (6 x 4 = 24, rest 0). Antwoord: <b>64</b>.</p></div><div class='call'>Miron en Jaap maken de deling 368 : 4. Miron zegt 94, Jaap zegt 92. Wie heeft gelijk? 368 : 4 = 92, dus Jaap heeft het juiste antwoord.</div><div class='tblwrap'><table class='tbl'><tr><th>Context</th><th>Berekening</th><th>Antwoord</th></tr><tr><td>285 : 5</td><td>285 : 5</td><td>57</td></tr><tr><td>648 : 9</td><td>648 : 9</td><td>72</td></tr><tr><td>266 : 7</td><td>266 : 7</td><td>38</td></tr><tr><td>Mevrouw De Jong trakteert 256 honden, dozen van 8 kluiven</td><td>256 : 8</td><td>32 dozen</td></tr><tr><td>Emma plukt 623 komkommers, dozen van 7</td><td>623 : 7</td><td>89 dozen</td></tr><tr><td>Finn en vijf vrienden (6 personen) betalen €402</td><td>402 : 6</td><td>€67 per persoon</td></tr><tr><td>Negen vrienden huren een huisje voor €765</td><td>765 : 9</td><td>€85 per persoon</td></tr></table></div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Past een cijfer niet los in het deeltal, neem er dan een cijfer bij (zoals 3 en 8 samen: 38).</li></ul></div>"
+        },
+        {
+          "titel": "Allerlei delingen",
+          "uitleg": "<div class='box'><h4>Oefenen met alle soorten delingen</h4><p>In deze paragraaf oefen je alle manieren van delen door elkaar: delingen met ronde getallen, delingen die je kunt splitsen en staartdelingen. Er komt geen nieuwe theorie bij, maar je moet zelf kiezen welke aanpak het handigst is.</p></div><div class='tblwrap'><table class='tbl'><tr><th>Berekening</th><th>Antwoord</th></tr><tr><td>300 : 60</td><td>5</td></tr><tr><td>450 : 9</td><td>50</td></tr><tr><td>240 : 40</td><td>6</td></tr><tr><td>400 : 50</td><td>8</td></tr><tr><td>420 : 7</td><td>60</td></tr><tr><td>800 : 40</td><td>20</td></tr></table></div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Kijk eerst of je nullen kunt wegstrepen voor je gaat splitsen of een staartdeling maakt.</li></ul></div>"
+        }
+      ],
+      "begrippen": [
+        {
+          "term": "Delen",
+          "uitleg": "Een getal in gelijke groepen verdelen, bijvoorbeeld 48 : 6 betekent 48 verdelen in groepen van 6.",
+          "paragraaf": "Delen en vermenigvuldigen"
+        },
+        {
+          "term": "Deeltal",
+          "uitleg": "Het getal dat je deelt, bijvoorbeeld de 48 in 48 : 6.",
+          "paragraaf": "Delen en vermenigvuldigen"
+        },
+        {
+          "term": "Deler",
+          "uitleg": "Het getal waardoor je deelt, bijvoorbeeld de 6 in 48 : 6.",
+          "paragraaf": "Delen en vermenigvuldigen"
+        },
+        {
+          "term": "Quotiënt",
+          "uitleg": "De uitkomst van een deling.",
+          "paragraaf": "Delen en vermenigvuldigen"
+        },
+        {
+          "term": "Nullen wegstrepen (bij delen)",
+          "uitleg": "Bij delingen met ronde getallen bij beide getallen evenveel nullen weglaten om de deling makkelijker te maken.",
+          "paragraaf": "Delen met ronde getallen"
+        },
+        {
+          "term": "Splitsen (bij delen)",
+          "uitleg": "Het deeltal opdelen in twee handige stukken, apart delen en de antwoorden optellen.",
+          "paragraaf": "Delen met splitsen"
+        },
+        {
+          "term": "Staartdeling",
+          "uitleg": "Een manier van delen waarbij je van voren naar achteren cijfer voor cijfer deelt.",
+          "paragraaf": "Staartdeling tot honderd"
+        },
+        {
+          "term": "Rest",
+          "uitleg": "Het deel dat overblijft als een getal niet precies deelbaar is.",
+          "paragraaf": "Staartdeling tot honderd"
+        },
+        {
+          "term": "Aanhalen",
+          "uitleg": "Bij een staartdeling het volgende cijfer van het deeltal erbij halen.",
+          "paragraaf": "Staartdeling boven honderd"
+        },
+        {
+          "term": "Gemiddeld per...",
+          "uitleg": "Een totaal gelijk verdelen over een aantal, bijvoorbeeld punten gemiddeld per wedstrijd.",
+          "paragraaf": "Delen en vermenigvuldigen"
+        }
+      ],
+      "flashcards": [
+        {
+          "vraag": "Bereken 48 : 6.",
+          "antwoord": "8, want 8 x 6 = 48.",
+          "paragraaf": "Delen en vermenigvuldigen"
+        },
+        {
+          "vraag": "Rens scoorde 72 punten in 8 wedstrijden. Wat is dat gemiddeld per wedstrijd?",
+          "antwoord": "72 : 8 = 9 punten.",
+          "paragraaf": "Delen en vermenigvuldigen"
+        },
+        {
+          "vraag": "Hoe maak je de deling 6000 : 30 makkelijker?",
+          "antwoord": "Je streept bij beide getallen één nul weg: 600 : 3 = 200.",
+          "paragraaf": "Delen met ronde getallen"
+        },
+        {
+          "vraag": "Bereken 320.000 : 4000.",
+          "antwoord": "80",
+          "paragraaf": "Delen met ronde getallen"
+        },
+        {
+          "vraag": "Joep splitst 96 : 3 in 90 : 3 en 6 : 3. Wat is het antwoord?",
+          "antwoord": "30 + 2 = 32.",
+          "paragraaf": "Delen met splitsen"
+        },
+        {
+          "vraag": "Bereken 128 : 4 door te splitsen in 120 : 4 en 8 : 4.",
+          "antwoord": "30 + 2 = 32.",
+          "paragraaf": "Delen met splitsen"
+        },
+        {
+          "vraag": "Wat is het verschil tussen een staartdeling en delen met splitsen?",
+          "antwoord": "Bij een staartdeling deel je cijfer voor cijfer van voren naar achteren, bij splitsen deel je het hele deeltal in twee handige stukken.",
+          "paragraaf": "Staartdeling tot honderd"
+        },
+        {
+          "vraag": "Bereken 96 : 3 als staartdeling.",
+          "antwoord": "32",
+          "paragraaf": "Staartdeling tot honderd"
+        },
+        {
+          "vraag": "Bereken 384 : 6.",
+          "antwoord": "64",
+          "paragraaf": "Staartdeling boven honderd"
+        },
+        {
+          "vraag": "Miron zegt dat 368 : 4 = 94 en Jaap zegt 92. Wie heeft gelijk?",
+          "antwoord": "Jaap, want 368 : 4 = 92.",
+          "paragraaf": "Staartdeling boven honderd"
+        },
+        {
+          "vraag": "Bereken 420 : 7.",
+          "antwoord": "60",
+          "paragraaf": "Allerlei delingen"
+        }
+      ],
+      "quiz": [
+        {
+          "vraag": "Bereken 48 : 6.",
+          "opties": [
+            "6",
+            "7",
+            "8",
+            "9"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "8 x 6 = 48, dus 48 : 6 = 8.",
+          "paragraaf": "Delen en vermenigvuldigen"
+        },
+        {
+          "vraag": "Judith werkt 6 uur en verdient €24. Hoeveel verdient ze per uur?",
+          "opties": [
+            "€3",
+            "€4",
+            "€5",
+            "€6"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "24 : 6 = 4.",
+          "paragraaf": "Delen en vermenigvuldigen"
+        },
+        {
+          "vraag": "Rens scoort 72 punten in 8 wedstrijden. Wat is dat gemiddeld per wedstrijd?",
+          "opties": [
+            "7",
+            "8",
+            "9",
+            "10"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "72 : 8 = 9.",
+          "paragraaf": "Delen en vermenigvuldigen"
+        },
+        {
+          "vraag": "Bereken 6000 : 30.",
+          "opties": [
+            "20",
+            "100",
+            "200",
+            "2000"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "Streep één nul bij beide getallen weg: 600 : 3 = 200.",
+          "paragraaf": "Delen met ronde getallen"
+        },
+        {
+          "vraag": "Bereken 45.000 : 500.",
+          "opties": [
+            "9",
+            "60",
+            "90",
+            "900"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "450 : 5 = 90.",
+          "paragraaf": "Delen met ronde getallen"
+        },
+        {
+          "vraag": "Muziekschool De Fluit rekent €360 voor een 40-lessenkaart. Wat kost een les?",
+          "opties": [
+            "€8",
+            "€9",
+            "€10",
+            "€12"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "360 : 40 = 9.",
+          "paragraaf": "Delen met ronde getallen"
+        },
+        {
+          "vraag": "Jos reed in 40 jaar 800.000 km. Hoeveel is dat gemiddeld per jaar?",
+          "opties": [
+            "18.000 km",
+            "20.000 km",
+            "22.000 km",
+            "16.000 km"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "800.000 : 40 = 20.000.",
+          "paragraaf": "Delen met ronde getallen"
+        },
+        {
+          "vraag": "Bereken 96 : 3.",
+          "opties": [
+            "28",
+            "30",
+            "32",
+            "34"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "90 : 3 = 30 en 6 : 3 = 2, samen 32.",
+          "paragraaf": "Delen met splitsen"
+        },
+        {
+          "vraag": "Bereken 128 : 4.",
+          "opties": [
+            "28",
+            "30",
+            "32",
+            "36"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "120 : 4 = 30 en 8 : 4 = 2, samen 32.",
+          "paragraaf": "Delen met splitsen"
+        },
+        {
+          "vraag": "Lana en zes vriendinnen (7 personen) betalen samen €147 entree. Hoeveel is dat per persoon?",
+          "opties": [
+            "€19",
+            "€21",
+            "€23",
+            "€25"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "147 : 7 = 21.",
+          "paragraaf": "Delen met splitsen"
+        },
+        {
+          "vraag": "Bereken 85 : 5.",
+          "opties": [
+            "15",
+            "16",
+            "17",
+            "18"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "85 : 5 = 17.",
+          "paragraaf": "Staartdeling tot honderd"
+        },
+        {
+          "vraag": "Yara verdient €68 en krijgt €4 per uur. Hoeveel uur heeft ze gewerkt?",
+          "opties": [
+            "15",
+            "16",
+            "17",
+            "18"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "68 : 4 = 17.",
+          "paragraaf": "Staartdeling tot honderd"
+        },
+        {
+          "vraag": "Meneer Jansen trakteert 84 leerlingen. In een doos zitten 7 ijsjes. Hoeveel dozen heeft hij nodig?",
+          "opties": [
+            "10",
+            "11",
+            "12",
+            "13"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "84 : 7 = 12.",
+          "paragraaf": "Staartdeling tot honderd"
+        },
+        {
+          "vraag": "Bereken 384 : 6.",
+          "opties": [
+            "54",
+            "64",
+            "74",
+            "84"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "38 : 6 = 6 rest 2, dan 24 : 6 = 4. Antwoord: 64.",
+          "paragraaf": "Staartdeling boven honderd"
+        },
+        {
+          "vraag": "Miron en Jaap maken de deling 368 : 4. Wat is het juiste antwoord?",
+          "opties": [
+            "88",
+            "90",
+            "92",
+            "94"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "368 : 4 = 92, dus Jaap had gelijk.",
+          "paragraaf": "Staartdeling boven honderd"
+        },
+        {
+          "vraag": "Mevrouw De Jong trakteert 256 honden op een kluif. In een pak zitten 8 kluiven. Hoeveel pakken moet ze kopen?",
+          "opties": [
+            "28",
+            "30",
+            "32",
+            "34"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "256 : 8 = 32.",
+          "paragraaf": "Staartdeling boven honderd"
+        },
+        {
+          "vraag": "Finn en vijf vrienden (6 personen) betalen samen €402 voor een dag zeevissen. Hoeveel is dat per persoon?",
+          "opties": [
+            "€65",
+            "€67",
+            "€69",
+            "€71"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "402 : 6 = 67.",
+          "paragraaf": "Staartdeling boven honderd"
+        },
+        {
+          "vraag": "Negen vrienden huren samen een vakantiehuisje voor €765. Hoeveel is dat per persoon?",
+          "opties": [
+            "€80",
+            "€83",
+            "€85",
+            "€87"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "765 : 9 = 85.",
+          "paragraaf": "Staartdeling boven honderd"
+        },
+        {
+          "vraag": "Bereken 450 : 9.",
+          "opties": [
+            "40",
+            "45",
+            "50",
+            "55"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "450 : 9 = 50.",
+          "paragraaf": "Allerlei delingen"
+        },
+        {
+          "vraag": "Bereken 420 : 7.",
+          "opties": [
+            "50",
+            "55",
+            "60",
+            "65"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "420 : 7 = 60.",
+          "paragraaf": "Allerlei delingen"
+        }
+      ]
+    },
+    {
+      "titel": "Gemengde opgaven",
+      "uitleg": "<div class='box'><h4>Wat leer je in dit hoofdstuk?</h4><p>In dit hoofdstuk oefen je alles wat je in de hoofdstukken Optellen, Aftrekken, Vermenigvuldigen en Delen hebt geleerd, steeds meer door elkaar. Er komt geen nieuwe rekenmethode bij: het gaat erom dat je zelf herkent welke bewerking je nodig hebt.</p></div><div class='call'>Lees bij een woordprobleem altijd goed wat er wordt gevraagd: moet je optellen, aftrekken, vermenigvuldigen of delen? Maak daarna eerst een schatting voor je gaat rekenen.</div>",
+      "subhoofdstukken": [
+        {
+          "titel": "Optellen",
+          "uitleg": "<div class='box'><h4>Optellen in gemengde opgaven</h4><p>In dit deel oefen je optelsommen door elkaar: van waarde van cijfers tot optellingen met een verschillend aantal cijfers.</p></div><div class='tblwrap'><table class='tbl'><tr><th>Context</th><th>Berekening</th><th>Antwoord</th></tr><tr><td>Volleybal Setup (236 leden) en Smash (87 leden) gaan samenwerken</td><td>236 + 87</td><td>323 leden</td></tr><tr><td>Meierijstad: Erp (4680 inwoners) en andere dorpen (74.953 inwoners)</td><td>4680 + 74.953</td><td>79.633 inwoners</td></tr><tr><td>9329 + 3678</td><td>9329 + 3678</td><td>13.007</td></tr><tr><td>4526 + 1384</td><td>4526 + 1384</td><td>5910</td></tr></table></div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Ook bij grote getallen blijft de aanpak hetzelfde: schatten, onder elkaar zetten, van achteren naar voren optellen.</li></ul></div>"
+        },
+        {
+          "titel": "Optellen en aftrekken",
+          "uitleg": "<div class='box'><h4>Optellen en aftrekken door elkaar</h4><p>Nu moet je bij elke opgave eerst bepalen of je moet optellen of aftrekken, voor je gaat rekenen.</p></div><div class='tblwrap'><table class='tbl'><tr><th>Context</th><th>Berekening</th><th>Antwoord</th></tr><tr><td>Bioscoopzaal: 748 stoelen, 79 stoelen leeg</td><td>748 &minus; 79</td><td>669 stoelen bezet</td></tr><tr><td>354 &minus; 87</td><td>354 &minus; 87</td><td>267</td></tr><tr><td>4329 &minus; 678</td><td>4329 &minus; 678</td><td>3651</td></tr><tr><td>5429 + 7878</td><td>5429 + 7878</td><td>13.307</td></tr><tr><td>4726 + 1389</td><td>4726 + 1389</td><td>6115</td></tr></table></div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Woorden als 'over', 'minder', 'bezet' of 'leeg' geven vaak aan of je moet optellen of aftrekken.</li></ul></div>"
+        },
+        {
+          "titel": "Optellen, aftrekken en vermenigvuldigen",
+          "uitleg": "<div class='box'><h4>Drie bewerkingen door elkaar</h4><p>Bij deze opgaven kan het gaan om optellen, aftrekken of vermenigvuldigen. Bepaal steeds eerst welke bewerking bij het verhaal past.</p></div><div class='tblwrap'><table class='tbl'><tr><th>Context</th><th>Berekening</th><th>Antwoord</th></tr><tr><td>Aslan verkoopt 1967 stripboeken van €8</td><td>1967 x 8</td><td>€15.736</td></tr><tr><td>32.389 + 5678</td><td>32.389 + 5678</td><td>38.067</td></tr><tr><td>Hans: kilometerstand 5898, rijdt 2385 km erbij</td><td>5898 + 2385</td><td>8283</td></tr><tr><td>Francien koopt 18 kaartjes van €42</td><td>18 x 42</td><td>€756</td></tr><tr><td>657 &minus; 78</td><td>657 &minus; 78</td><td>579</td></tr><tr><td>Theater De Vlonder: 34 rijen van 38 stoelen</td><td>34 x 38</td><td>1292 stoelen</td></tr></table></div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Bij 'per stuk' of 'keer' gaat het vaak om vermenigvuldigen; bij 'samen' of 'in totaal' vaak om optellen.</li></ul></div>"
+        },
+        {
+          "titel": "Optellen, aftrekken, vermenigvuldigen en delen",
+          "uitleg": "<div class='box'><h4>Alle vier de bewerkingen door elkaar</h4><p>In dit laatste deel komen alle bewerkingen samen. Lees goed wat er gevraagd wordt voor je gaat rekenen.</p></div><div class='tblwrap'><table class='tbl'><tr><th>Context</th><th>Berekening</th><th>Antwoord</th></tr><tr><td>Ouderavond: 7 rijen van 48 stoelen</td><td>7 x 48</td><td>336 stoelen</td></tr><tr><td>38.187 + 2594</td><td>38.187 + 2594</td><td>40.781</td></tr><tr><td>5251 &minus; 1873</td><td>5251 &minus; 1873</td><td>3378</td></tr><tr><td>351 : 9</td><td>351 : 9</td><td>39</td></tr><tr><td>434 : 7</td><td>434 : 7</td><td>62</td></tr><tr><td>Mevrouw Van Dam spaart €85 per maand, 2 jaar lang</td><td>85 x 24</td><td>€2040</td></tr><tr><td>Thomas: scooter €2459 + verzekering €446</td><td>2459 + 446</td><td>€2905</td></tr><tr><td>Maud belde in oktober 712 min., in november 448 min.</td><td>712 &minus; 448</td><td>264 minuten minder</td></tr><tr><td>Sophie: €2755 spaarrekening, haalt er €579 vanaf</td><td>2755 &minus; 579</td><td>€2176</td></tr></table></div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Bij een groot verhaal kun je soms meerdere stappen na elkaar nodig hebben.</li><li>Blijf ook hier eerst schatten en daarna pas precies uitrekenen.</li></ul></div>"
+        }
+      ],
+      "begrippen": [
+        {
+          "term": "Gemengde opgaven",
+          "uitleg": "Opgaven waarbij je zelf moet bepalen welke bewerking (optellen, aftrekken, vermenigvuldigen of delen) je nodig hebt.",
+          "paragraaf": "Optellen"
+        },
+        {
+          "term": "Bewerking",
+          "uitleg": "Een rekenmethode zoals optellen, aftrekken, vermenigvuldigen of delen.",
+          "paragraaf": "Optellen en aftrekken"
+        },
+        {
+          "term": "Signaalwoord",
+          "uitleg": "Een woord in een verhaaltje dat een hint geeft over welke bewerking je moet gebruiken, zoals 'samen' (optellen) of 'per stuk' (vermenigvuldigen).",
+          "paragraaf": "Optellen, aftrekken en vermenigvuldigen"
+        },
+        {
+          "term": "Meerstapsopgave",
+          "uitleg": "Een opgave waarbij je meer dan één bewerking na elkaar moet uitvoeren om het antwoord te vinden.",
+          "paragraaf": "Optellen, aftrekken, vermenigvuldigen en delen"
+        },
+        {
+          "term": "Context",
+          "uitleg": "Het verhaal om een rekensom heen, dat vertelt in welke situatie je moet rekenen.",
+          "paragraaf": "Optellen"
+        },
+        {
+          "term": "Totaal",
+          "uitleg": "De uitkomst als je alle bedragen of aantallen bij elkaar optelt.",
+          "paragraaf": "Optellen"
+        },
+        {
+          "term": "Verzekering",
+          "uitleg": "Een bedrag dat je betaalt als extra kosten bovenop een aankoop, zoals bij de scooter van Thomas.",
+          "paragraaf": "Optellen, aftrekken, vermenigvuldigen en delen"
+        },
+        {
+          "term": "Per persoon / per stuk",
+          "uitleg": "Een aanwijzing dat je een totaalbedrag moet delen door een aantal personen of stuks.",
+          "paragraaf": "Optellen, aftrekken en vermenigvuldigen"
+        },
+        {
+          "term": "Sparen",
+          "uitleg": "Geld opzij zetten, waarbij je vaak per maand of per week een vast bedrag optelt bij het spaarbedrag.",
+          "paragraaf": "Optellen, aftrekken, vermenigvuldigen en delen"
+        },
+        {
+          "term": "Schatting controleren",
+          "uitleg": "Na het rekenen kijken of je precieze antwoord logisch is vergeleken met je eerdere schatting.",
+          "paragraaf": "Optellen en aftrekken"
+        }
+      ],
+      "flashcards": [
+        {
+          "vraag": "Volleybalvereniging Setup (236 leden) en Smash (87 leden) gaan samenwerken. Hoeveel leden hebben ze samen?",
+          "antwoord": "236 + 87 = 323 leden.",
+          "paragraaf": "Optellen"
+        },
+        {
+          "vraag": "Erp heeft 4680 inwoners, de andere dorpen van Meierijstad samen 74.953. Hoeveel inwoners heeft de hele gemeente?",
+          "antwoord": "4680 + 74.953 = 79.633 inwoners.",
+          "paragraaf": "Optellen"
+        },
+        {
+          "vraag": "Een bioscoopzaal heeft 748 stoelen, waarvan er 79 leeg zijn. Hoeveel stoelen zijn bezet?",
+          "antwoord": "748 - 79 = 669 stoelen.",
+          "paragraaf": "Optellen en aftrekken"
+        },
+        {
+          "vraag": "Bereken 5429 + 7878.",
+          "antwoord": "13.307",
+          "paragraaf": "Optellen en aftrekken"
+        },
+        {
+          "vraag": "Aslan verkoopt in een week 1967 stripboeken van €8. Hoeveel euro heeft hij verkocht?",
+          "antwoord": "1967 x 8 = €15.736.",
+          "paragraaf": "Optellen, aftrekken en vermenigvuldigen"
+        },
+        {
+          "vraag": "Francien koopt 18 kaartjes van €42. Wat betaalt ze?",
+          "antwoord": "18 x 42 = €756.",
+          "paragraaf": "Optellen, aftrekken en vermenigvuldigen"
+        },
+        {
+          "vraag": "Op een ouderavond staan 7 rijen van 48 stoelen. Hoeveel stoelen zijn dat?",
+          "antwoord": "7 x 48 = 336 stoelen.",
+          "paragraaf": "Optellen, aftrekken, vermenigvuldigen en delen"
+        },
+        {
+          "vraag": "Bereken 351 : 9.",
+          "antwoord": "39",
+          "paragraaf": "Optellen, aftrekken, vermenigvuldigen en delen"
+        },
+        {
+          "vraag": "Mevrouw Van Dam spaart €85 per maand. Hoeveel heeft ze na 2 jaar (24 maanden) gespaard?",
+          "antwoord": "85 x 24 = €2040.",
+          "paragraaf": "Optellen, aftrekken, vermenigvuldigen en delen"
+        },
+        {
+          "vraag": "Sophie heeft €2755 op haar spaarrekening en haalt er €579 vanaf. Hoeveel staat er nu op de rekening?",
+          "antwoord": "2755 - 579 = €2176.",
+          "paragraaf": "Optellen, aftrekken, vermenigvuldigen en delen"
+        }
+      ],
+      "quiz": [
+        {
+          "vraag": "Volleybalvereniging Setup (236 leden) en Smash (87 leden) gaan samenwerken. Hoeveel leden hebben ze samen?",
+          "opties": [
+            "313",
+            "323",
+            "333",
+            "343"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "236 + 87 = 323.",
+          "paragraaf": "Optellen"
+        },
+        {
+          "vraag": "Erp heeft 4680 inwoners en de rest van Meierijstad 74.953. Hoeveel inwoners heeft de gemeente in totaal?",
+          "opties": [
+            "78.633",
+            "79.633",
+            "80.633",
+            "79.533"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "4680 + 74.953 = 79.633.",
+          "paragraaf": "Optellen"
+        },
+        {
+          "vraag": "Bereken 9329 + 3678.",
+          "opties": [
+            "12.907",
+            "13.007",
+            "13.107",
+            "12.997"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "9329 + 3678 = 13.007.",
+          "paragraaf": "Optellen"
+        },
+        {
+          "vraag": "Een bioscoopzaal heeft 748 stoelen, waarvan er 79 leeg zijn. Hoeveel stoelen zijn bezet?",
+          "opties": [
+            "659",
+            "669",
+            "679",
+            "689"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "748 - 79 = 669.",
+          "paragraaf": "Optellen en aftrekken"
+        },
+        {
+          "vraag": "Bereken 5429 + 7878.",
+          "opties": [
+            "13.207",
+            "13.307",
+            "13.407",
+            "13.297"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "5429 + 7878 = 13.307.",
+          "paragraaf": "Optellen en aftrekken"
+        },
+        {
+          "vraag": "Bereken 4329 - 678.",
+          "opties": [
+            "3551",
+            "3651",
+            "3751",
+            "3641"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "4329 - 678 = 3651.",
+          "paragraaf": "Optellen en aftrekken"
+        },
+        {
+          "vraag": "Aslan verkoopt in een week 1967 stripboeken van €8 per stuk. Voor hoeveel euro heeft hij verkocht?",
+          "opties": [
+            "€14.736",
+            "€15.636",
+            "€15.736",
+            "€16.736"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "1967 x 8 = 15.736.",
+          "paragraaf": "Optellen, aftrekken en vermenigvuldigen"
+        },
+        {
+          "vraag": "Hans start met kilometerstand 5898 en rijdt er 2385 km bij. Wat is de nieuwe kilometerstand?",
+          "opties": [
+            "8183",
+            "8283",
+            "8383",
+            "8273"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "5898 + 2385 = 8283.",
+          "paragraaf": "Optellen, aftrekken en vermenigvuldigen"
+        },
+        {
+          "vraag": "Francien koopt 18 kaartjes van €42 voor de Johan Cruijff ArenA. Wat betaalt ze?",
+          "opties": [
+            "€726",
+            "€746",
+            "€756",
+            "€766"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "18 x 42 = 756.",
+          "paragraaf": "Optellen, aftrekken en vermenigvuldigen"
+        },
+        {
+          "vraag": "Theater De Vlonder heeft 34 rijen van 38 stoelen. Hoeveel stoelen heeft het theater?",
+          "opties": [
+            "1192",
+            "1242",
+            "1292",
+            "1342"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "34 x 38 = 1292.",
+          "paragraaf": "Optellen, aftrekken en vermenigvuldigen"
+        },
+        {
+          "vraag": "Bij een ouderavond staan 7 rijen van 48 stoelen. Hoeveel stoelen zijn dat?",
+          "opties": [
+            "326",
+            "336",
+            "346",
+            "356"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "7 x 48 = 336.",
+          "paragraaf": "Optellen, aftrekken, vermenigvuldigen en delen"
+        },
+        {
+          "vraag": "Bereken 351 : 9.",
+          "opties": [
+            "37",
+            "38",
+            "39",
+            "41"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "351 : 9 = 39.",
+          "paragraaf": "Optellen, aftrekken, vermenigvuldigen en delen"
+        },
+        {
+          "vraag": "Bereken 434 : 7.",
+          "opties": [
+            "58",
+            "60",
+            "62",
+            "64"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "434 : 7 = 62.",
+          "paragraaf": "Optellen, aftrekken, vermenigvuldigen en delen"
+        },
+        {
+          "vraag": "Mevrouw Van Dam spaart €85 per maand. Hoeveel spaart ze in 2 jaar (24 maanden)?",
+          "opties": [
+            "€1960",
+            "€2000",
+            "€2040",
+            "€2080"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "85 x 24 = 2040.",
+          "paragraaf": "Optellen, aftrekken, vermenigvuldigen en delen"
+        },
+        {
+          "vraag": "Thomas koopt een scooter van €2459 en betaalt €446 verzekering erbij. Hoeveel betaalt hij totaal?",
+          "opties": [
+            "€2805",
+            "€2905",
+            "€3005",
+            "€2895"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "2459 + 446 = 2905.",
+          "paragraaf": "Optellen, aftrekken, vermenigvuldigen en delen"
+        },
+        {
+          "vraag": "Maud belde in oktober 712 minuten en in november 448 minuten. Hoeveel minuten minder was dat?",
+          "opties": [
+            "254",
+            "264",
+            "274",
+            "284"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "712 - 448 = 264.",
+          "paragraaf": "Optellen, aftrekken, vermenigvuldigen en delen"
+        },
+        {
+          "vraag": "Sophie heeft €2755 op haar spaarrekening en haalt er €579 vanaf voor een nieuw zadel. Hoeveel staat er nu op haar rekening?",
+          "opties": [
+            "€2076",
+            "€2176",
+            "€2276",
+            "€2166"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "2755 - 579 = 2176.",
+          "paragraaf": "Optellen, aftrekken, vermenigvuldigen en delen"
+        },
+        {
+          "vraag": "Bereken 38.187 + 2594.",
+          "opties": [
+            "40.681",
+            "40.781",
+            "40.881",
+            "40.691"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "38.187 + 2594 = 40.781.",
+          "paragraaf": "Optellen, aftrekken, vermenigvuldigen en delen"
+        },
+        {
+          "vraag": "Bereken 5251 - 1873.",
+          "opties": [
+            "3278",
+            "3378",
+            "3478",
+            "3368"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "5251 - 1873 = 3378.",
+          "paragraaf": "Optellen, aftrekken, vermenigvuldigen en delen"
+        },
+        {
+          "vraag": "Bereken 4726 + 1389.",
+          "opties": [
+            "5915",
+            "6015",
+            "6115",
+            "6215"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "4726 + 1389 = 6115.",
+          "paragraaf": "Optellen en aftrekken"
+        }
+      ]
+    }
+  ]
+}

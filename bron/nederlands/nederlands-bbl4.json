@@ -1,0 +1,2805 @@
+{
+  "boek": "Nederlands_BBL4.pdf",
+  "hoofdstukken": [
+    {
+      "titel": "Meer dan lezen",
+      "uitleg": "<div class='box'><h4>Waar gaat dit hoofdstuk over?</h4><p>In dit hoofdstuk oefen je met de tekstsoorten die op je examen voorkomen: informatieve teksten, betogende en activerende teksten en instructieve teksten. Je leert ook hoe je teksten uit het mbo aanpakt, zodat je straks goed voorbereid bent op je vervolgopleiding.</p></div><div class='call'>Elke tekst heeft een tekstdoel. Om dat doel te vinden let je op het onderwerp, de bron, de lay-out en het taalgebruik van de tekst.</div>",
+      "subhoofdstukken": [
+        {
+          "titel": "Informatieve teksten",
+          "uitleg": "<div class='box'><h4>Tekstsoorten en tekstdoelen</h4><p>Elke tekst heeft een <b>tekstdoel</b>, soms zelfs meer dan één. Om het tekstdoel te bereiken houdt de schrijver rekening met het publiek waarvoor hij schrijft. Aan het onderwerp, de bron, de lay-out en het taalgebruik kun je zien voor welk publiek een tekst bedoeld is.</p></div><div class='g2'><div class='box'><h4>De vijf tekstsoorten</h4><ul class='lst'><li><b>Informatieve tekst</b> - bijvoorbeeld nieuwsberichten en formulieren</li><li><b>Betogende tekst</b> - bijvoorbeeld artikelen en ingezonden brieven</li><li><b>Instructieve tekst</b> - bijvoorbeeld recepten en aanwijzingen</li><li><b>Activerende tekst</b> - bijvoorbeeld advertenties en reclameteksten</li><li><b>Amuserende tekst</b> - bijvoorbeeld verhalen en strips</li></ul></div><div class='box'><h4>Zo vind je het tekstdoel</h4><ol class='num'><li>Bedenk wat het belangrijkste is wat de schrijver wil bereiken</li><li>Bekijk met welke tekstsoort je te maken hebt</li><li>Bepaal het tekstdoel: amuseren, een mening geven, gevoelens oproepen of uitdrukken, informatie verstrekken, instrueren, overtuigen of tot handelen aanzetten</li></ol></div></div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Een tekst kan meer dan één tekstdoel hebben</li><li>De vijf tekstsoorten zijn: informatief, betogend, instructief, activerend en amuserend</li><li>Onderwerp, bron, lay-out en taalgebruik verraden voor wie de tekst bedoeld is</li></ul></div>"
+        },
+        {
+          "titel": "Betogende en activerende teksten",
+          "uitleg": "<div class='box'><h4>Wat is het verschil?</h4><p>In een <b>betogende tekst</b> wil de schrijver zijn mening of standpunt duidelijk maken. In een <b>activerende tekst</b> probeert de schrijver de lezer tot handelen aan te zetten. Eén tekst kan best een mix van tekstdoelen bevatten, en ook kijk- en luisterfragmenten kunnen betogend en/of activerend zijn.</p></div><div class='tblwrap'><table class='tbl'><tr><th>Tekstdoel</th><th>De schrijver wil...</th><th>Voorbeeld</th></tr><tr><td>Een mening geven</td><td>zijn mening duidelijk maken</td><td>bespreking van een boek of film</td></tr><tr><td>Gevoelens oproepen/uitdrukken</td><td>emoties oproepen of duidelijk maken wat hij voelt</td><td>advertentie, post op sociale media, vlog</td></tr><tr><td>Overtuigen</td><td>dat je zijn mening overneemt</td><td>betoog, ingezonden brief</td></tr><tr><td>Tot handelen aanzetten (activeren)</td><td>dat je iets wel of niet gaat doen</td><td>advertentie, reclametekst</td></tr></table></div><div class='box'><h4>Mening, argument en feit</h4><ul class='lst'><li>Een <div class='term'><b>mening/standpunt</b><span>een uitspraak over wat iemand van iets vindt; je kunt het ermee eens of oneens zijn. Herken je aan woorden als 'ik vind', 'volgens mij', 'ik denk'</span></div></li><li>Een <div class='term'><b>argument</b><span>de reden waarom je een mening hebt; herken je aan signaalwoorden als 'want', 'omdat', 'namelijk', 'immers'</span></div></li><li>Een <div class='term'><b>feit</b><span>een uitspraak over iets wat echt zo is; je kunt het controleren. Feiten maken een betoog sterker</span></div></li></ul></div><div class='call'>In betogende en activerende teksten kom je vaak de tekstverbanden opsomming, tegenstelling en voorbeeld/uitleg tegen.</div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Betogend = mening/standpunt duidelijk maken, activerend = aanzetten tot handelen</li><li>Een argument onderbouwt een mening, een feit kun je controleren</li></ul></div>"
+        },
+        {
+          "titel": "Instructieve teksten",
+          "uitleg": "<div class='box'><h4>Instructieve teksten herkennen</h4><p>In instructieve teksten kun je onder andere de tekstverbanden doel-middel, opsomming, tijdsvolgorde en voorbeeld tegenkomen. Aan de hand van de signaalwoorden herken je welk tekstverband er gebruikt wordt.</p></div><div class='tblwrap'><table class='tbl'><tr><th>Tekstverband</th><th>Signaalwoorden</th></tr><tr><td>Doel-middel</td><td>om, door middel van, daarmee</td></tr><tr><td>Tijdsvolgorde</td><td>begin, vervolgens, daarna, ten slotte</td></tr><tr><td>Opsomming</td><td>ten eerste, ook, daarnaast</td></tr><tr><td>Voorbeeld</td><td>bijvoorbeeld, zoals</td></tr></table></div><div class='call warn'><b>Veelgemaakte fout:</b> een instructieve tekst geeft aanwijzingen (het tekstdoel is instrueren) - verwar dit niet met een activerende tekst, die je juist probeert te overtuigen iets te doen of te vinden.</div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Instructieve teksten geven aanwijzingen, bijvoorbeeld een recept of handleiding</li><li>Signaalwoorden verraden welk tekstverband er gebruikt wordt</li></ul></div>"
+        },
+        {
+          "titel": "Teksten uit het mbo",
+          "uitleg": "<div class='box'><h4>Studieteksten zijn anders</h4><p>Op het mbo krijg je te maken met studieboeken. Teksten uit het mbo zijn anders dan zakelijke teksten of teksten uit vmbo-boeken: ze zijn meer op een beroep gericht, hebben een <b>hogere informatiedichtheid</b> en bevatten meer onbekende woorden en langere zinnen.</p></div><div class='g2'><div class='box'><h4>Zo verwerk je studieteksten</h4><ul class='lst'><li>Maak een <b>samenvatting</b>: een korte versie van de tekst</li><li>Maak een <b>schema</b>: een overzichtelijke weergave van informatie</li><li>Maak een <b>mindmap</b>: een soort woordweb met kleuren en tekeningen</li><li>Stel jezelf toetsvragen om te controleren of je de tekst echt begrijpt</li></ul></div><div class='call'>Studieboeken bevatten veel nieuwe informatie die je nodig hebt in de praktijk én bij tentamens. Je moet de informatie dus volledig begrijpen, niet alleen even doorlezen.</div></div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Mbo-teksten hebben een hogere informatiedichtheid dan vmbo-teksten</li><li>Samenvatten, schematiseren en mindmappen helpen je de stof te onthouden</li></ul></div>"
+        }
+      ],
+      "begrippen": [
+        {
+          "term": "Tekstdoel",
+          "uitleg": "Wat de schrijver met een tekst wil bereiken bij de lezer, bijvoorbeeld informeren, overtuigen of amuseren.",
+          "paragraaf": "Informatieve teksten"
+        },
+        {
+          "term": "Informatieve tekst",
+          "uitleg": "Een tekst die de lezer feiten en informatie geeft, zoals een nieuwsbericht of formulier.",
+          "paragraaf": "Informatieve teksten"
+        },
+        {
+          "term": "Amuserende tekst",
+          "uitleg": "Een tekst die bedoeld is om de lezer te vermaken, zoals een verhaal of strip.",
+          "paragraaf": "Informatieve teksten"
+        },
+        {
+          "term": "Betogende tekst",
+          "uitleg": "Een tekst waarin de schrijver zijn mening of standpunt duidelijk wil maken.",
+          "paragraaf": "Betogende en activerende teksten"
+        },
+        {
+          "term": "Activerende tekst",
+          "uitleg": "Een tekst die de lezer probeert aan te zetten tot handelen.",
+          "paragraaf": "Betogende en activerende teksten"
+        },
+        {
+          "term": "Mening/standpunt",
+          "uitleg": "Een uitspraak over wat iemand van iets vindt; je kunt het ermee eens of oneens zijn.",
+          "paragraaf": "Betogende en activerende teksten"
+        },
+        {
+          "term": "Argument",
+          "uitleg": "De reden waarom je een bepaalde mening hebt, vaak herkenbaar aan woorden als 'want' en 'omdat'.",
+          "paragraaf": "Betogende en activerende teksten"
+        },
+        {
+          "term": "Feit",
+          "uitleg": "Een uitspraak over iets wat echt zo is en die je kunt controleren.",
+          "paragraaf": "Betogende en activerende teksten"
+        },
+        {
+          "term": "Instructieve tekst",
+          "uitleg": "Een tekst die aanwijzingen geeft, zoals een recept of handleiding.",
+          "paragraaf": "Instructieve teksten"
+        },
+        {
+          "term": "Tekstverband",
+          "uitleg": "De manier waarop zinnen of delen van een tekst met elkaar samenhangen, zoals tijdsvolgorde of opsomming.",
+          "paragraaf": "Instructieve teksten"
+        },
+        {
+          "term": "Signaalwoord",
+          "uitleg": "Een woord waaraan je een tekstverband herkent, bijvoorbeeld 'vervolgens' of 'bijvoorbeeld'.",
+          "paragraaf": "Instructieve teksten"
+        },
+        {
+          "term": "Informatiedichtheid",
+          "uitleg": "De hoeveelheid informatie die in een tekst wordt aangeboden.",
+          "paragraaf": "Teksten uit het mbo"
+        },
+        {
+          "term": "Mindmap",
+          "uitleg": "Een soort woordweb met kleuren en tekeningen waarmee je informatie overzichtelijk maakt.",
+          "paragraaf": "Teksten uit het mbo"
+        }
+      ],
+      "flashcards": [
+        {
+          "vraag": "Wat is een tekstdoel?",
+          "antwoord": "Wat de schrijver met de tekst wil bereiken bij de lezer.",
+          "paragraaf": "Informatieve teksten"
+        },
+        {
+          "vraag": "Noem de vijf tekstsoorten.",
+          "antwoord": "Informatief, betogend, instructief, activerend en amuserend.",
+          "paragraaf": "Informatieve teksten"
+        },
+        {
+          "vraag": "Waar let je op om het publiek van een tekst te bepalen?",
+          "antwoord": "Op het onderwerp, de bron, de lay-out en het taalgebruik.",
+          "paragraaf": "Informatieve teksten"
+        },
+        {
+          "vraag": "Wat is het verschil tussen een betogende en een activerende tekst?",
+          "antwoord": "Een betogende tekst maakt een mening duidelijk, een activerende tekst zet aan tot handelen.",
+          "paragraaf": "Betogende en activerende teksten"
+        },
+        {
+          "vraag": "Waaraan herken je een argument in een tekst?",
+          "antwoord": "Aan signaalwoorden als 'want', 'omdat', 'namelijk' en 'immers'.",
+          "paragraaf": "Betogende en activerende teksten"
+        },
+        {
+          "vraag": "Wat is het verschil tussen een mening en een feit?",
+          "antwoord": "Een mening is een uitspraak over wat iemand vindt, een feit kun je controleren.",
+          "paragraaf": "Betogende en activerende teksten"
+        },
+        {
+          "vraag": "Geef een voorbeeld van een instructieve tekst.",
+          "antwoord": "Bijvoorbeeld een recept of een handleiding.",
+          "paragraaf": "Instructieve teksten"
+        },
+        {
+          "vraag": "Welke signaalwoorden horen bij het tekstverband tijdsvolgorde?",
+          "antwoord": "Bijvoorbeeld 'begin', 'vervolgens', 'daarna' en 'ten slotte'.",
+          "paragraaf": "Instructieve teksten"
+        },
+        {
+          "vraag": "Waarom zijn mbo-teksten lastiger dan vmbo-teksten?",
+          "antwoord": "Ze hebben een hogere informatiedichtheid en bevatten meer onbekende woorden en langere zinnen.",
+          "paragraaf": "Teksten uit het mbo"
+        },
+        {
+          "vraag": "Noem drie manieren om een studietekst te verwerken.",
+          "antwoord": "Samenvatten, een schema maken of een mindmap maken.",
+          "paragraaf": "Teksten uit het mbo"
+        },
+        {
+          "vraag": "Wat kun je jezelf stellen om te checken of je een studietekst begrijpt?",
+          "antwoord": "Toetsvragen.",
+          "paragraaf": "Teksten uit het mbo"
+        }
+      ],
+      "quiz": [
+        {
+          "vraag": "Welke tekstsoort heeft als doel de lezer te informeren met feiten?",
+          "opties": [
+            "Informatieve tekst",
+            "Activerende tekst",
+            "Amuserende tekst",
+            "Betogende tekst"
+          ],
+          "antwoord_index": 0,
+          "uitleg": "Een informatieve tekst geeft de lezer feiten en informatie, zoals een nieuwsbericht."
+        },
+        {
+          "vraag": "Wat is het tekstdoel van een reclametekst meestal?",
+          "opties": [
+            "Amuseren",
+            "Tot handelen aanzetten",
+            "Instrueren",
+            "Een mening geven zonder overtuigen"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Reclameteksten zijn activerend: ze proberen de lezer aan te zetten tot handelen, zoals iets kopen."
+        },
+        {
+          "vraag": "'Ik vind dat het examen te moeilijk was.' Dit is een voorbeeld van...",
+          "opties": [
+            "Een feit",
+            "Een tekstverband",
+            "Een mening",
+            "Een signaalwoord"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "Dit is een mening: een uitspraak over wat iemand vindt, herkenbaar aan 'ik vind'."
+        },
+        {
+          "vraag": "Welk woord signaleert vaak een argument?",
+          "opties": [
+            "Vervolgens",
+            "Bijvoorbeeld",
+            "Omdat",
+            "Ten eerste"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "'Omdat' geeft vaak de reden voor een mening aan en is dus een signaalwoord voor een argument."
+        },
+        {
+          "vraag": "Wat maakt een feit anders dan een mening?",
+          "opties": [
+            "Een feit is altijd langer opgeschreven",
+            "Een feit kun je controleren",
+            "Een feit staat altijd aan het begin van een alinea",
+            "Een feit bevat altijd een signaalwoord"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Een feit is een uitspraak over iets wat echt zo is en die je kunt controleren."
+        },
+        {
+          "vraag": "'Kook de pasta eerst acht minuten, voeg daarna de saus toe.' Welk tekstverband zie je hier?",
+          "opties": [
+            "Tegenstelling",
+            "Tijdsvolgorde",
+            "Voorbeeld",
+            "Opsomming"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "De signaalwoorden 'eerst' en 'daarna' wijzen op het tekstverband tijdsvolgorde."
+        },
+        {
+          "vraag": "Bij welke tekstsoort hoort een recept?",
+          "opties": [
+            "Betogende tekst",
+            "Amuserende tekst",
+            "Instructieve tekst",
+            "Informatieve tekst"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "Een recept geeft aanwijzingen om iets te maken, dat is een instructieve tekst."
+        },
+        {
+          "vraag": "Waardoor hebben mbo-teksten een hogere informatiedichtheid dan vmbo-teksten?",
+          "opties": [
+            "Ze bevatten meer plaatjes",
+            "Ze bevatten meer informatie in minder woorden",
+            "Ze zijn altijd korter",
+            "Ze gebruiken alleen bekende woorden"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Mbo-teksten bevatten veel informatie en zijn gericht op een beroep, waardoor de informatiedichtheid hoger is."
+        },
+        {
+          "vraag": "Welke van deze is GEEN manier om een studietekst te verwerken?",
+          "opties": [
+            "Een mindmap maken",
+            "Een samenvatting schrijven",
+            "De tekst overtypen zonder te lezen",
+            "Een schema maken"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "Overtypen zonder te lezen helpt niet om de tekst te begrijpen; samenvatten, schematiseren en mindmappen wel."
+        },
+        {
+          "vraag": "Een tekst kan meer dan één tekstdoel hebben. Dit klopt...",
+          "opties": [
+            "niet, een tekst heeft er altijd maar één",
+            "wel, een tekst kan een mix van tekstdoelen hebben",
+            "alleen bij instructieve teksten",
+            "alleen bij amuserende teksten"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Een tekst kan heel duidelijk één doel hebben, maar een mix van tekstdoelen komt ook vaak voor."
+        },
+        {
+          "vraag": "Waaraan zie je vaak voor welk publiek een tekst bedoeld is?",
+          "opties": [
+            "Alleen aan de lengte van de tekst",
+            "Onderwerp, bron, lay-out en taalgebruik",
+            "Alleen aan het lettertype",
+            "Alleen aan de titel"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Onderwerp, bron, lay-out en taalgebruik samen laten zien voor welk publiek een tekst geschreven is."
+        }
+      ]
+    },
+    {
+      "titel": "Media",
+      "uitleg": "<div class='box'><h4>Waar gaat dit hoofdstuk over?</h4><p>Sociale media hebben veel voordelen, maar de manier waarop je ze gebruikt kan ook invloed hebben op je lichamelijke en mentale gezondheid. In dit hoofdstuk leer je hoe mediagebruik je gezondheid beïnvloedt en hoe je bewuster met media kunt omgaan.</p></div>",
+      "subhoofdstukken": [
+        {
+          "titel": "Sociale media en lichamelijke gezondheid",
+          "uitleg": "<div class='box'><h4>Effect op je lichaam</h4><p>Sociale media hebben veel voordelen: je maakt eenvoudig contact met mensen die belangrijk voor je zijn en je kunt in woord en beeld delen wat je interessant vindt. Maar de manier waarop je sociale media bekijkt kan ook een negatief effect hebben op je lichaam.</p></div><div class='g2'><div class='box'><h4>Slaap</h4><p>Als je 's nachts berichtjes hoort binnenkomen of voor het slapengaan eindeloos scrolt, slaap je slechter. Een goede nachtrust is juist belangrijk voor je concentratie overdag.</p></div><div class='box'><h4>Beweging</h4><p>Je lichaam is niet gemaakt om veel stil te zitten. Veel tijd op sociale media betekent minder tijd voor sport en beweging. Lang zitten in dezelfde houding is bovendien slecht voor je spieren, houding en ogen.</p></div></div><div class='call'>Moe overdag? Dan ben je sneller afgeleid en is de kans groter dat je weer je telefoon pakt. Zo blijf je in een negatieve, energieloze cirkel hangen.</div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Onvoldoende slaap door schermgebruik zorgt voor minder concentratie</li><li>Veel zitten is slecht voor spieren, houding en ogen</li><li>Zoek balans: kijk bijvoorbeeld niet vlak voor het slapengaan op je telefoon</li></ul></div>"
+        },
+        {
+          "titel": "Sociale media en mentale gezondheid",
+          "uitleg": "<div class='box'><h4>Effect op je gevoel</h4><p>Naast je lichaam kan mediagebruik ook je <b>mentale gezondheid</b> beïnvloeden. Op sociale media zie je vaak alleen de mooiste momenten van anderen, waardoor je jezelf al snel met hen gaat vergelijken.</p></div><div class='call warn'><b>Veelgemaakte fout:</b> denken dat wat je op sociale media ziet de volledige werkelijkheid is. Mensen laten meestal alleen hun beste kant zien.</div><div class='box'><h4>Bewust omgaan met media</h4><p>Je kunt jezelf mentaal beter voelen door bewust om te gaan met media: stel bijvoorbeeld een schermtijdlimiet in, ontvolg accounts die je een onprettig gevoel geven en zorg dat je ook offline tijd doorbrengt met vrienden en familie.</p></div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Sociale media laten vaak een geïdealiseerd beeld zien</li><li>Bewust mediagebruik helpt om je mentaal beter te voelen</li></ul></div>"
+        },
+        {
+          "titel": "Schermtijd en school",
+          "uitleg": "<div class='box'><h4>De discussie over schermtijd op school</h4><p>Er is de laatste tijd veel discussie over het gebruik van mobiele telefoons op school. Sommigen pleiten voor een verbod, omdat schermtijd voor afleiding zou zorgen en het onderwijsniveau onder druk staat.</p></div><div class='g2'><div class='box'><h4>Argumenten vóór een verbod</h4><ul class='lst'><li>Minder afleiding tijdens de les</li><li>Meer sociaal contact tussen leerlingen onderling</li><li>Minder kans op pesten via sociale media op school</li></ul></div><div class='box'><h4>Argumenten tegen een verbod</h4><ul class='lst'><li>De telefoon kan ook educatief ingezet worden</li><li>Leerlingen moeten leren om zelf verantwoord met schermtijd om te gaan</li></ul></div></div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Er zijn feitelijke en niet-feitelijke argumenten te geven voor en tegen een telefoonverbod op school</li><li>Vorm je eigen mening en onderbouw die met argumenten</li></ul></div>"
+        },
+        {
+          "titel": "Online challenges",
+          "uitleg": "<div class='box'><h4>Wat is een online challenge?</h4><p>Een online challenge is een uitdaging die via sociale media wordt verspreid, waarbij gebruikers elkaar uitdagen om iets te doen en dit te filmen. Sommige challenges zijn onschuldig en leuk, andere kunnen gevaarlijk zijn.</p></div><div class='call warn'><b>Veelgemaakte fout:</b> denken dat een challenge wel veilig zal zijn omdat 'iedereen het doet'. Bedenk altijd eerst of een uitdaging risico's met zich meebrengt voor jou of anderen.</div><div class='call'>Voordat je meedoet aan een challenge: bedenk wat het gevolg kan zijn, voor jezelf én voor anderen om je heen.</div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Online challenges verspreiden zich snel via sociale media</li><li>Denk eerst na over mogelijke risico's voordat je meedoet</li></ul></div>"
+        }
+      ],
+      "begrippen": [
+        {
+          "term": "Sociale media",
+          "uitleg": "Websites en apps waarmee je online contact maakt en informatie deelt met anderen.",
+          "paragraaf": "Sociale media en lichamelijke gezondheid"
+        },
+        {
+          "term": "Concentratievermogen",
+          "uitleg": "Het vermogen om je aandacht bij één ding te houden; wordt negatief beïnvloed door slaaptekort.",
+          "paragraaf": "Sociale media en lichamelijke gezondheid"
+        },
+        {
+          "term": "Balans",
+          "uitleg": "Een goede verhouding tussen schermtijd en andere activiteiten, zoals sport en slapen.",
+          "paragraaf": "Sociale media en lichamelijke gezondheid"
+        },
+        {
+          "term": "Mentale gezondheid",
+          "uitleg": "Hoe je je geestelijk voelt; kan beïnvloed worden door hoeveel en hoe je sociale media gebruikt.",
+          "paragraaf": "Sociale media en mentale gezondheid"
+        },
+        {
+          "term": "Vergelijken",
+          "uitleg": "Jezelf spiegelen aan het (vaak geïdealiseerde) leven van anderen op sociale media.",
+          "paragraaf": "Sociale media en mentale gezondheid"
+        },
+        {
+          "term": "Bewust mediagebruik",
+          "uitleg": "Gericht en met aandacht omgaan met media, in plaats van eindeloos scrollen.",
+          "paragraaf": "Sociale media en mentale gezondheid"
+        },
+        {
+          "term": "Feitelijk argument",
+          "uitleg": "Een argument dat je kunt controleren, bijvoorbeeld met cijfers of onderzoek.",
+          "paragraaf": "Schermtijd en school"
+        },
+        {
+          "term": "Niet-feitelijk argument",
+          "uitleg": "Een argument dat een mening, gevoel of vermoeden bevat en niet te controleren is.",
+          "paragraaf": "Schermtijd en school"
+        },
+        {
+          "term": "Telefoonverbod",
+          "uitleg": "Een regel die het gebruik van mobiele telefoons op school verbiedt.",
+          "paragraaf": "Schermtijd en school"
+        },
+        {
+          "term": "Online challenge",
+          "uitleg": "Een uitdaging die via sociale media wordt verspreid en die je op camera vastlegt.",
+          "paragraaf": "Online challenges"
+        },
+        {
+          "term": "Risico",
+          "uitleg": "De kans dat iets gevaarlijks of onwenselijks gebeurt, bijvoorbeeld bij het meedoen aan een challenge.",
+          "paragraaf": "Online challenges"
+        }
+      ],
+      "flashcards": [
+        {
+          "vraag": "Waarom slaap je slechter door veel schermgebruik 's avonds?",
+          "antwoord": "Omdat berichten en scrollen je wakker houden en je concentratie de volgende dag verminderen.",
+          "paragraaf": "Sociale media en lichamelijke gezondheid"
+        },
+        {
+          "vraag": "Waarom is veel stilzitten door schermgebruik slecht voor je lichaam?",
+          "antwoord": "Het is slecht voor je spieren, houding en ogen, en er blijft minder tijd over voor sport.",
+          "paragraaf": "Sociale media en lichamelijke gezondheid"
+        },
+        {
+          "vraag": "Wat zie je vaak alleen op sociale media van anderen?",
+          "antwoord": "Hun mooiste, meest geïdealiseerde momenten.",
+          "paragraaf": "Sociale media en mentale gezondheid"
+        },
+        {
+          "vraag": "Hoe kun je je mentaal beter voelen bij mediagebruik?",
+          "antwoord": "Door bewust om te gaan met media, bijvoorbeeld door schermtijd te beperken.",
+          "paragraaf": "Sociale media en mentale gezondheid"
+        },
+        {
+          "vraag": "Wat is een feitelijk argument?",
+          "antwoord": "Een argument dat je kunt controleren.",
+          "paragraaf": "Schermtijd en school"
+        },
+        {
+          "vraag": "Wat is een niet-feitelijk argument?",
+          "antwoord": "Een argument dat een mening, gevoel of vermoeden bevat en niet controleerbaar is.",
+          "paragraaf": "Schermtijd en school"
+        },
+        {
+          "vraag": "Noem een argument vóór een telefoonverbod op school.",
+          "antwoord": "Bijvoorbeeld: minder afleiding tijdens de les.",
+          "paragraaf": "Schermtijd en school"
+        },
+        {
+          "vraag": "Wat is een online challenge?",
+          "antwoord": "Een uitdaging die via sociale media wordt verspreid, die je meestal filmt.",
+          "paragraaf": "Online challenges"
+        },
+        {
+          "vraag": "Waar moet je op letten voordat je meedoet aan een online challenge?",
+          "antwoord": "Of de challenge risico's met zich meebrengt voor jou of anderen.",
+          "paragraaf": "Online challenges"
+        },
+        {
+          "vraag": "Klopt het dat een challenge altijd veilig is als 'iedereen het doet'?",
+          "antwoord": "Nee, dat is een veelgemaakte denkfout; het risico blijft even groot.",
+          "paragraaf": "Online challenges"
+        }
+      ],
+      "quiz": [
+        {
+          "vraag": "Waarom slaap je vaak slechter als je voor het slapengaan veel scrolt?",
+          "opties": [
+            "Omdat je dan te veel drinkt",
+            "Omdat berichtjes en schermlicht je wakker houden",
+            "Omdat je dan te veel beweegt",
+            "Omdat je dan honger krijgt"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Berichtjes die binnenkomen en eindeloos scrollen houden je wakker, waardoor je slechter slaapt."
+        },
+        {
+          "vraag": "Wat is een gevolg van veel stilzitten door schermgebruik?",
+          "opties": [
+            "Een betere concentratie",
+            "Slechtere spieren, houding en ogen",
+            "Meer energie overdag",
+            "Betere nachtrust"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Lang stilzitten in dezelfde houding is slecht voor je spieren, houding en ogen."
+        },
+        {
+          "vraag": "Waarom kun je jezelf al snel minder goed voelen door sociale media?",
+          "opties": [
+            "Omdat je jezelf vergelijkt met geïdealiseerde beelden van anderen",
+            "Omdat sociale media altijd traag laden",
+            "Omdat sociale media altijd gratis zijn",
+            "Omdat je dan minder foto's kunt maken"
+          ],
+          "antwoord_index": 0,
+          "uitleg": "Op sociale media zie je vaak alleen de mooiste momenten van anderen, waardoor vergelijken je somber kan maken."
+        },
+        {
+          "vraag": "Wat is een voorbeeld van bewust mediagebruik?",
+          "opties": [
+            "Zo veel mogelijk scrollen zonder na te denken",
+            "Een schermtijdlimiet instellen",
+            "Alle meldingen aanzetten",
+            "Nooit meer offline afspreken"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Een schermtijdlimiet instellen helpt je bewuster en gerichter met media om te gaan."
+        },
+        {
+          "vraag": "'Uit onderzoek blijkt dat 70% van de leerlingen zich afgeleid voelt door hun telefoon.' Dit is een voorbeeld van...",
+          "opties": [
+            "een niet-feitelijk argument",
+            "een feitelijk argument",
+            "een tekstverband",
+            "een mening zonder onderbouwing"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Dit argument is gebaseerd op onderzoek en dus controleerbaar: het is een feitelijk argument."
+        },
+        {
+          "vraag": "'Ik vind dat het wel meevalt met de afleiding door telefoons.' Dit is een voorbeeld van...",
+          "opties": [
+            "een feitelijk argument",
+            "een niet-feitelijk argument",
+            "een signaalwoord",
+            "een tekstdoel"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Dit argument bevat een mening ('ik vind') en is niet te controleren, dus het is niet-feitelijk."
+        },
+        {
+          "vraag": "Wat is een online challenge?",
+          "opties": [
+            "Een schoolexamen dat je online maakt",
+            "Een uitdaging die via sociale media wordt verspreid",
+            "Een reclame voor een nieuwe telefoon",
+            "Een instructieve tekst over apps"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Een online challenge is een uitdaging die mensen elkaar via sociale media geven, vaak gefilmd."
+        },
+        {
+          "vraag": "Waarom kunnen online challenges gevaarlijk zijn?",
+          "opties": [
+            "Omdat ze altijd duur zijn",
+            "Omdat ze soms risico's met zich meebrengen die mensen onderschatten",
+            "Omdat je er internet voor nodig hebt",
+            "Omdat ze alleen op school gebeuren"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Sommige challenges lijken onschuldig, maar brengen risico's met zich mee die mensen soms onderschatten."
+        },
+        {
+          "vraag": "Wat is volgens de theorie belangrijk voordat je meedoet aan een challenge?",
+          "opties": [
+            "Nadenken over mogelijke gevolgen voor jezelf en anderen",
+            "Alleen kijken hoeveel likes het oplevert",
+            "Zo snel mogelijk meedoen voordat het uit de mode is",
+            "Altijd wachten tot een vriend het eerst doet"
+          ],
+          "antwoord_index": 0,
+          "uitleg": "Voordat je meedoet aan een challenge is het belangrijk om na te denken over de mogelijke gevolgen."
+        },
+        {
+          "vraag": "Wat helpt tegen de negatieve, energieloze cirkel van veel schermgebruik?",
+          "opties": [
+            "Nog meer schermtijd inplannen",
+            "Balans zoeken tussen schermtijd en beweging/slaap",
+            "Alleen 's nachts op je telefoon kijken",
+            "Nooit meer sociale media gebruiken"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Een goede balans tussen schermtijd, beweging en slaap doorbreekt de negatieve cirkel."
+        }
+      ]
+    },
+    {
+      "titel": "Fictie",
+      "uitleg": "<div class='box'><h4>Waar gaat dit hoofdstuk over?</h4><p>In dit hoofdstuk lees je fragmenten uit verhalen en leer je hoe schrijvers hun verhaal opbouwen: de volgorde van gebeurtenissen, de personages en gedichten. Aan het eind pas je dit toe door zelf een kort stukje fictie te schrijven.</p></div>",
+      "subhoofdstukken": [
+        {
+          "titel": "En toen...",
+          "uitleg": "<div class='box'><h4>Vertelvolgorde</h4><p>De gebeurtenissen in een verhaal worden in een bepaalde volgorde verteld. Dit heet de <b>vertelvolgorde</b>. Worden de gebeurtenissen verteld in de volgorde waarin ze gebeurd zijn? Dan noem je dat <b>chronologisch</b>. De auteur kan er ook voor kiezen de gebeurtenissen in een andere volgorde te vertellen.</p></div><div class='g2'><div class='box'><h4>Vertelheden</h4><p>Het 'nu' van het verhaal noem je het vertelheden.</p></div><div class='box'><h4>Flashback</h4><p>Onderbreekt de auteur het vertelheden om een eerdere gebeurtenis te beschrijven? Dan noem je dat een flashback. Zo maakt de auteur je nieuwsgierig of geeft hij extra informatie.</p></div></div><div class='call'>Je herkent een flashback soms aan de lay-out van een tekst, bijvoorbeeld door een witregel of schuingedrukte tekst.</div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Chronologisch = gebeurtenissen in de volgorde waarin ze gebeurden</li><li>Een flashback onderbreekt het vertelheden om iets uit het verleden te laten zien</li></ul></div>"
+        },
+        {
+          "titel": "Fictie en ik",
+          "uitleg": "<div class='box'><h4>Jezelf herkennen in een verhaal</h4><p>Als lezer kun je jezelf soms herkennen in een personage of in een gebeurtenis uit een verhaal. Dat gebeurt vooral wanneer een schrijver gedachten, gevoelens en ervaringen herkenbaar beschrijft, ook al is het verhaal zelf verzonnen (fictie).</p></div><div class='call'>Fictie hoeft niet 'echt gebeurd' te zijn om herkenbaar te voelen: het gaat om de gevoelens en situaties die je zelf ook kent.</div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Je kunt jezelf herkennen in fictieve personages en gebeurtenissen</li><li>Een verhaal hoeft niet echt gebeurd te zijn om herkenbaar te voelen</li></ul></div>"
+        },
+        {
+          "titel": "Personages",
+          "uitleg": "<div class='box'><h4>Denken, voelen en handelen</h4><p>Een schrijver laat je een personage leren kennen door te beschrijven wat het personage <b>denkt</b>, <b>voelt</b> en <b>doet</b> (handelt). Ook situaties en verwikkelingen (problemen of ontwikkelingen in het verhaal) laten zien wie een personage is.</p></div><div class='box'><h4>Spanning opbouwen</h4><p>Schrijvers gebruiken spanningstechnieken om een verhaal boeiender te maken, bijvoorbeeld door de lezer meer te laten weten dan het personage, door een dreigend gevaar aan te kondigen of door een cliffhanger aan het eind van een hoofdstuk.</p></div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Personages leer je kennen via hun denken, voelen en handelen</li><li>Spanningstechnieken houden de lezer geboeid</li></ul></div>"
+        },
+        {
+          "titel": "Over gedichten",
+          "uitleg": "<div class='box'><h4>Vaste en vrije vorm</h4><p>Gedichten kunnen een <b>vaste vorm</b> hebben (met een vast rijmschema en aantal regels, zoals een sonnet) of een <b>vrije vorm</b> (zonder vaste regels voor rijm of regellengte).</p></div><div class='box'><h4>Beeldspraak</h4><p><b>Beeldspraak</b> is figuurlijk taalgebruik: je bedoelt iets anders dan wat er letterlijk staat. Dichters gebruiken beeldspraak om gevoelens of beelden krachtiger over te brengen.</p></div><div class='call'>Vriendschap is een populair onderwerp voor dichters, omdat het herkenbare gevoelens oproept bij veel lezers.</div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Een gedicht kan een vaste of een vrije vorm hebben</li><li>Beeldspraak is figuurlijk taalgebruik</li></ul></div>"
+        },
+        {
+          "titel": "Zelfschrijven",
+          "uitleg": "<div class='box'><h4>Je eigen kort verhaal</h4><p>Aan het einde van deze cursus pas je alles wat je hebt geleerd over fictie zelf toe: je schrijft een kort verhaal waarin je een duidelijke vertelvolgorde gebruikt, een personage laat denken, voelen en handelen, en eventueel spanningstechnieken toepast.</p></div><div class='call'>Wissel je verhaal uit met een klasgenoot en geef elkaar constructieve feedback aan de hand van voorbeelden uit de tekst.</div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Gebruik vertelvolgorde, personages en eventueel spanningstechnieken in je eigen verhaal</li><li>Feedback geven doe je met concrete voorbeelden uit de tekst</li></ul></div>"
+        }
+      ],
+      "begrippen": [
+        {
+          "term": "Vertelvolgorde",
+          "uitleg": "De volgorde waarin de gebeurtenissen in een verhaal verteld worden.",
+          "paragraaf": "En toen..."
+        },
+        {
+          "term": "Chronologisch",
+          "uitleg": "Gebeurtenissen worden verteld in de volgorde waarin ze echt gebeurd zijn.",
+          "paragraaf": "En toen..."
+        },
+        {
+          "term": "Vertelheden",
+          "uitleg": "Het 'nu' van het verhaal.",
+          "paragraaf": "En toen..."
+        },
+        {
+          "term": "Flashback",
+          "uitleg": "Een onderbreking van het vertelheden om een eerdere gebeurtenis te beschrijven.",
+          "paragraaf": "En toen..."
+        },
+        {
+          "term": "Fictie",
+          "uitleg": "Een verzonnen verhaal, in tegenstelling tot non-fictie dat echt gebeurd is.",
+          "paragraaf": "Fictie en ik"
+        },
+        {
+          "term": "Herkenbaarheid",
+          "uitleg": "De mate waarin een lezer zichzelf herkent in een verhaal of personage.",
+          "paragraaf": "Fictie en ik"
+        },
+        {
+          "term": "Personage",
+          "uitleg": "Een figuur (persoon) in een verhaal.",
+          "paragraaf": "Personages"
+        },
+        {
+          "term": "Verwikkeling",
+          "uitleg": "Een probleem of ontwikkeling in het verhaal waar het personage mee te maken krijgt.",
+          "paragraaf": "Personages"
+        },
+        {
+          "term": "Spanningstechniek",
+          "uitleg": "Een manier waarop een schrijver spanning opbouwt in een verhaal.",
+          "paragraaf": "Personages"
+        },
+        {
+          "term": "Vaste vorm (gedicht)",
+          "uitleg": "Een gedicht met een vast rijmschema en/of vast aantal regels.",
+          "paragraaf": "Over gedichten"
+        },
+        {
+          "term": "Vrije vorm (gedicht)",
+          "uitleg": "Een gedicht zonder vaste regels voor rijm of regellengte.",
+          "paragraaf": "Over gedichten"
+        },
+        {
+          "term": "Beeldspraak",
+          "uitleg": "Figuurlijk taalgebruik waarbij je iets anders bedoelt dan er letterlijk staat.",
+          "paragraaf": "Over gedichten"
+        }
+      ],
+      "flashcards": [
+        {
+          "vraag": "Wat is chronologisch vertellen?",
+          "antwoord": "Gebeurtenissen vertellen in de volgorde waarin ze echt gebeurd zijn.",
+          "paragraaf": "En toen..."
+        },
+        {
+          "vraag": "Wat is een flashback?",
+          "antwoord": "Een onderbreking van het vertelheden om een eerdere gebeurtenis te beschrijven.",
+          "paragraaf": "En toen..."
+        },
+        {
+          "vraag": "Waaraan kun je een flashback soms herkennen in de lay-out?",
+          "antwoord": "Aan een witregel of schuingedrukte tekst.",
+          "paragraaf": "En toen..."
+        },
+        {
+          "vraag": "Moet een verhaal echt gebeurd zijn om herkenbaar te voelen?",
+          "antwoord": "Nee, ook fictie kan herkenbare gevoelens en situaties bevatten.",
+          "paragraaf": "Fictie en ik"
+        },
+        {
+          "vraag": "Waardoor leer je een personage kennen?",
+          "antwoord": "Door te lezen wat het personage denkt, voelt en doet.",
+          "paragraaf": "Personages"
+        },
+        {
+          "vraag": "Wat is een verwikkeling?",
+          "antwoord": "Een probleem of ontwikkeling waar het personage mee te maken krijgt.",
+          "paragraaf": "Personages"
+        },
+        {
+          "vraag": "Wat is een vaste vorm bij een gedicht?",
+          "antwoord": "Een gedicht met een vast rijmschema en/of vast aantal regels.",
+          "paragraaf": "Over gedichten"
+        },
+        {
+          "vraag": "Wat is beeldspraak?",
+          "antwoord": "Figuurlijk taalgebruik waarbij je iets anders bedoelt dan er letterlijk staat.",
+          "paragraaf": "Over gedichten"
+        },
+        {
+          "vraag": "Wat oefen je bij Zelfschrijven?",
+          "antwoord": "Het zelf schrijven van een kort verhaal met vertelvolgorde en personages.",
+          "paragraaf": "Zelfschrijven"
+        },
+        {
+          "vraag": "Hoe geef je goede feedback op een geschreven verhaal?",
+          "antwoord": "Constructief en met concrete voorbeelden uit de tekst.",
+          "paragraaf": "Zelfschrijven"
+        }
+      ],
+      "quiz": [
+        {
+          "vraag": "Wat betekent 'chronologisch vertellen'?",
+          "opties": [
+            "Gebeurtenissen door elkaar vertellen",
+            "Gebeurtenissen vertellen in de volgorde waarin ze gebeurden",
+            "Alleen het einde van het verhaal vertellen",
+            "Een verhaal zonder personages vertellen"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Chronologisch betekent dat de gebeurtenissen in de volgorde staan waarin ze echt plaatsvonden."
+        },
+        {
+          "vraag": "Wat is een flashback?",
+          "opties": [
+            "Een gedicht met een vaste vorm",
+            "Een onderbreking van het vertelheden om iets uit het verleden te laten zien",
+            "Een personage dat de hoofdrol speelt",
+            "Een tekstverband bij instructieve teksten"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Een flashback onderbreekt het 'nu' van het verhaal (vertelheden) om een eerdere gebeurtenis te tonen."
+        },
+        {
+          "vraag": "Kan een verhaal herkenbaar voelen, ook al is het verzonnen?",
+          "opties": [
+            "Nee, alleen echt gebeurde verhalen voelen herkenbaar",
+            "Ja, door herkenbare gevoelens en situaties",
+            "Nee, fictie is per definitie onherkenbaar",
+            "Alleen als het verhaal over dieren gaat"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Fictie kan herkenbaar voelen doordat de gevoelens en situaties die beschreven worden ook bij de lezer passen."
+        },
+        {
+          "vraag": "Waardoor leer je een personage het best kennen?",
+          "opties": [
+            "Alleen door de titel van het boek",
+            "Door wat het personage denkt, voelt en doet",
+            "Door de kleur van de boekomslag",
+            "Door het aantal hoofdstukken"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Denken, voelen en handelen van een personage laten zien wie het personage werkelijk is."
+        },
+        {
+          "vraag": "Wat is een verwikkeling in een verhaal?",
+          "opties": [
+            "Een gedicht in vrije vorm",
+            "Een probleem of ontwikkeling waar het personage mee te maken krijgt",
+            "Een tekstsoort zoals een recept",
+            "Een vertelvolgorde"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Een verwikkeling is een probleem of ontwikkeling in het verhaal die het personage moet doorstaan."
+        },
+        {
+          "vraag": "Wat is het verschil tussen een vaste en een vrije vorm bij gedichten?",
+          "opties": [
+            "Een vaste vorm heeft geregeld rijm en regels, een vrije vorm niet",
+            "Een vrije vorm is altijd langer",
+            "Een vaste vorm gaat altijd over vriendschap",
+            "Er is geen verschil"
+          ],
+          "antwoord_index": 0,
+          "uitleg": "Een vaste vorm heeft een vast rijmschema en/of aantal regels; een vrije vorm heeft die vaste regels niet."
+        },
+        {
+          "vraag": "Wat is beeldspraak?",
+          "opties": [
+            "Letterlijk taalgebruik",
+            "Figuurlijk taalgebruik waarbij je iets anders bedoelt dan er staat",
+            "Een ander woord voor tekstdoel",
+            "Een vorm van vertelvolgorde"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Beeldspraak is figuurlijk taalgebruik: de woorden betekenen iets anders dan wat er letterlijk staat."
+        },
+        {
+          "vraag": "Waarom is vriendschap een populair onderwerp voor dichters?",
+          "opties": [
+            "Omdat het altijd rijmt",
+            "Omdat het herkenbare gevoelens oproept bij veel lezers",
+            "Omdat het een instructieve tekst is",
+            "Omdat het altijd in de vrije vorm geschreven wordt"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Vriendschap roept bij veel lezers herkenbare gevoelens op, wat het een populair onderwerp maakt."
+        },
+        {
+          "vraag": "Wat oefen je in de paragraaf Zelfschrijven?",
+          "opties": [
+            "Het lezen van gedichten",
+            "Het schrijven van een eigen kort verhaal",
+            "Het maken van een mindmap",
+            "Het schrijven van een zakelijke e-mail"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Bij Zelfschrijven pas je wat je geleerd hebt toe door zelf een kort verhaal te schrijven."
+        },
+        {
+          "vraag": "Hoe geef je het best feedback op andermans verhaal?",
+          "opties": [
+            "Alleen zeggen of je het goed of slecht vond",
+            "Constructief, met concrete voorbeelden uit de tekst",
+            "Nooit iets zeggen over verbeterpunten",
+            "Alleen over de spelling"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Goede feedback is constructief en onderbouwd met concrete voorbeelden uit de tekst."
+        }
+      ]
+    },
+    {
+      "titel": "Taal",
+      "uitleg": "<div class='box'><h4>Waar gaat dit hoofdstuk over?</h4><p>Taal is meer dan alleen woorden: hoe je iets zegt kan net zo belangrijk zijn als wat je zegt. In dit hoofdstuk leer je objectieve van subjectieve taal te onderscheiden, hoe ruis een gesprek kan verstoren, wat dialecten zijn en hoe je teksten toegankelijk maakt voor iedereen.</p></div>",
+      "subhoofdstukken": [
+        {
+          "titel": "Objectieve en subjectieve taal",
+          "uitleg": "<div class='box'><h4>Feit of mening?</h4><p><b>Objectieve taal</b> beschrijft iets neutraal, zonder een mening te geven: het is controleerbaar en feitelijk. <b>Subjectieve taal</b> geeft juist een mening, gevoel of waardeoordeel weer.</p></div><div class='tblwrap'><table class='tbl'><tr><th>Objectief</th><th>Subjectief</th></tr><tr><td>De jas kost 60 euro.</td><td>De jas is te duur.</td></tr><tr><td>Het regende de hele dag.</td><td>Het was vreselijk weer.</td></tr></table></div><div class='call warn'><b>Veelgemaakte fout:</b> denken dat een tekst met cijfers automatisch objectief is. Ook bij cijfers kan een schrijver een subjectieve toon gebruiken door de woordkeuze eromheen.</div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Objectieve taal is controleerbaar en neutraal</li><li>Subjectieve taal bevat een mening, gevoel of waardeoordeel</li></ul></div>"
+        },
+        {
+          "titel": "Ruis op de lijn",
+          "uitleg": "<div class='box'><h4>Wat is ruis?</h4><p><b>Ruis</b> is alles wat ervoor zorgt dat een boodschap niet goed overkomt bij de ontvanger. Ruis kan letterlijk zijn (bijvoorbeeld achtergrondgeluid), maar ook figuurlijk (bijvoorbeeld een woord dat verkeerd begrepen wordt).</p></div><div class='g2'><div class='box'><h4>Soorten ruis</h4><ul class='lst'><li>Fysieke ruis: geluid, een slechte verbinding</li><li>Psychische ruis: vooroordelen, afleiding, emoties</li><li>Taalkundige ruis: onbekende woorden, dubbelzinnigheid</li></ul></div><div class='box'><h4>Ruis voorkomen</h4><ul class='lst'><li>Check of de ander je goed begrepen heeft</li><li>Gebruik duidelijke, ondubbelzinnige taal</li><li>Zorg voor een rustige omgeving tijdens een gesprek</li></ul></div></div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Ruis verstoort de communicatie tussen zender en ontvanger</li><li>Ruis kan fysiek, psychisch of taalkundig zijn</li></ul></div>"
+        },
+        {
+          "titel": "Taal lokaal",
+          "uitleg": "<div class='box'><h4>Dialecten en Standaardnederlands</h4><p>Een <b>dialect</b> is een streektaal: een variant van het Nederlands die in een bepaalde regio gesproken wordt en anders klinkt dan het <b>Standaardnederlands</b> (ook wel Algemeen Beschaafd Nederlands genoemd).</p></div><div class='call'>Dialecten kunnen verschillen in uitspraak, woordkeuze én zinsbouw. Denk aan woorden die in het ene deel van Nederland heel normaal zijn, maar in een ander deel niemand kent.</div><div class='call warn'><b>Veelgemaakte fout:</b> denken dat een dialect 'fout' Nederlands is. Een dialect is een volwaardige taalvariant, geen verkeerd gesproken Standaardnederlands.</div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Een dialect is een streekgebonden variant van het Nederlands</li><li>Dialecten verschillen in uitspraak, woordkeuze en zinsbouw van het Standaardnederlands</li></ul></div>"
+        },
+        {
+          "titel": "Teksten voor iedereen",
+          "uitleg": "<div class='box'><h4>Toegankelijke communicatie</h4><p>Niet iedereen neemt informatie op dezelfde manier tot zich. <b>Braille</b> is een voelbaar alfabet, speciaal ontwikkeld voor mensen die blind of slechtziend zijn. Ook een <b>leeshulp</b> (die tekst voorleest of vergroot) maakt teksten toegankelijker.</p></div><div class='g2'><div class='box'><h4>Braille</h4><p>Elk teken bestaat uit een patroon van voelbare puntjes, dat met de vingertoppen gelezen wordt.</p></div><div class='box'><h4>Waarom toegankelijkheid?</h4><p>Toegankelijke teksten zorgen ervoor dat iedereen, ongeacht beperking, zelfstandig informatie kan lezen en begrijpen.</p></div></div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Braille is een voelbaar alfabet voor blinde en slechtziende mensen</li><li>Toegankelijke teksten zijn voor iedereen te lezen en te begrijpen</li></ul></div>"
+        }
+      ],
+      "begrippen": [
+        {
+          "term": "Objectieve taal",
+          "uitleg": "Neutrale, controleerbare taal zonder mening.",
+          "paragraaf": "Objectieve en subjectieve taal"
+        },
+        {
+          "term": "Subjectieve taal",
+          "uitleg": "Taal die een mening, gevoel of waardeoordeel bevat.",
+          "paragraaf": "Objectieve en subjectieve taal"
+        },
+        {
+          "term": "Waardeoordeel",
+          "uitleg": "Een mening over of iets goed of slecht is.",
+          "paragraaf": "Objectieve en subjectieve taal"
+        },
+        {
+          "term": "Ruis",
+          "uitleg": "Alles wat ervoor zorgt dat een boodschap niet goed overkomt bij de ontvanger.",
+          "paragraaf": "Ruis op de lijn"
+        },
+        {
+          "term": "Fysieke ruis",
+          "uitleg": "Ruis door bijvoorbeeld geluid of een slechte verbinding.",
+          "paragraaf": "Ruis op de lijn"
+        },
+        {
+          "term": "Psychische ruis",
+          "uitleg": "Ruis door bijvoorbeeld vooroordelen, afleiding of emoties.",
+          "paragraaf": "Ruis op de lijn"
+        },
+        {
+          "term": "Dialect",
+          "uitleg": "Een streekgebonden variant van een taal.",
+          "paragraaf": "Taal lokaal"
+        },
+        {
+          "term": "Standaardnederlands",
+          "uitleg": "De algemeen geldende, niet-streekgebonden vorm van het Nederlands.",
+          "paragraaf": "Taal lokaal"
+        },
+        {
+          "term": "Braille",
+          "uitleg": "Een voelbaar alfabet voor blinde en slechtziende mensen.",
+          "paragraaf": "Teksten voor iedereen"
+        },
+        {
+          "term": "Leeshulp",
+          "uitleg": "Een hulpmiddel dat tekst voorleest of vergroot om deze toegankelijker te maken.",
+          "paragraaf": "Teksten voor iedereen"
+        },
+        {
+          "term": "Toegankelijkheid",
+          "uitleg": "De mate waarin informatie voor iedereen, ongeacht beperking, te gebruiken is.",
+          "paragraaf": "Teksten voor iedereen"
+        }
+      ],
+      "flashcards": [
+        {
+          "vraag": "Wat is objectieve taal?",
+          "antwoord": "Neutrale, controleerbare taal zonder mening.",
+          "paragraaf": "Objectieve en subjectieve taal"
+        },
+        {
+          "vraag": "Wat is subjectieve taal?",
+          "antwoord": "Taal die een mening, gevoel of waardeoordeel bevat.",
+          "paragraaf": "Objectieve en subjectieve taal"
+        },
+        {
+          "vraag": "Is 'De jas kost 60 euro' objectief of subjectief?",
+          "antwoord": "Objectief: het is een controleerbaar feit.",
+          "paragraaf": "Objectieve en subjectieve taal"
+        },
+        {
+          "vraag": "Wat is ruis?",
+          "antwoord": "Alles wat ervoor zorgt dat een boodschap niet goed overkomt bij de ontvanger.",
+          "paragraaf": "Ruis op de lijn"
+        },
+        {
+          "vraag": "Noem een voorbeeld van fysieke ruis.",
+          "antwoord": "Bijvoorbeeld achtergrondgeluid of een slechte verbinding.",
+          "paragraaf": "Ruis op de lijn"
+        },
+        {
+          "vraag": "Noem een voorbeeld van psychische ruis.",
+          "antwoord": "Bijvoorbeeld een vooroordeel of afleiding.",
+          "paragraaf": "Ruis op de lijn"
+        },
+        {
+          "vraag": "Wat is een dialect?",
+          "antwoord": "Een streekgebonden variant van een taal.",
+          "paragraaf": "Taal lokaal"
+        },
+        {
+          "vraag": "Is een dialect 'fout' Nederlands?",
+          "antwoord": "Nee, een dialect is een volwaardige taalvariant.",
+          "paragraaf": "Taal lokaal"
+        },
+        {
+          "vraag": "Wat is braille?",
+          "antwoord": "Een voelbaar alfabet voor blinde en slechtziende mensen.",
+          "paragraaf": "Teksten voor iedereen"
+        },
+        {
+          "vraag": "Waarom worden teksten toegankelijk gemaakt?",
+          "antwoord": "Zodat iedereen, ongeacht beperking, ze zelfstandig kan lezen en begrijpen.",
+          "paragraaf": "Teksten voor iedereen"
+        }
+      ],
+      "quiz": [
+        {
+          "vraag": "Welke zin is subjectief?",
+          "opties": [
+            "Het regende de hele dag.",
+            "De jas kost 60 euro.",
+            "Het was vreselijk weer vandaag.",
+            "De trein vertrekt om 9 uur."
+          ],
+          "antwoord_index": 2,
+          "uitleg": "'Vreselijk weer' is een waardeoordeel en dus subjectief; de andere zinnen zijn controleerbare feiten."
+        },
+        {
+          "vraag": "Wat is het belangrijkste kenmerk van objectieve taal?",
+          "opties": [
+            "Ze bevat altijd cijfers",
+            "Ze is controleerbaar en neutraal",
+            "Ze bevat altijd een mening",
+            "Ze is altijd kort"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Objectieve taal is neutraal en controleerbaar, zonder een mening te geven."
+        },
+        {
+          "vraag": "Wat is ruis bij communicatie?",
+          "opties": [
+            "Een tekstverband",
+            "Alles wat ervoor zorgt dat een boodschap niet goed overkomt",
+            "Een soort dialect",
+            "Een vorm van beeldspraak"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Ruis is alles wat de boodschap tussen zender en ontvanger verstoort."
+        },
+        {
+          "vraag": "Een slechte telefoonverbinding is een voorbeeld van...",
+          "opties": [
+            "psychische ruis",
+            "fysieke ruis",
+            "taalkundige ruis",
+            "geen ruis"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Een slechte verbinding is een fysieke oorzaak van ruis."
+        },
+        {
+          "vraag": "Een vooroordeel dat je gesprek beïnvloedt is een voorbeeld van...",
+          "opties": [
+            "fysieke ruis",
+            "psychische ruis",
+            "objectieve taal",
+            "een dialect"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Een vooroordeel is een innerlijk (psychisch) obstakel dat een boodschap kan verstoren."
+        },
+        {
+          "vraag": "Wat is een dialect?",
+          "opties": [
+            "Een foutieve vorm van Nederlands",
+            "Een streekgebonden variant van een taal",
+            "Een tekstsoort",
+            "Een vorm van beeldspraak"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Een dialect is een volwaardige, streekgebonden variant van een taal, geen 'fout' Nederlands."
+        },
+        {
+          "vraag": "Waarin kan een dialect verschillen van het Standaardnederlands?",
+          "opties": [
+            "Alleen in uitspraak",
+            "In uitspraak, woordkeuze en zinsbouw",
+            "Alleen in spelling",
+            "Een dialect verschilt nergens van"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Dialecten kunnen verschillen in uitspraak, woordkeuze én zinsbouw ten opzichte van het Standaardnederlands."
+        },
+        {
+          "vraag": "Wat is braille?",
+          "opties": [
+            "Een streektaal",
+            "Een voelbaar alfabet voor blinden en slechtzienden",
+            "Een leesapp",
+            "Een vorm van ruis"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Braille bestaat uit voelbare puntjespatronen die met de vingertoppen gelezen worden."
+        },
+        {
+          "vraag": "Waarvoor dient een leeshulp?",
+          "opties": [
+            "Om teksten voor te lezen of te vergroten",
+            "Om dialecten te vertalen",
+            "Om ruis te veroorzaken",
+            "Om een tekst subjectief te maken"
+          ],
+          "antwoord_index": 0,
+          "uitleg": "Een leeshulp maakt teksten toegankelijker door ze voor te lezen of te vergroten."
+        },
+        {
+          "vraag": "Waarom is het belangrijk om teksten toegankelijk te maken?",
+          "opties": [
+            "Zodat teksten korter worden",
+            "Zodat iedereen, ongeacht beperking, ze kan lezen en begrijpen",
+            "Zodat teksten altijd objectief zijn",
+            "Zodat teksten altijd rijmen"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Toegankelijke teksten zorgen ervoor dat iedereen zelfstandig informatie kan lezen en begrijpen."
+        }
+      ]
+    },
+    {
+      "titel": "Formuleren",
+      "uitleg": "<div class='box'><h4>Waar gaat dit hoofdstuk over?</h4><p>In deze cursus herhaal je alle regels voor correct formuleren die je dit jaar geleerd hebt: verwijswoorden, trappen van vergelijking, enkelvoud en meervoud van de persoonsvorm, en het schrijven van samengestelde zinnen. Je vindt de theorie ook overzichtelijk terug in Handig!.</p></div>",
+      "subhoofdstukken": [
+        {
+          "titel": "Verwijzen naar personen en dingen",
+          "uitleg": "<div class='box'><h4>Verwijswoorden gebruiken</h4><p>Door verwijswoorden te gebruiken, voorkom je dat je woorden herhaalt in je tekst. Welk verwijswoord je gebruikt, hangt af van het woord waarnaar je verwijst.</p></div><div class='tblwrap'><table class='tbl'><tr><th>Soort woord</th><th>Voorbeeld</th><th>Verwijswoorden</th></tr><tr><td>Het-woorden (onzijdig)</td><td>het telefoonnummer, het onderzoek</td><td>het, dat, dit</td></tr><tr><td>De-woorden (mannelijk)</td><td>de zanger, de optocht</td><td>hij, hem, deze, die</td></tr><tr><td>De-woorden (vrouwelijk)</td><td>de hardloopster, de verzekering</td><td>zij/ze, haar, deze, die</td></tr><tr><td>Meervoud</td><td>de vakanties, de voorbeelden</td><td>zij/ze, deze, die</td></tr></table></div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Kijk naar het woord waarnaar je verwijst: het-woord, de-woord of meervoud</li><li>Verwijswoorden voorkomen herhaling in je tekst</li></ul></div>"
+        },
+        {
+          "titel": "Verwijzen naar bezit",
+          "uitleg": "<div class='box'><h4>Bezittelijke verwijswoorden</h4><p>Met verwijswoorden kun je ook verwijzen naar bezit: je geeft dan aan van wie iets is.</p></div><div class='tblwrap'><table class='tbl'><tr><th>Onderwerp</th><th>Verwijswoord (bezit)</th><th>Voorbeeldzin</th></tr><tr><td>ik</td><td>mijn</td><td>Ik heb mijn enkel verstuikt.</td></tr><tr><td>jij</td><td>jouw, je</td><td>Jij moet jouw inschrijving regelen.</td></tr><tr><td>hij</td><td>zijn</td><td>Deniz heeft zijn vriendin verrast.</td></tr><tr><td>zij</td><td>haar</td><td>Eva wil haar record verbeteren.</td></tr><tr><td>u</td><td>uw</td><td>U kunt uw gegevens online wijzigen.</td></tr><tr><td>wij</td><td>onze, ons</td><td>Wij gaan onze vakantie plannen.</td></tr><tr><td>jullie</td><td>jullie</td><td>Jullie kunnen jullie koffie meenemen.</td></tr><tr><td>zij (mv)</td><td>hun</td><td>Zij hebben hun vlucht gemist.</td></tr></table></div><div class='call warn'><b>Veelgemaakte fout:</b> 'mijn' en 'mij/me' door elkaar halen. Gebruik 'mijn' als er bezit achter staat ('mijn lievelingseten'), gebruik 'mij/me' als er geen bezit achter staat ('hij vroeg me om hulp').</div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Elk onderwerp heeft een eigen bezittelijk verwijswoord</li><li>Let op het verschil tussen woorden mét en zonder bezit erachter</li></ul></div>"
+        },
+        {
+          "titel": "Trappen van vergelijking",
+          "uitleg": "<div class='box'><h4>Stellend, vergrotend, overtreffend</h4><p>Bijvoeglijke naamwoorden hebben drie trappen van vergelijking: de stellende trap, de vergrotende trap en de overtreffende trap.</p></div><div class='tblwrap'><table class='tbl'><tr><th>Trap</th><th>Vorm</th><th>Voorbeeld</th></tr><tr><td>Stellend</td><td>het gewone woord, gebruikt met 'als' of 'dan'</td><td>De aardbeien zijn zoet / net zo zoet als snoep.</td></tr><tr><td>Vergrotend</td><td>+ -er (of -der)</td><td>De aardbeien zijn zoeter dan de snoepjes.</td></tr><tr><td>Overtreffend</td><td>+ -st(e), of 'meest' bij woorden op -isch</td><td>de zoetst(e), het meest komisch</td></tr></table></div><div class='call warn'><b>Veelgemaakte fout:</b> een aantal woorden verandert helemaal: goed - beter - best; veel - meer - meest; weinig - minder - minst; graag - liever - liefst.</div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Stellend + 'als'/'dan', vergrotend met -er, overtreffend met -st(e) of 'meest'</li><li>Sommige woorden hebben onregelmatige trappen van vergelijking</li></ul></div>"
+        },
+        {
+          "titel": "Persoonsvorm: enkelvoud of meervoud?",
+          "uitleg": "<div class='box'><h4>Onderwerp en persoonsvorm horen bij elkaar</h4><p>De persoonsvorm en het onderwerp horen bij elkaar. Is het onderwerp enkelvoud, dan moet de persoonsvorm ook enkelvoud zijn. Is het onderwerp meervoud, dan moet de persoonsvorm ook meervoud zijn.</p></div><div class='call'>Soms is het lastig te bedenken of het onderwerp enkelvoud of meervoud is. Bijvoorbeeld: 'Alle bezoekers van de afgelaste voorstelling kregen hun geld terug' (onderwerp bestaat uit veel woorden) of 'De zwerm vogels vliegt in een perfecte v-vorm' (het onderwerp lijkt meervoud, maar is enkelvoud: 'de zwerm').</div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Zoek eerst het echte onderwerp van de zin op</li><li>Laat de persoonsvorm altijd overeenkomen met dat onderwerp</li></ul></div>"
+        },
+        {
+          "titel": "Samengestelde zinnen schrijven",
+          "uitleg": "<div class='box'><h4>Twee zinnen aan elkaar plakken</h4><p>Een samengestelde zin bestaat uit twee enkelvoudige zinnen die je aan elkaar kunt plakken met een <b>voegwoord</b>.</p></div><div class='tblwrap'><table class='tbl'><tr><th>Enkelvoudige zinnen</th><th>Samengestelde zin</th></tr><tr><td>Liam bewaart zijn stripboeken. Hij wil ze over een paar jaar verkopen.</td><td>Liam bewaart zijn stripboeken, omdat hij ze over een paar jaar wil verkopen.</td></tr></table></div><div class='box'><h4>Zo maak je samengestelde zinnen</h4><ul class='lst'><li>Gebruik een voegwoord om van twee zinnen één zin te maken</li><li>Staat het voegwoord in het midden? Zet dan een komma vóór het voegwoord (behalve bij 'en' en 'of')</li><li>Staat het voegwoord vooraan? Zet dan een komma tussen de twee enkelvoudige zinnen</li><li>Verander de woordvolgorde als dat nodig is</li></ul></div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Een voegwoord verbindt twee enkelvoudige zinnen tot één samengestelde zin</li><li>Geen komma voor 'en' en 'of'</li></ul></div>"
+        },
+        {
+          "titel": "Schrijven zonder fouten",
+          "uitleg": "<div class='box'><h4>Je tekst controleren</h4><ul class='lst'><li>Wissel enkelvoudige en samengestelde zinnen af</li><li>Maak je zinnen niet te lang en ingewikkeld; gebruik verwijswoorden</li><li>Controleer je tekst op spelfouten: geen letters vergeten of omgewisseld</li><li>Heb je alle woorden die aan elkaar moeten, ook echt aan elkaar geschreven?</li><li>Heb je alle meervouden en verkleinwoorden correct gevormd?</li><li>Beginnen alle namen en zinnen met een hoofdletter?</li><li>Staan de leestekens op de goede plaats?</li></ul></div><div class='call'>Loop bij een zakelijke e-mail of brief altijd deze checklist na voordat je hem verstuurt.</div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Controleer spelling, hoofdletters, leestekens en zinslengte systematisch</li><li>Afwisseling tussen korte en samengestelde zinnen maakt een tekst prettiger leesbaar</li></ul></div>"
+        }
+      ],
+      "begrippen": [
+        {
+          "term": "Verwijswoord",
+          "uitleg": "Een woord dat verwijst naar iets dat eerder in de tekst genoemd is, zoals 'hij', 'deze' of 'dat'.",
+          "paragraaf": "Verwijzen naar personen en dingen"
+        },
+        {
+          "term": "Onzijdig woord (het-woord)",
+          "uitleg": "Een zelfstandig naamwoord dat met 'het' gebruikt wordt.",
+          "paragraaf": "Verwijzen naar personen en dingen"
+        },
+        {
+          "term": "Bezittelijk verwijswoord",
+          "uitleg": "Een verwijswoord dat aangeeft van wie iets is, zoals 'mijn' of 'haar'.",
+          "paragraaf": "Verwijzen naar bezit"
+        },
+        {
+          "term": "Stellende trap",
+          "uitleg": "De gewone vorm van een bijvoeglijk naamwoord, gebruikt met 'als' of 'dan'.",
+          "paragraaf": "Trappen van vergelijking"
+        },
+        {
+          "term": "Vergrotende trap",
+          "uitleg": "De vorm van een bijvoeglijk naamwoord met -er of -der.",
+          "paragraaf": "Trappen van vergelijking"
+        },
+        {
+          "term": "Overtreffende trap",
+          "uitleg": "De vorm van een bijvoeglijk naamwoord met -st(e) of 'meest'.",
+          "paragraaf": "Trappen van vergelijking"
+        },
+        {
+          "term": "Persoonsvorm",
+          "uitleg": "De werkwoordsvorm in een zin die verandert met het onderwerp en de tijd.",
+          "paragraaf": "Persoonsvorm: enkelvoud of meervoud?"
+        },
+        {
+          "term": "Onderwerp",
+          "uitleg": "Het zinsdeel waar de persoonsvorm bij hoort en dat aangeeft wie of wat de handeling doet.",
+          "paragraaf": "Persoonsvorm: enkelvoud of meervoud?"
+        },
+        {
+          "term": "Samengestelde zin",
+          "uitleg": "Een zin die bestaat uit twee enkelvoudige zinnen, verbonden met een voegwoord.",
+          "paragraaf": "Samengestelde zinnen schrijven"
+        },
+        {
+          "term": "Voegwoord",
+          "uitleg": "Een woord dat twee zinnen verbindt, zoals 'omdat', 'terwijl' of 'want'.",
+          "paragraaf": "Samengestelde zinnen schrijven"
+        },
+        {
+          "term": "Enkelvoudige zin",
+          "uitleg": "Een zin met maar één persoonsvorm.",
+          "paragraaf": "Schrijven zonder fouten"
+        }
+      ],
+      "flashcards": [
+        {
+          "vraag": "Welk verwijswoord past bij een het-woord?",
+          "antwoord": "Het, dat of dit.",
+          "paragraaf": "Verwijzen naar personen en dingen"
+        },
+        {
+          "vraag": "Welke verwijswoorden gebruik je bij een meervoud?",
+          "antwoord": "Zij/ze, deze of die.",
+          "paragraaf": "Verwijzen naar personen en dingen"
+        },
+        {
+          "vraag": "Wat is het bezittelijk verwijswoord bij 'wij'?",
+          "antwoord": "Onze of ons.",
+          "paragraaf": "Verwijzen naar bezit"
+        },
+        {
+          "vraag": "Wanneer schrijf je 'mijn' en wanneer 'mij/me'?",
+          "antwoord": "'Mijn' als er bezit achter staat, 'mij/me' als er geen bezit achter staat.",
+          "paragraaf": "Verwijzen naar bezit"
+        },
+        {
+          "vraag": "Wat is de vergrotende trap van 'zoet'?",
+          "antwoord": "Zoeter.",
+          "paragraaf": "Trappen van vergelijking"
+        },
+        {
+          "vraag": "Wat is de overtreffende trap van 'goed'?",
+          "antwoord": "Best (onregelmatige vorm).",
+          "paragraaf": "Trappen van vergelijking"
+        },
+        {
+          "vraag": "Waar moet de persoonsvorm mee overeenkomen?",
+          "antwoord": "Met het onderwerp van de zin (enkelvoud of meervoud).",
+          "paragraaf": "Persoonsvorm: enkelvoud of meervoud?"
+        },
+        {
+          "vraag": "Is 'de zwerm vogels vliegt' enkelvoud of meervoud?",
+          "antwoord": "Enkelvoud, want het onderwerp is 'de zwerm'.",
+          "paragraaf": "Persoonsvorm: enkelvoud of meervoud?"
+        },
+        {
+          "vraag": "Waarmee verbind je twee enkelvoudige zinnen tot een samengestelde zin?",
+          "antwoord": "Met een voegwoord.",
+          "paragraaf": "Samengestelde zinnen schrijven"
+        },
+        {
+          "vraag": "Zet je een komma voor 'en' en 'of' in een samengestelde zin?",
+          "antwoord": "Nee, daarvoor schrijf je geen komma.",
+          "paragraaf": "Samengestelde zinnen schrijven"
+        },
+        {
+          "vraag": "Noem twee dingen die je controleert bij het schrijven zonder fouten.",
+          "antwoord": "Bijvoorbeeld spelling en of alle zinnen met een hoofdletter beginnen.",
+          "paragraaf": "Schrijven zonder fouten"
+        }
+      ],
+      "quiz": [
+        {
+          "vraag": "Welk verwijswoord past het best in: 'Nassim bekijkt een boek. … liggen er nog meer op een stapel.'?",
+          "opties": [
+            "Het",
+            "Die",
+            "Hem",
+            "Zijn"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "'Boeken' is een meervoud, dus je gebruikt 'die' als verwijswoord."
+        },
+        {
+          "vraag": "'Kun je … adres even naar me appen?' Welk woord past hier?",
+          "opties": [
+            "dat",
+            "die",
+            "deze",
+            "dit"
+          ],
+          "antwoord_index": 0,
+          "uitleg": "'Adres' is een het-woord, dus het juiste verwijswoord is 'dat'."
+        },
+        {
+          "vraag": "'Ik ben … afspraak vergeten.' Welk woord past hier?",
+          "opties": [
+            "me",
+            "mijn",
+            "mij",
+            "hun"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Er staat bezit achter ('afspraak'), dus je gebruikt 'mijn'."
+        },
+        {
+          "vraag": "Wat is de vergrotende trap van 'hoog'?",
+          "opties": [
+            "hoogst",
+            "het meest hoog",
+            "hoger",
+            "hoogte"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "De vergrotende trap krijgt -er achter het woord: hoog wordt hoger."
+        },
+        {
+          "vraag": "Wat is de overtreffende trap van 'komisch'?",
+          "opties": [
+            "komischer",
+            "het meest komisch",
+            "komischst",
+            "komisch als"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Woorden die eindigen op -isch krijgen 'meest' voor het woord in de overtreffende trap."
+        },
+        {
+          "vraag": "'Het publiek … het heel warm.' Welke persoonsvorm past hier?",
+          "opties": [
+            "hadden",
+            "had",
+            "hebben",
+            "heb"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "'Het publiek' is enkelvoud, dus de persoonsvorm moet ook enkelvoud zijn: had."
+        },
+        {
+          "vraag": "'De bewoners van het verzorgingstehuis … een gratis abonnement.' Welke vorm past hier?",
+          "opties": [
+            "krijgt",
+            "krijgen",
+            "kreeg",
+            "gekregen"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "'De bewoners' is meervoud, dus de persoonsvorm moet ook meervoud zijn: krijgen."
+        },
+        {
+          "vraag": "Maak van 'Ik ben op vakantie' en 'Ik doe helemaal niets' een samengestelde zin met 'als'.",
+          "opties": [
+            "Ik ben op vakantie als ik helemaal niets doe.",
+            "Als ik op vakantie ben, doe ik helemaal niets.",
+            "Ik doe helemaal niets, als ik op vakantie.",
+            "Beide zinnen zijn correct."
+          ],
+          "antwoord_index": 3,
+          "uitleg": "Zowel 'Ik ben op vakantie als ik helemaal niets doe' als 'Als ik op vakantie ben, doe ik helemaal niets' zijn correcte samengestelde zinnen; alleen de volgorde van het voegwoord verschilt."
+        },
+        {
+          "vraag": "Zet je een komma voor het voegwoord 'en'?",
+          "opties": [
+            "Ja, altijd",
+            "Nee, nooit",
+            "Alleen bij lange zinnen",
+            "Alleen bij samengestelde zinnen met 'of'"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Voor de voegwoorden 'en' en 'of' schrijf je geen komma."
+        },
+        {
+          "vraag": "Wat controleer je NIET specifiek bij 'Schrijven zonder fouten'?",
+          "opties": [
+            "Of alle namen met een hoofdletter beginnen",
+            "Of de leestekens op de juiste plaats staan",
+            "Of het onderwerp van de tekst interessant is",
+            "Of woorden die aan elkaar moeten ook aan elkaar staan"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "Bij het controleren op fouten let je op spelling, hoofdletters en leestekens, niet op hoe interessant het onderwerp is."
+        },
+        {
+          "vraag": "Welke van deze woorden heeft een onregelmatige trap van vergelijking?",
+          "opties": [
+            "zoet",
+            "veel",
+            "zwaar",
+            "stoer"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "'Veel' verandert helemaal: veel - meer - meest, in plaats van de gewone -er/-st regel."
+        }
+      ]
+    },
+    {
+      "titel": "Spelling",
+      "uitleg": "<div class='box'><h4>Waar gaat dit hoofdstuk over?</h4><p>In deze cursus herhaal je alle spellingregels die je dit jaar geleerd hebt: hoofdletters en leestekens, de laatste letter -t of -d, meervouden, verkleinwoorden, samenstellingen en werkwoordspelling. De theorie vind je ook overzichtelijk terug in Handig!.</p></div>",
+      "subhoofdstukken": [
+        {
+          "titel": "Hoofdletters en leestekens",
+          "uitleg": "<div class='box'><h4>Hoofdletters</h4><ul class='lst'><li>Aan het begin van een zin: <i>Hoe volg je het nieuws?</i></li><li>Bij namen: <i>Jason Mettens, Barendrecht</i></li><li>Bij woorden die van namen zijn gemaakt: <i>Noord-Hollandse, Zweeds</i></li></ul><p>Namen van dagen, maanden, seizoenen en windstreken krijgen géén hoofdletter.</p></div><div class='tblwrap'><table class='tbl'><tr><th>Leesteken</th><th>Gebruik je</th></tr><tr><td>Punt, vraagteken, uitroepteken</td><td>aan het eind van een zin</td></tr><tr><td>Komma</td><td>tussen delen van een opsomming, tussen twee persoonsvormen, voor voegwoorden als 'omdat', 'maar', 'want' (niet voor 'en'/'of')</td></tr><tr><td>Dubbele punt</td><td>als je iets aankondigt of opsomt, of bij directe rede</td></tr><tr><td>Aanhalingstekens</td><td>als je iemands woorden precies opschrijft (directe rede)</td></tr></table></div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Namen van dagen, maanden, seizoenen en windstreken krijgen geen hoofdletter</li><li>Geen komma voor de voegwoorden 'en' en 'of'</li></ul></div>"
+        },
+        {
+          "titel": "Laatste letter -t of -d",
+          "uitleg": "<div class='box'><h4>Twijfelen tussen -t en -d</h4><p>Van woorden die eindigen op een t-klank, kun je soms moeilijk horen wat de laatste letter is.</p></div><div class='g2'><div class='box'><h4>Is het een werkwoord?</h4><p>Gebruik dan het schema werkwoordspelling ('t ex-fokschaap).</p></div><div class='box'><h4>Is het geen werkwoord?</h4><p>Maak het woord langer: je hoort dan of je een -t of -d moet schrijven. Bijvoorbeeld: <i>permanente → permanent</i> / <i>verboden → verbod</i>.</p></div></div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Bij werkwoorden: gebruik het schema werkwoordspelling</li><li>Bij andere woorden: maak het woord langer om de juiste letter te horen</li></ul></div>"
+        },
+        {
+          "titel": "Bijvoeglijke naamwoorden",
+          "uitleg": "<div class='box'><h4>Korte en lange vorm</h4><p>De meeste bijvoeglijke naamwoorden hebben een korte vorm (zonder -e) en een lange vorm (met -e). Bijvoorbeeld: <i>geweldig</i> → het weekend was geweldig / het geweldige weekend / een geweldig weekend.</p></div><div class='box'><h4>Zo maak je de lange vorm</h4><p>Zet een -e achter het woord: <i>stoer → stoere</i>. Let op, soms moet je daarnaast:</p><ul class='lst'><li>een -f- in een -v- veranderen: <i>sportief → sportieve</i></li><li>een -s- in een -z- veranderen: <i>wijs → wijze</i></li><li>de laatste medeklinker verdubbelen: <i>slim → slimme</i></li><li>een klinker (a, e, o, u) weghalen: <i>breed → brede</i></li></ul></div><div class='call'>Stoffelijke bijvoeglijke naamwoorden (van een materiaal gemaakt) eindigen op -en of veranderen helemaal niet: <i>katoen → een katoenen shirt</i>, <i>plastic → een plastic verpakking</i>.</div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Lange vorm = korte vorm + -e, soms met extra spellingaanpassing</li><li>Stoffelijke bijvoeglijke naamwoorden eindigen op -en of blijven gelijk</li></ul></div>"
+        },
+        {
+          "titel": "Meervouden en verkleinwoorden",
+          "uitleg": "<div class='g2'><div class='box'><h4>Meervoud op -en</h4><p>Zet -en achter het woord: <i>voorbeeld → voorbeelden</i>. Soms moet je ook: de laatste letter verdubbelen (<i>plan → plannen</i>), een klinker weghalen (<i>bioscoop → bioscopen</i>), of -s/-f veranderen in -z/-v (<i>advies → adviezen</i>, <i>bedrijf → bedrijven</i>).</p></div><div class='box'><h4>Meervoud op -s</h4><p>Zet -s achter het woord: <i>medewerker → medewerkers</i>. Gebruik 's als je het woord anders verkeerd uitspreekt: <i>komma → komma's</i>, <i>hobby → hobby's</i>.</p></div></div><div class='box'><h4>Verkleinwoorden</h4><p>Meestal plak je -je of -tje achter het woord: <i>avond → avondje</i>, <i>keuken → keukentje</i>. Soms verandert er meer: -pje/-kje/-etje (<i>geheim → geheimpje</i>), verdubbeling van de klinker bij woorden op a/i/o/u (<i>auto → autootje</i>), of een apostrof bij woorden op -y (<i>lolly → lolly'tje</i>).</p></div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Meervoud: meestal -en, soms -s (met apostrof bij verkeerde uitspraak)</li><li>Verkleinwoord: -je/-tje, met soms extra klankaanpassingen</li></ul></div>"
+        },
+        {
+          "titel": "Tussenletters en aan elkaar of los",
+          "uitleg": "<div class='box'><h4>Tussenletters in samenstellingen</h4><p>Woorden in een samenstelling schrijf je meestal aan elkaar, maar soms heb je een tussenletter nodig.</p></div><div class='tblwrap'><table class='tbl'><tr><th>Situatie</th><th>Voorbeeld</th></tr><tr><td>Eerste woord is een zelfstandig naamwoord met alleen een meervoud op -en</td><td>vlaggenmast</td></tr><tr><td>Eerste woord heeft een meervoud op -s, of op -en én -s, of komt maar één keer voor</td><td>horlogewinkel, gemeentehuis</td></tr></table></div><div class='box'><h4>Aan elkaar of los?</h4><p>Schrijf woorden aan elkaar als ze samen één begrip vormen: samenstellingen van zelfstandige naamwoorden (<i>natuurgebied</i>), werkwoorden met een voorzetsel als 'op' of 'uit' (<i>opzoeken</i>), en woorden met er-, daar-, hier-, waar- + voorzetsel (<i>ervan, daarover</i>).</p></div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Twijfel je over een tussenletter? Kijk naar het meervoud van het eerste woord</li><li>Samenstellingen die samen één begrip vormen schrijf je aan elkaar</li></ul></div>"
+        },
+        {
+          "titel": "Met of zonder -n",
+          "uitleg": "<div class='box'><h4>Zelfstandig gebruikte telwoorden</h4><p>Woorden als 'velen' en 'sommigen' zijn telwoorden die hier zelfstandig gebruikt worden: er staat geen zelfstandig naamwoord achter én je kunt er ook geen achter zetten. Je schrijft dit soort telwoorden mét -n als ze over personen gaan: <i>Velen stonden lang in de rij.</i></p></div><div class='box'><h4>Zonder -n</h4><p>Je schrijft telwoorden zonder -n als ze niet zelfstandig maar bijvoeglijk gebruikt worden (<i>alle toeschouwers</i>) of als ze niet over personen gaan (<i>sommige clubliedjes</i>). Let op: tientallen, honderden, duizenden en miljoenen schrijf je altijd met een -n.</p></div><div class='call'>Ook zelfstandig gebruikte bijvoeglijke naamwoorden krijgen -e (enkelvoud) of -n (meervoud): <i>de bekende</i> (één persoon) versus <i>onbekenden</i> (meerdere personen).</div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Zelfstandig gebruikt telwoord + over personen = mét -n</li><li>Bijvoeglijk gebruikt of niet over personen = zonder -n</li></ul></div>"
+        },
+        {
+          "titel": "Schema werkwoordspelling",
+          "uitleg": "<div class='box'><h4>'t ex-fokschaap</h4><p>Gebruik dit hulpmiddel om de -t of -d bij zwakke werkwoorden te bepalen:</p><ol class='num'><li>Haal -en van het hele werkwoord af (de ik-vorm)</li><li>Eindigt de ik-vorm op een medeklinker uit 't ex-fokschaap (t, k, f, s, ch, p)? Dan krijgt de verleden tijd -te(n) en het voltooid deelwoord een -t</li><li>Eindigt de ik-vorm ergens anders op? Dan krijgt de verleden tijd -de(n) en het voltooid deelwoord een -d</li></ol></div><div class='tblwrap'><table class='tbl'><tr><th>Vorm</th><th>Hoe maak je hem</th></tr><tr><td>Tegenwoordige tijd, enkelvoud</td><td>ik-vorm, eventueel + -t bij jij/hij achter de pv</td></tr><tr><td>Verleden tijd (zwak werkwoord)</td><td>ik-vorm + te(n) of de(n), volgens 't ex-fokschaap</td></tr><tr><td>Voltooid deelwoord (zwak werkwoord)</td><td>ge- + ik-vorm + -t/-d</td></tr></table></div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>'t ex-fokschaap helpt je -t of -d correct te spellen</li><li>Gebruik altijd eerst de ik-vorm van het werkwoord als basis</li></ul></div>"
+        },
+        {
+          "titel": "Twijfelgevallen en gebiedende wijs",
+          "uitleg": "<div class='box'><h4>Twijfelgevallen</h4><p>Sommige werkwoordsvormen klinken hetzelfde, maar schrijf je anders: dit zijn <b>homofone vormen</b>. Dit speelt bijvoorbeeld bij de persoonsvorm tegenwoordige tijd en het voltooid deelwoord van werkwoorden met voorvoegsels als ge-, be-, ver-, ont-, her- of over-.</p></div><div class='tblwrap'><table class='tbl'><tr><th>Persoonsvorm tegenwoordige tijd</th><th>Voltooid deelwoord</th></tr><tr><td>Soms gebeurt dat.</td><td>Het is zo gebeurd.</td></tr><tr><td>Dat verandert niet.</td><td>Dat is niet veranderd.</td></tr><tr><td>Zij herstelt haar fiets.</td><td>Zij heeft haar fiets hersteld.</td></tr></table></div><div class='box'><h4>Gebiedende wijs</h4><p>Bij zinnen met een bevel gebruik je de gebiedende wijs: je schrijft dan de ik-vorm van de tegenwoordige tijd, ook als je het tegen meerdere personen hebt. Er staat geen onderwerp in de zin.</p><p><i>Bestel hier je bioscoopticket. Zet je fiets op slot!</i></p></div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Twijfelgevallen herken je aan homofone werkwoordsvormen</li><li>Gebiedende wijs = ik-vorm zonder onderwerp in de zin</li></ul></div>"
+        },
+        {
+          "titel": "Onregelmatige werkwoorden en samengestelde zinnen",
+          "uitleg": "<div class='box'><h4>Vijf onregelmatige werkwoorden</h4><p>Het Nederlands heeft vijf veelgebruikte werkwoorden met afwijkende vormen: <b>zijn, hebben, willen, kunnen</b> en <b>zullen</b>. Leer deze vormen uit je hoofd.</p></div><div class='tblwrap'><table class='tbl'><tr><th></th><th>zijn</th><th>hebben</th><th>willen</th><th>kunnen</th><th>zullen</th></tr><tr><td>ik (tt)</td><td>ben</td><td>heb</td><td>wil</td><td>kan</td><td>zal</td></tr><tr><td>ik (vt)</td><td>was</td><td>had</td><td>wilde/wou</td><td>kon</td><td>zou</td></tr></table></div><div class='box'><h4>Persoonsvormen in samengestelde zinnen</h4><p>In een samengestelde zin staan meerdere persoonsvormen. Kijk of een werkwoord van tijd kan veranderen: kan dat, dan is het een persoonsvorm. Bijvoorbeeld: 'Tijn <b>woont/woonde</b> (pv) tijdelijk in een vakantiehuisje, omdat zijn huis <b>wordt/werd</b> (pv) verbouwd.'</p></div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Zijn, hebben, willen, kunnen en zullen volgen niet de gewone regels</li><li>Een persoonsvorm kun je herkennen doordat hij van tijd kan veranderen</li></ul></div>"
+        }
+      ],
+      "begrippen": [
+        {
+          "term": "Hoofdletter",
+          "uitleg": "Een grote letter, gebruikt aan het begin van een zin en bij namen.",
+          "paragraaf": "Hoofdletters en leestekens"
+        },
+        {
+          "term": "Directe rede",
+          "uitleg": "Iemands woorden precies opschrijven zoals ze gezegd zijn, tussen aanhalingstekens.",
+          "paragraaf": "Hoofdletters en leestekens"
+        },
+        {
+          "term": "'t ex-fokschaap",
+          "uitleg": "Ezelsbruggetje met medeklinkers om te bepalen of een werkwoord een -t of -d krijgt.",
+          "paragraaf": "Laatste letter -t of -d"
+        },
+        {
+          "term": "Lange vorm (bijvoeglijk naamwoord)",
+          "uitleg": "De vorm van een bijvoeglijk naamwoord met -e erachter, bijvoorbeeld 'stoere'.",
+          "paragraaf": "Bijvoeglijke naamwoorden"
+        },
+        {
+          "term": "Stoffelijk bijvoeglijk naamwoord",
+          "uitleg": "Een bijvoeglijk naamwoord dat een materiaal aangeeft, zoals 'katoenen' of 'plastic'.",
+          "paragraaf": "Bijvoeglijke naamwoorden"
+        },
+        {
+          "term": "Meervoud",
+          "uitleg": "De vorm van een zelfstandig naamwoord die meer dan één aanduidt, meestal met -en of -s.",
+          "paragraaf": "Meervouden en verkleinwoorden"
+        },
+        {
+          "term": "Verkleinwoord",
+          "uitleg": "Een woord dat iets kleiner maakt, meestal met -je of -tje.",
+          "paragraaf": "Meervouden en verkleinwoorden"
+        },
+        {
+          "term": "Tussenletter",
+          "uitleg": "Een letter (-en- of -s-) die je soms moet toevoegen tussen de delen van een samenstelling.",
+          "paragraaf": "Tussenletters en aan elkaar of los"
+        },
+        {
+          "term": "Samenstelling",
+          "uitleg": "Een woord dat is opgebouwd uit twee of meer andere woorden.",
+          "paragraaf": "Tussenletters en aan elkaar of los"
+        },
+        {
+          "term": "Zelfstandig gebruikt telwoord",
+          "uitleg": "Een telwoord zoals 'velen' of 'sommigen' zonder zelfstandig naamwoord erachter.",
+          "paragraaf": "Met of zonder -n"
+        },
+        {
+          "term": "Homofone vorm",
+          "uitleg": "Een woordvorm die hetzelfde klinkt als een andere, maar anders geschreven wordt.",
+          "paragraaf": "Twijfelgevallen en gebiedende wijs"
+        },
+        {
+          "term": "Gebiedende wijs",
+          "uitleg": "De werkwoordsvorm die je gebruikt bij een bevel, zonder onderwerp in de zin.",
+          "paragraaf": "Twijfelgevallen en gebiedende wijs"
+        },
+        {
+          "term": "Onregelmatig werkwoord",
+          "uitleg": "Een werkwoord dat niet de gewone spellingregels volgt, zoals 'zijn' of 'hebben'.",
+          "paragraaf": "Onregelmatige werkwoorden en samengestelde zinnen"
+        }
+      ],
+      "flashcards": [
+        {
+          "vraag": "Krijgen namen van maanden een hoofdletter?",
+          "antwoord": "Nee, maanden krijgen geen hoofdletter.",
+          "paragraaf": "Hoofdletters en leestekens"
+        },
+        {
+          "vraag": "Zet je een komma voor 'en' en 'of'?",
+          "antwoord": "Nee.",
+          "paragraaf": "Hoofdletters en leestekens"
+        },
+        {
+          "vraag": "Hoe bepaal je -t of -d bij een niet-werkwoord?",
+          "antwoord": "Maak het woord langer, dan hoor je welke letter juist is.",
+          "paragraaf": "Laatste letter -t of -d"
+        },
+        {
+          "vraag": "Wat is de lange vorm van 'slim'?",
+          "antwoord": "Slimme (medeklinker verdubbeld).",
+          "paragraaf": "Bijvoeglijke naamwoorden"
+        },
+        {
+          "vraag": "Waarop eindigen stoffelijke bijvoeglijke naamwoorden meestal?",
+          "antwoord": "Op -en, of ze veranderen helemaal niet.",
+          "paragraaf": "Bijvoeglijke naamwoorden"
+        },
+        {
+          "vraag": "Wat is het meervoud van 'advies'?",
+          "antwoord": "Adviezen (-s verandert in -z).",
+          "paragraaf": "Meervouden en verkleinwoorden"
+        },
+        {
+          "vraag": "Wat is het verkleinwoord van 'auto'?",
+          "antwoord": "Autootje (klinker verdubbeld).",
+          "paragraaf": "Meervouden en verkleinwoorden"
+        },
+        {
+          "vraag": "Schrijf je 'vlaggenmast' met of zonder tussen-en?",
+          "antwoord": "Met tussen-en: vlaggenmast.",
+          "paragraaf": "Tussenletters en aan elkaar of los"
+        },
+        {
+          "vraag": "Schrijf je 'velen' met of zonder -n als het over personen gaat?",
+          "antwoord": "Met -n: velen.",
+          "paragraaf": "Met of zonder -n"
+        },
+        {
+          "vraag": "Wat is het voltooid deelwoord van 'veranderen'?",
+          "antwoord": "Veranderd (met -d).",
+          "paragraaf": "Twijfelgevallen en gebiedende wijs"
+        },
+        {
+          "vraag": "Hoe schrijf je de gebiedende wijs?",
+          "antwoord": "Als de ik-vorm van de tegenwoordige tijd, zonder onderwerp.",
+          "paragraaf": "Twijfelgevallen en gebiedende wijs"
+        },
+        {
+          "vraag": "Noem de vijf onregelmatige werkwoorden.",
+          "antwoord": "Zijn, hebben, willen, kunnen en zullen.",
+          "paragraaf": "Onregelmatige werkwoorden en samengestelde zinnen"
+        }
+      ],
+      "quiz": [
+        {
+          "vraag": "Welk woord krijgt GEEN hoofdletter?",
+          "opties": [
+            "woensdag",
+            "Amsterdam",
+            "Nederlands",
+            "Jason"
+          ],
+          "antwoord_index": 0,
+          "uitleg": "Namen van dagen krijgen geen hoofdletter, in tegenstelling tot namen van personen, plaatsen en volkeren."
+        },
+        {
+          "vraag": "'Permanente' is geen werkwoord. Hoe bepaal je of het op -t of -d eindigt?",
+          "opties": [
+            "Met het schema werkwoordspelling",
+            "Door het woord langer te maken: permanent",
+            "Door te raden",
+            "Door de gebiedende wijs te gebruiken"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Bij niet-werkwoorden maak je het woord langer om te horen welke letter juist is: permanente → permanent."
+        },
+        {
+          "vraag": "Wat is de lange vorm van 'breed'?",
+          "opties": [
+            "breede",
+            "brede",
+            "breeder",
+            "breedse"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Bij 'breed' haal je de klinker weg en voeg je -e toe: brede."
+        },
+        {
+          "vraag": "Hoe schrijf je het meervoud van 'bedrijf'?",
+          "opties": [
+            "bedrijfs",
+            "bedrijven",
+            "bedrijfen",
+            "bedrijfjes"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Bij 'bedrijf' verandert de -f in een -v: bedrijven."
+        },
+        {
+          "vraag": "Wat is het verkleinwoord van 'glas'?",
+          "opties": [
+            "glasje",
+            "glaasje",
+            "glassje",
+            "glaje"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Bij 'glas' wordt de korte klank in het verkleinwoord lang: glaasje."
+        },
+        {
+          "vraag": "Welke samenstelling heeft een tussen-s?",
+          "opties": [
+            "vlaggenmast",
+            "horlogewinkel",
+            "kaartspel",
+            "natuurgebied"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "'Horloge' heeft een meervoud op -s, dus 'horlogewinkel' krijgt een tussen-s."
+        },
+        {
+          "vraag": "'… stonden lang in de rij, maar sommigen mochten niet naar binnen.' Welk woord past?",
+          "opties": [
+            "Vele",
+            "Velen",
+            "Veel",
+            "Veler"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Het telwoord gaat hier zelfstandig over personen, dus je schrijft 'velen' met -n."
+        },
+        {
+          "vraag": "'Na het doelpunt sprongen alle … op.' Welk woord past hier?",
+          "opties": [
+            "toeschouwer",
+            "toeschouwers",
+            "toeschouwer's",
+            "toeschouwsn"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Hier gaat het om het zelfstandig naamwoord 'toeschouwers' zelf, niet om een zelfstandig gebruikt telwoord."
+        },
+        {
+          "vraag": "Wat is het voltooid deelwoord van 'gebeuren'?",
+          "opties": [
+            "gebeurt",
+            "gebeurd",
+            "gebeurde",
+            "gebeuren"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "'Het is zo gebeurd' is het voltooid deelwoord, met -d, in tegenstelling tot de persoonsvorm 'gebeurt'."
+        },
+        {
+          "vraag": "'… hier je bioscoopticket!' Welke vorm van 'bestellen' past in deze gebiedende wijs?",
+          "opties": [
+            "Bestelt",
+            "Bestel",
+            "Besteld",
+            "Bestellen"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "De gebiedende wijs is de ik-vorm van de tegenwoordige tijd: bestel."
+        },
+        {
+          "vraag": "Welk werkwoord is GEEN onregelmatig werkwoord?",
+          "opties": [
+            "zijn",
+            "wandelen",
+            "hebben",
+            "kunnen"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "'Wandelen' is een gewoon (zwak) werkwoord; zijn, hebben en kunnen zijn onregelmatig."
+        },
+        {
+          "vraag": "Hoe herken je een persoonsvorm in een samengestelde zin?",
+          "opties": [
+            "Aan de lengte van het woord",
+            "Doordat het werkwoord van tijd kan veranderen",
+            "Aan de hoofdletter",
+            "Aan het voegwoord"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Een persoonsvorm kan van tijd veranderen (tegenwoordige tijd naar verleden tijd); andere werkwoordsvormen kunnen dat niet."
+        }
+      ]
+    },
+    {
+      "titel": "Eindexamen",
+      "uitleg": "<div class='box'><h4>Waar gaat dit hoofdstuk over?</h4><p>In deze cursus oefen je specifiek met het soort vragen dat vaak voorkomt in het eindexamen Nederlands: lezen, kijken en luisteren en schrijven. Niet alle theorie uit het boek wordt hier letterlijk bevraagd, maar je hebt die kennis wel nodig om de examenteksten goed te begrijpen.</p></div>",
+      "subhoofdstukken": [
+        {
+          "titel": "Digitaal examen doen",
+          "uitleg": "<div class='box'><h4>Hoe werkt het examen?</h4><p>Je examen maak je digitaal, op de computer. Het digitale examen Nederlands heeft drie onderdelen: <b>lezen</b>, <b>kijken en luisteren</b> en <b>schrijven</b>. Bij lezen en kijken/luisteren beantwoord je vragen bij teksten en fragmenten; bij één onderdeel hoort een schrijfopdracht.</p></div><div class='g2'><div class='box'><h4>Tijdens het examen</h4><ul class='lst'><li>Je mag een papieren woordenboek gebruiken, maar dat kost tijd</li><li>Gebruik eerst woordraadstrategieën om de betekenis van een woord te achterhalen</li><li>Zoek pas op als je een woord echt nodig hebt voor een vraag</li></ul></div><div class='box'><h4>Woordenlijst Examenwoorden</h4><p>Achter in het boek staat een woordenlijst met betekenissen van woorden die vaak in het examen voorkomen.</p></div></div><div class='call'>Maak van tevoren een oefenexamen, zodat je weet hoe de online examenomgeving eruitziet en werkt.</div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Het examen bestaat uit lezen, kijken/luisteren en schrijven</li><li>Gebruik woordraadstrategieën voordat je het woordenboek gebruikt</li></ul></div>"
+        },
+        {
+          "titel": "Lezen: Examenteksten lezen",
+          "uitleg": "<div class='box'><h4>Een tekst goed lezen</h4><p>Voordat je een tekst helemaal gaat lezen, bekijk je hem eerst goed. Dit doe je door de titel, de bron en de eerste en de laatste alinea te lezen. Zo bepaal je snel het onderwerp en weet je al iets over de inhoud.</p></div><div class='call'>Lees daarna de hele tekst precies, voordat je begint met het beantwoorden van de vragen.</div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Bekijk eerst titel, bron en eerste/laatste alinea</li><li>Lees pas daarna de hele tekst en beantwoord de vragen</li></ul></div>"
+        },
+        {
+          "titel": "Lezen: Examenvragen beantwoorden",
+          "uitleg": "<div class='box'><h4>Vijf soorten examenvragen</h4><p>Examenvragen gaan meestal over één van deze vijf onderwerpen. Voor elk type geldt: lees het bijbehorende tekstdeel goed voordat je antwoordt.</p></div><div class='g2'><div class='box'><h4>Inhoud van de tekst</h4><p>Vragen met vraagwoorden als wie, wat, waarom, of waar/niet-waar-vragen. Lees de tekst heel goed.</p></div><div class='box'><h4>Bedoeling van woorden en zinnen</h4><p>Gebruik woordraadstrategieën: een synoniem, omschrijving, voorbeeld, tegenstelling of bekend woorddeel zoeken.</p></div><div class='box'><h4>Doel van de tekst</h4><p>Let op titel, bron en hoofdgedachte. Wat wil de schrijver bij de lezer bereiken: informeren, overtuigen, waarschuwen, adviseren, amuseren...?</p></div><div class='box'><h4>Inleiding van de tekst</h4><p>Het eerste deel van de tekst maakt je bekend met het onderwerp, bijvoorbeeld met een voorbeeld, anekdote of aanleiding.</p></div></div><div class='box'><h4>Alinea's en tussenkopjes</h4><p>Een tekst is verdeeld in alinea's die bij elkaar horend deelonderwerp behandelen. Tussenkopjes zijn titels boven een alinea die het deelonderwerp aangeven.</p></div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Herken welk type vraag je krijgt: inhoud, bedoeling, doel, inleiding of alinea's/tussenkopjes</li><li>Gebruik bij elk type de bijpassende leesstrategie</li></ul></div>"
+        },
+        {
+          "titel": "Kijken en luisteren",
+          "uitleg": "<div class='box'><h4>Vragen bij fragmenten</h4><p>Bij het onderdeel kijken en luisteren bekijk je fragmenten uit langere programma's. Vragen gaan vaak over de inhoud van het fragment, maar soms ook over de functie van het beeld of hoe mensen reageren.</p></div><div class='box'><h4>Zo beantwoord je vragen bij fragmenten</h4><ol class='num'><li>Lees de vraag, nog niet de antwoorden</li><li>Bekijk het hele fragment, zodat je geen informatie mist</li><li>Lees de vraag nog een keer en bedenk zelf wat het antwoord zou kunnen zijn</li><li>Lees pas nu de antwoordmogelijkheden en vergelijk ze met elkaar</li></ol></div><div class='call warn'><b>Veelgemaakte fout:</b> te snel een antwoordmogelijkheid kiezen. Antwoorden lijken vaak op elkaar, dus lees ze goed.</div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Bekijk eerst het hele fragment voordat je de antwoorden leest</li><li>Vergelijk antwoordmogelijkheden zorgvuldig met elkaar</li></ul></div>"
+        },
+        {
+          "titel": "Schrijven",
+          "uitleg": "<div class='box'><h4>Een schrijfopdracht maken</h4><p>Bij het examen schrijf je vaak een zakelijke brief of e-mail. De schrijfopdracht begint meestal met een situatiebeschrijving, gevolgd door de opdracht zelf.</p></div><div class='g3'><div class='box'><h4>Stap 1: Lezen</h4><p>Wat voor tekst moet ik schrijven? Wat is het doel? Wie is het publiek?</p></div><div class='box'><h4>Stap 2: Schrijven</h4><p>Verdeel alle genoemde onderdelen logisch over inleiding, middenstuk en slot. Vul aan met eigen informatie.</p></div><div class='box'><h4>Stap 3: Controleren</h4><p>Controleer inhoud, taalgebruik (spelling, hoofdletters, leestekens) en presentatie.</p></div></div><div class='call warn'><b>Veelgemaakte fout:</b> vergeten om het gevraagde aantal woorden te halen. Bij te weinig woorden krijg je geen punten voor taalgebruik.</div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Je krijgt punten voor inhoud, taalgebruik en presentatie/conventies</li><li>Controleer altijd of je alle gevraagde onderdelen hebt verwerkt</li></ul></div>"
+        }
+      ],
+      "begrippen": [
+        {
+          "term": "Woordraadstrategie",
+          "uitleg": "Een manier om de betekenis van een onbekend woord te achterhalen, zoals een synoniem of omschrijving zoeken.",
+          "paragraaf": "Digitaal examen doen"
+        },
+        {
+          "term": "Synoniem",
+          "uitleg": "Een woord met ongeveer dezelfde betekenis als een ander woord.",
+          "paragraaf": "Lezen: Examenvragen beantwoorden"
+        },
+        {
+          "term": "Hoofdgedachte",
+          "uitleg": "De belangrijkste boodschap die de schrijver met een tekst wil overbrengen.",
+          "paragraaf": "Lezen: Examenvragen beantwoorden"
+        },
+        {
+          "term": "Tussenkopje",
+          "uitleg": "Een titel boven een alinea die het deelonderwerp van die alinea aangeeft.",
+          "paragraaf": "Lezen: Examenvragen beantwoorden"
+        },
+        {
+          "term": "Deelonderwerp",
+          "uitleg": "Een kleiner onderwerp dat samen met andere deelonderwerpen het hoofdonderwerp van een tekst vormt.",
+          "paragraaf": "Lezen: Examenvragen beantwoorden"
+        },
+        {
+          "term": "Situatiebeschrijving",
+          "uitleg": "De uitleg aan het begin van een schrijfopdracht die de context van de opdracht schetst.",
+          "paragraaf": "Schrijven"
+        },
+        {
+          "term": "Conventies",
+          "uitleg": "De regels voor de vorm van een tekst, zoals spelling, hoofdletters en leestekens.",
+          "paragraaf": "Schrijven"
+        },
+        {
+          "term": "Oefenexamen",
+          "uitleg": "Een proefversie van het examen waarmee je vooraf kunt oefenen met de online examenomgeving.",
+          "paragraaf": "Digitaal examen doen"
+        },
+        {
+          "term": "Bron",
+          "uitleg": "De plaats waar een tekst vandaan komt, bijvoorbeeld een krant of website; helpt bij het bepalen van het onderwerp.",
+          "paragraaf": "Lezen: Examenteksten lezen"
+        },
+        {
+          "term": "Fragment",
+          "uitleg": "Een kort stukje uit een langer kijk- of luisterprogramma waarover examenvragen gesteld worden.",
+          "paragraaf": "Kijken en luisteren"
+        }
+      ],
+      "flashcards": [
+        {
+          "vraag": "Uit welke drie onderdelen bestaat het examen Nederlands?",
+          "antwoord": "Lezen, kijken en luisteren, en schrijven.",
+          "paragraaf": "Digitaal examen doen"
+        },
+        {
+          "vraag": "Wanneer gebruik je pas het woordenboek tijdens het examen?",
+          "antwoord": "Pas als je de betekenis van een woord echt nodig hebt voor een vraag.",
+          "paragraaf": "Digitaal examen doen"
+        },
+        {
+          "vraag": "Wat lees je eerst voordat je een hele examentekst leest?",
+          "antwoord": "De titel, de bron en de eerste en laatste alinea.",
+          "paragraaf": "Lezen: Examenteksten lezen"
+        },
+        {
+          "vraag": "Noem de vijf soorten examenvragen over een tekst.",
+          "antwoord": "Inhoud, bedoeling van woorden/zinnen, doel van de tekst, inleiding, en alinea's/tussenkopjes.",
+          "paragraaf": "Lezen: Examenvragen beantwoorden"
+        },
+        {
+          "vraag": "Wat is de eerste stap bij het beantwoorden van een vraag bij een fragment?",
+          "antwoord": "Eerst de vraag lezen, nog niet de antwoorden.",
+          "paragraaf": "Kijken en luisteren"
+        },
+        {
+          "vraag": "Wanneer lees je bij een fragmentvraag de antwoordmogelijkheden?",
+          "antwoord": "Pas nadat je het hele fragment hebt bekeken en zelf een antwoord hebt bedacht.",
+          "paragraaf": "Kijken en luisteren"
+        },
+        {
+          "vraag": "Waarmee begint een schrijfopdracht meestal?",
+          "antwoord": "Met een situatiebeschrijving, gevolgd door de opdracht.",
+          "paragraaf": "Schrijven"
+        },
+        {
+          "vraag": "Waarop word je bij de schrijfopdracht beoordeeld?",
+          "antwoord": "Op inhoud, taalgebruik en presentatie/conventies.",
+          "paragraaf": "Schrijven"
+        },
+        {
+          "vraag": "Wat gebeurt er als je te weinig woorden schrijft bij de schrijfopdracht?",
+          "antwoord": "Je krijgt dan geen punten voor taalgebruik.",
+          "paragraaf": "Schrijven"
+        },
+        {
+          "vraag": "Waarom is het slim om vooraf een oefenexamen te maken?",
+          "antwoord": "Zo weet je hoe de online examenomgeving eruitziet en werkt.",
+          "paragraaf": "Digitaal examen doen"
+        }
+      ],
+      "quiz": [
+        {
+          "vraag": "Uit welke drie onderdelen bestaat het digitale examen Nederlands?",
+          "opties": [
+            "Lezen, spreken en luisteren",
+            "Lezen, kijken en luisteren, en schrijven",
+            "Spelling, grammatica en fictie",
+            "Lezen, schrijven en rekenen"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Het examen Nederlands bestaat uit lezen, kijken en luisteren, en schrijven."
+        },
+        {
+          "vraag": "Wat doe je het beste voordat je het woordenboek gebruikt tijdens het examen?",
+          "opties": [
+            "Meteen elk onbekend woord opzoeken",
+            "Eerst woordraadstrategieën proberen",
+            "Het woord overslaan",
+            "Een klasgenoot om hulp vragen"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Woordraadstrategieën gebruiken kost minder tijd dan meteen het woordenboek raadplegen."
+        },
+        {
+          "vraag": "Wat lees je als eerste van een examentekst?",
+          "opties": [
+            "Alleen de laatste alinea",
+            "Titel, bron en eerste/laatste alinea",
+            "Alle vragen eerst",
+            "Alleen de tussenkopjes"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Zo bepaal je snel het onderwerp en de inhoud van de tekst, voordat je hem helemaal leest."
+        },
+        {
+          "vraag": "Een vraag als 'Waarom mocht Van Dam dit zeggen?' gaat over...",
+          "opties": [
+            "de bedoeling van woorden en zinnen",
+            "de inhoud van de tekst",
+            "het doel van de tekst",
+            "de vertelvolgorde"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Deze vraag gaat over de inhoud van de tekst en vraagt om precies te lezen wat er staat."
+        },
+        {
+          "vraag": "Een vraag over 'wat wil de schrijver bij de lezer bereiken' gaat over...",
+          "opties": [
+            "het doel van de tekst",
+            "de inleiding",
+            "alinea's en tussenkopjes",
+            "de bron van de tekst"
+          ],
+          "antwoord_index": 0,
+          "uitleg": "Het tekstdoel gaat over wat de schrijver wil bereiken: informeren, overtuigen, amuseren enzovoort."
+        },
+        {
+          "vraag": "Wat is de eerste stap bij het beantwoorden van een vraag bij een kijk/luisterfragment?",
+          "opties": [
+            "De antwoordmogelijkheden lezen",
+            "Het fragment meteen twee keer bekijken",
+            "Eerst de vraag lezen, nog niet de antwoorden",
+            "Het fragment overslaan"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "Je leest eerst de vraag, zodat je weet waar je op moet letten tijdens het fragment."
+        },
+        {
+          "vraag": "Waarom bekijk je het hele fragment voordat je de antwoorden leest?",
+          "opties": [
+            "Om tijd te verspillen",
+            "Zodat je zeker weet dat je geen informatie mist",
+            "Omdat dat verplicht is bij elke vraag",
+            "Om het fragment te kunnen overslaan"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Zo mis je geen informatie die nodig is om de vraag goed te beantwoorden."
+        },
+        {
+          "vraag": "Waarmee begint een schrijfopdracht op het examen meestal?",
+          "opties": [
+            "Met de beoordelingscriteria",
+            "Met een situatiebeschrijving",
+            "Met een voorbeeldtekst",
+            "Met een woordenlijst"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Een schrijfopdracht begint meestal met een situatiebeschrijving, gevolgd door de eigenlijke opdracht."
+        },
+        {
+          "vraag": "Waarop word je beoordeeld bij de schrijfopdracht?",
+          "opties": [
+            "Alleen op de lengte van de tekst",
+            "Inhoud, taalgebruik en presentatie/conventies",
+            "Alleen op je handschrift",
+            "Alleen op de titel"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Je krijgt punten voor inhoud, taalgebruik (spelling/formuleren) en presentatie/conventies."
+        },
+        {
+          "vraag": "Wat gebeurt er als je tekst korter is dan het gevraagde aantal woorden?",
+          "opties": [
+            "Niets, dat maakt niet uit",
+            "Je krijgt geen punten voor taalgebruik",
+            "Je tekst wordt automatisch afgekeurd",
+            "Je krijgt extra tijd"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Bij minder woorden dan gevraagd krijg je geen punten voor taalgebruik."
+        }
+      ]
+    },
+    {
+      "titel": "Puzzelen",
+      "uitleg": "<div class='box'><h4>Waar gaat dit hoofdstuk over?</h4><p>In deze cursus oefen je met woordenschat door middel van puzzels: kruiswoordpuzzels, rebussen en woordzoekers. De woorden in de puzzels komen letterlijk terug uit de andere cursussen en thema's, zoals Meer dan lezen, Media en Thema A Beroepen. Zo herhaal je op een speelse manier belangrijke begrippen uit het hele boek.</p></div><div class='call'>Weet je een woord niet meer? Kijk dan terug in de paragraaf waar het bij hoort - die staat steeds boven de puzzel vermeld.</div>",
+      "subhoofdstukken": [
+        {
+          "titel": "Woordenschat herhalen",
+          "uitleg": "<div class='box'><h4>Puzzelen met begrippen</h4><p>Elke puzzel in deze cursus hoort bij een of meer paragrafen uit een andere cursus of thema. Zo hoort de puzzel 'De keuze is reuze' bij Thema A Beroepen (Waar ga je voor? en Belangrijk beroep), en de puzzel 'Toekomstpuzzel' bij Meer dan lezen (Instructieve teksten en Teksten uit het mbo).</p></div><div class='g2'><div class='box'><h4>Voorbeeld: begrippen bij Beroepen</h4><ul class='lst'><li>Een <b>discussie</b>: een gesprek waarin je iemand wilt overtuigen van jouw mening</li><li>Een <b>tegenargument</b>: een argument dat de andere partij noemt</li><li>Een <b>bijbaan</b>: betaald werk dat je naast je studie doet</li></ul></div><div class='box'><h4>Voorbeeld: begrippen bij Meer dan lezen</h4><ul class='lst'><li>Een <b>samenvatting</b>: een korte versie van een tekst</li><li>Een <b>mindmap</b>: een soort woordweb met kleuren en tekeningen</li><li><b>Informatiedichtheid</b>: de hoeveelheid informatie in een bron</li></ul></div></div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>De puzzels herhalen begrippen uit eerdere cursussen en thema's</li><li>Ken je een woord niet meer? Zoek het op in de bijbehorende paragraaf</li></ul></div>"
+        }
+      ],
+      "begrippen": [
+        {
+          "term": "Discussie",
+          "uitleg": "Een gesprek waarin je iemand wilt overtuigen van jouw mening of standpunt.",
+          "paragraaf": "Woordenschat herhalen"
+        },
+        {
+          "term": "Tegenargument",
+          "uitleg": "Een argument dat de andere partij in een discussie noemt.",
+          "paragraaf": "Woordenschat herhalen"
+        },
+        {
+          "term": "Weerlegging",
+          "uitleg": "Een reactie op een tegenargument van de ander.",
+          "paragraaf": "Woordenschat herhalen"
+        },
+        {
+          "term": "Bijbaan",
+          "uitleg": "Betaald werk dat je naast je studie doet.",
+          "paragraaf": "Woordenschat herhalen"
+        },
+        {
+          "term": "Collega",
+          "uitleg": "Iemand die bij dezelfde werkgever werkt als jij.",
+          "paragraaf": "Woordenschat herhalen"
+        },
+        {
+          "term": "Beroepengroep",
+          "uitleg": "Een groep beroepen die bij elkaar hoort.",
+          "paragraaf": "Woordenschat herhalen"
+        },
+        {
+          "term": "Samenvatting",
+          "uitleg": "Een korte versie van een tekst met de belangrijkste informatie.",
+          "paragraaf": "Woordenschat herhalen"
+        },
+        {
+          "term": "Ervaring",
+          "uitleg": "Iets wat je weet omdat je het zelf hebt meegemaakt of gedaan.",
+          "paragraaf": "Woordenschat herhalen"
+        },
+        {
+          "term": "Feitelijke argumenten",
+          "uitleg": "Argumenten die je kunt controleren, ze zijn objectief.",
+          "paragraaf": "Woordenschat herhalen"
+        },
+        {
+          "term": "Mentor",
+          "uitleg": "Iemand die je kan helpen, bijvoorbeeld bij een profielkeuze, vervolgopleiding of beroep.",
+          "paragraaf": "Woordenschat herhalen"
+        },
+        {
+          "term": "Mindmap",
+          "uitleg": "Een soort woordweb met kleuren en tekeningen om informatie te verwerken.",
+          "paragraaf": "Woordenschat herhalen"
+        }
+      ],
+      "flashcards": [
+        {
+          "vraag": "Wat is een discussie?",
+          "antwoord": "Een gesprek waarin je iemand wilt overtuigen van jouw mening of standpunt.",
+          "paragraaf": "Woordenschat herhalen"
+        },
+        {
+          "vraag": "Wat is een tegenargument?",
+          "antwoord": "Een argument dat de andere partij noemt.",
+          "paragraaf": "Woordenschat herhalen"
+        },
+        {
+          "vraag": "Wat is een weerlegging?",
+          "antwoord": "Een reactie op een tegenargument van de ander.",
+          "paragraaf": "Woordenschat herhalen"
+        },
+        {
+          "vraag": "Wat is een bijbaan?",
+          "antwoord": "Betaald werk dat je naast je studie doet.",
+          "paragraaf": "Woordenschat herhalen"
+        },
+        {
+          "vraag": "Wat is een collega?",
+          "antwoord": "Iemand die bij dezelfde werkgever werkt als jij.",
+          "paragraaf": "Woordenschat herhalen"
+        },
+        {
+          "vraag": "Wat is een samenvatting?",
+          "antwoord": "Een korte versie van een tekst.",
+          "paragraaf": "Woordenschat herhalen"
+        },
+        {
+          "vraag": "Wat zijn feitelijke argumenten?",
+          "antwoord": "Argumenten die je kunt controleren; ze zijn objectief.",
+          "paragraaf": "Woordenschat herhalen"
+        },
+        {
+          "vraag": "Wat is een mentor?",
+          "antwoord": "Iemand die je kan helpen bij bijvoorbeeld een profielkeuze of beroepskeuze.",
+          "paragraaf": "Woordenschat herhalen"
+        },
+        {
+          "vraag": "Wat is een mindmap?",
+          "antwoord": "Een soort woordweb met kleuren en tekeningen.",
+          "paragraaf": "Woordenschat herhalen"
+        },
+        {
+          "vraag": "Bij welke paragraaf hoort de puzzel 'De keuze is reuze'?",
+          "antwoord": "Bij Thema A Beroepen: Waar ga je voor? en Belangrijk beroep.",
+          "paragraaf": "Woordenschat herhalen"
+        }
+      ],
+      "quiz": [
+        {
+          "vraag": "Wat is een discussie?",
+          "opties": [
+            "Een tekst met feiten",
+            "Een gesprek waarin je iemand wilt overtuigen van jouw mening",
+            "Een vorm van beeldspraak",
+            "Een korte presentatie van één minuut"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Een discussie is een gesprek waarin je probeert de ander te overtuigen van jouw mening of standpunt."
+        },
+        {
+          "vraag": "Wat noem je een argument dat de andere partij in een discussie noemt?",
+          "opties": [
+            "Een feit",
+            "Een tegenargument",
+            "Een tekstverband",
+            "Een weerlegging"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Een tegenargument is een argument dat de andere partij inbrengt tegen jouw standpunt."
+        },
+        {
+          "vraag": "Wat doe je bij een weerlegging?",
+          "opties": [
+            "Je herhaalt je eigen mening",
+            "Je reageert op een tegenargument van de ander",
+            "Je stelt een nieuwe vraag",
+            "Je vat de tekst samen"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Een weerlegging is je reactie op een tegenargument dat de ander noemt."
+        },
+        {
+          "vraag": "Wat is een bijbaan?",
+          "opties": [
+            "Werk dat je naast je studie doet",
+            "Een collega die je helpt",
+            "Een vast dienstverband",
+            "Een beroepengroep"
+          ],
+          "antwoord_index": 0,
+          "uitleg": "Een bijbaan is betaald werk dat je naast je studie doet."
+        },
+        {
+          "vraag": "Wat is een collega?",
+          "opties": [
+            "Iemand die bij dezelfde werkgever werkt als jij",
+            "Een mentor",
+            "Een tegenargument",
+            "Een tekstsoort"
+          ],
+          "antwoord_index": 0,
+          "uitleg": "Een collega is iemand die bij dezelfde werkgever werkt als jij."
+        },
+        {
+          "vraag": "Wat is een beroepengroep?",
+          "opties": [
+            "Een groep beroepen die bij elkaar hoort",
+            "Een enkel beroep",
+            "Een vak op school",
+            "Een tekstsoort"
+          ],
+          "antwoord_index": 0,
+          "uitleg": "Een beroepengroep is een verzameling beroepen die inhoudelijk bij elkaar horen."
+        },
+        {
+          "vraag": "Wat is een samenvatting?",
+          "opties": [
+            "Een lange, uitgebreide versie van een tekst",
+            "Een korte versie van een tekst",
+            "Een mindmap met tekeningen",
+            "Een schema met cijfers"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Een samenvatting is een korte versie van een tekst met de belangrijkste informatie."
+        },
+        {
+          "vraag": "Wat zijn feitelijke argumenten?",
+          "opties": [
+            "Argumenten die je kunt controleren",
+            "Argumenten met een mening erin",
+            "Argumenten zonder onderbouwing",
+            "Argumenten die altijd fout zijn"
+          ],
+          "antwoord_index": 0,
+          "uitleg": "Feitelijke argumenten zijn objectief en dus controleerbaar."
+        },
+        {
+          "vraag": "Wat is een mentor?",
+          "opties": [
+            "Een tekstsoort",
+            "Iemand die je kan helpen bij bijvoorbeeld een profielkeuze",
+            "Een verkleinwoord",
+            "Een discussietechniek"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Een mentor kan je helpen, bijvoorbeeld bij een profielkeuze, vervolgopleiding of beroepskeuze."
+        },
+        {
+          "vraag": "Waar hoort de puzzel 'Toekomstpuzzel' bij?",
+          "opties": [
+            "Bij Thema C Nepnieuws",
+            "Bij Meer dan lezen: Instructieve teksten en Teksten uit het mbo",
+            "Bij Cursus 6 Spelling",
+            "Bij Thema B Een goed verhaal"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "De 'Toekomstpuzzel' herhaalt woorden uit Meer dan lezen: Instructieve teksten en Teksten uit het mbo."
+        }
+      ]
+    },
+    {
+      "titel": "Beroepen",
+      "uitleg": "<div class='box'><h4>Waar gaat dit thema over?</h4><p>In dit thema ga je aan de slag met verschillende bronnen om je kennis over studie- en werkkeuzes te vergroten. Je oefent met vaardigheden die je nodig hebt voor de eindopdrachten: een discussie voeren, een mondelinge presentatie geven en een instructie schrijven.</p></div>",
+      "subhoofdstukken": [
+        {
+          "titel": "Waar ga je voor?",
+          "uitleg": "<div class='box'><h4>Nadenken over studie en beroep</h4><p>Misschien heb je al een duidelijk idee over een vervolgopleiding of beroep, misschien ook niet. Het kan geen kwaad om breder te kijken, bijvoorbeeld door het invullen van een studiekeuzetest.</p></div><div class='call'>Een 'foute' studiekeuze bestaat niet: van elke opleiding leer je iets. Het is niet erg om te twijfelen - dat hoort bij het maken van een keuze.</div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Twijfelen over je studiekeuze is normaal</li><li>Een studiekeuzetest kan helpen om breder te kijken naar mogelijkheden</li></ul></div>"
+        },
+        {
+          "titel": "Belangrijk beroep",
+          "uitleg": "<div class='box'><h4>Een discussie voorbereiden</h4><p>In een discussie voer je een gesprek waarin je iemand wilt overtuigen van jouw mening of standpunt. Je gebruikt daarvoor argumenten.</p></div><div class='g2'><div class='box'><h4>Feitelijke argumenten</h4><p>Argumenten die je kunt controleren (objectief). Bijvoorbeeld: 'Uit onderzoek blijkt dat 70% van de mensen die in de bouw werken gehoorbeschadiging oploopt.'</p></div><div class='box'><h4>Niet-feitelijke argumenten</h4><p>Argumenten met een mening, gevoel, vermoeden of waardeoordeel; niet te controleren. Bijvoorbeeld: 'Ik vind dat het wel meevalt hoeveel geluid de machines maken.'</p></div></div><div class='box'><h4>Zo bereid je een discussie voor</h4><ol class='num'><li>Bepaal jouw mening over het onderwerp</li><li>Noteer feitelijke en niet-feitelijke argumenten bij jouw mening</li><li>Bedenk bij niet-feitelijke argumenten hoe je ze onderbouwt</li><li>Bedenk welke tegenargumenten de andere partij zal noemen</li><li>Bedenk een reactie op hun tegenargumenten (weerlegging)</li></ol></div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Feitelijke argumenten zijn controleerbaar, niet-feitelijke niet</li><li>Bereid je altijd voor op mogelijke tegenargumenten</li></ul></div>"
+        },
+        {
+          "titel": "Wat ga jij doen?",
+          "uitleg": "<div class='box'><h4>Een mondelinge presentatie voorbereiden</h4><p>Bij deze paragraaf bereid je een mondelinge presentatie voor over je eigen beroepskeuze. Hiervoor gebruik je informatie die je zelf hebt verzameld.</p></div><div class='box'><h4>Stappenplan spreken</h4><ol class='num'><li>Bepaal het onderwerp van je presentatie</li><li>Bedenk wat je erover weet: maak een woordweb of steekwoorden</li><li>Groepeer bij elkaar horende woorden tot deelonderwerpen</li><li>Kies deelonderwerpen en zet ze in een logische volgorde</li><li>Zoek zo nodig aanvullende informatie op</li><li>Zorg voor een inleiding, middenstuk en slot</li><li>Noteer steekwoorden op spreekkaartjes</li><li>Zoek afbeeldingen of voorwerpen die je verhaal ondersteunen</li><li>Gebruik bij een powerpoint weinig tekst per dia</li><li>Oefen je presentatie hardop</li><li>Verbeter je presentatie waar nodig</li></ol></div><div class='call warn'><b>Veelgemaakte fout:</b> je dia's voorlezen. Dat is geen goede manier om de aandacht van je publiek vast te houden - gebruik spreekkaartjes als geheugensteuntje.</div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Een presentatie heeft altijd een inleiding, middenstuk en slot</li><li>Gebruik spreekkaartjes in plaats van je dia's voor te lezen</li></ul></div>"
+        },
+        {
+          "titel": "Vertel eens!",
+          "uitleg": "<div class='box'><h4>Zo schrijf je een instructieve tekst</h4><p>Schrijf of spreek je zelf een instructieve tekst? Zorg dan voor een logische opbouw die past bij het tekstdoel.</p></div><div class='g2'><div class='box'><h4>Opbouw</h4><ul class='lst'><li>Maak direct duidelijk waar de instructie over gaat</li><li>Geef stap voor stap aan wat iemand moet doen</li><li>Gebruik de gebiedende wijs: 'Knip... Controleer...'</li><li>Gebruik signaalwoorden voor tijdsvolgorde: 'eerst... tot slot...'</li></ul></div><div class='box'><h4>Extra tips</h4><ul class='lst'><li>Gebruik ook andere tekstverbanden, zoals doel-middel en opsomming</li><li>Geef je tekst een duidelijke titel</li><li>Gebruik afbeeldingen die de stappen verduidelijken</li></ul></div></div><div class='call'>Bedenk bij elke afbeelding eerst wat de functie moet zijn: de aandacht trekken, aansporen tot actie, informatie verduidelijken of nieuwe informatie toevoegen.</div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Een instructie gebruikt de gebiedende wijs en signaalwoorden voor volgorde</li><li>Kies afbeeldingen bewust, met een duidelijke functie</li></ul></div>"
+        },
+        {
+          "titel": "Discussie, mondelinge presentatie, instructie",
+          "uitleg": "<div class='box'><h4>Drie eindopdrachten</h4><p>In deze paragraaf voer je de eindopdrachten van dit thema uit: een discussie voeren, een mondelinge presentatie geven en een instructie en ervaringsverslag schrijven. Je past hierbij toe wat je in de paragrafen 1 tot en met 4 hebt geleerd.</p></div><div class='g3'><div class='box'><h4>Discussie</h4><p>Je voert een discussie waarbij je feitelijke en niet-feitelijke argumenten gebruikt.</p></div><div class='box'><h4>Mondelinge presentatie</h4><p>Je geeft een presentatie van ongeveer vijf minuten over je beroepskeuze.</p></div><div class='box'><h4>Instructie en ervaringsverslag</h4><p>Je schrijft een werkinstructie en een ervaringsverslag voor een collega.</p></div></div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>De eindopdrachten combineren discussie-, spreek- en schrijfvaardigheid</li><li>Gebruik in elke opdracht de theorie uit de eerdere paragrafen</li></ul></div>"
+        },
+        {
+          "titel": "Lekker gewerkt?",
+          "uitleg": "<div class='box'><h4>Evaluatie</h4><p>Aan het eind van het thema kijk je kritisch terug op je eigen werk. Je beantwoordt vragen als: wat ging er goed, wat ging er minder goed, en wat zou je de volgende keer anders doen?</p></div><div class='call'>Een goede evaluatie is eerlijk: benoem niet alleen wat goed ging, maar ook wat beter kan.</div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Kritisch terugkijken helpt je om de volgende keer beter te presteren</li><li>Leg je antwoorden altijd uit met een voorbeeld</li></ul></div>"
+        }
+      ],
+      "begrippen": [
+        {
+          "term": "Studiekeuzetest",
+          "uitleg": "Een test die je helpt breder te kijken naar mogelijke vervolgopleidingen of beroepen.",
+          "paragraaf": "Waar ga je voor?"
+        },
+        {
+          "term": "Discussie",
+          "uitleg": "Een gesprek waarin je iemand wilt overtuigen van jouw mening of standpunt.",
+          "paragraaf": "Belangrijk beroep"
+        },
+        {
+          "term": "Feitelijk argument",
+          "uitleg": "Een argument dat je kunt controleren, bijvoorbeeld met onderzoek of cijfers.",
+          "paragraaf": "Belangrijk beroep"
+        },
+        {
+          "term": "Niet-feitelijk argument",
+          "uitleg": "Een argument met een mening, gevoel of vermoeden dat je niet kunt controleren.",
+          "paragraaf": "Belangrijk beroep"
+        },
+        {
+          "term": "Weerlegging",
+          "uitleg": "Je reactie op een tegenargument van de ander.",
+          "paragraaf": "Belangrijk beroep"
+        },
+        {
+          "term": "Woordweb",
+          "uitleg": "Een schema waarin je woorden en ideeën rond een onderwerp groepeert.",
+          "paragraaf": "Wat ga jij doen?"
+        },
+        {
+          "term": "Spreekkaartje",
+          "uitleg": "Een kaartje met steekwoorden dat je als geheugensteuntje gebruikt tijdens een presentatie.",
+          "paragraaf": "Wat ga jij doen?"
+        },
+        {
+          "term": "Gebiedende wijs",
+          "uitleg": "De werkwoordsvorm die je gebruikt om een bevel of instructie te geven, zoals 'Knip...'.",
+          "paragraaf": "Vertel eens!"
+        },
+        {
+          "term": "Ervaringsverslag",
+          "uitleg": "Een tekst waarin je verslag doet van een ervaring die je hebt opgedaan, bijvoorbeeld op je werk.",
+          "paragraaf": "Discussie, mondelinge presentatie, instructie"
+        },
+        {
+          "term": "Evaluatie",
+          "uitleg": "Het kritisch terugkijken op een product of proces om te leren wat goed en minder goed ging.",
+          "paragraaf": "Lekker gewerkt?"
+        }
+      ],
+      "flashcards": [
+        {
+          "vraag": "Bestaat er zoiets als een 'foute' studiekeuze?",
+          "antwoord": "Nee, van elke opleiding leer je iets, en twijfelen is normaal.",
+          "paragraaf": "Waar ga je voor?"
+        },
+        {
+          "vraag": "Wat is het verschil tussen een feitelijk en niet-feitelijk argument?",
+          "antwoord": "Een feitelijk argument kun je controleren, een niet-feitelijk argument bevat een mening en is niet controleerbaar.",
+          "paragraaf": "Belangrijk beroep"
+        },
+        {
+          "vraag": "Wat doe je als voorbereiding op een discussie na het bepalen van je mening?",
+          "antwoord": "Je noteert feitelijke en niet-feitelijke argumenten en bedenkt mogelijke tegenargumenten.",
+          "paragraaf": "Belangrijk beroep"
+        },
+        {
+          "vraag": "Uit welke drie delen bestaat een goede mondelinge presentatie?",
+          "antwoord": "Inleiding, middenstuk en slot.",
+          "paragraaf": "Wat ga jij doen?"
+        },
+        {
+          "vraag": "Waarom is het beter om spreekkaartjes te gebruiken dan je dia's voor te lezen?",
+          "antwoord": "Omdat voorlezen de aandacht van het publiek niet vasthoudt.",
+          "paragraaf": "Wat ga jij doen?"
+        },
+        {
+          "vraag": "Welke werkwoordsvorm gebruik je in een instructie?",
+          "antwoord": "De gebiedende wijs, zoals 'Knip...' of 'Controleer...'.",
+          "paragraaf": "Vertel eens!"
+        },
+        {
+          "vraag": "Welke signaalwoorden passen bij een instructie?",
+          "antwoord": "Signaalwoorden voor tijdsvolgorde, zoals 'eerst' en 'tot slot'.",
+          "paragraaf": "Vertel eens!"
+        },
+        {
+          "vraag": "Welke drie eindopdrachten voer je uit in Thema A?",
+          "antwoord": "Een discussie, een mondelinge presentatie en een instructie/ervaringsverslag.",
+          "paragraaf": "Discussie, mondelinge presentatie, instructie"
+        },
+        {
+          "vraag": "Waarom is het belangrijk om na een eindopdracht te evalueren?",
+          "antwoord": "Zodat je leert wat goed ging en wat je de volgende keer beter kunt doen.",
+          "paragraaf": "Lekker gewerkt?"
+        },
+        {
+          "vraag": "Wat kan een studiekeuzetest je helpen te doen?",
+          "antwoord": "Breder kijken naar mogelijke vervolgopleidingen of beroepen.",
+          "paragraaf": "Waar ga je voor?"
+        }
+      ],
+      "quiz": [
+        {
+          "vraag": "Bestaat er volgens de theorie zoiets als een 'foute' studiekeuze?",
+          "opties": [
+            "Ja, een verkeerde keuze kun je nooit meer rechtzetten",
+            "Nee, van elke opleiding leer je iets",
+            "Ja, maar alleen op het mbo",
+            "Nee, want je kiest maar één keer in je leven"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Een 'foute' studiekeuze bestaat niet: van elke opleiding leer je iets, en twijfelen hoort erbij."
+        },
+        {
+          "vraag": "'Uit onderzoek blijkt dat 70% van de bouwvakkers gehoorschade oploopt.' Dit is een voorbeeld van...",
+          "opties": [
+            "een niet-feitelijk argument",
+            "een feitelijk argument",
+            "een weerlegging",
+            "een tegenargument"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Dit argument is gebaseerd op onderzoek en dus controleerbaar: het is feitelijk."
+        },
+        {
+          "vraag": "Wat is een weerlegging?",
+          "opties": [
+            "Een reactie op een tegenargument van de ander",
+            "Een woordweb",
+            "Een spreekkaartje",
+            "Een instructieve tekst"
+          ],
+          "antwoord_index": 0,
+          "uitleg": "Een weerlegging is je reactie op een tegenargument dat de andere partij noemt."
+        },
+        {
+          "vraag": "Wat doe je bij stap 3 van het stappenplan spreken?",
+          "opties": [
+            "Je oefent de presentatie hardop",
+            "Je groepeert woorden tot deelonderwerpen",
+            "Je zoekt afbeeldingen",
+            "Je bepaalt het onderwerp"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Bij stap 3 maak je groepjes van bij elkaar horende woorden en bepaal je deelonderwerpen."
+        },
+        {
+          "vraag": "Wat hoort NIET in de inleiding van een mondelinge presentatie?",
+          "opties": [
+            "Een leuke introductie of interessant weetje",
+            "Het onderwerp van je presentatie",
+            "Waarom je dit onderwerp gekozen hebt",
+            "Een samenvatting van al je deelonderwerpen"
+          ],
+          "antwoord_index": 3,
+          "uitleg": "De samenvatting van de deelonderwerpen hoort in het slot, niet in de inleiding."
+        },
+        {
+          "vraag": "Waarom is het een veelgemaakte fout om je dia's voor te lezen?",
+          "opties": [
+            "Omdat dat de aandacht van je publiek niet vasthoudt",
+            "Omdat dat tegen de regels is",
+            "Omdat dia's geen tekst mogen bevatten",
+            "Omdat je dan te snel klaar bent"
+          ],
+          "antwoord_index": 0,
+          "uitleg": "Dia's voorlezen houdt de aandacht van het publiek niet vast; gebruik spreekkaartjes als geheugensteuntje."
+        },
+        {
+          "vraag": "Welke werkwoordsvorm gebruik je bij het schrijven van een instructie?",
+          "opties": [
+            "De verleden tijd",
+            "De gebiedende wijs",
+            "De overtreffende trap",
+            "De vergrotende trap"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Een instructie gebruikt de gebiedende wijs, zoals 'Knip...' of 'Controleer...'."
+        },
+        {
+          "vraag": "Welk signaalwoord past bij het tekstverband tijdsvolgorde in een instructie?",
+          "opties": [
+            "Bijvoorbeeld",
+            "Eerst",
+            "Maar",
+            "Dat"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "'Eerst' geeft een tijdsvolgorde aan, net als 'daarna' en 'tot slot'."
+        },
+        {
+          "vraag": "Welke drie eindopdrachten horen bij Thema A Beroepen?",
+          "opties": [
+            "Een discussie, een mondelinge presentatie en een instructie/ervaringsverslag",
+            "Een gedicht, een verhaal en een podcast",
+            "Een uiteenzetting, een infographic en een podcast",
+            "Een leeskring, een boekenpitch en een kort verhaal"
+          ],
+          "antwoord_index": 0,
+          "uitleg": "De eindopdrachten van Thema A zijn een discussie, een mondelinge presentatie en een instructie met ervaringsverslag."
+        },
+        {
+          "vraag": "Waarom evalueer je na het maken van een eindopdracht?",
+          "opties": [
+            "Om te bepalen wat je cijfer wordt zonder uitleg",
+            "Om kritisch terug te kijken op wat goed en minder goed ging",
+            "Om de opdracht opnieuw te maken",
+            "Om je werk te verwijderen"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Evalueren helpt je te leren van je eigen proces, zodat je het de volgende keer kunt verbeteren."
+        }
+      ]
+    },
+    {
+      "titel": "Een goed verhaal",
+      "uitleg": "<div class='box'><h4>Waar gaat dit thema over?</h4><p>In dit thema onderzoek je wat een goed verhaal voor jou maakt: welke kenmerken bij fictieverhalen passen en hoe je jouw mening daarover kunt delen. Je sluit het thema af met een leeskring, een boekenpitch of het schrijven van een spannend verhaal.</p></div>",
+      "subhoofdstukken": [
+        {
+          "titel": "Wat is een goed verhaal?",
+          "uitleg": "<div class='box'><h4>Wat maakt een verhaal goed?</h4><p>Een goed verhaal is voor iedereen anders. Veel populaire verhalen, zoals de films van Walt Disney, zijn opgebouwd rond herkenbare levenslessen: opkomen voor jezelf, luisteren naar je intuïtie of beseffen dat schoonheid van binnen zit.</p></div><div class='call'>Verhalen die een duidelijke levensles bevatten, blijven vaak langer hangen bij de lezer of kijker.</div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Wat een 'goed verhaal' is, verschilt per lezer</li><li>Herkenbare levenslessen maken een verhaal vaak aansprekender</li></ul></div>"
+        },
+        {
+          "titel": "Vertel je verhaal",
+          "uitleg": "<div class='box'><h4>Genres</h4><p>Elk boek valt in een <b>genre</b> (soort verhaal). De meeste boeken zijn <b>psychologische verhalen</b>, waarin de gedachten en gevoelens van de hoofdpersoon uitgebreid beschreven worden, zodat je je als lezer goed kunt inleven.</p></div><div class='box'><h4>Ontwikkeling van de hoofdpersoon (4 fases)</h4><ol class='num'><li>Het leven van de hoofdpersoon is 'normaal'</li><li>Er gebeurt iets waardoor het leven verandert</li><li>De hoofdpersoon moet in actie komen en leren omgaan met de verandering</li><li>De situatie is weer 'normaal', maar de hoofdpersoon is veranderd of heeft een les geleerd</li></ol></div><div class='g2'><div class='box'><h4>Verhaallijn</h4><p>Beschrijft wat een hoofdpersoon ziet, hoort, denkt, voelt en meemaakt. De meeste boeken hebben één verhaallijn, sommige meerdere.</p></div><div class='box'><h4>Proloog</h4><p>Een inkijkje aan het begin van het boek in wat er later gaat gebeuren. Bedoeld om nieuwsgierig te maken of spanning op te bouwen.</p></div></div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>De ontwikkeling van een hoofdpersoon verloopt vaak in vier fases</li><li>Een proloog maakt de lezer nieuwsgierig of bouwt spanning op</li></ul></div>"
+        },
+        {
+          "titel": "Wat vind jij?",
+          "uitleg": "<div class='box'><h4>Een boekenpitch</h4><p>Een <b>pitch</b> is een heel korte presentatie, soms van maar één minuut. Een pitch heeft als doel het publiek over te halen iets te doen (activeren) en/of te overtuigen van jouw mening of idee.</p></div><div class='call'>In een boekenpitch probeer je je publiek te overtuigen van jouw mening over een boek, zodat ze het ook willen gaan lezen - of juist niet.</div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Een boekenpitch is kort en activerend of overtuigend van aard</li><li>Onderbouw je mening altijd met voorbeelden uit het boek</li></ul></div>"
+        },
+        {
+          "titel": "De held in je verhaal",
+          "uitleg": "<div class='box'><h4>Held en antiheld</h4><p>Hoofdpersonen kunnen als <b>held</b> neergezet worden: iemand die veel moed toont en de veiligheid van anderen belangrijker vindt dan die van zichzelf. Daartegenover staat de <b>antiheld</b>, die juist zwakke eigenschappen toont, zoals lafheid of egoïsme - vaak realistischer door die menselijke gebreken.</p></div><div class='g2'><div class='box'><h4>Plot en actie</h4><p>De <b>plot</b> is de kern van het verhaal: het probleem en vaak de oplossing. <b>Actie</b> is alles wat er in een verhaal gebeurt (werkwoorden zoals fietsen, lopen); actie is niet hetzelfde als spanning.</p></div><div class='box'><h4>Spanningstechnieken</h4><ul class='lst'><li>Een probleem of tegenstander die de hoofdpersoon tegenhoudt</li><li>Informatie afwisselend vertellen of juist verzwijgen</li><li>De lezer een kijkje in de toekomst geven (bijvoorbeeld een proloog)</li><li>Spannende scènes uitgebreid beschrijven met veel details</li><li>De ontknoping uitstellen: een cliffhanger</li></ul></div></div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Een held toont moed, een antiheld toont menselijke zwakheden</li><li>Spanning bouw je op met technieken zoals een cliffhanger of verzwegen informatie</li></ul></div>"
+        },
+        {
+          "titel": "Leeskring, boekenpitch, spannend verhaal schrijven",
+          "uitleg": "<div class='box'><h4>Drie eindopdrachten</h4><p>Je sluit dit thema af met één van deze eindopdrachten, waarbij je een recent gelezen boek gebruikt.</p></div><div class='g3'><div class='box'><h4>Leeskring</h4><p>Je bereidt je voor door onder andere het doel van de hoofdpersoon, het probleem en de verhaallijn te beschrijven. Daarna praat je vijftien minuten met je groepje over het boek.</p></div><div class='box'><h4>Boekenpitch</h4><p>Je houdt een korte, overtuigende presentatie over een boek, zodat je publiek het ook wil gaan lezen.</p></div><div class='box'><h4>Spannend verhaal schrijven</h4><p>Je schrijft zelf een spannend verhaal en past daarbij spanningstechnieken en personages toe.</p></div></div><div class='call'>Bij de leeskring zorg je dat je elk antwoord kunt onderbouwen met minstens één voorbeeld uit het boek.</div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Kies de eindopdracht die het best bij jou past</li><li>Onderbouw je uitspraken altijd met voorbeelden uit het boek</li></ul></div>"
+        },
+        {
+          "titel": "Je eigen verhaal",
+          "uitleg": "<div class='box'><h4>Evaluatie</h4><p>Aan het eind van dit thema kijk je terug op je eigen product en aanpak: wat ging er goed, wat kon beter, en wat zou je de volgende keer anders doen?</p></div><div class='call'>Een kritische, eerlijke terugblik helpt je om bij de volgende schrijfopdracht bewuster keuzes te maken.</div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Evalueren betekent kritisch terugkijken op wat je gemaakt hebt</li><li>Leg altijd uit waarom iets wel of niet goed ging</li></ul></div>"
+        }
+      ],
+      "begrippen": [
+        {
+          "term": "Levensles",
+          "uitleg": "Een boodschap of les die je uit een verhaal kunt halen, bijvoorbeeld over jezelf blijven.",
+          "paragraaf": "Wat is een goed verhaal?"
+        },
+        {
+          "term": "Genre",
+          "uitleg": "Het soort verhaal, bijvoorbeeld psychologisch, spannend of romantisch.",
+          "paragraaf": "Vertel je verhaal"
+        },
+        {
+          "term": "Psychologisch verhaal",
+          "uitleg": "Een verhaal waarin de gedachten en gevoelens van de hoofdpersoon centraal staan.",
+          "paragraaf": "Vertel je verhaal"
+        },
+        {
+          "term": "Proloog",
+          "uitleg": "Een inkijkje aan het begin van een boek in wat er later gaat gebeuren.",
+          "paragraaf": "Vertel je verhaal"
+        },
+        {
+          "term": "Pitch",
+          "uitleg": "Een heel korte presentatie, soms van maar één minuut, met als doel te overtuigen of activeren.",
+          "paragraaf": "Wat vind jij?"
+        },
+        {
+          "term": "Held",
+          "uitleg": "Een hoofdpersoon die veel moed toont en de veiligheid van anderen belangrijker vindt dan zijn eigen veiligheid.",
+          "paragraaf": "De held in je verhaal"
+        },
+        {
+          "term": "Antiheld",
+          "uitleg": "Een hoofdpersoon die zwakke eigenschappen toont, zoals lafheid of egoïsme.",
+          "paragraaf": "De held in je verhaal"
+        },
+        {
+          "term": "Plot",
+          "uitleg": "De kern van het verhaal: het probleem en vaak de oplossing.",
+          "paragraaf": "De held in je verhaal"
+        },
+        {
+          "term": "Actie",
+          "uitleg": "Alles wat er in een verhaal gebeurt; niet hetzelfde als spanning.",
+          "paragraaf": "De held in je verhaal"
+        },
+        {
+          "term": "Cliffhanger",
+          "uitleg": "Een spanningstechniek waarbij de ontknoping van het verhaal wordt uitgesteld.",
+          "paragraaf": "De held in je verhaal"
+        },
+        {
+          "term": "Evaluatie",
+          "uitleg": "Het kritisch terugkijken op je eigen product en aanpak.",
+          "paragraaf": "Je eigen verhaal"
+        }
+      ],
+      "flashcards": [
+        {
+          "vraag": "Wat is vaak een kenmerk van populaire verhalen zoals Disney-films?",
+          "antwoord": "Ze bevatten herkenbare levenslessen.",
+          "paragraaf": "Wat is een goed verhaal?"
+        },
+        {
+          "vraag": "Wat is een genre?",
+          "antwoord": "Het soort verhaal, bijvoorbeeld psychologisch of spannend.",
+          "paragraaf": "Vertel je verhaal"
+        },
+        {
+          "vraag": "Noem de vier fases van de ontwikkeling van een hoofdpersoon.",
+          "antwoord": "Normaal leven, verandering, in actie komen, weer 'normaal' maar veranderd.",
+          "paragraaf": "Vertel je verhaal"
+        },
+        {
+          "vraag": "Waarvoor dient een proloog?",
+          "antwoord": "Om de lezer nieuwsgierig te maken of spanning op te bouwen.",
+          "paragraaf": "Vertel je verhaal"
+        },
+        {
+          "vraag": "Wat is een pitch?",
+          "antwoord": "Een hele korte presentatie, soms maar één minuut, om te overtuigen of activeren.",
+          "paragraaf": "Wat vind jij?"
+        },
+        {
+          "vraag": "Wat is het verschil tussen een held en een antiheld?",
+          "antwoord": "Een held toont moed, een antiheld toont zwakke eigenschappen zoals lafheid.",
+          "paragraaf": "De held in je verhaal"
+        },
+        {
+          "vraag": "Wat is de plot van een verhaal?",
+          "antwoord": "De kern van het verhaal: het probleem en vaak de oplossing.",
+          "paragraaf": "De held in je verhaal"
+        },
+        {
+          "vraag": "Is actie hetzelfde als spanning?",
+          "antwoord": "Nee, actie is alles wat er gebeurt in een verhaal; spanning is iets anders.",
+          "paragraaf": "De held in je verhaal"
+        },
+        {
+          "vraag": "Wat is een cliffhanger?",
+          "antwoord": "Een spanningstechniek waarbij de ontknoping wordt uitgesteld.",
+          "paragraaf": "De held in je verhaal"
+        },
+        {
+          "vraag": "Waarmee onderbouw je je antwoorden bij de leeskring?",
+          "antwoord": "Met minstens één voorbeeld uit het boek.",
+          "paragraaf": "Leeskring, boekenpitch, spannend verhaal schrijven"
+        }
+      ],
+      "quiz": [
+        {
+          "vraag": "Wat hebben veel populaire verhalen, zoals Disney-films, gemeen?",
+          "opties": [
+            "Ze zijn altijd kort",
+            "Ze bevatten herkenbare levenslessen",
+            "Ze hebben nooit een hoofdpersoon",
+            "Ze zijn altijd non-fictie"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Veel populaire verhalen zijn opgebouwd rond herkenbare levenslessen, zoals opkomen voor jezelf."
+        },
+        {
+          "vraag": "Wat is een psychologisch verhaal?",
+          "opties": [
+            "Een verhaal zonder personages",
+            "Een verhaal waarin gedachten en gevoelens van de hoofdpersoon centraal staan",
+            "Een verhaal dat altijd waargebeurd is",
+            "Een verhaal met alleen dialogen"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "In een psychologisch verhaal worden de gedachten en gevoelens van de hoofdpersoon uitgebreid beschreven."
+        },
+        {
+          "vraag": "In welke fase van de ontwikkeling van een hoofdpersoon verandert er iets?",
+          "opties": [
+            "Fase 1",
+            "Fase 2",
+            "Fase 4",
+            "Er verandert nooit iets"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "In fase 2 gebeurt er iets waardoor het leven van de hoofdpersoon verandert."
+        },
+        {
+          "vraag": "Wat is het doel van een proloog?",
+          "opties": [
+            "De lezer nieuwsgierig maken of spanning opbouwen",
+            "Het verhaal afsluiten",
+            "Alle personages voorstellen",
+            "De hoofdgedachte samenvatten"
+          ],
+          "antwoord_index": 0,
+          "uitleg": "Een proloog geeft een inkijkje in wat er later gebeurt en maakt de lezer nieuwsgierig."
+        },
+        {
+          "vraag": "Wat is een boekenpitch?",
+          "opties": [
+            "Een lange samenvatting van een boek",
+            "Een korte presentatie om je publiek te overtuigen van je mening over een boek",
+            "Een schriftelijke boekverslag",
+            "Een vorm van beeldspraak"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Een boekenpitch is een korte presentatie waarin je je publiek probeert te overtuigen van je mening over een boek."
+        },
+        {
+          "vraag": "Wat kenmerkt een antiheld?",
+          "opties": [
+            "Hij toont altijd veel moed",
+            "Hij toont zwakke eigenschappen, zoals lafheid of egoïsme",
+            "Hij is altijd de slechterik",
+            "Hij komt nooit voor in fictie"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Een antiheld toont juist zwakke, menselijke eigenschappen, wat hem vaak realistischer maakt dan een held."
+        },
+        {
+          "vraag": "Wat is de plot van een verhaal?",
+          "opties": [
+            "De naam van de hoofdpersoon",
+            "De kern van het verhaal: het probleem en vaak de oplossing",
+            "Het aantal hoofdstukken",
+            "De titel van het boek"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "De plot bevat het probleem waar het verhaal om draait en vaak ook de oplossing ervan."
+        },
+        {
+          "vraag": "Wat is het verschil tussen actie en spanning in een verhaal?",
+          "opties": [
+            "Er is geen verschil",
+            "Actie is alles wat er gebeurt, spanning is iets anders",
+            "Spanning gaat altijd over vechten",
+            "Actie komt alleen voor in fictie"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Actie is alles wat er in het verhaal gebeurt (werkwoorden); spanning is een apart effect dat je met technieken opbouwt."
+        },
+        {
+          "vraag": "Wat is een cliffhanger?",
+          "opties": [
+            "Een proloog aan het begin van het boek",
+            "Het uitstellen van de ontknoping van het verhaal",
+            "Een held die van een klif valt",
+            "Een tekstverband"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Bij een cliffhanger stelt de schrijver de ontknoping van het verhaal bewust uit om spanning te behouden."
+        },
+        {
+          "vraag": "Waarmee onderbouw je je antwoorden bij een leeskring?",
+          "opties": [
+            "Met een mening zonder uitleg",
+            "Met minstens één voorbeeld uit het boek",
+            "Met een citaat van de schrijver",
+            "Dat hoeft niet, alleen je mening telt"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Bij de leeskring zorg je dat je elk antwoord kunt uitleggen met minstens één voorbeeld uit het boek."
+        }
+      ]
+    },
+    {
+      "titel": "Nepnieuws",
+      "uitleg": "<div class='box'><h4>Waar gaat dit thema over?</h4><p>In dit thema leer je van alles over nepnieuws: wat het is, hoe je het herkent en hoe je zelf betrouwbare informatie verwerkt en deelt. Je sluit het thema af met het schrijven van een uiteenzetting, het maken van een infographic of het maken van een podcast.</p></div>",
+      "subhoofdstukken": [
+        {
+          "titel": "Nep, nepper, nepst...",
+          "uitleg": "<div class='box'><h4>Wat is nepnieuws?</h4><p><b>Nepnieuws</b> (in het Engels 'fake news') betekent dat de informatie die je krijgt niet helemaal klopt. Soms willen de makers je <b>manipuleren</b>: je beïnvloeden om iets te doen of te denken. Dat kan met teksten, maar video's of foto's hebben vaak nog meer overtuigingskracht.</p></div><div class='call'>Nepnieuws is niet altijd kwaadaardig bedoeld: soms is het grappig bedoeld (zoals een fabeltje of hoax), maar soms proberen mensen je bewust te misleiden.</div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Nepnieuws is informatie die niet (helemaal) klopt</li><li>Het is belangrijk om informatie te leren controleren op betrouwbaarheid</li></ul></div>"
+        },
+        {
+          "titel": "Nepnieuws onder de loep",
+          "uitleg": "<div class='box'><h4>Een uiteenzetting</h4><p>Een <b>uiteenzetting</b> is een informatieve tekst. Je doel als schrijver: de lezer informeren. Je legt bijvoorbeeld iets uit, beantwoordt een hoofdvraag of geeft een overzicht. Jouw eigen mening is niet van belang.</p></div><div class='box'><h4>Zo schrijf je een uiteenzetting</h4><div class='g3'><div class='box'><h4>Inleiding</h4><p>Noem het onderwerp. Vertel eventueel de aanleiding, geef voorbeelden, stel vragen of vertel een korte anekdote.</p></div><div class='box'><h4>Middenstuk</h4><p>Eén alinea per deelonderwerp. Zet de belangrijkste informatie in de eerste zin, geef daarna voorbeelden of uitleg en vermeld je bronnen.</p></div><div class='box'><h4>Slot</h4><p>Vat de deelonderwerpen samen, geef een advies of oplossing, trek een conclusie of vertel een toekomstverwachting.</p></div></div></div><div class='call'>Tip: een signaalwoord in de eerste zin van een alinea maakt je tekst duidelijker.</div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Een uiteenzetting geeft feiten en uitleg, geen mening</li><li>Elk deelonderwerp krijgt een eigen alinea in het middenstuk</li></ul></div>"
+        },
+        {
+          "titel": "Dat mag niet!",
+          "uitleg": "<div class='box'><h4>Fake news versus desinformatie</h4><p>Het woord 'fake news' wordt in de volksmond gebruikt voor elke vorm van valse informatie die bedoeld is om mensen te misleiden, om politieke of commerciële redenen. Omdat er meer misleidende informatie bestaat dan alleen valse nieuwsberichten, gebruiken wetenschappers liever de term <b>desinformatie</b>.</p></div><div class='g2'><div class='box'><h4>Drie soorten nepnieuws</h4><ul class='lst'><li>Expres verspreid om je te misleiden</li><li>Expres verspreid om je te amuseren (satire)</li><li>Per ongeluk verspreid, bijvoorbeeld door een journalist</li></ul></div><div class='box'><h4>Een deepfake herkennen</h4><ol class='num'><li>Kijk goed naar gezicht en beweging: knippert de spreker niet? Zitten er vervaagde pixels in beeld?</li><li>Let op de bron: is de afzender een bekende, betrouwbare nieuwsbron?</li><li>Zoek de video elders op: melden meerdere bronnen hetzelfde nieuws?</li></ol></div></div><div class='call'>Een <b>deepfake</b> is een nepvideo gemaakt met kunstmatige intelligentie (deep learning), die bijna niet van echt te onderscheiden is.</div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Wetenschappers gebruiken liever 'desinformatie' dan 'fake news'</li><li>Controleer bij twijfel altijd de bron en zoek de informatie elders op</li></ul></div>"
+        },
+        {
+          "titel": "Uitzending gemist? Geen probleem!",
+          "uitleg": "<div class='box'><h4>Podcast</h4><p>Een <b>podcast</b> is een geluidsopname die je via internet kunt beluisteren. Het doel is meestal informeren of amuseren.</p></div><div class='box'><h4>Zo zitten podcasts vaak in elkaar</h4><ul class='lst'><li>De <b>intro</b>: de maker stelt zich voor en stelt één of meer vragen</li><li>Het <b>middenstuk</b>: de maker onderzoekt de vragen; verschillende mensen komen aan het woord</li><li>Een <b>jingle</b> (kort muziekje) markeert de overgang tussen onderdelen</li><li>De <b>outro</b>: een deel van de intro wordt herhaald, en er wordt verteld waar je meer informatie kunt vinden</li></ul></div><div class='call'>De podcastmaker kan ook zijn eigen interpretatie geven van wat hij gehoord of gezien heeft.</div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Podcasts bestaan meestal uit een intro, middenstuk en outro</li><li>Jingles en achtergrondgeluid maken een podcast aantrekkelijker</li></ul></div>"
+        },
+        {
+          "titel": "Uiteenzetting, infographic, podcast",
+          "uitleg": "<div class='box'><h4>Infographic</h4><p>Een <b>infographic</b> geeft informatie zoveel mogelijk grafisch (in beeld) weer, bijvoorbeeld cijfers, grafieken, een landkaart of een uitleg van een proces. Een infographic is vooral handig bij een tekst met een hoge informatiedichtheid.</p></div><div class='call'>Het hoofddoel van een infographic is altijd informeren: door nieuwe informatie toe te voegen of bestaande informatie duidelijker te maken of te benadrukken.</div><div class='box'><h4>Drie eindopdrachten</h4><p>Kies één van de drie: een uiteenzetting schrijven, een infographic maken of een podcast maken. Gebruik hierbij informatie uit bronnen die je eerder in dit thema hebt gebruikt.</p></div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Een infographic maakt informatie grafisch en overzichtelijk</li><li>Het hoofddoel van een infographic is altijd informeren</li></ul></div>"
+        },
+        {
+          "titel": "Wat nieuws geleerd?",
+          "uitleg": "<div class='box'><h4>Evaluatie</h4><p>Aan het eind van dit thema beoordeel je je eigen product en aanpak: wat ging er goed bij het maken van de eindopdracht, wat ging er minder goed en wat zou je de volgende keer anders doen?</p></div><div class='call'>Ben je door dit thema anders gaan denken over nepnieuws? Leg je antwoord altijd uit.</div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Evalueren betekent kritisch terugkijken op wat je gemaakt hebt</li><li>Onderbouw je evaluatie altijd met een reden of voorbeeld</li></ul></div>"
+        }
+      ],
+      "begrippen": [
+        {
+          "term": "Nepnieuws",
+          "uitleg": "Informatie die niet (helemaal) klopt, ook wel 'fake news' genoemd.",
+          "paragraaf": "Nep, nepper, nepst..."
+        },
+        {
+          "term": "Manipuleren",
+          "uitleg": "Iemand beïnvloeden om iets te doen of te denken.",
+          "paragraaf": "Nep, nepper, nepst..."
+        },
+        {
+          "term": "Uiteenzetting",
+          "uitleg": "Een informatieve tekst waarin de schrijver de lezer informeert, zonder eigen mening te geven.",
+          "paragraaf": "Nepnieuws onder de loep"
+        },
+        {
+          "term": "Deelonderwerp",
+          "uitleg": "Een kleiner onderwerp binnen het hoofdonderwerp van een tekst, dat een eigen alinea krijgt.",
+          "paragraaf": "Nepnieuws onder de loep"
+        },
+        {
+          "term": "Desinformatie",
+          "uitleg": "De term die wetenschappers liever gebruiken dan 'fake news' voor misleidende informatie.",
+          "paragraaf": "Dat mag niet!"
+        },
+        {
+          "term": "Deepfake",
+          "uitleg": "Een nepvideo die met kunstmatige intelligentie (deep learning) gemaakt is en bijna niet van echt te onderscheiden is.",
+          "paragraaf": "Dat mag niet!"
+        },
+        {
+          "term": "Satire",
+          "uitleg": "Nepnieuws dat expres verspreid wordt om te amuseren, niet om te misleiden.",
+          "paragraaf": "Dat mag niet!"
+        },
+        {
+          "term": "Podcast",
+          "uitleg": "Een geluidsopname die je via internet kunt beluisteren.",
+          "paragraaf": "Uitzending gemist? Geen probleem!"
+        },
+        {
+          "term": "Jingle",
+          "uitleg": "Een kort muziekje dat de overgang tussen onderdelen van een podcast markeert.",
+          "paragraaf": "Uitzending gemist? Geen probleem!"
+        },
+        {
+          "term": "Infographic",
+          "uitleg": "Een manier om informatie zoveel mogelijk grafisch (in beeld) weer te geven.",
+          "paragraaf": "Uiteenzetting, infographic, podcast"
+        },
+        {
+          "term": "Informatiedichtheid",
+          "uitleg": "De hoeveelheid informatie die in een tekst of bron wordt aangeboden.",
+          "paragraaf": "Uiteenzetting, infographic, podcast"
+        }
+      ],
+      "flashcards": [
+        {
+          "vraag": "Wat betekent nepnieuws?",
+          "antwoord": "Informatie die niet (helemaal) klopt.",
+          "paragraaf": "Nep, nepper, nepst..."
+        },
+        {
+          "vraag": "Wat betekent manipuleren?",
+          "antwoord": "Iemand beïnvloeden om iets te doen of te denken.",
+          "paragraaf": "Nep, nepper, nepst..."
+        },
+        {
+          "vraag": "Wat is het doel van een uiteenzetting?",
+          "antwoord": "De lezer informeren, zonder eigen mening te geven.",
+          "paragraaf": "Nepnieuws onder de loep"
+        },
+        {
+          "vraag": "Waarom gebruiken wetenschappers liever 'desinformatie' dan 'fake news'?",
+          "antwoord": "Omdat 'fake news' een containerbegrip is voor meer dan alleen valse nieuwsberichten.",
+          "paragraaf": "Dat mag niet!"
+        },
+        {
+          "vraag": "Wat is een deepfake?",
+          "antwoord": "Een nepvideo gemaakt met kunstmatige intelligentie die bijna niet van echt te onderscheiden is.",
+          "paragraaf": "Dat mag niet!"
+        },
+        {
+          "vraag": "Noem drie manieren om een deepfake te herkennen.",
+          "antwoord": "Let op gezicht/pixels, let op de bron, en zoek de video elders op.",
+          "paragraaf": "Dat mag niet!"
+        },
+        {
+          "vraag": "Wat is het doel van een podcast meestal?",
+          "antwoord": "Informeren of amuseren.",
+          "paragraaf": "Uitzending gemist? Geen probleem!"
+        },
+        {
+          "vraag": "Uit welke drie onderdelen bestaat een podcast meestal?",
+          "antwoord": "Intro, middenstuk en outro.",
+          "paragraaf": "Uitzending gemist? Geen probleem!"
+        },
+        {
+          "vraag": "Wat is het hoofddoel van een infographic?",
+          "antwoord": "Informeren.",
+          "paragraaf": "Uiteenzetting, infographic, podcast"
+        },
+        {
+          "vraag": "Wanneer is een infographic extra handig?",
+          "antwoord": "Bij een tekst met een hoge informatiedichtheid.",
+          "paragraaf": "Uiteenzetting, infographic, podcast"
+        }
+      ],
+      "quiz": [
+        {
+          "vraag": "Wat betekent nepnieuws?",
+          "opties": [
+            "Informatie die niet (helemaal) klopt",
+            "Informatie die altijd grappig bedoeld is",
+            "Informatie die alleen op tv voorkomt",
+            "Informatie die altijd van de overheid komt"
+          ],
+          "antwoord_index": 0,
+          "uitleg": "Nepnieuws is informatie die de lezer niet correct informeert; het klopt niet helemaal."
+        },
+        {
+          "vraag": "Wat is een uiteenzetting?",
+          "opties": [
+            "Een informatieve tekst zonder eigen mening",
+            "Een gedicht met vaste vorm",
+            "Een betogende tekst met een sterke mening",
+            "Een instructie in de gebiedende wijs"
+          ],
+          "antwoord_index": 0,
+          "uitleg": "Een uiteenzetting is een informatieve tekst waarin de schrijver de lezer informeert, zonder eigen mening."
+        },
+        {
+          "vraag": "Waar begint het middenstuk van een uiteenzetting elke alinea mee?",
+          "opties": [
+            "Met een voorbeeld",
+            "Met de belangrijkste informatie over het deelonderwerp",
+            "Met een conclusie",
+            "Met een toekomstverwachting"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "In het middenstuk schrijf je de belangrijkste informatie over het deelonderwerp in de eerste zin van de alinea."
+        },
+        {
+          "vraag": "Waarom gebruiken wetenschappers liever de term 'desinformatie' dan 'fake news'?",
+          "opties": [
+            "Omdat 'fake news' een containerbegrip is voor meer dan valse nieuwsberichten",
+            "Omdat 'fake news' Engels is",
+            "Omdat 'desinformatie' korter is",
+            "Er is geen verschil tussen de termen"
+          ],
+          "antwoord_index": 0,
+          "uitleg": "'Fake news' wordt gebruikt voor elke vorm van misleidende informatie, terwijl 'desinformatie' preciezer is."
+        },
+        {
+          "vraag": "Wat is een deepfake?",
+          "opties": [
+            "Een echte, geverifieerde video",
+            "Een nepvideo gemaakt met kunstmatige intelligentie",
+            "Een soort infographic",
+            "Een podcastonderdeel"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Een deepfake is een nepvideo die met kunstmatige intelligentie (deep learning) gemaakt is."
+        },
+        {
+          "vraag": "Wat is GEEN goede manier om een deepfake te herkennen?",
+          "opties": [
+            "Letten op vervaagde pixels in het beeld",
+            "Kijken of de bron een bekende, betrouwbare nieuwsbron is",
+            "Alleen naar de titel van de video kijken",
+            "Zoeken of andere bronnen hetzelfde nieuws melden"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "Alleen naar de titel kijken zegt niets over de betrouwbaarheid; je moet de bron en het beeld zelf controleren."
+        },
+        {
+          "vraag": "Welk onderdeel van een podcast bevat meestal de vragen die de maker gaat onderzoeken?",
+          "opties": [
+            "De outro",
+            "De intro",
+            "De jingle",
+            "De infographic"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "In de intro stelt de podcastmaker zich voor en stelt hij één of meer vragen die hij gaat onderzoeken."
+        },
+        {
+          "vraag": "Wat is een jingle?",
+          "opties": [
+            "Een kort muziekje tussen onderdelen van een podcast",
+            "De titel van een infographic",
+            "Een soort deepfake",
+            "Een deel van een uiteenzetting"
+          ],
+          "antwoord_index": 0,
+          "uitleg": "Een jingle is een kort muziekje dat de overgang tussen verschillende onderdelen van een podcast markeert."
+        },
+        {
+          "vraag": "Wat is het hoofddoel van een infographic?",
+          "opties": [
+            "Amuseren",
+            "Informeren",
+            "Overtuigen zonder feiten",
+            "Manipuleren"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Een infographic trekt de aandacht, maar het hoofddoel is altijd informeren."
+        },
+        {
+          "vraag": "Wanneer is een infographic extra handig om te gebruiken?",
+          "opties": [
+            "Bij een tekst met een lage informatiedichtheid",
+            "Bij een tekst met een hoge informatiedichtheid",
+            "Alleen bij gedichten",
+            "Alleen bij podcasts"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Bij een tekst met veel informatie (hoge informatiedichtheid) helpt een infographic om het overzichtelijk te maken."
+        }
+      ]
+    }
+  ]
+}
