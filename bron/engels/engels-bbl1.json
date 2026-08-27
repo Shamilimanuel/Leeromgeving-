@@ -1,0 +1,270 @@
+{
+  "boek": "Engels_BBL1",
+  "hoofdstukken": [
+    {
+      "titel": "Bridging the Gap",
+      "uitleg": "<div class='box'><h4>Waar gaat dit hoofdstuk over?</h4><p>Bridging the Gap is het opstaphoofdstuk van je Engelse boek. Je oefent hier de basiswoorden die je in de rest van het boek steeds weer nodig hebt: getallen, kleuren, familie, lichaam, kleding en je huis. Je leert ook de eerste grammaticaregels: <b>be</b> en <b>have</b>, de voornaamwoorden en de lidwoorden <b>a</b>, <b>an</b> en <b>the</b>.</p></div>",
+      "subhoofdstukken": [
+        {
+          "titel": "Family and numbers",
+          "uitleg": "<div class='box'><h4>Family</h4><p>Dit zijn de Engelse woorden voor familieleden.</p><div class='tblwrap'><table class='tbl'><tr><th>Engels</th><th>Nederlands</th></tr><tr><td>mother / mum</td><td>moeder / mama</td></tr><tr><td>father / dad</td><td>vader / papa</td></tr><tr><td>family</td><td>familie</td></tr><tr><td>children</td><td>kinderen</td></tr><tr><td>brother</td><td>broer</td></tr><tr><td>sister</td><td>zus</td></tr><tr><td>boy</td><td>jongen</td></tr><tr><td>girl</td><td>meisje</td></tr></table></div></div><div class='box'><h4>Numbers</h4><p>Zo tel je in het Engels van 1 tot 20.</p><div class='tblwrap'><table class='tbl'><tr><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th></tr><tr><td>one</td><td>two</td><td>three</td><td>four</td><td>five</td></tr><tr><th>6</th><th>7</th><th>8</th><th>9</th><th>10</th></tr><tr><td>six</td><td>seven</td><td>eight</td><td>nine</td><td>ten</td></tr><tr><th>11</th><th>12</th><th>13</th><th>14</th><th>15</th></tr><tr><td>eleven</td><td>twelve</td><td>thirteen</td><td>fourteen</td><td>fifteen</td></tr><tr><th>16</th><th>17</th><th>18</th><th>19</th><th>20</th></tr><tr><td>sixteen</td><td>seventeen</td><td>eighteen</td><td>nineteen</td><td>twenty</td></tr></table></div><div class='call'>Grotere getallen: 30 thirty, 40 forty, 65 sixty-five, 70 seventy, 80 eighty, 90 ninety, 100 one hundred, 101 one hundred and one.</div></div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>mother/mum = moeder, father/dad = vader</li><li>brother = broer, sister = zus</li><li>one t/m ten ken je uit je hoofd, elf t/m twintig eindigen op -teen (behalve eleven en twelve)</li></ul></div>"
+        },
+        {
+          "titel": "Colours, body and clothes",
+          "uitleg": "<div class='g2'><div class='box'><h4>Colours</h4><p>De kleuren die je in dit hoofdstuk leert.</p><ul class='lst'><li>black - zwart</li><li>brown - bruin</li><li>orange - oranje</li><li>purple - paars</li><li>white - wit</li><li>blue - blauw</li><li>green - groen</li><li>pink - roze</li><li>red - rood</li><li>yellow - geel</li></ul></div><div class='box'><h4>My body</h4><p>De Engelse woorden voor lichaamsdelen.</p><ul class='lst'><li>ear - oor</li><li>eye - oog</li><li>face - gezicht</li><li>finger - vinger</li><li>foot - voet</li><li>hair - haar</li><li>hand - hand</li><li>leg - been</li><li>mouth - mond</li><li>nose - neus</li></ul></div></div><div class='box'><h4>Clothes</h4><p>Kledingwoorden die je bij het beschrijven van mensen gebruikt.</p><ul class='lst'><li>boot - laars</li><li>coat - jas</li><li>dress - jurk</li><li>hat - hoed / muts</li><li>jeans - spijkerbroek</li><li>shirt - overhemd</li><li>shoe - schoen</li><li>skirt - rok</li><li>sock - sok</li><li>sweater - trui</li></ul></div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>De tien basiskleuren: black, brown, orange, purple, white, blue, green, pink, red, yellow</li><li>Lichaamsdelen en kleding leer je samen, want je gebruikt ze om iemand te beschrijven</li></ul></div>"
+        },
+        {
+          "titel": "House",
+          "uitleg": "<div class='box'><h4>Rooms in the house</h4><p>Dit zijn de kamers en ruimtes in en om een huis.</p><div class='tblwrap'><table class='tbl'><tr><th>Engels</th><th>Nederlands</th></tr><tr><td>bathroom</td><td>badkamer</td></tr><tr><td>bedroom</td><td>slaapkamer</td></tr><tr><td>dining room</td><td>eetkamer</td></tr><tr><td>door</td><td>deur</td></tr><tr><td>garden</td><td>tuin</td></tr><tr><td>hall</td><td>hal / gang</td></tr><tr><td>home</td><td>thuis</td></tr><tr><td>kitchen</td><td>keuken</td></tr><tr><td>living room</td><td>woonkamer</td></tr><tr><td>room</td><td>kamer</td></tr></table></div></div><div class='call'>Voorbeeldzin: <b>Our house has</b> ... (gevolgd door het aantal kamers, bijvoorbeeld \"Our house has four bedrooms.\")</div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>bedroom = slaapkamer, bathroom = badkamer, kitchen = keuken</li><li>Gebruik \"Our house has ...\" om te vertellen hoeveel kamers je huis heeft</li></ul></div>"
+        },
+        {
+          "titel": "Grammar: be, have, pronouns and articles",
+          "uitleg": "<div class='box'><h4>Be en have</h4><p>De werkwoorden <b>be</b> (zijn) en <b>have</b> (hebben) vervoeg je bij elk voornaamwoord anders.</p><div class='tblwrap'><table class='tbl'><tr><th>Voornaamwoord</th><th>be</th><th>have</th></tr><tr><td>I</td><td>am</td><td>have</td></tr><tr><td>you</td><td>are</td><td>have</td></tr><tr><td>he</td><td>is</td><td>has</td></tr><tr><td>she</td><td>is</td><td>has</td></tr><tr><td>it</td><td>is</td><td>has</td></tr><tr><td>we</td><td>are</td><td>have</td></tr><tr><td>you</td><td>are</td><td>have</td></tr><tr><td>they</td><td>are</td><td>have</td></tr></table></div></div><div class='g2'><div class='box'><h4>Subject pronouns</h4><p>Voornaamwoorden die vóór het werkwoord staan.</p><ul class='lst'><li>I am a boy.</li><li>Are you his sister?</li><li>He is thirteen years old.</li><li>She is twelve years old.</li><li>It is very friendly.</li><li>We like holidays.</li><li>Are you coming to my party?</li><li>They always make me laugh.</li></ul></div><div class='box'><h4>Possessive pronouns</h4><p>Bezittelijke voornaamwoorden geven aan van wie iets is.</p><ul class='lst'><li>my / mine - This is my bike. The bike is mine.</li><li>your / yours - That's your glass.</li><li>his / his - His bag is blue.</li><li>her / hers - This is her sandwich.</li><li>its - This is my dog. Its name is Bobby.</li><li>our / ours - Our house is brown.</li><li>their / theirs - Their car is red.</li></ul></div></div><div class='box'><h4>A, an en the</h4><p>Je gebruikt <b>the</b> voor iets specifieks (hetzelfde als 'de' of 'het' in het Nederlands). Je gebruikt <b>a</b> of <b>an</b> voor iets dat niet specifiek is (hetzelfde als 'een').</p><div class='call warn'><b>Veelgemaakte fout:</b> vergeet niet dat je <b>an</b> gebruikt als het volgende woord begint met a, e, i, o of u (an apple). Bij een andere letter gebruik je <b>a</b> (a house).</div></div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>I am, you are, he/she/it is, we/you/they are</li><li>I have, you have, he/she/it has, we/you/they have</li><li>my/mine, your/yours, his/his, her/hers, its, our/ours, their/theirs</li><li>the = specifiek, a/an = niet specifiek; an vóór a, e, i, o, u</li></ul></div>"
+        }
+      ],
+      "begrippen": [
+        {"term": "mother / mum", "uitleg": "moeder / mama", "paragraaf": "Family and numbers"},
+        {"term": "father / dad", "uitleg": "vader / papa", "paragraaf": "Family and numbers"},
+        {"term": "brother", "uitleg": "broer", "paragraaf": "Family and numbers"},
+        {"term": "sister", "uitleg": "zus", "paragraaf": "Family and numbers"},
+        {"term": "children", "uitleg": "kinderen", "paragraaf": "Family and numbers"},
+        {"term": "eleven", "uitleg": "elf", "paragraaf": "Family and numbers"},
+        {"term": "fifteen", "uitleg": "vijftien", "paragraaf": "Family and numbers"},
+        {"term": "twenty", "uitleg": "twintig", "paragraaf": "Family and numbers"},
+        {"term": "purple", "uitleg": "paars", "paragraaf": "Colours, body and clothes"},
+        {"term": "yellow", "uitleg": "geel", "paragraaf": "Colours, body and clothes"},
+        {"term": "hair", "uitleg": "haar (lichaamsdeel)", "paragraaf": "Colours, body and clothes"},
+        {"term": "hand", "uitleg": "hand", "paragraaf": "Colours, body and clothes"},
+        {"term": "sweater", "uitleg": "trui", "paragraaf": "Colours, body and clothes"},
+        {"term": "jeans", "uitleg": "spijkerbroek", "paragraaf": "Colours, body and clothes"},
+        {"term": "bedroom", "uitleg": "slaapkamer", "paragraaf": "House"},
+        {"term": "kitchen", "uitleg": "keuken", "paragraaf": "House"},
+        {"term": "living room", "uitleg": "woonkamer", "paragraaf": "House"},
+        {"term": "garden", "uitleg": "tuin", "paragraaf": "House"},
+        {"term": "subject pronoun", "uitleg": "voornaamwoord dat vóór het werkwoord staat, zoals I, you, he, she, it, we, they", "paragraaf": "Grammar: be, have, pronouns and articles"},
+        {"term": "possessive pronoun", "uitleg": "bezittelijk voornaamwoord, zoals my, your, his, her, its, our, their", "paragraaf": "Grammar: be, have, pronouns and articles"}
+      ],
+      "flashcards": [
+        {"vraag": "Hoe zeg je 'moeder' in het Engels?", "antwoord": "mother / mum", "paragraaf": "Family and numbers"},
+        {"vraag": "Hoe zeg je 'broer' in het Engels?", "antwoord": "brother", "paragraaf": "Family and numbers"},
+        {"vraag": "Wat betekent 'children'?", "antwoord": "kinderen", "paragraaf": "Family and numbers"},
+        {"vraag": "Hoe schrijf je het getal 15 in het Engels?", "antwoord": "fifteen", "paragraaf": "Family and numbers"},
+        {"vraag": "Hoe schrijf je het getal 20 in het Engels?", "antwoord": "twenty", "paragraaf": "Family and numbers"},
+        {"vraag": "Wat betekent 'purple'?", "antwoord": "paars", "paragraaf": "Colours, body and clothes"},
+        {"vraag": "Hoe zeg je 'oog' in het Engels?", "antwoord": "eye", "paragraaf": "Colours, body and clothes"},
+        {"vraag": "Hoe zeg je 'trui' in het Engels?", "antwoord": "sweater", "paragraaf": "Colours, body and clothes"},
+        {"vraag": "Wat betekent 'skirt'?", "antwoord": "rok", "paragraaf": "Colours, body and clothes"},
+        {"vraag": "Hoe zeg je 'slaapkamer' in het Engels?", "antwoord": "bedroom", "paragraaf": "House"},
+        {"vraag": "Wat betekent 'living room'?", "antwoord": "woonkamer", "paragraaf": "House"},
+        {"vraag": "Hoe vervoeg je 'be' bij 'she'?", "antwoord": "she is", "paragraaf": "Grammar: be, have, pronouns and articles"},
+        {"vraag": "Hoe vervoeg je 'have' bij 'he'?", "antwoord": "he has", "paragraaf": "Grammar: be, have, pronouns and articles"},
+        {"vraag": "Wat is het bezittelijk voornaamwoord bij 'they'?", "antwoord": "their / theirs", "paragraaf": "Grammar: be, have, pronouns and articles"},
+        {"vraag": "Gebruik je 'a' of 'an' voor 'apple'?", "antwoord": "an, want apple begint met een klinker", "paragraaf": "Grammar: be, have, pronouns and articles"}
+      ],
+      "quiz": [
+        {"vraag": "Wat betekent 'sister'?", "opties": ["broer", "zus", "moeder", "vader"], "antwoord_index": 1, "uitleg": "Sister betekent zus."},
+        {"vraag": "Hoe schrijf je het getal 12 in het Engels?", "opties": ["twelve", "twenty", "ten", "eleven"], "antwoord_index": 0, "uitleg": "12 is twelve."},
+        {"vraag": "Welk woord betekent 'geel'?", "opties": ["purple", "yellow", "orange", "pink"], "antwoord_index": 1, "uitleg": "Yellow betekent geel."},
+        {"vraag": "Wat is de Engelse naam voor 'neus'?", "opties": ["ear", "mouth", "nose", "eye"], "antwoord_index": 2, "uitleg": "Nose betekent neus."},
+        {"vraag": "Welk woord is een kledingstuk?", "opties": ["kitchen", "sweater", "garden", "finger"], "antwoord_index": 1, "uitleg": "Sweater (trui) is een kledingstuk."},
+        {"vraag": "Wat betekent 'bathroom'?", "opties": ["keuken", "badkamer", "slaapkamer", "tuin"], "antwoord_index": 1, "uitleg": "Bathroom betekent badkamer."},
+        {"vraag": "Welke zin is goed? 'He ___ my brother.'", "opties": ["am", "are", "is", "be"], "antwoord_index": 2, "uitleg": "Bij 'he' gebruik je 'is': He is my brother."},
+        {"vraag": "Welke zin is goed? 'They ___ two dogs.'", "opties": ["has", "have", "is", "am"], "antwoord_index": 1, "uitleg": "Bij 'they' gebruik je 'have': They have two dogs."},
+        {"vraag": "Wat is het bezittelijk voornaamwoord bij 'I'?", "opties": ["your", "his", "my", "our"], "antwoord_index": 2, "uitleg": "Bij 'I' hoort 'my' (mijn)."},
+        {"vraag": "'This is ___ dog. ___ name is Bobby.' Welke woorden passen hier?", "opties": ["my - Its", "I - It", "mine - Its", "my - It's"], "antwoord_index": 0, "uitleg": "'This is my dog. Its name is Bobby.' Its (zonder apostrof) is het bezittelijk voornaamwoord bij 'it'."},
+        {"vraag": "Welk lidwoord past voor 'apple'? '... apple'", "opties": ["a", "an", "the only", "geen lidwoord"], "antwoord_index": 1, "uitleg": "Apple begint met een klinker, dus gebruik je 'an apple'."},
+        {"vraag": "Welk lidwoord past voor 'house'? '... house'", "opties": ["an", "a", "the only", "geen lidwoord"], "antwoord_index": 1, "uitleg": "House begint niet met a, e, i, o, u, dus gebruik je 'a house'."}
+      ]
+    },
+    {
+      "titel": "This is me",
+      "uitleg": "<div class='box'><h4>Waar gaat dit hoofdstuk over?</h4><p>In This is me leer je jezelf en anderen voorstellen. Je vertelt hoe je heet, waar je woont en wanneer je jarig bent. Je leert ook hoe je iemands persoonlijkheid en uiterlijk beschrijft, en je oefent de <b>present simple</b>, <b>object pronouns</b> en <b>vraagwoorden</b>.</p></div>",
+      "subhoofdstukken": [
+        {
+          "titel": "Personal information",
+          "uitleg": "<div class='box'><h4>Stone 2 - Talking about personal information</h4><p>Met Stone 2 vertel je persoonlijke informatie over jezelf.</p><div class='tblwrap'><table class='tbl'><tr><th>Engels</th><th>Nederlands</th></tr><tr><td>What is your first name? My first name is Stewart.</td><td>Wat is jouw voornaam? Mijn voornaam is Stewart.</td></tr><tr><td>What is your last name? My last name is Eckles.</td><td>Wat is jouw achternaam? Mijn achternaam is Eckles.</td></tr><tr><td>What is your address? I live at 77 Baltic Road.</td><td>Wat is jouw adres? Ik woon op Baltic Road 77.</td></tr><tr><td>When is your birthday? My birthday is on the 17th of May.</td><td>Wanneer ben je jarig? Mijn verjaardag is op 17 mei.</td></tr><tr><td>How old are you? I'm 13 years old.</td><td>Hoe oud ben je? Ik ben 13 jaar oud.</td></tr><tr><td>Where do you live? I live in Rotterdam.</td><td>Waar woon je? Ik woon in Rotterdam.</td></tr></table></div></div><div class='call'>In de oefeningen kom je bijvoorbeeld Toby en Ashwin Adams tegen: je maakt zinnen over hen met Stone 2, zoals \"What is your first name? My first name is Toby.\"</div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>first name = voornaam, last name = achternaam</li><li>How old are you? - I'm ... years old.</li><li>Where do you live? - I live in ...</li></ul></div>"
+        },
+        {
+          "titel": "Personality and looks",
+          "uitleg": "<div class='g2'><div class='box'><h4>Theme words: personality</h4><ul class='lst'><li>friendly - vriendelijk</li><li>funny - grappig</li><li>happy - blij</li><li>lazy - lui</li><li>mean - gemeen</li><li>nice - aardig</li><li>relaxed - relaxed</li><li>serious - serieus</li><li>shy - verlegen</li><li>smart - slim</li></ul></div><div class='box'><h4>Theme words: looks</h4><ul class='lst'><li>beard - baard</li><li>big - groot / dik</li><li>braces - beugel</li><li>elderly - bejaard</li><li>glasses - bril</li><li>long (hair) - lang (haar)</li><li>short - kort</li><li>small - klein</li><li>straight - steil</li><li>tall - lang (persoon)</li></ul></div></div><div class='box'><h4>Stone 3 - Describing people</h4><div class='tblwrap'><table class='tbl'><tr><th>Engels</th><th>Nederlands</th></tr><tr><td>What does your friend look like?</td><td>Hoe ziet je vriend(in) eruit?</td></tr><tr><td>He has blond hair.</td><td>Hij heeft blond haar.</td></tr><tr><td>Claire has curly hair.</td><td>Claire heeft krullend haar.</td></tr><tr><td>He is tall.</td><td>Hij is lang.</td></tr><tr><td>She wears glasses.</td><td>Zij draagt een bril.</td></tr><tr><td>José is quite serious.</td><td>José is best serieus.</td></tr><tr><td>Cleo is shy but very nice.</td><td>Cleo is verlegen maar erg aardig.</td></tr></table></div></div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Gebruik theme words om iemands persoonlijkheid te beschrijven: friendly, funny, shy, smart ...</li><li>Gebruik Stone 3 om iemands uiterlijk te beschrijven: He/She has ... hair, He/She wears glasses, He/She is ...</li></ul></div>"
+        },
+        {
+          "titel": "Grammar: present simple, object pronouns and question words",
+          "uitleg": "<div class='box'><h4>Grammar 1 - Present simple</h4><p>Je gebruikt de present simple bij feiten en gewoontes (facts and habits). Je voegt <b>-s</b> toe aan het werkwoord na he, she of it. Je voegt <b>-es</b> toe als het werkwoord eindigt op -s, -x, -z, -ch of -sh, na he, she of it.</p><div class='call'>Uitspraak: je spreekt de 's' en 'es' na he/she/it op drie manieren uit. /s/ als het werkwoord eindigt op een stemloze medeklinker (stops, looks). /z/ als het werkwoord eindigt op een stemhebbende medeklinker (swims, seems, explains). /iz/ als 'es' achter de klanken s, sh of ch staat (kisses, dances, buzzes).</div></div><div class='g2'><div class='box'><h4>Grammar 2 - Object pronouns</h4><p>Subject pronouns (I, you, he, she, it, we, you, they) staan vóór het werkwoord. Object pronouns (me, you, him, her, it, us, you, them) staan ná het werkwoord.</p><ul class='lst'><li>Everyone likes me.</li><li>I like you.</li><li>Do you like him/her?</li><li>You can try it first.</li><li>Can you help us?</li><li>You should meet them.</li></ul></div><div class='box'><h4>Grammar 3 - Question words</h4><p>Je gebruikt vraagwoorden om een vraag te stellen. Ze staan aan het begin van de zin en beginnen met 'wh' of met 'h'. De wh-woorden zijn: how, what, when, where, which, who, why.</p><div class='call'>Let op: je gebruikt <b>which</b> als je weet uit welke opties je kiest. Je gebruikt <b>what</b> als je niet weet wat de opties zijn.</div></div></div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Present simple: werkwoord + -s (of -es) bij he/she/it</li><li>Object pronouns (me, him, her, us, them) staan ná het werkwoord</li><li>Vraagwoorden: how, what, when, where, which, who, why - which bij bekende opties, what bij onbekende opties</li></ul></div>"
+        }
+      ],
+      "begrippen": [
+        {"term": "first name", "uitleg": "voornaam", "paragraaf": "Personal information"},
+        {"term": "last name", "uitleg": "achternaam", "paragraaf": "Personal information"},
+        {"term": "address", "uitleg": "adres", "paragraaf": "Personal information"},
+        {"term": "birthday", "uitleg": "verjaardag", "paragraaf": "Personal information"},
+        {"term": "friendly", "uitleg": "vriendelijk", "paragraaf": "Personality and looks"},
+        {"term": "shy", "uitleg": "verlegen", "paragraaf": "Personality and looks"},
+        {"term": "lazy", "uitleg": "lui", "paragraaf": "Personality and looks"},
+        {"term": "smart", "uitleg": "slim", "paragraaf": "Personality and looks"},
+        {"term": "beard", "uitleg": "baard", "paragraaf": "Personality and looks"},
+        {"term": "glasses", "uitleg": "bril", "paragraaf": "Personality and looks"},
+        {"term": "tall", "uitleg": "lang (van een persoon)", "paragraaf": "Personality and looks"},
+        {"term": "present simple", "uitleg": "werkwoordstijd voor feiten en gewoontes; bij he/she/it krijgt het werkwoord -s of -es", "paragraaf": "Grammar: present simple, object pronouns and question words"},
+        {"term": "object pronoun", "uitleg": "voornaamwoord dat ná het werkwoord staat, zoals me, him, her, us, them", "paragraaf": "Grammar: present simple, object pronouns and question words"},
+        {"term": "question word", "uitleg": "vraagwoord aan het begin van een zin, zoals what, where, who, why", "paragraaf": "Grammar: present simple, object pronouns and question words"}
+      ],
+      "flashcards": [
+        {"vraag": "Hoe vraag je iemands voornaam in het Engels?", "antwoord": "What is your first name?", "paragraaf": "Personal information"},
+        {"vraag": "Hoe zeg je 'Ik woon in Rotterdam' in het Engels?", "antwoord": "I live in Rotterdam.", "paragraaf": "Personal information"},
+        {"vraag": "Hoe vraag je iemands leeftijd?", "antwoord": "How old are you?", "paragraaf": "Personal information"},
+        {"vraag": "Wat betekent 'funny'?", "antwoord": "grappig", "paragraaf": "Personality and looks"},
+        {"vraag": "Wat betekent 'mean'?", "antwoord": "gemeen", "paragraaf": "Personality and looks"},
+        {"vraag": "Hoe zeg je 'hij draagt een bril' in het Engels?", "antwoord": "He wears glasses.", "paragraaf": "Personality and looks"},
+        {"vraag": "Wat betekent 'curly hair'?", "antwoord": "krullend haar", "paragraaf": "Personality and looks"},
+        {"vraag": "Welke uitgang krijgt 'watch' bij 'he'?", "antwoord": "-es: he watches", "paragraaf": "Grammar: present simple, object pronouns and question words"},
+        {"vraag": "Wat is het object pronoun van 'he'?", "antwoord": "him", "paragraaf": "Grammar: present simple, object pronouns and question words"},
+        {"vraag": "Wat is het object pronoun van 'they'?", "antwoord": "them", "paragraaf": "Grammar: present simple, object pronouns and question words"},
+        {"vraag": "Gebruik je 'what' of 'which' als je niet weet wat de opties zijn?", "antwoord": "what", "paragraaf": "Grammar: present simple, object pronouns and question words"}
+      ],
+      "quiz": [
+        {"vraag": "Hoe vraag je in het Engels naar iemands achternaam?", "opties": ["What is your first name?", "What is your last name?", "How old are you?", "Where do you live?"], "antwoord_index": 1, "uitleg": "'What is your last name?' vraagt naar iemands achternaam."},
+        {"vraag": "'My birthday is on the 17th of May.' Wat betekent deze zin?", "opties": ["Ik ben 17 jaar.", "Mijn verjaardag is op 17 mei.", "Ik woon op nummer 17.", "Het is 17 uur."], "antwoord_index": 1, "uitleg": "Birthday betekent verjaardag, dus de zin gaat over de datum van de verjaardag."},
+        {"vraag": "Welk woord betekent 'verlegen'?", "opties": ["smart", "shy", "happy", "relaxed"], "antwoord_index": 1, "uitleg": "Shy betekent verlegen."},
+        {"vraag": "Welk woord past bij een beschrijving van haar?", "opties": ["glasses", "straight", "braces", "elderly"], "antwoord_index": 1, "uitleg": "Straight (steil) beschrijft haar."},
+        {"vraag": "'She wears ___.' - ze draagt een bril.", "opties": ["glass", "glasses", "eyes", "face"], "antwoord_index": 1, "uitleg": "Glasses betekent bril."},
+        {"vraag": "Welke zin klopt volgens de present simple?", "opties": ["He watch TV.", "He watches TV.", "He watchs TV.", "He watching TV."], "antwoord_index": 1, "uitleg": "Watch eindigt op -ch, dus je voegt -es toe: he watches."},
+        {"vraag": "Hoe spreek je de 's' uit in 'stops'?", "opties": ["/s/", "/z/", "/iz/", "/sh/"], "antwoord_index": 0, "uitleg": "Stops eindigt op een stemloze medeklinker (p), dus je spreekt de 's' uit als /s/."},
+        {"vraag": "Welke zin gebruikt een object pronoun juist?", "opties": ["Him likes me.", "I like he.", "Can you help us?", "Them are nice."], "antwoord_index": 2, "uitleg": "'Us' is het object pronoun en staat hier terecht ná het werkwoord 'help'."},
+        {"vraag": "Vul het juiste vraagwoord in: '___ is your address?'", "opties": ["Who", "What", "When", "Why"], "antwoord_index": 1, "uitleg": "Je vraagt naar informatie (een adres), dus gebruik je 'what'."},
+        {"vraag": "Je weet dat je uit drie kleuren mag kiezen. Welk vraagwoord gebruik je?", "opties": ["what", "which", "who", "how"], "antwoord_index": 1, "uitleg": "Bij bekende opties gebruik je 'which'."},
+        {"vraag": "Wat betekent 'elderly'?", "opties": ["jong", "bejaard", "groot", "klein"], "antwoord_index": 1, "uitleg": "Elderly betekent bejaard."}
+      ]
+    },
+    {
+      "titel": "Time for school",
+      "uitleg": "<div class='box'><h4>Waar gaat dit hoofdstuk over?</h4><p>In Time for school leer je hoe laat het is, hoe je over je rooster praat en hoe je vertelt wat je wel en niet leuk vindt op school. Je oefent ook drie grammaticaregels: vragen maken, ontkenningen maken en de juiste woordvolgorde gebruiken.</p></div>",
+      "subhoofdstukken": [
+        {
+          "titel": "Telling the time",
+          "uitleg": "<div class='box'><h4>Stone 4 - What time is it?</h4><div class='tblwrap'><table class='tbl'><tr><th>Engels</th><th>Nederlands</th></tr><tr><td>What time is it?</td><td>Hoe laat is het?</td></tr><tr><td>It's two o'clock.</td><td>Het is twee uur.</td></tr><tr><td>It's half past three.</td><td>Het is half vier.</td></tr><tr><td>It's a quarter past four.</td><td>Het is kwart over vier.</td></tr><tr><td>It's a quarter to five.</td><td>Het is kwart voor vijf.</td></tr><tr><td>It's twenty minutes past six.</td><td>Het is twintig over zes.</td></tr><tr><td>It's ten to seven.</td><td>Het is tien voor zeven.</td></tr></table></div></div><div class='call warn'><b>Veelgemaakte fout:</b> 'half past three' is in het Nederlands <b>half vier</b>, niet 'half drie'. In het Engels tel je terug naar het volgende hele uur.</div><div class='call'>am betekent ochtend, pm betekent middag en avond.</div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>half past + het VORIGE uur (half past three = half vier)</li><li>a quarter past = kwart over, a quarter to = kwart voor</li></ul></div>"
+        },
+        {
+          "titel": "Timetables and school subjects",
+          "uitleg": "<div class='box'><h4>Theme words: ordinal numbers</h4><p>Rangtelwoorden gebruik je bijvoorbeeld voor lesuren en data.</p><div class='tblwrap'><table class='tbl'><tr><th>Engels</th><th>Nederlands</th><th>Engels</th><th>Nederlands</th></tr><tr><td>1st</td><td>eerste</td><td>7th</td><td>zevende</td></tr><tr><td>2nd</td><td>tweede</td><td>8th</td><td>achtste</td></tr><tr><td>3rd</td><td>derde</td><td>9th</td><td>negende</td></tr><tr><td>4th</td><td>vierde</td><td>10th</td><td>tiende</td></tr><tr><td>5th</td><td>vijfde</td><td>12th</td><td>twaalfde</td></tr><tr><td>6th</td><td>zesde</td><td>20th</td><td>twintigste</td></tr></table></div></div><div class='box'><h4>Stone 5 - When is ...?</h4><div class='tblwrap'><table class='tbl'><tr><th>Engels</th><th>Nederlands</th></tr><tr><td>When is the next English lesson?</td><td>Wanneer is de volgende les Engels?</td></tr><tr><td>Do we have history before or after the break?</td><td>Hebben we geschiedenis voor of na de pauze?</td></tr><tr><td>Do we have music in classroom 34?</td><td>Hebben we muziek in lokaal 34?</td></tr><tr><td>We have Dutch in the afternoon.</td><td>We hebben 's middags Nederlands.</td></tr><tr><td>I don't have biology after maths.</td><td>Ik heb geen biologie na wiskunde.</td></tr><tr><td>My day starts with geography.</td><td>Mijn dag begint met aardrijkskunde.</td></tr><tr><td>The school week ends with tutor hour.</td><td>De schoolweek eindigt met mentoruur.</td></tr></table></div></div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Rangtelwoorden eindigen op -st (1st), -nd (2nd), -rd (3rd) of -th (4th en hoger)</li><li>My day starts with ... / My day ends with ... gebruik je om je lesrooster te beschrijven</li></ul></div>"
+        },
+        {
+          "titel": "Likes and dislikes",
+          "uitleg": "<div class='box'><h4>Theme words: opinions about school</h4><ul class='lst'><li>boring - saai</li><li>great - geweldig</li><li>difficult - moeilijk</li><li>(to) enjoy - genieten van</li><li>interesting - interessant</li><li>favourite - favoriet</li><li>fine - prima</li><li>(to) hate - haten</li><li>(to) like - leuk vinden</li></ul></div><div class='box'><h4>Stone 6 - What do you like about school?</h4><div class='tblwrap'><table class='tbl'><tr><th>Engels</th><th>Nederlands</th></tr><tr><td>What do you like about school?</td><td>Wat vind je leuk aan school?</td></tr><tr><td>What do you love to do after school?</td><td>Wat doe je graag na school?</td></tr><tr><td>I love to see my friends in my free time.</td><td>Ik houd ervan om mijn vrienden te zien in mijn vrije tijd.</td></tr><tr><td>I like to draw at school.</td><td>Ik vind het leuk om te tekenen op school.</td></tr><tr><td>I don't like maths.</td><td>Ik vind wiskunde niet leuk.</td></tr></table></div></div><div class='call'>Voorbeeldzinnen: \"My favourite subject is ...\" en \"I am crazy about ...\" gebruik je om te vertellen wat je heel leuk vindt.</div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>I like / I don't like / I love / I hate + activiteit</li><li>My favourite subject is ... vertelt wat je lievelingsvak is</li></ul></div>"
+        },
+        {
+          "titel": "Grammar: questions, negative sentences and word order",
+          "uitleg": "<div class='box'><h4>Grammar 4 - Yes/no questions</h4><p>Ja/nee-vragen zijn vragen die je met 'ja' of 'nee' kunt beantwoorden.</p><ul class='lst'><li>Met am, are, is of can: zet je am, are, is of can aan het begin van de zin.</li><li>Met een ander werkwoord: voeg je do of does toe aan het begin van de zin, gevolgd door het hele werkwoord. Je gebruikt do bij you, we en they, en does bij he, she en it.</li></ul><div class='call'>Voorbeelden: \"Do you play video games?\" en \"Does she love history?\"</div></div><div class='g2'><div class='box'><h4>Grammar 5 - Negative sentences</h4><p>Om een ontkenning te maken met een ander werkwoord voeg je <b>do not/don't</b> of <b>does not/doesn't</b> toe vóór het werkwoord. Daarna gebruik je het hele werkwoord.</p><ul class='lst'><li>I don't like maths.</li><li>You don't play piano.</li><li>He/she doesn't know the answer.</li><li>It doesn't have feathers.</li><li>We don't have a car.</li><li>They don't eat meat.</li></ul></div><div class='box'><h4>Grammar 6 - Word order</h4><p>De woordvolgorde is in de meeste Engelse zinnen hetzelfde: <b>Who does what where when?</b> (Wie doet wat waar wanneer?) Niet elke zin heeft alle onderdelen. Soms zet je 'when' aan het begin van de zin.</p><ul class='lst'><li>Tom walks his dog in the park at 9 o'clock.</li><li>I wear my favourite shoes to school every Monday.</li></ul></div></div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Ja/nee-vraag met ander werkwoord: do/does + onderwerp + hele werkwoord</li><li>Ontkenning: don't/doesn't + hele werkwoord</li><li>Volgorde: wie - doet wat - waar - wanneer</li></ul></div>"
+        }
+      ],
+      "begrippen": [
+        {"term": "o'clock", "uitleg": "uur (bij hele uren, bv. two o'clock = twee uur)", "paragraaf": "Telling the time"},
+        {"term": "half past", "uitleg": "half (het Engels telt terug: half past three = half vier)", "paragraaf": "Telling the time"},
+        {"term": "a quarter to", "uitleg": "kwart voor", "paragraaf": "Telling the time"},
+        {"term": "a quarter past", "uitleg": "kwart over", "paragraaf": "Telling the time"},
+        {"term": "1st (first)", "uitleg": "eerste", "paragraaf": "Timetables and school subjects"},
+        {"term": "3rd (third)", "uitleg": "derde", "paragraaf": "Timetables and school subjects"},
+        {"term": "break", "uitleg": "pauze", "paragraaf": "Timetables and school subjects"},
+        {"term": "boring", "uitleg": "saai", "paragraaf": "Likes and dislikes"},
+        {"term": "favourite", "uitleg": "favoriet, lievelings-", "paragraaf": "Likes and dislikes"},
+        {"term": "(to) enjoy", "uitleg": "genieten van, leuk vinden", "paragraaf": "Likes and dislikes"},
+        {"term": "(to) hate", "uitleg": "haten", "paragraaf": "Likes and dislikes"},
+        {"term": "yes/no question", "uitleg": "vraag die je met ja of nee kunt beantwoorden; gebruikt am/are/is/can of do/does", "paragraaf": "Grammar: questions, negative sentences and word order"},
+        {"term": "negative sentence", "uitleg": "ontkennende zin met don't of doesn't", "paragraaf": "Grammar: questions, negative sentences and word order"},
+        {"term": "word order", "uitleg": "woordvolgorde: wie - doet wat - waar - wanneer", "paragraaf": "Grammar: questions, negative sentences and word order"}
+      ],
+      "flashcards": [
+        {"vraag": "Hoe zeg je 'Hoe laat is het?' in het Engels?", "antwoord": "What time is it?", "paragraaf": "Telling the time"},
+        {"vraag": "Hoe zeg je 'half vier' in het Engels?", "antwoord": "half past three", "paragraaf": "Telling the time"},
+        {"vraag": "Hoe zeg je 'kwart over vier' in het Engels?", "antwoord": "a quarter past four", "paragraaf": "Telling the time"},
+        {"vraag": "Wat betekent 'a quarter to five'?", "antwoord": "kwart voor vijf", "paragraaf": "Telling the time"},
+        {"vraag": "Hoe schrijf je het rangtelwoord bij 5?", "antwoord": "5th (fifth)", "paragraaf": "Timetables and school subjects"},
+        {"vraag": "Hoe zeg je 'Mijn dag begint met aardrijkskunde' in het Engels?", "antwoord": "My day starts with geography.", "paragraaf": "Timetables and school subjects"},
+        {"vraag": "Wat betekent 'boring'?", "antwoord": "saai", "paragraaf": "Likes and dislikes"},
+        {"vraag": "Hoe zeg je 'Ik vind wiskunde niet leuk' in het Engels?", "antwoord": "I don't like maths.", "paragraaf": "Likes and dislikes"},
+        {"vraag": "Maak een ja/nee-vraag van 'You play piano.'", "antwoord": "Do you play piano?", "paragraaf": "Grammar: questions, negative sentences and word order"},
+        {"vraag": "Maak een ontkenning van 'She knows the answer.'", "antwoord": "She doesn't know the answer.", "paragraaf": "Grammar: questions, negative sentences and word order"},
+        {"vraag": "In welke volgorde zet je een Engelse zin: wie-wat-waar-wanneer of wie-wanneer-wat-waar?", "antwoord": "wie - doet wat - waar - wanneer", "paragraaf": "Grammar: questions, negative sentences and word order"}
+      ],
+      "quiz": [
+        {"vraag": "Hoe zeg je 'half vijf' in het Engels?", "opties": ["half past five", "half past four", "a quarter to five", "five o'clock"], "antwoord_index": 1, "uitleg": "Het Engels telt terug naar het volgende hele uur: half vijf is 'half past four'."},
+        {"vraag": "Wat betekent 'a quarter to seven'?", "opties": ["kwart over zeven", "kwart voor zeven", "half zeven", "zeven uur"], "antwoord_index": 1, "uitleg": "A quarter to seven betekent kwart voor zeven."},
+        {"vraag": "Welk rangtelwoord hoort bij het cijfer 3?", "opties": ["3st", "3nd", "3rd", "3th"], "antwoord_index": 2, "uitleg": "Bij 3 hoort de bijzondere vorm 3rd (third)."},
+        {"vraag": "Wat betekent 'break' in de context van school?", "opties": ["les", "pauze", "rooster", "cijfer"], "antwoord_index": 1, "uitleg": "Break betekent pauze."},
+        {"vraag": "Welk woord betekent 'saai'?", "opties": ["interesting", "boring", "great", "fine"], "antwoord_index": 1, "uitleg": "Boring betekent saai."},
+        {"vraag": "Welke zin is een correcte ja/nee-vraag?", "opties": ["You play video games?", "Do you play video games?", "Does you play video games?", "Are you play video games?"], "antwoord_index": 1, "uitleg": "Bij 'you' gebruik je 'do': Do you play video games?"},
+        {"vraag": "Welke zin is een correcte ontkenning?", "opties": ["He don't have Dutch today.", "He doesn't have Dutch today.", "He not have Dutch today.", "He isn't have Dutch today."], "antwoord_index": 1, "uitleg": "Bij 'he' gebruik je 'doesn't': He doesn't have Dutch today."},
+        {"vraag": "'Tom walks his dog in the park at 9 o'clock.' Welk deel van de zin geeft 'waar' aan?", "opties": ["Tom", "walks his dog", "in the park", "at 9 o'clock"], "antwoord_index": 2, "uitleg": "'In the park' geeft aan waar Tom zijn hond uitlaat."},
+        {"vraag": "Welk woord gebruik je bij 'we' om een ja/nee-vraag te maken met een gewoon werkwoord?", "opties": ["does", "do", "is", "are"], "antwoord_index": 1, "uitleg": "Bij you, we en they gebruik je 'do'."},
+        {"vraag": "Wat betekent 'favourite'?", "opties": ["saai", "moeilijk", "favoriet", "interessant"], "antwoord_index": 2, "uitleg": "Favourite betekent favoriet of lievelings-."},
+        {"vraag": "'My day ___ with tutor hour.' Welk woord past hier het beste, gebaseerd op het boek?", "opties": ["starts", "ends", "has", "is"], "antwoord_index": 1, "uitleg": "In het boek staat: 'The school week ends with tutor hour.'"}
+      ]
+    },
+    {
+      "titel": "Food talk",
+      "uitleg": "<div class='box'><h4>Waar gaat dit hoofdstuk over?</h4><p>In Food talk leer je boodschappen doen, praten over eten en smaken, en aan tafel om dingen vragen. Je oefent ook de grammatica van <b>some</b> en <b>any</b>, <b>meervouden</b> en <b>this, that, these, those</b>.</p></div>",
+      "subhoofdstukken": [
+        {
+          "titel": "Buying food at the market",
+          "uitleg": "<div class='box'><h4>Theme words: quantities</h4><ul class='lst'><li>bag - zak</li><li>bottle - fles</li><li>box - doos</li><li>can - blikje</li><li>cup - kopje</li><li>grams - gram</li><li>(half a) kilo - (halve) kilo</li><li>piece - stuk</li><li>slice - plak</li></ul></div><div class='box'><h4>Stone 7 - At the market</h4><div class='tblwrap'><table class='tbl'><tr><th>Engels</th><th>Nederlands</th></tr><tr><td>Can I have a bag of apples, please?</td><td>Mag ik een zak appels, alstublieft?</td></tr><tr><td>Could I have five bananas, please?</td><td>Zou ik vijf bananen mogen hebben, alstublieft?</td></tr><tr><td>Yes, of course.</td><td>Ja, natuurlijk.</td></tr><tr><td>We don't have any apples.</td><td>We hebben geen appels.</td></tr><tr><td>Is that all? / Do you want anything else?</td><td>Was dat alles? / Wil je verder nog iets?</td></tr><tr><td>That's it, thank you.</td><td>Dat was alles, bedankt.</td></tr><tr><td>I need some tomatoes too, please.</td><td>Ik heb ook wat tomaten nodig, alstublieft.</td></tr><tr><td>How much is a kilo of strawberries?</td><td>Hoeveel kost een kilo aardbeien?</td></tr><tr><td>It's four pounds.</td><td>Het is vier pond.</td></tr></table></div></div><div class='call'>Uitspraak van het meervouds-'s': /s/ na een stemloze medeklinker (cats, grapes), /z/ na een andere klank (knees), /iz/ na s, x, z, ch of sh (boxes). Gebruik 'could' in plaats van 'can' om extra beleefd te vragen.</div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Can/Could I have ...? gebruik je om iets te kopen</li><li>How much is/are ...? vraagt naar de prijs</li></ul></div>"
+        },
+        {
+          "titel": "Talking about food and flavours",
+          "uitleg": "<div class='box'><h4>Theme words: taste</h4><ul class='lst'><li>bitter - bitter</li><li>crunchy - knapperig</li><li>delicious - heerlijk</li><li>disgusting - walgelijk</li><li>juicy - sappig</li><li>salty - zout</li><li>sour - zuur</li><li>spicy - pittig</li><li>sweet - zoet</li><li>tasty - lekker</li></ul></div><div class='box'><h4>Theme words: food</h4><ul class='lst'><li>chips - patat</li><li>crisps - chips</li><li>fish - vis</li><li>fruit - fruit</li><li>juice - sap</li><li>meat - vlees</li><li>milk - melk</li><li>rice - rijst</li><li>soup - soep</li><li>vegetables - groenten</li></ul></div><div class='box'><h4>Stone 8 - What food do you like?</h4><div class='tblwrap'><table class='tbl'><tr><th>Engels</th><th>Nederlands</th></tr><tr><td>What food do you like?</td><td>Welk eten vind je lekker?</td></tr><tr><td>My favourite food is pizza because it is tasty.</td><td>Mijn favoriete eten is pizza, want het is lekker.</td></tr><tr><td>I love Mexican food because I like the spicy flavour.</td><td>Ik houd van Mexicaans eten, omdat ik de pittige smaak lekker vind.</td></tr><tr><td>What does the food taste like?</td><td>Waar smaakt het eten naar?</td></tr><tr><td>The food is not great. / I don't like this meal.</td><td>Het eten is niet geweldig. / Ik vind deze maaltijd niet lekker.</td></tr><tr><td>It smells awful.</td><td>Het ruikt vreselijk.</td></tr><tr><td>The sauce is too sour.</td><td>De saus is te zuur.</td></tr></table></div></div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>My favourite food is ... because it is ... gebruik je om je lievelingseten te beschrijven</li><li>smaakwoorden: sweet, sour, salty, spicy, bitter</li></ul></div>"
+        },
+        {
+          "titel": "At the table",
+          "uitleg": "<div class='box'><h4>Theme words: at the table</h4><ul class='lst'><li>(to) be hungry - honger hebben</li><li>(to) be thirsty - dorst hebben</li><li>bowl - kom</li><li>dessert - toetje / nagerecht</li><li>fork - vork</li><li>glass - glas</li><li>knife - mes</li><li>plate - bord</li><li>(to) set the table - de tafel dekken</li><li>spoon - lepel</li></ul></div><div class='box'><h4>Stone 9 - Ordering food</h4><div class='tblwrap'><table class='tbl'><tr><th>Engels</th><th>Nederlands</th></tr><tr><td>Do you want anything to drink?</td><td>Wil je iets drinken?</td></tr><tr><td>I want a glass of orange juice, please.</td><td>Ik wil een glas sinaasappelsap, alsjeblieft.</td></tr><tr><td>What do you want for dinner?</td><td>Wat wil je als avondeten?</td></tr><tr><td>I want the salmon, please.</td><td>Ik wil de zalm, alsjeblieft.</td></tr><tr><td>Could you pass me that salad?</td><td>Zou je die salade kunnen aangeven?</td></tr><tr><td>Can I have a plate, please?</td><td>Mag ik een bord, alsjeblieft?</td></tr></table></div></div><div class='call'>Voorbeeld uit het boek: \"You know I love chocolate, so ... brownies with ice cream, please!\" - Katarina bestelt met Stone 9 haar toetje bij Paul.</div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Could you pass me ...? en Can I have ...? gebruik je aan tafel</li><li>bowl, plate, fork, knife, spoon, glass zijn de dingen die je op tafel zet</li></ul></div>"
+        },
+        {
+          "titel": "Grammar: some, any, plurals and this/that/these/those",
+          "uitleg": "<div class='box'><h4>Grammar 7 - Some and any</h4><p>Je gebruikt <b>some</b> als je 'enkele' of 'wat' bedoelt in bevestigende zinnen, en ook in vragen waarop je denkt dat het antwoord 'ja' is. Je gebruikt <b>any</b> in ontkenningen en in de meeste vragen.</p><ul class='lst'><li>I need some advice.</li><li>Can I have some water, please?</li><li>She doesn't have any siblings.</li><li>Do you have any sugar?</li></ul><div class='call warn'><b>Veelgemaakte fout:</b> als je zeker weet dat het antwoord op je vraag 'ja' is, gebruik je toch 'some' en niet 'any'. Bijvoorbeeld: \"Do you have any cupcakes?\" maar \"Can I have some water, please?\"</div></div><div class='g2'><div class='box'><h4>Grammar 8 - Plurals</h4><p>Meervoud maak je meestal door <b>-s</b> toe te voegen. Bij woorden die eindigen op -s, -x, -z, -ch of -sh voeg je <b>-es</b> toe. Bij een medeklinker + -y verander je de y in <b>-ies</b>. Bij de meeste woorden op een medeklinker + -o voeg je ook <b>-es</b> toe.</p><div class='tblwrap'><table class='tbl'><tr><th>Enkelvoud</th><th>Meervoud</th></tr><tr><td>chair</td><td>chairs</td></tr><tr><td>bus</td><td>buses</td></tr><tr><td>match</td><td>matches</td></tr><tr><td>glass</td><td>glasses</td></tr><tr><td>party</td><td>parties</td></tr><tr><td>baby</td><td>babies</td></tr><tr><td>hero</td><td>heroes</td></tr><tr><td>pizza</td><td>pizzas</td></tr></table></div></div><div class='box'><h4>Grammar 9 - This, that, these, those</h4><p>Je gebruikt this, that, these en those om te verwijzen naar personen, dieren en dingen.</p><div class='tblwrap'><table class='tbl'><tr><th></th><th>hier</th><th>daar</th></tr><tr><td>één</td><td>this</td><td>that</td></tr><tr><td>meer dan één</td><td>these</td><td>those</td></tr></table></div></div></div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>some = bevestigende zinnen en beleefde verzoeken, any = ontkenningen en vragen</li><li>meervoud: meestal -s, na s/x/z/ch/sh -es, na medeklinker+y wordt het -ies</li><li>this/that = één, these/those = meerdere; this/these = hier, that/those = daar</li></ul></div>"
+        }
+      ],
+      "begrippen": [
+        {"term": "bag", "uitleg": "zak", "paragraaf": "Buying food at the market"},
+        {"term": "(half a) kilo", "uitleg": "(halve) kilo", "paragraaf": "Buying food at the market"},
+        {"term": "slice", "uitleg": "plak", "paragraaf": "Buying food at the market"},
+        {"term": "spicy", "uitleg": "pittig", "paragraaf": "Talking about food and flavours"},
+        {"term": "sweet", "uitleg": "zoet", "paragraaf": "Talking about food and flavours"},
+        {"term": "disgusting", "uitleg": "walgelijk", "paragraaf": "Talking about food and flavours"},
+        {"term": "vegetables", "uitleg": "groenten", "paragraaf": "Talking about food and flavours"},
+        {"term": "juice", "uitleg": "sap", "paragraaf": "Talking about food and flavours"},
+        {"term": "plate", "uitleg": "bord", "paragraaf": "At the table"},
+        {"term": "fork", "uitleg": "vork", "paragraaf": "At the table"},
+        {"term": "(to) be thirsty", "uitleg": "dorst hebben", "paragraaf": "At the table"},
+        {"term": "(to) set the table", "uitleg": "de tafel dekken", "paragraaf": "At the table"},
+        {"term": "some", "uitleg": "wat / enkele; gebruikt in bevestigende zinnen en beleefde verzoeken", "paragraaf": "Grammar: some, any, plurals and this/that/these/those"},
+        {"term": "any", "uitleg": "gebruikt in ontkenningen en vragen", "paragraaf": "Grammar: some, any, plurals and this/that/these/those"},
+        {"term": "plural", "uitleg": "meervoud, meestal gemaakt met -s of -es", "paragraaf": "Grammar: some, any, plurals and this/that/these/those"}
+      ],
+      "flashcards": [
+        {"vraag": "Hoe vraag je beleefd om appels op de markt?", "antwoord": "Can I have a bag of apples, please?", "paragraaf": "Buying food at the market"},
+        {"vraag": "Hoe vraag je naar de prijs van aardbeien?", "antwoord": "How much is a kilo of strawberries?", "paragraaf": "Buying food at the market"},
+        {"vraag": "Wat betekent 'crunchy'?", "antwoord": "knapperig", "paragraaf": "Talking about food and flavours"},
+        {"vraag": "Hoe zeg je 'Mijn favoriete eten is pizza, want het is lekker' in het Engels?", "antwoord": "My favourite food is pizza because it is tasty.", "paragraaf": "Talking about food and flavours"},
+        {"vraag": "Wat betekent 'sour'?", "antwoord": "zuur", "paragraaf": "Talking about food and flavours"},
+        {"vraag": "Hoe vraag je om een bord?", "antwoord": "Can I have a plate, please?", "paragraaf": "At the table"},
+        {"vraag": "Wat betekent 'to set the table'?", "antwoord": "de tafel dekken", "paragraaf": "At the table"},
+        {"vraag": "Vul in: 'Can I have ___ water, please?'", "antwoord": "some", "paragraaf": "Grammar: some, any, plurals and this/that/these/those"},
+        {"vraag": "Vul in: 'She doesn't have ___ siblings.'", "antwoord": "any", "paragraaf": "Grammar: some, any, plurals and this/that/these/those"},
+        {"vraag": "Wat is het meervoud van 'baby'?", "antwoord": "babies", "paragraaf": "Grammar: some, any, plurals and this/that/these/those"},
+        {"vraag": "Welk woord gebruik je voor 'die appel daar' (enkelvoud)?", "antwoord": "that", "paragraaf": "Grammar: some, any, plurals and this/that/these/those"}
+      ],
+      "quiz": [
+        {"vraag": "Wat betekent 'delicious'?", "opties": ["walgelijk", "heerlijk", "bitter", "zuur"], "antwoord_index": 1, "uitleg": "Delicious betekent heerlijk."},
+        {"vraag": "Welk woord betekent 'blikje'?", "opties": ["box", "can", "bottle", "cup"], "antwoord_index": 1, "uitleg": "Can betekent blikje."},
+        {"vraag": "Hoe vraag je hoeveel iets kost?", "opties": ["How much is it?", "How many is it?", "What is it?", "Where is it?"], "antwoord_index": 0, "uitleg": "'How much is it?' vraagt naar de prijs."},
+        {"vraag": "Welk woord betekent 'groenten'?", "opties": ["fruit", "vegetables", "meat", "rice"], "antwoord_index": 1, "uitleg": "Vegetables betekent groenten."},
+        {"vraag": "Wat gebruik je om je bord mee vol te scheppen soep?", "opties": ["fork", "knife", "spoon", "plate"], "antwoord_index": 2, "uitleg": "Een spoon (lepel) gebruik je voor soep."},
+        {"vraag": "Vul in: 'Do you have ___ sugar?'", "opties": ["some", "any", "a", "the"], "antwoord_index": 1, "uitleg": "In een vraag gebruik je meestal 'any': Do you have any sugar?"},
+        {"vraag": "Vul in: 'He has ___ things for you.'", "opties": ["any", "some", "these", "those"], "antwoord_index": 1, "uitleg": "In een bevestigende zin gebruik je 'some': He has some things for you."},
+        {"vraag": "Wat is het meervoud van 'box'?", "opties": ["boxs", "boxes", "boxies", "box"], "antwoord_index": 1, "uitleg": "Box eindigt op -x, dus het meervoud is boxes."},
+        {"vraag": "Wat is het meervoud van 'party'?", "opties": ["partys", "parties", "partyes", "party"], "antwoord_index": 1, "uitleg": "Party eindigt op medeklinker + y, dus de y wordt -ies: parties."},
+        {"vraag": "Je wijst naar meerdere appels die ver bij je vandaan liggen. Welk woord gebruik je?", "opties": ["this", "that", "these", "those"], "antwoord_index": 3, "uitleg": "Meerdere dingen die ver weg zijn: those."},
+        {"vraag": "Je houdt één appel in je hand. Welk woord gebruik je?", "opties": ["this", "that", "these", "those"], "antwoord_index": 0, "uitleg": "Eén ding dichtbij: this."},
+        {"vraag": "Hoeveel kost een kilo aardbeien volgens het gesprek in het boek?", "opties": ["twee pond", "drie pond", "vier pond", "vijf pond"], "antwoord_index": 2, "uitleg": "In het boek staat: 'It's four pounds.'"}
+      ]
+    }
+  ]
+}

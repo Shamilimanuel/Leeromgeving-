@@ -1,0 +1,1339 @@
+{
+ "boek": "PleinM_VerdEco_BBL2",
+ "hoofdstukken": [
+  {
+   "titel": "Hoeveel verdien je eraan?",
+   "uitleg": "<div class='box'><h4>Waar dit hoofdstuk over gaat</h4><p>Voordat een product in de winkel ligt, hebben verschillende bedrijven eraan meegewerkt. In dit hoofdstuk leer je hoe producten gemaakt worden, hoe een winkelier winst maakt, hoe de prijs van een product is opgebouwd, en hoe vraag en aanbod op een markt werken.</p></div>",
+   "subhoofdstukken": [
+    {
+     "titel": "1.1 Producten maken",
+     "uitleg": "<div class='g2'><div class='box'><h4>Bedrijven werken samen</h4><p>Aan een brood dat je bij de bakker koopt, werken verschillende bedrijven mee: een boer verbouwt tarwe, een meelfabriek verwerkt de tarwe tot meel, en de bakker bakt er brood van. Al deze bedrijven die meewerken aan een product staan in een <b>bedrijfskolom</b>.</p></div><div class='box'><h4>Toegevoegde waarde</h4><p>Het eerste bedrijf in de bedrijfskolom haalt de grondstof uit de natuur; de volgende bedrijven bewerken die tot eindproduct, dat het laatste bedrijf (de winkel) aan de consument verkoopt. Door elke bewerking krijgt het product meer waarde: de <b>toegevoegde waarde</b>.</p></div></div><div class='box'><h4>Productiefactoren</h4><p>Alles waarmee je kunt produceren, noem je <b>productiefactoren</b>. Deze bestaan uit drie groepen: <b>natuur</b> (grondstoffen, zonlicht, water), <b>arbeid</b> (het werk dat mensen doen), en <b>kapitaal</b> (hulpmiddelen zoals machines en gebouwen).</p></div><div class='g2'><div class='box'><h4>Investeren</h4><p>Machines en gebouwen die je gebruikt om te produceren, noem je <b>kapitaalgoederen</b>. Deze kapitaalgoederen kopen om te kunnen produceren, heet <b>investeren</b>.</p></div><div class='box'><h4>Technologische ontwikkelingen</h4><p>Door <b>technologische ontwikkelingen</b> (nieuwe kennis en uitvindingen) neemt steeds meer mensenwerk af doordat machines en computers het overnemen — al ontstaan er ook weer nieuwe soorten banen.</p></div></div><div class='call'>In de bedrijfskolom van een spijkerbroek zitten meestal minstens vier bedrijven: de katoenplantage, het katoenverwerkingsbedrijf, de jeansfabriek en de (web)winkel — de consument staat niet in de bedrijfskolom, want die verwerkt het product niet verder.</div><div class='call sum'><b>Om te onthouden — 1.1</b><ul class='lst'><li>De <b>bedrijfskolom</b> toont alle bedrijven die meewerken aan een product, van grondstof tot eindproduct.</li><li>Elke bewerking levert <b>toegevoegde waarde</b> op.</li><li>De drie <b>productiefactoren</b> zijn natuur, arbeid en kapitaal; kapitaalgoederen kopen heet <b>investeren</b>.</li></ul></div>"
+    },
+    {
+     "titel": "1.2 De winkelier wil winst",
+     "uitleg": "<div class='g2'><div class='box'><h4>Inkopen en verkopen</h4><p>De producten die je als winkelier verkoopt, moet je eerst zelf inkopen. Daarna verkoop je ze voor een hogere prijs, zodat je de bedrijfskosten kunt betalen en winst kunt maken.</p></div><div class='box'><h4>Omzet</h4><p>Het totale bedrag dat je ontvangt door de verkoop van producten, noem je de <b>omzet</b> (of verkoopopbrengst). Het aantal producten dat je verkoopt is de <b>afzet</b>.</p><div class='term'><b>Formule omzet</b><span>Omzet = afzet × verkoopprijs.</span></div></div></div><div class='box'><h4>Brutowinst en nettowinst</h4><p>Het totaalbedrag dat een winkel betaalt voor de inkoop van goederen is de <b>inkoopwaarde</b>. Het verschil tussen de omzet en de inkoopwaarde is de <b>brutowinst</b>. De kosten om een winkel te laten draaien zijn de <b>bedrijfskosten</b>. Wat overblijft nadat alle kosten betaald zijn, is de <b>nettowinst</b>.</p><div class='term'><b>Formule brutowinst</b><span>Brutowinst = omzet − inkoopwaarde.</span></div><div class='term' style='margin-bottom:0'><b>Formule nettowinst</b><span>Nettowinst = brutowinst − bedrijfskosten.</span></div></div><div class='g2'><div class='box'><h4>Productiefactoren van een winkel</h4><p>Ook een winkelier gebruikt de drie productiefactoren: natuur, arbeid en kapitaal, bijvoorbeeld de winkelruimte, het personeel en de kassa's.</p></div><div class='box'><h4>Nettoverlies</h4><p>Zijn de bedrijfskosten en inkoopwaarde samen hoger dan de omzet, dan is er geen nettowinst maar een <b>nettoverlies</b>.</p></div></div><div class='call'>Verkoopt een ijsverkoper 430 ijsjes voor € 2,25 per stuk, dan is de afzet 430 stuks en de omzet 430 × € 2,25 = € 967,50.</div><div class='call sum'><b>Om te onthouden — 1.2</b><ul class='lst'><li>De <b>omzet</b> is afzet × verkoopprijs.</li><li>De <b>brutowinst</b> is omzet min inkoopwaarde; de <b>nettowinst</b> is brutowinst min bedrijfskosten.</li><li>Zijn de kosten hoger dan de omzet, dan is er een <b>nettoverlies</b>.</li></ul></div>"
+    },
+    {
+     "titel": "1.3 Wat wordt de prijs?",
+     "uitleg": "<div class='g2'><div class='box'><h4>Verkoopprijs</h4><p>Een winkelier telt bij de inkoopprijs een bedrag op voor kosten en winst: de <b>brutowinstopslag</b>. Zo komt hij tot de <b>verkoopprijs</b>: het bedrag dat de winkelier voor een product krijgt.</p><div class='term'><b>Formule verkoopprijs</b><span>Verkoopprijs = inkoopprijs + brutowinstopslag.</span></div></div><div class='box'><h4>Belasting</h4><p><b>Belasting</b> is een verplichte bijdrage die burgers en bedrijven aan de overheid betalen. Over de verkoopprijs van producten betaal je <b>btw</b>: belasting over de toegevoegde waarde.</p></div></div><div class='box'><h4>Consumentenprijs</h4><p>De verkoopprijs plus de btw is de <b>consumentenprijs</b>: de prijs die je als consument aan de winkelier betaalt.</p><div class='term'><b>Formule consumentenprijs</b><span>Consumentenprijs = verkoopprijs + btw.</span></div></div><div class='g2'><div class='box'><h4>Twee btw-tarieven</h4><p>Er is een algemeen btw-tarief (21%, voor de meeste producten) en een verlaagd btw-tarief (9%, bijvoorbeeld voor eten en drinken). Op sommige diensten en producten zit zelfs 0% btw.</p></div><div class='box'><h4>Een te hoge opslag</h4><p>Rekent een winkelier een te hoge brutowinstopslag, dan wordt zijn verkoopprijs hoger dan die van concurrenten, waardoor klanten mogelijk elders gaan kopen.</p></div></div><div class='call'>Kost een tas € 55 exclusief btw, en is het btw-tarief 21%, dan is de btw 0,21 × € 55 = € 11,55, en wordt de consumentenprijs € 55 + € 11,55 = € 66,55.</div><div class='call sum'><b>Om te onthouden — 1.3</b><ul class='lst'><li>De <b>verkoopprijs</b> is inkoopprijs plus <b>brutowinstopslag</b>.</li><li><b>Btw</b> is belasting over de toegevoegde waarde; de <b>consumentenprijs</b> is verkoopprijs plus btw.</li><li>Er is een algemeen tarief (21%) en een verlaagd tarief (9%) btw.</li></ul></div>"
+    },
+    {
+     "titel": "1.4 Op de markt",
+     "uitleg": "<div class='g2'><div class='box'><h4>Vraag en aanbod</h4><p><b>Vraag</b> is alles wat mensen willen kopen; <b>aanbod</b> is alles wat producenten te koop aanbieden. Samen vormen vraag en aanbod de <b>markt</b>: niet per se een fysieke plek, maar het geheel van alle vraag naar en aanbod van een product.</p></div><div class='box'><h4>Marketing</h4><p>Alles wat bedrijven doen om meer te verkopen, noem je <b>marketing</b> — denk aan reclame, acties en verpakking.</p></div></div><div class='box'><h4>Vraag beïnvloedt prijs</h4><p>Komt er een nieuwe, populaire spelcomputer op de markt, dan stijgt de vraag ernaar snel. Bij een hoge vraag en een beperkt aanbod kan de prijs stijgen.</p></div><div class='g2'><div class='box'><h4>Concurrentie</h4><p>Winkels in dorpen en steden concurreren vaak met webwinkels die producten goedkoper aanbieden. Ze kunnen klanten toch aantrekken door bijvoorbeeld persoonlijk advies, snelle service of een leuke winkelervaring.</p></div><div class='box'><h4>Verschillende markten</h4><p>Ook een <b>arbeidsmarkt</b> (vraag naar en aanbod van werk), <b>financiële markt</b>, <b>huizenmarkt</b> en <b>oliemarkt</b> werken volgens vraag en aanbod.</p></div></div><div class='call'>Bij het algemene btw-tarief blijft er relatief minder brutowinstopslag over voor de winkelier dan je zou denken — de winkelier moet eerst zijn eigen bedrijfskosten en winst verrekenen, vóórdat de btw er bovenop komt.</div><div class='call sum'><b>Om te onthouden — 1.4</b><ul class='lst'><li><b>Vraag</b> is wat mensen willen kopen, <b>aanbod</b> is wat producenten te koop aanbieden; samen vormen ze de <b>markt</b>.</li><li><b>Marketing</b> is alles wat bedrijven doen om meer te verkopen.</li><li>Ook de arbeidsmarkt, financiële markt, huizenmarkt en oliemarkt werken via vraag en aanbod.</li></ul></div>"
+    }
+   ],
+   "begrippen": [
+    {
+     "term": "bedrijfskolom",
+     "uitleg": "Alle bedrijven die meewerken aan een product.",
+     "paragraaf": "1.1 Producten maken"
+    },
+    {
+     "term": "investeren",
+     "uitleg": "Kapitaalgoederen kopen waarmee je kunt produceren.",
+     "paragraaf": "1.1 Producten maken"
+    },
+    {
+     "term": "kapitaalgoederen",
+     "uitleg": "Hulpmiddelen die gebruikt worden om te produceren, zoals gereedschappen en machines.",
+     "paragraaf": "1.1 Producten maken"
+    },
+    {
+     "term": "productiefactoren",
+     "uitleg": "Alles waarmee je kunt produceren: natuur, arbeid en kapitaal.",
+     "paragraaf": "1.1 Producten maken"
+    },
+    {
+     "term": "technologische ontwikkelingen",
+     "uitleg": "Nieuwe kennis van de techniek en nieuwe uitvindingen.",
+     "paragraaf": "1.1 Producten maken"
+    },
+    {
+     "term": "toegevoegde waarde",
+     "uitleg": "Hoeveel een product meer waard wordt doordat een bedrijf het product bewerkt.",
+     "paragraaf": "1.1 Producten maken"
+    },
+    {
+     "term": "afzet",
+     "uitleg": "Het aantal producten dat een winkel verkoopt.",
+     "paragraaf": "1.2 De winkelier wil winst"
+    },
+    {
+     "term": "bedrijfskosten",
+     "uitleg": "De kosten om een winkel te laten draaien.",
+     "paragraaf": "1.2 De winkelier wil winst"
+    },
+    {
+     "term": "brutowinst",
+     "uitleg": "Het verschil tussen de omzet en de inkoopwaarde.",
+     "paragraaf": "1.2 De winkelier wil winst"
+    },
+    {
+     "term": "inkoopwaarde",
+     "uitleg": "Het totaalbedrag dat een winkel betaalt voor de inkoop van goederen.",
+     "paragraaf": "1.2 De winkelier wil winst"
+    },
+    {
+     "term": "nettowinst",
+     "uitleg": "De winst die uiteindelijk overblijft nadat alle kosten betaald zijn.",
+     "paragraaf": "1.2 De winkelier wil winst"
+    },
+    {
+     "term": "omzet",
+     "uitleg": "De verkoopopbrengst. Het totale bedrag dat een bedrijf ontvangt door de verkoop van producten.",
+     "paragraaf": "1.2 De winkelier wil winst"
+    },
+    {
+     "term": "belasting",
+     "uitleg": "Een verplichte bijdrage die burgers en bedrijven aan de overheid betalen.",
+     "paragraaf": "1.3 Wat wordt de prijs?"
+    },
+    {
+     "term": "brutowinstopslag",
+     "uitleg": "Een bedrag dat een winkelier bij de inkoopprijs optelt voor kosten en winst.",
+     "paragraaf": "1.3 Wat wordt de prijs?"
+    },
+    {
+     "term": "btw",
+     "uitleg": "Belasting over de toegevoegde waarde. Deze belasting moet de winkelier optellen bij de verkoopprijs.",
+     "paragraaf": "1.3 Wat wordt de prijs?"
+    },
+    {
+     "term": "consumentenprijs",
+     "uitleg": "De verkoopprijs inclusief btw. De prijs die je als consument aan de winkelier betaalt.",
+     "paragraaf": "1.3 Wat wordt de prijs?"
+    },
+    {
+     "term": "inkoopprijs",
+     "uitleg": "De prijs die een winkelier betaalt voor een product dat hij later wil verkopen.",
+     "paragraaf": "1.3 Wat wordt de prijs?"
+    },
+    {
+     "term": "verkoopprijs",
+     "uitleg": "Het bedrag dat een winkelier voor een product krijgt.",
+     "paragraaf": "1.3 Wat wordt de prijs?"
+    },
+    {
+     "term": "aanbod",
+     "uitleg": "Alles wat producenten te koop aanbieden.",
+     "paragraaf": "1.4 Op de markt"
+    },
+    {
+     "term": "marketing",
+     "uitleg": "Alles wat bedrijven doen om meer te verkopen.",
+     "paragraaf": "1.4 Op de markt"
+    },
+    {
+     "term": "markt",
+     "uitleg": "Alle vraag naar en aanbod van een product.",
+     "paragraaf": "1.4 Op de markt"
+    },
+    {
+     "term": "vraag",
+     "uitleg": "Alles wat mensen willen kopen.",
+     "paragraaf": "1.4 Op de markt"
+    }
+   ],
+   "flashcards": [
+    {
+     "vraag": "Wat is een bedrijfskolom?",
+     "antwoord": "Alle bedrijven die meewerken aan een product, van grondstof tot eindproduct.",
+     "paragraaf": "1.1 Producten maken"
+    },
+    {
+     "vraag": "Wat is toegevoegde waarde?",
+     "antwoord": "Hoeveel een product meer waard wordt doordat een bedrijf het bewerkt.",
+     "paragraaf": "1.1 Producten maken"
+    },
+    {
+     "vraag": "Wat zijn de drie productiefactoren?",
+     "antwoord": "Natuur, arbeid en kapitaal.",
+     "paragraaf": "1.1 Producten maken"
+    },
+    {
+     "vraag": "Wat betekent investeren?",
+     "antwoord": "Kapitaalgoederen kopen waarmee je kunt produceren.",
+     "paragraaf": "1.1 Producten maken"
+    },
+    {
+     "vraag": "Wat zijn kapitaalgoederen?",
+     "antwoord": "Hulpmiddelen die gebruikt worden om te produceren, zoals gereedschappen en machines.",
+     "paragraaf": "1.1 Producten maken"
+    },
+    {
+     "vraag": "Hoe bereken je de omzet?",
+     "antwoord": "Omzet = afzet × verkoopprijs.",
+     "paragraaf": "1.2 De winkelier wil winst"
+    },
+    {
+     "vraag": "Hoe bereken je de brutowinst?",
+     "antwoord": "Brutowinst = omzet − inkoopwaarde.",
+     "paragraaf": "1.2 De winkelier wil winst"
+    },
+    {
+     "vraag": "Hoe bereken je de nettowinst?",
+     "antwoord": "Nettowinst = brutowinst − bedrijfskosten.",
+     "paragraaf": "1.2 De winkelier wil winst"
+    },
+    {
+     "vraag": "Wat is de inkoopwaarde?",
+     "antwoord": "Het totaalbedrag dat een winkel betaalt voor de inkoop van goederen.",
+     "paragraaf": "1.2 De winkelier wil winst"
+    },
+    {
+     "vraag": "Wanneer is er een nettoverlies?",
+     "antwoord": "Als de bedrijfskosten en inkoopwaarde samen hoger zijn dan de omzet.",
+     "paragraaf": "1.2 De winkelier wil winst"
+    },
+    {
+     "vraag": "Hoe bereken je de verkoopprijs?",
+     "antwoord": "Verkoopprijs = inkoopprijs + brutowinstopslag.",
+     "paragraaf": "1.3 Wat wordt de prijs?"
+    },
+    {
+     "vraag": "Wat is btw?",
+     "antwoord": "Belasting over de toegevoegde waarde.",
+     "paragraaf": "1.3 Wat wordt de prijs?"
+    },
+    {
+     "vraag": "Hoe bereken je de consumentenprijs?",
+     "antwoord": "Consumentenprijs = verkoopprijs + btw.",
+     "paragraaf": "1.3 Wat wordt de prijs?"
+    },
+    {
+     "vraag": "Welke twee btw-tarieven zijn er?",
+     "antwoord": "Het algemene tarief (21%) en het verlaagde tarief (9%).",
+     "paragraaf": "1.3 Wat wordt de prijs?"
+    },
+    {
+     "vraag": "Wat is belasting?",
+     "antwoord": "Een verplichte bijdrage die burgers en bedrijven aan de overheid betalen.",
+     "paragraaf": "1.3 Wat wordt de prijs?"
+    },
+    {
+     "vraag": "Wat is het verschil tussen vraag en aanbod?",
+     "antwoord": "Vraag is alles wat mensen willen kopen, aanbod is alles wat producenten te koop aanbieden.",
+     "paragraaf": "1.4 Op de markt"
+    },
+    {
+     "vraag": "Wat is een markt?",
+     "antwoord": "Alle vraag naar en aanbod van een product.",
+     "paragraaf": "1.4 Op de markt"
+    },
+    {
+     "vraag": "Wat is marketing?",
+     "antwoord": "Alles wat bedrijven doen om meer te verkopen.",
+     "paragraaf": "1.4 Op de markt"
+    },
+    {
+     "vraag": "Wat gebeurt er met de vraag als er een populair nieuw product op de markt komt?",
+     "antwoord": "De vraag stijgt snel.",
+     "paragraaf": "1.4 Op de markt"
+    },
+    {
+     "vraag": "Noem een voorbeeld van een markt naast de gewone productmarkt.",
+     "antwoord": "De arbeidsmarkt, financiële markt, huizenmarkt of oliemarkt.",
+     "paragraaf": "1.4 Op de markt"
+    }
+   ],
+   "quiz": [
+    {
+     "vraag": "Wat is een bedrijfskolom?",
+     "opties": [
+      "Een lijst van winkels",
+      "Alle bedrijven die meewerken aan een product",
+      "Een overzicht van belastingen",
+      "Een soort markt"
+     ],
+     "antwoord_index": 1,
+     "uitleg": "Een bedrijfskolom toont alle bedrijven die meewerken aan een product, van grondstof tot eindproduct."
+    },
+    {
+     "vraag": "Wat is toegevoegde waarde?",
+     "opties": [
+      "De btw op een product",
+      "Hoeveel een product meer waard wordt door bewerking",
+      "De totale omzet van een bedrijf",
+      "De prijs die de consument betaalt"
+     ],
+     "antwoord_index": 1,
+     "uitleg": "Toegevoegde waarde is hoeveel een product meer waard wordt doordat een bedrijf het bewerkt."
+    },
+    {
+     "vraag": "Welke drie productiefactoren zijn er?",
+     "opties": [
+      "Geld, tijd, personeel",
+      "Natuur, arbeid, kapitaal",
+      "Grondstof, machine, winkel",
+      "Vraag, aanbod, markt"
+     ],
+     "antwoord_index": 1,
+     "uitleg": "De drie productiefactoren zijn natuur, arbeid en kapitaal."
+    },
+    {
+     "vraag": "Wat betekent investeren?",
+     "opties": [
+      "Winst uitkeren aan aandeelhouders",
+      "Kapitaalgoederen kopen om te kunnen produceren",
+      "Belasting betalen aan de overheid",
+      "Producten verkopen met korting"
+     ],
+     "antwoord_index": 1,
+     "uitleg": "Investeren is kapitaalgoederen kopen waarmee je kunt produceren."
+    },
+    {
+     "vraag": "Wat zijn kapitaalgoederen?",
+     "opties": [
+      "Grondstoffen zoals katoen of tarwe",
+      "Hulpmiddelen zoals gereedschappen en machines",
+      "Het geld dat een bedrijf verdient",
+      "De belasting die een bedrijf betaalt"
+     ],
+     "antwoord_index": 1,
+     "uitleg": "Kapitaalgoederen zijn hulpmiddelen die gebruikt worden om te produceren, zoals gereedschappen en machines."
+    },
+    {
+     "vraag": "Hoe bereken je de omzet?",
+     "opties": [
+      "Afzet × verkoopprijs",
+      "Inkoopprijs + brutowinstopslag",
+      "Omzet − inkoopwaarde",
+      "Brutowinst − bedrijfskosten"
+     ],
+     "antwoord_index": 0,
+     "uitleg": "De omzet bereken je door de afzet te vermenigvuldigen met de verkoopprijs."
+    },
+    {
+     "vraag": "Hoe bereken je de brutowinst?",
+     "opties": [
+      "Omzet + inkoopwaarde",
+      "Omzet − inkoopwaarde",
+      "Afzet × verkoopprijs",
+      "Verkoopprijs + btw"
+     ],
+     "antwoord_index": 1,
+     "uitleg": "De brutowinst is het verschil tussen de omzet en de inkoopwaarde."
+    },
+    {
+     "vraag": "Hoe bereken je de nettowinst?",
+     "opties": [
+      "Brutowinst − bedrijfskosten",
+      "Omzet − bedrijfskosten",
+      "Afzet × bedrijfskosten",
+      "Inkoopwaarde − brutowinst"
+     ],
+     "antwoord_index": 0,
+     "uitleg": "De nettowinst is de brutowinst min de bedrijfskosten."
+    },
+    {
+     "vraag": "Wanneer is er een nettoverlies?",
+     "opties": [
+      "Als de omzet hoger is dan de inkoopwaarde",
+      "Als bedrijfskosten en inkoopwaarde samen hoger zijn dan de omzet",
+      "Als de verkoopprijs stijgt",
+      "Als de belasting daalt"
+     ],
+     "antwoord_index": 1,
+     "uitleg": "Een nettoverlies ontstaat als de bedrijfskosten en inkoopwaarde samen hoger zijn dan de omzet."
+    },
+    {
+     "vraag": "Hoe bereken je de verkoopprijs?",
+     "opties": [
+      "Inkoopprijs + brutowinstopslag",
+      "Omzet − inkoopwaarde",
+      "Consumentenprijs − btw",
+      "Afzet × verkoopprijs"
+     ],
+     "antwoord_index": 0,
+     "uitleg": "De verkoopprijs is de inkoopprijs plus de brutowinstopslag."
+    },
+    {
+     "vraag": "Wat is btw?",
+     "opties": [
+      "Een soort winst",
+      "Belasting over de toegevoegde waarde",
+      "Een korting voor de consument",
+      "De kostprijs van een product"
+     ],
+     "antwoord_index": 1,
+     "uitleg": "Btw is de belasting over de toegevoegde waarde die de winkelier bij de verkoopprijs optelt."
+    },
+    {
+     "vraag": "Hoe bereken je de consumentenprijs?",
+     "opties": [
+      "Inkoopprijs + brutowinstopslag",
+      "Verkoopprijs + btw",
+      "Omzet − inkoopwaarde",
+      "Afzet × verkoopprijs"
+     ],
+     "antwoord_index": 1,
+     "uitleg": "De consumentenprijs is de verkoopprijs plus de btw."
+    },
+    {
+     "vraag": "Welke twee btw-tarieven bestaan er in Nederland?",
+     "opties": [
+      "10% en 20%",
+      "21% en 9%",
+      "25% en 5%",
+      "15% en 30%"
+     ],
+     "antwoord_index": 1,
+     "uitleg": "Er is een algemeen tarief van 21% en een verlaagd tarief van 9%."
+    },
+    {
+     "vraag": "Wat is belasting?",
+     "opties": [
+      "Een korting van de winkelier",
+      "Een verplichte bijdrage die burgers en bedrijven aan de overheid betalen",
+      "Een lening bij de bank",
+      "Een deel van de omzet"
+     ],
+     "antwoord_index": 1,
+     "uitleg": "Belasting is een verplichte bijdrage die burgers en bedrijven aan de overheid betalen."
+    },
+    {
+     "vraag": "Wat is vraag?",
+     "opties": [
+      "Alles wat producenten te koop aanbieden",
+      "Alles wat mensen willen kopen",
+      "De prijs van een product",
+      "De omzet van een bedrijf"
+     ],
+     "antwoord_index": 1,
+     "uitleg": "Vraag is alles wat mensen willen kopen."
+    },
+    {
+     "vraag": "Wat is aanbod?",
+     "opties": [
+      "Alles wat mensen willen kopen",
+      "Alles wat producenten te koop aanbieden",
+      "De belasting op een product",
+      "De winst van een winkelier"
+     ],
+     "antwoord_index": 1,
+     "uitleg": "Aanbod is alles wat producenten te koop aanbieden."
+    },
+    {
+     "vraag": "Wat is een markt?",
+     "opties": [
+      "Een gebouw waar je boodschappen doet",
+      "Alle vraag naar en aanbod van een product",
+      "Een soort belasting",
+      "Een overheidsinstelling"
+     ],
+     "antwoord_index": 1,
+     "uitleg": "Een markt is alle vraag naar en aanbod van een product, niet per se een fysieke plek."
+    },
+    {
+     "vraag": "Wat is marketing?",
+     "opties": [
+      "Het betalen van belasting",
+      "Alles wat bedrijven doen om meer te verkopen",
+      "Het inkopen van grondstoffen",
+      "Het berekenen van de nettowinst"
+     ],
+     "antwoord_index": 1,
+     "uitleg": "Marketing is alles wat bedrijven doen om meer te verkopen, zoals reclame en acties."
+    },
+    {
+     "vraag": "Wat gebeurt er met de vraag als een populair nieuw product op de markt komt?",
+     "opties": [
+      "De vraag daalt",
+      "De vraag stijgt",
+      "De vraag blijft gelijk",
+      "De vraag verdwijnt"
+     ],
+     "antwoord_index": 1,
+     "uitleg": "Bij een populair nieuw product stijgt de vraag ernaar snel."
+    },
+    {
+     "vraag": "Wat is de arbeidsmarkt?",
+     "opties": [
+      "Een markt voor groenten en fruit",
+      "De vraag naar en het aanbod van werk",
+      "Een markt voor aandelen",
+      "Een markt voor huizen"
+     ],
+     "antwoord_index": 1,
+     "uitleg": "De arbeidsmarkt is de markt van vraag naar en aanbod van werk."
+    }
+   ]
+  },
+  {
+   "titel": "Samen met het buitenland",
+   "uitleg": "<div class='box'><h4>Waar dit hoofdstuk over gaat</h4><p>Nederland doet veel zaken met het buitenland: we kopen en verkopen producten over de hele wereld. In dit hoofdstuk leer je over import en export, waarom landen handel drijven, hoe de Europese Unie ons daarbij helpt, en waarom er grote welvaartsverschillen in de wereld bestaan.</p></div>",
+   "subhoofdstukken": [
+    {
+     "titel": "2.1 Over de grens",
+     "uitleg": "<div class='g2'><div class='box'><h4>Import en export</h4><p><b>Export</b> (uitvoer) is het verkopen van goederen en diensten aan het buitenland. <b>Import</b> (invoer) is het kopen van goederen en diensten uit het buitenland.</p></div><div class='box'><h4>Een open economie</h4><p>Nederland exporteert en importeert heel veel: we hebben een <b>open economie</b>, een economie met veel in- en uitvoer.</p></div></div><div class='box'><h4>Waarom importeren?</h4><p>Nederland importeert producten uit het buitenland omdat we ze zelf niet (genoeg) kunnen maken, omdat ze elders goedkoper zijn, of omdat we grondstoffen nodig hebben die hier niet voorkomen.</p></div><div class='g2'><div class='box'><h4>Grote getallen</h4><p>In de internationale handel gaat het vaak over miljoenen en miljarden euro's. Een miljard is 1.000 miljoen — bij grote sommen moet je soms eerst miljarden omrekenen naar miljoenen om ermee te kunnen rekenen.</p></div><div class='box'><h4>Nederlandse exportproducten</h4><p>Nederland exporteert onder meer landbouwproducten, apparatuur voor ziekenhuizen en smartphones — vaak méér dan je zou verwachten van zo'n klein land.</p></div></div><div class='call'>Nederland exporteerde in een recent jaar voor € 616 miljard aan goederen en diensten — met 17,6 miljoen inwoners komt dat neer op een indrukwekkend bedrag aan export per inwoner.</div><div class='call sum'><b>Om te onthouden — 2.1</b><ul class='lst'><li><b>Export</b> is uitvoer, <b>import</b> is invoer van goederen en diensten.</li><li>Nederland heeft een <b>open economie</b>: veel in- en uitvoer.</li><li>We importeren omdat we producten zelf niet kunnen maken, ze elders goedkoper zijn, of we grondstoffen missen.</li></ul></div>"
+    },
+    {
+     "titel": "2.2 Meer of minder buitenlandse handel?",
+     "uitleg": "<div class='g2'><div class='box'><h4>Internationale handel</h4><p>Bij <b>internationale handel</b> kopen bedrijven goederen uit een ander land, of verkopen ze er goederen aan. Deze handel is sterk gegroeid, mede door internet: bedrijven vinden makkelijker buitenlandse klanten en leveranciers.</p></div><div class='box'><h4>Invoerrechten</h4><p><b>Invoerrechten</b> zijn belasting die je aan de grens betaalt als je producten invoert. Dit maakt geïmporteerde producten duurder voor de consument.</p></div></div><div class='box'><h4>Protectiemaatregelen</h4><p>Invoerrechten zijn een vorm van <b>protectiemaatregelen</b>: maatregelen waarmee een regering bedrijven in het eigen land beschermt tegen concurrentie uit het buitenland.</p></div><div class='g2'><div class='box'><h4>Vrijhandel</h4><p>Bij <b>vrijhandel</b> mag je producten in- en uitvoeren zonder invoerrechten te betalen. Binnen de Europese Unie geldt vrijhandel tussen de lidstaten; de EU kan ook met landen buiten Europa afspraken maken over vrijhandel.</p></div><div class='box'><h4>Wereldwijde productieketens</h4><p>Doordat internationale handel zo gegroeid is, komen onderdelen van een product — zoals een telefoon — vaak uit tientallen verschillende landen.</p></div></div><div class='call'>De Amerikaanse autofabrikant Ford heeft fabrieken in Europa: vrijwel alle Fords die in Europa rondrijden, zijn ook in Europa ontworpen en gebouwd — dat scheelt transportkosten en levert werkgelegenheid op voor mensen in de EU.</div><div class='call sum'><b>Om te onthouden — 2.2</b><ul class='lst'><li><b>Internationale handel</b> is sterk gegroeid, mede door internet.</li><li><b>Invoerrechten</b> zijn een <b>protectiemaatregel</b> die geïmporteerde producten duurder maakt.</li><li>Bij <b>vrijhandel</b> betaal je geen invoerrechten; dit geldt binnen de EU.</li></ul></div>"
+    },
+    {
+     "titel": "2.3 De Europese Unie helpt ons verder",
+     "uitleg": "<div class='g2'><div class='box'><h4>De eurozone</h4><p>Tot ongeveer dertig jaar geleden had elk EU-land zijn eigen munteenheid, zoals de gulden in Nederland. Sinds 2002 kun je in een groot deel van de Europese Unie met de <b>euro</b> betalen. De landen die de euro gebruiken vormen samen de <b>eurozone</b>.</p></div><div class='box'><h4>Voordelen van de euro</h4><p>Dankzij de euro kun je prijzen in verschillende landen makkelijker vergelijken, en heb je geen kosten voor het omwisselen van geld binnen de eurozone.</p></div></div><div class='box'><h4>Vreemd geld</h4><p>Geld van een land dat niet de euro heeft, zoals het Britse pond of de Amerikaanse dollar, noem je <b>vreemd geld</b>. Wissel je euro's om naar vreemd geld, dan betaal je vaak extra wisselkosten.</p></div><div class='g2'><div class='box'><h4>De wisselkoers</h4><p>De <b>wisselkoers</b> geeft de verhouding aan tussen de euro en vreemd geld. Stijgt de wisselkoers van het pond, dan wordt het pond duurder en worden Britse producten voor ons duurder; daalt de koers, dan worden ze goedkoper.</p></div><div class='box'><h4>Handel buiten de eurozone</h4><p>Handel je met een bedrijf buiten de eurozone, dan moet je euro's omrekenen naar vreemd geld — dit brengt extra kosten en risico's met zich mee vergeleken met handel binnen de eurozone.</p></div></div><div class='call'>Vóór 2002 betaalde je in Nederland met guldens, in Duitsland met marken en in Italië met lires — voor elke vakantie in een ander EU-land moest je eerst je geld omwisselen.</div><div class='call sum'><b>Om te onthouden — 2.3</b><ul class='lst'><li>Landen met de euro vormen samen de <b>eurozone</b>; de euro maakt prijzen vergelijken makkelijker.</li><li><b>Vreemd geld</b> is geld van een land zonder euro; wisselen kost geld.</li><li>De <b>wisselkoers</b> bepaalt hoeveel vreemd geld je voor je euro's krijgt, en kan stijgen of dalen.</li></ul></div>"
+    },
+    {
+     "titel": "2.4 Welvaart voor iedereen?",
+     "uitleg": "<div class='g2'><div class='box'><h4>Nationaal inkomen</h4><p>Het <b>nationaal inkomen</b> is de inkomens van alle inwoners van een land bij elkaar opgeteld. Toch zegt een hoog nationaal inkomen niet altijd alles: een land kan een hoog nationaal inkomen hebben, terwijl de welvaart ergens anders toch hoger is.</p></div><div class='box'><h4>Welvaart</h4><p>Je <b>welvaart</b> is hoog als je in veel behoeften kunt voorzien. Iemand met een hoog inkomen kan doorgaans in meer behoeften voorzien dan iemand met een laag inkomen.</p></div></div><div class='box'><h4>Ontwikkelingslanden</h4><p><b>Ontwikkelingslanden</b> zijn landen met veel armoede, slechte gezondheidszorg en weinig onderwijs. Door armoede moeten kinderen vaak werken in plaats van naar school te gaan, waardoor veel mensen niet leren lezen en schrijven — en de armoede blijft bestaan.</p></div><div class='g2'><div class='box'><h4>Noodhulp en structurele hulp</h4><p><b>Noodhulp</b> is hulp in noodsituaties, zoals na een aardbeving: voedsel, medicijnen of tenten. <b>Structurele hulp</b> helpt ontwikkelingslanden economisch zelfstandig te worden, bijvoorbeeld via onderwijs, sanitaire voorzieningen of het opleiden van artsen.</p></div><div class='box'><h4>Fairtrade</h4><p><b>Fairtrade</b> betekent letterlijk eerlijke handel: boeren in ontwikkelingslanden krijgen een betere prijs voor hun producten, waardoor ze economisch zelfstandiger worden en kunnen investeren in betere gereedschappen en machines.</p></div></div><div class='call'>Chocolademerk Tony's Chocolonely wil dat cacao zonder moderne slavenarbeid wordt geproduceerd en dat cacaoboeren in Ghana en Ivoorkust — waar het overgrote deel van 's werelds cacao vandaan komt — een eerlijke prijs krijgen.</div><div class='call sum'><b>Om te onthouden — 2.4</b><ul class='lst'><li>Het <b>nationaal inkomen</b> zegt iets over een land, maar niet alles over de <b>welvaart</b> van inwoners.</li><li><b>Ontwikkelingslanden</b> hebben te maken met armoede, die zichzelf in stand kan houden.</li><li><b>Noodhulp</b> helpt direct, <b>structurele hulp</b> en <b>fairtrade</b> helpen op de lange termijn.</li></ul></div>"
+    }
+   ],
+   "begrippen": [
+    {
+     "term": "export",
+     "uitleg": "Uitvoer. Het verkopen van goederen en diensten aan het buitenland.",
+     "paragraaf": "2.1 Over de grens"
+    },
+    {
+     "term": "import",
+     "uitleg": "Invoer. Het kopen van goederen en diensten uit het buitenland.",
+     "paragraaf": "2.1 Over de grens"
+    },
+    {
+     "term": "open economie",
+     "uitleg": "Een land met veel in- en uitvoer.",
+     "paragraaf": "2.1 Over de grens"
+    },
+    {
+     "term": "Europese Unie (EU)",
+     "uitleg": "Groep Europese landen die op politiek en economisch gebied samenwerken.",
+     "paragraaf": "2.2 Meer of minder buitenlandse handel?"
+    },
+    {
+     "term": "internationale handel",
+     "uitleg": "Bedrijven kopen goederen uit een ander land of verkopen er goederen aan.",
+     "paragraaf": "2.2 Meer of minder buitenlandse handel?"
+    },
+    {
+     "term": "invoerrechten",
+     "uitleg": "Belasting die je aan de grens betaalt als je producten invoert.",
+     "paragraaf": "2.2 Meer of minder buitenlandse handel?"
+    },
+    {
+     "term": "protectiemaatregelen",
+     "uitleg": "Handelsbelemmeringen. Maatregelen waarmee een regering bedrijven in het eigen land beschermt tegen concurrentie uit het buitenland.",
+     "paragraaf": "2.2 Meer of minder buitenlandse handel?"
+    },
+    {
+     "term": "vrijhandel",
+     "uitleg": "Je mag producten in- en uitvoeren zonder dat je invoerrechten hoeft te betalen.",
+     "paragraaf": "2.2 Meer of minder buitenlandse handel?"
+    },
+    {
+     "term": "eurozone",
+     "uitleg": "Een aantal landen van de Europese Unie die de euro als munteenheid hebben.",
+     "paragraaf": "2.3 De Europese Unie helpt ons verder"
+    },
+    {
+     "term": "vreemd geld",
+     "uitleg": "Geld van een land dat niet de euro heeft.",
+     "paragraaf": "2.3 De Europese Unie helpt ons verder"
+    },
+    {
+     "term": "wisselkoers",
+     "uitleg": "Geeft de verhouding aan tussen de euro en vreemd geld.",
+     "paragraaf": "2.3 De Europese Unie helpt ons verder"
+    },
+    {
+     "term": "fairtrade",
+     "uitleg": "Letterlijk: eerlijke handel. Voor fairtrade-producten krijgen boeren in ontwikkelingslanden een betere prijs.",
+     "paragraaf": "2.4 Welvaart voor iedereen?"
+    },
+    {
+     "term": "nationaal inkomen",
+     "uitleg": "De inkomens van alle inwoners van een land bij elkaar opgeteld.",
+     "paragraaf": "2.4 Welvaart voor iedereen?"
+    },
+    {
+     "term": "noodhulp",
+     "uitleg": "Hulp in noodsituaties.",
+     "paragraaf": "2.4 Welvaart voor iedereen?"
+    },
+    {
+     "term": "ontwikkelingslanden",
+     "uitleg": "Landen met veel armoede, slechte gezondheidszorg en weinig onderwijs.",
+     "paragraaf": "2.4 Welvaart voor iedereen?"
+    },
+    {
+     "term": "structurele hulp",
+     "uitleg": "Hulp aan ontwikkelingslanden waarmee ze economisch zelfstandig kunnen worden.",
+     "paragraaf": "2.4 Welvaart voor iedereen?"
+    },
+    {
+     "term": "welvaart",
+     "uitleg": "Je welvaart is hoog als je in veel behoeften kunt voorzien.",
+     "paragraaf": "2.4 Welvaart voor iedereen?"
+    }
+   ],
+   "flashcards": [
+    {
+     "vraag": "Wat is het verschil tussen export en import?",
+     "antwoord": "Export is verkopen aan het buitenland, import is kopen uit het buitenland.",
+     "paragraaf": "2.1 Over de grens"
+    },
+    {
+     "vraag": "Wat is een open economie?",
+     "antwoord": "Een land met veel in- en uitvoer.",
+     "paragraaf": "2.1 Over de grens"
+    },
+    {
+     "vraag": "Waarom importeert Nederland producten?",
+     "antwoord": "Omdat we ze zelf niet kunnen maken, ze elders goedkoper zijn, of we grondstoffen missen.",
+     "paragraaf": "2.1 Over de grens"
+    },
+    {
+     "vraag": "Wat is internationale handel?",
+     "antwoord": "Bedrijven kopen goederen uit een ander land of verkopen er goederen aan.",
+     "paragraaf": "2.2 Meer of minder buitenlandse handel?"
+    },
+    {
+     "vraag": "Wat zijn invoerrechten?",
+     "antwoord": "Belasting die je aan de grens betaalt als je producten invoert.",
+     "paragraaf": "2.2 Meer of minder buitenlandse handel?"
+    },
+    {
+     "vraag": "Wat zijn protectiemaatregelen?",
+     "antwoord": "Maatregelen waarmee een regering bedrijven in het eigen land beschermt tegen buitenlandse concurrentie.",
+     "paragraaf": "2.2 Meer of minder buitenlandse handel?"
+    },
+    {
+     "vraag": "Wat is vrijhandel?",
+     "antwoord": "Producten in- en uitvoeren zonder invoerrechten te betalen.",
+     "paragraaf": "2.2 Meer of minder buitenlandse handel?"
+    },
+    {
+     "vraag": "Wat is de eurozone?",
+     "antwoord": "De landen van de Europese Unie die de euro als munteenheid hebben.",
+     "paragraaf": "2.3 De Europese Unie helpt ons verder"
+    },
+    {
+     "vraag": "Wat zijn de voordelen van de euro?",
+     "antwoord": "Makkelijker prijzen vergelijken en geen wisselkosten binnen de eurozone.",
+     "paragraaf": "2.3 De Europese Unie helpt ons verder"
+    },
+    {
+     "vraag": "Wat is vreemd geld?",
+     "antwoord": "Geld van een land dat niet de euro heeft.",
+     "paragraaf": "2.3 De Europese Unie helpt ons verder"
+    },
+    {
+     "vraag": "Wat geeft de wisselkoers aan?",
+     "antwoord": "De verhouding tussen de euro en vreemd geld.",
+     "paragraaf": "2.3 De Europese Unie helpt ons verder"
+    },
+    {
+     "vraag": "Wat gebeurt er als de wisselkoers van het pond stijgt?",
+     "antwoord": "Het pond wordt duurder en Britse producten worden voor ons duurder.",
+     "paragraaf": "2.3 De Europese Unie helpt ons verder"
+    },
+    {
+     "vraag": "Wat is het nationaal inkomen?",
+     "antwoord": "De inkomens van alle inwoners van een land bij elkaar opgeteld.",
+     "paragraaf": "2.4 Welvaart voor iedereen?"
+    },
+    {
+     "vraag": "Wat zijn ontwikkelingslanden?",
+     "antwoord": "Landen met veel armoede, slechte gezondheidszorg en weinig onderwijs.",
+     "paragraaf": "2.4 Welvaart voor iedereen?"
+    },
+    {
+     "vraag": "Wat is het verschil tussen noodhulp en structurele hulp?",
+     "antwoord": "Noodhulp helpt direct in noodsituaties, structurele hulp helpt landen economisch zelfstandig te worden.",
+     "paragraaf": "2.4 Welvaart voor iedereen?"
+    },
+    {
+     "vraag": "Wat is fairtrade?",
+     "antwoord": "Eerlijke handel, waarbij boeren in ontwikkelingslanden een betere prijs krijgen voor hun producten.",
+     "paragraaf": "2.4 Welvaart voor iedereen?"
+    },
+    {
+     "vraag": "Waarom kan armoede in ontwikkelingslanden zichzelf in stand houden?",
+     "antwoord": "Kinderen moeten werken in plaats van naar school te gaan, waardoor ze niet leren lezen en schrijven en arm blijven.",
+     "paragraaf": "2.4 Welvaart voor iedereen?"
+    },
+    {
+     "vraag": "Wanneer is je welvaart hoog?",
+     "antwoord": "Als je in veel behoeften kunt voorzien.",
+     "paragraaf": "2.4 Welvaart voor iedereen?"
+    },
+    {
+     "vraag": "Geef een voorbeeld van structurele hulp.",
+     "antwoord": "Onderwijs geven, sanitaire voorzieningen aanleggen, of artsen opleiden.",
+     "paragraaf": "2.4 Welvaart voor iedereen?"
+    },
+    {
+     "vraag": "Wat is de Europese Unie?",
+     "antwoord": "Een groep Europese landen die op politiek en economisch gebied samenwerken.",
+     "paragraaf": "2.2 Meer of minder buitenlandse handel?"
+    }
+   ],
+   "quiz": [
+    {
+     "vraag": "Wat is export?",
+     "opties": [
+      "Het kopen van goederen uit het buitenland",
+      "Het verkopen van goederen en diensten aan het buitenland",
+      "Een soort belasting",
+      "Een vorm van vrijhandel"
+     ],
+     "antwoord_index": 1,
+     "uitleg": "Export (uitvoer) is het verkopen van goederen en diensten aan het buitenland."
+    },
+    {
+     "vraag": "Wat is een open economie?",
+     "opties": [
+      "Een economie zonder handel",
+      "Een land met veel in- en uitvoer",
+      "Een economie zonder belasting",
+      "Een economie met alleen import"
+     ],
+     "antwoord_index": 1,
+     "uitleg": "Een open economie is een land met veel in- en uitvoer, zoals Nederland."
+    },
+    {
+     "vraag": "Waarom importeert Nederland producten uit het buitenland?",
+     "opties": [
+      "Om altijd meer te betalen dan nodig",
+      "Omdat we ze zelf niet kunnen maken, ze elders goedkoper zijn, of we grondstoffen missen",
+      "Om de export te verminderen",
+      "Om de eurozone te verlaten"
+     ],
+     "antwoord_index": 1,
+     "uitleg": "Nederland importeert producten die we zelf niet kunnen maken, die elders goedkoper zijn, of waarvoor we grondstoffen missen."
+    },
+    {
+     "vraag": "Wat is internationale handel?",
+     "opties": [
+      "Handel binnen één land",
+      "Bedrijven kopen of verkopen goederen met het buitenland",
+      "Een vorm van belasting",
+      "Een soort munteenheid"
+     ],
+     "antwoord_index": 1,
+     "uitleg": "Internationale handel is als bedrijven goederen uit een ander land kopen of er goederen aan verkopen."
+    },
+    {
+     "vraag": "Wat zijn invoerrechten?",
+     "opties": [
+      "Een korting bij import",
+      "Belasting die je aan de grens betaalt als je producten invoert",
+      "Een recht om altijd te mogen importeren",
+      "Een soort exportsubsidie"
+     ],
+     "antwoord_index": 1,
+     "uitleg": "Invoerrechten zijn belasting die je aan de grens betaalt als je producten invoert."
+    },
+    {
+     "vraag": "Wat zijn protectiemaatregelen?",
+     "opties": [
+      "Maatregelen om export te stimuleren",
+      "Maatregelen om bedrijven te beschermen tegen buitenlandse concurrentie",
+      "Een vorm van vrijhandel",
+      "Regels over de eurozone"
+     ],
+     "antwoord_index": 1,
+     "uitleg": "Protectiemaatregelen beschermen bedrijven in het eigen land tegen concurrentie uit het buitenland."
+    },
+    {
+     "vraag": "Wat is vrijhandel?",
+     "opties": [
+      "Handel met hoge invoerrechten",
+      "Producten in- en uitvoeren zonder invoerrechten te betalen",
+      "Handel die verboden is",
+      "Handel alleen binnen één land"
+     ],
+     "antwoord_index": 1,
+     "uitleg": "Bij vrijhandel mag je producten in- en uitvoeren zonder invoerrechten te betalen."
+    },
+    {
+     "vraag": "Wat is de eurozone?",
+     "opties": [
+      "Alle landen ter wereld",
+      "De EU-landen die de euro als munteenheid hebben",
+      "Een handelsverdrag met de VS",
+      "Een gebied zonder grenzen"
+     ],
+     "antwoord_index": 1,
+     "uitleg": "De eurozone bestaat uit de landen van de Europese Unie die de euro als munteenheid hebben."
+    },
+    {
+     "vraag": "Wat is een voordeel van de euro?",
+     "opties": [
+      "Je moet altijd wisselkosten betalen",
+      "Je kunt makkelijker prijzen in verschillende landen vergelijken",
+      "Er is geen internationale handel meer nodig",
+      "Landen buiten de EU gebruiken hem ook automatisch"
+     ],
+     "antwoord_index": 1,
+     "uitleg": "Dankzij de euro kun je prijzen in verschillende landen makkelijker vergelijken."
+    },
+    {
+     "vraag": "Wat is vreemd geld?",
+     "opties": [
+      "Geld dat niet meer geldig is",
+      "Geld van een land dat niet de euro heeft",
+      "Geld van vóór 2002",
+      "Namaakgeld"
+     ],
+     "antwoord_index": 1,
+     "uitleg": "Vreemd geld is geld van een land dat niet de euro als munteenheid heeft."
+    },
+    {
+     "vraag": "Wat geeft de wisselkoers aan?",
+     "opties": [
+      "De hoogte van de belasting",
+      "De verhouding tussen de euro en vreemd geld",
+      "De hoeveelheid export van een land",
+      "De inflatie in een land"
+     ],
+     "antwoord_index": 1,
+     "uitleg": "De wisselkoers geeft de verhouding aan tussen de euro en vreemd geld."
+    },
+    {
+     "vraag": "Wat gebeurt er als de wisselkoers van het pond stijgt?",
+     "opties": [
+      "Britse producten worden goedkoper voor ons",
+      "Britse producten worden duurder voor ons",
+      "Er verandert niets",
+      "Nederland moet de euro loslaten"
+     ],
+     "antwoord_index": 1,
+     "uitleg": "Als de wisselkoers van het pond stijgt, wordt het pond duurder en worden Britse producten duurder voor ons."
+    },
+    {
+     "vraag": "Wat is het nationaal inkomen?",
+     "opties": [
+      "Het inkomen van de rijksoverheid",
+      "De inkomens van alle inwoners van een land bij elkaar opgeteld",
+      "Het inkomen van één gezin",
+      "De export van een land in euro's"
+     ],
+     "antwoord_index": 1,
+     "uitleg": "Het nationaal inkomen is de inkomens van alle inwoners van een land bij elkaar opgeteld."
+    },
+    {
+     "vraag": "Wat kenmerkt een ontwikkelingsland?",
+     "opties": [
+      "Veel welvaart en goed onderwijs",
+      "Veel armoede, slechte gezondheidszorg en weinig onderwijs",
+      "Een hoog nationaal inkomen",
+      "Alleen structurele hulp, geen noodhulp"
+     ],
+     "antwoord_index": 1,
+     "uitleg": "Ontwikkelingslanden hebben veel armoede, slechte gezondheidszorg en weinig onderwijs."
+    },
+    {
+     "vraag": "Wat is het verschil tussen noodhulp en structurele hulp?",
+     "opties": [
+      "Ze betekenen hetzelfde",
+      "Noodhulp is voor noodsituaties, structurele hulp maakt landen economisch zelfstandig",
+      "Noodhulp is altijd duurder",
+      "Structurele hulp is alleen voedsel"
+     ],
+     "antwoord_index": 1,
+     "uitleg": "Noodhulp helpt direct in noodsituaties; structurele hulp helpt landen op de lange termijn economisch zelfstandig te worden."
+    },
+    {
+     "vraag": "Wat is fairtrade?",
+     "opties": [
+      "Onbeperkte vrijhandel",
+      "Eerlijke handel waarbij boeren een betere prijs krijgen",
+      "Een vorm van protectiemaatregel",
+      "Handel zonder belasting"
+     ],
+     "antwoord_index": 1,
+     "uitleg": "Fairtrade is eerlijke handel: boeren in ontwikkelingslanden krijgen een betere prijs voor hun producten."
+    },
+    {
+     "vraag": "Waarom kan armoede zichzelf in stand houden?",
+     "opties": [
+      "Omdat kinderen altijd naar school gaan",
+      "Omdat kinderen vaak moeten werken in plaats van naar school te gaan",
+      "Omdat er te veel onderwijs is",
+      "Omdat er te veel artsen zijn"
+     ],
+     "antwoord_index": 1,
+     "uitleg": "Doordat kinderen vaak moeten werken in plaats van naar school te gaan, blijft de armoede bestaan."
+    },
+    {
+     "vraag": "Wanneer is je welvaart hoog?",
+     "opties": [
+      "Als je weinig geld hebt",
+      "Als je in veel behoeften kunt voorzien",
+      "Als je alleen basisbehoeften hebt",
+      "Als je geen belasting betaalt"
+     ],
+     "antwoord_index": 1,
+     "uitleg": "Je welvaart is hoog als je in veel behoeften kunt voorzien."
+    },
+    {
+     "vraag": "Wat is de Europese Unie?",
+     "opties": [
+      "Een groep landen die militair samenwerkt",
+      "Een groep Europese landen die politiek en economisch samenwerken",
+      "Een handelsorganisatie buiten Europa",
+      "Een muntstelsel zonder landen"
+     ],
+     "antwoord_index": 1,
+     "uitleg": "De Europese Unie is een groep Europese landen die op politiek en economisch gebied samenwerken."
+    },
+    {
+     "vraag": "Wat is een gevolg van internationale handel voor producten zoals telefoons?",
+     "opties": [
+      "Alle onderdelen komen altijd uit één land",
+      "Onderdelen komen vaak uit tientallen verschillende landen",
+      "Er is geen import meer nodig",
+      "De prijs wordt altijd lager"
+     ],
+     "antwoord_index": 1,
+     "uitleg": "Door internationale handel komen onderdelen van producten zoals telefoons vaak uit tientallen verschillende landen."
+    }
+   ]
+  },
+  {
+   "titel": "Wie heeft het voor het zeggen?",
+   "uitleg": "<div class='box'><h4>Waar dit hoofdstuk over gaat</h4><p>Je paspoort, straatverlichting, het fietspad naar school: allemaal zaken die door de overheid geregeld worden. In dit hoofdstuk leer je wie de overheid is, wat de overheid voor ons doet, hoe de overheid aan geld komt, en hoe de overheid dat geld verdeelt.</p></div>",
+   "subhoofdstukken": [
+    {
+     "titel": "3.1 Wie is de overheid?",
+     "uitleg": "<div class='g2'><div class='box'><h4>Wat doet de overheid?</h4><p>Goede wegen, straatverlichting, veiligheid, onderwijs, kinderbijslag, ziekenhuiszorg: het is de <b>overheid</b> die dit allemaal mogelijk maakt. Om alles goed te regelen, maakt de overheid wetten en regels, zodat de samenleving goed kan functioneren.</p></div><div class='box'><h4>Ambtenaren</h4><p>Om alle taken uit te voeren werken er bij de overheid veel <b>ambtenaren</b>: werknemers in dienst van de overheid, zoals een baliemedewerker in het gemeentehuis.</p></div></div><div class='box'><h4>Drie overheidslagen</h4><p>In Nederland zijn er drie <b>overheidslagen</b>: de <b>gemeente</b> regelt alles in jouw woonplaats, de <b>provincie</b> bepaalt onder andere waar steden en dorpen mogen uitbreiden, en de <b>rijksoverheid</b> regelt zaken die voor het hele land van belang zijn.</p></div><div class='g2'><div class='box'><h4>Infrastructuur</h4><p>De overheid zorgt onder meer voor <b>infrastructuur</b>: voorzieningen die nodig zijn voor vervoer en communicatie, zoals wegen, vliegvelden, havens, internet en het elektriciteitsnetwerk.</p></div><div class='box'><h4>De Europese Unie</h4><p>De landen van de Europese Unie stellen samen ook regels vast, waar Nederland dus ook mee te maken heeft.</p></div></div><div class='call'>Van de 9,1 miljoen mensen met een baan in Nederland werken er 8.175.000 bij bedrijven — de rest werkt als ambtenaar bij de overheid.</div><div class='call sum'><b>Om te onthouden — 3.1</b><ul class='lst'><li>De <b>overheid</b> maakt wetten en regels en laat het werk uitvoeren door <b>ambtenaren</b>.</li><li>Er zijn drie <b>overheidslagen</b>: gemeente, provincie en rijksoverheid.</li><li>De overheid zorgt onder meer voor <b>infrastructuur</b>.</li></ul></div>"
+    },
+    {
+     "titel": "3.2 De overheid werkt voor ons",
+     "uitleg": "<div class='g2'><div class='box'><h4>Collectieve voorzieningen</h4><p><b>Collectieve voorzieningen</b> zijn voorzieningen die de overheid betaalt en die iedereen mag gebruiken, zoals straatverlichting en wegen. Organisaties die hiervoor zorgen, zoals de rijksoverheid, provincies en gemeenten, horen bij de <b>collectieve sector</b>.</p></div><div class='box'><h4>Particuliere sector</h4><p>Burgers en bedrijven die goederen en diensten verkopen om winst te maken, horen bij de <b>particuliere sector</b> — denk aan een kledingwinkel. Bedrijven in de particuliere sector moeten winst maken om te kunnen blijven bestaan.</p></div></div><div class='box'><h4>Sociale zekerheid</h4><p>Vroeger zorgde vooral de kerk of familie voor arme mensen; tegenwoordig regelt de overheid dit via <b>sociale zekerheid</b>: als mensen geen of te weinig inkomen hebben, kunnen ze van de overheid een uitkering krijgen.</p></div><div class='g2'><div class='box'><h4>AOW en WW</h4><p>De <b>AOW</b> is een uitkering voor mensen die de pensioenleeftijd bereiken. De <b>WW</b> is een uitkering voor mensen die hun baan zijn kwijtgeraakt en nog geen nieuwe hebben gevonden.</p></div><div class='box'><h4>Sociale premies</h4><p>De overheid betaalt de uitkeringen met <b>sociale premies</b>: inhoudingen op het inkomen van werkende mensen.</p></div></div><div class='call'>Het UWV behoort tot de collectieve sector, en een uitkering die je daar aanvraagt is een voorbeeld van een collectieve voorziening — precies zoals de rijksoverheid, provincies en gemeenten dat ook zijn.</div><div class='call sum'><b>Om te onthouden — 3.2</b><ul class='lst'><li><b>Collectieve voorzieningen</b> betaalt de overheid, voor iedereen te gebruiken; dit hoort bij de <b>collectieve sector</b>.</li><li>De <b>particuliere sector</b> (burgers, bedrijven) moet winst maken.</li><li><b>Sociale zekerheid</b>, betaald met <b>sociale premies</b>, geeft mensen zonder (genoeg) inkomen een uitkering, zoals AOW of WW.</li></ul></div>"
+    },
+    {
+     "titel": "3.3 De overheid heeft geld nodig",
+     "uitleg": "<div class='g2'><div class='box'><h4>Twee soorten inkomsten</h4><p>De inkomsten van de overheid vallen in twee groepen: <b>belastingontvangsten</b> (zoals btw, inkomstenbelasting en accijns) en <b>niet-belastingontvangsten</b> (zoals boetes en winst uit overheidsbedrijven).</p></div><div class='box'><h4>Inkomstenbelasting</h4><p><b>Inkomstenbelasting</b> is belasting die iedereen betaalt over zijn inkomen. Ook al in de middeleeuwen werd belasting geheven op producten.</p></div></div><div class='box'><h4>Accijns</h4><p><b>Accijns</b> is een extra verbruiksbelasting op onder meer alcohol, brandstof en tabak. De overheid heft accijns op deze producten mede om het gebruik ervan te ontmoedigen.</p></div><div class='g2'><div class='box'><h4>Niet-belastingontvangsten</h4><p><b>Niet-belastingontvangsten</b> zijn inkomsten van de overheid uit winst van overheidsbedrijven en boetes, zoals verkeersboetes.</p></div><div class='box'><h4>Wie betaalt wat?</h4><p>Loonbelasting betaal je als werknemer; de btw in de consumentenprijs betaal je als consument, maar wordt door de winkelier afgedragen aan de Belastingdienst.</p></div></div><div class='call'>De rijksoverheid is voor 70% eigenaar van Schiphol, de gemeente Amsterdam voor 20% en de gemeente Rotterdam voor 2%. De nettowinst van Schiphol gaat dus voor een groot deel naar de overheid — een voorbeeld van een niet-belastingontvangst.</div><div class='call sum'><b>Om te onthouden — 3.3</b><ul class='lst'><li>Overheidsinkomsten zijn <b>belastingontvangsten</b> (btw, inkomstenbelasting, accijns) of <b>niet-belastingontvangsten</b> (boetes, winst overheidsbedrijven).</li><li><b>Accijns</b> is een extra verbruiksbelasting op bijvoorbeeld alcohol en brandstof.</li><li><b>Inkomstenbelasting</b> betaalt iedereen over zijn inkomen.</li></ul></div>"
+    },
+    {
+     "titel": "3.4 Kan de overheid rondkomen?",
+     "uitleg": "<div class='g2'><div class='box'><h4>De rijksbegroting</h4><p>De overheid maakt ieder jaar de <b>rijksbegroting</b>: een overzicht van de verwachte inkomsten en uitgaven van de rijksoverheid voor het komende jaar. Op Prinsjesdag (de derde dinsdag in september) maakt de minister van Financiën deze bekend.</p></div><div class='box'><h4>De miljoenennota</h4><p>Bij de rijksbegroting hoort de <b>miljoenennota</b>: een toelichting waarin de regering uitlegt welke keuzes zij voor het komende jaar heeft gemaakt. De Tweede en Eerste Kamer moeten deze plannen eerst goedkeuren.</p></div></div><div class='box'><h4>Keuzes maken</h4><p>Net als een gezin kan de overheid haar geld maar één keer uitgeven. Wil de overheid meer uitgeven aan bijvoorbeeld veiligheid, dan moet ze ergens anders op bezuinigen.</p></div><div class='g2'><div class='box'><h4>Begrotingsoverschot en -tekort</h4><p>Zijn de verwachte inkomsten hoger dan de verwachte uitgaven, dan is er een <b>begrotingsoverschot</b>. Zijn de verwachte uitgaven hoger dan de inkomsten, dan is er een <b>begrotingstekort</b> — de overheid kan dan geld lenen, of moet bezuinigen.</p></div><div class='box'><h4>Subsidie</h4><p>Een <b>subsidie</b> is een financiële bijdrage van de overheid om mensen en bedrijven te stimuleren, bijvoorbeeld voor het plaatsen van zonnepanelen.</p></div></div><div class='call'>De overheid geeft het meeste geld uit aan zorg en sociale zekerheid samen — veruit de grootste posten op de rijksbegroting, nog vóór bijvoorbeeld onderwijs of infrastructuur.</div><div class='call sum'><b>Om te onthouden — 3.4</b><ul class='lst'><li>De <b>rijksbegroting</b> (met de <b>miljoenennota</b>) wordt op Prinsjesdag bekendgemaakt en moet door het parlement worden goedgekeurd.</li><li>Bij een <b>begrotingsoverschot</b> zijn inkomsten hoger dan uitgaven, bij een <b>begrotingstekort</b> andersom.</li><li>Een <b>subsidie</b> stimuleert mensen en bedrijven, bijvoorbeeld voor verduurzaming.</li></ul></div>"
+    }
+   ],
+   "begrippen": [
+    {
+     "term": "ambtenaar",
+     "uitleg": "Werknemer in dienst van de overheid.",
+     "paragraaf": "3.1 Wie is de overheid?"
+    },
+    {
+     "term": "gemeente",
+     "uitleg": "De overheid die alles regelt in je woonplaats.",
+     "paragraaf": "3.1 Wie is de overheid?"
+    },
+    {
+     "term": "infrastructuur",
+     "uitleg": "Voorzieningen die nodig zijn voor vervoer en communicatie, zoals wegen, vliegvelden, havens, internet en het elektriciteitsnetwerk.",
+     "paragraaf": "3.1 Wie is de overheid?"
+    },
+    {
+     "term": "overheid",
+     "uitleg": "Gemeente, provincie en de rijksoverheid. Zij maken wetten en regels om de samenleving goed te laten functioneren.",
+     "paragraaf": "3.1 Wie is de overheid?"
+    },
+    {
+     "term": "overheidslaag",
+     "uitleg": "In Nederland zijn er drie overheidslagen: gemeente, provincie en de rijksoverheid.",
+     "paragraaf": "3.1 Wie is de overheid?"
+    },
+    {
+     "term": "rijksoverheid",
+     "uitleg": "De centrale overheid die vanuit Den Haag zaken regelt die voor heel het land van belang zijn. Andere benaming: het Rijk.",
+     "paragraaf": "3.1 Wie is de overheid?"
+    },
+    {
+     "term": "collectieve sector",
+     "uitleg": "De overheid en instellingen die zorgen voor de uitkeringen.",
+     "paragraaf": "3.2 De overheid werkt voor ons"
+    },
+    {
+     "term": "collectieve voorzieningen",
+     "uitleg": "Voorzieningen die de overheid betaalt en die iedereen mag gebruiken.",
+     "paragraaf": "3.2 De overheid werkt voor ons"
+    },
+    {
+     "term": "particuliere sector",
+     "uitleg": "Burgers en bedrijven. Bedrijven in de particuliere sector verkopen goederen en diensten om daarmee winst te behalen.",
+     "paragraaf": "3.2 De overheid werkt voor ons"
+    },
+    {
+     "term": "sociale premies",
+     "uitleg": "Inhoudingen op je inkomen waarmee de overheid de uitkeringen betaalt.",
+     "paragraaf": "3.2 De overheid werkt voor ons"
+    },
+    {
+     "term": "sociale zekerheid",
+     "uitleg": "Als mensen geen of te weinig inkomen hebben, kunnen ze van de overheid een uitkering krijgen.",
+     "paragraaf": "3.2 De overheid werkt voor ons"
+    },
+    {
+     "term": "accijns",
+     "uitleg": "Een extra verbruiksbelasting op alcohol, brandstof en tabak.",
+     "paragraaf": "3.3 De overheid heeft geld nodig"
+    },
+    {
+     "term": "inkomstenbelasting",
+     "uitleg": "Belasting die iedereen betaalt over zijn inkomen.",
+     "paragraaf": "3.3 De overheid heeft geld nodig"
+    },
+    {
+     "term": "niet-belastingontvangsten",
+     "uitleg": "Inkomsten van de overheid uit winst van overheidsbedrijven en boetes.",
+     "paragraaf": "3.3 De overheid heeft geld nodig"
+    },
+    {
+     "term": "begrotingsoverschot",
+     "uitleg": "De verwachte inkomsten van de overheid zijn hoger dan de verwachte uitgaven.",
+     "paragraaf": "3.4 Kan de overheid rondkomen?"
+    },
+    {
+     "term": "begrotingstekort",
+     "uitleg": "De verwachte uitgaven van de overheid zijn hoger dan de verwachte inkomsten.",
+     "paragraaf": "3.4 Kan de overheid rondkomen?"
+    },
+    {
+     "term": "miljoenennota",
+     "uitleg": "Een uitleg bij de rijksbegroting over de keuzes die de overheid maakt.",
+     "paragraaf": "3.4 Kan de overheid rondkomen?"
+    },
+    {
+     "term": "rijksbegroting",
+     "uitleg": "Een overzicht van de verwachte inkomsten en uitgaven van de rijksoverheid voor het komende jaar.",
+     "paragraaf": "3.4 Kan de overheid rondkomen?"
+    },
+    {
+     "term": "subsidie",
+     "uitleg": "Een financiële bijdrage van de overheid om mensen en bedrijven te stimuleren.",
+     "paragraaf": "3.4 Kan de overheid rondkomen?"
+    }
+   ],
+   "flashcards": [
+    {
+     "vraag": "Wat is een ambtenaar?",
+     "antwoord": "Een werknemer in dienst van de overheid.",
+     "paragraaf": "3.1 Wie is de overheid?"
+    },
+    {
+     "vraag": "Welke drie overheidslagen zijn er in Nederland?",
+     "antwoord": "Gemeente, provincie en rijksoverheid.",
+     "paragraaf": "3.1 Wie is de overheid?"
+    },
+    {
+     "vraag": "Wat regelt de gemeente?",
+     "antwoord": "Alles in jouw woonplaats.",
+     "paragraaf": "3.1 Wie is de overheid?"
+    },
+    {
+     "vraag": "Wat is infrastructuur?",
+     "antwoord": "Voorzieningen die nodig zijn voor vervoer en communicatie, zoals wegen, vliegvelden en internet.",
+     "paragraaf": "3.1 Wie is de overheid?"
+    },
+    {
+     "vraag": "Wat zijn collectieve voorzieningen?",
+     "antwoord": "Voorzieningen die de overheid betaalt en die iedereen mag gebruiken.",
+     "paragraaf": "3.2 De overheid werkt voor ons"
+    },
+    {
+     "vraag": "Wat is het verschil tussen de collectieve en de particuliere sector?",
+     "antwoord": "De collectieve sector zorgt voor uitkeringen en voorzieningen, de particuliere sector (burgers en bedrijven) moet winst maken.",
+     "paragraaf": "3.2 De overheid werkt voor ons"
+    },
+    {
+     "vraag": "Wat is sociale zekerheid?",
+     "antwoord": "Als mensen geen of te weinig inkomen hebben, kunnen ze van de overheid een uitkering krijgen.",
+     "paragraaf": "3.2 De overheid werkt voor ons"
+    },
+    {
+     "vraag": "Waarmee betaalt de overheid de uitkeringen?",
+     "antwoord": "Met sociale premies, inhoudingen op het inkomen van werkende mensen.",
+     "paragraaf": "3.2 De overheid werkt voor ons"
+    },
+    {
+     "vraag": "Wat is het verschil tussen belastingontvangsten en niet-belastingontvangsten?",
+     "antwoord": "Belastingontvangsten komen uit belasting zoals btw en inkomstenbelasting; niet-belastingontvangsten komen uit boetes en winst van overheidsbedrijven.",
+     "paragraaf": "3.3 De overheid heeft geld nodig"
+    },
+    {
+     "vraag": "Wat is accijns?",
+     "antwoord": "Een extra verbruiksbelasting op alcohol, brandstof en tabak.",
+     "paragraaf": "3.3 De overheid heeft geld nodig"
+    },
+    {
+     "vraag": "Wat is inkomstenbelasting?",
+     "antwoord": "Belasting die iedereen betaalt over zijn inkomen.",
+     "paragraaf": "3.3 De overheid heeft geld nodig"
+    },
+    {
+     "vraag": "Wat is de rijksbegroting?",
+     "antwoord": "Een overzicht van de verwachte inkomsten en uitgaven van de rijksoverheid voor het komende jaar.",
+     "paragraaf": "3.4 Kan de overheid rondkomen?"
+    },
+    {
+     "vraag": "Wat is de miljoenennota?",
+     "antwoord": "Een toelichting bij de rijksbegroting over de keuzes die de overheid maakt.",
+     "paragraaf": "3.4 Kan de overheid rondkomen?"
+    },
+    {
+     "vraag": "Wanneer is er een begrotingstekort?",
+     "antwoord": "Als de verwachte uitgaven van de overheid hoger zijn dan de verwachte inkomsten.",
+     "paragraaf": "3.4 Kan de overheid rondkomen?"
+    },
+    {
+     "vraag": "Wanneer is er een begrotingsoverschot?",
+     "antwoord": "Als de verwachte inkomsten van de overheid hoger zijn dan de verwachte uitgaven.",
+     "paragraaf": "3.4 Kan de overheid rondkomen?"
+    },
+    {
+     "vraag": "Wat is een subsidie?",
+     "antwoord": "Een financiële bijdrage van de overheid om mensen en bedrijven te stimuleren.",
+     "paragraaf": "3.4 Kan de overheid rondkomen?"
+    },
+    {
+     "vraag": "Wanneer maakt de minister van Financiën de rijksbegroting bekend?",
+     "antwoord": "Op Prinsjesdag, de derde dinsdag in september.",
+     "paragraaf": "3.4 Kan de overheid rondkomen?"
+    },
+    {
+     "vraag": "Wie moeten de plannen van de rijksbegroting goedkeuren?",
+     "antwoord": "De Tweede en Eerste Kamer.",
+     "paragraaf": "3.4 Kan de overheid rondkomen?"
+    },
+    {
+     "vraag": "Wat regelt de rijksoverheid?",
+     "antwoord": "Zaken die voor het hele land van belang zijn.",
+     "paragraaf": "3.1 Wie is de overheid?"
+    },
+    {
+     "vraag": "Geef een voorbeeld van een AOW- en een WW-uitkering.",
+     "antwoord": "AOW is voor mensen die de pensioenleeftijd bereiken, WW is voor mensen die hun baan kwijt zijn.",
+     "paragraaf": "3.2 De overheid werkt voor ons"
+    }
+   ],
+   "quiz": [
+    {
+     "vraag": "Wat is een ambtenaar?",
+     "opties": [
+      "Een ondernemer met een eigen bedrijf",
+      "Een werknemer in dienst van de overheid",
+      "Een lid van de Tweede Kamer",
+      "Een consument die belasting betaalt"
+     ],
+     "antwoord_index": 1,
+     "uitleg": "Een ambtenaar is een werknemer in dienst van de overheid."
+    },
+    {
+     "vraag": "Welke drie overheidslagen zijn er in Nederland?",
+     "opties": [
+      "Koning, kabinet, Kamer",
+      "Gemeente, provincie, rijksoverheid",
+      "EU, VN, NAVO",
+      "Politie, leger, rechtbank"
+     ],
+     "antwoord_index": 1,
+     "uitleg": "De drie overheidslagen in Nederland zijn gemeente, provincie en rijksoverheid."
+    },
+    {
+     "vraag": "Wat regelt de gemeente?",
+     "opties": [
+      "Zaken voor het hele land",
+      "Alles in jouw woonplaats",
+      "Alleen internationale zaken",
+      "Alleen defensie"
+     ],
+     "antwoord_index": 1,
+     "uitleg": "De gemeente regelt alles in jouw woonplaats."
+    },
+    {
+     "vraag": "Wat is infrastructuur?",
+     "opties": [
+      "Een soort belasting",
+      "Voorzieningen nodig voor vervoer en communicatie, zoals wegen en internet",
+      "Een uitkering van de overheid",
+      "Een politieke partij"
+     ],
+     "antwoord_index": 1,
+     "uitleg": "Infrastructuur zijn voorzieningen die nodig zijn voor vervoer en communicatie, zoals wegen, vliegvelden en internet."
+    },
+    {
+     "vraag": "Wat zijn collectieve voorzieningen?",
+     "opties": [
+      "Voorzieningen die alleen voor rijke mensen zijn",
+      "Voorzieningen die de overheid betaalt en die iedereen mag gebruiken",
+      "Voorzieningen die alleen bedrijven gebruiken",
+      "Voorzieningen zonder overheidsbemoeienis"
+     ],
+     "antwoord_index": 1,
+     "uitleg": "Collectieve voorzieningen zijn voorzieningen die de overheid betaalt en die iedereen mag gebruiken."
+    },
+    {
+     "vraag": "Wat is het verschil tussen de collectieve en de particuliere sector?",
+     "opties": [
+      "Ze zijn hetzelfde",
+      "De particuliere sector (burgers, bedrijven) moet winst maken, de collectieve sector niet per se",
+      "De collectieve sector bestaat alleen uit bedrijven",
+      "De particuliere sector betaalt geen belasting"
+     ],
+     "antwoord_index": 1,
+     "uitleg": "Bedrijven in de particuliere sector moeten winst maken om te bestaan; de collectieve sector zorgt voor voorzieningen en uitkeringen."
+    },
+    {
+     "vraag": "Wat is sociale zekerheid?",
+     "opties": [
+      "Bescherming tegen inbraak",
+      "Als mensen zonder (genoeg) inkomen een uitkering kunnen krijgen van de overheid",
+      "Een verzekering tegen ziekte",
+      "Een systeem voor internationale handel"
+     ],
+     "antwoord_index": 1,
+     "uitleg": "Sociale zekerheid betekent dat mensen zonder of met te weinig inkomen een uitkering kunnen krijgen van de overheid."
+    },
+    {
+     "vraag": "Waarmee betaalt de overheid uitkeringen?",
+     "opties": [
+      "Met invoerrechten",
+      "Met sociale premies, ingehouden op het inkomen van werkenden",
+      "Met de euro alleen",
+      "Met subsidies van bedrijven"
+     ],
+     "antwoord_index": 1,
+     "uitleg": "De overheid betaalt uitkeringen met sociale premies: inhoudingen op het inkomen van werkende mensen."
+    },
+    {
+     "vraag": "Wat zijn belastingontvangsten?",
+     "opties": [
+      "Boetes en winst uit overheidsbedrijven",
+      "Inkomsten uit btw, inkomstenbelasting en accijns",
+      "Alleen invoerrechten",
+      "Alleen subsidies"
+     ],
+     "antwoord_index": 1,
+     "uitleg": "Belastingontvangsten zijn inkomsten van de overheid uit belastingen zoals btw, inkomstenbelasting en accijns."
+    },
+    {
+     "vraag": "Wat is accijns?",
+     "opties": [
+      "Een korting op producten",
+      "Een extra verbruiksbelasting op onder meer alcohol, brandstof en tabak",
+      "Een soort subsidie",
+      "Een uitkering voor ondernemers"
+     ],
+     "antwoord_index": 1,
+     "uitleg": "Accijns is een extra verbruiksbelasting op producten als alcohol, brandstof en tabak."
+    },
+    {
+     "vraag": "Wat zijn niet-belastingontvangsten?",
+     "opties": [
+      "Inkomsten uit btw",
+      "Inkomsten uit boetes en winst van overheidsbedrijven",
+      "Inkomsten uit inkomstenbelasting",
+      "Inkomsten uit accijns"
+     ],
+     "antwoord_index": 1,
+     "uitleg": "Niet-belastingontvangsten zijn inkomsten van de overheid uit winst van overheidsbedrijven en boetes."
+    },
+    {
+     "vraag": "Wat is inkomstenbelasting?",
+     "opties": [
+      "Belasting die alleen bedrijven betalen",
+      "Belasting die iedereen betaalt over zijn inkomen",
+      "Een korting op je loon",
+      "Een subsidie van de overheid"
+     ],
+     "antwoord_index": 1,
+     "uitleg": "Inkomstenbelasting is belasting die iedereen betaalt over zijn inkomen."
+    },
+    {
+     "vraag": "Wat is de rijksbegroting?",
+     "opties": [
+      "Een overzicht van inkomsten en uitgaven van één gemeente",
+      "Een overzicht van de verwachte inkomsten en uitgaven van de rijksoverheid voor het komende jaar",
+      "Een belastingaangifte van een burger",
+      "Een handelsverdrag met andere landen"
+     ],
+     "antwoord_index": 1,
+     "uitleg": "De rijksbegroting is een overzicht van de verwachte inkomsten en uitgaven van de rijksoverheid voor het komende jaar."
+    },
+    {
+     "vraag": "Wat is de miljoenennota?",
+     "opties": [
+      "Een overzicht van gemeentelijke uitgaven",
+      "Een toelichting bij de rijksbegroting over gemaakte keuzes",
+      "Een wet over belasting",
+      "Een verslag van de Tweede Kamer"
+     ],
+     "antwoord_index": 1,
+     "uitleg": "De miljoenennota is een toelichting bij de rijksbegroting waarin de regering haar keuzes uitlegt."
+    },
+    {
+     "vraag": "Wanneer is er een begrotingstekort?",
+     "opties": [
+      "Als de inkomsten hoger zijn dan de uitgaven",
+      "Als de uitgaven hoger zijn dan de inkomsten",
+      "Als de belasting daalt",
+      "Als de subsidies stijgen"
+     ],
+     "antwoord_index": 1,
+     "uitleg": "Een begrotingstekort ontstaat als de verwachte uitgaven van de overheid hoger zijn dan de verwachte inkomsten."
+    },
+    {
+     "vraag": "Wanneer is er een begrotingsoverschot?",
+     "opties": [
+      "Als de uitgaven hoger zijn dan de inkomsten",
+      "Als de inkomsten hoger zijn dan de uitgaven",
+      "Als er een subsidie wordt gegeven",
+      "Als de accijns stijgt"
+     ],
+     "antwoord_index": 1,
+     "uitleg": "Een begrotingsoverschot ontstaat als de verwachte inkomsten van de overheid hoger zijn dan de verwachte uitgaven."
+    },
+    {
+     "vraag": "Wat is een subsidie?",
+     "opties": [
+      "Een boete van de overheid",
+      "Een financiële bijdrage van de overheid om mensen en bedrijven te stimuleren",
+      "Een belasting op producten",
+      "Een uitkering voor werklozen"
+     ],
+     "antwoord_index": 1,
+     "uitleg": "Een subsidie is een financiële bijdrage van de overheid om mensen en bedrijven te stimuleren, bijvoorbeeld voor verduurzaming."
+    },
+    {
+     "vraag": "Op welke dag maakt de minister van Financiën de rijksbegroting bekend?",
+     "opties": [
+      "Nieuwjaarsdag",
+      "Prinsjesdag",
+      "Bevrijdingsdag",
+      "Koningsdag"
+     ],
+     "antwoord_index": 1,
+     "uitleg": "Op Prinsjesdag, de derde dinsdag in september, maakt de minister van Financiën de rijksbegroting bekend."
+    },
+    {
+     "vraag": "Wie moeten de plannen in de rijksbegroting goedkeuren?",
+     "opties": [
+      "Alleen de koning",
+      "De Tweede en Eerste Kamer",
+      "Alleen de minister-president",
+      "De Europese Commissie"
+     ],
+     "antwoord_index": 1,
+     "uitleg": "De Tweede en Eerste Kamer moeten de plannen van de rijksbegroting goedkeuren voordat de regering ze mag uitvoeren."
+    },
+    {
+     "vraag": "Waaraan geeft de overheid het meeste geld uit?",
+     "opties": [
+      "Defensie",
+      "Zorg en sociale zekerheid",
+      "Cultuur",
+      "Toerisme"
+     ],
+     "antwoord_index": 1,
+     "uitleg": "De overheid geeft het meeste geld uit aan zorg en sociale zekerheid."
+    }
+   ]
+  }
+ ]
+}

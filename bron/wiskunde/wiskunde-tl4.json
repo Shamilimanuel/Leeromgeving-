@@ -1,0 +1,2799 @@
+{
+  "hoofdstukken": [
+    {
+      "titel": "Statistiek en kans",
+      "uitleg": "<div class='box'>In dit hoofdstuk werk je met kansen en met manieren om gegevens overzichtelijk weer te geven: diagrammen, een steelbladdiagram, een boxplot, grafen (netwerken) en telproblemen.</div>",
+      "subhoofdstukken": [
+        {
+          "titel": "Kans",
+          "uitleg": "<div class='box'>Een <span class='term'>kans</span> geeft aan hoe waarschijnlijk het is dat iets gebeurt. Je berekent een kans met:<br><div class='tblwrap'><table class='tbl'><tr><td>kans</td><td>=</td><td>aantal gunstige uitkomsten / totaal aantal mogelijke uitkomsten</td></tr></table></div>Je kunt een kans schrijven als breuk, als kommagetal of als percentage.</div><div class='voorbeeld'><p><b>Voorbeeld</b><br>Je gooit met twee dobbelstenen en telt het aantal ogen op. Om de kans op een bepaalde som te vinden, maak je eerst een schema met alle 36 mogelijke combinaties (6 &times; 6). Daarna tel je hoe vaak de gewenste som voorkomt.<br>Er is bijvoorbeeld 1 manier om 12 te gooien (6+6) en 5 manieren om 8 te gooien (2+6, 3+5, 4+4, 5+3, 6+2). De kans op 8 ogen is dus 5/36 = 13,9%.</p></div><div class='call'>Wil je weten hoe vaak je een uitkomst verwacht bij een groot aantal worpen? Vermenigvuldig de kans (als breuk) met het aantal worpen.</div>"
+        },
+        {
+          "titel": "Staafdiagram, lijndiagram en cirkeldiagram",
+          "uitleg": "<div class='box'>Bij een <span class='term'>cirkeldiagram</span> is de cirkel verdeeld in taartpunten (sectoren). Hoe groter het percentage, hoe groter de sector.</div><div class='num'><ol><li>Bereken het totaal aantal en vul dat in de tabel in.</li><li>Bereken bij elke groep het percentage: (aantal / totaal) &times; 100%. Rond af op &eacute;&eacute;n decimaal.</li><li>De sectoren samen zijn 360&deg; (100%). Om van percentage naar hoek te gaan, vermenigvuldig je met 3,6.</li><li>Teken de cirkel, teken elke sectorhoek, schrijf de percentages erbij, maak de legenda en zet de titel en het totaal aantal erboven.</li></ol></div><div class='call warn'>Tel je alle afgeronde percentages op, dan krijg je soms 99,9% of 100,1% in plaats van 100%. Dat komt door het afronden en is geen fout.</div><div class='call'>Bij een <span class='term'>lijndiagram</span> zet je punten in een assenstelsel en verbind je ze met lijnstukken, bijvoorbeeld om een ontwikkeling in de tijd te laten zien (zoals het aantal werknemers per jaar). Bij een <span class='term'>staafdiagram</span> gebruik je staven waarvan de hoogte of lengte het aantal of percentage weergeeft.</div>"
+        },
+        {
+          "titel": "Steelbladdiagram",
+          "uitleg": "<div class='box'>Met een <b>steelbladdiagram</b> orden je een grote reeks getallen overzichtelijk. Elk getal splits je in een <b>steel</b> (bijvoorbeeld de tientallen) en een <b>blad</b> (de eenheid).</div><div class='voorbeeld'><h4>Voorbeeld</h4><p>Het getal 17 heeft steel 1 en blad 7. Je zet alle stelen &eacute;&eacute;n keer in een kolom en schrijft achter elke steel alle bijbehorende bladen op volgorde van klein naar groot.</p></div><ol class='num'><li>Maak eerst een kladversie: schrijf de bladen in de volgorde waarin ze in de gegevens voorkomen.</li><li>Maak daarna het steelbladdiagram in het net: zet de bladen achter elke steel op volgorde.</li><li>Zet een titel boven het steelbladdiagram.</li></ol><div class='call'>Een steelbladdiagram laat, net als een tabel, de precieze waarden zien &eacute;n geeft tegelijk een beeld van de spreiding van de gegevens, zoals een staafdiagram dat doet.</div>"
+        },
+        {
+          "titel": "Boxplot",
+          "uitleg": "<div class='box'>Een <span class='term'>boxplot</span> (box-and-whisker-diagram) laat in &eacute;&eacute;n oogopslag de spreiding van een groep gegevens zien. Een boxplot bestaat uit vijf kengetallen: het minimum, het eerste kwartiel (Q1), de mediaan, het derde kwartiel (Q3) en het maximum.</div><div class='tblwrap'><table class='tbl'><tr><th>kengetal</th><th>betekenis</th></tr><tr><td>minimum</td><td>de kleinste waarde</td></tr><tr><td>Q1 (eerste kwartiel)</td><td>25% van de gegevens is kleiner dan of gelijk aan Q1</td></tr><tr><td>mediaan</td><td>de middelste waarde (50%)</td></tr><tr><td>Q3 (derde kwartiel)</td><td>75% van de gegevens is kleiner dan of gelijk aan Q3</td></tr><tr><td>maximum</td><td>de grootste waarde</td></tr></table></div><div class='call'>De box loopt van Q1 tot Q3. Deze box bevat de middelste 50% van de gegevens. De 'snorharen' (whiskers) lopen van de box naar het minimum en het maximum.</div><div class='call waarom'>Met een boxplot vergelijk je snel twee of meer groepen gegevens: hoe breder de box en de snorharen, hoe groter de spreiding in de gegevens.</div>"
+        },
+        {
+          "titel": "Grafen",
+          "uitleg": "<div class='box'>Een <span class='term'>graaf</span> is een schema van punten (knooppunten) die met lijnen of pijlen zijn verbonden. Grafen worden bijvoorbeeld gebruikt om treindiensten, buslijnen of wegennetten overzichtelijk weer te geven.</div><div class='voorbeeld'><p><b>Voorbeeld</b><br>Op een bord op een treinstation staat een graaf met daaronder een tabel met vertrektijden, spoornummers, soort trein (Sprinter of Intercity) en eindbestemming. Zo kun je aan de graaf zien via welke tussenstations een trein rijdt en waar hij eindigt.</p></div><div class='voorbeeld'><p><b>Voorbeeld</b><br>Op een kaart met buslijnen zie je met kleuren welke buslijn waar rijdt. Bij een overstap zoek je de halte waar twee lijnen elkaar kruisen.</p></div><div class='call'>Een graaf met pijlen (een <span class='term'>wegendiagram</span>) laat zien wie tegen wie speelt of gespeeld heeft, bijvoorbeeld bij een sporttoernooi. Een pijl van A naar C betekent dat A thuis tegen C speelt.</div>"
+        },
+        {
+          "titel": "Telproblemen",
+          "uitleg": "<div class='box'>Bij een <span class='term'>telprobleem</span> tel je het aantal mogelijkheden. Dat kan met een <span class='term'>boomdiagram</span> of een <span class='term'>wegendiagram</span>.</div><div class='voorbeeld'><p><b>Voorbeeld</b><br>Bij een keuzemenu van 3 soepen, 3 hoofdgerechten en 2 nagerechten maak je een boomdiagram: bij elke tak van de soep teken je de hoofdgerechten, en bij elke tak daarvan de nagerechten. Het totaal aantal mogelijke menu's is 3 &times; 3 &times; 2 = 18.</p></div><div class='call'>Het aantal mogelijkheden bij achtereenvolgende keuzes bereken je door de aantallen bij elke keuze met elkaar te vermenigvuldigen.</div><div class='call'>Bij sporttoernooien zijn er verschillende <span class='term'>wedstrijdschema's</span>:<div class='tblwrap'><table class='tbl'><tr><th>systeem</th><th>uitleg</th></tr><tr><td>afvalsysteem</td><td>wie verliest ligt eruit; de winnaar speelt steeds door</td></tr><tr><td>halve competitie</td><td>elk team speelt &eacute;&eacute;n keer tegen elk ander team</td></tr><tr><td>hele competitie</td><td>elk team speelt twee keer tegen elk ander team (thuis en uit)</td></tr></table></div>Bij een halve competitie geldt: totaal aantal wedstrijden = 0,5 &times; aantal teams &times; aantal tegenstanders.</div>"
+        }
+      ],
+      "begrippen": [
+        {
+          "term": "kans",
+          "uitleg": "het aantal gunstige uitkomsten gedeeld door het totaal aantal mogelijke uitkomsten",
+          "paragraaf": "Kans"
+        },
+        {
+          "term": "cirkeldiagram",
+          "uitleg": "een diagram waarbij een cirkel verdeeld is in sectoren (taartpunten) die percentages voorstellen",
+          "paragraaf": "Staafdiagram, lijndiagram en cirkeldiagram"
+        },
+        {
+          "term": "sector",
+          "uitleg": "een taartpunt van een cirkeldiagram",
+          "paragraaf": "Staafdiagram, lijndiagram en cirkeldiagram"
+        },
+        {
+          "term": "sectorhoek",
+          "uitleg": "de hoek van een sector in een cirkeldiagram; percentage &times; 3,6",
+          "paragraaf": "Staafdiagram, lijndiagram en cirkeldiagram"
+        },
+        {
+          "term": "lijndiagram",
+          "uitleg": "een diagram waarbij punten met lijnstukken verbonden worden, vaak om een ontwikkeling in de tijd te laten zien",
+          "paragraaf": "Staafdiagram, lijndiagram en cirkeldiagram"
+        },
+        {
+          "term": "steelbladdiagram",
+          "uitleg": "een diagram waarbij elk getal wordt gesplitst in een steel (bijvoorbeeld de tientallen) en een blad (de eenheid)",
+          "paragraaf": "Steelbladdiagram"
+        },
+        {
+          "term": "boxplot",
+          "uitleg": "een diagram dat de spreiding van gegevens laat zien met minimum, Q1, mediaan, Q3 en maximum",
+          "paragraaf": "Boxplot"
+        },
+        {
+          "term": "mediaan",
+          "uitleg": "de middelste waarde van een van klein naar groot geordende reeks getallen",
+          "paragraaf": "Boxplot"
+        },
+        {
+          "term": "kwartiel",
+          "uitleg": "een grens die de geordende gegevens verdeelt in vier gelijke delen (Q1, mediaan en Q3)",
+          "paragraaf": "Boxplot"
+        },
+        {
+          "term": "graaf",
+          "uitleg": "een schema van knooppunten die met lijnen of pijlen zijn verbonden, bijvoorbeeld om een buslijnennet weer te geven",
+          "paragraaf": "Grafen"
+        },
+        {
+          "term": "wegendiagram",
+          "uitleg": "een graaf met pijlen die aangeeft wie tegen wie speelt of gespeeld heeft",
+          "paragraaf": "Telproblemen"
+        },
+        {
+          "term": "boomdiagram",
+          "uitleg": "een schema met vertakkingen waarmee je alle mogelijkheden van achtereenvolgende keuzes overzichtelijk maakt",
+          "paragraaf": "Telproblemen"
+        },
+        {
+          "term": "afvalsysteem",
+          "uitleg": "een toernooisysteem waarbij de verliezer afvalt en de winnaar doorspeelt",
+          "paragraaf": "Telproblemen"
+        },
+        {
+          "term": "halve competitie",
+          "uitleg": "een toernooivorm waarbij elk team &eacute;&eacute;n keer tegen elk ander team speelt",
+          "paragraaf": "Telproblemen"
+        },
+        {
+          "term": "hele competitie",
+          "uitleg": "een toernooivorm waarbij elk team twee keer tegen elk ander team speelt (thuis en uit)",
+          "paragraaf": "Telproblemen"
+        }
+      ],
+      "flashcards": [
+        {
+          "vraag": "Hoe bereken je een kans?",
+          "antwoord": "Kans = aantal gunstige uitkomsten gedeeld door totaal aantal mogelijke uitkomsten.",
+          "paragraaf": "Kans"
+        },
+        {
+          "vraag": "Hoeveel mogelijke uitkomsten zijn er als je met twee dobbelstenen gooit?",
+          "antwoord": "36 mogelijkheden (6 &times; 6).",
+          "paragraaf": "Kans"
+        },
+        {
+          "vraag": "Hoe reken je een percentage om naar een sectorhoek in een cirkeldiagram?",
+          "antwoord": "Vermenigvuldig het percentage met 3,6 (want 100% hoort bij 360&deg;).",
+          "paragraaf": "Staafdiagram, lijndiagram en cirkeldiagram"
+        },
+        {
+          "vraag": "Wat zet je altijd boven een cirkeldiagram?",
+          "antwoord": "De titel en het totaal aantal (bijvoorbeeld het totaal aantal personen).",
+          "paragraaf": "Staafdiagram, lijndiagram en cirkeldiagram"
+        },
+        {
+          "vraag": "Uit welke twee delen bestaat een getal in een steelbladdiagram?",
+          "antwoord": "Uit een steel (bijvoorbeeld de tientallen) en een blad (de eenheid).",
+          "paragraaf": "Steelbladdiagram"
+        },
+        {
+          "vraag": "In welke volgorde zet je de bladen achter een steel?",
+          "antwoord": "Op volgorde van klein naar groot.",
+          "paragraaf": "Steelbladdiagram"
+        },
+        {
+          "vraag": "Welke vijf kengetallen staan in een boxplot?",
+          "antwoord": "Minimum, Q1 (eerste kwartiel), mediaan, Q3 (derde kwartiel) en maximum.",
+          "paragraaf": "Boxplot"
+        },
+        {
+          "vraag": "Wat geeft de mediaan aan?",
+          "antwoord": "De middelste waarde van een van klein naar groot geordende reeks getallen.",
+          "paragraaf": "Boxplot"
+        },
+        {
+          "vraag": "Welk deel van de gegevens zit tussen Q1 en Q3?",
+          "antwoord": "De middelste 50% van de gegevens.",
+          "paragraaf": "Boxplot"
+        },
+        {
+          "vraag": "Wat is een graaf?",
+          "antwoord": "Een schema van knooppunten die met lijnen of pijlen verbonden zijn.",
+          "paragraaf": "Grafen"
+        },
+        {
+          "vraag": "Waarvoor gebruik je een graaf bij treinen of bussen?",
+          "antwoord": "Om te laten zien welke stations of haltes met elkaar verbonden zijn en via welke route je kunt reizen.",
+          "paragraaf": "Grafen"
+        },
+        {
+          "vraag": "Hoe bereken je het aantal mogelijkheden bij achtereenvolgende keuzes?",
+          "antwoord": "Door de aantallen mogelijkheden bij elke keuze met elkaar te vermenigvuldigen.",
+          "paragraaf": "Telproblemen"
+        },
+        {
+          "vraag": "Wat is het verschil tussen een halve en een hele competitie?",
+          "antwoord": "Bij een halve competitie speelt elk team &eacute;&eacute;n keer tegen elk ander team, bij een hele competitie twee keer (thuis en uit).",
+          "paragraaf": "Telproblemen"
+        },
+        {
+          "vraag": "Wat gebeurt er bij het afvalsysteem?",
+          "antwoord": "De verliezer van een wedstrijd ligt eruit, de winnaar speelt door naar de volgende ronde.",
+          "paragraaf": "Telproblemen"
+        },
+        {
+          "vraag": "Geef de formule voor het totaal aantal wedstrijden bij een halve competitie.",
+          "antwoord": "totaal aantal wedstrijden = 0,5 &times; aantal teams &times; aantal tegenstanders",
+          "paragraaf": "Telproblemen"
+        }
+      ],
+      "quiz": [
+        {
+          "vraag": "Je gooit met &eacute;&eacute;n dobbelsteen. Hoe groot is de kans op een 6?",
+          "opties": [
+            "1/6",
+            "1/3",
+            "1/2",
+            "6/6"
+          ],
+          "antwoord_index": 0,
+          "uitleg": "Er is &eacute;&eacute;n gunstige uitkomst (6) op zes mogelijke uitkomsten, dus de kans is 1/6."
+        },
+        {
+          "vraag": "Je gooit met twee dobbelstenen en telt de ogen op. Hoeveel mogelijke uitkomsten zijn er in totaal?",
+          "opties": [
+            "12",
+            "6",
+            "36",
+            "66"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "Elke dobbelsteen heeft 6 mogelijke uitkomsten, dus samen 6 &times; 6 = 36."
+        },
+        {
+          "vraag": "Een groep bestaat uit 63 personen. 44 vinden iets 'goed'. Wat is het percentage 'goed' (afgerond op &eacute;&eacute;n decimaal)?",
+          "opties": [
+            "44,0%",
+            "69,8%",
+            "63,0%",
+            "6,3%"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "44/63 &times; 100% = 69,8%."
+        },
+        {
+          "vraag": "Bij een cirkeldiagram hoort een percentage van 25%. Hoe groot is de bijbehorende sectorhoek?",
+          "opties": [
+            "25 graden",
+            "90 graden",
+            "250 graden",
+            "36 graden"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "25% &times; 3,6 = 90 graden."
+        },
+        {
+          "vraag": "In een steelbladdiagram staat bij steel 1 het blad 7. Welk getal stelt dit voor?",
+          "opties": [
+            "1",
+            "7",
+            "17",
+            "71"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "De steel (1) staat voor de tientallen en het blad (7) voor de eenheid: samen 17."
+        },
+        {
+          "vraag": "Waarom orden je de bladen in een steelbladdiagram van klein naar groot?",
+          "opties": [
+            "Om het diagram overzichtelijker te maken",
+            "Dat is verplicht bij een boxplot",
+            "Om de kans te berekenen",
+            "Om de sectorhoek te vinden"
+          ],
+          "antwoord_index": 0,
+          "uitleg": "Bladen op volgorde zetten maakt het steelbladdiagram overzichtelijk en makkelijk afleesbaar."
+        },
+        {
+          "vraag": "Wat laat de box in een boxplot zien?",
+          "opties": [
+            "Alleen het minimum en maximum",
+            "De middelste 50% van de gegevens (van Q1 tot Q3)",
+            "Alleen de mediaan",
+            "Alle losse waarnemingen"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "De box loopt van Q1 tot Q3 en bevat de middelste 50% van de gegevens."
+        },
+        {
+          "vraag": "Wat is de mediaan van de reeks 3, 7, 9, 12, 20?",
+          "opties": [
+            "7",
+            "9",
+            "12",
+            "10,2"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Bij vijf geordende getallen is de mediaan het middelste getal: 9."
+        },
+        {
+          "vraag": "Wat stelt een knooppunt in een graaf meestal voor?",
+          "opties": [
+            "Een station, halte of team",
+            "Een percentage",
+            "Een sectorhoek",
+            "Een steel"
+          ],
+          "antwoord_index": 0,
+          "uitleg": "In een graaf staan knooppunten voor bijvoorbeeld stations, haltes of teams die met elkaar verbonden zijn."
+        },
+        {
+          "vraag": "Bij een wegendiagram wijst de pijl van team A naar team C. Wat betekent dat?",
+          "opties": [
+            "A speelt thuis tegen C",
+            "C speelt thuis tegen A",
+            "A en C spelen niet tegen elkaar",
+            "A heeft van C gewonnen"
+          ],
+          "antwoord_index": 0,
+          "uitleg": "Een pijl van A naar C betekent dat A thuis speelt tegen C."
+        },
+        {
+          "vraag": "Bij een keuzemenu kies je uit 3 soepen, 2 hoofdgerechten en 2 nagerechten. Hoeveel verschillende menu's zijn er?",
+          "opties": [
+            "7",
+            "12",
+            "18",
+            "3"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Vermenigvuldig de keuzes: 3 &times; 2 &times; 2 = 12."
+        },
+        {
+          "vraag": "8 teams spelen een halve competitie. Hoeveel tegenstanders heeft elk team?",
+          "opties": [
+            "6",
+            "7",
+            "8",
+            "16"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Bij 8 teams speelt elk team tegen alle andere 7 teams."
+        },
+        {
+          "vraag": "8 teams spelen een halve competitie. Hoeveel wedstrijden worden er in totaal gespeeld?",
+          "opties": [
+            "28",
+            "56",
+            "16",
+            "64"
+          ],
+          "antwoord_index": 0,
+          "uitleg": "totaal = 0,5 &times; 8 &times; 7 = 28 wedstrijden."
+        },
+        {
+          "vraag": "Wat is het verschil tussen een afvalsysteem en een halve competitie?",
+          "opties": [
+            "Bij een afvalsysteem ligt de verliezer eruit, bij een halve competitie speelt iedereen tegen iedereen",
+            "Er is geen verschil",
+            "Een afvalsysteem heeft meer wedstrijden",
+            "Een halve competitie kent geen winnaar"
+          ],
+          "antwoord_index": 0,
+          "uitleg": "Bij een afvalsysteem valt de verliezer af, bij een halve competitie speelt elk team precies &eacute;&eacute;n keer tegen elk ander team."
+        },
+        {
+          "vraag": "In een schema met de som van twee dobbelstenen komt de som 7 het vaakst voor: 6 keer op 36. Hoe groot is de kans op 7 ogen, als percentage?",
+          "opties": [
+            "6%",
+            "16,7%",
+            "36%",
+            "60%"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "6/36 = 1/6 = 16,7%."
+        },
+        {
+          "vraag": "Een lijndiagram is vooral geschikt om te laten zien...",
+          "opties": [
+            "hoe iets zich ontwikkelt in de tijd",
+            "hoeveel procent iets is van een totaal",
+            "de spreiding van gegevens met kwartielen",
+            "de mogelijkheden bij een keuzemenu"
+          ],
+          "antwoord_index": 0,
+          "uitleg": "Een lijndiagram laat met verbonden punten een ontwikkeling in de tijd zien, bijvoorbeeld het aantal werknemers per jaar."
+        }
+      ]
+    },
+    {
+      "titel": "Verbanden",
+      "uitleg": "<div class='box'>In dit hoofdstuk leer je verschillende soorten verbanden herkennen en er formules bij maken: het lineaire verband, het kwadratische verband, het machtsverband, het wortelverband en het exponenti&euml;le verband.</div>",
+      "subhoofdstukken": [
+        {
+          "titel": "Lineair verband",
+          "uitleg": "<div class='box'>De grafiek bij een <span class='term'>lineair verband</span> is een rechte lijn. Bij een lineair verband is er een regelmatige toename of een regelmatige afname. Bij een lineaire stijging of daling kun je een formule maken. Daarvoor bereken je de <span class='term'>richtingsco&euml;ffici&euml;nt</span> en gebruik je het <span class='term'>begingetal</span>.</div><div class='voorbeeld'><p><b>Voorbeeld</b><br>In 2009 kostte een kaartje &euro;19,50, in 2024 kostte het &euro;30. De stijging is lineair.<br>De prijsstijging is 30 &minus; 19,50 = &euro;10,50. Van 2009 tot 2024 is 2024 &minus; 2009 = 15 jaar. De richtingsco&euml;ffici&euml;nt (rc) is 10,50 : 15 = 0,7.<br>De formule wordt P = 19,50 + 0,7t, met P de prijs in euro's en t de tijd in jaren met t = 0 in 2009.</p></div><div class='call'>Formule: <b>beginwaarde + richtingsco&euml;ffici&euml;nt &times; variabele</b>. De richtingsco&euml;ffici&euml;nt bereken je met: toename van de uitkomst gedeeld door toename van de tijd (of variabele).</div>"
+        },
+        {
+          "titel": "Kwadratisch verband",
+          "uitleg": "<div class='box'>In een formule met een kwadraat (zoals a&sup2;) staat een <span class='term'>kwadratische formule</span>. Er is dan een <span class='term'>kwadratisch verband</span>. De grafiek bij een kwadratische formule heeft de vorm van een <span class='term'>parabool</span>.</div><div class='call'>Een parabool met een laagste punt heet een <span class='term'>dalparabool</span>; bij het laagste punt hoort een <span class='term'>minimum</span>. Een parabool met een hoogste punt heet een <span class='term'>bergparabool</span>; bij het hoogste punt hoort een <span class='term'>maximum</span>. Het hoogste of laagste punt van een parabool is de <span class='term'>top</span>.</div><div class='voorbeeld'><p><b>Voorbeeld</b><br>De boog van de Waalbrug hoort bij de formule h = 1,075a &minus; 0,0044a&sup2;. Om de top (het hoogste punt) te vinden, kies je waarden voor a rond het vermoedelijke maximum en bereken je steeds h. Zo zoek je met <span class='term'>inklemmen</span> steeds nauwkeuriger naar de top: je probeert waarden dichter bij elkaar totdat de uitkomst niet meer hoger wordt.</p></div><div class='call waarom'>De top van een parabool kun je bepalen met inklemmen: je kiest steeds een waarde net te veel en net te weinig, tot je dicht genoeg bij het echte maximum of minimum zit.</div>"
+        },
+        {
+          "titel": "Machtsverband",
+          "uitleg": "<div class='box'>In een formule met een macht bij de variabele (zoals t&#8308;) staat een <span class='term'>machtsformule</span>. Er is dan een <span class='term'>machtsverband</span>. De grafiek bij een machtsformule is een <span class='term'>vloeiende kromme</span>.</div><div class='voorbeeld'><p><b>Voorbeeld</b><br>Bij de waterhoogte in een bassin hoort de formule H = 10 + 0,8t&sup2;,&#8309;. Hierin is H de hoogte in centimeters en t de tijd in uren. Door t achtereenvolgens in te vullen (t = 0, 1, 2, 3...) maak je een tabel en teken je de grafiek.</p></div><div class='call'>Ook bij een machtsverband kun je met inklemmen berekenen na hoeveel tijd een bepaalde waarde (bijvoorbeeld voor het eerst boven een grens) wordt bereikt.</div>"
+        },
+        {
+          "titel": "Wortelverband",
+          "uitleg": "<div class='box'>In een formule waarbij de variabele onder een wortelteken staat, staat een <span class='term'>wortelformule</span>. Er is dan een <span class='term'>wortelverband</span>. De grafiek bij een wortelformule is een vloeiende kromme.</div><div class='voorbeeld'><p><b>Voorbeeld</b><br>Bij het gewicht van een slang hoort de formule G = 0,45l&sup3;, met G het gewicht in grammen en l de lengte in decimeters (dit is een machtsformule met een derdemacht). Vul je de tabel in met l = 0, 2, 4, 6, 8, 10, dan kun je de grafiek tekenen.</p></div><div class='voorbeeld'><p><b>Voorbeeld</b><br>Bij een rechthoekige driehoek met &eacute;&eacute;n rechthoekszijde van 10 cm hoort de formule schuine zijde = &radic;(100 + a&sup2;), met a de lengte van de andere rechthoekszijde. Bij a = 3 is de schuine zijde &radic;(100 + 9) = &radic;109 &asymp; 10,4 cm.</p></div><div class='call'>Bij een wortelformule kun je, net als bij een kwadratische of machtsformule, met inklemmen een onbekende waarde in de formule benaderen.</div>"
+        },
+        {
+          "titel": "Exponenti&euml;el verband",
+          "uitleg": "<div class='box'>Bij een <span class='term'>omgekeerd evenredig verband</span> geldt: als de ene variabele n keer zo groot wordt, wordt de andere variabele n keer zo klein. De grafiek is een <span class='term'>hyperbool</span>. Je kunt bij zo'n verband nooit een 0 invullen, want je kunt niet delen door 0.</div><div class='voorbeeld'><p><b>Voorbeeld</b><br>Het huren van een band voor een schoolfeest kost &euro;600. Hierbij hoort de formule B = 600/a, met B het bedrag per leerling in euro's en a het aantal leerlingen. Komen er 4 keer zoveel leerlingen, dan wordt het bedrag per leerling 4 keer zo klein.</p></div>"
+        },
+        {
+          "titel": "Exponenti&euml;le groei",
+          "uitleg": "<div class='box'>Bij <span class='term'>exponenti&euml;le groei</span> wordt een aantal steeds met hetzelfde percentage groter of kleiner. Bij deze groei hoort een <span class='term'>groeifactor</span>.</div><div class='tblwrap'><table class='tbl'><tr><th>situatie</th><th>groeifactor</th></tr><tr><td>toename met p%</td><td>(100 + p) : 100</td></tr><tr><td>afname met p%</td><td>(100 &minus; p) : 100</td></tr></table></div><div class='call'>Formule bij exponenti&euml;le groei: <b>uitkomst = begingetal &times; groeifactor<sup>tijd</sup></b>.</div><div class='voorbeeld'><p><b>Voorbeeld</b><br>Een sneeuwpop is 425 cm hoog en smelt: elk uur neemt de hoogte met 5% af. De groeifactor is (100 &minus; 5) : 100 = 0,95. Na 5 uur is de hoogte 425 &times; 0,95&#8309; cm.</p></div><div class='voorbeeld'><p><b>Voorbeeld</b><br>Een kopje thee van 90&deg;C koelt af: per minuut daalt de temperatuur met 12%. De groeifactor is 0,88. Om te bepalen na hoeveel minuten de temperatuur voor het eerst onder een grens komt, vul je verschillende waarden voor de tijd in (proberen en verfijnen).</p></div>"
+        }
+      ],
+      "begrippen": [
+        {
+          "term": "lineair verband",
+          "uitleg": "een verband met een regelmatige toename of afname; de grafiek is een rechte lijn",
+          "paragraaf": "Lineair verband"
+        },
+        {
+          "term": "richtingsco&euml;ffici&euml;nt",
+          "uitleg": "het getal dat aangeeft hoeveel de uitkomst per eenheid toeneemt of afneemt (de steilheid van de rechte lijn); afgekort rc",
+          "paragraaf": "Lineair verband"
+        },
+        {
+          "term": "begingetal",
+          "uitleg": "de waarde van de uitkomst bij tijd of variabele gelijk aan 0",
+          "paragraaf": "Lineair verband"
+        },
+        {
+          "term": "kwadratisch verband",
+          "uitleg": "een verband waarbij de formule een kwadraat (macht 2) van de variabele bevat; de grafiek is een parabool",
+          "paragraaf": "Kwadratisch verband"
+        },
+        {
+          "term": "parabool",
+          "uitleg": "de grafiek die hoort bij een kwadratische formule",
+          "paragraaf": "Kwadratisch verband"
+        },
+        {
+          "term": "top",
+          "uitleg": "het hoogste punt van een bergparabool of het laagste punt van een dalparabool",
+          "paragraaf": "Kwadratisch verband"
+        },
+        {
+          "term": "inklemmen",
+          "uitleg": "een onbekende waarde steeds nauwkeuriger benaderen door net te grote en net te kleine waarden te proberen",
+          "paragraaf": "Kwadratisch verband"
+        },
+        {
+          "term": "machtsverband",
+          "uitleg": "een verband waarbij de variabele in de formule met een macht voorkomt; de grafiek is een vloeiende kromme",
+          "paragraaf": "Machtsverband"
+        },
+        {
+          "term": "wortelverband",
+          "uitleg": "een verband waarbij de variabele in de formule onder een wortelteken staat",
+          "paragraaf": "Wortelverband"
+        },
+        {
+          "term": "omgekeerd evenredig verband",
+          "uitleg": "een verband waarbij de ene variabele n keer zo klein wordt als de andere n keer zo groot wordt; de grafiek is een hyperbool",
+          "paragraaf": "Exponenti&euml;el verband"
+        },
+        {
+          "term": "hyperbool",
+          "uitleg": "de grafiek die hoort bij een omgekeerd evenredig verband",
+          "paragraaf": "Exponenti&euml;el verband"
+        },
+        {
+          "term": "exponenti&euml;le groei",
+          "uitleg": "groei waarbij een aantal steeds met hetzelfde percentage toe- of afneemt",
+          "paragraaf": "Exponenti&euml;le groei"
+        },
+        {
+          "term": "groeifactor",
+          "uitleg": "het getal waarmee je vermenigvuldigt bij exponenti&euml;le groei; bij p% toename is de groeifactor (100+p):100",
+          "paragraaf": "Exponenti&euml;le groei"
+        },
+        {
+          "term": "exponent",
+          "uitleg": "het getal dat aangeeft hoe vaak je met de groeifactor vermenigvuldigt (meestal de tijd)",
+          "paragraaf": "Exponenti&euml;le groei"
+        },
+        {
+          "term": "dalparabool / bergparabool",
+          "uitleg": "een parabool met een laagste punt (dalparabool, minimum) of een hoogste punt (bergparabool, maximum)",
+          "paragraaf": "Kwadratisch verband"
+        }
+      ],
+      "flashcards": [
+        {
+          "vraag": "Hoe herken je een lineair verband aan de grafiek?",
+          "antwoord": "De grafiek is een rechte lijn.",
+          "paragraaf": "Lineair verband"
+        },
+        {
+          "vraag": "Uit welke twee onderdelen bestaat de formule bij een lineair verband?",
+          "antwoord": "Het begingetal en de richtingsco&euml;ffici&euml;nt: uitkomst = begingetal + richtingsco&euml;ffici&euml;nt &times; variabele.",
+          "paragraaf": "Lineair verband"
+        },
+        {
+          "vraag": "Hoe bereken je de richtingsco&euml;ffici&euml;nt bij een lineaire stijging?",
+          "antwoord": "Toename van de uitkomst gedeeld door de bijbehorende toename van de tijd of variabele.",
+          "paragraaf": "Lineair verband"
+        },
+        {
+          "vraag": "Wat is de vorm van de grafiek bij een kwadratisch verband?",
+          "antwoord": "Een parabool.",
+          "paragraaf": "Kwadratisch verband"
+        },
+        {
+          "vraag": "Wat is het verschil tussen een dalparabool en een bergparabool?",
+          "antwoord": "Een dalparabool heeft een laagste punt (minimum), een bergparabool heeft een hoogste punt (maximum).",
+          "paragraaf": "Kwadratisch verband"
+        },
+        {
+          "vraag": "Hoe bepaal je de top van een parabool zonder grafische rekenmachine met een grafiekfunctie?",
+          "antwoord": "Met inklemmen: je probeert steeds waarden dichter bij het vermoedelijke maximum of minimum.",
+          "paragraaf": "Kwadratisch verband"
+        },
+        {
+          "vraag": "Wat is de vorm van de grafiek bij een machtsverband?",
+          "antwoord": "Een vloeiende kromme.",
+          "paragraaf": "Machtsverband"
+        },
+        {
+          "vraag": "Waaraan herken je een wortelformule?",
+          "antwoord": "De variabele staat onder een wortelteken.",
+          "paragraaf": "Wortelverband"
+        },
+        {
+          "vraag": "Wat geldt bij een omgekeerd evenredig verband als de ene variabele 4 keer zo groot wordt?",
+          "antwoord": "De andere variabele wordt 4 keer zo klein.",
+          "paragraaf": "Exponenti&euml;el verband"
+        },
+        {
+          "vraag": "Wat is de vorm van de grafiek bij een omgekeerd evenredig verband?",
+          "antwoord": "Een hyperbool.",
+          "paragraaf": "Exponenti&euml;el verband"
+        },
+        {
+          "vraag": "Waarom kun je bij een omgekeerd evenredig verband nooit 0 invullen?",
+          "antwoord": "Omdat je dan zou moeten delen door 0, en dat kan niet.",
+          "paragraaf": "Exponenti&euml;el verband"
+        },
+        {
+          "vraag": "Wat is de formule bij exponenti&euml;le groei?",
+          "antwoord": "uitkomst = begingetal &times; groeifactor tot de macht tijd",
+          "paragraaf": "Exponenti&euml;le groei"
+        },
+        {
+          "vraag": "Hoe bereken je de groeifactor bij een toename van 12%?",
+          "antwoord": "(100 + 12) : 100 = 1,12.",
+          "paragraaf": "Exponenti&euml;le groei"
+        },
+        {
+          "vraag": "Hoe bereken je de groeifactor bij een afname van 5%?",
+          "antwoord": "(100 &minus; 5) : 100 = 0,95.",
+          "paragraaf": "Exponenti&euml;le groei"
+        },
+        {
+          "vraag": "Is een groeifactor groter dan 1 een teken van toename of afname?",
+          "antwoord": "Toename (exponenti&euml;le groei); een groeifactor kleiner dan 1 hoort bij afname.",
+          "paragraaf": "Exponenti&euml;le groei"
+        }
+      ],
+      "quiz": [
+        {
+          "vraag": "De grafiek bij een verband is een rechte lijn. Wat voor verband is dit?",
+          "opties": [
+            "Kwadratisch verband",
+            "Lineair verband",
+            "Wortelverband",
+            "Omgekeerd evenredig verband"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "De grafiek bij een lineair verband is een rechte lijn."
+        },
+        {
+          "vraag": "Een kaartje kost in 2009 &euro;19,50 en in 2024 &euro;30, en de stijging is lineair. Wat is de richtingsco&euml;ffici&euml;nt?",
+          "opties": [
+            "0,7",
+            "10,50",
+            "1,3",
+            "15"
+          ],
+          "antwoord_index": 0,
+          "uitleg": "rc = (30 - 19,50) / (2024 - 2009) = 10,50 / 15 = 0,7."
+        },
+        {
+          "vraag": "Wat is de vorm van de grafiek bij een kwadratisch verband?",
+          "opties": [
+            "Een rechte lijn",
+            "Een hyperbool",
+            "Een parabool",
+            "Een trapgrafiek"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "De grafiek bij een kwadratische formule heeft de vorm van een parabool."
+        },
+        {
+          "vraag": "Bij welk soort parabool hoort een maximum?",
+          "opties": [
+            "Een dalparabool",
+            "Een bergparabool",
+            "Een lineaire grafiek",
+            "Een hyperbool"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Bij het hoogste punt van een bergparabool hoort een maximum."
+        },
+        {
+          "vraag": "Waarmee bepaal je de top van een parabool als je geen exacte formule voor de top hebt?",
+          "opties": [
+            "Met de balansmethode",
+            "Met inklemmen",
+            "Met een cirkeldiagram",
+            "Met een boomdiagram"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Je bepaalt de top van een parabool door steeds nauwkeuriger in te klemmen."
+        },
+        {
+          "vraag": "Welk verband hoort bij de formule L = t&#8308; + 3?",
+          "opties": [
+            "Lineair verband",
+            "Machtsverband",
+            "Omgekeerd evenredig verband",
+            "Boxplot"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "De variabele t staat met een macht (4) in de formule, dus dit is een machtsverband."
+        },
+        {
+          "vraag": "Wat is de vorm van de grafiek bij een machtsverband of wortelverband?",
+          "opties": [
+            "Een rechte lijn",
+            "Een vloeiende kromme",
+            "Een trapgrafiek",
+            "Een stippengrafiek"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Zowel bij machtsverbanden als wortelverbanden is de grafiek een vloeiende kromme."
+        },
+        {
+          "vraag": "In de formule K = 3 + &radic;t staat de variabele t...",
+          "opties": [
+            "als macht",
+            "onder een wortelteken",
+            "in de noemer van een breuk",
+            "als exponent"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Dit is een wortelformule: t staat onder het wortelteken."
+        },
+        {
+          "vraag": "Het huren van een band kost &euro;600 en wordt verdeeld over het aantal leerlingen a. Welke formule hoort hierbij?",
+          "opties": [
+            "B = 600a",
+            "B = 600/a",
+            "B = 600 + a",
+            "B = 600 - a"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Bij een omgekeerd evenredig verband deel je het vaste bedrag door het aantal: B = 600/a."
+        },
+        {
+          "vraag": "Bij het omgekeerd evenredig verband B = 600/a wordt het aantal leerlingen a 3 keer zo groot. Wat gebeurt er met B?",
+          "opties": [
+            "B wordt 3 keer zo groot",
+            "B wordt 3 keer zo klein",
+            "B blijft gelijk",
+            "B wordt 9 keer zo klein"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Bij een omgekeerd evenredig verband wordt B net zoveel keer kleiner als a groter wordt."
+        },
+        {
+          "vraag": "Een bedrag groeit exponentieel met een groeifactor van 1,04 per jaar. Wat betekent dit?",
+          "opties": [
+            "Het bedrag daalt elk jaar met 4%",
+            "Het bedrag stijgt elk jaar met 4%",
+            "Het bedrag stijgt elk jaar met 40%",
+            "Het bedrag blijft gelijk"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Een groeifactor van 1,04 hoort bij een toename van 4% per jaar (100% + 4% = 104%, dus 1,04)."
+        },
+        {
+          "vraag": "Een hoeveelheid neemt elk uur met 5% af. Wat is de groeifactor?",
+          "opties": [
+            "1,05",
+            "0,95",
+            "0,5",
+            "5"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Bij een afname van 5% is de groeifactor (100 - 5) : 100 = 0,95."
+        },
+        {
+          "vraag": "Wat is de formule bij exponenti&euml;le groei?",
+          "opties": [
+            "uitkomst = begingetal + groeifactor &times; tijd",
+            "uitkomst = begingetal &times; groeifactor tot de macht tijd",
+            "uitkomst = begingetal / tijd",
+            "uitkomst = begingetal &times; tijd&sup2;"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "De formule bij exponenti&euml;le groei is uitkomst = begingetal &times; groeifactor^tijd."
+        },
+        {
+          "vraag": "Een sneeuwpop van 425 cm smelt met 5% per uur. Welke berekening geeft de hoogte na 5 uur?",
+          "opties": [
+            "425 - 5 &times; 5",
+            "425 &times; 0,95&#8309;",
+            "425 &times; 1,05&#8309;",
+            "425 : 5"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Bij een afname van 5% per uur is de groeifactor 0,95; na 5 uur is de hoogte 425 &times; 0,95 tot de macht 5."
+        },
+        {
+          "vraag": "Bij welk soort verband kun je nooit de waarde 0 invullen voor de variabele in de noemer?",
+          "opties": [
+            "Lineair verband",
+            "Omgekeerd evenredig verband",
+            "Kwadratisch verband",
+            "Exponenti&euml;le groei"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Bij een omgekeerd evenredig verband staat de variabele in de noemer; delen door 0 kan niet."
+        }
+      ]
+    },
+    {
+      "titel": "Drie dimensies, afstanden en hoeken",
+      "uitleg": "<div class='box'>In dit hoofdstuk leer je tekenen in perspectief, hoeken berekenen in vlakke figuren en met goniometrie, zijden berekenen in een driehoek, en werken met co&ouml;rdinaten en berekeningen in de ruimte.</div>",
+      "subhoofdstukken": [
+        {
+          "titel": "Tekenen in perspectief",
+          "uitleg": "<div class='box'>Bij tekeningen in <span class='term'>perspectief</span> wordt alles wat verder weg is kleiner getekend. Daardoor lijkt zo'n tekening veel op de werkelijkheid.</div><div class='call'>Regels bij perspectieftekeningen:<div class='num'><ol><li>Evenwijdige lijnen die van je af lopen, snijden elkaar in het <span class='term'>verdwijnpunt</span> V op de <span class='term'>horizon</span>.</li><li>De horizon is op ooghoogte.</li><li>Verticale lijnen blijven verticaal.</li></ol></div></div><div class='voorbeeld'><p><b>Voorbeeld</b><br>Om de rechterzijkant van een weg in perspectief te tekenen, trek je een lijn van een punt op de weg naar het verdwijnpunt V op de horizon.</p></div>"
+        },
+        {
+          "titel": "Hoeken in vlakke figuren",
+          "uitleg": "<div class='box'>De hoeken van een driehoek zijn samen 180&deg;. De hoeken van een vierhoek zijn samen 360&deg;. Hoeken die samen een gestrekte hoek vormen, zijn samen 180&deg;.</div><div class='call'>Bij een <span class='term'>parallellogram</span> zijn overstaande hoeken even groot en zijn hoeken die naast elkaar liggen (bij een evenwijdig lijnenpaar) samen 180&deg;.</div><div class='voorbeeld'><p><b>Voorbeeld</b><br>In een dakspant is &#9651;BCF een gelijkzijdige driehoek. Bij punt G zijn rechte hoeken. Het dak is symmetrisch en &ang;A = 29&deg;. Omdat het dak symmetrisch is, is &ang;D ook 29&deg;. Met de hoekensom van driehoeken en de gestrekte hoek kun je de overige hoeken (&ang;B&#8322;, &ang;F&#8323;, &ang;C&#8323;) stap voor stap berekenen.</p></div>"
+        },
+        {
+          "titel": "Hoeken berekenen met goniometrie",
+          "uitleg": "<div class='box'>In een rechthoekige driehoek kun je een hoek berekenen als je twee zijden weet. Je gebruikt dan de sinus, cosinus of tangens en de inverse (<b>sin<sup>-1</sup></b>, <b>cos<sup>-1</sup></b> of <b>tan<sup>-1</sup></b>) op je rekenmachine.</div><div class='tblwrap'><table class='tbl'><tr><th>afkorting</th><th>betekenis</th></tr><tr><td>SOS</td><td>Sinus = Overstaande zijde / Schuine zijde</td></tr><tr><td>CAS</td><td>Cosinus = Aanliggende zijde / Schuine zijde</td></tr><tr><td>TOA</td><td>Tangens = Overstaande zijde / Aanliggende zijde</td></tr></table></div><div class='call'>Hoeken in de ruimte kun je benoemen met drie hoofdletters, bijvoorbeeld &ang;D12: de middelste letter is dan het hoekpunt van de hoek.</div><div class='voorbeeld'><p><b>Voorbeeld</b><br>Om &ang;C te berekenen in een rechthoekige driehoek waarbij je de overstaande en de aanliggende zijde van C weet, gebruik je TOA: tan C = overstaande / aanliggende, en dan &ang;C = tan<sup>-1</sup>(overstaande / aanliggende).</p></div>"
+        },
+        {
+          "titel": "Zijden berekenen in een driehoek",
+          "uitleg": "<div class='box'>Weet je in een rechthoekige driehoek &eacute;&eacute;n scherpe hoek en &eacute;&eacute;n zijde, dan kun je een andere zijde berekenen met de sinus, cosinus of tangens.</div><div class='voorbeeld'><p><b>Voorbeeld</b><br>Bereken zijde PQ als &ang;R = 48&deg; en de schuine zijde PR = 55 cm. Vanuit &ang;R is PQ de overstaande zijde en PR de schuine zijde: je gebruikt dus SOS (sinus). sin 48&deg; = PQ/55, dus PQ = 55 &times; sin 48&deg; = 40,9 cm.</p></div><div class='call ezel'>Ezelsbruggetje: 3 = 6/2. Weet je 6 niet, dan doe je 6 : 3 om 2 te vinden of 2 &times; 3 om 6 te vinden.</div><div class='call'>Bij een gelijkbenige driehoek deel je de driehoek in twee gelijke rechthoekige driehoeken via de symmetrieas, en gebruik je vervolgens goniometrie of de stelling van Pythagoras.</div>"
+        },
+        {
+          "titel": "Co&ouml;rdinaten in de ruimte",
+          "uitleg": "<div class='box'>In een driedimensionaal assenstelsel geef je een punt aan met drie co&ouml;rdinaten: (x, y, z).</div><div class='voorbeeld'><p><b>Voorbeeld</b><br>Op een hoogtekaart met een rooster staat punt A op een hoogte van 100 m. De coördinaten van A zijn dan (200, 600, 100): de eerste twee getallen zijn de plaats op het rooster (x en y), het derde getal is de hoogte (z).</p></div><div class='call'>Bij een balk of kubus in een assenstelsel bepaal je de co&ouml;rdinaten van een hoekpunt door vanuit de oorsprong het aantal stappen in de x-, y- en z-richting te tellen.</div><div class='voorbeeld'><p><b>Voorbeeld</b><br>Vanuit O naar punt C: 2 stappen in de x-richting, 1 stap in de y-richting, 3 stappen in de z-richting. De co&ouml;rdinaten van C zijn dan (2, 1, 3).</p></div>"
+        },
+        {
+          "titel": "Berekeningen in de ruimte",
+          "uitleg": "<div class='box'>Met de <span class='term'>verlengde stelling van Pythagoras</span> bereken je de lengte van een <span class='term'>lichaamsdiagonaal</span> in een balk of kubus. Je gebruikt daarbij drie ribben.</div><div class='voorbeeld'><p><b>Voorbeeld</b><br>Van balk ABCD EFGH is AB = 8 cm, BC = 5 cm en CG = 10 cm. Bereken de lengte van lichaamsdiagonaal BH.<br>rhz&sup2; = 8&sup2; + 5&sup2; = 64 + 25 = 89 (met de gewone stelling van Pythagoras in het grondvlak)<br>sz&sup2; = 89 + 10&sup2; = 89 + 100 = 189<br>BH = &radic;189 &asymp; 13,7 cm.</p></div><div class='call'>Om een hoek in een ruimtefiguur te berekenen, zoek je eerst een rechthoekige driehoek in een zijvlak of diagonaalvlak van de figuur en gebruik je daarna goniometrie.</div>"
+        }
+      ],
+      "begrippen": [
+        {
+          "term": "perspectief",
+          "uitleg": "een tekenwijze waarbij dingen die verder weg zijn kleiner worden getekend, zodat de tekening op de werkelijkheid lijkt",
+          "paragraaf": "Tekenen in perspectief"
+        },
+        {
+          "term": "verdwijnpunt",
+          "uitleg": "het punt op de horizon waar evenwijdige lijnen die van je af lopen elkaar in een perspectieftekening snijden",
+          "paragraaf": "Tekenen in perspectief"
+        },
+        {
+          "term": "horizon",
+          "uitleg": "de horizontale lijn op ooghoogte in een perspectieftekening, waarop het verdwijnpunt ligt",
+          "paragraaf": "Tekenen in perspectief"
+        },
+        {
+          "term": "gestrekte hoek",
+          "uitleg": "een hoek van 180 graden",
+          "paragraaf": "Hoeken in vlakke figuren"
+        },
+        {
+          "term": "parallellogram",
+          "uitleg": "een vierhoek met twee paar evenwijdige zijden, waarbij overstaande hoeken even groot zijn",
+          "paragraaf": "Hoeken in vlakke figuren"
+        },
+        {
+          "term": "SOS-CAS-TOA",
+          "uitleg": "ezelsbruggetje voor sinus (Overstaande/Schuine), cosinus (Aanliggende/Schuine) en tangens (Overstaande/Aanliggende)",
+          "paragraaf": "Hoeken berekenen met goniometrie"
+        },
+        {
+          "term": "sinus / cosinus / tangens",
+          "uitleg": "goniometrische verhoudingen waarmee je in een rechthoekige driehoek een hoek of een zijde kunt berekenen",
+          "paragraaf": "Hoeken berekenen met goniometrie"
+        },
+        {
+          "term": "drieletternotatie",
+          "uitleg": "het benoemen van een hoek met drie hoofdletters, waarbij de middelste letter het hoekpunt is (bijvoorbeeld &ang;ABC)",
+          "paragraaf": "Hoeken berekenen met goniometrie"
+        },
+        {
+          "term": "schuine zijde",
+          "uitleg": "de langste zijde van een rechthoekige driehoek, tegenover de rechte hoek",
+          "paragraaf": "Zijden berekenen in een driehoek"
+        },
+        {
+          "term": "co&ouml;rdinaten in de ruimte",
+          "uitleg": "drie getallen (x, y, z) die de plaats van een punt in een driedimensionaal assenstelsel aangeven",
+          "paragraaf": "Co&ouml;rdinaten in de ruimte"
+        },
+        {
+          "term": "oorsprong",
+          "uitleg": "het punt (0, 0, 0) in een assenstelsel, waar de assen elkaar snijden",
+          "paragraaf": "Co&ouml;rdinaten in de ruimte"
+        },
+        {
+          "term": "lichaamsdiagonaal",
+          "uitleg": "een lijnstuk dat dwars door een ruimtefiguur loopt, van het ene hoekpunt naar het tegenoverliggende hoekpunt",
+          "paragraaf": "Berekeningen in de ruimte"
+        },
+        {
+          "term": "verlengde stelling van Pythagoras",
+          "uitleg": "de stelling van Pythagoras toegepast met drie ribben achter elkaar, om een lichaamsdiagonaal te berekenen",
+          "paragraaf": "Berekeningen in de ruimte"
+        },
+        {
+          "term": "diagonaalvlak",
+          "uitleg": "een plat vlak binnen een ruimtefiguur dat door een diagonaal van het grondvlak en de bijbehorende hoogte loopt",
+          "paragraaf": "Berekeningen in de ruimte"
+        },
+        {
+          "term": "ribbe",
+          "uitleg": "een zijde (lijnstuk) van een ruimtefiguur, waar twee vlakken elkaar ontmoeten",
+          "paragraaf": "Co&ouml;rdinaten in de ruimte"
+        }
+      ],
+      "flashcards": [
+        {
+          "vraag": "Waar snijden evenwijdige lijnen die van je af lopen elkaar in een perspectieftekening?",
+          "antwoord": "In het verdwijnpunt op de horizon.",
+          "paragraaf": "Tekenen in perspectief"
+        },
+        {
+          "vraag": "Wat blijft verticaal in een perspectieftekening?",
+          "antwoord": "Verticale lijnen blijven verticaal.",
+          "paragraaf": "Tekenen in perspectief"
+        },
+        {
+          "vraag": "Hoeveel graden zijn de hoeken van een driehoek samen?",
+          "antwoord": "180 graden.",
+          "paragraaf": "Hoeken in vlakke figuren"
+        },
+        {
+          "vraag": "Hoeveel graden zijn de hoeken van een vierhoek samen?",
+          "antwoord": "360 graden.",
+          "paragraaf": "Hoeken in vlakke figuren"
+        },
+        {
+          "vraag": "Wat geldt voor overstaande hoeken in een parallellogram?",
+          "antwoord": "Overstaande hoeken zijn even groot.",
+          "paragraaf": "Hoeken in vlakke figuren"
+        },
+        {
+          "vraag": "Waar staat de afkorting SOS voor?",
+          "antwoord": "Sinus = Overstaande zijde / Schuine zijde.",
+          "paragraaf": "Hoeken berekenen met goniometrie"
+        },
+        {
+          "vraag": "Waar staat de afkorting CAS voor?",
+          "antwoord": "Cosinus = Aanliggende zijde / Schuine zijde.",
+          "paragraaf": "Hoeken berekenen met goniometrie"
+        },
+        {
+          "vraag": "Waar staat de afkorting TOA voor?",
+          "antwoord": "Tangens = Overstaande zijde / Aanliggende zijde.",
+          "paragraaf": "Hoeken berekenen met goniometrie"
+        },
+        {
+          "vraag": "Welke rekenmachinefunctie gebruik je om een hoek te berekenen uit een sinusverhouding?",
+          "antwoord": "sin<sup>-1</sup> (de inverse sinus).",
+          "paragraaf": "Hoeken berekenen met goniometrie"
+        },
+        {
+          "vraag": "Bij drieletternotatie &ang;ABC: welke letter is het hoekpunt?",
+          "antwoord": "De middelste letter, in dit geval B.",
+          "paragraaf": "Hoeken berekenen met goniometrie"
+        },
+        {
+          "vraag": "Hoe bereken je een zijde als je een scherpe hoek en de schuine zijde weet, en je de overstaande zijde zoekt?",
+          "antwoord": "Met de sinus (SOS): overstaande zijde = schuine zijde &times; sin(hoek).",
+          "paragraaf": "Zijden berekenen in een driehoek"
+        },
+        {
+          "vraag": "Uit hoeveel getallen bestaan co&ouml;rdinaten in de ruimte?",
+          "antwoord": "Uit drie getallen: (x, y, z).",
+          "paragraaf": "Co&ouml;rdinaten in de ruimte"
+        },
+        {
+          "vraag": "Wat zijn de co&ouml;rdinaten van de oorsprong?",
+          "antwoord": "(0, 0, 0).",
+          "paragraaf": "Co&ouml;rdinaten in de ruimte"
+        },
+        {
+          "vraag": "Wat bereken je met de verlengde stelling van Pythagoras?",
+          "antwoord": "De lengte van een lichaamsdiagonaal in een balk of kubus, met behulp van drie ribben.",
+          "paragraaf": "Berekeningen in de ruimte"
+        },
+        {
+          "vraag": "Wat zoek je eerst om een hoek in een ruimtefiguur te berekenen?",
+          "antwoord": "Een rechthoekige driehoek in een zijvlak of diagonaalvlak van de figuur.",
+          "paragraaf": "Berekeningen in de ruimte"
+        }
+      ],
+      "quiz": [
+        {
+          "vraag": "Waar liggen evenwijdige lijnen die van je af lopen in een perspectieftekening?",
+          "opties": [
+            "Ze blijven evenwijdig op de tekening",
+            "Ze snijden elkaar in het verdwijnpunt op de horizon",
+            "Ze worden verticaal",
+            "Ze verdwijnen uit beeld"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Bij perspectief snijden zulke lijnen elkaar in het verdwijnpunt op de horizon."
+        },
+        {
+          "vraag": "Op welke hoogte ligt de horizon in een perspectieftekening?",
+          "opties": [
+            "Op grondhoogte",
+            "Op ooghoogte",
+            "Op de hoogte van het hoogste object",
+            "Dat maakt niet uit"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "De horizon ligt op ooghoogte."
+        },
+        {
+          "vraag": "Een driehoek heeft hoeken van 84&deg; en 60&deg;. Hoe groot is de derde hoek?",
+          "opties": [
+            "36&deg;",
+            "96&deg;",
+            "180&deg;",
+            "144&deg;"
+          ],
+          "antwoord_index": 0,
+          "uitleg": "180 - 84 - 60 = 36 graden."
+        },
+        {
+          "vraag": "Een vierhoek heeft drie hoeken van 86&deg;, 85&deg; en 108&deg;. Hoe groot is de vierde hoek?",
+          "opties": [
+            "81&deg;",
+            "91&deg;",
+            "279&deg;",
+            "360&deg;"
+          ],
+          "antwoord_index": 0,
+          "uitleg": "360 - 86 - 85 - 108 = 81 graden."
+        },
+        {
+          "vraag": "In een rechthoekige driehoek ken je de overstaande zijde en de schuine zijde van een hoek. Welke verhouding gebruik je om de hoek te berekenen?",
+          "opties": [
+            "Sinus (SOS)",
+            "Cosinus (CAS)",
+            "Tangens (TOA)",
+            "Pythagoras"
+          ],
+          "antwoord_index": 0,
+          "uitleg": "Overstaande en schuine zijde horen bij SOS: de sinus."
+        },
+        {
+          "vraag": "In &#9651;PQR is &ang;R = 48&deg; en PR (schuine zijde) = 55 cm. Bereken zijde PQ (overstaande zijde van R).",
+          "opties": [
+            "36,8 cm",
+            "40,9 cm",
+            "48,0 cm",
+            "55,0 cm"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "PQ = 55 &times; sin 48&deg; = 40,9 cm."
+        },
+        {
+          "vraag": "Bij drieletternotatie &ang;D12 (of &ang;ADC): welke letter geeft het hoekpunt aan?",
+          "opties": [
+            "De eerste letter",
+            "De middelste letter",
+            "De laatste letter",
+            "Dat maakt niet uit"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Bij drieletternotatie is de middelste letter altijd het hoekpunt van de hoek."
+        },
+        {
+          "vraag": "Wat is de vorm van de tekening als je een gelijkbenige driehoek in twee delen splitst via de symmetrieas?",
+          "opties": [
+            "Twee gelijke rechthoekige driehoeken",
+            "Twee parallellogrammen",
+            "Een cirkel",
+            "Een parabool"
+          ],
+          "antwoord_index": 0,
+          "uitleg": "De symmetrieas van een gelijkbenige driehoek splitst hem in twee gelijke rechthoekige driehoeken."
+        },
+        {
+          "vraag": "Wat geven co&ouml;rdinaten in de ruimte (x, y, z) aan?",
+          "opties": [
+            "De plaats van een punt in een driedimensionaal assenstelsel",
+            "Alleen de hoogte van een punt",
+            "De oppervlakte van een figuur",
+            "De hoek van een driehoek"
+          ],
+          "antwoord_index": 0,
+          "uitleg": "In de ruimte geef je de plaats van een punt aan met drie co&ouml;rdinaten (x, y, z)."
+        },
+        {
+          "vraag": "Vanuit de oorsprong zet je 2 stappen in de x-richting, 1 stap in de y-richting en 3 stappen in de z-richting. Wat zijn de co&ouml;rdinaten van dat punt?",
+          "opties": [
+            "(1, 2, 3)",
+            "(2, 1, 3)",
+            "(3, 2, 1)",
+            "(2, 3, 1)"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "De volgorde is (x, y, z), dus (2, 1, 3)."
+        },
+        {
+          "vraag": "Wat bereken je met de verlengde stelling van Pythagoras?",
+          "opties": [
+            "De oppervlakte van een cirkel",
+            "De lengte van een lichaamsdiagonaal in een balk of kubus",
+            "Een percentage",
+            "De richtingsco&euml;ffici&euml;nt"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "De verlengde stelling van Pythagoras (met drie ribben) geeft de lichaamsdiagonaal."
+        },
+        {
+          "vraag": "Een balk heeft AB = 8 cm, BC = 5 cm en CG = 10 cm. Wat is rhz&sup2; in het grondvlak (AB en BC)?",
+          "opties": [
+            "13",
+            "89",
+            "40",
+            "169"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "rhz&sup2; = 8&sup2; + 5&sup2; = 64 + 25 = 89."
+        },
+        {
+          "vraag": "Vervolg op de vorige vraag: hoe lang is de lichaamsdiagonaal (afgerond op &eacute;&eacute;n decimaal)?",
+          "opties": [
+            "9,4 cm",
+            "13,7 cm",
+            "18,9 cm",
+            "23,0 cm"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "sz&sup2; = 89 + 10&sup2; = 189, dus lichaamsdiagonaal = &radic;189 &asymp; 13,7 cm."
+        },
+        {
+          "vraag": "Wat zoek je eerst als je een hoek in een ruimtefiguur (zoals een balk) wilt berekenen?",
+          "opties": [
+            "Een rechthoekige driehoek in een zijvlak of diagonaalvlak",
+            "De oppervlakte van het grondvlak",
+            "De omtrek van de figuur",
+            "Het volume van de figuur"
+          ],
+          "antwoord_index": 0,
+          "uitleg": "Je zoekt eerst een rechthoekige driehoek in een zij- of diagonaalvlak en gebruikt daarna goniometrie."
+        },
+        {
+          "vraag": "Wat geldt voor hoeken die samen een gestrekte hoek vormen?",
+          "opties": [
+            "Ze zijn samen 90&deg;",
+            "Ze zijn samen 180&deg;",
+            "Ze zijn samen 360&deg;",
+            "Ze zijn altijd gelijk"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Hoeken die samen een gestrekte hoek vormen, zijn samen 180 graden."
+        }
+      ]
+    },
+    {
+      "titel": "Formules en vergelijkingen",
+      "uitleg": "<div class='box'>In dit hoofdstuk werk je met omgekeerd evenredige verbanden, stippen- en trapgrafieken, formules met tijd, formules die hetzelfde verband beschrijven, en het oplossen van vergelijkingen met de balansmethode en met inklemmen.</div>",
+      "subhoofdstukken": [
+        {
+          "titel": "Omgekeerd evenredig",
+          "uitleg": "<div class='box'>Bij een <span class='term'>omgekeerd evenredig verband</span> wordt de ene variabele n keer zo klein als de andere n keer zo groot wordt.</div><div class='voorbeeld'><p><b>Voorbeeld</b><br>Bij het huren van een foodtruck hoort de formule B = 3000/a, met B het bedrag per medewerker in euro's en a het aantal medewerkers. Bij 50 medewerkers is B = 3000/50 = &euro;60.</p></div><div class='call warn'>Voor a = 0 heeft de formule geen betekenis: je kunt niet delen door 0.</div>"
+        },
+        {
+          "titel": "Stippengrafiek en trapgrafiek",
+          "uitleg": "<div class='box'>Bij een <span class='term'>stippengrafiek</span> horen alleen losse punten bij een grafiek, bijvoorbeeld omdat je alleen hele aantallen kunt kopen. Er is geen lijn getekend tussen de punten.</div><div class='voorbeeld'><p><b>Voorbeeld</b><br>Een reep chocola kost &euro;0,50. Omdat je alleen hele repen kunt kopen, hoort bij de prijs een stippengrafiek: bij 1 reep &euro;0,50, bij 2 repen &euro;1, enzovoort.</p></div><div class='call'>Bij een <span class='term'>trapgrafiek</span> is de uitkomst binnen een bepaald interval steeds hetzelfde (een horizontaal lijnstuk = een trede). Bij een volgend interval springt de grafiek naar een andere waarde.</div><div class='voorbeeld'><p><b>Voorbeeld</b><br>Bij het huren van een scooter kost het van 0 tot 2 uur &euro;25, van 2 tot 4 uur &euro;35, en van 4 tot 8 uur &euro;55. Dit is een trapgrafiek: elke trede geeft het bedrag binnen dat tijdsinterval aan.</p></div>"
+        },
+        {
+          "titel": "Formules en tijd",
+          "uitleg": "<div class='box'>Een assenstelsel heeft een horizontale en een verticale as. Bij een grafiek over tijd kun je de horizontale as ook naar links doortrekken: daar staan negatieve getallen, die betekenen dat je teruggaat in de tijd.</div><div class='voorbeeld'><p><b>Voorbeeld</b><br>Bij de voorraad hondenvoer hoort de formule V = 13 &minus; 0,4t, met V de voorraad in kilogrammen en t de tijd in dagen met t = 0 op 5 juli. Bij t = &minus;2 hoort dus 2 dagen v&oacute;&oacute;r 5 juli, dat is 3 juli. Bij t = 4 hoort 9 juli.</p></div><div class='call'>Om een datum bij een gegeven waarde te vinden, verleng je de grafiek en lees je af welke t-waarde erbij hoort. Reken die t-waarde vervolgens om naar een datum.</div>"
+        },
+        {
+          "titel": "Formules bij hetzelfde verband",
+          "uitleg": "<div class='box'>Twee formules beschrijven <span class='term'>hetzelfde verband</span> als ze bij elkaar horende waarden opleveren, ongeacht welk getal je invult.</div><div class='num'><ol><li>Vul in de eerste formule een getal in voor de ene variabele en bereken de uitkomst.</li><li>Vul die uitkomst in de tweede formule in en kijk of je weer het oorspronkelijke getal terugkrijgt.</li><li>Herhaal dit met een ander getal. Klopt het weer, dan beschrijven de formules hetzelfde verband.</li></ol></div><div class='voorbeeld'><p><b>Voorbeeld</b><br>Beschrijven B = 15 + 2a en a = (B &minus; 15)/2 hetzelfde verband?<br>Bij a = 5 hoort B = 15 + 2 &times; 5 = 25. Bij B = 25 hoort a = (25 &minus; 15)/2 = 5. Het klopt, dus de formules beschrijven hetzelfde verband.</p></div>"
+        },
+        {
+          "titel": "Vergelijkingen oplossen",
+          "uitleg": "<div class='box'>Een <span class='term'>vergelijking</span> los je bij een lineaire formule op met de <span class='term'>balansmethode</span>: je voert aan beide kanten van het is-teken dezelfde bewerking uit, totdat de variabele alleen staat.</div><div class='voorbeeld'><p><b>Voorbeeld</b><br>Los op: 7a + 9 = 5a + 3.<br>Trek 5a van beide kanten af: 2a + 9 = 3.<br>Trek 9 van beide kanten af: 2a = &minus;6.<br>Deel beide kanten door 2: a = &minus;3.</p></div><div class='call'>Bij een <span class='term'>kwadratische vergelijking</span> (met een kwadraat) of een vergelijking met een wortel of macht gebruik je <span class='term'>inklemmen</span>: je probeert waarden en kijkt of de uitkomst net te veel of net te weinig is, en verfijnt daarna steeds verder.</div><div class='voorbeeld'><p><b>Voorbeeld</b><br>Bij een bungeejump hoort h = t&sup2; &minus; 7t + 16. Marleen is twee keer op een hoogte van 8 m. Los op: t&sup2; &minus; 7t + 16 = 8.<br>Bij t = 1,4 is h = 8,16 (te veel); bij t = 1,5 is h = 7,75 (te weinig). Marleen is dus na ongeveer 1,4 seconden op 8 m (en op een tweede moment rond 5,6 seconden).</p></div>"
+        }
+      ],
+      "begrippen": [
+        {
+          "term": "omgekeerd evenredig verband",
+          "uitleg": "een verband waarbij de ene variabele n keer zo klein wordt als de andere n keer zo groot wordt",
+          "paragraaf": "Omgekeerd evenredig"
+        },
+        {
+          "term": "stippengrafiek",
+          "uitleg": "een grafiek die alleen uit losse punten bestaat, zonder verbindende lijn, bijvoorbeeld omdat alleen hele aantallen mogelijk zijn",
+          "paragraaf": "Stippengrafiek en trapgrafiek"
+        },
+        {
+          "term": "trapgrafiek",
+          "uitleg": "een grafiek die bestaat uit horizontale lijnstukken (treden) die bij een volgend interval springen naar een andere waarde",
+          "paragraaf": "Stippengrafiek en trapgrafiek"
+        },
+        {
+          "term": "trede",
+          "uitleg": "een horizontaal lijnstuk in een trapgrafiek dat een vaste waarde binnen een interval aangeeft",
+          "paragraaf": "Stippengrafiek en trapgrafiek"
+        },
+        {
+          "term": "negatieve tijd",
+          "uitleg": "een negatieve waarde voor t in een formule, die betekent dat je teruggaat in de tijd ten opzichte van t = 0",
+          "paragraaf": "Formules en tijd"
+        },
+        {
+          "term": "hetzelfde verband",
+          "uitleg": "twee formules die, ongeacht welk getal je invult, altijd bij elkaar horende waarden opleveren",
+          "paragraaf": "Formules bij hetzelfde verband"
+        },
+        {
+          "term": "vergelijking",
+          "uitleg": "een gelijkheid met een onbekende (variabele) die je moet oplossen",
+          "paragraaf": "Vergelijkingen oplossen"
+        },
+        {
+          "term": "balansmethode",
+          "uitleg": "een methode om een vergelijking op te lossen door aan beide kanten van het is-teken dezelfde bewerking uit te voeren",
+          "paragraaf": "Vergelijkingen oplossen"
+        },
+        {
+          "term": "linkerlid / rechterlid",
+          "uitleg": "het deel van de vergelijking links respectievelijk rechts van het is-teken",
+          "paragraaf": "Vergelijkingen oplossen"
+        },
+        {
+          "term": "inklemmen",
+          "uitleg": "een oplosmethode waarbij je steeds nauwkeuriger een waarde net te veel en net te weinig probeert om de oplossing te benaderen",
+          "paragraaf": "Vergelijkingen oplossen"
+        },
+        {
+          "term": "kwadratische vergelijking",
+          "uitleg": "een vergelijking waarin de onbekende met een kwadraat voorkomt, meestal opgelost met inklemmen",
+          "paragraaf": "Vergelijkingen oplossen"
+        },
+        {
+          "term": "begingetal",
+          "uitleg": "de waarde van een formule bij tijd of variabele gelijk aan 0",
+          "paragraaf": "Formules en tijd"
+        },
+        {
+          "term": "richtingsco&euml;ffici&euml;nt",
+          "uitleg": "het getal dat aangeeft hoeveel de uitkomst per eenheid van tijd of variabele verandert",
+          "paragraaf": "Formules en tijd"
+        },
+        {
+          "term": "variabele",
+          "uitleg": "een letter in een formule die voor verschillende getallen kan staan",
+          "paragraaf": "Omgekeerd evenredig"
+        },
+        {
+          "term": "interval",
+          "uitleg": "een deel van de as tussen twee grenzen, waarbinnen bijvoorbeeld een trede van een trapgrafiek geldt",
+          "paragraaf": "Stippengrafiek en trapgrafiek"
+        }
+      ],
+      "flashcards": [
+        {
+          "vraag": "Waarom heeft de formule B = 3000/a geen betekenis voor a = 0?",
+          "antwoord": "Omdat je dan zou moeten delen door 0, en dat kan niet.",
+          "paragraaf": "Omgekeerd evenredig"
+        },
+        {
+          "vraag": "Wanneer teken je een stippengrafiek in plaats van een lijn?",
+          "antwoord": "Als alleen losse (hele) waarden mogelijk zijn, bijvoorbeeld omdat je alleen hele producten kunt kopen.",
+          "paragraaf": "Stippengrafiek en trapgrafiek"
+        },
+        {
+          "vraag": "Hoe zie je een trede in een trapgrafiek?",
+          "antwoord": "Als een horizontaal lijnstuk dat binnen een interval een vaste waarde aangeeft.",
+          "paragraaf": "Stippengrafiek en trapgrafiek"
+        },
+        {
+          "vraag": "Wat betekent een negatieve waarde van t in een formule met tijd?",
+          "antwoord": "Dat je teruggaat in de tijd ten opzichte van t = 0.",
+          "paragraaf": "Formules en tijd"
+        },
+        {
+          "vraag": "Hoe controleer je of twee formules hetzelfde verband beschrijven?",
+          "antwoord": "Je vult een getal in de eerste formule in, berekent de uitkomst, vult die in de tweede formule in en kijkt of je het oorspronkelijke getal terugkrijgt (en herhaalt dit met een ander getal).",
+          "paragraaf": "Formules bij hetzelfde verband"
+        },
+        {
+          "vraag": "Wat is de balansmethode?",
+          "antwoord": "Een methode om een vergelijking op te lossen door aan beide kanten van het is-teken dezelfde bewerking uit te voeren.",
+          "paragraaf": "Vergelijkingen oplossen"
+        },
+        {
+          "vraag": "Los op met de balansmethode: 7a + 9 = 5a + 3. Wat is a?",
+          "antwoord": "a = -3.",
+          "paragraaf": "Vergelijkingen oplossen"
+        },
+        {
+          "vraag": "Wanneer gebruik je inklemmen in plaats van de balansmethode?",
+          "antwoord": "Bij een vergelijking met een kwadraat, wortel of macht, die je niet met eenvoudige balansstappen kunt oplossen.",
+          "paragraaf": "Vergelijkingen oplossen"
+        },
+        {
+          "vraag": "Wat doe je bij inklemmen als een uitkomst 'te veel' is?",
+          "antwoord": "Je probeert een net kleinere waarde om dichter bij de oplossing te komen.",
+          "paragraaf": "Vergelijkingen oplossen"
+        },
+        {
+          "vraag": "Wat is het linkerlid van een vergelijking?",
+          "antwoord": "Het deel van de vergelijking links van het is-teken.",
+          "paragraaf": "Vergelijkingen oplossen"
+        },
+        {
+          "vraag": "Wat gebeurt er als je bij de balansmethode aan beide kanten hetzelfde getal aftrekt?",
+          "antwoord": "De vergelijking blijft kloppen (in balans); je vereenvoudigt de vergelijking zonder de oplossing te veranderen.",
+          "paragraaf": "Vergelijkingen oplossen"
+        },
+        {
+          "vraag": "Waarom kun je bij een omgekeerd evenredig verband nooit delen door de variabele als die 0 is?",
+          "antwoord": "Omdat delen door 0 wiskundig niet gedefinieerd is.",
+          "paragraaf": "Omgekeerd evenredig"
+        },
+        {
+          "vraag": "Wat teken je NIET tussen de punten van een stippengrafiek?",
+          "antwoord": "Een verbindende lijn.",
+          "paragraaf": "Stippengrafiek en trapgrafiek"
+        },
+        {
+          "vraag": "Hoe vind je bij een formule met tijd de datum die bij een bepaalde waarde hoort?",
+          "antwoord": "Je verlengt de grafiek (of lost de vergelijking op), leest de bijbehorende t-waarde af en rekent die om naar een datum.",
+          "paragraaf": "Formules en tijd"
+        },
+        {
+          "vraag": "Wat controleer je bij het tweede getal wanneer je nagaat of twee formules hetzelfde verband beschrijven?",
+          "antwoord": "Of het weer klopt, dus of je opnieuw het oorspronkelijke getal terugkrijgt.",
+          "paragraaf": "Formules bij hetzelfde verband"
+        }
+      ],
+      "quiz": [
+        {
+          "vraag": "Bij de formule B = 3000/a: voor welke waarde van a heeft de formule geen betekenis?",
+          "opties": [
+            "a = 1",
+            "a = 0",
+            "a = 100",
+            "a = 3000"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Voor a = 0 zou je moeten delen door 0, dat kan niet."
+        },
+        {
+          "vraag": "Wanneer gebruik je een stippengrafiek?",
+          "opties": [
+            "Als er een lineair verband is",
+            "Als alleen hele aantallen mogelijk zijn",
+            "Als het verband exponentieel is",
+            "Als je een hoek moet berekenen"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Een stippengrafiek gebruik je als alleen losse, hele waarden voorkomen."
+        },
+        {
+          "vraag": "Wat kenmerkt een trapgrafiek?",
+          "opties": [
+            "Een vloeiende kromme",
+            "Horizontale lijnstukken (treden) die springen naar een andere waarde",
+            "Een rechte lijn door de oorsprong",
+            "Een parabool"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Een trapgrafiek bestaat uit horizontale treden die bij een volgend interval springen."
+        },
+        {
+          "vraag": "Bij V = 13 - 0,4t met t = 0 op 5 juli: wat betekent t = -2?",
+          "opties": [
+            "2 dagen na 5 juli",
+            "2 dagen voor 5 juli",
+            "Het is dan 2 juli",
+            "De formule heeft dan geen betekenis"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Een negatieve t betekent teruggaan in de tijd: t = -2 is 2 dagen v&oacute;&oacute;r 5 juli, dus 3 juli."
+        },
+        {
+          "vraag": "Twee formules leveren bij elk ingevuld getal steeds bij elkaar horende waarden op. Wat concludeer je?",
+          "opties": [
+            "De formules zijn fout",
+            "De formules beschrijven hetzelfde verband",
+            "Het is toeval",
+            "De formules horen bij verschillende verbanden"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Als het bij meerdere ingevulde getallen klopt, beschrijven de formules hetzelfde verband."
+        },
+        {
+          "vraag": "Los op met de balansmethode: 7a + 9 = 5a + 3.",
+          "opties": [
+            "a = 3",
+            "a = -3",
+            "a = 6",
+            "a = -6"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "7a + 9 = 5a + 3 → 2a + 9 = 3 → 2a = -6 → a = -3."
+        },
+        {
+          "vraag": "Los op: 4y + 25 = 5 - 6y.",
+          "opties": [
+            "y = -2",
+            "y = 2",
+            "y = -3",
+            "y = 3"
+          ],
+          "antwoord_index": 0,
+          "uitleg": "4y + 25 = 5 - 6y → 10y + 25 = 5 → 10y = -20 → y = -2."
+        },
+        {
+          "vraag": "Wanneer los je een vergelijking op met inklemmen in plaats van de balansmethode?",
+          "opties": [
+            "Altijd",
+            "Bij een vergelijking met een kwadraat, wortel of macht",
+            "Alleen bij lineaire vergelijkingen",
+            "Nooit, inklemmen is voor grafieken"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Inklemmen gebruik je bij vergelijkingen die je niet stap voor stap met de balansmethode kunt oplossen, zoals kwadratische vergelijkingen."
+        },
+        {
+          "vraag": "Bij inklemmen: t = 1,4 geeft h = 8,16 (te veel) en t = 1,5 geeft h = 7,75 (te weinig), bij doel h = 8. Welke conclusie trek je?",
+          "opties": [
+            "t = 1,4 ligt het dichtst bij de oplossing",
+            "t = 1,5 ligt het dichtst bij de oplossing",
+            "Er is geen oplossing",
+            "Beide waarden zijn even goed"
+          ],
+          "antwoord_index": 0,
+          "uitleg": "8,16 ligt dichter bij 8 dan 7,75, dus t = 1,4 ligt het dichtst bij de gezochte waarde."
+        },
+        {
+          "vraag": "Wat doe je bij de balansmethode als er in het rechterlid een term met de variabele staat die je wilt wegwerken?",
+          "opties": [
+            "Je vermenigvuldigt beide kanten met die term",
+            "Je trekt die term van beide kanten af (of telt hem op)",
+            "Je negeert die term",
+            "Je deelt alleen het rechterlid erdoor"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Om een term weg te werken, voer je aan beide kanten dezelfde optel- of aftrekbewerking uit."
+        },
+        {
+          "vraag": "Bij een trapgrafiek voor het huren van een scooter kost 0-2 uur &euro;25 en 2-4 uur &euro;35. Iemand huurt de scooter 3,5 uur. Wat betaalt deze persoon?",
+          "opties": [
+            "&euro;25",
+            "&euro;35",
+            "&euro;30",
+            "&euro;55"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "3,5 uur valt in de trede van 2 tot 4 uur, dus het bedrag van die trede geldt: &euro;35."
+        },
+        {
+          "vraag": "Waarom kun je in een stippengrafiek geen lijn tussen de punten tekenen?",
+          "opties": [
+            "Omdat er geen verband is",
+            "Omdat tussenliggende waarden niet mogelijk zijn (bijvoorbeeld een half product)",
+            "Omdat het altijd om tijd gaat",
+            "Omdat de grafiek dan een parabool zou worden"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Bij een stippengrafiek zijn alleen bepaalde (vaak hele) waarden mogelijk, dus een lijn ertussen zou onterecht suggereren dat tussenwaarden ook kunnen."
+        },
+        {
+          "vraag": "Wat is de eerste stap om te controleren of twee formules hetzelfde verband beschrijven?",
+          "opties": [
+            "Beide formules gelijkstellen aan 0",
+            "Een getal invullen in de ene formule en de uitkomst in de andere formule invullen",
+            "De grafiek tekenen",
+            "Een sectorhoek berekenen"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Je vult een getal in de eerste formule in, berekent de uitkomst en controleert of de tweede formule dat getal teruggeeft."
+        },
+        {
+          "vraag": "In de formule H = 24 - 2t is 24 het begingetal en -2 de richtingsco&euml;ffici&euml;nt. Wat betekent de richtingsco&euml;ffici&euml;nt -2?",
+          "opties": [
+            "H neemt per eenheid van t met 2 toe",
+            "H neemt per eenheid van t met 2 af",
+            "H is altijd 2",
+            "t neemt met 2 af"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Een negatieve richtingsco&euml;ffici&euml;nt van -2 betekent een afname van 2 per eenheid van t."
+        },
+        {
+          "vraag": "Welke bewerking gebruik je NIET bij de balansmethode?",
+          "opties": [
+            "Optellen bij beide kanten",
+            "Aftrekken van beide kanten",
+            "Delen door hetzelfde getal aan beide kanten",
+            "Willekeurig een kant veranderen zonder de andere kant aan te passen"
+          ],
+          "antwoord_index": 3,
+          "uitleg": "Bij de balansmethode moet je altijd dezelfde bewerking aan beide kanten uitvoeren, anders raakt de vergelijking uit balans."
+        }
+      ]
+    },
+    {
+      "titel": "Rekenen, meten en schatten",
+      "uitleg": "<div class='box'>In dit hoofdstuk herhaal je rekenvaardigheden die je nodig hebt voor je examen: procenten, grote getallen, verhoudingen, eenheden omrekenen en rekenen met tijd en snelheid.</div>",
+      "subhoofdstukken": [
+        {
+          "titel": "Procenten berekenen",
+          "uitleg": "<div class='box'>Om een percentage van een aantal te berekenen, deel je het deel door het totaal en vermenigvuldig je met 100%.</div><div class='voorbeeld'><p><b>Voorbeeld</b><br>In een klas van 27 leerlingen hebben 19 leerlingen een voldoende. Het percentage is 19/27 &times; 100% = 70,4%. <b>Procenten rond je af op &eacute;&eacute;n decimaal.</b></p></div><div class='call'>Bij een <span class='term'>procentuele stijging</span> of <span class='term'>daling</span> bereken je eerst het nieuwe percentage (100% + stijging of 100% &minus; daling) en daarna het nieuwe bedrag.</div><div class='voorbeeld'><p><b>Voorbeeld</b><br>Het minimumloon stijgt met 10,1%: het nieuwe percentage is 110,1%. Was het loon &euro;478,25, dan is het nieuwe loon 1,101 &times; 478,25 = &euro;526,55.</p></div>"
+        },
+        {
+          "titel": "Grote getallen",
+          "uitleg": "<div class='box'>Grote getallen worden vaak geschreven met de woorden <b>miljoen</b> of <b>miljard</b>.</div><div class='tblwrap'><table class='tbl'><tr><th>naam</th><th>getal</th><th>aantal nullen</th></tr><tr><td>duizend</td><td>1000</td><td>3</td></tr><tr><td>miljoen</td><td>1 000 000</td><td>6</td></tr><tr><td>miljard</td><td>1 000 000 000</td><td>9</td></tr><tr><td>biljoen</td><td>1 000 000 000 000</td><td>12</td></tr></table></div><div class='voorbeeld'><p><b>Voorbeeld</b><br>Schrijf 19,6 miljoen met alleen cijfers: 19 miljoen = 19 000 000. Achter de 6 in 19,6 verander je de eerste nul in een 6: 19 600 000.</p></div><div class='call'>Bij het rekenen met grote getallen (bijvoorbeeld vermenigvuldigen) is het handig om eerst om te rekenen naar het woord miljoen of miljard, zodat de uitkomst overzichtelijk blijft.</div>"
+        },
+        {
+          "titel": "Verhoudingen en vuistregels",
+          "uitleg": "<div class='box'>Met een <span class='term'>verhoudingstabel</span> bereken je hoeveelheden die in een vaste verhouding staan.</div><div class='voorbeeld'><p><b>Voorbeeld</b><br>Je mengt 1 deel siroop met 9 delen water (10 delen limonade). Voor 500 mL limonade: 500 : 10 = 50, dus je vermenigvuldigt elk deel met 50. Siroop: 1 &times; 50 = 50 mL, water: 9 &times; 50 = 450 mL.</p></div><div class='call'>Handige vuistregels: een volwassene is ongeveer 1,80 m lang, een verdieping is ongeveer 3 m hoog, de afstand over de weg is ongeveer 1,2 keer de afstand hemelsbreed, je fietst ongeveer 15 km per uur en je loopt ongeveer 5 km per uur.</div>"
+        },
+        {
+          "titel": "Eenheden omrekenen",
+          "uitleg": "<div class='box'>Bij <span class='term'>eenheden van lengte</span> reken je om met stappen van &times;10 of :10 (km-hm-dam-m-dm-cm-mm). Bij <span class='term'>eenheden van oppervlakte</span> reken je om met stappen van &times;100 of :100 (km&sup2;-hm&sup2;(ha)-dam&sup2;(are)-m&sup2;(ca)-dm&sup2;-cm&sup2;-mm&sup2;).</div><div class='voorbeeld'><p><b>Voorbeeld</b><br>265 mm = 265 : 10 : 10 = 2,65 dm. 5,3 km = 5,3 &times; 10 &times; 10 &times; 10 = 5300 m. 5 ha = 5 &times; 100 &times; 100 = 50 000 m&sup2;.</p></div><div class='call'>Ook andere eenheden (zoals megabyte-kilobyte, of euro-dollar) kun je omrekenen met een schema: 1 MB = 1000 kB, dus van MB naar kB doe je &times;1000 en andersom :1000.</div>"
+        },
+        {
+          "titel": "Tijd en snelheid",
+          "uitleg": "<div class='box'>De twee belangrijkste eenheden van snelheid zijn kilometer per uur (km/uur) en meter per seconde (m/s).</div><div class='call'>Om van m/s naar km/uur te gaan: &times;3,6. Om van km/uur naar m/s te gaan: :3,6.</div><div class='voorbeeld'><p><b>Voorbeeld</b><br>Jos loopt een marathon: 39,5 km in 2 uur, 14 minuten en 50 seconden. Reken de afstand om naar meter (39 500 m) en de tijd naar seconden (7200 + 840 + 50 = 8090 s). Snelheid = 39 500 : 8090 = 4,88 m/s. In km/uur: 4,88 &times; 3,6 = 17,6 km/uur.</p></div><div class='call'>Bij <span class='term'>halveringstijd</span> is de tijd waarin de helft van een hoeveelheid verdwijnt of afneemt steeds hetzelfde. Na &eacute;&eacute;n halvering blijft de helft over, na twee halveringen een kwart, enzovoort (net als bij exponenti&euml;le afname met groeifactor 0,5).</div>"
+        }
+      ],
+      "begrippen": [
+        {
+          "term": "procentuele stijging/daling",
+          "uitleg": "een verandering uitgedrukt in een percentage van het oorspronkelijke bedrag; nieuw percentage is 100% + stijging of 100% - daling",
+          "paragraaf": "Procenten berekenen"
+        },
+        {
+          "term": "miljoen",
+          "uitleg": "1 000 000, een getal met 6 nullen",
+          "paragraaf": "Grote getallen"
+        },
+        {
+          "term": "miljard",
+          "uitleg": "1 000 000 000, een getal met 9 nullen",
+          "paragraaf": "Grote getallen"
+        },
+        {
+          "term": "verhoudingstabel",
+          "uitleg": "een tabel waarmee je hoeveelheden berekent die in een vaste verhouding tot elkaar staan",
+          "paragraaf": "Verhoudingen en vuistregels"
+        },
+        {
+          "term": "vuistregel",
+          "uitleg": "een handige, bij benadering geldende afspraak om snel te kunnen schatten, bijvoorbeeld dat een volwassene ongeveer 1,80 m lang is",
+          "paragraaf": "Verhoudingen en vuistregels"
+        },
+        {
+          "term": "hectare (ha)",
+          "uitleg": "een oppervlakte-eenheid gelijk aan een hectometer in het kwadraat (hm&sup2;), oftewel 10 000 m&sup2;",
+          "paragraaf": "Eenheden omrekenen"
+        },
+        {
+          "term": "are (ca)",
+          "uitleg": "are is een oppervlakte-eenheid gelijk aan dam&sup2; (100 m&sup2;); centiare (ca) is gelijk aan 1 m&sup2;",
+          "paragraaf": "Eenheden omrekenen"
+        },
+        {
+          "term": "m/s",
+          "uitleg": "meter per seconde, een eenheid van snelheid",
+          "paragraaf": "Tijd en snelheid"
+        },
+        {
+          "term": "km/uur",
+          "uitleg": "kilometer per uur, een eenheid van snelheid; 1 m/s = 3,6 km/uur",
+          "paragraaf": "Tijd en snelheid"
+        },
+        {
+          "term": "halveringstijd",
+          "uitleg": "de tijd waarin een hoeveelheid (bijvoorbeeld radioactieve straling) steeds tot de helft afneemt",
+          "paragraaf": "Tijd en snelheid"
+        },
+        {
+          "term": "verdubbelingstijd",
+          "uitleg": "de tijd waarin een hoeveelheid bij exponenti&euml;le groei steeds verdubbelt",
+          "paragraaf": "Tijd en snelheid"
+        },
+        {
+          "term": "wetenschappelijke notatie",
+          "uitleg": "een manier om zeer grote of zeer kleine getallen compact te schrijven, met een macht van 10",
+          "paragraaf": "Grote getallen"
+        },
+        {
+          "term": "eenheden van lengte",
+          "uitleg": "km, hm, dam, m, dm, cm, mm; omrekenen gaat in stappen van &times;10 of :10",
+          "paragraaf": "Eenheden omrekenen"
+        },
+        {
+          "term": "eenheden van oppervlakte",
+          "uitleg": "km&sup2;, hm&sup2;, dam&sup2;, m&sup2;, dm&sup2;, cm&sup2;, mm&sup2;; omrekenen gaat in stappen van &times;100 of :100",
+          "paragraaf": "Eenheden omrekenen"
+        },
+        {
+          "term": "afronden van procenten",
+          "uitleg": "de afspraak dat je een percentage afrondt op &eacute;&eacute;n decimaal",
+          "paragraaf": "Procenten berekenen"
+        }
+      ],
+      "flashcards": [
+        {
+          "vraag": "Op hoeveel decimalen rond je een percentage af?",
+          "antwoord": "Op &eacute;&eacute;n decimaal.",
+          "paragraaf": "Procenten berekenen"
+        },
+        {
+          "vraag": "Hoe bereken je het nieuwe bedrag na een stijging van 10,1%?",
+          "antwoord": "Vermenigvuldig het oude bedrag met 1,101 (want 100% + 10,1% = 110,1%).",
+          "paragraaf": "Procenten berekenen"
+        },
+        {
+          "vraag": "Hoeveel nullen heeft een miljoen?",
+          "antwoord": "6 nullen (1 000 000).",
+          "paragraaf": "Grote getallen"
+        },
+        {
+          "vraag": "Hoeveel nullen heeft een miljard?",
+          "antwoord": "9 nullen (1 000 000 000).",
+          "paragraaf": "Grote getallen"
+        },
+        {
+          "vraag": "Schrijf 19,6 miljoen met alleen cijfers.",
+          "antwoord": "19 600 000.",
+          "paragraaf": "Grote getallen"
+        },
+        {
+          "vraag": "Hoe bereken je met een verhoudingstabel het benodigde getal om te vermenigvuldigen?",
+          "antwoord": "Je deelt het gegeven totaal door het bijbehorende getal in de tabel (de twee getallen naast elkaar).",
+          "paragraaf": "Verhoudingen en vuistregels"
+        },
+        {
+          "vraag": "Hoeveel km fiets je ongeveer in een uur (vuistregel)?",
+          "antwoord": "Ongeveer 15 km.",
+          "paragraaf": "Verhoudingen en vuistregels"
+        },
+        {
+          "vraag": "In welke stappen reken je lengte-eenheden om?",
+          "antwoord": "In stappen van &times;10 of :10 (km-hm-dam-m-dm-cm-mm).",
+          "paragraaf": "Eenheden omrekenen"
+        },
+        {
+          "vraag": "In welke stappen reken je oppervlakte-eenheden om?",
+          "antwoord": "In stappen van &times;100 of :100.",
+          "paragraaf": "Eenheden omrekenen"
+        },
+        {
+          "vraag": "Reken 5,3 km om naar meter.",
+          "antwoord": "5300 m.",
+          "paragraaf": "Eenheden omrekenen"
+        },
+        {
+          "vraag": "Hoe reken je van m/s naar km/uur?",
+          "antwoord": "Vermenigvuldig met 3,6.",
+          "paragraaf": "Tijd en snelheid"
+        },
+        {
+          "vraag": "Hoe reken je van km/uur naar m/s?",
+          "antwoord": "Deel door 3,6.",
+          "paragraaf": "Tijd en snelheid"
+        },
+        {
+          "vraag": "Wat is halveringstijd?",
+          "antwoord": "De tijd waarin een hoeveelheid steeds tot de helft afneemt.",
+          "paragraaf": "Tijd en snelheid"
+        },
+        {
+          "vraag": "Hoeveel is er nog over van de oorspronkelijke hoeveelheid na 3 halveringen?",
+          "antwoord": "1/8 deel (1/2 &times; 1/2 &times; 1/2).",
+          "paragraaf": "Tijd en snelheid"
+        },
+        {
+          "vraag": "Wat is de formule om snelheid te berekenen uit afstand en tijd?",
+          "antwoord": "snelheid = afstand (in meters) gedeeld door tijd (in seconden), voor de snelheid in m/s.",
+          "paragraaf": "Tijd en snelheid"
+        }
+      ],
+      "quiz": [
+        {
+          "vraag": "In een klas van 27 leerlingen hebben 19 een voldoende. Hoeveel procent is dat (afgerond op &eacute;&eacute;n decimaal)?",
+          "opties": [
+            "19,0%",
+            "70,4%",
+            "70,0%",
+            "27,0%"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "19/27 &times; 100% = 70,370...% → afgerond 70,4%."
+        },
+        {
+          "vraag": "Een bedrag van &euro;478,25 stijgt met 10,1%. Wat is het nieuwe bedrag?",
+          "opties": [
+            "&euro;488,35",
+            "&euro;526,55",
+            "&euro;478,25",
+            "&euro;430,03"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "1,101 &times; 478,25 = 526,55."
+        },
+        {
+          "vraag": "Schrijf 52 650 000 000 in miljarden.",
+          "opties": [
+            "52,65 miljard",
+            "5,265 miljard",
+            "526,5 miljard",
+            "52 650 miljard"
+          ],
+          "antwoord_index": 0,
+          "uitleg": "52 650 000 000 = 52,65 miljard."
+        },
+        {
+          "vraag": "Hoeveel nullen heeft het getal 'biljoen'?",
+          "opties": [
+            "6",
+            "9",
+            "12",
+            "15"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "Een biljoen is 1 000 000 000 000, met 12 nullen."
+        },
+        {
+          "vraag": "Je maakt limonade met 1 deel siroop op 9 delen water. Hoeveel mL siroop heb je nodig voor 500 mL limonade?",
+          "opties": [
+            "50 mL",
+            "45 mL",
+            "500 mL",
+            "9 mL"
+          ],
+          "antwoord_index": 0,
+          "uitleg": "10 delen limonade = 500 mL, dus 1 deel = 50 mL siroop."
+        },
+        {
+          "vraag": "Wat is ongeveer de vuistregel voor de hoogte van een verdieping?",
+          "opties": [
+            "1 m",
+            "3 m",
+            "10 m",
+            "30 m"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Een verdieping is ongeveer 3 m hoog."
+        },
+        {
+          "vraag": "Reken 265 mm om naar decimeter.",
+          "opties": [
+            "2,65 dm",
+            "26,5 dm",
+            "0,265 dm",
+            "265 dm"
+          ],
+          "antwoord_index": 0,
+          "uitleg": "265 mm = 265 : 10 : 10 = 2,65 dm."
+        },
+        {
+          "vraag": "Reken 5 hectare (ha) om naar m&sup2;.",
+          "opties": [
+            "500 m&sup2;",
+            "5000 m&sup2;",
+            "50 000 m&sup2;",
+            "500 000 m&sup2;"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "5 ha = 5 &times; 100 &times; 100 = 50 000 m&sup2;."
+        },
+        {
+          "vraag": "Reken 360 cm&sup2; om naar dm&sup2;.",
+          "opties": [
+            "36 dm&sup2;",
+            "3,6 dm&sup2;",
+            "0,36 dm&sup2;",
+            "3600 dm&sup2;"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "360 cm&sup2; = 360 : 100 = 3,6 dm&sup2;."
+        },
+        {
+          "vraag": "Een loper heeft een snelheid van 4,88 m/s. Wat is dat in km/uur (afgerond op &eacute;&eacute;n decimaal)?",
+          "opties": [
+            "4,9 km/uur",
+            "17,6 km/uur",
+            "48,8 km/uur",
+            "1,4 km/uur"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "4,88 &times; 3,6 = 17,568 → afgerond 17,6 km/uur."
+        },
+        {
+          "vraag": "Een radioactieve stof heeft een halveringstijd van 13 uur. Hoeveel procent van de oorspronkelijke straling is er over na twee halveringen?",
+          "opties": [
+            "50%",
+            "25%",
+            "75%",
+            "12,5%"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Na 1 halvering 50%, na 2 halveringen 25% (de helft van de helft)."
+        },
+        {
+          "vraag": "Jos loopt 39,5 km in 8090 seconden. Wat is zijn snelheid in m/s (afgerond op twee decimalen)?",
+          "opties": [
+            "4,88 m/s",
+            "48,8 m/s",
+            "0,49 m/s",
+            "39,5 m/s"
+          ],
+          "antwoord_index": 0,
+          "uitleg": "39 500 : 8090 = 4,88 m/s."
+        },
+        {
+          "vraag": "1 MB = 1000 kB. Hoeveel kB is 2,8 MB?",
+          "opties": [
+            "280 kB",
+            "2800 kB",
+            "28 kB",
+            "0,0028 kB"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "2,8 MB = 2,8 &times; 1000 = 2800 kB."
+        },
+        {
+          "vraag": "Een prijs daalt met 1,4%. Met welk getal vermenigvuldig je het oude bedrag om het nieuwe bedrag te vinden?",
+          "opties": [
+            "1,014",
+            "0,986",
+            "1,4",
+            "0,14"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "100% - 1,4% = 98,6%, dus je vermenigvuldigt met 0,986."
+        },
+        {
+          "vraag": "Waarom kun je bij het rekenen met grote getallen beter eerst omrekenen naar 'miljoen' of 'miljard'?",
+          "opties": [
+            "Omdat rekenmachines dat verplicht stellen",
+            "Om de uitkomst overzichtelijker en makkelijker te controleren te maken",
+            "Omdat dat de enige juiste schrijfwijze is",
+            "Om fouten met procenten te voorkomen"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Werken met miljoen of miljard maakt grote getallen overzichtelijker."
+        }
+      ]
+    },
+    {
+      "titel": "Meetkunde vlakke figuren",
+      "uitleg": "<div class='box'>In dit hoofdstuk herhaal je alles over vlakke figuren: oppervlakte en omtrek, hoeken (kijkhoek en koershoek), goniometrie in vlakke figuren, en gelijkvormigheid en vergroten.</div>",
+      "subhoofdstukken": [
+        {
+          "titel": "Oppervlakte en omtrek",
+          "uitleg": "<div class='box'>Op het examen krijg je de formules voor omtrek en oppervlakte van een cirkel: <b>omtrek cirkel = &pi; &times; diameter</b> en <b>oppervlakte cirkel = &pi; &times; straal&sup2;</b>.</div><div class='voorbeeld'><p><b>Voorbeeld</b><br>Een ronde vijver heeft een diameter van 12 m. Straal = 6 m. Oppervlakte = &pi; &times; 6&sup2; = 113,1 m&sup2;. Omtrek = &pi; &times; 12 = 37,70 m.</p></div><div class='call'>De oppervlakte van een <span class='term'>samengestelde vlakke figuur</span> bereken je door de figuur te <b>verdelen</b> in bekende figuren (zoals een driehoek en een halve cirkel) en de oppervlaktes op te tellen, of door de figuur <b>in te lijsten</b> in een grotere bekende figuur en er stukken vanaf te trekken.</div><div class='call warn'>Bij het verdelen van een samengestelde figuur rond je de tussenantwoorden niet af; je rondt pas de einduitkomst af.</div>"
+        },
+        {
+          "titel": "Symmetrie",
+          "uitleg": "<div class='box'>Een figuur is <span class='term'>lijnsymmetrisch</span> als je hem langs een symmetrieas in twee spiegelbeeldige helften kunt vouwen. Een figuur is <span class='term'>draaisymmetrisch</span> als hij, gedraaid om zijn middelpunt over een bepaalde hoek, weer precies op zichzelf past.</div><div class='voorbeeld'><p><b>Voorbeeld</b><br>Een ster met 10 punten die lijnsymmetrisch en draaisymmetrisch is: de kleinste draaihoek waarover de ster op zichzelf past, bereken je door 360&deg; te delen door het aantal punten (bij 10 punten: 360&deg; : 10 = 36&deg;).</p></div>"
+        },
+        {
+          "titel": "Kijkhoek en koershoek",
+          "uitleg": "<div class='box'>De <span class='term'>kijkhoek</span> is de hoek tussen twee kijklijnen vanuit &eacute;&eacute;n punt naar bijvoorbeeld twee zichtbare voorwerpen.</div><div class='voorbeeld'><p><b>Voorbeeld</b><br>Vanuit een steeg kun je huizen zien tussen de twee hoeken van de steeg door: die hoek is de kijkhoek. Alles wat binnen die hoek ligt, kun je zien.</p></div><div class='call'>De <span class='term'>koershoek</span> geef je aan met een koershoekmeter: de telling begint in het noorden bij 0&deg; en loopt helemaal rond tot 360&deg;. Oost is 90&deg;, zuid is 180&deg;, west is 270&deg;.</div><div class='num'><ol><li>Teken een lijn van je vertrekpunt naar je bestemming.</li><li>Leg de koershoekmeter met het midden op je vertrekpunt en de noordpijl naar het noorden.</li><li>Draai de rode lijn op de getekende lijn en lees de koershoek af.</li></ol></div>"
+        },
+        {
+          "titel": "Goniometrie in vlakke figuren",
+          "uitleg": "<div class='box'>Ook in vlakke figuren gebruik je sinus, cosinus en tangens (SOS-CAS-TOA) om een zijde te berekenen als je een hoek en een andere zijde weet.</div><div class='voorbeeld'><p><b>Voorbeeld</b><br>Bereken AB als &ang;B = 26&deg; en de aanliggende zijde BC = 35,5 cm, waarbij AB de schuine zijde is. Je gebruikt CAS: cos 26&deg; = 35,5/AB, dus AB = 35,5 : cos 26&deg; = 39,5 cm.</p></div><div class='call'>Ezelsbruggetje: 3 = 6/2. Weet je 6 niet, dan doe je 6 : 3 om 2 te vinden, of 2 &times; 3 om 6 te vinden.</div>"
+        },
+        {
+          "titel": "Gelijkvormigheid en vergroten",
+          "uitleg": "<div class='box'>Twee figuren zijn <span class='term'>gelijkvormig</span> als de overeenkomstige hoeken even groot zijn. De <span class='term'>vergrotingsfactor</span> bereken je met: <b>vergrotingsfactor = lengte beeld : lengte origineel</b>.</div><div class='voorbeeld'><p><b>Voorbeeld</b><br>&#9651;PQR &#8767; &#9651;CAB. PQ = 15 cm en CA = 30 cm. Vergrotingsfactor = 30 : 15 = 2. Is PR = 25 cm, dan is CB = 25 &times; 2 = 50 cm.</p></div><div class='call'>Voor <b>oppervlakte</b> geldt: <b>oppervlakte beeld = vergrotingsfactor&sup2; &times; oppervlakte origineel</b>, en omgekeerd <b>vergrotingsfactor = &radic;(oppervlakte vergroting : oppervlakte origineel)</b>.</div><div class='voorbeeld'><p><b>Voorbeeld</b><br>Een foto van 10 &times; 15 cm wordt vergroot tot een muurschildering van 8,64 m&sup2; (= 86 400 cm&sup2;). De oppervlakte van het origineel is 150 cm&sup2;. Vergrotingsfactor = &radic;(86 400 : 150) = 24. De muurschildering is dan 24 &times; 15 = 360 cm bij 24 &times; 10 = 240 cm.</p></div>"
+        }
+      ],
+      "begrippen": [
+        {
+          "term": "samengestelde vlakke figuur",
+          "uitleg": "een figuur die bestaat uit meerdere bekende basisfiguren, zoals een driehoek en een halve cirkel",
+          "paragraaf": "Oppervlakte en omtrek"
+        },
+        {
+          "term": "verdelen",
+          "uitleg": "een methode om de oppervlakte van een samengestelde figuur te vinden door hem op te splitsen in bekende figuren",
+          "paragraaf": "Oppervlakte en omtrek"
+        },
+        {
+          "term": "inlijsten",
+          "uitleg": "een methode om de oppervlakte van een samengestelde figuur te vinden door hem in een grotere bekende figuur te passen en delen af te trekken",
+          "paragraaf": "Oppervlakte en omtrek"
+        },
+        {
+          "term": "lijnsymmetrisch",
+          "uitleg": "een figuur die je langs een symmetrieas in twee spiegelbeeldige helften kunt vouwen",
+          "paragraaf": "Symmetrie"
+        },
+        {
+          "term": "draaisymmetrisch",
+          "uitleg": "een figuur die na draaiing om zijn middelpunt over een bepaalde hoek weer precies op zichzelf past",
+          "paragraaf": "Symmetrie"
+        },
+        {
+          "term": "kijkhoek",
+          "uitleg": "de hoek tussen twee kijklijnen vanaf &eacute;&eacute;n punt naar twee andere punten",
+          "paragraaf": "Kijkhoek en koershoek"
+        },
+        {
+          "term": "koershoek",
+          "uitleg": "de richting die je aflegt, gemeten vanaf het noorden (0&deg;) met de klok mee tot 360&deg;",
+          "paragraaf": "Kijkhoek en koershoek"
+        },
+        {
+          "term": "koershoekmeter",
+          "uitleg": "een hulpmiddel om een koershoek te tekenen of af te lezen op een kaart",
+          "paragraaf": "Kijkhoek en koershoek"
+        },
+        {
+          "term": "gelijkvormig",
+          "uitleg": "twee figuren met gelijke vorm, waarbij overeenkomstige hoeken even groot zijn",
+          "paragraaf": "Gelijkvormigheid en vergroten"
+        },
+        {
+          "term": "vergrotingsfactor",
+          "uitleg": "het getal waarmee je lengtes van het origineel vermenigvuldigt om de lengtes van het beeld te krijgen",
+          "paragraaf": "Gelijkvormigheid en vergroten"
+        },
+        {
+          "term": "origineel en beeld",
+          "uitleg": "het origineel is de oorspronkelijke figuur, het beeld is de vergrote of verkleinde figuur",
+          "paragraaf": "Gelijkvormigheid en vergroten"
+        },
+        {
+          "term": "SOS-CAS-TOA",
+          "uitleg": "ezelsbruggetje voor sinus, cosinus en tangens om hoeken of zijden in een rechthoekige driehoek te berekenen",
+          "paragraaf": "Goniometrie in vlakke figuren"
+        },
+        {
+          "term": "diameter en straal",
+          "uitleg": "de diameter is de doorsnede van een cirkel, de straal is de helft van de diameter",
+          "paragraaf": "Oppervlakte en omtrek"
+        },
+        {
+          "term": "symmetrieas",
+          "uitleg": "de lijn waarlangs je een lijnsymmetrische figuur kunt vouwen tot twee spiegelbeeldige helften",
+          "paragraaf": "Symmetrie"
+        },
+        {
+          "term": "schaal",
+          "uitleg": "de verhouding tussen een tekening of kaart en de werkelijkheid",
+          "paragraaf": "Gelijkvormigheid en vergroten"
+        }
+      ],
+      "flashcards": [
+        {
+          "vraag": "Wat is de formule voor de oppervlakte van een cirkel?",
+          "antwoord": "oppervlakte cirkel = &pi; &times; straal&sup2;",
+          "paragraaf": "Oppervlakte en omtrek"
+        },
+        {
+          "vraag": "Wat is de formule voor de omtrek van een cirkel?",
+          "antwoord": "omtrek cirkel = &pi; &times; diameter",
+          "paragraaf": "Oppervlakte en omtrek"
+        },
+        {
+          "vraag": "Noem twee manieren om de oppervlakte van een samengestelde vlakke figuur te berekenen.",
+          "antwoord": "Verdelen (opsplitsen in bekende figuren) en inlijsten (in een grotere figuur passen en delen aftrekken).",
+          "paragraaf": "Oppervlakte en omtrek"
+        },
+        {
+          "vraag": "Wanneer is een figuur lijnsymmetrisch?",
+          "antwoord": "Als je hem langs een symmetrieas kunt vouwen tot twee spiegelbeeldige helften.",
+          "paragraaf": "Symmetrie"
+        },
+        {
+          "vraag": "Wanneer is een figuur draaisymmetrisch?",
+          "antwoord": "Als hij na draaiing om zijn middelpunt over een bepaalde hoek weer precies op zichzelf past.",
+          "paragraaf": "Symmetrie"
+        },
+        {
+          "vraag": "Wat is de kijkhoek?",
+          "antwoord": "De hoek tussen twee kijklijnen vanaf &eacute;&eacute;n punt naar twee andere punten.",
+          "paragraaf": "Kijkhoek en koershoek"
+        },
+        {
+          "vraag": "Waar begint de telling bij een koershoek en hoeveel graden is een volledige rondgang?",
+          "antwoord": "De telling begint in het noorden bij 0&deg; en loopt helemaal rond tot 360&deg;.",
+          "paragraaf": "Kijkhoek en koershoek"
+        },
+        {
+          "vraag": "Welke koershoek hoort bij oost?",
+          "antwoord": "90&deg;.",
+          "paragraaf": "Kijkhoek en koershoek"
+        },
+        {
+          "vraag": "Hoe bereken je een zijde met de cosinus (CAS)?",
+          "antwoord": "cosinus = aanliggende zijde / schuine zijde, dus schuine zijde = aanliggende zijde : cos(hoek).",
+          "paragraaf": "Goniometrie in vlakke figuren"
+        },
+        {
+          "vraag": "Wanneer zijn twee figuren gelijkvormig?",
+          "antwoord": "Als de overeenkomstige hoeken even groot zijn.",
+          "paragraaf": "Gelijkvormigheid en vergroten"
+        },
+        {
+          "vraag": "Hoe bereken je de vergrotingsfactor uit twee overeenkomstige lengtes?",
+          "antwoord": "vergrotingsfactor = lengte beeld : lengte origineel.",
+          "paragraaf": "Gelijkvormigheid en vergroten"
+        },
+        {
+          "vraag": "Hoe hangt de oppervlakte van het beeld samen met de vergrotingsfactor?",
+          "antwoord": "oppervlakte beeld = vergrotingsfactor&sup2; &times; oppervlakte origineel.",
+          "paragraaf": "Gelijkvormigheid en vergroten"
+        },
+        {
+          "vraag": "Hoe bereken je de vergrotingsfactor als je de oppervlaktes van origineel en beeld weet?",
+          "antwoord": "vergrotingsfactor = &radic;(oppervlakte vergroting : oppervlakte origineel).",
+          "paragraaf": "Gelijkvormigheid en vergroten"
+        },
+        {
+          "vraag": "Rond je tussenantwoorden af bij het verdelen van een samengestelde figuur?",
+          "antwoord": "Nee, je rondt pas de einduitkomst af.",
+          "paragraaf": "Oppervlakte en omtrek"
+        },
+        {
+          "vraag": "Wat is de straal van een cirkel met een diameter van 12 m?",
+          "antwoord": "6 m (de straal is de helft van de diameter).",
+          "paragraaf": "Oppervlakte en omtrek"
+        }
+      ],
+      "quiz": [
+        {
+          "vraag": "Een cirkel heeft een straal van 6 m. Wat is de oppervlakte (afgerond op &eacute;&eacute;n decimaal)?",
+          "opties": [
+            "37,7 m&sup2;",
+            "113,1 m&sup2;",
+            "18,8 m&sup2;",
+            "36,0 m&sup2;"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "oppervlakte = &pi; &times; 6&sup2; = 113,1 m&sup2;."
+        },
+        {
+          "vraag": "Dezelfde cirkel (straal 6 m): wat is de omtrek (afgerond op twee decimalen)?",
+          "opties": [
+            "18,85 m",
+            "37,70 m",
+            "113,10 m",
+            "12,00 m"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "omtrek = &pi; &times; diameter = &pi; &times; 12 = 37,70 m."
+        },
+        {
+          "vraag": "Welke twee methoden gebruik je om de oppervlakte van een samengestelde figuur te berekenen?",
+          "opties": [
+            "Optellen en aftrekken van hoeken",
+            "Verdelen en inlijsten",
+            "Inklemmen en balansmethode",
+            "Sinus en cosinus"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Je kunt de figuur verdelen in bekende figuren of inlijsten in een grotere figuur."
+        },
+        {
+          "vraag": "Een ster met 10 punten is draaisymmetrisch. Wat is de kleinste draaihoek waarover de ster op zichzelf past?",
+          "opties": [
+            "10 graden",
+            "36 graden",
+            "100 graden",
+            "360 graden"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "360&deg; : 10 = 36&deg;."
+        },
+        {
+          "vraag": "Wat is de kijkhoek?",
+          "opties": [
+            "De hoek tussen twee kijklijnen vanaf &eacute;&eacute;n punt",
+            "De hoek tussen noord en oost",
+            "De hoek van een driehoek",
+            "De hoek van een parallellogram"
+          ],
+          "antwoord_index": 0,
+          "uitleg": "De kijkhoek is de hoek tussen twee kijklijnen vanaf een punt naar twee andere punten."
+        },
+        {
+          "vraag": "Welke koershoek hoort bij het zuidwesten (ZW)?",
+          "opties": [
+            "45 graden",
+            "135 graden",
+            "225 graden",
+            "315 graden"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "ZW ligt op 225 graden (tussen zuid 180&deg; en west 270&deg;)."
+        },
+        {
+          "vraag": "Een schip vaart een koershoek van 309&deg;. Ongeveer welke richting is dit?",
+          "opties": [
+            "Noordoost",
+            "Zuidoost",
+            "Noordwest",
+            "Zuidwest"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "309&deg; ligt tussen west (270&deg;) en noord (360&deg;), dus in het noordwesten."
+        },
+        {
+          "vraag": "In een rechthoekige driehoek is &ang;B = 26&deg; en de aanliggende zijde BC = 35,5 cm. Welke goniometrische verhouding gebruik je om de schuine zijde AB te berekenen?",
+          "opties": [
+            "Sinus (SOS)",
+            "Cosinus (CAS)",
+            "Tangens (TOA)",
+            "Pythagoras"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Aanliggende en schuine zijde horen bij CAS: de cosinus."
+        },
+        {
+          "vraag": "Bereken AB uit de vorige vraag (afgerond op &eacute;&eacute;n decimaal).",
+          "opties": [
+            "31,9 cm",
+            "39,5 cm",
+            "15,6 cm",
+            "35,5 cm"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "AB = 35,5 : cos 26&deg; = 39,5 cm."
+        },
+        {
+          "vraag": "Twee driehoeken zijn gelijkvormig. Zijde PQ = 15 cm hoort overeen met zijde CA = 30 cm. Wat is de vergrotingsfactor?",
+          "opties": [
+            "0,5",
+            "2",
+            "15",
+            "45"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "vergrotingsfactor = 30 : 15 = 2."
+        },
+        {
+          "vraag": "Bij dezelfde gelijkvormige driehoeken is PR = 25 cm. Wat is de lengte van de overeenkomstige zijde CB?",
+          "opties": [
+            "12,5 cm",
+            "25 cm",
+            "50 cm",
+            "27 cm"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "CB = 25 &times; vergrotingsfactor 2 = 50 cm."
+        },
+        {
+          "vraag": "Een foto van 150 cm&sup2; wordt vergroot tot een oppervlakte van 86 400 cm&sup2;. Wat is de vergrotingsfactor?",
+          "opties": [
+            "2",
+            "12",
+            "24",
+            "576"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "vergrotingsfactor = &radic;(86 400 : 150) = &radic;576 = 24."
+        },
+        {
+          "vraag": "Hoe hangt de oppervlakte van een vergroting samen met de vergrotingsfactor?",
+          "opties": [
+            "oppervlakte beeld = vergrotingsfactor &times; oppervlakte origineel",
+            "oppervlakte beeld = vergrotingsfactor&sup2; &times; oppervlakte origineel",
+            "oppervlakte beeld = vergrotingsfactor&sup3; &times; oppervlakte origineel",
+            "oppervlakte beeld = oppervlakte origineel : vergrotingsfactor"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "De oppervlakte schaalt met het kwadraat van de vergrotingsfactor."
+        },
+        {
+          "vraag": "Een cirkel is verdeeld in taartpunten met een middelpuntshoek van 90&deg;. Hoeveel van zulke taartpunten passen er in de hele cirkel?",
+          "opties": [
+            "2",
+            "4",
+            "6",
+            "9"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "360&deg; : 90&deg; = 4 taartpunten."
+        },
+        {
+          "vraag": "Bij het inlijsten van een samengestelde figuur...",
+          "opties": [
+            "splits je de figuur in kleinere bekende delen",
+            "pas je de figuur in een grotere bekende figuur en trek je de extra delen eraf",
+            "gebruik je alleen de stelling van Pythagoras",
+            "bereken je eerst de vergrotingsfactor"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Bij inlijsten omsluit je de figuur met een grotere bekende figuur en trek je de niet-benodigde delen af."
+        }
+      ]
+    },
+    {
+      "titel": "Verbanden",
+      "uitleg": "<div class='box'>Dit hoofdstuk herhaalt alle soorten verbanden voor je examen: lineaire formules maken, exponenti&euml;le groei, periodieke verbanden en som- en verschilgrafieken.</div>",
+      "subhoofdstukken": [
+        {
+          "titel": "Lineaire formules maken",
+          "uitleg": "<div class='box'>Bij een lineair verband heeft de formule de vorm <b>uitkomst = begingetal + richtingsco&euml;ffici&euml;nt &times; variabele</b>.</div><div class='voorbeeld'><p><b>Voorbeeld</b><br>In 2009 kostte een kaartje &euro;19,50, in 2024 &euro;30, met een lineaire stijging. De prijsstijging is &euro;10,50 over 15 jaar, dus rc = 10,50 : 15 = 0,7. De formule wordt P = 19,50 + 0,7t.</p></div><div class='call'>Bij een tabel met regelmaat vind je het <span class='term'>begingetal</span> bij t = 0 en de <span class='term'>richtingsco&euml;ffici&euml;nt</span> door de deling toename onder : toename boven te maken.</div><div class='voorbeeld'><p><b>Voorbeeld</b><br>Bij tabel t: 2, 4, 7 en H: 20, 16, 10 bereken je eerst de rc met -4/2 = -2 en -6/3 = -2 (klopt, rc = -2). Bij t = 0 hoort dan H = 20 + 2 &times; 2 = 24. De formule is H = 24 - 2t.</p></div><div class='call'>Hoort een formule bij een tabel? Vul de gegeven getallen uit de tabel in en controleer of de uitkomst klopt. Klopt een formule niet bij &eacute;&eacute;n van de getallen, dan hoort die formule niet bij de tabel.</div>"
+        },
+        {
+          "titel": "Exponenti&euml;le verbanden",
+          "uitleg": "<div class='box'>Bij een tabel controleer je een <span class='term'>exponenti&euml;el verband</span> door steeds de opeenvolgende getallen op elkaar te delen. Krijg je steeds dezelfde uitkomst, dan is er een exponentieel verband en is die uitkomst de <span class='term'>groeifactor</span>.</div><div class='voorbeeld'><p><b>Voorbeeld</b><br>Tabel: 5, 15, 45, 135. 15:5=3, 45:15=3, 135:45=3. Er is een exponentieel verband met groeifactor 3.</p></div><div class='call'>Formule bij exponenti&euml;le groei: <b>aantal = begingetal &times; groeifactor<sup>tijd</sup></b>.</div><div class='voorbeeld'><p><b>Voorbeeld</b><br>Een fiets kost &euro;1500 en daalt elk jaar met 17,5% in waarde. Groeifactor = 82,5 : 100 = 0,825. Op 1 januari 2028 (6 jaar later) is de waarde 1500 &times; 0,825&#8310; = &euro;472,95.</p></div>"
+        },
+        {
+          "titel": "Periodieke verbanden",
+          "uitleg": "<div class='box'>Bij een <span class='term'>periodiek verband</span> herhaalt de grafiek zich steeds na dezelfde tijd. Die tijd heet de <span class='term'>periode</span>.</div><div class='tblwrap'><table class='tbl'><tr><th>begrip</th><th>uitleg</th></tr><tr><td>periode</td><td>de tijd waarna de grafiek zich herhaalt</td></tr><tr><td>evenwichtsstand</td><td>de waarde precies in het midden tussen de hoogste en laagste stand</td></tr><tr><td>amplitude</td><td>de halve afstand tussen de hoogste en laagste stand</td></tr><tr><td>frequentie</td><td>hoe vaak de periode zich herhaalt binnen een tijdseenheid (bijvoorbeeld per uur)</td></tr></table></div><div class='voorbeeld'><p><b>Voorbeeld</b><br>Bij een reuzenrad komt een bakje 35 m hoog en 0 m laag, en de periode is 50 seconden. De evenwichtsstand is (35 + 0)/2 = 17,5 m, de amplitude is (35 - 0)/2 = 17,5 m. De frequentie per uur is 3600 : 50 = 72 keer per uur.</p></div>"
+        },
+        {
+          "titel": "Som- en verschilgrafieken",
+          "uitleg": "<div class='box'>Een <span class='term'>somgrafiek</span> geeft bij elk tijdstip de som van twee (of meer) grootheden. Een <span class='term'>verschilgrafiek</span> geeft het verschil.</div><div class='voorbeeld'><p><b>Voorbeeld</b><br>Camping Goud en Camping Zilver verhuren elk dag fietsen. Om de somgrafiek te tekenen, tel je bij elke dag het aantal fietsen van beide campings bij elkaar op en teken je die som.</p></div><div class='call'>Bij een <span class='term'>stippengrafiek</span> horen alleen losse punten (bijvoorbeeld bij hele aantallen), bij een <span class='term'>trapgrafiek</span> horen horizontale treden die springen naar een andere waarde binnen een volgend interval.</div><div class='voorbeeld'><p><b>Voorbeeld</b><br>Bij het huren van een OV-fiets kost 0 tot 24 uur &euro;4,55, van 24 tot 48 uur &euro;9,10, enzovoort: dit is een trapgrafiek.</p></div>"
+        }
+      ],
+      "begrippen": [
+        {
+          "term": "richtingsco&euml;ffici&euml;nt (rc)",
+          "uitleg": "het getal dat je vindt met toename onder : toename boven in een tabel; geeft de steilheid van een lineaire grafiek",
+          "paragraaf": "Lineaire formules maken"
+        },
+        {
+          "term": "begingetal",
+          "uitleg": "de waarde van de formule bij variabele gelijk aan 0",
+          "paragraaf": "Lineaire formules maken"
+        },
+        {
+          "term": "exponentieel verband",
+          "uitleg": "een verband waarbij opeenvolgende waarden in een tabel steeds met dezelfde factor (de groeifactor) vermenigvuldigd worden",
+          "paragraaf": "Exponenti&euml;le verbanden"
+        },
+        {
+          "term": "groeifactor",
+          "uitleg": "het getal waarmee je bij exponenti&euml;le groei vermenigvuldigt per tijdseenheid",
+          "paragraaf": "Exponenti&euml;le verbanden"
+        },
+        {
+          "term": "periode",
+          "uitleg": "de tijd waarna een periodieke grafiek zich herhaalt",
+          "paragraaf": "Periodieke verbanden"
+        },
+        {
+          "term": "evenwichtsstand",
+          "uitleg": "de waarde precies in het midden tussen de hoogste en de laagste stand van een periodieke grafiek",
+          "paragraaf": "Periodieke verbanden"
+        },
+        {
+          "term": "amplitude",
+          "uitleg": "de halve afstand tussen de hoogste en de laagste stand van een periodieke grafiek",
+          "paragraaf": "Periodieke verbanden"
+        },
+        {
+          "term": "frequentie",
+          "uitleg": "het aantal keren dat een periode zich herhaalt binnen een tijdseenheid, bijvoorbeeld per uur",
+          "paragraaf": "Periodieke verbanden"
+        },
+        {
+          "term": "somgrafiek",
+          "uitleg": "een grafiek die bij elk tijdstip de som van twee of meer grootheden weergeeft",
+          "paragraaf": "Som- en verschilgrafieken"
+        },
+        {
+          "term": "verschilgrafiek",
+          "uitleg": "een grafiek die bij elk tijdstip het verschil tussen twee grootheden weergeeft",
+          "paragraaf": "Som- en verschilgrafieken"
+        },
+        {
+          "term": "stippengrafiek",
+          "uitleg": "een grafiek met alleen losse punten, zonder verbindende lijn",
+          "paragraaf": "Som- en verschilgrafieken"
+        },
+        {
+          "term": "trapgrafiek",
+          "uitleg": "een grafiek met horizontale treden die bij een volgend interval springen naar een andere waarde",
+          "paragraaf": "Som- en verschilgrafieken"
+        },
+        {
+          "term": "periodiek verband",
+          "uitleg": "een verband waarbij de grafiek zich met een vaste periode herhaalt, zoals bij een reuzenrad",
+          "paragraaf": "Periodieke verbanden"
+        },
+        {
+          "term": "regelmaat in een tabel",
+          "uitleg": "een tabel waarbij de toename (of afname) steeds constant is, waardoor je er een lineaire formule bij kunt maken",
+          "paragraaf": "Lineaire formules maken"
+        },
+        {
+          "term": "hetzelfde verband controleren",
+          "uitleg": "controleren of een formule bij een tabel hoort door de gegeven getallen in te vullen en te kijken of de uitkomst klopt",
+          "paragraaf": "Lineaire formules maken"
+        }
+      ],
+      "flashcards": [
+        {
+          "vraag": "Wat is de formule voor een lineair verband?",
+          "antwoord": "uitkomst = begingetal + richtingsco&euml;ffici&euml;nt &times; variabele.",
+          "paragraaf": "Lineaire formules maken"
+        },
+        {
+          "vraag": "Hoe bereken je de richtingsco&euml;ffici&euml;nt uit een tabel?",
+          "antwoord": "Met de deling toename onder : toename boven.",
+          "paragraaf": "Lineaire formules maken"
+        },
+        {
+          "vraag": "Hoe controleer je of een formule bij een tabel hoort?",
+          "antwoord": "Je vult de gegeven getallen uit de tabel in de formule in en controleert of de uitkomst klopt.",
+          "paragraaf": "Lineaire formules maken"
+        },
+        {
+          "vraag": "Hoe herken je een exponentieel verband in een tabel?",
+          "antwoord": "Door opeenvolgende getallen op elkaar te delen; krijg je steeds dezelfde uitkomst, dan is er een exponentieel verband.",
+          "paragraaf": "Exponenti&euml;le verbanden"
+        },
+        {
+          "vraag": "Wat is de formule bij exponenti&euml;le groei?",
+          "antwoord": "aantal = begingetal &times; groeifactor tot de macht tijd.",
+          "paragraaf": "Exponenti&euml;le verbanden"
+        },
+        {
+          "vraag": "Hoe bereken je de groeifactor bij een afname van 17,5%?",
+          "antwoord": "(100 - 17,5) : 100 = 0,825.",
+          "paragraaf": "Exponenti&euml;le verbanden"
+        },
+        {
+          "vraag": "Wat is de periode van een periodiek verband?",
+          "antwoord": "De tijd waarna de grafiek zich herhaalt.",
+          "paragraaf": "Periodieke verbanden"
+        },
+        {
+          "vraag": "Hoe bereken je de evenwichtsstand?",
+          "antwoord": "(hoogste stand + laagste stand) : 2.",
+          "paragraaf": "Periodieke verbanden"
+        },
+        {
+          "vraag": "Hoe bereken je de amplitude?",
+          "antwoord": "(hoogste stand - laagste stand) : 2.",
+          "paragraaf": "Periodieke verbanden"
+        },
+        {
+          "vraag": "Wat geeft de frequentie aan?",
+          "antwoord": "Hoe vaak de periode zich herhaalt binnen een tijdseenheid, bijvoorbeeld per uur.",
+          "paragraaf": "Periodieke verbanden"
+        },
+        {
+          "vraag": "Wat laat een somgrafiek zien?",
+          "antwoord": "Bij elk tijdstip de som van twee of meer grootheden.",
+          "paragraaf": "Som- en verschilgrafieken"
+        },
+        {
+          "vraag": "Wat laat een verschilgrafiek zien?",
+          "antwoord": "Bij elk tijdstip het verschil tussen twee grootheden.",
+          "paragraaf": "Som- en verschilgrafieken"
+        },
+        {
+          "vraag": "Wanneer teken je een stippengrafiek in plaats van een lijn?",
+          "antwoord": "Als alleen losse, hele waarden mogelijk zijn.",
+          "paragraaf": "Som- en verschilgrafieken"
+        },
+        {
+          "vraag": "Wat kenmerkt een trapgrafiek?",
+          "antwoord": "Horizontale treden die bij een volgend interval springen naar een andere waarde.",
+          "paragraaf": "Som- en verschilgrafieken"
+        },
+        {
+          "vraag": "Als je een tabel hebt met 50, 80, 128, 210 bij t = 0,1,2,3: hoe controleer je of dit exponentieel is?",
+          "antwoord": "Je deelt opeenvolgende getallen door elkaar (80:50, 128:80, 210:128) en kijkt of de uitkomst steeds gelijk is.",
+          "paragraaf": "Exponenti&euml;le verbanden"
+        }
+      ],
+      "quiz": [
+        {
+          "vraag": "Bij een tabel is de rc berekend als -4/2 = -2 en -6/3 = -2. Bij t = 0 hoort H = 24. Wat is de formule?",
+          "opties": [
+            "H = 24 + 2t",
+            "H = 24 - 2t",
+            "H = -2 + 24t",
+            "H = 2 - 24t"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Begingetal 24, richtingsco&euml;ffici&euml;nt -2: H = 24 - 2t."
+        },
+        {
+          "vraag": "In 2009 kostte een kaartje &euro;19,50, in 2024 &euro;30, met een lineaire stijging. Wat is de richtingsco&euml;ffici&euml;nt?",
+          "opties": [
+            "0,7",
+            "10,50",
+            "1,3",
+            "15"
+          ],
+          "antwoord_index": 0,
+          "uitleg": "rc = (30 - 19,50) / 15 = 0,7."
+        },
+        {
+          "vraag": "Een tabel geeft 5, 15, 45, 135. Wat is de groeifactor?",
+          "opties": [
+            "2",
+            "3",
+            "5",
+            "10"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "15:5=3, 45:15=3, 135:45=3, dus groeifactor 3."
+        },
+        {
+          "vraag": "Een fiets van &euro;1500 daalt jaarlijks 17,5% in waarde. Wat is de groeifactor?",
+          "opties": [
+            "1,175",
+            "0,825",
+            "0,175",
+            "82,5"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "100% - 17,5% = 82,5%, dus groeifactor 0,825."
+        },
+        {
+          "vraag": "Wat is de waarde van de fiets (&euro;1500, groeifactor 0,825) na 6 jaar (afgerond op hele euro's)?",
+          "opties": [
+            "&euro;225",
+            "&euro;473",
+            "&euro;1237",
+            "&euro;300"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "1500 &times; 0,825&#8310; = 472,95, afgerond &euro;473."
+        },
+        {
+          "vraag": "Bij een reuzenrad is het bakje maximaal 35 m hoog en minimaal 0 m. Wat is de evenwichtsstand?",
+          "opties": [
+            "0 m",
+            "17,5 m",
+            "35 m",
+            "70 m"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Evenwichtsstand = (35 + 0) : 2 = 17,5 m."
+        },
+        {
+          "vraag": "Bij dezelfde situatie: wat is de amplitude?",
+          "opties": [
+            "0 m",
+            "17,5 m",
+            "35 m",
+            "70 m"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Amplitude = (35 - 0) : 2 = 17,5 m."
+        },
+        {
+          "vraag": "Het reuzenrad heeft een periode van 50 seconden. Wat is de frequentie per uur?",
+          "opties": [
+            "50 keer per uur",
+            "72 keer per uur",
+            "3600 keer per uur",
+            "7,2 keer per uur"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "3600 seconden per uur : 50 seconden per periode = 72 keer per uur."
+        },
+        {
+          "vraag": "Wat geeft een somgrafiek weer?",
+          "opties": [
+            "Het verschil tussen twee grootheden",
+            "De som van twee of meer grootheden op elk tijdstip",
+            "Alleen de grootste waarde",
+            "Een periodiek verband"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Een somgrafiek telt bij elk tijdstip de waarden van meerdere grootheden op."
+        },
+        {
+          "vraag": "Camping Goud en Camping Zilver verhuren op maandag 5 en 8 fietsen. Wat is de waarde op de somgrafiek voor maandag?",
+          "opties": [
+            "3",
+            "5",
+            "8",
+            "13"
+          ],
+          "antwoord_index": 3,
+          "uitleg": "Som = 5 + 8 = 13."
+        },
+        {
+          "vraag": "Wanneer gebruik je een trapgrafiek?",
+          "opties": [
+            "Als de prijs binnen een interval steeds hetzelfde is en bij een volgend interval springt",
+            "Als alleen losse punten mogelijk zijn",
+            "Als het verband exponentieel is",
+            "Als je een hoek moet berekenen"
+          ],
+          "antwoord_index": 0,
+          "uitleg": "Een trapgrafiek heeft horizontale treden die springen naar een andere waarde bij een volgend interval."
+        },
+        {
+          "vraag": "Een OV-fiets kost 0-24 uur &euro;4,55 en 24-48 uur &euro;9,10. Iemand huurt hem 30 uur. Wat betaalt deze persoon?",
+          "opties": [
+            "&euro;4,55",
+            "&euro;9,10",
+            "&euro;13,65",
+            "&euro;6,83"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "30 uur valt in de trede 24-48 uur, dus &euro;9,10."
+        },
+        {
+          "vraag": "Waarom teken je bij chocoladerepen (alleen hele repen te koop) een stippengrafiek?",
+          "opties": [
+            "Omdat het verband exponentieel is",
+            "Omdat tussenwaarden (halve repen) niet mogelijk zijn",
+            "Omdat de prijs periodiek is",
+            "Omdat er geen verband is"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Alleen hele aantallen repen zijn mogelijk, dus zijn er geen lijnen tussen de punten getekend."
+        },
+        {
+          "vraag": "Bij een periodiek verband herhaalt de grafiek zich elke 20 seconden. Wat is dit getal?",
+          "opties": [
+            "De amplitude",
+            "De evenwichtsstand",
+            "De periode",
+            "De frequentie"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "De tijd waarna de grafiek zich herhaalt, is de periode."
+        },
+        {
+          "vraag": "Hoe controleer je of een gegeven formule bij een tabel hoort?",
+          "opties": [
+            "Je vult de getallen uit de tabel in de formule in en kijkt of de uitkomst klopt",
+            "Je tekent altijd een cirkeldiagram",
+            "Je berekent de vergrotingsfactor",
+            "Dat kan alleen met de grafische rekenmachine"
+          ],
+          "antwoord_index": 0,
+          "uitleg": "Vul de bekende waarden in en controleer of de formule de juiste uitkomst geeft."
+        }
+      ]
+    },
+    {
+      "titel": "Ruimtemeetkunde",
+      "uitleg": "<div class='box'>In dit hoofdstuk herhaal je ruimtefiguren en hun inhoud, diagonalen en doorsneden, goniometrie in de ruimte, hoogtekaarten en co&ouml;rdinaten in de ruimte.</div>",
+      "subhoofdstukken": [
+        {
+          "titel": "Ruimtefiguren en inhoud",
+          "uitleg": "<div class='box'>Op het examen krijg je de volgende formules:</div><div class='tblwrap'><table class='tbl'><tr><td>inhoud prisma</td><td>= oppervlakte grondvlak &times; hoogte</td></tr><tr><td>inhoud cilinder</td><td>= oppervlakte grondvlak &times; hoogte</td></tr><tr><td>inhoud kegel</td><td>= 1/3 &times; oppervlakte grondvlak &times; hoogte</td></tr><tr><td>inhoud piramide</td><td>= 1/3 &times; oppervlakte grondvlak &times; hoogte</td></tr><tr><td>inhoud bol</td><td>= 4/3 &times; &pi; &times; straal&sup3;</td></tr></table></div><div class='call'>Als een ruimtefiguur gelijkvormig wordt vergroot, geldt: <b>vergrotingsfactor = &#8731;(inhoud vergroting : inhoud origineel)</b> (de derdemachtswortel), en <b>inhoud beeld = vergrotingsfactor&sup3; &times; inhoud origineel</b>.</div><div class='voorbeeld'><p><b>Voorbeeld</b><br>Twee gelijkvormige kuipen: de kleine heeft een inhoud van 6,2 liter, de grote van 21 liter, en de kleine heeft een diameter van 20 cm. Vergrotingsfactor = &#8731;(21 : 6,2) = 1,501. De diameter van de grote kuip is 1,501 &times; 20 = 30 cm.</p></div>"
+        },
+        {
+          "titel": "Diagonalen en doorsneden",
+          "uitleg": "<div class='box'>Een <span class='term'>diagonaalvlak</span> van een balk of kubus is een plat vlak dat schuin door de figuur loopt, langs een diagonaal van het grondvlak. Ook een vlak dat geen echt diagonaalvlak is, kun je op ware grootte tekenen als je de zijden ervan berekent.</div><div class='voorbeeld'><p><b>Voorbeeld</b><br>Bij balk ABCD EFGH met AB = 4 cm, BC = 6 cm en CG = 8 cm: bereken de lichaamsdiagonaal CE met de verlengde stelling van Pythagoras. rhz&sup2; = 4&sup2; + 6&sup2; = 16 + 36 = 52. sz&sup2; = 52 + 8&sup2; = 52 + 64 = 116. CE = &radic;116 = 10,8 cm.</p></div><div class='call'>Voor een <span class='term'>doorsnede</span> die geen diagonaalvlak is, bereken je eerst de onbekende zijde (bijvoorbeeld met de gewone stelling van Pythagoras in een zijvlak), en teken je daarna de doorsnede op ware grootte met alle maten en letters erbij.</div>"
+        },
+        {
+          "titel": "Goniometrie in de ruimte",
+          "uitleg": "<div class='box'>Om een hoek in een ruimtefiguur (zoals een balk) te berekenen, zoek je een rechthoekige driehoek in een zijvlak of diagonaalvlak van de figuur, en gebruik je daarna sinus, cosinus of tangens.</div><div class='voorbeeld'><p><b>Voorbeeld</b><br>Van balk ABCD EFGH is AB = 8 cm, BC = 5 cm en CG = 10 cm. Om &ang;CAG te berekenen, bereken je eerst diagonaal AC met Pythagoras in het grondvlak (AC = &radic;(8&sup2;+5&sup2;) = &radic;89 &asymp; 9,43 cm). In de rechthoekige driehoek ACG (rechte hoek bij C) is CG de overstaande en AC de aanliggende zijde van &ang;CAG, dus je gebruikt TOA: tan(&ang;CAG) = CG/AC.</p></div>"
+        },
+        {
+          "titel": "Hoogtekaarten en doorsneden",
+          "uitleg": "<div class='box'>Op een <span class='term'>hoogtekaart</span> geven <span class='term'>hoogtelijnen</span> punten aan die op dezelfde hoogte liggen. Hoe dichter de hoogtelijnen bij elkaar liggen, hoe steiler het landschap is.</div><div class='voorbeeld'><p><b>Voorbeeld</b><br>Op een hoogtekaart lopen de hoogtelijnen van 300 m tot 400 m in stappen van 25 m. Een punt tussen de hoogtelijnen van 325 en 350 ligt op een hoogte tussen 325 en 350 m, dichter bij 350.</p></div><div class='call'>Een <span class='term'>verticale doorsnede</span> is een schets van het hoogteverloop van een route (bijvoorbeeld een weg) van punt A naar punt B.</div><div class='num'><ol><li>Knip het kaartje uit en draai het zo dat de route horizontaal ligt.</li><li>Teken precies onder het beginpunt een verticale as met dezelfde verdeling als op de kaart.</li><li>Waar de route de hoogtelijnen snijdt, zet je stippen.</li><li>Teken vanuit elke stip een verticale stippellijn naar beneden tot de juiste hoogte.</li><li>Verbind de punten met een vloeiende kromme.</li></ol></div>"
+        },
+        {
+          "titel": "Co&ouml;rdinaten in de ruimte",
+          "uitleg": "<div class='box'>In een driedimensionaal assenstelsel geef je de plaats van een punt aan met drie co&ouml;rdinaten (x, y, z). De oorsprong heeft co&ouml;rdinaten (0, 0, 0).</div><div class='voorbeeld'><p><b>Voorbeeld</b><br>Op een hoogtekaart met een rooster ligt punt A op een hoogte van 100 m, op de plek (200, 600) van het rooster. De co&ouml;rdinaten van A zijn dan (200, 600, 100).</p></div><div class='call'>Bij een balk of kubus vind je de co&ouml;rdinaten van een hoekpunt door vanuit de oorsprong het aantal stappen in de x-, y- en z-richting te tellen. Het midden van een ribbe bereken je door het gemiddelde van de co&ouml;rdinaten van de twee eindpunten te nemen.</div>"
+        }
+      ],
+      "begrippen": [
+        {
+          "term": "inhoud prisma / cilinder",
+          "uitleg": "inhoud = oppervlakte grondvlak &times; hoogte",
+          "paragraaf": "Ruimtefiguren en inhoud"
+        },
+        {
+          "term": "inhoud kegel / piramide",
+          "uitleg": "inhoud = 1/3 &times; oppervlakte grondvlak &times; hoogte",
+          "paragraaf": "Ruimtefiguren en inhoud"
+        },
+        {
+          "term": "inhoud bol",
+          "uitleg": "inhoud = 4/3 &times; &pi; &times; straal&sup3;",
+          "paragraaf": "Ruimtefiguren en inhoud"
+        },
+        {
+          "term": "vergrotingsfactor (inhoud)",
+          "uitleg": "bij gelijkvormige ruimtefiguren: vergrotingsfactor = derdemachtswortel van (inhoud vergroting : inhoud origineel)",
+          "paragraaf": "Ruimtefiguren en inhoud"
+        },
+        {
+          "term": "diagonaalvlak",
+          "uitleg": "een plat vlak dat schuin door een balk of kubus loopt, langs een diagonaal van het grondvlak",
+          "paragraaf": "Diagonalen en doorsneden"
+        },
+        {
+          "term": "lichaamsdiagonaal",
+          "uitleg": "een lijnstuk dat van het ene hoekpunt van een ruimtefiguur dwars naar het tegenoverliggende hoekpunt loopt",
+          "paragraaf": "Diagonalen en doorsneden"
+        },
+        {
+          "term": "verlengde stelling van Pythagoras",
+          "uitleg": "de stelling van Pythagoras toegepast met drie ribben, om een lichaamsdiagonaal te berekenen",
+          "paragraaf": "Diagonalen en doorsneden"
+        },
+        {
+          "term": "doorsnede",
+          "uitleg": "het platte vlak dat ontstaat als je een ruimtefiguur (denkbeeldig) doorsnijdt",
+          "paragraaf": "Diagonalen en doorsneden"
+        },
+        {
+          "term": "ware grootte",
+          "uitleg": "een tekening van een vlak of doorsnede met de werkelijke (juiste) afmetingen, niet vertekend",
+          "paragraaf": "Diagonalen en doorsneden"
+        },
+        {
+          "term": "hoogtekaart",
+          "uitleg": "een kaart met hoogtelijnen die punten van gelijke hoogte met elkaar verbinden",
+          "paragraaf": "Hoogtekaarten en doorsneden"
+        },
+        {
+          "term": "hoogtelijn",
+          "uitleg": "een lijn op een hoogtekaart die punten van dezelfde hoogte verbindt",
+          "paragraaf": "Hoogtekaarten en doorsneden"
+        },
+        {
+          "term": "verticale doorsnede",
+          "uitleg": "een schets van het hoogteverloop van een route (bijvoorbeeld een weg) over een landschap",
+          "paragraaf": "Hoogtekaarten en doorsneden"
+        },
+        {
+          "term": "co&ouml;rdinaten in de ruimte",
+          "uitleg": "drie getallen (x, y, z) die de plaats van een punt in een driedimensionaal assenstelsel aangeven",
+          "paragraaf": "Co&ouml;rdinaten in de ruimte"
+        },
+        {
+          "term": "oorsprong",
+          "uitleg": "het punt (0, 0, 0) waar de drie assen elkaar snijden",
+          "paragraaf": "Co&ouml;rdinaten in de ruimte"
+        },
+        {
+          "term": "SOS-CAS-TOA in de ruimte",
+          "uitleg": "de goniometrische verhoudingen sinus, cosinus en tangens, toegepast op een rechthoekige driehoek in een zijvlak of diagonaalvlak van een ruimtefiguur",
+          "paragraaf": "Goniometrie in de ruimte"
+        }
+      ],
+      "flashcards": [
+        {
+          "vraag": "Wat is de formule voor de inhoud van een prisma?",
+          "antwoord": "inhoud prisma = oppervlakte grondvlak &times; hoogte.",
+          "paragraaf": "Ruimtefiguren en inhoud"
+        },
+        {
+          "vraag": "Wat is de formule voor de inhoud van een piramide?",
+          "antwoord": "inhoud piramide = 1/3 &times; oppervlakte grondvlak &times; hoogte.",
+          "paragraaf": "Ruimtefiguren en inhoud"
+        },
+        {
+          "vraag": "Wat is de formule voor de inhoud van een bol?",
+          "antwoord": "inhoud bol = 4/3 &times; &pi; &times; straal&sup3;.",
+          "paragraaf": "Ruimtefiguren en inhoud"
+        },
+        {
+          "vraag": "Hoe bereken je de vergrotingsfactor als je de inhoud van origineel en vergroting weet?",
+          "antwoord": "vergrotingsfactor = derdemachtswortel van (inhoud vergroting : inhoud origineel).",
+          "paragraaf": "Ruimtefiguren en inhoud"
+        },
+        {
+          "vraag": "Wat is een diagonaalvlak?",
+          "antwoord": "Een plat vlak dat schuin door een balk of kubus loopt, langs een diagonaal van het grondvlak.",
+          "paragraaf": "Diagonalen en doorsneden"
+        },
+        {
+          "vraag": "Hoe bereken je een lichaamsdiagonaal?",
+          "antwoord": "Met de verlengde stelling van Pythagoras, met behulp van drie ribben.",
+          "paragraaf": "Diagonalen en doorsneden"
+        },
+        {
+          "vraag": "Wat teken je bij een doorsnede die géén diagonaalvlak is, nadat je de onbekende zijden hebt berekend?",
+          "antwoord": "De doorsnede op ware grootte, met alle maten en letters erbij.",
+          "paragraaf": "Diagonalen en doorsneden"
+        },
+        {
+          "vraag": "Wat zoek je eerst om een hoek in een ruimtefiguur te berekenen?",
+          "antwoord": "Een rechthoekige driehoek in een zijvlak of diagonaalvlak van de figuur.",
+          "paragraaf": "Goniometrie in de ruimte"
+        },
+        {
+          "vraag": "Wat geven hoogtelijnen op een hoogtekaart aan?",
+          "antwoord": "Punten die op dezelfde hoogte liggen.",
+          "paragraaf": "Hoogtekaarten en doorsneden"
+        },
+        {
+          "vraag": "Wat betekent het als hoogtelijnen dicht bij elkaar liggen?",
+          "antwoord": "Dat het landschap daar steil is.",
+          "paragraaf": "Hoogtekaarten en doorsneden"
+        },
+        {
+          "vraag": "Wat is een verticale doorsnede van een landschap?",
+          "antwoord": "Een schets van het hoogteverloop van een route (bijvoorbeeld een weg) van punt A naar punt B.",
+          "paragraaf": "Hoogtekaarten en doorsneden"
+        },
+        {
+          "vraag": "Uit hoeveel getallen bestaan co&ouml;rdinaten in de ruimte?",
+          "antwoord": "Uit drie getallen (x, y, z).",
+          "paragraaf": "Co&ouml;rdinaten in de ruimte"
+        },
+        {
+          "vraag": "Wat zijn de co&ouml;rdinaten van de oorsprong?",
+          "antwoord": "(0, 0, 0).",
+          "paragraaf": "Co&ouml;rdinaten in de ruimte"
+        },
+        {
+          "vraag": "Twee kuipen zijn gelijkvormig met inhoud 6,2 L en 21 L. Wat is de vergrotingsfactor?",
+          "antwoord": "&#8731;(21 : 6,2) &asymp; 1,50.",
+          "paragraaf": "Ruimtefiguren en inhoud"
+        },
+        {
+          "vraag": "Wat is de formule voor de inhoud van een kegel?",
+          "antwoord": "inhoud kegel = 1/3 &times; oppervlakte grondvlak &times; hoogte.",
+          "paragraaf": "Ruimtefiguren en inhoud"
+        }
+      ],
+      "quiz": [
+        {
+          "vraag": "Wat is de formule voor de inhoud van een cilinder?",
+          "opties": [
+            "oppervlakte grondvlak &times; hoogte",
+            "1/3 &times; oppervlakte grondvlak &times; hoogte",
+            "4/3 &times; &pi; &times; straal&sup3;",
+            "&pi; &times; straal&sup2;"
+          ],
+          "antwoord_index": 0,
+          "uitleg": "inhoud cilinder = oppervlakte grondvlak &times; hoogte."
+        },
+        {
+          "vraag": "Wat is de formule voor de inhoud van een bol?",
+          "opties": [
+            "4/3 &times; &pi; &times; straal&sup2;",
+            "4/3 &times; &pi; &times; straal&sup3;",
+            "1/3 &times; &pi; &times; straal&sup3;",
+            "&pi; &times; straal&sup3;"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "inhoud bol = 4/3 &times; &pi; &times; straal&sup3;."
+        },
+        {
+          "vraag": "Twee gelijkvormige kuipen hebben een inhoud van 6,2 L en 21 L. Wat is de vergrotingsfactor (afgerond op twee decimalen)?",
+          "opties": [
+            "1,50",
+            "3,39",
+            "1,17",
+            "14,80"
+          ],
+          "antwoord_index": 0,
+          "uitleg": "vergrotingsfactor = &#8731;(21 : 6,2) = &#8731;3,387 &asymp; 1,50."
+        },
+        {
+          "vraag": "De kleine kuip heeft een diameter van 20 cm en de vergrotingsfactor is 1,50. Wat is de diameter van de grote kuip (afgerond op hele centimeters)?",
+          "opties": [
+            "21 cm",
+            "30 cm",
+            "13 cm",
+            "45 cm"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "1,50 &times; 20 = 30 cm."
+        },
+        {
+          "vraag": "Balk ABCD EFGH heeft AB = 4 cm, BC = 6 cm en CG = 8 cm. Wat is rhz&sup2; in het grondvlak (AB en BC)?",
+          "opties": [
+            "10",
+            "52",
+            "100",
+            "24"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "rhz&sup2; = 4&sup2; + 6&sup2; = 16 + 36 = 52."
+        },
+        {
+          "vraag": "Vervolg: hoe lang is de lichaamsdiagonaal CE (afgerond op &eacute;&eacute;n decimaal)?",
+          "opties": [
+            "7,2 cm",
+            "10,8 cm",
+            "13,4 cm",
+            "116,0 cm"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "sz&sup2; = 52 + 8&sup2; = 116, dus CE = &radic;116 &asymp; 10,8 cm."
+        },
+        {
+          "vraag": "Wat is een diagonaalvlak?",
+          "opties": [
+            "Een cirkelvormig vlak",
+            "Een plat vlak dat schuin door een balk of kubus loopt, langs een diagonaal van het grondvlak",
+            "Het bovenvlak van een balk",
+            "Een vlak loodrecht op het grondvlak door het midden"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Een diagonaalvlak loopt schuin door de figuur, langs een diagonaal van het grondvlak."
+        },
+        {
+          "vraag": "Wat zoek je eerst om een hoek in een balk te berekenen, zoals &ang;CAG?",
+          "opties": [
+            "De oppervlakte van het grondvlak",
+            "Een rechthoekige driehoek in een zijvlak of diagonaalvlak",
+            "De inhoud van de balk",
+            "Het aantal ribben"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Om een hoek in een ruimtefiguur te berekenen, zoek je eerst een rechthoekige driehoek in een zij- of diagonaalvlak."
+        },
+        {
+          "vraag": "Wat geven hoogtelijnen op een hoogtekaart aan?",
+          "opties": [
+            "De grens tussen land en water",
+            "Punten die op dezelfde hoogte liggen",
+            "De route van een weg",
+            "De symmetrieas van het landschap"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Hoogtelijnen verbinden punten die op dezelfde hoogte liggen."
+        },
+        {
+          "vraag": "Wat betekent het als hoogtelijnen ver uit elkaar liggen?",
+          "opties": [
+            "Het landschap is daar steil",
+            "Het landschap is daar vlak(ker)",
+            "Er is daar water",
+            "De kaart is daar fout"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Hoe verder de hoogtelijnen uit elkaar liggen, hoe vlakker (minder steil) het landschap is."
+        },
+        {
+          "vraag": "Wat teken je bij een verticale doorsnede van een landschap?",
+          "opties": [
+            "Een bovenaanzicht van de route",
+            "Een schets van het hoogteverloop van de route",
+            "Een cirkeldiagram van de hoogtes",
+            "Een boxplot van de hoogtes"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Een verticale doorsnede laat het verloop van de hoogte langs een route zien."
+        },
+        {
+          "vraag": "Wat zijn de co&ouml;rdinaten van de oorsprong in een driedimensionaal assenstelsel?",
+          "opties": [
+            "(1, 1, 1)",
+            "(0, 0, 0)",
+            "(0, 0)",
+            "Er is geen vaste oorsprong"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "De oorsprong heeft altijd co&ouml;rdinaten (0, 0, 0)."
+        },
+        {
+          "vraag": "Een punt op een hoogtekaart ligt op positie (200, 600) op het rooster en op een hoogte van 100 m. Wat zijn de 3D-co&ouml;rdinaten van dit punt?",
+          "opties": [
+            "(100, 200, 600)",
+            "(200, 600, 100)",
+            "(600, 200, 100)",
+            "(200, 100, 600)"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "De eerste twee getallen zijn de plaats op het rooster (x, y), het derde getal is de hoogte (z): (200, 600, 100)."
+        },
+        {
+          "vraag": "Waarmee bereken je de lengte van een lichaamsdiagonaal in een balk?",
+          "opties": [
+            "De gewone stelling van Pythagoras met &eacute;&eacute;n zijvlak",
+            "De verlengde stelling van Pythagoras met drie ribben",
+            "De sinusregel",
+            "De vergrotingsfactor"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Voor een lichaamsdiagonaal gebruik je de verlengde stelling van Pythagoras (met drie ribben achter elkaar)."
+        },
+        {
+          "vraag": "Een kegel heeft een grondvlak met oppervlakte 20 cm&sup2; en een hoogte van 9 cm. Wat is de inhoud?",
+          "opties": [
+            "60 cm&sup3;",
+            "180 cm&sup3;",
+            "20 cm&sup3;",
+            "9 cm&sup3;"
+          ],
+          "antwoord_index": 0,
+          "uitleg": "inhoud kegel = 1/3 &times; 20 &times; 9 = 60 cm&sup3;."
+        }
+      ]
+    }
+  ]
+}

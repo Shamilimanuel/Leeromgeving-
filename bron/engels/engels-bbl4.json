@@ -1,0 +1,570 @@
+{
+  "boek": "Engels_BBL4",
+  "hoofdstukken": [
+    {
+      "titel": "English around the world",
+      "uitleg": "<div class='box'><h4>Waar gaat dit hoofdstuk over?</h4><p>Je leert praten over <b>culturen</b>, <b>gewoontes</b> en <b>stereotypen</b>. Je oefent met het vertellen van verhalen en leert de <b>past tense</b> (verleden tijd) gebruiken.</p></div>",
+      "subhoofdstukken": [
+        {
+          "titel": "Cultures, customs and stereotypes",
+          "uitleg": "<div class='box'><h4>Theme words — Cultures and stereotypes</h4><div class='tblwrap'><table class='tbl'><tr><th>Engels</th><th>Nederlands</th></tr><tr><td>culture</td><td>cultuur</td></tr><tr><td>custom</td><td>gewoonte, gebruik</td></tr><tr><td>stereotype</td><td>stereotype, vast beeld over een groep</td></tr><tr><td>prejudice</td><td>vooroordeel</td></tr><tr><td>belief</td><td>overtuiging</td></tr><tr><td>fact</td><td>feit</td></tr><tr><td>immigrant</td><td>immigrant</td></tr><tr><td>(to) fit in</td><td>erbij (willen) horen</td></tr><tr><td>(to) struggle</td><td>moeite hebben, worstelen</td></tr><tr><td>invisible</td><td>onzichtbaar</td></tr><tr><td>policy</td><td>regel, beleid</td></tr></table></div></div><div class='call'>In de examentekst <i>\"My Life as a Teen Immigrant\"</i> vertelt Melissa hoe ze verhuisde van de Filipijnen naar de Verenigde Staten en hoe moeilijk ze het vond om erbij te horen op haar nieuwe school.</div><div class='call warn'><b>Let op het verschil:</b> <i>stereotype</i> is een vast (vaak fout) beeld over een hele groep mensen. <i>Prejudice</i> is het vooroordeel dat je daardoor al over iemand hebt, nog vóórdat je diegene kent.</div><div class='call sum'><b>Om te onthouden — 3.1</b><ul class='lst'><li><b>Culture</b> = cultuur, <b>custom</b> = gewoonte.</li><li><b>Stereotype</b> = vast beeld over een groep, <b>prejudice</b> = vooroordeel.</li><li><b>(To) fit in</b> = erbij willen horen; <b>invisible</b> = onzichtbaar.</li></ul></div>"
+        },
+        {
+          "titel": "Grammar — Past tense (verleden tijd)",
+          "uitleg": "<div class='box'><h4>Past simple — regelmatige werkwoorden</h4><p>Je gebruikt de <b>past simple</b> om te praten over het verleden. De actie is gestopt en heeft geen link met nu. Bij een regelmatig werkwoord voeg je <b>-ed</b> of <b>-d</b> toe.</p><div class='tblwrap'><table class='tbl'><tr><th>Voorbeeld</th></tr><tr><td>I <b>waited</b> at the gate.</td></tr><tr><td>My mum <b>liked</b> my new swimsuit a lot.</td></tr><tr><td>We <b>changed</b> flights in London.</td></tr></table></div></div><div class='g2'><div class='box'><h4>Onregelmatige werkwoorden</h4><p>Bij onregelmatige werkwoorden verandert de vorm helemaal, bijvoorbeeld <b>go → went</b>, <b>think → thought</b>, <b>take → took</b>.</p></div><div class='box'><h4>Past continuous</h4><p>Je gebruikt <b>was/were + werkwoord + -ing</b> voor een activiteit die een tijdje bezig was in het verleden. <i>She was sending a new photo on Snapchat.</i></p></div></div><div class='call warn'><b>Past simple + past continuous samen:</b> de langste activiteit staat in de past continuous, de kortere (onderbrekende) activiteit in de past simple. <i>He was swimming in the ocean when he saw a dolphin.</i></div><div class='call sum'><b>Om te onthouden — 3.2</b><ul class='lst'><li>Regelmatig werkwoord: + <b>-ed</b> (waited, liked, changed).</li><li>Onregelmatig werkwoord: eigen vorm (go-went, think-thought, take-took).</li><li>Past continuous: <b>was/were + -ing</b>, voor een langere actie die onderbroken wordt.</li></ul></div>"
+        }
+      ],
+      "begrippen": [
+        {
+          "term": "culture",
+          "uitleg": "Cultuur.",
+          "paragraaf": "Cultures, customs and stereotypes"
+        },
+        {
+          "term": "custom",
+          "uitleg": "Gewoonte, gebruik.",
+          "paragraaf": "Cultures, customs and stereotypes"
+        },
+        {
+          "term": "stereotype",
+          "uitleg": "Een vast (vaak fout) beeld over een hele groep mensen.",
+          "paragraaf": "Cultures, customs and stereotypes"
+        },
+        {
+          "term": "prejudice",
+          "uitleg": "Vooroordeel.",
+          "paragraaf": "Cultures, customs and stereotypes"
+        },
+        {
+          "term": "belief",
+          "uitleg": "Overtuiging, wat je gelooft.",
+          "paragraaf": "Cultures, customs and stereotypes"
+        },
+        {
+          "term": "fact",
+          "uitleg": "Feit.",
+          "paragraaf": "Cultures, customs and stereotypes"
+        },
+        {
+          "term": "immigrant",
+          "uitleg": "Iemand die naar een ander land verhuist om daar te wonen.",
+          "paragraaf": "Cultures, customs and stereotypes"
+        },
+        {
+          "term": "(to) fit in",
+          "uitleg": "Erbij willen horen.",
+          "paragraaf": "Cultures, customs and stereotypes"
+        },
+        {
+          "term": "(to) struggle",
+          "uitleg": "Moeite hebben, worstelen.",
+          "paragraaf": "Cultures, customs and stereotypes"
+        },
+        {
+          "term": "invisible",
+          "uitleg": "Onzichtbaar.",
+          "paragraaf": "Cultures, customs and stereotypes"
+        },
+        {
+          "term": "policy",
+          "uitleg": "Regel, beleid.",
+          "paragraaf": "Cultures, customs and stereotypes"
+        },
+        {
+          "term": "past simple",
+          "uitleg": "Werkwoordstijd voor iets in het verleden dat gestopt is.",
+          "paragraaf": "Grammar — Past tense (verleden tijd)"
+        },
+        {
+          "term": "past continuous",
+          "uitleg": "was/were + werkwoord + -ing, voor een langere actie in het verleden.",
+          "paragraaf": "Grammar — Past tense (verleden tijd)"
+        },
+        {
+          "term": "irregular verb",
+          "uitleg": "Onregelmatig werkwoord: krijgt een eigen vorm in de verleden tijd.",
+          "paragraaf": "Grammar — Past tense (verleden tijd)"
+        }
+      ],
+      "flashcards": [
+        {
+          "vraag": "Wat betekent 'stereotype'?",
+          "antwoord": "Een vast (vaak fout) beeld dat mensen hebben over een hele groep.",
+          "paragraaf": "Cultures, customs and stereotypes"
+        },
+        {
+          "vraag": "Wat is het verschil tussen 'stereotype' en 'prejudice'?",
+          "antwoord": "Stereotype is het vaste beeld over een groep, prejudice is het vooroordeel dat je daardoor al over iemand hebt.",
+          "paragraaf": "Cultures, customs and stereotypes"
+        },
+        {
+          "vraag": "Wat betekent '(to) fit in'?",
+          "antwoord": "Erbij willen horen, opgenomen willen worden in een groep.",
+          "paragraaf": "Cultures, customs and stereotypes"
+        },
+        {
+          "vraag": "Wat betekent 'immigrant'?",
+          "antwoord": "Iemand die naar een ander land verhuist om daar te wonen.",
+          "paragraaf": "Cultures, customs and stereotypes"
+        },
+        {
+          "vraag": "Wat betekent 'invisible'?",
+          "antwoord": "Onzichtbaar.",
+          "paragraaf": "Cultures, customs and stereotypes"
+        },
+        {
+          "vraag": "Wat is het verschil tussen 'belief' en 'fact'?",
+          "antwoord": "Een belief is een overtuiging (wat je denkt of gelooft), een fact is een bewezen feit.",
+          "paragraaf": "Cultures, customs and stereotypes"
+        },
+        {
+          "vraag": "Wanneer gebruik je de past simple?",
+          "antwoord": "Als je praat over iets in het verleden dat gestopt is en geen link heeft met nu.",
+          "paragraaf": "Grammar — Past tense (verleden tijd)"
+        },
+        {
+          "vraag": "Hoe maak je de past simple van een regelmatig werkwoord?",
+          "antwoord": "Je voegt -ed of -d toe aan het werkwoord, bijvoorbeeld waited, liked, changed.",
+          "paragraaf": "Grammar — Past tense (verleden tijd)"
+        },
+        {
+          "vraag": "Wat is een voorbeeld van een onregelmatig werkwoord in de verleden tijd?",
+          "antwoord": "go → went, think → thought, take → took.",
+          "paragraaf": "Grammar — Past tense (verleden tijd)"
+        },
+        {
+          "vraag": "Hoe maak je de past continuous?",
+          "antwoord": "was/were + werkwoord + -ing.",
+          "paragraaf": "Grammar — Past tense (verleden tijd)"
+        },
+        {
+          "vraag": "Wanneer gebruik je de past continuous samen met de past simple?",
+          "antwoord": "De langste activiteit staat in de past continuous, de kortere (onderbrekende) activiteit staat in de past simple.",
+          "paragraaf": "Grammar — Past tense (verleden tijd)"
+        }
+      ],
+      "quiz": [
+        {
+          "vraag": "\"Stereotype\" betekent...",
+          "opties": [
+            "Een vast beeld over een groep",
+            "Een persoonlijke mening",
+            "Een feit",
+            "Een vraag"
+          ],
+          "antwoord_index": 0,
+          "uitleg": "Een stereotype is een vast (vaak fout) beeld dat mensen hebben over een hele groep mensen."
+        },
+        {
+          "vraag": "Wat is het verschil tussen 'prejudice' en 'stereotype'?",
+          "opties": [
+            "Ze betekenen precies hetzelfde",
+            "Prejudice is het vooroordeel dat ontstaat door een stereotype",
+            "Prejudice is een feit en stereotype een mening",
+            "Prejudice gaat over taal en stereotype over eten"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Een stereotype is het vaste beeld over een groep; prejudice is het vooroordeel dat je daardoor al over iemand hebt."
+        },
+        {
+          "vraag": "\"(To) fit in\" betekent...",
+          "opties": [
+            "Wegrennen",
+            "Erbij willen horen",
+            "Boos worden",
+            "Verhuizen"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "(To) fit in betekent erbij willen horen."
+        },
+        {
+          "vraag": "Een \"immigrant\" is iemand die...",
+          "opties": [
+            "op vakantie is in het buitenland",
+            "naar een ander land verhuist om er te wonen",
+            "een ander land bezoekt voor werk",
+            "nooit verhuist"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Een immigrant is iemand die naar een ander land verhuist om daar te wonen."
+        },
+        {
+          "vraag": "\"Invisible\" betekent...",
+          "opties": [
+            "Onzichtbaar",
+            "Ongelooflijk",
+            "Onmogelijk",
+            "Ongeduldig"
+          ],
+          "antwoord_index": 0,
+          "uitleg": "Invisible betekent onzichtbaar."
+        },
+        {
+          "vraag": "Vul aan: I ___ (wait) at the gate.",
+          "opties": [
+            "waited",
+            "waiting",
+            "wait",
+            "waits"
+          ],
+          "antwoord_index": 0,
+          "uitleg": "Regelmatig werkwoord: je voegt -ed toe, dus waited."
+        },
+        {
+          "vraag": "Wat is de past simple van 'go'?",
+          "opties": [
+            "goed",
+            "went",
+            "gone",
+            "going"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Go is onregelmatig: go - went."
+        },
+        {
+          "vraag": "Wat is de past simple van 'think'?",
+          "opties": [
+            "thinked",
+            "thoughted",
+            "thought",
+            "think"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "Think is onregelmatig: think - thought."
+        },
+        {
+          "vraag": "Hoe maak je de past continuous?",
+          "opties": [
+            "was/were + werkwoord + -ing",
+            "have/has + voltooid deelwoord",
+            "will + werkwoord",
+            "werkwoord + -s"
+          ],
+          "antwoord_index": 0,
+          "uitleg": "De past continuous maak je met was/were + werkwoord + -ing."
+        },
+        {
+          "vraag": "\"She was sending a new photo on Snapchat\" — welke werkwoordstijd is dit?",
+          "opties": [
+            "past simple",
+            "past continuous",
+            "present simple",
+            "present continuous"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "was + werkwoord + -ing is de past continuous."
+        },
+        {
+          "vraag": "\"He was swimming in the ocean when he saw a dolphin\" — welk deel staat in de past simple?",
+          "opties": [
+            "was swimming",
+            "saw",
+            "swimming",
+            "ocean"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "'Saw' is de kortere, onderbrekende actie en staat daarom in de past simple."
+        },
+        {
+          "vraag": "Wat betekent 'custom'?",
+          "opties": [
+            "Gewoonte of gebruik",
+            "Klant",
+            "Douane",
+            "Kostuum"
+          ],
+          "antwoord_index": 0,
+          "uitleg": "Custom betekent hier gewoonte of gebruik binnen een cultuur."
+        },
+        {
+          "vraag": "Wat is een 'belief'?",
+          "opties": [
+            "Een overtuiging, wat je gelooft",
+            "Een bewezen feit",
+            "Een wet",
+            "Een gewoonte"
+          ],
+          "antwoord_index": 0,
+          "uitleg": "Belief betekent overtuiging: wat iemand gelooft, niet per se bewezen."
+        }
+      ]
+    },
+    {
+      "titel": "The next step",
+      "uitleg": "<div class='box'><h4>Waar gaat dit hoofdstuk over?</h4><p>Dit hoofdstuk helpt je voorbereiden op je vervolgstap: <b>werk</b> en <b>vervolgopleiding</b> (mbo). Je leert praten over banen, hoe je jezelf presenteert, en hoe je een <b>sollicitatiemail</b> schrijft.</p></div>",
+      "subhoofdstukken": [
+        {
+          "titel": "Work and jobs",
+          "uitleg": "<div class='box'><h4>Theme words — Work and jobs</h4><div class='tblwrap'><table class='tbl'><tr><th>Engels</th><th>Nederlands</th></tr><tr><td>employee</td><td>werknemer</td></tr><tr><td>part-time job</td><td>bijbaan, deeltijdbaan</td></tr><tr><td>career</td><td>carrière</td></tr><tr><td>(to) recruit</td><td>werven, aannemen</td></tr><tr><td>resume / CV</td><td>cv (Curriculum Vitae)</td></tr><tr><td>(to) apply (for)</td><td>solliciteren (naar)</td></tr><tr><td>position</td><td>functie, positie</td></tr><tr><td>assistant</td><td>assistent</td></tr><tr><td>opportunity</td><td>kans, mogelijkheid</td></tr></table></div></div><div class='call'>Voorbeeld uit het boek: een vacaturetekst zoekt mensen voor allerlei functies — teachers, bus drivers, mechanics, nurses, cooks — en eindigt met: <i>\"Whether you're looking for a part-time job or a life-time career, we want you on our team!\"</i></div><div class='call sum'><b>Om te onthouden — 4.1</b><ul class='lst'><li><b>(To) apply for a job</b> = solliciteren naar een baan.</li><li><b>Resume</b> (Amerikaans-Engels) en <b>CV</b> betekenen hetzelfde: een overzicht van je opleiding en ervaring.</li><li><b>Part-time job</b> = bijbaan; <b>career</b> = je hele loopbaan.</li></ul></div>"
+        },
+        {
+          "titel": "Writing a formal email — solliciteren",
+          "uitleg": "<div class='box'><h4>De opbouw van een formele sollicitatiemail</h4><div class='tblwrap'><table class='tbl'><tr><th>Onderdeel</th><th>Uitleg</th></tr><tr><td>Subject line</td><td>Altijd een duidelijk onderwerp, bijvoorbeeld \"Holiday job\".</td></tr><tr><td>Aanhef</td><td>\"Dear Sir/Madam\" als je de naam niet weet. Ken je de achternaam? Gebruik dan \"Dear Mr McDonald\" of \"Dear Ms Jones\".</td></tr><tr><td>Introductie</td><td>Vertel wie je bent en waarom je schrijft.</td></tr><tr><td>Middenstuk</td><td>Het belangrijkste deel: je vraag of je motivatie.</td></tr><tr><td>Conclusie</td><td>Rond af, bijvoorbeeld \"I hope to hear from you soon.\"</td></tr><tr><td>Afsluiting</td><td>\"Yours faithfully,\" (naam onbekend) of \"Yours sincerely,\" (naam bekend), gevolgd door je volledige naam.</td></tr></table></div></div><div class='call warn'><b>Let op:</b> <i>Miss</i> gebruik je voor ongetrouwde vrouwen, <i>Mrs</i> voor getrouwde vrouwen, en <i>Ms</i> als je niet weet of ze getrouwd is (of als ze haar eigen achternaam heeft gehouden).</div><div class='call'>Stuur je een bijlage mee (zoals een cv)? Zet dan <b>\"Attached:\"</b> onder je naam, gevolgd door het aantal documenten.</div><div class='call sum'><b>Om te onthouden — 4.2</b><ul class='lst'><li>Naam onbekend: <b>Dear Sir/Madam</b> ... <b>Yours faithfully,</b></li><li>Naam bekend: <b>Dear Mr/Ms [achternaam]</b> ... <b>Yours sincerely,</b></li><li>Een formele e-mail heeft meestal drie alinea's: introductie, middenstuk, conclusie.</li></ul></div>"
+        }
+      ],
+      "begrippen": [
+        {
+          "term": "employee",
+          "uitleg": "Werknemer.",
+          "paragraaf": "Work and jobs"
+        },
+        {
+          "term": "part-time job",
+          "uitleg": "Bijbaan, deeltijdbaan.",
+          "paragraaf": "Work and jobs"
+        },
+        {
+          "term": "career",
+          "uitleg": "Carrière, loopbaan.",
+          "paragraaf": "Work and jobs"
+        },
+        {
+          "term": "(to) recruit",
+          "uitleg": "Werven, nieuwe mensen aannemen.",
+          "paragraaf": "Work and jobs"
+        },
+        {
+          "term": "resume / CV",
+          "uitleg": "Overzicht van je opleiding en werkervaring.",
+          "paragraaf": "Work and jobs"
+        },
+        {
+          "term": "(to) apply for",
+          "uitleg": "Solliciteren naar.",
+          "paragraaf": "Work and jobs"
+        },
+        {
+          "term": "position",
+          "uitleg": "Functie, positie.",
+          "paragraaf": "Work and jobs"
+        },
+        {
+          "term": "assistant",
+          "uitleg": "Assistent.",
+          "paragraaf": "Work and jobs"
+        },
+        {
+          "term": "opportunity",
+          "uitleg": "Kans, mogelijkheid.",
+          "paragraaf": "Work and jobs"
+        },
+        {
+          "term": "subject line",
+          "uitleg": "De onderwerpregel van een e-mail.",
+          "paragraaf": "Writing a formal email — solliciteren"
+        },
+        {
+          "term": "Dear Sir/Madam",
+          "uitleg": "Aanhef die je gebruikt als je de naam van de ontvanger niet weet.",
+          "paragraaf": "Writing a formal email — solliciteren"
+        },
+        {
+          "term": "Yours faithfully",
+          "uitleg": "Afsluiting van een formele e-mail als je de naam niet weet.",
+          "paragraaf": "Writing a formal email — solliciteren"
+        },
+        {
+          "term": "Yours sincerely",
+          "uitleg": "Afsluiting van een formele e-mail als je de naam wel weet.",
+          "paragraaf": "Writing a formal email — solliciteren"
+        },
+        {
+          "term": "attached",
+          "uitleg": "Bijgevoegd, bijvoorbeeld een cv bij een e-mail.",
+          "paragraaf": "Writing a formal email — solliciteren"
+        }
+      ],
+      "flashcards": [
+        {
+          "vraag": "Wat betekent 'to apply for a job'?",
+          "antwoord": "Solliciteren naar een baan.",
+          "paragraaf": "Work and jobs"
+        },
+        {
+          "vraag": "Wat is het verschil tussen een 'part-time job' en een 'career'?",
+          "antwoord": "Een part-time job is een bijbaan, een career is je hele loopbaan.",
+          "paragraaf": "Work and jobs"
+        },
+        {
+          "vraag": "Wat is een 'resume' (Amerikaans-Engels)?",
+          "antwoord": "Hetzelfde als een cv: een overzicht van je opleiding en werkervaring.",
+          "paragraaf": "Work and jobs"
+        },
+        {
+          "vraag": "Wat betekent 'to recruit'?",
+          "antwoord": "Werven, nieuwe mensen aannemen voor een baan.",
+          "paragraaf": "Work and jobs"
+        },
+        {
+          "vraag": "Wat betekent 'opportunity'?",
+          "antwoord": "Een kans of mogelijkheid.",
+          "paragraaf": "Work and jobs"
+        },
+        {
+          "vraag": "Welke aanhef gebruik je als je de naam van de ontvanger niet weet?",
+          "antwoord": "Dear Sir/Madam.",
+          "paragraaf": "Writing a formal email — solliciteren"
+        },
+        {
+          "vraag": "Hoe sluit je een formele e-mail af als je de naam van de ontvanger niet weet?",
+          "antwoord": "Met \"Yours faithfully,\" gevolgd door je volledige naam.",
+          "paragraaf": "Writing a formal email — solliciteren"
+        },
+        {
+          "vraag": "Hoe sluit je een formele e-mail af als je de naam van de ontvanger wel weet?",
+          "antwoord": "Met \"Yours sincerely,\".",
+          "paragraaf": "Writing a formal email — solliciteren"
+        },
+        {
+          "vraag": "Wat zet je in de Subject line van een e-mail?",
+          "antwoord": "Een duidelijk onderwerp, zodat de ontvanger meteen weet waar de e-mail over gaat.",
+          "paragraaf": "Writing a formal email — solliciteren"
+        },
+        {
+          "vraag": "Wat schrijf je als je een cv meestuurt met je e-mail?",
+          "antwoord": "\"Attached:\" onder je naam, met het aantal documenten.",
+          "paragraaf": "Writing a formal email — solliciteren"
+        },
+        {
+          "vraag": "Uit hoeveel alinea's bestaat een formele e-mail meestal?",
+          "antwoord": "Drie: introductie, middenstuk en conclusie.",
+          "paragraaf": "Writing a formal email — solliciteren"
+        }
+      ],
+      "quiz": [
+        {
+          "vraag": "\"To apply for a job\" betekent...",
+          "opties": [
+            "Ontslag nemen",
+            "Solliciteren naar een baan",
+            "Een collega bedanken",
+            "Een vakantie boeken"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "To apply for a job betekent solliciteren naar een baan."
+        },
+        {
+          "vraag": "Een 'part-time job' is...",
+          "opties": [
+            "Een vaste voltijdbaan",
+            "Een bijbaan/deeltijdbaan",
+            "Een sollicitatiegesprek",
+            "Een vakantie"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Een part-time job is een bijbaan of deeltijdbaan."
+        },
+        {
+          "vraag": "'Resume' (Amerikaans-Engels) betekent hetzelfde als...",
+          "opties": [
+            "Een brief",
+            "Een cv",
+            "Een dagboek",
+            "Een contract"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Resume is het Amerikaans-Engelse woord voor cv."
+        },
+        {
+          "vraag": "Welke aanhef gebruik je als je de naam van de ontvanger niet weet?",
+          "opties": [
+            "Dear Sir/Madam",
+            "Hi there",
+            "Dear Friend",
+            "Yours faithfully"
+          ],
+          "antwoord_index": 0,
+          "uitleg": "Dear Sir/Madam gebruik je als je niet weet aan wie je schrijft."
+        },
+        {
+          "vraag": "Hoe sluit je een formele e-mail af als je de naam wél weet?",
+          "opties": [
+            "Yours faithfully,",
+            "Yours sincerely,",
+            "Bye for now,",
+            "See you soon,"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Yours sincerely gebruik je als je de naam van de ontvanger wel weet."
+        },
+        {
+          "vraag": "Wat zet je altijd in de Subject line?",
+          "opties": [
+            "Je adres",
+            "Een duidelijk onderwerp",
+            "Je handtekening",
+            "De datum"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "In de Subject line zet je een duidelijk onderwerp."
+        },
+        {
+          "vraag": "Stuur je een cv mee met je e-mail? Dan schrijf je onder je naam...",
+          "opties": [
+            "CC:",
+            "Attached:",
+            "PS:",
+            "To:"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Je schrijft \"Attached:\" gevolgd door het aantal documenten."
+        },
+        {
+          "vraag": "\"To recruit\" betekent...",
+          "opties": [
+            "Ontslaan",
+            "Werven, nieuwe mensen aannemen",
+            "Solliciteren",
+            "Promoveren"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "To recruit betekent werven of aannemen."
+        },
+        {
+          "vraag": "\"Opportunity\" betekent...",
+          "opties": [
+            "Een probleem",
+            "Een kans of mogelijkheid",
+            "Een fout",
+            "Een regel"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Opportunity betekent een kans of mogelijkheid."
+        },
+        {
+          "vraag": "Welke aanhef gebruik je als je de achternaam van de ontvanger wél weet, bijvoorbeeld McDonald?",
+          "opties": [
+            "Dear Sir/Madam",
+            "Dear Mr McDonald",
+            "Hi McDonald",
+            "To whom it may concern"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Ken je de achternaam, dan gebruik je bijvoorbeeld Dear Mr McDonald."
+        },
+        {
+          "vraag": "Voor getrouwde vrouwen gebruik je...",
+          "opties": [
+            "Miss",
+            "Mrs",
+            "Sir",
+            "Altijd Ms"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Mrs gebruik je voor getrouwde vrouwen; Miss voor ongetrouwde vrouwen; Ms als je het niet weet."
+        },
+        {
+          "vraag": "Een formele e-mail bestaat meestal uit...",
+          "opties": [
+            "Twee alinea's",
+            "Drie alinea's: introductie, middenstuk, conclusie",
+            "Vijf alinea's",
+            "Eén lange alinea"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Een formele e-mail bestaat meestal uit drie alinea's."
+        }
+      ]
+    }
+  ]
+}

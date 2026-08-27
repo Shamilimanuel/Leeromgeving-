@@ -1,0 +1,2529 @@
+{
+  "hoofdstukken": [
+    {
+      "titel": "Vlakke figuren",
+      "uitleg": "<div class='box'><h4>Waar gaat dit hoofdstuk over?</h4><p>In dit hoofdstuk herhaal en verdiep je wat je weet over vlakke figuren: platte figuren zoals driehoeken, vierhoeken en cirkels. Je leert hoeken in driehoeken en vierhoeken berekenen, en je leert verschillende soorten driehoeken en vierhoeken nauwkeurig tekenen met geodriehoek en passer.</p></div><div class='call'>Een vlakke figuur ligt helemaal plat, zoals op papier. Een ruimtefiguur (zoals een kubus of een bal) heeft ook diepte.</div>",
+      "subhoofdstukken": [
+        {
+          "titel": "Namen van vlakke figuren",
+          "uitleg": "<div class='box'><h4>Figuren zonder hoeken</h4><p>Een <b>cirkel</b> is rond en heeft overal dezelfde afstand tot het middelpunt. Een cirkel heeft oneindig veel symmetrieassen. Een <b>ellips</b> is een ovale figuur; die heeft er maar twee.</p></div><div class='g3'><div class='box'><h4>Driehoeken</h4><p>Een <b>gelijkzijdige driehoek</b> heeft drie gelijke zijden en drie hoeken van 60°. Een <b>gelijkbenige driehoek</b> heeft twee gelijke zijden. Een <b>rechthoekige driehoek</b> heeft één hoek van 90°.</p></div><div class='box'><h4>Vierhoeken</h4><p>Een <b>vierkant</b> heeft vier gelijke, rechte hoeken en vier gelijke zijden. Een <b>rechthoek</b> heeft vier rechte hoeken. Een <b>parallellogram</b> heeft twee paar evenwijdige zijden.</p></div><div class='box'><h4>Meer vierhoeken</h4><p>Een <b>ruit</b> heeft vier gelijke zijden, maar niet per se rechte hoeken. Een <b>vlieger</b> heeft twee paar aan elkaar grenzende gelijke zijden. Een <b>trapezium</b> heeft precies één paar evenwijdige zijden.</p></div></div><div class='call'>Je herkent evenwijdige zijden aan de pijltjes (>>) en gelijke zijden aan de streepjes op de zijden. Rechte hoeken teken je met een rechthoektekentje.</div><div class='diagram-nodig'>Overzicht van vlakke figuren: cirkel, ellips, de vijf soorten driehoeken en de belangrijkste vierhoeken (vierkant, rechthoek, parallellogram, ruit, vlieger, trapezium), elk met naam eronder.</div>"
+        },
+        {
+          "titel": "Hoeken berekenen in driehoeken",
+          "uitleg": "<div class='box'><h4>Hoekensom van een driehoek</h4><p>De drie hoeken van elke driehoek samen zijn altijd <b>180°</b>. Ken je twee hoeken van een driehoek, dan kun je de derde hoek uitrekenen: je telt de twee bekende hoeken op en trekt de uitkomst af van 180°.</p></div><div class='voorbeeld'><h4>Voorbeeld: derde hoek berekenen</h4><p>In driehoek ABC is hoek A = 52° en hoek B = 71°. Bereken hoek C.</p><ol class='num'><li>Tel hoek A en hoek B op: 52° + 71° = 123°.</li><li>Trek dit af van 180°: 180° − 123° = 57°.</li></ol><div class='antwoord'>Antwoord: hoek C is 57°.</div></div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>hoek A + hoek B + hoek C = 180° in elke driehoek.</li><li>In een gelijkbenige driehoek zijn de twee hoeken bij de basis gelijk.</li><li>In een gelijkzijdige driehoek zijn alle hoeken 60°.</li></ul></div>"
+        },
+        {
+          "titel": "Driehoeken tekenen",
+          "uitleg": "<div class='box'><h4>Een driehoek nauwkeurig tekenen</h4><p>Je kunt een driehoek op ware grootte tekenen als je genoeg gegevens hebt, bijvoorbeeld twee zijden en de ingesloten hoek, of één zijde en twee hoeken. Je gebruikt hiervoor een geodriehoek (voor hoeken en rechte lijnen) en soms een passer (voor gelijke afstanden).</p></div><div class='box'><h4>Werkwijze</h4><ol class='num'><li>Teken eerst de zijde waarvan je de lengte weet.</li><li>Zet met de geodriehoek de gegeven hoek(en) af.</li><li>Teken de andere zijden door tot ze elkaar snijden; dat snijpunt is het laatste hoekpunt.</li></ol></div><div class='call'>Werk altijd nauwkeurig: een fout van een paar millimeter of een halve graad zorgt al voor een scheve tekening.</div>"
+        },
+        {
+          "titel": "Parallellogram en ruit tekenen",
+          "uitleg": "<div class='term'><b>Parallellogram</b><span>Een vierhoek met twee paar evenwijdige zijden. Overstaande zijden zijn ook even lang.</span></div><div class='term'><b>Ruit</b><span>Een vierhoek met vier gelijke zijden. De diagonalen van een ruit staan loodrecht op elkaar en delen elkaar middendoor.</span></div><div class='box'><h4>Parallellogram tekenen</h4><p>Teken eerst één zijde. Zet daarna met de geodriehoek de hoek af en teken de tweede zijde. De twee andere zijden teken je evenwijdig aan en even lang als de eerste twee, zodat de figuur sluit.</p></div><div class='box'><h4>Ruit tekenen</h4><p>Een ruit kun je tekenen met een passer: alle vier de zijden zijn even lang, dus je zet steeds dezelfde afstand af vanaf de vorige hoekpunten.</p></div><div class='diagram-nodig'>Stappenplan met tekening van het construeren van een parallellogram en een ruit met geodriehoek en passer.</div>"
+        },
+        {
+          "titel": "Vlieger en trapezium tekenen",
+          "uitleg": "<div class='term'><b>Vlieger</b><span>Een vierhoek met twee paar gelijke zijden die naast elkaar liggen. Eén diagonaal is een symmetrieas.</span></div><div class='term'><b>Trapezium</b><span>Een vierhoek met precies één paar evenwijdige zijden.</span></div><div class='box'><h4>Vlieger tekenen</h4><p>Een vlieger is symmetrisch rond één diagonaal. Teken eerst die symmetrieas en zet daarna aan beide kanten dezelfde lengtes en hoeken af.</p></div><div class='box'><h4>Trapezium tekenen</h4><p>Teken eerst de langste evenwijdige zijde. Zet de hoeken af en teken de andere evenwijdige zijde ergens boven de eerste, zodat beide zijden dezelfde richting hebben.</p></div><div class='call warn'><b>Veelgemaakte fout:</b> bij een trapezium denken leerlingen soms dat beide paren zijden evenwijdig moeten zijn. Bij een trapezium is dat maar één paar; is het twee paar, dan heet de figuur een parallellogram.</div>"
+        },
+        {
+          "titel": "Hoeken berekenen in vierhoeken",
+          "uitleg": "<div class='box'><h4>Hoekensom van een vierhoek</h4><p>De vier hoeken van elke vierhoek samen zijn altijd <b>360°</b>. Dat volgt uit de hoekensom van een driehoek: je kunt elke vierhoek met één diagonaal verdelen in twee driehoeken van elk 180°, samen 360°.</p></div><div class='voorbeeld'><h4>Voorbeeld: ontbrekende hoek in een vierhoek</h4><p>Van vierhoek PQRS is hoek P = 80°, hoek Q = 95° en hoek R = 110°. Bereken hoek S.</p><ol class='num'><li>Tel de drie bekende hoeken op: 80° + 95° + 110° = 285°.</li><li>Trek dit af van 360°: 360° − 285° = 75°.</li></ol><div class='antwoord'>Antwoord: hoek S is 75°.</div></div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Hoekensom driehoek: 180°.</li><li>Hoekensom vierhoek: 360°.</li><li>In een rechthoek en een vierkant zijn alle hoeken 90°.</li></ul></div>"
+        }
+      ],
+      "begrippen": [
+        {
+          "term": "Cirkel",
+          "uitleg": "Vlakke figuur waarvan elk punt dezelfde afstand tot het middelpunt heeft.",
+          "paragraaf": "Namen van vlakke figuren"
+        },
+        {
+          "term": "Ellips",
+          "uitleg": "Ovale vlakke figuur met twee symmetrieassen.",
+          "paragraaf": "Namen van vlakke figuren"
+        },
+        {
+          "term": "Gelijkzijdige driehoek",
+          "uitleg": "Driehoek met drie gelijke zijden en drie hoeken van 60°.",
+          "paragraaf": "Namen van vlakke figuren"
+        },
+        {
+          "term": "Gelijkbenige driehoek",
+          "uitleg": "Driehoek met twee gelijke zijden en twee gelijke hoeken.",
+          "paragraaf": "Namen van vlakke figuren"
+        },
+        {
+          "term": "Parallellogram",
+          "uitleg": "Vierhoek met twee paar evenwijdige, even lange zijden.",
+          "paragraaf": "Parallellogram en ruit tekenen"
+        },
+        {
+          "term": "Ruit",
+          "uitleg": "Vierhoek met vier gelijke zijden en loodrechte diagonalen.",
+          "paragraaf": "Parallellogram en ruit tekenen"
+        },
+        {
+          "term": "Vlieger",
+          "uitleg": "Vierhoek met twee paar gelijke, naast elkaar liggende zijden.",
+          "paragraaf": "Vlieger en trapezium tekenen"
+        },
+        {
+          "term": "Trapezium",
+          "uitleg": "Vierhoek met precies één paar evenwijdige zijden.",
+          "paragraaf": "Vlieger en trapezium tekenen"
+        },
+        {
+          "term": "Hoekensom",
+          "uitleg": "De som van alle hoeken in een figuur; 180° bij een driehoek, 360° bij een vierhoek.",
+          "paragraaf": "Hoeken berekenen in vierhoeken"
+        },
+        {
+          "term": "Symmetrieas",
+          "uitleg": "Een lijn waarlangs je een figuur kunt vouwen zodat beide helften precies op elkaar passen.",
+          "paragraaf": "Namen van vlakke figuren"
+        },
+        {
+          "term": "Diagonaal",
+          "uitleg": "Een lijnstuk dat twee niet-naast-elkaar-liggende hoekpunten van een vierhoek verbindt.",
+          "paragraaf": "Hoeken berekenen in vierhoeken"
+        },
+        {
+          "term": "Evenwijdig",
+          "uitleg": "Twee lijnen die dezelfde richting hebben en elkaar nooit snijden.",
+          "paragraaf": "Namen van vlakke figuren"
+        },
+        {
+          "term": "Geodriehoek",
+          "uitleg": "Tekeninstrument waarmee je hoeken kunt aftekenen en meten en rechte lijnen kunt tekenen.",
+          "paragraaf": "Driehoeken tekenen"
+        },
+        {
+          "term": "Rechthoekige driehoek",
+          "uitleg": "Driehoek met één hoek van precies 90°.",
+          "paragraaf": "Namen van vlakke figuren"
+        }
+      ],
+      "flashcards": [
+        {
+          "vraag": "Hoeveel graden is de hoekensom van een driehoek?",
+          "antwoord": "180°.",
+          "paragraaf": "Hoeken berekenen in driehoeken"
+        },
+        {
+          "vraag": "Hoeveel graden is de hoekensom van een vierhoek?",
+          "antwoord": "360°.",
+          "paragraaf": "Hoeken berekenen in vierhoeken"
+        },
+        {
+          "vraag": "Wat is het verschil tussen een parallellogram en een ruit?",
+          "antwoord": "Bij een parallellogram zijn overstaande zijden gelijk; bij een ruit zijn alle vier de zijden gelijk.",
+          "paragraaf": "Parallellogram en ruit tekenen"
+        },
+        {
+          "vraag": "Hoeveel paar evenwijdige zijden heeft een trapezium?",
+          "antwoord": "Precies één paar.",
+          "paragraaf": "Vlieger en trapezium tekenen"
+        },
+        {
+          "vraag": "Hoe herken je gelijke zijden in een tekening?",
+          "antwoord": "Aan gelijke streepjes op de zijden.",
+          "paragraaf": "Namen van vlakke figuren"
+        },
+        {
+          "vraag": "Hoe herken je evenwijdige zijden in een tekening?",
+          "antwoord": "Aan gelijke pijltjes (>>) op de zijden.",
+          "paragraaf": "Namen van vlakke figuren"
+        },
+        {
+          "vraag": "Hoeveel symmetrieassen heeft een gelijkzijdige driehoek?",
+          "antwoord": "Drie.",
+          "paragraaf": "Namen van vlakke figuren"
+        },
+        {
+          "vraag": "Welke hoek heeft een rechthoekige driehoek altijd?",
+          "antwoord": "Een hoek van 90°.",
+          "paragraaf": "Namen van vlakke figuren"
+        },
+        {
+          "vraag": "Wat is een diagonaal?",
+          "antwoord": "Een lijnstuk dat twee hoekpunten van een vierhoek verbindt die niet naast elkaar liggen.",
+          "paragraaf": "Hoeken berekenen in vierhoeken"
+        },
+        {
+          "vraag": "Hoe bereken je de ontbrekende hoek in een driehoek als je de andere twee weet?",
+          "antwoord": "Tel de twee bekende hoeken op en trek de uitkomst af van 180°.",
+          "paragraaf": "Hoeken berekenen in driehoeken"
+        },
+        {
+          "vraag": "Waaraan zijn de twee diagonalen van een ruit gelijk?",
+          "antwoord": "Ze staan loodrecht op elkaar en delen elkaar middendoor.",
+          "paragraaf": "Parallellogram en ruit tekenen"
+        },
+        {
+          "vraag": "Wat is bijzonder aan de hoeken bij de basis van een gelijkbenige driehoek?",
+          "antwoord": "Die twee hoeken zijn even groot.",
+          "paragraaf": "Hoeken berekenen in driehoeken"
+        }
+      ],
+      "quiz": [
+        {
+          "vraag": "Hoeveel graden is de hoekensom van een driehoek?",
+          "opties": [
+            "90°",
+            "180°",
+            "270°",
+            "360°"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "De drie hoeken van elke driehoek samen zijn altijd 180°."
+        },
+        {
+          "vraag": "Hoeveel graden is de hoekensom van een vierhoek?",
+          "opties": [
+            "180°",
+            "270°",
+            "360°",
+            "450°"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "De vier hoeken van elke vierhoek samen zijn altijd 360°."
+        },
+        {
+          "vraag": "In driehoek ABC is hoek A = 40° en hoek B = 65°. Hoe groot is hoek C?",
+          "opties": [
+            "75°",
+            "85°",
+            "95°",
+            "105°"
+          ],
+          "antwoord_index": 0,
+          "uitleg": "180° − 40° − 65° = 75°."
+        },
+        {
+          "vraag": "Welke vierhoek heeft vier gelijke zijden, maar niet per se rechte hoeken?",
+          "opties": [
+            "Rechthoek",
+            "Vierkant",
+            "Ruit",
+            "Trapezium"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "Een ruit heeft vier gelijke zijden; de hoeken hoeven geen 90° te zijn."
+        },
+        {
+          "vraag": "Hoeveel paar evenwijdige zijden heeft een parallellogram?",
+          "opties": [
+            "Geen",
+            "Eén paar",
+            "Twee paar",
+            "Drie paar"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "Een parallellogram heeft twee paar evenwijdige zijden."
+        },
+        {
+          "vraag": "Hoeveel paar evenwijdige zijden heeft een trapezium?",
+          "opties": [
+            "Geen",
+            "Eén paar",
+            "Twee paar",
+            "Vier paar"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Een trapezium heeft precies één paar evenwijdige zijden."
+        },
+        {
+          "vraag": "Wat is kenmerkend voor een vlieger?",
+          "opties": [
+            "Vier gelijke zijden",
+            "Twee paar naast elkaar liggende gelijke zijden",
+            "Eén paar evenwijdige zijden",
+            "Alle hoeken zijn 90°"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Een vlieger heeft twee paar gelijke zijden die naast elkaar liggen."
+        },
+        {
+          "vraag": "Welk instrument gebruik je vooral om hoeken nauwkeurig af te tekenen?",
+          "opties": [
+            "Liniaal",
+            "Geodriehoek",
+            "Rekenmachine",
+            "Passer"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Met een geodriehoek zet je hoeken af en teken je rechte lijnen."
+        },
+        {
+          "vraag": "Van vierhoek PQRS is hoek P = 90°, hoek Q = 90° en hoek R = 90°. Hoe groot is hoek S?",
+          "opties": [
+            "45°",
+            "60°",
+            "90°",
+            "180°"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "360° − 90° − 90° − 90° = 90°."
+        },
+        {
+          "vraag": "Een driehoek heeft twee gelijke zijden. Hoe heet zo'n driehoek?",
+          "opties": [
+            "Gelijkzijdig",
+            "Gelijkbenig",
+            "Rechthoekig",
+            "Stomphoekig"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Een driehoek met twee gelijke zijden heet gelijkbenig."
+        },
+        {
+          "vraag": "Hoeveel graden zijn de hoeken van een gelijkzijdige driehoek elk?",
+          "opties": [
+            "45°",
+            "60°",
+            "90°",
+            "120°"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Bij een gelijkzijdige driehoek zijn alle hoeken gelijk: 180° : 3 = 60°."
+        },
+        {
+          "vraag": "Hoe herken je een rechte hoek in een tekening?",
+          "opties": [
+            "Aan een pijltje",
+            "Aan een streepje",
+            "Aan een rechthoektekentje",
+            "Aan een rondje"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "Een rechte hoek van 90° wordt in tekeningen aangegeven met een klein vierkantje in de hoek."
+        },
+        {
+          "vraag": "Wat kun je zeggen over de diagonalen van een ruit?",
+          "opties": [
+            "Ze zijn altijd even lang",
+            "Ze staan loodrecht op elkaar",
+            "Ze zijn evenwijdig",
+            "Ze snijden elkaar niet"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "De diagonalen van een ruit staan loodrecht op elkaar en delen elkaar middendoor."
+        },
+        {
+          "vraag": "Welke figuur heeft géén hoeken?",
+          "opties": [
+            "Trapezium",
+            "Vlieger",
+            "Cirkel",
+            "Ruit"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "Een cirkel is een ronde figuur zonder hoeken."
+        },
+        {
+          "vraag": "In driehoek KLM is hoek K = 90°. Hoek L en hoek M zijn even groot. Hoe groot is hoek L?",
+          "opties": [
+            "30°",
+            "45°",
+            "60°",
+            "90°"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "180° − 90° = 90°, verdeeld over twee gelijke hoeken: 90° : 2 = 45°."
+        },
+        {
+          "vraag": "Waarom is de hoekensom van een vierhoek 360°?",
+          "opties": [
+            "Omdat een vierhoek altijd een vierkant is",
+            "Omdat je een vierhoek met een diagonaal in twee driehoeken van 180° kunt verdelen",
+            "Omdat alle hoeken van een vierhoek 90° zijn",
+            "Dat is gewoon een afspraak"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Een diagonaal verdeelt de vierhoek in twee driehoeken van elk 180°, samen 360°."
+        }
+      ]
+    },
+    {
+      "titel": "Oplossen en formules",
+      "uitleg": "<div class='box'><h4>Waar gaat dit hoofdstuk over?</h4><p>In dit hoofdstuk leer je vergelijkingen oplossen op drie manieren: met grafieken, met inklemmen en met de balansmethode. Ook leer je hoe je bij een grafiek of een tabel een formule maakt.</p></div><div class='call'>Een vergelijking is een wiskundige zin met een is-gelijk-teken (=) waarin een onbekende letter voorkomt, bijvoorbeeld 2b + 14 = 36.</div>",
+      "subhoofdstukken": [
+        {
+          "titel": "Oplossen met grafieken",
+          "uitleg": "<div class='box'><h4>Twee grafieken vergelijken</h4><p>Bij veel situaties horen twee formules met elk een eigen grafiek, bijvoorbeeld de huurprijs bij twee verschillende verhuurbedrijven. Je kunt de grafieken gebruiken om uit te rekenen wanneer beide formules hetzelfde antwoord geven.</p></div><div class='box'><h4>Werkwijze</h4><ol class='num'><li>Maak bij elke formule een tabel met een paar waarden van t.</li><li>Teken bij beide tabellen een grafiek in hetzelfde assenstelsel.</li><li>Het snijpunt van de twee grafieken is de oplossing: daar zijn de twee formules gelijk.</li><li>Lees bij het snijpunt af welke t-waarde en welk bedrag erbij horen.</li></ol></div><div class='call'>Hoe verder de grafieken van elkaar af liggen bij het snijpunt, hoe nauwkeuriger je moet aflezen. Teken daarom altijd netjes op ruitjespapier.</div>"
+        },
+        {
+          "titel": "Oplossen met inklemmen",
+          "uitleg": "<div class='box'><h4>Wat is inklemmen?</h4><p>Bij inklemmen vul je voor de onbekende letter steeds een getal in en kijk je of de uitkomst te veel of te weinig is. Zo zoek je steeds nauwkeuriger tussen twee grenzen, totdat je de juiste oplossing hebt gevonden.</p></div><div class='voorbeeld'><h4>Voorbeeld: inklemmen</h4><p>Los op: 15 + 4,35t = 115,05.</p><ol class='num'><li>Probeer t = 20: 15 + 4,35 × 20 = 102. Dat is te weinig.</li><li>Probeer t = 25: 15 + 4,35 × 25 = 123,75. Dat is te veel.</li><li>De oplossing ligt dus tussen 20 en 25. Probeer een tussenwaarde, bijvoorbeeld t = 23.</li><li>Ga zo door tot de uitkomst precies klopt.</li></ol><div class='antwoord'>Antwoord: t = 23.</div></div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Is de uitkomst te veel, dan probeer je een kleiner getal.</li><li>Is de uitkomst te weinig, dan probeer je een groter getal.</li><li>Zo klem je de oplossing steeds verder in tussen twee grenzen.</li></ul></div>"
+        },
+        {
+          "titel": "Oplossen met de balansmethode",
+          "uitleg": "<div class='box'><h4>Een vergelijking als een balans</h4><p>Je kunt een vergelijking zien als een balans die in evenwicht is. Wat je aan de ene kant doet, moet je ook aan de andere kant doen: dan blijft de balans in evenwicht. Zo kun je de onbekende letter stap voor stap vrijmaken.</p></div><div class='voorbeeld'><h4>Voorbeeld: balansmethode</h4><p>Los op: 2b + 14 = 36.</p><ol class='num'><li>Het losse getal is 14. Trek dit aan beide kanten af: 2b = 22.</li><li>Voor b staat 2. Deel beide kanten door 2: b = 11.</li></ol><div class='antwoord'>Antwoord: b = 11.</div></div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Je mag bij een vergelijking aan beide kanten hetzelfde getal optellen of aftrekken.</li><li>Je mag beide kanten door hetzelfde getal delen of ermee vermenigvuldigen.</li><li>Doe steeds het tegenovergestelde van wat er bij de letter staat.</li></ul></div><div class='call warn'><b>Veelgemaakte fout:</b> vergeet niet om de bewerking echt aan beide kanten van het is-teken uit te voeren, anders raakt de balans uit evenwicht en klopt de uitkomst niet meer.</div>"
+        },
+        {
+          "titel": "Formule maken bij een grafiek",
+          "uitleg": "<div class='box'><h4>Van grafiek naar formule</h4><p>Bij een rechte grafiek hoort een formule van de vorm <b>y = begingetal + stijggetal × t</b>. Het begingetal is de waarde waar de grafiek de verticale as snijdt (bij t = 0). Het stijggetal is hoeveel de grafiek per stap omhoog gaat. Daalt de grafiek, dan gebruik je een daalgetal en een minteken.</p></div><div class='voorbeeld'><h4>Voorbeeld: formule bij een grafiek</h4><p>Een grafiek begint bij 2000 en stijgt: bij 1 jaar erbij komt er steeds 500 bij.</p><ol class='num'><li>Het begingetal is 2000: bedrag (€) = 2000 +</li><li>Het stijggetal is 500: bedrag (€) = 2000 + 500</li><li>Zet de letter van de horizontale as achter het stijggetal.</li></ol><div class='antwoord'>Antwoord: bedrag (€) = 2000 + 500t. Hierin is t de tijd in jaren.</div></div><div class='call'>Om het stijg- of daalgetal te vinden, zoek je twee punten die je goed kunt aflezen en bereken je hoeveel de grafiek per 1 stap op de horizontale as verandert.</div>"
+        },
+        {
+          "titel": "Formule maken bij een tabel",
+          "uitleg": "<div class='box'><h4>Van tabel naar formule</h4><p>Ook bij een tabel met regelmaat kun je een formule maken. Het begingetal staat in de tabel onder de 0. Het stijggetal bereken je door te kijken hoeveel de waarde toeneemt per stap.</p></div><div class='voorbeeld'><h4>Voorbeeld: formule bij een tabel</h4><p>In een tabel hoort bij t = 0 de waarde 450, en bij t = 5 de waarde 1250.</p><ol class='num'><li>Het begingetal staat onder de 0: dat is 450.</li><li>In 5 minuten komt er 1250 − 450 = 800 bij.</li><li>Dus in 1 minuut komt er 800 : 5 = 160 bij. Het stijggetal is 160.</li></ol><div class='antwoord'>Antwoord: afstand (m) = 450 + 160t. Hierin is t de tijd in minuten.</div></div><div class='call warn'><b>Veelgemaakte fout:</b> je mag het stijggetal alleen zo berekenen als de stappen in de tabel gelijk zijn (bijvoorbeeld steeds 5 minuten verschil).</div>"
+        }
+      ],
+      "begrippen": [
+        {
+          "term": "Vergelijking",
+          "uitleg": "Een wiskundige zin met een is-gelijk-teken waarin een onbekende letter voorkomt.",
+          "paragraaf": "Oplossen met de balansmethode"
+        },
+        {
+          "term": "Snijpunt",
+          "uitleg": "Het punt waar twee grafieken elkaar kruisen; daar zijn de twee formules gelijk.",
+          "paragraaf": "Oplossen met grafieken"
+        },
+        {
+          "term": "Inklemmen",
+          "uitleg": "Een oplossing zoeken door steeds een getal te proberen en te kijken of het te veel of te weinig is.",
+          "paragraaf": "Oplossen met inklemmen"
+        },
+        {
+          "term": "Balansmethode",
+          "uitleg": "Een vergelijking oplossen door aan beide kanten van het is-teken dezelfde bewerking te doen.",
+          "paragraaf": "Oplossen met de balansmethode"
+        },
+        {
+          "term": "Begingetal",
+          "uitleg": "De waarde van een grafiek of tabel bij t = 0.",
+          "paragraaf": "Formule maken bij een grafiek"
+        },
+        {
+          "term": "Stijggetal",
+          "uitleg": "Het getal waarmee een grafiek of tabel per stap toeneemt.",
+          "paragraaf": "Formule maken bij een grafiek"
+        },
+        {
+          "term": "Daalgetal",
+          "uitleg": "Het getal waarmee een grafiek of tabel per stap afneemt.",
+          "paragraaf": "Formule maken bij een grafiek"
+        },
+        {
+          "term": "Formule",
+          "uitleg": "Een wiskundig recept waarmee je bij een gegeven waarde een uitkomst kunt berekenen.",
+          "paragraaf": "Formule maken bij een tabel"
+        },
+        {
+          "term": "Grafiek",
+          "uitleg": "Een tekening in een assenstelsel die laat zien hoe twee grootheden van elkaar afhangen.",
+          "paragraaf": "Oplossen met grafieken"
+        },
+        {
+          "term": "Tabel",
+          "uitleg": "Een overzicht van bij elkaar horende waarden, bijvoorbeeld tijd en bedrag.",
+          "paragraaf": "Formule maken bij een tabel"
+        },
+        {
+          "term": "Losse getal",
+          "uitleg": "Het getal in een vergelijking dat niet bij de onbekende letter hoort.",
+          "paragraaf": "Oplossen met de balansmethode"
+        }
+      ],
+      "flashcards": [
+        {
+          "vraag": "Wat is het snijpunt van twee grafieken?",
+          "antwoord": "Het punt waar de twee grafieken elkaar kruisen; daar zijn beide formules gelijk.",
+          "paragraaf": "Oplossen met grafieken"
+        },
+        {
+          "vraag": "Wat doe je als de uitkomst bij inklemmen te veel is?",
+          "antwoord": "Je probeert een kleiner getal.",
+          "paragraaf": "Oplossen met inklemmen"
+        },
+        {
+          "vraag": "Wat doe je als de uitkomst bij inklemmen te weinig is?",
+          "antwoord": "Je probeert een groter getal.",
+          "paragraaf": "Oplossen met inklemmen"
+        },
+        {
+          "vraag": "Los op met de balansmethode: 3n + 35 = 38.",
+          "antwoord": "n = 1.",
+          "paragraaf": "Oplossen met de balansmethode"
+        },
+        {
+          "vraag": "Wat moet je bij de balansmethode altijd doen aan beide kanten van het is-teken?",
+          "antwoord": "Dezelfde bewerking uitvoeren.",
+          "paragraaf": "Oplossen met de balansmethode"
+        },
+        {
+          "vraag": "Wat is het begingetal van een grafiek of tabel?",
+          "antwoord": "De waarde bij t = 0.",
+          "paragraaf": "Formule maken bij een grafiek"
+        },
+        {
+          "vraag": "Hoe bereken je het stijggetal als je twee punten van een grafiek weet?",
+          "antwoord": "Je bepaalt hoeveel de grafiek toeneemt en deelt dat door het aantal stappen op de horizontale as.",
+          "paragraaf": "Formule maken bij een grafiek"
+        },
+        {
+          "vraag": "Wat is de algemene vorm van een formule bij een rechte, stijgende grafiek?",
+          "antwoord": "y = begingetal + stijggetal × t.",
+          "paragraaf": "Formule maken bij een grafiek"
+        },
+        {
+          "vraag": "Wat gebruik je in de formule als een grafiek daalt?",
+          "antwoord": "Een daalgetal met een minteken.",
+          "paragraaf": "Formule maken bij een grafiek"
+        },
+        {
+          "vraag": "Waar staat het begingetal in een tabel?",
+          "antwoord": "Onder de 0.",
+          "paragraaf": "Formule maken bij een tabel"
+        },
+        {
+          "vraag": "In een tabel hoort bij t = 0 de waarde 5 en bij t = 2 de waarde 37,50. Wat is het stijggetal?",
+          "antwoord": "(37,50 − 5) : 2 = 16,25.",
+          "paragraaf": "Formule maken bij een tabel"
+        },
+        {
+          "vraag": "Wat is een vergelijking?",
+          "antwoord": "Een wiskundige zin met een is-gelijk-teken waarin een onbekende letter voorkomt.",
+          "paragraaf": "Oplossen met de balansmethode"
+        }
+      ],
+      "quiz": [
+        {
+          "vraag": "Wat is het snijpunt van twee grafieken?",
+          "opties": [
+            "Het beginpunt van de grafiek",
+            "Het punt waar de grafieken elkaar kruisen",
+            "Het hoogste punt van de grafiek",
+            "Het punt op de horizontale as"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Het snijpunt is het punt waar twee grafieken elkaar kruisen; daar zijn de formules gelijk."
+        },
+        {
+          "vraag": "Je lost 92 + 8,6m = 307 op met inklemmen en bij m = 20 is de uitkomst te weinig. Wat probeer je daarna?",
+          "opties": [
+            "Een kleiner getal dan 20",
+            "Een groter getal dan 20",
+            "Precies 20 nog een keer",
+            "Het getal 0"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Bij een te lage uitkomst probeer je een groter getal."
+        },
+        {
+          "vraag": "Los op met de balansmethode: h − 93 = 93.",
+          "opties": [
+            "h = 0",
+            "h = 93",
+            "h = 186",
+            "h = 1"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "Tel aan beide kanten 93 op: h = 93 + 93 = 186."
+        },
+        {
+          "vraag": "Los op met de balansmethode: 6s + 14 = 62.",
+          "opties": [
+            "s = 4",
+            "s = 8",
+            "s = 12",
+            "s = 48"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "6s = 62 − 14 = 48, dus s = 48 : 6 = 8."
+        },
+        {
+          "vraag": "Een grafiek begint bij 100 en stijgt met 50 per uur. Welke formule hoort hierbij?",
+          "opties": [
+            "bedrag (€) = 50 + 100t",
+            "bedrag (€) = 100 + 50t",
+            "bedrag (€) = 100 − 50t",
+            "bedrag (€) = 150t"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Het begingetal 100 staat vooraan, het stijggetal 50 staat bij t."
+        },
+        {
+          "vraag": "Een grafiek begint bij 4000 en daalt naar 0 in 4 uur. Wat is het daalgetal?",
+          "opties": [
+            "400",
+            "1000",
+            "4000",
+            "0"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "4000 : 4 = 1000, dus het daalgetal is 1000 per uur."
+        },
+        {
+          "vraag": "In een tabel hoort bij t = 0 de waarde 450 en bij t = 5 de waarde 1250. Wat is het stijggetal?",
+          "opties": [
+            "80",
+            "160",
+            "800",
+            "1250"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "(1250 − 450) : 5 = 800 : 5 = 160."
+        },
+        {
+          "vraag": "Wat is het begingetal in de vorige vraag?",
+          "opties": [
+            "0",
+            "5",
+            "160",
+            "450"
+          ],
+          "antwoord_index": 3,
+          "uitleg": "Het begingetal is de waarde bij t = 0, dat is 450."
+        },
+        {
+          "vraag": "Welke methode gebruik je als je een vergelijking oplost door steeds te proberen of een getal te veel of te weinig oplevert?",
+          "opties": [
+            "De balansmethode",
+            "Inklemmen",
+            "Oplossen met grafieken",
+            "Formule maken bij een tabel"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Bij inklemmen probeer je getallen en kijk je steeds of het antwoord te veel of te weinig is."
+        },
+        {
+          "vraag": "Bij de balansmethode: 8b − 1 = 111. Wat is b?",
+          "opties": [
+            "12",
+            "14",
+            "13,75",
+            "112"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "8b = 111 + 1 = 112, dus b = 112 : 8 = 14."
+        },
+        {
+          "vraag": "Waarom moet je bij de balansmethode aan beide kanten dezelfde bewerking doen?",
+          "opties": [
+            "Om het sneller te maken",
+            "Om de balans in evenwicht te houden",
+            "Dat hoeft niet altijd",
+            "Om de letter te laten verdwijnen"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Alleen als je beide kanten hetzelfde verandert, blijft de vergelijking waar."
+        },
+        {
+          "vraag": "Waarvoor gebruik je een snijpunt van twee grafieken?",
+          "opties": [
+            "Om te zien welke grafiek het hoogst is",
+            "Om de oplossing van een vergelijking af te lezen",
+            "Om het begingetal te vinden",
+            "Om de eenheid van de as te bepalen"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Bij het snijpunt zijn beide formules gelijk; dat is de oplossing van de vergelijking."
+        },
+        {
+          "vraag": "Een tabel met tijd (in uren) en inkomsten stijgt regelmatig. Hoe noem je de toename per uur?",
+          "opties": [
+            "Het begingetal",
+            "Het stijggetal",
+            "Het snijpunt",
+            "De balans"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "De toename per stap noem je het stijggetal."
+        },
+        {
+          "vraag": "Bij welke situatie gebruik je een daalgetal in de formule?",
+          "opties": [
+            "Als de grafiek stijgt",
+            "Als de grafiek horizontaal loopt",
+            "Als de grafiek daalt",
+            "Als de grafiek bij 0 begint"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "Een dalende grafiek krijgt een daalgetal met een minteken in de formule."
+        },
+        {
+          "vraag": "Los op met inklemmen: bij t = 20 is een uitkomst te weinig en bij t = 25 te veel. Tussen welke waarden ligt de oplossing?",
+          "opties": [
+            "Tussen 0 en 20",
+            "Tussen 20 en 25",
+            "Tussen 25 en 30",
+            "Precies bij 22,5"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "De oplossing ligt tussen de grens die te weinig geeft en de grens die te veel geeft."
+        },
+        {
+          "vraag": "Wat betekent het als bij inklemmen de uitkomst precies klopt?",
+          "opties": [
+            "Je moet nog een keer proberen",
+            "Je hebt de oplossing gevonden",
+            "De vergelijking heeft geen oplossing",
+            "Je moet de balansmethode gebruiken"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Klopt de uitkomst precies, dan heb je de juiste waarde voor de onbekende gevonden."
+        }
+      ]
+    },
+    {
+      "titel": "Oppervlakte",
+      "uitleg": "<div class='box'><h4>Waar gaat dit hoofdstuk over?</h4><p>In dit hoofdstuk leer je de oppervlakte berekenen van rechthoeken, driehoeken, parallellogrammen, andere vierhoeken, cirkels en ruimtefiguren. Ook leer je de omtrek van een cirkel berekenen.</p></div><div class='call'>De oppervlakte van een figuur is de grootte van het platte vlak binnen de rand van de figuur. Je geeft oppervlakte meestal aan in vierkante eenheden, zoals cm² of m².</div>",
+      "subhoofdstukken": [
+        {
+          "titel": "Oppervlakte rechthoek",
+          "uitleg": "<div class='box'><h4>Formule</h4><p>De oppervlakte van een rechthoek bereken je met de formule <b>oppervlakte rechthoek = lengte × breedte</b>.</p></div><div class='voorbeeld'><h4>Voorbeeld: oppervlakte rechthoek</h4><p>Een rechthoek is 2 dm bij 15 cm. Bereken de oppervlakte in cm².</p><ol class='num'><li>Zorg dat lengte en breedte dezelfde eenheid hebben: 2 dm = 20 cm.</li><li>oppervlakte rechthoek = 20 × 15 = 300 cm².</li></ol><div class='antwoord'>Antwoord: de oppervlakte is 300 cm².</div></div><div class='call warn'><b>Veelgemaakte fout:</b> reken eerst om naar dezelfde eenheid voordat je gaat vermenigvuldigen, anders klopt de uitkomst niet.</div>"
+        },
+        {
+          "titel": "Oppervlakte driehoek",
+          "uitleg": "<div class='box'><h4>Formule</h4><p>Elke driehoek heeft drie zijden. Bij elke zijde hoort een hoogte, die loodrecht op die zijde staat. De oppervlakte van een driehoek bereken je met de formule <b>oppervlakte driehoek = 0,5 × zijde × bijbehorende hoogte</b>.</p></div><div class='voorbeeld'><h4>Voorbeeld: oppervlakte driehoek</h4><p>Van een driehoek weet je hoogte AD = 8,5 cm. Die hoort bij zijde BC = 16 cm.</p><ol class='num'><li>oppervlakte driehoek = 0,5 × 16 × 8,5.</li><li>Dat is 0,5 × 16 × 8,5 = 68 cm².</li></ol><div class='antwoord'>Antwoord: de oppervlakte is 68 cm².</div></div><div class='call'>Zoek altijd eerst uit welke zijde bij de gegeven hoogte hoort: de hoogte staat loodrecht (in een rechte hoek) op die zijde.</div>"
+        },
+        {
+          "titel": "Oppervlakte parallellogram",
+          "uitleg": "<div class='box'><h4>Formule</h4><p>Een parallellogram kun je met een diagonaal verdelen in twee even grote driehoeken. De oppervlakte van een parallellogram is daarom twee keer de oppervlakte van zo'n driehoek. Je berekent de oppervlakte met de formule <b>oppervlakte parallellogram = zijde × bijbehorende hoogte</b>.</p></div><div class='voorbeeld'><h4>Voorbeeld: oppervlakte parallellogram</h4><p>Van parallellogram ABCD ken je hoogte EF = 28 mm, die hoort bij zijde BC. Zijde BC bestaat uit de stukken 21 mm en 17 mm.</p><ol class='num'><li>BC = 21 + 17 = 38 mm.</li><li>oppervlakte parallellogram = 38 × 28 = 1064 mm².</li></ol><div class='antwoord'>Antwoord: de oppervlakte is 1064 mm².</div></div><div class='call'>De zijde en de bijbehorende hoogte staan loodrecht op elkaar. Dat zie je aan het rechthoektekentje in de tekening.</div>"
+        },
+        {
+          "titel": "Oppervlakte vierhoeken",
+          "uitleg": "<div class='box'><h4>Verdelen of inlijsten</h4><p>Van sommige vierhoeken kun je de oppervlakte berekenen door de vierhoek te verdelen in driehoeken. Van andere, onregelmatige vierhoeken kun je de oppervlakte beter berekenen met <b>inlijsten</b>: je tekent een rechthoek precies om de vierhoek heen.</p></div><div class='voorbeeld'><h4>Voorbeeld: inlijsten</h4><p>Bereken de oppervlakte van vierhoek PQRS met inlijsten.</p><ol class='num'><li>Teken een rechthoek die precies om vierhoek PQRS past.</li><li>Bereken de oppervlakte van die rechthoek.</li><li>Bereken de oppervlakte van de driehoeken die te veel zijn (de hoeken van de rechthoek buiten de vierhoek).</li><li>oppervlakte vierhoek = oppervlakte rechthoek − oppervlakte stukjes die te veel zijn.</li></ol><div class='antwoord'>Antwoord: bijvoorbeeld 24 − 1,5 − 5 − 3 − 1,5 = 13 cm².</div></div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Kun je een vierhoek makkelijk verdelen in driehoeken? Bereken dan elke driehoek apart en tel de oppervlaktes op.</li><li>Past een vierhoek juist mooi in een rechthoek? Gebruik dan inlijsten.</li></ul></div>"
+        },
+        {
+          "titel": "Omtrek en oppervlakte cirkel",
+          "uitleg": "<div class='box'><h4>Omtrek van een cirkel</h4><p>De omtrek van een cirkel bereken je met de formule <b>omtrek cirkel = π × diameter</b>. Hierin is π (pi) een vast getal, ongeveer 3,14. De diameter is de afstand van rand tot rand door het middelpunt; de straal is de helft van de diameter.</p></div><div class='box'><h4>Oppervlakte van een cirkel</h4><p>De oppervlakte van een cirkel bereken je met de formule <b>oppervlakte cirkel = π × straal × straal</b>.</p></div><div class='voorbeeld'><h4>Voorbeeld: oppervlakte cirkel</h4><p>Een vierkant met zijden van 15 cm heeft een ingeschreven cirkel met diameter 15 cm. Bereken de oppervlakte van het stuk buiten de cirkel maar binnen het vierkant.</p><ol class='num'><li>oppervlakte vierkant = 15 × 15 = 225 cm².</li><li>straal = 15 : 2 = 7,5 cm.</li><li>oppervlakte cirkel = π × 7,5 × 7,5 = 176,7 cm² (afgerond).</li><li>225 − 176,7 = 48,3 cm².</li></ol><div class='antwoord'>Antwoord: het oranje stuk is 48,3 cm².</div></div>"
+        },
+        {
+          "titel": "Oppervlakte ruimtefiguren",
+          "uitleg": "<div class='box'><h4>Wat is de oppervlakte van een ruimtefiguur?</h4><p>De oppervlakte van een ruimtefiguur (zoals een balk) is de oppervlakte van de buitenkant. Je berekent eerst de oppervlakte van elk zijvlak apart, en telt die daarna bij elkaar op.</p></div><div class='voorbeeld'><h4>Voorbeeld: oppervlakte balk</h4><p>Een balk is 4 cm bij 5 cm bij 15 cm. Bereken de oppervlakte.</p><ol class='num'><li>Voorkant en achterkant: 2 × (15 × 4) = 120 cm².</li><li>Rechterkant en linkerkant: 2 × (15 × 5) = 150 cm².</li><li>Bovenkant en onderkant: 2 × (5 × 4) = 40 cm².</li><li>Tel alles op: 120 + 150 + 40 = 310 cm².</li></ol><div class='antwoord'>Antwoord: de oppervlakte van de balk is 310 cm².</div></div><div class='call'>Bij een balk zijn de vlakken die tegenover elkaar liggen altijd precies even groot.</div>"
+        }
+      ],
+      "begrippen": [
+        {
+          "term": "Oppervlakte",
+          "uitleg": "De grootte van het platte vlak binnen de rand van een figuur, in vierkante eenheden.",
+          "paragraaf": "Oppervlakte rechthoek"
+        },
+        {
+          "term": "Hoogte (van een driehoek)",
+          "uitleg": "De lijn die loodrecht op een zijde van de driehoek staat en naar het tegenoverliggende hoekpunt loopt.",
+          "paragraaf": "Oppervlakte driehoek"
+        },
+        {
+          "term": "Inlijsten",
+          "uitleg": "Een manier om de oppervlakte van een vierhoek te berekenen door er een rechthoek omheen te tekenen.",
+          "paragraaf": "Oppervlakte vierhoeken"
+        },
+        {
+          "term": "Diameter",
+          "uitleg": "De afstand van rand tot rand van een cirkel, gemeten door het middelpunt.",
+          "paragraaf": "Omtrek en oppervlakte cirkel"
+        },
+        {
+          "term": "Straal",
+          "uitleg": "De afstand van het middelpunt van een cirkel tot de rand; de helft van de diameter.",
+          "paragraaf": "Omtrek en oppervlakte cirkel"
+        },
+        {
+          "term": "Pi (π)",
+          "uitleg": "Een vast getal, ongeveer 3,14, dat je gebruikt bij het berekenen van de omtrek en oppervlakte van een cirkel.",
+          "paragraaf": "Omtrek en oppervlakte cirkel"
+        },
+        {
+          "term": "Omtrek",
+          "uitleg": "De lengte van de rand van een figuur helemaal rondom.",
+          "paragraaf": "Omtrek en oppervlakte cirkel"
+        },
+        {
+          "term": "Ruimtefiguur",
+          "uitleg": "Een figuur met lengte, breedte én hoogte, zoals een balk of een kubus.",
+          "paragraaf": "Oppervlakte ruimtefiguren"
+        },
+        {
+          "term": "Zijvlak",
+          "uitleg": "Een van de platte vlakken waaruit de buitenkant van een ruimtefiguur bestaat.",
+          "paragraaf": "Oppervlakte ruimtefiguren"
+        },
+        {
+          "term": "Loodrecht",
+          "uitleg": "In een hoek van precies 90° op elkaar staand.",
+          "paragraaf": "Oppervlakte driehoek"
+        },
+        {
+          "term": "Vierkante eenheid",
+          "uitleg": "Een eenheid van oppervlakte, zoals cm² of m².",
+          "paragraaf": "Oppervlakte rechthoek"
+        }
+      ],
+      "flashcards": [
+        {
+          "vraag": "Wat is de formule voor de oppervlakte van een rechthoek?",
+          "antwoord": "oppervlakte rechthoek = lengte × breedte.",
+          "paragraaf": "Oppervlakte rechthoek"
+        },
+        {
+          "vraag": "Wat is de formule voor de oppervlakte van een driehoek?",
+          "antwoord": "oppervlakte driehoek = 0,5 × zijde × bijbehorende hoogte.",
+          "paragraaf": "Oppervlakte driehoek"
+        },
+        {
+          "vraag": "Wat is de formule voor de oppervlakte van een parallellogram?",
+          "antwoord": "oppervlakte parallellogram = zijde × bijbehorende hoogte.",
+          "paragraaf": "Oppervlakte parallellogram"
+        },
+        {
+          "vraag": "Wat doe je bij inlijsten?",
+          "antwoord": "Je tekent een rechthoek om de vierhoek heen en trekt de te veel meegetelde driehoeken eraf.",
+          "paragraaf": "Oppervlakte vierhoeken"
+        },
+        {
+          "vraag": "Wat is de formule voor de omtrek van een cirkel?",
+          "antwoord": "omtrek cirkel = π × diameter.",
+          "paragraaf": "Omtrek en oppervlakte cirkel"
+        },
+        {
+          "vraag": "Wat is de formule voor de oppervlakte van een cirkel?",
+          "antwoord": "oppervlakte cirkel = π × straal × straal.",
+          "paragraaf": "Omtrek en oppervlakte cirkel"
+        },
+        {
+          "vraag": "Hoe bereken je de straal als je de diameter weet?",
+          "antwoord": "Je deelt de diameter door 2.",
+          "paragraaf": "Omtrek en oppervlakte cirkel"
+        },
+        {
+          "vraag": "Hoe bereken je de oppervlakte van een ruimtefiguur?",
+          "antwoord": "Je berekent de oppervlakte van elk zijvlak en telt die bij elkaar op.",
+          "paragraaf": "Oppervlakte ruimtefiguren"
+        },
+        {
+          "vraag": "Waarom is de oppervlakte van een parallellogram gelijk aan zijde × hoogte?",
+          "antwoord": "Omdat een parallellogram bestaat uit twee even grote driehoeken, samen twee keer 0,5 × zijde × hoogte.",
+          "paragraaf": "Oppervlakte parallellogram"
+        },
+        {
+          "vraag": "Wat is ongeveer de waarde van π?",
+          "antwoord": "Ongeveer 3,14.",
+          "paragraaf": "Omtrek en oppervlakte cirkel"
+        },
+        {
+          "vraag": "Bij welke zijde van een driehoek hoort de hoogte die je gebruikt?",
+          "antwoord": "Bij de zijde waar de hoogte loodrecht op staat.",
+          "paragraaf": "Oppervlakte driehoek"
+        }
+      ],
+      "quiz": [
+        {
+          "vraag": "Wat is de oppervlakte van een rechthoek van 12 cm bij 5 cm?",
+          "opties": [
+            "17 cm²",
+            "34 cm²",
+            "60 cm²",
+            "120 cm²"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "oppervlakte rechthoek = 12 × 5 = 60 cm²."
+        },
+        {
+          "vraag": "Een driehoek heeft zijde 16 cm en bijbehorende hoogte 8,5 cm. Wat is de oppervlakte?",
+          "opties": [
+            "68 cm²",
+            "136 cm²",
+            "24,5 cm²",
+            "12,5 cm²"
+          ],
+          "antwoord_index": 0,
+          "uitleg": "oppervlakte driehoek = 0,5 × 16 × 8,5 = 68 cm²."
+        },
+        {
+          "vraag": "Een parallellogram heeft zijde 38 mm en bijbehorende hoogte 28 mm. Wat is de oppervlakte?",
+          "opties": [
+            "66 mm²",
+            "532 mm²",
+            "1064 mm²",
+            "2128 mm²"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "oppervlakte parallellogram = 38 × 28 = 1064 mm²."
+        },
+        {
+          "vraag": "Wat gebruik je om de oppervlakte van een onregelmatige vierhoek te berekenen?",
+          "opties": [
+            "Inklemmen",
+            "De balansmethode",
+            "Inlijsten",
+            "Een cirkeldiagram"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "Bij inlijsten teken je een rechthoek om de vierhoek en trek je de teveel meegerekende stukken eraf."
+        },
+        {
+          "vraag": "Wat is de omtrek van een cirkel met diameter 36 cm? Rond af op een geheel getal.",
+          "opties": [
+            "36 cm",
+            "57 cm",
+            "113 cm",
+            "1018 cm"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "omtrek = π × 36 ≈ 113 cm."
+        },
+        {
+          "vraag": "Wat is de oppervlakte van een cirkel met straal 10 cm? Rond af op een geheel getal.",
+          "opties": [
+            "31 cm²",
+            "63 cm²",
+            "100 cm²",
+            "314 cm²"
+          ],
+          "antwoord_index": 3,
+          "uitleg": "oppervlakte cirkel = π × 10 × 10 ≈ 314 cm²."
+        },
+        {
+          "vraag": "Hoe bereken je de straal van een cirkel met diameter 54 mm?",
+          "opties": [
+            "54 × 2 = 108 mm",
+            "54 : 2 = 27 mm",
+            "54 × π",
+            "54 − 2 = 52 mm"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "De straal is de helft van de diameter: 54 : 2 = 27 mm."
+        },
+        {
+          "vraag": "Een balk is 4 cm bij 5 cm bij 15 cm. Hoeveel zijvlakken heeft deze balk?",
+          "opties": [
+            "4",
+            "5",
+            "6",
+            "8"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "Een balk heeft 6 zijvlakken: voor-, achter-, boven-, onder-, links- en rechterkant."
+        },
+        {
+          "vraag": "Waarom tel je bij een balk de voorkant en de achterkant allebei apart mee?",
+          "antwoord_index": 0,
+          "opties": [
+            "Ze zijn precies even groot maar toch losse vlakken van de buitenkant",
+            "Ze zijn nooit even groot",
+            "Alleen de voorkant telt mee",
+            "De achterkant telt dubbel"
+          ],
+          "uitleg": "Tegenover elkaar liggende vlakken van een balk zijn even groot, maar horen wel allebei bij de buitenkant."
+        },
+        {
+          "vraag": "Van vierhoek ABCD is met inlijsten een rechthoek van 24 cm² getekend. De te veel meegerekende driehoeken zijn samen 11 cm². Wat is de oppervlakte van ABCD?",
+          "opties": [
+            "11 cm²",
+            "13 cm²",
+            "24 cm²",
+            "35 cm²"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "24 − 11 = 13 cm²."
+        },
+        {
+          "vraag": "Welke twee maten heb je minimaal nodig om de oppervlakte van een driehoek te berekenen?",
+          "opties": [
+            "Twee zijden",
+            "Een zijde en de bijbehorende hoogte",
+            "Drie hoeken",
+            "De omtrek"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "oppervlakte driehoek = 0,5 × zijde × bijbehorende hoogte."
+        },
+        {
+          "vraag": "Wat is de oppervlakte van een vierkant met zijde 9 cm?",
+          "opties": [
+            "18 cm²",
+            "36 cm²",
+            "81 cm²",
+            "9 cm²"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "Een vierkant is ook een rechthoek: oppervlakte = 9 × 9 = 81 cm²."
+        },
+        {
+          "vraag": "Een balk heeft een voorkant van 60 cm² en een rechterkant van 75 cm². Hoe groot is de achterkant?",
+          "opties": [
+            "15 cm²",
+            "60 cm²",
+            "75 cm²",
+            "135 cm²"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "De achterkant is even groot als de voorkant: 60 cm²."
+        },
+        {
+          "vraag": "Bij een parallellogram staan de zijde en de bijbehorende hoogte...",
+          "opties": [
+            "evenwijdig aan elkaar",
+            "loodrecht op elkaar",
+            "altijd even lang",
+            "nooit loodrecht op elkaar"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "De hoogte staat loodrecht (90°) op de zijde waar hij bij hoort."
+        },
+        {
+          "vraag": "Een cirkel heeft straal 7,5 cm. Wat is de oppervlakte? Rond af op één decimaal.",
+          "opties": [
+            "23,6 cm²",
+            "47,1 cm²",
+            "176,7 cm²",
+            "706,9 cm²"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "oppervlakte cirkel = π × 7,5 × 7,5 ≈ 176,7 cm²."
+        }
+      ]
+    },
+    {
+      "titel": "Statistiek",
+      "uitleg": "<div class='box'><h4>Waar gaat dit hoofdstuk over?</h4><p>In dit hoofdstuk leer je omgaan met gegevens (data): procentuele toename en afname berekenen, verschillende soorten diagrammen tekenen en aflezen, en het gemiddelde, de mediaan en de modus van een rij getallen bepalen.</p></div><div class='call'>Statistiek gaat over het verzamelen, ordenen en samenvatten van gegevens, zodat je er makkelijker iets over kunt zeggen.</div>",
+      "subhoofdstukken": [
+        {
+          "titel": "Toename en afname in procenten",
+          "uitleg": "<div class='box'><h4>Procentuele toename</h4><p>Bij een prijsverhoging kun je eerst de toename in euro's berekenen. Daarna bereken je de <b>procentuele toename</b>: het percentage waarmee de prijs is gestegen, ten opzichte van de oude prijs.</p></div><div class='box'><h4>Procentuele afname</h4><p>Bij een prijsverlaging werkt het net zo: je berekent de afname in euro's en daarna de <b>procentuele afname</b> ten opzichte van de oude prijs.</p></div><div class='voorbeeld'><h4>Voorbeeld: procentuele afname</h4><p>De prijs van een broek wordt verlaagd van €79 naar €55. Bereken de procentuele afname.</p><ol class='num'><li>Er gaat 79 − 55 = €24 af.</li><li>24 / 79 × 100% = 30,4% (afgerond).</li></ol><div class='antwoord'>Antwoord: de prijs is met 30,4% verlaagd.</div></div><div class='call warn'><b>Veelgemaakte fout:</b> gebruik bij het berekenen van het percentage altijd de oude (begin)prijs, niet de nieuwe prijs.</div>"
+        },
+        {
+          "titel": "Beelddiagram en staafdiagram",
+          "uitleg": "<div class='box'><h4>Beelddiagram</h4><p>In een <b>beelddiagram</b> laat je aantallen zien met plaatjes. Bij het diagram staat hoeveel elk plaatje voorstelt, bijvoorbeeld één filmrolletje = 100 bezoekers.</p></div><div class='box'><h4>Staafdiagram</h4><p>In een <b>staafdiagram</b> gebruik je staven in plaats van plaatjes. De staven staan los van elkaar. De hoogte van een staaf laat het aantal zien.</p></div><div class='voorbeeld'><h4>Voorbeeld: staafdiagram tekenen</h4><p>Teken een staafdiagram bij hobby's van tweedeklassers: gamen 14, lezen 30, sporten 33.</p><ol class='num'><li>Bedenk welke getallen bij de verticale as komen. Het hoogste aantal is 33, gebruik bijvoorbeeld 1 cm = 5 leerlingen.</li><li>Teken de staven los van elkaar.</li><li>Zet het aantal boven elke staaf.</li></ol></div><div class='call'>Bij een staafdiagram staan de staven altijd los van elkaar; dat is het verschil met een histogram, waar de staven tegen elkaar aan staan.</div>"
+        },
+        {
+          "titel": "Lijndiagram en cirkeldiagram",
+          "uitleg": "<div class='box'><h4>Lijndiagram</h4><p>Een <b>lijndiagram</b> gebruik je om een verandering te laten zien, bijvoorbeeld hoe de temperatuur verandert in een week. Op de horizontale as staat meestal de tijd. Met een <b>kreukellijn</b> geef je aan dat je een stuk van de as hebt weggelaten.</p></div><div class='box'><h4>Cirkeldiagram</h4><p>Een <b>cirkeldiagram</b> laat zien hoe een geheel verdeeld is in stukken (sectoren). Voor elk stuk bereken je eerst het percentage en daarna de bijbehorende hoek: <b>hoek = percentage × 3,6</b> (want 100% hoort bij 360°).</p></div><div class='voorbeeld'><h4>Voorbeeld: hoek in een cirkeldiagram</h4><p>Van de 26 leerlingen kiezen 7 voor voetbal. Bereken het percentage en de hoek.</p><ol class='num'><li>7 / 26 × 100% = 26,9% (afgerond).</li><li>26,9 × 3,6 = 96,84°, afgerond 97°.</li></ol><div class='antwoord'>Antwoord: voetbal krijgt een percentage van 26,9% en een hoek van 97°.</div></div>"
+        },
+        {
+          "titel": "Histogram en steelbladdiagram",
+          "uitleg": "<div class='box'><h4>Frequentietabel</h4><p>Bij het turven van gegevens maak je een <b>frequentietabel</b>. De <b>frequentie</b> geeft aan hoe vaak een waarde voorkomt.</p></div><div class='box'><h4>Histogram</h4><p>Bij een frequentietabel kun je een <b>histogram</b> maken. Een histogram is een staafdiagram waarbij de staven tegen elkaar aan staan (in tegenstelling tot een gewoon staafdiagram, waar de staven los van elkaar staan).</p></div><div class='box'><h4>Steelbladdiagram</h4><p>In een <b>steelbladdiagram</b> splits je elk getal in een 'steel' (bijvoorbeeld de tientallen) en een 'blad' (de eenheden). Zo kun je snel zien hoe de getallen verdeeld zijn.</p></div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Frequentie = hoe vaak iets voorkomt.</li><li>Histogram: staven tegen elkaar aan.</li><li>Staafdiagram: staven los van elkaar.</li></ul></div>"
+        },
+        {
+          "titel": "Gemiddelde, mediaan en modus",
+          "uitleg": "<div class='box'><h4>Gemiddelde</h4><p>Het <b>gemiddelde</b> bereken je door alle getallen bij elkaar op te tellen en de uitkomst te delen door het aantal getallen.</p></div><div class='box'><h4>Gewogen gemiddelde</h4><p>Tellen niet alle cijfers even zwaar mee, dan bereken je een <b>gewogen gemiddelde</b>. Het aantal keer dat een cijfer meetelt, noem je het <b>gewicht</b> van dat cijfer.</p></div><div class='voorbeeld'><h4>Voorbeeld: gemiddelde</h4><p>De minimumtemperaturen in een week zijn 2,9 / −0,8 / −1,3 / 1,6 / 2,4 / −0,2 / 1,9. Bereken het gemiddelde.</p><ol class='num'><li>Tel alle temperaturen bij elkaar op: 2,9 + −0,8 + −1,3 + 1,6 + 2,4 + −0,2 + 1,9 = 6,5.</li><li>Er zijn 7 temperaturen. Deel 6,5 door 7: 6,5 : 7 = 0,928...</li></ol><div class='antwoord'>Antwoord: de gemiddelde minimumtemperatuur is 0,9 °C.</div></div><div class='call'>De <b>mediaan</b> is de middelste waarde als je alle getallen op volgorde zet. De <b>modus</b> is de waarde die het vaakst voorkomt.</div>"
+        }
+      ],
+      "begrippen": [
+        {
+          "term": "Procentuele toename",
+          "uitleg": "Het percentage waarmee een waarde is toegenomen, berekend ten opzichte van de oude waarde.",
+          "paragraaf": "Toename en afname in procenten"
+        },
+        {
+          "term": "Procentuele afname",
+          "uitleg": "Het percentage waarmee een waarde is afgenomen, berekend ten opzichte van de oude waarde.",
+          "paragraaf": "Toename en afname in procenten"
+        },
+        {
+          "term": "Beelddiagram",
+          "uitleg": "Een diagram waarin aantallen worden weergegeven met plaatjes.",
+          "paragraaf": "Beelddiagram en staafdiagram"
+        },
+        {
+          "term": "Staafdiagram",
+          "uitleg": "Een diagram met staven die los van elkaar staan; de hoogte laat het aantal zien.",
+          "paragraaf": "Beelddiagram en staafdiagram"
+        },
+        {
+          "term": "Lijndiagram",
+          "uitleg": "Een diagram dat een verandering laat zien met een lijn, meestal over de tijd.",
+          "paragraaf": "Lijndiagram en cirkeldiagram"
+        },
+        {
+          "term": "Cirkeldiagram",
+          "uitleg": "Een diagram dat een geheel verdeelt in stukken (sectoren) op basis van percentages.",
+          "paragraaf": "Lijndiagram en cirkeldiagram"
+        },
+        {
+          "term": "Kreukellijn",
+          "uitleg": "Een teken in een as van een diagram dat aangeeft dat een stuk van de as is weggelaten.",
+          "paragraaf": "Lijndiagram en cirkeldiagram"
+        },
+        {
+          "term": "Frequentie",
+          "uitleg": "Het aantal keer dat een waarde voorkomt in een groep gegevens.",
+          "paragraaf": "Histogram en steelbladdiagram"
+        },
+        {
+          "term": "Histogram",
+          "uitleg": "Een staafdiagram waarbij de staven tegen elkaar aan staan.",
+          "paragraaf": "Histogram en steelbladdiagram"
+        },
+        {
+          "term": "Gemiddelde",
+          "uitleg": "De som van alle getallen gedeeld door het aantal getallen.",
+          "paragraaf": "Gemiddelde, mediaan en modus"
+        },
+        {
+          "term": "Mediaan",
+          "uitleg": "De middelste waarde als je alle getallen op volgorde zet.",
+          "paragraaf": "Gemiddelde, mediaan en modus"
+        },
+        {
+          "term": "Modus",
+          "uitleg": "De waarde die het vaakst voorkomt in een groep gegevens.",
+          "paragraaf": "Gemiddelde, mediaan en modus"
+        },
+        {
+          "term": "Gewogen gemiddelde",
+          "uitleg": "Een gemiddelde waarbij niet alle waarden even zwaar meetellen.",
+          "paragraaf": "Gemiddelde, mediaan en modus"
+        }
+      ],
+      "flashcards": [
+        {
+          "vraag": "Hoe bereken je een procentuele afname?",
+          "antwoord": "Je berekent de afname in euro's en deelt die door de oude prijs, keer 100%.",
+          "paragraaf": "Toename en afname in procenten"
+        },
+        {
+          "vraag": "Welke prijs gebruik je bij het berekenen van een procentuele toename of afname?",
+          "antwoord": "De oude (begin)prijs.",
+          "paragraaf": "Toename en afname in procenten"
+        },
+        {
+          "vraag": "Wat is het verschil tussen een staafdiagram en een histogram?",
+          "antwoord": "Bij een staafdiagram staan de staven los van elkaar, bij een histogram staan ze tegen elkaar aan.",
+          "paragraaf": "Histogram en steelbladdiagram"
+        },
+        {
+          "vraag": "Waarvoor gebruik je een lijndiagram?",
+          "antwoord": "Om een verandering te laten zien, meestal over de tijd.",
+          "paragraaf": "Lijndiagram en cirkeldiagram"
+        },
+        {
+          "vraag": "Hoeveel graden hoort bij 100% in een cirkeldiagram?",
+          "antwoord": "360°.",
+          "paragraaf": "Lijndiagram en cirkeldiagram"
+        },
+        {
+          "vraag": "Hoe bereken je de hoek van een sector als je het percentage weet?",
+          "antwoord": "Je vermenigvuldigt het percentage met 3,6.",
+          "paragraaf": "Lijndiagram en cirkeldiagram"
+        },
+        {
+          "vraag": "Wat betekent frequentie?",
+          "antwoord": "Hoe vaak een waarde voorkomt.",
+          "paragraaf": "Histogram en steelbladdiagram"
+        },
+        {
+          "vraag": "Hoe bereken je het gemiddelde van een rij getallen?",
+          "antwoord": "Tel alle getallen bij elkaar op en deel door het aantal getallen.",
+          "paragraaf": "Gemiddelde, mediaan en modus"
+        },
+        {
+          "vraag": "Wat is de mediaan?",
+          "antwoord": "De middelste waarde als je alle getallen op volgorde zet.",
+          "paragraaf": "Gemiddelde, mediaan en modus"
+        },
+        {
+          "vraag": "Wat is de modus?",
+          "antwoord": "De waarde die het vaakst voorkomt.",
+          "paragraaf": "Gemiddelde, mediaan en modus"
+        },
+        {
+          "vraag": "Wanneer gebruik je een gewogen gemiddelde?",
+          "antwoord": "Als niet alle waarden even zwaar meetellen.",
+          "paragraaf": "Gemiddelde, mediaan en modus"
+        },
+        {
+          "vraag": "Waarvoor gebruik je een kreukellijn?",
+          "antwoord": "Om aan te geven dat een stuk van een as is weggelaten.",
+          "paragraaf": "Lijndiagram en cirkeldiagram"
+        }
+      ],
+      "quiz": [
+        {
+          "vraag": "Een prijs gaat van €50 naar €65. Bereken de toename in euro's.",
+          "opties": [
+            "€15",
+            "€65",
+            "€50",
+            "€115"
+          ],
+          "antwoord_index": 0,
+          "uitleg": "65 − 50 = €15."
+        },
+        {
+          "vraag": "Een prijs gaat van €50 naar €65. Bereken de procentuele toename.",
+          "opties": [
+            "15%",
+            "23,1%",
+            "30%",
+            "76,9%"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "15 / 50 × 100% = 30%."
+        },
+        {
+          "vraag": "Bij welk soort diagram staan de staven los van elkaar?",
+          "opties": [
+            "Histogram",
+            "Staafdiagram",
+            "Lijndiagram",
+            "Cirkeldiagram"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Bij een staafdiagram staan de staven los van elkaar; bij een histogram staan ze tegen elkaar aan."
+        },
+        {
+          "vraag": "Waarvoor gebruik je een cirkeldiagram?",
+          "opties": [
+            "Om een verandering over de tijd te laten zien",
+            "Om een geheel te verdelen in stukken (percentages)",
+            "Om frequenties te turven",
+            "Om het gemiddelde te berekenen"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Een cirkeldiagram laat zien hoe een geheel verdeeld is in stukken op basis van percentages."
+        },
+        {
+          "vraag": "In een groep van 26 leerlingen kiezen er 5 voor fitness. Wat is het percentage? Rond af op één decimaal.",
+          "opties": [
+            "5%",
+            "19,2%",
+            "26%",
+            "52%"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "5 / 26 × 100% = 19,2% (afgerond)."
+        },
+        {
+          "vraag": "Bij het percentage 19,2% uit de vorige vraag, wat is de bijbehorende hoek? Rond af op hele graden.",
+          "opties": [
+            "19°",
+            "52°",
+            "69°",
+            "192°"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "19,2 × 3,6 = 69,12°, afgerond 69°."
+        },
+        {
+          "vraag": "Wat geeft een kreukellijn in een lijndiagram aan?",
+          "opties": [
+            "Dat er een fout is gemaakt",
+            "Dat een stuk van de as is weggelaten",
+            "Dat de grafiek daalt",
+            "Dat de eenheid verandert"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Een kreukellijn geeft aan dat een stuk van de as is weggelaten."
+        },
+        {
+          "vraag": "Bereken het gemiddelde van 5, 8, 9, −3, −6, 8, 12 en −15.",
+          "opties": [
+            "2,25",
+            "9",
+            "18",
+            "26"
+          ],
+          "antwoord_index": 0,
+          "uitleg": "Som = 5+8+9-3-6+8+12-15 = 18. 18 : 8 = 2,25."
+        },
+        {
+          "vraag": "Van de getallen 4, 8, 5, 9, 6, 6 en 4 is de mediaan...",
+          "opties": [
+            "4",
+            "5",
+            "6",
+            "9"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "Op volgorde: 4, 4, 5, 6, 6, 8, 9. De middelste (4e) waarde is 6."
+        },
+        {
+          "vraag": "Van de getallen 4, 8, 5, 9, 6, 6 en 6 is de modus...",
+          "opties": [
+            "4",
+            "5",
+            "6",
+            "9"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "6 komt drie keer voor, vaker dan de andere getallen. De modus is dus 6."
+        },
+        {
+          "vraag": "Wat is een frequentietabel?",
+          "opties": [
+            "Een tabel met percentages",
+            "Een tabel die laat zien hoe vaak elke waarde voorkomt",
+            "Een tabel met gemiddeldes",
+            "Een tabel met alleen hoge getallen"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Een frequentietabel laat per waarde zien hoe vaak (de frequentie) die voorkomt."
+        },
+        {
+          "vraag": "Sharon haalt voor Engels de cijfers 6,5 / 7 / 6,4. Wat is haar gemiddelde? Rond af op één decimaal.",
+          "opties": [
+            "6,3",
+            "6,6",
+            "6,5",
+            "7,0"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "(6,5 + 7 + 6,4) : 3 = 19,9 : 3 = 6,6 (afgerond)."
+        },
+        {
+          "vraag": "Bij een gewogen gemiddelde telt een cijfer met gewicht 3 hoe vaak mee?",
+          "opties": [
+            "1 keer",
+            "2 keer",
+            "3 keer",
+            "Helemaal niet"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "Het gewicht geeft aan hoe vaak een cijfer meetelt; gewicht 3 betekent 3 keer meetellen."
+        },
+        {
+          "vraag": "Een horloge van €54,95 kost in de opruiming €34,95. Wat is de afname in euro's?",
+          "opties": [
+            "€20",
+            "€34,95",
+            "€54,95",
+            "€89,90"
+          ],
+          "antwoord_index": 0,
+          "uitleg": "54,95 − 34,95 = €20."
+        },
+        {
+          "vraag": "Welk soort diagram gebruik je om te laten zien hoe vaak elk aantal ogen bij het gooien van een dobbelsteen voorkwam, met staven tegen elkaar aan?",
+          "opties": [
+            "Cirkeldiagram",
+            "Lijndiagram",
+            "Histogram",
+            "Beelddiagram"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "Een histogram is een staafdiagram met de staven tegen elkaar aan, geschikt voor frequenties."
+        },
+        {
+          "vraag": "In een steelbladdiagram staat de steel meestal voor...",
+          "opties": [
+            "De eenheden",
+            "De tientallen",
+            "Het gemiddelde",
+            "De frequentie"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "De steel staat meestal voor de tientallen, het blad voor de eenheden."
+        }
+      ]
+    },
+    {
+      "titel": "De stelling van Pythagoras",
+      "uitleg": "<div class='box'><h4>Waar gaat dit hoofdstuk over?</h4><p>In dit hoofdstuk leer je rekenen met kwadraten, wortels en machten. Daarna leer je de stelling van Pythagoras: een beroemde regel waarmee je in een rechthoekige driehoek een onbekende zijde kunt berekenen als je de andere twee zijden weet.</p></div><div class='call'>Pythagoras heeft de stelling die zijn naam draagt niet zelf bedacht. Hij was wel de eerste die heeft bewezen dat de stelling altijd klopt, voor elke rechthoekige driehoek.</div>",
+      "subhoofdstukken": [
+        {
+          "titel": "Kwadraten en wortels",
+          "uitleg": "<div class='box'><h4>Kwadraat</h4><p>Het <b>kwadraat</b> van een getal bereken je door het getal met zichzelf te vermenigvuldigen. Het kwadraat van 5 is 5 × 5 = 25. Je schrijft dit als 5².</p></div><div class='box'><h4>Wortel</h4><p>De <b>wortel</b> van een getal is de omgekeerde bewerking van het kwadrateren. De wortel van 25 is 5, want 5 × 5 = 25. Je schrijft dit als √25 = 5.</p></div><div class='voorbeeld'><h4>Voorbeeld: rekenen met kwadraten en wortels</h4><p>Bereken 7,9² en √61.</p><ol class='num'><li>7,9² = 7,9 × 7,9 = 62,41.</li><li>√61 = 7,81... (gebruik de wortelfunctie op je rekenmachine).</li></ol><div class='antwoord'>Antwoord: 7,9² = 62,41 en √61 ≈ 7,81.</div></div><div class='call'>Op je rekenmachine gebruik je de kwadraattoets voor het kwadrateren en de worteltoets voor het worteltrekken.</div>"
+        },
+        {
+          "titel": "Machten",
+          "uitleg": "<div class='box'><h4>Wat is een macht?</h4><p>Bij een <b>macht</b> vermenigvuldig je een getal een aantal keer met zichzelf. In de macht 2⁶ is 2 het <b>grondtal</b> en 6 de <b>exponent</b>. 2⁶ betekent 2 × 2 × 2 × 2 × 2 × 2 en spreek je uit als 'twee tot de zesde macht'.</p></div><div class='voorbeeld'><h4>Voorbeeld: machtsverheffen</h4><p>Bereken 15,8⁵.</p><ol class='num'><li>Gebruik de machttoets van je rekenmachine.</li><li>Tik 15.8 gevolgd door de machttoets en dan 5 in.</li></ol><div class='antwoord'>Antwoord: 15,8⁵ = 984 658,0477.</div></div><div class='call'>Het nemen van de macht van een getal heet ook wel <b>machtsverheffen</b>. Een kwadraat is eigenlijk een macht met exponent 2.</div>"
+        },
+        {
+          "titel": "Zijden benoemen",
+          "uitleg": "<div class='box'><h4>Rechthoekszijden en schuine zijde</h4><p>In een rechthoekige driehoek heb je drie zijden met elk een eigen naam. De twee zijden die vastzitten aan de rechte hoek heten de <b>rechthoekszijden</b> (afgekort: rhz). De zijde tegenover de rechte hoek heet de <b>schuine zijde</b> (afgekort: sz). De schuine zijde is altijd de langste zijde van de driehoek.</p></div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>De rechthoekszijden zitten vast aan de rechte hoek (90°).</li><li>De schuine zijde ligt tegenover de rechte hoek en is de langste zijde.</li></ul></div><div class='diagram-nodig'>Een rechthoekige driehoek DEF met de rechte hoek bij F, waarbij DF en EF zijn aangegeven als rechthoekszijden en DE als schuine zijde.</div>"
+        },
+        {
+          "titel": "De stelling van Pythagoras",
+          "uitleg": "<div class='box'><h4>De stelling</h4><p>Voor elke rechthoekige driehoek geldt: <b>ene rechthoekszijde² + andere rechthoekszijde² = schuine zijde²</b>. Dit noemen we de <b>stelling van Pythagoras</b>. Je gebruikt de stelling om in een rechthoekige driehoek een onbekende zijde te berekenen als je de andere twee zijden weet.</p></div><div class='box'><h4>Werkschema van Pythagoras</h4><p>Bij het rekenen gebruik je het werkschema: rhz² = ..., rhz² = ..., samen opgeteld geeft sz² = ... Daarna trek je de wortel om de zijde zelf te vinden.</p></div><div class='voorbeeld'><h4>Voorbeeld: schuine zijde berekenen</h4><p>Bereken de lengte van zijde AB in driehoek ABC. AC = 5 cm en BC = 4 cm zijn de rechthoekszijden. Rond af op één decimaal.</p><ol class='num'><li>rhz² = 5² = 25.</li><li>rhz² = 4² = 16.</li><li>Samen: sz² = 25 + 16 = 41.</li><li>sz = √41 = 6,40...</li></ol><div class='antwoord'>Antwoord: AB is 6,4 cm.</div></div><div class='call warn'><b>Veelgemaakte fout:</b> je mag de stelling van Pythagoras alleen gebruiken in een rechthoekige driehoek.</div>"
+        },
+        {
+          "titel": "De stelling van Pythagoras toepassen",
+          "uitleg": "<div class='box'><h4>Hulplijnen tekenen</h4><p>Soms moet je de stelling van Pythagoras gebruiken, maar is er geen rechthoekige driehoek getekend. Je tekent dan zelf één of meer hulplijnen om een rechthoekige driehoek te maken, bijvoorbeeld een hoogtelijn.</p></div><div class='box'><h4>Diagonaal van een balk of kubus</h4><p>Ook de lengte van een diagonaal in een balk of kubus kun je berekenen met de stelling van Pythagoras. Vaak moet je dan twee keer de stelling toepassen: eerst voor de diagonaal van een zijvlak, daarna voor de diagonaal door de ruimtefiguur.</p></div><div class='voorbeeld'><h4>Voorbeeld: ladder tegen een muur</h4><p>De bovenkant van een ladder is 4 m boven de grond. De onderkant staat 1 m van de muur. Bereken de lengte van de ladder. Rond af op twee decimalen.</p><ol class='num'><li>rhz² = 4² = 16.</li><li>rhz² = 1² = 1.</li><li>sz² = 16 + 1 = 17.</li><li>sz = √17 = 4,12...</li></ol><div class='antwoord'>Antwoord: de ladder is 4,12 m lang.</div></div>"
+        }
+      ],
+      "begrippen": [
+        {
+          "term": "Kwadraat",
+          "uitleg": "De uitkomst van een getal vermenigvuldigd met zichzelf, bijvoorbeeld 5² = 25.",
+          "paragraaf": "Kwadraten en wortels"
+        },
+        {
+          "term": "Wortel",
+          "uitleg": "De omgekeerde bewerking van kwadrateren; √25 = 5 want 5 × 5 = 25.",
+          "paragraaf": "Kwadraten en wortels"
+        },
+        {
+          "term": "Macht",
+          "uitleg": "Een getal dat je krijgt door een grondtal een aantal keer (de exponent) met zichzelf te vermenigvuldigen.",
+          "paragraaf": "Machten"
+        },
+        {
+          "term": "Grondtal",
+          "uitleg": "Het getal dat bij een macht vermenigvuldigd wordt; in 2⁶ is 2 het grondtal.",
+          "paragraaf": "Machten"
+        },
+        {
+          "term": "Exponent",
+          "uitleg": "Het getal dat aangeeft hoe vaak het grondtal met zichzelf vermenigvuldigd wordt; in 2⁶ is 6 de exponent.",
+          "paragraaf": "Machten"
+        },
+        {
+          "term": "Machtsverheffen",
+          "uitleg": "Het berekenen van de macht van een getal.",
+          "paragraaf": "Machten"
+        },
+        {
+          "term": "Rechthoekszijde",
+          "uitleg": "Een van de twee zijden van een rechthoekige driehoek die vastzitten aan de rechte hoek.",
+          "paragraaf": "Zijden benoemen"
+        },
+        {
+          "term": "Schuine zijde",
+          "uitleg": "De zijde van een rechthoekige driehoek die tegenover de rechte hoek ligt; de langste zijde.",
+          "paragraaf": "Zijden benoemen"
+        },
+        {
+          "term": "Stelling van Pythagoras",
+          "uitleg": "De regel dat in een rechthoekige driehoek geldt: rechthoekszijde² + rechthoekszijde² = schuine zijde².",
+          "paragraaf": "De stelling van Pythagoras"
+        },
+        {
+          "term": "Werkschema van Pythagoras",
+          "uitleg": "Een schema waarin je de kwadraten van de rechthoekszijden optelt om het kwadraat van de schuine zijde te vinden.",
+          "paragraaf": "De stelling van Pythagoras"
+        },
+        {
+          "term": "Hulplijn",
+          "uitleg": "Een zelfgetekende lijn (zoals een hoogtelijn) die helpt om een rechthoekige driehoek te maken.",
+          "paragraaf": "De stelling van Pythagoras toepassen"
+        },
+        {
+          "term": "Diagonaal",
+          "uitleg": "Een lijnstuk dat twee hoekpunten van een figuur of ruimtefiguur verbindt die niet naast elkaar liggen.",
+          "paragraaf": "De stelling van Pythagoras toepassen"
+        }
+      ],
+      "flashcards": [
+        {
+          "vraag": "Hoe bereken je het kwadraat van een getal?",
+          "antwoord": "Je vermenigvuldigt het getal met zichzelf.",
+          "paragraaf": "Kwadraten en wortels"
+        },
+        {
+          "vraag": "Wat is de wortel van 81?",
+          "antwoord": "9, want 9 × 9 = 81.",
+          "paragraaf": "Kwadraten en wortels"
+        },
+        {
+          "vraag": "Wat is het grondtal in de macht 2⁶?",
+          "antwoord": "2.",
+          "paragraaf": "Machten"
+        },
+        {
+          "vraag": "Wat is de exponent in de macht 2⁶?",
+          "antwoord": "6.",
+          "paragraaf": "Machten"
+        },
+        {
+          "vraag": "Welke zijden van een rechthoekige driehoek noem je de rechthoekszijden?",
+          "antwoord": "De twee zijden die vastzitten aan de rechte hoek.",
+          "paragraaf": "Zijden benoemen"
+        },
+        {
+          "vraag": "Welke zijde is de schuine zijde?",
+          "antwoord": "De zijde tegenover de rechte hoek; de langste zijde van de driehoek.",
+          "paragraaf": "Zijden benoemen"
+        },
+        {
+          "vraag": "Wat zegt de stelling van Pythagoras?",
+          "antwoord": "rechthoekszijde² + rechthoekszijde² = schuine zijde².",
+          "paragraaf": "De stelling van Pythagoras"
+        },
+        {
+          "vraag": "In welk soort driehoek mag je de stelling van Pythagoras gebruiken?",
+          "antwoord": "Alleen in een rechthoekige driehoek.",
+          "paragraaf": "De stelling van Pythagoras"
+        },
+        {
+          "vraag": "Wat doe je nadat je sz² hebt uitgerekend?",
+          "antwoord": "Je trekt de wortel om de lengte van de schuine zijde te vinden.",
+          "paragraaf": "De stelling van Pythagoras"
+        },
+        {
+          "vraag": "Wat teken je als er geen rechthoekige driehoek in de figuur staat, maar je de stelling van Pythagoras toch nodig hebt?",
+          "antwoord": "Een hulplijn, bijvoorbeeld een hoogtelijn, om een rechthoekige driehoek te maken.",
+          "paragraaf": "De stelling van Pythagoras toepassen"
+        },
+        {
+          "vraag": "Hoeveel keer pas je de stelling van Pythagoras vaak toe bij het berekenen van de diagonaal van een balk?",
+          "antwoord": "Twee keer: eerst voor het zijvlak, daarna voor de ruimtediagonaal.",
+          "paragraaf": "De stelling van Pythagoras toepassen"
+        },
+        {
+          "vraag": "Hoe schrijf je 'de wortel van 25' in wiskundige notatie?",
+          "antwoord": "√25.",
+          "paragraaf": "Kwadraten en wortels"
+        }
+      ],
+      "quiz": [
+        {
+          "vraag": "Wat is 7²?",
+          "opties": [
+            "14",
+            "49",
+            "77",
+            "72"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "7² = 7 × 7 = 49."
+        },
+        {
+          "vraag": "Wat is √36?",
+          "opties": [
+            "6",
+            "18",
+            "72",
+            "1296"
+          ],
+          "antwoord_index": 0,
+          "uitleg": "√36 = 6, want 6 × 6 = 36."
+        },
+        {
+          "vraag": "In de macht 5³, wat is de exponent?",
+          "opties": [
+            "3",
+            "5",
+            "15",
+            "125"
+          ],
+          "antwoord_index": 0,
+          "uitleg": "In 5³ is 5 het grondtal en 3 de exponent."
+        },
+        {
+          "vraag": "Welke zijde van een rechthoekige driehoek is de schuine zijde?",
+          "opties": [
+            "De kortste zijde",
+            "Een van de rechthoekszijden",
+            "De zijde tegenover de rechte hoek",
+            "Een willekeurige zijde"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "De schuine zijde ligt tegenover de rechte hoek en is de langste zijde."
+        },
+        {
+          "vraag": "In een rechthoekige driehoek zijn de rechthoekszijden 3 cm en 4 cm. Wat is de schuine zijde?",
+          "opties": [
+            "5 cm",
+            "7 cm",
+            "12 cm",
+            "25 cm"
+          ],
+          "antwoord_index": 0,
+          "uitleg": "3² + 4² = 9 + 16 = 25, √25 = 5 cm."
+        },
+        {
+          "vraag": "In een rechthoekige driehoek is de schuine zijde 13 cm en één rechthoekszijde 5 cm. Wat is de andere rechthoekszijde?",
+          "opties": [
+            "8 cm",
+            "12 cm",
+            "18 cm",
+            "169 cm"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "13² − 5² = 169 − 25 = 144, √144 = 12 cm."
+        },
+        {
+          "vraag": "Mag je de stelling van Pythagoras gebruiken in een driehoek zonder rechte hoek?",
+          "opties": [
+            "Ja, altijd",
+            "Nee, alleen in een rechthoekige driehoek",
+            "Alleen als de driehoek gelijkbenig is",
+            "Alleen als je de oppervlakte al weet"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "De stelling van Pythagoras geldt alleen voor rechthoekige driehoeken."
+        },
+        {
+          "vraag": "Een ladder staat met de onderkant 1 m van de muur en de bovenkant 4 m boven de grond. Hoe lang is de ladder? Rond af op twee decimalen.",
+          "opties": [
+            "4,12 m",
+            "4,00 m",
+            "5,00 m",
+            "17,00 m"
+          ],
+          "antwoord_index": 0,
+          "uitleg": "1² + 4² = 1 + 16 = 17, √17 = 4,12 m."
+        },
+        {
+          "vraag": "Wat gebruik je als er geen rechthoekige driehoek getekend is, maar je die wel nodig hebt?",
+          "opties": [
+            "Een gok",
+            "Een hulplijn",
+            "Een cirkeldiagram",
+            "Een schaallijn"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Je tekent zelf een hulplijn, zoals een hoogtelijn, om een rechthoekige driehoek te maken."
+        },
+        {
+          "vraag": "Een kubus heeft ribben van 4 cm. Wat is eerst nodig om de ruimtediagonaal te berekenen?",
+          "opties": [
+            "De oppervlakte van een zijvlak",
+            "De diagonaal van een zijvlak",
+            "De omtrek van de kubus",
+            "De inhoud van de kubus"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Je berekent eerst de diagonaal van een zijvlak met Pythagoras, en gebruikt die daarna om de ruimtediagonaal te berekenen."
+        },
+        {
+          "vraag": "Wat is 6,5²?",
+          "opties": [
+            "13",
+            "39",
+            "42,25",
+            "6,5"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "6,5² = 6,5 × 6,5 = 42,25."
+        },
+        {
+          "vraag": "Welke uitspraak over Pythagoras klopt?",
+          "opties": [
+            "Hij bedacht de stelling als eerste zonder bewijs",
+            "Hij was de eerste die bewees dat de stelling altijd klopt",
+            "Hij leefde in Nederland",
+            "Hij ontdekte de stelling pas na zijn dood"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Pythagoras bedacht de stelling niet zelf, maar was de eerste die bewees dat hij altijd klopt."
+        },
+        {
+          "vraag": "Een vlieger hangt aan een 30 m lang touw. Jack staat recht onder de vlieger, 24 m van Jos. Hoe hoog hangt de vlieger?",
+          "opties": [
+            "6 m",
+            "18 m",
+            "24 m",
+            "54 m"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "30² − 24² = 900 − 576 = 324, √324 = 18 m."
+        },
+        {
+          "vraag": "Wat is het werkschema van Pythagoras?",
+          "opties": [
+            "Een schema om hoeken te tekenen",
+            "Een schema om de kwadraten van de rechthoekszijden op te tellen tot het kwadraat van de schuine zijde",
+            "Een schema om formules te maken",
+            "Een schema om grafieken te tekenen"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "In het werkschema tel je rhz² + rhz² op tot sz², en trek je daarna de wortel."
+        },
+        {
+          "vraag": "Welke driehoek is rechthoekig? Driehoek A heeft zijden 6, 8 en 10. Driehoek B heeft zijden 5, 6 en 8.",
+          "opties": [
+            "Alleen driehoek A",
+            "Alleen driehoek B",
+            "Beide driehoeken",
+            "Geen van beide"
+          ],
+          "antwoord_index": 0,
+          "uitleg": "6² + 8² = 36 + 64 = 100 = 10², dus driehoek A is rechthoekig. Bij driehoek B klopt 5² + 6² = 61 ≠ 8² = 64 niet."
+        }
+      ]
+    },
+    {
+      "titel": "Vergroten en verkleinen",
+      "uitleg": "<div class='box'><h4>Waar gaat dit hoofdstuk over?</h4><p>In dit hoofdstuk leer je rekenen met de vergrotingsfactor: hoeveel groter of kleiner een figuur wordt bij een vergroting of verkleining. Je leert ook rekenen met gelijkvormige driehoeken, met schaal en met schaalmodellen.</p></div><div class='call'>Bij een verkleining is de vergrotingsfactor kleiner dan 1.</div>",
+      "subhoofdstukken": [
+        {
+          "titel": "Vergrotingsfactor",
+          "uitleg": "<div class='box'><h4>Wat is een vergrotingsfactor?</h4><p>Als een figuur vergroot of verkleind wordt, blijft de vorm hetzelfde. De oorspronkelijke figuur heet het <b>origineel</b>, de nieuwe figuur het <b>beeld</b>. De <b>vergrotingsfactor</b> bereken je met de formule <b>vergrotingsfactor = lengte beeld : lengte origineel</b>.</p></div><div class='box'><h4>Gelijkvormig</h4><p>Je mag alleen spreken van een vergroting als <i>alle</i> maten dezelfde vergrotingsfactor hebben. De figuren hebben dan dezelfde vorm: de figuren zijn <b>gelijkvormig</b>.</p></div><div class='voorbeeld'><h4>Voorbeeld: vergrotingsfactor berekenen</h4><p>Rechthoek A'B'C'D' is een vergroting van rechthoek ABCD. AB = 2,2 cm en A'B' = 3,6 cm. Bereken de vergrotingsfactor. Rond af op twee decimalen.</p><ol class='num'><li>Zijde A'B' is het beeld, zijde AB is het origineel.</li><li>vergrotingsfactor = 3,6 : 2,2 = 1,636...</li></ol><div class='antwoord'>Antwoord: de vergrotingsfactor is 1,64.</div></div><div class='call'>Bij een verkleining is de vergrotingsfactor kleiner dan 1.</div>"
+        },
+        {
+          "titel": "Gelijkvormige driehoeken",
+          "uitleg": "<div class='box'><h4>Overeenkomstige zijden en hoeken</h4><p>Bij gelijkvormige driehoeken zijn de hoeken die bij elkaar horen (<b>overeenkomstige hoeken</b>) even groot. De zijden die bij elkaar horen (<b>overeenkomstige zijden</b>) hebben allemaal dezelfde vergrotingsfactor.</p></div><div class='box'><h4>Zijden berekenen met een tabel</h4><p>In gelijkvormige driehoeken kun je onbekende zijden berekenen met behulp van een tabel en de vergrotingsfactor. Zet de kleinste driehoek boven in de tabel en de grootste driehoek eronder, met de overeenkomstige zijden onder elkaar.</p></div><div class='voorbeeld'><h4>Voorbeeld: zijden berekenen met gelijkvormigheid</h4><p>Driehoek PQR en driehoek CAB zijn gelijkvormig. PQ = 15 cm, CA = 30 cm en PR = 25 cm. Bereken CB.</p><ol class='num'><li>Zet de zijden in een tabel: △PQR boven (PQ = 15, PR = 25), △CAB onder (CA = 30, CB = ?).</li><li>Bereken de vergrotingsfactor: 30 : 15 = 2.</li><li>CB = 25 × 2 = 50.</li></ol><div class='antwoord'>Antwoord: CB is 50 cm.</div></div>"
+        },
+        {
+          "titel": "Oppervlakte en inhoud vergroten",
+          "uitleg": "<div class='box'><h4>Van vergrotingsfactor naar oppervlakte</h4><p>Wordt een figuur vergroot met een vergrotingsfactor, dan wordt de oppervlakte <i>niet</i> met dezelfde factor vergroot. De lengte en de breedte worden allebei met de vergrotingsfactor vermenigvuldigd, dus de oppervlakte wordt vergroot met het <b>kwadraat</b> van de vergrotingsfactor: <b>oppervlakte vergroting = vergrotingsfactor² × oppervlakte origineel</b>.</p></div><div class='box'><h4>Van vergrotingsfactor naar inhoud</h4><p>Bij een ruimtefiguur wordt de inhoud vergroot met de <b>derde macht</b> van de vergrotingsfactor: <b>inhoud vergroting = vergrotingsfactor³ × inhoud origineel</b>.</p></div><div class='voorbeeld'><h4>Voorbeeld: oppervlakte van een vergroting</h4><p>De oppervlakte van een figuur is 8,5 cm². De figuur wordt vergroot met factor 1,7. Bereken de oppervlakte van de vergroting. Rond af op één decimaal.</p><ol class='num'><li>oppervlakte vergroting = 1,7² × 8,5.</li><li>1,7² × 8,5 = 24,565.</li></ol><div class='antwoord'>Antwoord: de oppervlakte van de vergroting is 24,6 cm².</div></div><div class='call warn'><b>Veelgemaakte fout:</b> denk niet dat de oppervlakte met dezelfde factor vergroot wordt als de lengtematen. Gebruik het kwadraat van de vergrotingsfactor voor oppervlakte en de derde macht voor inhoud.</div>"
+        },
+        {
+          "titel": "Schaal",
+          "uitleg": "<div class='box'><h4>Wat is een schaal?</h4><p>Onder een plattegrond of kaart staat vaak een <b>schaal</b>, bijvoorbeeld schaal 1 : 100. Dat betekent dat de maten in het echt 100 keer zo groot zijn als op de tekening. De vergrotingsfactor die bij deze schaal hoort, is dus 100.</p></div><div class='box'><h4>Hemelsbreed</h4><p>Op een kaart bereken je afstanden vaak <b>hemelsbreed</b>: dan meet je de afstand in een rechte lijn, zonder rekening te houden met wegen of bochten.</p></div><div class='voorbeeld'><h4>Voorbeeld: afstand met schaal</h4><p>Onder een kaart staat: 1 cm op de kaart is 30 km in het echt. Twee plaatsen liggen 4 cm van elkaar op de kaart. Bereken de echte afstand.</p><ol class='num'><li>4 × 30 = 120.</li></ol><div class='antwoord'>Antwoord: de plaatsen liggen 120 km hemelsbreed van elkaar.</div></div>"
+        },
+        {
+          "titel": "Schaalmodel",
+          "uitleg": "<div class='box'><h4>Rekenen met schaalmodellen</h4><p>Van gebouwen en voorwerpen worden vaak <b>schaalmodellen</b> gemaakt, bijvoorbeeld op schaal 1 : 87. Met de schaal kun je de echte maat berekenen als je de maat van het model weet, of andersom.</p></div><div class='voorbeeld'><h4>Voorbeeld: echte hoogte berekenen</h4><p>Een model van de Domtoren is gemaakt op schaal 1 : 300. Het model is 37,4 cm hoog. Bereken de echte hoogte van de Domtoren in meters.</p><ol class='num'><li>De echte toren is 300 keer zo hoog als het model: 37,4 × 300 = 11 220 cm.</li><li>Reken om naar meters: 11 220 cm = 112,2 m.</li></ol><div class='antwoord'>Antwoord: de Domtoren is 112,2 m hoog.</div></div><div class='call'>Reken bij schaalmodellen altijd goed op welke eenheid gevraagd wordt (centimeters of meters) en reken zo nodig om.</div>"
+        }
+      ],
+      "begrippen": [
+        {
+          "term": "Vergrotingsfactor",
+          "uitleg": "Het getal waarmee de maten van een origineel vermenigvuldigd worden om het beeld te krijgen: lengte beeld : lengte origineel.",
+          "paragraaf": "Vergrotingsfactor"
+        },
+        {
+          "term": "Origineel",
+          "uitleg": "De oorspronkelijke figuur voordat hij vergroot of verkleind is.",
+          "paragraaf": "Vergrotingsfactor"
+        },
+        {
+          "term": "Beeld",
+          "uitleg": "De figuur die ontstaat na een vergroting of verkleining.",
+          "paragraaf": "Vergrotingsfactor"
+        },
+        {
+          "term": "Gelijkvormig",
+          "uitleg": "Figuren zijn gelijkvormig als alle maten dezelfde vergrotingsfactor hebben; ze hebben dan dezelfde vorm.",
+          "paragraaf": "Vergrotingsfactor"
+        },
+        {
+          "term": "Overeenkomstige zijden",
+          "uitleg": "Zijden van gelijkvormige figuren die bij elkaar horen en dezelfde vergrotingsfactor hebben.",
+          "paragraaf": "Gelijkvormige driehoeken"
+        },
+        {
+          "term": "Overeenkomstige hoeken",
+          "uitleg": "Hoeken van gelijkvormige figuren die bij elkaar horen en even groot zijn.",
+          "paragraaf": "Gelijkvormige driehoeken"
+        },
+        {
+          "term": "Schaal",
+          "uitleg": "De verhouding tussen een maat op een tekening of kaart en de echte maat, bijvoorbeeld schaal 1 : 100.",
+          "paragraaf": "Schaal"
+        },
+        {
+          "term": "Hemelsbreed",
+          "uitleg": "De afstand tussen twee punten gemeten in een rechte lijn.",
+          "paragraaf": "Schaal"
+        },
+        {
+          "term": "Schaalmodel",
+          "uitleg": "Een verkleinde of vergrote nabootsing van een echt voorwerp, gemaakt volgens een vaste schaal.",
+          "paragraaf": "Schaalmodel"
+        },
+        {
+          "term": "Kwadraat van de vergrotingsfactor",
+          "uitleg": "De factor waarmee de oppervlakte van een figuur verandert bij een vergroting: vergrotingsfactor².",
+          "paragraaf": "Oppervlakte en inhoud vergroten"
+        },
+        {
+          "term": "Derde macht van de vergrotingsfactor",
+          "uitleg": "De factor waarmee de inhoud van een ruimtefiguur verandert bij een vergroting: vergrotingsfactor³.",
+          "paragraaf": "Oppervlakte en inhoud vergroten"
+        }
+      ],
+      "flashcards": [
+        {
+          "vraag": "Hoe bereken je de vergrotingsfactor?",
+          "antwoord": "vergrotingsfactor = lengte beeld : lengte origineel.",
+          "paragraaf": "Vergrotingsfactor"
+        },
+        {
+          "vraag": "Wanneer is er sprake van een verkleining?",
+          "antwoord": "Als de vergrotingsfactor kleiner is dan 1.",
+          "paragraaf": "Vergrotingsfactor"
+        },
+        {
+          "vraag": "Wanneer zijn twee figuren gelijkvormig?",
+          "antwoord": "Als alle maten dezelfde vergrotingsfactor hebben, zodat de vorm hetzelfde blijft.",
+          "paragraaf": "Vergrotingsfactor"
+        },
+        {
+          "vraag": "Wat zijn overeenkomstige zijden?",
+          "antwoord": "Zijden van gelijkvormige figuren die bij elkaar horen.",
+          "paragraaf": "Gelijkvormige driehoeken"
+        },
+        {
+          "vraag": "Hoe zet je gelijkvormige driehoeken in een tabel om een onbekende zijde te berekenen?",
+          "antwoord": "Je zet de kleinste driehoek boven en de grootste driehoek onder, met overeenkomstige zijden onder elkaar.",
+          "paragraaf": "Gelijkvormige driehoeken"
+        },
+        {
+          "vraag": "Met welke factor vergroot de oppervlakte van een figuur bij een vergroting?",
+          "antwoord": "Met het kwadraat van de vergrotingsfactor.",
+          "paragraaf": "Oppervlakte en inhoud vergroten"
+        },
+        {
+          "vraag": "Met welke factor vergroot de inhoud van een ruimtefiguur bij een vergroting?",
+          "antwoord": "Met de derde macht van de vergrotingsfactor.",
+          "paragraaf": "Oppervlakte en inhoud vergroten"
+        },
+        {
+          "vraag": "Wat betekent schaal 1 : 100?",
+          "antwoord": "Dat de maten in het echt 100 keer zo groot zijn als op de tekening.",
+          "paragraaf": "Schaal"
+        },
+        {
+          "vraag": "Wat betekent hemelsbreed?",
+          "antwoord": "De afstand gemeten in een rechte lijn tussen twee punten.",
+          "paragraaf": "Schaal"
+        },
+        {
+          "vraag": "Een model is gemaakt op schaal 1 : 300. Hoe bereken je de echte hoogte uit de modelhoogte?",
+          "antwoord": "Je vermenigvuldigt de modelhoogte met 300.",
+          "paragraaf": "Schaalmodel"
+        },
+        {
+          "vraag": "Wat is het origineel bij een vergroting?",
+          "antwoord": "De oorspronkelijke figuur, vóór de vergroting.",
+          "paragraaf": "Vergrotingsfactor"
+        }
+      ],
+      "quiz": [
+        {
+          "vraag": "Zijde AB = 2 cm (origineel) en A'B' = 5 cm (beeld). Wat is de vergrotingsfactor?",
+          "opties": [
+            "0,4",
+            "2,5",
+            "3",
+            "5"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "vergrotingsfactor = 5 : 2 = 2,5."
+        },
+        {
+          "vraag": "Wanneer is een vergroting eigenlijk een verkleining?",
+          "opties": [
+            "Als de vergrotingsfactor groter dan 1 is",
+            "Als de vergrotingsfactor precies 1 is",
+            "Als de vergrotingsfactor kleiner dan 1 is",
+            "Dat kan nooit"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "Bij een vergrotingsfactor kleiner dan 1 wordt de figuur juist kleiner."
+        },
+        {
+          "vraag": "Twee driehoeken zijn gelijkvormig. Wat geldt er voor de overeenkomstige hoeken?",
+          "opties": [
+            "Ze zijn even groot",
+            "Ze zijn samen 180°",
+            "Ze zijn samen 90°",
+            "Ze verschillen altijd"
+          ],
+          "antwoord_index": 0,
+          "uitleg": "Bij gelijkvormige figuren zijn overeenkomstige hoeken altijd even groot."
+        },
+        {
+          "vraag": "Driehoek PQR is gelijkvormig met driehoek CAB. PQ = 15, CA = 30, PR = 25. Wat is CB?",
+          "opties": [
+            "12,5",
+            "25",
+            "40",
+            "50"
+          ],
+          "antwoord_index": 3,
+          "uitleg": "vergrotingsfactor = 30 : 15 = 2. CB = 25 × 2 = 50."
+        },
+        {
+          "vraag": "Een figuur van 8,5 cm² wordt vergroot met factor 1,7. Wat is de nieuwe oppervlakte? Rond af op één decimaal.",
+          "opties": [
+            "10,2 cm²",
+            "14,45 cm²",
+            "24,6 cm²",
+            "42,25 cm²"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "oppervlakte vergroting = 1,7² × 8,5 = 24,6 cm² (afgerond)."
+        },
+        {
+          "vraag": "Een doos wordt vergroot met vergrotingsfactor 2. Hoeveel keer zo groot wordt de inhoud?",
+          "opties": [
+            "2 keer",
+            "4 keer",
+            "8 keer",
+            "16 keer"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "inhoud vergroting = vergrotingsfactor³ × inhoud origineel = 2³ = 8 keer zo groot."
+        },
+        {
+          "vraag": "Wat betekent schaal 1 : 50 op een plattegrond?",
+          "opties": [
+            "De tekening is 50 keer zo groot als het echt",
+            "De maten in het echt zijn 50 keer zo groot als op de tekening",
+            "Er passen 50 tekeningen in het echte object",
+            "De schaal heeft niets met de maten te maken"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Bij schaal 1 : 50 zijn de echte maten 50 keer zo groot als op de tekening."
+        },
+        {
+          "vraag": "Twee plaatsen liggen 3 cm van elkaar op een kaart met schaal waarbij 1 cm = 30 km. Hoe ver liggen ze hemelsbreed uit elkaar?",
+          "opties": [
+            "10 km",
+            "27 km",
+            "33 km",
+            "90 km"
+          ],
+          "antwoord_index": 3,
+          "uitleg": "3 × 30 = 90 km."
+        },
+        {
+          "vraag": "Een model van een toren is gemaakt op schaal 1 : 87 en is 65 cm hoog. Hoe hoog is de echte toren?",
+          "opties": [
+            "0,75 m",
+            "56,55 m",
+            "65 m",
+            "5655 m"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "65 × 87 = 5655 cm = 56,55 m."
+        },
+        {
+          "vraag": "Wat is de vergrotingsfactor bij een verkleining tot de helft?",
+          "opties": [
+            "0,5",
+            "1",
+            "2",
+            "50"
+          ],
+          "antwoord_index": 0,
+          "uitleg": "Bij een verkleining tot de helft is de vergrotingsfactor 0,5."
+        },
+        {
+          "vraag": "Waarom gebruik je bij oppervlakte het kwadraat van de vergrotingsfactor?",
+          "opties": [
+            "Omdat lengte én breedte allebei met de vergrotingsfactor vermenigvuldigd worden",
+            "Omdat dat toevallig zo is afgesproken",
+            "Omdat oppervlakte altijd een kwadraat is",
+            "Dat klopt niet, je gebruikt gewoon de vergrotingsfactor"
+          ],
+          "antwoord_index": 0,
+          "uitleg": "Zowel lengte als breedte worden vermenigvuldigd met de vergrotingsfactor, dus de oppervlakte met het kwadraat daarvan."
+        },
+        {
+          "vraag": "Wat is nodig om met een tabel een onbekende zijde in gelijkvormige driehoeken te berekenen?",
+          "opties": [
+            "De hoeken van de driehoeken",
+            "De vergrotingsfactor tussen de driehoeken",
+            "Alleen de oppervlakte",
+            "De omtrek van beide driehoeken"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Met de vergrotingsfactor tussen overeenkomstige zijden kun je een onbekende zijde berekenen."
+        },
+        {
+          "vraag": "Een postzegel van 7,2 cm² wordt vergroot met factor 12,5. Wat is de oppervlakte van de vergroting? Rond af op een geheel getal.",
+          "opties": [
+            "90 cm²",
+            "1125 cm²",
+            "156,25 cm²",
+            "12,5 cm²"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "oppervlakte vergroting = 12,5² × 7,2 = 1125 cm² (afgerond)."
+        }
+      ]
+    },
+    {
+      "titel": "Formules en grafieken",
+      "uitleg": "<div class='box'><h4>Waar gaat dit hoofdstuk over?</h4><p>In dit hoofdstuk leer je rekenen met lastigere formules: formules met een deelstreep, met haakjes, met kwadraten en met wortels. Ook leer je wat een periodieke grafiek is.</p></div><div class='call'>Een paraboolboog is in de architectuur een boogconstructie in de vorm van een parabool. Zulke gebogen vormen zie je terug in gebouwen, kerken en bruggen: ze zien er mooi uit en een boog is ook een stevige constructie.</div>",
+      "subhoofdstukken": [
+        {
+          "titel": "Formules met een deelstreep",
+          "uitleg": "<div class='box'><h4>Rekenvolgorde</h4><p>Bij het berekenen van formules gebruik je altijd de vaste rekenvolgorde: eerst wat binnen de haakjes staat, dan machtsverheffen en worteltrekken, dan vermenigvuldigen en delen, en ten slotte optellen en aftrekken (steeds van links naar rechts).</p></div><div class='box'><h4>Deelstreep op de rekenmachine</h4><p>Bij een formule met een <b>deelstreep</b> moet je eerst alles boven de streep en alles onder de streep apart berekenen, voordat je deelt. Op de rekenmachine gebruik je hiervoor de <b>breukentoets</b>.</p></div><div class='voorbeeld'><h4>Voorbeeld: deelstreep op de rekenmachine</h4><p>Bereken (165 + 182) / (8 : 4) − 2.</p><ol class='num'><li>Vul de breukentoets in: boven 165 + 182, onder 8 : 4.</li><li>Dat geeft 347 : 2 = 171,5 (let op je eigen rekenmachine bij het optellen).</li><li>Trek er ten slotte 2 vanaf.</li></ol><div class='antwoord'>Antwoord: 171,5 (reken de tussenstappen zelf na op je rekenmachine).</div></div>"
+        },
+        {
+          "titel": "Formules met haakjes",
+          "uitleg": "<div class='box'><h4>Haakjes wegwerken</h4><p>In sommige formules staan haakjes, bijvoorbeeld prijs (€) = 5 × (t + 3). Je berekent eerst wat er in de haakjes staat, en vermenigvuldigt daarna met het getal ervoor. Je mag ook eerst de haakjes wegwerken door elk getal in de haakjes apart te vermenigvuldigen: 5 × (t + 3) = 5 × t + 5 × 3 = 5t + 15.</p></div><div class='voorbeeld'><h4>Voorbeeld: formule met haakjes berekenen</h4><p>Bij een formule hoort: kosten (€) = 8 × (t + 5). Bereken de kosten als t = 4.</p><ol class='num'><li>Bereken eerst wat in de haakjes staat: 4 + 5 = 9.</li><li>Vermenigvuldig met het getal ervoor: 8 × 9 = 72.</li></ol><div class='antwoord'>Antwoord: de kosten zijn €72.</div></div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>Bereken eerst binnen de haakjes, en vermenigvuldig daarna met het getal ervoor.</li><li>Of werk de haakjes weg: a × (b + c) = a × b + a × c.</li></ul></div>"
+        },
+        {
+          "titel": "Formules met kwadraten",
+          "uitleg": "<div class='box'><h4>Kwadraten in een formule</h4><p>In sommige formules komt een kwadraat voor, bijvoorbeeld oppervlakte (m²) = 3 × r². Volgens de rekenvolgorde bereken je eerst het kwadraat, en pas daarna de vermenigvuldiging.</p></div><div class='voorbeeld'><h4>Voorbeeld: formule met een kwadraat berekenen</h4><p>Bij een formule hoort: oppervlakte (m²) = 3 × r². Bereken de oppervlakte als r = 4.</p><ol class='num'><li>Bereken eerst het kwadraat: 4² = 16.</li><li>Vermenigvuldig met 3: 3 × 16 = 48.</li></ol><div class='antwoord'>Antwoord: de oppervlakte is 48 m².</div></div><div class='call warn'><b>Veelgemaakte fout:</b> reken niet eerst 3 × r uit en kwadrateer dat pas; volgens de rekenvolgorde moet je eerst r kwadrateren en dan pas met 3 vermenigvuldigen.</div>"
+        },
+        {
+          "titel": "Formules met wortels",
+          "uitleg": "<div class='box'><h4>Wortels in een formule</h4><p>Ook een wortelteken kan in een formule voorkomen, bijvoorbeeld tijd (s) = √(2h / g). Bij het berekenen bepaal je eerst wat er onder het wortelteken staat, en trek je daarna pas de wortel.</p></div><div class='voorbeeld'><h4>Voorbeeld: formule met een wortel berekenen</h4><p>Bij een formule hoort: snelheid = √(20 × h). Bereken de snelheid als h = 5. Rond af op één decimaal.</p><ol class='num'><li>Bereken eerst wat onder de wortel staat: 20 × 5 = 100.</li><li>Trek daarna de wortel: √100 = 10.</li></ol><div class='antwoord'>Antwoord: de snelheid is 10,0.</div></div><div class='call'>Gebruik op de rekenmachine de worteltoets pas nadat je de berekening onder het wortelteken hebt afgerond, of gebruik de haakjes van je rekenmachine.</div>"
+        },
+        {
+          "titel": "Periodieke grafiek",
+          "uitleg": "<div class='box'><h4>Wat is een periodieke grafiek?</h4><p>Een <b>periodieke grafiek</b> is een grafiek waarbij hetzelfde patroon zich steeds herhaalt, bijvoorbeeld bij eb en vloed, de stand van de zon op een dag, of de hoogte van een punt op een draaiend reuzenrad. De lengte van één herhaling noem je de <b>periode</b>.</p></div><div class='call'>Bij een periodieke grafiek kun je, als je één periode kent, voorspellen hoe de grafiek er verderop uit zal zien: het patroon herhaalt zich steeds opnieuw.</div>"
+        }
+      ],
+      "begrippen": [
+        {
+          "term": "Deelstreep",
+          "uitleg": "Een streep in een formule die aangeeft dat je eerst boven en onder de streep apart moet uitrekenen, voordat je deelt.",
+          "paragraaf": "Formules met een deelstreep"
+        },
+        {
+          "term": "Breukentoets",
+          "uitleg": "De toets op de rekenmachine waarmee je berekeningen met een deelstreep kunt invoeren.",
+          "paragraaf": "Formules met een deelstreep"
+        },
+        {
+          "term": "Rekenvolgorde",
+          "uitleg": "De vaste volgorde waarin je een berekening uitvoert: haakjes, machten/wortels, keer/delen, plus/min.",
+          "paragraaf": "Formules met een deelstreep"
+        },
+        {
+          "term": "Haakjes wegwerken",
+          "uitleg": "Een haakje in een formule vervangen door elke term apart te vermenigvuldigen: a × (b + c) = a × b + a × c.",
+          "paragraaf": "Formules met haakjes"
+        },
+        {
+          "term": "Kwadraat in een formule",
+          "uitleg": "Een deel van een formule dat je eerst moet kwadrateren volgens de rekenvolgorde.",
+          "paragraaf": "Formules met kwadraten"
+        },
+        {
+          "term": "Wortelteken",
+          "uitleg": "Het teken √ dat aangeeft dat je de wortel moet berekenen van wat eronder staat.",
+          "paragraaf": "Formules met wortels"
+        },
+        {
+          "term": "Periodieke grafiek",
+          "uitleg": "Een grafiek waarin hetzelfde patroon zich steeds op dezelfde manier herhaalt.",
+          "paragraaf": "Periodieke grafiek"
+        },
+        {
+          "term": "Periode",
+          "uitleg": "De lengte van één herhaling in een periodieke grafiek.",
+          "paragraaf": "Periodieke grafiek"
+        },
+        {
+          "term": "Formule",
+          "uitleg": "Een wiskundig recept waarmee je bij een gegeven waarde een uitkomst kunt berekenen.",
+          "paragraaf": "Formules met haakjes"
+        },
+        {
+          "term": "Parabool",
+          "uitleg": "Een gebogen vorm die je terugziet in bijvoorbeeld boogconstructies in de architectuur.",
+          "paragraaf": "Formules met kwadraten"
+        }
+      ],
+      "flashcards": [
+        {
+          "vraag": "Wat doe je eerst bij een formule met een deelstreep?",
+          "antwoord": "Je berekent eerst alles boven en alles onder de streep apart, voordat je deelt.",
+          "paragraaf": "Formules met een deelstreep"
+        },
+        {
+          "vraag": "Welke toets gebruik je op de rekenmachine bij een deelstreep?",
+          "antwoord": "De breukentoets.",
+          "paragraaf": "Formules met een deelstreep"
+        },
+        {
+          "vraag": "Hoe werk je de haakjes weg in a × (b + c)?",
+          "antwoord": "a × (b + c) = a × b + a × c.",
+          "paragraaf": "Formules met haakjes"
+        },
+        {
+          "vraag": "Wat bereken je eerst in de formule 3 × r²?",
+          "antwoord": "Eerst het kwadraat r², daarna pas vermenigvuldigen met 3.",
+          "paragraaf": "Formules met kwadraten"
+        },
+        {
+          "vraag": "Wat doe je eerst bij een formule met een wortelteken?",
+          "antwoord": "Je berekent eerst wat er onder het wortelteken staat, en trekt daarna de wortel.",
+          "paragraaf": "Formules met wortels"
+        },
+        {
+          "vraag": "Wat is een periodieke grafiek?",
+          "antwoord": "Een grafiek waarbij hetzelfde patroon zich steeds herhaalt.",
+          "paragraaf": "Periodieke grafiek"
+        },
+        {
+          "vraag": "Wat is de periode van een periodieke grafiek?",
+          "antwoord": "De lengte van één herhaling van het patroon.",
+          "paragraaf": "Periodieke grafiek"
+        },
+        {
+          "vraag": "Noem een voorbeeld van iets dat je met een periodieke grafiek kunt weergeven.",
+          "antwoord": "Bijvoorbeeld eb en vloed, of de stand van de zon op een dag.",
+          "paragraaf": "Periodieke grafiek"
+        },
+        {
+          "vraag": "Wat is de rekenvolgorde bij een berekening?",
+          "antwoord": "Eerst haakjes, dan machtsverheffen/worteltrekken, dan keer/delen, dan plus/min.",
+          "paragraaf": "Formules met een deelstreep"
+        },
+        {
+          "vraag": "Bij de formule kosten (€) = 8 × (t + 5), wat bereken je eerst als t = 4?",
+          "antwoord": "Eerst wat in de haakjes staat: 4 + 5 = 9.",
+          "paragraaf": "Formules met haakjes"
+        }
+      ],
+      "quiz": [
+        {
+          "vraag": "Wat moet je bij een deelstreep in een formule eerst doen?",
+          "opties": [
+            "Meteen delen",
+            "Boven en onder de streep apart uitrekenen",
+            "Alleen boven de streep uitrekenen",
+            "De streep negeren"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Je berekent eerst wat boven en wat onder de deelstreep staat, en deelt daarna pas."
+        },
+        {
+          "vraag": "Welke toets gebruik je voor een deelstreep op de rekenmachine?",
+          "opties": [
+            "De machttoets",
+            "De worteltoets",
+            "De breukentoets",
+            "De haakjestoets"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "Met de breukentoets kun je een berekening met een deelstreep invoeren."
+        },
+        {
+          "vraag": "Werk de haakjes weg: 4 × (t + 6).",
+          "opties": [
+            "4t + 6",
+            "4t + 24",
+            "t + 24",
+            "4t + 10"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "4 × (t + 6) = 4 × t + 4 × 6 = 4t + 24."
+        },
+        {
+          "vraag": "Bij de formule kosten (€) = 8 × (t + 5): wat zijn de kosten als t = 4?",
+          "opties": [
+            "€37",
+            "€52",
+            "€72",
+            "€92"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "4 + 5 = 9, 8 × 9 = 72."
+        },
+        {
+          "vraag": "Bij de formule oppervlakte (m²) = 3 × r²: wat is de oppervlakte als r = 4?",
+          "opties": [
+            "12",
+            "24",
+            "48",
+            "144"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "4² = 16, 3 × 16 = 48."
+        },
+        {
+          "vraag": "Waarom bereken je bij 3 × r² eerst het kwadraat en dan pas de vermenigvuldiging?",
+          "opties": [
+            "Dat maakt niet uit",
+            "Vanwege de rekenvolgorde: machtsverheffen gaat voor vermenigvuldigen",
+            "Omdat r altijd 4 is",
+            "Omdat een kwadraat altijd het laatst komt"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Volgens de rekenvolgorde bereken je machten vóór vermenigvuldigen."
+        },
+        {
+          "vraag": "Bij de formule snelheid = √(20 × h): wat is de snelheid als h = 5?",
+          "opties": [
+            "4,0",
+            "10,0",
+            "100,0",
+            "20,0"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "20 × 5 = 100, √100 = 10."
+        },
+        {
+          "vraag": "Wat bereken je bij een formule met een wortelteken eerst?",
+          "opties": [
+            "Meteen de wortel",
+            "Wat er onder het wortelteken staat",
+            "Altijd een kwadraat",
+            "Niets, je gokt de uitkomst"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Je berekent eerst wat onder het wortelteken staat, en trekt daarna de wortel."
+        },
+        {
+          "vraag": "Wat is een periodieke grafiek?",
+          "opties": [
+            "Een grafiek die altijd stijgt",
+            "Een grafiek waarin een patroon zich steeds herhaalt",
+            "Een grafiek zonder assen",
+            "Een grafiek met alleen negatieve getallen"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Bij een periodieke grafiek herhaalt hetzelfde patroon zich steeds opnieuw."
+        },
+        {
+          "vraag": "Welke situatie kun je het beste met een periodieke grafiek weergeven?",
+          "opties": [
+            "De groei van een boom over 10 jaar",
+            "De hoogte van eb en vloed over een week",
+            "Het aantal inwoners van een stad",
+            "De prijs van een huis over de tijd"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Eb en vloed herhalen zich steeds op dezelfde manier, dat past bij een periodieke grafiek."
+        },
+        {
+          "vraag": "Wat is de periode van een periodieke grafiek?",
+          "opties": [
+            "Het hoogste punt van de grafiek",
+            "De lengte van één herhaling van het patroon",
+            "Het beginpunt van de grafiek",
+            "De naam van de horizontale as"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "De periode is de lengte van één keer het herhaalde patroon."
+        },
+        {
+          "vraag": "Werk de haakjes weg: 5 × (2b + 3).",
+          "opties": [
+            "10b + 3",
+            "10b + 15",
+            "2b + 15",
+            "5b + 15"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "5 × (2b + 3) = 5 × 2b + 5 × 3 = 10b + 15."
+        },
+        {
+          "vraag": "Wat is de juiste rekenvolgorde?",
+          "opties": [
+            "Plus/min, dan keer/delen, dan haakjes, dan machten",
+            "Haakjes, dan machten/wortels, dan keer/delen, dan plus/min",
+            "Machten, dan haakjes, dan plus/min, dan keer/delen",
+            "Er is geen vaste volgorde"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Eerst haakjes, dan machtsverheffen en worteltrekken, dan vermenigvuldigen/delen, dan optellen/aftrekken."
+        },
+        {
+          "vraag": "Bereken (100 + 20) / (6 : 2).",
+          "opties": [
+            "10",
+            "40",
+            "60",
+            "120"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "(100 + 20) = 120, (6 : 2) = 3, 120 : 3 = 40."
+        },
+        {
+          "vraag": "Een paraboolboog in de architectuur heeft de vorm van...",
+          "opties": [
+            "Een rechte lijn",
+            "Een cirkel",
+            "Een parabool",
+            "Een driehoek"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "Een paraboolboog is een boogconstructie in de vorm van een parabool."
+        }
+      ]
+    },
+    {
+      "titel": "Ruimtemeetkunde",
+      "uitleg": "<div class='box'><h4>Waar gaat dit hoofdstuk over?</h4><p>In dit hoofdstuk leer je ruimtefiguren op verschillende manieren weergeven: in perspectief tekenen, aanzichten tekenen en doorsneden maken. Ook leer je de inhoud van een prisma, cilinder, piramide en kegel berekenen.</p></div><div class='call'>Wat je ziet, wordt niet alleen door je ogen bepaald, maar ook door je hersenen. Daardoor kun je bij tekeningen soms iets anders zien dan wat er letterlijk staat.</div>",
+      "subhoofdstukken": [
+        {
+          "titel": "Ruimtelijk tekenen",
+          "uitleg": "<div class='box'><h4>Kubus en balk op roosterpapier</h4><p>Voor het tekenen van een kubus en een balk op roosterpapier bestaan vaste afspraken: je tekent eerst het voorvlak op ware grootte, en telt dan vanuit elk hoekpunt een vast aantal hokjes schuin naar rechts en omhoog voor de ribben die naar achteren lopen. Drie ribben teken je gestippeld, omdat je die in het echt niet zou zien.</p></div><div class='box'><h4>Tekenen in perspectief</h4><p>Bij een tekening in <b>perspectief</b> gebruik je de volgende regels: evenwijdige lijnen die van je af lopen, snijden elkaar in het <b>verdwijnpunt</b> op de <b>horizon</b>. De horizon ligt op ooghoogte. Verticale lijnen blijven verticaal.</p></div><div class='call'>Hoe verder een lijn in perspectief van je af loopt, hoe dichter hij bij het verdwijnpunt komt.</div>"
+        },
+        {
+          "titel": "Aanzichten",
+          "uitleg": "<div class='box'><h4>Wat is een aanzicht?</h4><p>Een <b>aanzicht</b> van een ruimtefiguur is een vlakke figuur: wat je ziet als je recht van één kant naar het bouwwerk kijkt. Meestal teken je drie aanzichten: het <b>vooraanzicht</b>, het <b>rechterzijaanzicht</b> (of linkerzijaanzicht) en het <b>bovenaanzicht</b>.</p></div><div class='box'><h4>Bovenaanzicht met aantallen</h4><p>In een bovenaanzicht kun je met cijfers aangeven hoeveel kubussen er op elkaar gestapeld zijn op elke plek. Zo kun je uit het bovenaanzicht berekenen uit hoeveel kubussen het hele bouwwerk bestaat: je telt alle cijfers in het bovenaanzicht bij elkaar op.</p></div><div class='call'>Bij het tekenen van een aanzicht kijk je altijd recht van één kant, niet schuin: zo teken je een vlakke figuur, geen perspectieftekening.</div>"
+        },
+        {
+          "titel": "Doorsnede",
+          "uitleg": "<div class='box'><h4>Wat is een doorsnede?</h4><p>Je kunt een ruimtefiguur doorsnijden. Het platte vlak dat dan ontstaat, noem je de <b>doorsnede</b>. Een doorsnede is dus altijd een vlakke figuur, ook al ontstaat hij uit een ruimtefiguur.</p></div><div class='box'><h4>Doorsnede op ware grootte tekenen</h4><p>Een balk en een kubus kun je diagonaal doorsnijden. Zo'n doorsnede kun je op ware grootte tekenen. Ken je de zijden van de doorsnede nog niet allemaal, dan bereken je de ontbrekende lengte vaak met de stelling van Pythagoras: je maakt eerst een schets van het grondvlak en berekent de diagonaal daarvan.</p></div><div class='voorbeeld'><h4>Voorbeeld: doorsnede berekenen</h4><p>Vlak DBFH is een doorsnede van een balk met grondvlak ABCD, waarbij AB = 2 cm en AD = 3 cm. DBFH heeft de vorm van een rechthoek; bereken eerst de lengte van diagonaal BD.</p><ol class='num'><li>rhz² = 2² = 4.</li><li>rhz² = 3² = 9.</li><li>sz² = 4 + 9 = 13.</li><li>sz = √13 = 3,605...</li></ol><div class='antwoord'>Antwoord: BD is 3,6 cm. Met deze lengte kun je doorsnede DBFH op ware grootte tekenen.</div></div>"
+        },
+        {
+          "titel": "Inhoud prisma en cilinder",
+          "uitleg": "<div class='box'><h4>Formule</h4><p>De inhoud van een prisma en een cilinder bereken je met dezelfde formule: <b>inhoud = oppervlakte grondvlak × hoogte</b>. Bij een prisma is het grondvlak vaak een driehoek, bij een cilinder is het grondvlak een cirkel.</p></div><div class='voorbeeld'><h4>Voorbeeld: inhoud van een prisma</h4><p>Een driehoekig prisma heeft een grondvlak met zijde 4 cm en bijbehorende hoogte 3 cm. De hoogte van het prisma is 5 cm. Bereken de inhoud.</p><ol class='num'><li>oppervlakte grondvlak = 0,5 × 4 × 3 = 6 cm².</li><li>inhoud prisma = 6 × 5 = 30 cm³.</li></ol><div class='antwoord'>Antwoord: de inhoud van het prisma is 30 cm³.</div></div><div class='voorbeeld'><h4>Voorbeeld: inhoud van een cilinder</h4><p>Een cilinder heeft een grondvlak met diameter 4 cm en een hoogte van 5 cm. Bereken de inhoud.</p><ol class='num'><li>straal grondvlak = 4 : 2 = 2 cm.</li><li>oppervlakte grondvlak = π × 2² = 12,566... cm².</li><li>inhoud cilinder = 12,566... × 5 = 62,831... cm³.</li></ol><div class='antwoord'>Antwoord: de inhoud van de cilinder is 62,8 cm³ (afgerond).</div></div>"
+        },
+        {
+          "titel": "Inhoud piramide en kegel",
+          "uitleg": "<div class='box'><h4>Formule</h4><p>De inhoud van een piramide en een kegel bereken je ook met dezelfde formule: <b>inhoud = ⅓ × oppervlakte grondvlak × hoogte</b>. De afstand tussen de top en het grondvlak is de hoogte.</p></div><div class='voorbeeld'><h4>Voorbeeld: inhoud van een piramide</h4><p>Een piramide heeft een rechthoekig grondvlak van 8 cm bij 6 cm. De hoogte van de piramide is 7 cm. Bereken de inhoud.</p><ol class='num'><li>oppervlakte grondvlak = 8 × 6 = 48 cm².</li><li>inhoud piramide = ⅓ × 48 × 7 = 112 cm³.</li></ol><div class='antwoord'>Antwoord: de inhoud van de piramide is 112 cm³.</div></div><div class='voorbeeld'><h4>Voorbeeld: inhoud van een kegel</h4><p>Een kegel heeft een grondvlak met diameter 12 cm en een hoogte van 13 cm. Bereken de inhoud. Rond af op hele cm³.</p><ol class='num'><li>straal grondvlak = 12 : 2 = 6 cm.</li><li>oppervlakte grondvlak = π × 6² = 113,097... cm².</li><li>inhoud kegel = ⅓ × 113,097... × 13 = 490,088... cm³.</li></ol><div class='antwoord'>Antwoord: de inhoud van de kegel is 490 cm³ (afgerond).</div></div><div class='call sum'><b>Om te onthouden</b><ul class='lst'><li>inhoud prisma en cilinder = oppervlakte grondvlak × hoogte.</li><li>inhoud piramide en kegel = ⅓ × oppervlakte grondvlak × hoogte.</li></ul></div>"
+        }
+      ],
+      "begrippen": [
+        {
+          "term": "Perspectief",
+          "uitleg": "Een manier van tekenen waarbij lijnen die van je af lopen samenkomen in een verdwijnpunt, zodat de tekening ruimtelijk oogt.",
+          "paragraaf": "Ruimtelijk tekenen"
+        },
+        {
+          "term": "Verdwijnpunt",
+          "uitleg": "Het punt op de horizon waarin evenwijdige lijnen die van je af lopen in een perspectieftekening samenkomen.",
+          "paragraaf": "Ruimtelijk tekenen"
+        },
+        {
+          "term": "Horizon",
+          "uitleg": "De lijn op ooghoogte waarop het verdwijnpunt van een perspectieftekening ligt.",
+          "paragraaf": "Ruimtelijk tekenen"
+        },
+        {
+          "term": "Aanzicht",
+          "uitleg": "De vlakke figuur die je ziet als je recht van één kant naar een ruimtefiguur kijkt.",
+          "paragraaf": "Aanzichten"
+        },
+        {
+          "term": "Vooraanzicht",
+          "uitleg": "Het aanzicht van een ruimtefiguur van de voorkant gezien.",
+          "paragraaf": "Aanzichten"
+        },
+        {
+          "term": "Bovenaanzicht",
+          "uitleg": "Het aanzicht van een ruimtefiguur van bovenaf gezien.",
+          "paragraaf": "Aanzichten"
+        },
+        {
+          "term": "Doorsnede",
+          "uitleg": "Het platte vlak dat ontstaat als je een ruimtefiguur doorsnijdt.",
+          "paragraaf": "Doorsnede"
+        },
+        {
+          "term": "Ware grootte",
+          "uitleg": "De werkelijke, onvervormde afmetingen van een figuur, zoals je die op een aparte tekening precies kunt weergeven.",
+          "paragraaf": "Doorsnede"
+        },
+        {
+          "term": "Prisma",
+          "uitleg": "Een ruimtefiguur met twee evenwijdige, even grote grondvlakken en rechthoekige zijvlakken.",
+          "paragraaf": "Inhoud prisma en cilinder"
+        },
+        {
+          "term": "Cilinder",
+          "uitleg": "Een ruimtefiguur met twee evenwijdige, even grote cirkelvormige grondvlakken.",
+          "paragraaf": "Inhoud prisma en cilinder"
+        },
+        {
+          "term": "Piramide",
+          "uitleg": "Een ruimtefiguur met een veelhoekig grondvlak en zijvlakken die samenkomen in één top.",
+          "paragraaf": "Inhoud piramide en kegel"
+        },
+        {
+          "term": "Kegel",
+          "uitleg": "Een ruimtefiguur met een cirkelvormig grondvlak en een zijvlak dat samenkomt in één top.",
+          "paragraaf": "Inhoud piramide en kegel"
+        }
+      ],
+      "flashcards": [
+        {
+          "vraag": "Waar komen evenwijdige lijnen samen in een perspectieftekening?",
+          "antwoord": "In het verdwijnpunt op de horizon.",
+          "paragraaf": "Ruimtelijk tekenen"
+        },
+        {
+          "vraag": "Op welke hoogte ligt de horizon in een perspectieftekening?",
+          "antwoord": "Op ooghoogte.",
+          "paragraaf": "Ruimtelijk tekenen"
+        },
+        {
+          "vraag": "Wat is een aanzicht van een ruimtefiguur?",
+          "antwoord": "De vlakke figuur die je ziet als je recht van één kant naar de ruimtefiguur kijkt.",
+          "paragraaf": "Aanzichten"
+        },
+        {
+          "vraag": "Welke drie aanzichten teken je meestal van een bouwwerk?",
+          "antwoord": "Het vooraanzicht, het zijaanzicht en het bovenaanzicht.",
+          "paragraaf": "Aanzichten"
+        },
+        {
+          "vraag": "Wat is een doorsnede?",
+          "antwoord": "Het platte vlak dat ontstaat als je een ruimtefiguur doorsnijdt.",
+          "paragraaf": "Doorsnede"
+        },
+        {
+          "vraag": "Welke stelling gebruik je vaak om de zijden van een doorsnede te berekenen?",
+          "antwoord": "De stelling van Pythagoras.",
+          "paragraaf": "Doorsnede"
+        },
+        {
+          "vraag": "Wat is de formule voor de inhoud van een prisma of cilinder?",
+          "antwoord": "inhoud = oppervlakte grondvlak × hoogte.",
+          "paragraaf": "Inhoud prisma en cilinder"
+        },
+        {
+          "vraag": "Wat is de formule voor de inhoud van een piramide of kegel?",
+          "antwoord": "inhoud = ⅓ × oppervlakte grondvlak × hoogte.",
+          "paragraaf": "Inhoud piramide en kegel"
+        },
+        {
+          "vraag": "Wat is de hoogte van een piramide of kegel?",
+          "antwoord": "De afstand tussen de top en het grondvlak.",
+          "paragraaf": "Inhoud piramide en kegel"
+        },
+        {
+          "vraag": "Wat is het grondvlak van een cilinder?",
+          "antwoord": "Een cirkel.",
+          "paragraaf": "Inhoud prisma en cilinder"
+        },
+        {
+          "vraag": "Hoe teken je de gestippelde ribben van een kubus of balk op roosterpapier?",
+          "antwoord": "Dat zijn de ribben die je in het echt niet zou zien, ze lopen naar achteren.",
+          "paragraaf": "Ruimtelijk tekenen"
+        },
+        {
+          "vraag": "Hoe bereken je uit hoeveel kubussen een bouwwerk bestaat als je het bovenaanzicht met aantallen kent?",
+          "antwoord": "Je telt alle cijfers in het bovenaanzicht bij elkaar op.",
+          "paragraaf": "Aanzichten"
+        }
+      ],
+      "quiz": [
+        {
+          "vraag": "Waar komen evenwijdige lijnen samen in een perspectieftekening?",
+          "opties": [
+            "In het middelpunt",
+            "In het verdwijnpunt op de horizon",
+            "Nergens, ze blijven evenwijdig",
+            "Op de grond"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Evenwijdige lijnen die van je af lopen, snijden elkaar in het verdwijnpunt op de horizon."
+        },
+        {
+          "vraag": "Op welke hoogte ligt de horizon in een perspectieftekening?",
+          "opties": [
+            "Op de grond",
+            "Op ooghoogte",
+            "Bovenaan de tekening",
+            "Dat maakt niet uit"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "De horizon ligt altijd op ooghoogte."
+        },
+        {
+          "vraag": "Wat is een aanzicht van een ruimtefiguur?",
+          "opties": [
+            "Een ruimtelijke tekening van de figuur",
+            "De vlakke figuur die je ziet als je recht van één kant kijkt",
+            "De inhoud van de figuur",
+            "De naam van de figuur"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Een aanzicht is een vlakke figuur: wat je ziet als je recht van één kant naar het bouwwerk kijkt."
+        },
+        {
+          "vraag": "Welke drie aanzichten worden meestal getekend van een bouwwerk van kubussen?",
+          "opties": [
+            "Voor-, zij- en bovenaanzicht",
+            "Links, rechts en midden",
+            "Boven, onder en opzij",
+            "Alleen het vooraanzicht"
+          ],
+          "antwoord_index": 0,
+          "uitleg": "Meestal teken je het vooraanzicht, het zijaanzicht en het bovenaanzicht."
+        },
+        {
+          "vraag": "Wat is een doorsnede?",
+          "opties": [
+            "De omtrek van een ruimtefiguur",
+            "Het platte vlak dat ontstaat als je een ruimtefiguur doorsnijdt",
+            "De oppervlakte van een ruimtefiguur",
+            "Een ander woord voor aanzicht"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Een doorsnede is het platte (vlakke) vlak dat ontstaat als je een ruimtefiguur doorsnijdt."
+        },
+        {
+          "vraag": "Welke stelling gebruik je vaak bij het berekenen van de zijden van een doorsnede?",
+          "opties": [
+            "De stelling van Pythagoras",
+            "De hoekensomstelling",
+            "Er is geen speciale stelling nodig",
+            "De formule voor oppervlakte van een cirkel"
+          ],
+          "antwoord_index": 0,
+          "uitleg": "Vaak bereken je met de stelling van Pythagoras eerst de diagonaal van het grondvlak."
+        },
+        {
+          "vraag": "Wat is de inhoud van een prisma met grondvlak 6 cm² en hoogte 5 cm?",
+          "opties": [
+            "11 cm³",
+            "30 cm³",
+            "60 cm³",
+            "1,2 cm³"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "inhoud prisma = oppervlakte grondvlak × hoogte = 6 × 5 = 30 cm³."
+        },
+        {
+          "vraag": "Wat is de inhoud van een cilinder met straal 2 cm en hoogte 5 cm? Rond af op één decimaal.",
+          "opties": [
+            "20,0 cm³",
+            "31,4 cm³",
+            "62,8 cm³",
+            "125,6 cm³"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "oppervlakte grondvlak = π × 2² ≈ 12,57 cm². inhoud = 12,57 × 5 ≈ 62,8 cm³."
+        },
+        {
+          "vraag": "Wat is de formule voor de inhoud van een piramide?",
+          "opties": [
+            "oppervlakte grondvlak × hoogte",
+            "⅓ × oppervlakte grondvlak × hoogte",
+            "0,5 × oppervlakte grondvlak × hoogte",
+            "π × straal² × hoogte"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "inhoud piramide = ⅓ × oppervlakte grondvlak × hoogte."
+        },
+        {
+          "vraag": "Een piramide heeft grondvlak 8 × 6 = 48 cm² en hoogte 7 cm. Wat is de inhoud?",
+          "opties": [
+            "48 cm³",
+            "56 cm³",
+            "112 cm³",
+            "336 cm³"
+          ],
+          "antwoord_index": 2,
+          "uitleg": "inhoud piramide = ⅓ × 48 × 7 = 112 cm³."
+        },
+        {
+          "vraag": "Wat is de hoogte van een kegel?",
+          "opties": [
+            "De straal van het grondvlak",
+            "De afstand tussen de top en het grondvlak",
+            "De omtrek van het grondvlak",
+            "De schuine zijde van de kegel"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "De hoogte van een kegel (en een piramide) is de afstand van de top tot het grondvlak."
+        },
+        {
+          "vraag": "Een kegel heeft grondvlak met straal 6 cm (oppervlakte ≈ 113,1 cm²) en hoogte 13 cm. Wat is de inhoud? Rond af op hele cm³.",
+          "opties": [
+            "490 cm³",
+            "1470 cm³",
+            "1177 cm³",
+            "113 cm³"
+          ],
+          "antwoord_index": 0,
+          "uitleg": "inhoud kegel = ⅓ × 113,1 × 13 ≈ 490 cm³."
+        },
+        {
+          "vraag": "Welke ribben van een kubus teken je gestippeld op roosterpapier?",
+          "opties": [
+            "Alle ribben",
+            "De ribben die je in het echt niet zou zien",
+            "Alleen de bovenste ribben",
+            "Geen enkele rib"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "De ribben die naar achteren lopen en die je in het echt niet zou zien, teken je gestippeld."
+        },
+        {
+          "vraag": "In een bovenaanzicht met aantallen staat in elk hokje het aantal opgestapelde kubussen. Hoe bereken je het totale aantal kubussen van het bouwwerk?",
+          "opties": [
+            "Je neemt het hoogste getal",
+            "Je telt alle getallen in het bovenaanzicht bij elkaar op",
+            "Je vermenigvuldigt alle getallen met elkaar",
+            "Dat kan niet uit het bovenaanzicht"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Door alle cijfers in het bovenaanzicht op te tellen, weet je uit hoeveel kubussen het bouwwerk bestaat."
+        },
+        {
+          "vraag": "Wat hebben een prisma en een cilinder gemeen wat betreft de inhoudsformule?",
+          "opties": [
+            "Ze hebben allebei geen grondvlak",
+            "Ze gebruiken dezelfde formule: oppervlakte grondvlak × hoogte",
+            "Ze gebruiken allebei de formule voor een kegel",
+            "Er is geen overeenkomst"
+          ],
+          "antwoord_index": 1,
+          "uitleg": "Zowel bij een prisma als bij een cilinder bereken je de inhoud met oppervlakte grondvlak × hoogte."
+        }
+      ]
+    }
+  ]
+}
