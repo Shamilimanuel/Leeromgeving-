@@ -2,6 +2,19 @@
 var keuze={vak:null,niveau:null,jaar:null,hoofdstuk:null};
 var tab='samenvatting';
 
+/* ═══════ SFEERDEELTJES (gouden sterretjes op de achtergrond) ═══════ */
+(function(){
+  var laag=document.querySelector('.sparkles');
+  if(!laag || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  var n=14, html='';
+  for(var i=0;i<n;i++){
+    var links=(i/(n-1)*100).toFixed(1), duur=(13+((i*37)%8)), vertr=((i*53)%12), maat=(i%3===0?3:2);
+    var kleur=(i%3===0?'#f3d78a':'#e8c05a');
+    html+='<i style="left:'+links+'%;width:'+maat+'px;height:'+maat+'px;box-shadow:0 0 6px '+kleur+';background:'+kleur
+      +';animation-duration:'+duur+'s;animation-delay:'+vertr+'s"></i>';
+  }
+  laag.innerHTML=html;
+})();
 
 /* ═══════ NAVIGATIE ═══════ */
 function go(id){
@@ -13,7 +26,7 @@ function go(id){
     setTimeout(function(){cur.classList.remove('leaving')},500); }
   var nxt=document.getElementById(id);
   nxt.scrollTop=0; nxt.classList.add('on');
-  ['helpbtn','dyslexiebtn','lichtbtn','zoekbtn','favbtn','pomodorobtn','examenbtn','fantasybtn'].forEach(function(bid){
+  ['helpbtn','dyslexiebtn','lichtbtn','zoekbtn','favbtn','pomodorobtn','examenbtn'].forEach(function(bid){
     var el=document.getElementById(bid); if(el) el.classList.toggle('show', id!=='splash');
   });
   if(id==='home' && !helpGezien){ helpGezien=true; setTimeout(function(){openHelp(0)},2000); }
@@ -64,24 +77,9 @@ function toggleLicht(){
   toon(lichtAan?'Lichte modus aan':'Lichte modus uit');
 }
 pasLichtToe();
-/* ═══════ FANTASY MODUS ("Stealth Genshin"-stijl) ═══════ */
-var fantasyAan = localStorage.getItem('fantasyModus')==='1';
-function pasFantasyToe(){
-  document.body.classList.toggle('fantasy-modus', fantasyAan);
-  var btn=document.getElementById('fantasybtn');
-  if(btn) btn.classList.toggle('on', fantasyAan);
-}
-function toggleFantasy(){
-  fantasyAan=!fantasyAan;
-  localStorage.setItem('fantasyModus', fantasyAan?'1':'0');
-  pasFantasyToe();
-  toon(fantasyAan?'✨ Fantasy Mode aan':'Terug naar Standaard Mode');
-  if(document.getElementById('chapter') && document.getElementById('chapter').classList.contains('on')) renderChapter();
-  if(document.getElementById('book') && document.getElementById('book').classList.contains('on') && keuze.vak) renderBook();
-}
-pasFantasyToe();
+/* ═══════ VASTE STIJL (voorheen "Fantasy Mode"-toggle, nu altijd aan) ═══════ */
+var fantasyAan = true;
 function questLabel(tekst){
-  if(!fantasyAan) return tekst;
   return tekst.replace(/hoofdstuk/gi, function(m){ return m===m.toUpperCase() ? 'MISSIE' : 'Missie'; });
 }
 /* ═══════ POMODORO FOCUS-TIMER ═══════ */
@@ -238,9 +236,11 @@ introTimer=setTimeout(introVerder, INTRO_TIJD[0]);
 
 /* ═══════ VAKKEN ═══════ */
 document.getElementById('subjectGrid').innerHTML=VAKKEN.map(function(v,i){
-  return '<button class="subj'+(v.todo?' todo':'')+'" style="background:var(--'+v.kleur+');animation-delay:'+(i*55)+'ms" onclick="kiesVak(\''+v.id+'\')">'
-    +'<span class="swatch">'+v.kleurnaam+'</span><span class="ico">'+v.ico+'</span>'
-    +'<h3>'+v.naam+'</h3><small>Bekijk de samenvattingen</small></button>';
+  return '<button class="subj'+(v.todo?' todo':'')+'" style="--c:var(--'+v.kleur+');--cd:var(--'+v.kleur+'-d);animation-delay:'+(i*55)+'ms" onclick="kiesVak(\''+v.id+'\')">'
+    +'<i class="frame"></i><span class="bigico">'+v.ico+'</span>'
+    +'<span class="badge"><i class="ring"></i><i class="core">'+v.ico+'</i></span>'
+    +'<span class="swatch"><i class="dot"></i>'+v.kleurnaam+'</span>'
+    +'<h3>'+v.naam+'</h3><small>Bekijk de samenvattingen <span>→</span></small></button>';
 }).join('');
 
 document.addEventListener('mousemove',function(e){
@@ -427,6 +427,7 @@ function renderBook(){
         var vgBadge = vg && vg.quizAfgerond ? '<span class="rdy vg-quiz">\u2713 '+vg.quizGoed+'/'+vg.quizTotaal+'</span>'
           : vg && vg.bekeken ? '<span class="rdy vg-bekeken">gelezen</span>' : (heeft?'<span class="rdy">klaar</span>':'');
         return '<button class="'+cls+'" style="animation-delay:'+(i*70)+'ms"'+act+'>'
+          +'<i class="frame"></i>'
           +vgBadge
           +'<div class="n">'+questLabel('HOOFDSTUK '+c[0])+'</div><h4>'+c[1]+'</h4><p>'+(c[2]||'&nbsp;')+'</p></button>';
       }).join('')+'</div></div>';
@@ -457,7 +458,10 @@ function renderChapter(){
     var s=stof(), n=(!s?0:t[0]==='flashcards'?s.cards.length:t[0]==='quiz'?s.quiz.length:t[0]==='begrippen'?s.begrippen.length:1);
     var geenTel=(t[0]==='samenvatting'||t[0]==='notities');
     return '<button class="tab'+(tab===t[0]?' on':'')+(n?'':' leegtab')+'" onclick="zetTab(\''+t[0]+'\')">'+t[1]+(n&&!geenTel?' <span class="tel">'+n+'</span>':'')+'</button>';
-  }).join('');
+  }).join('')+'<i class="tabslide" id="tabslide"></i>';
+  var tabIdx=TABS.findIndex(function(t){return t[0]===tab}); if(tabIdx<0) tabIdx=0;
+  var tsEl=document.getElementById('tabslide');
+  if(tsEl){ tsEl.style.width=(100/TABS.length)+'%'; tsEl.style.left=(tabIdx*(100/TABS.length))+'%'; }
   if(!s){
     document.getElementById('chBody').innerHTML=
       '<div class="empty"><h3>Dit hoofdstuk is nog niet ingevuld</h3>'
