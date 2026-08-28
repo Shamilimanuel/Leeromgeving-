@@ -4,11 +4,11 @@ var VAKKEN=[
   {id:'biologie',    naam:'Biologie',         ico:'\u{1F33F}', kleur:'biologie',     kleurnaam:'Groen'},
   {id:'nederlands',  naam:'Nederlands',       ico:'\u{270D}',  kleur:'nederlands',   kleurnaam:'Geel'},
   {id:'engels',      naam:'Engels',           ico:'\u{1F30D}', kleur:'engels',       kleurnaam:'Oranje'},
-  {id:'burgerschap', naam:'Burgerschap',      ico:'\u{1F91D}', kleur:'maatschappij', kleurnaam:'Lila', todo:true,
+  {id:'burgerschap', naam:'Burgerschap',      ico:'\u{1F91D}', kleur:'burgerschap',  kleurnaam:'Lila', todo:true,
    samengevoegdMet:'Mens & Maatschappij'},
   {id:'economie',    naam:'Economie',         ico:'\u{1F4CA}', kleur:'economie',     kleurnaam:'Donkerblauw'},
-  {id:'maatschleer', naam:'Maatschappijleer', ico:'\u{2696}',  kleur:'maatschappij', kleurnaam:'Lila'},
-  {id:'maatschkunde',naam:'Maatschappijkunde',ico:'\u{1F3DB}', kleur:'maatschappij', kleurnaam:'Lila'},
+  {id:'maatschleer', naam:'Maatschappijleer', ico:'\u{2696}',  kleur:'maatschleer',  kleurnaam:'Lila'},
+  {id:'maatschkunde',naam:'Maatschappijkunde',ico:'\u{1F3DB}', kleur:'maatschkunde', kleurnaam:'Lila'},
   {id:'mensmaatschappij',naam:'Mens & Maatschappij',ico:'\u{1F9ED}', kleur:'mensmaatschappij', kleurnaam:'Teal'}
 ];
 var NIVEAUS=[
