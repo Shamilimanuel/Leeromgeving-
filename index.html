@@ -130,13 +130,40 @@
 
 </div>
 
-<button class="dyslexiebtn" id="dyslexiebtn" onclick="toggleDyslexie()" aria-label="Dyslexie-modus aan/uit" title="Dyslexie-modus">Aa</button>
-<button class="helpbtn" id="helpbtn" onclick="openHelp(0)" aria-label="Uitleg">?</button>
-<button class="lichtbtn" id="lichtbtn" onclick="toggleLicht()" aria-label="Lichte modus aan/uit" title="Lichte modus">☀</button>
-<button class="zoekbtn" id="zoekbtn" onclick="openZoeken()" aria-label="Zoeken" title="Zoeken">🔍</button>
-<button class="favbtn" id="favbtn" onclick="openFavorieten()" aria-label="Favorieten" title="Favorieten">★</button>
-<button class="pomodorobtn" id="pomodorobtn" onclick="pomodoroToggle()" aria-label="Pomodoro-timer" title="Pomodoro-timer starten (25 min werk / 5 min pauze)">⏱</button>
-<button class="examenbtn" id="examenbtn" onclick="openExamen()" aria-label="Oefentoets" title="Oefentoets / zelftest">📝</button>
+<div class="radialmenu" id="radialmenu">
+  <i class="radialhalo"></i>
+  <div class="radialitem" style="--tx:0px;--ty:-180px">
+    <button class="zoekbtn menuicon" id="zoekbtn" onclick="openZoeken();closeRadialMenu()" aria-label="Zoeken" title="Zoeken">🔍</button>
+    <span class="radiallabel">Zoeken</span>
+  </div>
+  <div class="radialitem" style="--tx:47px;--ty:-174px">
+    <button class="favbtn menuicon" id="favbtn" onclick="openFavorieten();closeRadialMenu()" aria-label="Favorieten" title="Favorieten">★</button>
+    <span class="radiallabel">Favorieten</span>
+  </div>
+  <div class="radialitem" style="--tx:90px;--ty:-156px">
+    <button class="pomodorobtn menuicon" id="pomodorobtn" onclick="pomodoroToggle();closeRadialMenu()" aria-label="Pomodoro-timer" title="Pomodoro-timer starten (25 min werk / 5 min pauze)">⏱</button>
+    <span class="radiallabel">Pomodoro</span>
+  </div>
+  <div class="radialitem" style="--tx:127px;--ty:-127px">
+    <button class="examenbtn menuicon" id="examenbtn" onclick="openExamen();closeRadialMenu()" aria-label="Oefentoets" title="Oefentoets / zelftest">📝</button>
+    <span class="radiallabel">Oefentoets</span>
+  </div>
+  <div class="radialitem" style="--tx:156px;--ty:-90px">
+    <button class="dyslexiebtn menuicon" id="dyslexiebtn" onclick="toggleDyslexie();closeRadialMenu()" aria-label="Dyslexie-modus aan/uit" title="Dyslexie-modus">Aa</button>
+    <span class="radiallabel">Dyslexie</span>
+  </div>
+  <div class="radialitem" style="--tx:174px;--ty:-47px">
+    <button class="lichtbtn menuicon" id="lichtbtn" onclick="toggleLicht();closeRadialMenu()" aria-label="Lichte modus aan/uit" title="Lichte modus">☀</button>
+    <span class="radiallabel">Licht</span>
+  </div>
+  <div class="radialitem" style="--tx:180px;--ty:0px">
+    <button class="helpbtn menuicon" id="helpbtn" onclick="openHelp(0);closeRadialMenu()" aria-label="Uitleg" title="Uitleg">?</button>
+    <span class="radiallabel">Uitleg</span>
+  </div>
+  <button class="radialtrigger" id="radialtrigger" onclick="toggleRadialMenu()" aria-label="Menu" aria-expanded="false" title="Menu">
+    <span class="radialdots">⋯</span>
+  </button>
+</div>
 
 <div class="helpwrap" id="helpwrap">
   <div class="helpbg" onclick="closeHelp()"></div>

@@ -387,14 +387,35 @@ h5.sub{font-family:'Cinzel',serif;font-size:1rem;color:var(--accent);margin:1.8r
   padding:.45rem 1.4rem;font-size:.78rem;letter-spacing:.06em;transition:.25s;z-index:5}
 .introverder:hover{color:var(--txt);border-color:var(--paper);transform:translateX(-50%) translateY(-2px)}
 
+/* ══ EÉN UITKLAPMENU LINKSONDER (i.p.v. losse knoppen) ══ */
+.radialmenu{position:fixed;left:1.4rem;bottom:1.4rem;z-index:120;width:54px;height:54px;display:none}
+.radialmenu.show{display:block;animation:pop .4s cubic-bezier(.2,.85,.3,1) both}
+.radialhalo{position:absolute;left:-6px;bottom:-6px;width:66px;height:66px;border-radius:50%;pointer-events:none;
+  background:conic-gradient(from 0deg,transparent 0%,var(--goud-line) 12%,transparent 26%,transparent 74%,var(--goud-line) 88%,transparent 100%);
+  animation:spin 7s linear infinite;opacity:.5;transition:opacity .3s}
+.radialmenu.open .radialhalo{opacity:.9}
+.radialtrigger{position:absolute;left:0;bottom:0;width:54px;height:54px;border-radius:50%;
+  background:var(--ink2);border:1.5px solid var(--goud-line);color:var(--goud);cursor:pointer;z-index:2;
+  display:flex;align-items:center;justify-content:center;font-size:1.3rem;
+  box-shadow:0 0 18px rgba(243,215,138,.2),0 6px 20px rgba(0,0,0,.5);
+  transition:box-shadow .3s,border-color .3s,transform .3s cubic-bezier(.2,.85,.3,1)}
+.radialtrigger:hover{border-color:var(--goud);box-shadow:0 0 26px rgba(243,215,138,.4),0 6px 20px rgba(0,0,0,.5);transform:scale(1.06)}
+.radialdots{display:inline-block;transition:transform .35s cubic-bezier(.2,.85,.3,1)}
+.radialmenu.open .radialdots{transform:rotate(90deg)}
+.radialitem{position:absolute;left:7px;bottom:7px;display:flex;flex-direction:column;align-items:center;gap:.3rem;
+  transform:translate(0,0) scale(.3);opacity:0;pointer-events:none;
+  transition:transform .4s cubic-bezier(.2,.85,.3,1),opacity .25s}
+.radialmenu.open .radialitem{opacity:1;pointer-events:auto;transform:translate(var(--tx),var(--ty)) scale(1)}
+.radiallabel{font-size:.62rem;color:var(--txt);background:rgba(10,14,26,.92);border:1px solid var(--goud-line);
+  border-radius:6px;padding:.2rem .5rem;white-space:nowrap;opacity:0;transition:opacity .2s}
+.radialmenu.open .radiallabel{opacity:1;transition-delay:.15s}
+.menuicon{width:40px;height:40px;border-radius:50%;background:var(--ink2);color:var(--mut);
+  border:1px solid var(--goud-line);font-size:.92rem;font-weight:700;cursor:pointer;
+  transition:transform .2s cubic-bezier(.2,.85,.3,1),color .2s,border-color .2s,background .2s}
+.menuicon:hover{color:var(--txt);border-color:var(--goud);transform:scale(1.08)}
+.menuicon.on{background:var(--goud);color:#241d0d;border-color:transparent}
+
 /* ══ DYSLEXIE-MODUS ══ */
-.dyslexiebtn{position:fixed;left:1.6rem;bottom:5.6rem;z-index:120;display:none;
-  width:44px;height:44px;border-radius:50%;background:var(--ink2);color:var(--mut);
-  border:1px solid var(--line);font-size:.92rem;font-weight:700;
-  transition:transform .25s cubic-bezier(.2,.85,.3,1), color .25s, border-color .25s, background .25s, color .25s}
-.dyslexiebtn.show{display:block;animation:pop .4s cubic-bezier(.2,.85,.3,1) both}
-.dyslexiebtn:hover{color:var(--txt);border-color:var(--accent);transform:translateY(-3px) scale(1.06)}
-.dyslexiebtn.on{background:var(--accent);color:#0d1117;border-color:transparent}
 
 body.dyslexie-modus, body.dyslexie-modus button, body.dyslexie-modus input,
 body.dyslexie-modus h1, body.dyslexie-modus h2, body.dyslexie-modus h3, body.dyslexie-modus h4, body.dyslexie-modus h5{
@@ -406,12 +427,6 @@ body.dyslexie-modus .term span, body.dyslexie-modus .box p{
 body.dyslexie-modus .credit-name, body.dyslexie-modus .scene-cap{-webkit-background-clip:unset;background-clip:unset;color:var(--paper)}
 
 /* ══ HELP ══ */
-.helpbtn{position:fixed;left:1.6rem;bottom:1.6rem;z-index:120;display:none;
-  width:44px;height:44px;border-radius:50%;background:var(--ink2);color:var(--mut);
-  border:1px solid var(--line);font-size:1.05rem;font-weight:700;
-  transition:transform .25s cubic-bezier(.2,.85,.3,1), color .25s, border-color .25s}
-.helpbtn.show{display:block;animation:pop .4s cubic-bezier(.2,.85,.3,1) both}
-.helpbtn:hover{color:var(--txt);border-color:var(--accent);transform:translateY(-3px) scale(1.06)}
 .helpwrap{position:fixed;inset:0;z-index:210;display:none;align-items:center;justify-content:center;padding:1.5rem}
 .helpwrap.open{display:flex}
 .helpbg{position:absolute;inset:0;background:rgba(5,8,12,.72);backdrop-filter:blur(7px)}
@@ -459,27 +474,7 @@ body.dyslexie-modus .credit-name, body.dyslexie-modus .scene-cap{-webkit-backgro
 .tab.leegtab:hover{opacity:.62}
 
 /* ══ LICHTE MODUS, ZOEKEN, FAVORIETEN ══ */
-.lichtbtn{position:fixed;left:1.6rem;bottom:9.6rem;z-index:120;display:none;
-  width:44px;height:44px;border-radius:50%;background:var(--ink2);color:var(--mut);
-  border:1px solid var(--line);font-size:1.05rem;
-  transition:transform .25s cubic-bezier(.2,.85,.3,1), color .25s, border-color .25s, background .25s}
-.lichtbtn.show{display:block;animation:pop .4s cubic-bezier(.2,.85,.3,1) both}
-.lichtbtn:hover{color:var(--txt);border-color:var(--accent);transform:translateY(-3px) scale(1.06)}
 .lichtbtn.on{background:#f9c116;color:#3d2e00;border-color:transparent}
-
-.zoekbtn{position:fixed;right:1.6rem;bottom:1.6rem;z-index:120;display:none;
-  width:44px;height:44px;border-radius:50%;background:var(--ink2);color:var(--mut);
-  border:1px solid var(--line);font-size:1.05rem;
-  transition:transform .25s cubic-bezier(.2,.85,.3,1), color .25s, border-color .25s}
-.zoekbtn.show{display:block;animation:pop .4s cubic-bezier(.2,.85,.3,1) both}
-.zoekbtn:hover{color:var(--txt);border-color:var(--accent);transform:translateY(-3px) scale(1.06)}
-
-.favbtn{position:fixed;right:1.6rem;bottom:5.6rem;z-index:120;display:none;
-  width:44px;height:44px;border-radius:50%;background:var(--ink2);color:var(--mut);
-  border:1px solid var(--line);font-size:1.05rem;
-  transition:transform .25s cubic-bezier(.2,.85,.3,1), color .25s, border-color .25s}
-.favbtn.show{display:block;animation:pop .4s cubic-bezier(.2,.85,.3,1) both}
-.favbtn:hover{color:var(--txt);border-color:var(--accent);transform:translateY(-3px) scale(1.06)}
 
 .zoekwrap,.favwrap,.examenwrap{position:fixed;inset:0;z-index:210;display:none;align-items:flex-start;justify-content:center;padding:1.5rem;padding-top:8vh}
 .zoekwrap.show,.favwrap.show,.examenwrap.show{display:flex}
@@ -493,22 +488,10 @@ body.dyslexie-modus .credit-name, body.dyslexie-modus .scene-cap{-webkit-backgro
 body.licht-modus .leesliniaal{background:rgba(255,196,20,.16);border-color:rgba(255,196,20,.4)}
 
 /* ══ POMODORO-TIMER ══ */
-.pomodorobtn{position:fixed;right:1.6rem;bottom:9.6rem;z-index:120;display:none;
-  width:44px;height:44px;border-radius:50%;background:var(--ink2);color:var(--mut);
-  border:1px solid var(--line);font-size:.85rem;font-weight:700;font-variant-numeric:tabular-nums;
-  transition:transform .25s cubic-bezier(.2,.85,.3,1), color .25s, border-color .25s, background .25s}
-.pomodorobtn.show{display:block;animation:pop .4s cubic-bezier(.2,.85,.3,1) both}
-.pomodorobtn:hover{color:var(--txt);border-color:var(--accent);transform:translateY(-3px) scale(1.06)}
-.pomodorobtn.on{background:var(--accent);color:#0d1117;border-color:transparent}
+.pomodorobtn{font-variant-numeric:tabular-nums;font-size:.72rem}
 body.pomodoro-focus .aurora{opacity:.35}
 
 /* ══ EXAMEN-/ZELFTESTDASHBOARD ══ */
-.examenbtn{position:fixed;left:1.6rem;bottom:13.6rem;z-index:120;display:none;
-  width:44px;height:44px;border-radius:50%;background:var(--ink2);color:var(--mut);
-  border:1px solid var(--line);font-size:1.05rem;
-  transition:transform .25s cubic-bezier(.2,.85,.3,1), color .25s, border-color .25s, background .25s}
-.examenbtn.show{display:block;animation:pop .4s cubic-bezier(.2,.85,.3,1) both}
-.examenbtn:hover{color:var(--txt);border-color:var(--accent);transform:translateY(-3px) scale(1.06)}
 .examen-hist{display:flex;justify-content:space-between;gap:.6rem;font-size:.78rem;color:var(--mut);
   background:var(--ink3);border-radius:10px;padding:.5rem .8rem;margin-bottom:.4rem}
 .examen-hist b{color:var(--txt)}
@@ -530,7 +513,7 @@ body.pomodoro-focus .aurora{opacity:.35}
 .examen-hist,
 .cornell-row textarea,
 .groot-veld{
-  background:rgba(24,32,54,.55);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  background:rgba(24,32,54,.82);
   border-color:var(--goud-line)}
 .chip:hover{border-color:var(--goud)}
 .chip.sel{background:linear-gradient(150deg,var(--goud),var(--goud-d));color:#241a04;border-color:transparent}
@@ -619,8 +602,7 @@ body.licht-modus .quest-voltooid{background:rgba(201,143,28,.08)!important}
 
 /* ═══ print / PDF-export (Cornell-notities) ═══ */
 @media print{
-  .top,.tabs,.bookhero,.aurora,.grain,.sparkles,.bar,#dyslexiebtn,#helpbtn,#lichtbtn,#zoekbtn,#favbtn,
-  #pomodorobtn,#examenbtn,.leesliniaal,
+  .top,.tabs,.bookhero,.aurora,.grain,.sparkles,.bar,.radialmenu,.leesliniaal,
   .cornell-del,.helpwrap,.zoekwrap,.favwrap,.examenwrap{display:none!important}
   html,body{overflow:visible!important;background:#fff!important;color:#000!important}
   .cornell-row textarea,.groot-veld{background:#fff!important;color:#000!important;border:1px solid #999!important}

@@ -26,11 +26,32 @@ function go(id){
     setTimeout(function(){cur.classList.remove('leaving')},500); }
   var nxt=document.getElementById(id);
   nxt.scrollTop=0; nxt.classList.add('on');
-  ['helpbtn','dyslexiebtn','lichtbtn','zoekbtn','favbtn','pomodorobtn','examenbtn'].forEach(function(bid){
-    var el=document.getElementById(bid); if(el) el.classList.toggle('show', id!=='splash');
-  });
+  var rm=document.getElementById('radialmenu');
+  if(rm){ rm.classList.toggle('show', id!=='splash'); if(id==='splash') closeRadialMenu(); }
   if(id==='home' && !helpGezien){ helpGezien=true; setTimeout(function(){openHelp(0)},2000); }
 }
+/* ═══════ UITKLAPMENU LINKSONDER (bundelt alle los-staande knoppen) ═══════ */
+function toggleRadialMenu(){
+  var rm=document.getElementById('radialmenu'); if(!rm) return;
+  rm.classList.contains('open') ? closeRadialMenu() : openRadialMenu();
+}
+function openRadialMenu(){
+  var rm=document.getElementById('radialmenu'); if(!rm) return;
+  rm.classList.add('open');
+  var trig=document.getElementById('radialtrigger'); if(trig) trig.setAttribute('aria-expanded','true');
+}
+function closeRadialMenu(){
+  var rm=document.getElementById('radialmenu'); if(!rm) return;
+  rm.classList.remove('open');
+  var trig=document.getElementById('radialtrigger'); if(trig) trig.setAttribute('aria-expanded','false');
+}
+document.addEventListener('click', function(e){
+  var rm=document.getElementById('radialmenu');
+  if(rm && rm.classList.contains('open') && !rm.contains(e.target)) closeRadialMenu();
+});
+document.addEventListener('keydown', function(e){
+  if(e.key==='Escape') closeRadialMenu();
+});
 /* ═══════ DYSLEXIE-MODUS ═══════ */
 var dyslexieAan = localStorage.getItem('dyslexieModus')==='1';
 function pasDyslexieToe(){
