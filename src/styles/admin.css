@@ -17,3 +17,11 @@
 .invite-gebruikt{margin-top:1rem}
 .invite-gebruikt summary{cursor:pointer;font-size:.9rem}
 .bt.klein{padding:.3rem .6rem;font-size:.85rem;line-height:1}
+
+/* Overview tiles at the top of the admin panel. */
+.admin-stats{display:flex;flex-wrap:wrap;gap:.55rem}
+.admin-stat{flex:1 1 84px;min-width:84px;padding:.6rem .7rem;border-radius:10px;
+  border:1px solid var(--goud-line);background:linear-gradient(160deg,var(--ink2),#070a14);
+  display:flex;flex-direction:column;gap:.15rem}
+.admin-stat b{font-size:1.25rem;line-height:1;color:var(--goud)}
+.admin-stat span{font-size:.58rem;letter-spacing:.12em;text-transform:uppercase;color:var(--mut)}

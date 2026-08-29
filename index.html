@@ -90,10 +90,19 @@
     <div class="eyebrow">Stap 1 van 2</div>
     <h1 class="page">Welk vak wil je leren?</h1>
     <p class="lede">De kleuren zijn gekozen door de docenten zelf.</p>
-    <div class="bar">
-      <button class="bt gh" onclick="go('personage')">&#127183; Bekijk je voortgang per vak</button>
-      <button class="bt gh" onclick="go('chat')">&#128172; Teamchat</button>
-      <button class="bt gh" id="tekstgroottebtn" onclick="cycleTextSize()" title="Tekstgrootte aanpassen">&#128292; A</button>
+    <div class="snelbalk">
+      <button class="snel" style="--c:var(--niv-tl);--cd:var(--niv-tl-d)" onclick="go('personage')">
+        <span class="snel-ico"><i class="ring"></i><i class="core">&#127183;</i></span>
+        <span class="snel-tekst"><b>Jouw voortgang</b><small>Level per vak</small></span>
+      </button>
+      <button class="snel" style="--c:var(--mensmaatschappij);--cd:var(--mensmaatschappij-d)" onclick="go('chat')">
+        <span class="snel-ico"><i class="ring"></i><i class="core">&#128172;</i></span>
+        <span class="snel-tekst"><b>Teamchat</b><small>Vraag klasgenoten</small></span>
+      </button>
+      <button class="snel" style="--c:var(--goud);--cd:var(--accent-d)" id="tekstgroottebtn" onclick="cycleTextSize()" title="Tekstgrootte aanpassen">
+        <span class="snel-ico"><i class="ring"></i><i class="core">&#128292;</i></span>
+        <span class="snel-tekst"><b>Tekstgrootte</b><span class="snel-waarde">A</span></span>
+      </button>
     </div>
     <div class="subjects" id="subjectGrid"></div>
   </div>
@@ -185,6 +194,46 @@
           <button class="bt" type="submit">Wachtwoord wijzigen</button>
         </form>
         <div id="setWwMelding"></div>
+      </div>
+
+      <div class="box" style="margin-top:1rem">
+        <h3 style="margin-top:0">Weergave</h3>
+        <p class="lede" style="margin:.2rem 0 1rem">Grotere letters en dyslexie-modus. Je keuze wordt onthouden op dit apparaat.</p>
+        <div class="bar" style="margin:0">
+          <button class="bt gh" onclick="settingsCycleTextSize()">Tekstgrootte: <b id="setTekstgrootte">normaal</b></button>
+          <button class="bt gh" onclick="settingsToggleDyslexia()">Dyslexie-modus: <b id="setDyslexie">uit</b></button>
+        </div>
+      </div>
+
+      <div class="box" style="margin-top:1rem">
+        <h3 style="margin-top:0">Voortgang wissen</h3>
+        <p class="lede" style="margin:.2rem 0 1rem">Wist je voortgang, flashcards, streak, favorieten en notities op dit apparaat. Je account blijft gewoon bestaan.</p>
+        <button class="bt gh" onclick="settingsResetProgress()">Voortgang wissen</button>
+        <div id="setVoortgangMelding"></div>
+      </div>
+
+      <div class="box" style="margin-top:1rem">
+        <h3 style="margin-top:0">Mijn chatberichten wissen</h3>
+        <p class="lede" style="margin:.2rem 0 1rem">Verwijdert alle berichten die jij in de Teamchat hebt geplaatst. Dit kan niet ongedaan gemaakt worden.</p>
+        <button class="bt gh" onclick="settingsClearOwnMessages()">Mijn berichten wissen</button>
+        <div id="setBerichtenMelding"></div>
+      </div>
+
+      <div class="box" style="margin-top:1rem">
+        <h3 style="margin-top:0">Uitloggen op alle apparaten</h3>
+        <p class="lede" style="margin:.2rem 0 1rem">Handig als je op een schoolcomputer ingelogd bent gebleven. Je moet daarna overal opnieuw inloggen.</p>
+        <button class="bt gh" onclick="settingsLogoutEverywhere()">Overal uitloggen</button>
+        <div id="setUitlogMelding"></div>
+      </div>
+
+      <div class="box" style="margin-top:1rem;border-color:rgba(224,112,122,.45)">
+        <h3 style="margin-top:0">Account verwijderen</h3>
+        <p class="lede" style="margin:.2rem 0 1rem">Je account, je profiel en je chatberichten worden definitief verwijderd. Dit kan niet ongedaan gemaakt worden.</p>
+        <form onsubmit="submitAccountDeletion(event)">
+          <input class="veld" id="setVerwijderBevestig" type="text" placeholder="Typ je gebruikersnaam om te bevestigen" autocapitalize="none" spellcheck="false" autocomplete="off" style="margin-bottom:.9rem">
+          <button class="bt gh" type="submit">Account definitief verwijderen</button>
+        </form>
+        <div id="setVerwijderMelding"></div>
       </div>
     </div>
   </div>

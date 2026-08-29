@@ -6,6 +6,7 @@
 import { $, setHtml, escapeHtml, warningBox, infoBox, isUuid } from '../lib/dom.js';
 import { MAX_INVITES_PER_BATCH } from '../config.js';
 import * as auth from '../services/auth.js';
+import { countMessages } from '../services/chat.js';
 import { showToast } from './toast.js';
 
 let studentsById = {};
@@ -28,8 +29,11 @@ export async function renderAdmin() {
   }
   wrap.innerHTML = '<p class="lede">Bezig met laden…</p>';
   try {
-    const [invites, students] = await Promise.all([auth.listInviteCodes(), auth.listStudents()]);
-    wrap.innerHTML = invitesHtml(invites) + studentsHtml(students);
+    const [invites, students, messages] = await Promise.all([
+      auth.listInviteCodes(), auth.listStudents(), countMessages().catch(() => 0),
+    ]);
+    wrap.innerHTML = statsHtml(invites, students, messages)
+      + invitesHtml(invites) + studentsHtml(students);
   } catch (err) {
     wrap.innerHTML = warningBox(auth.authErrorMessage(err));
   }
@@ -144,6 +148,7 @@ function studentsHtml(students) {
       + (!isAdmin || self ? '<button class="bt gh" onclick="adminResetPassword(\'' + s.id + '\')">Wachtwoord resetten</button>' : '')
       + (!isAdmin ? '<button class="bt gh" onclick="adminToggleStatus(\'' + s.id + '\')">' + (active ? 'Blokkeren' : 'Deblokkeren') + '</button>' : '')
       + (!isAdmin ? '<button class="bt gh" onclick="adminToggleMute(\'' + s.id + '\')">' + (s.muted ? 'Ontdempen (chat)' : 'Dempen (chat)') + '</button>' : '')
+      + '<button class="bt gh" onclick="adminClearStudentMessages(\'' + s.id + '\')">Berichten wissen</button>'
       + (!isAdmin ? '<button class="bt gh" onclick="adminDeleteUser(\'' + s.id + '\')">Verwijderen</button>' : '')
       + '</div></div>'
       + '<div id="admres-' + s.id + '"></div>'
@@ -212,5 +217,80 @@ export async function adminDeleteUser(id) {
     renderAdmin();
   } catch (err) {
     showError(id, err);
+  }
+}
+
+/* ── Overview + channel-wide moderation ───────────────────────────────── */
+
+/* All figures come from the lists already fetched for this render, so the
+   overview costs one extra count query and nothing more. */
+function statsHtml(invites, students, messages) {
+  const active = students.filter((s) => s.status === auth.STATUS.active).length;
+  const blocked = students.length - active;
+  const muted = students.filter((s) => s.muted).length;
+  const admins = students.filter((s) => s.role === auth.ROLE.admin).length;
+  const openCodes = invites.filter((i) => i.open).length;
+  const staleCodes = invites.length - openCodes;
+
+  const cell = (value, label) => '<div class="admin-stat"><b>' + escapeHtml(String(value)) + '</b>'
+    + '<span>' + escapeHtml(label) + '</span></div>';
+
+  return '<div class="box admin-blok">'
+    + '<h3 style="margin-top:0">Overzicht</h3>'
+    + '<div class="admin-stats">'
+    + cell(students.length, 'leerlingen')
+    + cell(active, 'actief')
+    + cell(blocked, 'geblokkeerd')
+    + cell(muted, 'gedempt')
+    + cell(admins, 'beheerders')
+    + cell(messages, 'chatberichten')
+    + cell(openCodes, 'open codes')
+    + '</div>'
+    + '<div class="bar" style="margin:1rem 0 0">'
+    + '<button class="bt gh" onclick="adminClearChat()">Chat leegmaken</button>'
+    + (staleCodes ? '<button class="bt gh" onclick="adminCleanUpInvites()">Verlopen codes opruimen (' + staleCodes + ')</button>' : '')
+    + '</div>'
+    + '<div id="adminOverzichtMelding"></div>'
+    + '</div>';
+}
+
+/* Empties the whole channel. Deletes the rows, so the messages are gone from
+   the database too, not just hidden in the app. */
+export async function adminClearChat() {
+  if (!window.confirm('Alle chatberichten definitief verwijderen? Dit kan niet ongedaan gemaakt worden.')) return;
+  setHtml('adminOverzichtMelding', infoBox('Bezig…'));
+  try {
+    const removed = await auth.clearChat();
+    await renderAdmin();
+    showToast(removed + ' bericht(en) verwijderd.');
+  } catch (err) {
+    setHtml('adminOverzichtMelding', warningBox(auth.authErrorMessage(err)));
+  }
+}
+
+export async function adminCleanUpInvites() {
+  if (!window.confirm('Alle gebruikte en verlopen codes opruimen? Open codes blijven staan.')) return;
+  setHtml('adminOverzichtMelding', infoBox('Bezig…'));
+  try {
+    const removed = await auth.cleanUpInviteCodes();
+    await renderAdmin();
+    showToast(removed + ' code(s) opgeruimd.');
+  } catch (err) {
+    setHtml('adminOverzichtMelding', warningBox(auth.authErrorMessage(err)));
+  }
+}
+
+/* Clears one student's messages without touching their account. */
+export async function adminClearStudentMessages(studentId) {
+  if (!isUuid(studentId)) return;
+  const student = studentsById[studentId];
+  const name = student ? student.username : 'deze leerling';
+  if (!window.confirm('Alle berichten van ' + name + ' verwijderen?')) return;
+  try {
+    const removed = await auth.clearStudentMessages(studentId);
+    await renderAdmin();
+    showToast(removed + ' bericht(en) van ' + name + ' verwijderd.');
+  } catch (err) {
+    showToast('Kon berichten niet wissen: ' + auth.authErrorMessage(err));
   }
 }

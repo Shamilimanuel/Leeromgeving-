@@ -5,14 +5,18 @@
 
    Actions for any active user (about their own account):
      gebruikersnaam_wijzigen  { nieuweGebruikersnaam }
+     eigen_account_verwijderen { bevestiging }             bevestiging must be the username
 
    Actions for admins only:
      uitnodigingen_aanmaken   { aantal? }                  -> { codes: [] }
      uitnodiging_verwijderen  { code }
+     codes_opruimen           {}                           -> { verwijderd }
      wachtwoord_resetten      { leerlingId }               -> { nieuwWachtwoord }
      status_wijzigen          { leerlingId, status }       status: 'actief' | 'geblokkeerd'
      gemute_wijzigen          { leerlingId, gemute }
      verwijderen              { leerlingId }
+     chat_legen               {}                           -> { verwijderd }
+     leerling_berichten_wissen { leerlingId }              -> { verwijderd }
 
    Admins cannot block, mute, delete or reset other admins, and cannot block
    or delete themselves. */
@@ -46,6 +50,10 @@ serve(async (req) => {
     return await changeOwnUsername(admin, caller, asString(body.nieuweGebruikersnaam));
   }
 
+  if (actie === 'eigen_account_verwijderen') {
+    return await deleteOwnAccount(admin, caller, asString(body.bevestiging));
+  }
+
   if (caller.rol !== 'admin') throw new HttpError('Alleen voor beheerders.', 403);
 
   switch (actie) {
@@ -53,6 +61,12 @@ serve(async (req) => {
       return await createInvites(admin, caller, body.aantal);
     case 'uitnodiging_verwijderen':
       return await deleteInvite(admin, asString(body.code));
+    case 'codes_opruimen':
+      return await cleanUpInvites(admin);
+    case 'chat_legen':
+      return await clearChat(admin);
+    case 'leerling_berichten_wissen':
+      return await clearStudentMessages(admin, asString(body.leerlingId));
     case 'wachtwoord_resetten':
       return await resetPassword(admin, caller, asString(body.leerlingId));
     case 'status_wijzigen':
@@ -175,4 +189,66 @@ async function deleteStudent(admin: ReturnType<typeof serviceClient>, caller: Pr
   const { error } = await admin.auth.admin.deleteUser(target.id);
   if (error) throw new HttpError('Account kon niet worden verwijderd.', 500);
   return json({ ok: true });
+}
+
+/* Self-service: delete your own account. `bevestiging` must repeat the caller's
+   own username, so a stray click cannot wipe an account. The last admin is kept:
+   without one nobody could ever hand out invite codes again. */
+async function deleteOwnAccount(admin: ReturnType<typeof serviceClient>, caller: Profile, confirmation: string) {
+  if (confirmation.trim().toLowerCase() !== caller.gebruikersnaam.toLowerCase()) {
+    throw new HttpError('Typ je gebruikersnaam precies over om te bevestigen.', 400);
+  }
+  if (caller.rol === 'admin') {
+    const { count, error } = await admin
+      .from('profiles')
+      .select('id', { count: 'exact', head: true })
+      .eq('rol', 'admin')
+      .eq('status', 'actief');
+    if (error) throw new HttpError('Kon niet controleren of je de laatste beheerder bent.', 500);
+    if ((count ?? 0) <= 1) {
+      throw new HttpError('Je bent de laatste beheerder. Maak eerst iemand anders beheerder.', 400);
+    }
+  }
+  await admin.from('chatberichten').delete().eq('gebruiker_id', caller.id);
+  await admin.from('profiles').delete().eq('id', caller.id);
+  const { error } = await admin.auth.admin.deleteUser(caller.id);
+  if (error) throw new HttpError('Account kon niet worden verwijderd.', 500);
+  return json({ ok: true });
+}
+
+/* Moderation: empty the whole channel. The rows are really deleted, not hidden. */
+async function clearChat(admin: ReturnType<typeof serviceClient>) {
+  const { data, error } = await admin
+    .from('chatberichten')
+    .delete()
+    .not('id', 'is', null)   // PostgREST refuses an unfiltered delete
+    .select('id');
+  if (error) throw new HttpError('Chat kon niet worden geleegd.', 500);
+  return json({ ok: true, verwijderd: (data || []).length });
+}
+
+/* Moderation: remove everything one student ever posted, without touching
+   their account. */
+async function clearStudentMessages(admin: ReturnType<typeof serviceClient>, id: string) {
+  const target = await loadTarget(admin, id);
+  const { data, error } = await admin
+    .from('chatberichten')
+    .delete()
+    .eq('gebruiker_id', target.id)
+    .select('id');
+  if (error) throw new HttpError('Berichten konden niet worden gewist.', 500);
+  return json({ ok: true, verwijderd: (data || []).length });
+}
+
+/* Housekeeping: drop invite codes that are used or past their expiry date.
+   Open, still-valid codes are left alone. */
+async function cleanUpInvites(admin: ReturnType<typeof serviceClient>) {
+  const now = new Date().toISOString();
+  const { data, error } = await admin
+    .from('uitnodigingen')
+    .delete()
+    .or(`gebruikt_op.not.is.null,verloopt_op.lt.${now}`)
+    .select('code');
+  if (error) throw new HttpError('Codes konden niet worden opgeruimd.', 500);
+  return json({ ok: true, verwijderd: (data || []).length });
 }

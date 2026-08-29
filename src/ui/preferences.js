@@ -67,8 +67,13 @@ function applyTextSize() {
   const size = TEXT_SIZES[textSizeIndex];
   document.documentElement.classList.toggle('txt-groot', size === 'groot');
   document.documentElement.classList.toggle('txt-grootst', size === 'grootst');
+  // The button holds its own icon and label markup, so only the value changes.
   const btn = $('tekstgroottebtn');
-  if (btn) btn.textContent = '\u{1F524} ' + TEXT_SIZE_LABELS[size];
+  if (btn) {
+    const value = btn.querySelector('.snel-waarde');
+    if (value) value.textContent = TEXT_SIZE_LABELS[size];
+    else btn.textContent = '\u{1F524} ' + TEXT_SIZE_LABELS[size];
+  }
 }
 
 export function cycleTextSize() {
@@ -86,4 +91,14 @@ export function initPreferences() {
   applyReadingRuler();
   applyLightMode();
   applyTextSize();
+}
+
+/* ── Read-only state, for screens that show the current preference ────── */
+
+export function isDyslexiaOn() {
+  return dyslexiaOn;
+}
+
+export function currentTextSizeLabel() {
+  return TEXT_SIZES[textSizeIndex];
 }
