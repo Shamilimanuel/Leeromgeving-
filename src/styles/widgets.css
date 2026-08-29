@@ -193,3 +193,44 @@ body.licht-modus .jaar-card{background:linear-gradient(165deg,var(--accent-d),#e
 /* ══ TEXT SIZE ══ */
 html.txt-groot{font-size:18px}
 html.txt-grootst{font-size:20px}
+
+/* ── Quick actions on the home screen ─────────────────────────────────────
+   Three shortcuts under the page title. They deliberately borrow the subject
+   cards' vocabulary (gold hairline, dark gradient, ring badge, lift + glow on
+   hover) so they read as part of the same set instead of as plain buttons.
+   Each tile sets its own accent through --c. */
+.snelbalk{display:flex;gap:.7rem;flex-wrap:wrap;margin:1.6rem 0 1.4rem}
+
+.snel{position:relative;display:flex;align-items:center;gap:.7rem;
+  padding:.62rem 1.05rem .62rem .62rem;border-radius:14px;overflow:hidden;
+  text-align:left;color:var(--txt);cursor:pointer;
+  border:1.5px solid var(--goud-line);
+  background:linear-gradient(150deg,var(--cd,var(--ink2)) 0%,#070a14 92%);
+  box-shadow:0 6px 18px rgba(0,0,0,.45), inset 0 0 34px -20px var(--c,transparent);
+  transition:transform .35s cubic-bezier(.16,.8,.24,1), box-shadow .35s cubic-bezier(.16,.8,.24,1), border-color .3s ease, filter .3s ease}
+.snel:hover,.snel:focus-visible{transform:translateY(-4px);border-color:var(--goud);filter:brightness(1.07);
+  box-shadow:0 18px 34px -14px var(--c,var(--goud)), 0 6px 18px rgba(0,0,0,.45)}
+.snel:active{transform:translateY(-1px)}
+/* Sheen, same idea as .subj::after, kept subtler at this size. */
+.snel::after{content:'';position:absolute;inset:0;z-index:1;pointer-events:none;
+  background:linear-gradient(160deg,rgba(255,255,255,.12),transparent 60%)}
+
+/* Icon in a glowing ring, mirroring .subj .badge */
+.snel-ico{position:relative;z-index:2;flex:0 0 auto;width:34px;height:34px;display:grid;place-items:center}
+.snel-ico .ring{position:absolute;inset:0;border-radius:50%;pointer-events:none;
+  border:1px solid var(--c,var(--goud));opacity:.55;
+  box-shadow:0 0 12px -2px var(--c,var(--goud)), inset 0 0 10px -6px var(--c,var(--goud))}
+.snel-ico .core{position:relative;font-size:1rem;font-style:normal;line-height:1}
+.snel:hover .snel-ico .ring{opacity:.9}
+
+.snel-tekst{position:relative;z-index:2;display:flex;flex-direction:column;gap:.1rem;min-width:0}
+.snel-tekst b{font-size:.84rem;font-weight:650;letter-spacing:.01em;white-space:nowrap}
+.snel-tekst small{font-size:.6rem;letter-spacing:.13em;text-transform:uppercase;color:var(--mut);white-space:nowrap}
+
+/* The text-size tile shows its current step (A / A+ / A++) instead of a hint. */
+.snel .snel-waarde{font-size:.6rem;letter-spacing:.13em;text-transform:uppercase;color:var(--goud);font-weight:700}
+
+@media (max-width:560px){
+  .snel{flex:1 1 100%}
+  .snel-tekst small,.snel .snel-waarde{white-space:normal}
+}

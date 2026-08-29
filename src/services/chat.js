@@ -80,3 +80,18 @@ export function subscribeToMessages(onChange) {
     }
   };
 }
+
+/* Deletes every message the signed-in student posted. RLS ("chat: delete own
+   message") is what limits this to their own rows. Returns the count. */
+export async function deleteOwnMessages(userId) {
+  const res = await supabase.from('chatberichten').delete().eq('gebruiker_id', userId).select('id');
+  if (res.error) throw res.error;
+  return (res.data || []).length;
+}
+
+/* Totals for the admin overview. Counted server-side, no rows transferred. */
+export async function countMessages() {
+  const res = await supabase.from('chatberichten').select('id', { count: 'exact', head: true });
+  if (res.error) throw res.error;
+  return res.count || 0;
+}

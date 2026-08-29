@@ -28,8 +28,13 @@ import { toggleProfileMenu, closeProfileMenu, logout, submitLogin, submitRegistr
 import {
   adminResetPassword, adminToggleStatus, adminToggleMute, adminDeleteUser,
   adminCreateInvites, adminDeleteInvite, adminCopyInvite,
+  adminClearChat, adminCleanUpInvites, adminClearStudentMessages,
 } from './admin.js';
-import { submitUsernameChange, submitPasswordChange } from './settings.js';
+import {
+  submitUsernameChange, submitPasswordChange,
+  settingsCycleTextSize, settingsToggleDyslexia, settingsResetProgress,
+  settingsClearOwnMessages, settingsLogoutEverywhere, submitAccountDeletion,
+} from './settings.js';
 import { submitChatMessage, chatToggleMute, chatDeleteMessage } from './chat.js';
 
 export const globalHandlers = {
@@ -52,7 +57,10 @@ export const globalHandlers = {
   toggleProfileMenu, closeProfileMenu, logout, submitLogin, submitRegistration, showRegistration,
   adminResetPassword, adminToggleStatus, adminToggleMute, adminDeleteUser,
   adminCreateInvites, adminDeleteInvite, adminCopyInvite,
+  adminClearChat, adminCleanUpInvites, adminClearStudentMessages,
   submitUsernameChange, submitPasswordChange,
+  settingsCycleTextSize, settingsToggleDyslexia, settingsResetProgress,
+  settingsClearOwnMessages, settingsLogoutEverywhere, submitAccountDeletion,
   submitChatMessage, chatToggleMute, chatDeleteMessage,
 };
 

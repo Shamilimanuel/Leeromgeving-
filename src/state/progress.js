@@ -217,3 +217,18 @@ export function saveExamAttempt(correct, total) {
   if (list.length > 50) list = list.slice(list.length - 50);
   writeJson(K.examHistory, list);
 }
+
+/* Wipes everything the student has built up on this device: progress, mistakes,
+   flashcard boxes, streak, favourites, exam results and notes. Display
+   preferences (text size, dyslexia mode, ...) are deliberately kept, because
+   someone resetting their progress still needs the site to stay readable. */
+export function clearLearningData() {
+  const keys = [
+    K.progress, K.mistakes, K.leitner, K.streak,
+    K.favorites, K.examHistory, K.sq3r, K.cornell,
+  ];
+  keys.forEach((key) => {
+    try { localStorage.removeItem(key); } catch { /* storage blocked */ }
+  });
+  return keys.length;
+}

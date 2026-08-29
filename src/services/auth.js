@@ -274,3 +274,41 @@ export async function createInviteCodes(count) {
 export async function deleteInviteCode(code) {
   await callAdminFunction('uitnodiging_verwijderen', { code });
 }
+
+/* Removes used and expired codes in one go; returns how many were deleted. */
+export async function cleanUpInviteCodes() {
+  const res = await callAdminFunction('codes_opruimen', {});
+  return res.verwijderd || 0;
+}
+
+/* ── Moderation ──────────────────────────────────────────────────────── */
+
+/* Empties the whole chat channel (rows are deleted, not hidden). */
+export async function clearChat() {
+  const res = await callAdminFunction('chat_legen', {});
+  return res.verwijderd || 0;
+}
+
+/* Deletes everything one student posted, leaving the account intact. */
+export async function clearStudentMessages(studentId) {
+  const res = await callAdminFunction('leerling_berichten_wissen', { leerlingId: studentId });
+  return res.verwijderd || 0;
+}
+
+/* ── Own account ─────────────────────────────────────────────────────── */
+
+/* Deletes the signed-in account for good. `confirmation` must repeat the
+   username; the server checks it again and refuses the last admin. */
+export async function deleteOwnAccount(confirmation) {
+  await callAdminFunction('eigen_account_verwijderen', { bevestiging: confirmation });
+  await logout();
+}
+
+/* Signs out every session of this account, not just this tab. Useful on the
+   shared school computers this site is mostly used on. */
+export async function logoutEverywhere() {
+  const res = await supabase.auth.signOut({ scope: 'global' });
+  session = null;
+  profile = null;
+  if (res && res.error) throw res.error;
+}
