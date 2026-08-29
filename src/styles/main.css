@@ -1,0 +1,11 @@
+/* Stylesheet entry point. The order matters: later files override earlier ones,
+   and the split follows the original file order exactly. */
+@import './base.css';
+@import './layout.css';
+@import './content.css';
+@import './study.css';
+@import './widgets.css';
+@import './theme.css';
+@import './notes.css';
+@import './chat.css';
+@import './admin.css';

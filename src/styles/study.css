@@ -1,0 +1,62 @@
+/* Study tools on the chapter screen: button bar, flashcards, quiz, glossary search, form fields. */
+/* flashcards */
+.bar{display:flex;gap:.6rem;flex-wrap:wrap;align-items:center;margin:1.6rem 0 1.2rem}
+.bt{background:var(--accent);color:#0d1117;border:none;border-radius:100px;padding:.5rem 1.2rem;font-size:.8rem;font-weight:600;transition:.2s}
+.bt:hover{transform:translateY(-2px)}
+.bt.gh{background:var(--ink3);color:var(--txt);border:1px solid var(--line)}
+.cnt{font-size:.8rem;color:var(--mut);margin-left:auto}
+.cgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:1rem}
+.fc{perspective:1000px;height:180px;cursor:pointer;animation:up .4s ease both;position:relative}
+.fc .star{position:absolute;top:.55rem;right:.55rem;z-index:3}
+.star{background:none;border:none;color:var(--mut);font-size:.95rem;line-height:1;padding:.2rem;
+  transition:transform .2s cubic-bezier(.2,.85,.3,1),color .2s}
+.star:hover{transform:scale(1.15);color:var(--accent)}
+.star.on{color:#f9c116}
+.fc-in{position:relative;width:100%;height:100%;transition:transform .55s cubic-bezier(.2,.85,.3,1);transform-style:preserve-3d}
+.fc.flip .fc-in{transform:rotateY(180deg)}
+.fc-f,.fc-b{position:absolute;inset:0;backface-visibility:hidden;border-radius:16px;padding:1.1rem;
+  display:flex;flex-direction:column;justify-content:center;text-align:center}
+.fc-f{background:var(--ink2);border:1px solid var(--line);font-family:'Cinzel',serif;font-size:.94rem}
+.fc-f small{font-size:.6rem;letter-spacing:.16em;color:var(--mut);margin-bottom:.5rem;font-family:'DM Sans'}
+.fc-f .h{font-size:.64rem;color:var(--mut);margin-top:.7rem;font-family:'DM Sans'}
+.fc-b{background:linear-gradient(150deg,var(--accent-d),var(--ink3));border:1px solid var(--accent);
+  transform:rotateY(180deg);font-size:.82rem;color:var(--txt)}
+.fc-b strong{color:var(--accent);font-family:'Cinzel',serif;font-size:.66rem;letter-spacing:.12em;text-transform:uppercase;margin-bottom:.45rem}
+.mk{display:flex;gap:.4rem;justify-content:center;margin-top:.8rem}
+.mk button{border:none;border-radius:100px;padding:.24rem .7rem;font-size:.68rem;font-family:'DM Sans'}
+.mk .y{background:var(--accent);color:#0d1117}
+.mk .t{background:rgba(243,215,138,.3);color:#fff}
+.mk .n{background:rgba(255,255,255,.14);color:#fff}
+.fc.known .fc-f{border-color:var(--accent);background:var(--ink3)}
+.leitner-dots{position:absolute;top:.7rem;left:.65rem;z-index:3;display:flex;gap:.18rem}
+.leitner-dots .ld{width:.4rem;height:.4rem;border-radius:50%;background:var(--line);display:inline-block}
+.leitner-dots .ld.on{background:var(--accent)}
+
+/* quiz */
+.qq{background:var(--ink2);border:1px solid var(--line);border-radius:16px;padding:1.2rem;margin-bottom:1rem;animation:up .4s ease both}
+.qq .qn{font-size:.66rem;letter-spacing:.14em;color:var(--mut)}
+.qq h4{font-family:'Cinzel',serif;font-size:.98rem;margin:.3rem 0 .9rem}
+.opt{display:block;width:100%;text-align:left;background:var(--ink3);border:1px solid var(--line);border-radius:10px;
+  padding:.6rem .9rem;margin-bottom:.45rem;font-family:'DM Sans';font-size:.85rem;color:var(--txt);transition:.18s}
+.opt:hover:not(:disabled){border-color:var(--accent);transform:translateX(3px)}
+.opt:disabled{cursor:default}
+.opt.good{background:rgba(124,217,146,.14);border-color:#7cd992;color:#c8f0d2;font-weight:600}
+.opt.bad{background:rgba(239,138,138,.13);border-color:#ef8a8a;color:#ffc9c9}
+.fb{font-size:.82rem;margin-top:.6rem;padding:.6rem .9rem;border-radius:10px;background:rgba(255,255,255,.05);color:var(--mut);display:none}
+.fb.on{display:block;animation:up .3s ease both}
+.scorebar{position:sticky;top:105px;z-index:30;background:var(--ink2);border:1px solid var(--line);border-radius:14px;
+  padding:.85rem 1.1rem;margin:1.6rem 0 1.2rem;display:flex;align-items:center;gap:1rem;flex-wrap:wrap}
+.scorebar b{font-family:'Cinzel',serif}
+.prog{flex:1;min-width:110px;height:7px;background:var(--ink3);border-radius:100px;overflow:hidden}
+.prog i{display:block;height:100%;background:var(--accent);width:0;transition:width .35s}
+
+/* glossary */
+.zoek{width:100%;padding:.7rem 1.1rem;border:1px solid var(--line);border-radius:100px;background:var(--ink2);
+  color:var(--txt);font-family:'DM Sans';font-size:.9rem;margin:1.6rem 0 1.2rem}
+.zoek:focus{outline:none;border-color:var(--accent)}
+
+/* account / admin panel */
+.veld{display:block;width:100%;padding:.75rem 1rem;border:1px solid var(--line);border-radius:12px;
+  background:var(--ink2);color:var(--txt);font-family:'DM Sans';font-size:.95rem;box-sizing:border-box}
+.veld:focus{outline:none;border-color:var(--accent)}
+body.licht-modus .veld{background:#fff}

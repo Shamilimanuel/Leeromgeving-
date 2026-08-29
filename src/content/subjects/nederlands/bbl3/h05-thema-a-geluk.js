@@ -1,0 +1,52 @@
+import { registerChapter } from '../../../registry.js';
+
+registerChapter('nederlands|bbl|3|5', {
+title:'Thema A: Geluk',
+summary:[
+{heading:'Wat is geluk?',html:'<div class=\'box\'><h4>Filosofen op zoek naar geluk</h4><p>Al eeuwen zoeken filosofen en wetenschappers naar het antwoord op de vraag wat geluk is. Ze lijken het niet met elkaar eens te worden. <b>Filosofie</b> betekent in het Grieks "houden van wijsheid": een filosoof houdt zich bezig met het ontwikkelen van ideeën en het zoeken naar antwoorden op levensvragen.</p></div><div class=\'g2\'><div class=\'box\'><h4>Confucius</h4><p>Deze Chinese filosoof richtte zich met geluk op het verbeteren van het welzijn van anderen. Hij zag geluk dus vooral in <b>het helpen van andere mensen</b>.</p></div><div class=\'box\'><h4>Aristoteles</h4><p>Deze Griekse filosoof geloofde dat geluk een <b>deugd</b> is: een bepaalde houding of instelling van iemand, zoals dapper zijn of jezelf beheersen. Net zoals je moeite moet doen om jezelf te beheersen, kun je volgens hem ook je best doen om geluk te vinden.</p></div></div><div class=\'g2\'><div class=\'box\'><h4>Geluksrevolutie en de Dalai Lama</h4><p>In de 17e en 18e eeuw was er een soort geluksrevolutie: geluk werd omschreven als iets natuurlijks, met als doel <b>plezier vergroten en lijden verminderen</b>. De Dalai Lama, de religieuze leider van de boeddhisten, beweert dat het leven bedoeld is om gelukkig te zijn.</p></div><div class=\'box\'><h4>Sonja Lyubomirsky</h4><p>Deze Amerikaanse professor in de psychologie zegt dat geluk een combinatie is van de ervaring van vreugde, tevredenheid of positiviteit, én het gevoel dat je leven goed, zinvol en de moeite waard is.</p></div></div><div class=\'call\'>Positieve psychologie zegt dat geluk gaat over levenstevredenheid en een positieve invloed hebben. Wetenschappers meten dit door mensen te vragen hoe tevreden ze zijn met hun leven en hoeveel positieve en negatieve emoties ze ervaren, bijvoorbeeld in het World Happiness Report.</div><div class=\'call sum\'><b>Om te onthouden</b><ul class=\'lst\'><li>Er bestaat geen universele definitie van geluk: filosofen en wetenschappers denken er heel verschillend over.</li><li>Confucius: geluk = anderen helpen. Aristoteles: geluk = een deugd/houding.</li><li>Positieve psychologie meet geluk via levenstevredenheid en positieve/negatieve emoties.</li></ul></div>'},
+{heading:'Een betoog schrijven',html:'<div class=\'box\'><h4>De onderdelen van een betoog</h4><p>Voor een <b>betoog</b> werk je eerst deze onderdelen uit:</p><ol class=\'num\'><li>Je mening (standpunt) over de stelling.</li><li>Drie argumenten voor je mening.</li><li>Een voorbeeld of uitleg om elk argument duidelijker te maken.</li><li>Een argument dat iemand met een andere mening zou kunnen gebruiken (het <b>tegenargument</b>).</li><li>Een uitleg waarom dat tegenargument volgens jou niet klopt (de <b>weerlegging</b>).</li></ol></div><div class=\'call sum\'><b>Om te onthouden</b><ul class=\'lst\'><li>Een betoog bevat: mening, argumenten met voorbeeld/uitleg, een tegenargument én een weerlegging.</li><li>Gebruik een schrijfplan en verdeel je tekst in inleiding, middenstuk en slot.</li></ul></div>'},
+{heading:'Een creatieve tekst schrijven',html:'<div class=\'box\'><h4>Wat is een creatieve tekst?</h4><p>Bij een creatieve tekst schrijf je een fantasieverhaal of een realistische tekst rond een onderwerp, bijvoorbeeld de meest gelukkige dag ooit.</p></div><div class=\'call sum\'><b>Om te onthouden</b><ul class=\'lst\'><li>Gebruik figuurlijk taalgebruik in je tekst.</li><li>Maak een tekst met een heldere opbouw waarin je verbanden duidelijk aangeeft (met signaalwoorden).</li><li>Gebruik een schrijfplan om je tekst te structureren.</li></ul></div>'},
+{heading:'Een vlog maken',html:'<div class=\'box\'><h4>Van hoofdvraag naar vlog</h4><p>Een vlog bouw je op rond een <b>hoofdvraag</b>, met een aantal <b>deelvragen</b> die je in je vlog beantwoordt.</p><ol class=\'num\'><li>Kies een hoofdvraag die past bij je onderwerp.</li><li>Bedenk deelvragen die bij je hoofdvraag passen.</li><li>Zoek de antwoorden op je deelvragen en hoofdvraag, bijvoorbeeld in een korte samenvatting of tabel.</li><li>Gebruik ook antwoorden van anderen of een passende video in je vlog.</li></ol></div><div class=\'call sum\'><b>Om te onthouden</b><ul class=\'lst\'><li>Bedenk een structuur voor je vlog en volg die.</li><li>Geef informatie, uitleg of instructie, altijd met redenen of voorbeelden erbij.</li></ul></div>'},
+{heading:'Een artikel schrijven',html:'<div class=\'box\'><h4>Een informerend artikel</h4><p>Bij een informerend artikel gebruik je de <b>5W+H-vragen</b> (wie, wat, waar, wanneer, waarom, hoe) om te bepalen welke informatie je artikel moet bevatten.</p><ol class=\'num\'><li>Noteer de belangrijkste 5W+H-vragen voor je artikel.</li><li>Zoek de antwoorden, bijvoorbeeld in een samenvatting of tabel.</li><li>Bedenk je belangrijkste tip voor de lezer: die gebruik je in je conclusie.</li></ol></div><div class=\'call sum\'><b>Om te onthouden</b><ul class=\'lst\'><li>Gebruik de 5W+H-vragen om informatie uit meerdere bronnen samen te voegen.</li><li>Verdeel je artikel in een inleiding, een middenstuk en een slot, met duidelijke verbanden tussen de alinea\'s.</li></ul></div>'}
+],
+terms:[
+['filosofie','Het Griekse woord voor "houden van wijsheid"; het ontwikkelen van ideeën en zoeken naar antwoorden op levensvragen.',0],
+['deugd','Een bepaalde houding of instelling van iemand, zoals dapper zijn of jezelf beheersen.',0],
+['positieve psychologie','Wetenschapsgebied dat geluk meet via levenstevredenheid en positieve/negatieve emoties.',0],
+['betoog','Een overtuigende tekst met een mening, argumenten, een tegenargument en een weerlegging.',1],
+['tegenargument','Een argument dat iemand met een andere mening zou kunnen gebruiken.',1],
+['weerlegging','De uitleg waarom een tegenargument volgens jou niet klopt.',1],
+['creatieve tekst','Een fantasieverhaal of realistische tekst, geschreven met figuurlijk taalgebruik en een heldere opbouw.',2],
+['figuurlijk taalgebruik','Taal die niet letterlijk bedoeld is, gebruikt om een tekst levendiger te maken.',2],
+['hoofdvraag','De centrale vraag die je in een vlog of presentatie beantwoordt.',3],
+['deelvraag','Een kleinere vraag die helpt om de hoofdvraag te beantwoorden.',3],
+['5W+H-vragen','Wie, wat, waar, wanneer, waarom en hoe: vragen die helpen om een informerend artikel op te bouwen.',4],
+['informerend artikel','Een tekst die de lezer informatie en tips geeft over een onderwerp.',4]
+],
+cards:[
+['Waarin zocht Confucius geluk?','In het helpen van anderen.',0],
+['Wat is volgens Aristoteles geluk?','Een deugd: een houding of instelling die je kunt oefenen.',0],
+['Waar meet het World Happiness Report geluk mee?','Levenstevredenheid en positieve/negatieve emoties.',0],
+['Uit welke onderdelen bestaat een betoog?','Mening, argumenten met voorbeeld/uitleg, een tegenargument en een weerlegging.',1],
+['Wat is een weerlegging?','De uitleg waarom een tegenargument volgens jou niet klopt.',1],
+['Waarmee maak je een creatieve tekst levendiger?','Met figuurlijk taalgebruik.',2],
+['Wat moet een creatieve tekst hebben naast figuurlijk taalgebruik?','Een heldere opbouw met duidelijke verbanden tussen zinnen en alinea\'s.',2],
+['Waarrond bouw je een vlog op?','Een hoofdvraag met een paar deelvragen.',3],
+['Wat zijn de 5W+H-vragen?','Wie, wat, waar, wanneer, waarom en hoe.',4],
+['In welke drie delen verdeel je een artikel?','Inleiding, middenstuk en slot.',4]
+],
+quiz:[
+['Waarin zocht Confucius geluk?',['In geld verdienen','In het helpen van anderen','In alleen zijn','In veel slapen'],1,'Confucius richtte zich met geluk op het verbeteren van het welzijn van anderen.'],
+['Wat betekent \'deugd\' volgens Aristoteles\' theorie over geluk?',['Een soort taart','Een houding of instelling van iemand','Een religieus ritueel','Een vorm van rijkdom'],1,'Aristoteles zag geluk als een deugd: een bepaalde houding of instelling.'],
+['Wie is de religieuze leider die zegt dat het leven bedoeld is om gelukkig te zijn?',['Confucius','Aristoteles','de Dalai Lama','Sonja Lyubomirsky'],2,'De Dalai Lama, de religieuze leider van de boeddhisten, zegt dit.'],
+['Waarmee meet positieve psychologie geluk?',['Alleen met geld','Levenstevredenheid en positieve/negatieve emoties','Het aantal vrienden','De hoeveelheid slaap'],1,'Positieve psychologie meet geluk via levenstevredenheid en de hoeveelheid positieve en negatieve emoties.'],
+['Wat hoort NIET bij een betoog?',['Een mening','Argumenten','Een tegenargument met weerlegging','Een rijmschema'],3,'Een rijmschema hoort bij een gedicht, niet bij een betoog.'],
+['Wat is een tegenargument?',['Een argument voor je eigen mening','Een argument dat iemand met een andere mening zou gebruiken','Een conclusie','Een voorbeeld'],1,'Een tegenargument is een argument dat iemand met een andere mening zou kunnen gebruiken.'],
+['Wat doe je bij een weerlegging?',['Je herhaalt je mening','Je legt uit waarom een tegenargument niet klopt','Je noemt een nieuw onderwerp','Je stelt een vraag'],1,'Bij een weerlegging leg je uit waarom het tegenargument volgens jou niet klopt.'],
+['Wat gebruik je om een creatieve tekst levendiger te maken?',['Alleen cijfers','Figuurlijk taalgebruik','Alleen korte zinnen','Een rijmschema'],1,'Figuurlijk taalgebruik maakt een creatieve tekst levendiger.'],
+['Waar bouw je een vlog omheen?',['Een hoofdvraag met deelvragen','Alleen muziek','Een gedicht','Een woordgrap'],0,'Een vlog bouw je op rond een hoofdvraag met een aantal deelvragen.'],
+['Wat zijn de 5W+H-vragen?',['Wie, wat, waar, wanneer, waarom en hoe','Was, wordt, werd, wilde, wees, waaide','Eén, twee, drie, vier, vijf, zes','Ja, nee, misschien, altijd, nooit, soms'],0,'De 5W+H-vragen zijn: wie, wat, waar, wanneer, waarom en hoe.'],
+['In welke drie delen verdeel je een artikel?',['Titel, plaatje, bronvermelding','Inleiding, middenstuk en slot','Vraag, antwoord, conclusie','Begin, midden, eind zonder structuur'],1,'Een artikel verdeel je in een inleiding, een middenstuk en een slot.'],
+['Wat is de eerste stap bij het schrijven van een informerend artikel?',['Meteen beginnen met typen','De belangrijkste 5W+H-vragen noteren','Een gedicht schrijven','Een quiz maken'],1,'Je begint met het noteren van de belangrijkste 5W+H-vragen voor je artikel.']
+]
+});

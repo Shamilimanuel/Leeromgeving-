@@ -1,0 +1,33 @@
+/* SQ3R guided reading, Cornell notes and print/PDF export. */
+/* ═══ SQ3R guided reading ═══ */
+.sq3r-stappen{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1.4rem}
+.sq3r-stap{font-size:.72rem;padding:.35rem .75rem;border-radius:100px;background:var(--ink3);color:var(--mut);border:1px solid var(--line)}
+.sq3r-stap.on{background:var(--accent);color:#0d1117;border-color:var(--accent);font-weight:600}
+.sq3r-stap.klaar{color:var(--accent);border-color:var(--accent)}
+.sq3r-vraagrij{margin-bottom:1rem}
+.sq3r-vraagrij b{display:block;margin-bottom:.4rem;font-family:'Cinzel',serif;font-size:.92rem}
+.sq3r-nav{justify-content:space-between;margin-top:1.6rem}
+.groot-veld{width:100%;min-height:90px;background:var(--ink2);border:1px solid var(--line);border-radius:12px;
+  color:var(--txt);padding:.7rem .9rem;font-family:'DM Sans',sans-serif;font-size:.88rem;resize:vertical}
+.groot-veld:focus{border-color:var(--accent)}
+
+/* ═══ Cornell notes ═══ */
+.cornell-wrap{display:flex;flex-direction:column;gap:.6rem;margin:1rem 0}
+.cornell-row{display:grid;grid-template-columns:1fr 2.1fr auto;gap:.6rem;align-items:stretch}
+.cornell-row textarea{background:var(--ink2);border:1px solid var(--line);border-radius:12px;color:var(--txt);
+  padding:.6rem .8rem;font-family:'DM Sans',sans-serif;font-size:.85rem;resize:vertical;min-height:64px}
+.cornell-row textarea:focus{border-color:var(--accent)}
+.cornell-row .cornell-cue{background:var(--ink3);font-weight:600}
+.cornell-del{background:none;border:none;color:var(--mut);font-size:1rem;align-self:start;padding:.4rem}
+.cornell-del:hover{color:#e5534b}
+.cornell-sam{margin:1.3rem 0}
+.cornell-sam label{display:block;font-size:.72rem;color:var(--mut);margin-bottom:.4rem;text-transform:uppercase;letter-spacing:.08em}
+@media (max-width:560px){.cornell-row{grid-template-columns:1fr;}.cornell-del{justify-self:end}}
+
+/* ═══ print / PDF export (Cornell notes) ═══ */
+@media print{
+  .top,.tabs,.bookhero,.aurora,.grain,.sparkles,.bar,.radialmenu,.leesliniaal,
+  .cornell-del,.helpwrap,.zoekwrap,.favwrap,.examenwrap{display:none!important}
+  html,body{overflow:visible!important;background:#fff!important;color:#000!important}
+  .cornell-row textarea,.groot-veld{background:#fff!important;color:#000!important;border:1px solid #999!important}
+}

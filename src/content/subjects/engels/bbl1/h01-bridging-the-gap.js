@@ -1,0 +1,64 @@
+import { registerChapter } from '../../../registry.js';
+
+registerChapter('engels|bbl|1|1', {
+title:'Bridging the Gap',
+summary:[
+{heading:'Family and numbers',html:'<div class=\'box\'><h4>Waar gaat dit hoofdstuk over?</h4><p>Bridging the Gap is het opstaphoofdstuk van je Engelse boek. Je oefent hier de basiswoorden die je in de rest van het boek steeds weer nodig hebt: getallen, kleuren, familie, lichaam, kleding en je huis. Je leert ook de eerste grammaticaregels: <b>be</b> en <b>have</b>, de voornaamwoorden en de lidwoorden <b>a</b>, <b>an</b> en <b>the</b>.</p></div><div class=\'box\'><h4>Family</h4><p>Dit zijn de Engelse woorden voor familieleden.</p><div class=\'tblwrap\'><table class=\'tbl\'><tr><th>Engels</th><th>Nederlands</th></tr><tr><td>mother / mum</td><td>moeder / mama</td></tr><tr><td>father / dad</td><td>vader / papa</td></tr><tr><td>family</td><td>familie</td></tr><tr><td>children</td><td>kinderen</td></tr><tr><td>brother</td><td>broer</td></tr><tr><td>sister</td><td>zus</td></tr><tr><td>boy</td><td>jongen</td></tr><tr><td>girl</td><td>meisje</td></tr></table></div></div><div class=\'box\'><h4>Numbers</h4><p>Zo tel je in het Engels van 1 tot 20.</p><div class=\'tblwrap\'><table class=\'tbl\'><tr><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th></tr><tr><td>one</td><td>two</td><td>three</td><td>four</td><td>five</td></tr><tr><th>6</th><th>7</th><th>8</th><th>9</th><th>10</th></tr><tr><td>six</td><td>seven</td><td>eight</td><td>nine</td><td>ten</td></tr><tr><th>11</th><th>12</th><th>13</th><th>14</th><th>15</th></tr><tr><td>eleven</td><td>twelve</td><td>thirteen</td><td>fourteen</td><td>fifteen</td></tr><tr><th>16</th><th>17</th><th>18</th><th>19</th><th>20</th></tr><tr><td>sixteen</td><td>seventeen</td><td>eighteen</td><td>nineteen</td><td>twenty</td></tr></table></div><div class=\'call\'>Grotere getallen: 30 thirty, 40 forty, 65 sixty-five, 70 seventy, 80 eighty, 90 ninety, 100 one hundred, 101 one hundred and one.</div></div><div class=\'call sum\'><b>Om te onthouden</b><ul class=\'lst\'><li>mother/mum = moeder, father/dad = vader</li><li>brother = broer, sister = zus</li><li>one t/m ten ken je uit je hoofd, elf t/m twintig eindigen op -teen (behalve eleven en twelve)</li></ul></div>'},
+{heading:'Colours, body and clothes',html:'<div class=\'g2\'><div class=\'box\'><h4>Colours</h4><p>De kleuren die je in dit hoofdstuk leert.</p><ul class=\'lst\'><li>black - zwart</li><li>brown - bruin</li><li>orange - oranje</li><li>purple - paars</li><li>white - wit</li><li>blue - blauw</li><li>green - groen</li><li>pink - roze</li><li>red - rood</li><li>yellow - geel</li></ul></div><div class=\'box\'><h4>My body</h4><p>De Engelse woorden voor lichaamsdelen.</p><ul class=\'lst\'><li>ear - oor</li><li>eye - oog</li><li>face - gezicht</li><li>finger - vinger</li><li>foot - voet</li><li>hair - haar</li><li>hand - hand</li><li>leg - been</li><li>mouth - mond</li><li>nose - neus</li></ul></div></div><div class=\'box\'><h4>Clothes</h4><p>Kledingwoorden die je bij het beschrijven van mensen gebruikt.</p><ul class=\'lst\'><li>boot - laars</li><li>coat - jas</li><li>dress - jurk</li><li>hat - hoed / muts</li><li>jeans - spijkerbroek</li><li>shirt - overhemd</li><li>shoe - schoen</li><li>skirt - rok</li><li>sock - sok</li><li>sweater - trui</li></ul></div><div class=\'call sum\'><b>Om te onthouden</b><ul class=\'lst\'><li>De tien basiskleuren: black, brown, orange, purple, white, blue, green, pink, red, yellow</li><li>Lichaamsdelen en kleding leer je samen, want je gebruikt ze om iemand te beschrijven</li></ul></div>'},
+{heading:'House',html:'<div class=\'box\'><h4>Rooms in the house</h4><p>Dit zijn de kamers en ruimtes in en om een huis.</p><div class=\'tblwrap\'><table class=\'tbl\'><tr><th>Engels</th><th>Nederlands</th></tr><tr><td>bathroom</td><td>badkamer</td></tr><tr><td>bedroom</td><td>slaapkamer</td></tr><tr><td>dining room</td><td>eetkamer</td></tr><tr><td>door</td><td>deur</td></tr><tr><td>garden</td><td>tuin</td></tr><tr><td>hall</td><td>hal / gang</td></tr><tr><td>home</td><td>thuis</td></tr><tr><td>kitchen</td><td>keuken</td></tr><tr><td>living room</td><td>woonkamer</td></tr><tr><td>room</td><td>kamer</td></tr></table></div></div><div class=\'call\'>Voorbeeldzin: <b>Our house has</b> ... (gevolgd door het aantal kamers, bijvoorbeeld "Our house has four bedrooms.")</div><div class=\'call sum\'><b>Om te onthouden</b><ul class=\'lst\'><li>bedroom = slaapkamer, bathroom = badkamer, kitchen = keuken</li><li>Gebruik "Our house has ..." om te vertellen hoeveel kamers je huis heeft</li></ul></div>'},
+{heading:'Grammar: be, have, pronouns and articles',html:'<div class=\'box\'><h4>Be en have</h4><p>De werkwoorden <b>be</b> (zijn) en <b>have</b> (hebben) vervoeg je bij elk voornaamwoord anders.</p><div class=\'tblwrap\'><table class=\'tbl\'><tr><th>Voornaamwoord</th><th>be</th><th>have</th></tr><tr><td>I</td><td>am</td><td>have</td></tr><tr><td>you</td><td>are</td><td>have</td></tr><tr><td>he</td><td>is</td><td>has</td></tr><tr><td>she</td><td>is</td><td>has</td></tr><tr><td>it</td><td>is</td><td>has</td></tr><tr><td>we</td><td>are</td><td>have</td></tr><tr><td>you</td><td>are</td><td>have</td></tr><tr><td>they</td><td>are</td><td>have</td></tr></table></div></div><div class=\'g2\'><div class=\'box\'><h4>Subject pronouns</h4><p>Voornaamwoorden die vóór het werkwoord staan.</p><ul class=\'lst\'><li>I am a boy.</li><li>Are you his sister?</li><li>He is thirteen years old.</li><li>She is twelve years old.</li><li>It is very friendly.</li><li>We like holidays.</li><li>Are you coming to my party?</li><li>They always make me laugh.</li></ul></div><div class=\'box\'><h4>Possessive pronouns</h4><p>Bezittelijke voornaamwoorden geven aan van wie iets is.</p><ul class=\'lst\'><li>my / mine - This is my bike. The bike is mine.</li><li>your / yours - That\'s your glass.</li><li>his / his - His bag is blue.</li><li>her / hers - This is her sandwich.</li><li>its - This is my dog. Its name is Bobby.</li><li>our / ours - Our house is brown.</li><li>their / theirs - Their car is red.</li></ul></div></div><div class=\'box\'><h4>A, an en the</h4><p>Je gebruikt <b>the</b> voor iets specifieks (hetzelfde als \'de\' of \'het\' in het Nederlands). Je gebruikt <b>a</b> of <b>an</b> voor iets dat niet specifiek is (hetzelfde als \'een\').</p><div class=\'call warn\'><b>Veelgemaakte fout:</b> vergeet niet dat je <b>an</b> gebruikt als het volgende woord begint met a, e, i, o of u (an apple). Bij een andere letter gebruik je <b>a</b> (a house).</div></div><div class=\'call sum\'><b>Om te onthouden</b><ul class=\'lst\'><li>I am, you are, he/she/it is, we/you/they are</li><li>I have, you have, he/she/it has, we/you/they have</li><li>my/mine, your/yours, his/his, her/hers, its, our/ours, their/theirs</li><li>the = specifiek, a/an = niet specifiek; an vóór a, e, i, o, u</li></ul></div>'}
+],
+terms:[
+['mother / mum','moeder / mama',0],
+['father / dad','vader / papa',0],
+['brother','broer',0],
+['sister','zus',0],
+['children','kinderen',0],
+['eleven','elf',0],
+['fifteen','vijftien',0],
+['twenty','twintig',0],
+['purple','paars',1],
+['yellow','geel',1],
+['hair','haar (lichaamsdeel)',1],
+['hand','hand',1],
+['sweater','trui',1],
+['jeans','spijkerbroek',1],
+['bedroom','slaapkamer',2],
+['kitchen','keuken',2],
+['living room','woonkamer',2],
+['garden','tuin',2],
+['subject pronoun','voornaamwoord dat vóór het werkwoord staat, zoals I, you, he, she, it, we, they',3],
+['possessive pronoun','bezittelijk voornaamwoord, zoals my, your, his, her, its, our, their',3]
+],
+cards:[
+['Hoe zeg je \'moeder\' in het Engels?','mother / mum',0],
+['Hoe zeg je \'broer\' in het Engels?','brother',0],
+['Wat betekent \'children\'?','kinderen',0],
+['Hoe schrijf je het getal 15 in het Engels?','fifteen',0],
+['Hoe schrijf je het getal 20 in het Engels?','twenty',0],
+['Wat betekent \'purple\'?','paars',1],
+['Hoe zeg je \'oog\' in het Engels?','eye',1],
+['Hoe zeg je \'trui\' in het Engels?','sweater',1],
+['Wat betekent \'skirt\'?','rok',1],
+['Hoe zeg je \'slaapkamer\' in het Engels?','bedroom',2],
+['Wat betekent \'living room\'?','woonkamer',2],
+['Hoe vervoeg je \'be\' bij \'she\'?','she is',3],
+['Hoe vervoeg je \'have\' bij \'he\'?','he has',3],
+['Wat is het bezittelijk voornaamwoord bij \'they\'?','their / theirs',3],
+['Gebruik je \'a\' of \'an\' voor \'apple\'?','an, want apple begint met een klinker',3]
+],
+quiz:[
+['Wat betekent \'sister\'?',['broer','zus','moeder','vader'],1,'Sister betekent zus.'],
+['Hoe schrijf je het getal 12 in het Engels?',['twelve','twenty','ten','eleven'],0,'12 is twelve.'],
+['Welk woord betekent \'geel\'?',['purple','yellow','orange','pink'],1,'Yellow betekent geel.'],
+['Wat is de Engelse naam voor \'neus\'?',['ear','mouth','nose','eye'],2,'Nose betekent neus.'],
+['Welk woord is een kledingstuk?',['kitchen','sweater','garden','finger'],1,'Sweater (trui) is een kledingstuk.'],
+['Wat betekent \'bathroom\'?',['keuken','badkamer','slaapkamer','tuin'],1,'Bathroom betekent badkamer.'],
+['Welke zin is goed? \'He ___ my brother.\'',['am','are','is','be'],2,'Bij \'he\' gebruik je \'is\': He is my brother.'],
+['Welke zin is goed? \'They ___ two dogs.\'',['has','have','is','am'],1,'Bij \'they\' gebruik je \'have\': They have two dogs.'],
+['Wat is het bezittelijk voornaamwoord bij \'I\'?',['your','his','my','our'],2,'Bij \'I\' hoort \'my\' (mijn).'],
+['\'This is ___ dog. ___ name is Bobby.\' Welke woorden passen hier?',['my - Its','I - It','mine - Its','my - It\'s'],0,'\'This is my dog. Its name is Bobby.\' Its (zonder apostrof) is het bezittelijk voornaamwoord bij \'it\'.'],
+['Welk lidwoord past voor \'apple\'? \'... apple\'',['a','an','the only','geen lidwoord'],1,'Apple begint met een klinker, dus gebruik je \'an apple\'.'],
+['Welk lidwoord past voor \'house\'? \'... house\'',['an','a','the only','geen lidwoord'],1,'House begint niet met a, e, i, o, u, dus gebruik je \'a house\'.']
+]
+});

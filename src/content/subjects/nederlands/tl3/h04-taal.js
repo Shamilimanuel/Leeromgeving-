@@ -1,0 +1,45 @@
+import { registerChapter } from '../../../registry.js';
+
+registerChapter('nederlands|tl|3|4', {
+title:'Taal',
+summary:[
+{heading:'Verbale en non-verbale communicatie',html:'<div class=\'box\'><h4>Waar gaat dit hoofdstuk over?</h4><p>In dit hoofdstuk leer je het verschil tussen verbale en non-verbale communicatie, wat thematische uitdrukkingen zijn en wat ironie is.</p></div><div class=\'box\'><h4>Verbaal en non-verbaal</h4><p>Als het om communiceren gaat, gaat het niet alleen over de informatie die je met elkaar uitwisselt met taal, maar ook over de manier waarop je dat doet. Dat wat je niet zegt, is ook communicatie. Dat noem je <b>non-verbale communicatie</b>.</p></div><div class=\'term\'><b>Verbale communicatie</b><span>doorgeven van informatie door middel van woorden</span></div><div class=\'term\'><b>Non-verbale communicatie</b><span>doorgeven van informatie op een andere manier dan met woorden</span></div><div class=\'term\'><b>Lichaamstaal</b><span>communicatie via het lichaam</span></div><div class=\'box\'><h4>Wat je met non-verbale communicatie kunt doen</h4><ul class=\'lst\'><li>Woorden benadrukken. Bijvoorbeeld knikken met je hoofd als je \'ja\' zegt.</li><li>Iets minder belangrijk maken. Je zegt bijvoorbeeld \'ja, het gaat goed\', maar haalt tegelijkertijd je schouders op als iemand vraagt hoe het met je gaat.</li><li>Emoties laten zien. Je kijkt bijvoorbeeld boos of je glimlacht, vaak zonder dat je het doorhebt.</li><li>Laten zien hoe jouw band met iemand is. Je kunt bijvoorbeeld heel dicht bij iemand gaan staan of juist niet, of iemand af en toe aanraken.</li><li>Zorgen dat het gesprek goed loopt. Je maakt bijvoorbeeld met je hand duidelijk dat de ander wat mag zeggen, of dat je het gesprek wilt afronden.</li></ul></div><div class=\'call warn\'><b>Veelgemaakte fout:</b> denken dat non-verbale communicatie altijd dezelfde betekenis heeft. Een knikje naar een klasgenoot tijdens de les kan iets heel anders betekenen dan hetzelfde knikje waarmee je je leraar gedag zegt.</div>'},
+{heading:'Thematische uitdrukkingen',html:'<div class=\'box\'><h4>Uitdrukkingen</h4><p>Een <b>uitdrukking</b> is een vast groepje woorden dat een figuurlijke betekenis heeft. Veel uitdrukkingen gaan over een bepaald onderwerp, bijvoorbeeld over dieren of water. Zulke uitdrukkingen noem je <b>thematisch</b>: ze gaan over een bepaald thema (onderwerp).</p></div><div class=\'term\'><b>Uitdrukking</b><span>vast groepje woorden dat een figuurlijke betekenis heeft</span></div><div class=\'term\'><b>Thematisch</b><span>wat gaat over een bepaald thema (onderwerp)</span></div><div class=\'voorbeeld\'><h4>Voorbeeld: eten en drinken in uitdrukkingen</h4><p>\'Ik zie hier geen brood in\' betekent dat je ergens geen vertrouwen in hebt. \'Je laat je de kaas niet van het brood eten\' betekent dat je niet zomaar iets laat vertellen en goed voor jezelf kunt opkomen. \'Dat is geen zuivere koffie\' betekent dat je iets niet vertrouwt.</p><div class=\'antwoord\'>Antwoord: heel veel uitdrukkingen over eten en drinken zijn een voorbeeld van figuurlijk taalgebruik. Zo is een melkfles letterlijk een fles met melk erin, maar als je iemands benen \'melkflessen\' noemt, bedoel je dat ze heel wit zijn, net zo wit als melk.</div></div><div class=\'call\'>Je gebruikt uitdrukkingen omdat je op een bijzondere manier duidelijk wilt maken wat je bedoelt. Vaak gebruik je dan net iets meer fantasie, bijvoorbeeld met een vergelijking.</div>'}
+],
+terms:[
+['verbale communicatie','het doorgeven van informatie door middel van woorden',0],
+['non-verbale communicatie','het doorgeven van informatie op een andere manier dan met woorden',0],
+['lichaamstaal','communicatie via het lichaam',0],
+['gezichtsuitdrukking','de manier waarop je met je gezicht iets duidelijk maakt, bijvoorbeeld door te glimlachen of te knipperen met je ogen',0],
+['uitdrukking','een vast groepje woorden dat een figuurlijke betekenis heeft',1],
+['thematisch','wat gaat over een bepaald thema (onderwerp)',1],
+['figuurlijk taalgebruik','taal waarmee je iets anders bedoelt dan er letterlijk staat',1],
+['letterlijke betekenis','de betekenis van een woord of zin precies zoals hij er staat, zonder figuurlijke lading',1],
+['stemgebruik','een vorm van non-verbale communicatie waarbij je je stemgeluid verandert, bijvoorbeeld door hoog of laag, snel of langzaam te praten',0],
+['lichaamshouding','een vorm van non-verbale communicatie, bijvoorbeeld dicht bij iemand gaan staan of juist ver weg blijven',0]
+],
+cards:[
+['Wat is verbale communicatie?','Het doorgeven van informatie door middel van woorden.',0],
+['Wat is non-verbale communicatie?','Het doorgeven van informatie op een andere manier dan met woorden.',0],
+['Wat is lichaamstaal?','Communicatie via het lichaam.',0],
+['Noem drie manieren waarop je non-verbale communicatie kunt gebruiken.','Bijvoorbeeld woorden benadrukken, emoties laten zien en laten zien hoe je band met iemand is.',0],
+['Waarom is non-verbale communicatie niet altijd makkelijk te begrijpen?','Omdat niet alle non-verbale communicatie altijd dezelfde betekenis heeft; hetzelfde gebaar kan in verschillende situaties iets anders betekenen.',0],
+['Wat is een uitdrukking?','Een vast groepje woorden dat een figuurlijke betekenis heeft.',1],
+['Wat betekent \'thematisch\'?','Wat gaat over een bepaald thema (onderwerp).',1],
+['Wat betekent de uitdrukking \'je laat je de kaas niet van het brood eten\'?','Dat je niet zomaar iets laat vertellen en goed voor jezelf kunt opkomen.',1],
+['Wat betekent \'dat is geen zuivere koffie\'?','Dat je iets niet vertrouwt.',1],
+['Waarom gebruik je uitdrukkingen?','Omdat je op een bijzondere manier duidelijk wilt maken wat je bedoelt, vaak met wat meer fantasie.',1]
+],
+quiz:[
+['Wat is verbale communicatie?',['Communicatie via lichaamstaal','Het doorgeven van informatie door middel van woorden','Alleen schrijven, geen spreken','Communicatie zonder betekenis'],1,'Verbale communicatie is het doorgeven van informatie door middel van woorden.'],
+['Wat is non-verbale communicatie?',['Het doorgeven van informatie op een andere manier dan met woorden','Alleen praten via de telefoon','Een synoniem voor verbale communicatie','Communicatie die niet begrepen wordt'],0,'Non-verbale communicatie is het doorgeven van informatie op een andere manier dan met woorden.'],
+['Wat is lichaamstaal?',['Een vreemde taal','Communicatie via het lichaam','Een synoniem voor verbale communicatie','Alleen gebarentaal voor doven'],1,'Lichaamstaal is communicatie via het lichaam.'],
+['Wat kun je bereiken met non-verbale communicatie?',['Alleen emoties verbergen','Bijvoorbeeld woorden benadrukken of emoties laten zien','Alleen een gesprek beëindigen','Niets, non-verbale communicatie heeft geen functie'],1,'Met non-verbale communicatie kun je onder andere woorden benadrukken, emoties laten zien en de band met iemand tonen.'],
+['Waarom kan hetzelfde gebaar in verschillende situaties iets anders betekenen?',['Omdat non-verbale communicatie niet altijd dezelfde betekenis heeft','Omdat gebaren altijd hetzelfde betekenen','Omdat lichaamstaal geen betekenis heeft','Omdat verbale communicatie belangrijker is dan non-verbale'],0,'Niet alle non-verbale communicatie heeft altijd dezelfde betekenis; de situatie bepaalt mede wat een gebaar betekent.'],
+['Wat is een uitdrukking?',['Een los woord met een letterlijke betekenis','Een vast groepje woorden dat een figuurlijke betekenis heeft','Een signaalwoord','Een tekstverband'],1,'Een uitdrukking is een vast groepje woorden dat een figuurlijke betekenis heeft.'],
+['Wat betekent \'thematisch\'?',['Wat gaat over een bepaald thema (onderwerp)','Wat helemaal geen betekenis heeft','Een ander woord voor letterlijk','Een synoniem voor grammatica'],0,'Thematisch betekent: wat gaat over een bepaald thema (onderwerp).'],
+['Wat betekent de uitdrukking \'ik zie hier geen brood in\'?',['Ik heb honger','Ik heb er geen vertrouwen in','Ik wil een boterham','Ik ben het ergens mee eens'],1,'\'Ik zie hier geen brood in\' betekent dat je ergens geen vertrouwen in hebt.'],
+['Wat is de letterlijke betekenis van \'melkfles\'?',['Heel witte benen','Een fles met melk erin','Een uitdrukking over vertrouwen','Een soort communicatie'],1,'Letterlijk is een melkfles een fles met melk erin; alleen figuurlijk kan het woord verwijzen naar heel witte benen.'],
+['Waarom gebruiken mensen vaak uitdrukkingen in plaats van letterlijke taal?',['Omdat ze op een bijzondere, fantasievolle manier duidelijk willen maken wat ze bedoelen','Omdat letterlijke taal verboden is','Omdat uitdrukkingen korter zijn dan gewone zinnen','Omdat ze anders geen Nederlands spreken'],0,'Uitdrukkingen worden gebruikt omdat je er op een bijzondere, fantasievolle manier duidelijk mee kunt maken wat je bedoelt.']
+]
+});

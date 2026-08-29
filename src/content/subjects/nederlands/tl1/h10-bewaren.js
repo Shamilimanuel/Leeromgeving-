@@ -1,0 +1,47 @@
+import { registerChapter } from '../../../registry.js';
+
+registerChapter('nederlands|tl|1|10', {
+title:'Bewaren',
+summary:[
+{heading:'De 5w+h-vragen',html:'<div class=\'box\'><h4>Waar gaat dit hoofdstuk over?</h4><p>In dit thema draait alles om bewaren en verzamelen: van tijdcapsules tot herinneringen. Je leert de 5w+h-vragen gebruiken om informatie samen te vatten, hoe je een presentatie geeft, hoe je een mondelinge instructie geeft en hoe je een korte instructie schrijft. Aan het eind maak je een tekst voor in een tijdcapsule.</p></div><div class=\'box\'><h4>Informatie samenvatten met vragen</h4><p>Met de <b>5w+h-vragen</b> haal je snel de belangrijkste informatie uit een tekst, en kun je hoofd- en bijzaken van elkaar onderscheiden. De vragen zijn: <b>wie, wat, waar, wanneer, waarom</b> en <b>hoe</b>.</p></div><div class=\'tblwrap\'><table class=\'tbl\'><tr><th>Vraag</th><th>Informatie over...</th></tr><tr><td>Wie?</td><td>welke personen iets doen</td></tr><tr><td>Wat?</td><td>wat er gebeurt</td></tr><tr><td>Waar?</td><td>de plaats</td></tr><tr><td>Wanneer?</td><td>het moment of de tijd</td></tr><tr><td>Waarom?</td><td>de reden</td></tr><tr><td>Hoe?</td><td>de manier waarop iets gebeurt</td></tr></table></div><div class=\'call sum\'><b>Zo gebruik je de 5w+h-vragen</b><ul class=\'lst\'><li>Lees de tekst oriënterend en beantwoord daarna de vragen.</li><li>Noteer kort het antwoord op elke vraag.</li><li>Gebruik je antwoorden om de tekst samen te vatten.</li></ul></div><div class=\'call link\'><b>Dit bouwt voort op:</b> Meer dan lezen § 3 Hoofdgedachte</div>'},
+{heading:'Een presentatie geven',html:'<div class=\'box\'><h4>Van voorbereiding tot presentatie</h4><p>Een goede presentatie bestaat uit een voorbereidingsfase en de presentatie zelf.</p></div><div class=\'call sum\'><b>Stap 1: Voorbereiden</b><ol class=\'num\'><li>Schrijf het onderwerp van je presentatie op.</li><li>Bedenk wat je over het onderwerp wilt vertellen in het middenstuk, bijvoorbeeld met de 5w+h-vragen.</li><li>Maak een spreekkaartje per vraag met de belangrijkste informatie in steekwoorden.</li><li>Maak een spreekkaartje voor de inleiding en voor het slot.</li><li>Zoek afbeeldingen of voorwerpen die je presentatie duidelijker of aantrekkelijker maken.</li><li>Oefen je presentatie, bijvoorbeeld voor je ouders of een klasgenoot.</li></ol><b>Stap 2: Presentatie geven</b><ul class=\'lst\'><li>Praat rustig, duidelijk en hard genoeg.</li><li>Kijk zoveel mogelijk naar je publiek en niet te veel op je spreekkaartjes.</li><li>Blijf niet stil staan, maar gebruik je lichaam, handen en gezichtsuitdrukking.</li><li>Vraag aan het eind of je publiek vragen heeft.</li></ul></div><div class=\'call link\'><b>Dit bouwt voort op:</b> Thema B § 3 De 5w+h-vragen, Thema A § 7 Stemgebruik</div>'},
+{heading:'Instrueren',html:'<div class=\'box\'><h4>Een mondelinge instructie geven</h4><p>In een <b>instructie</b> vertel je stap voor stap wat iemand moet doen. Het is belangrijk dat je luisteraars de instructie begrijpen.</p></div><div class=\'call sum\'><b>Zo geef je instructie</b><ul class=\'lst\'><li>Vertel over welk onderwerp je instructie gaat.</li><li>Leg stap voor stap en in een logische volgorde uit wat er moet gebeuren.</li><li>Begin elke stap met een doe-woord (werkwoord), zoals: <i>Neem ... Loop ... Pak ...</i></li><li>Gebruik signaalwoorden voor de volgorde, zoals: <i>eerst ... daarna ... vervolgens ...</i></li><li>Spreek rustig en goed verstaanbaar.</li></ul></div><div class=\'term\'><b>Instructie</b><span>een tekst of gesproken uitleg waarin je stap voor stap vertelt wat iemand moet doen</span></div><div class=\'term\'><b>Signaalwoord</b><span>een woord dat de volgorde van stappen aangeeft, zoals eerst, daarna, vervolgens</span></div><div class=\'call link\'><b>Dit bouwt voort op:</b> Thema B § 4 Een presentatie geven</div>'},
+{heading:'Een korte instructie schrijven',html:'<div class=\'box\'><h4>Instructies opschrijven</h4><p>Ook een geschreven instructie moet stap voor stap en in een logische volgorde worden opgeschreven, zodat de lezer precies weet wat hij moet doen.</p></div><div class=\'call sum\'><b>Zo schrijf je een korte instructie</b><ul class=\'lst\'><li>Vertel kort waar de instructie over gaat.</li><li>Zet de stappen in de juiste volgorde.</li><li>Begin elke stap met een doe-woord (werkwoord).</li><li>Gebruik signaalwoorden om de volgorde duidelijk te maken.</li><li>Schrijf kort en duidelijk: een instructie hoeft niet lang te zijn, als hij maar duidelijk is.</li></ul></div><div class=\'call warn\'><b>Veelgemaakte fout:</b> een stap vergeten of stappen in de verkeerde volgorde zetten, waardoor de lezer de instructie niet goed kan volgen.</div><div class=\'call link\'><b>Dit bouwt voort op:</b> Thema B § 6 Instrueren</div>'}
+],
+terms:[
+['5w+h-vragen (herhaling)','Wie, wat, waar, wanneer, waarom en hoe: vragen om informatie te ordenen en samen te vatten.',0],
+['Samenvatten','De belangrijkste informatie van een tekst kort weergeven, bijvoorbeeld met de 5w+h-vragen.',0],
+['Middenstuk (presentatie)','Het deel van een presentatie waarin je de meeste informatie geeft, vaak op basis van de 5w+h-vragen.',1],
+['Spreekkaartje (herhaling)','Een kaartje met steekwoorden dat je als geheugensteun gebruikt tijdens een presentatie.',1],
+['Instructie','Een tekst of gesproken uitleg waarin je stap voor stap vertelt wat iemand moet doen.',2],
+['Signaalwoord','Een woord dat de volgorde van stappen aangeeft, zoals eerst, daarna, vervolgens.',2],
+['Doe-woord','Een werkwoord waarmee je een stap in een instructie begint, zoals \'neem\' of \'pak\'.',2],
+['Logische volgorde','De juiste, begrijpelijke volgorde van stappen in een instructie.',3],
+['Korte instructie','Een geschreven instructie die kort en duidelijk stap voor stap vertelt wat iemand moet doen.',3],
+['Tijdcapsule','Een bewaarplek met voorwerpen die typisch zijn voor een bepaalde tijd, bedoeld om later terug te vinden.',0]
+],
+cards:[
+['Welke zes vragen zijn de 5w+h-vragen?','Wie, wat, waar, wanneer, waarom en hoe.',0],
+['Waarvoor gebruik je de 5w+h-vragen?','Om snel de belangrijkste informatie uit een tekst te halen en samen te vatten.',0],
+['Wat maak je bij de voorbereiding van een presentatie per vraag?','Een spreekkaartje met steekwoorden.',1],
+['Waar moet je tijdens een presentatie vooral naar kijken?','Naar je publiek.',1],
+['Wat is een instructie?','Een tekst of uitleg waarin je stap voor stap vertelt wat iemand moet doen.',2],
+['Waarmee begin je elke stap van een instructie?','Met een doe-woord (werkwoord).',2],
+['Noem een signaalwoord dat je bij een instructie kunt gebruiken.','Bijvoorbeeld: eerst, daarna of vervolgens.',2],
+['Waar moet je op letten bij het schrijven van een korte instructie?','Dat de stappen in de juiste volgorde staan en kort en duidelijk zijn.',3],
+['Wat gebeurt er als je een stap in een instructie vergeet?','De lezer kan de instructie niet goed volgen.',3],
+['Waarop bouwt Thema B § 7 voort?','Op § 6 Instrueren.',3]
+],
+quiz:[
+['Welke vraag hoort bij de 5w+h-vragen?',['Hoeveel?','Waarom?','Welke?','Hoezo?'],1,'De 5w+h-vragen zijn: wie, wat, waar, wanneer, waarom en hoe.'],
+['Waarvoor gebruik je de 5w+h-vragen?',['Om een gedicht te schrijven','Om informatie samen te vatten','Om spelfouten te verbeteren','Om hoofdletters te herkennen'],1,'Met de 5w+h-vragen haal je de belangrijkste informatie uit een tekst en vat je die samen.'],
+['Wat maak je bij het voorbereiden van een presentatie?',['Alleen een titel','Spreekkaartjes met steekwoorden','Een lang uitgeschreven verhaal om voor te lezen','Niets, je improviseert'],1,'Je maakt spreekkaartjes met steekwoorden als geheugensteun.'],
+['Wat is belangrijk tijdens het geven van een presentatie?',['Zo veel mogelijk op je kaartjes lezen','Naar je publiek kijken en duidelijk praten','Zo snel mogelijk klaar zijn','Stilstaan en niet bewegen'],1,'Je kijkt naar je publiek, praat rustig en duidelijk, en gebruikt je lichaam.'],
+['Wat is een instructie?',['Een gedicht','Een tekst die stap voor stap vertelt wat je moet doen','Een reclame','Een interview'],1,'Een instructie vertelt stap voor stap wat iemand moet doen.'],
+['Waarmee begin je een stap in een instructie?',['Met een bijvoeglijk naamwoord','Met een doe-woord (werkwoord)','Met een vraagteken','Met een verwijswoord'],1,'Elke stap begin je met een doe-woord, zoals \'neem\' of \'pak\'.'],
+['Wat is een signaalwoord?',['Een woord dat de volgorde aangeeft, zoals \'daarna\'','Een woord dat een gevoel aangeeft','Een lidwoord','Een verkleinwoord'],0,'Signaalwoorden zoals eerst, daarna en vervolgens geven de volgorde van stappen aan.'],
+['Wat gebeurt er als de stappen van een instructie in de verkeerde volgorde staan?',['Niets, dat maakt niet uit','De lezer kan de instructie niet goed volgen','De instructie wordt korter','De instructie wordt duidelijker'],1,'Een verkeerde volgorde maakt een instructie onduidelijk en moeilijk te volgen.'],
+['Wat is kenmerkend voor een goede geschreven instructie?',['Zo lang mogelijk','Kort en duidelijk, met de juiste volgorde','Zonder werkwoorden','Zonder signaalwoorden'],1,'Een goede instructie is kort, duidelijk en heeft de stappen in de juiste volgorde.'],
+['Waarop bouwt het geven van een mondelinge instructie (§6) voort?',['Thema B § 4 Een presentatie geven','Grammatica § 7 Voorzetsel','Spelling § 1 Hoofdletters','Fictie § 3 Smaak'],0,'Instrueren bouwt voort op de presentatievaardigheden uit § 4.']
+]
+});

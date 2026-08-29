@@ -1,0 +1,66 @@
+import { registerChapter } from '../../../registry.js';
+
+registerChapter('engels|bbl|3|5', {
+title:'Your future',
+summary:[
+{heading:'Objectief en subjectief nieuws',html:'<div class=\'box\'><h4>Waar gaat dit hoofdstuk over?</h4><p>In hoofdstuk 5, <i>Your future</i>, draait alles om jouw toekomst: welke vaardigheden je hebt, wat voor baan je zou willen en hoe je een tekst overtuigend schrijft. Je leert ook het verschil te herkennen tussen objectief en subjectief nieuws. Grammaticaal ligt de focus op <b>relative pronouns</b> (who/which/that) en op het verder oefenen met <b>simple en compound sentences</b>.</p></div> <div class=\'call\'>Weetje: bij \'framing\' laten nieuwsmakers een gebeurtenis bewust positief of negatief klinken. Vergelijk de twee koppen: \'Lazy employees refuse to go back to work\' versus \'Factory workers protest against low wages\', dezelfde gebeurtenis, heel andere framing!</div><div class=\'box\'><h4>Objective and subjective news</h4><p><b>Objectief nieuws</b> houdt zich bezig met feiten en maakt duidelijk wanneer het om een mening gaat. <b>Subjectief nieuws</b> is vaak gebaseerd op eigen meningen en interpretaties, en gebruikt \'framing\' om het nieuws sensationeler te maken.</p></div> <div class=\'call sum\'><b>Vragen om objectief/subjectief nieuws te herkennen</b><ul class=\'lst\'> <li>Toont de nieuwszender vaak objectief of sensationeel nieuws?</li> <li>Is de informatie die wordt uitgezonden betrouwbaar? Tonen andere nieuwszenders dezelfde informatie?</li> <li>Welk effect heeft \'framing\' op het nieuwsitem?</li> </ul></div>'},
+{heading:'Theme words: Personal and social skills',html:'<div class=\'box\'><h4>Personal and social skills</h4><p>Deze Theme words gebruik je om je eigen vaardigheden en persoonlijkheid te beschrijven, bijvoorbeeld bij een sollicitatie.</p></div> <div class=\'tblwrap\'><table class=\'tbl\'> <tr><th>Engels</th><th>Nederlands</th></tr> <tr><td>dependable</td><td>betrouwbaar</td></tr> <tr><td>enthusiastic</td><td>enthousiast</td></tr> <tr><td>experienced</td><td>ervaren</td></tr> <tr><td>flexible</td><td>flexibel</td></tr> <tr><td>hands-on</td><td>praktisch ingesteld</td></tr> <tr><td>hard-working</td><td>hardwerkend</td></tr> <tr><td>independent</td><td>zelfstandig</td></tr> <tr><td>motivated</td><td>gemotiveerd</td></tr> <tr><td>organised</td><td>georganiseerd</td></tr> <tr><td>sociable</td><td>sociaal</td></tr> </table></div> <div class=\'voorbeeld\'><p>I\'m someone who loves to come up with new ideas, which is why I chose creative subjects. Helping out at a bakery taught me to be hands-on.</p></div>'},
+{heading:'Speaking: praten over vaardigheden en toekomstige banen',html:'<div class=\'box\'><h4>Stone 9: Talking about personal skills</h4><p>Met Stone 9 leer je vertellen over je eigen vaardigheden, bijvoorbeeld: \'What sort of skills do you have?\' / \'I like to create stories, which is why I want to have a creative job.\' / \'To pass all your exams you should be hard-working.\'</p></div> <div class=\'box\'><h4>Stone 10: Talking about future jobs</h4><p>Met Stone 10 leer je praten over je droombaan, bijvoorbeeld: \'I would like a job which is full of variety.\' / \'My dream is to work in security.\' / \'I have a part-time job because ...\'</p></div> <div class=\'call sum\'><b>Woorden over beroepen en sectoren</b><ul class=\'lst\'> <li>farming: landbouw</li> <li>healthcare: gezondheidszorg</li> <li>security: beveiliging</li> <li>fashion: mode</li> <li>paper round: krantenwijk</li> <li>working hours: werkuren</li> <li>to achieve: bereiken</li> <li>to come up with: bedenken</li> <li>to deal with: omgaan met</li> </ul></div>'},
+{heading:'Grammar: relative pronouns',html:'<div class=\'box\'><h4>Relative pronouns (betrekkelijke voornaamwoorden)</h4><p>Je gebruikt betrekkelijke voornaamwoorden om extra informatie te geven over mensen en dingen.</p></div> <div class=\'tblwrap\'><table class=\'tbl\'> <tr><th>Woord</th><th>Gebruik</th><th>Voorbeeld</th></tr> <tr><td>who</td><td>bij personen</td><td>The boy who works at the restaurant is nice.</td></tr> <tr><td>which</td><td>bij dieren/dingen, extra info kan weggelaten worden (met komma\'s)</td><td>The strawberry ice-cream, which is the most popular, is sold out.</td></tr> <tr><td>that</td><td>bij dieren/dingen, extra info kan NIET weggelaten worden (geen komma\'s)</td><td>The lasagne that I wanted to eat was gone.</td></tr> </table></div> <div class=\'call\'>Je gebruikt <b>which</b> als je de extra informatie weg kúnt laten (je zet er dan komma\'s omheen): \'The hotel, which was expensive, was close to the beach.\' Je gebruikt <b>that</b> als de informatie nódig is om te weten waar de zin over gaat (geen komma\'s): \'The cat that\'s on the chair is mine.\'</div> <div class=\'call warn\'><b>Veelgemaakte fout:</b> gebruik \'who\' nooit voor dieren of dingen, en \'which\'/\'that\' nooit voor personen. \'The people who built it are unknown\', niet \'the people which built it\'.</div>'},
+{heading:'Grammar: sentences (herhaling)',html:'<div class=\'box\'><h4>Simple sentences en compound sentences</h4><p>Een <b>simple sentence</b> heeft altijd één onderwerp (wie of wat) en één persoonsvorm (doet of deed). Voeg je twee simple sentences samen met <i>and, but, or</i> of <i>so</i>, dan krijg je een <b>compound sentence</b>.</p></div> <div class=\'tblwrap\'><table class=\'tbl\'> <tr><th>Type</th><th>Voorbeeld</th></tr> <tr><td>simple sentence</td><td>I work at a supermarket every Saturday.</td></tr> <tr><td>simple sentence</td><td>He is washing the car.</td></tr> <tr><td>compound sentence (and)</td><td>He works at a supermarket, and he works at a carwash.</td></tr> <tr><td>compound sentence (but)</td><td>I want to earn a lot of money, but I also want to spend time with my friends.</td></tr> <tr><td>compound sentence (so)</td><td>I need my earbuds, so I can\'t remember where I left them: <i>let op: dit klopt niet logisch, kies het juiste voegwoord bij het gevolg!</i></td></tr> </table></div> <div class=\'call\'>Herken je een linking word (and/but/or/so) in een zin? Dan heeft die zin twee onderwerpen en is het een compound sentence. Geen linking word? Dan is het een simple sentence met maar één onderwerp.</div>'},
+{heading:'Writing: een tekst schrijven in stappen',html:'<div class=\'box\'><h4>Strategy: writing a text (stappenplan)</h4><p>Wanneer je een tekst schrijft, is het beter om in stappen te werken dan om de hele tekst in één keer te schrijven.</p></div> <div class=\'call sum\'><b>Stappenplan</b><ul class=\'lst\'> <li><b>Stap 1:</b> schrijf het onderwerp van je tekst op, wat je erover wilt zeggen en welke woorden en Stones-zinnen je daarvoor zou kunnen gebruiken.</li> <li><b>Stap 2:</b> bedenk wat de beste volgorde is voor de informatie die je in de tekst wilt opnemen.</li> <li><b>Stap 3:</b> schrijf de eerste versie van je tekst in die volgorde, met de woorden en Stones-zinnen die je bedacht hebt.</li> <li><b>Stap 4:</b> controleer de grammatica, spelling en woordvolgorde van je tekst.</li> <li><b>Stap 5:</b> herschrijf je tekst tot een definitieve versie.</li> </ul></div>'},
+{heading:'Listening: studeren in het buitenland',html:'<div class=\'box\'><h4>Follow your dream</h4><p>In de listening-tekst hoor je Sara vertellen over hoe het is om in het buitenland te studeren, en waarom het soms moeilijker is dan thuis studeren. Ook hoor je waarom het belangrijk is om fouten te durven maken als je iets nieuws leert.</p></div> <div class=\'g2\'><div class=\'term\'><b>to concentrate</b><span>concentreren</span></div><div class=\'term\'><b>to focus</b><span>focussen</span></div><div class=\'term\'><b>distraction</b><span>afleiding</span></div><div class=\'term\'><b>strict</b><span>streng</span></div><div class=\'term\'><b>to remind someone</b><span>iemand ergens aan herinneren</span></div><div class=\'term\'><b>to give up</b><span>opgeven</span></div><div class=\'term\'><b>progress</b><span>vooruitgang</span></div><div class=\'term\'><b>to avoid</b><span>vermijden</span></div><div class=\'term\'><b>to set up</b><span>opzetten</span></div><div class=\'term\'><b>to achieve</b><span>bereiken</span></div></div>'}
+],
+terms:[
+['dependable','betrouwbaar',1],
+['flexible','flexibel',1],
+['hands-on','praktisch ingesteld',1],
+['organised','georganiseerd',1],
+['sociable','sociaal',1],
+['who','betrekkelijk voornaamwoord voor personen',3],
+['which','betrekkelijk voornaamwoord voor dieren/dingen, extra info kan weggelaten worden',3],
+['that','betrekkelijk voornaamwoord voor dieren/dingen, extra info kan niet weggelaten worden',3],
+['simple sentence','zin met één onderwerp en één persoonsvorm',4],
+['compound sentence','twee simple sentences samengevoegd met and/but/or/so',4],
+['to concentrate','concentreren',6],
+['distraction','afleiding',6],
+['to give up','opgeven',6],
+['progress','vooruitgang',6],
+['to achieve','bereiken',6]
+],
+cards:[
+['enthusiastic','enthousiast',1],
+['experienced','ervaren',1],
+['hard-working','hardwerkend',1],
+['independent','zelfstandig',1],
+['motivated','gemotiveerd',1],
+['farming','landbouw',2],
+['healthcare','gezondheidszorg',2],
+['security','beveiliging',2],
+['working hours','werkuren',2],
+['Vul in: \'The boy ___ works at the restaurant is nice.\' (persoon)','who',3],
+['Vul in: \'The lasagne ___ I wanted to eat was gone.\' (nodige info, geen komma)','that',3],
+['Vul in: \'The hotel, ___ was expensive, was close to the beach.\' (extra info, met komma)','which',3],
+['Wat betekent \'to focus\'?','focussen, je concentreren',6],
+['Wat betekent \'to avoid\'?','vermijden',6],
+['Wat betekent \'strict\'?','streng',6],
+['Wat betekent \'to remind someone\'?','iemand ergens aan herinneren',6]
+],
+quiz:[
+['Wat betekent \'dependable\'?',['flexibel','betrouwbaar','ervaren','sociaal'],1,'\'Dependable\' betekent \'betrouwbaar\'.'],
+['Wat betekent \'hands-on\'?',['zelfstandig','praktisch ingesteld','gemotiveerd','georganiseerd'],1,'\'Hands-on\' betekent \'praktisch ingesteld\'.'],
+['Welk woord past bij \'gezondheidszorg\'?',['security','farming','healthcare','fashion'],2,'\'Healthcare\' betekent \'gezondheidszorg\'.'],
+['Wat is het verschil tussen objectief en subjectief nieuws?',['subjectief nieuws is altijd korter','objectief nieuws houdt zich aan feiten, subjectief nieuws is gebaseerd op meningen','er is geen verschil','objectief nieuws heeft altijd foto\'s'],1,'Objectief nieuws houdt zich aan feiten en maakt duidelijk wanneer het om een mening gaat; subjectief nieuws is gebaseerd op meningen en interpretaties.'],
+['Welk relative pronoun gebruik je bij personen?',['which','that','who','what'],2,'\'Who\' gebruik je bij personen.'],
+['Kies het juiste woord: \'The strawberry ice-cream, ___ is the most popular, is sold out.\'',['who','which','that','what'],1,'Bij extra (weglaatbare) informatie over een ding gebruik je \'which\', met komma\'s.'],
+['Kies het juiste woord: \'The lasagne ___ I wanted to eat was gone.\'',['who','which','that','whom'],2,'Bij noodzakelijke informatie over een ding gebruik je \'that\', zonder komma\'s.'],
+['Welke zin is een compound sentence?',['I work at a supermarket.','He works at a supermarket, and he works at a carwash.','Working is fun.','I work.'],1,'Deze zin bestaat uit twee simple sentences, verbonden met \'and\'.'],
+['Wat is stap 1 van het stappenplan voor het schrijven van een tekst?',['de tekst controleren','het onderwerp en de woorden bedenken','de tekst herschrijven','de volgorde bepalen'],1,'Stap 1 is: het onderwerp van je tekst opschrijven en bedenken welke woorden en zinnen je kunt gebruiken.'],
+['Wat betekent \'to concentrate\'?',['vermijden','concentreren','opgeven','herinneren'],1,'\'To concentrate\' betekent \'concentreren\'.'],
+['Wat betekent \'distraction\'?',['vooruitgang','afleiding','strengheid','concentratie'],1,'\'Distraction\' betekent \'afleiding\'.'],
+['Wat betekent \'to give up\'?',['opgeven','beginnen','bereiken','vermijden'],0,'\'To give up\' betekent \'opgeven\'.'],
+['Wat betekent \'framing\' bij nieuws?',['het nieuws vertalen','het nieuws positief of negatief neerzetten','het nieuws verwijderen','het nieuws herhalen'],1,'\'Framing\' is het positief of negatief neerzetten van een nieuwsbericht om kijkers te beïnvloeden.'],
+['Welk woord betekent \'zelfstandig\'?',['dependable','independent','organised','sociable'],1,'\'Independent\' betekent \'zelfstandig\'.'],
+['Wat is een goede manier om te beginnen met een tekst schrijven?',['direct de definitieve versie schrijven','het onderwerp en de belangrijkste woorden bedenken','de tekst niet controleren','een willekeurige volgorde kiezen'],1,'Volgens het stappenplan begin je met het onderwerp en de woorden/zinnen die je wilt gebruiken.']
+]
+});

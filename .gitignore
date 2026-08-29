@@ -1,0 +1,10 @@
+node_modules/
+dist/
+dist-single/
+.env
+.env.*.local
+supabase/.temp/
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db

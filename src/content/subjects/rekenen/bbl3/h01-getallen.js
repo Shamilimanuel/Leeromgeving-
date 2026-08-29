@@ -1,0 +1,62 @@
+import { registerChapter } from '../../../registry.js';
+
+registerChapter('rekenen|bbl|3|1', {
+title:'Getallen',
+summary:[
+{heading:'1.1 Optellen',html:'<div class="box"><h4>Optellen onder elkaar</h4><p>Bij een optelling zet je de getallen <b>onder elkaar</b>, met de laatste cijfers recht onder elkaar. Je telt van rechts naar links op, cijfer voor cijfer.</p><div class="call"><b>Voorbeeld:</b> bereken 479 + 254.<br>Schatting: 500 + 200 = 700.<br>9 + 4 = 13 → 3 opschrijven, 1 onthouden<br>7 + 5 + 1 = 13 → 3 opschrijven, 1 onthouden<br>4 + 2 + 1 = 7 → 7 opschrijven<br>Antwoord: 479 + 254 = <b>733</b>.</div></div><div class="call warn"><b>Veelgemaakte fout:</b> vergeten om het onthouden cijfer bij de volgende kolom op te tellen.</div><div class="call sum"><b>Om te onthouden</b><ul class="lst"><li>Maak eerst een schatting door af te ronden op honderdtallen.</li><li>Zet de getallen onder elkaar en tel van rechts naar links op.</li><li>Controleer je antwoord altijd met de schatting.</li></ul></div>'},
+{heading:'1.2 Aftrekken',html:'<div class="box"><h4>Aftrekken onder elkaar</h4><p>Bij aftrekken zet je de getallen ook onder elkaar. Is een cijfer van het bovenste getal kleiner dan het cijfer eronder, dan <b>leen je</b> een tiental (of honderdtal) van het volgende cijfer.</p><div class="call"><b>Voorbeeld:</b> bereken 847 &minus; 279.<br>Schatting: 800 &minus; 300 = 500.<br>7 &minus; 9 kan niet, dus leen een tiental: 17 &minus; 9 = 8<br>4 wordt 3 (want geleend); 3 &minus; 7 kan niet, dus leen een honderdtal: 13 &minus; 7 = 6<br>8 wordt 7; 7 &minus; 2 = 5<br>Antwoord: 847 &minus; 279 = <b>568</b>.</div></div><div class="term"><b>Lenen</b><span>een tiental of honderdtal overnemen van het volgende cijfer, omdat je anders niet kunt aftrekken</span></div><div class="call sum"><b>Om te onthouden</b><ul class="lst"><li>Maak eerst een schatting door af te ronden op honderdtallen.</li><li>Kan een cijfer niet worden afgetrokken, leen dan een tiental of honderdtal van het volgende cijfer.</li><li>Controleer je antwoord met de schatting.</li></ul></div>'},
+{heading:'1.3 Vermenigvuldigen',html:'<div class="g2"><div class="box"><h4>Eén cijfer keer een groot getal</h4><p>Zet het getal met de meeste cijfers boven. Vermenigvuldig van rechts naar links, cijfer voor cijfer.</p><div class="call"><b>Voorbeeld:</b> 6 &times; 3683<br>6 &times; 3 = 18 → 8 opschrijven, 1 onthouden<br>6 &times; 8 = 48 + 1 = 49 → 9 opschrijven, 4 onthouden<br>6 &times; 6 = 36 + 4 = 40 → 0 opschrijven, 4 onthouden<br>6 &times; 3 = 18 + 4 = 22 opschrijven<br>Antwoord: 6 &times; 3683 = <b>22098</b>.</div></div><div class="box"><h4>Twee cijfers keer twee cijfers</h4><p>Vermenigvuldig eerst met de eenheden, dan met de tientallen (met een 0 erachter). Tel de twee uitkomsten op.</p><div class="call"><b>Voorbeeld:</b> 47 &times; 67<br>47 &times; 7 = 329<br>47 &times; 60 = 2820<br>329 + 2820 = <b>3149</b></div></div></div><div class="call sum"><b>Om te onthouden</b><ul class="lst"><li>Zet het getal met de meeste cijfers boven.</li><li>Vermenigvuldig cijfer voor cijfer, van rechts naar links.</li><li>Bij twee cijfers keer twee cijfers: tel de twee tussenuitkomsten bij elkaar op.</li></ul></div>'},
+{heading:'1.4 Delen',html:'<div class="box"><h4>Staartdeling</h4><p>Bij een <b>staartdeling</b> deel je cijfer voor cijfer, je begint vooraan.</p><div class="call"><b>Voorbeeld:</b> bereken 406 : 7.<br>Hoe vaak past 7 in 4? Dat past niet. Gebruik nu 40.<br>Hoe vaak past 7 in 40? 5 keer → 5 opschrijven. 5 &times; 7 = 35, dus 40 &minus; 35 = 5.<br>Haal de 6 aan: hoe vaak past 7 in 56? 8 keer → 8 opschrijven. 8 &times; 7 = 56, dus 56 &minus; 56 = 0.<br>Antwoord: 406 : 7 = <b>58</b>.</div></div><div class="term"><b>Staartdeling</b><span>een deling waarbij je stap voor stap, cijfer voor cijfer deelt</span></div><div class="call sum"><b>Om te onthouden</b><ul class="lst"><li>Bij een staartdeling deel je van links naar rechts, cijfer voor cijfer.</li><li>Past een cijfer nog niet, haal dan het volgende cijfer erbij.</li><li>Controleer of er aan het einde 0 overblijft.</li></ul></div>'},
+{heading:'1.5 Optellen met decimale getallen',html:'<div class="g2"><div class="box"><h4>Zelfde aantal decimalen</h4><p>Zet de getallen onder elkaar, zorg dat de <b>komma&#39;s onder elkaar</b> staan.</p><div class="call"><b>Voorbeeld:</b> 29,38 + 42,74<br>Schatting: 30 + 40 = 70.<br>Antwoord: 29,38 + 42,74 = <b>72,12</b>.</div></div><div class="box"><h4>Verschillend aantal decimalen</h4><p>Heeft een getal minder decimalen, vul dan aan met <b>nullen</b> zodat beide getallen evenveel decimalen hebben.</p><div class="call"><b>Voorbeeld:</b> 352,7 + 79,75<br>352,7 wordt 352,70.<br>Antwoord: 352,70 + 79,75 = <b>432,45</b>.</div></div></div><div class="call sum"><b>Om te onthouden</b><ul class="lst"><li>Zet de getallen onder elkaar met de komma&#39;s recht onder elkaar.</li><li>Vul zo nodig aan met nullen tot beide getallen evenveel decimalen hebben.</li><li>Maak altijd eerst een schatting om je antwoord te controleren.</li></ul></div>'},
+{heading:'1.6 Optellen met grote getallen',html:'<div class="box"><h4>Duizend, miljoen, miljard</h4><div class="tblwrap"><table class="tbl"><tr><th>Woord</th><th>In cijfers</th><th>Aantal nullen</th></tr><tr><td>duizend</td><td>1000</td><td>3</td></tr><tr><td>miljoen</td><td>1 000 000</td><td>6</td></tr><tr><td>miljard</td><td>1 000 000 000</td><td>9</td></tr></table></div></div><div class="box"><h4>Cijfers en woorden omzetten</h4><div class="call"><b>Voorbeeld:</b> schrijf 17,1 miljoen met alleen cijfers.<br>17 miljoen = 17000000. Het cijfer 1 achter de komma vervangt de eerste nul.<br>Antwoord: 17,1 miljoen = <b>17100000</b>.</div><div class="call"><b>Voorbeeld:</b> schrijf 6475000000 met het woord miljard, afgerond op één decimaal.<br>Verdeel het getal in groepjes van 3 cijfers van achteren naar voren: 6.475.000.000.<br>De cijfers na de 6 komen achter de komma: 6,475000000 miljard.<br>Antwoord (afgerond op één decimaal): <b>6,5 miljard</b>.</div></div><div class="call sum"><b>Om te onthouden</b><ul class="lst"><li>Duizend heeft 3 nullen, miljoen 6 nullen, miljard 9 nullen.</li><li>Bij het omzetten naar woorden verdeel je het getal in groepjes van 3 cijfers.</li><li>Rond zo nodig af op het gevraagde aantal decimalen.</li></ul></div>'}
+],
+terms:[
+['Optellen','Getallen bij elkaar tellen, meestal onder elkaar uitgerekend van rechts naar links.',0],
+['Schatten','Vooraf een ruwe berekening maken door de getallen af te ronden, zodat je je antwoord kunt controleren.',4],
+['Aftrekken','Het verschil tussen twee getallen berekenen.',1],
+['Lenen','Bij aftrekken een tiental of honderdtal overnemen van het volgende cijfer, omdat je anders niet kunt aftrekken.',1],
+['Vermenigvuldigen onder elkaar','Een vermenigvuldiging met grote getallen stap voor stap, cijfer voor cijfer uitrekenen.',0],
+['Staartdeling','Een deling waarbij je van links naar rechts cijfer voor cijfer deelt.',3],
+['Decimaal getal','Een getal met een komma, zoals 29,38.',5],
+['Duizend','1000, een getal met 3 nullen.',5],
+['Miljoen','1 000 000, een getal met 6 nullen.',5],
+['Miljard','1 000 000 000, een getal met 9 nullen.',5],
+['Afronden','Een getal korter maken door het aantal cijfers achter de komma te beperken.',5]
+],
+cards:[
+['Wat doe je eerst, voordat je een optelling of aftrekking uitrekent?','Je maakt een schatting door de getallen af te ronden.',0],
+['Bereken 479 + 254.','733',0],
+['Bereken 847 − 279.','568',0],
+['Wat doe je bij aftrekken als het cijfer erboven kleiner is dan het cijfer eronder?','Je leent een tiental (of honderdtal) van het volgende cijfer.',1],
+['Bereken 6 × 3683.','22098',0],
+['Bereken 47 × 67.','3149',0],
+['Bereken met een staartdeling: 406 : 7.','58',3],
+['Bereken 29,38 + 42,74.','72,12',0],
+['Waarom moeten de komma&#39;s bij het optellen van decimale getallen onder elkaar staan?','Zodat je cijfers van dezelfde soort (bijvoorbeeld tienden onder tienden) bij elkaar optelt.',4],
+['Schrijf 17,1 miljoen met alleen cijfers.','17100000',5],
+['Schrijf 6475000000 met het woord miljard, afgerond op één decimaal.','6,5 miljard',5],
+['Hoeveel nullen heeft een miljard?','9 nullen',5]
+],
+quiz:[
+['Amira verdient in januari €1776 en krijgt ook een reiskostenvergoeding van €139. Hoeveel krijgt ze in totaal?',['€1905','€1915','€1637','€1925'],1,'1776 + 139 = 1915.'],
+['Jarco verdient in januari €1286 en krijgt ook €1043 vakantiegeld. Hoeveel krijgt hij in totaal?',['€2229','€2329','€2339','€2319'],1,'1286 + 1043 = 2329.'],
+['Wat doe je eerst bij een optelling of aftrekking om je antwoord te kunnen controleren?',['Meteen invullen op de rekenmachine','Een schatting maken door af te ronden','Het antwoord opzoeken','Een staartdeling maken'],1,'Je maakt eerst een schatting door de getallen af te ronden, zodat je je antwoord kunt controleren.'],
+['Amir heeft een pompoen van 5783 gram, Dounia een van 7213 gram. Hoeveel gram is de pompoen van Dounia zwaarder?',['1330 gram','1430 gram','1530 gram','1230 gram'],1,'7213 − 5783 = 1430 gram.'],
+['Bij de geboorte weegt Sander 4556 gram en Miranda 2793 gram. Hoeveel gram is Sander zwaarder?',['1663 gram','1763 gram','1863 gram','1753 gram'],1,'4556 − 2793 = 1763 gram.'],
+['Wat betekent het als je bij een aftreksom moet &#39;lenen&#39;?',['Je telt er 10 bij op zonder iets te veranderen','Je haalt een tiental van het volgende cijfer om verder te kunnen aftrekken','Je rondt het getal af naar boven','Je zet het getal om in een breuk'],1,'Lenen betekent dat je een tiental of honderdtal overneemt van het volgende cijfer, omdat je anders niet kunt aftrekken.'],
+['De familie Jansen koopt 17 entreekaarten van €29 voor een pretpark. Hoeveel kost dat in totaal?',['€463','€493','€483','€503'],1,'17 x 29 = 493.'],
+['De familie Huang koopt 14 entreekaarten van €27 voor een dierentuin. Hoeveel kost dat in totaal?',['€368','€378','€388','€398'],1,'14 x 27 = 378.'],
+['Bereken 6 x 3683.',['21098','22098','20098','22198'],1,'6 x 3683 = 22098.'],
+['Bereken 47 x 67.',['3049','3149','3249','2949'],1,'47 x 67 = 3149.'],
+['Jos koopt 9 entreekaarten voor een voetbalwedstrijd en betaalt €306. Wat kost één entreekaart?',['€32','€34','€36','€38'],1,'306 : 9 = 34 euro.'],
+['Bart koopt 7 entreekaarten voor een skihal en betaalt €273. Wat kost één entreekaart?',['€37','€39','€41','€43'],1,'273 : 7 = 39 euro.'],
+['Bereken met een staartdeling: 406 : 7.',['48','58','68','56'],1,'406 : 7 = 58.'],
+['José verdient €564 in een half jaar. Hoeveel is dat per maand?',['€84','€94','€104','€96'],1,'Een half jaar is 6 maanden: 564 : 6 = 94 euro per maand.'],
+['Zaïra heeft zes eetkamerstoelen gekocht voor €450. Hoeveel is dat per stoel?',['€65','€75','€85','€70'],1,'450 : 6 = 75 euro per stoel.'],
+['Bereken 29,38 + 42,74.',['70,02','72,12','71,12','72,02'],1,'29,38 + 42,74 = 72,12.'],
+['Bereken 352,7 + 79,75.',['422,45','432,45','442,45','431,45'],1,'Zet de komma&#39;s onder elkaar en vul aan met een nul: 352,70 + 79,75 = 432,45.'],
+['Schrijf 25680000 met het woord miljoen, afgerond op één decimaal.',['25,6 miljoen','25,7 miljoen','25,68 miljoen','26 miljoen'],1,'25680000 = 25,68 miljoen. Afgerond op één decimaal is dat 25,7 miljoen.'],
+['Hoeveel nullen heeft miljoen?',['3','6','9','12'],1,'Miljoen heeft 6 nullen: 1 000 000.'],
+['China heeft 1,38 miljard inwoners, Pakistan 197 miljoen inwoners. Hoeveel miljard inwoners hebben de landen samen? Rond af op twee decimalen.',['1,48 miljard','1,58 miljard','1,68 miljard','1,38 miljard'],1,'1,38 miljard + 0,197 miljard = 1,577 miljard, afgerond 1,58 miljard.']
+]
+});
