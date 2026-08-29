@@ -1,0 +1,107 @@
+/* Blocks used inside chapter summaries: boxes, callouts, lists, tables, figures, terms, worked examples, comparisons, timelines, FAQ. */
+.sect{margin-top:2.4rem;animation:up .5s ease both}
+.sect>h3{font-family:'Cinzel',serif;font-size:1.2rem;color:var(--txt);margin-bottom:1rem;padding-bottom:.5rem;border-bottom:1px solid var(--line)}
+h5.sub{font-family:'Cinzel',serif;font-size:1rem;color:var(--accent);margin:1.8rem 0 .8rem}
+.g2{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem;margin-bottom:1rem}
+.g3{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1rem;margin-bottom:1rem}
+.box{background:var(--ink2);border:1px solid var(--line);border-radius:16px;padding:1.3rem}
+.box h4{font-family:'Cinzel',serif;font-size:1rem;color:var(--accent);margin-bottom:.7rem}
+.box p{font-size:.88rem}
+.dim{color:var(--mut);font-size:.85rem}
+.call{background:rgba(255,255,255,.045);border-left:3px solid var(--accent);border-radius:0 12px 12px 0;
+  padding:.85rem 1.1rem;margin:.9rem 0 0;font-size:.85rem;color:var(--mut)}
+.call b{color:var(--txt)}
+.call.warn{border-left-color:#f9c116}
+.call.sum{margin-top:1.6rem;background:rgba(255,255,255,.06);border-left-width:4px}
+.lst{list-style:none;margin:.4rem 0}
+.lst li{padding:.32rem 0 .32rem 1.3rem;position:relative;font-size:.86rem;color:var(--mut);border-bottom:1px solid var(--line)}
+.lst li:last-child{border:none}
+.lst li::before{content:'\25B8';color:var(--accent);position:absolute;left:0}
+.lst li b{color:var(--txt)}
+.num{list-style:none;counter-reset:n;margin:.4rem 0}
+.num li{counter-increment:n;padding:.45rem 0 .45rem 2.1rem;position:relative;font-size:.86rem;color:var(--mut);border-bottom:1px dashed var(--line)}
+.num li:last-child{border:none}
+.num li b{color:var(--txt)}
+.num li::before{content:counter(n);position:absolute;left:0;top:.45rem;width:1.45rem;height:1.45rem;background:var(--accent);
+  color:#0d1117;border-radius:50%;font-size:.68rem;font-weight:700;display:flex;align-items:center;justify-content:center}
+.tblwrap{overflow-x:auto}
+.tbl{width:100%;border-collapse:collapse;font-size:.82rem;margin:.5rem 0}
+.tbl th{background:rgba(255,255,255,.07);padding:.55rem .8rem;text-align:left;font-weight:600;color:var(--txt)}
+.tbl td{padding:.5rem .8rem;border-bottom:1px solid var(--line);color:var(--mut)}
+.tbl .yes{color:#7cd992;font-weight:600}
+.tbl .no{color:#ef8a8a;font-weight:600}
+.tbl .half{color:#f9c116;font-weight:600}
+.fig{background:var(--ink2);border:1px solid var(--line);border-radius:16px;padding:1.2rem;text-align:center}
+.fig svg{max-width:100%;height:auto}
+.fig figcaption{font-size:.75rem;color:var(--mut);margin-top:.6rem;font-style:italic}
+.term{border-left:2px solid var(--accent);padding:.4rem 2.2rem .4rem .8rem;margin-bottom:.7rem;position:relative}
+.term b{display:block;font-family:'Cinzel',serif;font-size:.9rem;color:var(--txt)}
+.term span{font-size:.82rem;color:var(--mut)}
+.term .star{position:absolute;top:.3rem;right:.3rem}
+
+/* ══ VOORBEELD (worked example): step by step ══ */
+.voorbeeld{background:var(--ink2);border:1px solid var(--line);border-left:3px solid #5aa9e6;
+  border-radius:14px;padding:1rem 1.1rem;margin:1rem 0}
+.voorbeeld h4{font-family:'Cinzel',serif;font-size:.92rem;color:#5aa9e6;margin-bottom:.6rem;
+  display:flex;align-items:center;gap:.4rem}
+.voorbeeld h4::before{content:'✎'}
+.voorbeeld .antwoord{margin-top:.7rem;padding:.6rem .8rem;background:rgba(90,169,230,.1);
+  border-radius:10px;font-weight:600;color:var(--txt);font-size:.86rem}
+
+/* ══ VERGELIJK (compare): two things side by side ══ */
+.vergelijk{display:grid;grid-template-columns:1fr auto 1fr;gap:.9rem;align-items:stretch;margin:1rem 0}
+.vergelijk-kant{background:var(--ink2);border:1px solid var(--line);border-radius:14px;padding:.9rem 1rem}
+.vergelijk-kant h4{font-family:'Cinzel',serif;font-size:.88rem;color:var(--txt);margin-bottom:.5rem}
+.vergelijk-kant p,.vergelijk-kant ul{font-size:.85rem;color:var(--mut)}
+.vergelijk-vs{align-self:center;font-size:.72rem;letter-spacing:.1em;color:var(--mut);
+  text-transform:uppercase;writing-mode:vertical-rl}
+@media (max-width:560px){.vergelijk{grid-template-columns:1fr}.vergelijk-vs{writing-mode:horizontal-tb;text-align:center}}
+
+/* ══ EZEL (mnemonic) ══ */
+.call.ezel{border-left-color:#e07a9e;background:rgba(224,122,158,.07)}
+.call.ezel::before{content:'💡 ';margin-right:.2rem}
+.call.link{border-left-color:#6c7fd8;background:rgba(108,127,216,.07)}
+.call.link::before{content:'↩ ';margin-right:.2rem}
+.call.waarom{border-left-color:#4caf7d;background:rgba(76,175,125,.07)}
+.call.waarom::before{content:'🎯 ';margin-right:.2rem}
+
+/* ══ REKEN (calculation): step-by-step worked calculation ══ */
+.call.reken{border-left-color:#5fbf7a;background:rgba(95,191,122,.08)}
+.call.reken::before{content:'🧮 ';margin-right:.2rem}
+.call.reken .num{margin-top:.6rem}
+.call.reken .num li{border-bottom-style:dotted}
+.call.reken .num li.eind{border:none;padding-top:.6rem;margin-top:.2rem;border-top:1px solid var(--line)}
+.call.reken .num li.eind::before{background:#5fbf7a}
+
+/* ══ CHECK: small self-check question inside the summary ══ */
+.check{background:var(--ink2);border:1px dashed var(--line);border-radius:12px;
+  padding:.8rem 1rem;margin:1rem 0;cursor:pointer;transition:border-color .2s,transform .15s}
+.check:hover{border-color:var(--accent)}
+.check:active{transform:scale(.99)}
+.check-v{font-size:.85rem;color:var(--txt);font-weight:600;display:flex;align-items:center;gap:.4rem;margin:0}
+.check-v::before{content:'✓';color:var(--accent);flex-shrink:0}
+.check-a{display:none;font-size:.84rem;color:var(--mut);margin:.5rem 0 0;padding-top:.5rem;border-top:1px solid var(--line)}
+.check.toon .check-a{display:block}
+.check-hint{display:block;font-size:.7rem;color:var(--mut);opacity:.55;margin-top:.35rem}
+.check.toon .check-hint{display:none}
+
+/* ══ TIJDLIJN (timeline) ══ */
+.tijdlijn{margin:1rem 0;padding-left:.2rem}
+.tijd-item{display:flex;gap:.9rem;position:relative;padding-bottom:1.1rem;padding-left:1.4rem;border-left:2px solid var(--line)}
+.tijd-item:last-child{padding-bottom:0}
+.tijd-item::before{content:'';position:absolute;left:-6px;top:.15rem;width:10px;height:10px;
+  border-radius:50%;background:var(--accent)}
+.tijd-jaar{font-family:'Cinzel',serif;font-weight:600;color:var(--accent);min-width:3.6rem;flex-shrink:0;font-size:.86rem}
+.tijd-tekst{font-size:.85rem;color:var(--mut)}
+
+/* ══ DIAGRAM PLACEHOLDER: authoring aid, never visible to students ══ */
+.diagram-nodig{display:none}
+
+/* ══ FAQ ══ */
+.faq{margin:1rem 0}
+.faq-item{padding:.7rem 0;border-bottom:1px solid var(--line)}
+.faq-item:last-child{border-bottom:none}
+.faq-item h5{font-family:'Cinzel',serif;font-size:.86rem;color:var(--txt);margin-bottom:.3rem;
+  display:flex;gap:.4rem}
+.faq-item h5::before{content:'?';color:var(--accent);font-weight:700}
+.faq-item p{font-size:.85rem;color:var(--mut)}

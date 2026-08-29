@@ -1,0 +1,34 @@
+{
+  "name": "leeromgeving",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Study site for Dutch VMBO students: chapter summaries, flashcards, quizzes and glossaries.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "build:single": "vite build --mode single",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint .",
+    "check": "npm run lint && npm test && npm run build",
+    "content:build": "python scripts/build_content.py",
+    "content:check": "python scripts/check_content.py"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.112.4"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.9.1",
+    "globals": "^17.11.0",
+    "jsdom": "^29.1.1",
+    "vite": "^8.2.2",
+    "vite-plugin-singlefile": "^2.3.3",
+    "vitest": "^4.1.11"
+  }
+}

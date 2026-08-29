@@ -1,0 +1,62 @@
+/* Design tokens, reset, base typography and the ambient backdrop (aurora, grain, sparkles, gold corner frames). */
+:root{
+  --ink:#05070f; --ink2:#0f1424; --ink3:#182036;
+  --paper:#f4ecd8; --line:rgba(216,184,118,.22);
+  --txt:#ece6d8; --mut:#8b93b0;
+  --goud:#f3d78a; --goud-d:#c98f1c; --goud-line:rgba(216,184,118,.32);
+  --wiskunde:#3fae72;    --wiskunde-d:#12281c;
+  --rekenen:#e2564f;     --rekenen-d:#301213;
+  --biologie:#8fd66a;    --biologie-d:#1c3117;
+  --nederlands:#e8c05a;  --nederlands-d:#332708;
+  --engels:#e8823f;      --engels-d:#331e0a;
+  --burgerschap:#a884e0; --burgerschap-d:#221a33;
+  --economie:#5a8fd6;    --economie-d:#0f1a30;
+  --maatschleer:#9c7fe0; --maatschleer-d:#201731;
+  --maatschkunde:#b48ce0;--maatschkunde-d:#251a37;
+  --maatschappij:#9c7fe0;--maatschappij-d:#201731;
+  --mensmaatschappij:#4fd6c4; --mensmaatschappij-d:#0e2825;
+  --onbekend:#6e7681;    --onbekend-d:#2a2f36;
+  --niv-arbeid:#e0a044;  --niv-arbeid-d:#332510;
+  --niv-bbl:#4fa8c9;     --niv-bbl-d:#0f2530;
+  --niv-bk:#d67aa0;      --niv-bk-d:#301522;
+  --niv-tl:#7c6fd8;      --niv-tl-d:#1a1730;
+  --accent:#e8c05a; --accent-d:#241d0d;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{height:100%;overflow:hidden}
+body{background:radial-gradient(ellipse 100% 60% at 50% -8%, var(--accent-d) 0%, var(--ink) 60%) var(--ink);color:var(--txt);font-family:'DM Sans',sans-serif;font-size:15px;line-height:1.65;transition:background 1s ease}
+button{font-family:inherit;cursor:pointer}
+:focus-visible{outline:2px solid var(--goud);outline-offset:3px;border-radius:6px}
+
+.aurora{position:fixed;inset:0;z-index:0;overflow:hidden;pointer-events:none}
+.aurora i{position:absolute;display:block;border-radius:50%;filter:blur(100px);opacity:.32;background:var(--accent);mix-blend-mode:screen;transition:background 1.2s ease}
+.aurora i:nth-child(1){width:48vw;height:48vw;left:-12vw;top:-16vw;animation:drift1 28s ease-in-out infinite}
+.aurora i:nth-child(2){width:38vw;height:38vw;right:-9vw;top:18vh;animation:drift2 34s ease-in-out infinite;opacity:.22}
+.aurora i:nth-child(3){width:32vw;height:32vw;left:28vw;bottom:-16vw;animation:drift3 38s ease-in-out infinite;opacity:.16}
+@keyframes drift1{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(8vw,6vh) scale(1.15)}}
+@keyframes drift2{0%,100%{transform:translate(0,0) scale(1.1)}50%{transform:translate(-7vw,-5vh) scale(1)}}
+@keyframes drift3{0%,100%{transform:translate(0,0)}50%{transform:translate(-6vw,-8vh) scale(1.2)}}
+.grain{position:fixed;inset:0;z-index:1;pointer-events:none;opacity:.03;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)'/%3E%3C/svg%3E")}
+
+/* ══ AMBIENT SPARKLES (golden dots) ══ */
+.sparkles{position:fixed;inset:0;z-index:1;overflow:hidden;pointer-events:none}
+.sparkles i{position:absolute;bottom:0;display:block;border-radius:50%;background:var(--goud);animation:sparkleFloat linear infinite}
+@keyframes sparkleFloat{0%{transform:translateY(0) scale(1);opacity:0}12%{opacity:.85}88%{opacity:.3}100%{transform:translateY(-70vh) scale(.6);opacity:0}}
+@media (prefers-reduced-motion:reduce){.sparkles{display:none}}
+
+/* ══ GOLDEN CORNER FRAMES (reusable on cards) ══ */
+.frame{position:absolute;inset:0;pointer-events:none;border-radius:inherit;
+  background-repeat:no-repeat;
+  background-image:
+    linear-gradient(var(--goud),var(--goud)), linear-gradient(var(--goud),var(--goud)),
+    linear-gradient(var(--goud),var(--goud)), linear-gradient(var(--goud),var(--goud)),
+    linear-gradient(var(--goud),var(--goud)), linear-gradient(var(--goud),var(--goud)),
+    linear-gradient(var(--goud),var(--goud)), linear-gradient(var(--goud),var(--goud));
+  background-size:16px 2px,2px 16px, 16px 2px,2px 16px, 16px 2px,2px 16px, 16px 2px,2px 16px;
+  background-position:
+    8px 8px, 8px 8px,
+    right 8px top 8px, right 8px top 8px,
+    8px bottom 8px, 8px bottom 8px,
+    right 8px bottom 8px, right 8px bottom 8px;
+  opacity:.7}

@@ -1,0 +1,15 @@
+# Supabase CLI configuration for the Edge Functions in this folder.
+# Only the parts that matter for security are set here; everything else
+# keeps the CLI defaults.
+
+project_id = "vgmhcsycjwyxofunlcly"
+
+# Registration happens BEFORE the user has a session, so the gateway must not
+# demand a JWT. The function validates the invite code itself.
+[functions.registreren]
+verify_jwt = false
+
+# Admin actions require a logged-in user. The gateway checks the JWT signature;
+# the function then checks role and status against public.profiles.
+[functions.admin-acties]
+verify_jwt = true

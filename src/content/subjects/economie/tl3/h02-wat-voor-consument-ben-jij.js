@@ -1,0 +1,124 @@
+import { registerChapter } from '../../../registry.js';
+
+registerChapter('economie|tl|3|2', {
+title:'Wat voor consument ben jij?',
+summary:[
+{heading:'2.1 Samen sta je sterker',html:
+ `<div class="box"><h4>Waar dit hoofdstuk over gaat</h4><p>Als consument heb je rechten, maar er zijn ook organisaties die voor je opkomen. Je leert wat consumentenorganisaties doen, waar je recht op hebt bij een aankoop, hoe de woningmarkt werkt en wat jouw consumptie doet met het milieu.</p></div>`
+
+ +`<h5 class="sub">Wie helpt jou als consument?</h5>`
+ +`<div class="g2">`
+ +`<div class="box"><h4>Consumentenorganisaties</h4><p><b>Consumentenorganisaties</b>, zoals de Consumentenbond, komen op voor de belangen van de consument. Dat doen ze met:</p><ul class="lst"><li>onpartijdige productinformatie;</li><li>informatie over je rechten en plichten als consument;</li><li>acties bij fabrikanten of de overheid om consumentenbelangen te beschermen.</li></ul></div>`
+ +`<div class="box"><h4>Keurmerk</h4><p>Een <b>keurmerk</b> is een logo op een product dat laat zien dat het product aan bepaalde eisen voldoet. Zo kun je als consument sneller zien of een product bijvoorbeeld veilig, duurzaam of van goede kwaliteit is.</p></div>`
+ +`</div>`
+
+ +`<div class="call">Consumentenorganisaties doen regelmatig onafhankelijk (vergelijkend) warenonderzoek, bijvoorbeeld naar de kwaliteit van autobanden of de prijs van boodschappen.</div>`
+
+ +`<div class="call sum"><b>Om te onthouden</b><ul class="lst"><li>Consumentenorganisaties geven onpartijdige informatie, informeren over je rechten en komen op voor consumentenbelangen.</li><li>Een keurmerk laat zien dat een product aan bepaalde eisen voldoet.</li></ul></div>`},
+
+{heading:'2.2 Waar heb je recht op?',html:
+ `<div class="box"><h4>Je consumentenrecht</h4><p><b>Consumentenrecht</b> is een verzameling wetten en regels die de consument beschermen bij de aankoop van een product.</p></div>`
+
+ +`<h5 class="sub">Twee belangrijke wetten</h5>`
+ +`<div class="g2">`
+ +`<div class="box"><h4>Warenwet</h4><p>De <b>Warenwet</b> verbiedt de verkoop van voedsel en andere producten die gevaarlijk zijn voor je gezondheid of veiligheid. De wet regelt ook dat de juiste productinformatie op het etiket staat.</p></div>`
+ +`<div class="box"><h4>Wet productaansprakelijkheid</h4><p>De <b>Wet productaansprakelijkheid</b> zegt dat de fabrikant aansprakelijk is als er schade ontstaat doordat een product niet goed werkt (gevolgschade).</p></div>`
+ +`</div>`
+
+ +`<div class="call">Koop je online, telefonisch of aan de deur? Dan heb je meestal <b>bedenktijd</b>: je mag de aankoop binnen veertien dagen zonder reden terugsturen.</div>`
+
+ +`<div class="box"><h4>Toezicht op bedrijven</h4><p>Niet alle bedrijven houden zich aan het consumentenrecht. Daarom zijn er instanties die erop toezien dat bedrijven zich aan de regels houden.</p></div>`
+
+ +`<div class="g3">`
+ +`<div class="box"><h4>NVWA</h4><p>De <b>NVWA</b> (Nederlandse Voedsel- en Warenautoriteit) controleert de veiligheid van voedsel en consumentenproducten, en kan boetes opleggen.</p></div>`
+ +`<div class="box"><h4>ACM</h4><p>De <b>ACM</b> (Autoriteit Consument &amp; Markt) let er namens de overheid op of bedrijven de consument eerlijk behandelen en kan boetes uitdelen. Via ConsuWijzer vind je informatie over je rechten.</p></div>`
+ +`<div class="box"><h4>De Geschillencommissie</h4><p>Kom je er met de leverancier niet uit? Dan kun je je klacht voorleggen aan <b>De Geschillencommissie</b>. Die doet een bindende uitspraak: beide partijen moeten zich eraan houden.</p></div>`
+ +`</div>`
+
+ +`<div class="call sum"><b>Om te onthouden</b><ul class="lst"><li>De Warenwet en de Wet productaansprakelijkheid beschermen je als consument.</li><li>Bij aankopen op afstand (online, telefonisch, aan de deur) heb je bedenktijd.</li><li>NVWA en ACM controleren bedrijven; De Geschillencommissie doet een bindende uitspraak bij een klacht.</li></ul></div>`},
+
+{heading:'2.3 Hoe wil je wonen?',html:
+ `<div class="box"><h4>De woningmarkt</h4><p>De <b>woningmarkt</b> is de vraag naar woningen en het aanbod van woningen. Is de vraag groter dan het aanbod, dan stijgen de prijzen en huren; is het aanbod groter dan de vraag, dan dalen ze.</p></div>`
+
+ +`<h5 class="sub">Wonen kost geld</h5>`
+ +`<div class="g2">`
+ +`<div class="box"><h4>Huurtoeslag</h4><p>Is de huur in verhouding tot jouw inkomen te hoog? Dan kun je bij de Belastingdienst <b>huurtoeslag</b> aanvragen: een financiële bijdrage van de overheid waarmee je een deel van de huur kunt betalen. Voorwaarden zijn onder andere dat je inkomen niet te hoog is, je niet te veel spaargeld of ander vermogen hebt, en dat de woning niet duurder is dan een bepaalde maximumhuur.</p></div>`
+ +`<div class="box"><h4>Onroerendezaakbelasting (ozb)</h4><p>Ben je eigenaar van een woning? Dan betaal je aan de gemeente <b>onroerendezaakbelasting (ozb)</b>.</p></div>`
+ +`</div>`
+
+ +`<div class="call sum"><b>Om te onthouden</b><ul class="lst"><li>De woningmarkt bestaat uit vraag naar en aanbod van woningen.</li><li>Huurtoeslag is een overheidsbijdrage in de huur voor mensen met een niet te hoog inkomen.</li><li>Woningeigenaren betalen ozb aan de gemeente.</li></ul></div>`},
+
+{heading:'2.4 Wat doe jij voor het milieu?',html:
+ `<div class="box"><h4>Consumeren is vervuilen</h4><p>Je doet het vaak niet met opzet, maar als je consumeert, veroorzaak je <b>milieuschade</b>: schade die we toebrengen aan onze leefomgeving.</p></div>`
+
+ +`<h5 class="sub">Vier vormen van milieuschade</h5>`
+ +`<div class="g2">`
+ +`<div class="box"><h4>Vervuiling en verbruik</h4><ul class="lst"><li>vervuiling van lucht, water en bodem (uitlaatgassen, lozingen, schadelijke stoffen in de grond);</li><li>verbruik van grondstoffen, zoals aardolie, ijzererts en hout;</li><li>verbruik van fossiele brandstoffen, zoals aardgas en aardolie;</li><li>het ontstaan van afval.</li></ul></div>`
+ +`<div class="box"><h4>Broeikaseffect</h4><p>Uitlaatgassen en de uitstoot van fabrieken veroorzaken CO₂ (koolstofdioxide). Te veel CO₂ zorgt voor opwarming van de aarde: dit noem je het <b>broeikaseffect</b>.</p></div>`
+ +`</div>`
+
+ +`<div class="box"><h4>Ecologische voetafdruk</h4><p>Er is grond nodig om je voedsel te verbouwen, je kleding te produceren, je huis te verwarmen en je afval te verwerken. Iedereen gebruikt zo een stukje van de aarde om te kunnen leven: dit noem je de <b>ecologische voetafdruk</b>. Gemiddeld is er wereldwijd ongeveer 1,7 hectare (zo'n 2,5 voetbalvelden) per persoon beschikbaar. De gemiddelde Nederlander gebruikt veel meer dan dat.</p></div>`
+
+ +`<h5 class="sub">Je voetafdruk verkleinen</h5>`
+ +`<div class="g3">`
+ +`<div class="box"><h4>Lokaal kopen</h4><p>Producten die <b>lokaal</b> (dichtbij) geproduceerd zijn, schelen transport en dus energie.</p></div>`
+ +`<div class="box"><h4>Duurzaam kopen</h4><p>Producten die <b>duurzaam</b> geproduceerd zijn, bijvoorbeeld met wind- of zonne-energie, of biologisch.</p></div>`
+ +`<div class="box"><h4>Recyclen</h4><p>Producten die (deels) <b>gerecycled</b> kunnen worden: dat scheelt afval en grondstoffen.</p></div>`
+ +`</div>`
+
+ +`<div class="call">Om vervuiling tegen te gaan, kan de overheid burgers en bedrijven een <b>subsidie</b> geven om bijvoorbeeld op duurzame energie over te stappen. Alle nadelen die we als samenleving hebben, bijvoorbeeld door milieuschade, noem je <b>maatschappelijke kosten</b>.</div>`
+
+ +`<div class="call sum"><b>Om te onthouden</b><ul class="lst"><li>Milieuschade ontstaat door vervuiling, grondstoffenverbruik, gebruik van fossiele brandstoffen en afval.</li><li>Te veel CO₂-uitstoot veroorzaakt het broeikaseffect.</li><li>De ecologische voetafdruk is het stukje aarde dat jij gebruikt om te leven; je kunt hem verkleinen door lokaal, duurzaam en recyclebaar te kopen.</li></ul></div>`}
+],
+terms:[
+['Consumentenorganisaties','Organisaties die opkomen voor de belangen van de consument.',0],
+['Keurmerk','Een logo op een product dat laat zien dat het product aan bepaalde eisen voldoet.',0],
+['Consumentenrecht','Een verzameling wetten en regels die de consument beschermen bij aankoop van een product, zoals de Warenwet en de Wet productaansprakelijkheid.',1],
+['Warenwet','Wet die de verkoop verbiedt van voedsel en producten die gevaarlijk zijn voor gezondheid of veiligheid.',1],
+['Wet productaansprakelijkheid','Wet die zegt dat de fabrikant aansprakelijk is als er schade ontstaat doordat een product niet goed werkt.',1],
+['NVWA','Nederlandse Voedsel- en Warenautoriteit. Controleert de veiligheid van voedsel en consumentenproducten.',1],
+['ACM','Autoriteit Consument & Markt. Ziet er namens de overheid op toe dat bedrijven de consument eerlijk behandelen.',1],
+['De Geschillencommissie','Instantie die een bindende uitspraak doet als een consument en een bedrijf er samen niet uitkomen.',1],
+['Woningmarkt','De vraag naar woningen en het aanbod van woningen.',2],
+['Huurtoeslag','Een financiële bijdrage van de overheid waarmee je een deel van de huur kunt betalen.',2],
+['Onroerendezaakbelasting (ozb)','Een belasting die je aan de gemeente moet betalen als je eigenaar van een woning bent.',2],
+['Milieuschade','Schade die we toebrengen aan onze leefomgeving, bijvoorbeeld door vervuiling of grondstoffenverbruik.',3],
+['Broeikaseffect','De opwarming van de aarde doordat er te veel CO2 in de lucht komt.',3],
+['Ecologische voetafdruk','Het stukje aarde dat je gebruikt om in je levensbehoeften te voorzien.',3],
+['Maatschappelijke kosten','Alle nadelen die we als samenleving hebben, bijvoorbeeld van milieuschade.',3],
+['Subsidie','Een financiële bijdrage van de overheid om burgers en bedrijven te stimuleren, bijvoorbeeld tot duurzaam gedrag.',3]
+],
+cards:[
+['Wat doen consumentenorganisaties?','Ze geven onpartijdige productinformatie, informeren over je rechten en plichten, en komen op voor consumentenbelangen.',0],
+['Wat is een keurmerk?','Een logo op een product dat laat zien dat het product aan bepaalde eisen voldoet.',0],
+['Welke twee wetten vormen samen een belangrijk deel van het consumentenrecht?','De Warenwet en de Wet productaansprakelijkheid.',1],
+['Wat controleert de NVWA?','De veiligheid van voedsel en van consumentenproducten.',1],
+['Wat doet de ACM?','Ze ziet er namens de overheid op toe dat bedrijven de consument eerlijk behandelen en kan boetes uitdelen.',1],
+['Wat is bedenktijd?','De periode (meestal 14 dagen) waarin je een aankoop op afstand zonder reden mag terugsturen.',1],
+['Wat gebeurt er als je er met een bedrijf niet uitkomt over een klacht?','Je kunt de klacht voorleggen aan De Geschillencommissie, die een bindende uitspraak doet.',1],
+['Wat is de woningmarkt?','De vraag naar woningen en het aanbod van woningen.',2],
+['Wat is huurtoeslag?','Een financiële bijdrage van de overheid waarmee je een deel van de huur kunt betalen.',2],
+['Wie betaalt onroerendezaakbelasting?','Iedereen die eigenaar is van een woning, aan de gemeente.',2],
+['Noem twee vormen van milieuschade.','Bijvoorbeeld vervuiling van lucht/water/bodem en het verbruik van fossiele brandstoffen.',3],
+['Wat is het broeikaseffect?','De opwarming van de aarde door te veel CO2-uitstoot.',3],
+['Wat is de ecologische voetafdruk?','Het stukje aarde dat jij gebruikt om in je behoeften te voorzien.',3],
+['Noem drie manieren om je ecologische voetafdruk te verkleinen.','Lokaal kopen, duurzaam geproduceerde producten kopen en producten kopen die (deels) gerecycled kunnen worden.',3],
+['Wat is een subsidie?','Een financiële bijdrage van de overheid om burgers en bedrijven te stimuleren, bijvoorbeeld tot duurzaam gedrag.',3]
+],
+quiz:[
+['Wat is geen taak van een consumentenorganisatie?',['Onpartijdige productinformatie geven','Boetes uitdelen aan bedrijven','Informeren over je rechten als consument','Opkomen voor consumentenbelangen bij de overheid'],1,'Boetes uitdelen is een taak van toezichthouders zoals de ACM, niet van een consumentenorganisatie.'],
+['Waarvoor dient een keurmerk?',['Om te laten zien dat een product goedkoop is','Om te laten zien dat een product aan bepaalde eisen voldoet','Om reclame te maken voor een merk','Om aan te geven dat een product uitverkocht is'],1,'Een keurmerk laat zien dat een product aan bepaalde (kwaliteits- of veiligheids)eisen voldoet.'],
+['Welke wet regelt dat de fabrikant aansprakelijk is voor schade door een defect product?',['De Warenwet','De Wet productaansprakelijkheid','De Consumentenwet','De Wet Consumentenkoop'],1,'De Wet productaansprakelijkheid regelt dat de fabrikant aansprakelijk is als schade ontstaat doordat een product niet goed werkt.'],
+['Je koopt online een jas en wilt hem, zonder opgaaf van reden, binnen 14 dagen terugsturen. Dit recht heet...',['garantietermijn','bedenktijd','consumentenrecht','retourrecht van de fabrikant'],1,'Bij aankopen op afstand, zoals online, heb je bedenktijd om zonder reden te retourneren.'],
+['Wie controleert of voedsel veilig is?',['De ACM','De NVWA','Het CBS','De Geschillencommissie'],1,'De NVWA (Nederlandse Voedsel- en Warenautoriteit) controleert de veiligheid van voedsel en consumentenproducten.'],
+['Je hebt een klacht over een product en komt er met de winkel niet uit. Waar kun je naartoe?',['De NVWA','De ACM','De Geschillencommissie','De Consumentenbond'],2,'De Geschillencommissie doet een bindende uitspraak als consument en bedrijf er samen niet uitkomen.'],
+['Wat bepaalt vooral de woningprijzen op de woningmarkt?',['De rente op spaargeld','De vraag naar en het aanbod van woningen','De hoogte van de huurtoeslag','De ozb'],1,'Net als bij andere markten bepalen vraag en aanbod de prijs, in dit geval van woningen.'],
+['Wie kan huurtoeslag aanvragen?',['Iedereen die huurt, ongeacht inkomen','Mensen met een niet te hoog inkomen en niet te veel vermogen','Alleen mensen die een huis kopen','Alleen studenten'],1,'Huurtoeslag is bedoeld voor mensen van wie de huur in verhouding tot hun (niet te hoge) inkomen te hoog is.'],
+['Wie betaalt onroerendezaakbelasting (ozb)?',['Iedere huurder','Iedere eigenaar van een woning','Alleen de overheid','Alleen bedrijven'],1,'Ozb betaal je aan de gemeente als je eigenaar bent van een woning.'],
+['Wat veroorzaakt het broeikaseffect vooral?',['Te veel CO2-uitstoot','Te veel regen','Te veel zonlicht','Te veel afval op straat'],0,'Te veel CO2 in de lucht zorgt voor opwarming van de aarde: het broeikaseffect.'],
+['Wat is de ecologische voetafdruk?',['De hoeveelheid afval die je weggooit','Het stukje aarde dat je gebruikt om in je behoeften te voorzien','De afstand die je met de auto rijdt','Je jaarlijkse energierekening'],1,'De ecologische voetafdruk is het stukje aarde dat nodig is om in jouw levensbehoeften te voorzien.'],
+['Wat verkleint je ecologische voetafdruk niet?',['Lokaal geproduceerde producten kopen','Duurzaam geproduceerde producten kopen','Producten kopen die ver vervoerd zijn','Producten kopen die gerecycled kunnen worden'],2,'Producten die van ver komen, vragen meer transport en dus meer energie, wat je voetafdruk juist vergroot.'],
+['Wat is een subsidie?',['Een boete van de overheid','Een financiële bijdrage van de overheid om gedrag te stimuleren','Een belasting op producten','Een lening met rente'],1,'Een subsidie is een financiële bijdrage van de overheid om burgers of bedrijven te stimuleren, bijvoorbeeld tot duurzaam gedrag.'],
+['Alle nadelen die de samenleving heeft door bijvoorbeeld milieuschade, noem je...',['maatschappelijke kosten','productiekosten','bedrijfskosten','overheidskosten'],0,'Nadelen voor de samenleving, zoals milieuschade, noem je maatschappelijke kosten.']
+]
+});

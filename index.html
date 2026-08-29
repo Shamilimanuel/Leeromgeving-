@@ -3,10 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Samenvattingen — Shamil Imanuel</title>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700&family=DM+Sans:wght@300;400;500;600;700&family=Lexend:wght@400;500;600&family=Cinzel:wght@500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="uiterlijk/style.css">
-<link rel="manifest" href="manifest.json">
+<title>Samenvattingen: Shamil Imanuel</title>
+<!-- Security policy: scripts/styles only from this site (inline handlers are used, hence 'unsafe-inline'),
+     network only to the Supabase project (update the host here when src/config.js points elsewhere;
+     the ws://localhost entries only serve the Vite dev server). -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; font-src 'self' data:; img-src 'self' data: blob:; connect-src 'self' https://vgmhcsycjwyxofunlcly.supabase.co wss://vgmhcsycjwyxofunlcly.supabase.co ws://localhost:* ws://127.0.0.1:*; worker-src 'self' blob:; manifest-src 'self'; media-src 'none'; object-src 'none'; base-uri 'none'; form-action 'self'">
+<!-- Fonts are self-hosted (public/fonts) so no request goes to Google when a student opens the site. -->
+<link rel="stylesheet" href="fonts/fonts.css">
+<link rel="manifest" href="manifest.webmanifest">
 <meta name="theme-color" content="#05070f">
 </head>
 <body>
@@ -67,7 +71,7 @@
       <button class="btn-start" onclick="go('home')">Start</button>
     </div>
   </div>
-  <button class="introverder" id="introVerder" onclick="introVerder()">Verder &rarr;</button>
+  <button class="introverder" id="introVerder" onclick="advanceIntro()">Verder &rarr;</button>
   <button class="skip" onclick="go('home')">Overslaan &rarr;</button>
 </section>
 
@@ -89,7 +93,7 @@
     <div class="bar">
       <button class="bt gh" onclick="go('personage')">&#127183; Bekijk je voortgang per vak</button>
       <button class="bt gh" onclick="go('chat')">&#128172; Teamchat</button>
-      <button class="bt gh" id="tekstgroottebtn" onclick="tekstgrootteWisselen()" title="Tekstgrootte aanpassen">&#128292; A</button>
+      <button class="bt gh" id="tekstgroottebtn" onclick="cycleTextSize()" title="Tekstgrootte aanpassen">&#128292; A</button>
     </div>
     <div class="subjects" id="subjectGrid"></div>
   </div>
@@ -121,22 +125,25 @@
   <div class="wrap">
     <div class="eyebrow" id="acctEyebrow">Mijn account</div>
     <h1 class="page" id="acctTitel">Log in of maak een account</h1>
-    <p class="lede" id="acctLede">Een account is optioneel &mdash; je kunt ook gewoon zonder leren.</p>
+    <p class="lede" id="acctLede">Een account is optioneel &mdash; je kunt ook gewoon zonder leren. Een account krijg je met een uitnodigingscode van je docent.</p>
     <div id="accountMelding"></div>
     <div id="accountGast">
       <div class="box" style="margin-bottom:1rem">
         <h3 style="margin-top:0">Inloggen</h3>
-        <form onsubmit="accountInlogPoging(event)">
+        <form onsubmit="submitLogin(event)">
           <input class="veld" id="inlogNaam" type="text" placeholder="Gebruikersnaam" autocomplete="username" required style="margin-bottom:.6rem">
           <input class="veld" id="inlogWw" type="password" placeholder="Wachtwoord" autocomplete="current-password" required style="margin-bottom:.9rem">
           <button class="bt" type="submit">Inloggen</button>
         </form>
       </div>
-      <div class="box">
+      <p class="dim" id="regToggle">Uitnodigingscode gekregen? <a href="#" onclick="showRegistration();return false">Maak hier je account</a>.</p>
+      <div class="box" id="regBox" style="display:none">
         <h3 style="margin-top:0">Nieuw account</h3>
-        <form onsubmit="accountRegistreerPoging(event)">
-          <input class="veld" id="regNaam" type="text" placeholder="Kies een gebruikersnaam" autocomplete="username" required minlength="3" style="margin-bottom:.6rem">
-          <input class="veld" id="regWw" type="password" placeholder="Kies een wachtwoord (min. 6 tekens)" autocomplete="new-password" required minlength="6" style="margin-bottom:.9rem">
+        <p class="dim" style="margin-top:0">Je hebt een uitnodigingscode van je docent nodig. Elke code werkt &eacute;&eacute;n keer.</p>
+        <form onsubmit="submitRegistration(event)">
+          <input class="veld" id="regCode" type="text" placeholder="Uitnodigingscode (bijv. ABCD-EFGH)" autocomplete="one-time-code" autocapitalize="characters" spellcheck="false" required minlength="8" maxlength="9" style="margin-bottom:.6rem">
+          <input class="veld" id="regNaam" type="text" placeholder="Kies een gebruikersnaam (3-20 letters of cijfers)" autocomplete="username" autocapitalize="none" spellcheck="false" required minlength="3" maxlength="20" pattern="[A-Za-z0-9]{3,20}" style="margin-bottom:.6rem">
+          <input class="veld" id="regWw" type="password" placeholder="Kies een wachtwoord (min. 8 tekens)" autocomplete="new-password" required minlength="8" style="margin-bottom:.9rem">
           <button class="bt gh" type="submit">Account aanmaken</button>
         </form>
       </div>
@@ -163,18 +170,18 @@
     <div id="settingsIngelogd" style="display:none">
       <div class="box" style="margin-bottom:1rem">
         <h3 style="margin-top:0">Gebruikersnaam</h3>
-        <form onsubmit="accountGebruikersnaamPoging(event)">
-          <input class="veld" id="setNaam" type="text" required minlength="3" maxlength="32" autocomplete="username" style="margin-bottom:.9rem">
+        <form onsubmit="submitUsernameChange(event)">
+          <input class="veld" id="setNaam" type="text" required minlength="3" maxlength="20" pattern="[A-Za-z0-9]{3,20}" autocapitalize="none" spellcheck="false" autocomplete="username" style="margin-bottom:.9rem">
           <button class="bt" type="submit">Opslaan</button>
         </form>
         <div id="setNaamMelding"></div>
       </div>
       <div class="box">
         <h3 style="margin-top:0">Wachtwoord wijzigen</h3>
-        <form onsubmit="accountWachtwoordPoging(event)">
+        <form onsubmit="submitPasswordChange(event)">
           <input class="veld" id="setWwHuidig" type="password" placeholder="Huidig wachtwoord" autocomplete="current-password" required style="margin-bottom:.6rem">
-          <input class="veld" id="setWwNieuw" type="password" placeholder="Nieuw wachtwoord (min. 6 tekens)" autocomplete="new-password" required minlength="6" style="margin-bottom:.6rem">
-          <input class="veld" id="setWwHerhaal" type="password" placeholder="Herhaal nieuw wachtwoord" autocomplete="new-password" required minlength="6" style="margin-bottom:.9rem">
+          <input class="veld" id="setWwNieuw" type="password" placeholder="Nieuw wachtwoord (min. 8 tekens)" autocomplete="new-password" required minlength="8" style="margin-bottom:.6rem">
+          <input class="veld" id="setWwHerhaal" type="password" placeholder="Herhaal nieuw wachtwoord" autocomplete="new-password" required minlength="8" style="margin-bottom:.9rem">
           <button class="bt" type="submit">Wachtwoord wijzigen</button>
         </form>
         <div id="setWwMelding"></div>
@@ -188,12 +195,12 @@
     <button class="homebtn" onclick="go('home')" title="Naar vakkenoverzicht" aria-label="Home">&#129517;</button>
     <button class="back" onclick="go('account')">&larr; Account</button>
     <div class="brand">Adminpaneel</div>
-    <div class="crumb"><b>Alle leerlingen</b></div>
+    <div class="crumb"><b>Codes &amp; leerlingen</b></div>
   </div></div>
   <div class="wrap">
     <div class="eyebrow">Beheer</div>
     <h1 class="page">Leerlingenoverzicht</h1>
-    <p class="lede">Wachtwoorden zie je nooit direct &mdash; gebruik &ldquo;Wachtwoord resetten&rdquo; om een nieuw tijdelijk wachtwoord te genereren.</p>
+    <p class="lede">Maak uitnodigingscodes voor nieuwe leerlingen. Wachtwoorden zie je nooit direct &mdash; gebruik &ldquo;Wachtwoord resetten&rdquo; om een nieuw tijdelijk wachtwoord te genereren.</p>
     <div id="adminBody"></div>
   </div>
 </section>
@@ -216,7 +223,7 @@
       <div id="chatGemuteMelding" class="call warn" style="display:none">Je bent gedemd door een beheerder &mdash; je kunt de chat wel lezen, maar niet plaatsen.</div>
       <div class="chat-lijst" id="chatLijst"></div>
       <div id="chatMelding"></div>
-      <form class="chat-form" id="chatForm" onsubmit="chatVerstuurPoging(event)">
+      <form class="chat-form" id="chatForm" onsubmit="submitChatMessage(event)">
         <input class="veld" id="chatInvoer" type="text" placeholder="Typ een bericht&hellip;" maxlength="500" autocomplete="off" required>
         <button class="bt" type="submit">Versturen</button>
       </form>
@@ -276,27 +283,27 @@
 <div class="radialmenu" id="radialmenu">
   <i class="radialhalo"></i>
   <div class="radialitem" style="--tx:0px;--ty:-250px">
-    <button class="zoekbtn menuicon" id="zoekbtn" onclick="openZoeken();closeRadialMenu()" aria-label="Zoeken" title="Zoeken">🔍</button>
+    <button class="zoekbtn menuicon" id="zoekbtn" onclick="openSearch();closeRadialMenu()" aria-label="Zoeken" title="Zoeken">🔍</button>
     <span class="radiallabel">Zoeken</span>
   </div>
   <div class="radialitem" style="--tx:45px;--ty:-169px">
-    <button class="favbtn menuicon" id="favbtn" onclick="openFavorieten();closeRadialMenu()" aria-label="Favorieten" title="Favorieten">⭐</button>
+    <button class="favbtn menuicon" id="favbtn" onclick="openFavorites();closeRadialMenu()" aria-label="Favorieten" title="Favorieten">⭐</button>
     <span class="radiallabel">Favorieten</span>
   </div>
   <div class="radialitem" style="--tx:125px;--ty:-217px">
-    <button class="pomodorobtn menuicon" id="pomodorobtn" onclick="pomodoroToggle();closeRadialMenu()" aria-label="Pomodoro-timer" title="Pomodoro-timer starten (25 min werk / 5 min pauze)">🍅</button>
-    <span class="radiallabel" id="pomodorolabel" onclick="pomodoroDuurWisselen(event)" title="Tik om de duur te wisselen (10/25/45/60 min)" style="cursor:pointer">Pomodoro</span>
+    <button class="pomodorobtn menuicon" id="pomodorobtn" onclick="togglePomodoro();closeRadialMenu()" aria-label="Pomodoro-timer" title="Pomodoro-timer starten (25 min werk / 5 min pauze)">🍅</button>
+    <span class="radiallabel" id="pomodorolabel" onclick="cyclePomodoroDuration(event)" title="Tik om de duur te wisselen (10/25/45/60 min)" style="cursor:pointer">Pomodoro</span>
   </div>
   <div class="radialitem" style="--tx:124px;--ty:-124px">
-    <button class="examenbtn menuicon" id="examenbtn" onclick="openExamen();closeRadialMenu()" aria-label="Oefentoets" title="Oefentoets / zelftest">📝</button>
+    <button class="examenbtn menuicon" id="examenbtn" onclick="openExam();closeRadialMenu()" aria-label="Oefentoets" title="Oefentoets / zelftest">📝</button>
     <span class="radiallabel">Oefentoets</span>
   </div>
   <div class="radialitem" style="--tx:217px;--ty:-125px">
-    <button class="dyslexiebtn menuicon" id="dyslexiebtn" onclick="toggleDyslexie();closeRadialMenu()" aria-label="Dyslexie-modus aan/uit" title="Dyslexie-modus">🔤</button>
+    <button class="dyslexiebtn menuicon" id="dyslexiebtn" onclick="toggleDyslexia();closeRadialMenu()" aria-label="Dyslexie-modus aan/uit" title="Dyslexie-modus">🔤</button>
     <span class="radiallabel">Dyslexie</span>
   </div>
   <div class="radialitem" style="--tx:169px;--ty:-45px">
-    <button class="lichtbtn menuicon" id="lichtbtn" onclick="toggleLicht();closeRadialMenu()" aria-label="Lichte modus aan/uit" title="Lichte modus">☀️</button>
+    <button class="lichtbtn menuicon" id="lichtbtn" onclick="toggleLightMode();closeRadialMenu()" aria-label="Lichte modus aan/uit" title="Lichte modus">☀️</button>
     <span class="radiallabel">Licht</span>
   </div>
   <div class="radialitem" style="--tx:250px;--ty:0px">
@@ -315,312 +322,40 @@
     <div id="helpBody"></div>
     <div class="helpdots" id="helpDots"></div>
     <div class="helpnav">
-      <button class="bt gh" id="helpPrev" onclick="naarSlide(slide-1)">Vorige</button>
-      <button class="bt" id="helpNext" onclick="volgendeSlide()">Volgende</button>
+      <button class="bt gh" id="helpPrev" onclick="previousSlide()">Vorige</button>
+      <button class="bt" id="helpNext" onclick="nextSlide()">Volgende</button>
     </div>
   </div>
 </div>
 
 <div class="zoekwrap" id="zoekwrap">
-  <div class="helpbg" onclick="closeZoeken()"></div>
+  <div class="helpbg" onclick="closeSearch()"></div>
   <div class="helpcard zoekcard" role="dialog" aria-label="Zoeken">
-    <button class="helpclose" onclick="closeZoeken()" aria-label="Sluiten">&times;</button>
+    <button class="helpclose" onclick="closeSearch()" aria-label="Sluiten">&times;</button>
     <h3>Zoeken in alle vakken</h3>
-    <input class="zoek" id="globZoek" type="search" placeholder="Zoek een begrip of vraag…" aria-label="Zoek" oninput="opZoekInput(this.value)" style="width:100%;margin:.6rem 0 1rem">
+    <input class="zoek" id="globZoek" type="search" placeholder="Zoek een begrip of vraag…" aria-label="Zoek" oninput="onSearchInput(this.value)" style="width:100%;margin:.6rem 0 1rem">
     <div id="zoekres"></div>
   </div>
 </div>
 
 <div class="favwrap" id="favwrap">
-  <div class="helpbg" onclick="closeFavorieten()"></div>
+  <div class="helpbg" onclick="closeFavorites()"></div>
   <div class="helpcard favcard" role="dialog" aria-label="Favorieten">
-    <button class="helpclose" onclick="closeFavorieten()" aria-label="Sluiten">&times;</button>
+    <button class="helpclose" onclick="closeFavorites()" aria-label="Sluiten">&times;</button>
     <h3>Mijn favorieten</h3>
     <div id="favlist"></div>
   </div>
 </div>
 
 <div class="examenwrap" id="examenwrap">
-  <div class="helpbg" onclick="closeExamen()"></div>
+  <div class="helpbg" onclick="closeExam()"></div>
   <div class="helpcard examencard" role="dialog" aria-label="Oefentoets">
-    <button class="helpclose" onclick="closeExamen()" aria-label="Sluiten">&times;</button>
-    <h3>Oefentoets — alle vakken door elkaar</h3>
+    <button class="helpclose" onclick="closeExam()" aria-label="Sluiten">&times;</button>
+    <h3>Oefentoets: alle vakken door elkaar</h3>
     <div id="examenBody"></div>
   </div>
 </div>
 
-<!-- STOF:START -->
-<script src="data/structuur.js"></script>
-<script src="data/biologie/biologie.js"></script>
-<script src="data/biologie/bbl1/h01-onderzoeken-en-ontdekken.js"></script>
-<script src="data/biologie/bbl1/h02-bewegen.js"></script>
-<script src="data/biologie/bbl1/h03-waarnemen.js"></script>
-<script src="data/biologie/bbl1/h04-gedrag.js"></script>
-<script src="data/biologie/bbl1/h05-planten.js"></script>
-<script src="data/biologie/bbl1/h06-je-groene-omgeving.js"></script>
-<script src="data/biologie/bbl2/h07-eten-en-verteren.js"></script>
-<script src="data/biologie/bbl2/h08-je-lichaam-werkt.js"></script>
-<script src="data/biologie/bbl2/h09-gezondheid.js"></script>
-<script src="data/biologie/bbl2/h10-je-verandert.js"></script>
-<script src="data/biologie/bbl2/h11-voortplanting.js"></script>
-<script src="data/biologie/bbl2/h12-dieren-en-planten.js"></script>
-<script src="data/biologie/bbl2/h13-duurzaam-leven.js"></script>
-<script src="data/biologie/tl1/h01-onderzoeken-en-ontdekken.js"></script>
-<script src="data/biologie/tl1/h02-bewegen.js"></script>
-<script src="data/biologie/tl1/h03-waarnemen.js"></script>
-<script src="data/biologie/tl1/h04-gedrag.js"></script>
-<script src="data/biologie/tl1/h05-planten.js"></script>
-<script src="data/biologie/tl1/h06-je-groene-omgeving.js"></script>
-<script src="data/biologie/tl2/h01-eten.js"></script>
-<script src="data/biologie/tl2/h02-je-lichaam-werkt.js"></script>
-<script src="data/biologie/tl2/h03-gezondheid.js"></script>
-<script src="data/biologie/tl2/h04-je-verandert.js"></script>
-<script src="data/biologie/tl2/h05-voortplanting.js"></script>
-<script src="data/biologie/tl2/h06-dieren-en-planten.js"></script>
-<script src="data/biologie/tl2/h07-duurzaam-leven.js"></script>
-<script src="data/biologie/tl3/h01-organismen-uit-vier-rijken.js"></script>
-<script src="data/biologie/tl3/h02-bewegen.js"></script>
-<script src="data/biologie/tl3/h03-planten-en-dieren.js"></script>
-<script src="data/biologie/tl3/h04-waarnemen-en-reageren.js"></script>
-<script src="data/biologie/tl3/h05-gedrag.js"></script>
-<script src="data/biologie/tl3/h06-mens-en-milieu.js"></script>
-<script src="data/biologie/tl4/h01-ademen-en-eten.js"></script>
-<script src="data/biologie/tl4/h02-bloed.js"></script>
-<script src="data/biologie/tl4/h03-afweer-en-bescherming.js"></script>
-<script src="data/biologie/tl4/h04-voortplanting.js"></script>
-<script src="data/biologie/tl4/h05-erfelijkheid.js"></script>
-<script src="data/biologie/tl4/h06-evolutie.js"></script>
-<script src="data/economie/economie.js"></script>
-<script src="data/economie/tl3/h01-hoe-welvarend-ben-jij.js"></script>
-<script src="data/economie/tl3/h02-wat-voor-consument-ben-jij.js"></script>
-<script src="data/economie/tl3/h03-de-bank-en-jouw-geld.js"></script>
-<script src="data/economie/tl3/h04-kies-je-voor-zekerheid.js"></script>
-<script src="data/economie/tl3/h05-is-er-werk-voor-jou.js"></script>
-<script src="data/economie/tl3/h06-productie-en-markt.js"></script>
-<script src="data/economie/tl3/h07-wie-heeft-het-voor-het-zeggen.js"></script>
-<script src="data/economie/tl3/h08-is-de-welvaart-eerlijk-verdeeld.js"></script>
-<script src="data/economie/tl4/h01-inkomen-en-welvaart.js"></script>
-<script src="data/economie/tl4/h02-geld-genoeg.js"></script>
-<script src="data/economie/tl4/h03-ben-jij-ondernemend.js"></script>
-<script src="data/economie/tl4/h04-werk-aan-de-winkel.js"></script>
-<script src="data/economie/tl4/h05-hoe-werkt-de-overheid.js"></script>
-<script src="data/economie/tl4/h06-iedereen-betaalt-belasting.js"></script>
-<script src="data/economie/tl4/h07-nederland-en-het-buitenland.js"></script>
-<script src="data/economie/tl4/h08-ontwikkelingslanden.js"></script>
-<script src="data/engels/engels.js"></script>
-<script src="data/engels/bbl1/h01-bridging-the-gap.js"></script>
-<script src="data/engels/bbl1/h02-this-is-me.js"></script>
-<script src="data/engels/bbl1/h03-time-for-school.js"></script>
-<script src="data/engels/bbl1/h04-food-talk.js"></script>
-<script src="data/engels/bbl1/h05-no-place-like-home.js"></script>
-<script src="data/engels/bbl1/h06-your-world.js"></script>
-<script src="data/engels/bbl1/h07-lets-go.js"></script>
-<script src="data/engels/bbl2/h01-holiday-times.js"></script>
-<script src="data/engels/bbl2/h02-health.js"></script>
-<script src="data/engels/bbl2/h03-showbiz.js"></script>
-<script src="data/engels/bbl2/h04-in-the-city.js"></script>
-<script src="data/engels/bbl2/h05-world-of-media.js"></script>
-<script src="data/engels/bbl2/h06-having-good-time.js"></script>
-<script src="data/engels/bbl3/h01-the-world-around-you.js"></script>
-<script src="data/engels/bbl3/h02-crime.js"></script>
-<script src="data/engels/bbl3/h03-science-technology.js"></script>
-<script src="data/engels/bbl3/h04-going-green.js"></script>
-<script src="data/engels/bbl3/h05-your-future.js"></script>
-<script src="data/engels/bbl4/h01-english-around-the-world.js"></script>
-<script src="data/engels/bbl4/h02-the-next-step.js"></script>
-<script src="data/engels/bbl4/h03-to-the-extreme.js"></script>
-<script src="data/engels/bbl4/h04-multimedia-design.js"></script>
-<script src="data/engels/tl1/h01-bridging-the-gap-primary.js"></script>
-<script src="data/engels/tl1/h02-this-is-me.js"></script>
-<script src="data/engels/tl1/h03-time-for-school.js"></script>
-<script src="data/engels/tl1/h04-food-talk.js"></script>
-<script src="data/engels/tl2/h01-holiday-times.js"></script>
-<script src="data/engels/tl2/h02-health.js"></script>
-<script src="data/engels/tl2/h03-showbiz.js"></script>
-<script src="data/engels/tl3/h01-the-world-around-you.js"></script>
-<script src="data/engels/tl3/h02-crime.js"></script>
-<script src="data/engels/tl3/h03-science-technology.js"></script>
-<script src="data/engels/tl4/h01-to-the-extreme.js"></script>
-<script src="data/engels/tl4/h02-multimedia-design.js"></script>
-<script src="data/maatschleer/maatschleer.js"></script>
-<script src="data/maatschleer/tl3/h01-wat-is-maatschappijleer.js"></script>
-<script src="data/maatschleer/tl3/h02-media.js"></script>
-<script src="data/maatschleer/tl3/h03-cultuur-en-identiteit.js"></script>
-<script src="data/maatschleer/tl3/h04-politiek.js"></script>
-<script src="data/maatschleer/tl3/h05-rechtsstaat.js"></script>
-<script src="data/maatschleer/tl3/h06-nederland-en-de-wereld.js"></script>
-<script src="data/maatschleer/tl3/h07-pluriforme-samenleving.js"></script>
-<script src="data/maatschleer/tl3/h08-werk.js"></script>
-<script src="data/maatschleer/tl3/h09-burgerschap.js"></script>
-<script src="data/mensmaatschappij/mensmaatschappij.js"></script>
-<script src="data/mensmaatschappij/bbl1/h01-arm-en-rijk.js"></script>
-<script src="data/mensmaatschappij/bbl1/h02-mens-en-aarde.js"></script>
-<script src="data/mensmaatschappij/bbl1/h03-leven-met-het-geloof.js"></script>
-<script src="data/mensmaatschappij/bbl1/h04-van-stad-naar-megastad.js"></script>
-<script src="data/mensmaatschappij/bbl1/h05-mensen-in-beweging.js"></script>
-<script src="data/mensmaatschappij/bbl1/h06-op-reis-naar-verre-streken.js"></script>
-<script src="data/mensmaatschappij/bbl1/h07-de-wereld-in-handen.js"></script>
-<script src="data/mensmaatschappij/bbl1/h08-de-strijd-om-vrijheid-en-gelijkheid.js"></script>
-<script src="data/mensmaatschappij/bbl1/h09-verstandig-kopen.js"></script>
-<script src="data/mensmaatschappij/bbl1/h10-verstand-van-geld.js"></script>
-<script src="data/mensmaatschappij/bbl1/h11-aan-de-slag.js"></script>
-<script src="data/mensmaatschappij/bbl2/h01-industrie-wereldwijd.js"></script>
-<script src="data/mensmaatschappij/bbl2/h02-naar-een-industriele-samenleving.js"></script>
-<script src="data/mensmaatschappij/bbl2/h03-oorlog-en-crisis.js"></script>
-<script src="data/mensmaatschappij/bbl2/h04-de-tweede-wereldoorlog.js"></script>
-<script src="data/mensmaatschappij/bbl2/h05-de-macht-verschuift.js"></script>
-<script src="data/mensmaatschappij/bbl2/h06-van-oost-naar-west-van-zuid-naar-noord.js"></script>
-<script src="data/mensmaatschappij/bbl2/h07-op-weg-naar-een-duurzame-wereld.js"></script>
-<script src="data/mensmaatschappij/bbl2/h08-nederland-in-de-wereld.js"></script>
-<script src="data/mensmaatschappij/bbl2/h09-hoeveel-verdien-je-eraan.js"></script>
-<script src="data/mensmaatschappij/bbl2/h10-samen-met-het-buitenland.js"></script>
-<script src="data/mensmaatschappij/bbl2/h11-wie-heeft-het-voor-het-zeggen.js"></script>
-<script src="data/nederlands/nederlands.js"></script>
-<script src="data/nederlands/bbl1/h01-meer-dan-lezen.js"></script>
-<script src="data/nederlands/bbl1/h02-media.js"></script>
-<script src="data/nederlands/bbl1/h03-fictie.js"></script>
-<script src="data/nederlands/bbl1/h04-taal.js"></script>
-<script src="data/nederlands/bbl1/h05-grammatica.js"></script>
-<script src="data/nederlands/bbl1/h06-formuleren.js"></script>
-<script src="data/nederlands/bbl1/h07-spelling.js"></script>
-<script src="data/nederlands/bbl1/h08-puzzelen.js"></script>
-<script src="data/nederlands/bbl1/h09-mens-en-dier.js"></script>
-<script src="data/nederlands/bbl1/h10-bewaren.js"></script>
-<script src="data/nederlands/bbl1/h11-on-off.js"></script>
-<script src="data/nederlands/bbl1/h12-helden.js"></script>
-<script src="data/nederlands/bbl2/h01-water.js"></script>
-<script src="data/nederlands/bbl2/h02-mysterie.js"></script>
-<script src="data/nederlands/bbl2/h03-kunst.js"></script>
-<script src="data/nederlands/bbl2/h04-on-gezond.js"></script>
-<script src="data/nederlands/bbl2/h05-meer-dan-lezen.js"></script>
-<script src="data/nederlands/bbl2/h06-media.js"></script>
-<script src="data/nederlands/bbl2/h07-fictie.js"></script>
-<script src="data/nederlands/bbl2/h08-taal.js"></script>
-<script src="data/nederlands/bbl2/h09-grammatica.js"></script>
-<script src="data/nederlands/bbl2/h10-formuleren.js"></script>
-<script src="data/nederlands/bbl2/h11-spelling.js"></script>
-<script src="data/nederlands/bbl2/h12-puzzelen.js"></script>
-<script src="data/nederlands/bbl3/h01-meer-dan-lezen.js"></script>
-<script src="data/nederlands/bbl3/h02-media.js"></script>
-<script src="data/nederlands/bbl3/h03-fictie.js"></script>
-<script src="data/nederlands/bbl3/h04-taal.js"></script>
-<script src="data/nederlands/bbl3/h05-thema-a-geluk.js"></script>
-<script src="data/nederlands/bbl3/h06-thema-b-leefwereld.js"></script>
-<script src="data/nederlands/bbl3/h07-thema-c-changemakers.js"></script>
-<script src="data/nederlands/bbl3/h08-grammatica.js"></script>
-<script src="data/nederlands/bbl3/h09-formuleren.js"></script>
-<script src="data/nederlands/bbl3/h10-spelling.js"></script>
-<script src="data/nederlands/bbl3/h11-puzzelen.js"></script>
-<script src="data/nederlands/bbl4/h01-meer-dan-lezen.js"></script>
-<script src="data/nederlands/bbl4/h02-media.js"></script>
-<script src="data/nederlands/bbl4/h03-fictie.js"></script>
-<script src="data/nederlands/bbl4/h04-taal.js"></script>
-<script src="data/nederlands/bbl4/h05-formuleren.js"></script>
-<script src="data/nederlands/bbl4/h06-spelling.js"></script>
-<script src="data/nederlands/bbl4/h07-eindexamen.js"></script>
-<script src="data/nederlands/bbl4/h08-puzzelen.js"></script>
-<script src="data/nederlands/bbl4/h09-beroepen.js"></script>
-<script src="data/nederlands/bbl4/h10-een-goed-verhaal.js"></script>
-<script src="data/nederlands/bbl4/h11-nepnieuws.js"></script>
-<script src="data/nederlands/tl1/h01-meer-dan-lezen.js"></script>
-<script src="data/nederlands/tl1/h02-media.js"></script>
-<script src="data/nederlands/tl1/h03-fictie.js"></script>
-<script src="data/nederlands/tl1/h04-taal.js"></script>
-<script src="data/nederlands/tl1/h05-grammatica.js"></script>
-<script src="data/nederlands/tl1/h06-formuleren.js"></script>
-<script src="data/nederlands/tl1/h07-spelling.js"></script>
-<script src="data/nederlands/tl1/h08-handig.js"></script>
-<script src="data/nederlands/tl1/h09-mens-en-dier.js"></script>
-<script src="data/nederlands/tl1/h10-bewaren.js"></script>
-<script src="data/nederlands/tl1/h11-on-off.js"></script>
-<script src="data/nederlands/tl1/h12-helden.js"></script>
-<script src="data/nederlands/tl2/h01-meer-dan-lezen.js"></script>
-<script src="data/nederlands/tl2/h02-media.js"></script>
-<script src="data/nederlands/tl2/h03-fictie.js"></script>
-<script src="data/nederlands/tl2/h04-taal.js"></script>
-<script src="data/nederlands/tl2/h05-grammatica.js"></script>
-<script src="data/nederlands/tl2/h06-formuleren.js"></script>
-<script src="data/nederlands/tl2/h07-spelling.js"></script>
-<script src="data/nederlands/tl2/h08-handig.js"></script>
-<script src="data/nederlands/tl2/h09-water.js"></script>
-<script src="data/nederlands/tl2/h10-mysterie.js"></script>
-<script src="data/nederlands/tl2/h11-kunst.js"></script>
-<script src="data/nederlands/tl2/h12-on-gezond.js"></script>
-<script src="data/nederlands/tl3/h01-meer-dan-lezen.js"></script>
-<script src="data/nederlands/tl3/h02-media.js"></script>
-<script src="data/nederlands/tl3/h03-fictie.js"></script>
-<script src="data/nederlands/tl3/h04-taal.js"></script>
-<script src="data/nederlands/tl3/h05-geluk.js"></script>
-<script src="data/nederlands/tl3/h06-leefwereld.js"></script>
-<script src="data/nederlands/tl3/h07-changemakers.js"></script>
-<script src="data/nederlands/tl3/h08-grammatica.js"></script>
-<script src="data/nederlands/tl3/h09-spelling.js"></script>
-<script src="data/nederlands/tl4/h01-meer-dan-lezen.js"></script>
-<script src="data/nederlands/tl4/h02-media.js"></script>
-<script src="data/nederlands/tl4/h03-fictie.js"></script>
-<script src="data/nederlands/tl4/h04-beroepen.js"></script>
-<script src="data/nederlands/tl4/h05-nepnieuws.js"></script>
-<script src="data/nederlands/tl4/h06-formuleren.js"></script>
-<script src="data/nederlands/tl4/h07-spelling.js"></script>
-<script src="data/nederlands/tl4/h08-eindexamen.js"></script>
-<script src="data/rekenen/rekenen.js"></script>
-<script src="data/rekenen/bbl1/h01-optellen.js"></script>
-<script src="data/rekenen/bbl1/h02-aftrekken.js"></script>
-<script src="data/rekenen/bbl1/h03-vermenigvuldigen.js"></script>
-<script src="data/rekenen/bbl1/h04-delen.js"></script>
-<script src="data/rekenen/bbl1/h05-gemengde-opgaven.js"></script>
-<script src="data/rekenen/bbl2/h01-optellen.js"></script>
-<script src="data/rekenen/bbl2/h02-aftrekken.js"></script>
-<script src="data/rekenen/bbl2/h03-vermenigvuldigen-en-delen.js"></script>
-<script src="data/rekenen/bbl2/h04-eenheden.js"></script>
-<script src="data/rekenen/bbl3/h01-getallen.js"></script>
-<script src="data/rekenen/bbl3/h02-meten-en-meetkunde.js"></script>
-<script src="data/rekenen/bbl3/h03-verhoudingen.js"></script>
-<script src="data/rekenen/bbl3/h04-verbanden.js"></script>
-<script src="data/rekenen/bbl4/h01-getallen.js"></script>
-<script src="data/rekenen/bbl4/h02-meten-en-meetkunde.js"></script>
-<script src="data/rekenen/bbl4/h03-verhoudingen.js"></script>
-<script src="data/rekenen/bbl4/h04-verbanden.js"></script>
-<script src="data/wiskunde/wiskunde.js"></script>
-<script src="data/wiskunde/bbl1/h01-ruimtefiguren.js"></script>
-<script src="data/wiskunde/bbl1/h02-getallen.js"></script>
-<script src="data/wiskunde/bbl1/h03-plaats-bepalen.js"></script>
-<script src="data/wiskunde/bbl1/h04-meten.js"></script>
-<script src="data/wiskunde/bbl1/h05-lijnen-en-hoeken.js"></script>
-<script src="data/wiskunde/bbl2/h01-vlakke-figuren.js"></script>
-<script src="data/wiskunde/bbl2/h02-formules-en-vergelijkingen.js"></script>
-<script src="data/wiskunde/bbl2/h03-oppervlakte.js"></script>
-<script src="data/wiskunde/bbl2/h04-statistiek.js"></script>
-<script src="data/wiskunde/tl2/h01-vlakke-figuren.js"></script>
-<script src="data/wiskunde/tl2/h02-oplossen-en-formules.js"></script>
-<script src="data/wiskunde/tl2/h03-oppervlakte.js"></script>
-<script src="data/wiskunde/tl2/h04-statistiek.js"></script>
-<script src="data/wiskunde/tl2/h05-de-stelling-van-pythagoras.js"></script>
-<script src="data/wiskunde/tl2/h06-vergroten-en-verkleinen.js"></script>
-<script src="data/wiskunde/tl2/h07-formules-en-grafieken.js"></script>
-<script src="data/wiskunde/tl2/h08-ruimtemeetkunde.js"></script>
-<script src="data/wiskunde/tl3/h01-procenten.js"></script>
-<script src="data/wiskunde/tl3/h02-meetkunde.js"></script>
-<script src="data/wiskunde/tl3/h03-formules-en-grafieken.js"></script>
-<script src="data/wiskunde/tl3/h04-statistiek.js"></script>
-<script src="data/wiskunde/tl3/h05-goniometrie.js"></script>
-<script src="data/wiskunde/tl3/h06-verschillende-verbanden.js"></script>
-<script src="data/wiskunde/tl3/h07-goniometrie.js"></script>
-<script src="data/wiskunde/tl3/h08-getallen.js"></script>
-<script src="data/wiskunde/tl3/h09-omtrek-oppervlakte-en-inhoud.js"></script>
-<script src="data/wiskunde/tl3/h10-grafieken-en-vergelijkingen.js"></script>
-<script src="data/wiskunde/tl4/h01-statistiek-en-kans.js"></script>
-<script src="data/wiskunde/tl4/h02-verbanden.js"></script>
-<script src="data/wiskunde/tl4/h03-drie-dimensies-afstanden-en-hoeken.js"></script>
-<script src="data/wiskunde/tl4/h04-formules-en-vergelijkingen.js"></script>
-<script src="data/wiskunde/tl4/h05-rekenen-meten-en-schatten.js"></script>
-<script src="data/wiskunde/tl4/h06-meetkunde-vlakke-figuren.js"></script>
-<script src="data/wiskunde/tl4/h07-verbanden.js"></script>
-<script src="data/wiskunde/tl4/h08-ruimtemeetkunde.js"></script>
-<!-- STOF:EINDE -->
-<script src="uiterlijk/auth.js"></script>
-<script src="uiterlijk/app.js"></script>
-<script src="uiterlijk/chat.js"></script>
-<script src="uiterlijk/voorlezen.js"></script>
+<script type="module" src="/src/main.js"></script>
 </body>
 </html>

@@ -1,0 +1,63 @@
+import { registerChapter } from '../../../registry.js';
+
+registerChapter('wiskunde|tl|4|8', {
+title:'Ruimtemeetkunde',
+summary:[
+{heading:'Ruimtefiguren en inhoud',html:'<div class=\'box\'>In dit hoofdstuk herhaal je ruimtefiguren en hun inhoud, diagonalen en doorsneden, goniometrie in de ruimte, hoogtekaarten en co&ouml;rdinaten in de ruimte.</div><div class=\'box\'>Op het examen krijg je de volgende formules:</div><div class=\'tblwrap\'><table class=\'tbl\'><tr><td>inhoud prisma</td><td>= oppervlakte grondvlak &times; hoogte</td></tr><tr><td>inhoud cilinder</td><td>= oppervlakte grondvlak &times; hoogte</td></tr><tr><td>inhoud kegel</td><td>= 1/3 &times; oppervlakte grondvlak &times; hoogte</td></tr><tr><td>inhoud piramide</td><td>= 1/3 &times; oppervlakte grondvlak &times; hoogte</td></tr><tr><td>inhoud bol</td><td>= 4/3 &times; &pi; &times; straal&sup3;</td></tr></table></div><div class=\'call\'>Als een ruimtefiguur gelijkvormig wordt vergroot, geldt: <b>vergrotingsfactor = &#8731;(inhoud vergroting : inhoud origineel)</b> (de derdemachtswortel), en <b>inhoud beeld = vergrotingsfactor&sup3; &times; inhoud origineel</b>.</div><div class=\'voorbeeld\'><p><b>Voorbeeld</b><br>Twee gelijkvormige kuipen: de kleine heeft een inhoud van 6,2 liter, de grote van 21 liter, en de kleine heeft een diameter van 20 cm. Vergrotingsfactor = &#8731;(21 : 6,2) = 1,501. De diameter van de grote kuip is 1,501 &times; 20 = 30 cm.</p></div>'},
+{heading:'Diagonalen en doorsneden',html:'<div class=\'box\'>Een <span class=\'term\'>diagonaalvlak</span> van een balk of kubus is een plat vlak dat schuin door de figuur loopt, langs een diagonaal van het grondvlak. Ook een vlak dat geen echt diagonaalvlak is, kun je op ware grootte tekenen als je de zijden ervan berekent.</div><div class=\'voorbeeld\'><p><b>Voorbeeld</b><br>Bij balk ABCD EFGH met AB = 4 cm, BC = 6 cm en CG = 8 cm: bereken de lichaamsdiagonaal CE met de verlengde stelling van Pythagoras. rhz&sup2; = 4&sup2; + 6&sup2; = 16 + 36 = 52. sz&sup2; = 52 + 8&sup2; = 52 + 64 = 116. CE = &radic;116 = 10,8 cm.</p></div><div class=\'call\'>Voor een <span class=\'term\'>doorsnede</span> die geen diagonaalvlak is, bereken je eerst de onbekende zijde (bijvoorbeeld met de gewone stelling van Pythagoras in een zijvlak), en teken je daarna de doorsnede op ware grootte met alle maten en letters erbij.</div>'},
+{heading:'Goniometrie in de ruimte',html:'<div class=\'box\'>Om een hoek in een ruimtefiguur (zoals een balk) te berekenen, zoek je een rechthoekige driehoek in een zijvlak of diagonaalvlak van de figuur, en gebruik je daarna sinus, cosinus of tangens.</div><div class=\'voorbeeld\'><p><b>Voorbeeld</b><br>Van balk ABCD EFGH is AB = 8 cm, BC = 5 cm en CG = 10 cm. Om &ang;CAG te berekenen, bereken je eerst diagonaal AC met Pythagoras in het grondvlak (AC = &radic;(8&sup2;+5&sup2;) = &radic;89 &asymp; 9,43 cm). In de rechthoekige driehoek ACG (rechte hoek bij C) is CG de overstaande en AC de aanliggende zijde van &ang;CAG, dus je gebruikt TOA: tan(&ang;CAG) = CG/AC.</p></div>'},
+{heading:'Hoogtekaarten en doorsneden',html:'<div class=\'box\'>Op een <span class=\'term\'>hoogtekaart</span> geven <span class=\'term\'>hoogtelijnen</span> punten aan die op dezelfde hoogte liggen. Hoe dichter de hoogtelijnen bij elkaar liggen, hoe steiler het landschap is.</div><div class=\'voorbeeld\'><p><b>Voorbeeld</b><br>Op een hoogtekaart lopen de hoogtelijnen van 300 m tot 400 m in stappen van 25 m. Een punt tussen de hoogtelijnen van 325 en 350 ligt op een hoogte tussen 325 en 350 m, dichter bij 350.</p></div><div class=\'call\'>Een <span class=\'term\'>verticale doorsnede</span> is een schets van het hoogteverloop van een route (bijvoorbeeld een weg) van punt A naar punt B.</div><div class=\'num\'><ol><li>Knip het kaartje uit en draai het zo dat de route horizontaal ligt.</li><li>Teken precies onder het beginpunt een verticale as met dezelfde verdeling als op de kaart.</li><li>Waar de route de hoogtelijnen snijdt, zet je stippen.</li><li>Teken vanuit elke stip een verticale stippellijn naar beneden tot de juiste hoogte.</li><li>Verbind de punten met een vloeiende kromme.</li></ol></div>'},
+{heading:'Co&ouml;rdinaten in de ruimte',html:'<div class=\'box\'>In een driedimensionaal assenstelsel geef je de plaats van een punt aan met drie co&ouml;rdinaten (x, y, z). De oorsprong heeft co&ouml;rdinaten (0, 0, 0).</div><div class=\'voorbeeld\'><p><b>Voorbeeld</b><br>Op een hoogtekaart met een rooster ligt punt A op een hoogte van 100 m, op de plek (200, 600) van het rooster. De co&ouml;rdinaten van A zijn dan (200, 600, 100).</p></div><div class=\'call\'>Bij een balk of kubus vind je de co&ouml;rdinaten van een hoekpunt door vanuit de oorsprong het aantal stappen in de x-, y- en z-richting te tellen. Het midden van een ribbe bereken je door het gemiddelde van de co&ouml;rdinaten van de twee eindpunten te nemen.</div>'}
+],
+terms:[
+['inhoud prisma / cilinder','inhoud = oppervlakte grondvlak &times; hoogte',0],
+['inhoud kegel / piramide','inhoud = 1/3 &times; oppervlakte grondvlak &times; hoogte',0],
+['inhoud bol','inhoud = 4/3 &times; &pi; &times; straal&sup3;',0],
+['vergrotingsfactor (inhoud)','bij gelijkvormige ruimtefiguren: vergrotingsfactor = derdemachtswortel van (inhoud vergroting : inhoud origineel)',0],
+['diagonaalvlak','een plat vlak dat schuin door een balk of kubus loopt, langs een diagonaal van het grondvlak',1],
+['lichaamsdiagonaal','een lijnstuk dat van het ene hoekpunt van een ruimtefiguur dwars naar het tegenoverliggende hoekpunt loopt',1],
+['verlengde stelling van Pythagoras','de stelling van Pythagoras toegepast met drie ribben, om een lichaamsdiagonaal te berekenen',1],
+['doorsnede','het platte vlak dat ontstaat als je een ruimtefiguur (denkbeeldig) doorsnijdt',1],
+['ware grootte','een tekening van een vlak of doorsnede met de werkelijke (juiste) afmetingen, niet vertekend',1],
+['hoogtekaart','een kaart met hoogtelijnen die punten van gelijke hoogte met elkaar verbinden',3],
+['hoogtelijn','een lijn op een hoogtekaart die punten van dezelfde hoogte verbindt',3],
+['verticale doorsnede','een schets van het hoogteverloop van een route (bijvoorbeeld een weg) over een landschap',3],
+['co&ouml;rdinaten in de ruimte','drie getallen (x, y, z) die de plaats van een punt in een driedimensionaal assenstelsel aangeven',4],
+['oorsprong','het punt (0, 0, 0) waar de drie assen elkaar snijden',4],
+['SOS-CAS-TOA in de ruimte','de goniometrische verhoudingen sinus, cosinus en tangens, toegepast op een rechthoekige driehoek in een zijvlak of diagonaalvlak van een ruimtefiguur',2]
+],
+cards:[
+['Wat is de formule voor de inhoud van een prisma?','inhoud prisma = oppervlakte grondvlak &times; hoogte.',0],
+['Wat is de formule voor de inhoud van een piramide?','inhoud piramide = 1/3 &times; oppervlakte grondvlak &times; hoogte.',0],
+['Wat is de formule voor de inhoud van een bol?','inhoud bol = 4/3 &times; &pi; &times; straal&sup3;.',0],
+['Hoe bereken je de vergrotingsfactor als je de inhoud van origineel en vergroting weet?','vergrotingsfactor = derdemachtswortel van (inhoud vergroting : inhoud origineel).',0],
+['Wat is een diagonaalvlak?','Een plat vlak dat schuin door een balk of kubus loopt, langs een diagonaal van het grondvlak.',1],
+['Hoe bereken je een lichaamsdiagonaal?','Met de verlengde stelling van Pythagoras, met behulp van drie ribben.',1],
+['Wat teken je bij een doorsnede die géén diagonaalvlak is, nadat je de onbekende zijden hebt berekend?','De doorsnede op ware grootte, met alle maten en letters erbij.',1],
+['Wat zoek je eerst om een hoek in een ruimtefiguur te berekenen?','Een rechthoekige driehoek in een zijvlak of diagonaalvlak van de figuur.',2],
+['Wat geven hoogtelijnen op een hoogtekaart aan?','Punten die op dezelfde hoogte liggen.',3],
+['Wat betekent het als hoogtelijnen dicht bij elkaar liggen?','Dat het landschap daar steil is.',3],
+['Wat is een verticale doorsnede van een landschap?','Een schets van het hoogteverloop van een route (bijvoorbeeld een weg) van punt A naar punt B.',3],
+['Uit hoeveel getallen bestaan co&ouml;rdinaten in de ruimte?','Uit drie getallen (x, y, z).',4],
+['Wat zijn de co&ouml;rdinaten van de oorsprong?','(0, 0, 0).',4],
+['Twee kuipen zijn gelijkvormig met inhoud 6,2 L en 21 L. Wat is de vergrotingsfactor?','&#8731;(21 : 6,2) &asymp; 1,50.',0],
+['Wat is de formule voor de inhoud van een kegel?','inhoud kegel = 1/3 &times; oppervlakte grondvlak &times; hoogte.',0]
+],
+quiz:[
+['Wat is de formule voor de inhoud van een cilinder?',['oppervlakte grondvlak &times; hoogte','1/3 &times; oppervlakte grondvlak &times; hoogte','4/3 &times; &pi; &times; straal&sup3;','&pi; &times; straal&sup2;'],0,'inhoud cilinder = oppervlakte grondvlak &times; hoogte.'],
+['Wat is de formule voor de inhoud van een bol?',['4/3 &times; &pi; &times; straal&sup2;','4/3 &times; &pi; &times; straal&sup3;','1/3 &times; &pi; &times; straal&sup3;','&pi; &times; straal&sup3;'],1,'inhoud bol = 4/3 &times; &pi; &times; straal&sup3;.'],
+['Twee gelijkvormige kuipen hebben een inhoud van 6,2 L en 21 L. Wat is de vergrotingsfactor (afgerond op twee decimalen)?',['1,50','3,39','1,17','14,80'],0,'vergrotingsfactor = &#8731;(21 : 6,2) = &#8731;3,387 &asymp; 1,50.'],
+['De kleine kuip heeft een diameter van 20 cm en de vergrotingsfactor is 1,50. Wat is de diameter van de grote kuip (afgerond op hele centimeters)?',['21 cm','30 cm','13 cm','45 cm'],1,'1,50 &times; 20 = 30 cm.'],
+['Balk ABCD EFGH heeft AB = 4 cm, BC = 6 cm en CG = 8 cm. Wat is rhz&sup2; in het grondvlak (AB en BC)?',['10','52','100','24'],1,'rhz&sup2; = 4&sup2; + 6&sup2; = 16 + 36 = 52.'],
+['Vervolg: hoe lang is de lichaamsdiagonaal CE (afgerond op &eacute;&eacute;n decimaal)?',['7,2 cm','10,8 cm','13,4 cm','116,0 cm'],1,'sz&sup2; = 52 + 8&sup2; = 116, dus CE = &radic;116 &asymp; 10,8 cm.'],
+['Wat is een diagonaalvlak?',['Een cirkelvormig vlak','Een plat vlak dat schuin door een balk of kubus loopt, langs een diagonaal van het grondvlak','Het bovenvlak van een balk','Een vlak loodrecht op het grondvlak door het midden'],1,'Een diagonaalvlak loopt schuin door de figuur, langs een diagonaal van het grondvlak.'],
+['Wat zoek je eerst om een hoek in een balk te berekenen, zoals &ang;CAG?',['De oppervlakte van het grondvlak','Een rechthoekige driehoek in een zijvlak of diagonaalvlak','De inhoud van de balk','Het aantal ribben'],1,'Om een hoek in een ruimtefiguur te berekenen, zoek je eerst een rechthoekige driehoek in een zij- of diagonaalvlak.'],
+['Wat geven hoogtelijnen op een hoogtekaart aan?',['De grens tussen land en water','Punten die op dezelfde hoogte liggen','De route van een weg','De symmetrieas van het landschap'],1,'Hoogtelijnen verbinden punten die op dezelfde hoogte liggen.'],
+['Wat betekent het als hoogtelijnen ver uit elkaar liggen?',['Het landschap is daar steil','Het landschap is daar vlak(ker)','Er is daar water','De kaart is daar fout'],1,'Hoe verder de hoogtelijnen uit elkaar liggen, hoe vlakker (minder steil) het landschap is.'],
+['Wat teken je bij een verticale doorsnede van een landschap?',['Een bovenaanzicht van de route','Een schets van het hoogteverloop van de route','Een cirkeldiagram van de hoogtes','Een boxplot van de hoogtes'],1,'Een verticale doorsnede laat het verloop van de hoogte langs een route zien.'],
+['Wat zijn de co&ouml;rdinaten van de oorsprong in een driedimensionaal assenstelsel?',['(1, 1, 1)','(0, 0, 0)','(0, 0)','Er is geen vaste oorsprong'],1,'De oorsprong heeft altijd co&ouml;rdinaten (0, 0, 0).'],
+['Een punt op een hoogtekaart ligt op positie (200, 600) op het rooster en op een hoogte van 100 m. Wat zijn de 3D-co&ouml;rdinaten van dit punt?',['(100, 200, 600)','(200, 600, 100)','(600, 200, 100)','(200, 100, 600)'],1,'De eerste twee getallen zijn de plaats op het rooster (x, y), het derde getal is de hoogte (z): (200, 600, 100).'],
+['Waarmee bereken je de lengte van een lichaamsdiagonaal in een balk?',['De gewone stelling van Pythagoras met &eacute;&eacute;n zijvlak','De verlengde stelling van Pythagoras met drie ribben','De sinusregel','De vergrotingsfactor'],1,'Voor een lichaamsdiagonaal gebruik je de verlengde stelling van Pythagoras (met drie ribben achter elkaar).'],
+['Een kegel heeft een grondvlak met oppervlakte 20 cm&sup2; en een hoogte van 9 cm. Wat is de inhoud?',['60 cm&sup3;','180 cm&sup3;','20 cm&sup3;','9 cm&sup3;'],0,'inhoud kegel = 1/3 &times; 20 &times; 9 = 60 cm&sup3;.']
+]
+});

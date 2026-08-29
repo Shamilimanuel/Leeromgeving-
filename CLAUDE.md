@@ -1,102 +1,57 @@
-# Leeromgeving — Samenvattingen
+# Leeromgeving: Samenvattingen
 
-Studiesite voor VMBO-leerlingen. Gewone HTML, CSS en JavaScript. Geen framework,
-geen npm, geen installatie nodig.
+Study site for Dutch VMBO students. Vanilla JS ES modules + CSS built with
+Vite, Supabase backend, Python content pipeline. Full documentation: `README.md`.
 
-## Mapindeling
+**Language rule:** code, comments, file names and docs are English; every
+string a student sees (UI text, summaries, error messages) stays Dutch.
+
+## Layout
 
 ```
-Leeromgeving/
-├── index.html              het geraamte — wordt automatisch bijgewerkt
-├── bouw.py                 bouwt de site op
-├── bouw-los.py             maakt één bestand om te delen
-│
-├── uiterlijk/              hoe de site eruitziet en werkt
-│   ├── style.css           kleuren, kaders, animaties
-│   └── app.js              navigatie, flashcards, quiz, help
-│
-├── data/                   de leerstof, per vak
-│   ├── structuur.js        welke vakken, niveaus en leerjaren er zijn
-│   └── biologie/
-│       ├── biologie.js     welke boeken en hoofdstukken dit vak heeft
-│       ├── bbl1/           leerjaar 1
-│       │   ├── h01-onderzoeken-en-ontdekken.js
-│       │   └── h02-bewegen.js
-│       └── bbl2/           leerjaar 2
-│
-├── bron/                   ruwe JSON uit de schoolboeken, per vak
-│   ├── biologie/
-│   └── wiskunde/
-│
-└── gereedschap/
-    └── opmaak.py           maakt van platte tekst nette HTML
+index.html              static shell with all screens (Dutch UI text)
+src/main.js             entry point
+src/config.js           Supabase URL/key, edge-function names, limits
+src/lib/                DOM, localStorage and Supabase-client helpers
+src/content/            registry, structure, queries + subjects/<subject>/<level><year>/hNN-*.js
+src/state/              selection, progress (localStorage), notes, stats
+src/services/           auth, chat: the only modules that call Supabase
+src/ui/                 one module per screen/feature; globals.js = window bridge for inline handlers
+src/styles/             CSS split by concern; main.css imports them in order
+data/<subject>/*.json   raw book JSON (input)
+scripts/                build_content.py, check_content.py, content_formatter.py
+supabase/               migrations, Edge Functions, deploy notes
+tests/                  Vitest
 ```
 
-## Zo werk je eraan
+## Commands
 
-**Openen om te testen**
-Dubbelklik op `index.html`. Werkt meteen, geen server nodig.
+- `npm run dev`: develop; `npm run build`: production build to `dist/`
+- `npm run check`: lint + test + build; run this before finishing a change
+- `npm run content:check` then `npm run content:build` when book JSON changes
 
-**Een hoofdstuk aanpassen**
-Open het bestand in `data/<vak>/<niveau><jaar>/`. Alleen dat ene bestand,
-niet de hele site.
+## Rules for changes
 
-**Een nieuw vak toevoegen**
-1. Zet de JSON in `bron/<vak>/`
-2. Draai `python3 bouw.py --bron`
-3. De hoofdstukken komen vanzelf in `data/<vak>/` te staan
-4. Maak `data/<vak>/<vak>.js` met de boekgegevens (zie `biologie.js` als voorbeeld)
-
-**Een hoofdstuk met de hand toevoegen**
-Zet een bestand in de juiste map en draai `python3 bouw.py`. Meer niet —
-index.html wordt vanzelf bijgewerkt.
-
-**Eén bestand maken om te delen**
-Draai `python3 bouw-los.py`. Dat maakt `Leeromgeving.html`, één bestand dat
-je kunt mailen of op GitHub Pages kunt zetten.
-
-## Hoe een hoofdstukbestand eruitziet
-
-```js
-registreerStof('biologie|bbl|1|2', {
-titel:'Bewegen',
-samenvatting:[
-  {kop:'2.1 Botten', html:'<div class="box"><h4>...</h4><p>...</p></div>'}
-],
-begrippen:[ ['skelet','Alle botten samen.',0] ],
-cards:[    ['Wat is een gewricht?','Een beweegbare verbinding.',1] ],
-quiz:[     ['Hoeveel botten heb je?',['106','206','306','406'],1,'Ongeveer 206.'] ]
-});
-```
-
-De laatste waarde bij begrippen en cards is het nummer van de paragraaf
-(0 = eerste). Gebruik -1 als het nergens bij hoort.
-
-## Opmaakblokken
-
-| Klasse | Waarvoor |
-|---|---|
-| `box` met `<h4>` | kader met kop |
-| `g2` / `g3` | twee of drie kaders naast elkaar |
-| `call` | uitgelicht weetje |
-| `call warn` | waarschuwing of veelgemaakte fout |
-| `call sum` | "om te onthouden" aan het eind |
-| `term` | begrip met uitleg |
-| `tblwrap` + `tbl` | tabel |
-| `lst` / `num` | opsomming of stappen |
-| `fig` | tekening met bijschrift |
-
-## Regels
-
-- Geen localStorage of sessionStorage
-- Geen externe bibliotheken behalve Google Fonts
-- Samenvattingen in eigen woorden, nooit letterlijk uit het boek
-- BBL-niveau: korte zinnen, gewone woorden
-
-## Voor Claude Code
-
-- Bewerk één hoofdstukbestand tegelijk. Herbouw nooit de hele bundel.
-- Na een wijziging: `python3 bouw.py` om index.html bij te werken.
-- `Leeromgeving.html` is een gegenereerd bestand — bewerk dat nooit met de hand.
-- **Gebruik de skill `leeromgeving-onderhoud`** voor je een wijziging afrondt.
-  Zie `.claude/skills/leeromgeving-onderhoud/SKILL.md` voor het volledige plan.
+- Chapter content: edit one module in `src/content/subjects/` at a time. Never
+  regenerate everything for a small fix. Generated files are overwritten by
+  `content:build`, hand-written ones are not.
+- A function called from `onclick="..."` markup must be exported through
+  `src/ui/globals.js` (the inline-handlers test enforces this).
+- Keep persisted names: localStorage keys/fields (`voortgang`, `leitner`, …),
+  database columns (`gebruikersnaam`, `rol`, `status`, `gemute`) and
+  edge-function action names are a deployed contract. Map to English at the
+  boundary (`src/state/progress.js`, `src/services/auth.js`), never rename them.
+- Element ids and CSS class names in `index.html`/`src/styles/` are unchanged
+  from the original site and may be Dutch; do not rename them casually:
+  content modules reference the CSS classes.
+- Summaries in our own words, never copied from the book. BBL level: short
+  sentences, everyday words.
+- No external runtime libraries besides `@supabase/supabase-js`; no third-party
+  requests at runtime (fonts are self-hosted in `public/fonts/`).
+- Security: escape every database value with `escapeHtml()` before rendering
+  (element content and attributes); put only validated ids (`isUuid`,
+  `isIntegerId`) into `onclick="..."` strings; privileged actions go through
+  the Edge Functions in `supabase/functions/`, never through direct table
+  writes. Keep the CSP host list in `index.html` in sync with `src/config.js`.
+- Never hand-edit `dist/` or `dist-single/`.
+- Do not commit unless asked.

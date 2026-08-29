@@ -1,0 +1,78 @@
+/* The fixed "Genshin" look (glass panels + gold glow), search/favourite result rows and the light-mode palette overrides. */
+/* ══════════════════════════════════════════════════════════
+   GENSHIN STYLE: the fixed base look (no separate theme/toggle)
+   Glass-like panels + gold glow, everywhere on the site.
+   ══════════════════════════════════════════════════════════ */
+.chapter,
+.chip,
+.tool,
+.fc-b,
+.helpcard,
+.call,
+.box,
+.term,
+.examen-hist,
+.cornell-row textarea,
+.groot-veld{
+  background:rgba(24,32,54,.82);
+  border-color:var(--goud-line)}
+.chip:hover{border-color:var(--goud)}
+.chip.sel{background:linear-gradient(150deg,var(--goud),var(--goud-d));color:#241a04;border-color:transparent}
+.bt{background:linear-gradient(150deg,var(--goud),var(--goud-d));color:#241a04}
+.n,
+.fc-b strong,
+.rdy{
+  font-family:'Cinzel',serif;letter-spacing:.04em}
+.quest-voltooid{position:relative;overflow:hidden;border-left-color:var(--goud)!important;
+  background:rgba(243,215,138,.1)!important;border:1.5px solid rgba(243,215,138,.4);border-radius:14px;
+  text-align:center;padding:1.6rem 1.4rem!important;animation:levelPop .5s cubic-bezier(.2,.85,.3,1) both}
+.quest-voltooid::before{content:'';position:absolute;top:50%;left:50%;width:280px;height:280px;transform:translate(-50%,-50%);
+  background:conic-gradient(from 0deg,transparent,rgba(243,215,138,.18),transparent 40%,rgba(243,215,138,.14),transparent 70%);
+  animation:raysSpin 16s linear infinite;pointer-events:none}
+.quest-voltooid b{position:relative;font-family:'Cinzel',serif;color:var(--goud);letter-spacing:.02em;font-size:1.05rem}
+@keyframes levelPop{0%{opacity:0;transform:scale(.86) translateY(12px)}60%{opacity:1;transform:scale(1.03)}100%{opacity:1;transform:scale(1)}}
+@keyframes raysSpin{to{transform:rotate(360deg)}}
+@media (prefers-reduced-motion:reduce){
+  .chapter,.chip,.quest-voltooid::before{transition:none;animation:none}
+}
+
+.zres{background:var(--ink3);border:1px solid var(--line);border-radius:12px;padding:.7rem .9rem;margin-bottom:.5rem;cursor:pointer;transition:.18s}
+.zres:hover{border-color:var(--accent);transform:translateX(3px)}
+.zres b{display:block;font-family:'Cinzel',serif;font-size:.9rem;color:var(--txt);margin:.15rem 0}
+.zvak{font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;font-weight:700}
+.zdetail{display:block;font-size:.8rem;color:var(--mut);margin-bottom:.3rem}
+.zpad{display:block;font-size:.68rem;color:var(--mut);opacity:.7}
+
+.favitem{display:flex;align-items:stretch;gap:.5rem;background:var(--ink3);border:1px solid var(--line);border-radius:12px;margin-bottom:.5rem;overflow:hidden}
+.favgo{flex:1;text-align:left;background:none;border:none;padding:.7rem .9rem;cursor:pointer;color:inherit}
+.favgo:hover{background:rgba(255,255,255,.04)}
+.favgo b{display:block;font-family:'Cinzel',serif;font-size:.9rem;color:var(--txt);margin:.15rem 0}
+.favdel{background:none;border:none;border-left:1px solid var(--line);color:var(--mut);padding:0 1rem;font-size:.9rem;transition:.18s}
+.favdel:hover{color:#ef8a8a}
+
+body.licht-modus{
+  --ink:#f5f3ee; --ink2:#ffffff; --ink3:#ececea;
+  --paper:#1b1f24; --line:rgba(0,0,0,.10);
+  --txt:#20242b; --mut:#5b6270;
+}
+body.licht-modus .credit-name, body.licht-modus .scene-cap{-webkit-background-clip:unset;background-clip:unset;color:var(--paper)}
+body.licht-modus .mk .n{background:rgba(0,0,0,.08);color:var(--txt)}
+body.licht-modus .mk .t{background:rgba(0,0,0,.06);color:var(--txt)}
+body.licht-modus .fc-b{background:linear-gradient(150deg,var(--accent-d),#2a3548);color:#fff}
+body.licht-modus .fc-b strong{color:#bcd0ea}
+body.licht-modus .opt.good{color:#1f6b3a}
+body.licht-modus .opt.bad{color:#a92323}
+body.licht-modus .fb{background:rgba(0,0,0,.045)}
+body.licht-modus .chapter,
+body.licht-modus .chip,
+body.licht-modus .tool,
+body.licht-modus .helpcard,
+body.licht-modus .call,
+body.licht-modus .box,
+body.licht-modus .term,
+body.licht-modus .examen-hist,
+body.licht-modus .cornell-row textarea,
+body.licht-modus .groot-veld{
+  background:var(--ink2);backdrop-filter:none;-webkit-backdrop-filter:none;border-color:var(--line)}
+body.licht-modus .subj{background:linear-gradient(165deg,var(--cd,var(--ink2)) 0%,#e2ddd0 90%)}
+body.licht-modus .quest-voltooid{background:rgba(201,143,28,.08)!important}

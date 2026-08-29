@@ -1,0 +1,195 @@
+/* Splash mission stage, radial menu, dyslexia mode, help dialog, section groups, practice tiles, overlays, reading ruler, pomodoro, practice exam, character cards, level/year cards, streak, text size. */
+/* ══ MISSION STAGE (splash screen) ══ */
+.mission-eyebrow{font-size:.7rem;letter-spacing:.28em;text-transform:uppercase;color:var(--mut);animation:up .7s .1s ease both}
+.mission-h{font-family:'Cinzel',serif;font-size:clamp(1.5rem,4.6vw,2.4rem);font-weight:600;
+  margin:.7rem 0 0;line-height:1.2;animation:up .8s .25s ease both;color:var(--txt)}
+.mission-p{color:var(--mut);max-width:520px;margin:1.1rem auto 0;font-size:.95rem;animation:up .8s .45s ease both}
+.mission-rule{width:0;height:2px;background:var(--mut);margin:1.6rem auto 0;opacity:.45;
+  animation:rule .9s .7s cubic-bezier(.2,.85,.3,1) forwards}
+.credit-sub{color:var(--mut);font-size:.82rem;margin-top:.5rem;animation:up .8s .5s ease both}
+
+/* ══ INTRO BUTTON ══ */
+.introverder{position:absolute;bottom:1.4rem;left:50%;transform:translateX(-50%);
+  background:none;border:1px solid var(--line);color:var(--mut);border-radius:100px;
+  padding:.45rem 1.4rem;font-size:.78rem;letter-spacing:.06em;transition:.25s;z-index:5}
+.introverder:hover{color:var(--txt);border-color:var(--paper);transform:translateX(-50%) translateY(-2px)}
+
+/* ══ SINGLE FOLD-OUT MENU, BOTTOM LEFT (instead of loose buttons) ══ */
+.radialmenu{position:fixed;left:1.4rem;bottom:1.4rem;z-index:120;width:54px;height:54px;display:none}
+.radialmenu.show{display:block;animation:pop .4s cubic-bezier(.2,.85,.3,1) both}
+.radialhalo{position:absolute;left:-6px;bottom:-6px;width:66px;height:66px;border-radius:50%;pointer-events:none;
+  background:conic-gradient(from 0deg,transparent 0%,var(--goud-line) 12%,transparent 26%,transparent 74%,var(--goud-line) 88%,transparent 100%);
+  animation:spin 7s linear infinite;opacity:.5;transition:opacity .3s}
+.radialmenu.open .radialhalo{opacity:.9}
+.radialtrigger{position:absolute;left:0;bottom:0;width:54px;height:54px;border-radius:50%;
+  background:var(--ink2);border:1.5px solid var(--goud-line);color:var(--goud);cursor:pointer;z-index:2;
+  display:flex;align-items:center;justify-content:center;font-size:1.3rem;
+  box-shadow:0 0 18px rgba(243,215,138,.2),0 6px 20px rgba(0,0,0,.5);
+  transition:box-shadow .3s,border-color .3s,transform .3s cubic-bezier(.2,.85,.3,1)}
+.radialtrigger:hover{border-color:var(--goud);box-shadow:0 0 26px rgba(243,215,138,.4),0 6px 20px rgba(0,0,0,.5);transform:scale(1.06)}
+.radialdots{display:inline-block;transition:transform .35s cubic-bezier(.2,.85,.3,1)}
+.radialmenu.open .radialdots{transform:rotate(90deg)}
+.radialitem{position:absolute;left:7px;bottom:7px;display:flex;flex-direction:column;align-items:center;gap:.3rem;
+  transform:translate(0,0) scale(.3);opacity:0;pointer-events:none;
+  transition:transform .4s cubic-bezier(.2,.85,.3,1),opacity .25s}
+.radialmenu.open .radialitem{opacity:1;pointer-events:auto;transform:translate(var(--tx),var(--ty)) scale(1)}
+.radiallabel{font-size:.62rem;color:var(--txt);background:rgba(10,14,26,.92);border:1px solid var(--goud-line);
+  border-radius:6px;padding:.2rem .5rem;white-space:nowrap;opacity:0;transition:opacity .2s}
+.radialmenu.open .radiallabel{opacity:1;transition-delay:.15s}
+.menuicon{width:40px;height:40px;border-radius:50%;background:var(--ink2);color:var(--mut);
+  border:1px solid var(--goud-line);font-size:.92rem;font-weight:700;cursor:pointer;
+  transition:transform .2s cubic-bezier(.2,.85,.3,1),color .2s,border-color .2s,background .2s}
+.menuicon:hover{color:var(--txt);border-color:var(--goud);transform:scale(1.08)}
+.menuicon.on{background:var(--goud);color:#241d0d;border-color:transparent}
+
+/* ══ DYSLEXIA MODE ══ */
+
+body.dyslexie-modus, body.dyslexie-modus button, body.dyslexie-modus input,
+body.dyslexie-modus h1, body.dyslexie-modus h2, body.dyslexie-modus h3, body.dyslexie-modus h4, body.dyslexie-modus h5{
+  font-family:'Lexend',sans-serif}
+body.dyslexie-modus{font-size:17px;line-height:1.85;letter-spacing:.015em}
+body.dyslexie-modus p, body.dyslexie-modus li, body.dyslexie-modus td, body.dyslexie-modus .hslide p,
+body.dyslexie-modus .term span, body.dyslexie-modus .box p{
+  line-height:1.85;letter-spacing:.015em;word-spacing:.04em}
+body.dyslexie-modus .credit-name, body.dyslexie-modus .scene-cap{-webkit-background-clip:unset;background-clip:unset;color:var(--paper)}
+
+/* ══ HELP ══ */
+.helpwrap{position:fixed;inset:0;z-index:210;display:none;align-items:center;justify-content:center;padding:1.5rem}
+.helpwrap.open{display:flex}
+.helpbg{position:absolute;inset:0;background:rgba(5,8,12,.72);backdrop-filter:blur(7px)}
+.helpcard{position:relative;width:min(460px,100%);background:var(--ink2);border:1px solid var(--line);
+  border-radius:22px;padding:1.6rem 1.6rem 1.3rem;box-shadow:0 30px 80px rgba(0,0,0,.6);
+  animation:pop .4s cubic-bezier(.2,.85,.3,1) both}
+.helpclose{position:absolute;top:1rem;right:1rem;background:none;border:1px solid var(--line);
+  color:var(--mut);border-radius:10px;width:30px;height:30px;font-size:1rem;transition:.2s;z-index:2}
+.helpclose:hover{color:var(--txt);border-color:var(--mut)}
+.hslide{text-align:center;padding:1.4rem .4rem .6rem;animation:up .38s cubic-bezier(.2,.85,.3,1) both}
+.hico{font-size:2.4rem;margin-bottom:.9rem}
+.hslide h3{font-family:'Cinzel',serif;font-size:1.2rem;margin-bottom:.6rem;color:var(--txt)}
+.hslide p{font-size:.88rem;color:var(--mut);line-height:1.7}
+.helpdots{display:flex;justify-content:center;gap:.5rem;margin:1.2rem 0 1.1rem}
+.dot{width:9px;height:9px;border-radius:100px;background:none;border:1px solid var(--mut);
+  padding:0;transition:.25s cubic-bezier(.2,.85,.3,1);cursor:pointer}
+.dot:hover{border-color:var(--accent)}
+.dot.on{background:var(--accent);border-color:var(--accent);width:22px}
+.helpnav{display:flex;gap:.6rem;justify-content:space-between;align-items:center}
+
+/* ══ GROUPS PER SECTION ══ */
+.parblok{margin-bottom:2rem;animation:up .45s ease both}
+.parkop{font-family:'Cinzel',serif;font-size:1rem;color:var(--accent);margin-bottom:.8rem;
+  padding-bottom:.45rem;border-bottom:1px solid var(--line);display:flex;align-items:baseline;gap:.6rem}
+.parkop span{font-family:'DM Sans',sans-serif;font-size:.7rem;color:var(--mut);font-weight:400;margin-left:auto}
+.bar .zoek{width:auto;margin:0}
+
+
+/* ══ PRACTICE TILES ══ */
+.tools{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:.9rem;margin-top:1rem}
+.tool{background:var(--ink2);border:1px solid var(--line);border-radius:16px;padding:1.1rem 1.2rem;
+  text-align:left;width:100%;transition:transform .25s cubic-bezier(.2,.85,.3,1),border-color .25s;opacity:.55}
+.tool h4{font-family:'Cinzel',serif;font-size:.95rem;margin-bottom:.35rem;color:var(--txt);
+  display:flex;align-items:center;gap:.5rem;flex-wrap:wrap}
+.tool p{font-size:.8rem;color:var(--mut);line-height:1.6}
+.tool.live{opacity:1;cursor:pointer}
+.tool.live:hover{transform:translateY(-3px);border-color:var(--accent)}
+.tool .badge{font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;background:var(--accent);
+  color:var(--ink);border-radius:100px;padding:.15rem .5rem;font-weight:700}
+
+
+/* ══ TAB COUNTERS ══ */
+.tab .tel{font-size:.62rem;opacity:.5;font-weight:400;margin-left:.15rem}
+.tab.leegtab{opacity:.42}
+.tab.leegtab:hover{opacity:.62}
+
+/* ══ LIGHT MODE, SEARCH, FAVOURITES ══ */
+.lichtbtn.on{background:#f9c116;color:#3d2e00;border-color:transparent}
+
+.zoekwrap,.favwrap,.examenwrap{position:fixed;inset:0;z-index:210;display:none;align-items:flex-start;justify-content:center;padding:1.5rem;padding-top:8vh}
+.zoekwrap.show,.favwrap.show,.examenwrap.show{display:flex}
+.zoekcard,.favcard,.examencard{width:min(560px,100%);max-height:80vh;overflow-y:auto}
+.zoekcard h3,.favcard h3,.examencard h3{font-family:'Cinzel',serif;font-size:1.1rem;color:var(--txt);margin-bottom:.9rem}
+
+/* ══ READING RULER ══ */
+.leesliniaal{position:fixed;left:0;right:0;height:2.4rem;z-index:90;pointer-events:none;
+  background:rgba(255,230,120,.14);border-top:1px solid rgba(255,230,120,.35);
+  border-bottom:1px solid rgba(255,230,120,.35);display:none;transition:top .04s linear}
+body.licht-modus .leesliniaal{background:rgba(255,196,20,.16);border-color:rgba(255,196,20,.4)}
+
+/* ══ POMODORO TIMER ══ */
+.pomodorobtn{font-variant-numeric:tabular-nums;font-size:.72rem}
+body.pomodoro-focus .aurora{opacity:.35}
+
+/* ══ PRACTICE EXAM ══ */
+.examen-hist{display:flex;justify-content:space-between;gap:.6rem;font-size:.78rem;color:var(--mut);
+  background:var(--ink3);border-radius:10px;padding:.5rem .8rem;margin-bottom:.4rem}
+.examen-hist b{color:var(--txt)}
+.examen-vak-score{display:flex;justify-content:space-between;font-size:.85rem;padding:.4rem 0;border-bottom:1px solid var(--line)}
+.examen-vak-score:last-child{border-bottom:none}
+
+/* ══ CHARACTER CARD: level / XP / mastery per subject ══ */
+.persona-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.1rem;margin-top:.4rem}
+.persona-card{position:relative;overflow:hidden;border:1.5px solid var(--goud-line);border-radius:14px;padding:1.3rem 1.3rem 1.1rem;
+  background:linear-gradient(165deg,var(--cd,var(--ink2)) 0%,#070a14 90%);
+  box-shadow:0 8px 26px rgba(0,0,0,.4), inset 0 0 46px -22px var(--c,transparent);
+  transition:transform .35s cubic-bezier(.16,.8,.24,1), box-shadow .35s ease, border-color .3s ease;animation:up .5s ease both}
+.persona-card:hover{transform:translateY(-5px);border-color:var(--goud);
+  box-shadow:0 20px 44px -14px var(--c,var(--goud)), 0 8px 26px rgba(0,0,0,.4)}
+.persona-card::after{content:'';position:absolute;inset:0;background:linear-gradient(160deg,rgba(255,255,255,.1),transparent 55%);pointer-events:none}
+.persona-bigico{position:absolute;top:-.5rem;right:-.7rem;font-size:4.2rem;opacity:.08;transform:rotate(-10deg);pointer-events:none}
+.persona-head{position:relative;z-index:1;display:flex;align-items:center;gap:.8rem;margin-bottom:1rem}
+.persona-head .badge{width:44px;height:44px;margin-bottom:0;flex-shrink:0}
+.persona-head .core{font-size:1.05rem}
+.persona-head h3{font-family:'Cinzel',serif;font-size:1.02rem}
+.persona-head small{display:block;color:var(--mut);font-size:.7rem;margin-top:.15rem}
+.persona-lvl{margin-left:auto;text-align:center;flex-shrink:0;padding-left:.5rem}
+.persona-lvl b{display:block;font-family:'Cinzel',serif;font-size:1.15rem;color:var(--goud)}
+.persona-lvl span{display:block;font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;color:var(--mut)}
+.persona-row{position:relative;z-index:1;margin-bottom:.6rem}
+.persona-row .lbl{display:flex;justify-content:space-between;font-size:.7rem;color:var(--mut);margin-bottom:.3rem}
+.persona-detail{position:relative;z-index:1;margin-top:.9rem;padding-top:.7rem;border-top:1px solid var(--line);font-size:.72rem;color:var(--mut);line-height:1.5}
+body.licht-modus .persona-card{background:linear-gradient(165deg,var(--cd,var(--ink2)) 0%,#e2ddd0 90%)}
+
+/* ══ LEVEL + SCHOOL YEAR ══ */
+.niv-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:1rem;margin-top:.9rem}
+.niv-card{position:relative;overflow:hidden;border:1.5px solid var(--goud-line);border-radius:12px;width:100%;
+  padding:1.1rem 1rem 1rem;text-align:left;color:var(--txt);font-family:inherit;
+  background:linear-gradient(165deg,var(--cd,var(--ink2)) 0%,#070a14 90%);
+  box-shadow:0 8px 22px rgba(0,0,0,.45), inset 0 0 40px -20px var(--c,transparent);
+  transition:transform .35s cubic-bezier(.16,.8,.24,1), box-shadow .35s ease, border-color .3s ease;animation:up .45s ease both}
+.niv-card:hover,.niv-card:focus-visible{transform:translateY(-6px);border-color:var(--goud);
+  box-shadow:0 20px 44px -14px var(--c,var(--goud)), 0 8px 22px rgba(0,0,0,.45)}
+.niv-card:active{transform:translateY(-2px) scale(.98)}
+.niv-card .bigico{position:absolute;top:-.5rem;right:-.6rem;font-size:3.6rem;opacity:.1;transform:rotate(-10deg);pointer-events:none}
+.niv-card .ico{position:relative;z-index:1;width:42px;height:42px;border-radius:50%;display:flex;align-items:center;justify-content:center;
+  font-size:1.15rem;margin-bottom:.8rem;background:radial-gradient(circle at 35% 30%,var(--c,var(--goud)),var(--cd,var(--ink2)) 75%);
+  border:1.5px solid rgba(243,215,138,.75);box-shadow:inset 0 0 10px rgba(0,0,0,.4)}
+.niv-card h3{position:relative;z-index:1;font-family:'Cinzel',serif;font-size:1.02rem;margin-bottom:.25rem}
+.niv-card p{position:relative;z-index:1;font-size:.72rem;color:var(--mut);line-height:1.4;margin:0}
+.niv-card .check{position:absolute;top:.65rem;right:.65rem;width:22px;height:22px;border-radius:50%;z-index:2;
+  border:1.5px solid var(--goud-line);display:flex;align-items:center;justify-content:center;font-size:.68rem;
+  color:transparent;background:rgba(0,0,0,.2);transition:.25s}
+.niv-card.sel{border-color:var(--goud);box-shadow:0 20px 44px -14px var(--c,var(--goud)),0 8px 22px rgba(0,0,0,.45)}
+.niv-card.sel .check{background:var(--goud);border-color:transparent;color:#241d0d}
+.niv-card.disabled{opacity:.42;cursor:not-allowed;filter:grayscale(.65)}
+.niv-card.disabled:hover{transform:none;box-shadow:0 8px 22px rgba(0,0,0,.45);border-color:var(--goud-line)}
+.jaar-grid{display:flex;gap:.7rem;flex-wrap:wrap;margin-top:.9rem}
+.jaar-card{position:relative;width:76px;height:76px;border-radius:14px;border:1.5px solid var(--goud-line);font-family:inherit;
+  background:linear-gradient(165deg,var(--accent-d),var(--ink2) 90%);color:var(--txt);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.15rem;
+  box-shadow:0 8px 20px rgba(0,0,0,.4);transition:.3s cubic-bezier(.2,.85,.3,1);animation:pop .4s ease both}
+.jaar-card b{font-family:'Cinzel',serif;font-size:1.3rem}
+.jaar-card span{font-size:.6rem;letter-spacing:.06em;text-transform:uppercase;color:var(--mut)}
+.jaar-card:hover,.jaar-card:focus-visible{transform:translateY(-4px);border-color:var(--accent);box-shadow:0 14px 30px -10px var(--accent)}
+.jaar-card:active{transform:translateY(-1px) scale(.96)}
+body.licht-modus .niv-card{background:linear-gradient(165deg,var(--cd,var(--ink2)) 0%,#e2ddd0 90%)}
+body.licht-modus .jaar-card{background:linear-gradient(165deg,var(--accent-d),#e2ddd0 90%)}
+@media (prefers-reduced-motion:reduce){.niv-card,.jaar-card,.persona-card{transition:none}}
+
+/* ══ DAILY STREAK ══ */
+.streak-badge{display:inline-flex;align-items:center;gap:.4rem;background:rgba(232,130,63,.12);
+  border:1px solid rgba(232,130,63,.35);color:#ffb877;border-radius:100px;padding:.4rem 1rem;
+  font-size:.8rem;font-weight:600;margin-bottom:1.4rem}
+.streak-badge.dim2{background:var(--ink3);border-color:var(--line);color:var(--mut);font-weight:400}
+
+/* ══ TEXT SIZE ══ */
+html.txt-groot{font-size:18px}
+html.txt-grootst{font-size:20px}
