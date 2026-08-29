@@ -237,6 +237,12 @@ Note that only the frontend is deployed this way. The Supabase backend
 (database, RLS policies and Edge Functions) is deployed separately -- see
 [`supabase/README.md`](supabase/README.md).
 
+## Open work
+
+The running backlog lives in [`TODO.md`](TODO.md): what is open, what is blocked
+and on whom, and the reasoning behind decisions that are easy to forget (such as
+why the `chat_namen` view is deliberately SECURITY DEFINER).
+
 ## Conventions
 
 - Code, comments, file names and commit messages in English; everything a
