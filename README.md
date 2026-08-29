@@ -218,6 +218,25 @@ the scripts directly (`python3 scripts/check_content.py`).
 sub-path works too. The service worker caches everything it has served, so the
 site keeps working offline after the first visit.
 
+### GitHub Pages
+
+`.github/workflows/deploy.yml` builds and publishes on every push to `main`.
+It runs `npm run check` first, so a failing lint or test stops the deploy
+instead of publishing a broken site. `dist/` stays git-ignored: the workflow
+builds it fresh and uploads it as a Pages artifact.
+
+Two things have to be set up once, outside this repository:
+
+- **Settings -> Pages -> Source** must be **GitHub Actions**. With the older
+  "Deploy from a branch" the workflow fails at `configure-pages`.
+- The workflow pins **Node 24**. Node 20 is too old: `@supabase/realtime-js`
+  looks up a global `WebSocket`, which Node only has from v22, so
+  `createClient()` in `src/lib/supabase.js` throws during the tests.
+
+Note that only the frontend is deployed this way. The Supabase backend
+(database, RLS policies and Edge Functions) is deployed separately -- see
+[`supabase/README.md`](supabase/README.md).
+
 ## Conventions
 
 - Code, comments, file names and commit messages in English; everything a
