@@ -3,7 +3,7 @@
 
    Only validated ids are written into inline handlers; names are looked up
    from the last rendered message list at click time. */
-import { $, setHtml, setVisible, escapeHtml, warningBox, isUuid, isIntegerId } from '../lib/dom.js';
+import { $, setHtml, setVisible, escapeHtml, warningBox, isUuid } from '../lib/dom.js';
 import { CHAT_MAX_LENGTH, CHAT_POLL_INTERVAL_MS } from '../config.js';
 import * as auth from '../services/auth.js';
 import { loadMessages, sendMessage, deleteMessage, subscribeToMessages, chatErrorMessage } from '../services/chat.js';
@@ -50,7 +50,7 @@ function messageHtml(m) {
     if (!own && !fromAdmin && isUuid(m.userId)) {
       tools += '<button type="button" class="chat-mute" title="Dempen / ontdempen" onclick="chatToggleMute(\'' + m.userId + '\')">\u{1F507}</button>';
     }
-    if (isIntegerId(m.id)) {
+    if (isUuid(m.id)) {
       tools += '<button type="button" class="chat-mute" title="Bericht verwijderen" onclick="chatDeleteMessage(\'' + m.id + '\')">\u{1F5D1}\u{FE0F}</button>';
     }
   }
@@ -156,7 +156,7 @@ export async function chatToggleMute(userId) {
 }
 
 export async function chatDeleteMessage(messageId) {
-  if (!auth.isAdmin() || !isIntegerId(messageId)) return;
+  if (!auth.isAdmin() || !isUuid(messageId)) return;
   if (!window.confirm('Dit bericht verwijderen?')) return;
   try {
     await deleteMessage(messageId);
