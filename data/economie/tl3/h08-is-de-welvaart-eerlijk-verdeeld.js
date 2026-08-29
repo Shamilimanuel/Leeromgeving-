@@ -1,10 +1,67 @@
 registreerStof('economie|tl|3|8', {
 titel:'Is de welvaart eerlijk verdeeld?',
 samenvatting:[
-{kop:'8.1 Waarom de grens over?',html:'<div class=\'box\'><h4>Waar dit hoofdstuk over gaat</h4><p>Nederland handelt volop met het buitenland. Je leert waarom landen internationaal handelen, hoe landen hun eigen markt soms beschermen, wat de Europese Unie voor voordelen biedt en waarom de welvaart wereldwijd niet gelijk verdeeld is.</p></div><div class=\'box\'><h4>Import en export</h4><p>Nederland handelt volop met het buitenland: we voeren producten in (importeren) en voeren producten uit (exporteren). Een land dat een groot deel van zijn nationaal inkomen verdient met export én een groot deel daarvan besteedt aan import, noem je een <b>open economie</b>. Nederland is zo\'n open economie.</p><p>Het <b>nationaal inkomen</b> is alle inkomens van een land bij elkaar opgeteld.</p></div><div class=\'box\'><h4>De betalingsbalans</h4><p>De <b>betalingsbalans</b> is een overzicht van alle ontvangsten uit het buitenland en alle betalingen aan het buitenland. Is er een overschot, dan ontvangt een land meer dan het betaalt; is er een tekort, dan is het andersom.</p></div><div class=\'call\'>Worden goederen na invoer onbewerkt weer doorverkocht aan het buitenland, dan heet dat <b>wederuitvoer</b>.</div><div class=\'call sum\'><b>Om te onthouden</b><ul class=\'lst\'><li>Een open economie verdient veel aan export en besteedt veel aan import.</li><li>De betalingsbalans zet alle ontvangsten en betalingen met het buitenland op een rij.</li><li>Wederuitvoer: goederen onbewerkt doorverkopen na import.</li></ul></div>'},
-{kop:'8.2 Wereldwijde handel',html:'<div class=\'box\'><h4>Landen zijn goed in verschillende dingen</h4><p>Ieder land maakt vooral producten waarin het goed is: dit heet <b>internationale arbeidsverdeling</b>. Hoe goed en/of goedkoop een land in staat is te produceren vergeleken met andere landen, bepaalt de <b>internationale concurrentiepositie</b> van dat land. Doordat landen zich specialiseren en steeds meer met elkaar handelen, neemt de <b>globalisering</b> toe: de toename van wereldwijde contacten en handel.</p></div><div class=\'box\'><h4>Een land beschermt zichzelf: protectiemaatregelen</h4><p>Een overheid kan proberen om met <b>protectiemaatregelen</b> (ook wel protectionisme of handelsbelemmeringen) de import in haar land te verminderen, om zo de productie en werkgelegenheid in eigen land te beschermen tegen buitenlandse concurrentie. Er zijn verschillende vormen:</p><ul class=\'lst\'><li><b>Importheffingen</b> (invoerrechten, douanerechten): de douane heft belasting op ingevoerde producten.</li><li><b>Contingentering</b> (importquota): er mag maar een maximumaantal producten worden ingevoerd.</li><li><b>Invoerverbod</b>: bepaalde producten mogen helemaal niet meer ingevoerd worden.</li><li><b>Exportsubsidie</b>: de overheid geeft subsidie aan exporterende bedrijven, waardoor die hun producten goedkoper aan het buitenland kunnen verkopen.</li></ul><p>De eerste drie maatregelen beperken de import; de exportsubsidie stimuleert juist de export.</p></div><div class=\'call warn\'><b>Veelgemaakte fout:</b> denk niet dat alle protectiemaatregelen hetzelfde doel hebben. Importheffingen, contingentering en een invoerverbod beperken juist de import; een exportsubsidie stimuleert juist de export.</div><div class=\'call sum\'><b>Om te onthouden</b><ul class=\'lst\'><li>Internationale arbeidsverdeling: elk land maakt vooral waar het goed in is.</li><li>Protectiemaatregelen: importheffingen, contingentering, invoerverbod (beperken import) en exportsubsidie (stimuleert export).</li></ul></div>'},
-{kop:'8.3 Samenwerken is slimmer',html:'<div class=\'box\'><h4>Een gemeenschappelijke markt</h4><p>Binnen de Europese Unie is er een <b>interne markt</b>: een gemeenschappelijke markt waarbinnen bedrijven bij handel tussen lidstaten geen last hebben van grenzen. De interne markt kent vrij verkeer van:</p><ul class=\'lst\'><li><b>goederen en diensten</b>: je mag zonder belemmeringen in- en uitvoeren, zonder invoerheffingen te betalen;</li><li><b>personen</b>: inwoners van een EU-land mogen in een ander EU-land werken, wonen en studeren;</li><li><b>kapitaal</b>: je kunt bij een bank in een ander EU-land sparen of beleggen, en bedrijven mogen in andere EU-landen investeren.</li></ul></div><div class=\'box\'><h4>Eén munt voor veel landen</h4><p>Een groep EU-landen met een gezamenlijke munteenheid, de euro, vormt de <b>Economische en Monetaire Unie (EMU)</b>. De <b>Europese Centrale Bank (ECB)</b> is de centrale bank van de eurozone.</p></div><div class=\'call sum\'><b>Om te onthouden</b><ul class=\'lst\'><li>De interne markt kent vrij verkeer van goederen/diensten, personen en kapitaal.</li><li>De EMU is de groep EU-landen met de euro als gezamenlijke munt; de ECB is hun centrale bank.</li></ul></div>'},
-{kop:'8.4 Is de welvaart eerlijk verdeeld?',html:'<div class=\'box\'><h4>Rijke en arme landen</h4><p>Het <b>inkomen per hoofd van de bevolking</b> is het gemiddelde inkomen per inwoner van een land. Hiermee kun je landen met elkaar vergelijken. Ontwikkelingslanden hebben vaak te maken met problemen zoals een tekort aan onderwijs en een slechte gezondheidszorg. Tegelijk verdienen welvarende landen soms aan de export naar deze landen, terwijl ze zelf hoge protectiemaatregelen hebben tegen import uit diezelfde ontwikkelingslanden.</p><p>Het ene probleem houdt vaak het andere in stand: dit noem je een <b>vicieuze cirkel</b>. Om zo\'n cirkel te doorbreken is hulp nodig.</p></div><div class=\'box\'><h4>Hulp en eerlijke handel</h4><p>Er zijn twee soorten ontwikkelingshulp:</p><ul class=\'lst\'><li><b>Noodhulp</b>: hulp in noodsituaties om mensen te helpen overleven, zoals het geven van voedsel, drinkwater, tenten en medicijnen.</li><li><b>Structurele hulp</b>: hulp aan ontwikkelingslanden met als doel dat zij op lange termijn economisch zelfstandig worden.</li></ul><p>Zelf kun je ook iets doen: bij <b>fairtrade</b>-handel krijgen producenten in ontwikkelingslanden een betere prijs voor hun producten.</p></div><div class=\'call sum\'><b>Om te onthouden</b><ul class=\'lst\'><li>Het inkomen per hoofd van de bevolking laat zien hoe welvarend een land gemiddeld is.</li><li>Een vicieuze cirkel: het ene probleem houdt het andere in stand.</li><li>Noodhulp helpt direct overleven; structurele hulp maakt landen op termijn zelfstandig. Fairtrade geeft producenten een eerlijkere prijs.</li></ul></div>'}
+{kop:'8.1 Waarom de grens over?',html:
+ '<div class="box"><h4>Waar dit hoofdstuk over gaat</h4><p>Nederland handelt volop met het buitenland. Je leert waarom landen internationaal handelen, hoe landen hun eigen markt soms beschermen, wat de Europese Unie voor voordelen biedt en waarom de welvaart wereldwijd niet gelijk verdeeld is.</p></div>'
+
+ +'<div class="g2">'
+ +'<div class="box"><h4>Open economie</h4><p>Nederland handelt volop met het buitenland: we voeren producten in (<b>importeren</b>) en voeren producten uit (<b>exporteren</b>). Een land dat een groot deel van zijn nationaal inkomen verdient met export én een groot deel daarvan besteedt aan import, noem je een <b>open economie</b>. Nederland is zo\'n open economie.</p></div>'
+ +'<div class="box"><h4>Nationaal inkomen</h4><p>Het <b>nationaal inkomen</b> is alle inkomens van een land bij elkaar opgeteld.</p></div></div>'
+
+ +'<div class="box"><h4>De betalingsbalans</h4><p>De <b>betalingsbalans</b> is een overzicht van alle ontvangsten uit het buitenland en alle betalingen aan het buitenland.</p><ul class="lst"><li>Een <b>overschot</b>: het land ontvangt meer dan het betaalt.</li><li>Een <b>tekort</b>: het land betaalt meer dan het ontvangt.</li></ul></div>'
+
+ +'<div class="call">Worden goederen na invoer onbewerkt weer doorverkocht aan het buitenland, dan heet dat <b>wederuitvoer</b>.</div>'
+
+ +'<div class="call sum"><b>Om te onthouden</b><ul class="lst"><li>Een open economie verdient veel aan export en besteedt veel aan import.</li><li>De betalingsbalans zet alle ontvangsten en betalingen met het buitenland op een rij.</li><li>Wederuitvoer: goederen onbewerkt doorverkopen na import.</li></ul></div>'},
+
+{kop:'8.2 Wereldwijde handel',html:
+ '<div class="g2">'
+ +'<div class="box"><h4>Internationale arbeidsverdeling</h4><p>Ieder land maakt vooral producten waarin het goed is: dit heet <b>internationale arbeidsverdeling</b>.</p></div>'
+ +'<div class="box"><h4>Concurrentiepositie en globalisering</h4><p>Hoe goed en/of goedkoop een land in staat is te produceren vergeleken met andere landen, bepaalt de <b>internationale concurrentiepositie</b> van dat land. Doordat landen zich specialiseren en steeds meer met elkaar handelen, neemt de <b>globalisering</b> toe: de toename van wereldwijde contacten en handel.</p></div></div>'
+
+ +'<h5 class="sub">Een land beschermt zichzelf: protectiemaatregelen</h5>'
+ +'<div class="box"><p>Een overheid kan proberen om met <b>protectiemaatregelen</b> (ook wel protectionisme of handelsbelemmeringen) de import in haar land te verminderen, om zo de productie en werkgelegenheid in eigen land te beschermen tegen buitenlandse concurrentie. Er zijn verschillende vormen:</p></div>'
+
+ +'<div class="g2">'
+ +'<div class="box"><h4>Importheffingen</h4><p>Ook wel invoerrechten of douanerechten: de douane heft belasting op ingevoerde producten.</p></div>'
+ +'<div class="box"><h4>Contingentering</h4><p>Ook wel importquota: er mag maar een maximumaantal producten worden ingevoerd.</p></div></div>'
+
+ +'<div class="g2">'
+ +'<div class="box"><h4>Invoerverbod</h4><p>Bepaalde producten mogen helemaal niet meer ingevoerd worden.</p></div>'
+ +'<div class="box"><h4>Exportsubsidie</h4><p>De overheid geeft subsidie aan exporterende bedrijven, waardoor die hun producten goedkoper aan het buitenland kunnen verkopen.</p></div></div>'
+
+ +'<div class="call warn"><b>Veelgemaakte fout:</b> denk niet dat alle protectiemaatregelen hetzelfde doel hebben. Importheffingen, contingentering en een invoerverbod beperken juist de import; een exportsubsidie stimuleert juist de export.</div>'
+
+ +'<div class="call sum"><b>Om te onthouden</b><ul class="lst"><li>Internationale arbeidsverdeling: elk land maakt vooral waar het goed in is.</li><li>Protectiemaatregelen: importheffingen, contingentering, invoerverbod (beperken import) en exportsubsidie (stimuleert export).</li></ul></div>'},
+
+{kop:'8.3 Samenwerken is slimmer',html:
+ '<div class="box"><h4>Een gemeenschappelijke markt</h4><p>Binnen de Europese Unie is er een <b>interne markt</b>: een gemeenschappelijke markt waarbinnen bedrijven bij handel tussen lidstaten geen last hebben van grenzen. De interne markt kent vrij verkeer van:</p></div>'
+
+ +'<div class="g3">'
+ +'<div class="box"><h4>Goederen en diensten</h4><p>Je mag zonder belemmeringen in- en uitvoeren, zonder invoerheffingen te betalen.</p></div>'
+ +'<div class="box"><h4>Personen</h4><p>Inwoners van een EU-land mogen in een ander EU-land werken, wonen en studeren.</p></div>'
+ +'<div class="box"><h4>Kapitaal</h4><p>Je kunt bij een bank in een ander EU-land sparen of beleggen, en bedrijven mogen in andere EU-landen investeren.</p></div></div>'
+
+ +'<h5 class="sub">Eén munt voor veel landen</h5>'
+ +'<div class="g2">'
+ +'<div class="box"><h4>EMU</h4><p>Een groep EU-landen met een gezamenlijke munteenheid, de euro, vormt de <b>Economische en Monetaire Unie (EMU)</b>.</p></div>'
+ +'<div class="box"><h4>ECB</h4><p>De <b>Europese Centrale Bank (ECB)</b> is de centrale bank van de eurozone.</p></div></div>'
+
+ +'<div class="call sum"><b>Om te onthouden</b><ul class="lst"><li>De interne markt kent vrij verkeer van goederen/diensten, personen en kapitaal.</li><li>De EMU is de groep EU-landen met de euro als gezamenlijke munt; de ECB is hun centrale bank.</li></ul></div>'},
+
+{kop:'8.4 Is de welvaart eerlijk verdeeld?',html:
+ '<div class="g2">'
+ +'<div class="box"><h4>Rijke en arme landen</h4><p>Het <b>inkomen per hoofd van de bevolking</b> is het gemiddelde inkomen per inwoner van een land. Hiermee kun je landen met elkaar vergelijken. Ontwikkelingslanden hebben vaak te maken met problemen zoals een tekort aan onderwijs en een slechte gezondheidszorg. Tegelijk verdienen welvarende landen soms aan de export naar deze landen, terwijl ze zelf hoge protectiemaatregelen hebben tegen import uit diezelfde ontwikkelingslanden.</p></div>'
+ +'<div class="box"><h4>Vicieuze cirkel</h4><p>Het ene probleem houdt vaak het andere in stand: dit noem je een <b>vicieuze cirkel</b>. Om zo\'n cirkel te doorbreken is hulp nodig.</p></div></div>'
+
+ +'<h5 class="sub">Hulp en eerlijke handel</h5>'
+ +'<div class="g2">'
+ +'<div class="box"><h4>Noodhulp</h4><p>Hulp in noodsituaties om mensen te helpen overleven, zoals het geven van voedsel, drinkwater, tenten en medicijnen.</p></div>'
+ +'<div class="box"><h4>Structurele hulp</h4><p>Hulp aan ontwikkelingslanden met als doel dat zij op lange termijn economisch zelfstandig worden.</p></div></div>'
+
+ +'<div class="box"><h4>Fairtrade</h4><p>Zelf kun je ook iets doen: bij <b>fairtrade</b>-handel krijgen producenten in ontwikkelingslanden een betere prijs voor hun producten.</p></div>'
+
+ +'<div class="call sum"><b>Om te onthouden</b><ul class="lst"><li>Het inkomen per hoofd van de bevolking laat zien hoe welvarend een land gemiddeld is.</li><li>Een vicieuze cirkel: het ene probleem houdt het andere in stand.</li><li>Noodhulp helpt direct overleven; structurele hulp maakt landen op termijn zelfstandig. Fairtrade geeft producenten een eerlijkere prijs.</li></ul></div>'}
 ],
 begrippen:[
 ['Open economie','Een land dat een groot deel van het nationaal inkomen verdient met export en een groot deel ervan besteedt aan import.',0],

@@ -18,9 +18,16 @@ var tab='samenvatting';
 
 /* ═══════ NAVIGATIE ═══════ */
 function go(id){
-  if(id==='level')   renderLevel();
-  if(id==='book')    renderBook();
-  if(id==='chapter') renderChapter();
+  if(id!=='chat' && typeof chatOpRuimen==='function') chatOpRuimen();
+  if(id!=='chapter' && typeof voorleesStop==='function') voorleesStop();
+  if(id==='level')     renderLevel();
+  if(id==='book')      renderBook();
+  if(id==='chapter')   renderChapter();
+  if(id==='personage') renderPersonage();
+  if(id==='account')   renderAccount();
+  if(id==='settings')  renderSettings();
+  if(id==='admin')     renderAdmin();
+  if(id==='chat')      renderChat();
   var cur=document.querySelector('.screen.on');
   if(cur){ cur.classList.add('leaving'); cur.classList.remove('on');
     setTimeout(function(){cur.classList.remove('leaving')},500); }
@@ -98,20 +105,51 @@ function toggleLicht(){
   toon(lichtAan?'Lichte modus aan':'Lichte modus uit');
 }
 pasLichtToe();
+/* ═══════ TEKSTGROOTTE (los van dyslexie-modus) ═══════ */
+var TEKSTGROOTTES=['normaal','groot','grootst'];
+var TEKSTGROOTTE_LABELS={normaal:'A',groot:'A+',grootst:'A++'};
+var tekstgrootteIdx=Math.max(0,TEKSTGROOTTES.indexOf(localStorage.getItem('tekstgrootte')||'normaal'));
+function pasTekstgrootteToe(){
+  var g=TEKSTGROOTTES[tekstgrootteIdx];
+  document.documentElement.classList.toggle('txt-groot', g==='groot');
+  document.documentElement.classList.toggle('txt-grootst', g==='grootst');
+  var btn=document.getElementById('tekstgroottebtn');
+  if(btn) btn.textContent='\u{1F524} '+TEKSTGROOTTE_LABELS[g];
+}
+function tekstgrootteWisselen(){
+  tekstgrootteIdx=(tekstgrootteIdx+1)%TEKSTGROOTTES.length;
+  localStorage.setItem('tekstgrootte', TEKSTGROOTTES[tekstgrootteIdx]);
+  pasTekstgrootteToe();
+}
+pasTekstgrootteToe();
 /* ═══════ VASTE STIJL (voorheen "Fantasy Mode"-toggle, nu altijd aan) ═══════ */
 var fantasyAan = true;
 function questLabel(tekst){
   return tekst.replace(/hoofdstuk/gi, function(m){ return m===m.toUpperCase() ? 'MISSIE' : 'Missie'; });
 }
 /* ═══════ POMODORO FOCUS-TIMER ═══════ */
-var pomodoroInterval=null, pomodoroResterend=25*60, pomodoroFase='werk', pomodoroAan=false;
+var POMODORO_OPTIES=[10,25,45,60];
+var POMODORO_PAUZE={10:3,25:5,45:10,60:15};
+var pomodoroDuurIdx=POMODORO_OPTIES.indexOf(parseInt(localStorage.getItem('pomodoroDuur')||'25',10));
+if(pomodoroDuurIdx<0) pomodoroDuurIdx=1;
+var pomodoroInterval=null, pomodoroFase='werk', pomodoroAan=false;
+var pomodoroResterend=POMODORO_OPTIES[pomodoroDuurIdx]*60;
+function pomodoroHuidigeDuur(){ return POMODORO_OPTIES[pomodoroDuurIdx]; }
+function pomodoroDuurWisselen(e){
+  if(e) e.stopPropagation();
+  if(pomodoroAan) return; /* niet wisselen terwijl de timer loopt */
+  pomodoroDuurIdx=(pomodoroDuurIdx+1)%POMODORO_OPTIES.length;
+  localStorage.setItem('pomodoroDuur', pomodoroHuidigeDuur());
+  pomodoroResterend=pomodoroHuidigeDuur()*60;
+  tekenPomodoro();
+}
 function pomodoroToggle(){
   if(pomodoroAan){ pomodoroStoppen(); return; }
-  pomodoroAan=true; pomodoroFase='werk'; pomodoroResterend=25*60;
+  pomodoroAan=true; pomodoroFase='werk'; pomodoroResterend=pomodoroHuidigeDuur()*60;
   document.body.classList.add('pomodoro-focus');
   tekenPomodoro();
   pomodoroInterval=setInterval(pomodoroTik,1000);
-  toon('Pomodoro gestart: 25 minuten focus.');
+  toon('Pomodoro gestart: '+pomodoroHuidigeDuur()+' minuten focus.');
 }
 function pomodoroStoppen(){
   pomodoroAan=false;
@@ -119,21 +157,33 @@ function pomodoroStoppen(){
   document.body.classList.remove('pomodoro-focus');
   tekenPomodoro();
 }
+function pomodoroFeedback(){
+  try{ if(navigator.vibrate) navigator.vibrate([120,60,120]); }catch(e){}
+}
 function pomodoroTik(){
   pomodoroResterend--;
   if(pomodoroResterend<=0){
-    if(pomodoroFase==='werk'){ pomodoroFase='pauze'; pomodoroResterend=5*60; toon('Tijd voor een pauze — 5 minuten!'); }
-    else { pomodoroFase='werk'; pomodoroResterend=25*60; toon('Pauze voorbij — weer 25 minuten focus.'); }
+    var pauzeMin=POMODORO_PAUZE[pomodoroHuidigeDuur()]||5;
+    if(pomodoroFase==='werk'){ pomodoroFase='pauze'; pomodoroResterend=pauzeMin*60; pomodoroFeedback(); toon('Tijd voor een pauze — '+pauzeMin+' minuten!'); }
+    else { pomodoroFase='werk'; pomodoroResterend=pomodoroHuidigeDuur()*60; pomodoroFeedback(); toon('Pauze voorbij — weer '+pomodoroHuidigeDuur()+' minuten focus.'); }
   }
   tekenPomodoro();
 }
 function tekenPomodoro(){
-  var btn=document.getElementById('pomodorobtn'); if(!btn) return;
-  if(!pomodoroAan){ btn.textContent='⏱'; btn.classList.remove('on'); btn.title='Pomodoro-timer starten (25 min werk / 5 min pauze)'; return; }
+  var btn=document.getElementById('pomodorobtn'), lbl=document.getElementById('pomodorolabel');
+  if(!btn) return;
+  if(!pomodoroAan){
+    var pauzeMin=POMODORO_PAUZE[pomodoroHuidigeDuur()]||5;
+    btn.textContent='🍅'; btn.classList.remove('on');
+    btn.title='Pomodoro-timer starten ('+pomodoroHuidigeDuur()+' min werk / '+pauzeMin+' min pauze)';
+    if(lbl) lbl.textContent='Pomodoro ('+pomodoroHuidigeDuur()+' min)';
+    return;
+  }
   var m=Math.floor(pomodoroResterend/60), sec=pomodoroResterend%60;
   btn.textContent=(pomodoroFase==='werk'?'🎯 ':'☕ ')+m+':'+(sec<10?'0':'')+sec;
   btn.classList.add('on');
   btn.title=(pomodoroFase==='werk'?'Focus':'Pauze')+' — klik om te stoppen';
+  if(lbl) lbl.textContent=(pomodoroFase==='werk'?'Focus':'Pauze');
 }
 tekenPomodoro();
 /* ═══════ EXAMEN- & ZELFTESTDASHBOARD ═══════ */
@@ -286,6 +336,7 @@ function bewaarVoortgang(v){ localStorage.setItem('voortgang', JSON.stringify(v)
 function voortgangVoor(sleutel){ return haalVoortgang()[sleutel]||null }
 function markBekeken(){
   var v=haalVoortgang(), sl=chapterSleutel();
+  streakBijwerken();
   if(v[sl] && v[sl].bekeken) return;
   v[sl]=v[sl]||{}; v[sl].bekeken=true; bewaarVoortgang(v);
 }
@@ -293,6 +344,7 @@ function markQuizAfgerond(goed,totaal){
   var v=haalVoortgang(), sl=chapterSleutel();
   v[sl]=v[sl]||{}; v[sl].quizGoed=goed; v[sl].quizTotaal=totaal; v[sl].quizAfgerond=true;
   bewaarVoortgang(v);
+  streakBijwerken();
 }
 
 /* ═══════ FOUTENLOG (voor fout-herhaling) ═══════ */
@@ -319,13 +371,17 @@ function leitnerVoorKaart(id){
   var l=haalLeitner(), sl=chapterSleutel();
   return (l[sl] && l[sl][id]) || {box:1, volgende:0};
 }
-function leitnerBijwerken(id, gekend){
+/* uitkomst: 'ken' (helemaal omhoog), 'twijfel' (één stap terug), 'nietken' (helemaal terug naar box 1) */
+function leitnerBijwerken(id, uitkomst){
   var huidig=leitnerVoorKaart(id).box;
-  var nieuw = gekend ? Math.min(huidig+1,5) : 1;
+  var nieuw = uitkomst==='ken' ? Math.min(huidig+1,5)
+            : uitkomst==='twijfel' ? Math.max(huidig-1,1)
+            : 1;
   var l=haalLeitner(), sl=chapterSleutel();
   l[sl]=l[sl]||{};
   l[sl][id]={box:nieuw, volgende:vandaag()+LEITNER_DAGEN[nieuw]};
   bewaarLeitner(l);
+  streakBijwerken();
   return nieuw;
 }
 function kaartIsVandaagAanDeBeurt(id){ return leitnerVoorKaart(id).volgende<=vandaag() }
@@ -333,6 +389,101 @@ function leitnerDotsHtml(id){
   var box=leitnerVoorKaart(id).box, dots='';
   for(var i=1;i<=5;i++){ dots+='<i class="ld'+(i<=box?' on':'')+'"></i>' }
   return '<div class="leitner-dots" title="Herhaalniveau '+box+'/5">'+dots+'</div>';
+}
+
+/* ═══════ DAGSTREAK ═══════ */
+function haalStreak(){ try{return JSON.parse(localStorage.getItem('streak')||'{}')}catch(e){return {}} }
+function bewaarStreak(s){ localStorage.setItem('streak', JSON.stringify(s)) }
+function streakBijwerken(){
+  var s=haalStreak(), vandaag_=vandaag();
+  if(s.laatsteDag===vandaag_) return;
+  s.lengte = (s.laatsteDag===vandaag_-1) ? (s.lengte||0)+1 : 1;
+  s.laatsteDag=vandaag_;
+  bewaarStreak(s);
+}
+function streakHtml(){
+  var s=haalStreak();
+  if(!s.lengte || s.laatsteDag<vandaag()-1){
+    return '<div class="streak-badge dim2">\u{1F525} Begin vandaag een streak!</div>';
+  }
+  return '<div class="streak-badge">\u{1F525} '+s.lengte+' dag'+(s.lengte===1?'':'en')+' op rij geoefend</div>';
+}
+
+/* ═══════ PERSONAGEKAART — Level/XP/Kennis per vak ═══════
+   Geen losse punten-teller: XP en Kennis worden berekend uit data die al
+   bestaat (voortgang + leitner), dezelfde "+N XP"-taal die al in de quiz-
+   en examenuitslagen staat. Niets nieuws om bij te houden, alleen zichtbaar
+   gemaakt op één plek per vak. */
+function xpVoorLevel(level){ return 100*level*level; }
+function levelVanXp(xp){
+  var lvl=1;
+  while(xp>=xpVoorLevel(lvl+1)) lvl++;
+  return lvl;
+}
+function vakStatistieken(vakId){
+  var sleutels=Object.keys(STOF).filter(function(k){return k.indexOf(vakId+'|')===0});
+  var voortgang=haalVoortgang(), leitner=haalLeitner();
+  var hoofdstukken=sleutels.length, gelezen=0, xp=0;
+  var quizPogingen=0, quizPctSom=0;
+  var kaartenTotaal=0, kaartenScoreSom=0, kaartenOpTop=0;
+  sleutels.forEach(function(sl){
+    var v=voortgang[sl];
+    if(v && v.bekeken){ gelezen++; xp+=25; }
+    if(v && v.quizAfgerond && v.quizTotaal){
+      quizPogingen++; quizPctSom+=v.quizGoed/v.quizTotaal; xp+=v.quizGoed*10;
+    }
+    var kaarten=leitner[sl];
+    if(kaarten){
+      Object.keys(kaarten).forEach(function(id){
+        var box=kaarten[id].box;
+        kaartenTotaal++; kaartenScoreSom+=box/5;
+        if(box>=5){ kaartenOpTop++; xp+=5; }
+      });
+    }
+  });
+  var leesPct=hoofdstukken?gelezen/hoofdstukken:0;
+  var quizGemPct=quizPogingen?quizPctSom/quizPogingen:0;
+  var kaartPct=kaartenTotaal?kaartenScoreSom/kaartenTotaal:0;
+  var mastery=Math.round((leesPct+quizGemPct+kaartPct)/3*100);
+  var lvl=levelVanXp(xp);
+  var drempelNu=xpVoorLevel(lvl), drempelVolgende=xpVoorLevel(lvl+1);
+  var xpVoortgang=drempelVolgende>drempelNu ? (xp-drempelNu)/(drempelVolgende-drempelNu) : 1;
+  return {
+    hoofdstukken:hoofdstukken, gelezen:gelezen, xp:xp, level:lvl,
+    xpVolgende:drempelVolgende, xpVoortgang:Math.max(0,Math.min(1,xpVoortgang)),
+    quizPogingen:quizPogingen, quizGemPct:Math.round(quizGemPct*100),
+    kaartenTotaal:kaartenTotaal, kaartenOpTop:kaartenOpTop, mastery:mastery
+  };
+}
+function renderPersonage(){
+  var el=document.getElementById('personageGrid'); if(!el) return;
+  var streakEl=document.getElementById('streakBadge'); if(streakEl) streakEl.innerHTML=streakHtml();
+  var vakkenMetData=VAKKEN.filter(function(v){
+    return Object.keys(STOF).some(function(k){return k.indexOf(v.id+'|')===0});
+  });
+  if(!vakkenMetData.length){ el.innerHTML='<p class="dim">Nog geen hoofdstukken beschikbaar.</p>'; return; }
+  el.innerHTML=vakkenMetData.map(function(v){
+    var s=vakStatistieken(v.id);
+    var detail = s.quizPogingen
+      ? 'Gem. quizscore '+s.quizGemPct+'%'
+      : 'Nog geen quiz gemaakt';
+    detail += ' &middot; ' + (s.kaartenTotaal
+      ? s.kaartenOpTop+'/'+s.kaartenTotaal+' flashcards op topniveau'
+      : 'nog geen flashcards geoefend');
+    return '<div class="persona-card" style="--c:var(--'+v.kleur+');--cd:var(--'+v.kleur+'-d)">'
+      +'<span class="persona-bigico">'+v.ico+'</span>'
+      +'<div class="persona-head">'
+        +'<span class="badge"><i class="ring"></i><i class="core">'+v.ico+'</i></span>'
+        +'<div><h3>'+v.naam+'</h3><small>'+s.gelezen+'/'+s.hoofdstukken+' hoofdstukken gelezen</small></div>'
+        +'<div class="persona-lvl"><b>Lv. '+s.level+'</b><span>Level</span></div>'
+      +'</div>'
+      +'<div class="persona-row"><div class="lbl"><span>XP</span><span>'+s.xp+' / '+s.xpVolgende+'</span></div>'
+        +'<div class="prog"><i style="width:'+(s.xpVoortgang*100)+'%"></i></div></div>'
+      +'<div class="persona-row"><div class="lbl"><span>Kennis</span><span>'+s.mastery+'%</span></div>'
+        +'<div class="prog"><i style="width:'+s.mastery+'%"></i></div></div>'
+      +'<div class="persona-detail">'+detail+'</div>'
+    +'</div>';
+  }).join('');
 }
 
 /* ═══════ FAVORIETEN ═══════ */
@@ -382,13 +533,18 @@ function renderLevel(){
   var v=vak();
   document.getElementById('lvlBrand').textContent=v.naam;
   document.getElementById('nivChips').innerHTML=
-    NIVEAUS.map(function(n){
+    NIVEAUS.map(function(n,i){
       var kan=jarenVoor(v.id,n.id);
       if(!kan||!kan.length){
-        return '<button class="chip" disabled style="opacity:.32;cursor:not-allowed" title="Niet beschikbaar bij dit vak">'+n.naam+'</button>';
+        return '<button class="niv-card disabled" disabled title="Niet beschikbaar bij dit vak" style="animation-delay:'+(i*60)+'ms">'
+          +'<span class="bigico">'+n.ico+'</span>'
+          +'<span class="ico">'+n.ico+'</span><h3>'+n.naam+'</h3><p>Niet beschikbaar bij dit vak</p></button>';
       }
-      return '<button class="chip'+(keuze.niveau===n.id?' sel':'')+'" onclick="kiesNiveau(\''+n.id+'\')">'+n.naam+'</button>';
-    }).join('')+'<span class="hint">'+(keuze.niveau?niv().uitleg:'Grijze niveaus hebben dit vak niet')+'</span>';
+      var sel=keuze.niveau===n.id;
+      return '<button class="niv-card'+(sel?' sel':'')+'" style="--c:var(--'+n.kleur+');--cd:var(--'+n.kleur+'-d);animation-delay:'+(i*60)+'ms" onclick="kiesNiveau(\''+n.id+'\')">'
+        +'<span class="bigico">'+n.ico+'</span><span class="check">'+'\u{2713}'+'</span>'
+        +'<span class="ico">'+n.ico+'</span><h3>'+n.naam+'</h3><p>'+n.uitleg+'</p></button>';
+    }).join('');
   var row=document.getElementById('jaarRow');
   if(!keuze.niveau){row.style.display='none';return}
   row.style.display='';
@@ -398,7 +554,7 @@ function renderLevel(){
     return;
   }
   document.getElementById('jaarChips').innerHTML=jaren.map(function(j,i){
-    return '<button class="chip" style="animation-delay:'+(i*70)+'ms" onclick="kiesJaar('+j+')">Leerjaar '+j+'</button>';
+    return '<button class="jaar-card" style="animation-delay:'+(i*70)+'ms" onclick="kiesJaar('+j+')"><b>'+j+'</b><span>Jaar</span></button>';
   }).join('');
 }
 function kiesNiveau(id){keuze.niveau=id;keuze.jaar=null;renderLevel()}
@@ -496,14 +652,15 @@ function renderChapter(){
   if(tab==='begrippen')    toonBegrippen(s);
   if(tab==='notities')     toonNotities(s);
 }
-function zetTab(t){ tab=t; renderChapter(); document.getElementById('chapter').scrollTop=0; }
+function zetTab(t){ if(t!==tab && typeof voorleesStop==='function') voorleesStop(); tab=t; renderChapter(); document.getElementById('chapter').scrollTop=0; }
 
 function toonSamenvatting(s){
   var knop='<div class="bar sq3r-toggle"><button class="bt'+(sq3rAan?'':' gh')+'" onclick="sq3rToggle()">\u{1F9ED} '
     +(sq3rAan?'Stop begeleide leeswijzer':'Begeleide leeswijzer (SQ3R)')+'</button></div>';
   if(!sq3rAan){
     document.getElementById('chBody').innerHTML=knop+s.samenvatting.map(function(p,i){
-      return '<div class="sect" style="animation-delay:'+(i*60)+'ms"><h3>'+p.kop+'</h3>'+p.html+'</div>';
+      return '<div class="sect" style="animation-delay:'+(i*60)+'ms"><h3>'+p.kop
+        +' <button type="button" class="voorlees-btn" title="Voorlezen" onclick="voorleesSectie(this,'+i+')">\u{1F50A}</button></h3>'+p.html+'</div>';
     }).join('');
     markBekeken();
     return;
@@ -556,7 +713,8 @@ function sq3rHtml(s){
       }).join('')+'</div>';
   } else if(stap===2){
     html+=s.samenvatting.map(function(p,i){
-      return '<div class="sect" style="animation-delay:'+(i*60)+'ms"><h3>'+p.kop+'</h3>'+p.html+'</div>';
+      return '<div class="sect" style="animation-delay:'+(i*60)+'ms"><h3>'+p.kop
+        +' <button type="button" class="voorlees-btn" title="Voorlezen" onclick="voorleesSectie(this,'+i+')">\u{1F50A}</button></h3>'+p.html+'</div>';
     }).join('');
   } else if(stap===3){
     html+='<div class="sect"><h3>Stap 4 — Recite: vertel het na</h3>'
@@ -632,8 +790,9 @@ function kaartHtml(c,i){
     +'<button class="star'+(fav?' on':'')+'" onclick="klikFavorietKaart(event,'+c.id+')" aria-label="Favoriet">\u2605</button>'
     +'<div class="fc-in"><div class="fc-f"><small>VRAAG</small>'+c.q+'<div class="h">\u21BA klik om te draaien</div></div>'
     +'<div class="fc-b"><strong>Antwoord</strong><span>'+c.a+'</span>'
-    +'<div class="mk"><button class="y" onclick="merk(event,'+c.id+',true)">\u2713 Ken ik</button>'
-    +'<button class="n" onclick="merk(event,'+c.id+',false)">\u21BB Nog niet</button></div></div></div></div>';
+    +'<div class="mk"><button class="y" onclick="merk(event,'+c.id+',\'ken\')">\u2713 Ken ik</button>'
+    +'<button class="t" onclick="merk(event,'+c.id+',\'twijfel\')">\u2248 Twijfelde even</button>'
+    +'<button class="n" onclick="merk(event,'+c.id+',\'nietken\')">\u21BB Nog niet</button></div></div></div></div>';
 }
 function klikFavorietKaart(e,id){
   e.stopPropagation();
@@ -663,11 +822,12 @@ function tekenKaarten(){
 function wisselGroep(){ kaartGroep=!kaartGroep; toonKaarten(stof()); }
 function draai(el,e){ if(e.target.tagName==='BUTTON')return; el.classList.toggle('flip') }
 function toonCheck(el){ el.classList.toggle('toon') }
-function merk(e,id,ken){
+function merk(e,id,uitkomst){
   e.stopPropagation();
+  var ken = uitkomst==='ken';
   var a=kaartStaat.find(function(x){return x.id===id}); if(a)a.ken=ken;
   var b=kaartView.find(function(x){return x.id===id}); if(b)b.ken=ken;
-  leitnerBijwerken(id,ken);
+  leitnerBijwerken(id,uitkomst);
   var el=document.querySelector('.fc[data-id="'+id+'"]');
   if(el){
     el.classList.toggle('known',ken);el.classList.remove('flip');
