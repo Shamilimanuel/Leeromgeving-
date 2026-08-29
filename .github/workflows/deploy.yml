@@ -24,9 +24,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # Node 22 or newer: @supabase/realtime-js needs a global WebSocket, which
+      # Node only has from v22. On Node 20 `createClient` throws and the tests
+      # that import src/lib/supabase.js fail.
       - uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '24'
           cache: npm
 
       - run: npm ci

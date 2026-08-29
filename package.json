@@ -17,7 +17,7 @@
     "content:check": "python scripts/check_content.py"
   },
   "engines": {
-    "node": ">=20"
+    "node": ">=22"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.112.4"
