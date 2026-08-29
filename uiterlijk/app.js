@@ -20,6 +20,7 @@ var tab='samenvatting';
 function go(id){
   if(id!=='chat' && typeof chatOpRuimen==='function') chatOpRuimen();
   if(id!=='chapter' && typeof voorleesStop==='function') voorleesStop();
+  if(id!=='chapter' && typeof matchspelOpRuimen==='function') matchspelOpRuimen();
   if(id==='level')     renderLevel();
   if(id==='book')      renderBook();
   if(id==='chapter')   renderChapter();
@@ -614,7 +615,7 @@ function renderBook(){
 }
 
 /* ═══════ HOOFDSTUK ═══════ */
-function openHoofdstuk(n){ keuze.hoofdstuk=n; tab='samenvatting'; kaartStaat=null; quizStaat=null; quizFoutModus=false; sq3rAan=false; sq3rStap=0; go('chapter'); }
+function openHoofdstuk(n){ keuze.hoofdstuk=n; tab='samenvatting'; kaartStaat=null; quizStaat=null; quizFoutModus=false; sq3rAan=false; sq3rStap=0; matchspelStaat=null; matchspelSelectie=null; go('chapter'); }
 
 function hoofdstukInfo(n){
   var b=boek(), r=null;
@@ -622,7 +623,7 @@ function hoofdstukInfo(n){
   return r;
 }
 
-var TABS=[['samenvatting','Samenvatting'],['flashcards','Flashcards'],['quiz','Oefenquiz'],['begrippen','Begrippenlijst'],['notities','Notities']];
+var TABS=[['samenvatting','Samenvatting'],['flashcards','Flashcards'],['matchspel','Matchspel'],['quiz','Oefenquiz'],['begrippen','Begrippenlijst'],['notities','Notities']];
 
 function renderChapter(){
   var v=vak(), info=hoofdstukInfo(keuze.hoofdstuk), s=stof();
@@ -632,7 +633,7 @@ function renderChapter(){
   document.getElementById('chTitle').textContent=info.c[1];
   document.getElementById('chTag').textContent=info.c[2]||'';
   document.getElementById('chTabs').innerHTML=TABS.map(function(t){
-    var s=stof(), n=(!s?0:t[0]==='flashcards'?s.cards.length:t[0]==='quiz'?s.quiz.length:t[0]==='begrippen'?s.begrippen.length:1);
+    var s=stof(), n=(!s?0:t[0]==='flashcards'?s.cards.length:t[0]==='matchspel'?s.cards.length:t[0]==='quiz'?s.quiz.length:t[0]==='begrippen'?s.begrippen.length:1);
     var geenTel=(t[0]==='samenvatting'||t[0]==='notities');
     return '<button class="tab'+(tab===t[0]?' on':'')+(n?'':' leegtab')+'" onclick="zetTab(\''+t[0]+'\')">'+t[1]+(n&&!geenTel?' <span class="tel">'+n+'</span>':'')+'</button>';
   }).join('')+'<i class="tabslide" id="tabslide"></i>';
@@ -648,11 +649,16 @@ function renderChapter(){
   }
   if(tab==='samenvatting') toonSamenvatting(s);
   if(tab==='flashcards')   toonKaarten(s);
+  if(tab==='matchspel')    toonMatchspel(s);
   if(tab==='quiz')         toonQuiz(s);
   if(tab==='begrippen')    toonBegrippen(s);
   if(tab==='notities')     toonNotities(s);
 }
-function zetTab(t){ if(t!==tab && typeof voorleesStop==='function') voorleesStop(); tab=t; renderChapter(); document.getElementById('chapter').scrollTop=0; }
+function zetTab(t){
+  if(t!==tab && typeof voorleesStop==='function') voorleesStop();
+  if(t!==tab && typeof matchspelOpRuimen==='function') matchspelOpRuimen();
+  tab=t; renderChapter(); document.getElementById('chapter').scrollTop=0;
+}
 
 function toonSamenvatting(s){
   var knop='<div class="bar sq3r-toggle"><button class="bt'+(sq3rAan?'':' gh')+'" onclick="sq3rToggle()">\u{1F9ED} '

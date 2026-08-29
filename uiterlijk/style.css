@@ -771,5 +771,21 @@ body.licht-modus .quest-voltooid{background:rgba(201,143,28,.08)!important}
 .voorlees-btn:hover{border-color:var(--goud);box-shadow:0 0 10px rgba(243,215,138,.25)}
 .voorlees-btn:disabled{opacity:.7;cursor:default}
 
+/* ═══ Matchspel ═══ */
+.match-status{font-size:.78rem;color:var(--mut);margin-bottom:.9rem}
+.match-grid{display:flex;gap:.8rem;align-items:flex-start}
+.match-col{flex:1;display:flex;flex-direction:column;gap:.55rem;min-width:0}
+.match-tegel{width:100%;text-align:left;background:var(--ink2);border:1.5px solid var(--line);
+  border-radius:12px;padding:.7rem .85rem;color:var(--txt);font-size:.84rem;line-height:1.4;
+  cursor:pointer;transition:.18s;word-break:break-word}
+.match-tegel:hover:not(:disabled){border-color:var(--goud);box-shadow:0 0 10px rgba(243,215,138,.18)}
+.match-tegel.geselecteerd{border-color:var(--goud);background:rgba(243,215,138,.1);box-shadow:0 0 12px rgba(243,215,138,.25)}
+.match-tegel.opgelost{background:rgba(95,191,122,.12);border-color:#5fbf7a;color:#8fd6a2;cursor:default;opacity:.85}
+.match-tegel.fout{border-color:#e5534b;background:rgba(229,83,75,.12);animation:matchSchud .35s}
+.match-tegel:disabled{cursor:default}
+@keyframes matchSchud{0%,100%{transform:translateX(0)}25%{transform:translateX(-4px)}75%{transform:translateX(4px)}}
+@media (max-width:560px){.match-grid{gap:.5rem}.match-tegel{font-size:.78rem;padding:.6rem .65rem}}
+@media (prefers-reduced-motion:reduce){.match-tegel.fout{animation:none}}
+
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 @media (max-width:560px){.crumb{display:none}.wrap{padding:2rem 1.2rem 6rem}.scorebar{top:100px}}
