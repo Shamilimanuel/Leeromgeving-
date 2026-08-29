@@ -12,10 +12,10 @@ var VAKKEN=[
   {id:'mensmaatschappij',naam:'Mens & Maatschappij',ico:'\u{1F9ED}', kleur:'mensmaatschappij', kleurnaam:'Teal'}
 ];
 var NIVEAUS=[
-  {id:'arbeid', naam:'Arbeid', uitleg:'Praktijkgericht, geen wiskunde', jaren:[1,2,3,4]},
-  {id:'bbl',    naam:'BBL',    uitleg:'Basisberoepsgerichte leerweg',   jaren:[1,2,3,4]},
-  {id:'bk',     naam:'BK',     uitleg:'Basis/kader \u2014 alleen leerjaar 1 en 2', jaren:[1,2]},
-  {id:'tl',     naam:'TL',     uitleg:'Theoretische leerweg',           jaren:[1,2,3,4]}
+  {id:'arbeid', naam:'Arbeid', uitleg:'Praktijkgericht, geen wiskunde', jaren:[1,2,3,4], ico:'\u{2692}', kleur:'niv-arbeid'},
+  {id:'bbl',    naam:'BBL',    uitleg:'Basisberoepsgerichte leerweg',   jaren:[1,2,3,4], ico:'\u{26A1}', kleur:'niv-bbl'},
+  {id:'bk',     naam:'BK',     uitleg:'Basis/kader \u2014 alleen leerjaar 1 en 2', jaren:[1,2], ico:'\u{1F3AF}', kleur:'niv-bk'},
+  {id:'tl',     naam:'TL',     uitleg:'Theoretische leerweg',           jaren:[1,2,3,4], ico:'\u{1F989}', kleur:'niv-tl'}
 ];
 /* Welke leerjaren bestaan er per vak, per niveau. null = vak bestaat daar niet. */
 var VAK_JAREN={

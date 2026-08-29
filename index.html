@@ -75,17 +75,158 @@
   <div class="top"><div class="top-in">
     <div class="brand">Samenvattingen<span>Shamil Imanuel</span></div>
     <div class="crumb"><b>Kies een vak</b></div>
+    <div class="profilewrap" id="profileWrap">
+      <button class="avatarbtn" id="topAccountBtn" onclick="toggleProfileMenu(event)" aria-haspopup="true" aria-expanded="false" title="Account">
+        <span class="avatarcircle" id="avatarCircle">&#128100;</span>
+      </button>
+      <div class="profiledrop" id="profileDrop"></div>
+    </div>
   </div></div>
   <div class="wrap">
     <div class="eyebrow">Stap 1 van 2</div>
     <h1 class="page">Welk vak wil je leren?</h1>
     <p class="lede">De kleuren zijn gekozen door de docenten zelf.</p>
+    <div class="bar">
+      <button class="bt gh" onclick="go('personage')">&#127183; Bekijk je voortgang per vak</button>
+      <button class="bt gh" onclick="go('chat')">&#128172; Teamchat</button>
+      <button class="bt gh" id="tekstgroottebtn" onclick="tekstgrootteWisselen()" title="Tekstgrootte aanpassen">&#128292; A</button>
+    </div>
     <div class="subjects" id="subjectGrid"></div>
+  </div>
+</section>
+
+<section id="personage" class="screen">
+  <div class="top"><div class="top-in">
+    <button class="homebtn" onclick="go('home')" title="Naar vakkenoverzicht" aria-label="Home">&#129517;</button>
+    <button class="back" onclick="go('home')">&larr; Vakken</button>
+    <div class="brand">Personagekaarten</div>
+    <div class="crumb"><b>Level &amp; voortgang per vak</b></div>
+  </div></div>
+  <div class="wrap">
+    <div class="eyebrow">Jouw voortgang</div>
+    <h1 class="page">Hoe ver ben je per vak?</h1>
+    <p class="lede">Level en XP zijn gebaseerd op wat je al hebt gelezen, welke quizzen je hebt gemaakt en hoeveel flashcards je al goed kent &mdash; geen losse punten, gewoon je echte voortgang.</p>
+    <div id="streakBadge"></div>
+    <div class="persona-grid" id="personageGrid"></div>
+  </div>
+</section>
+
+<section id="account" class="screen">
+  <div class="top"><div class="top-in">
+    <button class="homebtn" onclick="go('home')" title="Naar vakkenoverzicht" aria-label="Home">&#129517;</button>
+    <button class="back" onclick="go('home')">&larr; Vakken</button>
+    <div class="brand">Account</div>
+    <div class="crumb"><b id="acctCrumb">Inloggen &amp; registreren</b></div>
+  </div></div>
+  <div class="wrap">
+    <div class="eyebrow" id="acctEyebrow">Mijn account</div>
+    <h1 class="page" id="acctTitel">Log in of maak een account</h1>
+    <p class="lede" id="acctLede">Een account is optioneel &mdash; je kunt ook gewoon zonder leren.</p>
+    <div id="accountMelding"></div>
+    <div id="accountGast">
+      <div class="box" style="margin-bottom:1rem">
+        <h3 style="margin-top:0">Inloggen</h3>
+        <form onsubmit="accountInlogPoging(event)">
+          <input class="veld" id="inlogNaam" type="text" placeholder="Gebruikersnaam" autocomplete="username" required style="margin-bottom:.6rem">
+          <input class="veld" id="inlogWw" type="password" placeholder="Wachtwoord" autocomplete="current-password" required style="margin-bottom:.9rem">
+          <button class="bt" type="submit">Inloggen</button>
+        </form>
+      </div>
+      <div class="box">
+        <h3 style="margin-top:0">Nieuw account</h3>
+        <form onsubmit="accountRegistreerPoging(event)">
+          <input class="veld" id="regNaam" type="text" placeholder="Kies een gebruikersnaam" autocomplete="username" required minlength="3" style="margin-bottom:.6rem">
+          <input class="veld" id="regWw" type="password" placeholder="Kies een wachtwoord (min. 6 tekens)" autocomplete="new-password" required minlength="6" style="margin-bottom:.9rem">
+          <button class="bt gh" type="submit">Account aanmaken</button>
+        </form>
+      </div>
+    </div>
+    <div id="accountIngelogd" style="display:none"></div>
+  </div>
+</section>
+
+<section id="settings" class="screen">
+  <div class="top"><div class="top-in">
+    <button class="homebtn" onclick="go('home')" title="Naar vakkenoverzicht" aria-label="Home">&#129517;</button>
+    <button class="back" onclick="go('account')">&larr; Account</button>
+    <div class="brand">Instellingen</div>
+    <div class="crumb"><b>Profiel &amp; beveiliging</b></div>
+  </div></div>
+  <div class="wrap">
+    <div class="eyebrow">Instellingen</div>
+    <h1 class="page">Je account beheren</h1>
+    <p class="lede">Pas je gebruikersnaam of wachtwoord aan.</p>
+    <div id="settingsMelding"></div>
+    <div id="settingsGast" style="display:none">
+      <div class="call warn">Je bent niet ingelogd. <a href="#" onclick="go('account');return false">Naar inloggen</a></div>
+    </div>
+    <div id="settingsIngelogd" style="display:none">
+      <div class="box" style="margin-bottom:1rem">
+        <h3 style="margin-top:0">Gebruikersnaam</h3>
+        <form onsubmit="accountGebruikersnaamPoging(event)">
+          <input class="veld" id="setNaam" type="text" required minlength="3" maxlength="32" autocomplete="username" style="margin-bottom:.9rem">
+          <button class="bt" type="submit">Opslaan</button>
+        </form>
+        <div id="setNaamMelding"></div>
+      </div>
+      <div class="box">
+        <h3 style="margin-top:0">Wachtwoord wijzigen</h3>
+        <form onsubmit="accountWachtwoordPoging(event)">
+          <input class="veld" id="setWwHuidig" type="password" placeholder="Huidig wachtwoord" autocomplete="current-password" required style="margin-bottom:.6rem">
+          <input class="veld" id="setWwNieuw" type="password" placeholder="Nieuw wachtwoord (min. 6 tekens)" autocomplete="new-password" required minlength="6" style="margin-bottom:.6rem">
+          <input class="veld" id="setWwHerhaal" type="password" placeholder="Herhaal nieuw wachtwoord" autocomplete="new-password" required minlength="6" style="margin-bottom:.9rem">
+          <button class="bt" type="submit">Wachtwoord wijzigen</button>
+        </form>
+        <div id="setWwMelding"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="admin" class="screen">
+  <div class="top"><div class="top-in">
+    <button class="homebtn" onclick="go('home')" title="Naar vakkenoverzicht" aria-label="Home">&#129517;</button>
+    <button class="back" onclick="go('account')">&larr; Account</button>
+    <div class="brand">Adminpaneel</div>
+    <div class="crumb"><b>Alle leerlingen</b></div>
+  </div></div>
+  <div class="wrap">
+    <div class="eyebrow">Beheer</div>
+    <h1 class="page">Leerlingenoverzicht</h1>
+    <p class="lede">Wachtwoorden zie je nooit direct &mdash; gebruik &ldquo;Wachtwoord resetten&rdquo; om een nieuw tijdelijk wachtwoord te genereren.</p>
+    <div id="adminBody"></div>
+  </div>
+</section>
+
+<section id="chat" class="screen">
+  <div class="top"><div class="top-in">
+    <button class="homebtn" onclick="go('home')" title="Naar vakkenoverzicht" aria-label="Home">&#129517;</button>
+    <button class="back" onclick="go('home')">&larr; Vakken</button>
+    <div class="brand">Teamchat</div>
+    <div class="crumb"><b>Praat met andere leerlingen</b></div>
+  </div></div>
+  <div class="wrap">
+    <div class="eyebrow">Samen leren</div>
+    <h1 class="page">Teamchat</h1>
+    <p class="lede">Eén gedeelde chat voor iedereen. Blijf netjes &mdash; een beheerder kan je dempen bij grof taalgebruik.</p>
+    <div id="chatGast" style="display:none">
+      <div class="call warn">Je moet ingelogd zijn om mee te kunnen chatten. <a href="#" onclick="go('account');return false">Naar inloggen</a></div>
+    </div>
+    <div id="chatLijstBox" style="display:none">
+      <div id="chatGemuteMelding" class="call warn" style="display:none">Je bent gedemd door een beheerder &mdash; je kunt de chat wel lezen, maar niet plaatsen.</div>
+      <div class="chat-lijst" id="chatLijst"></div>
+      <div id="chatMelding"></div>
+      <form class="chat-form" id="chatForm" onsubmit="chatVerstuurPoging(event)">
+        <input class="veld" id="chatInvoer" type="text" placeholder="Typ een bericht&hellip;" maxlength="500" autocomplete="off" required>
+        <button class="bt" type="submit">Versturen</button>
+      </form>
+    </div>
   </div>
 </section>
 
 <section id="level" class="screen">
   <div class="top"><div class="top-in">
+    <button class="homebtn" onclick="go('home')" title="Naar vakkenoverzicht" aria-label="Home">&#129517;</button>
     <button class="back" onclick="go('home')">&larr; Vakken</button>
     <div class="brand" id="lvlBrand">Vak</div>
     <div class="crumb"><b>Niveau en jaar</b></div>
@@ -94,13 +235,14 @@
     <div class="eyebrow">Stap 2 van 2</div>
     <h1 class="page">Welk niveau en jaar?</h1>
     <p class="lede">Kies je niveau, daarna je leerjaar.</p>
-    <div class="pickrow"><h4>Niveau</h4><div class="chips" id="nivChips"></div></div>
-    <div class="pickrow" id="jaarRow" style="display:none"><h4>Leerjaar</h4><div class="chips" id="jaarChips"></div></div>
+    <div class="pickrow"><h4>Niveau</h4><div class="niv-grid" id="nivChips"></div></div>
+    <div class="pickrow" id="jaarRow" style="display:none"><h4>Leerjaar</h4><div class="jaar-grid" id="jaarChips"></div></div>
   </div>
 </section>
 
 <section id="book" class="screen">
   <div class="top"><div class="top-in">
+    <button class="homebtn" onclick="go('home')" title="Naar vakkenoverzicht" aria-label="Home">&#129517;</button>
     <button class="back" onclick="go('level')">&larr; Niveau</button>
     <div class="brand" id="bkBrand">Vak</div>
     <div class="crumb"><b id="bkCrumb">&mdash;</b></div>
@@ -115,6 +257,7 @@
 
 <section id="chapter" class="screen">
   <div class="top"><div class="top-in">
+    <button class="homebtn" onclick="go('home')" title="Naar vakkenoverzicht" aria-label="Home">&#129517;</button>
     <button class="back" onclick="go('book')">&larr; Hoofdstukken</button>
     <div class="brand" id="chBrand">Vak</div>
     <div class="crumb"><b id="chCrumb">&mdash;</b></div>
@@ -132,32 +275,32 @@
 
 <div class="radialmenu" id="radialmenu">
   <i class="radialhalo"></i>
-  <div class="radialitem" style="--tx:0px;--ty:-180px">
+  <div class="radialitem" style="--tx:0px;--ty:-250px">
     <button class="zoekbtn menuicon" id="zoekbtn" onclick="openZoeken();closeRadialMenu()" aria-label="Zoeken" title="Zoeken">🔍</button>
     <span class="radiallabel">Zoeken</span>
   </div>
-  <div class="radialitem" style="--tx:47px;--ty:-174px">
-    <button class="favbtn menuicon" id="favbtn" onclick="openFavorieten();closeRadialMenu()" aria-label="Favorieten" title="Favorieten">★</button>
+  <div class="radialitem" style="--tx:45px;--ty:-169px">
+    <button class="favbtn menuicon" id="favbtn" onclick="openFavorieten();closeRadialMenu()" aria-label="Favorieten" title="Favorieten">⭐</button>
     <span class="radiallabel">Favorieten</span>
   </div>
-  <div class="radialitem" style="--tx:90px;--ty:-156px">
-    <button class="pomodorobtn menuicon" id="pomodorobtn" onclick="pomodoroToggle();closeRadialMenu()" aria-label="Pomodoro-timer" title="Pomodoro-timer starten (25 min werk / 5 min pauze)">⏱</button>
-    <span class="radiallabel">Pomodoro</span>
+  <div class="radialitem" style="--tx:125px;--ty:-217px">
+    <button class="pomodorobtn menuicon" id="pomodorobtn" onclick="pomodoroToggle();closeRadialMenu()" aria-label="Pomodoro-timer" title="Pomodoro-timer starten (25 min werk / 5 min pauze)">🍅</button>
+    <span class="radiallabel" id="pomodorolabel" onclick="pomodoroDuurWisselen(event)" title="Tik om de duur te wisselen (10/25/45/60 min)" style="cursor:pointer">Pomodoro</span>
   </div>
-  <div class="radialitem" style="--tx:127px;--ty:-127px">
+  <div class="radialitem" style="--tx:124px;--ty:-124px">
     <button class="examenbtn menuicon" id="examenbtn" onclick="openExamen();closeRadialMenu()" aria-label="Oefentoets" title="Oefentoets / zelftest">📝</button>
     <span class="radiallabel">Oefentoets</span>
   </div>
-  <div class="radialitem" style="--tx:156px;--ty:-90px">
-    <button class="dyslexiebtn menuicon" id="dyslexiebtn" onclick="toggleDyslexie();closeRadialMenu()" aria-label="Dyslexie-modus aan/uit" title="Dyslexie-modus">Aa</button>
+  <div class="radialitem" style="--tx:217px;--ty:-125px">
+    <button class="dyslexiebtn menuicon" id="dyslexiebtn" onclick="toggleDyslexie();closeRadialMenu()" aria-label="Dyslexie-modus aan/uit" title="Dyslexie-modus">🔤</button>
     <span class="radiallabel">Dyslexie</span>
   </div>
-  <div class="radialitem" style="--tx:174px;--ty:-47px">
-    <button class="lichtbtn menuicon" id="lichtbtn" onclick="toggleLicht();closeRadialMenu()" aria-label="Lichte modus aan/uit" title="Lichte modus">☀</button>
+  <div class="radialitem" style="--tx:169px;--ty:-45px">
+    <button class="lichtbtn menuicon" id="lichtbtn" onclick="toggleLicht();closeRadialMenu()" aria-label="Lichte modus aan/uit" title="Lichte modus">☀️</button>
     <span class="radiallabel">Licht</span>
   </div>
-  <div class="radialitem" style="--tx:180px;--ty:0px">
-    <button class="helpbtn menuicon" id="helpbtn" onclick="openHelp(0);closeRadialMenu()" aria-label="Uitleg" title="Uitleg">?</button>
+  <div class="radialitem" style="--tx:250px;--ty:0px">
+    <button class="helpbtn menuicon" id="helpbtn" onclick="openHelp(0);closeRadialMenu()" aria-label="Uitleg" title="Uitleg">❓</button>
     <span class="radiallabel">Uitleg</span>
   </div>
   <button class="radialtrigger" id="radialtrigger" onclick="toggleRadialMenu()" aria-label="Menu" aria-expanded="false" title="Menu">
@@ -475,6 +618,9 @@
 <script src="data/wiskunde/tl4/h07-verbanden.js"></script>
 <script src="data/wiskunde/tl4/h08-ruimtemeetkunde.js"></script>
 <!-- STOF:EINDE -->
+<script src="uiterlijk/auth.js"></script>
 <script src="uiterlijk/app.js"></script>
+<script src="uiterlijk/chat.js"></script>
+<script src="uiterlijk/voorlezen.js"></script>
 </body>
 </html>

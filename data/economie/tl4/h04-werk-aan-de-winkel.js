@@ -1,10 +1,93 @@
 registreerStof('economie|tl|4|4', {
 titel:'Werk aan de winkel!',
 samenvatting:[
-{kop:'4.1 Sta je sterk in je werk?',html:'<div class=\'box\'><h4>Waar dit hoofdstuk over gaat</h4><p>Straks ga jij ook werken, misschien in loondienst of als ondernemer. Je leert waarom mensen werken, welke ondernemingsvormen er zijn, hoe de arbeidsmarkt werkt en waarom er werkloosheid kan ontstaan.</p></div><div class=\'box\'><h4>Werk je voor het geld?</h4><p>Geld verdienen is een belangrijke reden om te willen werken. Maar er zijn meer <b>arbeidsmotieven</b>: behoefte aan sociale contacten, nuttig en zinvol bezig zijn, regelmaat in je leven hebben en nieuwe dingen leren.</p><p>Veel mensen doen daarom onbetaald werk, ook wel grijs werk genoemd: werk in het eigen huishouden, vrijwilligerswerk of mantelzorg. Wie zwart werkt, heeft geen arbeidscontract en betaalt geen belasting of sociale premies over het loon dat hij ontvangt — dat is strafbaar. Is werk helemaal niet geregistreerd, dan werk je in de informele sector.</p></div><div class=\'box\'><h4>Bescherming van werknemers</h4><p>De <b>Algemene wet gelijke behandeling</b> verbiedt het om onderscheid te maken op basis van leeftijd, gender, afkomst, religie en seksuele geaardheid. In de <b>cao</b> (collectieve arbeidsovereenkomst) staan de afspraken per bedrijfstak over de arbeidsvoorwaarden.</p><p>Het <b>minimumloon</b> is een bedrag per uur. Vanaf 21 jaar heb je recht op het volledige minimumloon (in 2025 € 14,06 per uur). Ben je jonger, dan geldt het minimumjeugdloon: een percentage van het minimumloon dat oploopt met je leeftijd, bijvoorbeeld ongeveer 30% op je 15e tot 100% vanaf 21 jaar.</p></div><div class=\'box\'><h4>Vaste baan of flexibele baan?</h4><p>Met een <b>vaste baan</b> heb je een arbeidsovereenkomst voor onbepaalde tijd, dus zonder einddatum. Je werkgever kan je dan niet zo gemakkelijk ontslaan. Met een <b>flexibele baan</b> (flexbaan, flexwerk) heb je alleen werk wanneer een bedrijf je nodig heeft: bijvoorbeeld tijdelijk werk, werk via een uitzendbureau of als oproepkracht.</p></div><div class=\'call sum\'><b>Om te onthouden</b><ul class=\'lst\'><li>Arbeidsmotieven zijn breder dan alleen geld: sociale contacten, zingeving, regelmaat, leren.</li><li>Zwart werk en de informele sector zijn niet geregistreerd bij de Belastingdienst.</li><li>De cao regelt arbeidsvoorwaarden per bedrijfstak; het minimumloon is een uurloon dat vanaf 21 jaar volledig geldt, daaronder geldt het minimumjeugdloon.</li><li>Vaste baan: onbepaalde tijd. Flexibele baan: alleen als het bedrijf je nodig heeft.</li></ul></div>'},
-{kop:'4.2 Wat voor werk wil jij?',html:'<div class=\'box\'><h4>Werken in vier sectoren</h4><p>Personen en bedrijven doen vaak werk waarin ze gespecialiseerd zijn: dat heet <b>arbeidsverdeling</b>. Daardoor is de totale productie groter dan wanneer iedereen alles zelf zou doen. Alle productie en arbeid vinden plaats in vier <b>productiesectoren</b>: de primaire sector (landbouw, visserij, winning van delfstoffen), de secundaire sector (industrie, bouw, ambachtelijke bedrijven), de tertiaire sector (commerciële dienstverlening, zoals handel, transport en banken) en de quartaire sector (niet-commerciële dienstverlening, zoals onderwijs, gezondheidszorg en overheidsdiensten).</p></div><div class=\'box\'><h4>In loondienst of voor jezelf</h4><p>Werken in loondienst geeft veel zekerheid: een afgesproken loon, doorbetaling bij ziekte en vaak een pensioenregeling. Een <b>zelfstandige</b> is iemand die met een eigen bedrijf zijn inkomen verdient; een <b>zzp\'er</b> is een zelfstandige zonder personeel. Als zelfstandige heb je meer vrijheid, maar minder zekerheid over je inkomen.</p></div><div class=\'box\'><h4>Ondernemingsvormen</h4><div class=\'tblwrap\'><table class=\'tbl\'><tr><th>Vorm</th><th>Uitleg</th></tr><tr><td>Eenmanszaak</td><td>Onderneming met één eigenaar</td></tr><tr><td>Vof (vennootschap onder firma)</td><td>Meerdere eigenaren die samen de leiding hebben</td></tr><tr><td>Bv (besloten vennootschap)</td><td>Eén of meer eigenaren als aandeelhouder; de aandelen worden niet vrij verhandeld</td></tr><tr><td>Nv (naamloze vennootschap)</td><td>Meerdere eigenaren als aandeelhouder; de aandelen worden verhandeld op de effectenbeurs</td></tr><tr><td>Stichting</td><td>Instelling voor een maatschappelijk of ideëel doel, niet gericht op winst</td></tr></table></div><p>Aandeelhouders van een bv of nv kunnen <b>dividend</b> ontvangen: de winstuitkering aan hen.</p></div><div class=\'call sum\'><b>Om te onthouden</b><ul class=\'lst\'><li>Arbeidsverdeling zorgt voor meer productie; er zijn vier productiesectoren: primair, secundair, tertiair, quartair.</li><li>Zelfstandige: eigen bedrijf, eigen inkomen. Zzp\'er: zelfstandige zonder personeel.</li><li>Ondernemingsvormen: eenmanszaak, vof, bv, nv, stichting — elk met eigen eigenaarschap.</li><li>Dividend is de winstuitkering aan aandeelhouders van een bv of nv.</li></ul></div>'},
-{kop:'4.3 Kun je aan het werk?',html:'<div class=\'box\'><h4>Vraag en aanbod van arbeid</h4><p>De <b>arbeidsmarkt</b> is het geheel van vraag naar arbeid en aanbod van arbeid. Het aanbod van arbeid komt van werkenden en werkzoekenden (de beroepsbevolking); de vraag naar arbeid komt van werkgevers. <b>Loon</b> is de prijs voor arbeid.</p><p>Is de vraag naar arbeid groter dan het aanbod, dan spreek je van een <b>krappe arbeidsmarkt</b>: werkgevers hebben dan moeite om personeel te vinden.</p></div><div class=\'box\'><h4>Werk en werkloosheid</h4><p>De <b>werkgelegenheid</b> is alle banen die er zijn. <b>Werkloosheid</b> ontstaat als het aanbod van arbeid groter is dan de vraag. Je bent <b>geregistreerd werkloos</b> als je als werkloze ingeschreven staat bij het UWV; ben je dat niet, terwijl er geen werk voor je is, dan ben je <b>verborgen werkloos</b>.</p></div><div class=\'call\'>De <b>arbeidsparticipatie</b> is het percentage van de bevolking dat werkt of wil werken.</div><div class=\'call sum\'><b>Om te onthouden</b><ul class=\'lst\'><li>Arbeidsmarkt = vraag naar arbeid (werkgevers) + aanbod van arbeid (beroepsbevolking).</li><li>Krappe arbeidsmarkt: vraag groter dan aanbod.</li><li>Geregistreerd werkloos: ingeschreven bij het UWV. Verborgen werkloos: niet ingeschreven, wel zonder werk.</li></ul></div>'},
-{kop:'4.4 Werk voor iedereen?',html:'<div class=\'box\'><h4>Verschillende soorten werkloosheid</h4><p>Werkloosheid heeft niet altijd dezelfde oorzaak:</p></div><div class=\'tblwrap\'><table class=\'tbl\'><tr><th>Soort werkloosheid</th><th>Oorzaak</th></tr><tr><td>Conjuncturele werkloosheid</td><td>Minder vraag naar goederen en diensten door afnemende bestedingen</td></tr><tr><td>Frictiewerkloosheid</td><td>Kortdurende werkloosheid, omdat er tijd nodig is om een nieuwe baan te vinden</td></tr><tr><td>Structurele werkloosheid</td><td>Gevolg van problemen aan de aanbodkant van de economie, bijvoorbeeld automatisering</td></tr><tr><td>Seizoenwerkloosheid</td><td>Werk kan alleen in een deel van het jaar gedaan worden</td></tr><tr><td>Regionale werkloosheid</td><td>In bepaalde gebieden hoger dan gemiddeld in het land</td></tr></table></div><div class=\'call warn\'><b>Veelgemaakte fout:</b> denk niet dat alle werkloosheid dezelfde oplossing vraagt. Conjuncturele werkloosheid vraagt om meer bestedingen; structurele werkloosheid vraagt vaak om omscholing, omdat de oorzaak niet vanzelf verdwijnt.</div><div class=\'call sum\'><b>Om te onthouden</b><ul class=\'lst\'><li>Vijf soorten werkloosheid: conjunctureel, frictie, structureel, seizoen en regionaal.</li><li>Elke soort heeft een eigen oorzaak, en dus mogelijk een eigen oplossing.</li></ul></div>'}
+{kop:'4.1 Sta je sterk in je werk?',html:
+ '<div class="box"><h4>Waar dit hoofdstuk over gaat</h4><p>Straks ga jij ook werken, misschien in loondienst of als ondernemer. Je leert waarom mensen werken, welke ondernemingsvormen er zijn, hoe de arbeidsmarkt werkt en waarom er werkloosheid kan ontstaan.</p></div>'
+
+ +'<h5 class="sub">Waarom werk je?</h5>'
+ +'<div class="g2">'
+ +'<div class="box"><h4>Arbeidsmotieven</h4><p>Geld verdienen is een belangrijke reden om te werken. Maar er zijn meer <b>arbeidsmotieven</b>: sociale contacten, nuttig en zinvol bezig zijn, regelmaat in je leven en nieuwe dingen leren.</p></div>'
+ +'<div class="box"><h4>Onbetaald werk</h4><p>Werk in het eigen huishouden, vrijwilligerswerk en mantelzorg heet ook wel <b>grijs werk</b>: onbetaald, maar wel nuttig.</p></div></div>'
+
+ +'<div class="call warn"><b>Veelgemaakte fout:</b> verwar <b>zwart werk</b> niet met de <b>informele sector</b>. Bij zwart werk heb je geen arbeidscontract en betaal je geen belasting of premies over je loon — dat is strafbaar. Is werk helemaal niet geregistreerd, dan werk je in de informele sector.</div>'
+
+ +'<h5 class="sub">Bescherming van werknemers</h5>'
+ +'<div class="g2">'
+ +'<div class="box"><h4>Algemene wet gelijke behandeling</h4><p>Deze wet verbiedt het om onderscheid te maken op basis van leeftijd, gender, afkomst, religie en seksuele geaardheid.</p></div>'
+ +'<div class="box"><h4>Cao</h4><p>In de <b>cao</b> (collectieve arbeidsovereenkomst) staan de afspraken per bedrijfstak over de arbeidsvoorwaarden.</p></div></div>'
+
+ +'<div class="box"><h4>Minimumloon</h4><p>Het <b>minimumloon</b> is een bedrag per uur. Vanaf 21 jaar heb je recht op het volledige minimumloon (in 2025 € 14,06 per uur). Ben je jonger, dan geldt het <b>minimumjeugdloon</b>: een percentage van het minimumloon dat oploopt met je leeftijd, van ongeveer 30% op je 15e tot 100% vanaf je 21e.</p></div>'
+
+ +'<h5 class="sub">Vaste baan of flexibele baan?</h5>'
+ +'<div class="g2">'
+ +'<div class="box"><h4>Vaste baan</h4><p>Een arbeidsovereenkomst voor <b>onbepaalde tijd</b>, dus zonder einddatum. Je werkgever kan je dan niet zo gemakkelijk ontslaan.</p></div>'
+ +'<div class="box"><h4>Flexibele baan</h4><p>Bij een <b>flexbaan</b> heb je alleen werk wanneer een bedrijf je nodig heeft: bijvoorbeeld tijdelijk werk, werk via een uitzendbureau of als oproepkracht.</p></div></div>'
+
+ +'<div class="call sum"><b>Om te onthouden</b><ul class="lst"><li>Arbeidsmotieven zijn breder dan alleen geld: sociale contacten, zingeving, regelmaat, leren.</li><li>Zwart werk en de informele sector zijn niet geregistreerd bij de Belastingdienst.</li><li>De cao regelt arbeidsvoorwaarden per bedrijfstak; het minimumloon is een uurloon dat vanaf 21 jaar volledig geldt, daaronder geldt het minimumjeugdloon.</li><li>Vaste baan: onbepaalde tijd. Flexibele baan: alleen als het bedrijf je nodig heeft.</li></ul></div>'},
+
+{kop:'4.2 Wat voor werk wil jij?',html:
+ '<div class="box"><h4>Arbeidsverdeling</h4><p>Personen en bedrijven doen vaak werk waarin ze gespecialiseerd zijn: dat heet <b>arbeidsverdeling</b>. Daardoor is de totale productie groter dan wanneer iedereen alles zelf zou doen.</p></div>'
+
+ +'<h5 class="sub">De vier productiesectoren</h5>'
+ +'<div class="tblwrap"><table class="tbl"><tr><th>Sector</th><th>Hoort erbij</th></tr>'
+ +'<tr><td>Primaire sector</td><td>Landbouw, visserij, winning van delfstoffen</td></tr>'
+ +'<tr><td>Secundaire sector</td><td>Industrie, bouw, ambachtelijke bedrijven</td></tr>'
+ +'<tr><td>Tertiaire sector</td><td>Commerciële dienstverlening: handel, transport, banken</td></tr>'
+ +'<tr><td>Quartaire sector</td><td>Niet-commerciële dienstverlening: onderwijs, gezondheidszorg, overheidsdiensten</td></tr>'
+ +'</table></div>'
+
+ +'<h5 class="sub">In loondienst of voor jezelf?</h5>'
+ +'<div class="g2">'
+ +'<div class="box"><h4>In loondienst</h4><p>Geeft veel zekerheid: een afgesproken loon, doorbetaling bij ziekte en vaak een pensioenregeling.</p></div>'
+ +'<div class="box"><h4>Zelfstandige / zzp\'er</h4><p>Een <b>zelfstandige</b> verdient met een eigen bedrijf zijn inkomen; een <b>zzp\'er</b> is een zelfstandige zonder personeel. Meer vrijheid, maar minder zekerheid over je inkomen.</p></div></div>'
+
+ +'<h5 class="sub">Ondernemingsvormen</h5>'
+ +'<div class="tblwrap"><table class="tbl"><tr><th>Vorm</th><th>Uitleg</th></tr>'
+ +'<tr><td>Eenmanszaak</td><td>Onderneming met één eigenaar</td></tr>'
+ +'<tr><td>Vof (vennootschap onder firma)</td><td>Meerdere eigenaren die samen de leiding hebben</td></tr>'
+ +'<tr><td>Bv (besloten vennootschap)</td><td>Eén of meer eigenaren als aandeelhouder; de aandelen worden niet vrij verhandeld</td></tr>'
+ +'<tr><td>Nv (naamloze vennootschap)</td><td>Meerdere eigenaren als aandeelhouder; de aandelen worden verhandeld op de effectenbeurs</td></tr>'
+ +'<tr><td>Stichting</td><td>Instelling voor een maatschappelijk of ideëel doel, niet gericht op winst</td></tr>'
+ +'</table></div>'
+
+ +'<div class="box"><h4>Dividend</h4><p>Aandeelhouders van een bv of nv kunnen <b>dividend</b> ontvangen: de winstuitkering aan hen.</p></div>'
+
+ +'<div class="call sum"><b>Om te onthouden</b><ul class="lst"><li>Arbeidsverdeling zorgt voor meer productie; er zijn vier productiesectoren: primair, secundair, tertiair, quartair.</li><li>Zelfstandige: eigen bedrijf, eigen inkomen. Zzp\'er: zelfstandige zonder personeel.</li><li>Ondernemingsvormen: eenmanszaak, vof, bv, nv, stichting — elk met eigen eigenaarschap.</li><li>Dividend is de winstuitkering aan aandeelhouders van een bv of nv.</li></ul></div>'},
+
+{kop:'4.3 Kun je aan het werk?',html:
+ '<div class="box"><h4>De arbeidsmarkt</h4><p>De <b>arbeidsmarkt</b> is het geheel van vraag naar arbeid en aanbod van arbeid. Het aanbod komt van werkenden en werkzoekenden (de beroepsbevolking); de vraag komt van werkgevers. <b>Loon</b> is de prijs voor arbeid.</p></div>'
+
+ +'<div class="call">Is de vraag naar arbeid groter dan het aanbod, dan spreek je van een <b>krappe arbeidsmarkt</b>: werkgevers hebben dan moeite om personeel te vinden.</div>'
+
+ +'<h5 class="sub">Werk en werkloosheid</h5>'
+ +'<div class="g2">'
+ +'<div class="box"><h4>Werkgelegenheid</h4><p>De <b>werkgelegenheid</b> is alle banen die er zijn.</p></div>'
+ +'<div class="box"><h4>Werkloosheid</h4><p><b>Werkloosheid</b> ontstaat als het aanbod van arbeid groter is dan de vraag.</p></div></div>'
+
+ +'<h5 class="sub">Wel of niet geregistreerd?</h5>'
+ +'<div class="g2">'
+ +'<div class="box"><h4>Geregistreerd werkloos</h4><p>Je staat als werkloze ingeschreven bij het UWV.</p></div>'
+ +'<div class="box"><h4>Verborgen werkloos</h4><p>Je staat niet ingeschreven bij het UWV, terwijl er geen werk voor je is.</p></div></div>'
+
+ +'<div class="call">De <b>arbeidsparticipatie</b> is het percentage van de bevolking dat werkt of wil werken.</div>'
+
+ +'<div class="call sum"><b>Om te onthouden</b><ul class="lst"><li>Arbeidsmarkt = vraag naar arbeid (werkgevers) + aanbod van arbeid (beroepsbevolking).</li><li>Krappe arbeidsmarkt: vraag groter dan aanbod.</li><li>Geregistreerd werkloos: ingeschreven bij het UWV. Verborgen werkloos: niet ingeschreven, wel zonder werk.</li></ul></div>'},
+
+{kop:'4.4 Werk voor iedereen?',html:
+ '<div class="box"><h4>Verschillende soorten werkloosheid</h4><p>Werkloosheid heeft niet altijd dezelfde oorzaak.</p></div>'
+
+ +'<h5 class="sub">Vijf soorten werkloosheid</h5>'
+ +'<div class="tblwrap"><table class="tbl"><tr><th>Soort werkloosheid</th><th>Oorzaak</th></tr>'
+ +'<tr><td>Conjuncturele werkloosheid</td><td>Minder vraag naar goederen en diensten door afnemende bestedingen</td></tr>'
+ +'<tr><td>Frictiewerkloosheid</td><td>Kortdurende werkloosheid, omdat er tijd nodig is om een nieuwe baan te vinden</td></tr>'
+ +'<tr><td>Structurele werkloosheid</td><td>Gevolg van problemen aan de aanbodkant van de economie, bijvoorbeeld automatisering</td></tr>'
+ +'<tr><td>Seizoenwerkloosheid</td><td>Werk kan alleen in een deel van het jaar gedaan worden</td></tr>'
+ +'<tr><td>Regionale werkloosheid</td><td>In bepaalde gebieden hoger dan gemiddeld in het land</td></tr>'
+ +'</table></div>'
+
+ +'<div class="call warn"><b>Veelgemaakte fout:</b> denk niet dat alle werkloosheid dezelfde oplossing vraagt. Conjuncturele werkloosheid vraagt om meer bestedingen; structurele werkloosheid vraagt vaak om omscholing, omdat de oorzaak niet vanzelf verdwijnt.</div>'
+
+ +'<div class="call sum"><b>Om te onthouden</b><ul class="lst"><li>Vijf soorten werkloosheid: conjunctureel, frictie, structureel, seizoen en regionaal.</li><li>Elke soort heeft een eigen oorzaak, en dus mogelijk een eigen oplossing.</li></ul></div>'}
 ],
 begrippen:[
 ['Arbeidsmotieven','Redenen om te willen werken.',0],

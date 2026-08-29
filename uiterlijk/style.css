@@ -15,6 +15,10 @@
   --maatschappij:#9c7fe0;--maatschappij-d:#201731;
   --mensmaatschappij:#4fd6c4; --mensmaatschappij-d:#0e2825;
   --onbekend:#6e7681;    --onbekend-d:#2a2f36;
+  --niv-arbeid:#e0a044;  --niv-arbeid-d:#332510;
+  --niv-bbl:#4fa8c9;     --niv-bbl-d:#0f2530;
+  --niv-bk:#d67aa0;      --niv-bk-d:#301522;
+  --niv-tl:#7c6fd8;      --niv-tl-d:#1a1730;
   --accent:#e8c05a; --accent-d:#241d0d;
 }
 *{margin:0;padding:0;box-sizing:border-box}
@@ -97,6 +101,36 @@ button{font-family:inherit;cursor:pointer}
 .crumb b{color:var(--txt);font-weight:500}
 .back{background:none;border:1px solid var(--goud-line);color:var(--mut);border-radius:100px;padding:.3rem .9rem;font-size:.75rem;transition:.25s}
 .back:hover{color:var(--goud);border-color:var(--goud);transform:translateX(-3px);box-shadow:0 0 14px rgba(243,215,138,.25)}
+.homebtn{background:none;border:1px solid var(--goud-line);color:var(--mut);border-radius:100px;
+  width:34px;height:34px;display:flex;align-items:center;justify-content:center;font-size:.95rem;
+  flex-shrink:0;transition:.25s;padding:0}
+.homebtn:hover{color:var(--goud);border-color:var(--goud);box-shadow:0 0 14px rgba(243,215,138,.25)}
+
+/* ── Profielknop (avatar) + uitklapmenu rechtsboven ── */
+.profilewrap{position:relative;margin-left:auto;flex-shrink:0}
+.avatarbtn{width:34px;height:34px;border-radius:50%;border:1.5px solid var(--goud-line);
+  background:var(--ink2);display:flex;align-items:center;justify-content:center;
+  padding:0;overflow:hidden;transition:.25s;flex-shrink:0}
+.avatarbtn:hover,.avatarbtn[aria-expanded="true"]{border-color:var(--goud);box-shadow:0 0 14px rgba(243,215,138,.3)}
+.avatarbtn .avatarcircle{width:100%;height:100%;display:flex;align-items:center;justify-content:center;
+  font-family:'Cinzel',serif;font-weight:600;font-size:.85rem;color:#241d0d;
+  background:radial-gradient(circle at 35% 30%,var(--goud),var(--goud-d) 85%)}
+.avatarbtn.gast .avatarcircle{background:var(--ink2);color:var(--mut);font-size:1rem}
+.profiledrop{position:absolute;top:calc(100% + .6rem);right:0;min-width:200px;
+  background:var(--ink2);border:1.5px solid var(--goud-line);border-radius:12px;
+  padding:.5rem;box-shadow:0 20px 44px rgba(0,0,0,.5);
+  opacity:0;pointer-events:none;transform:translateY(-6px) scale(.97);transform-origin:top right;
+  transition:opacity .2s ease,transform .2s cubic-bezier(.2,.85,.3,1);z-index:80}
+.profiledrop.open{opacity:1;pointer-events:auto;transform:translateY(0) scale(1)}
+.profiledrop .naam{padding:.5rem .7rem .6rem;border-bottom:1px solid var(--line);margin-bottom:.4rem}
+.profiledrop .naam b{display:block;font-family:'Cinzel',serif;font-size:.86rem;color:var(--txt)}
+.profiledrop .naam span{display:block;font-size:.66rem;color:var(--mut);margin-top:.15rem}
+.profiledrop button{display:flex;align-items:center;gap:.5rem;width:100%;text-align:left;
+  background:none;border:none;color:var(--txt);padding:.55rem .7rem;border-radius:8px;
+  font-size:.82rem;font-family:'DM Sans';transition:.15s;cursor:pointer}
+.profiledrop button:hover{background:rgba(243,215,138,.1);color:var(--goud)}
+.profiledrop button.uitlog:hover{background:rgba(224,112,122,.12);color:#e0707a}
+body.licht-modus .profiledrop{background:var(--ink2)}
 
 .wrap{max-width:1080px;margin:0 auto;padding:3rem 1.5rem 6rem;position:relative}
 .eyebrow{font-size:.7rem;letter-spacing:.24em;text-transform:uppercase;color:var(--mut);margin-bottom:.6rem;animation:up .5s ease both}
@@ -112,9 +146,10 @@ h1.page{font-family:'Cinzel',serif;font-size:clamp(1.8rem,4.5vw,2.6rem);font-wei
   overflow:hidden;min-height:206px;display:flex;flex-direction:column;justify-content:flex-end;
   background:linear-gradient(165deg,var(--cd,var(--ink2)) 0%,#070a14 90%);
   transition:transform .45s cubic-bezier(.16,.8,.24,1), box-shadow .45s cubic-bezier(.16,.8,.24,1), border-color .35s ease, filter .35s ease;
-  animation:up .5s ease both;box-shadow:0 8px 26px rgba(0,0,0,.5)}
-.subj:hover{transform:translateY(-9px) scale(1.02) rotate(-.3deg);border-color:var(--goud);filter:brightness(1.08);
+  animation:up .5s ease both;box-shadow:0 8px 26px rgba(0,0,0,.5), inset 0 0 46px -22px var(--c,transparent)}
+.subj:hover,.subj:focus-visible{transform:translateY(-9px) scale(1.02) rotate(-.3deg);border-color:var(--goud);filter:brightness(1.08);
   box-shadow:0 26px 56px -12px var(--c,var(--goud)), 0 8px 26px rgba(0,0,0,.5)}
+.subj:active{transform:translateY(-3px) scale(1.005)}
 .subj::after{content:'';position:absolute;inset:0;background:linear-gradient(160deg,rgba(255,255,255,.14),transparent 55%);pointer-events:none;z-index:1}
 .subj::before{content:'';position:absolute;inset:0;background:linear-gradient(115deg,transparent 40%,rgba(255,255,255,.14) 50%,transparent 60%);
   animation:shimmerAmbient 6s ease-in-out infinite;pointer-events:none;z-index:1}
@@ -127,16 +162,27 @@ h1.page{font-family:'Cinzel',serif;font-size:clamp(1.8rem,4.5vw,2.6rem);font-wei
 @keyframes spin{to{transform:rotate(360deg)}}
 .subj .core{position:absolute;inset:4px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.3rem;
   background:radial-gradient(circle at 35% 30%,var(--c,var(--goud)),var(--cd,var(--ink2)) 75%);
-  border:1.5px solid rgba(243,215,138,.75);box-shadow:inset 0 0 12px rgba(0,0,0,.45)}
+  border:1.5px solid rgba(243,215,138,.75);box-shadow:inset 0 0 12px rgba(0,0,0,.45);animation:corePulse 3.4s ease-in-out infinite}
+@keyframes corePulse{0%,100%{box-shadow:inset 0 0 12px rgba(0,0,0,.45)}50%{box-shadow:inset 0 0 20px rgba(0,0,0,.22)}}
 .subj h3{font-family:'Cinzel',serif;font-size:1.1rem;font-weight:600;position:relative;z-index:2;margin:0 0 .3rem}
-.subj small{position:relative;z-index:2;display:flex;align-items:center;gap:.35rem;font-size:.72rem;color:var(--goud);opacity:0;
-  transform:translateY(6px);transition:opacity .3s ease,transform .3s cubic-bezier(.2,.85,.3,1)}
-.subj:hover small{opacity:1;transform:translateY(0)}
+.subj small{position:relative;z-index:2;display:flex;align-items:center;gap:.35rem;font-size:.72rem;color:var(--goud);opacity:.82;
+  transition:opacity .3s ease}
+.subj small span{display:inline-block;transition:transform .3s cubic-bezier(.2,.85,.3,1)}
+.subj:hover small{opacity:1}
+.subj:hover small span{transform:translateX(4px)}
 .subj .swatch{position:relative;z-index:2;display:flex;align-items:center;gap:.35rem;font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;
   color:var(--goud);opacity:.9;margin-bottom:.45rem}
 .subj .swatch .dot{width:5px;height:5px;border-radius:50%;background:var(--c,var(--goud));display:inline-block}
 .subj.todo{opacity:.55}
-@media (prefers-reduced-motion:reduce){.subj .ring,.subj::before{animation:none}}
+@media (prefers-reduced-motion:reduce){.subj .ring,.subj::before,.subj .core{animation:none}}
+@media (max-width:480px){
+  .subjects{grid-template-columns:repeat(2,1fr);gap:.75rem}
+  .subj{min-height:172px;padding:1.1rem .9rem .95rem;border-radius:10px}
+  .subj .badge{width:42px;height:42px;margin-bottom:.9rem}
+  .subj .bigico{font-size:3.6rem}
+  .subj h3{font-size:.92rem}
+  .subj small{font-size:.64rem}
+}
 
 /* ══ TOAST ══ */
 .toast{position:fixed;left:50%;bottom:1.8rem;transform:translateX(-50%) translateY(20px);
@@ -282,6 +328,14 @@ h5.sub{font-family:'Cinzel',serif;font-size:1rem;color:var(--accent);margin:1.8r
 .call.waarom{border-left-color:#4caf7d;background:rgba(76,175,125,.07)}
 .call.waarom::before{content:'🎯 ';margin-right:.2rem}
 
+/* ══ REKEN — stap-voor-stap rekenvoorbeeld ══ */
+.call.reken{border-left-color:#5fbf7a;background:rgba(95,191,122,.08)}
+.call.reken::before{content:'🧮 ';margin-right:.2rem}
+.call.reken .num{margin-top:.6rem}
+.call.reken .num li{border-bottom-style:dotted}
+.call.reken .num li.eind{border:none;padding-top:.6rem;margin-top:.2rem;border-top:1px solid var(--line)}
+.call.reken .num li.eind::before{background:#5fbf7a}
+
 /* ══ CHECK — klein tussendoor-vraagje in de samenvatting zelf ══ */
 .check{background:var(--ink2);border:1px dashed var(--line);border-radius:12px;
   padding:.8rem 1rem;margin:1rem 0;cursor:pointer;transition:border-color .2s,transform .15s}
@@ -342,6 +396,7 @@ h5.sub{font-family:'Cinzel',serif;font-size:1rem;color:var(--accent);margin:1.8r
 .mk{display:flex;gap:.4rem;justify-content:center;margin-top:.8rem}
 .mk button{border:none;border-radius:100px;padding:.24rem .7rem;font-size:.68rem;font-family:'DM Sans'}
 .mk .y{background:var(--accent);color:#0d1117}
+.mk .t{background:rgba(243,215,138,.3);color:#fff}
 .mk .n{background:rgba(255,255,255,.14);color:#fff}
 .fc.known .fc-f{border-color:var(--accent);background:var(--ink3)}
 .leitner-dots{position:absolute;top:.7rem;left:.65rem;z-index:3;display:flex;gap:.18rem}
@@ -370,6 +425,12 @@ h5.sub{font-family:'Cinzel',serif;font-size:1rem;color:var(--accent);margin:1.8r
 .zoek{width:100%;padding:.7rem 1.1rem;border:1px solid var(--line);border-radius:100px;background:var(--ink2);
   color:var(--txt);font-family:'DM Sans';font-size:.9rem;margin:1.6rem 0 1.2rem}
 .zoek:focus{outline:none;border-color:var(--accent)}
+
+/* account / adminpaneel */
+.veld{display:block;width:100%;padding:.75rem 1rem;border:1px solid var(--line);border-radius:12px;
+  background:var(--ink2);color:var(--txt);font-family:'DM Sans';font-size:.95rem;box-sizing:border-box}
+.veld:focus{outline:none;border-color:var(--accent)}
+body.licht-modus .veld{background:#fff}
 
 
 /* ══ MISSIE-SCHERM ══ */
@@ -498,6 +559,75 @@ body.pomodoro-focus .aurora{opacity:.35}
 .examen-vak-score{display:flex;justify-content:space-between;font-size:.85rem;padding:.4rem 0;border-bottom:1px solid var(--line)}
 .examen-vak-score:last-child{border-bottom:none}
 
+/* ══ PERSONAGEKAART — Level/XP/Kennis per vak ══ */
+.persona-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.1rem;margin-top:.4rem}
+.persona-card{position:relative;overflow:hidden;border:1.5px solid var(--goud-line);border-radius:14px;padding:1.3rem 1.3rem 1.1rem;
+  background:linear-gradient(165deg,var(--cd,var(--ink2)) 0%,#070a14 90%);
+  box-shadow:0 8px 26px rgba(0,0,0,.4), inset 0 0 46px -22px var(--c,transparent);
+  transition:transform .35s cubic-bezier(.16,.8,.24,1), box-shadow .35s ease, border-color .3s ease;animation:up .5s ease both}
+.persona-card:hover{transform:translateY(-5px);border-color:var(--goud);
+  box-shadow:0 20px 44px -14px var(--c,var(--goud)), 0 8px 26px rgba(0,0,0,.4)}
+.persona-card::after{content:'';position:absolute;inset:0;background:linear-gradient(160deg,rgba(255,255,255,.1),transparent 55%);pointer-events:none}
+.persona-bigico{position:absolute;top:-.5rem;right:-.7rem;font-size:4.2rem;opacity:.08;transform:rotate(-10deg);pointer-events:none}
+.persona-head{position:relative;z-index:1;display:flex;align-items:center;gap:.8rem;margin-bottom:1rem}
+.persona-head .badge{width:44px;height:44px;margin-bottom:0;flex-shrink:0}
+.persona-head .core{font-size:1.05rem}
+.persona-head h3{font-family:'Cinzel',serif;font-size:1.02rem}
+.persona-head small{display:block;color:var(--mut);font-size:.7rem;margin-top:.15rem}
+.persona-lvl{margin-left:auto;text-align:center;flex-shrink:0;padding-left:.5rem}
+.persona-lvl b{display:block;font-family:'Cinzel',serif;font-size:1.15rem;color:var(--goud)}
+.persona-lvl span{display:block;font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;color:var(--mut)}
+.persona-row{position:relative;z-index:1;margin-bottom:.6rem}
+.persona-row .lbl{display:flex;justify-content:space-between;font-size:.7rem;color:var(--mut);margin-bottom:.3rem}
+.persona-detail{position:relative;z-index:1;margin-top:.9rem;padding-top:.7rem;border-top:1px solid var(--line);font-size:.72rem;color:var(--mut);line-height:1.5}
+body.licht-modus .persona-card{background:linear-gradient(165deg,var(--cd,var(--ink2)) 0%,#e2ddd0 90%)}
+
+/* ══ NIVEAU + LEERJAAR (revamp) ══ */
+.niv-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:1rem;margin-top:.9rem}
+.niv-card{position:relative;overflow:hidden;border:1.5px solid var(--goud-line);border-radius:12px;width:100%;
+  padding:1.1rem 1rem 1rem;text-align:left;color:var(--txt);font-family:inherit;
+  background:linear-gradient(165deg,var(--cd,var(--ink2)) 0%,#070a14 90%);
+  box-shadow:0 8px 22px rgba(0,0,0,.45), inset 0 0 40px -20px var(--c,transparent);
+  transition:transform .35s cubic-bezier(.16,.8,.24,1), box-shadow .35s ease, border-color .3s ease;animation:up .45s ease both}
+.niv-card:hover,.niv-card:focus-visible{transform:translateY(-6px);border-color:var(--goud);
+  box-shadow:0 20px 44px -14px var(--c,var(--goud)), 0 8px 22px rgba(0,0,0,.45)}
+.niv-card:active{transform:translateY(-2px) scale(.98)}
+.niv-card .bigico{position:absolute;top:-.5rem;right:-.6rem;font-size:3.6rem;opacity:.1;transform:rotate(-10deg);pointer-events:none}
+.niv-card .ico{position:relative;z-index:1;width:42px;height:42px;border-radius:50%;display:flex;align-items:center;justify-content:center;
+  font-size:1.15rem;margin-bottom:.8rem;background:radial-gradient(circle at 35% 30%,var(--c,var(--goud)),var(--cd,var(--ink2)) 75%);
+  border:1.5px solid rgba(243,215,138,.75);box-shadow:inset 0 0 10px rgba(0,0,0,.4)}
+.niv-card h3{position:relative;z-index:1;font-family:'Cinzel',serif;font-size:1.02rem;margin-bottom:.25rem}
+.niv-card p{position:relative;z-index:1;font-size:.72rem;color:var(--mut);line-height:1.4;margin:0}
+.niv-card .check{position:absolute;top:.65rem;right:.65rem;width:22px;height:22px;border-radius:50%;z-index:2;
+  border:1.5px solid var(--goud-line);display:flex;align-items:center;justify-content:center;font-size:.68rem;
+  color:transparent;background:rgba(0,0,0,.2);transition:.25s}
+.niv-card.sel{border-color:var(--goud);box-shadow:0 20px 44px -14px var(--c,var(--goud)),0 8px 22px rgba(0,0,0,.45)}
+.niv-card.sel .check{background:var(--goud);border-color:transparent;color:#241d0d}
+.niv-card.disabled{opacity:.42;cursor:not-allowed;filter:grayscale(.65)}
+.niv-card.disabled:hover{transform:none;box-shadow:0 8px 22px rgba(0,0,0,.45);border-color:var(--goud-line)}
+.jaar-grid{display:flex;gap:.7rem;flex-wrap:wrap;margin-top:.9rem}
+.jaar-card{position:relative;width:76px;height:76px;border-radius:14px;border:1.5px solid var(--goud-line);font-family:inherit;
+  background:linear-gradient(165deg,var(--accent-d),var(--ink2) 90%);color:var(--txt);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.15rem;
+  box-shadow:0 8px 20px rgba(0,0,0,.4);transition:.3s cubic-bezier(.2,.85,.3,1);animation:pop .4s ease both}
+.jaar-card b{font-family:'Cinzel',serif;font-size:1.3rem}
+.jaar-card span{font-size:.6rem;letter-spacing:.06em;text-transform:uppercase;color:var(--mut)}
+.jaar-card:hover,.jaar-card:focus-visible{transform:translateY(-4px);border-color:var(--accent);box-shadow:0 14px 30px -10px var(--accent)}
+.jaar-card:active{transform:translateY(-1px) scale(.96)}
+body.licht-modus .niv-card{background:linear-gradient(165deg,var(--cd,var(--ink2)) 0%,#e2ddd0 90%)}
+body.licht-modus .jaar-card{background:linear-gradient(165deg,var(--accent-d),#e2ddd0 90%)}
+@media (prefers-reduced-motion:reduce){.niv-card,.jaar-card,.persona-card{transition:none}}
+
+/* ══ DAGSTREAK ══ */
+.streak-badge{display:inline-flex;align-items:center;gap:.4rem;background:rgba(232,130,63,.12);
+  border:1px solid rgba(232,130,63,.35);color:#ffb877;border-radius:100px;padding:.4rem 1rem;
+  font-size:.8rem;font-weight:600;margin-bottom:1.4rem}
+.streak-badge.dim2{background:var(--ink3);border-color:var(--line);color:var(--mut);font-weight:400}
+
+/* ══ TEKSTGROOTTE ══ */
+html.txt-groot{font-size:18px}
+html.txt-grootst{font-size:20px}
+
 /* ══════════════════════════════════════════════════════════
    GENSHIN-STIJL — vast basis-uiterlijk (geen los thema/toggle)
    Glasachtige panelen + goudglow, overal in de site.
@@ -556,6 +686,7 @@ body.licht-modus{
 }
 body.licht-modus .credit-name, body.licht-modus .scene-cap{-webkit-background-clip:unset;background-clip:unset;color:var(--paper)}
 body.licht-modus .mk .n{background:rgba(0,0,0,.08);color:var(--txt)}
+body.licht-modus .mk .t{background:rgba(0,0,0,.06);color:var(--txt)}
 body.licht-modus .fc-b{background:linear-gradient(150deg,var(--accent-d),#2a3548);color:#fff}
 body.licht-modus .fc-b strong{color:#bcd0ea}
 body.licht-modus .opt.good{color:#1f6b3a}
@@ -607,6 +738,38 @@ body.licht-modus .quest-voltooid{background:rgba(201,143,28,.08)!important}
   html,body{overflow:visible!important;background:#fff!important;color:#000!important}
   .cornell-row textarea,.groot-veld{background:#fff!important;color:#000!important;border:1px solid #999!important}
 }
+
+/* ═══ Teamchat ═══ */
+.chat-lijst{display:flex;flex-direction:column;gap:.6rem;max-height:56vh;overflow-y:auto;
+  padding:1rem;margin-bottom:1rem;background:var(--ink2);border:1px solid var(--line);border-radius:16px}
+.chat-msg{max-width:82%;padding:.55rem .8rem;border-radius:12px;background:var(--ink3);
+  border:1px solid var(--line);align-self:flex-start}
+.chat-msg.eigen{align-self:flex-end;background:linear-gradient(150deg,var(--goud),var(--goud-d));border-color:transparent}
+.chat-msg.eigen .chat-msg-head,.chat-msg.eigen .chat-msg-head b,.chat-msg.eigen .chat-tijd{color:#241a04}
+.chat-msg.eigen .chat-msg-tekst{color:#1a1304}
+.chat-msg.vanadmin{border-color:var(--goud-line);box-shadow:0 0 0 1px rgba(243,215,138,.12) inset}
+.chat-msg-head{display:flex;align-items:center;gap:.4rem;font-size:.72rem;color:var(--mut);margin-bottom:.25rem}
+.chat-msg-head b{color:var(--txt);font-family:'Cinzel',serif;font-weight:500;font-size:.78rem}
+.chat-badge{background:rgba(243,215,138,.16);color:var(--goud);border-radius:100px;padding:.1rem .5rem;font-size:.62rem;letter-spacing:.04em}
+.chat-tijd{margin-left:auto;opacity:.7}
+.chat-msg-tekst{font-size:.88rem;color:var(--txt);word-break:break-word;white-space:pre-wrap}
+.chat-mute{background:none;border:none;color:inherit;opacity:.55;cursor:pointer;font-size:.8rem;padding:0 0 0 .2rem}
+.chat-mute:hover{opacity:1}
+.chat-form{display:flex;gap:.6rem}
+.chat-form .veld{flex:1;margin-bottom:0}
+@media (max-width:560px){
+  .chat-lijst{max-height:50vh;padding:.8rem}
+  .chat-msg{max-width:92%}
+  .chat-form{flex-direction:column}
+  .chat-form .bt{width:100%}
+}
+
+/* ═══ Voorlezen ═══ */
+.voorlees-btn{background:var(--ink3);border:1px solid var(--line);color:var(--goud);
+  border-radius:50%;width:28px;height:28px;font-size:.82rem;line-height:1;cursor:pointer;
+  vertical-align:middle;margin-left:.3rem;transition:.2s}
+.voorlees-btn:hover{border-color:var(--goud);box-shadow:0 0 10px rgba(243,215,138,.25)}
+.voorlees-btn:disabled{opacity:.7;cursor:default}
 
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 @media (max-width:560px){.crumb{display:none}.wrap{padding:2rem 1.2rem 6rem}.scorebar{top:100px}}

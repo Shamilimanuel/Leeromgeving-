@@ -1,10 +1,86 @@
 registreerStof('economie|tl|4|6', {
 titel:'Iedereen betaalt belasting',
 samenvatting:[
-{kop:'6.1 Je inkomen wordt belast',html:'<div class=\'box\'><h4>Waar dit hoofdstuk over gaat</h4><p>Belasting betalen doet iedereen met een inkomen. Je leert hoe de inkomstenbelasting werkt, hoeveel belasting je over inkomen en vermogen betaalt, hoe inkomens door de overheid herverdeeld worden en waarom niet alleen inkomstenbelasting de schatkist vult.</p></div><div class=\'box\'><h4>Drie boxen</h4><p>De inkomstenbelasting is verdeeld over drie \'boxen\'. In <b>box 1</b> betaal je belasting over inkomen uit werk en eigen woning. Box 2 is alleen voor aandeelhouders in bv\'s en nv\'s. In <b>box 3</b> betaal je belasting over inkomen uit vermogen, zoals spaargeld en beleggingen.</p></div><div class=\'box\'><h4>Van inkomen naar belastbaar inkomen</h4><p>Iedereen betaalt over zijn privé-inkomen <b>inkomstenbelasting</b>. Deze belasting wordt niet berekend over je hele inkomen, maar over je <b>belastbaar inkomen</b>: het inkomen waar de belasting over berekend wordt.</p><p>Heb je een eigen huis, dan tel je het <b>eigenwoningforfait</b> bij je inkomen op. Daar staat tegenover dat je de betaalde hypotheekrente mag aftrekken. Ook andere kosten mag je van je inkomen aftrekken: <b>aftrekposten</b>, zoals giften aan goede doelen en reiskosten met het openbaar vervoer, zorgen dat je minder belasting hoeft te betalen.</p></div><div class=\'call\'><b>Rekenregel</b><br>Belastbaar inkomen = inkomsten + eigenwoningforfait − aftrekposten.<br>Heb je een auto van de zaak die je ook privé gebruikt? Dan telt daarnaast een <b>bijtelling</b> mee bij je inkomen.</div><div class=\'call sum\'><b>Om te onthouden</b><ul class=\'lst\'><li>De inkomstenbelasting kent drie boxen: box 1 (werk en eigen woning), box 2 (aandeelhouders) en box 3 (vermogen).</li><li>Belastbaar inkomen = inkomen waarover de belasting berekend wordt.</li><li>Eigenwoningforfait en bijtelling verhogen je belastbaar inkomen; aftrekposten verlagen het.</li></ul></div>'},
-{kop:'6.2 Hoeveel belasting betaal je?',html:'<div class=\'box\'><h4>Belasting in box 1: het schijventarief</h4><p>De belasting over je werk en woning (box 1) bereken je met het <b>schijventarief</b>: je belastbaar inkomen is verdeeld over drie schijven, elk met een eigen belastingpercentage.</p><div class=\'tblwrap\'><table class=\'tbl\'><tr><th>Schijf</th><th>Belastbaar inkomen</th><th>Tarief</th></tr><tr><td>1</td><td>t/m € 38.400</td><td>35,8%</td></tr><tr><td>2</td><td>€ 38.400 t/m € 76.800</td><td>37,5%</td></tr><tr><td>3</td><td>€ 76.800 en meer</td><td>49,5%</td></tr></table></div><div class=\'tbl\'><b>Rekenvoorbeeld</b><br>Belastbaar inkomen: € 80.000.<br>1. Schijf 1: € 38.400. Schijf 2: € 76.800 − € 38.400 = € 38.400. Schijf 3: € 80.000 − € 76.800 = € 3.200<br>2. Belasting schijf 1: 35,8% × € 38.400 = € 13.747<br>Belasting schijf 2: 37,5% × € 38.400 = € 14.400<br>Belasting schijf 3: 49,5% × € 3.200 = € 1.584<br>3. Totale belasting in box 1: € 13.747 + € 14.400 + € 1.584 = € 29.731</div><p>Omdat de tarieven in schijf 2 en 3 hoger zijn dan in schijf 1, betalen mensen met een hoger inkomen in verhouding meer belasting: dit heet een <b>progressief belastingtarief</b>. Het omgekeerde is een <b>degressief tarief</b> (komt vrijwel nergens voor); bij een <b>proportioneel tarief</b> (ook wel \'vlaktaks\') betaalt iedereen hetzelfde percentage. Op je belasting kun je nog een <b>heffingskorting</b> in mindering brengen.</p></div><div class=\'box\'><h4>Belasting in box 3: vermogen</h4><p>Je <b>vermogen</b> is het totaal van al je spaargeld en beleggingen, na aftrek van je schulden. Het eerste deel van je vermogen is <b>heffingsvrij</b>: daarover betaal je geen belasting. In 2025 is dit <b>heffingsvrij vermogen</b> € 57.000. Over de rest betaal je <b>vermogensrendementsheffing</b>: belasting in box 3 over het <b>fictief rendement</b> — het rendement dat je volgens de overheid hebt op je spaargeld of beleggingen, ook als je in werkelijkheid meer of minder rendement behaalt.</p></div><div class=\'call warn\'><b>Veelgemaakte fout:</b> denk niet dat je in box 3 belasting betaalt over je werkelijke rendement. De overheid rekent met een fictief rendement, dat kan afwijken van wat je echt aan rente of koerswinst hebt ontvangen.</div><div class=\'call\'><b>Rekenregel</b><br>Verschuldigde inkomstenbelasting = belasting box 1 + belasting box 3 − heffingskortingen.</div><div class=\'call sum\'><b>Om te onthouden</b><ul class=\'lst\'><li>Schijventarief: drie schijven, hoe hoger je inkomen, hoe hoger het tarief over het extra deel (progressief).</li><li>Heffingskorting verlaagt de te betalen belasting.</li><li>Vermogensrendementsheffing (box 3) rekent met een fictief rendement over je vermogen boven het heffingsvrije deel van € 57.000.</li></ul></div>'},
-{kop:'6.3 Eerlijk zullen we alles delen?',html:'<div class=\'box\'><h4>Actieven en inactieven</h4><p>Mensen met betaald werk worden gerekend tot de <b>actieven</b>. Van hun inkomen staan zij een deel af in de vorm van premies en belasting. Een deel daarvan gaat als uitkering naar de <b>inactieven</b>: mensen zonder betaald werk die een uitkering ontvangen, bijvoorbeeld omdat ze arbeidsongeschikt, werkloos of boven de pensioenleeftijd zijn. Zo zorgt de overheid voor een <b>herverdeling van de inkomens</b>.</p><p>Om de sociale zekerheid betaalbaar te houden, is het belangrijk dat er genoeg actieven zijn die premie betalen. Of dat zo is, zie je aan de verhouding tussen inactieven en actieven: de <b>i/a-ratio</b> = aantal inactieven ÷ aantal actieven.</p></div><div class=\'box\'><h4>Nivellering en vergrijzing</h4><p>Worden de inkomensverschillen in verhouding kleiner, dan spreek je van <b>nivellering</b>; worden ze groter, dan is er sprake van <b>denivellering</b>.</p><p>Een belangrijk deel van de inactieven bestaat uit AOW\'ers. Door <b>vergrijzing</b> neemt het aandeel ouderen in de totale bevolking toe en stijgt de gemiddelde leeftijd. Doordat er zo steeds meer AOW-gerechtigden zijn ten opzichte van het aantal premiebetalers, staat de betaalbaarheid van de AOW onder druk.</p></div><div class=\'call sum\'><b>Om te onthouden</b><ul class=\'lst\'><li>Actieven dragen premies en belasting af; inactieven ontvangen daarvan een uitkering (herverdeling van inkomens).</li><li>i/a-ratio = aantal inactieven ÷ aantal actieven.</li><li>Nivellering: inkomensverschillen worden kleiner. Denivellering: ze worden groter.</li><li>Vergrijzing vergroot het aandeel ouderen, wat de AOW onder druk zet.</li></ul></div>'},
-{kop:'6.4 Iedereen betaalt mee',html:'<div class=\'box\'><h4>Niet alleen inkomstenbelasting</h4><p>Bij de inkomstenbelasting past de overheid het <b>draagkrachtbeginsel</b> toe: wie in staat is veel te betalen, moet in verhouding ook meer betalen. Bij het <b>profijtbeginsel</b> betaal je juist voor het gebruik van goederen of diensten die de overheid levert, zoals de <b>motorrijtuigenbelasting</b> (wegenbelasting): belasting voor het bezit van een auto.</p></div><div class=\'box\'><h4>Belastingontduiking</h4><p>De overheid heeft belastinginkomsten nodig om goed te kunnen functioneren. Toch betalen sommige mensen met opzet te weinig belasting, bijvoorbeeld door bij de belastingaangifte onjuiste informatie te geven. Dit noem je <b>belastingontduiking</b> (of belastingfraude), en het is strafbaar. Belastingontduiking kost de overheid naar schatting € 22 miljard per jaar — ongeveer evenveel als wat de overheid jaarlijks uitgeeft aan het basis- en voortgezet onderwijs.</p></div><div class=\'call sum\'><b>Om te onthouden</b><ul class=\'lst\'><li>Draagkrachtbeginsel: betalen naar vermogen. Profijtbeginsel: betalen naar gebruik.</li><li>Belastingontduiking is het opzettelijk verkeerd informeren van de overheid, is strafbaar en kost de overheid circa € 22 miljard per jaar.</li></ul></div>'}
+{kop:'6.1 Je inkomen wordt belast',html:
+ '<div class="box"><h4>Waar dit hoofdstuk over gaat</h4><p>Belasting betalen doet iedereen met een inkomen. Je leert hoe de inkomstenbelasting werkt, hoeveel belasting je over inkomen en vermogen betaalt, hoe inkomens door de overheid herverdeeld worden en waarom niet alleen inkomstenbelasting de schatkist vult.</p></div>'
+
+ +'<h5 class="sub">Drie boxen in de inkomstenbelasting</h5>'
+ +'<div class="g3">'
+ +'<div class="box"><h4>Box 1</h4><p>Belasting over inkomen uit <b>werk</b> en <b>eigen woning</b>.</p></div>'
+ +'<div class="box"><h4>Box 2</h4><p>Alleen voor <b>aandeelhouders</b> in bv\'s en nv\'s.</p></div>'
+ +'<div class="box"><h4>Box 3</h4><p>Belasting over inkomen uit <b>vermogen</b>, zoals spaargeld en beleggingen.</p></div></div>'
+
+ +'<div class="box"><h4>Van inkomen naar belastbaar inkomen</h4><p>Iedereen betaalt over zijn privé-inkomen <b>inkomstenbelasting</b>. Deze wordt niet berekend over je hele inkomen, maar over je <b>belastbaar inkomen</b>: het inkomen waar de belasting over berekend wordt.</p></div>'
+
+ +'<h5 class="sub">Wat telt mee voor je belastbaar inkomen?</h5>'
+ +'<div class="g3">'
+ +'<div class="box"><h4>Eigenwoningforfait</h4><p>Heb je een eigen huis? Dan tel je dit bedrag <b>bij</b> je inkomen op.</p></div>'
+ +'<div class="box"><h4>Bijtelling</h4><p>Gebruik je een auto van de zaak ook privé? Dan telt dit bedrag ook <b>bij</b> je inkomen mee.</p></div>'
+ +'<div class="box"><h4>Aftrekposten</h4><p>Kosten zoals giften aan goede doelen of ov-reiskosten mag je <b>aftrekken</b> van je inkomen.</p></div></div>'
+
+ +'<div class="call"><b>Rekenregel</b><p>Belastbaar inkomen = inkomen + eigenwoningforfait + bijtelling − aftrekposten.</p></div>'
+
+ +'<div class="call sum"><b>Om te onthouden</b><ul class="lst"><li>De inkomstenbelasting kent drie boxen: box 1 (werk en eigen woning), box 2 (aandeelhouders) en box 3 (vermogen).</li><li>Belastbaar inkomen = het inkomen waarover de belasting berekend wordt.</li><li>Eigenwoningforfait en bijtelling verhogen je belastbaar inkomen; aftrekposten verlagen het.</li></ul></div>'},
+
+{kop:'6.2 Hoeveel belasting betaal je?',html:
+ '<div class="box"><h4>Belasting in box 1: het schijventarief</h4><p>De belasting over je werk en woning (box 1) bereken je met het <b>schijventarief</b>: je belastbaar inkomen is verdeeld over drie schijven, elk met een eigen belastingpercentage.</p></div>'
+
+ +'<div class="tblwrap"><table class="tbl"><tr><th>Schijf</th><th>Belastbaar inkomen</th><th>Tarief</th></tr><tr><td>1</td><td>t/m € 38.400</td><td>35,8%</td></tr><tr><td>2</td><td>€ 38.400 t/m € 76.800</td><td>37,5%</td></tr><tr><td>3</td><td>€ 76.800 en meer</td><td>49,5%</td></tr></table></div>'
+
+ +'<div class="call reken"><b>Reken mee — belasting berekenen met de schijven</b><p>Belastbaar inkomen: € 80.000. Hoeveel belasting betaal je in box 1?</p><ol class="num">'
+ +'<li><b>Stap 1 — verdeel het inkomen over de schijven</b> — schijf 1: € 38.400. Schijf 2: € 76.800 − € 38.400 = € 38.400. Schijf 3: € 80.000 − € 76.800 = € 3.200.</li>'
+ +'<li><b>Stap 2 — reken per schijf het tarief uit</b> — schijf 1: 35,8% × € 38.400 = € 13.747. Schijf 2: 37,5% × € 38.400 = € 14.400. Schijf 3: 49,5% × € 3.200 = € 1.584.</li>'
+ +'<li class="eind"><b>Antwoord</b> — tel de drie bedragen bij elkaar op: € 13.747 + € 14.400 + € 1.584 = <b>€ 29.731</b> belasting in box 1.</li></ol></div>'
+
+ +'<h5 class="sub">Drie soorten belastingtarieven</h5>'
+ +'<div class="g3">'
+ +'<div class="box"><h4>Progressief</h4><p>Het tarief <b>stijgt</b> naarmate het inkomen toeneemt. Zo werkt het schijventarief in box 1.</p></div>'
+ +'<div class="box"><h4>Degressief</h4><p>Het tarief <b>daalt</b> naarmate het inkomen toeneemt. Komt in de praktijk vrijwel nergens voor.</p></div>'
+ +'<div class="box"><h4>Proportioneel</h4><p>Iedereen betaalt <b>hetzelfde</b> percentage, ongeacht het inkomen. Ook wel \'vlaktaks\' genoemd.</p></div></div>'
+
+ +'<div class="box"><h4>Heffingskorting</h4><p>Op de belasting die je moet betalen, mag je nog een <b>heffingskorting</b> in mindering brengen: een korting op het bedrag dat je aan inkomstenbelasting moet betalen.</p></div>'
+
+ +'<h5 class="sub">Belasting in box 3: vermogen</h5>'
+ +'<div class="g2">'
+ +'<div class="box"><h4>Vermogen</h4><p>Je <b>vermogen</b> is het totaal van al je spaargeld en beleggingen, na aftrek van je schulden. Het eerste deel is <b>heffingsvrij</b>: daarover betaal je geen belasting. In 2025 is dit <b>heffingsvrij vermogen</b> € 57.000.</p></div>'
+ +'<div class="box"><h4>Vermogensrendementsheffing</h4><p>Over het vermogen boven het heffingsvrije deel betaal je <b>vermogensrendementsheffing</b>: belasting over het <b>fictief rendement</b> — het rendement dat je volgens de overheid hebt op je spaargeld of beleggingen, ook als je in werkelijkheid meer of minder rendement behaalt.</p></div></div>'
+
+ +'<div class="call warn"><b>Veelgemaakte fout:</b> denk niet dat je in box 3 belasting betaalt over je werkelijke rendement. De overheid rekent met een fictief rendement, dat kan afwijken van wat je echt aan rente of koerswinst hebt ontvangen.</div>'
+
+ +'<div class="call"><b>Rekenregel</b><p>Verschuldigde inkomstenbelasting = belasting box 1 + belasting box 3 − heffingskortingen.</p></div>'
+
+ +'<div class="call sum"><b>Om te onthouden</b><ul class="lst"><li>Schijventarief: drie schijven, hoe hoger je inkomen, hoe hoger het tarief over het extra deel (progressief).</li><li>Heffingskorting verlaagt de te betalen belasting.</li><li>Vermogensrendementsheffing (box 3) rekent met een fictief rendement over je vermogen boven het heffingsvrije deel van € 57.000.</li></ul></div>'},
+
+{kop:'6.3 Eerlijk zullen we alles delen?',html:
+ '<div class="g2">'
+ +'<div class="box"><h4>Actieven</h4><p>Mensen met <b>betaald werk</b>. Zij staan een deel van hun inkomen af in de vorm van premies en belasting.</p></div>'
+ +'<div class="box"><h4>Inactieven</h4><p>Mensen <b>zonder betaald werk</b> die een uitkering ontvangen, bijvoorbeeld omdat ze arbeidsongeschikt, werkloos of boven de pensioenleeftijd zijn.</p></div></div>'
+
+ +'<div class="box"><h4>Herverdeling van inkomens</h4><p>Een deel van de premies en belasting die actieven betalen, gaat als uitkering naar inactieven. Zo zorgt de overheid voor een <b>herverdeling van de inkomens</b>.</p></div>'
+
+ +'<div class="call"><b>Rekenregel</b><p>i/a-ratio = aantal inactieven ÷ aantal actieven.</p></div>'
+
+ +'<div class="call waarom">Om de sociale zekerheid betaalbaar te houden, is het belangrijk dat er genoeg actieven zijn die premie betalen. Of dat zo is, zie je aan de <b>i/a-ratio</b>.</div>'
+
+ +'<h5 class="sub">Nivellering en vergrijzing</h5>'
+ +'<div class="g2">'
+ +'<div class="box"><h4>Nivellering</h4><p>De inkomensverschillen worden in verhouding <b>kleiner</b>.</p></div>'
+ +'<div class="box"><h4>Denivellering</h4><p>De inkomensverschillen worden in verhouding <b>groter</b>.</p></div></div>'
+
+ +'<div class="box"><h4>Vergrijzing</h4><p>Door <b>vergrijzing</b> neemt het aandeel ouderen in de totale bevolking toe en stijgt de gemiddelde leeftijd. Een belangrijk deel van de inactieven bestaat uit AOW\'ers: doordat er zo steeds meer AOW-gerechtigden zijn ten opzichte van het aantal premiebetalers, staat de betaalbaarheid van de AOW onder druk.</p></div>'
+
+ +'<div class="call sum"><b>Om te onthouden</b><ul class="lst"><li>Actieven dragen premies en belasting af; inactieven ontvangen daarvan een uitkering (herverdeling van inkomens).</li><li>i/a-ratio = aantal inactieven ÷ aantal actieven.</li><li>Nivellering: inkomensverschillen worden kleiner. Denivellering: ze worden groter.</li><li>Vergrijzing vergroot het aandeel ouderen, wat de AOW onder druk zet.</li></ul></div>'},
+
+{kop:'6.4 Iedereen betaalt mee',html:
+ '<div class="g2">'
+ +'<div class="box"><h4>Draagkrachtbeginsel</h4><p>Wie in staat is veel te betalen, moet in verhouding ook <b>meer</b> betalen. Zo werkt de inkomstenbelasting.</p></div>'
+ +'<div class="box"><h4>Profijtbeginsel</h4><p>Je betaalt voor het <b>gebruik</b> van goederen of diensten die de overheid levert, zoals de <b>motorrijtuigenbelasting</b> (wegenbelasting): belasting voor het bezit van een auto.</p></div></div>'
+
+ +'<div class="box"><h4>Belastingontduiking</h4><p>De overheid heeft belastinginkomsten nodig om goed te kunnen functioneren. Toch betalen sommige mensen met opzet te weinig belasting, bijvoorbeeld door bij de belastingaangifte onjuiste informatie te geven. Dit noem je <b>belastingontduiking</b> (of belastingfraude), en het is strafbaar.</p></div>'
+
+ +'<div class="call">Belastingontduiking kost de overheid naar schatting <b>€ 22 miljard</b> per jaar — ongeveer evenveel als wat de overheid jaarlijks uitgeeft aan het basis- en voortgezet onderwijs.</div>'
+
+ +'<div class="call sum"><b>Om te onthouden</b><ul class="lst"><li>Draagkrachtbeginsel: betalen naar vermogen. Profijtbeginsel: betalen naar gebruik.</li><li>Belastingontduiking is het opzettelijk verkeerd informeren van de overheid, is strafbaar en kost de overheid circa € 22 miljard per jaar.</li></ul></div>'}
 ],
 begrippen:[
 ['Inkomstenbelasting','Belasting die iedereen over zijn privé-inkomen moet betalen.',0],
