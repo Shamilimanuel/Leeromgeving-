@@ -41,10 +41,6 @@ else · `[?]` needs a decision before it can be built.
       because auth travels in the `Authorization` header rather than cookies, so
       another site cannot borrow a student's session. Could still be narrowed to
       the Pages origin.
-- [x] ~~Privilege escalation through the `chat_namen` view~~ — fixed
-      2026-08-29: `authenticated` held INSERT/UPDATE/DELETE on an auto-updatable
-      SECURITY DEFINER view, so any student could have set their own `rol` to
-      `admin`. Now SELECT only.
 - [—] **Leaked password protection** — Pro plan only. Cannot be enabled on the
       free plan; the advisor will keep flagging it. No action possible.
 
@@ -53,38 +49,26 @@ else · `[?]` needs a decision before it can be built.
 Both features were finished and committed at the time, and the handoff document
 still lists them as done — but they are not in the current code.
 
-- [x] ~~**Matchspel**~~ — recovered 2026-08-29 from branch `matchspel`
-      (`cc17b3e`) and folded into the Oefenspel as the verbind-oefening
-      (`src/ui/game.js`). The branch is kept on `origin/matchspel` for
-      reference and can be deleted once the game has been played in a browser.
+- [ ] **Delete the `matchspel` branch.** Recovered into the Oefenspel as the
+      verbind-oefening (`src/ui/game.js`). Kept around until that exercise had
+      been played in a browser — `tests/app.test.js` walks level 1 to a green
+      check, but that is an automated test, not the same as a human having
+      played it. Confirm by hand, then delete `origin/matchspel`.
 - [!] **Voorlezen (text-to-speech)** — `uiterlijk/voorlezen.js` was deleted by
       the revamp, and the `voorlezen` Edge Function has since been removed from
       Supabase too. Also blocked independently (see section 5).
 
 ## 4. Teamproject phases
 
-- [x] **Fase 1 — Teamchat + mute** — done and live.
+- **Fase 1 — Teamchat + mute** — done and live.
 - [~] **Fase 2 — the practice game.** One Duolingo-style game, not a menu of
       separate ones. The "Oefenspel" tab shows a **path of levels** per chapter
       (`src/ui/path.js`); tapping a level opens a **full-screen session**
       (`src/ui/game.js`) of eight mixed exercises. Finishing pays XP, turns the
-      node green with a check and unlocks the next level. See section 5.
-  - [x] Verbind — connect a question to its answer. Both columns live in one
-        CSS grid, so a one-line question and a three-line answer share a row,
-        and a matched pair is joined by a drawn SVG line.
-  - [x] Typ — type the term that belongs to a description (section 7).
-  - [x] Kies — pick the right term out of four; the three wrong ones are real
-        terms from the same chapter, so they are plausible.
-  - [x] Volgorde — rebuild a description by tapping its words in order.
-  - [x] Vul het gat in — a sentence out of the summary with the term blanked
-        out. Only sentences that really contain the term are used.
-  - [x] Sorteer — put each term in the paragraph it belongs to. Needs a level
-        spanning more than one paragraph, so it shows up on merged levels and
-        on the Eindtoets.
-  - [x] Quizvraag — the chapter's own quiz entries.
-  - [x] Waar of niet waar — does this description belong to this term?
-  - [x] Welke hoort er niet bij — three terms from this paragraph and one from
-        another; the paragraph is named, otherwise it is a guess.
+      node green with a check and unlocks the next level. See section 5. Nine
+      exercise kinds are built — verbind, typ, kies, volgorde, vul het gat in,
+      sorteer, quizvraag, waar of niet waar, welke hoort er niet bij — covered
+      by `tests/exercises.test.js`.
   - [ ] Tijdrace (as many as you can in 45 seconds) — the only kind left from
         the shortlist. It needs a different session shape (a clock instead of a
         fixed number of exercises), which is why it is not in yet.
@@ -102,22 +86,11 @@ still lists them as done — but they are not in the current code.
 
 ## 5. Duolingo-style path
 
-Shamil's idea, and now the shape of the whole practice game. **The design
-questions are settled and the chapter path is built** (2026-08-30):
-
-- [x] **What is one level?** One summary paragraph. Terms and flashcards
-      already carry the index of the paragraph they belong to, so the split
-      costs no content work (`src/content/levels.js`). Paragraphs with under
-      six items merge forward, and a chapter with more than one level ends on
-      an **Eindtoets** drawn from everything. Over the 244 chapters that gives
-      3-5 levels each and no level thinner than four items — roughly 950
-      levels across the site.
-- [x] **Where does it live?** On the Oefenspel tab of a chapter, so the chapter
-      cards stay as they are.
-- [x] **Is it locked in order?** Yes: level 1 is always open, the rest need the
-      level before them (`src/state/gameLevels.js`).
-- [x] **What is at the end?** The Eindtoets, then the whole path shows as
-      finished. Levels can be replayed; XP is only paid for an improvement.
+Shamil's idea, and now the shape of the whole practice game. **Built**
+(2026-08-30): one level per summary paragraph, thin paragraphs merging forward
+(`src/content/levels.js`), locked in order (`src/state/gameLevels.js`), ending
+on an Eindtoets, replayable with XP only paid for an improvement — roughly 950
+levels across the 244 chapters.
 
 Still open, one level up:
 
