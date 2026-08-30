@@ -4,6 +4,10 @@
 h5.sub{font-family:'Cinzel',serif;font-size:1rem;color:var(--accent);margin:1.8rem 0 .8rem}
 .g2{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem;margin-bottom:1rem}
 .g3{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1rem;margin-bottom:1rem}
+/* Grid items default to min-width:auto, so one box with a table or long
+   content can force the whole column wide, dragging every box that shares
+   it off the right edge of the phone screen. */
+.g2>*,.g3>*{min-width:0}
 .box{background:var(--ink2);border:1px solid var(--line);border-radius:16px;padding:1.3rem}
 .box h4{font-family:'Cinzel',serif;font-size:1rem;color:var(--accent);margin-bottom:.7rem}
 .box p{font-size:.88rem}
