@@ -19,7 +19,7 @@
    this file a deploy would go completely unnoticed and no student would ever
    be told about an update. It doubles as the cache generation, which drops the
    previous build's hashed bundles instead of piling them up forever. */
-var APP_VERSION = '2.3.0';
+var APP_VERSION = '2.3.1';
 var CACHE_NAME = 'samenvattingen-' + APP_VERSION;
 
 /* No 'install' handler: there is nothing to pre-cache, and staying in `waiting`

@@ -23,6 +23,9 @@
   .subj:hover,.chapter:hover,.tool.live:hover,.snel:hover{border-color:var(--goud-line)}
   .subj:hover::before,.chapter:hover::before{opacity:0}
   .skip:hover{letter-spacing:.1em}
+  /* Keeps its centring: blanking the transform outright shunted it right,
+     on top of "Overslaan". Only the hover lift is dropped. */
+  .introverder:hover{transform:translateX(-50%)}
 
   .subj:active,.chapter:active,.snel:active,.tool.live:active,.persona-card:active,
   .niv-card:active,.jaar-card:active{transform:scale(.975);filter:brightness(1.06)}
@@ -147,11 +150,17 @@
 
   /* -- dialogs become bottom sheets: reachable with a thumb -- */
   .helpwrap,.zoekwrap,.favwrap,.examenwrap,.nieuwwrap{align-items:flex-end;padding:0}
-  .helpcard{width:100%;max-width:none;max-height:88vh;overflow-y:auto;
+  /* The close button is absolute inside the card, so when the card itself
+     scrolled the X drifted off with the content. Scroll the body instead and
+     the header stays put. */
+  .helpcard{display:flex;flex-direction:column;
+    width:100%;max-width:none;max-height:88vh;overflow:hidden;
     border-radius:20px 20px 0 0;border-bottom:none;
     padding:1.6rem 1.15rem calc(1.2rem + env(safe-area-inset-bottom));
     animation:sheetUp .3s cubic-bezier(.2,.85,.3,1) both}
   .zoekcard,.favcard,.examencard,.nieuwcard{width:100%;max-width:none;max-height:88vh}
+  .helpcard > #helpBody,.helpcard > #nieuwBody,.helpcard > #zoekres,
+  .helpcard > #favlist,.helpcard > #examenBody{overflow-y:auto;min-height:0}
   .helpcard::before{content:'';position:absolute;top:.5rem;left:50%;transform:translateX(-50%);
     width:38px;height:4px;border-radius:100px;background:var(--line)}
   .helpclose{width:38px;height:38px;top:.75rem;right:.75rem}
@@ -173,7 +182,10 @@
      box instead of the viewport. No entrance animation here, so no transform. */
   .radialmenu.show{animation:none}
   .radialmenu.op-home{right:calc(var(--gut) - .15rem + env(safe-area-inset-right) + 2 * (38px + .55rem))}
-  .radialtrigger{top:50%;bottom:auto;left:0;transform:translateY(-50%);
+  /* Centred with a plain offset, not translateY(-50%): the touch block above
+     blanks transform on :hover, and a hover that sticks after a tap then
+     dropped this button half its height. (var(--top-h) - 38px) / 2 = 7px. */
+  .radialtrigger{top:7px;bottom:auto;left:0;transform:none;
     width:38px;height:38px;font-size:1.15rem;box-shadow:none}
   .radialmenu.open .radialtrigger{border-color:var(--goud);color:var(--goud)}
 
