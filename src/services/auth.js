@@ -109,7 +109,7 @@ export function authErrorMessage(err) {
   if (/already registered|already exists|duplicate/i.test(m)) return 'Deze gebruikersnaam bestaat al. Kies een andere.';
   if (/invalid login credentials/i.test(m)) return 'Gebruikersnaam of wachtwoord klopt niet.';
   if (/password should be at least/i.test(m)) return 'Wachtwoord moet minstens ' + PASSWORD_MIN_LENGTH + ' tekens zijn.';
-  if (/user is banned|banned/i.test(m)) return 'Dit account is geblokkeerd. Vraag je docent om hulp.';
+  if (/user is banned|banned/i.test(m)) return 'Dit account is geblokkeerd. Vraag Shamil om hulp.';
   if (/geblokkeerd/i.test(m)) return m;
   if (/networkerror|failed to fetch/i.test(m)) return 'Geen verbinding: controleer je internet.';
   return m || 'Er ging iets mis. Probeer het nog eens.';
@@ -196,7 +196,7 @@ export async function loadProfile() {
     await supabase.auth.signOut();
     session = null;
     profile = null;
-    throw new Error('Dit account is geblokkeerd. Vraag je docent om hulp.');
+    throw new Error('Dit account is geblokkeerd. Vraag Shamil om hulp.');
   }
   profile = toProfile(data);
   return profile;

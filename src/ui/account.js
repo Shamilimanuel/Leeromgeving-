@@ -132,7 +132,7 @@ export async function renderAccount() {
       if (title) title.textContent = 'Log in om te beginnen';
       if (lede) {
         lede.textContent = 'Je hebt een account nodig om de samenvattingen te '
-          + 'gebruiken. Kreeg je een uitnodigingscode van je docent? Maak hieronder je account.';
+          + 'gebruiken. Kreeg je een uitnodigingscode van Shamil? Maak hieronder je account.';
       }
     }
   }
@@ -203,7 +203,7 @@ export async function submitRegistration(e) {
   const code = $('regCode').value;
   const username = $('regNaam').value;
   const password = $('regWw').value;
-  const problem = (auth.normalizeInviteCode(code) ? null : 'Vul de uitnodigingscode van je docent in (8 tekens).')
+  const problem = (auth.normalizeInviteCode(code) ? null : 'Vul de uitnodigingscode van Shamil in (8 tekens).')
     || auth.usernameProblem(username)
     || auth.passwordProblem(password);
   if (problem) {
