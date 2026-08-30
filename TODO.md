@@ -264,6 +264,14 @@ Settled while building it:
   that, flipping `REQUIRE_LOGIN` would fail the suite and a failing test blocks
   the deploy — the switch would not have been flippable.
 
+- [ ] **See a code actually disappear.** `registreren` v2 (2026-08-30) deletes
+      an invite code once it has been used, so the admin list only holds codes
+      that still work. The function was smoke-tested live — it boots, validates
+      and runs its database query — but the *success* path has never run,
+      because that needs a real code and a real registration. Do it with the
+      first code you hand out: register, then check the code is gone from the
+      admin panel and the account exists.
+
 Handing out accounts: invite codes last 14 days
 (`20260829201913_security_and_invites.sql`) and come **20 at a time**
 (`MAX_INVITES_PER_BATCH`), so a whole class is several batches through the
