@@ -73,7 +73,7 @@ export async function requireCaller(req: Request, admin: SupabaseClient): Promis
     .eq('id', userData.user.id)
     .single();
   if (profErr || !profile) throw new HttpError('Geen profiel gevonden.', 403);
-  if (profile.status !== 'actief') throw new HttpError('Dit account is geblokkeerd. Vraag je docent om hulp.', 403);
+  if (profile.status !== 'actief') throw new HttpError('Dit account is geblokkeerd. Vraag Shamil om hulp.', 403);
   return profile as Profile;
 }
 

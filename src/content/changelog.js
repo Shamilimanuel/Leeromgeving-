@@ -22,7 +22,7 @@ export const CHANGELOG = [
     title: 'Inloggen is nu verplicht',
     changes: [
       'Je logt voortaan eerst in, daarna kom je pas op de site. Zo staat je voortgang in je eigen account en niet alleen op dit apparaat.',
-      'Nog geen account? Vraag je docent om een uitnodigingscode. Daarmee maak je er zelf een.',
+      'Nog geen account? Vraag Shamil om een uitnodigingscode. Daarmee maak je er zelf een.',
       'Werk dat je zonder account op dit apparaat deed, blijft gewoon staan.',
     ],
   },
