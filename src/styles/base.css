@@ -26,6 +26,12 @@
 html,body{height:100%;overflow:hidden}
 body{background:radial-gradient(ellipse 100% 60% at 50% -8%, var(--accent-d) 0%, var(--ink) 60%) var(--ink);color:var(--txt);font-family:'DM Sans',sans-serif;font-size:15px;line-height:1.65;transition:background 1s ease}
 button{font-family:inherit;cursor:pointer}
+/* Nothing styled links, so they fell back to the browser's dark blue -- barely
+   readable on the dark ground, and "Maak hier je account" on the login screen
+   is the first link a new student meets. The underline stays: colour alone
+   should not be what marks a link. */
+a{color:var(--goud);text-underline-offset:2px}
+a:hover{color:var(--txt)}
 :focus-visible{outline:2px solid var(--goud);outline-offset:3px;border-radius:6px}
 
 .aurora{position:fixed;inset:0;z-index:0;overflow:hidden;pointer-events:none}

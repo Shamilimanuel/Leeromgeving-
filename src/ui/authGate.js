@@ -34,6 +34,12 @@ function signedIn() {
   return auth.isSignedIn() || auth.hasSession();
 }
 
+/* True while the gate is holding a student at the login screen. Chrome the
+   student cannot use yet -- the tools menu, for one -- hides on this. */
+export function isLockedOut() {
+  return REQUIRE_LOGIN && !signedIn();
+}
+
 /* Installs the gate and decides the screen the app opens on. Returns the
    screen it settled on, which the tests assert against. */
 export async function initAuthGate() {

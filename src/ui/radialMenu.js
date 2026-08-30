@@ -1,6 +1,7 @@
 /* The fold-out menu in the bottom-left corner that bundles all the loose tool buttons. */
 import { $ } from '../lib/dom.js';
 import { onEnter, SCREENS } from './navigation.js';
+import { isLockedOut } from './authGate.js';
 
 function setExpanded(open) {
   const trigger = $('radialtrigger');
@@ -36,14 +37,17 @@ export function initRadialMenu() {
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') closeRadialMenu();
   });
-  // The menu is hidden on the splash screen and shown everywhere else.
+  /* Hidden on the splash, and hidden at the login screen: Zoeken, Oefentoets
+     and the rest are no use to someone who has not signed in yet, and the
+     menu was the one way past the gate into them. */
   onEnter((id) => {
     const menu = $('radialmenu');
     if (!menu) return;
-    menu.classList.toggle('show', id !== SCREENS.splash);
+    const hide = id === SCREENS.splash || isLockedOut();
+    menu.classList.toggle('show', !hide);
     // Home is the only screen with the bell and account buttons, so the
     // trigger has to sit further left there (see src/styles/mobile.css).
     menu.classList.toggle('op-home', id === SCREENS.home);
-    if (id === SCREENS.splash) closeRadialMenu();
+    if (hide) closeRadialMenu();
   });
 }
