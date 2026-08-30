@@ -84,6 +84,21 @@ export async function pullMyLevels() {
   }
 }
 
+/* Admin: every student's results for ONE chapter, for the class overview.
+
+   Scoped to a chapter on purpose. Asking for the whole table would run into
+   PostgREST's default 1000-row ceiling, and a silently truncated answer is
+   worse than none here: a teacher would read "nobody did paragraph 5" off a
+   page that simply stopped early. One chapter is students x levels, so a class
+   stays far inside the limit. */
+export async function classResultsForChapter(chapterKey) {
+  const { data, error } = await supabase.from(TABLE)
+    .select('gebruiker_id, level, beste, totaal, xp')
+    .eq('hoofdstuk', chapterKey);
+  if (error) throw new Error('De voortgang van de klas kon niet worden opgehaald.');
+  return data || [];
+}
+
 /* Admin: every level result of one student, newest first.
    Allowed by the "spelvoortgang lezen" policy, which lets an admin read all. */
 export async function levelsForStudent(studentId) {

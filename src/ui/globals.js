@@ -39,6 +39,7 @@ import {
 import {
   adminToggleProgress, adminClearLevelProgress, adminClearChapterProgress, adminClearAllProgress,
 } from './adminProgress.js';
+import { adminClassPickSubject, adminClassPickChapter } from './adminClass.js';
 import {
   submitUsernameChange, submitPasswordChange,
   settingsCycleTextSize, settingsToggleDyslexia, settingsResetProgress,
@@ -71,6 +72,7 @@ export const globalHandlers = {
   adminCreateInvites, adminDeleteInvite, adminCopyInvite,
   adminClearChat, adminCleanUpInvites, adminClearStudentMessages,
   adminToggleProgress, adminClearLevelProgress, adminClearChapterProgress, adminClearAllProgress,
+  adminClassPickSubject, adminClassPickChapter,
   submitUsernameChange, submitPasswordChange,
   settingsCycleTextSize, settingsToggleDyslexia, settingsResetProgress,
   settingsClearOwnMessages, settingsLogoutEverywhere, submitAccountDeletion,

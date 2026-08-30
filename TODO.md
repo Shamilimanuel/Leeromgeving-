@@ -185,11 +185,17 @@ ignores RLS**. `spelvoortgang` got that by default and it was revoked in
 `20260829225221`. Check `information_schema.role_table_grants` after every new
 table.
 
-Still open here:
+Built 2026-08-30: **the class overview** (`src/ui/adminClass.js`). Pick a
+subject and a chapter and it shows, per paragraph, how many pupils finished it,
+how the class scored together, and by name who has not done it yet — the view a
+teacher wants before a test. One chapter at a time on purpose: the whole
+`spelvoortgang` table would hit PostgREST's 1000-row ceiling, and a silently
+truncated answer would read as "nobody did paragraph 5". The arithmetic is a
+pure function (`summariseClass`) with `tests/adminClass.test.js` on it, because
+a wrong count here is worse than no count. Admins are left out of the class, so
+an admin playing a level does not show up as a pupil who is behind.
 
-- [ ] A class overview: results per paragraph across *all* students at once,
-      rather than one student at a time. That is the view a teacher actually
-      wants before a test.
+Still open here:
 - [ ] The three `is_admin` / `is_actief` / `mag_chatten` advisor warnings are
       by design — the RLS policies call them — but they are worth a note so
       nobody "fixes" them by revoking EXECUTE and breaking every policy.

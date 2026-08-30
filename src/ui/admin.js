@@ -8,6 +8,7 @@ import { MAX_INVITES_PER_BATCH } from '../config.js';
 import * as auth from '../services/auth.js';
 import { countMessages } from '../services/chat.js';
 import { resetProgressPanel } from './adminProgress.js';
+import { classOverviewHtml } from './adminClass.js';
 import { showToast } from './toast.js';
 
 let studentsById = {};
@@ -33,7 +34,11 @@ export async function renderAdmin() {
     const [invites, students, messages] = await Promise.all([
       auth.listInviteCodes(), auth.listStudents(), countMessages().catch(() => 0),
     ]);
+    /* The class overview only counts students, not admins: an admin account
+       playing a level would otherwise show up as a pupil who is behind. */
+    const pupils = students.filter((s) => s.role !== auth.ROLE.admin && s.status === auth.STATUS.active);
     wrap.innerHTML = statsHtml(invites, students, messages)
+      + classOverviewHtml(pupils)
       + invitesHtml(invites) + studentsHtml(students);
   } catch (err) {
     wrap.innerHTML = warningBox(auth.authErrorMessage(err));

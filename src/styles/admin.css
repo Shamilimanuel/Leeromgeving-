@@ -44,3 +44,37 @@
 .admpad-xp{font-size:.75rem;color:var(--mut);min-width:64px}
 .admpad-level .bt{padding:.28rem .75rem;font-size:.7rem}
 @media (max-width:560px){.admpad-naam{min-width:100%}}
+
+/* class overview: one chapter, every pupil, paragraph by paragraph */
+.klas-kiezer{gap:.6rem;flex-wrap:wrap}
+.klas-select{flex:1 1 190px;min-width:0;padding:.55rem .8rem;font-size:.85rem}
+.klas{margin-top:1rem;border-top:1px solid var(--line);padding-top:.9rem}
+.klas-kop{display:flex;align-items:baseline;gap:.7rem;flex-wrap:wrap;margin-bottom:.8rem;font-size:.9rem}
+.klas-kop .dim{font-size:.75rem}
+.klas-rij{border:1px solid var(--line);border-radius:12px;padding:.6rem .85rem;margin-bottom:.6rem}
+.klas-naam{display:flex;align-items:baseline;gap:.5rem;flex-wrap:wrap;font-size:.84rem}
+.klas-naam .dim{font-size:.74rem}
+.klas-cijfers{display:flex;align-items:baseline;gap:.8rem;margin-top:.25rem}
+.klas-aantal{font-size:.78rem;color:var(--mut)}
+.klas-score{font-family:'Cinzel',serif;font-weight:600;font-size:.95rem;margin-left:auto}
+.klas-score.goed{color:#7cd992}
+.klas-score.matig{color:var(--accent)}
+.klas-score.zwak{color:#ef8a8a}
+/* How much of the class got there, at a glance. */
+.klas-balk{height:5px;border-radius:100px;background:var(--ink3);overflow:hidden;margin:.45rem 0 .4rem}
+.klas-balk i{display:block;height:100%;border-radius:100px;
+  background:linear-gradient(90deg,var(--goud-d),var(--goud))}
+.klas-mist{font-size:.74rem;line-height:1.5}
+.klas-af{color:#7cd992}
+body.licht-modus .klas-balk{background:rgba(0,0,0,.08)}
+
+/* The score colours are tuned for the dark ground; on the light one they wash
+   out. Same darker set theme.css already uses for right/wrong answers. This
+   covers the per-student table too, which had the same problem. */
+body.licht-modus .klas-score.goed,
+body.licht-modus .klas-af,
+body.licht-modus .admpad-score.goed{color:#1f6b3a}
+body.licht-modus .klas-score.zwak,
+body.licht-modus .admpad-score.zwak{color:#a92323}
+body.licht-modus .klas-score.matig,
+body.licht-modus .admpad-score.matig{color:#8a6d1f}
