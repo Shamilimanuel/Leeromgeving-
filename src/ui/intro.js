@@ -20,6 +20,21 @@ export function advanceIntro() {
   }
 }
 
+/* Plays the welcome from the first stage again. With mandatory login the
+   splash is only reached after signing in, by which time the timer started at
+   boot has already run through the stages behind the login screen. */
+export function resetIntro() {
+  clearTimeout(timer);
+  stage = 0;
+  STAGES.forEach((id, at) => {
+    const el = $(id);
+    if (el) el.classList.toggle('hide', at !== 0);
+  });
+  const nextButton = $('introVerder');
+  if (nextButton) nextButton.style.display = '';
+  timer = setTimeout(advanceIntro, STAGE_DURATIONS_MS[0]);
+}
+
 export function initIntro() {
   timer = setTimeout(advanceIntro, STAGE_DURATIONS_MS[0]);
 }

@@ -146,7 +146,9 @@
         <h3 style="margin-top:0">Inloggen</h3>
         <form onsubmit="submitLogin(event)">
           <input class="veld" id="inlogNaam" type="text" placeholder="Gebruikersnaam" autocomplete="username" required style="margin-bottom:.6rem">
-          <input class="veld" id="inlogWw" type="password" placeholder="Wachtwoord" autocomplete="current-password" required style="margin-bottom:.9rem">
+          <input class="veld" id="inlogWw" type="password" placeholder="Wachtwoord" autocomplete="current-password" required style="margin-bottom:.7rem">
+          <label class="blijfin"><input type="checkbox" id="inlogBlijf"> Blijf ingelogd op dit apparaat</label>
+          <p class="dim blijfuitleg">Doe dit niet op een computer van school die je met anderen deelt.</p>
           <button class="bt" type="submit">Inloggen</button>
         </form>
       </div>
@@ -157,7 +159,9 @@
         <form onsubmit="submitRegistration(event)">
           <input class="veld" id="regCode" type="text" placeholder="Uitnodigingscode (bijv. ABCD-EFGH)" autocomplete="one-time-code" autocapitalize="characters" spellcheck="false" required minlength="8" maxlength="9" style="margin-bottom:.6rem">
           <input class="veld" id="regNaam" type="text" placeholder="Kies een gebruikersnaam (3-20 letters of cijfers)" autocomplete="username" autocapitalize="none" spellcheck="false" required minlength="3" maxlength="20" pattern="[A-Za-z0-9]{3,20}" style="margin-bottom:.6rem">
-          <input class="veld" id="regWw" type="password" placeholder="Kies een wachtwoord (min. 8 tekens)" autocomplete="new-password" required minlength="8" style="margin-bottom:.9rem">
+          <input class="veld" id="regWw" type="password" placeholder="Kies een wachtwoord (min. 8 tekens)" autocomplete="new-password" required minlength="8" style="margin-bottom:.7rem">
+          <label class="blijfin"><input type="checkbox" id="regBlijf"> Blijf ingelogd op dit apparaat</label>
+          <p class="dim blijfuitleg">Doe dit niet op een computer van school die je met anderen deelt.</p>
           <button class="bt gh" type="submit">Account aanmaken</button>
         </form>
       </div>

@@ -23,6 +23,7 @@ import { renderCharacterCards } from './ui/character.js';
 import { renderSettings } from './ui/settings.js';
 import { renderAdmin } from './ui/admin.js';
 import { registerServiceWorker } from './ui/serviceWorker.js';
+import { initAuthGate } from './ui/authGate.js';
 
 registerScreen(SCREENS.level, renderLevel);
 registerScreen(SCREENS.book, renderBook);
@@ -48,3 +49,6 @@ initCardSpotlight();
 renderSubjectGrid();
 initIntro();
 registerServiceWorker();
+/* Last: closes the site to guests when REQUIRE_LOGIN is on, and decides
+   whether the app opens on the welcome or on the login screen. */
+initAuthGate();

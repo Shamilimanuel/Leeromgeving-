@@ -5,6 +5,16 @@ import * as auth from '../services/auth.js';
 import { go, SCREENS } from './navigation.js';
 import { syncAllLevels, pullMyLevels } from '../services/gameProgress.js';
 import { showToast } from './toast.js';
+import { isGateEnabled } from './authGate.js';
+import { resetIntro } from './intro.js';
+import { setRememberSession, isRememberingSession } from '../lib/supabase.js';
+
+/* Where the session is stored is decided before signing in, because the
+   sign-in itself is what writes it. See src/lib/supabase.js. */
+function applyRememberChoice(checkboxId) {
+  const box = $(checkboxId);
+  setRememberSession(!!(box && box.checked));
+}
 
 function roleLabel(profile) {
   return profile.role === auth.ROLE.admin ? 'Beheerder' : 'Leerling';
@@ -116,8 +126,40 @@ export async function renderAccount() {
     if (title) title.textContent = 'Inloggen';
     if (lede) lede.style.display = '';
     if (crumb) crumb.textContent = 'Inloggen';
+    /* With mandatory login there is no way past this screen, so the copy must
+       not keep promising that an account is optional. */
+    if (isGateEnabled()) {
+      if (title) title.textContent = 'Log in om te beginnen';
+      if (lede) {
+        lede.textContent = 'Je hebt een account nodig om de samenvattingen te '
+          + 'gebruiken. Kreeg je een uitnodigingscode van je docent? Maak hieronder je account.';
+      }
+    }
   }
+  toggleGuestExits();
+  showRememberChoice();
   refreshAccountButton();
+}
+
+/* Start from the choice already stored, so a student whose remembered session
+   expired does not silently get the opposite of what they picked last time.
+   Signing out clears it, so a shared computer starts unticked. */
+function showRememberChoice() {
+  const on = isRememberingSession();
+  ['inlogBlijf', 'regBlijf'].forEach((id) => {
+    const box = $(id);
+    if (box) box.checked = on;
+  });
+}
+
+/* The account screen's top bar offers a way back to the subject overview.
+   Behind the gate that goes nowhere -- `go()` sends a signed-out student
+   straight back here -- so the buttons are hidden rather than left to fail. */
+function toggleGuestExits() {
+  const locked = isGateEnabled() && !auth.getProfile() && !auth.hasSession();
+  document.querySelectorAll('#account .homebtn, #account .back').forEach((el) => {
+    el.style.display = locked ? 'none' : '';
+  });
 }
 
 export async function submitLogin(e) {
@@ -126,13 +168,23 @@ export async function submitLogin(e) {
   const password = $('inlogWw').value;
   setHtml('accountMelding', infoBox('Bezig met inloggen…'));
   try {
+    applyRememberChoice('inlogBlijf');
     await auth.login(username, password);
     setHtml('accountMelding', '');
-    renderAccount();
+    await renderAccount();
     syncPathProgress();
+    enterAfterLogin();
   } catch (err) {
     setHtml('accountMelding', warningBox(auth.authErrorMessage(err)));
   }
+}
+
+/* Behind the gate the welcome is what a student sees first after signing in;
+   without it they stay on their profile, as they always did. */
+function enterAfterLogin() {
+  if (!isGateEnabled()) return;
+  resetIntro();
+  go(SCREENS.splash);
 }
 
 /* Shows the registration form (hidden by default so the sign-in form stays
@@ -160,10 +212,13 @@ export async function submitRegistration(e) {
   }
   setHtml('accountMelding', infoBox('Account wordt aangemaakt…'));
   try {
+    applyRememberChoice('regBlijf');
     await auth.register(code, username, password);
     setHtml('accountMelding', '<div class="call reken">Account aangemaakt! Je bent nu ingelogd.</div>');
     await new Promise((resolve) => setTimeout(resolve, 400));
-    renderAccount();
+    await renderAccount();
+    syncPathProgress();
+    enterAfterLogin();
   } catch (err) {
     setHtml('accountMelding', warningBox(auth.authErrorMessage(err)));
   }

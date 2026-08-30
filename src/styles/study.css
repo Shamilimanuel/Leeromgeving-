@@ -201,3 +201,9 @@ body.spel-open{overflow:hidden}
   background:var(--ink2);color:var(--txt);font-family:'DM Sans';font-size:.95rem;box-sizing:border-box}
 .veld:focus{outline:none;border-color:var(--accent)}
 body.licht-modus .veld{background:#fff}
+
+/* "Blijf ingelogd": the whole row is the tap target, not just the 13px box. */
+.blijfin{display:flex;align-items:center;gap:.6rem;min-height:44px;cursor:pointer;
+  font-size:.85rem;color:var(--txt)}
+.blijfin input{width:18px;height:18px;flex:none;accent-color:var(--accent);cursor:pointer}
+.blijfuitleg{margin:0 0 .9rem;font-size:.75rem}

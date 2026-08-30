@@ -36,6 +36,18 @@ beforeAll(async () => {
   Object.defineProperty(window, 'localStorage', { value: memoryStorage, configurable: true });
 
   await import('../src/main.js');
+
+  // Let the boot settle: the mandatory-login gate reads the stored session
+  // asynchronously and may navigate when it resolves.
+  await new Promise((resolve) => setTimeout(resolve, 50));
+
+  // This walkthrough is about content navigation, not accounts. Switching
+  // REQUIRE_LOGIN on would otherwise hold this signed-out walkthrough at the
+  // login screen and, because a failing test blocks the deploy, make the
+  // switch unflippable. The gate itself is covered by tests/authGate.test.js.
+  const { setNavigationGate, go } = await import('../src/ui/navigation.js');
+  setNavigationGate((id) => id);
+  go('home');
 });
 
 describe('application boot', () => {
@@ -281,6 +293,20 @@ describe('overlays', () => {
     window.go('personage');
     expect(document.querySelectorAll('#personageGrid .persona-card').length).toBeGreaterThan(5);
     expect(document.getElementById('streakBadge').textContent).toContain('1 dag');
+  });
+
+  /* src/ui/account.js reads these by id, so a rename in index.html would
+     silently drop the choice and sign every student out on closing the app. */
+  it('offers "blijf ingelogd" on the sign-in form, unticked', () => {
+    const box = document.getElementById('inlogBlijf');
+    expect(box).toBeTruthy();
+    expect(box.checked).toBe(false);
+    expect(box.closest('label').textContent).toContain('Blijf ingelogd op dit apparaat');
+    expect(document.getElementById('regBlijf')).toBeTruthy();
+  });
+
+  it('warns against using it on a shared school computer', () => {
+    expect(document.querySelector('.blijfuitleg').textContent).toContain('school');
   });
 
   it('remembers display preferences', () => {

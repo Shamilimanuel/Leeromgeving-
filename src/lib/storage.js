@@ -17,6 +17,7 @@ export const STORAGE_KEYS = {
   pomodoroDuration: 'pomodoroDuur',
   gameLevels: 'spellevels',
   lastSeenVersion: 'gezienVersie',
+  rememberSession: 'blijfIngelogd',
 };
 
 export function readJson(key, fallback) {

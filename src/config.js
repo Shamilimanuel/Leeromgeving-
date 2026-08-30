@@ -21,6 +21,17 @@ export const EDGE_FUNCTIONS = {
   register: 'registreren',
 };
 
+/* Mandatory login. When true, the site is closed to guests: a student has to
+   sign in before anything -- including the splash -- is shown.
+
+   Kept OFF until every student actually has an account, because the site has
+   no public sign-up: registering needs an invite code from an admin
+   (`registreren`). Switching this on before the codes are handed out locks
+   everyone out of their own study material. Flip it to `true` (or build with
+   VITE_REQUIRE_LOGIN=1) once the accounts exist. */
+export const REQUIRE_LOGIN =
+  import.meta.env.VITE_REQUIRE_LOGIN === '1' || false;
+
 /* Supabase Auth is e-mail based; usernames are mapped to a synthetic address
    on this domain. Students never see it. */
 export const SYNTHETIC_EMAIL_DOMAIN = 'leerling.schoolproject.local';
