@@ -13,9 +13,18 @@
    The entries are Dutch because students read them. Keep the lines short and
    concrete: what can you do now that you could not do yesterday? */
 
-export const APP_VERSION = '2.3.1';
+export const APP_VERSION = '2.3.2';
 
 export const CHANGELOG = [
+  {
+    version: '2.3.2',
+    date: '2026-08-30',
+    title: 'Samenvattingen passen weer op je scherm',
+    changes: [
+      'In sommige samenvattingen viel de tekst rechts van het scherm af. Nu loopt hij netjes door op de volgende regel.',
+      'De tekentjes in de knoppen en de tips zien er op elke telefoon hetzelfde uit.',
+    ],
+  },
   {
     version: '2.3.1',
     date: '2026-08-30',
