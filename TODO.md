@@ -11,30 +11,11 @@ else · `[?]` needs a decision before it can be built.
 
 ---
 
-## 1. Small and concrete
-
-- [ ] **Set the minimum password length in Supabase.**
-      [Auth → Providers → Email](https://supabase.com/dashboard/project/vgmhcsycjwyxofunlcly/auth/providers?provider=Email).
-      Check your own password is already long enough *first*: existing users
-      whose password is below the new minimum get an `AuthWeakPasswordError` on
-      sign-in, and `src/services/auth.js` (`login`) throws on it, which reads as
-      a failed login.
-- [?] **If that minimum ends up above 8, align the code.** The number 8 is
-      hardcoded in four places and would then be wrong:
-      `src/config.js` (`PASSWORD_MIN_LENGTH`),
-      `supabase/functions/_shared/helpers.ts` (`PASSWORD_MIN`),
-      and twice in `index.html` (`minlength="8"` plus the Dutch text
-      "min. 8 tekens").
-- [ ] **Click through the new admin actions once.** `chat_legen`,
-      `leerling_berichten_wissen` and `codes_opruimen` are deployed
-      (`admin-acties` v9) and the function boots, but the authenticated paths
-      have never actually run. "Chat leegmaken" deletes real rows.
-
-## 2. Security
+## 1. Security
 
 - [?] **`chat_namen` is flagged SECURITY DEFINER by the Supabase advisor.**
       This is deliberate and, as it stands, **not a vulnerability** — see
-      section 6 for the reasoning and the options. Decide whether to keep it,
+      section 5 for the reasoning and the options. Decide whether to keep it,
       narrow it, or accept the warning permanently.
 - [ ] **Edge Functions send `Access-Control-Allow-Origin: *`.**
       (`supabase/functions/_shared/helpers.ts`, `CORS_HEADERS`.) Low risk,
@@ -44,7 +25,7 @@ else · `[?]` needs a decision before it can be built.
 - [—] **Leaked password protection** — Pro plan only. Cannot be enabled on the
       free plan; the advisor will keep flagging it. No action possible.
 
-## 3. Lost in the "Revamped shit" restructure (`316a68c`)
+## 2. Lost in the "Revamped shit" restructure (`316a68c`)
 
 Both features were finished and committed at the time, and the handoff document
 still lists them as done — but they are not in the current code.
@@ -56,16 +37,16 @@ still lists them as done — but they are not in the current code.
       played it. Confirm by hand, then delete `origin/matchspel`.
 - [!] **Voorlezen (text-to-speech)** — `uiterlijk/voorlezen.js` was deleted by
       the revamp, and the `voorlezen` Edge Function has since been removed from
-      Supabase too. Also blocked independently (see section 5).
+      Supabase too. Also blocked independently (see Fase 4 in section 3).
 
-## 4. Teamproject phases
+## 3. Teamproject phases
 
 - **Fase 1 — Teamchat + mute** — done and live.
 - [~] **Fase 2 — the practice game.** One Duolingo-style game, not a menu of
       separate ones. The "Oefenspel" tab shows a **path of levels** per chapter
       (`src/ui/path.js`); tapping a level opens a **full-screen session**
       (`src/ui/game.js`) of eight mixed exercises. Finishing pays XP, turns the
-      node green with a check and unlocks the next level. See section 5. Nine
+      node green with a check and unlocks the next level. See section 4. Nine
       exercise kinds are built — verbind, typ, kies, volgorde, vul het gat in,
       sorteer, quizvraag, waar of niet waar, welke hoort er niet bij — covered
       by `tests/exercises.test.js`.
@@ -84,7 +65,7 @@ still lists them as done — but they are not in the current code.
         was wrong instead of only marking it. Needs a paid API key too, possibly
         the same one.
 
-## 5. Duolingo-style path
+## 4. Duolingo-style path
 
 Shamil's idea, and now the shape of the whole practice game. **Built**
 (2026-08-30): one level per summary paragraph, thin paragraphs merging forward
@@ -120,7 +101,7 @@ Relevant current code (the handoff doc still points at the pre-revamp paths):
 | `uiterlijk/style.css` | `src/styles/*.css` |
 | `uiterlijk/auth.js` | `src/services/auth.js`, `src/lib/supabase.js` |
 
-## 6. On the `chat_namen` advisor warning
+## 5. On the `chat_namen` advisor warning
 
 Kept here so the reasoning is not lost.
 
@@ -158,7 +139,7 @@ students who never posted. For a shared class chat that is arguably the point.
       row-level, not column-level, so they would get `status` and `gemute` too.
       **Worse than what we have.**
 
-## 7. On the typing exercise's answer check
+## 6. On the typing exercise's answer check
 
 Kept here because the rule is easy to "simplify" back into a bug.
 
@@ -176,7 +157,7 @@ in-/uitwendige prikkel, minimum-/maximumtemperatuur. Those are exactly the
 pairs a test asks about, so forgiving them would confirm the mix-up. With the
 guard: 0 such pairs, and all 5605 terms still accept their own spelling.
 
-## 8. Admin: results per paragraph
+## 7. Admin: results per paragraph
 
 Built 2026-08-30. In the admin panel each student row has a **Voortgang**
 button that opens their practice path: every chapter they played, every level
@@ -213,7 +194,7 @@ Still open here:
       by design — the RLS policies call them — but they are worth a note so
       nobody "fixes" them by revoking EXECUTE and breaking every policy.
 
-## 9. Content backlog
+## 8. Content backlog
 
 - [!] **Engels TL — Deel B** — waiting on scans. TL1 was scanned twice and both
       times turned out to be Deel A; a third attempt is needed. TL2, TL3 and TL4
@@ -228,7 +209,7 @@ Still open here:
       again. The subject-specific ideas were lost when that session was
       summarised, and steps 1 and 2 are already done.
 
-## 10. Smaller ideas, not started
+## 9. Smaller ideas, not started
 
 - [ ] Badge "N kaarten wachten vandaag" on the book overview — the Leitner due
       count is only visible once you are already inside a chapter.
@@ -239,10 +220,10 @@ Still open here:
 - [ ] Radial menu on very narrow screens (<360px) — tested at 375px and 420px,
       never on anything smaller. Largely superseded on phones: at <=560px the
       menu is no longer an arc in the corner but a panel that slides in from
-      the right (section 11), so the arc geometry only has to hold up on
+      the right (section 10), so the arc geometry only has to hold up on
       tablets and desktops now.
 
-## 11. Mobile, the installed app, and mandatory login
+## 10. Mobile, the installed app, and mandatory login
 
 ### Mandatory login
 
@@ -253,10 +234,11 @@ only ever reaches the account screen, the splash included — signing in comes
 *before* the welcome, which is Shamil's call. Scope is everywhere, not phones
 only. `screenFor()` is a pure function, covered by `tests/authGate.test.js`.
 
-> **The site is shut to everyone without an account.** It went live with **one**
-> profile (the admin) and **zero** invite codes — Shamil's call, made knowing
-> that. Until codes are handed out, only admins can get in. The fastest way to
-> open it back up is a build with `VITE_REQUIRE_LOGIN=0`; no code change needed.
+> **The site is closed to anyone without an account, and that is the intention**
+> (Shamil, 2026-08-30). Accounts are handed out deliberately rather than the
+> site being open to all; a student without one cannot get in at all, because
+> there is no public sign-up. To open it back up, build with
+> `VITE_REQUIRE_LOGIN=0` — no code change needed.
 
 Settled while building it:
 
@@ -268,32 +250,25 @@ Settled while building it:
   student to sign in inherits whatever the previous guest left behind.
 - **Offline students are not locked out.** The gate accepts a stored session on
   its own (`auth.hasSession()`), because `ensureProfile()` needs the network.
+- **The session no longer dies with the tab** (2.4.0). It used to live in
+  `sessionStorage` only — deliberate, for shared school computers — which with
+  mandatory login would have meant signing in *every single time* the app was
+  opened. `src/lib/supabase.js` now routes it to localStorage or sessionStorage
+  depending on a "Blijf ingelogd op dit apparaat" checkbox, unticked by default
+  and cleared on sign-out. Reads fall back to the other store and writes keep
+  one copy, so no session is left behind in the store no longer in use;
+  `tests/rememberSession.test.js` covers exactly that. (An earlier version of
+  this document claimed the session was already in localStorage. It never was.)
 - **`tests/app.test.js` no longer depends on the switch.** It clears the gate
   after boot, since that walkthrough is about content, not accounts. Without
   that, flipping `REQUIRE_LOGIN` would fail the suite and a failing test blocks
   the deploy — the switch would not have been flippable.
 
-Now urgent, because the gate is live:
+Handing out accounts: invite codes last 14 days
+(`20260829201913_security_and_invites.sql`) and come **20 at a time**
+(`MAX_INVITES_PER_BATCH`), so a whole class is several batches through the
+admin panel.
 
-- [!] **Every student still needs an account.** The database holds one profile
-      (the admin) and zero invite codes, so right now no student can get in at
-      all. Shamil's plan (2026-08-30) is to create accounts for the whole class
-      with the school — usernames, passwords and codes, valid for about a week.
-      Codes last 14 days by default
-      (`20260829201913_security_and_invites.sql`) but come **20 at a time**
-      (`MAX_INVITES_PER_BATCH`), so a full class is several batches through the
-      admin panel.
-- [x] **~~The session dies with the tab.~~** Solved 2026-08-30 (2.4.0). The
-      session used to live in `sessionStorage` only — deliberate, for shared
-      school computers — which with mandatory login would have meant signing in
-      *every single time* the app was opened. `src/lib/supabase.js` now routes
-      the session to localStorage or sessionStorage depending on a "Blijf
-      ingelogd op dit apparaat" checkbox, unticked by default and cleared on
-      sign-out. Reads fall back to the other store and writes keep one copy, so
-      no session is ever left behind in the store that is no longer in use;
-      `tests/rememberSession.test.js` covers exactly that.
-      (An earlier version of this document claimed the session was already in
-      localStorage. It never was.)
 - [ ] **Retire the guest states** once the switch is permanently on: `chatGast`
       (`src/ui/chat.js`), `settingsGast` (`src/ui/settings.js`) and the `.gast`
       avatar with its "Niet ingelogd" dropdown (`src/ui/account.js`). They are
@@ -317,7 +292,7 @@ Now urgent, because the gate is live:
       `user.github.io/repo` sub-path cannot host the `assetlinks.json` that
       proves ownership.
 
-## 12. Done recently
+## 11. Done recently
 
 - Node installed; the site runs and is deployed to GitHub Pages via
   `.github/workflows/deploy.yml` (a failing test blocks the deploy).
@@ -384,3 +359,15 @@ Now urgent, because the gate is live:
   them. Released as 2.3.1.
 - Deployed to GitHub Pages (2.3.0, then 2.3.1). Installing from the live HTTPS
   address gives a real app; over plain HTTP Android only offers a snelkoppeling.
+- Mandatory login built and switched on (2.5.0), with "blijf ingelogd op dit
+  apparaat" (2.4.0) so the session can outlive the tab. See section 10.
+- The admin actions were clicked through and work: `chat_legen`,
+  `leerling_berichten_wissen` and `codes_opruimen` had been deployed but never
+  actually run against a signed-in admin. They have now.
+- Password minimum confirmed at 8, matching `PASSWORD_MIN_LENGTH`
+  (`src/config.js`), `PASSWORD_MIN` (`supabase/functions/_shared/helpers.ts`)
+  and the two places in `index.html`. Nothing to align, and no existing account
+  is below it — raising it later would lock out anyone whose password is
+  shorter, including the only admin.
+- Invite codes and the account screen now name Shamil instead of "je docent":
+  he maintains the site and hands out the codes himself.
