@@ -50,6 +50,147 @@
 .prog{flex:1;min-width:110px;height:7px;background:var(--ink3);border-radius:100px;overflow:hidden}
 .prog i{display:block;height:100%;background:var(--accent);width:0;transition:width .35s}
 
+/* oefenspel: the path of levels */
+.pad-kop{margin:1.6rem 0 .4rem;display:flex;align-items:baseline;gap:.8rem;flex-wrap:wrap}
+.pad-kop-tel{font-size:.85rem;color:var(--txt)}
+.pad-kop-xp{margin-left:auto;font-family:'Cinzel',serif;font-size:.9rem;color:var(--accent)}
+.pad-prog{flex-basis:100%;margin-top:.2rem}
+.pad{list-style:none;margin:2rem auto 1rem;padding:0;max-width:420px;position:relative}
+.pad-stap{position:relative;display:flex;align-items:center;gap:1rem;padding:.55rem 0;
+  transform:translateX(var(--lean,0))}
+.pad-stap::before{content:'';position:absolute;left:31px;top:-1.1rem;width:2px;height:1.1rem;background:var(--line)}
+.pad-stap:first-child::before{display:none}
+.pad-knop{flex:none;width:64px;height:64px;border-radius:50%;border:2px solid var(--line);
+  background:var(--ink3);color:var(--mut);font-family:'Cinzel',serif;font-size:1.35rem;
+  display:grid;place-items:center;transition:transform .18s,box-shadow .18s,background .18s;
+  box-shadow:0 4px 0 rgba(0,0,0,.35)}
+.pad-knop:not(:disabled):hover{transform:translateY(-3px);box-shadow:0 7px 0 rgba(0,0,0,.35)}
+.pad-knop:not(:disabled):active{transform:translateY(2px);box-shadow:0 2px 0 rgba(0,0,0,.35)}
+.pad-knop.klaar{background:linear-gradient(160deg,#5fbf7a,#2f7a49);border-color:#7ed69a;color:#06210f}
+.pad-knop.open{background:linear-gradient(160deg,var(--goud),var(--goud-d));border-color:var(--goud);color:#2a1d02}
+.pad-knop.op-slot{opacity:.45;cursor:not-allowed;font-size:1rem}
+.pad-knop.op-slot:hover{transform:none;box-shadow:0 4px 0 rgba(0,0,0,.35)}
+.pad-knop.finale{border-radius:22px}
+.pad-stap.nu .pad-knop{animation:padKlop 2.2s ease-in-out infinite}
+@keyframes padKlop{0%,100%{box-shadow:0 4px 0 rgba(0,0,0,.35),0 0 0 0 rgba(243,215,138,.5)}
+  50%{box-shadow:0 4px 0 rgba(0,0,0,.35),0 0 0 12px rgba(243,215,138,0)}}
+.pad-tekst{min-width:0}
+.pad-tekst b{display:block;font-family:'Cinzel',serif;font-size:.92rem}
+.pad-tekst small{display:block;font-size:.76rem;color:var(--mut);line-height:1.35}
+.pad-score{display:inline-block;margin-top:.15rem;font-size:.7rem;color:#8fd6a2}
+.pad-stap.nu .pad-tekst b{color:var(--goud)}
+.pad-start{margin-left:auto;font-size:.62rem;letter-spacing:.14em;color:var(--goud);
+  border:1px solid var(--goud-line);border-radius:100px;padding:.2rem .6rem}
+.pad-af{text-align:center;font-size:.86rem;color:var(--mut);margin:1.5rem 0 0}
+
+/* oefenspel: the session over the page */
+.spelwrap{position:fixed;inset:0;z-index:240;display:none;background:var(--ink)}
+.spelwrap.show{display:block}
+body.spel-open{overflow:hidden}
+.spelpaneel{height:100%;max-width:720px;margin:0 auto;display:flex;flex-direction:column;padding:0 1.2rem}
+.spelbalk{display:flex;align-items:center;gap:1rem;padding:1.1rem 0 .9rem}
+.spelsluit{flex:none;background:none;border:none;color:var(--mut);font-size:1.7rem;line-height:1;padding:0 .3rem}
+.spelsluit:hover{color:var(--txt)}
+.spelbalk-prog{flex:1;height:12px;border-radius:100px}
+.spelxp{flex:none;font-family:'Cinzel',serif;font-size:.85rem;color:var(--accent)}
+.spelinhoud{flex:1;display:flex;flex-direction:column;overflow-y:auto;padding-bottom:1.2rem}
+.spel-vraag{flex:1}
+.spel-voet{position:sticky;bottom:0;display:flex;gap:.6rem;flex-wrap:wrap;
+  padding:1rem 0;background:linear-gradient(to top,var(--ink) 65%,transparent)}
+.spel-opdracht{font-family:'Cinzel',serif;font-size:1.1rem;margin:.6rem 0 1.1rem}
+.spel-omschrijving{font-size:1.02rem;line-height:1.55;margin:0 0 1.3rem;
+  background:var(--ink2);border:1px solid var(--line);border-radius:14px;padding:1rem 1.1rem}
+
+/* connect exercise: one grid, so a one-line question and a three-line answer
+   share a row and the connecting line runs straight across */
+.spel-veld{position:relative}
+.spel-lijnen{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:2}
+.spel-lijnen line{stroke:#5fbf7a;stroke-width:2.5;stroke-linecap:round}
+.spel-grid{display:grid;grid-template-columns:1fr 1fr;gap:.6rem 2.4rem;align-items:stretch}
+.spel-tegel{display:flex;align-items:center;gap:.6rem;width:100%;text-align:left;
+  background:var(--ink2);border:1.5px solid var(--line);border-radius:12px;padding:.7rem .85rem;
+  color:var(--txt);font-family:'DM Sans';font-size:.84rem;line-height:1.4;
+  transition:.18s;word-break:break-word}
+.spel-tekst{flex:1;min-width:0}
+.spel-stip{flex:none;width:.55rem;height:.55rem;border-radius:50%;background:var(--line);transition:.18s}
+.spel-tegel[data-side="question"] .spel-stip{order:2}
+.spel-tegel:hover:not(:disabled){border-color:var(--accent);box-shadow:0 0 10px rgba(243,215,138,.18)}
+.spel-tegel.geselecteerd{border-color:var(--accent);background:rgba(243,215,138,.1);box-shadow:0 0 12px rgba(243,215,138,.25)}
+.spel-tegel.geselecteerd .spel-stip{background:var(--accent);box-shadow:0 0 0 3px rgba(243,215,138,.2)}
+.spel-tegel.opgelost{background:rgba(95,191,122,.12);border-color:#5fbf7a;color:#8fd6a2;cursor:default;opacity:.9}
+.spel-tegel.opgelost .spel-stip{background:#5fbf7a}
+.spel-tegel.fout{border-color:#e5534b;background:rgba(229,83,75,.12);animation:spelSchud .35s}
+.spel-tegel:disabled{cursor:default}
+@keyframes spelSchud{0%,100%{transform:translateX(0)}25%{transform:translateX(-4px)}75%{transform:translateX(4px)}}
+
+/* typing exercise */
+.spel-veldje{font-size:1rem}
+.spel-veldje:disabled{opacity:.7}
+
+/* multiple choice */
+.spel-keuzes{display:grid;gap:.55rem}
+.spel-keuze{text-align:left;background:var(--ink2);border:1.5px solid var(--line);border-radius:12px;
+  padding:.85rem 1rem;color:var(--txt);font-family:'DM Sans';font-size:.9rem;transition:.18s}
+.spel-keuze:hover:not(:disabled){border-color:var(--accent);transform:translateX(3px)}
+.spel-keuze.goed{background:rgba(124,217,146,.15);border-color:#7cd992;color:#c8f0d2;font-weight:600}
+.spel-keuze.fout{background:rgba(239,138,138,.14);border-color:#ef8a8a;color:#ffc9c9}
+
+/* word order */
+.spel-zin{min-height:3.4rem;display:flex;flex-wrap:wrap;gap:.4rem;align-content:flex-start;
+  border-bottom:2px dashed var(--line);padding:.5rem 0 .8rem;margin-bottom:1.2rem}
+.spel-bank{display:flex;flex-wrap:wrap;gap:.45rem}
+.spel-woord{background:var(--ink2);border:1.5px solid var(--line);border-bottom-width:3px;
+  border-radius:10px;padding:.45rem .75rem;color:var(--txt);font-family:'DM Sans';font-size:.88rem;transition:.14s}
+.spel-woord:hover:not(:disabled){border-color:var(--accent);transform:translateY(-2px)}
+.spel-woord.gekozen{border-color:var(--goud-line)}
+.spel-woord.leeg{opacity:.18;border-style:dashed;color:transparent}
+
+/* sort into paragraphs */
+.spel-chips{margin-bottom:1.2rem}
+.spel-chip{background:var(--ink3);border:1.5px solid var(--line);border-radius:100px;
+  padding:.42rem .85rem;color:var(--txt);font-family:'DM Sans';font-size:.83rem;transition:.16s}
+.spel-chip:hover:not(:disabled){border-color:var(--accent)}
+.spel-chip.geselecteerd{border-color:var(--accent);background:rgba(243,215,138,.14);
+  box-shadow:0 0 10px rgba(243,215,138,.25)}
+.spel-chip.goed{border-color:#5fbf7a;background:rgba(95,191,122,.14);color:#8fd6a2}
+.spel-chip.fout{border-color:#e5534b;background:rgba(229,83,75,.13);color:#ffc9c9}
+.spel-bakken{display:grid;gap:.7rem}
+.spel-bak{background:var(--ink2);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.spel-bak h5{margin:0;padding:.6rem .9rem;font-family:'Cinzel',serif;font-size:.84rem;
+  background:rgba(255,255,255,.03);border-bottom:1px solid var(--line);transition:.16s}
+.spel-bak h5.kan{cursor:pointer;color:var(--accent);border-bottom-color:var(--goud-line)}
+.spel-bak h5.kan:hover{background:rgba(243,215,138,.1)}
+.spel-bak-inhoud{display:flex;flex-wrap:wrap;gap:.4rem;padding:.7rem .9rem;min-height:2.4rem;align-items:center}
+
+/* feedback and the level-finished screen */
+.spel-fb{margin-top:1.1rem;padding:.8rem 1rem;border-radius:12px;font-size:.88rem;line-height:1.5;animation:up .3s ease both}
+.spel-fb.goed{background:rgba(124,217,146,.14);border:1px solid #7cd992;color:#c8f0d2}
+.spel-fb.bijna{background:rgba(243,215,138,.12);border:1px solid var(--accent);color:var(--txt)}
+.spel-fb.fout{background:rgba(239,138,138,.13);border:1px solid #ef8a8a;color:#ffc9c9}
+.spel-gegeven{display:block;margin-top:.35rem;font-size:.8rem;opacity:.85}
+.spel-klaar{text-align:center;padding:3rem 0 1rem;animation:up .45s ease both}
+.spel-vinkje{width:92px;height:92px;margin:0 auto 1.2rem;border-radius:50%;display:grid;place-items:center;
+  font-size:2.6rem;color:#06210f;background:linear-gradient(160deg,#5fbf7a,#2f7a49);
+  box-shadow:0 0 0 10px rgba(95,191,122,.14)}
+.spel-klaar h3{font-family:'Cinzel',serif;font-size:1.5rem;margin:0 0 .2rem}
+.spel-buit{display:flex;justify-content:center;gap:.7rem;margin:1.6rem 0}
+.spel-buit-vak{min-width:88px;background:var(--ink2);border:1px solid var(--goud-line);border-radius:14px;padding:.8rem .6rem}
+.spel-buit-vak b{display:block;font-family:'Cinzel',serif;font-size:1.25rem;color:var(--accent)}
+.spel-buit-vak small{font-size:.66rem;letter-spacing:.1em;color:var(--mut);text-transform:uppercase}
+.spel-verder{padding:.75rem 2.4rem;font-size:.92rem}
+
+@media (max-width:560px){
+  .pad{max-width:100%}
+  .pad-stap{transform:translateX(calc(var(--lean,0) * .5))}
+  .pad-knop{width:56px;height:56px;font-size:1.15rem}
+  .pad-stap::before{left:27px}
+  .spel-grid{gap:.45rem 1.3rem}
+  .spel-tegel{font-size:.78rem;padding:.6rem .6rem}
+  .spel-omschrijving{font-size:.94rem;padding:.85rem}
+  .spelpaneel{padding:0 .9rem}
+}
+@media (prefers-reduced-motion:reduce){.spel-tegel.fout,.pad-stap.nu .pad-knop{animation:none}}
+
 /* glossary */
 .zoek{width:100%;padding:.7rem 1.1rem;border:1px solid var(--line);border-radius:100px;background:var(--ink2);
   color:var(--txt);font-family:'DM Sans';font-size:.9rem;margin:1.6rem 0 1.2rem}

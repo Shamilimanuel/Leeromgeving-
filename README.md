@@ -1,8 +1,9 @@
 # Leeromgeving: Samenvattingen
 
 Study site for Dutch VMBO students: chapter summaries, flashcards with spaced
-repetition, practice quizzes, glossaries, notes, a practice exam and a team
-chat, for every subject, level (Arbeid / BBL / BK / TL) and school year.
+repetition, a Duolingo-style practice game, practice quizzes, glossaries,
+notes, a practice exam and a team chat, for every subject, level
+(Arbeid / BBL / BK / TL) and school year.
 
 The **user interface is in Dutch**; the **code, comments and documentation are
 in English**.
@@ -57,6 +58,7 @@ Leeromgeving/
 │   ├── services/              backend calls: auth (accounts, invite codes, admin), chat
 │   ├── ui/                    one module per screen or feature
 │   └── styles/                CSS split by concern, imported in order by main.css
+│                              (mobile.css is imported last: the phone layer)
 │
 ├── data/<subject>/*.json      raw book JSON (input of the content pipeline)
 ├── scripts/                   Python content pipeline
@@ -100,6 +102,45 @@ level, book, chapter, character cards, account, settings, admin, chat).
 `src/ui/navigation.js` exposes `go(id)`; screens register a render function
 with `registerScreen`, and features hook `onLeave`/`onEnter` for cleanup
 (stop chat polling, show/hide the radial menu, auto-open help).
+
+### The practice game
+
+Each chapter has a **path of levels** on its Oefenspel tab. One level covers one
+summary paragraph: terms and flashcards already store the index of the paragraph
+they belong to, so `src/content/levels.js` can split a chapter without any
+content work. Paragraphs with fewer than six items merge into the next one, and
+a chapter with more than one level ends on an *Eindtoets* drawn from the whole
+chapter.
+
+Tapping a level opens a full-screen session (`src/ui/game.js`) of eight mixed
+exercises — connect, type, multiple choice, word order. Finishing it records the
+level, pays XP and unlocks the next node.
+
+| Module | Responsibility |
+|---|---|
+| `src/content/levels.js` | splits a chapter into levels (pure, no state) |
+| `src/state/gameLevels.js` | which levels are done, locking, XP (localStorage `spellevels`) |
+| `src/ui/path.js` | the path of nodes on the tab |
+| `src/ui/game.js` | the session overlay and the exercises |
+| `src/lib/answers.js` | judging a typed answer |
+| `src/ui/exercises.js` | building the exercises of one session |
+| `src/services/gameProgress.js` | mirroring results to Supabase |
+| `src/ui/adminProgress.js` | the admin's results-per-paragraph screen |
+
+There are nine kinds of exercise: connect, type, multiple choice, word order,
+fill the gap, sort into paragraphs, a chapter quiz question, true/false and odd
+one out. Which ones a level can offer depends on its content, so
+`tests/exercises.test.js` checks that every level of every chapter can still
+fill a session.
+
+XP is only paid for an improvement, so replaying a level cannot be farmed, and
+it is added to the per-subject totals in `src/state/stats.js`.
+
+Results are kept in localStorage and, for a signed-in student, mirrored to the
+`spelvoortgang` table. That is what lets a teacher open **Voortgang** on a
+student in the admin panel and see the score per paragraph, or reset a level.
+Resets go through the `admin-acties` Edge Function; the browser never deletes
+another account's rows.
 
 ## Content
 
@@ -210,6 +251,55 @@ policies, Edge Functions and deployment steps are in [`supabase/README.md`](supa
 
 The `content:*` scripts call `python`; on systems where that is `python3`, run
 the scripts directly (`python3 scripts/check_content.py`).
+
+## Releasing a new version
+
+The site tells students when a new build is ready and what changed in it, the
+way an app store does. Three moving parts:
+
+1. `src/content/changelog.js` holds `APP_VERSION` and the release notes. Add a
+   new entry at the **top** and set `APP_VERSION` to the same number.
+2. Set the same number in `version` in `package.json` **and** in `APP_VERSION`
+   in `public/sw.js`. That third one is not decoration: a browser installs a new
+   service worker only when `sw.js` differs byte-for-byte from the one it has,
+   so a release that leaves it alone ships completely silently. It doubles as
+   the cache generation, so the previous build's bundles are dropped instead of
+   piling up. `tests/changelog.test.js` fails if the three drift apart, so a
+   forgotten bump stops the deploy rather than shipping an invisible update.
+3. Deploy as usual.
+
+What a student then sees:
+
+- **An update is ready.** A deploy replaces `public/sw.js`, the browser installs
+  the new worker and parks it in `waiting`. The worker deliberately does *not*
+  call `skipWaiting()` on install, because activating straight away would swap
+  the code out from under someone in the middle of a quiz. `src/ui/serviceWorker.js`
+  spots the waiting worker and shows the "nieuwe versie klaar" bar; only when
+  the student taps **Vernieuwen** does `src/ui/appUpdate.js` send `SKIP_WAITING`
+  and reload. Dismissing is fine too: the update lands on the next visit. A tab
+  left open re-checks hourly and when it regains focus.
+  Before offering the reload the page asks the waiting worker which build it
+  is. Someone who opens the site fresh after a deploy has already fetched the
+  new code over the network and only the worker is behind, so in that case it
+  is let through quietly rather than being offered a reload that changes
+  nothing.
+- **What changed.** After the reload, the "Wat is er nieuw?" sheet
+  (`src/ui/whatsNew.js`) opens once on the home screen with the entries newer
+  than the last version that student saw (kept in localStorage as
+  `gezienVersie`). Someone visiting for the first time gets the welcome slides
+  instead, never both. It is also in the profile menu and under Instellingen ->
+  Over deze app.
+
+### Putting it in the Play Store
+
+Not done, and not needed for students to install it: the PWA already installs
+from the browser on Android and iOS. If you do want a Play listing, the route
+is a Trusted Web Activity built with Google's Bubblewrap CLI, which needs a
+Play developer account, a custom domain (a `user.github.io/repo` sub-path
+cannot host the `/.well-known/assetlinks.json` that proves ownership) and a
+`.nojekyll` file so Pages serves that dot-directory. Only the shell ships
+through Play; the web content keeps updating through the flow above. iOS has no
+equivalent, as Apple rejects thin web wrappers.
 
 ## Deployment
 

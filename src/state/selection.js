@@ -4,6 +4,7 @@ import { BOOKS, CONTENT, bookKey, chapterKey, parseKey, subjectById, levelById }
 export const TABS = {
   summary: 'summary',
   flashcards: 'flashcards',
+  game: 'game',
   quiz: 'quiz',
   terms: 'terms',
   notes: 'notes',

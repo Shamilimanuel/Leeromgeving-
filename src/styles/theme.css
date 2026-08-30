@@ -63,6 +63,19 @@ body.licht-modus .fc-b strong{color:#bcd0ea}
 body.licht-modus .opt.good{color:#1f6b3a}
 body.licht-modus .opt.bad{color:#a92323}
 body.licht-modus .fb{background:rgba(0,0,0,.045)}
+body.licht-modus .spel-tegel,
+body.licht-modus .spel-keuze,
+body.licht-modus .spel-woord,
+body.licht-modus .spel-omschrijving,
+body.licht-modus .spel-buit-vak,
+body.licht-modus .spel-bak{background:var(--ink2)}
+body.licht-modus .spel-bak h5{background:rgba(0,0,0,.03)}
+body.licht-modus .spelwrap{background:var(--ink)}
+body.licht-modus .spel-voet{background:linear-gradient(to top,var(--ink) 65%,transparent)}
+body.licht-modus .pad-knop.op-slot{background:var(--ink3)}
+body.licht-modus .spel-tegel.opgelost{color:#1f6b3a}
+body.licht-modus .spel-fb.goed{color:#1f6b3a}
+body.licht-modus .spel-fb.fout{color:#a92323}
 body.licht-modus .chapter,
 body.licht-modus .chip,
 body.licht-modus .tool,
@@ -71,6 +84,8 @@ body.licht-modus .call,
 body.licht-modus .box,
 body.licht-modus .term,
 body.licht-modus .examen-hist,
+body.licht-modus .updatebalk,
+body.licht-modus .spel-kaart,
 body.licht-modus .cornell-row textarea,
 body.licht-modus .groot-veld{
   background:var(--ink2);backdrop-filter:none;-webkit-backdrop-filter:none;border-color:var(--line)}

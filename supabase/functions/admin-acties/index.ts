@@ -17,6 +17,10 @@
      verwijderen              { leerlingId }
      chat_legen               {}                           -> { verwijderd }
      leerling_berichten_wissen { leerlingId }              -> { verwijderd }
+     spelvoortgang_wissen     { leerlingId, hoofdstuk?, level? }  -> { verwijderd }
+                              no hoofdstuk: the whole practice path
+                              hoofdstuk only: every level of that chapter
+                              hoofdstuk + level: that one paragraph level
 
    Admins cannot block, mute, delete or reset other admins, and cannot block
    or delete themselves. */
@@ -39,6 +43,8 @@ import {
 } from '../_shared/helpers.ts';
 
 const UUID_RE = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
+/* "biologie|bbl|1|2" — the chapter key the frontend uses throughout. */
+const CHAPTER_KEY_RE = /^[a-z0-9-]{2,30}\|[a-z]{2,10}\|[0-9]{1,2}\|[a-z0-9.-]{1,10}$/i;
 
 serve(async (req) => {
   const admin = serviceClient();
@@ -67,6 +73,8 @@ serve(async (req) => {
       return await clearChat(admin);
     case 'leerling_berichten_wissen':
       return await clearStudentMessages(admin, asString(body.leerlingId));
+    case 'spelvoortgang_wissen':
+      return await clearGameProgress(admin, asString(body.leerlingId), body.hoofdstuk, body.level);
     case 'wachtwoord_resetten':
       return await resetPassword(admin, caller, asString(body.leerlingId));
     case 'status_wijzigen':
@@ -185,6 +193,7 @@ async function deleteStudent(admin: ReturnType<typeof serviceClient>, caller: Pr
   assertStudentTarget(caller, target);
   // Explicit clean-up in case the foreign keys were created without ON DELETE CASCADE.
   await admin.from('chatberichten').delete().eq('gebruiker_id', target.id);
+  await admin.from('spelvoortgang').delete().eq('gebruiker_id', target.id);
   await admin.from('profiles').delete().eq('id', target.id);
   const { error } = await admin.auth.admin.deleteUser(target.id);
   if (error) throw new HttpError('Account kon niet worden verwijderd.', 500);
@@ -210,6 +219,7 @@ async function deleteOwnAccount(admin: ReturnType<typeof serviceClient>, caller:
     }
   }
   await admin.from('chatberichten').delete().eq('gebruiker_id', caller.id);
+  await admin.from('spelvoortgang').delete().eq('gebruiker_id', caller.id);
   await admin.from('profiles').delete().eq('id', caller.id);
   const { error } = await admin.auth.admin.deleteUser(caller.id);
   if (error) throw new HttpError('Account kon niet worden verwijderd.', 500);
@@ -224,6 +234,40 @@ async function clearChat(admin: ReturnType<typeof serviceClient>) {
     .not('id', 'is', null)   // PostgREST refuses an unfiltered delete
     .select('id');
   if (error) throw new HttpError('Chat kon niet worden geleegd.', 500);
+  return json({ ok: true, verwijderd: (data || []).length });
+}
+
+/* Wipe practice-path results: everything, one chapter, or one level of one
+   chapter. Kept here rather than as an RLS delete policy because it is a
+   change to somebody else's data, like every other action in this file. */
+async function clearGameProgress(
+  admin: ReturnType<typeof serviceClient>,
+  id: string,
+  hoofdstuk: unknown,
+  level: unknown,
+) {
+  const target = await loadTarget(admin, id);
+
+  let query = admin.from('spelvoortgang').delete().eq('gebruiker_id', target.id);
+
+  if (hoofdstuk !== undefined && hoofdstuk !== null) {
+    const key = asString(hoofdstuk);
+    if (!CHAPTER_KEY_RE.test(key)) throw new HttpError('Ongeldig hoofdstuk.', 400);
+    query = query.eq('hoofdstuk', key);
+
+    if (level !== undefined && level !== null) {
+      if (typeof level !== 'number' || !Number.isInteger(level) || level < 0 || level > 99) {
+        throw new HttpError('Ongeldig level.', 400);
+      }
+      query = query.eq('level', level);
+    }
+  } else if (level !== undefined && level !== null) {
+    // A level number without a chapter would wipe that level in every chapter.
+    throw new HttpError('Geef ook een hoofdstuk op.', 400);
+  }
+
+  const { data, error } = await query.select('level');
+  if (error) throw new HttpError('Voortgang kon niet worden gewist.', 500);
   return json({ ok: true, verwijderd: (data || []).length });
 }
 

@@ -41,6 +41,9 @@ export function initRadialMenu() {
     const menu = $('radialmenu');
     if (!menu) return;
     menu.classList.toggle('show', id !== SCREENS.splash);
+    // Home is the only screen with the bell and account buttons, so the
+    // trigger has to sit further left there (see src/styles/mobile.css).
+    menu.classList.toggle('op-home', id === SCREENS.home);
     if (id === SCREENS.splash) closeRadialMenu();
   });
 }

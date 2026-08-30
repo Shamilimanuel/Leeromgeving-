@@ -4,6 +4,7 @@
    language the quiz and exam results use. */
 import { allProgress, allLeitner, LEITNER_MAX_BOX } from './progress.js';
 import { chapterKeysForSubject } from '../content/queries.js';
+import { gameXpForChapters } from './gameLevels.js';
 
 export const XP_PER_CHAPTER_READ = 25;
 export const XP_PER_CORRECT_ANSWER = 10;
@@ -56,6 +57,8 @@ export function subjectStatistics(subjectId) {
       });
     }
   });
+
+  xp += gameXpForChapters(keys);
 
   const readPct = chapters ? read / chapters : 0;
   const quizAvgPct = quizAttempts ? quizPctSum / quizAttempts : 0;

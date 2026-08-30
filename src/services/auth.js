@@ -290,6 +290,16 @@ export async function clearChat() {
 }
 
 /* Deletes everything one student posted, leaving the account intact. */
+/* Wipes practice-path results of one student: everything, one chapter, or one
+   level of one chapter. */
+export async function clearStudentGameProgress(studentId, chapterKey, level) {
+  const payload = { leerlingId: studentId };
+  if (chapterKey) payload.hoofdstuk = chapterKey;
+  if (chapterKey && level !== undefined && level !== null) payload.level = level;
+  const res = await callAdminFunction('spelvoortgang_wissen', payload);
+  return res.verwijderd || 0;
+}
+
 export async function clearStudentMessages(studentId) {
   const res = await callAdminFunction('leerling_berichten_wissen', { leerlingId: studentId });
   return res.verwijderd || 0;

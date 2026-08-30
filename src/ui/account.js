@@ -3,6 +3,8 @@
 import { $, setHtml, escapeHtml, warningBox, infoBox } from '../lib/dom.js';
 import * as auth from '../services/auth.js';
 import { go, SCREENS } from './navigation.js';
+import { syncAllLevels, pullMyLevels } from '../services/gameProgress.js';
+import { showToast } from './toast.js';
 
 function roleLabel(profile) {
   return profile.role === auth.ROLE.admin ? 'Beheerder' : 'Leerling';
@@ -43,6 +45,7 @@ export async function refreshAccountButton() {
       + '<button onclick="closeProfileMenu();go(\'account\')">\u{1FAAA} Profiel</button>'
       + '<button onclick="closeProfileMenu();go(\'chat\')">\u{1F4AC} Teamchat</button>'
       + '<button onclick="closeProfileMenu();go(\'settings\')">\u{1F6E0}\u{FE0F} Instellingen</button>'
+      + '<button onclick="closeProfileMenu();openWhatsNew()">\u{2728} Wat is er nieuw?</button>'
       + (auth.isAdmin() ? '<button onclick="closeProfileMenu();go(\'admin\')">\u{1F5DD}\u{FE0F} Adminpaneel</button>' : '')
       + '<button class="uitlog" onclick="closeProfileMenu();logout()">\u{1F6AA} Uitloggen</button>';
   } else {
@@ -52,7 +55,8 @@ export async function refreshAccountButton() {
     if (avatar) avatar.textContent = '\u{1F464}';
     if (drop) drop.innerHTML =
       '<div class="naam"><b>Niet ingelogd</b><span>Log in om mee te chatten</span></div>'
-      + '<button onclick="closeProfileMenu();go(\'account\')">\u{1F4DC} Inloggen</button>';
+      + '<button onclick="closeProfileMenu();go(\'account\')">\u{1F4DC} Inloggen</button>'
+      + '<button onclick="closeProfileMenu();openWhatsNew()">\u{2728} Wat is er nieuw?</button>';
   }
 }
 
@@ -63,6 +67,16 @@ export async function logout() {
 }
 
 /* ── Account screen ───────────────────────────────────────────────────── */
+
+/* Reconcile the practice path with the server after signing in: send what was
+   earned while signed out, then take anything earned on another device. */
+async function syncPathProgress() {
+  try {
+    await syncAllLevels();
+    const pulled = await pullMyLevels();
+    if (pulled) showToast('Je voortgang van een ander apparaat is opgehaald.');
+  } catch { /* offline or not signed in: the path keeps working locally */ }
+}
 
 export async function renderAccount() {
   const guest = $('accountGast');
@@ -115,6 +129,7 @@ export async function submitLogin(e) {
     await auth.login(username, password);
     setHtml('accountMelding', '');
     renderAccount();
+    syncPathProgress();
   } catch (err) {
     setHtml('accountMelding', warningBox(auth.authErrorMessage(err)));
   }

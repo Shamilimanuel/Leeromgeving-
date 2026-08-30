@@ -1,0 +1,267 @@
+/* Phone layer: loaded last so it can tighten the desktop spacing and swap in
+   touch-first patterns without editing the shared rules.
+
+   Four parts:
+     1. touch behaviour  -- any device without a real pointer, at any width
+     2. <=720px          -- small tablets / phone in landscape
+     3. <=560px          -- phones; this is where the layout actually changes
+     4. <=380px          -- small phones
+
+   The sticky header, the tab bar and the score bar have to stack exactly, so
+   their heights live in the custom properties below instead of being repeated
+   as magic numbers. */
+
+/* == 1. TOUCH DEVICES ==
+   Hover styles stick after a tap on a touch screen: a card stays lifted and
+   glowing until you tap somewhere else. Replace them with a press effect. */
+@media (hover:none){
+  .subj:hover,.subj:focus-visible,.chapter:hover,.snel:hover,.snel:focus-visible,
+  .tool.live:hover,.bt:hover,.back:hover,.chip:hover,.opt:hover:not(:disabled),
+  .star:hover,.menuicon:hover,.radialtrigger:hover,.homebtn:hover,.avatarbtn:hover,
+  .pad-knop:not(:disabled):hover,.btn-start:hover,.introverder:hover,.skip:hover{
+    transform:none;filter:none}
+  .subj:hover,.chapter:hover,.tool.live:hover,.snel:hover{border-color:var(--goud-line)}
+  .subj:hover::before,.chapter:hover::before{opacity:0}
+  .skip:hover{letter-spacing:.1em}
+
+  .subj:active,.chapter:active,.snel:active,.tool.live:active,.persona-card:active,
+  .niv-card:active,.jaar-card:active{transform:scale(.975);filter:brightness(1.06)}
+  .bt:active,.chip:active,.back:active,.opt:not(:disabled):active,.tab:active{opacity:.72}
+
+  /* No blue flash and no accidental text selection when tapping a card. */
+  *{-webkit-tap-highlight-color:transparent}
+  button,.subj,.chapter,.snel,.opt,.tab,.chip,.pad-knop,.spel-tegel,.fc{
+    user-select:none;-webkit-user-select:none;touch-action:manipulation}
+  /* Summaries stay selectable: students copy sentences into their notes. */
+  .hslide p,.box,.term,.parblok p,.parblok li,.spel-omschrijving{
+    user-select:text;-webkit-user-select:text}
+}
+
+/* == 2. SMALL TABLET / LANDSCAPE PHONE == */
+@media (max-width:720px){
+  .wrap{padding:2rem 1.2rem 5rem}
+  .bookhero{padding:2.6rem 1.2rem 2.2rem}
+  .deel{margin-top:2rem}
+  .subjects{gap:.9rem;margin-top:1.8rem}
+}
+
+/* == 3. PHONE == */
+@media (max-width:560px){
+  :root{
+    --top-h:52px;       /* height of .top-in              */
+    --tabs-h:44px;      /* height of one .tab             */
+    --safe-top:0px;     /* only set in standalone, below  */
+    --gut:1rem;         /* the single horizontal gutter   */
+  }
+
+  /* -- shell -- */
+  .screen{overscroll-behavior:contain;-webkit-overflow-scrolling:touch}
+  .wrap{padding:1.15rem var(--gut) calc(5rem + env(safe-area-inset-bottom))}
+
+  /* The aurora is three 100px blurs over half the screen: the most expensive
+     paint on the page, and barely visible at this size. */
+  .aurora i{filter:blur(60px);opacity:.24}
+  .aurora i:nth-child(3){display:none}
+
+  /* -- top bar -- */
+  .top{padding-top:var(--safe-top)}
+  .top-in{height:var(--top-h);gap:.55rem;
+    padding-left:calc(var(--gut) - .15rem + env(safe-area-inset-left));
+    padding-right:calc(var(--gut) - .15rem + env(safe-area-inset-right))}
+  .brand{font-size:.9rem;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .brand span{display:none}          /* the byline eats the whole bar */
+  .crumb{display:none}               /* the page heading already says where you are */
+  .back{padding:.45rem 1rem;font-size:.78rem;min-height:38px;display:inline-flex;align-items:center}
+  .homebtn,.avatarbtn{width:38px;height:38px}
+  .profiledrop{min-width:220px}
+  .profiledrop button{padding:.7rem .8rem;font-size:.86rem}
+
+  /* -- tabs + score bar: stacked stickies, so the offsets must line up -- */
+  .tabs{top:calc(var(--top-h) + var(--safe-top))}
+  .tabs-in{padding:0 calc(var(--gut) - .4rem);scroll-snap-type:x proximity}
+  .tab{padding:.72rem .8rem;font-size:.8rem;min-height:var(--tabs-h);scroll-snap-align:start}
+  .scorebar{top:calc(var(--top-h) + var(--tabs-h) + var(--safe-top));
+    padding:.7rem .9rem;margin:1.1rem 0 .9rem;gap:.7rem;font-size:.85rem}
+
+  /* -- headings -- */
+  .eyebrow{font-size:.64rem;letter-spacing:.2em;margin-bottom:.4rem}
+  h1.page{font-size:clamp(1.45rem,7vw,1.9rem);line-height:1.22}
+  .lede{font-size:.88rem;margin-top:.45rem}
+  .bookhero{padding:1.9rem var(--gut) 1.5rem}
+  .bookhero::after{inset:8px}
+  .bookhero .tagline{font-size:.86rem}
+  .pill{margin-bottom:.7rem;font-size:.62rem;padding:.24rem .75rem}
+  .deel{margin-top:1.7rem}
+  .deel-head{margin-bottom:.75rem;gap:.6rem;flex-wrap:wrap}
+  .deel-head h2{font-size:1.05rem}
+  .pickrow{margin-top:1.7rem}
+
+  /* -- home: the three shortcuts become one swipeable strip instead of three
+     full-width rows that push the subjects below the fold -- */
+  .snelbalk{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;
+    scroll-snap-type:x proximity;gap:.55rem;
+    margin:1.1rem calc(var(--gut) * -1) 1.2rem;padding:.2rem var(--gut) .35rem}
+  .snelbalk::-webkit-scrollbar{display:none}
+  .snel{flex:0 0 auto;scroll-snap-align:start;min-height:52px;padding:.7rem .95rem}
+  .snel-tekst small,.snel .snel-waarde{white-space:nowrap}
+
+  /* -- cards -- */
+  .subjects{grid-template-columns:repeat(2,1fr);gap:.7rem;margin-top:1.4rem}
+  .subj{min-height:158px;padding:1rem .85rem .85rem;border-radius:12px}
+  .subj .badge{width:40px;height:40px;margin-bottom:.75rem}
+  .subj .bigico{font-size:3.4rem}
+  .subj h3{font-size:.9rem}
+  .subj small{font-size:.63rem}
+  .subj .swatch{font-size:.55rem;margin-bottom:.35rem}
+
+  .chapters{grid-template-columns:1fr;gap:.65rem}
+  .chapter{padding:.95rem 1rem;border-radius:12px}
+  .chapter h4{font-size:.96rem;margin:.3rem 0;padding-right:4.5rem}
+  .chapter p{font-size:.76rem}
+
+  .tools{grid-template-columns:1fr;gap:.65rem;margin-top:.8rem}
+  .tool{padding:.95rem 1rem;border-radius:14px}
+  .persona-grid{grid-template-columns:1fr;gap:.7rem}
+
+  /* -- flashcards -- */
+  .cgrid{grid-template-columns:1fr;gap:.7rem}
+  .fc{height:158px}
+  .star{padding:.5rem;font-size:1.1rem}     /* was a ~15px tap target */
+  .fc .star{top:.25rem;right:.25rem}
+  .mk{gap:.45rem;margin-top:.7rem}
+  .mk button{padding:.5rem .95rem;font-size:.72rem;min-height:38px}
+
+  /* -- quiz -- */
+  .qq{padding:1rem;border-radius:14px}
+  .opt{padding:.75rem .95rem;min-height:46px;font-size:.86rem}
+  .opt:hover:not(:disabled){transform:none}
+
+  /* -- buttons and fields -- */
+  .bar{gap:.5rem;margin:1.1rem 0 .9rem}
+  .bt{padding:.62rem 1.15rem;font-size:.82rem;min-height:44px}
+  .bt.klein{min-height:36px;padding:.35rem .8rem}
+  .chip{padding:.6rem 1.2rem;min-height:44px;display:inline-flex;align-items:center}
+  /* iOS zooms the whole page in when a field smaller than 16px takes focus. */
+  .veld,.zoek,input,select,textarea{font-size:16px}
+  .zoek{padding:.75rem 1.1rem;margin:1.2rem 0 1rem}
+
+  /* -- dialogs become bottom sheets: reachable with a thumb -- */
+  .helpwrap,.zoekwrap,.favwrap,.examenwrap,.nieuwwrap{align-items:flex-end;padding:0}
+  .helpcard{width:100%;max-width:none;max-height:88vh;overflow-y:auto;
+    border-radius:20px 20px 0 0;border-bottom:none;
+    padding:1.6rem 1.15rem calc(1.2rem + env(safe-area-inset-bottom));
+    animation:sheetUp .3s cubic-bezier(.2,.85,.3,1) both}
+  .zoekcard,.favcard,.examencard,.nieuwcard{width:100%;max-width:none;max-height:88vh}
+  .helpcard::before{content:'';position:absolute;top:.5rem;left:50%;transform:translateX(-50%);
+    width:38px;height:4px;border-radius:100px;background:var(--line)}
+  .helpclose{width:38px;height:38px;top:.75rem;right:.75rem}
+  .hslide{padding:1rem .1rem .5rem}
+  @keyframes sheetUp{from{transform:translateY(100%)}to{transform:translateY(0)}}
+
+  /* -- the tools menu leaves the bottom-left corner --
+     The fold-out arc opened straight over the subject cards. On a phone the
+     trigger joins the top bar instead, and the options slide in as a panel
+     from the right edge where they can all be read at once.
+     Only home carries the bell and account buttons, so only there does the
+     trigger have to sit two buttons further left (.op-home, set in
+     src/ui/radialMenu.js). */
+  .radialmenu{left:auto;bottom:auto;top:var(--safe-top);height:var(--top-h);width:38px;
+    right:calc(var(--gut) - .15rem + env(safe-area-inset-right))}
+  /* .radialmenu.show animates with `pop`, whose fill-mode leaves transform:scale(1)
+     applied for good. A transformed ancestor becomes the containing block for
+     position:fixed descendants, which sized the panel below against this 38px
+     box instead of the viewport. No entrance animation here, so no transform. */
+  .radialmenu.show{animation:none}
+  .radialmenu.op-home{right:calc(var(--gut) - .15rem + env(safe-area-inset-right) + 2 * (38px + .55rem))}
+  .radialtrigger{top:50%;bottom:auto;left:0;transform:translateY(-50%);
+    width:38px;height:38px;font-size:1.15rem;box-shadow:none}
+  .radialmenu.open .radialtrigger{border-color:var(--goud);color:var(--goud)}
+
+  /* The decorative halo becomes the dimmer behind the panel: it is already in
+     the markup and already inside this stacking context. */
+  .radialhalo{position:fixed;inset:0;width:auto;height:auto;border-radius:0;
+    background:rgba(5,8,12,.55);animation:none;opacity:0;z-index:1;
+    transition:opacity .3s ease}
+  .radialmenu.open .radialhalo{opacity:1}
+
+  .radialitems{display:flex;flex-direction:column;position:fixed;top:0;right:0;height:100%;
+    width:min(76vw,290px);z-index:2;overflow-y:auto;overscroll-behavior:contain;
+    padding:calc(var(--top-h) + var(--safe-top) + .8rem) .9rem calc(1rem + env(safe-area-inset-bottom));
+    background:var(--ink2);border-left:1.5px solid var(--goud-line);
+    box-shadow:-18px 0 44px rgba(0,0,0,.5);
+    transform:translateX(100%);visibility:hidden;
+    transition:transform .32s cubic-bezier(.2,.85,.3,1), visibility .32s}
+  .radialmenu.open .radialitems{transform:translateX(0);visibility:visible}
+
+  .radialitem,.radialmenu.open .radialitem{position:relative;flex-direction:row;align-items:center;
+    gap:.85rem;left:auto;bottom:auto;opacity:1;pointer-events:auto;transform:none;
+    padding:.3rem 0;border-bottom:1px solid var(--line)}
+  .radialitem:last-child{border-bottom:none}
+  .menuicon{position:static;width:40px;height:40px;flex:none;font-size:1rem}
+  /* Static button + absolute ::after = the whole row is the tap target. */
+  .menuicon::after{content:'';position:absolute;inset:0;border-radius:10px}
+  .radiallabel,.radialmenu.open .radiallabel{opacity:1;background:none;border:none;padding:0;
+    font-size:.92rem;color:var(--txt);white-space:normal;text-align:left;flex:1}
+  /* The pomodoro label is itself a control, so it has to stay above the overlay. */
+  #pomodorolabel{position:relative;z-index:2}
+
+  /* Text size lives in Instellingen; on a phone the tile only cost space. */
+  #tekstgroottebtn{display:none}
+
+  /* -- summaries: stop content being pushed off the side --
+     Two causes, both real: Dutch compounds like Aansprakelijkheidsverzekering
+     are wider than a phone, and 33 of the ~100 tables in the content modules
+     are not wrapped in .tblwrap. Because .screen is overflow-x:hidden that
+     content was clipped out of reach rather than scrollable. Fixed here rather
+     than in the 244 content modules, which content:build regenerates. */
+  body{overflow-wrap:break-word}
+  .g2,.g3{grid-template-columns:1fr;gap:.7rem}
+  .tbl{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%}
+  .tblwrap>.tbl{display:table}
+
+  /* -- and a little less zoomed in: padding, not font size, so the text stays
+     as readable as it was -- */
+  .sect{margin-top:1.6rem}
+  .sect>h3{font-size:1.05rem;margin-bottom:.7rem}
+  h5.sub{font-size:.92rem;margin:1.2rem 0 .6rem}
+  .box{padding:.95rem 1rem;border-radius:14px}
+  .call{padding:.7rem .9rem}
+  .voorbeeld{padding:.85rem .95rem}
+  .vergelijk-kant{padding:.8rem .9rem}
+  .fig{padding:.9rem}
+  .belbtn{width:38px;height:38px}
+  .belico{font-size:1.05rem}
+
+  /* -- floating chrome clears the home indicator -- */
+  .toast{bottom:calc(1.2rem + env(safe-area-inset-bottom));max-width:calc(100vw - 1.6rem)}
+  .updatebalk{width:calc(100vw - 1.6rem);padding:.7rem .75rem .7rem .9rem;gap:.6rem}
+  .spel-voet{padding-bottom:calc(1rem + env(safe-area-inset-bottom))}
+  .spelpaneel{padding:0 var(--gut)}
+  .spelbalk{padding:.8rem 0 .7rem}
+
+  /* -- splash -- */
+  #splash{padding:1.5rem 1.2rem 4.5rem}
+  .btn-start{padding:.9rem 2.6rem;min-height:48px}
+  .introverder{bottom:calc(1.1rem + env(safe-area-inset-bottom));min-height:40px}
+  .skip{bottom:calc(1.1rem + env(safe-area-inset-bottom));right:1.1rem;padding:.5rem}
+}
+
+/* Installed as an app there is no browser toolbar, so the header has to keep
+   clear of the status bar / notch itself. */
+@media (max-width:560px) and (display-mode:standalone){
+  :root{--safe-top:env(safe-area-inset-top)}
+}
+
+/* == 4. SMALL PHONE == */
+@media (max-width:380px){
+  :root{--gut:.8rem}
+  .subjects{gap:.55rem}
+  .subj{min-height:146px;padding:.85rem .7rem .7rem}
+  .subj .badge{width:34px;height:34px;margin-bottom:.55rem}
+  .subj h3{font-size:.84rem}
+  .subj small{font-size:.6rem}
+  .brand{font-size:.82rem}
+  h1.page{font-size:1.35rem}
+  .bt{padding:.6rem .95rem;font-size:.78rem}
+  .spel-tegel{font-size:.74rem}
+}

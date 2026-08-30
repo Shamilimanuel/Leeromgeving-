@@ -14,6 +14,12 @@ const AUTO_OPEN_DELAY_MS = 2000;
 let slide = 0;
 let helpSeen = false;
 
+/* Cancel the automatic welcome. "Wat is er nieuw?" calls this when it has
+   something to show, so a student never gets two sheets at once. */
+export function markHelpSeen() {
+  helpSeen = true;
+}
+
 export function openHelp(n) {
   slide = n || 0;
   $('helpwrap').classList.add('open');
