@@ -246,14 +246,17 @@ Still open here:
 
 ### Mandatory login
 
-**Built 2026-08-30, and deliberately switched off.** The gate lives in
+**Built and switched ON 2026-08-30 (2.5.0).** The gate lives in
 `src/ui/authGate.js` and hangs on `go()` through `setNavigationGate()`, so
-`src/ui/navigation.js` still knows nothing about accounts. `REQUIRE_LOGIN` in
-`src/config.js` turns it on (or build with `VITE_REQUIRE_LOGIN=1`). With it on:
-a signed-out student only ever reaches the account screen, the splash included
-— signing in comes *before* the welcome, which is Shamil's call. Scope is
-everywhere, not phones only. `screenFor()` is a pure function, covered by
-`tests/authGate.test.js`.
+`src/ui/navigation.js` still knows nothing about accounts. A signed-out student
+only ever reaches the account screen, the splash included — signing in comes
+*before* the welcome, which is Shamil's call. Scope is everywhere, not phones
+only. `screenFor()` is a pure function, covered by `tests/authGate.test.js`.
+
+> **The site is shut to everyone without an account.** It went live with **one**
+> profile (the admin) and **zero** invite codes — Shamil's call, made knowing
+> that. Until codes are handed out, only admins can get in. The fastest way to
+> open it back up is a build with `VITE_REQUIRE_LOGIN=0`; no code change needed.
 
 Settled while building it:
 
@@ -270,16 +273,16 @@ Settled while building it:
   that, flipping `REQUIRE_LOGIN` would fail the suite and a failing test blocks
   the deploy — the switch would not have been flippable.
 
-Still to do before switching it on:
+Now urgent, because the gate is live:
 
-- [!] **Every student needs an account first.** Checked on 2026-08-30: the
-      database holds **one** profile (the admin) and **zero** invite codes. Turn
-      the switch on today and nobody but Shamil can open the site. Shamil's plan
-      (2026-08-30) is to create accounts for the whole class with the school
-      first — usernames, passwords and codes, valid for about a week — and only
-      then flip it. Codes already last 14 days by default
-      (`20260829201913_security_and_invites.sql`), but come **20 at a time**
-      (`MAX_INVITES_PER_BATCH`), so a full class is several batches.
+- [!] **Every student still needs an account.** The database holds one profile
+      (the admin) and zero invite codes, so right now no student can get in at
+      all. Shamil's plan (2026-08-30) is to create accounts for the whole class
+      with the school — usernames, passwords and codes, valid for about a week.
+      Codes last 14 days by default
+      (`20260829201913_security_and_invites.sql`) but come **20 at a time**
+      (`MAX_INVITES_PER_BATCH`), so a full class is several batches through the
+      admin panel.
 - [x] **~~The session dies with the tab.~~** Solved 2026-08-30 (2.4.0). The
       session used to live in `sessionStorage` only — deliberate, for shared
       school computers — which with mandatory login would have meant signing in

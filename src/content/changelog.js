@@ -13,9 +13,19 @@
    The entries are Dutch because students read them. Keep the lines short and
    concrete: what can you do now that you could not do yesterday? */
 
-export const APP_VERSION = '2.4.0';
+export const APP_VERSION = '2.5.0';
 
 export const CHANGELOG = [
+  {
+    version: '2.5.0',
+    date: '2026-08-30',
+    title: 'Inloggen is nu verplicht',
+    changes: [
+      'Je logt voortaan eerst in, daarna kom je pas op de site. Zo staat je voortgang in je eigen account en niet alleen op dit apparaat.',
+      'Nog geen account? Vraag je docent om een uitnodigingscode. Daarmee maak je er zelf een.',
+      'Werk dat je zonder account op dit apparaat deed, blijft gewoon staan.',
+    ],
+  },
   {
     version: '2.4.0',
     date: '2026-08-30',
