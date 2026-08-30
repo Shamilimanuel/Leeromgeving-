@@ -5,7 +5,11 @@
 
    No JWT required (config.toml: verify_jwt = false).
    Body: { code, gebruikersnaam, wachtwoord }
-   Reply: { ok: true, gebruikersnaam } — the client then signs in normally. */
+   Reply: { ok: true, gebruikersnaam } — the client then signs in normally.
+
+   A code that has been used is deleted, so the admin list only ever holds
+   codes that still work. That trades away the record of which student used
+   which code; `codes_opruimen` still exists for expired ones. */
 
 import {
   asString,
@@ -95,7 +99,21 @@ serve(async (req) => {
     throw new HttpError('Profiel kon niet worden aangemaakt.', 500);
   }
 
-  await admin.from('uitnodigingen').update({ gebruikt_door: userId }).eq('code', code);
+  /* The code has done its job, so drop the row: the admin list then only ever
+     shows codes that can still be handed out.
+
+     Deleting *here* and nowhere earlier is the point. Everything above can
+     still fail and release the code back to the student (a username that turns
+     out to be taken, for one), and a code deleted at claim time could not be
+     given back. By this line the account exists, so nothing can hand it back
+     anyway. */
+  const { error: dropErr } = await admin.from('uitnodigingen').delete().eq('code', code);
+  if (dropErr) {
+    /* The account is fine and the row still carries `gebruikt_op` from the
+       claim, so the code cannot be reused either way. Record who used it and
+       leave it for `codes_opruimen`. */
+    await admin.from('uitnodigingen').update({ gebruikt_door: userId }).eq('code', code);
+  }
 
   return json({ ok: true, gebruikersnaam: username });
 });
