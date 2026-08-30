@@ -1,0 +1,24 @@
+/* Self-hosted UI icons (Lucide, ISC license: https://lucide.dev), replacing
+   the emoji that used to sit in buttons and callouts. Rendered as CSS masks
+   so each icon inherits `color`, exactly like the emoji glyph it replaces. */
+
+.icon{display:inline-block;width:1em;height:1em;background-color:currentColor;
+  -webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;
+  -webkit-mask-position:center;mask-position:center;
+  -webkit-mask-size:contain;mask-size:contain;
+  vertical-align:-0.15em;flex-shrink:0}
+
+.icon-search{-webkit-mask-image:url('ui/search.svg');mask-image:url('ui/search.svg')}
+.icon-star{-webkit-mask-image:url('ui/star.svg');mask-image:url('ui/star.svg')}
+.icon-timer{-webkit-mask-image:url('ui/timer.svg');mask-image:url('ui/timer.svg')}
+.icon-clipboard-list{-webkit-mask-image:url('ui/clipboard-list.svg');mask-image:url('ui/clipboard-list.svg')}
+.icon-case-sensitive{-webkit-mask-image:url('ui/case-sensitive.svg');mask-image:url('ui/case-sensitive.svg')}
+.icon-sun{-webkit-mask-image:url('ui/sun.svg');mask-image:url('ui/sun.svg')}
+.icon-circle-help{-webkit-mask-image:url('ui/circle-help.svg');mask-image:url('ui/circle-help.svg')}
+.icon-target{-webkit-mask-image:url('ui/target.svg');mask-image:url('ui/target.svg')}
+.icon-coffee{-webkit-mask-image:url('ui/coffee.svg');mask-image:url('ui/coffee.svg')}
+.icon-trophy{-webkit-mask-image:url('ui/trophy.svg');mask-image:url('ui/trophy.svg')}
+.icon-lock{-webkit-mask-image:url('ui/lock.svg');mask-image:url('ui/lock.svg')}
+.icon-printer{-webkit-mask-image:url('ui/printer.svg');mask-image:url('ui/printer.svg')}
+.icon-lightbulb{-webkit-mask-image:url('ui/lightbulb.svg');mask-image:url('ui/lightbulb.svg')}
+.icon-calculator{-webkit-mask-image:url('ui/calculator.svg');mask-image:url('ui/calculator.svg')}

@@ -22,7 +22,7 @@ function nodeHtml(chapter, level, chapterKey, currentIndex) {
   if (done) state = 'klaar';
   else if (unlocked) state = 'open';
 
-  const face = done ? '✓' : (unlocked ? (level.isFinal ? '★' : level.index + 1) : '🔒');
+  const face = done ? '✓' : (unlocked ? (level.isFinal ? '★' : level.index + 1) : '<span class="icon icon-lock" aria-hidden="true"></span>');
   const label = level.isFinal ? 'Eindtoets' : level.title;
   const score = result ? '<span class="pad-score">' + result.best + '/' + result.total + '</span>' : '';
 
@@ -63,6 +63,6 @@ export function renderPath(chapter) {
     + '</div>'
     + '<ol class="pad">' + levels.map((l) => nodeHtml(chapter, l, chapterKey, currentIndex)).join('') + '</ol>'
     + (doneCount === levels.length
-      ? '<div class="pad-af">🏆 Dit hoofdstuk is helemaal uitgespeeld. Je kunt elk level opnieuw doen.</div>'
+      ? '<div class="pad-af"><span class="icon icon-trophy" aria-hidden="true"></span> Dit hoofdstuk is helemaal uitgespeeld. Je kunt elk level opnieuw doen.</div>'
       : ''));
 }
