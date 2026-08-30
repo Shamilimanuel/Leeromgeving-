@@ -246,43 +246,56 @@ Still open here:
 
 ### Mandatory login
 
-- [?] **Decide the scope first.** Shamil's call (2026-08-30) is that signing in
-      becomes mandatory. Open question: everywhere, or only on phones? "Only on
-      phones" is hard to defend — the same student on a laptop would keep the
-      guest route, so the requirement would not actually hold. Assume
-      *everywhere* unless decided otherwise, and treat the phone as the place it
-      was noticed rather than the place it applies.
-- [ ] **Gate the app behind an account.** `go()` in `src/ui/navigation.js` is the
-      single choke point every screen passes through, so the gate belongs there
-      rather than in each screen. Splash and the account screen stay reachable;
-      everything else redirects to `account` when `auth.getProfile()` is null.
-      The splash "Overslaan" and "Start" buttons currently go straight to `home`
-      and would have to go to `account` instead.
-- [ ] **Retire the four guest states**, which become unreachable or become the
-      gate itself: `accountGast` (`src/ui/account.js`), `chatGast`
-      (`src/ui/chat.js`), `settingsGast` (`src/ui/settings.js`), and the `.gast`
-      avatar plus its "Niet ingelogd" dropdown (`src/ui/account.js`).
-- [!] **Decide what happens to work done while signed out.** This is the part
-      that can lose student data, so settle it before writing the gate. Only the
-      practice path syncs today: `syncAllLevels()` in
-      `src/services/gameProgress.js` pushes local levels up on sign-in. Everything
-      else in `src/state/progress.js` is device-local and has no server side at
-      all — `voortgang`, `leitner`, `favorieten`, `sq3r`, `cornell`,
-      `examenresultaten`. Either migrate those into the account on first sign-in,
-      or accept that a student who used the site as a guest loses them.
-- [ ] **Do not lock out an offline student.** The app is offline-first and this
-      gate must not undo that. `getSession()` reads the session Supabase keeps in
-      localStorage and works offline, but `ensureProfile()` makes a network call;
-      the gate has to treat "offline with a stored session" as signed in rather
-      than bouncing the student to a login screen they cannot complete.
-- [ ] **Registration needs an invite code** (`INVITE_CODE_LENGTH` in
-      `src/config.js`, the `registreren` Edge Function). Mandatory login
-      therefore means every student needs a code *before* they can open anything,
-      so enough codes have to exist and be handed out first. A rollout question,
-      not a code question, but the code change is worthless without it.
-- [ ] **`tests/app.test.js` boots the app signed out** and walks subject → level
-      → book → chapter. A hard gate breaks that walkthrough, so it needs either a
-      signed-in fixture or a documented way for the gate to stand down in tests.
+**Built 2026-08-30, and deliberately switched off.** The gate lives in
+`src/ui/authGate.js` and hangs on `go()` through `setNavigationGate()`, so
+`src/ui/navigation.js` still knows nothing about accounts. `REQUIRE_LOGIN` in
+`src/config.js` turns it on (or build with `VITE_REQUIRE_LOGIN=1`). With it on:
+a signed-out student only ever reaches the account screen, the splash included
+— signing in comes *before* the welcome, which is Shamil's call. Scope is
+everywhere, not phones only. `screenFor()` is a pure function, covered by
+`tests/authGate.test.js`.
+
+Settled while building it:
+
+- **Guest work stays on the device.** Signing in does not clear localStorage, so
+  `voortgang`, `leitner`, `favorieten`, `sq3r`, `cornell` and `examenresultaten`
+  simply remain and are adopted by the first account that signs in — the
+  practice path already syncs that way (`syncAllLevels()`). Nothing is migrated
+  and nothing is lost. The catch, on a shared school computer: the first
+  student to sign in inherits whatever the previous guest left behind.
+- **Offline students are not locked out.** The gate accepts a stored session on
+  its own (`auth.hasSession()`), because `ensureProfile()` needs the network.
+- **`tests/app.test.js` no longer depends on the switch.** It clears the gate
+  after boot, since that walkthrough is about content, not accounts. Without
+  that, flipping `REQUIRE_LOGIN` would fail the suite and a failing test blocks
+  the deploy — the switch would not have been flippable.
+
+Still to do before switching it on:
+
+- [!] **Every student needs an account first.** Checked on 2026-08-30: the
+      database holds **one** profile (the admin) and **zero** invite codes. Turn
+      the switch on today and nobody but Shamil can open the site. Shamil's plan
+      (2026-08-30) is to create accounts for the whole class with the school
+      first — usernames, passwords and codes, valid for about a week — and only
+      then flip it. Codes already last 14 days by default
+      (`20260829201913_security_and_invites.sql`), but come **20 at a time**
+      (`MAX_INVITES_PER_BATCH`), so a full class is several batches.
+- [x] **~~The session dies with the tab.~~** Solved 2026-08-30 (2.4.0). The
+      session used to live in `sessionStorage` only — deliberate, for shared
+      school computers — which with mandatory login would have meant signing in
+      *every single time* the app was opened. `src/lib/supabase.js` now routes
+      the session to localStorage or sessionStorage depending on a "Blijf
+      ingelogd op dit apparaat" checkbox, unticked by default and cleared on
+      sign-out. Reads fall back to the other store and writes keep one copy, so
+      no session is ever left behind in the store that is no longer in use;
+      `tests/rememberSession.test.js` covers exactly that.
+      (An earlier version of this document claimed the session was already in
+      localStorage. It never was.)
+- [ ] **Retire the guest states** once the switch is permanently on: `chatGast`
+      (`src/ui/chat.js`), `settingsGast` (`src/ui/settings.js`) and the `.gast`
+      avatar with its "Niet ingelogd" dropdown (`src/ui/account.js`). They are
+      unreachable behind the gate but still correct while it is off, so they
+      stay for now. `accountGast` becomes the gate itself and must stay.
 
 ### Phone follow-ups
 

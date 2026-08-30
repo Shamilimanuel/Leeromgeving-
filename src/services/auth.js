@@ -16,7 +16,7 @@
    aangemaakt_op), the `uitnodigingen` row and the edge-function action names
    are part of the deployed backend contract, so they stay Dutch here. This
    module maps them to English objects; the UI never sees raw rows. */
-import { supabase } from '../lib/supabase.js';
+import { supabase, setRememberSession } from '../lib/supabase.js';
 import {
   SUPABASE_URL, SUPABASE_ANON_KEY, EDGE_FUNCTIONS, SYNTHETIC_EMAIL_DOMAIN,
   USERNAME_PATTERN, USERNAME_RULE_TEXT, PASSWORD_MIN_LENGTH, INVITE_CODE_LENGTH,
@@ -167,6 +167,9 @@ export async function login(username, password) {
 
 export async function logout() {
   await supabase.auth.signOut();
+  /* Signing out drops "blijf ingelogd" as well: on a shared computer the
+     choice must not carry over to whoever signs in next. */
+  setRememberSession(false);
   session = null;
   profile = null;
 }
@@ -197,6 +200,25 @@ export async function loadProfile() {
   }
   profile = toProfile(data);
   return profile;
+}
+
+/* Reads the session Supabase already stored, without asking the network for
+   the profile. The mandatory-login gate needs this: `ensureProfile()` fetches
+   the `profiles` row, so offline it returns null and would bounce a student
+   with a perfectly valid session to a login screen they cannot complete. */
+export async function restoreSession() {
+  try {
+    const { data: { session: current } } = await supabase.auth.getSession();
+    session = current;
+    return current;
+  } catch {
+    return session;
+  }
+}
+
+/* True when a session exists, whether or not the profile could be loaded. */
+export function hasSession() {
+  return !!session;
 }
 
 /* Make sure the profile is loaded; errors are swallowed (caller shows guest state). */
@@ -318,6 +340,7 @@ export async function deleteOwnAccount(confirmation) {
    shared school computers this site is mostly used on. */
 export async function logoutEverywhere() {
   const res = await supabase.auth.signOut({ scope: 'global' });
+  setRememberSession(false);
   session = null;
   profile = null;
   if (res && res.error) throw res.error;

@@ -7,6 +7,7 @@ import { $ } from '../lib/dom.js';
 const renderers = {};
 const leaveListeners = [];
 const enterListeners = [];
+let gate = null;
 
 export const SCREENS = {
   splash: 'splash',
@@ -36,7 +37,15 @@ export function onEnter(fn) {
   enterListeners.push(fn);
 }
 
-export function go(id) {
+/* Lets a feature redirect navigation without `go` knowing why. The function
+   is given the requested screen and returns the screen to show instead (or
+   the same one to allow it). Used by the mandatory-login gate. */
+export function setNavigationGate(fn) {
+  gate = fn;
+}
+
+export function go(requested) {
+  const id = gate ? gate(requested) : requested;
   leaveListeners.forEach((fn) => fn(id));
   if (renderers[id]) renderers[id]();
 
