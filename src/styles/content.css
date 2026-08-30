@@ -59,15 +59,18 @@ h5.sub{font-family:'Cinzel',serif;font-size:1rem;color:var(--accent);margin:1.8r
 
 /* ══ EZEL (mnemonic) ══ */
 .call.ezel{border-left-color:#e07a9e;background:rgba(224,122,158,.07)}
-.call.ezel::before{content:'💡 ';margin-right:.2rem}
+.call.ezel::before{content:'';display:inline-block;width:1em;height:1em;margin-right:.3rem;vertical-align:-0.15em;
+  background-color:#e07a9e;-webkit-mask:url('/icons/ui/lightbulb.svg') no-repeat center/contain;mask:url('/icons/ui/lightbulb.svg') no-repeat center/contain}
 .call.link{border-left-color:#6c7fd8;background:rgba(108,127,216,.07)}
 .call.link::before{content:'↩ ';margin-right:.2rem}
 .call.waarom{border-left-color:#4caf7d;background:rgba(76,175,125,.07)}
-.call.waarom::before{content:'🎯 ';margin-right:.2rem}
+.call.waarom::before{content:'';display:inline-block;width:1em;height:1em;margin-right:.3rem;vertical-align:-0.15em;
+  background-color:#4caf7d;-webkit-mask:url('/icons/ui/target.svg') no-repeat center/contain;mask:url('/icons/ui/target.svg') no-repeat center/contain}
 
 /* ══ REKEN (calculation): step-by-step worked calculation ══ */
 .call.reken{border-left-color:#5fbf7a;background:rgba(95,191,122,.08)}
-.call.reken::before{content:'🧮 ';margin-right:.2rem}
+.call.reken::before{content:'';display:inline-block;width:1em;height:1em;margin-right:.3rem;vertical-align:-0.15em;
+  background-color:#5fbf7a;-webkit-mask:url('/icons/ui/calculator.svg') no-repeat center/contain;mask:url('/icons/ui/calculator.svg') no-repeat center/contain}
 .call.reken .num{margin-top:.6rem}
 .call.reken .num li{border-bottom-style:dotted}
 .call.reken .num li.eind{border:none;padding-top:.6rem;margin-top:.2rem;border-top:1px solid var(--line)}

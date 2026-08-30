@@ -10,6 +10,8 @@
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; font-src 'self' data:; img-src 'self' data: blob:; connect-src 'self' https://vgmhcsycjwyxofunlcly.supabase.co wss://vgmhcsycjwyxofunlcly.supabase.co ws://localhost:* ws://127.0.0.1:*; worker-src 'self' blob:; manifest-src 'self'; media-src 'none'; object-src 'none'; base-uri 'none'; form-action 'self'">
 <!-- Fonts are self-hosted (public/fonts) so no request goes to Google when a student opens the site. -->
 <link rel="stylesheet" href="fonts/fonts.css">
+<!-- UI icons are self-hosted too (public/icons), see public/icons/icons.css. -->
+<link rel="stylesheet" href="icons/icons.css">
 <link rel="manifest" href="manifest.webmanifest">
 <meta name="theme-color" content="#05070f">
 </head>
@@ -344,31 +346,31 @@
        resolves against .radialmenu; a slide-in panel on phones. -->
   <div class="radialitems">
   <div class="radialitem" style="--tx:0px;--ty:-250px">
-    <button class="zoekbtn menuicon" id="zoekbtn" onclick="openSearch();closeRadialMenu()" aria-label="Zoeken" title="Zoeken">🔍</button>
+    <button class="zoekbtn menuicon" id="zoekbtn" onclick="openSearch();closeRadialMenu()" aria-label="Zoeken" title="Zoeken"><span class="icon icon-search" aria-hidden="true"></span></button>
     <span class="radiallabel">Zoeken</span>
   </div>
   <div class="radialitem" style="--tx:45px;--ty:-169px">
-    <button class="favbtn menuicon" id="favbtn" onclick="openFavorites();closeRadialMenu()" aria-label="Favorieten" title="Favorieten">⭐</button>
+    <button class="favbtn menuicon" id="favbtn" onclick="openFavorites();closeRadialMenu()" aria-label="Favorieten" title="Favorieten"><span class="icon icon-star" aria-hidden="true"></span></button>
     <span class="radiallabel">Favorieten</span>
   </div>
   <div class="radialitem" style="--tx:125px;--ty:-217px">
-    <button class="pomodorobtn menuicon" id="pomodorobtn" onclick="togglePomodoro();closeRadialMenu()" aria-label="Pomodoro-timer" title="Pomodoro-timer starten (25 min werk / 5 min pauze)">🍅</button>
+    <button class="pomodorobtn menuicon" id="pomodorobtn" onclick="togglePomodoro();closeRadialMenu()" aria-label="Pomodoro-timer" title="Pomodoro-timer starten (25 min werk / 5 min pauze)"><span class="icon icon-timer" aria-hidden="true"></span></button>
     <span class="radiallabel" id="pomodorolabel" onclick="cyclePomodoroDuration(event)" title="Tik om de duur te wisselen (10/25/45/60 min)" style="cursor:pointer">Pomodoro</span>
   </div>
   <div class="radialitem" style="--tx:124px;--ty:-124px">
-    <button class="examenbtn menuicon" id="examenbtn" onclick="openExam();closeRadialMenu()" aria-label="Oefentoets" title="Oefentoets / zelftest">📝</button>
+    <button class="examenbtn menuicon" id="examenbtn" onclick="openExam();closeRadialMenu()" aria-label="Oefentoets" title="Oefentoets / zelftest"><span class="icon icon-clipboard-list" aria-hidden="true"></span></button>
     <span class="radiallabel">Oefentoets</span>
   </div>
   <div class="radialitem" style="--tx:217px;--ty:-125px">
-    <button class="dyslexiebtn menuicon" id="dyslexiebtn" onclick="toggleDyslexia();closeRadialMenu()" aria-label="Dyslexie-modus aan/uit" title="Dyslexie-modus">🔤</button>
+    <button class="dyslexiebtn menuicon" id="dyslexiebtn" onclick="toggleDyslexia();closeRadialMenu()" aria-label="Dyslexie-modus aan/uit" title="Dyslexie-modus"><span class="icon icon-case-sensitive" aria-hidden="true"></span></button>
     <span class="radiallabel">Dyslexie</span>
   </div>
   <div class="radialitem" style="--tx:169px;--ty:-45px">
-    <button class="lichtbtn menuicon" id="lichtbtn" onclick="toggleLightMode();closeRadialMenu()" aria-label="Lichte modus aan/uit" title="Lichte modus">☀️</button>
+    <button class="lichtbtn menuicon" id="lichtbtn" onclick="toggleLightMode();closeRadialMenu()" aria-label="Lichte modus aan/uit" title="Lichte modus"><span class="icon icon-sun" aria-hidden="true"></span></button>
     <span class="radiallabel">Licht</span>
   </div>
   <div class="radialitem" style="--tx:250px;--ty:0px">
-    <button class="helpbtn menuicon" id="helpbtn" onclick="openHelp(0);closeRadialMenu()" aria-label="Uitleg" title="Uitleg">❓</button>
+    <button class="helpbtn menuicon" id="helpbtn" onclick="openHelp(0);closeRadialMenu()" aria-label="Uitleg" title="Uitleg"><span class="icon icon-circle-help" aria-hidden="true"></span></button>
     <span class="radiallabel">Uitleg</span>
   </div>
   </div>

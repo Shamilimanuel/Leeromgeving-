@@ -12,7 +12,7 @@ export function renderNotes() {
     + '<div class="cornell-sam"><label>Samenvatting in eigen woorden</label>'
     + '<textarea class="groot-veld" id="cornellSam" oninput="saveNoteSummary(this.value)" placeholder="Vat dit hoofdstuk in een paar zinnen samen…">'
     + escapeHtml(notes.summary) + '</textarea></div>'
-    + '<div class="bar"><button class="bt" onclick="window.print()">🖨 Print / exporteer als PDF</button>'
+    + '<div class="bar"><button class="bt" onclick="window.print()"><span class="icon icon-printer" aria-hidden="true"></span> Print / exporteer als PDF</button>'
     + '<button class="bt gh" onclick="clearNotes()">Wis mijn notities voor dit hoofdstuk</button></div>');
   drawNoteRows(notes.rows);
 }

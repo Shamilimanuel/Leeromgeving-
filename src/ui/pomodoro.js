@@ -32,7 +32,7 @@ function draw() {
   const label = $('pomodorolabel');
   if (!btn) return;
   if (!running) {
-    btn.textContent = '🍅';
+    btn.innerHTML = '<span class="icon icon-timer" aria-hidden="true"></span>';
     btn.classList.remove('on');
     btn.title = 'Pomodoro-timer starten (' + currentDuration() + ' min werk / ' + currentBreak() + ' min pauze)';
     if (label) label.textContent = 'Pomodoro (' + currentDuration() + ' min)';
@@ -40,7 +40,8 @@ function draw() {
   }
   const m = Math.floor(remainingSeconds / 60);
   const s = remainingSeconds % 60;
-  btn.textContent = (phase === PHASE.work ? '🎯 ' : '☕ ') + m + ':' + (s < 10 ? '0' : '') + s;
+  btn.innerHTML = '<span class="icon icon-' + (phase === PHASE.work ? 'target' : 'coffee') + '" aria-hidden="true"></span> '
+    + m + ':' + (s < 10 ? '0' : '') + s;
   btn.classList.add('on');
   btn.title = (phase === PHASE.work ? 'Focus' : 'Pauze') + ': klik om te stoppen';
   if (label) label.textContent = phase === PHASE.work ? 'Focus' : 'Pauze';
