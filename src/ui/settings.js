@@ -7,8 +7,11 @@ import { refreshAccountButton } from './account.js';
 import { cycleTextSize, toggleDyslexia, isDyslexiaOn, currentTextSizeLabel } from './preferences.js';
 import { clearLearningData } from '../state/progress.js';
 import { go } from './navigation.js';
+import { APP_VERSION } from '../content/changelog.js';
 
 export async function renderSettings() {
+  const version = $('setVersie');
+  if (version) version.textContent = APP_VERSION;   // shown to guests too
   const guest = $('settingsGast');
   const signedIn = $('settingsIngelogd');
   if (!guest || !signedIn) return;

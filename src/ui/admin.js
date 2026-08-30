@@ -7,6 +7,7 @@ import { $, setHtml, escapeHtml, warningBox, infoBox, isUuid } from '../lib/dom.
 import { MAX_INVITES_PER_BATCH } from '../config.js';
 import * as auth from '../services/auth.js';
 import { countMessages } from '../services/chat.js';
+import { resetProgressPanel } from './adminProgress.js';
 import { showToast } from './toast.js';
 
 let studentsById = {};
@@ -131,6 +132,7 @@ export async function adminCopyInvite(text) {
 
 function studentsHtml(students) {
   studentsById = {};
+  resetProgressPanel();
   students.forEach((s) => { studentsById[s.id] = s; });
   let html = '<h3 class="admin-kop">Leerlingen (' + students.length + ')</h3>';
   if (!students.length) return html + '<p class="lede">Nog geen leerlingen. Maak een uitnodigingscode en geef die aan een leerling.</p>';
@@ -148,10 +150,12 @@ function studentsHtml(students) {
       + (!isAdmin || self ? '<button class="bt gh" onclick="adminResetPassword(\'' + s.id + '\')">Wachtwoord resetten</button>' : '')
       + (!isAdmin ? '<button class="bt gh" onclick="adminToggleStatus(\'' + s.id + '\')">' + (active ? 'Blokkeren' : 'Deblokkeren') + '</button>' : '')
       + (!isAdmin ? '<button class="bt gh" onclick="adminToggleMute(\'' + s.id + '\')">' + (s.muted ? 'Ontdempen (chat)' : 'Dempen (chat)') + '</button>' : '')
+      + '<button class="bt gh" onclick="adminToggleProgress(\'' + s.id + '\')">Voortgang</button>'
       + '<button class="bt gh" onclick="adminClearStudentMessages(\'' + s.id + '\')">Berichten wissen</button>'
       + (!isAdmin ? '<button class="bt gh" onclick="adminDeleteUser(\'' + s.id + '\')">Verwijderen</button>' : '')
       + '</div></div>'
       + '<div id="admres-' + s.id + '"></div>'
+      + '<div id="admpad-' + s.id + '"></div>'
       + '</div>';
   }).join('');
 }

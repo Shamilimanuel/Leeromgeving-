@@ -225,7 +225,7 @@ export function saveExamAttempt(correct, total) {
 export function clearLearningData() {
   const keys = [
     K.progress, K.mistakes, K.leitner, K.streak,
-    K.favorites, K.examHistory, K.sq3r, K.cornell,
+    K.favorites, K.examHistory, K.sq3r, K.cornell, K.gameLevels,
   ];
   keys.forEach((key) => {
     try { localStorage.removeItem(key); } catch { /* storage blocked */ }

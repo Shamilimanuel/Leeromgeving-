@@ -9,3 +9,5 @@
 @import './notes.css';
 @import './chat.css';
 @import './admin.css';
+/* Last: the phone layer overrides the rules above. */
+@import './mobile.css';

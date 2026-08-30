@@ -18,18 +18,27 @@ import { saveSq3rQuestion, saveSq3rRecite } from '../state/notes.js';
 import {
   toggleCardGrouping, resetCards, showUnknownCards, showDueCards, flipCard, toggleCheck, markCard, toggleCardFavorite,
 } from './flashcards.js';
+import {
+  openLevel, closeLevel, gameTile, gameCheck, gameReveal, gameChoose,
+  gamePickWord, gameUnpickWord, gameSortPick, gameSortDrop, gameNext,
+} from './game.js';
 import { answerQuestion, resetQuiz, toggleMistakeMode } from './quiz.js';
 import { toggleTermGrouping, toggleTermFavorite } from './glossary.js';
 import { updateNoteField, addNoteRow, removeNoteRow, saveNoteSummary, clearNotes } from './notes.js';
 import { openSearch, closeSearch, onSearchInput, openSearchResult } from './search.js';
 import { openFavorites, closeFavorites, openFavorite, removeFavorite } from './favorites.js';
 import { openHelp, closeHelp, goToSlide, nextSlide, previousSlide } from './help.js';
+import { openWhatsNew, closeWhatsNew } from './whatsNew.js';
+import { applyUpdate, dismissUpdate } from './appUpdate.js';
 import { toggleProfileMenu, closeProfileMenu, logout, submitLogin, submitRegistration, showRegistration } from './account.js';
 import {
   adminResetPassword, adminToggleStatus, adminToggleMute, adminDeleteUser,
   adminCreateInvites, adminDeleteInvite, adminCopyInvite,
   adminClearChat, adminCleanUpInvites, adminClearStudentMessages,
 } from './admin.js';
+import {
+  adminToggleProgress, adminClearLevelProgress, adminClearChapterProgress, adminClearAllProgress,
+} from './adminProgress.js';
 import {
   submitUsernameChange, submitPasswordChange,
   settingsCycleTextSize, settingsToggleDyslexia, settingsResetProgress,
@@ -48,16 +57,20 @@ export const globalHandlers = {
   openChapter, setTab,
   toggleSq3r, sq3rNext, sq3rPrevious, saveSq3rQuestion, saveSq3rRecite,
   toggleCardGrouping, resetCards, showUnknownCards, showDueCards, flipCard, toggleCheck, markCard, toggleCardFavorite,
+  openLevel, closeLevel, gameTile, gameCheck, gameReveal, gameChoose,
+  gamePickWord, gameUnpickWord, gameSortPick, gameSortDrop, gameNext,
   answerQuestion, resetQuiz, toggleMistakeMode,
   toggleTermGrouping, toggleTermFavorite,
   updateNoteField, addNoteRow, removeNoteRow, saveNoteSummary, clearNotes,
   openSearch, closeSearch, onSearchInput, openSearchResult,
   openFavorites, closeFavorites, openFavorite, removeFavorite,
   openHelp, closeHelp, goToSlide, nextSlide, previousSlide,
+  openWhatsNew, closeWhatsNew, applyUpdate, dismissUpdate,
   toggleProfileMenu, closeProfileMenu, logout, submitLogin, submitRegistration, showRegistration,
   adminResetPassword, adminToggleStatus, adminToggleMute, adminDeleteUser,
   adminCreateInvites, adminDeleteInvite, adminCopyInvite,
   adminClearChat, adminCleanUpInvites, adminClearStudentMessages,
+  adminToggleProgress, adminClearLevelProgress, adminClearChapterProgress, adminClearAllProgress,
   submitUsernameChange, submitPasswordChange,
   settingsCycleTextSize, settingsToggleDyslexia, settingsResetProgress,
   settingsClearOwnMessages, settingsLogoutEverywhere, submitAccountDeletion,

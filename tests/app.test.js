@@ -73,8 +73,150 @@ describe('subject → level → book → chapter', () => {
     expect(screenIsOn('chapter')).toBe(true);
     expect(document.getElementById('chTitle').textContent).toBe('Bewegen');
     expect(document.querySelectorAll('#chBody .sect').length).toBeGreaterThan(0);
-    expect(document.querySelectorAll('#chTabs .tab').length).toBe(5);
+    expect([...document.querySelectorAll('#chTabs .tab')].map((t) => t.textContent.trim().split(' ')[0]))
+      .toEqual(['Samenvatting', 'Flashcards', 'Oefenspel', 'Oefenquiz', 'Begrippenlijst', 'Notities']);
     expect(localStorage.getItem('voortgang')).toContain('biologie|bbl|1|2');
+  });
+
+  it('shows the practice path with only the first level open', () => {
+    window.setTab('game');
+    const nodes = [...document.querySelectorAll('#chBody .pad-stap')];
+    expect(nodes.length).toBeGreaterThan(1);
+    expect(nodes[0].querySelector('.pad-knop').disabled).toBe(false);
+    expect(nodes[1].querySelector('.pad-knop').disabled).toBe(true);
+    expect(document.querySelector('#chBody .pad-stap.nu')).toBe(nodes[0]);
+  });
+
+  it('plays level 1 and turns its node green', async () => {
+    const { CONTENT } = await import('../src/content/index.js');
+    const chapter = CONTENT['biologie|bbl|1|2'];
+    const terms = chapter.terms;
+
+    const plain = (html) => {
+      const box = document.createElement('div');
+      box.innerHTML = html;
+      return (box.textContent || '').replace(/\s+/g, ' ').trim();
+    };
+    const termBy = (index, shown) => terms.find((t) => t[index] === shown);
+    // jsdom does not resolve inline handlers against window, so read the
+    // argument out of the markup and call the handler the way the app would.
+    const argOf = (el) => Number(el.getAttribute('onclick').match(/\((\d+)/)[1]);
+    const pick = (label) => {
+      const button = [...document.querySelectorAll('#spelBody .spel-keuze')]
+        .find((b) => b.innerHTML === label);
+      expect(button, 'an option reading "' + label + '"').toBeTruthy();
+      window.gameChoose(argOf(button));
+    };
+
+    // Answer one exercise of each kind correctly, from what is on screen.
+    const play = {
+      match() {
+        const ids = [...new Set([...document.querySelectorAll('#spelBody .spel-tegel')]
+          .map((t) => Number(t.dataset.id)))];
+        ids.forEach((id) => {
+          window.gameTile(id, 'question');
+          window.gameTile(id, 'answer');
+        });
+      },
+      type() {
+        const term = termBy(1, document.querySelector('.spel-omschrijving').innerHTML);
+        expect(term, 'the description belongs to a term of this chapter').toBeTruthy();
+        document.getElementById('spelInput').value = term[0];
+        window.gameCheck();
+      },
+      gap() {
+        // Put each term back in the blank and see which one rebuilds a
+        // sentence that really occurs in the summary.
+        const parts = plain(document.querySelector('.spel-omschrijving').textContent).split('_____');
+        const text = chapter.summary.map((sec) => plain(sec.html).toLowerCase()).join(' ');
+        const term = terms.find((t) => text.includes(parts.join(plain(t[0])).toLowerCase()));
+        expect(term, 'the blank belongs to a term of this chapter').toBeTruthy();
+        document.getElementById('spelInput').value = term[0];
+        window.gameCheck();
+      },
+      choice() {
+        const term = termBy(1, document.querySelector('.spel-omschrijving').innerHTML);
+        expect(term, 'the description belongs to a term of this chapter').toBeTruthy();
+        pick(term[0]);
+      },
+      quiz() {
+        const asked = document.querySelector('.spel-omschrijving').innerHTML;
+        const entry = chapter.quiz.find((q) => q[0] === asked);
+        expect(entry, 'the question comes from this chapter').toBeTruthy();
+        pick(entry[1][entry[2]]);
+      },
+      truefalse() {
+        const shown = document.querySelector('.spel-omschrijving').innerHTML.split('<br>');
+        const term = termBy(0, shown[0].replace(/<\/?b>/g, ''));
+        expect(term, 'the term comes from this chapter').toBeTruthy();
+        pick(term[1] === shown[1] ? 'Ja, dat klopt' : 'Nee, dat klopt niet');
+      },
+      oddone() {
+        // Three options share a paragraph and one does not; that one is it.
+        const options = [...document.querySelectorAll('#spelBody .spel-keuze')]
+          .map((b) => termBy(0, b.innerHTML));
+        expect(options.every(Boolean), 'every option is a term of this chapter').toBe(true);
+        const tally = {};
+        options.forEach((t) => { tally[t[2]] = (tally[t[2]] || 0) + 1; });
+        const odd = options.find((t) => tally[t[2]] === 1);
+        expect(odd, 'exactly one option is from another paragraph').toBeTruthy();
+        pick(odd[0]);
+      },
+      order() {
+        const term = termBy(0, document.querySelector('.spel-omschrijving').innerHTML);
+        expect(term, 'the word puzzle shows a term of this chapter').toBeTruthy();
+        plain(term[1]).split(' ').forEach((word) => {
+          const tile = [...document.querySelectorAll('#spelBody .spel-bank .spel-woord')]
+            .find((b) => !b.disabled && b.textContent === word);
+          expect(tile, 'a bank tile holding "' + word + '"').toBeTruthy();
+          window.gamePickWord(argOf(tile));
+        });
+      },
+      sort() {
+        const headings = [...document.querySelectorAll('#spelBody .spel-bak h5')]
+          .map((h) => h.textContent);
+        [...document.querySelectorAll('#spelBody .spel-chips .spel-chip')].forEach((chip) => {
+          const term = termBy(0, chip.innerHTML);
+          expect(term, 'the chip is a term of this chapter').toBeTruthy();
+          window.gameSortPick(argOf(chip));
+          const at = headings.indexOf(chapter.summary[term[2]].heading);
+          expect(at, 'a bucket for the right paragraph').toBeGreaterThan(-1);
+          window.gameSortDrop(at);
+        });
+      },
+    };
+
+    window.setTab('game');
+    window.openLevel(0);
+    expect(document.getElementById('spelwrap').classList.contains('show')).toBe(true);
+
+    const seen = new Set();
+    for (let guard = 0; guard < 20 && !document.querySelector('.spel-klaar'); guard++) {
+      const kind = document.querySelector('#spelBody .spel-vraag').dataset.soort;
+      expect(play[kind], 'a way to answer a "' + kind + '" exercise').toBeTruthy();
+      seen.add(kind);
+      play[kind]();
+      expect(document.querySelector('#spelBody .spel-fb.fout'),
+        'answering a "' + kind + '" exercise correctly').toBeNull();
+      window.gameNext();
+    }
+
+    // Finished, with a perfect run and the result written to storage.
+    const finish = document.querySelector('.spel-klaar');
+    expect(finish, 'the level ends within 20 exercises').toBeTruthy();
+    expect(finish.textContent).toContain('Perfect');
+    expect(seen.size, 'a session mixes several kinds of exercise').toBeGreaterThan(2);
+    expect(localStorage.getItem('spellevels')).toContain('biologie|bbl|1|2');
+
+    window.closeLevel();
+    expect(document.getElementById('spelwrap').classList.contains('show')).toBe(false);
+
+    // Level 1 is green with a check, and level 2 has opened up.
+    const nodes = [...document.querySelectorAll('#chBody .pad-stap')];
+    expect(nodes[0].querySelector('.pad-knop').classList.contains('klaar')).toBe(true);
+    expect(nodes[0].querySelector('.pad-gezicht').textContent).toBe('\u2713');
+    expect(nodes[1].querySelector('.pad-knop').disabled).toBe(false);
+    window.setTab('summary');
   });
 
   it('shows flashcards and marks one as known', () => {

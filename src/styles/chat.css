@@ -25,4 +25,3 @@
 }
 
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
-@media (max-width:560px){.crumb{display:none}.wrap{padding:2rem 1.2rem 6rem}.scorebar{top:100px}}

@@ -4,6 +4,9 @@ import { selection, TABS, currentSubject, currentBook, chapterContent, selection
 import { go, SCREENS, scrollScreenToTop } from './navigation.js';
 import { renderSummary, resetSummaryState } from './summary.js';
 import { renderFlashcards, resetFlashcardState } from './flashcards.js';
+import { resetGameState } from './game.js';
+import { renderPath } from './path.js';
+import { levelsForChapter } from '../content/levels.js';
 import { renderQuiz, resetQuizState } from './quiz.js';
 import { renderGlossary } from './glossary.js';
 import { renderNotes } from './notes.js';
@@ -12,6 +15,7 @@ import { renderNotes } from './notes.js';
 const TAB_LIST = [
   [TABS.summary, 'Samenvatting'],
   [TABS.flashcards, 'Flashcards'],
+  [TABS.game, 'Oefenspel'],
   [TABS.quiz, 'Oefenquiz'],
   [TABS.terms, 'Begrippenlijst'],
   [TABS.notes, 'Notities'],
@@ -33,6 +37,7 @@ export function chapterInfo(nr) {
 
 function resetTabState() {
   resetFlashcardState();
+  resetGameState();
   resetQuizState();
   resetSummaryState();
 }
@@ -54,6 +59,7 @@ export function openChapterFromKey(key, tab) {
 function tabCount(chapter, tabId) {
   if (!chapter) return 0;
   if (tabId === TABS.flashcards) return chapter.cards.length;
+  if (tabId === TABS.game) return levelsForChapter(chapter).length;
   if (tabId === TABS.quiz) return chapter.quiz.length;
   if (tabId === TABS.terms) return chapter.terms.length;
   return 1;
@@ -78,8 +84,14 @@ export function renderChapter() {
 
   let tabIndex = TAB_LIST.findIndex(([id]) => id === selection.tab);
   if (tabIndex < 0) tabIndex = 0;
+  // Measure the active tab: the labels differ in width, so an equal share per
+  // tab would leave the underline sitting next to the tab it belongs to.
   const slider = $('tabslide');
-  if (slider) {
+  const activeTab = $('chTabs').children[tabIndex];
+  if (slider && activeTab && activeTab.offsetWidth) {
+    slider.style.width = activeTab.offsetWidth + 'px';
+    slider.style.left = activeTab.offsetLeft + 'px';
+  } else if (slider) {
     slider.style.width = (100 / TAB_LIST.length) + '%';
     slider.style.left = (tabIndex * (100 / TAB_LIST.length)) + '%';
   }
@@ -93,6 +105,7 @@ export function renderChapter() {
   }
   if (selection.tab === TABS.summary) renderSummary(chapter);
   if (selection.tab === TABS.flashcards) renderFlashcards(chapter);
+  if (selection.tab === TABS.game) renderPath(chapter);
   if (selection.tab === TABS.quiz) renderQuiz(chapter);
   if (selection.tab === TABS.terms) renderGlossary(chapter);
   if (selection.tab === TABS.notes) renderNotes();

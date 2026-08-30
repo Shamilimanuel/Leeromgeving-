@@ -25,8 +25,6 @@ else · `[?]` needs a decision before it can be built.
       `supabase/functions/_shared/helpers.ts` (`PASSWORD_MIN`),
       and twice in `index.html` (`minlength="8"` plus the Dutch text
       "min. 8 tekens").
-- [ ] **Remove the typo remote.** `git remote remove orgin` — it sits next to
-      the real `origin` and points at the same URL.
 - [ ] **Click through the new admin actions once.** `chat_legen`,
       `leerling_berichten_wissen` and `codes_opruimen` are deployed
       (`admin-acties` v9) and the function boots, but the authenticated paths
@@ -55,10 +53,10 @@ else · `[?]` needs a decision before it can be built.
 Both features were finished and committed at the time, and the handoff document
 still lists them as done — but they are not in the current code.
 
-- [!] **Matchspel** — lives on the local branch `matchspel` (commit `cc17b3e`,
-      `uiterlijk/matchspel.js`, 124 lines) and was **never merged into `main`**.
-      Written against the old structure, so it needs porting to `src/ui/` and
-      registering as a chapter tab. Nothing is lost; it just has to be moved.
+- [x] ~~**Matchspel**~~ — recovered 2026-08-29 from branch `matchspel`
+      (`cc17b3e`) and folded into the Oefenspel as the verbind-oefening
+      (`src/ui/game.js`). The branch is kept on `origin/matchspel` for
+      reference and can be deleted once the game has been played in a browser.
 - [!] **Voorlezen (text-to-speech)** — `uiterlijk/voorlezen.js` was deleted by
       the revamp, and the `voorlezen` Edge Function has since been removed from
       Supabase too. Also blocked independently (see section 5).
@@ -66,10 +64,30 @@ still lists them as done — but they are not in the current code.
 ## 4. Teamproject phases
 
 - [x] **Fase 1 — Teamchat + mute** — done and live.
-- [~] **Fase 2 — practice games.**
-  - [!] Matchspel — built but stranded on a branch, see section 3.
-  - [ ] Typspel (type the answer yourself) — not started. Logical next step,
-        needs no API and no cost.
+- [~] **Fase 2 — the practice game.** One Duolingo-style game, not a menu of
+      separate ones. The "Oefenspel" tab shows a **path of levels** per chapter
+      (`src/ui/path.js`); tapping a level opens a **full-screen session**
+      (`src/ui/game.js`) of eight mixed exercises. Finishing pays XP, turns the
+      node green with a check and unlocks the next level. See section 5.
+  - [x] Verbind — connect a question to its answer. Both columns live in one
+        CSS grid, so a one-line question and a three-line answer share a row,
+        and a matched pair is joined by a drawn SVG line.
+  - [x] Typ — type the term that belongs to a description (section 7).
+  - [x] Kies — pick the right term out of four; the three wrong ones are real
+        terms from the same chapter, so they are plausible.
+  - [x] Volgorde — rebuild a description by tapping its words in order.
+  - [x] Vul het gat in — a sentence out of the summary with the term blanked
+        out. Only sentences that really contain the term are used.
+  - [x] Sorteer — put each term in the paragraph it belongs to. Needs a level
+        spanning more than one paragraph, so it shows up on merged levels and
+        on the Eindtoets.
+  - [x] Quizvraag — the chapter's own quiz entries.
+  - [x] Waar of niet waar — does this description belong to this term?
+  - [x] Welke hoort er niet bij — three terms from this paragraph and one from
+        another; the paragraph is named, otherwise it is a guess.
+  - [ ] Tijdrace (as many as you can in 45 seconds) — the only kind left from
+        the shortlist. It needs a different session shape (a clock instead of a
+        fixed number of exercises), which is why it is not in yet.
   - [!] Spraakspel (speak the answer) — needs speech, so it waits on Fase 4.
 - [ ] **Fase 3 — competitions between students** — not started. Builds on
       Fase 2 and needs cloud progress to compare students. No design yet:
@@ -82,21 +100,42 @@ still lists them as done — but they are not in the current code.
         was wrong instead of only marking it. Needs a paid API key too, possibly
         the same one.
 
-## 5. Duolingo-style path screen
+## 5. Duolingo-style path
 
-Shamil's idea: a winding path of level nodes per book/chapter, with a clear
-start and something at the end. **Design first, then build** — these questions
-were never settled:
+Shamil's idea, and now the shape of the whole practice game. **The design
+questions are settled and the chapter path is built** (2026-08-30):
 
-- [?] What is one "level"? One node per chapter (a new way to render the
-      current chapter list), or finer-grained — Samenvatting → Flashcards →
-      Matchspel → Oefenquiz as four separate nodes, closer to how Duolingo
-      actually works but a much bigger change.
-- [?] Does the path replace the chapter cards or sit next to them?
-- [?] What happens at the end — a completion animation, a final test, or a
-      hand-off to the next book?
-- [?] Is the path locked in order? Locking is currently per `deel` only, not
-      per chapter.
+- [x] **What is one level?** One summary paragraph. Terms and flashcards
+      already carry the index of the paragraph they belong to, so the split
+      costs no content work (`src/content/levels.js`). Paragraphs with under
+      six items merge forward, and a chapter with more than one level ends on
+      an **Eindtoets** drawn from everything. Over the 244 chapters that gives
+      3-5 levels each and no level thinner than four items — roughly 950
+      levels across the site.
+- [x] **Where does it live?** On the Oefenspel tab of a chapter, so the chapter
+      cards stay as they are.
+- [x] **Is it locked in order?** Yes: level 1 is always open, the rest need the
+      level before them (`src/state/gameLevels.js`).
+- [x] **What is at the end?** The Eindtoets, then the whole path shows as
+      finished. Levels can be replayed; XP is only paid for an improvement.
+
+Still open, one level up:
+
+- [ ] **A path of chapters on the book screen.** The chapter cards could become
+      path nodes too, a chapter turning green once all its levels are done.
+      This is the "beide lagen" option that was deliberately not built first.
+- [ ] **Rewards and unlockables.** XP is recorded per level, feeds the
+      character-card statistics and is now also stored server-side. Nothing is
+      unlocked with it yet. Shamil's idea: badges or a **tag next to your name
+      in the Teamchat**. Design note for when it is built: the tag must be
+      derived from `spelvoortgang` on the server, or written by an Edge
+      Function. A student can write their own `spelvoortgang` rows (that is how
+      the game saves), so a tag that simply trusts those numbers could be
+      forged with a handful of REST calls. Only the *reading* of it needs to be
+      trustworthy — showing a tag is not the same as granting a permission.
+- [ ] **Streak / daily goal.** There is a `streak` in `src/state/progress.js`
+      already; the path does not use it.
+- [ ] **A completion animation** when the last level of a chapter is cleared.
 
 Relevant current code (the handoff doc still points at the pre-revamp paths):
 
@@ -146,7 +185,62 @@ students who never posted. For a shared class chat that is arguably the point.
       row-level, not column-level, so they would get `status` and `gemute` too.
       **Worse than what we have.**
 
-## 7. Content backlog
+## 7. On the typing exercise's answer check
+
+Kept here because the rule is easy to "simplify" back into a bug.
+
+An answer is compared after normalising: HTML entities decoded
+(`richtingsco&euml;ffici&euml;nt`), lower case, accents stripped, punctuation
+dropped. Brackets are optional (`diameter (middellijn)` accepts *diameter*,
+*middellijn* or both; `(to) admire` accepts either), and a slash **with spaces**
+splits into alternatives while `km/uur` and `m/s` stay whole.
+
+Small typos are forgiven — but **only when no other term of the chapter fits at
+least as well**. Without that guard, 69 pairs across the 255 playable chapters
+graded as "almost right" while being the wrong concept: producenten/reducenten,
+bollelens/hollelens, kraakbeen/spaakbeen, zaadballen/zaadcellen,
+in-/uitwendige prikkel, minimum-/maximumtemperatuur. Those are exactly the
+pairs a test asks about, so forgiving them would confirm the mix-up. With the
+guard: 0 such pairs, and all 5605 terms still accept their own spelling.
+
+## 8. Admin: results per paragraph
+
+Built 2026-08-30. In the admin panel each student row has a **Voortgang**
+button that opens their practice path: every chapter they played, every level
+inside it, the best score and the XP, with **Wissen** per level, **Hoofdstuk
+wissen** per chapter and **Alles wissen** for the whole path.
+
+How the pieces fit:
+
+- `public.spelvoortgang` — one row per (student, chapter, level). RLS: you read
+  your own rows, an admin reads everyone's; you may only write your own.
+- Deleting somebody else's rows goes through `admin-acties`
+  (`spelvoortgang_wissen`), never from the browser, like every other privileged
+  action. The action takes a chapter and a level so it can wipe one paragraph,
+  one chapter or everything.
+- The game stays offline-first: results are written to localStorage first and
+  mirrored up (`src/services/gameProgress.js`). Signing in pushes what was
+  earned while signed out and pulls anything from another device.
+- Only the chapter key and level number are stored. The paragraph names in the
+  admin screen come from the content in the browser, so the database holds no
+  copy of the study material.
+
+Watch out when adding tables: a new table in `public` inherits a blanket
+`grant all` for `authenticated`, which includes **TRUNCATE — and TRUNCATE
+ignores RLS**. `spelvoortgang` got that by default and it was revoked in
+`20260829225221`. Check `information_schema.role_table_grants` after every new
+table.
+
+Still open here:
+
+- [ ] A class overview: results per paragraph across *all* students at once,
+      rather than one student at a time. That is the view a teacher actually
+      wants before a test.
+- [ ] The three `is_admin` / `is_actief` / `mag_chatten` advisor warnings are
+      by design — the RLS policies call them — but they are worth a note so
+      nobody "fixes" them by revoking EXECUTE and breaking every policy.
+
+## 9. Content backlog
 
 - [!] **Engels TL — Deel B** — waiting on scans. TL1 was scanned twice and both
       times turned out to be Deel A; a third attempt is needed. TL2, TL3 and TL4
@@ -161,7 +255,7 @@ students who never posted. For a shared class chat that is arguably the point.
       again. The subject-specific ideas were lost when that session was
       summarised, and steps 1 and 2 are already done.
 
-## 8. Smaller ideas, not started
+## 10. Smaller ideas, not started
 
 - [ ] Badge "N kaarten wachten vandaag" on the book overview — the Leitner due
       count is only visible once you are already inside a chapter.
@@ -172,7 +266,7 @@ students who never posted. For a shared class chat that is arguably the point.
 - [ ] Radial menu on very narrow screens (<360px) — tested at 375px and 420px,
       never on anything smaller.
 
-## 9. Done recently (2026-08-29)
+## 11. Done recently
 
 - Node installed; the site runs and is deployed to GitHub Pages via
   `.github/workflows/deploy.yml` (a failing test blocks the deploy).
@@ -184,3 +278,46 @@ students who never posted. For a shared class chat that is arguably the point.
   as integers, so admin delete silently did nothing.
 - Home shortcuts restyled to match the subject cards; Instellingen extended;
   admin overview and moderation actions added.
+- Matchspel recovered from the branch it was stranded on, ported to the module
+  structure, and merged with the typing exercise into one Oefenspel session.
+- Both games merged into one Oefenspel session (`src/ui/game.js`); the answer
+  check moved to `src/lib/answers.js` with `tests/answers.test.js`.
+- The Duolingo path built: levels per paragraph (`src/content/levels.js`),
+  locking and XP (`src/state/gameLevels.js`), the path screen
+  (`src/ui/path.js`) and a full-screen session overlay, plus two new exercise
+  kinds (kies, volgorde). Covered by `tests/levels.test.js` and a walkthrough
+  in `tests/app.test.js` that plays level 1 to a green check.
+- Chapter tab underline now measures the active tab instead of assuming every
+  tab is the same width — the old guess assumed equal widths.
+- Typo remote `orgin` removed.
+
+**2026-08-30**
+
+- Five more exercise kinds: vul het gat in, sorteer, quizvraag, waar of niet
+  waar, welke hoort er niet bij. Nine in total, and `tests/exercises.test.js`
+  checks every level of every chapter can still fill a session.
+- Practice results mirrored to Supabase (`spelvoortgang`), so progress follows a
+  student between devices.
+- Phone layout rebuilt in `src/styles/mobile.css` (imported last by `main.css`):
+  tighter gutters, 44px tap targets, bottom sheets instead of centred dialogs,
+  safe-area insets, no stuck hover states, and no iOS zoom on focus. The three
+  scattered phone blocks it replaced (in `layout.css`, `widgets.css`, `chat.css`)
+  were removed, so phone layout has one source of truth.
+- Update flow: `public/sw.js` no longer calls `skipWaiting()` on install, so a
+  new build waits and `src/ui/appUpdate.js` asks before reloading. Release notes
+  in `src/content/changelog.js` are shown once after an update by
+  `src/ui/whatsNew.js`. Covered by `tests/changelog.test.js` and
+  `tests/whatsNew.test.js`.
+
+Still open on the app front:
+
+- [x] Update flow walked end to end in Chrome on 2026-08-30: served a 2.3.0
+      build, deployed a fake 2.3.1 over it, and the waiting worker was detected,
+      the bar offered the reload, and the sheet showed only the 2.3.1 entry.
+- [ ] The phone layout has still only been seen in the build and in jsdom, not
+      on a real device. Safe-area insets in particular cannot be checked in
+      DevTools — try it on a phone before the next deploy.
+- [ ] Play Store listing via a Trusted Web Activity (see README). Blocked on a
+      custom domain and a Play developer account, not on code.
+- Admin panel: results per paragraph per student, with reset per level, per
+  chapter or all at once (`admin-acties` v10).

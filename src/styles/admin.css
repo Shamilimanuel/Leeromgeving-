@@ -25,3 +25,22 @@
   display:flex;flex-direction:column;gap:.15rem}
 .admin-stat b{font-size:1.25rem;line-height:1;color:var(--goud)}
 .admin-stat span{font-size:.58rem;letter-spacing:.12em;text-transform:uppercase;color:var(--mut)}
+
+/* practice-path results of one student, in the admin panel */
+.admpad{margin-top:.9rem;border-top:1px solid var(--line);padding-top:.9rem}
+.admpad-totaal{display:flex;align-items:center;gap:.8rem;flex-wrap:wrap;font-size:.88rem;margin-bottom:.9rem}
+.admpad-totaal .bt{margin-left:auto}
+.admpad-hoofdstuk{border:1px solid var(--line);border-radius:12px;margin-bottom:.7rem;overflow:hidden}
+.admpad-kop{display:flex;align-items:center;gap:.7rem;flex-wrap:wrap;padding:.6rem .85rem;
+  background:rgba(255,255,255,.03);font-size:.84rem}
+.admpad-kop .bt{margin-left:auto;padding:.3rem .8rem;font-size:.72rem}
+.admpad-level{display:flex;align-items:center;gap:.7rem;flex-wrap:wrap;
+  padding:.5rem .85rem;border-top:1px solid var(--line);font-size:.82rem}
+.admpad-naam{flex:1;min-width:150px}
+.admpad-score{font-family:'Cinzel',serif;font-weight:600;min-width:44px;text-align:right}
+.admpad-score.goed{color:#7cd992}
+.admpad-score.matig{color:var(--accent)}
+.admpad-score.zwak{color:#ef8a8a}
+.admpad-xp{font-size:.75rem;color:var(--mut);min-width:64px}
+.admpad-level .bt{padding:.28rem .75rem;font-size:.7rem}
+@media (max-width:560px){.admpad-naam{min-width:100%}}

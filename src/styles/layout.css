@@ -114,14 +114,6 @@ h1.page{font-family:'Cinzel',serif;font-size:clamp(1.8rem,4.5vw,2.6rem);font-wei
 .subj .swatch .dot{width:5px;height:5px;border-radius:50%;background:var(--c,var(--goud));display:inline-block}
 .subj.todo{opacity:.55}
 @media (prefers-reduced-motion:reduce){.subj .ring,.subj::before,.subj .core{animation:none}}
-@media (max-width:480px){
-  .subjects{grid-template-columns:repeat(2,1fr);gap:.75rem}
-  .subj{min-height:172px;padding:1.1rem .9rem .95rem;border-radius:10px}
-  .subj .badge{width:42px;height:42px;margin-bottom:.9rem}
-  .subj .bigico{font-size:3.6rem}
-  .subj h3{font-size:.92rem}
-  .subj small{font-size:.64rem}
-}
 
 /* ══ TOAST ══ */
 .toast{position:fixed;left:50%;bottom:1.8rem;transform:translateX(-50%) translateY(20px);

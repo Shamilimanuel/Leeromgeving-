@@ -2,7 +2,7 @@
 <html lang="nl">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>Samenvattingen: Shamil Imanuel</title>
 <!-- Security policy: scripts/styles only from this site (inline handlers are used, hence 'unsafe-inline'),
      network only to the Supabase project (update the host here when src/config.js points elsewhere;
@@ -79,6 +79,9 @@
   <div class="top"><div class="top-in">
     <div class="brand">Samenvattingen<span>Shamil Imanuel</span></div>
     <div class="crumb"><b>Kies een vak</b></div>
+    <button class="belbtn" id="belbtn" onclick="openWhatsNew()" aria-label="Nieuw en updates" title="Wat is er nieuw?">
+      <span class="belico">&#128276;</span><span class="belstip" id="belStip" hidden></span>
+    </button>
     <div class="profilewrap" id="profileWrap">
       <button class="avatarbtn" id="topAccountBtn" onclick="toggleProfileMenu(event)" aria-haspopup="true" aria-expanded="false" title="Account">
         <span class="avatarcircle" id="avatarCircle">&#128100;</span>
@@ -236,6 +239,12 @@
         <div id="setVerwijderMelding"></div>
       </div>
     </div>
+
+    <div class="box" style="margin-top:1rem">
+      <h3 style="margin-top:0">Over deze app</h3>
+      <p class="lede" style="margin:.2rem 0 1rem">Je gebruikt versie <b id="setVersie">&mdash;</b>. Nieuwe versies komen vanzelf binnen; de app zegt het als er een klaarstaat.</p>
+      <button class="bt gh" onclick="openWhatsNew()">Wat is er nieuw?</button>
+    </div>
   </div>
 </section>
 
@@ -331,6 +340,9 @@
 
 <div class="radialmenu" id="radialmenu">
   <i class="radialhalo"></i>
+  <!-- display:contents on wide screens, so the arc positioning below still
+       resolves against .radialmenu; a slide-in panel on phones. -->
+  <div class="radialitems">
   <div class="radialitem" style="--tx:0px;--ty:-250px">
     <button class="zoekbtn menuicon" id="zoekbtn" onclick="openSearch();closeRadialMenu()" aria-label="Zoeken" title="Zoeken">🔍</button>
     <span class="radiallabel">Zoeken</span>
@@ -358,6 +370,7 @@
   <div class="radialitem" style="--tx:250px;--ty:0px">
     <button class="helpbtn menuicon" id="helpbtn" onclick="openHelp(0);closeRadialMenu()" aria-label="Uitleg" title="Uitleg">❓</button>
     <span class="radiallabel">Uitleg</span>
+  </div>
   </div>
   <button class="radialtrigger" id="radialtrigger" onclick="toggleRadialMenu()" aria-label="Menu" aria-expanded="false" title="Menu">
     <span class="radialdots">⋯</span>
@@ -402,6 +415,36 @@
     <button class="helpclose" onclick="closeExam()" aria-label="Sluiten">&times;</button>
     <h3>Oefentoets: alle vakken door elkaar</h3>
     <div id="examenBody"></div>
+  </div>
+</div>
+
+<div class="nieuwwrap" id="nieuwwrap">
+  <div class="helpbg" onclick="closeWhatsNew()"></div>
+  <div class="helpcard nieuwcard" role="dialog" aria-label="Wat is er nieuw">
+    <button class="helpclose" onclick="closeWhatsNew()" aria-label="Sluiten">&times;</button>
+    <h3>Wat is er nieuw?</h3>
+    <div id="nieuwBody"></div>
+    <div class="helpnav" style="justify-content:flex-end;margin-top:1rem">
+      <button class="bt" onclick="closeWhatsNew()">Aan de slag</button>
+    </div>
+  </div>
+</div>
+
+<!-- Shown by src/ui/serviceWorker.js when a new build is installed and waiting. -->
+<div class="updatebalk" id="updatebalk" role="status" aria-live="polite">
+  <span class="updatebalk-tekst"><b>Nieuwe versie klaar</b><small>Vernieuw om hem te gebruiken.</small></span>
+  <button class="bt" onclick="applyUpdate()">Vernieuwen</button>
+  <button class="updatebalk-weg" onclick="dismissUpdate()" aria-label="Later" title="Later">&times;</button>
+</div>
+
+<div class="spelwrap" id="spelwrap">
+  <div class="spelpaneel" role="dialog" aria-label="Oefenspel">
+    <div class="spelbalk">
+      <button class="spelsluit" onclick="closeLevel()" aria-label="Stoppen met oefenen">&times;</button>
+      <div class="prog spelbalk-prog"><i id="spelProg"></i></div>
+      <span class="spelxp" id="spelScore">0 XP</span>
+    </div>
+    <div class="spelinhoud" id="spelBody"></div>
   </div>
 </div>
 
