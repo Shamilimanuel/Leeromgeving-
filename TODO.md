@@ -4,7 +4,7 @@ Working backlog for this repository. Feature names stay Dutch where they are the
 app's own terms (Teamchat, Matchspel, Instellingen); everything else is English,
 per the language rule in `CLAUDE.md`.
 
-Last reviewed: 2026-08-29.
+Last reviewed: 2026-08-30.
 
 Legend: `[ ]` open · `[~]` in progress · `[!]` blocked on someone or something
 else · `[?]` needs a decision before it can be built.
@@ -264,9 +264,71 @@ Still open here:
 - [ ] Mountain-silhouette hero on the splash screen — from the Claude Design
       mock-up, deliberately never built.
 - [ ] Radial menu on very narrow screens (<360px) — tested at 375px and 420px,
-      never on anything smaller.
+      never on anything smaller. Largely superseded on phones: at <=560px the
+      menu is no longer an arc in the corner but a panel that slides in from
+      the right (section 11), so the arc geometry only has to hold up on
+      tablets and desktops now.
 
-## 11. Done recently
+## 11. Mobile, the installed app, and mandatory login
+
+### Mandatory login
+
+- [?] **Decide the scope first.** Shamil's call (2026-08-30) is that signing in
+      becomes mandatory. Open question: everywhere, or only on phones? "Only on
+      phones" is hard to defend — the same student on a laptop would keep the
+      guest route, so the requirement would not actually hold. Assume
+      *everywhere* unless decided otherwise, and treat the phone as the place it
+      was noticed rather than the place it applies.
+- [ ] **Gate the app behind an account.** `go()` in `src/ui/navigation.js` is the
+      single choke point every screen passes through, so the gate belongs there
+      rather than in each screen. Splash and the account screen stay reachable;
+      everything else redirects to `account` when `auth.getProfile()` is null.
+      The splash "Overslaan" and "Start" buttons currently go straight to `home`
+      and would have to go to `account` instead.
+- [ ] **Retire the four guest states**, which become unreachable or become the
+      gate itself: `accountGast` (`src/ui/account.js`), `chatGast`
+      (`src/ui/chat.js`), `settingsGast` (`src/ui/settings.js`), and the `.gast`
+      avatar plus its "Niet ingelogd" dropdown (`src/ui/account.js`).
+- [!] **Decide what happens to work done while signed out.** This is the part
+      that can lose student data, so settle it before writing the gate. Only the
+      practice path syncs today: `syncAllLevels()` in
+      `src/services/gameProgress.js` pushes local levels up on sign-in. Everything
+      else in `src/state/progress.js` is device-local and has no server side at
+      all — `voortgang`, `leitner`, `favorieten`, `sq3r`, `cornell`,
+      `examenresultaten`. Either migrate those into the account on first sign-in,
+      or accept that a student who used the site as a guest loses them.
+- [ ] **Do not lock out an offline student.** The app is offline-first and this
+      gate must not undo that. `getSession()` reads the session Supabase keeps in
+      localStorage and works offline, but `ensureProfile()` makes a network call;
+      the gate has to treat "offline with a stored session" as signed in rather
+      than bouncing the student to a login screen they cannot complete.
+- [ ] **Registration needs an invite code** (`INVITE_CODE_LENGTH` in
+      `src/config.js`, the `registreren` Edge Function). Mandatory login
+      therefore means every student needs a code *before* they can open anything,
+      so enough codes have to exist and be handed out first. A rollout question,
+      not a code question, but the code change is worthless without it.
+- [ ] **`tests/app.test.js` boots the app signed out** and walks subject → level
+      → book → chapter. A hard gate breaks that walkthrough, so it needs either a
+      signed-in fixture or a documented way for the gate to stand down in tests.
+
+### Phone follow-ups
+
+- [ ] **Confirm the 2.3.1 fixes on the phone.** Three bugs were reported and
+      fixed on 2026-08-30 but deployed without being seen working: the menu
+      trigger drifting down after closing, the splash "Verder" button jumping
+      onto "Overslaan", and the close button scrolling away inside a sheet.
+- [ ] **Safe-area insets in the installed app** (notch and home indicator) are
+      still unverified. They cannot be checked in DevTools and only apply in
+      standalone mode, so this needs the installed app on a real phone.
+- [ ] **The bell is only on the home screen**, because home is the only screen
+      whose top bar carries the account button. Add it to the other eight top
+      bars, or accept that release notes are found from home only.
+- [ ] **Play Store listing via a Trusted Web Activity** (see README). Blocked on
+      a custom domain and a Play developer account, not on code — a
+      `user.github.io/repo` sub-path cannot host the `assetlinks.json` that
+      proves ownership.
+
+## 12. Done recently
 
 - Node installed; the site runs and is deployed to GitHub Pages via
   `.github/workflows/deploy.yml` (a failing test blocks the deploy).
@@ -309,15 +371,27 @@ Still open here:
   `src/ui/whatsNew.js`. Covered by `tests/changelog.test.js` and
   `tests/whatsNew.test.js`.
 
-Still open on the app front:
-
-- [x] Update flow walked end to end in Chrome on 2026-08-30: served a 2.3.0
-      build, deployed a fake 2.3.1 over it, and the waiting worker was detected,
-      the bar offered the reload, and the sheet showed only the 2.3.1 entry.
-- [ ] The phone layout has still only been seen in the build and in jsdom, not
-      on a real device. Safe-area insets in particular cannot be checked in
-      DevTools — try it on a phone before the next deploy.
-- [ ] Play Store listing via a Trusted Web Activity (see README). Blocked on a
-      custom domain and a Play developer account, not on code.
 - Admin panel: results per paragraph per student, with reset per level, per
   chapter or all at once (`admin-acties` v10).
+- Update flow walked end to end in Chrome: served a 2.3.0 build, deployed 2.3.1
+  over it, and the waiting worker was detected, the bar offered the reload, and
+  the sheet showed only the 2.3.1 entry. The bug that made this necessary: with
+  no version in `public/sw.js` the bytes never changed between deploys, so the
+  browser installed nothing and no update was ever noticed.
+- Tools menu moved out of the bottom-left corner on phones, where its fold-out
+  arc opened straight over the subject cards. The trigger now sits in the top
+  bar and the options slide in as a panel from the right.
+- Notice bell in the top bar, with a dot while a release is unread; the
+  Tekstgrootte tile is hidden on phones (it stays in Instellingen).
+- Summaries no longer push content off the side. Two causes: 33 of the 101
+  tables in the content modules are not wrapped in `.tblwrap`, and Dutch
+  compounds like *Aansprakelijkheidsverzekering* are wider than a phone. Because
+  `.screen` is `overflow-x:hidden` that content was clipped out of reach rather
+  than scrollable. Fixed in CSS, since `content:build` regenerates the 244
+  content modules.
+- Three phone bugs from one mistake: the touch-device block blanked `transform`
+  on `:hover`, but the menu trigger and the splash "Verder" button both use
+  `transform` to centre themselves, so a hover that stuck after a tap moved
+  them. Released as 2.3.1.
+- Deployed to GitHub Pages (2.3.0, then 2.3.1). Installing from the live HTTPS
+  address gives a real app; over plain HTTP Android only offers a snelkoppeling.
