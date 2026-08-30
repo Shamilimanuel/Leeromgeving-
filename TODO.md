@@ -264,6 +264,12 @@ Settled while building it:
   that, flipping `REQUIRE_LOGIN` would fail the suite and a failing test blocks
   the deploy — the switch would not have been flippable.
 
+- [ ] **Redeploy `admin-acties`.** It still runs the version of
+      `_shared/helpers.ts` that says "Vraag je docent om hulp" when a blocked
+      account calls it; the repo and `registreren` v2 both say "Vraag Shamil".
+      Nothing is broken, the two deployed functions just disagree on one
+      sentence. Deploy it the next time that function changes anyway, or on its
+      own if the wording matters sooner.
 - [ ] **See a code actually disappear.** `registreren` v2 (2026-08-30) deletes
       an invite code once it has been used, so the admin list only holds codes
       that still work. The function was smoke-tested live — it boots, validates
