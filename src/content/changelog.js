@@ -13,9 +13,19 @@
    The entries are Dutch because students read them. Keep the lines short and
    concrete: what can you do now that you could not do yesterday? */
 
-export const APP_VERSION = '2.5.0';
+export const APP_VERSION = '2.6.0';
 
 export const CHANGELOG = [
+  {
+    version: '2.6.0',
+    date: '2026-08-31',
+    title: 'Teamchat weg, Agenda erbij',
+    changes: [
+      'De Teamchat is gestopt. In plaats daarvan is er nu een Agenda: zet er een toets in en je krijgt automatisch een paar leermomentjes terug, verspreid tot de toetsdatum.',
+      'Een toets koppel je desgewenst aan een hoofdstuk, zodat je er met één klik naartoe kunt.',
+      'De Agenda staat alleen op dit apparaat, net als je notities en voortgang.',
+    ],
+  },
   {
     version: '2.5.0',
     date: '2026-08-30',

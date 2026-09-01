@@ -38,9 +38,9 @@ tests/                  Vitest
 - A function called from `onclick="..."` markup must be exported through
   `src/ui/globals.js` (the inline-handlers test enforces this).
 - Keep persisted names: localStorage keys/fields (`voortgang`, `leitner`, …),
-  database columns (`gebruikersnaam`, `rol`, `status`, `gemute`) and
-  edge-function action names are a deployed contract. Map to English at the
-  boundary (`src/state/progress.js`, `src/services/auth.js`), never rename them.
+  database columns (`gebruikersnaam`, `rol`, `status`) and edge-function
+  action names are a deployed contract. Map to English at the boundary
+  (`src/state/progress.js`, `src/services/auth.js`), never rename them.
 - Element ids and CSS class names in `index.html`/`src/styles/` are unchanged
   from the original site and may be Dutch; do not rename them casually:
   content modules reference the CSS classes.

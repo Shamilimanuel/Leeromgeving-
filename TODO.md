@@ -1,10 +1,10 @@
 # TODO — Leeromgeving
 
 Working backlog for this repository. Feature names stay Dutch where they are the
-app's own terms (Teamchat, Matchspel, Instellingen); everything else is English,
+app's own terms (Agenda, Matchspel, Instellingen); everything else is English,
 per the language rule in `CLAUDE.md`.
 
-Last reviewed: 2026-08-30.
+Last reviewed: 2026-08-31.
 
 Legend: `[ ]` open · `[~]` in progress · `[!]` blocked on someone or something
 else · `[?]` needs a decision before it can be built.
@@ -13,10 +13,6 @@ else · `[?]` needs a decision before it can be built.
 
 ## 1. Security
 
-- [?] **`chat_namen` is flagged SECURITY DEFINER by the Supabase advisor.**
-      This is deliberate and, as it stands, **not a vulnerability** — see
-      section 5 for the reasoning and the options. Decide whether to keep it,
-      narrow it, or accept the warning permanently.
 - [ ] **Edge Functions send `Access-Control-Allow-Origin: *`.**
       (`supabase/functions/_shared/helpers.ts`, `CORS_HEADERS`.) Low risk,
       because auth travels in the `Authorization` header rather than cookies, so
@@ -41,7 +37,10 @@ still lists them as done — but they are not in the current code.
 
 ## 3. Teamproject phases
 
-- **Fase 1 — Teamchat + mute** — done and live.
+- **Fase 1 — Teamchat + mute** — built, then removed 2026-08-31: a shared,
+      live channel between students was a bullying/harassment risk the school
+      did not want. See section 10 for the removal and its replacement, the
+      Agenda.
 - [~] **Fase 2 — the practice game.** One Duolingo-style game, not a menu of
       separate ones. The "Oefenspel" tab shows a **path of levels** per chapter
       (`src/ui/path.js`); tapping a level opens a **full-screen session**
@@ -80,8 +79,10 @@ Still open, one level up:
       This is the "beide lagen" option that was deliberately not built first.
 - [ ] **Rewards and unlockables.** XP is recorded per level, feeds the
       character-card statistics and is now also stored server-side. Nothing is
-      unlocked with it yet. Shamil's idea: badges or a **tag next to your name
-      in the Teamchat**. Design note for when it is built: the tag must be
+      unlocked with it yet. Shamil's idea: badges or a tag next to your name.
+      With Teamchat gone (section 10) there is no shared screen left to show it
+      on, so this now needs a new home — the account/profile screen is the
+      obvious candidate. Design note for when it is built: the tag must be
       derived from `spelvoortgang` on the server, or written by an Edge
       Function. A student can write their own `spelvoortgang` rows (that is how
       the game saves), so a tag that simply trusts those numbers could be
@@ -101,45 +102,7 @@ Relevant current code (the handoff doc still points at the pre-revamp paths):
 | `uiterlijk/style.css` | `src/styles/*.css` |
 | `uiterlijk/auth.js` | `src/services/auth.js`, `src/lib/supabase.js` |
 
-## 5. On the `chat_namen` advisor warning
-
-Kept here so the reasoning is not lost.
-
-**What the view is.** `select id, gebruikersnaam, rol from profiles where
-is_actief()`, defined `security_invoker = false` and owned by `postgres`. Chat
-needs author names, but students must not be able to read all of `profiles`
-(which also holds `status`, `gemute` and `aangemaakt_op`). The view exposes
-exactly three columns and nothing else.
-
-**Why the advisor flags it.** A SECURITY DEFINER view runs with the *creator's*
-permissions, so it bypasses RLS on `profiles`. That is precisely what makes it
-work, and precisely why it deserves review.
-
-**Why it is currently safe.** The real danger with such a view is writes, not
-reads: Postgres makes a simple view auto-updatable, so a write would also have
-bypassed RLS. That hole existed and is now closed — `authenticated` has
-**SELECT only** and `anon` has no grants at all. `is_updatable` still reports
-`YES`, but that describes the view's *shape*; with no INSERT/UPDATE/DELETE grant
-nobody can act on it.
-
-**What remains exposed.** Any signed-in, active student can read the id,
-username and role of every active profile — the whole class roster, including
-students who never posted. For a shared class chat that is arguably the point.
-
-**Options, if you want the warning gone:**
-
-- [?] **Keep it and accept the warning.** Simplest. The design is deliberate and
-      documented here.
-- [?] **Narrow the view to people who actually posted a message.** Cuts the
-      roster exposure; `src/services/chat.js` already filters by id, so nothing
-      in the app would change. Still SECURITY DEFINER, so the advisor keeps
-      flagging it.
-- [?] **Switch to `security_invoker = true`.** Would silence the advisor, but
-      then students need an RLS policy to read other profiles — and RLS is
-      row-level, not column-level, so they would get `status` and `gemute` too.
-      **Worse than what we have.**
-
-## 6. On the typing exercise's answer check
+## 5. On the typing exercise's answer check
 
 Kept here because the rule is easy to "simplify" back into a bug.
 
@@ -157,7 +120,7 @@ in-/uitwendige prikkel, minimum-/maximumtemperatuur. Those are exactly the
 pairs a test asks about, so forgiving them would confirm the mix-up. With the
 guard: 0 such pairs, and all 5605 terms still accept their own spelling.
 
-## 7. Admin: results per paragraph
+## 6. Admin: results per paragraph
 
 Built 2026-08-30. In the admin panel each student row has a **Voortgang**
 button that opens their practice path: every chapter they played, every level
@@ -196,11 +159,11 @@ a wrong count here is worse than no count. Admins are left out of the class, so
 an admin playing a level does not show up as a pupil who is behind.
 
 Still open here:
-- [ ] The three `is_admin` / `is_actief` / `mag_chatten` advisor warnings are
-      by design — the RLS policies call them — but they are worth a note so
-      nobody "fixes" them by revoking EXECUTE and breaking every policy.
+- [ ] The `is_admin` / `is_actief` advisor warnings are by design — the RLS
+      policies call them — but they are worth a note so nobody "fixes" them by
+      revoking EXECUTE and breaking every policy.
 
-## 8. Content backlog
+## 7. Content backlog
 
 - [!] **Engels TL — Deel B** — waiting on scans. TL1 was scanned twice and both
       times turned out to be Deel A; a third attempt is needed. TL2, TL3 and TL4
@@ -215,7 +178,7 @@ Still open here:
       again. The subject-specific ideas were lost when that session was
       summarised, and steps 1 and 2 are already done.
 
-## 9. Smaller ideas, not started
+## 8. Smaller ideas, not started
 
 - [ ] Badge "N kaarten wachten vandaag" on the book overview — the Leitner due
       count is only visible once you are already inside a chapter.
@@ -226,10 +189,10 @@ Still open here:
 - [ ] Radial menu on very narrow screens (<360px) — tested at 375px and 420px,
       never on anything smaller. Largely superseded on phones: at <=560px the
       menu is no longer an arc in the corner but a panel that slides in from
-      the right (section 10), so the arc geometry only has to hold up on
+      the right (section 9), so the arc geometry only has to hold up on
       tablets and desktops now.
 
-## 10. Mobile, the installed app, and mandatory login
+## 9. Mobile, the installed app, and mandatory login
 
 ### Mandatory login
 
@@ -289,11 +252,12 @@ Handing out accounts: invite codes last 14 days
 (`MAX_INVITES_PER_BATCH`), so a whole class is several batches through the
 admin panel.
 
-- [ ] **Retire the guest states** once the switch is permanently on: `chatGast`
-      (`src/ui/chat.js`), `settingsGast` (`src/ui/settings.js`) and the `.gast`
-      avatar with its "Niet ingelogd" dropdown (`src/ui/account.js`). They are
-      unreachable behind the gate but still correct while it is off, so they
-      stay for now. `accountGast` becomes the gate itself and must stay.
+- [ ] **Retire the guest states** once the switch is permanently on:
+      `settingsGast` (`src/ui/settings.js`) and the `.gast` avatar with its
+      "Niet ingelogd" dropdown (`src/ui/account.js`). They are unreachable
+      behind the gate but still correct while it is off, so they stay for now.
+      `accountGast` becomes the gate itself and must stay. (`chatGast` no
+      longer applies — Teamchat is gone, see section 10.)
 
 ### Phone follow-ups
 
@@ -312,7 +276,7 @@ admin panel.
       `user.github.io/repo` sub-path cannot host the `assetlinks.json` that
       proves ownership.
 
-## 11. Done recently
+## 10. Done recently
 
 - Node installed; the site runs and is deployed to GitHub Pages via
   `.github/workflows/deploy.yml` (a failing test blocks the deploy).
@@ -380,7 +344,7 @@ admin panel.
 - Deployed to GitHub Pages (2.3.0, then 2.3.1). Installing from the live HTTPS
   address gives a real app; over plain HTTP Android only offers a snelkoppeling.
 - Mandatory login built and switched on (2.5.0), with "blijf ingelogd op dit
-  apparaat" (2.4.0) so the session can outlive the tab. See section 10.
+  apparaat" (2.4.0) so the session can outlive the tab. See section 9.
 - The admin actions were clicked through and work: `chat_legen`,
   `leerling_berichten_wissen` and `codes_opruimen` had been deployed but never
   actually run against a signed-in admin. They have now.
@@ -391,3 +355,15 @@ admin panel.
   shorter, including the only admin.
 - Invite codes and the account screen now name Shamil instead of "je docent":
   he maintains the site and hands out the codes himself.
+
+**2026-08-31**
+
+- Teamchat removed entirely — UI, `src/services/chat.js`, the `chatberichten`
+  table, the `chat_namen` view, `mag_chatten()` and the `gemute` column on
+  `profiles` (`20260831201758_remove_teamchat.sql`). A shared, live channel
+  between students was a bullying/harassment risk the school did not want to
+  carry.
+- Agenda added in its place (`src/state/agenda.js`, `src/ui/agenda.js`): a
+  student logs a test with a date, optionally linked to a chapter, and gets a
+  generic spaced study plan back (`buildStudyPlan()`, `tests/agenda.test.js`).
+  Local-only, like Progress and Notes — no server side to this feature.
