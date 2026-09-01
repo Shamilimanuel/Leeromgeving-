@@ -102,7 +102,6 @@ body.licht-modus .box,
 body.licht-modus .term,
 body.licht-modus .examen-hist,
 body.licht-modus .updatebalk,
-body.licht-modus .spel-kaart,
 body.licht-modus .cornell-row textarea,
 body.licht-modus .groot-veld{
   background:var(--ink2);backdrop-filter:none;-webkit-backdrop-filter:none;border-color:var(--line)}

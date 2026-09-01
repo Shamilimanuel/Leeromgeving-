@@ -1,0 +1,46 @@
+/* ═══ Agenda: year calendar ═══ */
+.agenda-legenda{display:flex;flex-wrap:wrap;gap:1rem;margin:.9rem 0 1.2rem;font-size:.78rem;color:var(--mut)}
+.agenda-legenda span{display:inline-flex;align-items:center;gap:.4rem}
+.agenda-stip{width:9px;height:9px;border-radius:100px;display:inline-block;background:var(--ink3);border:1px solid var(--line)}
+.agenda-stip.toets{background:var(--accent);border-color:var(--accent)}
+.agenda-stip.sessie{background:none;border:2px solid var(--accent)}
+.agenda-stip.vandaag{background:none;border:2px solid var(--txt)}
+
+.agenda-jaar{font-family:'Cinzel',serif;font-size:1rem;color:var(--accent);margin:0 0 .8rem}
+.agenda-kalender{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1rem}
+.agenda-maand{background:var(--ink2);border:1px solid var(--line);border-radius:16px;padding:.9rem 1rem 1.1rem}
+.agenda-maand h3{font-family:'Cinzel',serif;font-size:.9rem;color:var(--accent);margin-bottom:.6rem;text-transform:capitalize}
+.agenda-weekdagen,.agenda-dagen{display:grid;grid-template-columns:repeat(7,1fr);gap:.2rem}
+.agenda-weekdagen span{font-size:.62rem;color:var(--mut);text-align:center;text-transform:uppercase}
+.agenda-dagen{margin-top:.3rem}
+.agenda-dag{aspect-ratio:1;background:none;border:none;color:var(--txt);font-size:.74rem;border-radius:100px;
+  cursor:pointer;position:relative;transition:.15s}
+.agenda-dag:hover{background:var(--ink3)}
+.agenda-dag.leeg{cursor:default;pointer-events:none}
+.agenda-dag.weekend{color:#e0707a}
+.agenda-dag.verleden{opacity:.4}
+.agenda-dag.vandaag{border:2px solid var(--txt)}
+.agenda-dag.heeft-toets{background:var(--accent);color:var(--ink);font-weight:700}
+.agenda-dag.heeft-toets.weekend{color:var(--ink)}
+.agenda-dag.heeft-sessie::after{content:'';position:absolute;bottom:2px;left:50%;transform:translateX(-50%);
+  width:4px;height:4px;border-radius:100px;background:var(--accent)}
+
+/* ═══ Day overlay ═══ */
+.agenda-item{margin-bottom:1rem}
+.agenda-kop{display:flex;justify-content:space-between;align-items:flex-start;gap:.6rem}
+.agenda-hfst-lijst{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.7rem}
+.agenda-hfst{background:var(--ink3);border:1px solid var(--line);border-radius:100px;color:var(--txt);
+  font-size:.78rem;padding:.35rem .8rem;cursor:pointer}
+.agenda-hfst:hover{border-color:var(--accent)}
+.agenda-sessies{display:flex;flex-direction:column;gap:.5rem;margin-top:.8rem}
+.agenda-sessie-blok.gedaan .agenda-sessie{color:var(--mut);text-decoration:line-through}
+.agenda-sessie-blok.laat .agenda-sessie span{color:#e0707a}
+.agenda-sessie{display:flex;align-items:center;gap:.6rem;font-size:.85rem;color:var(--txt);cursor:pointer}
+.agenda-stappen{margin:.35rem 0 0 1.9rem;font-size:.78rem}
+.agenda-stappen summary{color:var(--mut);cursor:pointer}
+.agenda-stappen ol{margin:.5rem 0 0 1.1rem;color:var(--txt);line-height:1.6}
+.agenda-hfst-picker{display:flex;flex-direction:column;gap:.35rem;max-height:220px;overflow-y:auto}
+.agenda-hfst-optie{font-size:.85rem;display:flex;align-items:center;gap:.5rem}
+.agenda-herinneringen{margin-top:1rem;padding-top:.9rem;border-top:1px solid var(--line)}
+.agenda-herinneringen b{display:block;margin-bottom:.5rem;font-size:.82rem}
+#agendaForm{margin-top:1.1rem;padding-top:1rem;border-top:1px solid var(--line)}

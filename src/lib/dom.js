@@ -33,12 +33,6 @@ export function setHtml(id, html) {
   if (el) el.innerHTML = html;
 }
 
-/* Show or hide an element by id. `display` is the value used when visible. */
-export function setVisible(id, visible, display = 'block') {
-  const el = $(id);
-  if (el) el.style.display = visible ? display : 'none';
-}
-
 /* Only values matching these shapes are ever interpolated into inline
    `onclick="..."` handlers. Anything else (names, free text) is looked up by
    id at click time instead of being written into markup. */

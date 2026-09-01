@@ -7,7 +7,7 @@
 <!-- Security policy: scripts/styles only from this site (inline handlers are used, hence 'unsafe-inline'),
      network only to the Supabase project (update the host here when src/config.js points elsewhere;
      the ws://localhost entries only serve the Vite dev server). -->
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; font-src 'self' data:; img-src 'self' data: blob:; connect-src 'self' https://vgmhcsycjwyxofunlcly.supabase.co wss://vgmhcsycjwyxofunlcly.supabase.co ws://localhost:* ws://127.0.0.1:*; worker-src 'self' blob:; manifest-src 'self'; media-src 'none'; object-src 'none'; base-uri 'none'; form-action 'self'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; font-src 'self' data:; img-src 'self' data: blob:; connect-src 'self' https://vgmhcsycjwyxofunlcly.supabase.co ws://localhost:* ws://127.0.0.1:*; worker-src 'self' blob:; manifest-src 'self'; media-src 'none'; object-src 'none'; base-uri 'none'; form-action 'self'">
 <!-- Fonts are self-hosted (public/fonts) so no request goes to Google when a student opens the site. -->
 <link rel="stylesheet" href="fonts/fonts.css">
 <!-- UI icons are self-hosted too (public/icons), see public/icons/icons.css. -->
@@ -100,9 +100,9 @@
         <span class="snel-ico"><i class="ring"></i><i class="core">&#127183;</i></span>
         <span class="snel-tekst"><b>Jouw voortgang</b><small>Level per vak</small></span>
       </button>
-      <button class="snel" style="--c:var(--mensmaatschappij);--cd:var(--mensmaatschappij-d)" onclick="go('chat')">
-        <span class="snel-ico"><i class="ring"></i><i class="core">&#128172;</i></span>
-        <span class="snel-tekst"><b>Teamchat</b><small>Vraag klasgenoten</small></span>
+      <button class="snel" style="--c:var(--mensmaatschappij);--cd:var(--mensmaatschappij-d)" onclick="go('agenda')">
+        <span class="snel-ico"><i class="ring"></i><i class="core">&#128197;</i></span>
+        <span class="snel-tekst"><b>Agenda</b><small>Plan je toetsen</small></span>
       </button>
       <button class="snel" style="--c:var(--goud);--cd:var(--accent-d)" id="tekstgroottebtn" onclick="cycleTextSize()" title="Tekstgrootte aanpassen">
         <span class="snel-ico"><i class="ring"></i><i class="core">&#128292;</i></span>
@@ -222,13 +222,6 @@
       </div>
 
       <div class="box" style="margin-top:1rem">
-        <h3 style="margin-top:0">Mijn chatberichten wissen</h3>
-        <p class="lede" style="margin:.2rem 0 1rem">Verwijdert alle berichten die jij in de Teamchat hebt geplaatst. Dit kan niet ongedaan gemaakt worden.</p>
-        <button class="bt gh" onclick="settingsClearOwnMessages()">Mijn berichten wissen</button>
-        <div id="setBerichtenMelding"></div>
-      </div>
-
-      <div class="box" style="margin-top:1rem">
         <h3 style="margin-top:0">Uitloggen op alle apparaten</h3>
         <p class="lede" style="margin:.2rem 0 1rem">Handig als je op een schoolcomputer ingelogd bent gebleven. Je moet daarna overal opnieuw inloggen.</p>
         <button class="bt gh" onclick="settingsLogoutEverywhere()">Overal uitloggen</button>
@@ -237,7 +230,7 @@
 
       <div class="box" style="margin-top:1rem;border-color:rgba(224,112,122,.45)">
         <h3 style="margin-top:0">Account verwijderen</h3>
-        <p class="lede" style="margin:.2rem 0 1rem">Je account, je profiel en je chatberichten worden definitief verwijderd. Dit kan niet ongedaan gemaakt worden.</p>
+        <p class="lede" style="margin:.2rem 0 1rem">Je account en je profiel worden definitief verwijderd. Dit kan niet ongedaan gemaakt worden.</p>
         <form onsubmit="submitAccountDeletion(event)">
           <input class="veld" id="setVerwijderBevestig" type="text" placeholder="Typ je gebruikersnaam om te bevestigen" autocapitalize="none" spellcheck="false" autocomplete="off" style="margin-bottom:.9rem">
           <button class="bt gh" type="submit">Account definitief verwijderen</button>
@@ -269,29 +262,24 @@
   </div>
 </section>
 
-<section id="chat" class="screen">
+<section id="agenda" class="screen">
   <div class="top"><div class="top-in">
     <button class="homebtn" onclick="go('home')" title="Naar vakkenoverzicht" aria-label="Home">&#129517;</button>
     <button class="back" onclick="go('home')">&larr; Vakken</button>
-    <div class="brand">Teamchat</div>
-    <div class="crumb"><b>Praat met andere leerlingen</b></div>
+    <div class="brand">Agenda</div>
+    <div class="crumb"><b>Plan je toetsen</b></div>
   </div></div>
   <div class="wrap">
-    <div class="eyebrow">Samen leren</div>
-    <h1 class="page">Teamchat</h1>
-    <p class="lede">Eén gedeelde chat voor iedereen. Blijf netjes &mdash; een beheerder kan je dempen bij grof taalgebruik.</p>
-    <div id="chatGast" style="display:none">
-      <div class="call warn">Je moet ingelogd zijn om mee te kunnen chatten. <a href="#" onclick="go('account');return false">Naar inloggen</a></div>
+    <div class="eyebrow">Op tijd beginnen</div>
+    <h1 class="page">Agenda</h1>
+    <p class="lede">Klik op een dag om er een toets in te plannen. Je krijgt er automatisch een paar leermomentjes bij, verspreid tot de toetsdatum.</p>
+    <div class="agenda-legenda">
+      <span><i class="agenda-stip toets"></i> toets</span>
+      <span><i class="agenda-stip sessie"></i> leermoment</span>
+      <span><i class="agenda-stip vandaag"></i> vandaag</span>
     </div>
-    <div id="chatLijstBox" style="display:none">
-      <div id="chatGemuteMelding" class="call warn" style="display:none">Je bent gedemd door een beheerder &mdash; je kunt de chat wel lezen, maar niet plaatsen.</div>
-      <div class="chat-lijst" id="chatLijst"></div>
-      <div id="chatMelding"></div>
-      <form class="chat-form" id="chatForm" onsubmit="submitChatMessage(event)">
-        <input class="veld" id="chatInvoer" type="text" placeholder="Typ een bericht&hellip;" maxlength="500" autocomplete="off" required>
-        <button class="bt" type="submit">Versturen</button>
-      </form>
-    </div>
+    <h2 class="agenda-jaar" id="agendaJaar">&nbsp;</h2>
+    <div id="agendaKalender" class="agenda-kalender"></div>
   </div>
 </section>
 
@@ -412,6 +400,30 @@
     <button class="helpclose" onclick="closeFavorites()" aria-label="Sluiten">&times;</button>
     <h3>Mijn favorieten</h3>
     <div id="favlist"></div>
+  </div>
+</div>
+
+<div class="agendawrap" id="agendaDagWrap">
+  <div class="helpbg" onclick="agendaCloseDag()"></div>
+  <div class="helpcard agendacard" role="dialog" aria-label="Dag in de agenda">
+    <button class="helpclose" onclick="agendaCloseDag()" aria-label="Sluiten">&times;</button>
+    <h3 id="agendaDagTitel">&nbsp;</h3>
+    <div id="agendaDagItems"></div>
+    <form id="agendaForm" onsubmit="agendaSubmit(event)">
+      <label for="agendaTitel" class="dim">Toets toevoegen</label>
+      <input class="veld" id="agendaTitel" type="text" placeholder="Bijv. Wiskunde BBL H1 toets" maxlength="80" required style="margin:.4rem 0 .8rem">
+      <details style="margin-bottom:.8rem">
+        <summary class="dim">Aan een hoofdstuk koppelen (optioneel)</summary>
+        <div style="margin-top:.6rem">
+          <select class="veld" id="agendaVak" onchange="agendaPickSubject()">
+            <option value="">Kies een vak…</option>
+          </select>
+          <div id="agendaHoofdstukken" class="agenda-hfst-picker" style="margin-top:.6rem"></div>
+        </div>
+      </details>
+      <button class="bt" type="submit">Toevoegen</button>
+      <div id="agendaMelding"></div>
+    </form>
   </div>
 </div>
 
