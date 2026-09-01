@@ -1,8 +1,23 @@
 /* Read-only queries across all registered content. */
-import { CONTENT, parseKey, subjectById } from './index.js';
+import { BOOKS, CONTENT, bookKey, parseKey, subjectById, yearsFor } from './index.js';
 
 export const SEARCH_MIN_LENGTH = 2;
 export const SEARCH_MAX_RESULTS = 40;
+
+/* `SUBJECT_YEARS` says which years a subject is *taught* at a level; whether we
+   have the book is a separate question. Arbeid and BK are taught everywhere and
+   summarised nowhere, so without this check the picker sends a student to a
+   dead end for 41 of the 77 combinations it offers. */
+export function hasBook(subjectId, levelId, year) {
+  return !!BOOKS[bookKey(subjectId, levelId, year)];
+}
+
+/* Years at this level that we actually have a book for. */
+export function bookYearsFor(subjectId, levelId) {
+  const years = yearsFor(subjectId, levelId);
+  if (!years) return null;
+  return years.filter((year) => hasBook(subjectId, levelId, year));
+}
 
 /* Chapter keys that belong to a subject. */
 export function chapterKeysForSubject(subjectId) {

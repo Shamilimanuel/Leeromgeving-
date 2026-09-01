@@ -184,6 +184,10 @@ body.licht-modus .persona-card{background:linear-gradient(165deg,var(--cd,var(--
 .jaar-card span{font-size:.6rem;letter-spacing:.06em;text-transform:uppercase;color:var(--mut)}
 .jaar-card:hover,.jaar-card:focus-visible{transform:translateY(-4px);border-color:var(--accent);box-shadow:0 14px 30px -10px var(--accent)}
 .jaar-card:active{transform:translateY(-1px) scale(.96)}
+.jaar-card.disabled{opacity:.42;cursor:not-allowed;filter:grayscale(.65)}
+.jaar-card.disabled:hover,.jaar-card.disabled:active{transform:none;border-color:var(--goud-line);
+  box-shadow:0 8px 20px rgba(0,0,0,.4)}
+.jaar-card.disabled span{font-size:.52rem}
 body.licht-modus .niv-card{background:linear-gradient(165deg,var(--cd,var(--ink2)) 0%,#e2ddd0 90%)}
 body.licht-modus .jaar-card{background:linear-gradient(165deg,var(--accent-d),#e2ddd0 90%)}
 @media (prefers-reduced-motion:reduce){.niv-card,.jaar-card,.persona-card{transition:none}}
