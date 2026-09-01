@@ -16,6 +16,23 @@ registerBook('wiskunde','bbl',2,'Wiskunde BBL',[
     ['3','Oppervlakte','Oppervlakte berekenen van figuren'],
     ['4','Statistiek','Gegevens verzamelen, verwerken en weergeven']]}]);
 
+/* Getal & Ruimte TL1, in twee delen uitgegeven: deel A is hoofdstuk 1 t/m 4,
+   deel B is hoofdstuk 5 t/m 9, samen 52 theorieparagrafen. De titels komen uit
+   de inhoudsopgave van beide scans; "Gemengde opgaven" staat er niet bij, dat
+   zijn losse oefenopgaven zonder theorie (net als bij de andere wiskundeboeken).
+
+   Dit boek wordt hoofdstuk voor hoofdstuk geschreven. Alleen hoofdstukken die
+   er echt zijn staan hieronder: `tests/content.test.js` eist inhoud bij elk
+   hoofdstuk in een `ready` deel, en dat is precies de reden dat er nergens op
+   de site een leeg hoofdstuk staat. Vul de lijst dus aan zodra een
+   hoofdstukbestand af is, niet eerder. Nog te schrijven, in boekvolgorde:
+     2 Rekenen met negatieve getallen  ·  3 Assenstelsel  ·  4 Getallen
+     5 Lijnen en hoeken  ·  6 Procenten  ·  7 Eenheden  ·  8 Formules
+     9 Symmetrie */
+registerBook('wiskunde','tl',1,'Wiskunde TL',[
+  {part:'',ready:true,chapters:[
+    ['1','Ruimtefiguren','Kubus, balk, cilinder, kegel, piramide en prisma herkennen, en hun uitslag tekenen']]}]);
+
 registerBook('wiskunde','tl',2,'Wiskunde TL',[
   {part:'',ready:true,chapters:[
     ['1','Vlakke figuren','Driehoeken en vierhoeken herkennen, hoeken berekenen en nauwkeurig tekenen'],

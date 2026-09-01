@@ -44,13 +44,14 @@ describe('book availability', () => {
 
   /* Not an aspiration: these are the gaps as they stand, and the picker is
      expected to grey them out rather than pretend they open. If a book gets
-     written this number goes down and the test says so. */
+     written this number goes down and the test says so -- it went from 41 to
+     40 when Wiskunde TL1 was added. */
   it('reports the combinations that are taught but not summarised', () => {
     const missing = everyCombination()
       .filter(({ subject, level, year }) => !hasBook(subject.id, level.id, year))
       .map(({ subject, level, year }) => `${subject.name} ${level.name}${year}`);
-    expect(missing).toHaveLength(41);
-    expect(missing).toContain('Wiskunde TL1');
+    expect(missing).toHaveLength(40);
+    expect(missing).not.toContain('Wiskunde TL1');
     expect(missing).toContain('Maatschappijkunde TL3');
   });
 });
