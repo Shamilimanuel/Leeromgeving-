@@ -56,7 +56,5 @@ export function renderBook() {
           + badge
           + '<div class="n">' + questLabel('HOOFDSTUK ' + c[0]) + '</div><h4>' + c[1] + '</h4><p>' + (c[2] || '&nbsp;') + '</p></button>';
       }).join('') + '</div></div>';
-  }).join('')
-  + '<div class="notice"><strong>Hoofdstuk 2 is helemaal af</strong>: met samenvatting, 42 flashcards, 20 quizvragen en 44 begrippen. '
-  + 'De andere hoofdstukken vullen we op dezelfde manier aan.</div>');
+  }).join(''));
 }
