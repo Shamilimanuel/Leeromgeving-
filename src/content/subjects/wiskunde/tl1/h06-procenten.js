@@ -1,0 +1,58 @@
+import { registerChapter } from '../../../registry.js';
+
+registerChapter('wiskunde|tl|1|6', {
+title:'Procenten',
+summary:[
+{heading:'6.1 Rekenen met breuken',html:'<div class=\'box\'><h4>Waar gaat dit hoofdstuk over?</h4><p>In dit hoofdstuk werk je met delen van een geheel. Je begint bij breuken, zet ze om naar procenten, en daarna reken je met percentages: een percentage van een bedrag uitrekenen, en zelf een percentage bepalen.</p></div><div class=\'box\'><h4>Teller en noemer</h4><p>Een <b>breuk</b> bestaat uit twee getallen. De <b>noemer</b> staat onder de streep en zegt in hoeveel gelijke stukken het geheel is verdeeld. De <b>teller</b> staat boven de streep en zegt hoeveel van die stukken je neemt. Bij <sup>3</sup>&frasl;<sub>4</sub> is het geheel in 4 stukken verdeeld en neem je er 3 van.</p></div><div class=\'box\'><h4>Vereenvoudigen</h4><p>Je kunt een breuk <b>vereenvoudigen</b> door teller en noemer door hetzelfde getal te delen. De breuk wordt dan korter opgeschreven, maar de waarde blijft precies gelijk: <sup>6</sup>&frasl;<sub>8</sub> is hetzelfde als <sup>3</sup>&frasl;<sub>4</sub>.</p></div><div class=\'box\'><h4>Een breuk van een aantal</h4><p>Wil je een breuk van een aantal berekenen, dan deel je door de noemer en vermenigvuldig je met de teller.</p></div><div class=\'voorbeeld\'><h4>Voorbeeld: een breuk van een aantal</h4><p>Bereken <sup>3</sup>&frasl;<sub>4</sub> van 240 leerlingen.</p><ol class=\'num\'><li>Delen door de noemer: 240 : 4 = 60.</li><li>Vermenigvuldigen met de teller: 3 &times; 60 = 180.</li></ol><div class=\'antwoord\'>Antwoord: <sup>3</sup>&frasl;<sub>4</sub> van 240 is 180 leerlingen.</div></div><div class=\'call warn\'><b>Veelgemaakte fout:</b> eerst vermenigvuldigen met de noemer. Je <b>deelt</b> door de noemer en vermenigvuldigt met de teller, niet andersom.</div><div class=\'check\' onclick=\'toonCheck(this)\'><p><b>Check:</b> Bereken <sup>2</sup>&frasl;<sub>5</sub> van 60.</p><p class=\'antwoord\'>60 : 5 = 12, en 2 &times; 12 = <b>24</b>.</p></div>'},
+{heading:'6.2 Breuken op de rekenmachine',html:'<div class=\'box\'><h4>De breukentoets</h4><p>Op je rekenmachine zit een <b>breukentoets</b>. Daarmee voer je een breuk in als teller en noemer, zonder hem eerst om te rekenen. Handig bij optellen en aftrekken van breuken met verschillende noemers.</p></div><div class=\'box\'><h4>Van breuk naar decimaal getal</h4><p>Elke breuk is ook een deelsom: de streep betekent <i>gedeeld door</i>. Deel je de teller door de noemer, dan krijg je het <b>decimale getal</b> dat erbij hoort.</p></div><div class=\'tblwrap\'><table class=\'tbl\'><tr><th>Breuk</th><th>Deelsom</th><th>Decimaal getal</th></tr><tr><td><sup>1</sup>&frasl;<sub>2</sub></td><td>1 : 2</td><td>0,5</td></tr><tr><td><sup>1</sup>&frasl;<sub>4</sub></td><td>1 : 4</td><td>0,25</td></tr><tr><td><sup>3</sup>&frasl;<sub>4</sub></td><td>3 : 4</td><td>0,75</td></tr><tr><td><sup>1</sup>&frasl;<sub>5</sub></td><td>1 : 5</td><td>0,2</td></tr><tr><td><sup>1</sup>&frasl;<sub>3</sub></td><td>1 : 3</td><td>0,333&hellip;</td></tr></table></div><div class=\'call\'>Niet elke breuk geeft een net decimaal getal. <sup>1</sup>&frasl;<sub>3</sub> wordt 0,3333&hellip; en loopt oneindig door; die rond je af op het aantal decimalen dat de opgave vraagt.</div><div class=\'check\' onclick=\'toonCheck(this)\'><p><b>Check:</b> Welk decimaal getal hoort bij <sup>2</sup>&frasl;<sub>5</sub>?</p><p class=\'antwoord\'>2 : 5 = <b>0,4</b>.</p></div>'},
+{heading:'6.3 Breuken en procenten',html:'<div class=\'box\'><h4>Procent is per honderd</h4><p><b>Procent</b> betekent letterlijk <i>per honderd</i>. 25% betekent dus 25 van de 100, oftewel de breuk <sup>25</sup>&frasl;<sub>100</sub>. Het geheel is altijd 100%.</p></div><div class=\'box\'><h4>Van breuk naar procent</h4><p>Om een breuk in procenten te schrijven, reken je hem eerst om naar een decimaal getal (teller gedeeld door noemer) en vermenigvuldig je dat met 100%.</p></div><div class=\'call sum\'><b>Om te onthouden</b><ul class=\'lst\'><li>percentage = (teller : noemer) &times; 100%</li><li>het geheel is 100%</li><li>de helft is 50%, een kwart is 25%, driekwart is 75%</li></ul></div><div class=\'tblwrap\'><table class=\'tbl\'><tr><th>Breuk</th><th>Decimaal</th><th>Percentage</th></tr><tr><td><sup>1</sup>&frasl;<sub>2</sub></td><td>0,5</td><td>50%</td></tr><tr><td><sup>1</sup>&frasl;<sub>4</sub></td><td>0,25</td><td>25%</td></tr><tr><td><sup>3</sup>&frasl;<sub>4</sub></td><td>0,75</td><td>75%</td></tr><tr><td><sup>1</sup>&frasl;<sub>5</sub></td><td>0,2</td><td>20%</td></tr><tr><td><sup>1</sup>&frasl;<sub>10</sub></td><td>0,1</td><td>10%</td></tr></table></div><div class=\'check\' onclick=\'toonCheck(this)\'><p><b>Check:</b> Hoeveel procent is <sup>3</sup>&frasl;<sub>5</sub>?</p><p class=\'antwoord\'>3 : 5 = 0,6 en 0,6 &times; 100% = <b>60%</b>.</p></div>'},
+{heading:'6.4 Rekenen met procenten',html:'<div class=\'box\'><h4>Een percentage van een getal</h4><p>Om een percentage van een getal te berekenen, maak je van het percentage eerst een <b>vermenigvuldigingsfactor</b>: je deelt het percentage door 100. Daarna vermenigvuldig je het getal met die factor.</p></div><div class=\'call sum\'><b>Om te onthouden</b><ul class=\'lst\'><li>vermenigvuldigingsfactor = percentage : 100</li><li>21% wordt 0,21 &nbsp;&middot;&nbsp; 8% wordt 0,08 &nbsp;&middot;&nbsp; 150% wordt 1,5</li><li>uitkomst = factor &times; het getal</li></ul></div><div class=\'voorbeeld\'><h4>Voorbeeld: korting berekenen</h4><p>Een jas kost &euro;80. Je krijgt 15% korting. Hoeveel korting is dat, en wat betaal je?</p><ol class=\'num\'><li>Factor: 15 : 100 = 0,15.</li><li>Korting: 0,15 &times; 80 = &euro;12.</li><li>Je betaalt: 80 &minus; 12 = &euro;68.</li></ol><div class=\'antwoord\'>Antwoord: de korting is &euro;12 en je betaalt &euro;68.</div></div><div class=\'call warn\'><b>Veelgemaakte fout:</b> de korting als antwoord geven terwijl de vraag is wat je betaalt. Lees goed of er naar het <i>deel</i> of naar het <i>bedrag dat overblijft</i> wordt gevraagd.</div><div class=\'check\' onclick=\'toonCheck(this)\'><p><b>Check:</b> Bereken 30% van 250.</p><p class=\'antwoord\'>Factor: 30 : 100 = 0,3. Dan 0,3 &times; 250 = <b>75</b>.</p></div>'},
+{heading:'6.5 Percentage berekenen',html:'<div class=\'box\'><h4>Welk deel van het geheel?</h4><p>Soms weet je het deel en het geheel, en wil je weten hoeveel <b>procent</b> dat deel is. Je deelt dan het deel door het geheel en vermenigvuldigt met 100%.</p></div><div class=\'call sum\'><b>Om te onthouden</b><ul class=\'lst\'><li>percentage = (deel : geheel) &times; 100%</li><li>het geheel staat altijd onder de deelstreep</li><li>percentages rond je meestal af op &eacute;&eacute;n decimaal</li></ul></div><div class=\'voorbeeld\'><h4>Voorbeeld: percentage berekenen</h4><p>Van de 25 leerlingen in een klas hebben er 17 een fiets. Hoeveel procent is dat?</p><ol class=\'num\'><li>Deel gedeeld door geheel: 17 : 25 = 0,68.</li><li>Maal 100%: 0,68 &times; 100% = 68%.</li></ol><div class=\'antwoord\'>Antwoord: 68% van de klas heeft een fiets.</div></div><div class=\'vergelijk\'><div class=\'vergelijk-kant\'><h4>Percentage van een getal</h4><p>Je kent het percentage en zoekt het deel: factor &times; getal.</p></div><div class=\'vergelijk-vs\'>vs</div><div class=\'vergelijk-kant\'><h4>Percentage berekenen</h4><p>Je kent het deel en zoekt het percentage: (deel : geheel) &times; 100%.</p></div></div><div class=\'call warn\'><b>Veelgemaakte fout:</b> de deling omdraaien. Het <b>geheel</b> hoort onder de streep. 17 : 25 geeft 68%, maar 25 : 17 geeft 147% en dat kan niet als 17 een deel van 25 is.</div><div class=\'check\' onclick=\'toonCheck(this)\'><p><b>Check:</b> Van de 40 vragen had Sam er 34 goed. Hoeveel procent is dat?</p><p class=\'antwoord\'>34 : 40 = 0,85, en 0,85 &times; 100% = <b>85%</b>.</p></div>'}
+],
+terms:[
+['Breuk','Een deel van een geheel, geschreven met een teller en een noemer.',0],
+['Teller','Het getal boven de breukstreep: hoeveel stukken je neemt.',0],
+['Noemer','Het getal onder de breukstreep: in hoeveel gelijke stukken het geheel is verdeeld.',0],
+['Vereenvoudigen','Teller en noemer door hetzelfde getal delen; de waarde van de breuk blijft gelijk.',0],
+['Breukentoets','De toets op de rekenmachine waarmee je een breuk invoert.',1],
+['Decimaal getal','Getal met een komma, zoals 0,75.',1],
+['Procent (%)','Per honderd; 25% betekent 25 van de 100.',2],
+['Percentage','Een deel uitgedrukt in procenten.',2],
+['Vermenigvuldigingsfactor','Het getal waarmee je vermenigvuldigt; je krijgt het door het percentage door 100 te delen.',3],
+['Korting','Het bedrag dat van de prijs af gaat.',3],
+['Deel','Het stuk waar de vraag over gaat; dit staat boven de deelstreep.',4],
+['Geheel','Het totaal waar het deel bij hoort; dit staat onder de deelstreep en is 100%.',4],
+],
+cards:[
+['Wat zegt de noemer van een breuk?','In hoeveel gelijke stukken het geheel is verdeeld.',0],
+['Wat zegt de teller van een breuk?','Hoeveel van die stukken je neemt.',0],
+['Hoe bereken je een breuk van een aantal?','Delen door de noemer, vermenigvuldigen met de teller.',0],
+['Bereken 3/4 van 240.','240 : 4 = 60, en 3 × 60 = 180.',0],
+['Hoe reken je een breuk om naar een decimaal getal?','Teller delen door de noemer.',1],
+['Welk decimaal getal hoort bij 1/4?','0,25.',1],
+['Wat betekent procent?','Per honderd.',2],
+['Hoeveel procent is 3/4?','75%.',2],
+['Hoe schrijf je een breuk als percentage?','(teller : noemer) × 100%.',2],
+['Welke vermenigvuldigingsfactor hoort bij 15%?','0,15, want 15 : 100 = 0,15.',3],
+['Hoe bereken je 30% van 250?','Factor 0,3, dan 0,3 × 250 = 75.',3],
+['Hoe bereken je welk percentage een deel is?','(deel : geheel) × 100%.',4],
+['Wat staat er onder de deelstreep als je een percentage berekent?','Het geheel.',4],
+],
+quiz:[
+['Wat staat er onder de breukstreep?',['De teller','De noemer','Het percentage','Het geheel maal 100'],1,'Onder de streep staat de noemer: in hoeveel stukken het geheel verdeeld is.'],
+['Welke breuk is gelijk aan 3/4?',['2/3','6/8','4/5','3/8'],1,'Deel teller en noemer van 6/8 door 2 en je krijgt 3/4.'],
+['Bereken 2/5 van 60.',['12','20','24','30'],2,'60 : 5 = 12, en 2 × 12 = 24.'],
+['Bereken 3/8 van 400.',['120','150','160','200'],1,'400 : 8 = 50, en 3 × 50 = 150.'],
+['Welk decimaal getal hoort bij 1/5?',['0,15','0,2','0,25','0,5'],1,'1 : 5 = 0,2.'],
+['Welk decimaal getal hoort bij 3/4?',['0,34','0,43','0,75','1,33'],2,'3 : 4 = 0,75.'],
+['Wat betekent 25%?',['25 van de 10','25 van de 100','25 van de 1000','25 keer zo veel'],1,'Procent betekent per honderd, dus 25 van de 100.'],
+['Hoeveel procent is 1/2?',['12%','20%','50%','100%'],2,'1 : 2 = 0,5, en 0,5 × 100% = 50%.'],
+['Hoeveel procent is 3/5?',['35%','53%','60%','65%'],2,'3 : 5 = 0,6, en 0,6 × 100% = 60%.'],
+['Welke vermenigvuldigingsfactor hoort bij 8%?',['0,008','0,08','0,8','8'],1,'8 : 100 = 0,08.'],
+['Bereken 20% van 350.',['35','70','170','700'],1,'Factor 0,2, dan 0,2 × 350 = 70.'],
+['Een jas kost 80 euro met 15% korting. Wat betaal je?',['12 euro','65 euro','68 euro','72 euro'],2,'Korting: 0,15 × 80 = 12 euro. Je betaalt 80 - 12 = 68 euro.'],
+['Van 25 leerlingen hebben er 17 een fiets. Hoeveel procent is dat?',['17%','25%','68%','147%'],2,'17 : 25 = 0,68, en 0,68 × 100% = 68%.'],
+['Sam had 34 van de 40 vragen goed. Hoeveel procent is dat?',['74%','80%','85%','88%'],2,'34 : 40 = 0,85, dus 85%.'],
+['Je berekent welk percentage een deel is. Wat staat er onder de deelstreep?',['Het deel','Het geheel','Altijd 100','De vermenigvuldigingsfactor'],1,'Het geheel staat onder de streep: deel : geheel × 100%.'],
+]
+});
