@@ -52,7 +52,7 @@ quiz:[
 ['Bereken 378 + 264.',['632','642','652','644'],1,'8 + 4 = 12 (2, onthoud 1), 1 + 7 + 6 = 14 (4, onthoud 1), 1 + 3 + 2 = 6. Antwoord: 642.'],
 ['Demian koopt een fiets van €765 en accessoires voor €139. Wat betaalt hij in totaal?',['€894','€904','€914','€804'],1,'765 + 139 = 904.'],
 ['Bereken 429 + 289.',['698','708','718','728'],2,'429 + 289 = 718.'],
-['Stein rijdt 687 km en daarna nog 259 km. Hoeveel kilometer heeft hij gereden?',['936 km','946 km','946 km','956 km'],1,'687 + 259 = 946.'],
+['Stein rijdt 687 km en daarna nog 259 km. Hoeveel kilometer heeft hij gereden?',['846 km','936 km','946 km','956 km'],2,'687 + 259 = 946.'],
 ['Bereken 2878 + 6274.',['9142','9152','9052','9252'],1,'8+4=12 (2, onthoud 1), 1+7+7=15 (5, onthoud 1), 1+8+2=11 (1, onthoud 1), 1+2+6=9. Antwoord: 9152.'],
 ['Op 12 maart komen er 3469 bezoekers bij FC Emmen en op 26 maart 5625. Hoeveel bezoekers is dat samen?',['9084','9094','9194','8994'],1,'3469 + 5625 = 9094.'],
 ['Donar trok bij twee wedstrijden 3778 en 4350 bezoekers. Hoeveel bezoekers waren dat samen?',['8118','8128','8028','8228'],1,'3778 + 4350 = 8128.'],
