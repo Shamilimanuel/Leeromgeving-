@@ -53,7 +53,7 @@ export async function refreshAccountButton() {
     if (drop) drop.innerHTML =
       '<div class="naam"><b>' + escapeHtml(profile.username) + '</b><span>' + roleLabel(profile) + '</span></div>'
       + '<button onclick="closeProfileMenu();go(\'account\')">\u{1FAAA} Profiel</button>'
-      + '<button onclick="closeProfileMenu();go(\'chat\')">\u{1F4AC} Teamchat</button>'
+      + '<button onclick="closeProfileMenu();go(\'agenda\')">\u{1F5D3}\u{FE0F} Agenda</button>'
       + '<button onclick="closeProfileMenu();go(\'settings\')">\u{1F6E0}\u{FE0F} Instellingen</button>'
       + '<button onclick="closeProfileMenu();openWhatsNew()">\u{2728} Wat is er nieuw?</button>'
       + (auth.isAdmin() ? '<button onclick="closeProfileMenu();go(\'admin\')">\u{1F5DD}\u{FE0F} Adminpaneel</button>' : '')
@@ -64,7 +64,7 @@ export async function refreshAccountButton() {
     btn.title = 'Account';
     if (avatar) avatar.textContent = '\u{1F464}';
     if (drop) drop.innerHTML =
-      '<div class="naam"><b>Niet ingelogd</b><span>Log in om mee te chatten</span></div>'
+      '<div class="naam"><b>Niet ingelogd</b><span>Log in om te beginnen</span></div>'
       + '<button onclick="closeProfileMenu();go(\'account\')">\u{1F4DC} Inloggen</button>'
       + '<button onclick="closeProfileMenu();openWhatsNew()">\u{2728} Wat is er nieuw?</button>';
   }

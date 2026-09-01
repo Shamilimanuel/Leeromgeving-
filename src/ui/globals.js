@@ -32,9 +32,9 @@ import { openWhatsNew, closeWhatsNew } from './whatsNew.js';
 import { applyUpdate, dismissUpdate } from './appUpdate.js';
 import { toggleProfileMenu, closeProfileMenu, logout, submitLogin, submitRegistration, showRegistration } from './account.js';
 import {
-  adminResetPassword, adminToggleStatus, adminToggleMute, adminDeleteUser,
+  adminResetPassword, adminToggleStatus, adminDeleteUser,
   adminCreateInvites, adminDeleteInvite, adminCopyInvite,
-  adminClearChat, adminCleanUpInvites, adminClearStudentMessages,
+  adminCleanUpInvites,
 } from './admin.js';
 import {
   adminToggleProgress, adminClearLevelProgress, adminClearChapterProgress, adminClearAllProgress,
@@ -43,9 +43,12 @@ import { adminClassPickSubject, adminClassPickChapter } from './adminClass.js';
 import {
   submitUsernameChange, submitPasswordChange,
   settingsCycleTextSize, settingsToggleDyslexia, settingsResetProgress,
-  settingsClearOwnMessages, settingsLogoutEverywhere, submitAccountDeletion,
+  settingsLogoutEverywhere, submitAccountDeletion,
 } from './settings.js';
-import { submitChatMessage, chatToggleMute, chatDeleteMessage } from './chat.js';
+import {
+  agendaSubmit, agendaPickSubject, agendaRemoveItem, agendaToggleSession, agendaOpenChapter,
+  agendaOpenDag, agendaCloseDag,
+} from './agenda.js';
 
 export const globalHandlers = {
   go,
@@ -68,15 +71,16 @@ export const globalHandlers = {
   openHelp, closeHelp, goToSlide, nextSlide, previousSlide,
   openWhatsNew, closeWhatsNew, applyUpdate, dismissUpdate,
   toggleProfileMenu, closeProfileMenu, logout, submitLogin, submitRegistration, showRegistration,
-  adminResetPassword, adminToggleStatus, adminToggleMute, adminDeleteUser,
+  adminResetPassword, adminToggleStatus, adminDeleteUser,
   adminCreateInvites, adminDeleteInvite, adminCopyInvite,
-  adminClearChat, adminCleanUpInvites, adminClearStudentMessages,
+  adminCleanUpInvites,
   adminToggleProgress, adminClearLevelProgress, adminClearChapterProgress, adminClearAllProgress,
   adminClassPickSubject, adminClassPickChapter,
   submitUsernameChange, submitPasswordChange,
   settingsCycleTextSize, settingsToggleDyslexia, settingsResetProgress,
-  settingsClearOwnMessages, settingsLogoutEverywhere, submitAccountDeletion,
-  submitChatMessage, chatToggleMute, chatDeleteMessage,
+  settingsLogoutEverywhere, submitAccountDeletion,
+  agendaSubmit, agendaPickSubject, agendaRemoveItem, agendaToggleSession, agendaOpenChapter,
+  agendaOpenDag, agendaCloseDag,
 };
 
 export function installGlobals() {

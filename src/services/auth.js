@@ -1,7 +1,6 @@
 /* Account and admin system, backed by Supabase Auth + the `profiles` table.
    Passwords are never seen or stored by us: Supabase stores them hashed. We
-   only work with: username, role (leerling/admin), status (actief/geblokkeerd)
-   and whether the student is muted in the chat.
+   only work with: username, role (leerling/admin) and status (actief/geblokkeerd).
 
    Security model:
    - The browser only holds the publishable key; row-level security decides
@@ -12,7 +11,7 @@
    - Accounts are created with an invite code from an admin; public sign-up
      is disabled on the Supabase project.
 
-   Column names of the `profiles` row (gebruikersnaam, rol, status, gemute,
+   Column names of the `profiles` row (gebruikersnaam, rol, status,
    aangemaakt_op), the `uitnodigingen` row and the edge-function action names
    are part of the deployed backend contract, so they stay Dutch here. This
    module maps them to English objects; the UI never sees raw rows. */
@@ -25,7 +24,7 @@ import {
 export const ROLE = { student: 'leerling', admin: 'admin' };
 export const STATUS = { active: 'actief', blocked: 'geblokkeerd' };
 
-const PROFILE_COLUMNS = 'id, gebruikersnaam, rol, status, gemute, aangemaakt_op';
+const PROFILE_COLUMNS = 'id, gebruikersnaam, rol, status, aangemaakt_op';
 const INVITE_COLUMNS = 'code, aangemaakt_op, verloopt_op, gebruikt_op, gebruikt_door_naam';
 
 let session = null;   // Supabase auth session, or null
@@ -54,7 +53,6 @@ function toProfile(row) {
     username: row.gebruikersnaam,
     role: row.rol,
     status: row.status,
-    muted: !!row.gemute,
     createdAt: row.aangemaakt_op,
   };
 }
@@ -271,10 +269,6 @@ export async function setStudentStatus(studentId, status) {
   await callAdminFunction('status_wijzigen', { leerlingId: studentId, status });
 }
 
-export async function setStudentMuted(studentId, muted) {
-  await callAdminFunction('gemute_wijzigen', { leerlingId: studentId, gemute: !!muted });
-}
-
 export async function deleteStudent(studentId) {
   await callAdminFunction('verwijderen', { leerlingId: studentId });
 }
@@ -305,13 +299,6 @@ export async function cleanUpInviteCodes() {
 
 /* ── Moderation ──────────────────────────────────────────────────────── */
 
-/* Empties the whole chat channel (rows are deleted, not hidden). */
-export async function clearChat() {
-  const res = await callAdminFunction('chat_legen', {});
-  return res.verwijderd || 0;
-}
-
-/* Deletes everything one student posted, leaving the account intact. */
 /* Wipes practice-path results of one student: everything, one chapter, or one
    level of one chapter. */
 export async function clearStudentGameProgress(studentId, chapterKey, level) {
@@ -319,11 +306,6 @@ export async function clearStudentGameProgress(studentId, chapterKey, level) {
   if (chapterKey) payload.hoofdstuk = chapterKey;
   if (chapterKey && level !== undefined && level !== null) payload.level = level;
   const res = await callAdminFunction('spelvoortgang_wissen', payload);
-  return res.verwijderd || 0;
-}
-
-export async function clearStudentMessages(studentId) {
-  const res = await callAdminFunction('leerling_berichten_wissen', { leerlingId: studentId });
   return res.verwijderd || 0;
 }
 

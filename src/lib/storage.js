@@ -18,6 +18,7 @@ export const STORAGE_KEYS = {
   gameLevels: 'spellevels',
   lastSeenVersion: 'gezienVersie',
   rememberSession: 'blijfIngelogd',
+  agenda: 'agenda',
 };
 
 export function readJson(key, fallback) {

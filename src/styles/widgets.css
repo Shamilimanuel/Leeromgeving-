@@ -104,10 +104,10 @@ body.dyslexie-modus .credit-name, body.dyslexie-modus .scene-cap{-webkit-backgro
 /* ══ LIGHT MODE, SEARCH, FAVOURITES ══ */
 .lichtbtn.on{background:#f9c116;color:#3d2e00;border-color:transparent}
 
-.zoekwrap,.favwrap,.examenwrap,.nieuwwrap{position:fixed;inset:0;z-index:210;display:none;align-items:flex-start;justify-content:center;padding:1.5rem;padding-top:8vh}
-.zoekwrap.show,.favwrap.show,.examenwrap.show,.nieuwwrap.show{display:flex}
-.zoekcard,.favcard,.examencard,.nieuwcard{width:min(560px,100%);max-height:80vh;overflow-y:auto}
-.zoekcard h3,.favcard h3,.examencard h3,.nieuwcard h3{font-family:'Cinzel',serif;font-size:1.1rem;color:var(--txt);margin-bottom:.9rem}
+.zoekwrap,.favwrap,.examenwrap,.nieuwwrap,.agendawrap{position:fixed;inset:0;z-index:210;display:none;align-items:flex-start;justify-content:center;padding:1.5rem;padding-top:8vh}
+.zoekwrap.show,.favwrap.show,.examenwrap.show,.nieuwwrap.show,.agendawrap.show{display:flex}
+.zoekcard,.favcard,.examencard,.nieuwcard,.agendacard{width:min(560px,100%);max-height:80vh;overflow-y:auto}
+.zoekcard h3,.favcard h3,.examencard h3,.nieuwcard h3,.agendacard h3{font-family:'Cinzel',serif;font-size:1.1rem;color:var(--txt);margin-bottom:.9rem}
 
 /* ══ READING RULER ══ */
 .leesliniaal{position:fixed;left:0;right:0;height:2.4rem;z-index:90;pointer-events:none;
@@ -123,8 +123,6 @@ body.pomodoro-focus .aurora{opacity:.35}
 .examen-hist{display:flex;justify-content:space-between;gap:.6rem;font-size:.78rem;color:var(--mut);
   background:var(--ink3);border-radius:10px;padding:.5rem .8rem;margin-bottom:.4rem}
 .examen-hist b{color:var(--txt)}
-.examen-vak-score{display:flex;justify-content:space-between;font-size:.85rem;padding:.4rem 0;border-bottom:1px solid var(--line)}
-.examen-vak-score:last-child{border-bottom:none}
 
 /* ══ CHARACTER CARD: level / XP / mastery per subject ══ */
 .persona-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.1rem;margin-top:.4rem}

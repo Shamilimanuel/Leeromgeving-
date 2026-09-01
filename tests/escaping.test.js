@@ -1,6 +1,6 @@
 /* The escaping helpers are the only thing standing between database values
-   (usernames, chat messages, error texts) and innerHTML. They must neutralise
-   every character that can end an element or an attribute. */
+   (usernames, error texts) and innerHTML. They must neutralise every
+   character that can end an element or an attribute. */
 import { describe, it, expect } from 'vitest';
 import { escapeHtml, warningBox, isUuid, isIntegerId } from '../src/lib/dom.js';
 import { normalizeInviteCode, normalizeUsername, usernameProblem, passwordProblem } from '../src/services/auth.js';

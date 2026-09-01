@@ -45,7 +45,3 @@ export const USERNAME_RULE_TEXT = '3 tot 20 kleine letters of cijfers, zonder sp
 export const PASSWORD_MIN_LENGTH = 8;
 export const INVITE_CODE_LENGTH = 8;         // characters, shown as XXXX-XXXX
 export const MAX_INVITES_PER_BATCH = 20;
-
-export const CHAT_MAX_LENGTH = 500;
-export const CHAT_POLL_INTERVAL_MS = 8000;
-export const CHAT_HISTORY_LIMIT = 80;

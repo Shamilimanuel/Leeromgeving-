@@ -13,10 +13,7 @@
      codes_opruimen           {}                           -> { verwijderd }
      wachtwoord_resetten      { leerlingId }               -> { nieuwWachtwoord }
      status_wijzigen          { leerlingId, status }       status: 'actief' | 'geblokkeerd'
-     gemute_wijzigen          { leerlingId, gemute }
      verwijderen              { leerlingId }
-     chat_legen               {}                           -> { verwijderd }
-     leerling_berichten_wissen { leerlingId }              -> { verwijderd }
      spelvoortgang_wissen     { leerlingId, hoofdstuk?, level? }  -> { verwijderd }
                               no hoofdstuk: the whole practice path
                               hoofdstuk only: every level of that chapter
@@ -69,18 +66,12 @@ serve(async (req) => {
       return await deleteInvite(admin, asString(body.code));
     case 'codes_opruimen':
       return await cleanUpInvites(admin);
-    case 'chat_legen':
-      return await clearChat(admin);
-    case 'leerling_berichten_wissen':
-      return await clearStudentMessages(admin, asString(body.leerlingId));
     case 'spelvoortgang_wissen':
       return await clearGameProgress(admin, asString(body.leerlingId), body.hoofdstuk, body.level);
     case 'wachtwoord_resetten':
       return await resetPassword(admin, caller, asString(body.leerlingId));
     case 'status_wijzigen':
       return await changeStatus(admin, caller, asString(body.leerlingId), asString(body.status));
-    case 'gemute_wijzigen':
-      return await changeMuted(admin, caller, asString(body.leerlingId), body.gemute === true);
     case 'verwijderen':
       return await deleteStudent(admin, caller, asString(body.leerlingId));
     default:
@@ -180,19 +171,10 @@ async function changeStatus(admin: ReturnType<typeof serviceClient>, caller: Pro
   return json({ ok: true, status });
 }
 
-async function changeMuted(admin: ReturnType<typeof serviceClient>, caller: Profile, id: string, gemute: boolean) {
-  const target = await loadTarget(admin, id);
-  assertStudentTarget(caller, target);
-  const { error } = await admin.from('profiles').update({ gemute }).eq('id', target.id);
-  if (error) throw new HttpError('Kon niet wijzigen.', 500);
-  return json({ ok: true, gemute });
-}
-
 async function deleteStudent(admin: ReturnType<typeof serviceClient>, caller: Profile, id: string) {
   const target = await loadTarget(admin, id);
   assertStudentTarget(caller, target);
   // Explicit clean-up in case the foreign keys were created without ON DELETE CASCADE.
-  await admin.from('chatberichten').delete().eq('gebruiker_id', target.id);
   await admin.from('spelvoortgang').delete().eq('gebruiker_id', target.id);
   await admin.from('profiles').delete().eq('id', target.id);
   const { error } = await admin.auth.admin.deleteUser(target.id);
@@ -218,23 +200,11 @@ async function deleteOwnAccount(admin: ReturnType<typeof serviceClient>, caller:
       throw new HttpError('Je bent de laatste beheerder. Maak eerst iemand anders beheerder.', 400);
     }
   }
-  await admin.from('chatberichten').delete().eq('gebruiker_id', caller.id);
   await admin.from('spelvoortgang').delete().eq('gebruiker_id', caller.id);
   await admin.from('profiles').delete().eq('id', caller.id);
   const { error } = await admin.auth.admin.deleteUser(caller.id);
   if (error) throw new HttpError('Account kon niet worden verwijderd.', 500);
   return json({ ok: true });
-}
-
-/* Moderation: empty the whole channel. The rows are really deleted, not hidden. */
-async function clearChat(admin: ReturnType<typeof serviceClient>) {
-  const { data, error } = await admin
-    .from('chatberichten')
-    .delete()
-    .not('id', 'is', null)   // PostgREST refuses an unfiltered delete
-    .select('id');
-  if (error) throw new HttpError('Chat kon niet worden geleegd.', 500);
-  return json({ ok: true, verwijderd: (data || []).length });
 }
 
 /* Wipe practice-path results: everything, one chapter, or one level of one
@@ -268,19 +238,6 @@ async function clearGameProgress(
 
   const { data, error } = await query.select('level');
   if (error) throw new HttpError('Voortgang kon niet worden gewist.', 500);
-  return json({ ok: true, verwijderd: (data || []).length });
-}
-
-/* Moderation: remove everything one student ever posted, without touching
-   their account. */
-async function clearStudentMessages(admin: ReturnType<typeof serviceClient>, id: string) {
-  const target = await loadTarget(admin, id);
-  const { data, error } = await admin
-    .from('chatberichten')
-    .delete()
-    .eq('gebruiker_id', target.id)
-    .select('id');
-  if (error) throw new HttpError('Berichten konden niet worden gewist.', 500);
   return json({ ok: true, verwijderd: (data || []).length });
 }
 

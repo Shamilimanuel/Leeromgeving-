@@ -2,7 +2,6 @@
    destructive actions on your own data. */
 import { $, setHtml, escapeHtml, warningBox, infoBox } from '../lib/dom.js';
 import * as auth from '../services/auth.js';
-import { deleteOwnMessages } from '../services/chat.js';
 import { refreshAccountButton } from './account.js';
 import { cycleTextSize, toggleDyslexia, isDyslexiaOn, currentTextSizeLabel } from './preferences.js';
 import { clearLearningData } from '../state/progress.js';
@@ -25,7 +24,6 @@ export async function renderSettings() {
     setHtml('setNaamMelding', '');
     setHtml('setWwMelding', '');
     setHtml('setVoortgangMelding', '');
-    setHtml('setBerichtenMelding', '');
     setHtml('setUitlogMelding', '');
     setHtml('setVerwijderMelding', '');
     const confirmField = $('setVerwijderBevestig');
@@ -115,19 +113,6 @@ export function settingsResetProgress() {
   if (!window.confirm('Weet je het zeker? Je voortgang, flashcards, streak, favorieten en notities op dit apparaat worden gewist.')) return;
   clearLearningData();
   setHtml('setVoortgangMelding', '<div class="call reken">Voortgang gewist. Je begint weer met een schone lei.</div>');
-}
-
-export async function settingsClearOwnMessages() {
-  const profile = auth.getProfile();
-  if (!profile) return;
-  if (!window.confirm('Al je eigen berichten in de Teamchat verwijderen?')) return;
-  setHtml('setBerichtenMelding', infoBox('Bezig…'));
-  try {
-    const removed = await deleteOwnMessages(profile.id);
-    setHtml('setBerichtenMelding', '<div class="call reken">' + removed + ' bericht(en) verwijderd.</div>');
-  } catch (err) {
-    setHtml('setBerichtenMelding', warningBox(auth.authErrorMessage(err)));
-  }
 }
 
 export async function settingsLogoutEverywhere() {

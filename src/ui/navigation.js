@@ -16,7 +16,7 @@ export const SCREENS = {
   account: 'account',
   settings: 'settings',
   admin: 'admin',
-  chat: 'chat',
+  agenda: 'agenda',
   level: 'level',
   book: 'book',
   chapter: 'chapter',
@@ -60,11 +60,6 @@ export function go(requested) {
   next.classList.add('on');
 
   enterListeners.forEach((fn) => fn(id));
-}
-
-export function isScreenActive(id) {
-  const el = $(id);
-  return !!el && el.classList.contains('on');
 }
 
 export function scrollScreenToTop(id) {

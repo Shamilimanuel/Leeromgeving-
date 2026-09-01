@@ -19,7 +19,7 @@ describe('mandatory login: which screen is shown', () => {
   it('sends a signed-out student to the account screen', () => {
     expect(screenFor(SCREENS.home, LOCKED)).toBe(SCREENS.account);
     expect(screenFor(SCREENS.chapter, LOCKED)).toBe(SCREENS.account);
-    expect(screenFor(SCREENS.chat, LOCKED)).toBe(SCREENS.account);
+    expect(screenFor(SCREENS.agenda, LOCKED)).toBe(SCREENS.account);
     expect(screenFor(SCREENS.admin, LOCKED)).toBe(SCREENS.account);
   });
 
