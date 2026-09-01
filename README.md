@@ -2,7 +2,7 @@
 
 Study site for Dutch VMBO students: chapter summaries, flashcards with spaced
 repetition, a Duolingo-style practice game, practice quizzes, glossaries,
-notes, a practice exam and a team chat, for every subject, level
+notes, a practice exam and a study-planning agenda, for every subject, level
 (Arbeid / BBL / BK / TL) and school year.
 
 The **user interface is in Dutch**; the **code, comments and documentation are
@@ -55,7 +55,7 @@ Leeromgeving/
 │   │   └── subjects/<subject>/<subject>.js          books + chapter list
 │   │       └── <level><year>/hNN-<slug>.js          one chapter each
 │   ├── state/                 what the app remembers (selection, progress, notes, stats)
-│   ├── services/              backend calls: auth (accounts, invite codes, admin), chat
+│   ├── services/              backend calls: auth (accounts, invite codes, admin)
 │   ├── ui/                    one module per screen or feature
 │   └── styles/                CSS split by concern, imported in order by main.css
 │                              (mobile.css is imported last: the phone layer)
@@ -98,10 +98,10 @@ Two deliberate boundaries:
 ### Screens and navigation
 
 `index.html` contains one `<section class="screen">` per screen (splash, home,
-level, book, chapter, character cards, account, settings, admin, chat).
+level, book, chapter, character cards, account, settings, admin, agenda).
 `src/ui/navigation.js` exposes `go(id)`; screens register a render function
 with `registerScreen`, and features hook `onLeave`/`onEnter` for cleanup
-(stop chat polling, show/hide the radial menu, auto-open help).
+(show/hide the radial menu, auto-open help).
 
 ### The practice game
 
@@ -213,8 +213,8 @@ register, `src/content/index.js` picks it up automatically.
 
 ## Backend and accounts
 
-Accounts, the admin panel, chat and moderation run on Supabase. Schema, RLS
-policies, Edge Functions and deployment steps are in [`supabase/README.md`](supabase/README.md).
+Accounts and the admin panel run on Supabase. Schema, RLS policies, Edge
+Functions and deployment steps are in [`supabase/README.md`](supabase/README.md).
 
 - **Accounts are invite-only.** An admin generates single-use invite codes in
   the admin panel and hands them out; a student registers with a code, a
@@ -222,8 +222,6 @@ policies, Edge Functions and deployment steps are in [`supabase/README.md`](supa
   Public sign-up is disabled on the Supabase project.
 - **The browser only holds the publishable key.** Row-level security decides
   what it may read; it can never write to `profiles` or `uitnodigingen`.
-  Chat names come from the `chat_namen` view, so students cannot read other
-  students' profile rows.
 - **Everything privileged goes through Edge Functions** (`admin-acties`,
   `registreren`), which read the caller's role from the database, never from
   the token.
@@ -330,8 +328,7 @@ Note that only the frontend is deployed this way. The Supabase backend
 ## Open work
 
 The running backlog lives in [`TODO.md`](TODO.md): what is open, what is blocked
-and on whom, and the reasoning behind decisions that are easy to forget (such as
-why the `chat_namen` view is deliberately SECURITY DEFINER).
+and on whom, and the reasoning behind decisions that are easy to forget.
 
 ## Conventions
 
