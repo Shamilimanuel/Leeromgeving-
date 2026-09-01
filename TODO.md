@@ -4,10 +4,14 @@ Working backlog for this repository. Feature names stay Dutch where they are the
 app's own terms (Agenda, Matchspel, Instellingen); everything else is English,
 per the language rule in `CLAUDE.md`.
 
-Last reviewed: 2026-08-31.
+Last reviewed: 2026-09-01.
 
 Legend: `[ ]` open · `[~]` in progress · `[!]` blocked on someone or something
 else · `[?]` needs a decision before it can be built.
+
+> **Do not run `npm run content:build` right now.** `data/` and
+> `src/content/subjects/` have drifted apart; the build rewrites 159 modules
+> and adds 27 that claim chapter keys which are already taken. See section 11.
 
 ---
 
@@ -367,3 +371,74 @@ admin panel.
   student logs a test with a date, optionally linked to a chapter, and gets a
   generic spaced study plan back (`buildStudyPlan()`, `tests/agenda.test.js`).
   Local-only, like Progress and Notes — no server side to this feature.
+
+## 11. Content audit over alle boeken (2026-09-01)
+
+Every registered book measured by loading the modules and reading the registry,
+so the numbers are what the site actually serves: **37 books, 267 chapters,
+1324 paragraphs**. Script kept out of the repo; rerun it whenever content
+changes in bulk.
+
+Clean everywhere, no action needed:
+
+- **All 1324 paragraphs already use the `.box` / `.call` / `.voorbeeld`
+  container style.** The "contentstijl-audit" described in the older hand-off
+  document is therefore *already done* — there is no flat-prose chapter left to
+  migrate. What is missing is not structure but enrichment (see below).
+- HTML tag balance: 0 errors in 1324 paragraphs.
+- Quiz integrity: every question has 4 distinct options, a valid answer index
+  and an explanation. Every term and flashcard points at a paragraph that
+  exists.
+
+- [x] **Two quiz questions showed the right answer twice** — Rekenen BBL1 H1
+      vraag 14 and H3 vraag 13 both listed the correct value as two separate
+      options, so a student picking the identical other one was marked wrong.
+      Fixed 2026-09-01 in the JSON *and* in the module, because those two are
+      out of sync (see below).
+
+### [!] `data/` and `src/content/subjects/` have drifted apart
+
+`npm run content:build` regenerates modules from `data/*.json`. Run today it
+rewrote **159** modules and wrote **27 new files whose `registerChapter` key is
+already claimed by an existing file** — for example
+`biologie/tl1/h01-gedrag.js` and `biologie/tl1/h01-onderzoeken-en-ontdekken.js`
+both register `biologie|tl|1|1`, with different titles. Nothing errors: the
+module that happens to be imported last simply wins, and a chapter is silently
+replaced.
+
+`npm run content:check` says "safe to build", which is misleading — it only
+validates the JSON against itself, never against the modules on disk.
+
+Note also that `data/` holds only 185 of the 267 chapters, so this cannot be
+fixed by regenerating everything. It needs a decision per book about which side
+is authoritative. Until then, edit chapter modules by hand (as `CLAUDE.md`
+already says) and leave the build alone.
+
+### [ ] Paragraph numbering — 61% of 1324
+
+Numbering lets a student lay the summary next to the book. Still at 0%:
+Engels BBL1, BBL2, BBL4, TL1, TL2, TL3, TL4 · Nederlands BBL3, BBL4, TL1, TL2,
+TL3, TL4 · Rekenen BBL1. Partly done: Engels BBL3 (44%). Wiskunde TL4 sits at
+55% on purpose — deel B is an exam bundle whose headings have no paragraph
+number in the book (see section on Wiskunde TL).
+
+Needs the table of contents per book; the scans are in
+`Documents\ShareX\Screenshots\Project\` (OneDrive-redirected).
+
+### [ ] Self-check blocks — 102 in total, and 52 of those are one book
+
+A self-check block is the `<div class="check" onclick="toonCheck(this)">`
+question a student answers before revealing the answer. Wiskunde TL1 has 52 of
+the 102; **twelve books have none at all**. This is the real gap behind "clear
+and visual", not the container style.
+
+### [ ] Loose text outside the hokjes
+
+Overall only 3% of the text sits outside a container, but it is concentrated:
+Maatschappijleer TL3 **17%**, Nederlands TL1 9%, Engels TL4 6%, Wiskunde TL4 5%.
+Everything else is at or under 4%.
+
+### [ ] Chapters under the 10-item minimum
+
+Nederlands BBL1 H9 (7 begrippen), H10 (9), H11 (6) · Nederlands BBL2 H10
+(5 begrippen, 8 kaarten, 8 quizvragen), H11 (9/9/9).
