@@ -21,17 +21,21 @@ registerBook('wiskunde','bbl',2,'Wiskunde BBL',[
    de inhoudsopgave van beide scans; "Gemengde opgaven" staat er niet bij, dat
    zijn losse oefenopgaven zonder theorie (net als bij de andere wiskundeboeken).
 
-   Dit boek wordt hoofdstuk voor hoofdstuk geschreven. Alleen hoofdstukken die
-   er echt zijn staan hieronder: `tests/content.test.js` eist inhoud bij elk
-   hoofdstuk in een `ready` deel, en dat is precies de reden dat er nergens op
-   de site een leeg hoofdstuk staat. Vul de lijst dus aan zodra een
-   hoofdstukbestand af is, niet eerder. Nog te schrijven, in boekvolgorde:
-     2 Rekenen met negatieve getallen  ·  3 Assenstelsel  ·  4 Getallen
-     5 Lijnen en hoeken  ·  6 Procenten  ·  7 Eenheden  ·  8 Formules
-     9 Symmetrie */
+   `tests/content.test.js` eist inhoud bij elk hoofdstuk in een `ready` deel,
+   en dat is precies de reden dat er nergens op de site een leeg hoofdstuk
+   staat: voeg een hoofdstuk hier pas toe als het bestand er is. */
 registerBook('wiskunde','tl',1,'Wiskunde TL',[
-  {part:'',ready:true,chapters:[
-    ['1','Ruimtefiguren','Kubus, balk, cilinder, kegel, piramide en prisma herkennen, en hun uitslag tekenen']]}]);
+  {part:'A',ready:true,chapters:[
+    ['1','Ruimtefiguren','Kubus, balk, cilinder, kegel, piramide en prisma herkennen, en hun uitslag tekenen'],
+    ['2','Rekenen met negatieve getallen','Optellen, aftrekken, vermenigvuldigen en delen met negatieve getallen, en de rekenvolgorde'],
+    ['3','Assenstelsel','Gps-coördinaten, het assenstelsel uitbreiden en informatie uit een assenstelsel aflezen'],
+    ['4','Getallen','Grote getallen, afronden, verhoudingstabellen en een prijs berekenen']]},
+  {part:'B',ready:true,chapters:[
+    ['5','Lijnen en hoeken','Lijnen, soorten hoeken, hoeken meten en tekenen met de geodriehoek, en de kijkhoek'],
+    ['6','Procenten','Rekenen met breuken, breuken en procenten, en een percentage berekenen'],
+    ['7','Eenheden','Grootheden en de eenheden van lengte, oppervlakte, tijd, gewicht, inhoud, snelheid en informatie'],
+    ['8','Formules','Regelmaat, grafieken, woordformules, formules met letters en formules veranderen'],
+    ['9','Symmetrie','Lijnsymmetrie, spiegelen, draaisymmetrie, schuifsymmetrie, middelloodlijn en deellijn']]}]);
 
 registerBook('wiskunde','tl',2,'Wiskunde TL',[
   {part:'',ready:true,chapters:[
