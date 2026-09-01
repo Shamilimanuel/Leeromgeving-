@@ -23,9 +23,6 @@
   .subj:hover,.chapter:hover,.tool.live:hover,.snel:hover{border-color:var(--goud-line)}
   .subj:hover::before,.chapter:hover::before{opacity:0}
   .skip:hover{letter-spacing:.1em}
-  /* Keeps its centring: blanking the transform outright shunted it right,
-     on top of "Overslaan". Only the hover lift is dropped. */
-  .introverder:hover{transform:translateX(-50%)}
 
   .subj:active,.chapter:active,.snel:active,.tool.live:active,.persona-card:active,
   .niv-card:active,.jaar-card:active{transform:scale(.975);filter:brightness(1.06)}
@@ -68,10 +65,14 @@
 
   /* -- top bar -- */
   .top{padding-top:var(--safe-top)}
+  /* The tools trigger is one fixed-position button laid over this bar (see
+     .radialmenu below), so the flex row knows nothing about it and let the
+     title run underneath. The right padding reserves its slot -- 38px plus the
+     row gap -- on every screen, so whatever ends the row stops before it. */
   .top-in{height:var(--top-h);gap:.55rem;
     padding-left:calc(var(--gut) - .15rem + env(safe-area-inset-left));
-    padding-right:calc(var(--gut) - .15rem + env(safe-area-inset-right))}
-  .brand{font-size:.9rem;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+    padding-right:calc(var(--gut) - .15rem + env(safe-area-inset-right) + 38px + .55rem)}
+  .brand{font-size:.9rem;flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
   .brand span{display:none}          /* the byline eats the whole bar */
   .crumb{display:none}               /* the page heading already says where you are */
   .back{padding:.45rem 1rem;font-size:.78rem;min-height:38px;display:inline-flex;align-items:center}
@@ -181,7 +182,9 @@
      position:fixed descendants, which sized the panel below against this 38px
      box instead of the viewport. No entrance animation here, so no transform. */
   .radialmenu.show{animation:none}
-  .radialmenu.op-home{right:calc(var(--gut) - .15rem + env(safe-area-inset-right) + 2 * (38px + .55rem))}
+  /* Three slots in, not two: the bell and the avatar are real flex items, and
+     the reserved slot in .top-in above moved both of them one place left. */
+  .radialmenu.op-home{right:calc(var(--gut) - .15rem + env(safe-area-inset-right) + 3 * (38px + .55rem))}
   /* Centred with a plain offset, not translateY(-50%): the touch block above
      blanks transform on :hover, and a hover that sticks after a tap then
      dropped this button half its height. (var(--top-h) - 38px) / 2 = 7px. */
@@ -254,8 +257,9 @@
   /* -- splash -- */
   #splash{padding:1.5rem 1.2rem 4.5rem}
   .btn-start{padding:.9rem 2.6rem;min-height:48px}
-  .introverder{bottom:calc(1.1rem + env(safe-area-inset-bottom));min-height:40px}
-  .skip{bottom:calc(1.1rem + env(safe-area-inset-bottom));right:1.1rem;padding:.5rem}
+  .introacties{bottom:calc(1.1rem + env(safe-area-inset-bottom));gap:.5rem;padding:0 1.1rem}
+  .introverder{min-height:40px;display:inline-flex;align-items:center}
+  .skip{padding:.5rem;min-height:40px}
 }
 
 /* Installed as an app there is no browser toolbar, so the header has to keep

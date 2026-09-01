@@ -27,7 +27,7 @@
   font-size:.95rem;font-weight:600;letter-spacing:.06em;transition:transform .25s cubic-bezier(.2,.85,.3,1), box-shadow .25s;
   box-shadow:0 6px 30px rgba(255,255,255,.14);animation:up .8s .85s ease both}
 .btn-start:hover{transform:translateY(-3px) scale(1.03);box-shadow:0 14px 48px rgba(255,255,255,.26)}
-.skip{position:absolute;bottom:1.4rem;right:1.6rem;background:none;border:none;color:var(--mut);font-size:.75rem;letter-spacing:.1em;transition:.2s}
+.skip{background:none;border:none;color:var(--mut);font-size:.75rem;letter-spacing:.1em;transition:.2s}
 .skip:hover{color:var(--txt);letter-spacing:.16em}
 
 .top{position:sticky;top:0;z-index:50;background:rgba(10,14,26,.8);backdrop-filter:blur(20px) saturate(1.4);border-bottom:1px solid var(--goud-line)}
@@ -38,7 +38,10 @@
 .brand span{color:var(--mut);font-family:'DM Sans';font-weight:400;font-size:.78rem;margin-left:.5rem;-webkit-text-fill-color:var(--mut)}
 .crumb{margin-left:auto;font-size:.78rem;color:var(--mut);font-family:'Cinzel',serif;letter-spacing:.03em}
 .crumb b{color:var(--txt);font-weight:500}
-.back{background:none;border:1px solid var(--goud-line);color:var(--mut);border-radius:100px;padding:.3rem .9rem;font-size:.75rem;transition:.25s}
+/* nowrap: without it the label breaks after the arrow when the bar runs short,
+   and the pill grows into a tall oval with "Vakken" on its own line. */
+.back{background:none;border:1px solid var(--goud-line);color:var(--mut);border-radius:100px;padding:.3rem .9rem;font-size:.75rem;
+  white-space:nowrap;flex-shrink:0;transition:.25s}
 .back:hover{color:var(--goud);border-color:var(--goud);transform:translateX(-3px);box-shadow:0 0 14px rgba(243,215,138,.25)}
 .homebtn{background:none;border:1px solid var(--goud-line);color:var(--mut);border-radius:100px;
   width:34px;height:34px;display:flex;align-items:center;justify-content:center;font-size:.95rem;

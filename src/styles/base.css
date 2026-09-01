@@ -21,7 +21,24 @@
   --niv-bk:#d67aa0;      --niv-bk-d:#301522;
   --niv-tl:#7c6fd8;      --niv-tl-d:#1a1730;
   --accent:#e8c05a; --accent-d:#241d0d;
+  /* Emoji are the site's icon set, but no font here covers them, so every one
+     falls through to whatever the system ships -- and those get redrawn:
+     Windows 11 and Android both moved to rounder, heavier glyphs that sit
+     differently in the line box than the ones these circles were measured
+     against. Naming the emoji fonts keeps the choice deliberate instead of
+     landing on a fallback that happens to be first. */
+  --emoji:'Apple Color Emoji','Segoe UI Emoji','Noto Color Emoji','Twemoji Mozilla','Android Emoji',sans-serif;
 }
+/* Every emoji that sits inside a badge, a ring or a round button.
+   `line-height:1` is the part that matters: the inherited 1.65 makes the line
+   box taller than the circle around it -- at 1.3rem that is 34px of line inside
+   a 32px core -- so the glyph spilled over the ring, top and bottom. `1` makes
+   the box the glyph's own height, which flex centring can then actually
+   centre. */
+.subj .core,.subj .bigico,
+.niv-card .ico,.niv-card .bigico,
+.snel-ico .core,.persona-bigico,
+.avatarcircle,.belico{font-family:var(--emoji);line-height:1;font-style:normal}
 *{margin:0;padding:0;box-sizing:border-box}
 html,body{height:100%;overflow:hidden}
 body{background:radial-gradient(ellipse 100% 60% at 50% -8%, var(--accent-d) 0%, var(--ink) 60%) var(--ink);color:var(--txt);font-family:'DM Sans',sans-serif;font-size:15px;line-height:1.65;transition:background 1s ease}
