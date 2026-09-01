@@ -314,12 +314,12 @@
         {
           "vraag": "Stein rijdt 687 km en daarna nog 259 km. Hoeveel kilometer heeft hij gereden?",
           "opties": [
+            "846 km",
             "936 km",
-            "946 km",
             "946 km",
             "956 km"
           ],
-          "antwoord_index": 1,
+          "antwoord_index": 2,
           "uitleg": "687 + 259 = 946.",
           "paragraaf": "Optellen tot duizend"
         },
@@ -1069,12 +1069,12 @@
         {
           "vraag": "Bereken 8 x 8273.",
           "opties": [
+            "64.184",
             "65.184",
-            "66.184",
             "66.184",
             "67.184"
           ],
-          "antwoord_index": 1,
+          "antwoord_index": 2,
           "uitleg": "8 x 3=24, 8x7+2=58, 8x2+5=21, 8x8+2=66. Antwoord: 66.184.",
           "paragraaf": "Eén cijfer x vier cijfers"
         },

@@ -49,7 +49,7 @@ quiz:[
 ['Bereken 6 x 372 op de manier van Lynn (splitsen).',['2132','2212','2232','2322'],2,'6 x 300 = 1800, 6 x 70 = 420, 6 x 2 = 12. Samen: 1800 + 420 + 12 = 2232.'],
 ['Bereken 7 x 873.',['6021','6111','6211','6311'],1,'7 x 3 = 21, 7 x 7 + 2 = 51, 7 x 8 + 5 = 61. Antwoord: 6111.'],
 ['Thom huurt 3 weken een vakantiehuisje van €245 per week. Wat betaalt hij totaal?',['€615','€715','€735','€745'],2,'3 x 245 = 735.'],
-['Bereken 8 x 8273.',['65.184','66.184','66.184','67.184'],1,'8 x 3=24, 8x7+2=58, 8x2+5=21, 8x8+2=66. Antwoord: 66.184.'],
+['Bereken 8 x 8273.',['64.184','65.184','66.184','67.184'],2,'8 x 3=24, 8x7+2=58, 8x2+5=21, 8x8+2=66. Antwoord: 66.184.'],
 ['Karin verdient €473 per maand. Hoeveel verdient ze in 4 maanden?',['€1782','€1892','€1902','€1992'],1,'4 x 473 = 1892.'],
 ['Jesse verkoopt 8 e-bikes van €2489 per stuk. Hoeveel euro is dat samen?',['€18.912','€19.812','€19.912','€20.912'],2,'8 x 2489 = 19.912.'],
 ['Bereken 48 x 73.',['3404','3504','3604','3514'],1,'8x3=24 (4, onthoud2), 8x7+2=58 → 584; 4x3=12 (2,onthoud1), 4x7+1=29 → 2920; 584+2920=3504.'],
