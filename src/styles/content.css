@@ -87,8 +87,8 @@ h5.sub{font-family:'Cinzel',serif;font-size:1rem;color:var(--accent);margin:1.8r
 .check:active{transform:scale(.99)}
 .check-v{font-size:.85rem;color:var(--txt);font-weight:600;display:flex;align-items:center;gap:.4rem;margin:0}
 .check-v::before{content:'✓';color:var(--accent);flex-shrink:0}
-.check-a{display:none;font-size:.84rem;color:var(--mut);margin:.5rem 0 0;padding-top:.5rem;border-top:1px solid var(--line)}
-.check.toon .check-a{display:block}
+.check-a,.check .antwoord{display:none;font-size:.84rem;color:var(--mut);margin:.5rem 0 0;padding-top:.5rem;border-top:1px solid var(--line)}
+.check.toon .check-a,.check.toon .antwoord{display:block}
 .check-hint{display:block;font-size:.7rem;color:var(--mut);opacity:.55;margin-top:.35rem}
 .check.toon .check-hint{display:none}
 

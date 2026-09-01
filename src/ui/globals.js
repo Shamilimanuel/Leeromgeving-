@@ -13,7 +13,7 @@ import { advanceIntro } from './intro.js';
 import { chooseSubject } from './home.js';
 import { chooseLevel, chooseYear } from './level.js';
 import { openChapter, setTab } from './chapter.js';
-import { toggleSq3r, sq3rNext, sq3rPrevious } from './summary.js';
+import { toggleSq3r, sq3rNext, sq3rPrevious, toonCheck } from './summary.js';
 import { saveSq3rQuestion, saveSq3rRecite } from '../state/notes.js';
 import {
   toggleCardGrouping, resetCards, showUnknownCards, showDueCards, flipCard, toggleCheck, markCard, toggleCardFavorite,
@@ -56,7 +56,7 @@ export const globalHandlers = {
   advanceIntro,
   chooseSubject, chooseLevel, chooseYear,
   openChapter, setTab,
-  toggleSq3r, sq3rNext, sq3rPrevious, saveSq3rQuestion, saveSq3rRecite,
+  toggleSq3r, sq3rNext, sq3rPrevious, saveSq3rQuestion, saveSq3rRecite, toonCheck,
   toggleCardGrouping, resetCards, showUnknownCards, showDueCards, flipCard, toggleCheck, markCard, toggleCardFavorite,
   openLevel, closeLevel, gameTile, gameCheck, gameReveal, gameChoose,
   gamePickWord, gameUnpickWord, gameSortPick, gameSortDrop, gameNext,

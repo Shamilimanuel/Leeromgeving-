@@ -31,6 +31,15 @@ export function renderSummary(chapter) {
   markChapterViewed();
 }
 
+/* Self-check blocks inside a summary: the content modules generate
+   `<div class="check" onclick="toonCheck(this)">` with the question visible
+   and the answer hidden, and the CSS reveals the answer once the block has
+   the `toon` class (see `.check` in src/styles/content.css). Clicking again
+   hides it, so a student can re-test themselves. */
+export function toonCheck(el) {
+  if (el) el.classList.toggle('toon');
+}
+
 export function toggleSq3r() {
   sq3rActive = !sq3rActive;
   sq3rStep = 0;
