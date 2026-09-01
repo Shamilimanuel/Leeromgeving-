@@ -8,11 +8,16 @@
   animation:rule .9s .7s cubic-bezier(.2,.85,.3,1) forwards}
 .credit-sub{color:var(--mut);font-size:.82rem;margin-top:.5rem;animation:up .8s .5s ease both}
 
-/* ══ INTRO BUTTON ══ */
-.introverder{position:absolute;bottom:1.4rem;left:50%;transform:translateX(-50%);
-  background:none;border:1px solid var(--line);color:var(--mut);border-radius:100px;
-  padding:.45rem 1.4rem;font-size:.78rem;letter-spacing:.06em;transition:.25s;z-index:5}
-.introverder:hover{color:var(--txt);border-color:var(--paper);transform:translateX(-50%) translateY(-2px)}
+/* ══ INTRO BUTTONS ══
+   One row, not two absolutely positioned buttons. "Verder" used to be centred
+   with left:50% and "Overslaan" pinned to the right edge, which meant nothing
+   related the two: on a narrow screen the centred pill simply ran underneath
+   the skip link. A flex row cannot overlap itself, and wraps if it has to. */
+.introacties{position:absolute;bottom:1.4rem;left:0;right:0;z-index:5;
+  display:flex;align-items:center;justify-content:center;gap:1.2rem;flex-wrap:wrap;padding:0 1.4rem}
+.introverder{background:none;border:1px solid var(--line);color:var(--mut);border-radius:100px;
+  padding:.45rem 1.4rem;font-size:.78rem;letter-spacing:.06em;transition:.25s}
+.introverder:hover{color:var(--txt);border-color:var(--paper);transform:translateY(-2px)}
 
 /* ══ SINGLE FOLD-OUT MENU, BOTTOM LEFT (instead of loose buttons) ══ */
 .radialmenu{position:fixed;left:1.4rem;bottom:1.4rem;z-index:120;width:54px;height:54px;display:none}
