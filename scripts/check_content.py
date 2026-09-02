@@ -125,6 +125,45 @@ def check_source_file(path, errors, warnings):
         check_chapter(chapter, i, name, errors, warnings)
 
 
+def check_chapter_keys(errors, warnings):
+    """No two JSON files may claim the same chapter key.
+
+    A book is sometimes transcribed into several files (Biologie TL deel A and
+    B, Mens & Maatschappij BBL A/B/verdieping). Subject, level and year come
+    from the folder and the file name, so those files describe one book and the
+    chapter numbers have to continue across them -- that is what
+    "eerste_hoofdstuk" is for. Without it every file starts at 1 again and the
+    later one silently overwrites the earlier one's chapters. It did: 26
+    chapters were lost that way before this check existed.
+    """
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from build_content import level_and_year_from_filename, first_chapter_number  # noqa: PLC0415
+
+    claimed = {}
+    for path in sorted(glob.glob(os.path.join(DATA_DIR, '*', '*.json'))):
+        subject = os.path.basename(os.path.dirname(path))
+        name = os.path.basename(path)
+        level, year = level_and_year_from_filename(name)
+        try:
+            data = json.load(open(path, encoding='utf-8'))
+        except Exception:  # noqa: BLE001
+            continue  # reported separately by check_source_file
+        start = first_chapter_number(data)
+        for offset, raw in enumerate(data.get('hoofdstukken', [])):
+            key = '%s|%s|%d|%d' % (subject, level, year, start + offset)
+            title = raw.get('titel', '?')
+            if key in claimed:
+                other_file, other_title = claimed[key]
+                errors.append(
+                    '  ✗ chapter key %s is claimed twice:\n'
+                    '      %s "%s"\n'
+                    '      %s "%s"\n'
+                    '      give the later file an "eerste_hoofdstuk" so its chapters continue'
+                    % (key, other_file, other_title, name, title))
+            else:
+                claimed[key] = (name, title)
+
+
 def check_module_file(path, errors):
     """Quick structural check of a chapter module in src/content/subjects/."""
     name = os.path.relpath(path, ROOT)
@@ -154,6 +193,7 @@ def main():
             check_source_file(path, errors, warnings)
         for path in sorted(glob.glob(os.path.join(SUBJECTS_DIR, '*', '*', '*.js'))):
             check_module_file(path, errors)
+        check_chapter_keys(errors, warnings)
 
     print()
     if warnings:
