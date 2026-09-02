@@ -9,9 +9,9 @@ Last reviewed: 2026-09-01.
 Legend: `[ ]` open · `[~]` in progress · `[!]` blocked on someone or something
 else · `[?]` needs a decision before it can be built.
 
-> **Do not run `npm run content:build` right now.** `data/` and
-> `src/content/subjects/` have drifted apart; the build rewrites 159 modules
-> and adds 27 that claim chapter keys which are already taken. See section 11.
+> `npm run content:build` was unsafe and is fixed (2026-09-01). It no longer
+> overwrites a hand-edited module, and it no longer writes chapters over each
+> other. See section 11.
 
 ---
 
@@ -396,23 +396,33 @@ Clean everywhere, no action needed:
       Fixed 2026-09-01 in the JSON *and* in the module, because those two are
       out of sync (see below).
 
-### [!] `data/` and `src/content/subjects/` have drifted apart
+### [x] `data/` and `src/content/subjects/` had drifted apart -- fixed 2026-09-01
 
-`npm run content:build` regenerates modules from `data/*.json`. Run today it
-rewrote **159** modules and wrote **27 new files whose `registerChapter` key is
-already claimed by an existing file** — for example
-`biologie/tl1/h01-gedrag.js` and `biologie/tl1/h01-onderzoeken-en-ontdekken.js`
-both register `biologie|tl|1|1`, with different titles. Nothing errors: the
-module that happens to be imported last simply wins, and a chapter is silently
-replaced.
+`npm run content:build` used to rewrite 159 modules and add **27 whose
+`registerChapter` key was already taken**, so a chapter was silently replaced
+by a different one: Biologie TL1 "Onderzoeken en ontdekken" became "Gedrag".
+No error anywhere -- the registry keeps whichever module imported last.
 
-`npm run content:check` says "safe to build", which is misleading — it only
-validates the JSON against itself, never against the modules on disk.
+Two causes, both fixed:
 
-Note also that `data/` holds only 185 of the 267 chapters, so this cannot be
-fixed by regenerating everything. It needs a decision per book about which side
-is authoritative. Until then, edit chapter modules by hand (as `CLAUDE.md`
-already says) and leave the build alone.
+- **Chapter numbers were counted per file, not per book.** Subject, level and
+  year come from the folder and file name, but the number was the index inside
+  one JSON file. Six books are transcribed across several files (Biologie
+  TL1-TL4 as deel A + B, Mens & Maatschappij BBL1/BBL2 as A + B + verdieping),
+  so the second file started at 1 again and took the first file's keys. 26
+  chapters lost their key. Those files now carry `"eerste_hoofdstuk"`.
+- **The build clobbered hand edits.** 146 modules have been improved in place
+  since they were generated (figures, paragraph numbering, corrected
+  examples), none of which exists in `data/`. The build now leaves a drifted
+  module alone and reports it; `--force` overwrites.
+
+`data/` covers 185 of the 267 chapters. The other 82 are hand-written and have
+no JSON at all -- that is fine and expected, the build only touches what it
+generates.
+
+Guarded by `check_content.py` (refuses two files claiming one key) and
+`tests/chapterKeys.test.js` (no two modules share a key; each key matches its
+folder and file number). Both were verified by deliberately breaking them.
 
 ### [ ] Paragraph numbering — 61% of 1324
 
