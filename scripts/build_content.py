@@ -7,23 +7,39 @@ Converts the raw book JSON in data/<subject>/*.json into chapter modules:
 Usage:
   python scripts/build_content.py                                  convert every book in data/
   python scripts/build_content.py data/economie/economie-tl3.json  convert one book
+  python scripts/build_content.py --force                          also overwrite hand-edited modules
 
-A generated module with the same file name is overwritten, so a hand-edited
-chapter must not share its file name with a generated one. The subject file
-(src/content/subjects/<subject>/<subject>.js, with the registerBook calls)
-is not generated: write it by hand, see biologie.js as an example.
+**The build does not overwrite a module that has been edited by hand.** Many
+chapters have been improved in place since they were generated -- figures,
+paragraph numbering, corrected examples -- and none of that lives in data/.
+By default a module whose content differs from what the JSON would produce is
+reported as "drifted" and left alone; pass --force when you really mean to
+throw those edits away.
+
+The subject file (src/content/subjects/<subject>/<subject>.js, with the
+registerBook calls) is not generated: write it by hand, see biologie.js.
 
 Run `python scripts/check_content.py` before and `npm test` afterwards.
 
 JSON schema of a book (field names are Dutch: that is how the books were
 transcribed and it is the input contract of this script):
 
-  {"hoofdstukken": [
+  {"eerste_hoofdstuk": 4,      optional, default 1 -- see below
+   "hoofdstukken": [
      {"titel": "...", "uitleg": "...",
       "subhoofdstukken": [{"titel": "...", "uitleg": "..."}],
       "begrippen":  [{"term": "...", "uitleg": "...", "paragraaf": "<subchapter title>"}],
       "flashcards": [{"vraag": "...", "antwoord": "...", "paragraaf": "..."}],
       "quiz":       [{"vraag": "...", "opties": ["...", ...], "antwoord_index": 0, "uitleg": "..."}]}]}
+
+`eerste_hoofdstuk` exists because a book is sometimes transcribed into more
+than one file -- Biologie TL is split into a deel A and a deel B, Mens &
+Maatschappij BBL into A, B and a verdiepingsdeel. The subject, level and year
+come from the directory and the file name, so those files all describe the
+same book; without an explicit first chapter number each of them would start
+counting at 1 again and claim chapter keys that belong to the other file. That
+is not theoretical: it silently overwrote 26 chapters. Set it to the real
+chapter number the file starts at (deel B of Biologie TL1 starts at 4).
 """
 import glob
 import json
@@ -59,9 +75,32 @@ def level_and_year_from_filename(name):
     return 'bbl', (int(m2.group(1)) if m2 else 1)
 
 
-def convert_json(only=None):
-    """Convert all books (or a single file). Returns the number of chapters written."""
-    written = 0
+def first_chapter_number(data):
+    """The chapter number the file's first chapter really has (see the docstring)."""
+    value = data.get('eerste_hoofdstuk', 1)
+    try:
+        value = int(value)
+    except (TypeError, ValueError):
+        return 1
+    return value if value >= 1 else 1
+
+
+def same_content(path, text):
+    """Compare ignoring line endings: the build writes \\n, git may check out \\r\\n."""
+    try:
+        with open(path, encoding='utf-8', newline='') as f:
+            current = f.read()
+    except OSError:
+        return False
+    return current.replace('\r\n', '\n') == text.replace('\r\n', '\n')
+
+
+def convert_json(only=None, force=False):
+    """Convert all books (or a single file).
+
+    Returns a report dict. Existing modules that have been hand-edited are left
+    alone unless `force` is set -- see the module docstring."""
+    report = {'created': [], 'unchanged': 0, 'overwritten': [], 'drifted': []}
     paths = [os.path.abspath(only)] if only else sorted(glob.glob(os.path.join(DATA_DIR, '*', '*.json')))
 
     for json_path in paths:
@@ -78,14 +117,29 @@ def convert_json(only=None):
             continue
         target_dir = os.path.join(SUBJECTS_DIR, subject, level + str(year))
         os.makedirs(target_dir, exist_ok=True)
-        for nr, raw in enumerate(data.get('hoofdstukken', []), 1):
+        start = first_chapter_number(data)
+        for offset, raw in enumerate(data.get('hoofdstukken', [])):
+            nr = start + offset
             chapter = build_chapter(raw, explanation_to_html)
             key = '%s|%s|%d|%d' % (subject, level, year, nr)
             file_name = 'h%02d-%s.js' % (nr, slug(raw.get('titel', 'hoofdstuk')))
-            with open(os.path.join(target_dir, file_name), 'w', encoding='utf-8', newline='\n') as f:
-                f.write(to_module(key, chapter))
-            written += 1
-    return written
+            target = os.path.join(target_dir, file_name)
+            text = to_module(key, chapter)
+            where = os.path.relpath(target, ROOT).replace(os.sep, '/')
+
+            if os.path.exists(target):
+                if same_content(target, text):
+                    report['unchanged'] += 1
+                    continue
+                if not force:
+                    report['drifted'].append(where)
+                    continue
+                report['overwritten'].append(where)
+            else:
+                report['created'].append(where)
+            with open(target, 'w', encoding='utf-8', newline='\n') as f:
+                f.write(text)
+    return report
 
 
 def build_chapter(raw, format_html):
@@ -185,10 +239,27 @@ def to_module(key, chapter):
 
 
 if __name__ == '__main__':
-    target = sys.argv[1] if len(sys.argv) > 1 else None
-    count = convert_json(only=target)
-    if target:
-        print('Chapters written from %s: %d' % (target, count))
+    args = [a for a in sys.argv[1:] if a != '--force']
+    force = '--force' in sys.argv[1:]
+    target = args[0] if args else None
+    report = convert_json(only=target, force=force)
+
+    for path in report['created']:
+        print('  + %s' % path)
+    for path in report['overwritten']:
+        print('  ~ %s (overwritten)' % path)
+
+    print('\nunchanged : %d' % report['unchanged'])
+    print('created   : %d' % len(report['created']))
+    if force:
+        print('overwritten: %d' % len(report['overwritten']))
     else:
-        print('Chapters written from data/: %d' % count)
-    print('Next: `npm test` (loads every module) and `npm run dev` to look at the result.')
+        print('drifted   : %d  (hand-edited since they were generated, left alone)' % len(report['drifted']))
+        for path in report['drifted'][:15]:
+            print('    . %s' % path)
+        if len(report['drifted']) > 15:
+            print('    . ... and %d more' % (len(report['drifted']) - 15))
+        if report['drifted']:
+            print('\nThose modules are the live version and data/ is behind them.')
+            print('Use --force only if you really want the JSON to win.')
+    print('\nNext: `npm test` (loads every module) and `npm run dev` to look at the result.')
