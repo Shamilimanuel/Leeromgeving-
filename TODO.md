@@ -442,3 +442,32 @@ Everything else is at or under 4%.
 
 Nederlands BBL1 H9 (7 begrippen), H10 (9), H11 (6) · Nederlands BBL2 H10
 (5 begrippen, 8 kaarten, 8 quizvragen), H11 (9/9/9).
+
+### [x] Figuren toegevoegd (2026-09-01)
+
+Every chapter whose text is about shape, position or graph now has at least
+one figure: **38 of 267 chapters**, up from 4. All of it is inline SVG in the
+chapter modules -- no library, no third-party request, themed with
+`var(--txt)` / `var(--mut)` / `var(--line)` / `var(--accent)` so it follows
+light mode and the subject accent, and sized by the existing `.fig svg`
+rule.
+
+Two things were finished along the way:
+
+- **All ten `.diagram-nodig` placeholders are gone.** Those were drawings the
+  authors described and nobody made; the class is `display:none`, so a
+  student saw nothing at all there. They are now real figures, in Wiskunde
+  TL2/TL3 and Engels TL2/TL3.
+- **A drawing is reused wherever the same idea is taught**, so a BBL student
+  and a TL student meet the same picture: the eenhedentrap appears in three
+  books, the grafiekvormen in three, hoeken/lijnen, balansmethode,
+  aanzichten, oppervlakte and ruimtefiguren in two each.
+
+Ranking script (kept out of the repo) scores every chapter on how much of its
+text is about shape, position or graph and lists the ones with no `<svg>`. It
+now returns zero. Rerun it after adding content.
+
+**Careful with the little tag-balance script**: it only understands the
+hand-written single-string module format and silently skips the generated
+multi-line ones (it sees 1208 of 1324 paragraphs). The audit that loads the
+modules and reads the registry covers all 1324 -- use that one.
