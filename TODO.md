@@ -453,7 +453,8 @@ Needs the table of contents per book; the scans are in
 
 A self-check block is the `<div class="check" onclick="toonCheck(this)">`
 question a student answers before revealing the answer. Wiskunde TL1 has 52 of
-the 102; **twelve books have none at all**. This is the real gap behind "clear
+the 102; **25 of the 37 books have none at all** (an earlier count of "twelve"
+here had it backwards: twelve books *have* one). This is the real gap behind "clear
 and visual", not the container style.
 
 ### [ ] Loose text outside the hokjes
