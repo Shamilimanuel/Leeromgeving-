@@ -78,9 +78,14 @@ levels across the 244 chapters.
 
 Still open, one level up:
 
-- [ ] **A path of chapters on the book screen.** The chapter cards could become
-      path nodes too, a chapter turning green once all its levels are done.
-      This is the "beide lagen" option that was deliberately not built first.
+- [—] **A path of chapters on the book screen — built, looked at, rejected.**
+      The "beide lagen" idea: the chapter cards becoming path nodes too, a
+      chapter turning green once all its levels are done. It was built on
+      2026-09-02 (`05670d4`) and reverted on 2026-09-03 (`1bbebbe`) because
+      Shamil looked at the result and preferred the flat card grid. That is a
+      taste decision, not a bug — **do not build it again.** The winding path
+      stays where it works: one layer down, per chapter, in `src/ui/path.js`.
+      The commits are still in the history if the idea ever comes back.
 - [ ] **Rewards and unlockables.** XP is recorded per level, feeds the
       character-card statistics and is now also stored server-side. Nothing is
       unlocked with it yet. Shamil's idea: badges or a tag next to your name.
