@@ -76,25 +76,11 @@ Shamil's idea, and now the shape of the whole practice game. **Built**
 on an Eindtoets, replayable with XP only paid for an improvement — roughly 950
 levels across the 244 chapters.
 
-- [x] **A path of chapters on the book screen** (2026-09-02). The "beide
-      lagen" option, built one layer up from the per-chapter path: the flat
-      card grid on the book screen (`src/ui/book.js`) is now the same winding
-      `.pad`/`.pad-stap` system as `path.js`, sharing its lean shape (now
-      `export`ed from `path.js` instead of duplicated). A chapter goes green
-      with a check once every one of its levels is done; the first chapter
-      still missing that pulses gold with a START badge. Deliberately does
-      **not** lock chapters in order the way levels do — a student studying
-      for a test on hoofdstuk 7 needs to open it in one tap, not clear 1–6
-      first. Only a chapter with no content, or a book part not released yet,
-      stays disabled. A book split into delen (Wiskunde TL1) gets one
-      continuous path across the split, each deel keeping its own heading.
-      `tests/app.test.js` covers it: finishing every level of one chapter
-      through the state module turns it green and moves the recommended node
-      to the next untouched chapter, while every other chapter — including
-      ones "before" it — stays clickable.
-
 Still open, one level up:
 
+- [ ] **A path of chapters on the book screen.** The chapter cards could become
+      path nodes too, a chapter turning green once all its levels are done.
+      This is the "beide lagen" option that was deliberately not built first.
 - [ ] **Rewards and unlockables.** XP is recorded per level, feeds the
       character-card statistics and is now also stored server-side. Nothing is
       unlocked with it yet. Shamil's idea: badges or a tag next to your name.
