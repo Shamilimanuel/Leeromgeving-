@@ -9,10 +9,8 @@ import { levelsForChapter, levelSubtitle } from '../content/levels.js';
 import { isLevelDone, isLevelUnlocked, levelResult, currentLevelIndex } from '../state/gameLevels.js';
 
 /* How far a node leans out of the middle, per position in the path. Repeating
-   the pattern is what gives the column its winding shape. Exported so the
-   book-level chapter path (book.js) winds the same way -- one visual system,
-   not two that happen to look similar. */
-export const LEAN = [0, 26, 40, 26, 0, -26, -40, -26];
+   the pattern is what gives the column its winding shape. */
+const LEAN = [0, 26, 40, 26, 0, -26, -40, -26];
 
 function nodeHtml(chapter, level, chapterKey, currentIndex) {
   const done = isLevelDone(chapterKey, level.index);
