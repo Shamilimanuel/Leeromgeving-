@@ -431,14 +431,27 @@ folder and file number). Both were verified by deliberately breaking them.
 
 ### [ ] Paragraph numbering — 61% of 1324
 
-Numbering lets a student lay the summary next to the book. Still at 0%:
-Engels BBL1, BBL2, BBL4, TL1, TL2, TL3, TL4 · Nederlands BBL3, BBL4, TL1, TL2,
-TL3, TL4 · Rekenen BBL1. Partly done: Engels BBL3 (44%). Wiskunde TL4 sits at
-55% on purpose — deel B is an exam bundle whose headings have no paragraph
-number in the book (see section on Wiskunde TL).
+Numbering lets a student lay the summary next to the book. **Most of the
+remaining 515 paragraphs are not a task at all** — measured against the books
+themselves rather than assumed:
 
-Needs the table of contents per book; the scans are in
-`Documents\ShareX\Screenshots\Project\` (OneDrive-redirected).
+| Book | Numbers in the book itself | Verdict |
+|---|---|---|
+| Rekenen BBL1 | 63 `N.N` hits; BBL2/3/4 already done | **real work**, and unambiguous |
+| Nederlands BBL3/BBL4, TL1–TL4 | no `N.N`; numbered `1..N` per cursus | real work, same convention BBL1/BBL2 already use |
+| Engels, all 8 books | 0 hits across all 9 scans | needs one check; probably not numbered at all |
+| Wiskunde TL4 deel B | 17 vs 96 in deel A | correctly left alone — exam bundle |
+
+Nederlands BBL1/BBL2 look invented at first glance (`1.1 Onbekende woorden` in a
+book with no `N.N` anywhere) but are **correct**: the book numbers paragraphs
+`1..7` inside each cursus, and the site renders that as chapter.paragraph.
+
+**No inhoudsopgave is needed from Shamil.** All 50 scans in
+`Documents\ShareX\Screenshots\Project\` (OneDrive-redirected) carry an OCR text
+layer, so `pdftotext` reads each book's contents directly. An earlier note here
+said the scans were image-only and unusable — that came from testing with
+`/mingw64/bin/pdftotext`, a broken stub that exits silently with no output. Use
+the Poppler binary on PATH.
 
 ### [ ] Self-check blocks — 102 in total, and 52 of those are one book
 
@@ -487,3 +500,57 @@ now returns zero. Rerun it after adding content.
 hand-written single-string module format and silently skips the generated
 multi-line ones (it sees 1208 of 1324 paragraphs). The audit that loads the
 modules and reads the registry covers all 1324 -- use that one.
+
+
+## 12. Blocked on Shamil — nobody else can do these
+
+Consolidated 2026-09-03, also published as a tickable page:
+<https://claude.ai/code/artifact/6fdef97f-ce30-4d33-918c-b94024187d59>
+
+Grouped by where you have to be, because that is what decides when it can
+happen. The detail for each lives in the section named after it.
+
+**At the scanner**
+
+- [ ] **Which method/edition does the school use at Arbeid and BK?** A question,
+      not a scan, and it comes first: Arbeid and BK are **34 of the 41** empty
+      book/year combinations — two whole levels, every subject, every year.
+      Nothing can be scanned until this is answered. Largest content gap there is.
+- [ ] **Engels TL Deel B**, four books (section 7). TL1 was scanned twice and both
+      times turned out to be Deel A; TL2/TL3/TL4 have no usable scan. Check before
+      scanning: open the booklet in the middle — a house/room, your own world &
+      hobbies, or directions means Deel B (the right one); introductions, a
+      timetable, or shopping/food means Deel A.
+- [ ] **Maatschappijkunde TL3 and TL4** (section 7). No source book at all; both
+      years are offered in the menu and both are empty.
+- [ ] **The V8 PDF, uploaded again** (section 7). Steps 1–2 done, 3–7 lost.
+
+**On a phone or in a browser — things Claude cannot see**
+
+- [ ] **Look at the 53 figures** across 38 chapters (section 11). Never seen
+      rendered by anyone. Worth most: the six solids in Wiskunde TL1 H1, the
+      aanzichten in TL2 H8, the 3D assenstelsel in TL4 H3.
+- [ ] **Play one verbind-oefening** (section 2) → then `origin/matchspel` can go.
+- [ ] **Register with a real invite code** (section 9). The success path of
+      `registreren` v2 has never actually run.
+- [ ] **Confirm the three 2.3.1 fixes** (section 9).
+- [ ] **Safe-area insets in the installed app** (section 9).
+
+**Needs an account or money**
+
+- [!] **A paid API key for speech** (section 3, Fase 4). All three routes need a
+      card. One key unlocks voorlezen *and* the AI tutor.
+- [!] **A custom domain + Play developer account** (section 9) for the TWA.
+- [ ] **Redeploy `admin-acties`** (section 9) — one inconsistent sentence.
+
+**Only Shamil can decide**
+
+- [?] **Is 2.6.0 ready to go live?** Pushing to main triggers the deploy and makes
+      Teamchat disappear for anyone who used it. As of 2026-09-03 there are
+      **28 commits that have never left the PC** — one disk, no backup.
+      `git push origin HEAD:backup-2026-09-03` saves the work without touching
+      main or firing the workflow.
+- [?] **Fase 3 competitions: 1-versus-1, or a timed group contest?** (section 3)
+- [?] **Rewards: what form, and shown where?** (section 4) Mind the constraint
+      recorded there: a student can write their own `spelvoortgang` rows, so a
+      badge has to be derived server-side or written by an Edge Function.
