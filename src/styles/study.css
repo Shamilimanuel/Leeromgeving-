@@ -57,12 +57,7 @@
 .pad-prog{flex-basis:100%;margin-top:.2rem}
 .pad{list-style:none;margin:2rem auto 1rem;padding:0;max-width:420px;position:relative}
 .pad-stap{position:relative;display:flex;align-items:center;gap:1rem;padding:.55rem 0;
-  transform:translateX(var(--lean,0));animation:padUp .45s ease both}
-/* Not the shared `up` keyframe: that one animates transform:translateY only,
-   which would overwrite this element's own translateX(--lean) the instant it
-   ran and leave every node sitting dead-centre once the animation finished.
-   This keeps the lean in both the from- and to-state. */
-@keyframes padUp{from{opacity:0;transform:translateX(var(--lean,0)) translateY(18px)}to{opacity:1;transform:translateX(var(--lean,0)) translateY(0)}}
+  transform:translateX(var(--lean,0))}
 .pad-stap::before{content:'';position:absolute;left:31px;top:-1.1rem;width:2px;height:1.1rem;background:var(--line)}
 .pad-stap:first-child::before{display:none}
 .pad-knop{flex:none;width:64px;height:64px;border-radius:50%;border:2px solid var(--line);
@@ -194,7 +189,7 @@ body.spel-open{overflow:hidden}
   .spel-omschrijving{font-size:.94rem;padding:.85rem}
   .spelpaneel{padding:0 .9rem}
 }
-@media (prefers-reduced-motion:reduce){.spel-tegel.fout,.pad-stap.nu .pad-knop,.pad-stap{animation:none}}
+@media (prefers-reduced-motion:reduce){.spel-tegel.fout,.pad-stap.nu .pad-knop{animation:none}}
 
 /* glossary */
 .zoek{width:100%;padding:.7rem 1.1rem;border:1px solid var(--line);border-radius:100px;background:var(--ink2);

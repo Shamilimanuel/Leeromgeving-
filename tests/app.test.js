@@ -76,11 +76,7 @@ describe('subject → level → book → chapter', () => {
     expect(document.querySelectorAll('#jaarChips .jaar-card').length).toBe(2);
     window.chooseYear(1);
     expect(screenIsOn('book')).toBe(true);
-    // The book screen is a winding chapter path (book.js), the same visual
-    // system as the per-chapter level path in path.js -- .pad-stap nodes,
-    // not the flat .chapter card grid this used to be.
-    expect(document.querySelectorAll('#bookBody .pad-stap').length).toBe(6);
-    expect(document.querySelectorAll('#bookBody .pad-stap.nu').length).toBe(1);
+    expect(document.querySelectorAll('#bookBody .chapter').length).toBe(6);
     expect(document.getElementById('bkTitle').textContent).toContain('Biologie');
   });
 
@@ -233,41 +229,6 @@ describe('subject → level → book → chapter', () => {
     expect(nodes[0].querySelector('.pad-gezicht').textContent).toBe('\u2713');
     expect(nodes[1].querySelector('.pad-knop').disabled).toBe(false);
     window.setTab('summary');
-  });
-
-  it('finishes chapter 2 and shows it green on the book path, without locking any other chapter', async () => {
-    const { CONTENT } = await import('../src/content/index.js');
-    const { levelsForChapter } = await import('../src/content/levels.js');
-    const { completeLevel } = await import('../src/state/gameLevels.js');
-    const key = 'biologie|bbl|1|2';
-    const levels = levelsForChapter(CONTENT[key]);
-    // Level 0 is already done from the previous test. Finish the rest through
-    // the state module directly rather than replaying every exercise kind
-    // again -- completeLevel() is exactly what that playthrough calls.
-    levels.slice(1).forEach((level) => {
-      const count = level.terms.length + level.cards.length;
-      completeLevel(key, level.index, count, count);
-    });
-
-    window.go('book');
-    const nodeFor = (nr) => document.querySelector('#bookBody button[onclick*="openChapter(\'' + nr + '\')"]').closest('.pad-stap');
-
-    const node2 = nodeFor('2');
-    expect(node2.querySelector('.pad-knop').classList.contains('klaar')).toBe(true);
-    expect(node2.querySelector('.pad-gezicht').textContent).toBe('✓');
-    expect(node2.classList.contains('nu')).toBe(false);
-
-    // Chapter 1 was never touched, but the book path does not lock chapters
-    // in order the way levels inside a chapter do -- it stays fully
-    // clickable, and being first in line and not yet done, it is now the one
-    // recommended node.
-    const node1 = nodeFor('1');
-    expect(node1.querySelector('.pad-knop').disabled).toBe(false);
-    expect(node1.querySelector('.pad-knop').classList.contains('op-slot')).toBe(false);
-    expect(node1.classList.contains('nu')).toBe(true);
-    expect(document.querySelectorAll('#bookBody .pad-stap.nu').length).toBe(1);
-
-    window.openChapter('2');
   });
 
   it('shows flashcards and marks one as known', () => {
