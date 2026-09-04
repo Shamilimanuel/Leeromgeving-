@@ -18,12 +18,17 @@ export const APP_VERSION = '2.6.0';
 export const CHANGELOG = [
   {
     version: '2.6.0',
-    date: '2026-08-31',
-    title: 'Teamchat weg, Agenda erbij',
+    date: '2026-09-03',
+    title: 'Wiskunde TL1, tekeningen en de Agenda',
     changes: [
-      'De Teamchat is gestopt. In plaats daarvan is er nu een Agenda: zet er een toets in en je krijgt automatisch een paar leermomentjes terug, verspreid tot de toetsdatum.',
-      'Een toets koppel je desgewenst aan een hoofdstuk, zodat je er met één klik naartoe kunt.',
-      'De Agenda staat alleen op dit apparaat, net als je notities en voortgang.',
+      'Wiskunde TL leerjaar 1 staat er nu helemaal in: negen hoofdstukken, van ruimtefiguren tot symmetrie, met begrippen, flashcards en quizvragen.',
+      'Bij meetkunde, grafieken en eenheden staan nu tekeningen. Een balk met de driehoek erin, een kubus naast zijn uitslag, het assenstelsel met de punten erop — dingen die je uit tekst alleen lastig voor je ziet.',
+      'De "Check"-blokjes in een samenvatting deden niets als je erop klikte. Nu klappen ze open met het antwoord.',
+      'De drie lege Puzzelen-hoofdstukken bij Nederlands zijn gevuld, en dertien andere hoofdstukken hebben er uitleg, tabellen en zelftestvragen bij gekregen.',
+      'Bij wiskunde staan nu de paragraafnummers uit je boek bij de kopjes, zodat je de samenvatting er precies naast kunt leggen.',
+      'Leerjaren waar nog geen boek van is, zijn nu grijs in plaats van aanklikbaar. Je komt niet meer op een leeg scherm uit.',
+      'Twee rekenvragen lieten het goede antwoord twee keer zien, waardoor je het fout kon krijgen terwijl je het goed had. Opgelost.',
+      'De Teamchat is gestopt. In plaats daarvan is er een Agenda: zet er een toets in en je krijgt automatisch leermomentjes terug, verspreid tot de toetsdatum. Een toets koppel je desgewenst aan een hoofdstuk. De Agenda staat alleen op dit apparaat, net als je notities en voortgang.',
     ],
   },
   {
