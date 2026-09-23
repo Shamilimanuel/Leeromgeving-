@@ -1,6 +1,6 @@
 import { registerBook } from '../../registry.js';
 
-/* Economie: welke boeken en hoofdstukken er zijn */
+/* Economie: which books exist and what chapters they hold. */
 registerBook('economie','tl',3,'Percent Economie',[
   {part:'',ready:true,chapters:[
     ['1','Hoe welvarend ben jij?','Welvaart, behoeften en schaarste'],

@@ -57,7 +57,7 @@ def check_tags(markup, where, errors):
         opened = len(re.findall(r'<' + tag + r'[\s>]', markup))
         closed = len(re.findall(r'</' + tag + '>', markup))
         if opened != closed:
-            errors.append('  ✗ %s: <%s> not balanced (%d open, %d close)' % (where, tag, opened, closed))
+            errors.append('  FAIL %s: <%s> not balanced (%d open, %d close)' % (where, tag, opened, closed))
 
 
 def check_chapter(chapter, index, file_name, errors, warnings):
@@ -87,17 +87,17 @@ def check_chapter(chapter, index, file_name, errors, warnings):
             if section and section not in sub_titles:
                 # tolerate small spelling differences
                 if slug(section) not in {slug(t) for t in sub_titles}:
-                    errors.append('  ✗ %s: %s has paragraaf "%s", no matching subchapter' % (where, kind, section))
+                    errors.append('  FAIL %s: %s has paragraaf "%s", no matching subchapter' % (where, kind, section))
 
     for i, q in enumerate(chapter.get('quiz', []) or [], 1):
         options = q.get('opties') or []
         answer_index = q.get('antwoord_index')
         if len(options) != QUIZ_OPTIONS:
-            errors.append('  ✗ %s: quiz question %d has %d options (must be %d)' % (where, i, len(options), QUIZ_OPTIONS))
+            errors.append('  FAIL %s: quiz question %d has %d options (must be %d)' % (where, i, len(options), QUIZ_OPTIONS))
         if not isinstance(answer_index, int) or not (0 <= answer_index < len(options)):
-            errors.append('  ✗ %s: quiz question %d has an invalid antwoord_index (%r)' % (where, i, answer_index))
+            errors.append('  FAIL %s: quiz question %d has an invalid antwoord_index (%r)' % (where, i, answer_index))
         if HESITATION_RE.search(q.get('uitleg', '')):
-            errors.append('  ✗ %s: quiz question %d: explanation looks like thinking out loud: "%s..."'
+            errors.append('  FAIL %s: quiz question %d: explanation looks like thinking out loud: "%s..."'
                           % (where, i, q.get('uitleg', '')[:60]))
 
     for field, minimum in [('begrippen', MIN_TERMS), ('flashcards', MIN_CARDS)]:
@@ -114,11 +114,11 @@ def check_source_file(path, errors, warnings):
     try:
         data = json.load(open(path, encoding='utf-8'))
     except Exception as e:  # noqa: BLE001
-        errors.append('✗ %s: NOT VALID JSON: %s' % (name, str(e)[:120]))
+        errors.append('FAIL %s: NOT VALID JSON: %s' % (name, str(e)[:120]))
         return
     chapters = data.get('hoofdstukken', [])
     if not chapters:
-        errors.append('✗ %s: no "hoofdstukken" found' % name)
+        errors.append('FAIL %s: no "hoofdstukken" found' % name)
         return
     print('%s: %d chapters' % (name, len(chapters)))
     for i, chapter in enumerate(chapters, 1):
@@ -155,7 +155,7 @@ def check_chapter_keys(errors, warnings):
             if key in claimed:
                 other_file, other_title = claimed[key]
                 errors.append(
-                    '  ✗ chapter key %s is claimed twice:\n'
+                    '  FAIL chapter key %s is claimed twice:\n'
                     '      %s "%s"\n'
                     '      %s "%s"\n'
                     '      give the later file an "eerste_hoofdstuk" so its chapters continue'
@@ -171,10 +171,10 @@ def check_module_file(path, errors):
     if 'registerChapter(' not in source:
         return
     if 'registry.js' not in source:
-        errors.append('✗ %s: missing the registerChapter import' % name)
+        errors.append('FAIL %s: missing the registerChapter import' % name)
     braces = source.count('{') - source.count('}')
     if braces != 0:
-        errors.append('✗ %s: curly braces not balanced (difference %d)' % (name, braces))
+        errors.append('FAIL %s: curly braces not balanced (difference %d)' % (name, braces))
     check_tags(source, name, errors)
 
 

@@ -3,7 +3,7 @@
    A finished level is green with a check, the next one is gold and is the only
    one you can start, the rest are locked. Rendered into the Oefenspel tab; the
    levels themselves are played in the overlay from game.js. */
-import { setHtml } from '../lib/dom.js';
+import { setHtml, icon } from '../lib/dom.js';
 import { currentChapterKey } from '../state/selection.js';
 import { levelsForChapter, levelSubtitle } from '../content/levels.js';
 import { isLevelDone, isLevelUnlocked, levelResult, currentLevelIndex } from '../state/gameLevels.js';
@@ -22,7 +22,7 @@ function nodeHtml(chapter, level, chapterKey, currentIndex) {
   if (done) state = 'klaar';
   else if (unlocked) state = 'open';
 
-  const face = done ? '✓' : (unlocked ? (level.isFinal ? '★' : level.index + 1) : '<span class="icon icon-lock" aria-hidden="true"></span>');
+  const face = done ? icon('check') : (unlocked ? (level.isFinal ? icon('star') : level.index + 1) : icon('lock'));
   const label = level.isFinal ? 'Eindtoets' : level.title;
   const score = result ? '<span class="pad-score">' + result.best + '/' + result.total + '</span>' : '';
 

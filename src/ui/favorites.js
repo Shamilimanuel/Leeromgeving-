@@ -1,5 +1,5 @@
 /* Favourites overlay: starred terms and flashcards. */
-import { $, setHtml } from '../lib/dom.js';
+import { $, setHtml, icon } from '../lib/dom.js';
 import { parseKey, subjectById, levelById } from '../content/index.js';
 import { getFavorites, removeFavoriteAt } from '../state/progress.js';
 import { TABS } from '../state/selection.js';
@@ -29,7 +29,7 @@ function renderFavorites() {
     return '<div class="favitem"><div class="favgo" onclick="openFavorite(' + i + ')">'
       + '<span class="zvak" style="color:var(--' + (subject ? subject.color : 'accent') + ')">' + (subject ? subject.name : parts.subject) + ' · ' + (level ? level.name : parts.level) + ' ' + parts.year + '</span>'
       + '<b>' + f.text + '</b><span class="zdetail">' + f.detail + '</span></div>'
-      + '<button class="favdel" onclick="removeFavorite(' + i + ')" aria-label="Verwijder favoriet">✕</button></div>';
+      + '<button class="favdel" onclick="removeFavorite(' + i + ')" aria-label="Verwijder favoriet">' + icon('x') + '</button></div>';
   }).join(''));
 }
 

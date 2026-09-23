@@ -1,5 +1,5 @@
 /* Book screen: the chapters of the chosen subject/level/year. */
-import { $, setHtml } from '../lib/dom.js';
+import { $, setHtml, icon } from '../lib/dom.js';
 import { chapterKey } from '../content/index.js';
 import { selection, currentSubject, currentLevel, currentBook, chapterContent, selectionLabel } from '../state/selection.js';
 import { progressFor } from '../state/progress.js';
@@ -49,7 +49,7 @@ export function renderBook() {
         const cls = 'chapter' + (part.ready ? (hasContent ? '' : ' leeg') : ' locked');
         const action = part.ready ? ' onclick="openChapter(\'' + c[0] + '\')"' : ' disabled';
         const p = progressFor(chapterKey(subject.id, selection.level, selection.year, c[0]));
-        const badge = p && p.quizCompleted ? '<span class="rdy vg-quiz">✓ ' + p.quizCorrect + '/' + p.quizTotal + '</span>'
+        const badge = p && p.quizCompleted ? '<span class="rdy vg-quiz">' + icon('check') + ' ' + p.quizCorrect + '/' + p.quizTotal + '</span>'
           : p && p.viewed ? '<span class="rdy vg-bekeken">gelezen</span>' : (hasContent ? '<span class="rdy">klaar</span>' : '');
         return '<button class="' + cls + '" style="animation-delay:' + (i * 70) + 'ms"' + action + '>'
           + '<i class="frame"></i>'

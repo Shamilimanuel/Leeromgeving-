@@ -1,5 +1,5 @@
 /* Glossary tab: searchable list of terms, grouped by section or alphabetical. */
-import { $, setHtml } from '../lib/dom.js';
+import { $, setHtml, icon } from '../lib/dom.js';
 import { chapterContent, currentChapterKey } from '../state/selection.js';
 import { isFavorite, toggleFavorite } from '../state/progress.js';
 import { sectionForTerm, sectionHeading } from '../content/sections.js';
@@ -14,7 +14,7 @@ export function renderGlossary(chapter) {
   }
   setHtml('chBody',
     '<div class="bar"><button class="bt' + (groupBySection ? '' : ' gh') + '" onclick="toggleTermGrouping()">'
-    + (groupBySection ? '\u{1F4D1} Op boekvolgorde' : '\u{1F524} Op alfabet') + '</button>'
+    + (groupBySection ? icon('list-ordered') + ' Op boekvolgorde' : icon('arrow-down-a-z') + ' Op alfabet') + '</button>'
     + '<input class="zoek" id="zoek" type="search" placeholder="Zoek een begrip…" aria-label="Zoek een begrip" style="flex:1;min-width:180px;margin:0"></div>'
     + '<div id="blist"></div>');
   $('zoek').addEventListener('input', function () { drawTerms(chapter, this.value); });
@@ -28,7 +28,7 @@ export function toggleTermGrouping() {
 
 function termHtml(term, index) {
   const starred = isFavorite('term', currentChapterKey(), index);
-  return '<div class="term"><button class="star' + (starred ? ' on' : '') + '" onclick="toggleTermFavorite(event,' + index + ')" aria-label="Favoriet">★</button><b>' + term[0] + '</b><span>' + term[1] + '</span></div>';
+  return '<div class="term"><button class="star' + (starred ? ' on' : '') + '" onclick="toggleTermFavorite(event,' + index + ')" aria-label="Favoriet">' + icon('star') + '</button><b>' + term[0] + '</b><span>' + term[1] + '</span></div>';
 }
 
 export function toggleTermFavorite(e, index) {

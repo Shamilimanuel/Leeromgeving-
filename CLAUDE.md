@@ -3,6 +3,10 @@
 Study site for Dutch VMBO students. Vanilla JS ES modules + CSS built with
 Vite, Supabase backend, Python content pipeline. Full documentation: `README.md`.
 
+**Starting cold? Read `STATUS.md` first** — where the project stands today,
+what is uncommitted, and what is worth doing next. `TODO.md` is the backlog
+behind it.
+
 **Language rule:** code, comments, file names and docs are English; every
 string a student sees (UI text, summaries, error messages) stays Dutch.
 
@@ -48,6 +52,12 @@ tests/                  Vitest
   sentences, everyday words.
 - No external runtime libraries besides `@supabase/supabase-js`; no third-party
   requests at runtime (fonts are self-hosted in `public/fonts/`).
+- No emoji anywhere a student can see, and none in the developer scripts
+  either. Symbols are icons: `icon('star')` from `src/lib/dom.js`, or
+  `<span class="icon icon-star" aria-hidden="true">` in `index.html`, or a
+  masked `::before` in CSS. The set is self-hosted Lucide SVG in
+  `public/icons/ui/` with a rule per icon in `public/icons/icons.css`; a new
+  icon needs both the file and the rule. See "Icons" in `README.md`.
 - Security: escape every database value with `escapeHtml()` before rendering
   (element content and attributes); put only validated ids (`isUuid`,
   `isIntegerId`) into `onclick="..."` strings; privileged actions go through

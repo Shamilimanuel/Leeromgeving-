@@ -1,6 +1,6 @@
 import { registerBook } from '../../registry.js';
 
-/* Engels: welke boeken en hoofdstukken er zijn */
+/* Engels: which books exist and what chapters they hold. */
 registerBook('engels','bbl',1,'Stepping Stones',[
   {part:'',ready:true,chapters:[
     ['1','Bridging the Gap','Opfrisdeel: getallen, kleuren, familie, lichaam, kleding en het huis'],

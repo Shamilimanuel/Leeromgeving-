@@ -84,11 +84,11 @@
     <div class="brand">Samenvattingen<span>Shamil Imanuel</span></div>
     <div class="crumb"><b>Kies een vak</b></div>
     <button class="belbtn" id="belbtn" onclick="openWhatsNew()" aria-label="Nieuw en updates" title="Wat is er nieuw?">
-      <span class="belico">&#128276;</span><span class="belstip" id="belStip" hidden></span>
+      <span class="belico icon icon-bell" aria-hidden="true"></span><span class="belstip" id="belStip" hidden></span>
     </button>
     <div class="profilewrap" id="profileWrap">
       <button class="avatarbtn" id="topAccountBtn" onclick="toggleProfileMenu(event)" aria-haspopup="true" aria-expanded="false" title="Account">
-        <span class="avatarcircle" id="avatarCircle">&#128100;</span>
+        <span class="avatarcircle" id="avatarCircle"><span class="icon icon-user" aria-hidden="true"></span></span>
       </button>
       <div class="profiledrop" id="profileDrop"></div>
     </div>
@@ -99,15 +99,15 @@
     <p class="lede">De kleuren zijn gekozen door de docenten zelf.</p>
     <div class="snelbalk">
       <button class="snel" style="--c:var(--niv-tl);--cd:var(--niv-tl-d)" onclick="go('personage')">
-        <span class="snel-ico"><i class="ring"></i><i class="core">&#127183;</i></span>
+        <span class="snel-ico"><i class="ring"></i><i class="core"><span class="icon icon-medal" aria-hidden="true"></span></i></span>
         <span class="snel-tekst"><b>Jouw voortgang</b><small>Level per vak</small></span>
       </button>
       <button class="snel" style="--c:var(--mensmaatschappij);--cd:var(--mensmaatschappij-d)" onclick="go('agenda')">
-        <span class="snel-ico"><i class="ring"></i><i class="core">&#128197;</i></span>
+        <span class="snel-ico"><i class="ring"></i><i class="core"><span class="icon icon-calendar-days" aria-hidden="true"></span></i></span>
         <span class="snel-tekst"><b>Agenda</b><small>Plan je toetsen</small></span>
       </button>
       <button class="snel" style="--c:var(--goud);--cd:var(--accent-d)" id="tekstgroottebtn" onclick="cycleTextSize()" title="Tekstgrootte aanpassen">
-        <span class="snel-ico"><i class="ring"></i><i class="core">&#128292;</i></span>
+        <span class="snel-ico"><i class="ring"></i><i class="core"><span class="icon icon-a-large-small" aria-hidden="true"></span></i></span>
         <span class="snel-tekst"><b>Tekstgrootte</b><span class="snel-waarde">A</span></span>
       </button>
     </div>
@@ -117,7 +117,7 @@
 
 <section id="personage" class="screen">
   <div class="top"><div class="top-in">
-    <button class="homebtn" onclick="go('home')" title="Naar vakkenoverzicht" aria-label="Home">&#129517;</button>
+    <button class="homebtn" onclick="go('home')" title="Naar vakkenoverzicht" aria-label="Home"><span class="icon icon-house" aria-hidden="true"></span></button>
     <button class="back" onclick="go('home')">&larr; Vakken</button>
     <div class="brand">Personagekaarten</div>
     <div class="crumb"><b>Level &amp; voortgang per vak</b></div>
@@ -133,7 +133,7 @@
 
 <section id="account" class="screen">
   <div class="top"><div class="top-in">
-    <button class="homebtn" onclick="go('home')" title="Naar vakkenoverzicht" aria-label="Home">&#129517;</button>
+    <button class="homebtn" onclick="go('home')" title="Naar vakkenoverzicht" aria-label="Home"><span class="icon icon-house" aria-hidden="true"></span></button>
     <button class="back" onclick="go('home')">&larr; Vakken</button>
     <div class="brand">Account</div>
     <div class="crumb"><b id="acctCrumb">Inloggen &amp; registreren</b></div>
@@ -174,7 +174,7 @@
 
 <section id="settings" class="screen">
   <div class="top"><div class="top-in">
-    <button class="homebtn" onclick="go('home')" title="Naar vakkenoverzicht" aria-label="Home">&#129517;</button>
+    <button class="homebtn" onclick="go('home')" title="Naar vakkenoverzicht" aria-label="Home"><span class="icon icon-house" aria-hidden="true"></span></button>
     <button class="back" onclick="go('account')">&larr; Account</button>
     <div class="brand">Instellingen</div>
     <div class="crumb"><b>Profiel &amp; beveiliging</b></div>
@@ -251,7 +251,7 @@
 
 <section id="admin" class="screen">
   <div class="top"><div class="top-in">
-    <button class="homebtn" onclick="go('home')" title="Naar vakkenoverzicht" aria-label="Home">&#129517;</button>
+    <button class="homebtn" onclick="go('home')" title="Naar vakkenoverzicht" aria-label="Home"><span class="icon icon-house" aria-hidden="true"></span></button>
     <button class="back" onclick="go('account')">&larr; Account</button>
     <div class="brand">Adminpaneel</div>
     <div class="crumb"><b>Codes &amp; leerlingen</b></div>
@@ -266,7 +266,7 @@
 
 <section id="agenda" class="screen">
   <div class="top"><div class="top-in">
-    <button class="homebtn" onclick="go('home')" title="Naar vakkenoverzicht" aria-label="Home">&#129517;</button>
+    <button class="homebtn" onclick="go('home')" title="Naar vakkenoverzicht" aria-label="Home"><span class="icon icon-house" aria-hidden="true"></span></button>
     <button class="back" onclick="go('home')">&larr; Vakken</button>
     <div class="brand">Agenda</div>
     <div class="crumb"><b>Plan je toetsen</b></div>
@@ -287,7 +287,7 @@
 
 <section id="level" class="screen">
   <div class="top"><div class="top-in">
-    <button class="homebtn" onclick="go('home')" title="Naar vakkenoverzicht" aria-label="Home">&#129517;</button>
+    <button class="homebtn" onclick="go('home')" title="Naar vakkenoverzicht" aria-label="Home"><span class="icon icon-house" aria-hidden="true"></span></button>
     <button class="back" onclick="go('home')">&larr; Vakken</button>
     <div class="brand" id="lvlBrand">Vak</div>
     <div class="crumb"><b>Niveau en jaar</b></div>
@@ -303,7 +303,7 @@
 
 <section id="book" class="screen">
   <div class="top"><div class="top-in">
-    <button class="homebtn" onclick="go('home')" title="Naar vakkenoverzicht" aria-label="Home">&#129517;</button>
+    <button class="homebtn" onclick="go('home')" title="Naar vakkenoverzicht" aria-label="Home"><span class="icon icon-house" aria-hidden="true"></span></button>
     <button class="back" onclick="go('level')">&larr; Niveau</button>
     <div class="brand" id="bkBrand">Vak</div>
     <div class="crumb"><b id="bkCrumb">&mdash;</b></div>
@@ -318,7 +318,7 @@
 
 <section id="chapter" class="screen">
   <div class="top"><div class="top-in">
-    <button class="homebtn" onclick="go('home')" title="Naar vakkenoverzicht" aria-label="Home">&#129517;</button>
+    <button class="homebtn" onclick="go('home')" title="Naar vakkenoverzicht" aria-label="Home"><span class="icon icon-house" aria-hidden="true"></span></button>
     <button class="back" onclick="go('book')">&larr; Hoofdstukken</button>
     <div class="brand" id="chBrand">Vak</div>
     <div class="crumb"><b id="chCrumb">&mdash;</b></div>

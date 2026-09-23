@@ -1,6 +1,8 @@
 /* Self-hosted UI icons (Lucide, ISC license: https://lucide.dev), replacing
-   the emoji that used to sit in buttons and callouts. Rendered as CSS masks
-   so each icon inherits `color`, exactly like the emoji glyph it replaces. */
+   the emoji that used to sit in buttons, badges and callouts. Rendered as CSS
+   masks so each icon inherits `color`, exactly like the emoji glyph it
+   replaced -- and, unlike an emoji, it is the same drawing on every device
+   instead of whatever Windows, Android or iOS happens to ship this year. */
 
 .icon{display:inline-block;width:1em;height:1em;background-color:currentColor;
   -webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;
@@ -8,6 +10,7 @@
   -webkit-mask-size:contain;mask-size:contain;
   vertical-align:-0.15em;flex-shrink:0}
 
+/* ── Tools and chrome ── */
 .icon-search{-webkit-mask-image:url('ui/search.svg');mask-image:url('ui/search.svg')}
 .icon-star{-webkit-mask-image:url('ui/star.svg');mask-image:url('ui/star.svg')}
 .icon-timer{-webkit-mask-image:url('ui/timer.svg');mask-image:url('ui/timer.svg')}
@@ -22,3 +25,47 @@
 .icon-printer{-webkit-mask-image:url('ui/printer.svg');mask-image:url('ui/printer.svg')}
 .icon-lightbulb{-webkit-mask-image:url('ui/lightbulb.svg');mask-image:url('ui/lightbulb.svg')}
 .icon-calculator{-webkit-mask-image:url('ui/calculator.svg');mask-image:url('ui/calculator.svg')}
+.icon-bell{-webkit-mask-image:url('ui/bell.svg');mask-image:url('ui/bell.svg')}
+.icon-house{-webkit-mask-image:url('ui/house.svg');mask-image:url('ui/house.svg')}
+.icon-user{-webkit-mask-image:url('ui/user.svg');mask-image:url('ui/user.svg')}
+.icon-settings{-webkit-mask-image:url('ui/settings.svg');mask-image:url('ui/settings.svg')}
+.icon-sparkles{-webkit-mask-image:url('ui/sparkles.svg');mask-image:url('ui/sparkles.svg')}
+.icon-id-card{-webkit-mask-image:url('ui/id-card.svg');mask-image:url('ui/id-card.svg')}
+.icon-key-round{-webkit-mask-image:url('ui/key-round.svg');mask-image:url('ui/key-round.svg')}
+.icon-log-in{-webkit-mask-image:url('ui/log-in.svg');mask-image:url('ui/log-in.svg')}
+.icon-log-out{-webkit-mask-image:url('ui/log-out.svg');mask-image:url('ui/log-out.svg')}
+.icon-copy{-webkit-mask-image:url('ui/copy.svg');mask-image:url('ui/copy.svg')}
+.icon-x{-webkit-mask-image:url('ui/x.svg');mask-image:url('ui/x.svg')}
+.icon-check{-webkit-mask-image:url('ui/check.svg');mask-image:url('ui/check.svg')}
+.icon-medal{-webkit-mask-image:url('ui/medal.svg');mask-image:url('ui/medal.svg')}
+.icon-flame{-webkit-mask-image:url('ui/flame.svg');mask-image:url('ui/flame.svg')}
+.icon-calendar-days{-webkit-mask-image:url('ui/calendar-days.svg');mask-image:url('ui/calendar-days.svg')}
+.icon-a-large-small{-webkit-mask-image:url('ui/a-large-small.svg');mask-image:url('ui/a-large-small.svg')}
+.icon-book-open{-webkit-mask-image:url('ui/book-open.svg');mask-image:url('ui/book-open.svg')}
+.icon-library{-webkit-mask-image:url('ui/library.svg');mask-image:url('ui/library.svg')}
+.icon-list-ordered{-webkit-mask-image:url('ui/list-ordered.svg');mask-image:url('ui/list-ordered.svg')}
+.icon-shuffle{-webkit-mask-image:url('ui/shuffle.svg');mask-image:url('ui/shuffle.svg')}
+.icon-arrow-down-a-z{-webkit-mask-image:url('ui/arrow-down-a-z.svg');mask-image:url('ui/arrow-down-a-z.svg')}
+.icon-rotate-ccw{-webkit-mask-image:url('ui/rotate-ccw.svg');mask-image:url('ui/rotate-ccw.svg')}
+.icon-refresh-cw{-webkit-mask-image:url('ui/refresh-cw.svg');mask-image:url('ui/refresh-cw.svg')}
+.icon-repeat{-webkit-mask-image:url('ui/repeat.svg');mask-image:url('ui/repeat.svg')}
+.icon-hand{-webkit-mask-image:url('ui/hand.svg');mask-image:url('ui/hand.svg')}
+.icon-palette{-webkit-mask-image:url('ui/palette.svg');mask-image:url('ui/palette.svg')}
+.icon-pencil{-webkit-mask-image:url('ui/pencil.svg');mask-image:url('ui/pencil.svg')}
+.icon-link{-webkit-mask-image:url('ui/link.svg');mask-image:url('ui/link.svg')}
+.icon-compass{-webkit-mask-image:url('ui/compass.svg');mask-image:url('ui/compass.svg')}
+
+/* ── Subjects (src/content/structure.js) ── */
+.icon-ruler{-webkit-mask-image:url('ui/ruler.svg');mask-image:url('ui/ruler.svg')}
+.icon-leaf{-webkit-mask-image:url('ui/leaf.svg');mask-image:url('ui/leaf.svg')}
+.icon-pen-line{-webkit-mask-image:url('ui/pen-line.svg');mask-image:url('ui/pen-line.svg')}
+.icon-globe{-webkit-mask-image:url('ui/globe.svg');mask-image:url('ui/globe.svg')}
+.icon-handshake{-webkit-mask-image:url('ui/handshake.svg');mask-image:url('ui/handshake.svg')}
+.icon-chart-column{-webkit-mask-image:url('ui/chart-column.svg');mask-image:url('ui/chart-column.svg')}
+.icon-scale{-webkit-mask-image:url('ui/scale.svg');mask-image:url('ui/scale.svg')}
+.icon-landmark{-webkit-mask-image:url('ui/landmark.svg');mask-image:url('ui/landmark.svg')}
+
+/* ── Levels (src/content/structure.js) ── */
+.icon-hammer{-webkit-mask-image:url('ui/hammer.svg');mask-image:url('ui/hammer.svg')}
+.icon-zap{-webkit-mask-image:url('ui/zap.svg');mask-image:url('ui/zap.svg')}
+.icon-graduation-cap{-webkit-mask-image:url('ui/graduation-cap.svg');mask-image:url('ui/graduation-cap.svg')}

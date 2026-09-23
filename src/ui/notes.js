@@ -1,5 +1,5 @@
 /* Notes tab: Cornell notes (cue column, notes column, summary). */
-import { setHtml, escapeHtml } from '../lib/dom.js';
+import { setHtml, escapeHtml, icon } from '../lib/dom.js';
 import { cornellNotes, updateCornellField, addCornellRow, removeCornellRow, saveCornellSummary, clearCornellNotes } from '../state/notes.js';
 
 export function renderNotes() {
@@ -22,7 +22,7 @@ function drawNoteRows(rows) {
     '<div class="cornell-row">'
     + '<textarea class="cornell-cue" oninput="updateNoteField(' + i + ',\'cue\',this.value)" placeholder="Kernwoord / vraag">' + escapeHtml(row.cue) + '</textarea>'
     + '<textarea class="cornell-note" oninput="updateNoteField(' + i + ',\'notes\',this.value)" placeholder="Aantekening">' + escapeHtml(row.notes) + '</textarea>'
-    + (rows.length > 1 ? '<button class="cornell-del" onclick="removeNoteRow(' + i + ')" aria-label="Rij verwijderen">✕</button>' : '<span></span>')
+    + (rows.length > 1 ? '<button class="cornell-del" onclick="removeNoteRow(' + i + ')" aria-label="Rij verwijderen">' + icon('x') + '</button>' : '<span></span>')
     + '</div>',
   ).join(''));
 }

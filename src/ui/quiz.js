@@ -1,5 +1,5 @@
 /* Quiz tab, with a "practice the questions you got wrong" mode. */
-import { $, setHtml } from '../lib/dom.js';
+import { $, setHtml, escapeHtml, icon } from '../lib/dom.js';
 import { chapterContent } from '../state/selection.js';
 import { mistakesForChapter, addMistake, removeMistake, markQuizCompleted } from '../state/progress.js';
 import { XP_PER_CORRECT_ANSWER } from '../state/stats.js';
@@ -40,8 +40,8 @@ export function renderQuiz(chapter) {
   setHtml('chBody',
     '<div class="scorebar"><b id="scoreTxt">0 van ' + chapter.quiz.length + ' beantwoord</b>'
     + '<div class="prog"><i id="progBar"></i></div>'
-    + (mistakeCount ? '<button class="bt' + (mistakeMode ? '' : ' gh') + '" onclick="toggleMistakeMode()">\u{1F501} ' + (mistakeMode ? 'Alle vragen' : 'Oefen foute vragen (' + mistakeCount + ')') + '</button>' : '')
-    + '<button class="bt gh" onclick="resetQuiz()">↺ Opnieuw</button></div>'
+    + (mistakeCount ? '<button class="bt' + (mistakeMode ? '' : ' gh') + '" onclick="toggleMistakeMode()">' + icon('repeat') + ' ' + (mistakeMode ? 'Alle vragen' : 'Oefen foute vragen (' + mistakeCount + ')') + '</button>' : '')
+    + '<button class="bt gh" onclick="resetQuiz()">' + icon('rotate-ccw') + ' Opnieuw</button></div>'
     + '<div id="qlist"></div><div id="qres"></div>');
   drawQuiz(chapter);
 }
@@ -80,7 +80,10 @@ function showAnswer(chapter, i, j) {
   });
   const fb = $('fb' + i);
   if (fb) {
-    fb.textContent = (j === correct ? '✓ Goed. ' : '✗ Niet goed. ') + chapter.quiz[i][3];
+    /* Icon markup means innerHTML, so the explanation is escaped: it comes
+       from a content module, which is ours, but the rule is the rule. */
+    fb.innerHTML = (j === correct ? icon('check') + ' Goed. ' : icon('x') + ' Niet goed. ')
+      + escapeHtml(chapter.quiz[i][3]);
     fb.classList.add('on');
   }
 }
@@ -98,7 +101,7 @@ function updateScore(chapter) {
     if (pct >= 85) tip = 'Sterk. Je kent dit hoofdstuk. Herhaal over drie dagen nog een keer de flashcards.';
     else if (pct >= 60) tip = 'Op de goede weg. Lees de paragrafen terug van de vragen die fout gingen.';
     else tip = 'Nog niet genoeg. Lees de samenvatting rustig door en doe daarna de flashcards.';
-    const title = '\u{1F3C6} Missie voltooid! +' + (correct * XP_PER_CORRECT_ANSWER) + ' XP, score ' + correct + '/' + indices.length + ' (' + pct + '%)';
+    const title = icon('trophy') + ' Missie voltooid! +' + (correct * XP_PER_CORRECT_ANSWER) + ' XP, score ' + correct + '/' + indices.length + ' (' + pct + '%)';
     result.innerHTML = '<div class="call sum quest-voltooid"><b>' + title + '</b><br>' + tip + '</div>';
     if (!mistakeMode) markQuizCompleted(correct, chapter.quiz.length);
   } else {

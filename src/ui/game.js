@@ -21,7 +21,7 @@
    Chapter text is rendered raw, the same way the Flashcards and Begrippenlijst
    tabs do it — a few terms contain entities such as "co&ouml;rdinaten". Only
    what a student types is escaped. */
-import { $, setHtml, escapeHtml } from '../lib/dom.js';
+import { $, setHtml, escapeHtml, icon } from '../lib/dom.js';
 import { judgeAnswer, usableTerms } from '../lib/answers.js';
 import { chapterContent, currentChapterKey } from '../state/selection.js';
 import { levelsForChapter } from '../content/levels.js';
@@ -414,17 +414,17 @@ function rightAnswerHtml() {
 
 function feedbackHtml() {
   if (step.kind === 'match') {
-    return '<div class="spel-fb goed"><b>✓ Alles verbonden!</b>'
+    return '<div class="spel-fb goed"><b>' + icon('check') + ' Alles verbonden!</b>'
       + (step.wrong ? ' <span class="dim">' + step.wrong + ' foute poging'
         + (step.wrong === 1 ? '' : 'en') + '</span>' : '') + '</div>';
   }
   const answered = step.answered || {};
-  if (answered.verdict === 'correct') return '<div class="spel-fb goed"><b>✓ Goed!</b></div>';
+  if (answered.verdict === 'correct') return '<div class="spel-fb goed"><b>' + icon('check') + ' Goed!</b></div>';
   if (answered.verdict === 'near') {
     return '<div class="spel-fb bijna"><b>≈ Bijna!</b> Let nog even op de spelling: <b>'
       + step.term[0] + '</b></div>';
   }
-  return '<div class="spel-fb fout"><b>✗ Niet goed.</b>' + rightAnswerHtml()
+  return '<div class="spel-fb fout"><b>' + icon('x') + ' Niet goed.</b>' + rightAnswerHtml()
     + (answered.given ? '<span class="spel-gegeven">Jij typte: ' + escapeHtml(answered.given) + '</span>' : '')
     + '</div>';
 }
@@ -455,13 +455,13 @@ function scoreScreenHtml() {
   const perfect = session.correct === total;
   const gained = session.result ? session.result.gained : xpForResult(session.correct, total);
   return '<div class="spel-klaar">'
-    + '<div class="spel-vinkje">✓</div>'
+    + '<div class="spel-vinkje">' + icon('check') + '</div>'
     + '<h3>' + (perfect ? 'Perfect!' : 'Level gehaald!') + '</h3>'
     + '<p class="dim">' + session.level.title + ' is klaar.</p>'
     + '<div class="spel-buit">'
     + '<div class="spel-buit-vak"><b>' + session.correct + '/' + total + '</b><small>goed</small></div>'
     + '<div class="spel-buit-vak"><b>+' + gained + '</b><small>XP</small></div>'
-    + (perfect ? '<div class="spel-buit-vak"><b>★</b><small>foutloos</small></div>' : '')
+    + (perfect ? '<div class="spel-buit-vak"><b>' + icon('star') + '</b><small>foutloos</small></div>' : '')
     + '</div>'
     + '<button class="bt spel-verder" onclick="closeLevel()">Ga verder →</button></div>';
 }

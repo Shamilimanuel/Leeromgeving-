@@ -1,6 +1,6 @@
 import { registerBook } from '../../registry.js';
 
-/* Rekenen: welke boeken en hoofdstukken er zijn */
+/* Rekenen: which books exist and what chapters they hold. */
 registerBook('rekenen','bbl',1,'Rekenblokken',[
   {part:'',ready:true,chapters:[
     ['1','Optellen','Afronden, schatten en optellen tot boven de duizend'],

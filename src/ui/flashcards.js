@@ -1,5 +1,5 @@
 /* Flashcards tab with Leitner spaced repetition. */
-import { $, setHtml } from '../lib/dom.js';
+import { $, setHtml, icon } from '../lib/dom.js';
 import { chapterContent, currentChapterKey } from '../state/selection.js';
 import { leitnerForCard, updateLeitner, isCardDueToday, isFavorite, toggleFavorite, LEITNER_MAX_BOX } from '../state/progress.js';
 import { sectionForCard, sectionHeading } from '../content/sections.js';
@@ -39,12 +39,12 @@ export function renderFlashcards(chapter) {
   const dueCount = cards.filter((c) => isCardDueToday(c.id)).length;
   setHtml('chBody',
     '<div class="bar"><button class="bt' + (groupBySection ? '' : ' gh') + '" onclick="toggleCardGrouping()">'
-    + (groupBySection ? '\u{1F4D1} Op boekvolgorde' : '\u{1F500} Door elkaar') + '</button>'
-    + '<button class="bt gh" onclick="resetCards()">↺ Opnieuw</button>'
+    + (groupBySection ? icon('list-ordered') + ' Op boekvolgorde' : icon('shuffle') + ' Door elkaar') + '</button>'
+    + '<button class="bt gh" onclick="resetCards()">' + icon('rotate-ccw') + ' Opnieuw</button>'
     + '<button class="bt gh" onclick="showUnknownCards()">Alleen wat ik nog niet ken</button>'
-    + '<button class="bt gh" onclick="showDueCards()">\u{1F4C5} Vandaag te herhalen (' + dueCount + ')</button>'
+    + '<button class="bt gh" onclick="showDueCards()">' + icon('calendar-days') + ' Vandaag te herhalen (' + dueCount + ')</button>'
     + '<span class="cnt" id="kcnt"></span></div>'
-    + '<p class="dim">Klik ✓ Ken ik of ↻ Nog niet: een kaart komt dan vanzelf op het juiste moment terug (spaced repetition, ' + LEITNER_MAX_BOX + ' niveaus).</p>'
+    + '<p class="dim">Klik ' + icon('check') + ' Ken ik of ' + icon('refresh-cw') + ' Nog niet: een kaart komt dan vanzelf op het juiste moment terug (spaced repetition, ' + LEITNER_MAX_BOX + ' niveaus).</p>'
     + '<div id="cgrid"></div>');
   drawCards();
 }
@@ -54,12 +54,12 @@ function cardHtml(card, i) {
   return '<div class="fc' + (card.known ? ' known' : '') + '" data-id="' + card.id + '" tabindex="0" role="button" style="animation-delay:' + (i * 25) + 'ms"'
     + ' onclick="flipCard(this,event)" onkeydown="if(event.key===\'Enter\'||event.key===\' \'){event.preventDefault();flipCard(this,event)}">'
     + leitnerDotsHtml(card.id)
-    + '<button class="star' + (starred ? ' on' : '') + '" onclick="toggleCardFavorite(event,' + card.id + ')" aria-label="Favoriet">★</button>'
-    + '<div class="fc-in"><div class="fc-f"><small>VRAAG</small>' + card.question + '<div class="h">↺ klik om te draaien</div></div>'
+    + '<button class="star' + (starred ? ' on' : '') + '" onclick="toggleCardFavorite(event,' + card.id + ')" aria-label="Favoriet">' + icon('star') + '</button>'
+    + '<div class="fc-in"><div class="fc-f"><small>VRAAG</small>' + card.question + '<div class="h">' + icon('rotate-ccw') + ' klik om te draaien</div></div>'
     + '<div class="fc-b"><strong>Antwoord</strong><span>' + card.answer + '</span>'
-    + '<div class="mk"><button class="y" onclick="markCard(event,' + card.id + ',\'known\')">✓ Ken ik</button>'
+    + '<div class="mk"><button class="y" onclick="markCard(event,' + card.id + ',\'known\')">' + icon('check') + ' Ken ik</button>'
     + '<button class="t" onclick="markCard(event,' + card.id + ',\'unsure\')">≈ Twijfelde even</button>'
-    + '<button class="n" onclick="markCard(event,' + card.id + ',\'unknown\')">↻ Nog niet</button></div></div></div></div>';
+    + '<button class="n" onclick="markCard(event,' + card.id + ',\'unknown\')">' + icon('refresh-cw') + ' Nog niet</button></div></div></div></div>';
 }
 
 export function toggleCardFavorite(e, cardId) {

@@ -226,7 +226,7 @@ describe('subject → level → book → chapter', () => {
     // Level 1 is green with a check, and level 2 has opened up.
     const nodes = [...document.querySelectorAll('#chBody .pad-stap')];
     expect(nodes[0].querySelector('.pad-knop').classList.contains('klaar')).toBe(true);
-    expect(nodes[0].querySelector('.pad-gezicht').textContent).toBe('\u2713');
+    expect(nodes[0].querySelector('.pad-gezicht .icon').classList.contains('icon-check')).toBe(true);
     expect(nodes[1].querySelector('.pad-knop').disabled).toBe(false);
     window.setTab('summary');
   });

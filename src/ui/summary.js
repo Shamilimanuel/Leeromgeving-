@@ -1,6 +1,6 @@
 /* Summary tab, including the optional SQ3R guided-reading mode
    (Survey, Question, Read, Recite, Review). */
-import { setHtml, escapeHtml } from '../lib/dom.js';
+import { setHtml, escapeHtml, icon } from '../lib/dom.js';
 import { chapterContent } from '../state/selection.js';
 import { markChapterViewed } from '../state/progress.js';
 import { sq3rQuestionFor, sq3rReciteText } from '../state/notes.js';
@@ -21,7 +21,7 @@ function sectionHtml(section, index) {
 }
 
 export function renderSummary(chapter) {
-  const toggle = '<div class="bar sq3r-toggle"><button class="bt' + (sq3rActive ? '' : ' gh') + '" onclick="toggleSq3r()">\u{1F9ED} '
+  const toggle = '<div class="bar sq3r-toggle"><button class="bt' + (sq3rActive ? '' : ' gh') + '" onclick="toggleSq3r()">' + icon('compass') + ' '
     + (sq3rActive ? 'Stop begeleide leeswijzer' : 'Begeleide leeswijzer (SQ3R)') + '</button></div>';
   if (!sq3rActive) {
     setHtml('chBody', toggle + chapter.summary.map(sectionHtml).join(''));

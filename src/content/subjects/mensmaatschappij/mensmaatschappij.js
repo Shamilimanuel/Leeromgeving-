@@ -1,6 +1,6 @@
 import { registerBook } from '../../registry.js';
 
-/* Mens & Maatschappij (Plein M): welke boeken en hoofdstukken er zijn */
+/* Mens & Maatschappij (Plein M): which books exist and what chapters they hold. */
 registerBook('mensmaatschappij','bbl',1,'Plein M',[
   {part:'A',ready:true,chapters:[
     ['1','Arm en rijk','Jager-verzamelaars, landbouw en de eerste steden'],

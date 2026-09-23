@@ -1,6 +1,6 @@
 import { registerBook } from '../../registry.js';
 
-/* Wiskunde: welke boeken en hoofdstukken er zijn */
+/* Wiskunde: which books exist and what chapters they hold. */
 registerBook('wiskunde','bbl',1,'Wiskunde BBL',[
   {part:'',ready:true,chapters:[
     ['1','Ruimtefiguren','Vlakken, ribben, hoekpunten en het tekenen van ruimtefiguren'],
@@ -16,14 +16,15 @@ registerBook('wiskunde','bbl',2,'Wiskunde BBL',[
     ['3','Oppervlakte','Oppervlakte berekenen van figuren'],
     ['4','Statistiek','Gegevens verzamelen, verwerken en weergeven']]}]);
 
-/* Getal & Ruimte TL1, in twee delen uitgegeven: deel A is hoofdstuk 1 t/m 4,
-   deel B is hoofdstuk 5 t/m 9, samen 52 theorieparagrafen. De titels komen uit
-   de inhoudsopgave van beide scans; "Gemengde opgaven" staat er niet bij, dat
-   zijn losse oefenopgaven zonder theorie (net als bij de andere wiskundeboeken).
+/* Getal & Ruimte TL1 was published in two parts: deel A is chapters 1-4, deel B
+   is chapters 5-9, 52 theory paragraphs between them. The titles come from the
+   contents pages of both scans. "Gemengde opgaven" is deliberately not listed:
+   those are loose practice exercises with no theory, as in the other maths
+   books.
 
-   `tests/content.test.js` eist inhoud bij elk hoofdstuk in een `ready` deel,
-   en dat is precies de reden dat er nergens op de site een leeg hoofdstuk
-   staat: voeg een hoofdstuk hier pas toe als het bestand er is. */
+   `tests/content.test.js` demands content for every chapter inside a `ready`
+   part, which is exactly why the site never shows an empty chapter -- so only
+   add a chapter here once its module exists. */
 registerBook('wiskunde','tl',1,'Wiskunde TL',[
   {part:'A',ready:true,chapters:[
     ['1','Ruimtefiguren','Kubus, balk, cilinder, kegel, piramide en prisma herkennen, en hun uitslag tekenen'],

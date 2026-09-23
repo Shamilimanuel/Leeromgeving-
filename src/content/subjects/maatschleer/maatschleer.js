@@ -1,6 +1,6 @@
 import { registerBook } from '../../registry.js';
 
-/* Maatschappijleer: welke boeken en hoofdstukken er zijn */
+/* Maatschappijleer: which books exist and what chapters they hold. */
 registerBook('maatschleer','tl',3,'Maatschappijleer',[
   {part:'',ready:true,chapters:[
     ['1','Wat is maatschappijleer?','Waar het vak over gaat en hoe je ernaar kijkt'],

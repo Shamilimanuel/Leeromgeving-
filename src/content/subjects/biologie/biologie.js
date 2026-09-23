@@ -1,6 +1,6 @@
 import { registerBook } from '../../registry.js';
 
-/* Biologie: welke boeken en hoofdstukken er zijn */
+/* Biologie: which books exist and what chapters they hold. */
 registerBook('biologie','bbl',1,'Nectar 5e editie',[
   {part:'A',ready:true,chapters:[
     ['1','Onderzoeken en ontdekken','Onderzoek doen, de microscoop, cellen en organen'],

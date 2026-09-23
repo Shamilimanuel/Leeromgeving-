@@ -16,6 +16,19 @@ export function escapeHtml(value) {
     .replace(/'/g, '&#39;');
 }
 
+/* Markup for one UI icon (see `public/icons/icons.css`). The name is a Lucide
+   icon name and always comes from our own code, never from the database or a
+   student, so it needs no escaping -- the regex is there to make that hold
+   even if somebody later passes a value in from somewhere else. Icons are
+   decorative: every button that carries one also carries a label or an
+   `aria-label`, so they are hidden from screen readers. */
+const ICON_NAME_RE = /^[a-z0-9-]+$/;
+
+export function icon(name) {
+  if (!ICON_NAME_RE.test(String(name))) return '';
+  return '<span class="icon icon-' + name + '" aria-hidden="true"></span>';
+}
+
 /* Markup for a warning box with escaped text (error messages may echo user
    input or come from the server, so they are never inserted raw). */
 export function warningBox(text) {

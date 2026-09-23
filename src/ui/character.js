@@ -1,5 +1,5 @@
 /* "Personage" screen: one character card per subject with level, XP and mastery. */
-import { $ } from '../lib/dom.js';
+import { $, icon } from '../lib/dom.js';
 import { SUBJECTS } from '../content/index.js';
 import { subjectHasContent } from '../content/queries.js';
 import { getStreak, today } from '../state/progress.js';
@@ -8,9 +8,9 @@ import { subjectStatistics } from '../state/stats.js';
 function streakHtml() {
   const s = getStreak();
   if (!s.length || s.lastDay < today() - 1) {
-    return '<div class="streak-badge dim2">\u{1F525} Begin vandaag een streak!</div>';
+    return '<div class="streak-badge dim2">' + icon('flame') + ' Begin vandaag een streak!</div>';
   }
-  return '<div class="streak-badge">\u{1F525} ' + s.length + ' dag' + (s.length === 1 ? '' : 'en') + ' op rij geoefend</div>';
+  return '<div class="streak-badge">' + icon('flame') + ' ' + s.length + ' dag' + (s.length === 1 ? '' : 'en') + ' op rij geoefend</div>';
 }
 
 export function renderCharacterCards() {
@@ -31,9 +31,9 @@ export function renderCharacterCards() {
       ? s.cardsMastered + '/' + s.cardsTotal + ' flashcards op topniveau'
       : 'nog geen flashcards geoefend');
     return '<div class="persona-card" style="--c:var(--' + subject.color + ');--cd:var(--' + subject.color + '-d)">'
-      + '<span class="persona-bigico">' + subject.icon + '</span>'
+      + '<span class="persona-bigico">' + icon(subject.icon) + '</span>'
       + '<div class="persona-head">'
-        + '<span class="badge"><i class="ring"></i><i class="core">' + subject.icon + '</i></span>'
+        + '<span class="badge"><i class="ring"></i><i class="core">' + icon(subject.icon) + '</i></span>'
         + '<div><h3>' + subject.name + '</h3><small>' + s.read + '/' + s.chapters + ' hoofdstukken gelezen</small></div>'
         + '<div class="persona-lvl"><b>Lv. ' + s.level + '</b><span>Level</span></div>'
       + '</div>'

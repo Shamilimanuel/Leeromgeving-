@@ -1,6 +1,6 @@
 /* Display preferences: dyslexia mode (+ reading ruler), light mode and text size.
    All are remembered in localStorage. */
-import { $ } from '../lib/dom.js';
+import { $, icon } from '../lib/dom.js';
 import { readString, writeString, STORAGE_KEYS as K } from '../lib/storage.js';
 import { showToast } from './toast.js';
 
@@ -72,7 +72,7 @@ function applyTextSize() {
   if (btn) {
     const value = btn.querySelector('.snel-waarde');
     if (value) value.textContent = TEXT_SIZE_LABELS[size];
-    else btn.textContent = '\u{1F524} ' + TEXT_SIZE_LABELS[size];
+    else btn.innerHTML = icon('a-large-small') + ' ' + TEXT_SIZE_LABELS[size];
   }
 }
 

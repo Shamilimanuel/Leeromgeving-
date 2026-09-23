@@ -11,7 +11,7 @@
    cascade. Chapter keys never reach the DOM directly; onclick handlers only
    ever carry an item's own id (safe charset, see state/agenda.js's newId())
    or a numeric index, looked up again at click time. */
-import { $, setHtml, escapeHtml, warningBox } from '../lib/dom.js';
+import { $, setHtml, escapeHtml, warningBox, icon } from '../lib/dom.js';
 import { CONTENT, SUBJECTS, parseKey, levelById } from '../content/index.js';
 import { getAgendaItems, addAgendaItem, removeAgendaItem, toggleSession, todayDateStr } from '../state/agenda.js';
 import { TABS } from '../state/selection.js';
@@ -170,7 +170,7 @@ function itemHtml(item) {
       const chapter = CONTENT[key];
       if (!chapter) return '';
       return '<button type="button" class="agenda-hfst" onclick="agendaOpenChapter(\'' + item.id + '\',' + chapterIndex + ')">'
-        + '&#128214; ' + escapeHtml(chapter.title) + '</button>';
+        + icon('book-open') + ' ' + escapeHtml(chapter.title) + '</button>';
     }).join('');
   const sessions = item.sessions.length
     ? item.sessions.map((s, sessionIndex) => sessionHtml(item, s, sessionIndex)).join('')
@@ -179,7 +179,7 @@ function itemHtml(item) {
   return '<div class="box agenda-item">'
     + '<div class="agenda-kop">'
     + '<b>' + escapeHtml(item.title) + '</b>'
-    + '<button type="button" class="bt gh klein" onclick="agendaRemoveItem(\'' + item.id + '\')" aria-label="Verwijderen">&#10005;</button>'
+    + '<button type="button" class="bt gh klein" onclick="agendaRemoveItem(\'' + item.id + '\')" aria-label="Verwijderen">' + icon('x') + '</button>'
     + '</div>'
     + (chapters ? '<div class="agenda-hfst-lijst">' + chapters + '</div>' : '')
     + '<div class="agenda-sessies">' + sessions + '</div>'

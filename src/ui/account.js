@@ -1,6 +1,6 @@
 /* Account screen (sign in / register with invite code / profile) and the
    avatar menu in the top bar. */
-import { $, setHtml, escapeHtml, warningBox, infoBox } from '../lib/dom.js';
+import { $, setHtml, escapeHtml, warningBox, infoBox, icon } from '../lib/dom.js';
 import * as auth from '../services/auth.js';
 import { go, SCREENS } from './navigation.js';
 import { syncAllLevels, pullMyLevels } from '../services/gameProgress.js';
@@ -52,21 +52,21 @@ export async function refreshAccountButton() {
     if (avatar) avatar.textContent = profile.username.charAt(0).toUpperCase();
     if (drop) drop.innerHTML =
       '<div class="naam"><b>' + escapeHtml(profile.username) + '</b><span>' + roleLabel(profile) + '</span></div>'
-      + '<button onclick="closeProfileMenu();go(\'account\')">\u{1FAAA} Profiel</button>'
-      + '<button onclick="closeProfileMenu();go(\'agenda\')">\u{1F5D3}\u{FE0F} Agenda</button>'
-      + '<button onclick="closeProfileMenu();go(\'settings\')">\u{1F6E0}\u{FE0F} Instellingen</button>'
-      + '<button onclick="closeProfileMenu();openWhatsNew()">\u{2728} Wat is er nieuw?</button>'
-      + (auth.isAdmin() ? '<button onclick="closeProfileMenu();go(\'admin\')">\u{1F5DD}\u{FE0F} Adminpaneel</button>' : '')
-      + '<button class="uitlog" onclick="closeProfileMenu();logout()">\u{1F6AA} Uitloggen</button>';
+      + '<button onclick="closeProfileMenu();go(\'account\')">' + icon('id-card') + ' Profiel</button>'
+      + '<button onclick="closeProfileMenu();go(\'agenda\')">' + icon('calendar-days') + ' Agenda</button>'
+      + '<button onclick="closeProfileMenu();go(\'settings\')">' + icon('settings') + ' Instellingen</button>'
+      + '<button onclick="closeProfileMenu();openWhatsNew()">' + icon('sparkles') + ' Wat is er nieuw?</button>'
+      + (auth.isAdmin() ? '<button onclick="closeProfileMenu();go(\'admin\')">' + icon('key-round') + ' Adminpaneel</button>' : '')
+      + '<button class="uitlog" onclick="closeProfileMenu();logout()">' + icon('log-out') + ' Uitloggen</button>';
   } else {
     btn.classList.remove('on');
     btn.classList.add('gast');
     btn.title = 'Account';
-    if (avatar) avatar.textContent = '\u{1F464}';
+    if (avatar) avatar.innerHTML = icon('user');
     if (drop) drop.innerHTML =
       '<div class="naam"><b>Niet ingelogd</b><span>Log in om te beginnen</span></div>'
-      + '<button onclick="closeProfileMenu();go(\'account\')">\u{1F4DC} Inloggen</button>'
-      + '<button onclick="closeProfileMenu();openWhatsNew()">\u{2728} Wat is er nieuw?</button>';
+      + '<button onclick="closeProfileMenu();go(\'account\')">' + icon('log-in') + ' Inloggen</button>'
+      + '<button onclick="closeProfileMenu();openWhatsNew()">' + icon('sparkles') + ' Wat is er nieuw?</button>';
   }
 }
 
@@ -116,7 +116,7 @@ export async function renderAccount() {
       + '<p class="lede" style="margin:0 0 1.2rem">Rol: <b>' + roleLabel(profile) + '</b> &middot; Status: <b>' + escapeHtml(profile.status) + '</b></p>'
       + '<div class="bar">'
       + '<button class="bt gh" onclick="go(\'settings\')">Instellingen</button>'
-      + (auth.isAdmin() ? '<button class="bt" onclick="go(\'admin\')">&#128477;&#65039; Adminpaneel</button>' : '')
+      + (auth.isAdmin() ? '<button class="bt" onclick="go(\'admin\')">' + icon('key-round') + ' Adminpaneel</button>' : '')
       + '<button class="bt gh" onclick="logout()">Uitloggen</button>'
       + '</div></div>';
   } else {

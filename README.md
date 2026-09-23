@@ -40,7 +40,7 @@ Leeromgeving/
 ├── public/                    copied to the build as-is
 │   ├── manifest.webmanifest   PWA manifest
 │   ├── sw.js                  service worker (network-first, offline fallback)
-│   └── icons/
+│   └── icons/                 app icons + the UI icon set (icons.css, ui/*.svg)
 │
 ├── src/                       the application (see "Architecture")
 │   ├── main.js                entry point: wires screens and features together
@@ -184,7 +184,7 @@ Chapters listed under a part with `ready:true` must have a registered module:
 1. Put the JSON in `data/<subject>/<subject>-<level><year>.json`
    (the level and year are read from the file name, e.g. `economie-tl3.json`).
    The JSON schema is documented at the top of `scripts/build_content.py`.
-2. `npm run content:check`: fix every line marked `✗`.
+2. `npm run content:check`: fix every line marked `FAIL`.
 3. `npm run content:build` (or `python scripts/build_content.py data/<subject>/<file>.json` for one book).
    Modules appear under `src/content/subjects/<subject>/<level><year>/`.
 4. Create `src/content/subjects/<subject>/<subject>.js` with the `registerBook(...)`
@@ -210,6 +210,32 @@ register, `src/content/index.js` picks it up automatically.
 | `lst` / `num` | bullet list / numbered steps |
 | `fig` | drawing with caption |
 | `voorbeeld`, `vergelijk`, `tijdlijn`, `faq`, `check` | worked example, comparison, timeline, FAQ, self-check |
+
+### Icons
+
+The interface carries no emoji. Every symbol is an icon from
+[Lucide](https://lucide.dev) (ISC), self-hosted in `public/icons/ui/*.svg` and
+drawn as a CSS mask so it takes its size from `font-size` and its colour from
+`color`, exactly like the glyph it replaced. Emoji were dropped because they are
+a different drawing on every device -- Windows, Android and iOS each redraw
+theirs -- and because a colour cartoon in a button reads as informal.
+
+Three ways to place one, in order of preference:
+
+1. From JavaScript: `icon('star')` from `src/lib/dom.js` returns the markup.
+2. In `index.html`: `<span class="icon icon-star" aria-hidden="true"></span>`.
+3. From CSS, where there is no element to hang it on -- a `::before` marker on a
+   callout: `content:''` plus `-webkit-mask`/`mask` pointing at the SVG, and
+   `background-color` for the colour (see `.call.ezel` in
+   `src/styles/content.css`).
+
+Adding one: copy the SVG from `lucide-static` into `public/icons/ui/`, add the
+matching `.icon-<name>` rule to `public/icons/icons.css`, then use the name.
+Icons are decorative, so they are hidden from screen readers and every button
+carrying one also carries a label or an `aria-label`.
+
+Subject and level icons are named in `src/content/structure.js` (`icon: 'leaf'`)
+and rendered through `icon()`.
 
 ## Backend and accounts
 
@@ -327,6 +353,9 @@ Note that only the frontend is deployed this way. The Supabase backend
 
 ## Open work
 
+[`STATUS.md`](STATUS.md) is the snapshot: where the project stands today, what
+is uncommitted, what to do next. Start there after a break.
+
 The running backlog lives in [`TODO.md`](TODO.md): what is open, what is blocked
 and on whom, and the reasoning behind decisions that are easy to forget.
 
@@ -337,6 +366,7 @@ and on whom, and the reasoning behind decisions that are easy to forget.
 - Summaries are written in our own words, never copied from the book.
 - No external runtime libraries besides `@supabase/supabase-js`; no third-party
   requests at runtime (fonts are self-hosted in `public/fonts/`).
+- No emoji in the interface. Every symbol is a UI icon; see "Icons" below.
 - Never put a database value into HTML without `escapeHtml()`, and never put
   anything but a validated id into an `onclick="..."` string.
 - Edit one chapter module at a time; never hand-edit `dist/` or `dist-single/`.

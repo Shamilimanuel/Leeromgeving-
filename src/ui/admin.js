@@ -3,7 +3,7 @@
 
    Only validated ids are ever written into inline handlers; names and other
    free text are looked up from the last rendered lists at click time. */
-import { $, setHtml, escapeHtml, warningBox, infoBox, isUuid } from '../lib/dom.js';
+import { $, setHtml, escapeHtml, warningBox, infoBox, isUuid, icon } from '../lib/dom.js';
 import { MAX_INVITES_PER_BATCH } from '../config.js';
 import * as auth from '../services/auth.js';
 import { resetProgressPanel } from './adminProgress.js';
@@ -63,8 +63,8 @@ function invitesHtml(invites) {
         const code = escapeHtml(i.code);
         return '<li><code class="invite-code">' + code + '</code>'
           + '<span class="dim">geldig tot ' + escapeHtml(formatDate(i.expiresAt)) + '</span>'
-          + '<button class="bt gh klein" onclick="adminCopyInvite(\'' + code + '\')" title="Kopiëren">\u{1F4CB}</button>'
-          + '<button class="bt gh klein" onclick="adminDeleteInvite(\'' + code + '\')" title="Verwijderen">✕</button></li>';
+          + '<button class="bt gh klein" onclick="adminCopyInvite(\'' + code + '\')" title="Kopiëren" aria-label="Kopiëren">' + icon('copy') + '</button>'
+          + '<button class="bt gh klein" onclick="adminDeleteInvite(\'' + code + '\')" title="Verwijderen" aria-label="Verwijderen">' + icon('x') + '</button></li>';
       }).join('') + '</ul>';
   } else {
     html += '<p class="dim">Geen open codes. Maak er hierboven een aan.</p>';
@@ -78,7 +78,7 @@ function invitesHtml(invites) {
           + '<span class="dim">' + (i.usedAt
             ? 'gebruikt door ' + escapeHtml(i.usedBy || '?') + ' op ' + escapeHtml(formatDate(i.usedAt))
             : 'verlopen') + '</span>'
-          + '<button class="bt gh klein" onclick="adminDeleteInvite(\'' + code + '\')" title="Opruimen">✕</button></li>';
+          + '<button class="bt gh klein" onclick="adminDeleteInvite(\'' + code + '\')" title="Opruimen" aria-label="Opruimen">' + icon('x') + '</button></li>';
       }).join('') + '</ul></details>';
   }
   return html + '</div>';

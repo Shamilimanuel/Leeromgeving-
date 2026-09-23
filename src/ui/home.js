@@ -1,5 +1,5 @@
 /* Home screen: the subject grid. */
-import { $, setHtml } from '../lib/dom.js';
+import { $, setHtml, icon } from '../lib/dom.js';
 import { SUBJECTS, subjectById } from '../content/index.js';
 import { selectSubject } from '../state/selection.js';
 import { go, SCREENS } from './navigation.js';
@@ -8,8 +8,8 @@ import { showToast } from './toast.js';
 export function renderSubjectGrid() {
   setHtml('subjectGrid', SUBJECTS.map((s, i) =>
     '<button class="subj' + (s.todo ? ' todo' : '') + '" style="--c:var(--' + s.color + ');--cd:var(--' + s.color + '-d);animation-delay:' + (i * 55) + 'ms" onclick="chooseSubject(\'' + s.id + '\')">'
-    + '<i class="frame"></i><span class="bigico">' + s.icon + '</span>'
-    + '<span class="badge"><i class="ring"></i><i class="core">' + s.icon + '</i></span>'
+    + '<i class="frame"></i><span class="bigico">' + icon(s.icon) + '</span>'
+    + '<span class="badge"><i class="ring"></i><i class="core">' + icon(s.icon) + '</i></span>'
     + '<span class="swatch"><i class="dot"></i>' + s.colorName + '</span>'
     + '<h3>' + s.name + '</h3><small>Bekijk de samenvattingen <span>→</span></small></button>',
   ).join(''));

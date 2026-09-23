@@ -48,7 +48,8 @@ h5.sub{font-family:'Cinzel',serif;font-size:1rem;color:var(--accent);margin:1.8r
   border-radius:14px;padding:1rem 1.1rem;margin:1rem 0}
 .voorbeeld h4{font-family:'Cinzel',serif;font-size:.92rem;color:#5aa9e6;margin-bottom:.6rem;
   display:flex;align-items:center;gap:.4rem}
-.voorbeeld h4::before{content:'✎'}
+.voorbeeld h4::before{content:'';display:inline-block;width:1em;height:1em;flex-shrink:0;
+  background-color:#5aa9e6;-webkit-mask:url('/icons/ui/pencil.svg') no-repeat center/contain;mask:url('/icons/ui/pencil.svg') no-repeat center/contain}
 .voorbeeld .antwoord{margin-top:.7rem;padding:.6rem .8rem;background:rgba(90,169,230,.1);
   border-radius:10px;font-weight:600;color:var(--txt);font-size:.86rem}
 
@@ -66,7 +67,8 @@ h5.sub{font-family:'Cinzel',serif;font-size:1rem;color:var(--accent);margin:1.8r
 .call.ezel::before{content:'';display:inline-block;width:1em;height:1em;margin-right:.3rem;vertical-align:-0.15em;
   background-color:#e07a9e;-webkit-mask:url('/icons/ui/lightbulb.svg') no-repeat center/contain;mask:url('/icons/ui/lightbulb.svg') no-repeat center/contain}
 .call.link{border-left-color:#6c7fd8;background:rgba(108,127,216,.07)}
-.call.link::before{content:'↩ ';margin-right:.2rem}
+.call.link::before{content:'';display:inline-block;width:1em;height:1em;margin-right:.3rem;vertical-align:-0.15em;
+  background-color:#6c7fd8;-webkit-mask:url('/icons/ui/link.svg') no-repeat center/contain;mask:url('/icons/ui/link.svg') no-repeat center/contain}
 .call.waarom{border-left-color:#4caf7d;background:rgba(76,175,125,.07)}
 .call.waarom::before{content:'';display:inline-block;width:1em;height:1em;margin-right:.3rem;vertical-align:-0.15em;
   background-color:#4caf7d;-webkit-mask:url('/icons/ui/target.svg') no-repeat center/contain;mask:url('/icons/ui/target.svg') no-repeat center/contain}
@@ -86,7 +88,8 @@ h5.sub{font-family:'Cinzel',serif;font-size:1rem;color:var(--accent);margin:1.8r
 .check:hover{border-color:var(--accent)}
 .check:active{transform:scale(.99)}
 .check-v{font-size:.85rem;color:var(--txt);font-weight:600;display:flex;align-items:center;gap:.4rem;margin:0}
-.check-v::before{content:'✓';color:var(--accent);flex-shrink:0}
+.check-v::before{content:'';display:inline-block;width:1em;height:1em;flex-shrink:0;
+  background-color:var(--accent);-webkit-mask:url('/icons/ui/check.svg') no-repeat center/contain;mask:url('/icons/ui/check.svg') no-repeat center/contain}
 .check-a,.check .antwoord{display:none;font-size:.84rem;color:var(--mut);margin:.5rem 0 0;padding-top:.5rem;border-top:1px solid var(--line)}
 .check.toon .check-a,.check.toon .antwoord{display:block}
 .check-hint{display:block;font-size:.7rem;color:var(--mut);opacity:.55;margin-top:.35rem}

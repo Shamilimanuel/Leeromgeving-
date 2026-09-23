@@ -76,6 +76,12 @@ body.licht-modus .credit-name, body.licht-modus .scene-cap{-webkit-background-cl
 body.licht-modus .mk .n{background:rgba(0,0,0,.08);color:var(--txt)}
 body.licht-modus .mk .t{background:rgba(0,0,0,.06);color:var(--txt)}
 body.licht-modus .fc-b{background:linear-gradient(150deg,var(--accent-d),#2a3548);color:#fff}
+/* The snelbalk tiles keep their dark gradient in light mode -- `--cd` and the
+   `#070a14` end stop are not re-tokenised -- but `color:var(--txt)` flips to
+   near-black, which left the label and its icon dark on dark. Same treatment
+   as `.fc-b` above: the tile stays dark, so its text stays light. */
+body.licht-modus .snel{color:#ece6d8}
+body.licht-modus .snel .snel-tekst small{color:rgba(236,230,216,.62)}
 body.licht-modus .fc-b strong{color:#bcd0ea}
 body.licht-modus .opt.good{color:#1f6b3a}
 body.licht-modus .opt.bad{color:#a92323}

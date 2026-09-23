@@ -1,5 +1,5 @@
 /* Practice exam: a random mix of quiz questions from all subjects. */
-import { $, setHtml } from '../lib/dom.js';
+import { $, setHtml, escapeHtml, icon } from '../lib/dom.js';
 import { allQuizQuestions, shuffle } from '../content/queries.js';
 import { getExamHistory, saveExamAttempt } from '../state/progress.js';
 import { XP_PER_CORRECT_ANSWER } from '../state/stats.js';
@@ -84,7 +84,10 @@ function showExamAnswer(i, j) {
   });
   const fb = $('efb' + i);
   if (fb) {
-    fb.textContent = (j === correct ? '✓ Goed. ' : '✗ Niet goed. ') + questions[i].question[3];
+    /* Icon markup means innerHTML, so the explanation is escaped: it comes
+       from a content module, which is ours, but the rule is the rule. */
+    fb.innerHTML = (j === correct ? icon('check') + ' Goed. ' : icon('x') + ' Niet goed. ')
+      + escapeHtml(questions[i].question[3]);
     fb.classList.add('on');
   }
 }
@@ -103,7 +106,7 @@ function checkExamFinished() {
   const pct = Math.round(correct / questions.length * 100);
   const result = $('examenres');
   if (!result) return;
-  const title = '\u{1F3C6} Questreeks voltooid! +' + (correct * XP_PER_CORRECT_ANSWER) + ' XP, ' + correct + '/' + questions.length + ' (' + pct + '%)';
+  const title = icon('trophy') + ' Questreeks voltooid! +' + (correct * XP_PER_CORRECT_ANSWER) + ' XP, ' + correct + '/' + questions.length + ' (' + pct + '%)';
   result.innerHTML = '<div class="call sum quest-voltooid"><b>' + title + '</b><br>'
     + Object.keys(perSubject).map((name) => name + ': ' + perSubject[name].correct + '/' + perSubject[name].total).join(' · ')
     + '</div><div class="bar"><button class="bt gh" onclick="renderExamStart()">← Terug naar overzicht</button></div>';

@@ -1,13 +1,13 @@
 /* Help dialog with a few slides; opens automatically the first time the home screen is shown. */
-import { $, setHtml } from '../lib/dom.js';
+import { $, setHtml, icon } from '../lib/dom.js';
 import { onEnter, SCREENS } from './navigation.js';
 
 const SLIDES = [
-  ['Welkom bij Samenvattingen', 'Deze site helpt je stap voor stap naar de juiste samenvatting. Los overhoren, quizzen maken en flashcards oefenen.', '\u{1F44B}'],
-  ['Kies eerst je vak', 'Elk vak heeft een eigen kleur, gekozen door de docenten zelf. Klik op een gekleurde kaart om verder te gaan.', '\u{1F3A8}'],
-  ['Niveau en leerjaar', 'Kies daarna je niveau (Arbeid, BBL, BK of TL) en je leerjaar. Je gaat dan meteen naar het complete boek.', '\u{1F4DA}'],
-  ['Open een hoofdstuk', 'Klik op een hoofdstuk voor de samenvatting. Bovenaan wissel je tussen Samenvatting, Flashcards, Oefenquiz en Begrippenlijst.', '\u{1F4D6}'],
-  ['Oefenen en hulp', 'Bij Begrippenlijst kun je zoeken. Bij Flashcards klik je een kaart om te draaien. Kom je er niet uit? Klik rechtsonder op ‘Vraag het de AI’ voor stap-voor-stap uitleg.', '\u{1F4A1}'],
+  ['Welkom bij Samenvattingen', 'Deze site helpt je stap voor stap naar de juiste samenvatting. Los overhoren, quizzen maken en flashcards oefenen.', 'hand'],
+  ['Kies eerst je vak', 'Elk vak heeft een eigen kleur, gekozen door de docenten zelf. Klik op een gekleurde kaart om verder te gaan.', 'palette'],
+  ['Niveau en leerjaar', 'Kies daarna je niveau (Arbeid, BBL, BK of TL) en je leerjaar. Je gaat dan meteen naar het complete boek.', 'library'],
+  ['Open een hoofdstuk', 'Klik op een hoofdstuk voor de samenvatting. Bovenaan wissel je tussen Samenvatting, Flashcards, Oefenquiz en Begrippenlijst.', 'book-open'],
+  ['Oefenen en hulp', 'Bij Begrippenlijst kun je zoeken. Bij Flashcards klik je een kaart om te draaien. Kom je er niet uit? Klik rechtsonder op ‘Vraag het de AI’ voor stap-voor-stap uitleg.', 'lightbulb'],
 ];
 const AUTO_OPEN_DELAY_MS = 2000;
 
@@ -49,7 +49,7 @@ export function previousSlide() {
 function drawSlide() {
   const s = SLIDES[slide];
   const last = slide === SLIDES.length - 1;
-  setHtml('helpBody', '<div class="hslide"><div class="hico">' + s[2] + '</div><h3>' + s[0] + '</h3><p>' + s[1] + '</p></div>');
+  setHtml('helpBody', '<div class="hslide"><div class="hico">' + icon(s[2]) + '</div><h3>' + s[0] + '</h3><p>' + s[1] + '</p></div>');
   setHtml('helpDots', SLIDES.map((_, i) =>
     '<button class="dot' + (i === slide ? ' on' : '') + '" onclick="goToSlide(' + i + ')" aria-label="Slide ' + (i + 1) + '"></button>',
   ).join(''));

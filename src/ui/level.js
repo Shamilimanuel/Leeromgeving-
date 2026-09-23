@@ -1,5 +1,5 @@
 /* Level + school year screen. */
-import { $, setHtml } from '../lib/dom.js';
+import { $, setHtml, icon } from '../lib/dom.js';
 import { LEVELS, yearsFor } from '../content/index.js';
 import { hasBook, bookYearsFor } from '../content/queries.js';
 import { selection, currentSubject } from '../state/selection.js';
@@ -18,13 +18,13 @@ export function renderLevel() {
     if (!years || !years.length || !ready.length) {
       const why = !years || !years.length ? 'Niet beschikbaar bij dit vak' : 'Hier is nog geen samenvatting van';
       return '<button class="niv-card disabled" disabled title="' + why + '" style="animation-delay:' + (i * 60) + 'ms">'
-        + '<span class="bigico">' + level.icon + '</span>'
-        + '<span class="ico">' + level.icon + '</span><h3>' + level.name + '</h3><p>' + why + '</p></button>';
+        + '<span class="bigico">' + icon(level.icon) + '</span>'
+        + '<span class="ico">' + icon(level.icon) + '</span><h3>' + level.name + '</h3><p>' + why + '</p></button>';
     }
     const selected = selection.level === level.id;
     return '<button class="niv-card' + (selected ? ' sel' : '') + '" style="--c:var(--' + level.color + ');--cd:var(--' + level.color + '-d);animation-delay:' + (i * 60) + 'ms" onclick="chooseLevel(\'' + level.id + '\')">'
-      + '<span class="bigico">' + level.icon + '</span><span class="check">\u{2713}</span>'
-      + '<span class="ico">' + level.icon + '</span><h3>' + level.name + '</h3><p>' + level.description + '</p></button>';
+      + '<span class="bigico">' + icon(level.icon) + '</span><span class="check">' + icon('check') + '</span>'
+      + '<span class="ico">' + icon(level.icon) + '</span><h3>' + level.name + '</h3><p>' + level.description + '</p></button>';
   }).join(''));
 
   const yearRow = $('jaarRow');

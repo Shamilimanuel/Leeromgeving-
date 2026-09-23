@@ -1,6 +1,6 @@
 import { registerBook } from '../../registry.js';
 
-/* Nederlands: welke boeken en hoofdstukken er zijn */
+/* Nederlands: which books exist and what chapters they hold. */
 registerBook('nederlands','bbl',1,'Nieuw Nederlands 1 vmbo-bk',[
   {part:'',ready:true,chapters:[
     ['1','Meer dan lezen','Leesstrategieën en woordraadstrategieën'],
