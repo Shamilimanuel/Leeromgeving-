@@ -7,7 +7,7 @@
 import { go } from './navigation.js';
 import { toggleRadialMenu, closeRadialMenu } from './radialMenu.js';
 import { toggleDyslexia, toggleLightMode, cycleTextSize } from './preferences.js';
-import { togglePomodoro, cyclePomodoroDuration } from './pomodoro.js';
+import { togglePomodoro, setPomodoroDuration } from './pomodoro.js';
 import { openExam, closeExam, startExam, answerExamQuestion, renderExamStart } from './exam.js';
 import { advanceIntro } from './intro.js';
 import { chooseSubject } from './home.js';
@@ -42,7 +42,8 @@ import {
 import { adminClassPickSubject, adminClassPickChapter } from './adminClass.js';
 import {
   submitUsernameChange, submitPasswordChange,
-  settingsCycleTextSize, settingsToggleDyslexia, settingsResetProgress,
+  settingsSetTextSize, settingsToggleDyslexia, settingsToggleLightMode,
+  settingsSetDyslexiaFont, settingsToggleLetterSpacing, showSettingsPanel, settingsResetProgress,
   settingsLogoutEverywhere, submitAccountDeletion,
 } from './settings.js';
 import {
@@ -54,7 +55,7 @@ export const globalHandlers = {
   go,
   toggleRadialMenu, closeRadialMenu,
   toggleDyslexia, toggleLightMode, cycleTextSize,
-  togglePomodoro, cyclePomodoroDuration,
+  togglePomodoro, setPomodoroDuration,
   openExam, closeExam, startExam, answerExamQuestion, renderExamStart,
   advanceIntro,
   chooseSubject, chooseLevel, chooseYear,
@@ -77,7 +78,8 @@ export const globalHandlers = {
   adminToggleProgress, adminClearLevelProgress, adminClearChapterProgress, adminClearAllProgress,
   adminClassPickSubject, adminClassPickChapter,
   submitUsernameChange, submitPasswordChange,
-  settingsCycleTextSize, settingsToggleDyslexia, settingsResetProgress,
+  settingsSetTextSize, settingsToggleDyslexia, settingsToggleLightMode,
+  settingsSetDyslexiaFont, settingsToggleLetterSpacing, showSettingsPanel, settingsResetProgress,
   settingsLogoutEverywhere, submitAccountDeletion,
   agendaSubmit, agendaPickSubject, agendaRemoveItem, agendaToggleSession, agendaOpenChapter,
   agendaOpenDag, agendaCloseDag,

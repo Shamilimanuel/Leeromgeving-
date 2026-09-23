@@ -12,6 +12,8 @@ export const STORAGE_KEYS = {
   sq3r: 'sq3r',
   cornell: 'cornell',
   dyslexia: 'dyslexieModus',
+  dyslexiaFont: 'dyslexieLettertype',
+  letterSpacing: 'letterafstand',
   lightMode: 'lichtModus',
   textSize: 'tekstgrootte',
   pomodoroDuration: 'pomodoroDuur',
@@ -19,6 +21,8 @@ export const STORAGE_KEYS = {
   lastSeenVersion: 'gezienVersie',
   rememberSession: 'blijfIngelogd',
   agenda: 'agenda',
+  openedBooks: 'geopendeBoeken',
+  helpSeen: 'uitlegGezien',
 };
 
 export function readJson(key, fallback) {

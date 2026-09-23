@@ -2,8 +2,10 @@
    Strategy: network-first, with a runtime cache as the offline fallback.
    There is deliberately NO fixed list of files to pre-cache: the build emits
    hashed asset names that change on every deploy. Instead the worker caches
-   everything that is fetched successfully, so the site keeps working offline
-   after the first visit without this file ever needing an update.
+   everything that is fetched successfully: the app after the first visit, and
+   each book's chapter files once that book has been opened (they load on
+   demand, see src/content/loader.js). No change to this file is needed when
+   content is added.
 
    Updates: this worker does NOT call skipWaiting() on install. A new build
    installs in the background and then waits, so a student is never thrown out
@@ -19,7 +21,7 @@
    this file a deploy would go completely unnoticed and no student would ever
    be told about an update. It doubles as the cache generation, which drops the
    previous build's hashed bundles instead of piling them up forever. */
-var APP_VERSION = '2.6.0';
+var APP_VERSION = '2.7.0';
 var CACHE_NAME = 'samenvattingen-' + APP_VERSION;
 
 /* No 'install' handler: there is nothing to pre-cache, and staying in `waiting`

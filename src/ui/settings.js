@@ -1,24 +1,57 @@
 /* Settings screen: your own username, password, display preferences and the
-   destructive actions on your own data. */
+   destructive actions on your own data, in five panels (see index.html). */
 import { $, setHtml, escapeHtml, warningBox, infoBox } from '../lib/dom.js';
 import * as auth from '../services/auth.js';
 import { refreshAccountButton } from './account.js';
-import { cycleTextSize, toggleDyslexia, isDyslexiaOn, currentTextSizeLabel } from './preferences.js';
+import {
+  setTextSize, toggleDyslexia, isDyslexiaOn, currentTextSizeLabel,
+  toggleLightMode, isLightModeOn, setDyslexiaFont, currentDyslexiaFont,
+  toggleLetterSpacing, isLetterSpacingOn,
+} from './preferences.js';
 import { clearLearningData } from '../state/progress.js';
 import { go } from './navigation.js';
 import { APP_VERSION } from '../content/changelog.js';
+
+/* ── Panels ──────────────────────────────────────────────────────────── */
+
+const PANELS = ['account', 'weergave', 'gegevens', 'gevaarlijk', 'over'];
+const GUEST_PANELS = ['weergave', 'over'];
+/* Same breakpoint as the phone layer in src/styles/mobile.css. */
+const PHONE = '(max-width: 560px)';
+
+function isPhone() {
+  return typeof window.matchMedia === 'function' && window.matchMedia(PHONE).matches;
+}
+
+/* '' is the phone's list of categories. On a wide screen the rail is always
+   visible, so there is no list view: fall back to the first panel. */
+export function showSettingsPanel(name) {
+  const layout = $('settingsLayout');
+  if (!layout) return;
+  const guest = layout.classList.contains('is-guest');
+  const allowed = guest ? GUEST_PANELS : PANELS;
+  let panel = allowed.includes(name) ? name : '';
+  if (!panel && !isPhone()) panel = allowed[0];
+  layout.dataset.panel = panel;
+  for (const tab of layout.querySelectorAll('.set-tab')) {
+    if (tab.dataset.panel === panel) tab.setAttribute('aria-current', 'true');
+    else tab.removeAttribute('aria-current');
+  }
+  if (isPhone()) window.scrollTo(0, 0);
+}
 
 export async function renderSettings() {
   const version = $('setVersie');
   if (version) version.textContent = APP_VERSION;   // shown to guests too
   const guest = $('settingsGast');
-  const signedIn = $('settingsIngelogd');
-  if (!guest || !signedIn) return;
+  const layout = $('settingsLayout');
+  if (!guest || !layout) return;
   setHtml('settingsMelding', '');
+  refreshPreferenceLabels();                        // display settings work without an account
   const profile = await auth.ensureProfile();
   if (profile) {
     guest.style.display = 'none';
-    signedIn.style.display = 'block';
+    layout.classList.remove('is-guest');
     const nameField = $('setNaam');
     if (nameField) nameField.value = profile.username;
     setHtml('setNaamMelding', '');
@@ -28,11 +61,11 @@ export async function renderSettings() {
     setHtml('setVerwijderMelding', '');
     const confirmField = $('setVerwijderBevestig');
     if (confirmField) confirmField.value = '';
-    refreshPreferenceLabels();
   } else {
     guest.style.display = 'block';
-    signedIn.style.display = 'none';
+    layout.classList.add('is-guest');
   }
+  showSettingsPanel(isPhone() ? '' : (profile ? 'account' : 'weergave'));
 }
 
 export async function submitUsernameChange(e) {
@@ -88,24 +121,41 @@ export async function submitPasswordChange(e) {
 
 /* ── Display preferences ─────────────────────────────────────────────── */
 
-const TEXT_SIZE_TEXT = { normaal: 'normaal', groot: 'groot', grootst: 'grootst' };
+function setSwitch(id, on) {
+  const el = $(id);
+  if (el) el.setAttribute('aria-checked', on ? 'true' : 'false');
+}
 
+/* The controls show the stored state; they never hold state of their own. */
 function refreshPreferenceLabels() {
-  const size = $('setTekstgrootte');
-  if (size) size.textContent = TEXT_SIZE_TEXT[currentTextSizeLabel()] || 'normaal';
-  const dys = $('setDyslexie');
-  if (dys) dys.textContent = isDyslexiaOn() ? 'aan' : 'uit';
+  const size = currentTextSizeLabel();
+  const group = $('setTekstgrootte');
+  if (group) {
+    for (const btn of group.querySelectorAll('button')) {
+      btn.setAttribute('aria-pressed', btn.dataset.size === size ? 'true' : 'false');
+    }
+  }
+  setSwitch('setLicht', isLightModeOn());
+  setSwitch('setDyslexie', isDyslexiaOn());
+  setSwitch('setLetterafstand', isLetterSpacingOn());
+  // The font only applies in dyslexia mode, so the choice only shows then.
+  const fonts = $('setLettertypes');
+  if (fonts) {
+    fonts.hidden = !isDyslexiaOn();
+    const font = currentDyslexiaFont();
+    for (const radio of fonts.querySelectorAll('input[type=radio]')) radio.checked = radio.value === font;
+  }
 }
 
-export function settingsCycleTextSize() {
-  cycleTextSize();
-  refreshPreferenceLabels();
-}
+document.addEventListener('preferences-changed', refreshPreferenceLabels);
 
-export function settingsToggleDyslexia() {
-  toggleDyslexia();
-  refreshPreferenceLabels();
-}
+/* Thin wrappers so the inline handlers have settings-owned names; the
+   'preferences-changed' event above redraws the controls afterwards. */
+export function settingsSetTextSize(size) { setTextSize(size); }
+export function settingsToggleDyslexia() { toggleDyslexia(); }
+export function settingsToggleLightMode() { toggleLightMode(); }
+export function settingsSetDyslexiaFont(id) { setDyslexiaFont(id); }
+export function settingsToggleLetterSpacing() { toggleLetterSpacing(); }
 
 /* ── Destructive actions on your own data ────────────────────────────── */
 

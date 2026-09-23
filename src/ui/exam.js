@@ -1,6 +1,7 @@
 /* Practice exam: a random mix of quiz questions from all subjects. */
 import { $, setHtml, escapeHtml, icon } from '../lib/dom.js';
 import { allQuizQuestions, shuffle } from '../content/queries.js';
+import { loadAllContent } from '../content/index.js';
 import { getExamHistory, saveExamAttempt } from '../state/progress.js';
 import { XP_PER_CORRECT_ANSWER } from '../state/stats.js';
 
@@ -10,18 +11,28 @@ let answers = [];
 
 export function openExam() {
   $('examenwrap').classList.add('show');
-  renderExamStart();
+  return renderExamStart();
 }
 
 export function closeExam() {
   $('examenwrap').classList.remove('show');
 }
 
-export function renderExamStart() {
+/* The exam mixes every subject, so every book has to be loaded first. Without
+   internet only the books already on this device can come in; the exam then
+   uses those and says so, rather than refusing to start. */
+export async function renderExamStart() {
+  setHtml('examenBody', '<p class="dim">Oefenvragen uit alle vakken laden…</p>');
+  const { total, failed } = await loadAllContent();
   const all = allQuizQuestions();
   const history = getExamHistory();
+  const missing = failed
+    ? '<div class="call warn">' + failed + ' van de ' + total + ' boeken konden niet laden. Heb je internet? '
+      + 'De toets gebruikt nu alleen de vragen uit de boeken die al op dit apparaat staan.</div>'
+    : '';
   setHtml('examenBody',
-    '<p class="dim">Er staan in totaal ' + all.length + ' oefenvragen klaar, uit alle vakken samen.</p>'
+    missing
+    + '<p class="dim">Er staan in totaal ' + all.length + ' oefenvragen klaar, uit alle vakken samen.</p>'
     + '<div class="bar"><button class="bt" onclick="startExam(10)">Start oefentoets (10 vragen)</button>'
     + '<button class="bt gh" onclick="startExam(20)">Start oefentoets (20 vragen)</button></div>'
     + (history.length

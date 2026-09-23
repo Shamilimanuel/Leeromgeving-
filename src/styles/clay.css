@@ -1,0 +1,262 @@
+/* Goudklei: the site's gold-on-night look, as clay (chosen 2026-09-23; the
+   three directions it was picked from are linked in TASK.md).
+
+   The recipe is Reveille's: light from the top-left, shade to the bottom-right,
+   and four shadows on a raised surface -- two outside for the lift, two inside
+   for the thickness. A dark ground has no light to throw, so the outer
+   highlight is faint and a thin gold rim does the job a white edge does in a
+   light theme. Break the recipe on one surface and it stops reading as one
+   material, so every clay surface takes its shadows from these tokens.
+
+   In use so far: Instellingen (scoped to #settings) and the tools menu. The
+   rest of the site moves over screen by screen. */
+
+:root{
+  --klei:#161d33;            /* a raised surface */
+  --klei-put:#080c18;        /* a surface pressed into the page */
+  --klei-rand:rgba(226,190,120,.20);
+  --klei-schaduw:rgba(0,0,0,.66);
+  --klei-glans:rgba(255,255,255,.055);
+  --klei-scheiding:rgba(226,190,120,.10);
+  --klei-goud:#f0cf78;       /* gold as text or line on clay */
+  --klei-gevaar:#f29c9c;     /* danger text on clay */
+  --klei-gevaar-knop:#b84343;
+  --klei-hoog:
+    8px 10px 22px var(--klei-schaduw),
+    -5px -5px 14px var(--klei-glans),
+    inset 0 0 0 1px var(--klei-rand),
+    inset -3px -4px 9px rgba(0,0,0,.45),
+    inset 3px 3px 9px rgba(255,255,255,.045);
+  --klei-hoog-klein:
+    5px 6px 13px var(--klei-schaduw),
+    inset 0 0 0 1px var(--klei-rand),
+    inset -2px -3px 6px rgba(0,0,0,.45),
+    inset 2px 2px 6px rgba(255,255,255,.04);
+  --klei-diep:
+    inset 4px 5px 10px rgba(0,0,0,.7),
+    inset -3px -3px 8px rgba(255,255,255,.03),
+    inset 0 0 0 1px rgba(226,190,120,.08);
+  --klei-glazuur:linear-gradient(180deg,#f7e0a0 0%,#f0cf78 45%,#d7a847 100%);
+  --klei-glazuur-schaduw:
+    6px 8px 16px var(--klei-schaduw),
+    inset 0 1px 0 rgba(255,255,255,.55),
+    inset 0 -3px 6px rgba(120,80,10,.35);
+}
+/* Light mode: parchment clay. Same recipe, warm off-white, and the darker gold
+   light mode already uses for links, because #f0cf78 washes out on white. */
+body.licht-modus{
+  --klei:#fbfaf6;
+  --klei-put:#ebe7dc;
+  --klei-rand:rgba(138,109,31,.22);
+  --klei-schaduw:rgba(120,100,60,.28);
+  --klei-glans:rgba(255,255,255,.95);
+  --klei-scheiding:rgba(138,109,31,.14);
+  --klei-goud:#8a6d1f;
+  --klei-gevaar:#a92323;
+  --klei-hoog:
+    8px 9px 20px var(--klei-schaduw),
+    -6px -6px 14px var(--klei-glans),
+    inset 0 0 0 1px var(--klei-rand),
+    inset -3px -3px 8px rgba(120,100,60,.14),
+    inset 3px 3px 8px rgba(255,255,255,.9);
+  --klei-hoog-klein:
+    4px 5px 11px var(--klei-schaduw),
+    -3px -3px 9px var(--klei-glans),
+    inset 0 0 0 1px var(--klei-rand);
+  --klei-diep:
+    inset 3px 4px 8px rgba(120,100,60,.26),
+    inset -3px -3px 8px rgba(255,255,255,.9);
+  --klei-glazuur-schaduw:
+    4px 6px 13px var(--klei-schaduw),
+    inset 0 1px 0 rgba(255,255,255,.6),
+    inset 0 -3px 6px rgba(120,80,10,.28);
+}
+
+/* ══ Instellingen ══════════════════════════════════════════════════════ */
+
+#settings .wrap{max-width:980px}
+.set-layout{display:grid;grid-template-columns:260px minmax(0,1fr);gap:1.6rem;align-items:start;margin-top:1.8rem}
+
+/* The rail: five categories, the open one raised in gold. */
+.set-rail{display:grid;gap:.35rem;padding:.55rem;border-radius:20px;background:var(--klei);box-shadow:var(--klei-hoog);
+  position:sticky;top:5.5rem}
+.set-tab{display:flex;align-items:center;gap:.75rem;width:100%;text-align:left;border:0;border-radius:14px;
+  padding:.6rem .7rem;background:transparent;color:var(--txt);font:inherit}
+.set-tab:hover{background:var(--klei-scheiding)}
+.set-tab[aria-current="true"]{background:var(--klei-put);box-shadow:var(--klei-diep)}
+.set-ti{width:34px;height:34px;border-radius:11px;display:grid;place-items:center;flex:none;font-size:1rem;
+  background:var(--klei);box-shadow:var(--klei-hoog-klein);color:var(--mut);line-height:1}
+.set-tab[aria-current="true"] .set-ti{background:var(--klei-glazuur);box-shadow:var(--klei-glazuur-schaduw);color:#241a04}
+.set-tt{display:grid;min-width:0;line-height:1.3}
+.set-tt b{font-weight:700;font-size:.92rem}
+.set-tt small{font-size:.74rem;color:var(--mut)}
+.set-chev{display:none;margin-left:auto;color:var(--mut)}
+.set-tab-danger .set-tt b{color:var(--klei-gevaar)}
+
+/* Panels: exactly one shows, chosen by data-panel on the layout. */
+.set-panel{display:none;gap:1rem}
+.set-layout[data-panel="account"] .set-panel[data-panel="account"],
+.set-layout[data-panel="weergave"] .set-panel[data-panel="weergave"],
+.set-layout[data-panel="gegevens"] .set-panel[data-panel="gegevens"],
+.set-layout[data-panel="gevaarlijk"] .set-panel[data-panel="gevaarlijk"],
+.set-layout[data-panel="over"] .set-panel[data-panel="over"]{display:grid}
+.set-layout.is-guest .needs-login{display:none!important}
+.set-back{display:none}
+.set-h{font-family:'Cinzel',serif;font-weight:600;font-size:1.25rem;color:var(--klei-goud);letter-spacing:.02em}
+.set-note{color:var(--mut);font-size:.86rem;margin:0}
+.set-note b{color:var(--txt)}
+
+.set-card{display:grid;gap:.8rem;padding:1.2rem 1.25rem;border-radius:20px;background:var(--klei);box-shadow:var(--klei-hoog)}
+.set-card h3,.set-danger h3{font-size:1rem;font-weight:700;margin:0;display:flex;align-items:center;gap:.5rem}
+.set-card form,.set-danger form{display:grid;gap:.6rem}
+.set-card form .bt,.set-danger form .bt{justify-self:start}
+
+/* Rows with a control on the right. */
+.set-list{border-radius:20px;background:var(--klei);box-shadow:var(--klei-hoog);overflow:hidden}
+.set-row{display:flex;align-items:center;gap:.85rem;padding:.9rem 1.1rem}
+.set-list > * + *{border-top:1px solid var(--klei-scheiding)}
+.set-ri{width:34px;height:34px;border-radius:11px;display:grid;place-items:center;flex:none;font-size:1rem;
+  background:var(--klei-put);box-shadow:var(--klei-diep);color:var(--mut);line-height:1}
+.set-rt{flex:1;min-width:0;display:grid;line-height:1.35}
+.set-rt b{font-weight:700;font-size:.92rem}
+.set-rt small{font-size:.76rem;color:var(--mut)}
+
+/* A switch: a well with a knob; on, the well fills with gold glaze. */
+.clay-switch{position:relative;flex:none;width:50px;height:28px;border:0;border-radius:99px;padding:0;
+  background:var(--klei-put);box-shadow:var(--klei-diep)}
+.clay-switch::after{content:'';position:absolute;top:4px;left:4px;width:20px;height:20px;border-radius:50%;
+  background:var(--klei);box-shadow:2px 2px 5px var(--klei-schaduw),inset 0 0 0 1px var(--klei-rand);transition:transform .15s ease}
+.clay-switch[aria-checked="true"]{background:var(--klei-glazuur);box-shadow:var(--klei-glazuur-schaduw)}
+.clay-switch[aria-checked="true"]::after{transform:translateX(22px);background:#fffaf0}
+
+/* Segmented control: a well, the chosen segment raised out of it. */
+.clay-seg{display:flex;gap:3px;padding:3px;border-radius:13px;background:var(--klei-put);box-shadow:var(--klei-diep);flex:none}
+.clay-seg button{border:0;background:transparent;color:var(--mut);font:inherit;font-weight:700;font-size:.8rem;
+  min-width:2.4rem;padding:.35rem .5rem;border-radius:10px}
+.clay-seg button[aria-pressed="true"]{background:var(--klei);color:var(--txt);box-shadow:var(--klei-hoog-klein)}
+
+/* Font choice: each option written in its own font, so choosing is reading. */
+.set-fonts{border:0;margin:0;padding:.9rem 1.1rem 1rem;display:grid;gap:.55rem;background:var(--klei-put);box-shadow:var(--klei-diep)}
+.set-fonts[hidden]{display:none}
+.set-fonts legend{float:left;width:100%;font-weight:700;font-size:.86rem;margin-bottom:.2rem}
+.font-opt{display:grid;grid-template-columns:auto 6.5rem minmax(0,1fr);align-items:center;gap:.7rem;cursor:pointer;
+  padding:.6rem .8rem;border-radius:14px;background:var(--klei);box-shadow:var(--klei-hoog-klein)}
+.font-opt input{accent-color:var(--klei-goud);width:1.05rem;height:1.05rem;margin:0}
+.font-opt:has(input:checked){box-shadow:var(--klei-hoog-klein),inset 0 0 0 2px var(--klei-goud)}
+.font-name{font-weight:700;font-size:.95rem}
+.font-demo{font-size:1.02rem;color:var(--txt);min-width:0}
+/* The demo sentence shows the font itself, so it must not inherit the
+   letter spacing or dyslexia sizes meant for body text. */
+body.ruime-letters .font-demo{letter-spacing:.12em;word-spacing:.16em}
+
+/* Buttons and fields inside Instellingen. */
+#settings .veld{background:var(--klei-put);border:0;box-shadow:var(--klei-diep);color:var(--txt)}
+#settings .veld:focus{box-shadow:var(--klei-diep),0 0 0 2px var(--klei-goud)}
+#settings .bt{background:var(--klei-glazuur);color:#241a04;box-shadow:var(--klei-glazuur-schaduw);
+  border:0;border-radius:14px;padding:.65rem 1.2rem;font-weight:700}
+#settings .bt:hover{transform:none;filter:brightness(1.05)}
+#settings .bt.gh{background:var(--klei);color:var(--txt);box-shadow:var(--klei-hoog-klein);justify-self:start}
+#settings .bt.danger{background:var(--klei-gevaar-knop);color:#fff;box-shadow:6px 8px 16px var(--klei-schaduw),inset 0 1px 0 rgba(255,255,255,.25),inset 0 -3px 6px rgba(0,0,0,.25)}
+
+/* Danger: pressed into the page instead of raised, edged in red. */
+.set-danger{display:grid;gap:.8rem;padding:1.2rem 1.25rem;border-radius:20px;
+  background:var(--klei-put);box-shadow:var(--klei-diep),inset 0 0 0 1px rgba(227,107,107,.3)}
+.set-danger h3{color:var(--klei-gevaar)}
+
+/* ══ Phones: a tap-into list ══════════════════════════════════════════
+   Same breakpoint as mobile.css. data-panel="" shows the list of categories;
+   picking one shows only that panel, with a way back. */
+@media (max-width:560px){
+  .set-layout{grid-template-columns:1fr;margin-top:1.2rem}
+  .set-rail{position:static}
+  .set-chev{display:block}
+  .set-tab[aria-current="true"]{background:transparent;box-shadow:none}
+  .set-tab[aria-current="true"] .set-ti{background:var(--klei);box-shadow:var(--klei-hoog-klein);color:var(--mut)}
+  .set-layout:not([data-panel=""]) .set-rail{display:none}
+  .set-back{display:inline-flex;align-items:center;justify-self:start;border:0;font:inherit;font-weight:700;font-size:.82rem;
+    color:var(--txt);background:var(--klei);box-shadow:var(--klei-hoog-klein);border-radius:99px;padding:.45rem .9rem;min-height:40px}
+  .set-row{flex-wrap:wrap}
+  .set-row .clay-seg{margin-left:calc(34px + .85rem)}
+  .font-opt{grid-template-columns:auto minmax(0,1fr)}
+  .font-demo{grid-column:2}
+}
+@media (prefers-reduced-motion:reduce){.clay-switch::after{transition:none}}
+
+/* ══ The tools menu (Gereedschapskist, 2.7) ════════════════════════════
+   Replaces the arc of loose circles. One trigger, one panel grouped into
+   Leren / Focus / Weergave. Bottom-left on wide screens; on phones the
+   trigger sits in the top bar (as since 2.3.1) and the panel is a bottom
+   sheet, within reach of a thumb. Markup in index.html, behaviour in
+   src/ui/radialMenu.js and src/ui/pomodoro.js.
+
+   No entrance animation on .radialmenu itself: a transform there becomes the
+   containing block for the fixed scrim and sheet, which then size themselves
+   against a 54px box instead of the screen. */
+.radialmenu{position:fixed;left:1.4rem;bottom:1.4rem;z-index:120;width:54px;height:54px;display:none}
+.radialmenu.show{display:block}
+
+.radialtrigger{position:absolute;left:0;bottom:0;width:54px;height:54px;border-radius:50%;border:0;z-index:2;
+  display:grid;place-items:center;cursor:pointer;color:var(--klei-goud);font-size:1.3rem;line-height:1;
+  background:var(--klei);box-shadow:var(--klei-hoog)}
+.radialmenu.open .radialtrigger{background:var(--klei-put);box-shadow:var(--klei-diep)}
+/* A running Pomodoro shows its time on the trigger, so it stays visible. */
+.tools-timer{position:absolute;left:50%;bottom:-.55rem;transform:translateX(-50%);white-space:nowrap;
+  font:700 .66rem/1 'DM Sans',sans-serif;font-variant-numeric:tabular-nums;color:#241a04;
+  background:var(--klei-glazuur);box-shadow:var(--klei-glazuur-schaduw);border-radius:7px;padding:.22rem .38rem}
+.tools-timer[hidden]{display:none}
+
+.tools-scrim{display:none}
+.tools-panel{position:absolute;left:0;bottom:66px;width:300px;max-height:calc(100vh - 7rem);overflow-y:auto;
+  border-radius:20px;background:var(--klei);box-shadow:var(--klei-hoog);padding:.8rem;display:grid;gap:.6rem;
+  opacity:0;visibility:hidden;transform:translateY(8px);transform-origin:bottom left;
+  transition:opacity .16s ease,transform .16s ease,visibility .16s}
+.radialmenu.open .tools-panel{opacity:1;visibility:visible;transform:none}
+.tools-h{font-size:.64rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--mut);margin:.1rem .15rem -.25rem}
+.tools-tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:.5rem}
+.tools-tile{position:relative;border:0;border-radius:14px;background:var(--klei);box-shadow:var(--klei-hoog-klein);color:var(--txt);
+  font:700 .74rem/1.2 'DM Sans',sans-serif;display:grid;justify-items:center;gap:.4rem;padding:.7rem .2rem .6rem;cursor:pointer}
+.tools-tile .icon{font-size:1.1rem;color:var(--klei-goud)}
+.tools-tile:hover{filter:brightness(1.08)}
+.tools-badge{position:absolute;top:.35rem;right:.35rem;font:700 .62rem/1 'DM Sans',sans-serif;font-variant-numeric:tabular-nums;
+  color:#241a04;background:var(--klei-glazuur);border-radius:99px;padding:.18rem .36rem}
+.tools-badge[hidden]{display:none}
+.tools-pomo,.tools-row{border-radius:14px;background:var(--klei-put);box-shadow:var(--klei-diep)}
+.tools-pomo{display:grid;gap:.55rem;padding:.6rem}
+.tools-row-top,.tools-row{display:flex;align-items:center;gap:.6rem}
+.tools-row{padding:.55rem .6rem}
+.tools-ic{width:30px;height:30px;border-radius:10px;display:grid;place-items:center;flex:none;font-size:.9rem;line-height:1;
+  background:var(--klei);box-shadow:var(--klei-hoog-klein);color:var(--mut)}
+.tools-t{flex:1;min-width:0;display:grid;line-height:1.3}
+.tools-t b{font-size:.8rem}
+.tools-t small{font-size:.68rem;color:var(--mut);font-variant-numeric:tabular-nums}
+.tools-pomo-bot{display:flex;align-items:center;justify-content:space-between;gap:.5rem}
+.tools-pomo .clay-seg button{min-width:2rem;font-size:.74rem;font-variant-numeric:tabular-nums}
+.tools-pomo .clay-seg button:disabled{opacity:.45;cursor:default}
+.tools-glaze{border:0;border-radius:11px;background:var(--klei-glazuur);box-shadow:var(--klei-glazuur-schaduw);color:#241a04;
+  font:700 .78rem/1 'DM Sans',sans-serif;padding:.6rem .95rem;cursor:pointer;min-width:4.2rem}
+.tools-foot{display:flex;justify-content:space-between;align-items:center;gap:.5rem;border-top:1px solid var(--klei-scheiding);padding-top:.4rem}
+.tools-link{border:0;background:none;color:var(--klei-goud);font:600 .76rem/1.2 'DM Sans',sans-serif;
+  display:inline-flex;align-items:center;gap:.3rem;cursor:pointer;padding:.35rem .1rem}
+
+@media (max-width:560px){
+  /* The trigger joins the top bar, as since 2.3.1. Home also carries the bell
+     and avatar, so there it sits three slots in (.op-home, radialMenu.js). */
+  .radialmenu{left:auto;bottom:auto;top:var(--safe-top);height:var(--top-h);width:38px;
+    right:calc(var(--gut) - .15rem + env(safe-area-inset-right))}
+  .radialmenu.op-home{right:calc(var(--gut) - .15rem + env(safe-area-inset-right) + 3 * (38px + .55rem))}
+  /* A plain offset, not translateY(-50%): a hover stuck after a tap blanks
+     transform on touch screens (mobile.css). (var(--top-h) - 38px) / 2 = 7px. */
+  .radialtrigger{top:7px;bottom:auto;width:38px;height:38px;font-size:1.1rem;box-shadow:var(--klei-hoog-klein)}
+  .tools-timer{bottom:-.7rem}
+  .tools-scrim{display:block;position:fixed;inset:0;z-index:1;background:rgba(3,5,12,.55);
+    opacity:0;visibility:hidden;transition:opacity .2s,visibility .2s}
+  .radialmenu.open .tools-scrim{opacity:1;visibility:visible}
+  .tools-panel{position:fixed;left:0;right:0;bottom:0;top:auto;width:auto;max-height:85vh;z-index:2;
+    border-radius:22px 22px 0 0;padding:.6rem 1rem calc(1rem + env(safe-area-inset-bottom));transform:translateY(100%);
+    transition:transform .28s cubic-bezier(.2,.85,.3,1),opacity .2s,visibility .28s}
+  .tools-panel::before{content:'';justify-self:center;width:38px;height:4px;border-radius:4px;background:var(--klei-rand)}
+  .radialmenu.open .tools-panel{transform:none}
+  .tools-tile{min-height:64px}
+  .tools-link{min-height:40px}
+}
+@media (prefers-reduced-motion:reduce){.tools-panel,.tools-scrim{transition:none}}

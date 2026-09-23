@@ -1,13 +1,17 @@
-/* Help dialog with a few slides; opens automatically the first time the home screen is shown. */
+/* Help dialog with a few slides. Opens by itself the first time a device
+   reaches the home screen, and never again after that -- until 2.7 the
+   "seen" flag lived only in memory, so the tour came back on every visit.
+   Uitleg in the tools menu opens it on demand. */
 import { $, setHtml, icon } from '../lib/dom.js';
 import { onEnter, SCREENS } from './navigation.js';
+import { readString, writeString, STORAGE_KEYS as K } from '../lib/storage.js';
 
 const SLIDES = [
   ['Welkom bij Samenvattingen', 'Deze site helpt je stap voor stap naar de juiste samenvatting. Los overhoren, quizzen maken en flashcards oefenen.', 'hand'],
   ['Kies eerst je vak', 'Elk vak heeft een eigen kleur, gekozen door de docenten zelf. Klik op een gekleurde kaart om verder te gaan.', 'palette'],
   ['Niveau en leerjaar', 'Kies daarna je niveau (Arbeid, BBL, BK of TL) en je leerjaar. Je gaat dan meteen naar het complete boek.', 'library'],
-  ['Open een hoofdstuk', 'Klik op een hoofdstuk voor de samenvatting. Bovenaan wissel je tussen Samenvatting, Flashcards, Oefenquiz en Begrippenlijst.', 'book-open'],
-  ['Oefenen en hulp', 'Bij Begrippenlijst kun je zoeken. Bij Flashcards klik je een kaart om te draaien. Kom je er niet uit? Klik rechtsonder op ‘Vraag het de AI’ voor stap-voor-stap uitleg.', 'lightbulb'],
+  ['Open een hoofdstuk', 'Klik op een hoofdstuk voor de samenvatting. Bovenaan wissel je tussen Samenvatting, Flashcards, Oefenspel, Oefenquiz, Begrippenlijst en Notities.', 'book-open'],
+  ['Oefenen en hulp', 'Bij Flashcards klik je op een kaart om hem om te draaien. In het Oefenspel speel je per paragraaf een level. Zoeken, je favorieten, de oefentoets en de Pomodoro-timer vind je onder de knop met de drie puntjes.', 'lightbulb'],
 ];
 const AUTO_OPEN_DELAY_MS = 2000;
 
@@ -26,9 +30,14 @@ export function openHelp(n) {
   drawSlide();
 }
 
+function rememberSeen() {
+  helpSeen = true;
+  writeString(K.helpSeen, '1');
+}
+
 export function closeHelp() {
   $('helpwrap').classList.remove('open');
-  helpSeen = true;
+  rememberSeen();
 }
 
 export function goToSlide(n) {
@@ -58,6 +67,7 @@ function drawSlide() {
 }
 
 export function initHelp() {
+  helpSeen = readString(K.helpSeen) === '1';
   document.addEventListener('keydown', (e) => {
     if (!$('helpwrap').classList.contains('open')) return;
     if (e.key === 'ArrowRight') nextSlide();
@@ -65,8 +75,8 @@ export function initHelp() {
   });
   onEnter((id) => {
     if (id === SCREENS.home && !helpSeen) {
-      helpSeen = true;
-      setTimeout(() => openHelp(0), AUTO_OPEN_DELAY_MS);
+      helpSeen = true;          // in memory only: "Wat is er nieuw?" may still cancel it
+      setTimeout(() => { if (!$('helpwrap').classList.contains('open')) openHelp(0); rememberSeen(); }, AUTO_OPEN_DELAY_MS);
     }
   });
 }

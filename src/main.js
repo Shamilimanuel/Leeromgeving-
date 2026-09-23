@@ -1,6 +1,6 @@
 /* Application entry point: load styles + content, wire up screens and features. */
 import './styles/main.css';
-import './content/index.js';
+import { warmOpenedBooks } from './content/index.js';
 
 import { registerScreen, SCREENS } from './ui/navigation.js';
 import { installGlobals } from './ui/globals.js';
@@ -52,3 +52,6 @@ registerServiceWorker();
 /* Last: closes the site to guests when REQUIRE_LOGIN is on, and decides
    whether the app opens on the welcome or on the login screen. */
 initAuthGate();
+/* After the first screen is up: fetch the books this device opened before, so
+   they still work offline after an update emptied the cache. */
+setTimeout(warmOpenedBooks, 3000);

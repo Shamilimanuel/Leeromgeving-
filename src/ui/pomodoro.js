@@ -1,4 +1,5 @@
-/* Pomodoro focus timer in the radial menu. */
+/* Pomodoro focus timer in the tools menu. While it runs, the time also shows on
+   the menu button itself, so it stays visible with the menu closed. */
 import { $ } from '../lib/dom.js';
 import { readString, writeString, STORAGE_KEYS as K } from '../lib/storage.js';
 import { showToast } from './toast.js';
@@ -27,24 +28,42 @@ function vibrate() {
   } catch { /* not supported */ }
 }
 
+function clock() {
+  const m = Math.floor(remainingSeconds / 60);
+  const s = remainingSeconds % 60;
+  return m + ':' + (s < 10 ? '0' : '') + s;
+}
+
 function draw() {
   const btn = $('pomodorobtn');
   const label = $('pomodorolabel');
-  if (!btn) return;
+  const note = $('pomodoroNote');
+  const chip = $('pomodoroChip');
+  const group = $('pomodoroDuur');
+  if (group) {
+    for (const b of group.querySelectorAll('button')) {
+      b.setAttribute('aria-pressed', Number(b.dataset.min) === currentDuration() ? 'true' : 'false');
+      b.disabled = running;       // the length is fixed once a session runs
+    }
+  }
   if (!running) {
-    btn.innerHTML = '<span class="icon icon-timer" aria-hidden="true"></span>';
-    btn.classList.remove('on');
-    btn.title = 'Pomodoro-timer starten (' + currentDuration() + ' min werk / ' + currentBreak() + ' min pauze)';
-    if (label) label.textContent = 'Pomodoro (' + currentDuration() + ' min)';
+    if (btn) btn.textContent = 'Start';
+    if (label) label.textContent = 'Pomodoro';
+    if (note) note.textContent = currentDuration() + ' min werken, dan ' + currentBreak() + ' min pauze';
+    if (chip) chip.hidden = true;
     return;
   }
-  const m = Math.floor(remainingSeconds / 60);
-  const s = remainingSeconds % 60;
-  btn.innerHTML = '<span class="icon icon-' + (phase === PHASE.work ? 'target' : 'coffee') + '" aria-hidden="true"></span> '
-    + m + ':' + (s < 10 ? '0' : '') + s;
-  btn.classList.add('on');
-  btn.title = (phase === PHASE.work ? 'Focus' : 'Pauze') + ': klik om te stoppen';
-  if (label) label.textContent = phase === PHASE.work ? 'Focus' : 'Pauze';
+  const what = phase === PHASE.work ? 'Focus' : 'Pauze';
+  if (btn) btn.textContent = 'Stop';
+  if (label) label.textContent = what;
+  if (note) {
+    note.textContent = 'Nog ' + clock() + ', daarna '
+      + (phase === PHASE.work ? currentBreak() + ' min pauze' : 'weer ' + currentDuration() + ' min focus');
+  }
+  if (chip) {
+    chip.hidden = false;
+    chip.textContent = clock();
+  }
 }
 
 function tick() {
@@ -87,11 +106,12 @@ export function togglePomodoro() {
   showToast('Pomodoro gestart: ' + currentDuration() + ' minuten focus.');
 }
 
-/* Click on the label: switch between 10/25/45/60 minutes (not while running). */
-export function cyclePomodoroDuration(e) {
-  if (e) e.stopPropagation();
-  if (running) return;
-  durationIndex = (durationIndex + 1) % DURATION_OPTIONS.length;
+/* Pick 10/25/45/60 minutes. Ignored while a session runs, and for any other
+   value, since it arrives from an inline onclick. */
+export function setPomodoroDuration(minutes) {
+  const index = DURATION_OPTIONS.indexOf(Number(minutes));
+  if (running || index < 0) return;
+  durationIndex = index;
   writeString(K.pomodoroDuration, currentDuration());
   remainingSeconds = currentDuration() * 60;
   draw();

@@ -80,8 +80,9 @@ describe('subject → level → book → chapter', () => {
     expect(document.getElementById('bkTitle').textContent).toContain('Biologie');
   });
 
-  it('opens a chapter on the summary tab', () => {
-    window.openChapter('2');
+  it('opens a chapter on the summary tab', async () => {
+    // Chapter content arrives per book since 2.7 (src/content/loader.js).
+    expect(await window.openChapter('2')).toBe(true);
     expect(screenIsOn('chapter')).toBe(true);
     expect(document.getElementById('chTitle').textContent).toBe('Bewegen');
     expect(document.querySelectorAll('#chBody .sect').length).toBeGreaterThan(0);
@@ -271,19 +272,26 @@ describe('subject → level → book → chapter', () => {
 });
 
 describe('overlays', () => {
-  it('search finds glossary terms across subjects', () => {
+  it('search finds glossary terms across subjects', async () => {
+    const { loadAllContent } = await import('../src/content/index.js');
     window.openSearch();
+    // Typed before every book is in: the search must run again once they are.
+    document.getElementById('globZoek').value = 'skelet';
     window.onSearchInput('skelet');
+    await loadAllContent();
+    await new Promise((resolve) => setTimeout(resolve, 0));
     const results = document.querySelectorAll('#zoekres .zres');
     expect(results.length).toBeGreaterThan(0);
-    window.openSearchResult(0);
+    const subjects = new Set([...results].map((r) => r.querySelector('.zvak').textContent));
+    expect(subjects.size).toBeGreaterThan(1);
+    expect(await window.openSearchResult(0)).toBe(true);
     expect(screenIsOn('chapter')).toBe(true);
     // A term result opens the glossary tab, a flashcard result the flashcards tab.
     expect(document.querySelectorAll('#blist .term, #cgrid .fc').length).toBeGreaterThan(0);
   });
 
-  it('starts a practice exam with 10 questions', () => {
-    window.openExam();
+  it('starts a practice exam with 10 questions', async () => {
+    await window.openExam();
     window.startExam(10);
     expect(document.querySelectorAll('#examenlijst .qq').length).toBe(10);
     window.closeExam();

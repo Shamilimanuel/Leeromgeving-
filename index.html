@@ -177,74 +177,170 @@
     <button class="homebtn" onclick="go('home')" title="Naar vakkenoverzicht" aria-label="Home"><span class="icon icon-house" aria-hidden="true"></span></button>
     <button class="back" onclick="go('account')">&larr; Account</button>
     <div class="brand">Instellingen</div>
-    <div class="crumb"><b>Profiel &amp; beveiliging</b></div>
+    <div class="crumb"><b>Account &amp; weergave</b></div>
   </div></div>
   <div class="wrap">
     <div class="eyebrow">Instellingen</div>
-    <h1 class="page">Je account beheren</h1>
-    <p class="lede">Pas je gebruikersnaam of wachtwoord aan.</p>
+    <h1 class="page">Jouw instellingen</h1>
+    <p class="lede">Je account, hoe de site eruitziet en wat er op dit apparaat bewaard wordt.</p>
     <div id="settingsMelding"></div>
     <div id="settingsGast" style="display:none">
       <div class="call warn">Je bent niet ingelogd. <a href="#" onclick="go('account');return false">Naar inloggen</a></div>
     </div>
-    <div id="settingsIngelogd" style="display:none">
-      <div class="box" style="margin-bottom:1rem">
-        <h3 style="margin-top:0">Gebruikersnaam</h3>
-        <form onsubmit="submitUsernameChange(event)">
-          <input class="veld" id="setNaam" type="text" required minlength="3" maxlength="20" pattern="[A-Za-z0-9]{3,20}" autocapitalize="none" spellcheck="false" autocomplete="username" style="margin-bottom:.9rem">
-          <button class="bt" type="submit">Opslaan</button>
-        </form>
-        <div id="setNaamMelding"></div>
-      </div>
-      <div class="box">
-        <h3 style="margin-top:0">Wachtwoord wijzigen</h3>
-        <form onsubmit="submitPasswordChange(event)">
-          <input class="veld" id="setWwHuidig" type="password" placeholder="Huidig wachtwoord" autocomplete="current-password" required style="margin-bottom:.6rem">
-          <input class="veld" id="setWwNieuw" type="password" placeholder="Nieuw wachtwoord (min. 8 tekens)" autocomplete="new-password" required minlength="8" style="margin-bottom:.6rem">
-          <input class="veld" id="setWwHerhaal" type="password" placeholder="Herhaal nieuw wachtwoord" autocomplete="new-password" required minlength="8" style="margin-bottom:.9rem">
-          <button class="bt" type="submit">Wachtwoord wijzigen</button>
-        </form>
-        <div id="setWwMelding"></div>
-      </div>
 
-      <div class="box" style="margin-top:1rem">
-        <h3 style="margin-top:0">Weergave</h3>
-        <p class="lede" style="margin:.2rem 0 1rem">Grotere letters en dyslexie-modus. Je keuze wordt onthouden op dit apparaat.</p>
-        <div class="bar" style="margin:0">
-          <button class="bt gh" onclick="settingsCycleTextSize()">Tekstgrootte: <b id="setTekstgrootte">normaal</b></button>
-          <button class="bt gh" onclick="settingsToggleDyslexia()">Dyslexie-modus: <b id="setDyslexie">uit</b></button>
-        </div>
-      </div>
+    <!-- Five categories: a rail beside one panel on wide screens, a tap-into
+         list on phones. `data-panel` on the layout says which panel shows;
+         src/ui/settings.js sets it. An empty value is the phone's list view. -->
+    <div class="set-layout" id="settingsLayout" data-panel="account">
+      <nav class="set-rail" aria-label="Categorie&euml;n">
+        <button type="button" class="set-tab needs-login" data-panel="account" onclick="showSettingsPanel('account')">
+          <span class="set-ti"><span class="icon icon-user" aria-hidden="true"></span></span>
+          <span class="set-tt"><b>Account</b><small>Naam en wachtwoord</small></span>
+          <span class="set-chev icon icon-chevron-right" aria-hidden="true"></span>
+        </button>
+        <button type="button" class="set-tab" data-panel="weergave" onclick="showSettingsPanel('weergave')">
+          <span class="set-ti"><span class="icon icon-palette" aria-hidden="true"></span></span>
+          <span class="set-tt"><b>Weergave</b><small>Tekst, lettertype, licht</small></span>
+          <span class="set-chev icon icon-chevron-right" aria-hidden="true"></span>
+        </button>
+        <button type="button" class="set-tab needs-login" data-panel="gegevens" onclick="showSettingsPanel('gegevens')">
+          <span class="set-ti"><span class="icon icon-clipboard-list" aria-hidden="true"></span></span>
+          <span class="set-tt"><b>Mijn gegevens</b><small>Voortgang en apparaten</small></span>
+          <span class="set-chev icon icon-chevron-right" aria-hidden="true"></span>
+        </button>
+        <button type="button" class="set-tab set-tab-danger needs-login" data-panel="gevaarlijk" onclick="showSettingsPanel('gevaarlijk')">
+          <span class="set-ti"><span class="icon icon-trash-2" aria-hidden="true"></span></span>
+          <span class="set-tt"><b>Gevaarlijk</b><small>Account verwijderen</small></span>
+          <span class="set-chev icon icon-chevron-right" aria-hidden="true"></span>
+        </button>
+        <button type="button" class="set-tab" data-panel="over" onclick="showSettingsPanel('over')">
+          <span class="set-ti"><span class="icon icon-circle-help" aria-hidden="true"></span></span>
+          <span class="set-tt"><b>Over</b><small>Versie en nieuws</small></span>
+          <span class="set-chev icon icon-chevron-right" aria-hidden="true"></span>
+        </button>
+      </nav>
 
-      <div class="box" style="margin-top:1rem">
-        <h3 style="margin-top:0">Voortgang wissen</h3>
-        <p class="lede" style="margin:.2rem 0 1rem">Wist je voortgang, flashcards, streak, favorieten en notities op dit apparaat. Je account blijft gewoon bestaan.</p>
-        <button class="bt gh" onclick="settingsResetProgress()">Voortgang wissen</button>
-        <div id="setVoortgangMelding"></div>
-      </div>
+      <div class="set-panels">
+        <!-- Account -->
+        <section class="set-panel needs-login" data-panel="account" aria-labelledby="setHAccount">
+          <button type="button" class="set-back" onclick="showSettingsPanel('')">&larr; Instellingen</button>
+          <h2 class="set-h" id="setHAccount">Account</h2>
+          <div class="set-card">
+            <h3>Gebruikersnaam</h3>
+            <p class="set-note">Hiermee log je in. 3 tot 20 letters of cijfers.</p>
+            <form onsubmit="submitUsernameChange(event)">
+              <input class="veld" id="setNaam" type="text" required minlength="3" maxlength="20" pattern="[A-Za-z0-9]{3,20}" autocapitalize="none" spellcheck="false" autocomplete="username" aria-label="Gebruikersnaam">
+              <button class="bt" type="submit">Opslaan</button>
+            </form>
+            <div id="setNaamMelding"></div>
+          </div>
+          <div class="set-card">
+            <h3>Wachtwoord wijzigen</h3>
+            <form onsubmit="submitPasswordChange(event)">
+              <input class="veld" id="setWwHuidig" type="password" placeholder="Huidig wachtwoord" autocomplete="current-password" required aria-label="Huidig wachtwoord">
+              <input class="veld" id="setWwNieuw" type="password" placeholder="Nieuw wachtwoord (min. 8 tekens)" autocomplete="new-password" required minlength="8" aria-label="Nieuw wachtwoord">
+              <input class="veld" id="setWwHerhaal" type="password" placeholder="Herhaal nieuw wachtwoord" autocomplete="new-password" required minlength="8" aria-label="Herhaal nieuw wachtwoord">
+              <button class="bt" type="submit">Wachtwoord wijzigen</button>
+            </form>
+            <div id="setWwMelding"></div>
+          </div>
+        </section>
 
-      <div class="box" style="margin-top:1rem">
-        <h3 style="margin-top:0">Uitloggen op alle apparaten</h3>
-        <p class="lede" style="margin:.2rem 0 1rem">Handig als je op een schoolcomputer ingelogd bent gebleven. Je moet daarna overal opnieuw inloggen.</p>
-        <button class="bt gh" onclick="settingsLogoutEverywhere()">Overal uitloggen</button>
-        <div id="setUitlogMelding"></div>
-      </div>
+        <!-- Weergave: works without an account, so guests see it too -->
+        <section class="set-panel" data-panel="weergave" aria-labelledby="setHWeergave">
+          <button type="button" class="set-back" onclick="showSettingsPanel('')">&larr; Instellingen</button>
+          <h2 class="set-h" id="setHWeergave">Weergave</h2>
+          <p class="set-note">Wat je hier kiest, onthoudt dit apparaat.</p>
+          <div class="set-list">
+            <div class="set-row">
+              <span class="set-ri"><span class="icon icon-a-large-small" aria-hidden="true"></span></span>
+              <span class="set-rt"><b id="setLblTekst">Tekstgrootte</b><small>Voor de hele site</small></span>
+              <div class="clay-seg" role="group" aria-labelledby="setLblTekst" id="setTekstgrootte">
+                <button type="button" data-size="normaal" aria-pressed="true" aria-label="Normaal" onclick="settingsSetTextSize('normaal')">A</button>
+                <button type="button" data-size="groot" aria-pressed="false" aria-label="Groot" onclick="settingsSetTextSize('groot')">A+</button>
+                <button type="button" data-size="grootst" aria-pressed="false" aria-label="Grootst" onclick="settingsSetTextSize('grootst')">A++</button>
+              </div>
+            </div>
+            <div class="set-row">
+              <span class="set-ri"><span class="icon icon-sun" aria-hidden="true"></span></span>
+              <span class="set-rt"><b id="setLblLicht">Lichte modus</b><small>Lichte achtergrond in plaats van donker</small></span>
+              <button type="button" class="clay-switch" role="switch" id="setLicht" aria-checked="false" aria-labelledby="setLblLicht" onclick="settingsToggleLightMode()"></button>
+            </div>
+            <div class="set-row">
+              <span class="set-ri"><span class="icon icon-book-open" aria-hidden="true"></span></span>
+              <span class="set-rt"><b id="setLblDys">Dyslexie-modus</b><small>Een ander lettertype, meer ruimte en een leesliniaal</small></span>
+              <button type="button" class="clay-switch" role="switch" id="setDyslexie" aria-checked="false" aria-labelledby="setLblDys" onclick="settingsToggleDyslexia()"></button>
+            </div>
+            <fieldset class="set-fonts" id="setLettertypes" hidden>
+              <legend>Welk lettertype lees jij het makkelijkst?</legend>
+              <label class="font-opt">
+                <input type="radio" name="setFont" value="lexend" onchange="settingsSetDyslexiaFont('lexend')">
+                <span class="font-name" style="font-family:'Lexend',sans-serif">Lexend</span>
+                <span class="font-demo" style="font-family:'Lexend',sans-serif">Bij de quiz pakte Daan de bal.</span>
+              </label>
+              <label class="font-opt">
+                <input type="radio" name="setFont" value="atkinson" onchange="settingsSetDyslexiaFont('atkinson')">
+                <span class="font-name" style="font-family:'Atkinson Hyperlegible',sans-serif">Atkinson</span>
+                <span class="font-demo" style="font-family:'Atkinson Hyperlegible',sans-serif">Bij de quiz pakte Daan de bal.</span>
+              </label>
+              <label class="font-opt">
+                <input type="radio" name="setFont" value="andika" onchange="settingsSetDyslexiaFont('andika')">
+                <span class="font-name" style="font-family:'Andika',sans-serif">Andika</span>
+                <span class="font-demo" style="font-family:'Andika',sans-serif">Bij de quiz pakte Daan de bal.</span>
+              </label>
+              <p class="set-note">Lees de zin bij elk lettertype. Kies het lettertype waarbij je de woorden het snelst herkent.</p>
+            </fieldset>
+            <div class="set-row">
+              <span class="set-ri"><span class="icon icon-case-sensitive" aria-hidden="true"></span></span>
+              <span class="set-rt"><b id="setLblRuimte">Extra letterafstand</b><small>Meer ruimte tussen de letters, zodat ze niet in elkaar overlopen</small></span>
+              <button type="button" class="clay-switch" role="switch" id="setLetterafstand" aria-checked="false" aria-labelledby="setLblRuimte" onclick="settingsToggleLetterSpacing()"></button>
+            </div>
+          </div>
+        </section>
 
-      <div class="box" style="margin-top:1rem;border-color:rgba(224,112,122,.45)">
-        <h3 style="margin-top:0">Account verwijderen</h3>
-        <p class="lede" style="margin:.2rem 0 1rem">Je account en je profiel worden definitief verwijderd. Dit kan niet ongedaan gemaakt worden.</p>
-        <form onsubmit="submitAccountDeletion(event)">
-          <input class="veld" id="setVerwijderBevestig" type="text" placeholder="Typ je gebruikersnaam om te bevestigen" autocapitalize="none" spellcheck="false" autocomplete="off" style="margin-bottom:.9rem">
-          <button class="bt gh" type="submit">Account definitief verwijderen</button>
-        </form>
-        <div id="setVerwijderMelding"></div>
-      </div>
-    </div>
+        <!-- Mijn gegevens -->
+        <section class="set-panel needs-login" data-panel="gegevens" aria-labelledby="setHGegevens">
+          <button type="button" class="set-back" onclick="showSettingsPanel('')">&larr; Instellingen</button>
+          <h2 class="set-h" id="setHGegevens">Mijn gegevens</h2>
+          <div class="set-card">
+            <h3>Voortgang wissen</h3>
+            <p class="set-note">Wist je voortgang, flashcards, streak, favorieten en notities op dit apparaat. Je account blijft gewoon bestaan.</p>
+            <button class="bt gh" type="button" onclick="settingsResetProgress()">Voortgang wissen</button>
+            <div id="setVoortgangMelding"></div>
+          </div>
+          <div class="set-card">
+            <h3>Uitloggen op alle apparaten</h3>
+            <p class="set-note">Handig als je op een schoolcomputer ingelogd bent gebleven. Je moet daarna overal opnieuw inloggen.</p>
+            <button class="bt gh" type="button" onclick="settingsLogoutEverywhere()">Overal uitloggen</button>
+            <div id="setUitlogMelding"></div>
+          </div>
+        </section>
 
-    <div class="box" style="margin-top:1rem">
-      <h3 style="margin-top:0">Over deze app</h3>
-      <p class="lede" style="margin:.2rem 0 1rem">Je gebruikt versie <b id="setVersie">&mdash;</b>. Nieuwe versies komen vanzelf binnen; de app zegt het als er een klaarstaat.</p>
-      <button class="bt gh" onclick="openWhatsNew()">Wat is er nieuw?</button>
+        <!-- Gevaarlijk: pressed into the page instead of raised, and red -->
+        <section class="set-panel needs-login" data-panel="gevaarlijk" aria-labelledby="setHGevaarlijk">
+          <button type="button" class="set-back" onclick="showSettingsPanel('')">&larr; Instellingen</button>
+          <h2 class="set-h" id="setHGevaarlijk">Gevaarlijk</h2>
+          <div class="set-danger">
+            <h3><span class="icon icon-trash-2" aria-hidden="true"></span> Account verwijderen</h3>
+            <p class="set-note">Je account en je profiel worden definitief verwijderd. Dit kun je niet ongedaan maken.</p>
+            <form onsubmit="submitAccountDeletion(event)">
+              <input class="veld" id="setVerwijderBevestig" type="text" placeholder="Typ je gebruikersnaam om te bevestigen" autocapitalize="none" spellcheck="false" autocomplete="off" aria-label="Typ je gebruikersnaam om te bevestigen">
+              <button class="bt danger" type="submit">Account definitief verwijderen</button>
+            </form>
+            <div id="setVerwijderMelding"></div>
+          </div>
+        </section>
+
+        <!-- Over -->
+        <section class="set-panel" data-panel="over" aria-labelledby="setHOver">
+          <button type="button" class="set-back" onclick="showSettingsPanel('')">&larr; Instellingen</button>
+          <h2 class="set-h" id="setHOver">Over deze app</h2>
+          <div class="set-card">
+            <p class="set-note">Je gebruikt versie <b id="setVersie">&mdash;</b>. Nieuwe versies komen vanzelf binnen; de app zegt het als er een klaarstaat.</p>
+            <button class="bt gh" type="button" onclick="openWhatsNew()">Wat is er nieuw?</button>
+          </div>
+        </section>
+      </div>
     </div>
   </div>
 </section>
@@ -334,42 +430,55 @@
 
 </div>
 
+<!-- The tools menu ("Gereedschapskist", 2.7). Bottom-left on wide screens, in
+     the top bar on phones, where the panel opens as a bottom sheet. The id,
+     the `radialmenu` class and the toggleRadialMenu/closeRadialMenu handlers
+     keep their names from the arc this replaced: tests and the print sheet
+     (notes.css) refer to them. -->
 <div class="radialmenu" id="radialmenu">
-  <i class="radialhalo"></i>
-  <!-- display:contents on wide screens, so the arc positioning below still
-       resolves against .radialmenu; a slide-in panel on phones. -->
-  <div class="radialitems">
-  <div class="radialitem" style="--tx:0px;--ty:-250px">
-    <button class="zoekbtn menuicon" id="zoekbtn" onclick="openSearch();closeRadialMenu()" aria-label="Zoeken" title="Zoeken"><span class="icon icon-search" aria-hidden="true"></span></button>
-    <span class="radiallabel">Zoeken</span>
+  <div class="tools-scrim" onclick="closeRadialMenu()"></div>
+  <div class="tools-panel" id="toolsPanel" role="dialog" aria-label="Gereedschap">
+    <div class="tools-h">Leren</div>
+    <div class="tools-tiles">
+      <button type="button" class="tools-tile" id="zoekbtn" onclick="openSearch();closeRadialMenu()"><span class="icon icon-search" aria-hidden="true"></span>Zoeken</button>
+      <button type="button" class="tools-tile" id="favbtn" onclick="openFavorites();closeRadialMenu()"><span class="icon icon-star" aria-hidden="true"></span>Favorieten<span class="tools-badge" id="favBadge" hidden></span></button>
+      <button type="button" class="tools-tile" id="examenbtn" onclick="openExam();closeRadialMenu()"><span class="icon icon-clipboard-list" aria-hidden="true"></span>Oefentoets</button>
+    </div>
+    <div class="tools-h">Focus</div>
+    <div class="tools-pomo">
+      <div class="tools-row-top">
+        <span class="tools-ic"><span class="icon icon-timer" aria-hidden="true"></span></span>
+        <span class="tools-t"><b id="pomodorolabel">Pomodoro</b><small id="pomodoroNote">25 min werken, dan 5 min pauze</small></span>
+      </div>
+      <div class="tools-pomo-bot">
+        <div class="clay-seg" role="group" aria-label="Hoe lang wil je werken?" id="pomodoroDuur">
+          <button type="button" data-min="10" aria-pressed="false" aria-label="10 minuten" onclick="setPomodoroDuration(10)">10</button>
+          <button type="button" data-min="25" aria-pressed="true" aria-label="25 minuten" onclick="setPomodoroDuration(25)">25</button>
+          <button type="button" data-min="45" aria-pressed="false" aria-label="45 minuten" onclick="setPomodoroDuration(45)">45</button>
+          <button type="button" data-min="60" aria-pressed="false" aria-label="60 minuten" onclick="setPomodoroDuration(60)">60</button>
+        </div>
+        <button type="button" class="tools-glaze" id="pomodorobtn" onclick="togglePomodoro()">Start</button>
+      </div>
+    </div>
+    <div class="tools-h">Weergave</div>
+    <div class="tools-row">
+      <span class="tools-ic"><span class="icon icon-case-sensitive" aria-hidden="true"></span></span>
+      <span class="tools-t"><b id="toolsLblDys">Dyslexie-modus</b><small>Lettertype kies je in Instellingen</small></span>
+      <button type="button" class="clay-switch" role="switch" id="dyslexiebtn" aria-checked="false" aria-labelledby="toolsLblDys" onclick="toggleDyslexia()"></button>
+    </div>
+    <div class="tools-row">
+      <span class="tools-ic"><span class="icon icon-sun" aria-hidden="true"></span></span>
+      <span class="tools-t"><b id="toolsLblLicht">Lichte modus</b><small>Lichte achtergrond</small></span>
+      <button type="button" class="clay-switch" role="switch" id="lichtbtn" aria-checked="false" aria-labelledby="toolsLblLicht" onclick="toggleLightMode()"></button>
+    </div>
+    <div class="tools-foot">
+      <button type="button" class="tools-link" id="helpbtn" onclick="openHelp(0);closeRadialMenu()"><span class="icon icon-circle-help" aria-hidden="true"></span>Uitleg</button>
+      <button type="button" class="tools-link" onclick="closeRadialMenu();go('settings')">Meer in Instellingen<span class="icon icon-chevron-right" aria-hidden="true"></span></button>
+    </div>
   </div>
-  <div class="radialitem" style="--tx:45px;--ty:-169px">
-    <button class="favbtn menuicon" id="favbtn" onclick="openFavorites();closeRadialMenu()" aria-label="Favorieten" title="Favorieten"><span class="icon icon-star" aria-hidden="true"></span></button>
-    <span class="radiallabel">Favorieten</span>
-  </div>
-  <div class="radialitem" style="--tx:125px;--ty:-217px">
-    <button class="pomodorobtn menuicon" id="pomodorobtn" onclick="togglePomodoro();closeRadialMenu()" aria-label="Pomodoro-timer" title="Pomodoro-timer starten (25 min werk / 5 min pauze)"><span class="icon icon-timer" aria-hidden="true"></span></button>
-    <span class="radiallabel" id="pomodorolabel" onclick="cyclePomodoroDuration(event)" title="Tik om de duur te wisselen (10/25/45/60 min)" style="cursor:pointer">Pomodoro</span>
-  </div>
-  <div class="radialitem" style="--tx:124px;--ty:-124px">
-    <button class="examenbtn menuicon" id="examenbtn" onclick="openExam();closeRadialMenu()" aria-label="Oefentoets" title="Oefentoets / zelftest"><span class="icon icon-clipboard-list" aria-hidden="true"></span></button>
-    <span class="radiallabel">Oefentoets</span>
-  </div>
-  <div class="radialitem" style="--tx:217px;--ty:-125px">
-    <button class="dyslexiebtn menuicon" id="dyslexiebtn" onclick="toggleDyslexia();closeRadialMenu()" aria-label="Dyslexie-modus aan/uit" title="Dyslexie-modus"><span class="icon icon-case-sensitive" aria-hidden="true"></span></button>
-    <span class="radiallabel">Dyslexie</span>
-  </div>
-  <div class="radialitem" style="--tx:169px;--ty:-45px">
-    <button class="lichtbtn menuicon" id="lichtbtn" onclick="toggleLightMode();closeRadialMenu()" aria-label="Lichte modus aan/uit" title="Lichte modus"><span class="icon icon-sun" aria-hidden="true"></span></button>
-    <span class="radiallabel">Licht</span>
-  </div>
-  <div class="radialitem" style="--tx:250px;--ty:0px">
-    <button class="helpbtn menuicon" id="helpbtn" onclick="openHelp(0);closeRadialMenu()" aria-label="Uitleg" title="Uitleg"><span class="icon icon-circle-help" aria-hidden="true"></span></button>
-    <span class="radiallabel">Uitleg</span>
-  </div>
-  </div>
-  <button class="radialtrigger" id="radialtrigger" onclick="toggleRadialMenu()" aria-label="Menu" aria-expanded="false" title="Menu">
-    <span class="radialdots">⋯</span>
+  <button type="button" class="radialtrigger" id="radialtrigger" onclick="toggleRadialMenu()" aria-label="Gereedschap" aria-expanded="false" aria-controls="toolsPanel" title="Gereedschap">
+    <span class="radialdots" aria-hidden="true">⋯</span>
+    <span class="tools-timer" id="pomodoroChip" hidden></span>
   </button>
 </div>
 

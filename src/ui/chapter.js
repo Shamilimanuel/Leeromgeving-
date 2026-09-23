@@ -10,6 +10,8 @@ import { levelsForChapter } from '../content/levels.js';
 import { renderQuiz, resetQuizState } from './quiz.js';
 import { renderGlossary } from './glossary.js';
 import { renderNotes } from './notes.js';
+import { showToast } from './toast.js';
+import { chapterKey, loadChapter } from '../content/index.js';
 
 /* Tab id -> label. Ids are internal; labels are what students see. */
 const TAB_LIST = [
@@ -42,18 +44,37 @@ function resetTabState() {
   resetSummaryState();
 }
 
-export function openChapter(nr) {
-  selection.chapter = nr;
-  selection.tab = TABS.summary;
+/* A chapter's book may still have to be fetched (src/content/loader.js), so
+   opening waits for it. The selection only changes once the chapter is there:
+   a failed load leaves the student where they were, with a message, instead
+   of on an empty chapter screen. When two taps race, the last one wins. */
+let openTicket = 0;
+
+async function openWhenLoaded(key, select) {
+  const ticket = ++openTicket;
+  try {
+    await loadChapter(key);
+  } catch {
+    if (ticket === openTicket) showToast('Dit hoofdstuk kon niet laden. Heb je internet? Probeer het dan opnieuw.');
+    return false;
+  }
+  if (ticket !== openTicket) return false;
+  select();
   resetTabState();
   go(SCREENS.chapter);
+  return true;
 }
 
-/* Open a chapter from a full chapter key (search result, favourite). */
+export function openChapter(nr) {
+  return openWhenLoaded(chapterKey(selection.subject, selection.level, selection.year, nr), () => {
+    selection.chapter = nr;
+    selection.tab = TABS.summary;
+  });
+}
+
+/* Open a chapter from a full chapter key (search result, favourite, agenda). */
 export function openChapterFromKey(key, tab) {
-  selectFromKey(key, tab);
-  resetTabState();
-  go(SCREENS.chapter);
+  return openWhenLoaded(key, () => selectFromKey(key, tab));
 }
 
 function tabCount(chapter, tabId) {

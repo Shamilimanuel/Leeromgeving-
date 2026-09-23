@@ -13,9 +13,22 @@
    The entries are Dutch because students read them. Keep the lines short and
    concrete: what can you do now that you could not do yesterday? */
 
-export const APP_VERSION = '2.6.0';
+export const APP_VERSION = '2.7.0';
 
 export const CHANGELOG = [
+  {
+    version: '2.7.0',
+    date: '2026-09-24',
+    title: 'Sneller, rustiger en beter leesbaar',
+    changes: [
+      'De site opent veel sneller. Je downloadt niet meer alle boeken tegelijk, alleen het boek dat je opent.',
+      'Zonder internet werken de boeken die je al eens hebt geopend. Een boek dat je nog nooit opende, heeft één keer internet nodig.',
+      'Het menu met de drie puntjes is opnieuw ingedeeld in Leren, Focus en Weergave. Bij de Pomodoro-timer kies je nu zelf hoe lang, en zolang hij loopt zie je de tijd op de knop.',
+      'Instellingen heeft nu vijf onderdelen: Account, Weergave, Mijn gegevens, Gevaarlijk en Over.',
+      'Dyslexie-modus: kies zelf het lettertype dat jij het makkelijkst leest, Lexend, Atkinson of Andika. Nieuw is ook Extra letterafstand, zodat letters niet in elkaar overlopen.',
+      'De uitleg die je bij je eerste bezoek krijgt, komt nu echt maar één keer. En hij klopt weer met wat er op de site staat.',
+    ],
+  },
   {
     version: '2.6.0',
     date: '2026-09-03',

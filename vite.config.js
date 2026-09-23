@@ -12,9 +12,10 @@ export default defineConfig(({ mode }) => {
     build: {
       outDir: single ? 'dist-single' : 'dist',
       emptyOutDir: true,
-      // All chapter content is bundled into the app (~4 MB, ~1 MB gzipped); that is intentional
-      // so the site works offline after the first visit.
-      chunkSizeWarningLimit: 6000,
+      // Chapter content is split per chapter and fetched per book when a student opens it
+      // (src/content/loader.js), so no chunk should come near this. If one does, content
+      // has leaked back into the main bundle.
+      chunkSizeWarningLimit: 500,
     },
     test: {
       environment: 'node',

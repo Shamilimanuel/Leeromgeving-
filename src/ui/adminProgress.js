@@ -9,7 +9,7 @@
    uuid, the level a number, and the chapter key is looked up at click time
    from the list rendered last. */
 import { setHtml, escapeHtml, warningBox, infoBox, isUuid } from '../lib/dom.js';
-import { CONTENT, parseKey, subjectById, levelById } from '../content/index.js';
+import { CONTENT, parseKey, subjectById, levelById, loadChapter } from '../content/index.js';
 import { levelsForChapter, levelSubtitle } from '../content/levels.js';
 import { levelsForStudent } from '../services/gameProgress.js';
 import { clearStudentGameProgress } from '../services/auth.js';
@@ -97,6 +97,10 @@ async function refresh() {
       chapterKeys = [];
       return;
     }
+    // Paragraph names need the chapters' books. A book that cannot load (or a
+    // chapter key that no longer exists) falls back to "Level N" in levelLabel.
+    await Promise.allSettled([...new Set(rows.map((r) => r.hoofdstuk))].map(loadChapter));
+    if (!openFor) return;
     const total = rows.reduce((sum, r) => sum + (r.xp || 0), 0);
     setHtml(panel(openFor), '<div class="admpad">'
       + '<div class="admpad-totaal"><b>' + rows.length + ' levels gehaald</b> · ' + total + ' XP'

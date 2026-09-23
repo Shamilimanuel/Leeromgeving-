@@ -3,9 +3,9 @@
 Study site for Dutch VMBO students. Vanilla JS ES modules + CSS built with
 Vite, Supabase backend, Python content pipeline. Full documentation: `README.md`.
 
-**Starting cold? Read `STATUS.md` first** — where the project stands today,
-what is uncommitted, and what is worth doing next. `TODO.md` is the backlog
-behind it.
+**Starting cold? Read `TASK.md` first** — where the project stands today,
+what is done, and the ordered checklist of what comes next. When an item is
+finished, tick it, move it to *Recently done*, and update the date at the top.
 
 **Language rule:** code, comments, file names and docs are English; every
 string a student sees (UI text, summaries, error messages) stays Dutch.
@@ -17,7 +17,7 @@ index.html              static shell with all screens (Dutch UI text)
 src/main.js             entry point
 src/config.js           Supabase URL/key, edge-function names, limits
 src/lib/                DOM, localStorage and Supabase-client helpers
-src/content/            registry, structure, queries + subjects/<subject>/<level><year>/hNN-*.js
+src/content/            registry, structure, queries, loader + subjects/<subject>/<level><year>/hNN-*.js
 src/state/              selection, progress (localStorage), notes, stats
 src/services/           auth, chat: the only modules that call Supabase
 src/ui/                 one module per screen/feature; globals.js = window bridge for inline handlers
@@ -63,5 +63,9 @@ tests/                  Vitest
   `isIntegerId`) into `onclick="..."` strings; privileged actions go through
   the Edge Functions in `supabase/functions/`, never through direct table
   writes. Keep the CSP host list in `index.html` in sync with `src/config.js`.
+- Chapter bodies load per book on demand (`src/content/loader.js`). Anything
+  that reads `CONTENT` must `await loadChapter(key)` first; lists and titles
+  use `chapterKeysForSubject` / `chapterTitle` from `queries.js`, which need
+  no loading.
 - Never hand-edit `dist/` or `dist-single/`.
 - Do not commit unless asked.

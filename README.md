@@ -11,7 +11,8 @@ in English**.
 - Frontend: vanilla JavaScript ES modules + CSS, bundled with [Vite](https://vite.dev)
 - Backend: [Supabase](https://supabase.com) (Auth, Postgres with row-level security, Edge Functions)
 - Content pipeline: Python scripts that turn the transcribed book JSON into chapter modules
-- Installable as a PWA and works offline after the first visit
+- Installable as a PWA. Chapter content loads per book when a student opens it,
+  and every book opened once keeps working offline
 
 ## Quick start
 
@@ -46,12 +47,13 @@ Leeromgeving/
 │   ├── main.js                entry point: wires screens and features together
 │   ├── config.js              Supabase URL/key, edge-function names, limits
 │   ├── lib/                   generic helpers: DOM, localStorage, Supabase client
-│   ├── content/               registry + structure + the chapter modules
+│   ├── content/               registry + structure + the chapter modules (loaded per book)
 │   │   ├── registry.js        registerBook / registerChapter, BOOKS, CONTENT
 │   │   ├── structure.js       SUBJECTS, LEVELS, SUBJECT_YEARS
+│   │   ├── loader.js          loads chapter modules per book, on demand
 │   │   ├── queries.js         search, quiz pool, per-subject lookups
 │   │   ├── sections.js        which summary section a term/card belongs to
-│   │   ├── index.js           loads every module under subjects/
+│   │   ├── index.js           loads the book registries; re-exports loader.js
 │   │   └── subjects/<subject>/<subject>.js          books + chapter list
 │   │       └── <level><year>/hNN-<slug>.js          one chapter each
 │   ├── state/                 what the app remembers (selection, progress, notes, stats)
@@ -101,7 +103,7 @@ Two deliberate boundaries:
 level, book, chapter, character cards, account, settings, admin, agenda).
 `src/ui/navigation.js` exposes `go(id)`; screens register a render function
 with `registerScreen`, and features hook `onLeave`/`onEnter` for cleanup
-(show/hide the radial menu, auto-open help).
+(show/hide the tools menu, auto-open help).
 
 ### The practice game
 
@@ -329,8 +331,22 @@ equivalent, as Apple rejects thin web wrappers.
 
 `npm run build` produces a static site in `dist/` that can be hosted anywhere
 (GitHub Pages, Netlify, a school server). Assets use relative paths, so a
-sub-path works too. The service worker caches everything it has served, so the
-site keeps working offline after the first visit.
+sub-path works too. The service worker caches everything it has served.
+
+**What works offline** (since 2.7): the app itself, and every book a student has
+opened once. Chapter content is not in the main bundle; `src/content/loader.js`
+fetches a book's chapters when the student opens it, so the first visit
+downloads about 105 kB of script (compressed) instead of 1.1 MB, and adding books
+no longer makes the site heavier for everyone. An update starts a fresh cache,
+so after booting the app fetches the books this device opened before again
+(`warmOpenedBooks`, remembered in localStorage under `geopendeBoeken`). Search
+and the practice exam need every book, so they load them all when opened; without
+internet they use what is on the device and say so.
+
+Content that must work with no chapter loaded -- the chapter lists, titles,
+stats, the agenda -- reads the book registries and the file names, never
+`CONTENT`. Code that does read `CONTENT` for a chapter has to call
+`loadChapter(key)` (or `loadBook`) first. `tests/loader.test.js` pins this down.
 
 ### GitHub Pages
 
@@ -353,11 +369,9 @@ Note that only the frontend is deployed this way. The Supabase backend
 
 ## Open work
 
-[`STATUS.md`](STATUS.md) is the snapshot: where the project stands today, what
-is uncommitted, what to do next. Start there after a break.
-
-The running backlog lives in [`TODO.md`](TODO.md): what is open, what is blocked
-and on whom, and the reasoning behind decisions that are easy to forget.
+[`TASK.md`](TASK.md) is the status and checklist in one: where the project
+stands, what is done, what comes next in order, what is blocked and on whom,
+and the decisions that are easy to undo by accident. Start there after a break.
 
 ## Conventions
 

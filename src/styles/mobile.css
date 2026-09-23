@@ -17,7 +17,7 @@
 @media (hover:none){
   .subj:hover,.subj:focus-visible,.chapter:hover,.snel:hover,.snel:focus-visible,
   .tool.live:hover,.bt:hover,.back:hover,.chip:hover,.opt:hover:not(:disabled),
-  .star:hover,.menuicon:hover,.radialtrigger:hover,.homebtn:hover,.avatarbtn:hover,
+  .star:hover,.tools-tile:hover,.radialtrigger:hover,.homebtn:hover,.avatarbtn:hover,
   .pad-knop:not(:disabled):hover,.btn-start:hover,.introverder:hover,.skip:hover{
     transform:none;filter:none}
   .subj:hover,.chapter:hover,.tool.live:hover,.snel:hover{border-color:var(--goud-line)}
@@ -66,7 +66,7 @@
   /* -- top bar -- */
   .top{padding-top:var(--safe-top)}
   /* The tools trigger is one fixed-position button laid over this bar (see
-     .radialmenu below), so the flex row knows nothing about it and let the
+     the tools menu in clay.css), so the flex row knows nothing about it and let the
      title run underneath. The right padding reserves its slot -- 38px plus the
      row gap -- on every screen, so whatever ends the row stops before it. */
   .top-in{height:var(--top-h);gap:.55rem;
@@ -167,58 +167,6 @@
   .helpclose{width:38px;height:38px;top:.75rem;right:.75rem}
   .hslide{padding:1rem .1rem .5rem}
   @keyframes sheetUp{from{transform:translateY(100%)}to{transform:translateY(0)}}
-
-  /* -- the tools menu leaves the bottom-left corner --
-     The fold-out arc opened straight over the subject cards. On a phone the
-     trigger joins the top bar instead, and the options slide in as a panel
-     from the right edge where they can all be read at once.
-     Only home carries the bell and account buttons, so only there does the
-     trigger have to sit two buttons further left (.op-home, set in
-     src/ui/radialMenu.js). */
-  .radialmenu{left:auto;bottom:auto;top:var(--safe-top);height:var(--top-h);width:38px;
-    right:calc(var(--gut) - .15rem + env(safe-area-inset-right))}
-  /* .radialmenu.show animates with `pop`, whose fill-mode leaves transform:scale(1)
-     applied for good. A transformed ancestor becomes the containing block for
-     position:fixed descendants, which sized the panel below against this 38px
-     box instead of the viewport. No entrance animation here, so no transform. */
-  .radialmenu.show{animation:none}
-  /* Three slots in, not two: the bell and the avatar are real flex items, and
-     the reserved slot in .top-in above moved both of them one place left. */
-  .radialmenu.op-home{right:calc(var(--gut) - .15rem + env(safe-area-inset-right) + 3 * (38px + .55rem))}
-  /* Centred with a plain offset, not translateY(-50%): the touch block above
-     blanks transform on :hover, and a hover that sticks after a tap then
-     dropped this button half its height. (var(--top-h) - 38px) / 2 = 7px. */
-  .radialtrigger{top:7px;bottom:auto;left:0;transform:none;
-    width:38px;height:38px;font-size:1.15rem;box-shadow:none}
-  .radialmenu.open .radialtrigger{border-color:var(--goud);color:var(--goud)}
-
-  /* The decorative halo becomes the dimmer behind the panel: it is already in
-     the markup and already inside this stacking context. */
-  .radialhalo{position:fixed;inset:0;width:auto;height:auto;border-radius:0;
-    background:rgba(5,8,12,.55);animation:none;opacity:0;z-index:1;
-    transition:opacity .3s ease}
-  .radialmenu.open .radialhalo{opacity:1}
-
-  .radialitems{display:flex;flex-direction:column;position:fixed;top:0;right:0;height:100%;
-    width:min(76vw,290px);z-index:2;overflow-y:auto;overscroll-behavior:contain;
-    padding:calc(var(--top-h) + var(--safe-top) + .8rem) .9rem calc(1rem + env(safe-area-inset-bottom));
-    background:var(--ink2);border-left:1.5px solid var(--goud-line);
-    box-shadow:-18px 0 44px rgba(0,0,0,.5);
-    transform:translateX(100%);visibility:hidden;
-    transition:transform .32s cubic-bezier(.2,.85,.3,1), visibility .32s}
-  .radialmenu.open .radialitems{transform:translateX(0);visibility:visible}
-
-  .radialitem,.radialmenu.open .radialitem{position:relative;flex-direction:row;align-items:center;
-    gap:.85rem;left:auto;bottom:auto;opacity:1;pointer-events:auto;transform:none;
-    padding:.3rem 0;border-bottom:1px solid var(--line)}
-  .radialitem:last-child{border-bottom:none}
-  .menuicon{position:static;width:40px;height:40px;flex:none;font-size:1rem}
-  /* Static button + absolute ::after = the whole row is the tap target. */
-  .menuicon::after{content:'';position:absolute;inset:0;border-radius:10px}
-  .radiallabel,.radialmenu.open .radiallabel{opacity:1;background:none;border:none;padding:0;
-    font-size:.92rem;color:var(--txt);white-space:normal;text-align:left;flex:1}
-  /* The pomodoro label is itself a control, so it has to stay above the overlay. */
-  #pomodorolabel{position:relative;z-index:2}
 
   /* Text size lives in Instellingen; on a phone the tile only cost space. */
   #tekstgroottebtn{display:none}

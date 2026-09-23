@@ -1,7 +1,10 @@
 /* Loads every subject and chapter module and checks that the registry is consistent.
    This replaces the old "load the site in Node with a fake document" check. */
 import { describe, it, expect } from 'vitest';
-import { BOOKS, CONTENT, SUBJECTS, LEVELS, SUBJECT_YEARS, parseKey, subjectById, levelById, chapterKey } from '../src/content/index.js';
+import { BOOKS, CONTENT, SUBJECTS, LEVELS, SUBJECT_YEARS, parseKey, subjectById, levelById, chapterKey, loadAllContent } from '../src/content/index.js';
+
+// Chapter bodies load per book on demand; these checks need all of them.
+await loadAllContent();
 
 const subjectIds = SUBJECTS.map((s) => s.id);
 const levelIds = LEVELS.map((l) => l.id);

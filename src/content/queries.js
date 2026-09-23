@@ -1,5 +1,9 @@
-/* Read-only queries across all registered content. */
-import { BOOKS, CONTENT, bookKey, parseKey, subjectById, yearsFor } from './index.js';
+/* Read-only queries across the content. Which chapters exist and what they are
+   called is always known (file names + book registries). The chapter bodies
+   are only there once their book is loaded (see loader.js), so the two
+   queries that read bodies -- allQuizQuestions and searchContent -- cover the
+   loaded books; their screens call loadAllContent() first. */
+import { BOOKS, CONTENT, CHAPTER_KEYS, bookKey, parseKey, subjectById, yearsFor } from './index.js';
 
 export const SEARCH_MIN_LENGTH = 2;
 export const SEARCH_MAX_RESULTS = 40;
@@ -19,13 +23,26 @@ export function bookYearsFor(subjectId, levelId) {
   return years.filter((year) => hasBook(subjectId, levelId, year));
 }
 
-/* Chapter keys that belong to a subject. */
+/* Chapter keys that belong to a subject, loaded or not. */
 export function chapterKeysForSubject(subjectId) {
-  return Object.keys(CONTENT).filter((k) => k.indexOf(subjectId + '|') === 0);
+  return CHAPTER_KEYS.filter((k) => k.indexOf(subjectId + '|') === 0);
 }
 
 export function subjectHasContent(subjectId) {
-  return Object.keys(CONTENT).some((k) => k.indexOf(subjectId + '|') === 0);
+  return CHAPTER_KEYS.some((k) => k.indexOf(subjectId + '|') === 0);
+}
+
+/* A chapter's title from its book registry, so a list of chapters can be
+   shown without loading any of them. Same text the chapter screen shows. */
+export function chapterTitle(key) {
+  const { subject, level, year, chapter } = parseKey(key);
+  const book = BOOKS[bookKey(subject, level, year)];
+  if (!book) return '';
+  for (const part of book.parts) {
+    const found = part.chapters.find((c) => String(c[0]) === String(chapter));
+    if (found) return found[1];
+  }
+  return '';
 }
 
 /* Every quiz question on the site, tagged with its subject and chapter. */

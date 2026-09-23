@@ -10,7 +10,8 @@
    markup -- it is looked up at click time from the list rendered last, the
    same way adminProgress.js does it. */
 import { $, setHtml, escapeHtml, warningBox, infoBox } from '../lib/dom.js';
-import { CONTENT, SUBJECTS, parseKey, levelById } from '../content/index.js';
+import { CONTENT, SUBJECTS, parseKey, levelById, loadChapter } from '../content/index.js';
+import { chapterKeysForSubject, chapterTitle } from '../content/queries.js';
 import { levelsForChapter, levelSubtitle } from '../content/levels.js';
 import { classResultsForChapter } from '../services/gameProgress.js';
 
@@ -19,17 +20,11 @@ let chapterOptions = [];
 /* Active students of the last render: id -> username. */
 let classById = {};
 
-function chapterKeysForSubject(subjectId) {
-  return Object.keys(CONTENT)
-    .filter((key) => parseKey(key).subject === subjectId)
-    .sort();
-}
-
 /* "BBL · jaar 1 · H2 — Bewegen" */
 function chapterOptionLabel(key) {
   const { level, year, chapter } = parseKey(key);
   const levelName = levelById(level);
-  const title = CONTENT[key] ? CONTENT[key].title : '';
+  const title = chapterTitle(key);
   return (levelName ? levelName.name : level)
     + ' · jaar ' + year + ' · H' + chapter
     + (title ? ' — ' + title : '');
@@ -114,7 +109,11 @@ export async function adminClassPickChapter() {
   }
   setHtml('klasUitslag', infoBox('Bezig met laden…'));
   try {
-    const rows = await classResultsForChapter(chapterKey);
+    // The paragraph names come from the chapter itself, so its book has to be here too.
+    const [rows] = await Promise.all([
+      classResultsForChapter(chapterKey),
+      loadChapter(chapterKey).catch(() => { throw new Error('Dit hoofdstuk kon niet laden. Heb je internet?'); }),
+    ]);
     setHtml('klasUitslag', resultsHtml(chapterKey, rows));
   } catch (err) {
     setHtml('klasUitslag', warningBox(err.message));

@@ -12,7 +12,8 @@
    ever carry an item's own id (safe charset, see state/agenda.js's newId())
    or a numeric index, looked up again at click time. */
 import { $, setHtml, escapeHtml, warningBox, icon } from '../lib/dom.js';
-import { CONTENT, SUBJECTS, parseKey, levelById } from '../content/index.js';
+import { SUBJECTS, parseKey, levelById } from '../content/index.js';
+import { chapterKeysForSubject, chapterTitle } from '../content/queries.js';
 import { getAgendaItems, addAgendaItem, removeAgendaItem, toggleSession, todayDateStr } from '../state/agenda.js';
 import { TABS } from '../state/selection.js';
 import { openChapterFromKey } from './chapter.js';
@@ -27,17 +28,11 @@ let lastItems = [];
 /* The day the overlay is currently showing, or null when it's closed. */
 let openDate = null;
 
-function chapterKeysForSubject(subjectId) {
-  return Object.keys(CONTENT)
-    .filter((key) => parseKey(key).subject === subjectId)
-    .sort();
-}
-
 /* "BBL · jaar 1 · H2 — Bewegen", same label shape as adminClass.js. */
 function chapterOptionLabel(key) {
   const { level, year, chapter } = parseKey(key);
   const levelName = levelById(level);
-  const title = CONTENT[key] ? CONTENT[key].title : '';
+  const title = chapterTitle(key);
   return (levelName ? levelName.name : level) + ' · jaar ' + year + ' · H' + chapter + (title ? ' — ' + title : '');
 }
 
@@ -167,10 +162,10 @@ function sessionHtml(item, session, sessionIndex) {
 function itemHtml(item) {
   const chapters = item.chapterKeys
     .map((key, chapterIndex) => {
-      const chapter = CONTENT[key];
-      if (!chapter) return '';
+      const title = chapterTitle(key);
+      if (!title) return '';
       return '<button type="button" class="agenda-hfst" onclick="agendaOpenChapter(\'' + item.id + '\',' + chapterIndex + ')">'
-        + icon('book-open') + ' ' + escapeHtml(chapter.title) + '</button>';
+        + icon('book-open') + ' ' + escapeHtml(title) + '</button>';
     }).join('');
   const sessions = item.sessions.length
     ? item.sessions.map((s, sessionIndex) => sessionHtml(item, s, sessionIndex)).join('')

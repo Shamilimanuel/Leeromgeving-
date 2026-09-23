@@ -9,5 +9,7 @@
 @import './notes.css';
 @import './agenda.css';
 @import './admin.css';
+/* Goudklei clay tokens and the screens already moved onto them. */
+@import './clay.css';
 /* Last: the phone layer overrides the rules above. */
 @import './mobile.css';

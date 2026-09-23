@@ -1,7 +1,7 @@
 /* Book screen: the chapters of the chosen subject/level/year. */
 import { $, setHtml, icon } from '../lib/dom.js';
-import { chapterKey } from '../content/index.js';
-import { selection, currentSubject, currentLevel, currentBook, chapterContent, selectionLabel } from '../state/selection.js';
+import { chapterKey, hasChapter, loadBook } from '../content/index.js';
+import { selection, currentSubject, currentLevel, currentBook, selectionLabel } from '../state/selection.js';
 import { progressFor } from '../state/progress.js';
 import { questLabel } from './chapter.js';
 
@@ -24,12 +24,17 @@ export function renderBook() {
     return;
   }
 
+  /* Start fetching the book while the student reads the chapter list, so the
+     chapter usually opens at once. A failure here is silent: opening the
+     chapter tries again and says so if it still cannot load. */
+  loadBook(selection.subject, selection.level, selection.year).catch(() => {});
+
   const total = book.parts.reduce((n, part) => n + part.chapters.length, 0);
   let available = 0;
   let completed = 0;
   book.parts.forEach((part) => {
     part.chapters.forEach((c) => {
-      if (chapterContent(c[0])) available++;
+      if (hasChapter(chapterKey(subject.id, selection.level, selection.year, c[0]))) available++;
       const p = progressFor(chapterKey(subject.id, selection.level, selection.year, c[0]));
       if (p && p.quizCompleted) completed++;
     });
@@ -45,7 +50,7 @@ export function renderBook() {
       + '<span class="rng">hoofdstuk ' + chapters[0][0] + ' t/m ' + chapters[chapters.length - 1][0] + '</span>'
       + '<span class="status">' + (part.ready ? 'beschikbaar' : 'nog niet') + '</span></div>') : '') + '<div class="chapters">'
       + chapters.map((c, i) => {
-        const hasContent = !!chapterContent(c[0]);
+        const hasContent = hasChapter(chapterKey(subject.id, selection.level, selection.year, c[0]));
         const cls = 'chapter' + (part.ready ? (hasContent ? '' : ' leeg') : ' locked');
         const action = part.ready ? ' onclick="openChapter(\'' + c[0] + '\')"' : ' disabled';
         const p = progressFor(chapterKey(subject.id, selection.level, selection.year, c[0]));

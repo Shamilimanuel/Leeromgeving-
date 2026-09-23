@@ -2,11 +2,13 @@
 /* Every level of every chapter has to be playable: the session builder must
    come back with a full set of exercises, whatever the content looks like. */
 import { describe, it, expect } from 'vitest';
-import { CONTENT } from '../src/content/index.js';
+import { CONTENT, loadAllContent } from '../src/content/index.js';
 import { levelsForChapter } from '../src/content/levels.js';
 import { buildSession } from '../src/ui/exercises.js';
 
 const SESSION_STEPS = 8;
+// Chapter bodies load per book on demand; every level of every chapter is checked.
+await loadAllContent();
 const chapterKeys = Object.keys(CONTENT);
 
 describe('building a session out of a level', () => {

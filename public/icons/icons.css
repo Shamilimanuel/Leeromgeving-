@@ -28,6 +28,8 @@
 .icon-bell{-webkit-mask-image:url('ui/bell.svg');mask-image:url('ui/bell.svg')}
 .icon-house{-webkit-mask-image:url('ui/house.svg');mask-image:url('ui/house.svg')}
 .icon-user{-webkit-mask-image:url('ui/user.svg');mask-image:url('ui/user.svg')}
+.icon-trash-2{-webkit-mask-image:url('ui/trash-2.svg');mask-image:url('ui/trash-2.svg')}
+.icon-chevron-right{-webkit-mask-image:url('ui/chevron-right.svg');mask-image:url('ui/chevron-right.svg')}
 .icon-settings{-webkit-mask-image:url('ui/settings.svg');mask-image:url('ui/settings.svg')}
 .icon-sparkles{-webkit-mask-image:url('ui/sparkles.svg');mask-image:url('ui/sparkles.svg')}
 .icon-id-card{-webkit-mask-image:url('ui/id-card.svg');mask-image:url('ui/id-card.svg')}

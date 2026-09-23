@@ -1,4 +1,4 @@
-/* Splash mission stage, radial menu, dyslexia mode, help dialog, section groups, practice tiles, overlays, reading ruler, pomodoro, practice exam, character cards, level/year cards, streak, text size. */
+/* Splash mission stage, dyslexia mode, help dialog, section groups, practice tiles, overlays, reading ruler, pomodoro, practice exam, character cards, level/year cards, streak, text size. */
 /* ══ MISSION STAGE (splash screen) ══ */
 .mission-eyebrow{font-size:.7rem;letter-spacing:.28em;text-transform:uppercase;color:var(--mut);animation:up .7s .1s ease both}
 .mission-h{font-family:'Cinzel',serif;font-size:clamp(1.5rem,4.6vw,2.4rem);font-weight:600;
@@ -19,44 +19,27 @@
   padding:.45rem 1.4rem;font-size:.78rem;letter-spacing:.06em;transition:.25s}
 .introverder:hover{color:var(--txt);border-color:var(--paper);transform:translateY(-2px)}
 
-/* ══ SINGLE FOLD-OUT MENU, BOTTOM LEFT (instead of loose buttons) ══ */
-.radialmenu{position:fixed;left:1.4rem;bottom:1.4rem;z-index:120;width:54px;height:54px;display:none}
-.radialmenu.show{display:block;animation:pop .4s cubic-bezier(.2,.85,.3,1) both}
-.radialhalo{position:absolute;left:-6px;bottom:-6px;width:66px;height:66px;border-radius:50%;pointer-events:none;
-  background:conic-gradient(from 0deg,transparent 0%,var(--goud-line) 12%,transparent 26%,transparent 74%,var(--goud-line) 88%,transparent 100%);
-  animation:spin 7s linear infinite;opacity:.5;transition:opacity .3s}
-.radialmenu.open .radialhalo{opacity:.9}
-.radialitems{display:contents}
-.radialtrigger{position:absolute;left:0;bottom:0;width:54px;height:54px;border-radius:50%;
-  background:var(--ink2);border:1.5px solid var(--goud-line);color:var(--goud);cursor:pointer;z-index:2;
-  display:flex;align-items:center;justify-content:center;font-size:1.3rem;
-  box-shadow:0 0 18px rgba(243,215,138,.2),0 6px 20px rgba(0,0,0,.5);
-  transition:box-shadow .3s,border-color .3s,transform .3s cubic-bezier(.2,.85,.3,1)}
-.radialtrigger:hover{border-color:var(--goud);box-shadow:0 0 26px rgba(243,215,138,.4),0 6px 20px rgba(0,0,0,.5);transform:scale(1.06)}
-.radialdots{display:inline-block;transition:transform .35s cubic-bezier(.2,.85,.3,1)}
-.radialmenu.open .radialdots{transform:rotate(90deg)}
-.radialitem{position:absolute;left:7px;bottom:7px;display:flex;flex-direction:column;align-items:center;gap:.3rem;
-  transform:translate(0,0) scale(.3);opacity:0;pointer-events:none;
-  transition:transform .4s cubic-bezier(.2,.85,.3,1),opacity .25s}
-.radialmenu.open .radialitem{opacity:1;pointer-events:auto;transform:translate(var(--tx),var(--ty)) scale(1)}
-.radiallabel{font-size:.62rem;color:var(--txt);background:rgba(10,14,26,.92);border:1px solid var(--goud-line);
-  border-radius:6px;padding:.2rem .5rem;white-space:nowrap;opacity:0;transition:opacity .2s}
-.radialmenu.open .radiallabel{opacity:1;transition-delay:.15s}
-.menuicon{width:40px;height:40px;border-radius:50%;background:var(--ink2);color:var(--mut);
-  border:1px solid var(--goud-line);font-size:.92rem;font-weight:700;cursor:pointer;
-  transition:transform .2s cubic-bezier(.2,.85,.3,1),color .2s,border-color .2s,background .2s}
-.menuicon:hover{color:var(--txt);border-color:var(--goud);transform:scale(1.08)}
-.menuicon.on{background:var(--goud);color:#241d0d;border-color:transparent}
-
 /* ══ DYSLEXIA MODE ══ */
 
 body.dyslexie-modus, body.dyslexie-modus button, body.dyslexie-modus input,
 body.dyslexie-modus h1, body.dyslexie-modus h2, body.dyslexie-modus h3, body.dyslexie-modus h4, body.dyslexie-modus h5{
-  font-family:'Lexend',sans-serif}
+  font-family:var(--dys-font),sans-serif}
+/* The reading font a student picked in Instellingen (src/ui/preferences.js). */
+body{--dys-font:'Lexend'}
+body.dys-font-atkinson{--dys-font:'Atkinson Hyperlegible'}
+body.dys-font-andika{--dys-font:'Andika'}
 body.dyslexie-modus{font-size:17px;line-height:1.85;letter-spacing:.015em}
 body.dyslexie-modus p, body.dyslexie-modus li, body.dyslexie-modus td, body.dyslexie-modus .hslide p,
 body.dyslexie-modus .term span, body.dyslexie-modus .box p{
   line-height:1.85;letter-spacing:.015em;word-spacing:.04em}
+
+/* ══ EXTRA LETTER SPACING ══ */
+/* Reading text only: buttons, tabs and badges keep their spacing so labels do
+   not overflow the shapes drawn around them. Comes after the dyslexia block so
+   it wins when both are on. */
+body.ruime-letters p, body.ruime-letters li, body.ruime-letters td, body.ruime-letters .hslide p,
+body.ruime-letters .term span, body.ruime-letters .box p{
+  letter-spacing:.12em;word-spacing:.16em}
 body.dyslexie-modus .credit-name, body.dyslexie-modus .scene-cap{-webkit-background-clip:unset;background-clip:unset;color:var(--paper)}
 
 /* ══ HELP ══ */
@@ -107,7 +90,6 @@ body.dyslexie-modus .credit-name, body.dyslexie-modus .scene-cap{-webkit-backgro
 .tab.leegtab:hover{opacity:.62}
 
 /* ══ LIGHT MODE, SEARCH, FAVOURITES ══ */
-.lichtbtn.on{background:#f9c116;color:#3d2e00;border-color:transparent}
 
 .zoekwrap,.favwrap,.examenwrap,.nieuwwrap,.agendawrap{position:fixed;inset:0;z-index:210;display:none;align-items:flex-start;justify-content:center;padding:1.5rem;padding-top:8vh}
 .zoekwrap.show,.favwrap.show,.examenwrap.show,.nieuwwrap.show,.agendawrap.show{display:flex}
@@ -121,7 +103,6 @@ body.dyslexie-modus .credit-name, body.dyslexie-modus .scene-cap{-webkit-backgro
 body.licht-modus .leesliniaal{background:rgba(255,196,20,.16);border-color:rgba(255,196,20,.4)}
 
 /* ══ POMODORO TIMER ══ */
-.pomodorobtn{font-variant-numeric:tabular-nums;font-size:.72rem}
 body.pomodoro-focus .aurora{opacity:.35}
 
 /* ══ PRACTICE EXAM ══ */
