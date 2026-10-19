@@ -41,6 +41,17 @@ export function xpForResult(correct, total) {
   return correct * XP_PER_CORRECT + (total && correct === total ? XP_PERFECT_BONUS : 0);
 }
 
+/* What the score screen says. Any finished level counts as done and opens the
+   next one, but a big green "Level gehaald!" at 3/8 told a student they had
+   done well. `low` is under half right: the screen then nudges a replay. */
+export function scoreVerdict(correct, total) {
+  const ratio = total ? correct / total : 0;
+  if (total && correct === total) return { heading: 'Perfect!', low: false };
+  if (ratio >= 0.75) return { heading: 'Goed gedaan!', low: false };
+  if (ratio >= 0.5) return { heading: 'Level gehaald!', low: false };
+  return { heading: 'Level klaar', low: true };
+}
+
 /* Record a finished level. A replay keeps the best score, and only ever adds
    XP for the part that improved, so grinding one level is not worth it. */
 export function completeLevel(chapterKey, index, correct, total) {

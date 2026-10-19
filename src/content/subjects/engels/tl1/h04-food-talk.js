@@ -1,13 +1,96 @@
 import { registerChapter } from '../../../registry.js';
 
+/* Rebuilt 2026-09-25 to the recipe of Economie TL4 H1 (change 6). Same
+   grammar, Stones and words, restructured; the "builds on" link stays.
+   Terms, cards and quiz unchanged. */
 registerChapter('engels|tl|1|4', {
 title:'Food talk',
 summary:[
-{heading:'Boodschappen doen',html:'<div class=\'box\'><h4>Waar gaat dit hoofdstuk over?</h4><p>In dit hoofdstuk praat je over boodschappen, eten en drinken. Je leert boodschappen doen (dingen kopen en vragen), en je leert de grammatica <i>some</i> en <i>any</i>, meervoud (plurals) en de woorden <i>this, that, these</i> en <i>those</i>.</p></div><div class=\'call link\'><b>Dit bouwt voort op:</b> Chapter 2 &ndash; Time for school (vragen en ontkenningen)</div><div class=\'box\'><h4>Groceries</h4><p>cereal (ontbijtgranen), chips (patat/friet), crisps (chips), fish (vis), fruit (fruit), juice (sap), meat (vlees), milk (melk), rice (rijst), salad (salade), soup (soep), vegetables (groenten)</p></div><div class=\'box\'><h4>In the kitchen</h4><p>Bij boodschappen gebruik je vaak een hoeveelheidswoord: bag (zak), bottle (fles), box (doos), can (blikje), carton (pak), cup (kopje), grams (gram), (half a) kilo (halve kilo), jar (pot), litre (liter), piece (stuk), slice (plak)</p><p>Bijvoorbeeld: a can of coke, a carton of juice, a jar of apples, a piece of bread, a litre of water, a bottle of jam.</p></div><div class=\'box\'><h4>Stone 7 &ndash; Buying things</h4><ul class=\'lst\'><li>Can/Could I have a bag of apples, please? &ndash; Yes, of course. / No, we don\'t have any apples.</li><li>Do you have any fresh vegetables? / I need some tomatoes too, please.</li><li>How much is half a kilo of strawberries? &ndash; It\'s one pound sixty.</li><li>Do you want anything else? &ndash; That\'s it, thank you.</li></ul></div>'},
-{heading:'Some en any, meervoud',html:'<div class=\'box\'><h4>Grammar 7 &ndash; Some en any</h4><div class=\'tblwrap\'><table class=\'tbl\'><tr><th>Gebruik</th><th>Voorbeeld</th></tr><tr><td>some &ndash; \'enkele\' of \'wat\', in bevestigende zinnen</td><td>I need some eggs. He has some sweets for you.</td></tr><tr><td>any &ndash; \'geen enkele\'/\'helemaal geen\', in ontkenningen</td><td>She doesn\'t have any crisps.</td></tr><tr><td>any &ndash; \'wat\', in vragen</td><td>Do you have any sugar?</td></tr></table></div><div class=\'call warn\'><b>Veelgemaakte fout:</b> Als je al zeker weet dat het antwoord op je vraag \'ja\' is, gebruik je toch <b>some</b>: <i>Can I have some water, please?</i></div></div><div class=\'box\'><h4>Grammar 8 &ndash; Meervoud: chairs, tables, boxes</h4><div class=\'tblwrap\'><table class=\'tbl\'><tr><th>Regel</th><th>Voorbeeld</th></tr><tr><td>Meestal: -s toevoegen</td><td>chair &rarr; chairs, table &rarr; tables, snack &rarr; snacks</td></tr><tr><td>Woord eindigt op -s, -x, -z, -ch of -sh: -es toevoegen</td><td>bus &rarr; buses, church &rarr; churches, box &rarr; boxes</td></tr><tr><td>Woord eindigt op medeklinker + -o: meestal -es toevoegen</td><td>hero &rarr; heroes, tomato &rarr; tomatoes</td></tr><tr><td>Woord eindigt op medeklinker + -y: -y wordt -ies</td><td>party &rarr; parties, baby &rarr; babies</td></tr></table></div></div><div class=\'box\'><h4>Uitspraak: \'s\' in het meervoud</h4><div class=\'tblwrap\'><table class=\'tbl\'><tr><th>Klank</th><th>Wanneer</th><th>Voorbeeld</th></tr><tr><td>/s/</td><td>laatste klank van het woord is p, t, k, f of th</td><td>cat &rarr; cats</td></tr><tr><td>/z/</td><td>laatste klank is een andere klank</td><td>bed &rarr; beds, apple &rarr; apples, knee &rarr; knees</td></tr><tr><td>/iz/</td><td>woord eindigt op s, x, z, ch of sh: je voegt \'es\' toe</td><td>bus &rarr; buses, box &rarr; boxes</td></tr></table></div></div>'},
-{heading:'Aan tafel',html:'<div class=\'box\'><h4>At the table</h4><p>(to) be hungry (honger hebben), (to) be thirsty (dorst hebben), bowl (kom), dessert (toetje), dish (gerecht), fork (vork), glass (glas), knife (mes), mug (mok), plate (bord), (to) set the table (de tafel dekken), spoon (lepel)</p></div><div class=\'box\'><h4>Stone 9 &ndash; Asking for things at the table</h4><ul class=\'lst\'><li>I\'m really hungry. Let\'s have dinner!</li><li>Do you want anything to drink? &ndash; I want a glass of orange juice, please.</li><li>What do you want for breakfast/dessert? &ndash; I want a bowl of cereal, please. / Some ice cream, please.</li><li>Can/Could you pass me the salad? / Can someone give me the vegetables?</li><li>Can I have a mug, please? / A piece of bread, please.</li></ul><div class=\'call\'>Je kunt <b>can</b> en <b>could</b> gebruiken in vragen. <b>Could</b> is beleefder dan <b>can</b>.</div></div><div class=\'box\'><h4>Flavours</h4><p>awful (verschrikkelijk), bitter (bitter), crunchy (knapperig), delicious (heerlijk), disgusting (walgelijk), dry (droog), juicy (sappig), salty (zout), sour (zuur), spicy (pittig), sweet (zoet), tasty (lekker)</p></div><div class=\'box\'><h4>Stone 8 &ndash; Talking about food</h4><ul class=\'lst\'><li>What food/dish do you love? My favourite food is pizza. I love Indian food.</li><li>What does the food taste/smell like? &ndash; It is too spicy. It smells horrible.</li><li>I don\'t like this meal. The food isn\'t great.</li></ul></div>'},
-{heading:'This, that, these, those',html:'<div class=\'box\'><h4>Grammar 9 &ndash; This, that, these, those</h4><p>Je gebruikt <i>this, that, these</i> of <i>those</i> om te verwijzen naar personen, dieren en dingen: dichtbij of ver weg, en enkelvoud of meervoud.</p><div class=\'tblwrap\'><table class=\'tbl\'><tr><th></th><th>één</th><th>meer dan één</th></tr><tr><td>dichtbij (over here)</td><td>this</td><td>these</td></tr><tr><td>ver weg (over there)</td><td>that</td><td>those</td></tr></table></div><p>Voorbeelden: <i>This pear is yellow and that pear over there is green. These people are listening and those people over there are not. This is my glass and that glass over there is yours. These are your shoes and those shoes are my sister\'s.</i></p></div><div class=\'call\'>Woorden zoals <i>(over) here, next to me, right here, (over) there, across the room, behind the chair</i> geven aan of iets dichtbij of ver weg is, en helpen je kiezen tussen this/that/these/those.</div>'},
-{heading:'Lezen',html:'<div class=\'box\'><h4>The Healthy Breakfast Corner</h4><p>De 16-jarige Jennica staat elke schooldag om 5 uur \'s ochtends op om samen met haar klasgenoot Anna een \'Healthy Breakfast Corner\' op te zetten in de kantine van haar school: een plek waar leerlingen fruit en yoghurtparfaits kunnen krijgen. Ze begon hiermee omdat het eten dat de school aanbood ongezond en bevroren was. Voor sommige leerlingen is dit hun enige gezonde maaltijd van de dag, omdat hun familie geen geld heeft voor vers fruit en groente.</p></div><div class=\'box\'><h4>The digital bakery / Sugar Lab</h4><p>Deze teksten gaan over 3D-printers die gebruikt worden om desserts te maken: bonbons, chocolaatjes en koekjes in elke gewenste vorm, grootte en kleur. Het bedrijf Sugar Lab, gestart door Kyle von Hasseln en Meagan Bozeman, maakt gepersonaliseerde 3D-geprinte bonbons en truffels, die er ook nog eens heel mooi uitzien op social media.</p></div>'}
+{heading:'Boodschappen doen',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>woorden voor <b>boodschappen</b> en <b>hoeveelheden</b></li>
+<li>iets <b>kopen</b> en ernaar vragen (Stone 7)</li></ul></div>`
++`<div class="box"><h4>Waar dit hoofdstuk over gaat</h4><p>Je praat over <b>boodschappen</b>, <b>eten</b> en <b>drinken</b>. Je leert <b>some</b> en <b>any</b>, het <b>meervoud</b> (plurals) en <b>this, that, these, those</b>.</p></div>`
++`<div class="call link"><b>Dit bouwt voort op:</b> Chapter 2 &ndash; Time for school (vragen en ontkenningen)</div>`
++`<h5 class="sub">Groceries</h5>`
++`<div class="box"><h4>Woorden</h4><p><b>cereal</b> (ontbijtgranen), <b>chips</b> (patat), <b>crisps</b> (chips), <b>fish</b>, <b>fruit</b>, <b>juice</b> (sap), <b>meat</b> (vlees), <b>milk</b>, <b>rice</b> (rijst), <b>salad</b>, <b>soup</b>, <b>vegetables</b> (groenten).</p></div>`
++`<div class="call warn"><b>Instinker:</b> Britse <b>chips</b> zijn <b>patat</b>. Wat wij chips noemen, heet in Engeland <b>crisps</b>.</div>`
++`<h5 class="sub">Hoeveelheden</h5>`
++`<div class="box"><h4>a ... of ...</h4><p><b>bag</b> (zak), <b>bottle</b> (fles), <b>box</b> (doos), <b>can</b> (blikje), <b>carton</b> (pak), <b>cup</b> (kopje), <b>grams</b>, <b>(half a) kilo</b>, <b>jar</b> (pot), <b>litre</b>, <b>piece</b> (stuk), <b>slice</b> (plak). Zo: a <b>can of</b> coke, a <b>carton of</b> juice, a <b>piece of</b> bread.</p></div>`
++`<div class="voorbeeld"><h4>Voorbeeld: Stone 7, buying things</h4><p>Een gesprek in de winkel.</p><div class="antwoord"><b>Can I have</b> a bag of apples, please? &ndash; Yes, of course. <b>Do you have any</b> fresh vegetables? <b>How much is</b> half a kilo of strawberries? &ndash; It's one pound sixty. <b>Do you want anything else?</b> &ndash; That's it, thank you.</div></div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Hoe vraag je wat iets kost?</p><p class="check-a"><b>How much is</b> &hellip;?</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden</b><ul class="lst">
+<li>Hoeveelheid: <b>a bag / bottle / carton of</b> &hellip;</li>
+<li>Kopen: <b>Can I have</b> &hellip;, please? <b>How much is</b> &hellip;?</li>
+<li><b>chips</b> = patat, <b>crisps</b> = chips.</li></ul></div>`},
+
+{heading:'Some en any, meervoud',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>kiezen tussen <b>some</b> en <b>any</b> (Grammar 7)</li>
+<li>het <b>meervoud</b> maken en uitspreken (Grammar 8)</li></ul></div>`
++`<h5 class="sub">Grammar 7: some en any</h5>`
++`<div class="tblwrap"><table class="tbl"><tr><th>Woord</th><th>Betekenis</th><th>Voorbeeld</th></tr><tr><td><b>some</b></td><td>&lsquo;enkele&rsquo; of &lsquo;wat&rsquo;, in <b>bevestigende</b> zinnen</td><td>I need some eggs.</td></tr><tr><td><b>any</b></td><td>&lsquo;geen enkele&rsquo;, in <b>ontkenningen</b></td><td>She doesn't have any crisps.</td></tr><tr><td><b>any</b></td><td>&lsquo;wat&rsquo;, in <b>vragen</b></td><td>Do you have any sugar?</td></tr></table></div>`
++`<div class="call warn"><b>Uitzondering:</b> weet je al dat het antwoord <b>ja</b> is, bijvoorbeeld als je iets aanbiedt of vraagt, dan gebruik je in een vraag toch <b>some</b>: Can I have <b>some</b> water, please?</div>`
++`<h5 class="sub">Grammar 8: meervoud</h5>`
++`<div class="call reken"><b>Zo maak je het meervoud</b><ol class="num">
+<li>Meestal <b>-s</b>: chair &rarr; chairs, snack &rarr; snacks.</li>
+<li>Eindigt op <b>-s, -x, -z, -ch</b> of <b>-sh</b>: <b>-es</b>. bus &rarr; buses, box &rarr; boxes.</li>
+<li><b>Medeklinker + o</b>: meestal <b>-es</b>. tomato &rarr; tomatoes.</li>
+<li><b>Medeklinker + y</b>: <b>-ies</b>. party &rarr; parties, baby &rarr; babies.</li></ol></div>`
++`<div class="tblwrap"><table class="tbl"><tr><th>Uitspraak</th><th>Wanneer</th><th>Voorbeeld</th></tr><tr><td><b>/s/</b></td><td>laatste klank p, t, k, f of th</td><td>cats</td></tr><tr><td><b>/z/</b></td><td>een andere klank</td><td>beds, apples, knees</td></tr><tr><td><b>/iz/</b></td><td>na s, x, z, ch of sh (-es)</td><td>buses, boxes</td></tr></table></div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Vul in: She doesn't have ... crisps.</p><p class="check-a"><b>any</b>: het is een ontkenning.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden</b><ul class="lst">
+<li><b>some</b> in bevestigende zinnen, <b>any</b> in ontkenningen en vragen.</li>
+<li>Meervoud: <b>-s</b>, <b>-es</b> of <b>-ies</b>.</li>
+<li>Uitspraak: <b>/s/</b>, <b>/z/</b> of <b>/iz/</b>.</li></ul></div>`},
+
+{heading:'Aan tafel',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>om dingen <b>vragen aan tafel</b> (Stone 9)</li>
+<li>zeggen hoe eten <b>smaakt</b> (Stone 8)</li></ul></div>`
++`<h5 class="sub">At the table</h5>`
++`<div class="box"><h4>Woorden</h4><p><b>(to) be hungry</b> (honger hebben), <b>(to) be thirsty</b> (dorst hebben), <b>bowl</b> (kom), <b>dessert</b> (toetje), <b>dish</b> (gerecht), <b>fork</b>, <b>glass</b>, <b>knife</b> (mes), <b>mug</b> (mok), <b>plate</b> (bord), <b>(to) set the table</b> (tafel dekken), <b>spoon</b> (lepel).</p></div>`
++`<div class="voorbeeld"><h4>Voorbeeld: Stone 9, asking for things</h4><p>Vragen en aanbieden aan tafel.</p><div class="antwoord">I'm really hungry. Let's have dinner! <b>Do you want anything to drink?</b> &ndash; I want a glass of orange juice, please. <b>Could you pass me</b> the salad? <b>Can I have</b> a mug, please?</div></div>`
++`<div class="vergelijk"><div class="vergelijk-kant"><h4>can</h4><p>Gewoon: <b>Can</b> you pass me the salt?</p></div><div class="vergelijk-vs">vs</div><div class="vergelijk-kant"><h4>could</h4><p><b>Beleefder</b>: <b>Could</b> you pass me the salt?</p></div></div>`
++`<h5 class="sub">Flavours</h5>`
++`<div class="box"><h4>Stone 8: talking about food</h4><p><b>awful</b>, <b>bitter</b>, <b>crunchy</b> (knapperig), <b>delicious</b> (heerlijk), <b>disgusting</b> (walgelijk), <b>dry</b>, <b>juicy</b> (sappig), <b>salty</b> (zout), <b>sour</b> (zuur), <b>spicy</b> (pittig), <b>sweet</b>, <b>tasty</b> (lekker). What does the food <b>taste like</b>? &ndash; It is too spicy.</p></div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Wat is beleefder: can of could?</p><p class="check-a"><b>could</b>.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden</b><ul class="lst">
+<li>Vragen aan tafel: <b>Could you pass me</b> &hellip;?</li>
+<li><b>could</b> is beleefder dan can.</li>
+<li>Smaak: <b>delicious</b> tegenover <b>disgusting</b>.</li></ul></div>`},
+
+{heading:'This, that, these, those',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>kiezen tussen <b>this</b>, <b>that</b>, <b>these</b> en <b>those</b> (Grammar 9)</li></ul></div>`
++`<h5 class="sub">Grammar 9: dichtbij of ver weg, één of meer</h5>`
++`<div class="tblwrap"><table class="tbl"><tr><th></th><th>één</th><th>meer dan één</th></tr><tr><td><b>dichtbij</b> (over here)</td><td><b>this</b></td><td><b>these</b></td></tr><tr><td><b>ver weg</b> (over there)</td><td><b>that</b></td><td><b>those</b></td></tr></table></div>`
++`<div class="call reken"><b>Zo kies je het goede woord</b><ol class="num">
+<li>Is het <b>dichtbij</b> of <b>ver weg</b>? Woorden als <b>here</b>, <b>next to me</b> of <b>there</b>, <b>across the room</b> helpen je.</li>
+<li>Is het <b>één</b> ding of <b>meer</b>?</li>
+<li>Kies in de tabel.</li></ol></div>`
++`<div class="voorbeeld"><h4>Voorbeeld: in één zin</h4><p>Vergelijk iets dichtbij met iets ver weg.</p><div class="antwoord"><b>This</b> pear is yellow and <b>that</b> pear over there is green. <b>These</b> are your shoes and <b>those</b> shoes are my sister's.</div></div>`
++`<div class="call warn"><b>Veelgemaakte fout:</b> &ldquo;this shoes&rdquo;. Bij <b>meervoud</b> hoort <b>these</b> of <b>those</b>.</div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Welk woord: meer dan één, ver weg?</p><p class="check-a"><b>those</b>.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden</b><ul class="lst">
+<li>Dichtbij: <b>this</b> (één), <b>these</b> (meer).</li>
+<li>Ver weg: <b>that</b> (één), <b>those</b> (meer).</li></ul></div>`},
+
+{heading:'Lezen',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>teksten lezen over <b>gezond eten</b> en <b>3D-geprint eten</b></li></ul></div>`
++`<h5 class="sub">De teksten</h5>`
++`<div class="box"><h4>The Healthy Breakfast Corner</h4><p>De 16-jarige <b>Jennica</b> staat elke schooldag om <b>5 uur</b> op om met klasgenoot <b>Anna</b> een <b>Healthy Breakfast Corner</b> in de kantine op te zetten, met <b>fruit</b> en <b>yoghurtparfaits</b>. Ze begon omdat het schooleten <b>ongezond</b> en <b>bevroren</b> was. Voor sommige leerlingen is het de <b>enige gezonde maaltijd</b> van de dag.</p></div>`
++`<div class="box"><h4>The digital bakery / Sugar Lab</h4><p>Met <b>3D-printers</b> maak je desserts in elke vorm, grootte en kleur. <b>Sugar Lab</b>, van <b>Kyle von Hasseln</b> en <b>Meagan Bozeman</b>, maakt <b>gepersonaliseerde</b> bonbons en truffels.</p></div>`
++`<div class="call reken"><b>Zo vind je de kern van een tekst</b><ol class="num">
+<li>Lees de <b>titel</b> en de eerste alinea: waar gaat het over?</li>
+<li>Zoek <b>wie</b>, <b>wat</b> en <b>waarom</b>.</li>
+<li>Vat samen in <b>één zin</b>.</li></ol></div>`
++`<div class="call waarom">Waarom doet Jennica het? Voor sommige leerlingen heeft hun familie <b>geen geld</b> voor vers fruit en groente. Haar ontbijthoek helpt precies <b>die</b> leerlingen.</div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Waarom begon Jennica de Healthy Breakfast Corner?</p><p class="check-a">Het schooleten was <b>ongezond</b> en <b>bevroren</b>.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden</b><ul class="lst">
+<li>Zoek in een tekst <b>wie</b>, <b>wat</b> en <b>waarom</b>.</li>
+<li>Vat de kern samen in <b>één zin</b>.</li></ul></div>`}
 ],
 terms:[
 ['groceries','boodschappen',0],

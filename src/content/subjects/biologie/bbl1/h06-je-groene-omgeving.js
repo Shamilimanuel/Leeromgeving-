@@ -1,136 +1,24 @@
 import { registerChapter } from '../../../registry.js';
 
 /* Chapter 6 content: Je groene omgeving (Nectar BBL year 1, part B) */
+/* Upgraded 2026-09-25 to the recipe of Economie TL4 H1 (change 6): every paragraph
+   got "Dit leer je" and a "Check jezelf" (taken from its own flashcard where
+   there was none), plus bold on its own glossary terms where it had little.
+   The text itself is unchanged. */
 registerChapter('biologie|bbl|1|6', {
 title:'Je groene omgeving',
 summary:[
-{
- heading:'6.1 Naast de deur',
- html:
- '<div class="g2">'
- +'<div class="box"><h4>Wat is een leefomgeving?</h4><p>De <b>leefomgeving</b> van een organisme is het gebied waar de omstandigheden om te overleven het beste zijn.</p>'
- +'<p style="margin-top:.6rem">Zelfs vlak naast je deur (in een tuin, een berm of een park) leven al heel veel soorten samen.</p></div>'
- +'<div class="box"><h4>Wat leeft er in een tuin?</h4><ul class="lst">'
- +'<li><b>Planten</b>: gras, struiken, bloemen, bomen</li>'
- +'<li><b>Insecten</b>: bijen, wespen, vlinders, bladluizen</li>'
- +'<li><b>Vogels</b>: merels, roodborstjes, zanglijsters</li>'
- +'<li><b>Kleine dieren</b>: slakken, wormen, pissebedden, muizen</li></ul></div></div>'
+{heading:'6.1 Naast de deur',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst"><li>wat een <b>leefomgeving</b> is</li><li>namen van organismen opzoeken: <b>determineren</b></li></ul></div><h5 class="sub">Wat leeft er om je heen?</h5><div class="g2"><div class="box"><h4>Wat is een leefomgeving?</h4><p>De <b>leefomgeving</b> van een organisme is het gebied waar de omstandigheden om te overleven het beste zijn.</p><p style="margin-top:.6rem">Zelfs vlak naast je deur (in een tuin, een berm of een park) leven al heel veel soorten samen.</p></div><div class="box"><h4>Wat leeft er in een tuin?</h4><ul class="lst"><li><b>Planten</b>: gras, struiken, bloemen, bomen</li><li><b>Insecten</b>: bijen, wespen, vlinders, bladluizen</li><li><b>Vogels</b>: merels, roodborstjes, zanglijsters</li><li><b>Kleine dieren</b>: slakken, wormen, pissebedden, muizen</li></ul></div></div><div class="box"><h4>Namen opzoeken: determineren</h4><p>Weet je niet hoe een plant of dier heet, dan kun je de naam opzoeken. Dat heet <b>determineren</b>.</p><p style="margin-top:.6rem">Je gebruikt daarvoor een <b>zoekkaart</b>, een <b>determinatietabel</b> of tegenwoordig een app. Steeds beantwoord je een vraag over een kenmerk, tot je bij de naam uitkomt.</p><div class="call" style="margin-bottom:0">Dit ken je al uit hoofdstuk 1: daar deed je hetzelfde met een zoekkaart voor bodemdieren.</div></div><div class="check" onclick="toonCheck(this)"><p class="check-v">Wat is een leefomgeving?</p><p class="check-a">Het gebied waar de omstandigheden om te overleven voor een organisme het beste zijn.</p><span class="check-hint">Tik voor het antwoord</span></div><div class="call sum"><b>Om te onthouden (6.1)</b><ul class="lst"><li>De <b>leefomgeving</b> is het gebied waar een organisme het beste kan overleven.</li><li>Ook vlak bij huis leven al veel verschillende soorten samen.</li><li>De naam van een organisme opzoeken heet <b>determineren</b>, met een zoekkaart of determinatietabel.</li></ul></div>`},
 
- +'<div class="box"><h4>Namen opzoeken: determineren</h4>'
- +'<p>Weet je niet hoe een plant of dier heet, dan kun je de naam opzoeken. Dat heet <b>determineren</b>.</p>'
- +'<p style="margin-top:.6rem">Je gebruikt daarvoor een <b>zoekkaart</b>, een <b>determinatietabel</b> of tegenwoordig een app. Steeds beantwoord je een vraag over een kenmerk, tot je bij de naam uitkomt.</p>'
- +'<div class="call" style="margin-bottom:0">Dit ken je al uit hoofdstuk 1: daar deed je hetzelfde met een zoekkaart voor bodemdieren.</div></div>'
+{heading:'6.2 Leefomgeving onder de loep',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst"><li><b>levende</b> en <b>niet-levende invloeden</b></li><li>wat <b>concurrenten</b> zijn</li></ul></div><div class="box"><h4>Invloeden</h4><p><b>Invloeden</b> zijn omstandigheden in een gebied die gevolgen hebben voor de planten en dieren die er leven. Er zijn twee soorten.</p></div><div class="g2" style="margin-top:1rem"><div class="box"><h4>Niet-levende invloeden</h4><p>Invloeden uit de <b>niet-levende</b> natuur.</p><ul class="lst" style="margin-top:.5rem"><li>Temperatuur</li><li>Licht</li><li>Water en vochtigheid</li><li>Wind</li><li>Soort bodem</li></ul></div><div class="box"><h4>Levende invloeden</h4><p>Invloeden uit de <b>levende</b> natuur.</p><ul class="lst" style="margin-top:.5rem"><li>Roofdieren die je opeten</li><li>Planten die schaduw geven</li><li>Andere organismen die hetzelfde voedsel willen</li></ul></div></div><h5 class="sub">Concurrenten</h5><div class="box"><p><b>Concurrenten</b> zijn organismen die op één plek leven en <b>allemaal hetzelfde voedsel eten</b>. Zij moeten het voedsel met elkaar delen.</p><div class="call warn" style="margin-bottom:0">Hoe meer concurrenten, hoe minder er voor ieder overblijft. Daarom kunnen er van één soort maar een beperkt aantal op één plek leven.</div></div><div class="box" style="margin-top:1rem"><h4>Verschillende leefomgevingen, meer soorten</h4><p>Elk organisme past het beste in een bepaalde leefomgeving. Een park met veel <b>verschillende</b> leefomgevingen (water, struiken, open gras, dood hout) heeft daarom ook veel meer soorten planten en dieren. Zo'n park heet een <b>natuurlijk park</b>.</p></div><div class="check" onclick="toonCheck(this)"><p class="check-v">Wat zijn invloeden?</p><p class="check-a">Omstandigheden in een gebied die gevolgen hebben voor de planten en dieren die er leven.</p><span class="check-hint">Tik voor het antwoord</span></div><div class="call sum"><b>Om te onthouden (6.2)</b><ul class="lst"><li><b>Invloeden</b> zijn omstandigheden die gevolgen hebben voor planten en dieren.</li><li><b>Niet-levende invloeden</b>: temperatuur, licht, water, wind, bodem.</li><li><b>Levende invloeden</b>: roofdieren, andere planten, concurrenten.</li><li><b>Concurrenten</b> leven op één plek en eten hetzelfde voedsel.</li><li>Hoe meer verschillende leefomgevingen, hoe meer soorten er leven.</li></ul></div>`},
 
- +'<div class="call sum"><b>Om te onthouden (6.1)</b><ul class="lst">'
- +'<li>De <b>leefomgeving</b> is het gebied waar een organisme het beste kan overleven.</li>'
- +'<li>Ook vlak bij huis leven al veel verschillende soorten samen.</li>'
- +'<li>De naam van een organisme opzoeken heet <b>determineren</b>, met een zoekkaart of determinatietabel.</li></ul></div>'
-},
-{
- heading:'6.2 Leefomgeving onder de loep',
- html:
- '<div class="box"><h4>Invloeden</h4>'
- +'<p><b>Invloeden</b> zijn omstandigheden in een gebied die gevolgen hebben voor de planten en dieren die er leven. Er zijn twee soorten.</p></div>'
- +'<div class="g2" style="margin-top:1rem">'
- +'<div class="box"><h4>Niet-levende invloeden</h4><p>Invloeden uit de <b>niet-levende</b> natuur.</p>'
- +'<ul class="lst" style="margin-top:.5rem">'
- +'<li>Temperatuur</li><li>Licht</li><li>Water en vochtigheid</li><li>Wind</li><li>Soort bodem</li></ul></div>'
- +'<div class="box"><h4>Levende invloeden</h4><p>Invloeden uit de <b>levende</b> natuur.</p>'
- +'<ul class="lst" style="margin-top:.5rem">'
- +'<li>Roofdieren die je opeten</li><li>Planten die schaduw geven</li><li>Andere organismen die hetzelfde voedsel willen</li></ul></div></div>'
+{heading:'6.3 Eten of gegeten worden',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst"><li><b>planteneters</b>, <b>vleeseters</b> en <b>alleseters</b></li><li>een <b>voedselketen</b> en een <b>voedselweb</b> lezen</li></ul></div><div class="box"><h4>Planten maken hun eigen voedsel</h4><p>Planten maken zelf voedsel door <b>fotosynthese</b>: uit koolstofdioxide en water maken ze met zonlicht <b>glucose</b> en <b>zuurstof</b>. Uit glucose maken ze zetmeel, vetten en eiwitten.</p><div class="call" style="margin-bottom:0">Dit is waarom een voedselketen <b>altijd</b> met een plant begint: planten zijn de enige die voedsel kunnen máken.</div></div><h5 class="sub">Drie groepen eters</h5><div class="g3"><div class="box"><h4>Planteneters</h4><p>Eten alleen (delen van) <b>planten</b>.</p><p class="dim" style="margin-top:.4rem">Koe, konijn, rups</p></div><div class="box"><h4>Vleeseters</h4><p>Eten alleen (delen van) <b>dieren</b>.</p><p class="dim" style="margin-top:.4rem">Leeuw, sperwer, vos</p></div><div class="box"><h4>Alleseters</h4><p>Eten <b>planten én dieren</b>.</p><p class="dim" style="margin-top:.4rem">Mens, wild zwijn, beer</p></div></div><h5 class="sub">Voedselketen</h5><div class="g2"><div class="box"><h4>Wat is een voedselketen?</h4><p>Eet het ene organisme het andere, dan is er een <b>voedselrelatie</b>. Zet je die achter elkaar, dan krijg je een <b>voedselketen</b>.</p><p style="margin-top:.6rem">Elk organisme in de keten heet een <b>schakel</b>.</p><div class="call" style="margin-bottom:0"><b>Voorbeeld:</b> gras → koe → mens. Drie schakels.</div></div><div class="box"><h4>De pijlen</h4><p>De pijl betekent altijd: <b>"wordt gegeten door"</b>.</p><p style="margin-top:.6rem">Dus <b>gras → koe</b> betekent: het gras wordt gegeten door de koe. Níet andersom.</p><div class="call warn" style="margin-bottom:0"><b>Veelgemaakte fout:</b> de pijl wijst de kant op waar de <i>energie</i> naartoe gaat, niet de kant van de eter naar het voedsel. Let hier op bij toetsen.</div></div></div><div class="call warn"><b>Twee regels om te onthouden:</b> een voedselketen begint <b>altijd</b> met een plant, en een keten kan méér dan drie schakels hebben.</div><h5 class="sub">Voedselweb</h5><div class="box"><p>Een koe eet niet alleen gras, maar ook andere planten. Een organisme komt dus vaak in <b>meerdere</b> voedselketens voor.</p><p style="margin-top:.6rem">Een aantal voedselketens die met elkaar verbonden zijn, noem je een <b>voedselweb</b>.</p></div><div class="check" onclick="toonCheck(this)"><p class="check-v">De drie groepen eters</p><p class="check-a">Planteneters, vleeseters en alleseters.</p><span class="check-hint">Tik voor het antwoord</span></div><div class="call sum"><b>Om te onthouden (6.3)</b><ul class="lst"><li>Planten maken zelf voedsel door <b>fotosynthese</b>. Daarom staan ze vooraan in de keten.</li><li>Drie groepen eters: <b>planteneters, vleeseters en alleseters</b>.</li><li>In een <b>voedselketen</b> betekent de pijl "wordt gegeten door". Elk organisme is een <b>schakel</b>.</li><li>Een voedselketen begint <b>altijd</b> met een plant.</li><li>Meerdere verbonden voedselketens vormen een <b>voedselweb</b>.</li></ul></div>`},
 
- +'<h5 class="sub">Concurrenten</h5>'
- +'<div class="box"><p><b>Concurrenten</b> zijn organismen die op één plek leven en <b>allemaal hetzelfde voedsel eten</b>. Zij moeten het voedsel met elkaar delen.</p>'
- +'<div class="call warn" style="margin-bottom:0">Hoe meer concurrenten, hoe minder er voor ieder overblijft. Daarom kunnen er van één soort maar een beperkt aantal op één plek leven.</div></div>'
-
- +'<div class="box" style="margin-top:1rem"><h4>Verschillende leefomgevingen, meer soorten</h4>'
- +'<p>Elk organisme past het beste in een bepaalde leefomgeving. Een park met veel <b>verschillende</b> leefomgevingen (water, struiken, open gras, dood hout) heeft daarom ook veel meer soorten planten en dieren. Zo\'n park heet een <b>natuurlijk park</b>.</p></div>'
-
- +'<div class="call sum"><b>Om te onthouden (6.2)</b><ul class="lst">'
- +'<li><b>Invloeden</b> zijn omstandigheden die gevolgen hebben voor planten en dieren.</li>'
- +'<li><b>Niet-levende invloeden</b>: temperatuur, licht, water, wind, bodem.</li>'
- +'<li><b>Levende invloeden</b>: roofdieren, andere planten, concurrenten.</li>'
- +'<li><b>Concurrenten</b> leven op één plek en eten hetzelfde voedsel.</li>'
- +'<li>Hoe meer verschillende leefomgevingen, hoe meer soorten er leven.</li></ul></div>'
-},
-{
- heading:'6.3 Eten of gegeten worden',
- html:
- '<div class="box"><h4>Planten maken hun eigen voedsel</h4>'
- +'<p>Planten maken zelf voedsel door <b>fotosynthese</b>: uit koolstofdioxide en water maken ze met zonlicht <b>glucose</b> en <b>zuurstof</b>. Uit glucose maken ze zetmeel, vetten en eiwitten.</p>'
- +'<div class="call" style="margin-bottom:0">Dit is waarom een voedselketen <b>altijd</b> met een plant begint: planten zijn de enige die voedsel kunnen máken.</div></div>'
-
- +'<h5 class="sub">Drie groepen eters</h5>'
- +'<div class="g3">'
- +'<div class="box"><h4>Planteneters</h4><p>Eten alleen (delen van) <b>planten</b>.</p><p class="dim" style="margin-top:.4rem">Koe, konijn, rups</p></div>'
- +'<div class="box"><h4>Vleeseters</h4><p>Eten alleen (delen van) <b>dieren</b>.</p><p class="dim" style="margin-top:.4rem">Leeuw, sperwer, vos</p></div>'
- +'<div class="box"><h4>Alleseters</h4><p>Eten <b>planten én dieren</b>.</p><p class="dim" style="margin-top:.4rem">Mens, wild zwijn, beer</p></div></div>'
-
- +'<h5 class="sub">Voedselketen</h5>'
- +'<div class="g2">'
- +'<div class="box"><h4>Wat is een voedselketen?</h4><p>Eet het ene organisme het andere, dan is er een <b>voedselrelatie</b>. Zet je die achter elkaar, dan krijg je een <b>voedselketen</b>.</p>'
- +'<p style="margin-top:.6rem">Elk organisme in de keten heet een <b>schakel</b>.</p>'
- +'<div class="call" style="margin-bottom:0"><b>Voorbeeld:</b> gras → koe → mens. Drie schakels.</div></div>'
- +'<div class="box"><h4>De pijlen</h4><p>De pijl betekent altijd: <b>"wordt gegeten door"</b>.</p>'
- +'<p style="margin-top:.6rem">Dus <b>gras → koe</b> betekent: het gras wordt gegeten door de koe. Níet andersom.</p>'
- +'<div class="call warn" style="margin-bottom:0"><b>Veelgemaakte fout:</b> de pijl wijst de kant op waar de <i>energie</i> naartoe gaat, niet de kant van de eter naar het voedsel. Let hier op bij toetsen.</div></div></div>'
-
- +'<div class="call warn"><b>Twee regels om te onthouden:</b> een voedselketen begint <b>altijd</b> met een plant, en een keten kan méér dan drie schakels hebben.</div>'
-
- +'<h5 class="sub">Voedselweb</h5>'
- +'<div class="box"><p>Een koe eet niet alleen gras, maar ook andere planten. Een organisme komt dus vaak in <b>meerdere</b> voedselketens voor.</p>'
- +'<p style="margin-top:.6rem">Een aantal voedselketens die met elkaar verbonden zijn, noem je een <b>voedselweb</b>.</p></div>'
-
- +'<div class="call sum"><b>Om te onthouden (6.3)</b><ul class="lst">'
- +'<li>Planten maken zelf voedsel door <b>fotosynthese</b>. Daarom staan ze vooraan in de keten.</li>'
- +'<li>Drie groepen eters: <b>planteneters, vleeseters en alleseters</b>.</li>'
- +'<li>In een <b>voedselketen</b> betekent de pijl "wordt gegeten door". Elk organisme is een <b>schakel</b>.</li>'
- +'<li>Een voedselketen begint <b>altijd</b> met een plant.</li>'
- +'<li>Meerdere verbonden voedselketens vormen een <b>voedselweb</b>.</li></ul></div>'
-},
-{
- heading:'6.4 Een kringloop',
- html:
- '<div class="g2">'
- +'<div class="box"><h4>Waarom heeft een bos nooit mest nodig?</h4>'
- +'<p>In een tuin strooi je mest, maar een boswachter hoeft dat nooit te doen. In een bos ontstaat namelijk steeds vanzelf nieuwe mest.</p>'
- +'<p style="margin-top:.6rem">Dat komt doordat de stoffen daar in een <b>kringloop</b> rondgaan: er gaat niets verloren.</p></div>'
- +'<div class="box"><h4>De strooisellaag</h4><p>Op de bodem van een bos ligt een laagje afval van planten en dieren: de <b>strooisellaag</b>.</p>'
- +'<p style="margin-top:.6rem">Dat afval (bladeren, takjes, poep, dode dieren) heet <b>natuurlijk afval</b>.</p></div></div>'
-
- +'<h5 class="sub">De voedselkringloop: vier groepen</h5>'
- +'<div class="box"><div class="tblwrap"><table class="tbl">'
- +'<tr><th>Groep</th><th>Wie</th><th>Wat ze doen</th></tr>'
- +'<tr><td><b>Makers</b></td><td>planten</td><td>Maken voedingsstoffen met fotosynthese, met behulp van mineralen</td></tr>'
- +'<tr><td><b>Gebruikers</b></td><td>dieren en mensen</td><td>Eten de planten en hun voedingsstoffen op</td></tr>'
- +'<tr><td><b>Afvaleters</b></td><td>bodemdieren</td><td>Eten het natuurlijk afval en maken het klein</td></tr>'
- +'<tr><td><b>Afbrekers</b></td><td>schimmels en bacteriën</td><td>Breken het afval verder af tot <b>mineralen</b></td></tr></table></div>'
- +'<p style="margin-top:.8rem">De planten nemen die mineralen met hun wortels weer op, en de kringloop is rond.</p></div>'
-
- +'<div class="box" style="margin-top:1rem"><h4>De vier stappen op een rij</h4><ol class="num">'
- +'<li>Er vallen bladeren van de bomen; het afval komt in de <b>strooisellaag</b></li>'
- +'<li><b>Bodemdieren</b> (zoals regenwormen) eten het afval en maken het klein</li>'
- +'<li><b>Schimmels en bacteriën</b> maken er <b>mineralen</b> van</li>'
- +'<li>De plant neemt de mineralen op met de <b>wortels</b></li></ol>'
- +'<div class="call warn" style="margin-bottom:0"><b>Gesloten kringloop:</b> als een kringloop goed werkt, gaan er geen stoffen verloren. Alles wat verbruikt is wordt weer aangevuld, dus er ontstaat nooit een tekort.</div></div>'
-
- +'<h5 class="sub">Zelf een kringloop maken: compost</h5>'
- +'<div class="g2">'
- +'<div class="box"><h4>Wat is gft-afval?</h4><p><b>Gft</b> staat voor <b>groente-, fruit- en tuinafval</b>: schillen, gemaaid gras, uitgebloeide bloemen.</p></div>'
- +'<div class="box"><h4>Hoe wordt het compost?</h4><ol class="num">'
- +'<li>Je gooit het gft-afval in een compostbak of op een composthoop</li>'
- +'<li><b>Bodemdieren</b> in de bak maken het klein</li>'
- +'<li><b>Schimmels en bacteriën</b> breken het verder af tot mineralen</li>'
- +'<li>Je hebt <b>compost</b>: mest voor je tuin</li></ol>'
- +'<p class="dim" style="margin-top:.5rem">Dit duurt lang: soms wel een jaar.</p></div></div>'
-
- +'<div class="call sum"><b>Om te onthouden (6.4)</b><ul class="lst">'
- +'<li>Op de bodem ligt de <b>strooisellaag</b> met <b>natuurlijk afval</b>.</li>'
- +'<li>De voedselkringloop kent vier groepen: <b>makers, gebruikers, afvaleters en afbrekers</b>.</li>'
- +'<li><b>Bodemdieren</b> maken het afval klein; <b>schimmels en bacteriën</b> maken er <b>mineralen</b> van.</li>'
- +'<li>Planten nemen de mineralen op met hun wortels: de kringloop is rond.</li>'
- +'<li>Van <b>gft-afval</b> kun je zelf <b>compost</b> maken.</li></ul></div>'
-}
+{heading:'6.4 Een kringloop',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst"><li>hoe de <b>voedselkringloop</b> werkt</li><li>wat <b>compost</b> en <b>gft-afval</b> zijn</li></ul></div><div class="g2"><div class="box"><h4>Waarom heeft een bos nooit mest nodig?</h4><p>In een tuin strooi je mest, maar een boswachter hoeft dat nooit te doen. In een bos ontstaat namelijk steeds vanzelf nieuwe mest.</p><p style="margin-top:.6rem">Dat komt doordat de stoffen daar in een <b>kringloop</b> rondgaan: er gaat niets verloren.</p></div><div class="box"><h4>De strooisellaag</h4><p>Op de bodem van een bos ligt een laagje afval van planten en dieren: de <b>strooisellaag</b>.</p><p style="margin-top:.6rem">Dat afval (bladeren, takjes, poep, dode dieren) heet <b>natuurlijk afval</b>.</p></div></div><h5 class="sub">De voedselkringloop: vier groepen</h5><div class="box"><div class="tblwrap"><table class="tbl"><tr><th>Groep</th><th>Wie</th><th>Wat ze doen</th></tr><tr><td><b>Makers</b></td><td>planten</td><td>Maken voedingsstoffen met fotosynthese, met behulp van mineralen</td></tr><tr><td><b>Gebruikers</b></td><td>dieren en mensen</td><td>Eten de planten en hun voedingsstoffen op</td></tr><tr><td><b>Afvaleters</b></td><td>bodemdieren</td><td>Eten het natuurlijk afval en maken het klein</td></tr><tr><td><b>Afbrekers</b></td><td>schimmels en bacteriën</td><td>Breken het afval verder af tot <b>mineralen</b></td></tr></table></div><p style="margin-top:.8rem">De planten nemen die mineralen met hun wortels weer op, en de kringloop is rond.</p></div><div class="box" style="margin-top:1rem"><h4>De vier stappen op een rij</h4><ol class="num"><li>Er vallen bladeren van de bomen; het afval komt in de <b>strooisellaag</b></li><li><b>Bodemdieren</b> (zoals regenwormen) eten het afval en maken het klein</li><li><b>Schimmels en bacteriën</b> maken er <b>mineralen</b> van</li><li>De plant neemt de mineralen op met de <b>wortels</b></li></ol><div class="call warn" style="margin-bottom:0"><b>Gesloten kringloop:</b> als een kringloop goed werkt, gaan er geen stoffen verloren. Alles wat verbruikt is wordt weer aangevuld, dus er ontstaat nooit een tekort.</div></div><h5 class="sub">Zelf een kringloop maken: compost</h5><div class="g2"><div class="box"><h4>Wat is gft-afval?</h4><p><b>Gft</b> staat voor <b>groente-, fruit- en tuinafval</b>: schillen, gemaaid gras, uitgebloeide bloemen.</p></div><div class="box"><h4>Hoe wordt het compost?</h4><ol class="num"><li>Je gooit het gft-afval in een compostbak of op een composthoop</li><li><b>Bodemdieren</b> in de bak maken het klein</li><li><b>Schimmels en bacteriën</b> breken het verder af tot mineralen</li><li>Je hebt <b>compost</b>: mest voor je tuin</li></ol><p class="dim" style="margin-top:.5rem">Dit duurt lang: soms wel een jaar.</p></div></div><div class="check" onclick="toonCheck(this)"><p class="check-v">Wat is de strooisellaag?</p><p class="check-a">Het laagje afval van planten en dieren op de bodem.</p><span class="check-hint">Tik voor het antwoord</span></div><div class="call sum"><b>Om te onthouden (6.4)</b><ul class="lst"><li>Op de bodem ligt de <b>strooisellaag</b> met <b>natuurlijk afval</b>.</li><li>De voedselkringloop kent vier groepen: <b>makers, gebruikers, afvaleters en afbrekers</b>.</li><li><b>Bodemdieren</b> maken het afval klein; <b>schimmels en bacteriën</b> maken er <b>mineralen</b> van.</li><li>Planten nemen de mineralen op met hun wortels: de kringloop is rond.</li><li>Van <b>gft-afval</b> kun je zelf <b>compost</b> maken.</li></ul></div>`}
 ],
 terms:[
 ['afbrekers','Schimmels en bacteriën; zij breken natuurlijk afval af tot mineralen.'],

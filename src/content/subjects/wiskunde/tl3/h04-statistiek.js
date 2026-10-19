@@ -1,13 +1,104 @@
 import { registerChapter } from '../../../registry.js';
 
+/* Rebuilt 2026-09-25 to the recipe of Economie TL4 H1 (change 6). Fixed:
+   4.2 broke off mid-sentence ("met klassen (zoals 160 -"). Added from the
+   book: the ages of klas B3C (267 : 18 = 14,8), the klassenmidden
+   (150 + 160) : 2, and the median from a bar chart (13th and 14th of 26).
+   Terms, cards and quiz unchanged. */
 registerChapter('wiskunde|tl|3|4', {
 title:'Statistiek',
 summary:[
-{heading:'4.1 Informatie',html:'<div class=\'box\'><h4>Waar gaat dit hoofdstuk over?</h4><p>In dit hoofdstuk werk je met onderzoek en gegevens. Je leert het verschil tussen een telling en een steekproef, je berekent het (gewogen) gemiddelde, de modus en de mediaan, je leest boxplots en andere diagrammen af, en je haalt informatie uit samengestelde diagrammen.</p></div><div class=\'call\'>Het Centraal Bureau voor de Statistiek (CBS) doet voortdurend onderzoek naar de Nederlandse samenleving en publiceert de uitkomsten in tabellen en diagrammen. Gemeenten, scholen en bedrijven gebruiken die gegevens om plannen te maken voor de toekomst.</div><div class=\'box\'><h4>Onderzoek en conclusie</h4><p>Het verzamelen van gegevens gebeurt soms via een <b>telling</b>, bijvoorbeeld bij het bepalen van het aantal inwoners van een stad. Gaat het om de mening van een grote groep mensen, dan wordt meestal een <b>steekproef</b> genomen: je vraagt aan een representatieve deelgroep wat ze ervan vinden. De uitkomst geldt dan voor de hele groep. Een steekproef is <b>representatief</b> als alle groepen in de juiste verhouding aanwezig zijn. Uit tellingen of representatieve steekproeven worden conclusies getrokken, die weer worden gebruikt om beslissingen te nemen.</p></div><div class=\'call warn\'><b>Veelgemaakte fout:</b> een steekproef die niet representatief is, geeft een vertekend beeld. Bijvoorbeeld: als je alleen rokers vraagt of ze tegen een rookverbod zijn, krijg je geen representatief beeld van de hele bevolking.</div><div class=\'call\'><b>Liegen met statistiek</b>: soms wordt met opzet een niet-representatieve steekproef gehouden, omdat de opdrachtgever een gunstig resultaat wil. Wees dus altijd kritisch op hoe een onderzoek is uitgevoerd voordat je de conclusie gelooft.</div>'},
-{heading:'4.2 Gemiddelde',html:'<div class=\'box\'><h4>Gemiddelde en gewogen gemiddelde</h4><p>Het <b>gemiddelde</b> bereken je door alle getallen bij elkaar op te tellen en het antwoord te delen door het aantal getallen. Tellen sommige cijfers zwaarder mee dan andere, dan bereken je een <b>gewogen gemiddelde</b>: je deelt het totaal aantal punten (elk cijfer keer zijn <b>gewicht</b>) door het totaal van de gewichten.</p></div><div class=\'voorbeeld\'><h4>Voorbeeld: gewogen gemiddelde</h4><p>Bereken het gemiddelde cijfer van Anja voor aardrijkskunde: 6,4 (2×), 7,6 (3×), 5,8 (1×), 4,7 (1×). Rond af op één decimaal.</p><ol class=\'num\'><li>Totaal aantal punten: 2 × 6,4 + 3 × 7,6 + 1 × 5,8 + 1 × 4,7 = 46,1.</li><li>Totaal van de gewichten: 2 + 3 + 1 + 1 = 7.</li><li>46,1 : 7 = 6,585...</li></ol><div class=\'antwoord\'>Antwoord: het gemiddelde cijfer van Anja is 6,6.</div></div><div class=\'box\'><h4>Gemiddelde uit een frequentietabel of met klassenmiddens</h4><p>Bij een frequentietabel bereken je het gemiddelde door het totaal van alle waarden te delen door het totaal aantal getallen. Bij een tabel met klassen (zoals 160 − < 170) gebruik je het <b>klassenmidden</b>: het gemiddelde van de onder- en bovengrens van de klasse.</p></div><div class=\'call sum\'><b>Om te onthouden</b><ul class=\'lst\'><li>gemiddelde = totaal van alle waarden : aantal waarden</li><li>gewogen gemiddelde = totaal aantal punten : totaal van de gewichten</li><li>klassenmidden = (ondergrens + bovengrens) : 2</li><li>het gemiddelde rond je af op één decimaal meer dan de gegevens</li></ul></div>'},
-{heading:'4.3 Modus en mediaan',html:'<div class=\'box\'><h4>Modus en mediaan</h4><p>De <b>modus</b> is het getal dat het meest voorkomt in een rij getallen. De <b>mediaan</b> is het middelste getal als je alle getallen op volgorde van klein naar groot zet. Bij een <b>oneven</b> aantal getallen is de mediaan het ((aantal + 1) : 2)e getal. Bij een <b>even</b> aantal getallen bereken je de mediaan als het gemiddelde van de twee middelste getallen. Het gemiddelde, de modus en de mediaan samen heten <b>centrummaten</b>.</p></div><div class=\'voorbeeld\'><h4>Voorbeeld: mediaan en modus, oneven aantal</h4><p>Bekijk de rij getallen: 9 6 4 1 8 2 7 3 7. Welk getal is de mediaan en welk getal is de modus?</p><ol class=\'num\'><li>Op volgorde: 1 2 3 4 6 7 7 8 9. Er zijn 9 getallen, een oneven aantal, dus de mediaan is het (9+1):2 = 5e getal: 6.</li><li>Het getal dat het meest voorkomt is 7.</li></ol><div class=\'antwoord\'>Antwoord: de mediaan is 6, de modus is 7.</div></div><div class=\'call warn\'><b>Veelgemaakte fout:</b> voordat je de mediaan zoekt, moet je de getallen eerst op volgorde van klein naar groot zetten. Vergeet je dat, dan vind je het verkeerde middelste getal.</div><div class=\'voorbeeld\'><h4>Voorbeeld: mediaan bij een even aantal</h4><p>Bekijk de rij: 5 5 6 6 7 8 9 10 (op volgorde, 8 getallen). Wat is de mediaan?</p><ol class=\'num\'><li>Er zijn 8 getallen, een even aantal. De middelste twee zijn het 4e en 5e getal: 6 en 7.</li><li>Mediaan = (6 + 7) : 2 = 6,5.</li></ol><div class=\'antwoord\'>Antwoord: de mediaan is 6,5.</div></div>'},
-{heading:'4.4 Diagrammen lezen',html:'<div class=\'box\'><h4>Boxplot</h4><p>Bij een <b>boxplot</b> wordt een groep opgedeeld in vier stukken van elk 25%. De boxplot laat het <b>minimum</b> (het laagste getal), het <b>maximum</b> (het hoogste getal) en de <b>mediaan</b> zien. Een kwart van de groep zit in het gedeelte vóór de box, de helft van de groep zit binnen de box (verdeeld door de mediaanlijn), en een kwart zit in het gedeelte na de box.</p></div><div class=\'voorbeeld\'><h4>Voorbeeld: boxplot aflezen</h4><p>Aan 120 leerlingen is gevraagd hoeveel zakgeld zij per maand krijgen. Hoeveel leerlingen krijgen meer dan €14 zakgeld, als €14 de grens is van het eerste kwart van de boxplot?</p><ol class=\'num\'><li>Drie van de vier stukken van de boxplot horen bij meer dan €14 zakgeld: dat is 75%.</li><li>0,75 × 120 = 90.</li></ol><div class=\'antwoord\'>Antwoord: 90 leerlingen krijgen meer dan €14 zakgeld per maand.</div></div><div class=\'call\'>Ook andere diagrammen, zoals staafdiagrammen, cirkeldiagrammen en een windroos-diagram, geven informatie die je kunt aflezen. Let altijd goed op de titel, de assen en de legenda voordat je een diagram interpreteert.</div>'},
-{heading:'4.5 Samengestelde diagrammen',html:'<div class=\'box\'><h4>Gestapeld staafdiagram</h4><p>Soms staan er in één staaf van een staafdiagram meerdere gegevens boven elkaar (of naast elkaar) gestapeld. Zo\'n diagram heet een <b>gestapeld staafdiagram</b>. Bij het lezen van zo\'n diagram is de <b>legenda</b> erg belangrijk: die vertelt welke kleur bij welk gegeven hoort.</p></div><div class=\'voorbeeld\'><h4>Voorbeeld: gestapeld staafdiagram lezen</h4><p>Het gestapelde staafdiagram over de besteding van zakgeld laat voor 18-jarigen zien: mobiel tot €12,50, sparen tot €17,50, overig tot €45. Hoeveel euro besteedt een 18-jarige per maand aan sparen?</p><ol class=\'num\'><li>17,50 − 12,50 = 5.</li></ol><div class=\'antwoord\'>Antwoord: een 18-jarige besteedt €5 per maand aan sparen.</div></div><div class=\'call sum\'><b>Om te onthouden</b><ul class=\'lst\'><li>lees eerst de legenda voordat je het diagram interpreteert</li><li>een gestapelde staaf kun je splitsen door de grenzen van elk onderdeel af te lezen</li><li>bij horizontale staven werkt het aflezen op dezelfde manier</li></ul></div>'}
+{heading:'4.1 Informatie',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>het verschil tussen een <b>telling</b> en een <b>steekproef</b></li>
+<li>wanneer een steekproef <b>representatief</b> is</li></ul></div>`
++`<div class="box"><h4>Waar dit hoofdstuk over gaat</h4><p>Je werkt met <b>onderzoek</b> en <b>gegevens</b>: telling en steekproef, het (gewogen) <b>gemiddelde</b>, <b>modus</b> en <b>mediaan</b>, <b>boxplots</b> en <b>samengestelde diagrammen</b>. Veel gegevens komen van het <b>CBS</b>, het Centraal Bureau voor de Statistiek.</p></div>`
++`<h5 class="sub">Gegevens verzamelen</h5>`
++`<div class="vergelijk"><div class="vergelijk-kant"><h4>Telling</h4><p>Je telt <b>iedereen</b>, bijvoorbeeld het aantal inwoners van een stad.</p></div><div class="vergelijk-vs">vs</div><div class="vergelijk-kant"><h4>Steekproef</h4><p>Je vraagt een <b>deel</b> van de groep, en de uitkomst geldt voor <b>de hele groep</b>.</p></div></div>`
++`<div class="box"><h4>Representatief</h4><p>Een steekproef is <b>representatief</b> als alle groepen er in de <b>juiste verhouding</b> in zitten. Alleen dan mag je een <b>conclusie</b> trekken voor iedereen.</p></div>`
++`<div class="call warn"><b>Een vertekend beeld:</b> vraag je alleen <b>rokers</b> of ze tegen een rookverbod zijn, dan zegt de uitkomst niets over de hele bevolking.</div>`
++`<div class="call waarom">Waarom kritisch blijven? Soms wordt met opzet een steekproef gekozen die <b>niet</b> representatief is, omdat de opdrachtgever een <b>gunstige uitkomst</b> wil. Kijk altijd <b>hoe</b> een onderzoek is gedaan.</div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Wanneer is een steekproef representatief?</p><p class="check-a">Als alle groepen er in de <b>juiste verhouding</b> in zitten.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden (4.1)</b><ul class="lst">
+<li><b>Telling</b>: iedereen. <b>Steekproef</b>: een deel.</li>
+<li><b>Representatief</b>: alle groepen in de juiste verhouding.</li>
+<li>Geen representatieve steekproef = <b>vertekend</b> beeld.</li></ul></div>`},
+
+{heading:'4.2 Gemiddelde',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>het <b>gemiddelde</b> en het <b>gewogen gemiddelde</b> berekenen</li>
+<li>het gemiddelde uit een <b>frequentietabel</b>, ook <b>met klassen</b></li></ul></div>`
++`<h5 class="sub">Gewogen gemiddelde</h5>`
++`<div class="box"><h4>Punten : gewichten</h4><p><b>Gemiddelde</b> = alle getallen opgeteld <b>: aantal getallen</b>. Tellen cijfers niet even zwaar mee, dan tel je elk cijfer <b>keer zijn gewicht</b> op en deel je door het <b>totaal van de gewichten</b>.</p></div>`
++`<div class="voorbeeld"><h4>Voorbeeld: Anja voor aardrijkskunde</h4><p>6,4 (2&times;), 7,6 (3&times;), 5,8 (1&times;), 4,7 (1&times;). Rond af op één decimaal.</p><div class="antwoord">Punten: 12,8 + 22,8 + 5,8 + 4,7 = <b>46,1</b>. Gewichten: 2 + 3 + 1 + 1 = <b>7</b>. 46,1 : 7 = 6,585&hellip;, dus <b>6,6</b>.</div></div>`
++`<h5 class="sub">Uit een frequentietabel</h5>`
++`<div class="call reken"><b>Stappenplan: gemiddelde uit een frequentietabel</b><ol class="num">
+<li>Vermenigvuldig elke waarde met zijn <b>frequentie</b> en tel op.</li>
+<li>Tel alle <b>frequenties</b> op.</li>
+<li>Deel en rond af: zijn de gegevens <b>hele getallen</b>, dan op <b>één decimaal</b>.</li></ol></div>`
++`<div class="voorbeeld"><h4>Voorbeeld: leeftijden in klas B3C</h4><p>14 jaar: <b>8</b> leerlingen, 15: <b>6</b>, 16: <b>3</b>, 17: <b>1</b>.</p><div class="antwoord">14 &times; 8 + 15 &times; 6 + 16 &times; 3 + 17 &times; 1 = <b>267</b>. Leerlingen: 8 + 6 + 3 + 1 = <b>18</b>. 267 : 18 = 14,83&hellip;, dus <b>14,8 jaar</b>.</div></div>`
++`<div class="box"><h4>Met klassen</h4><p>Staan de waarden in <b>klassen</b> (zoals 150&ndash;160 cm), dan weet je de precieze getallen niet. Je rekent dan met het <b>klassenmidden</b>: (ondergrens + bovengrens) : 2, hier (150 + 160) : 2 = <b>155</b>. De uitkomst is een <b>schatting</b>.</p></div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Hoe bereken je een klassenmidden?</p><p class="check-a"><b>(ondergrens + bovengrens) : 2</b>.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden (4.2)</b><ul class="lst">
+<li><b>Gewogen</b>: punten : totaal van de gewichten.</li>
+<li>Frequentietabel: waarde &times; frequentie, dan <b>: totaal</b>.</li>
+<li><b>Klassenmidden</b> = (onder + boven) : 2.</li></ul></div>`},
+
+{heading:'4.3 Modus en mediaan',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>de <b>modus</b> en de <b>mediaan</b> bepalen, ook uit een <b>staafdiagram</b> of <b>tabel</b></li></ul></div>`
++`<h5 class="sub">Centrummaten</h5>`
++`<div class="vergelijk"><div class="vergelijk-kant"><h4>Modus</h4><p>Het getal dat het <b>vaakst</b> voorkomt. In een tabel of staafdiagram: de <b>hoogste frequentie</b>.</p></div><div class="vergelijk-vs">vs</div><div class="vergelijk-kant"><h4>Mediaan</h4><p>Het <b>middelste</b> getal, als alles <b>op volgorde</b> staat.</p></div></div>`
++`<div class="box"><h4>Centrummaten</h4><p>Het <b>gemiddelde</b>, de <b>modus</b> en de <b>mediaan</b> samen heten <b>centrummaten</b>.</p></div>`
++`<div class="call reken"><b>Stappenplan: de mediaan</b><ol class="num">
+<li>Zet de getallen <b>op volgorde</b>, van klein naar groot.</li>
+<li><b>Oneven</b> aantal: de mediaan is het <b>((aantal + 1) : 2)e</b> getal.</li>
+<li><b>Even</b> aantal: het <b>gemiddelde</b> van de twee middelste.</li></ol></div>`
++`<div class="voorbeeld"><h4>Voorbeeld: 9 6 4 1 8 2 7 3 7</h4><p>Bepaal mediaan en modus.</p><div class="antwoord">Op volgorde: 1 2 3 4 <b>6</b> 7 7 8 9. Negen getallen: het (9 + 1) : 2 = <b>5e</b> getal, dus mediaan <b>6</b>. De <b>7</b> komt twee keer voor: de modus.</div></div>`
++`<div class="voorbeeld"><h4>Voorbeeld: uit een staafdiagram</h4><p>26 leerlingen maakten een toets. Wat is de mediaan van het aantal fouten?</p><div class="antwoord">Maak eerst een <b>frequentietabel</b>. Bij 26 (even) zijn de middelste de <b>13e</b> en <b>14e</b> leerling. Tel met de frequenties op tot je bij hen bent; de mediaan is het <b>gemiddelde</b> van hun aantal fouten.</div></div>`
++`<div class="call warn"><b>Veelgemaakte fout:</b> het middelste getal nemen <b>zonder</b> eerst op volgorde te zetten.</div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Een rij heeft 15 getallen. Het hoeveelste getal is de mediaan?</p><p class="check-a">(15 + 1) : 2 = het <b>8e</b> getal.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden (4.3)</b><ul class="lst">
+<li><b>Modus</b>: komt het vaakst voor.</li>
+<li><b>Mediaan</b>: eerst op volgorde, dan het middelste.</li>
+<li>Even aantal: gemiddelde van de <b>twee middelste</b>.</li></ul></div>`},
+
+{heading:'4.4 Diagrammen lezen',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>een <b>boxplot</b> lezen</li>
+<li>informatie halen uit andere <b>diagrammen</b></li></ul></div>`
++`<h5 class="sub">Boxplot</h5>`
++`<div class="box"><h4>Vier stukken van 25%</h4><p>Een <b>boxplot</b> verdeelt een groep in <b>vier stukken van elk 25%</b>. Je ziet het <b>minimum</b> (laagste), het <b>maximum</b> (hoogste) en de <b>mediaan</b> (de streep in de box). Een <b>kwart</b> zit vóór de box, de <b>helft</b> in de box en een <b>kwart</b> erna.</p></div>`
++`<div class="call reken"><b>Stappenplan: hoeveel zitten boven een grens?</b><ol class="num">
+<li>Kijk bij welke streep van de boxplot de grens ligt.</li>
+<li>Tel hoeveel stukken van <b>25%</b> erboven liggen.</li>
+<li>Reken dat percentage uit van de <b>hele groep</b>.</li></ol></div>`
++`<div class="voorbeeld"><h4>Voorbeeld: zakgeld van 120 leerlingen</h4><p>Het eerste kwart eindigt bij <b>&euro;14</b>. Hoeveel leerlingen krijgen meer?</p><div class="antwoord">Drie van de vier stukken liggen erboven: <b>75%</b>. 0,75 &times; 120 = <b>90 leerlingen</b>.</div></div>`
++`<div class="call waarom">Waarom is de ene helft van de box soms <b>breder</b>? In elk stuk zit evenveel mensen (25%). Een <b>breed</b> stuk betekent dat die mensen <b>ver uit elkaar</b> liggen; een smal stuk dat ze dicht bij elkaar zitten.</div>`
++`<div class="call warn"><b>Andere diagrammen:</b> lees altijd eerst de <b>titel</b>, de <b>assen</b> en de <b>legenda</b>.</div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Welk deel van de groep zit in de box van een boxplot?</p><p class="check-a">De <b>helft</b> (50%).</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden (4.4)</b><ul class="lst">
+<li>Boxplot: <b>vier stukken van 25%</b>.</li>
+<li>Je ziet <b>minimum</b>, <b>mediaan</b> en <b>maximum</b>.</li>
+<li>In de box zit de <b>helft</b> van de groep.</li></ul></div>`},
+
+{heading:'4.5 Samengestelde diagrammen',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>een <b>gestapeld staafdiagram</b> lezen met de <b>legenda</b></li></ul></div>`
++`<h5 class="sub">Gestapeld</h5>`
++`<div class="box"><h4>Meer gegevens in één staaf</h4><p>In een <b>gestapeld staafdiagram</b> staan in één staaf <b>meerdere gegevens</b> boven (of naast) elkaar. De <b>legenda</b> vertelt welke <b>kleur</b> bij welk gegeven hoort.</p></div>`
++`<div class="call reken"><b>Stappenplan: één stuk van een gestapelde staaf</b><ol class="num">
+<li>Zoek in de <b>legenda</b> de kleur op.</li>
+<li>Lees de <b>bovengrens</b> van dat stuk af.</li>
+<li>Lees de <b>ondergrens</b> af.</li>
+<li>Het stuk is <b>bovengrens &minus; ondergrens</b>.</li></ol></div>`
++`<div class="voorbeeld"><h4>Voorbeeld: zakgeld van een 18-jarige</h4><p>Mobiel loopt tot <b>&euro;12,50</b>, sparen tot <b>&euro;17,50</b>, overig tot <b>&euro;45</b>.</p><div class="antwoord">Sparen: 17,50 &minus; 12,50 = <b>&euro;5</b> per maand.</div></div>`
++`<div class="call warn"><b>Veelgemaakte fout:</b> de <b>bovengrens</b> aflezen als antwoord (&euro;17,50). Het stuk begint niet bij 0, dus trek de <b>ondergrens</b> eraf.</div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Wat lees je eerst bij een gestapeld staafdiagram?</p><p class="check-a">De <b>legenda</b>: welke kleur bij welk gegeven hoort.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden (4.5)</b><ul class="lst">
+<li>Eerst de <b>legenda</b>.</li>
+<li>Een stuk = <b>bovengrens &minus; ondergrens</b>.</li>
+<li>Bij <b>horizontale</b> staven werkt het net zo.</li></ul></div>`}
 ],
 terms:[
 ['Telling','Het precies natellen van alle gegevens, bijvoorbeeld alle inwoners van een stad.',0],

@@ -1,12 +1,83 @@
 import { registerChapter } from '../../../registry.js';
 
+/* Rebuilt 2026-09-25 to the recipe of Economie TL4 H1 (change 6). Same
+   content, term boxes and "builds on" links, restructured. Terms, cards and
+   quiz unchanged. */
 registerChapter('nederlands|tl|1|3', {
 title:'Fictie',
 summary:[
-{heading:'Fictie en non-fictie',html:'<div class=\'box\'><h4>Waar gaat dit hoofdstuk over?</h4><p>In de cursus Meer dan lezen leerde je over non-fictie. In dit hoofdstuk maak je kennis met <b>fictie</b>: verhalen die de schrijver heeft verzonnen. Je leert het verschil tussen fictie en non-fictie, hoe je je inleeft in personages, hoe je je eigen leessmaak onder woorden brengt en hoe je gedichten leest en begrijpt.</p></div><div class=\'box\'><h4>Wat is fictie?</h4><p>In de cursus Meer dan lezen leer je over <b>non-fictie</b>. Dat zijn teksten waarin de schrijver je bijvoorbeeld informatie geeft over een bepaald onderwerp, je wil overtuigen van zijn mening of wil uitleggen hoe je iets moet doen.</p><p>In deze cursus maak je kennis met <b>fictie</b>. Dat zijn verhalen die de schrijver heeft verzonnen. Het doel van fictie is <b>amuseren</b>: de schrijver wil dat jij zijn verhaal met plezier leest, bijvoorbeeld omdat je het spannend, zielig of aangrijpend vindt. Daardoor kun je bijvoorbeeld even helemaal wegdromen bij een verhaal, aan het denken worden gezet of je voorstellen hoe het is om iemand anders te zijn.</p><p>Als je in een verhaal leest over dingen die in het echt helemaal niet kunnen gebeuren, heb je te maken met een <b>fantasieverhaal</b>. Denk bijvoorbeeld aan Harry Potter. In de meeste verhalen gebeuren dingen die heel goed ook in het echt zouden kunnen gebeuren. Die verhalen noem je <b>realistisch</b>.</p></div><div class=\'term\'><b>Fictie</b><span>verhalen die de schrijver heeft verzonnen, met als doel amuseren</span></div><div class=\'term\'><b>Non-fictie</b><span>teksten die informeren, overtuigen of instrueren, gebaseerd op de werkelijkheid</span></div><div class=\'term\'><b>Fantasieverhaal</b><span>een verhaal over dingen die in het echt niet kunnen gebeuren</span></div><div class=\'term\'><b>Realistisch verhaal</b><span>een verhaal over dingen die ook in het echt zouden kunnen gebeuren</span></div><div class=\'call link\'><b>Dit bouwt voort op:</b> Meer dan lezen § 4 Tekstdoelen en tekstsoorten</div>'},
-{heading:'Personages',html:'<div class=\'box\'><h4>Wie speelt een rol in het verhaal?</h4><p>Alle personen die een rol spelen in een verhaal noem je <b>personages</b>. Het belangrijkste personage, degene over wie het hele verhaal gaat, is de <b>hoofdpersoon</b>. Van hem of haar weet je altijd wat hij denkt en voelt. Veel verhalen hebben één hoofdpersoon, maar er zijn ook verhalen met meerdere hoofdpersonen. De andere personages zijn <b>bijfiguren</b>.</p><p>Omdat in verhalen niet alleen wordt beschreven wat personages meemaken, maar ook hoe ze zich voelen, ga je hun gedrag vaak beter begrijpen. Dat noem je <b>inleven</b>.</p></div><div class=\'term\'><b>Personage</b><span>een persoon die een rol speelt in een verhaal</span></div><div class=\'term\'><b>Hoofdpersoon</b><span>het belangrijkste personage, degene over wie het hele verhaal gaat</span></div><div class=\'term\'><b>Bijfiguur</b><span>een ander personage dan de hoofdpersoon</span></div><div class=\'term\'><b>Inleven</b><span>je voorstellen hoe een personage zich voelt, zodat je zijn gedrag beter begrijpt</span></div>'},
-{heading:'Smaak',html:'<div class=\'box\'><h4>Wat is jouw leessmaak?</h4><p>Als iemand jou vraagt van wat voor soort films en series jij houdt, kun je dat waarschijnlijk in een paar woorden uitleggen. Zo is het ook met boeken. Om uit te leggen wat jouw smaak is, kun je iets zeggen over:</p><ul class=\'lst\'><li>het <b>onderwerp</b>: datgene waarover het verhaal gaat, bijvoorbeeld voetbal, pesten of vriendschap;</li><li>het <b>genre</b> (spreek uit: zjan-re): het soort verhaal.</li></ul><p>In de bibliotheek staat op de boeken een pictogram dat het genre aanduidt, bijvoorbeeld avonturenverhaal, familie, griezelverhaal, historisch verhaal, humor, liefdesverhaal, oorlogsverhaal, psychologisch verhaal, school of science fiction.</p><p>Sommige mensen noemen <b>psychologische verhalen</b> ook wel <b>probleemboeken</b>. Daarin worstelt de hoofdpersoon met een probleem. Hij is bijvoorbeeld ernstig ziek of zijn ouders gaan scheiden.</p><p>Of je een boek wel of niet leuk vindt, hangt ook af van hoe het boek eruitziet en hoe het is geschreven. Daarnaast kun je zeggen of je meer van fictie of non-fictie houdt, en of je realistische en fantasieverhalen wel of niet leuk vindt.</p></div><div class=\'term\'><b>Genre</b><span>het soort verhaal, bijvoorbeeld avonturenverhaal, griezelverhaal of liefdesverhaal</span></div><div class=\'term\'><b>Probleemboek</b><span>een psychologisch verhaal waarin de hoofdpersoon worstelt met een probleem</span></div><div class=\'call link\'><b>Dit bouwt voort op:</b> Fictie § 1 Fictie en non-fictie, § 2 Personages</div>'},
-{heading:'Over gedichten',html:'<div class=\'box\'><h4>Gedichten lezen en voordragen</h4><p>Een gedicht is een bijzondere tekstsoort: gedichten hoeven niet altijd te rijmen, en soms is een gedicht ook mooi te vinden als je het niet helemaal snapt. Gedichten kunnen gaan over gewone dingen of over \'grote\' gevoelens, zoals verdriet, liefde of gemis.</p><p>Als je een gedicht voordraagt, spreek je het uit voor een publiek. Lees het dan niet gewoon voor, maar probeer ook wat langzamer dan je normaal gesproken zou doen, en laat aan het einde van de regel pauzes vallen.</p></div><div class=\'term\'><b>Rijm</b><span>als de laatste stukjes van twee woorden hetzelfde klinken, rijmen ze (bijvoorbeeld: verdriet - niet)</span></div><div class=\'term\'><b>Voordragen</b><span>een gedicht voor een publiek uitspreken</span></div><div class=\'call sum\'><b>Zo draag je een gedicht mooi voor</b><ul class=\'lst\'><li>Lees het gedicht niet zomaar voor, maar spreek het uit voor je publiek.</li><li>Praat wat langzamer dan je normaal gesproken zou doen.</li><li>Laat aan het einde van de regel pauzes vallen.</li></ul></div>'}
+{heading:'Fictie en non-fictie',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>het verschil tussen <b>fictie</b> en <b>non-fictie</b></li>
+<li>het verschil tussen een <b>fantasieverhaal</b> en een <b>realistisch</b> verhaal</li></ul></div>`
++`<div class="box"><h4>Waar dit hoofdstuk over gaat</h4><p>Je maakt kennis met <b>fictie</b>: verzonnen verhalen. Je leert het verschil met <b>non-fictie</b>, je leeft je in in <b>personages</b>, je beschrijft je eigen <b>leessmaak</b> en je leest en draagt <b>gedichten</b> voor.</p></div>`
++`<div class="call link"><b>Dit bouwt voort op:</b> Meer dan lezen &sect; 4 Tekstdoelen en tekstsoorten</div>`
++`<h5 class="sub">Verzonnen of echt?</h5>`
++`<div class="vergelijk"><div class="vergelijk-kant"><h4>Non-fictie</h4><p>Teksten die <b>informeren</b>, <b>overtuigen</b> of <b>instrueren</b>, over de werkelijkheid.</p></div><div class="vergelijk-vs">vs</div><div class="vergelijk-kant"><h4>Fictie</h4><p>Verhalen die de schrijver heeft <b>verzonnen</b>. Het doel is <b>amuseren</b>: je leest het met <b>plezier</b>.</p></div></div>`
++`<div class="box"><h4>Wat fictie met je doet</h4><p>Je kunt even helemaal <b>wegdromen</b>, aan het <b>denken</b> worden gezet, of je voorstellen hoe het is om <b>iemand anders</b> te zijn. Een verhaal kan <b>spannend</b>, <b>zielig</b> of <b>aangrijpend</b> zijn.</p></div>`
++`<h5 class="sub">Twee soorten fictie</h5>`
++`<div class="g2">`
++`<div class="term"><b>Fantasieverhaal</b><span>Over dingen die in het echt <b>niet</b> kunnen gebeuren, zoals Harry Potter.</span></div>`
++`<div class="term"><b>Realistisch verhaal</b><span>Over dingen die <b>ook in het echt</b> zouden kunnen gebeuren. De meeste verhalen zijn realistisch.</span></div></div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Wat is het doel van fictie?</p><p class="check-a"><b>Amuseren</b>: je leest het verhaal met plezier.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden</b><ul class="lst">
+<li><b>Fictie</b> = verzonnen, doel amuseren. <b>Non-fictie</b> = echt.</li>
+<li><b>Fantasie</b>: kan niet echt. <b>Realistisch</b>: zou echt kunnen.</li></ul></div>`},
+
+{heading:'Personages',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li><b>hoofdpersoon</b> en <b>bijfiguren</b> herkennen</li>
+<li>wat <b>inleven</b> is</li></ul></div>`
++`<h5 class="sub">Wie speelt een rol?</h5>`
++`<div class="term"><b>Personage</b><span>Een persoon die een rol speelt in een verhaal.</span></div>`
++`<div class="vergelijk"><div class="vergelijk-kant"><h4>Hoofdpersoon</h4><p>Het <b>belangrijkste</b> personage, over wie het verhaal gaat. Je weet wat hij <b>denkt en voelt</b>. Soms zijn er <b>meer</b> hoofdpersonen.</p></div><div class="vergelijk-vs">vs</div><div class="vergelijk-kant"><h4>Bijfiguren</h4><p>De <b>andere</b> personages.</p></div></div>`
++`<div class="term"><b>Inleven</b><span>Je voorstellen hoe een personage zich voelt, zodat je zijn gedrag beter begrijpt.</span></div>`
++`<div class="call reken"><b>Zo vind je de hoofdpersoon</b><ol class="num">
+<li>Over <b>wie</b> gaat het hele verhaal?</li>
+<li>Van wie weet je wat hij <b>denkt en voelt</b>?</li>
+<li>Die persoon is de hoofdpersoon; de anderen zijn <b>bijfiguren</b>.</li></ol></div>`
++`<div class="call waarom">Waarom kun je je <b>inleven</b>? Een verhaal vertelt niet alleen wat personages <b>meemaken</b>, maar ook hoe ze zich <b>voelen</b>. Daardoor snap je hun gedrag beter.</div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Hoe heten de personages naast de hoofdpersoon?</p><p class="check-a"><b>Bijfiguren</b>.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden</b><ul class="lst">
+<li><b>Hoofdpersoon</b>: over wie het gaat. <b>Bijfiguren</b>: de rest.</li>
+<li><b>Inleven</b>: voelen wat het personage voelt.</li></ul></div>`},
+
+{heading:'Smaak',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>je eigen <b>leessmaak</b> onder woorden brengen</li>
+<li>wat een <b>genre</b> is</li></ul></div>`
++`<h5 class="sub">Wat lees jij graag?</h5>`
++`<div class="call reken"><b>Zo beschrijf je je leessmaak</b><ol class="num">
+<li>Het <b>onderwerp</b>: waar gaat het over? Voetbal, pesten, vriendschap.</li>
+<li>Het <b>genre</b>: welk soort verhaal?</li>
+<li>Hoe het boek <b>eruitziet</b> en hoe het <b>geschreven</b> is.</li>
+<li>Liever <b>fictie</b> of <b>non-fictie</b>? <b>Realistisch</b> of <b>fantasie</b>?</li></ol></div>`
++`<div class="term"><b>Genre</b><span>Het soort verhaal (spreek uit: zjan-re), bijvoorbeeld avonturenverhaal, griezelverhaal of liefdesverhaal.</span></div>`
++`<div class="box"><h4>Genres in de bibliotheek</h4><p>Op boeken staat vaak een <b>pictogram</b> met het genre: <b>avonturen</b>, <b>familie</b>, <b>griezel</b>, <b>historisch</b>, <b>humor</b>, <b>liefde</b>, <b>oorlog</b>, <b>psychologisch</b>, <b>school</b> of <b>science fiction</b>.</p></div>`
++`<div class="term"><b>Probleemboek</b><span>Een psychologisch verhaal waarin de hoofdpersoon worstelt met een probleem, bijvoorbeeld een ernstige ziekte of scheidende ouders.</span></div>`
++`<div class="call link"><b>Dit bouwt voort op:</b> Fictie &sect; 1 Fictie en non-fictie, &sect; 2 Personages</div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Hoe heet een psychologisch verhaal ook wel?</p><p class="check-a">Een <b>probleemboek</b>.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden</b><ul class="lst">
+<li>Smaak: <b>onderwerp</b>, <b>genre</b>, <b>vorm</b>, fictie of non-fictie.</li>
+<li><b>Genre</b> = soort verhaal.</li></ul></div>`},
+
+{heading:'Over gedichten',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>wat een <b>gedicht</b> bijzonder maakt</li>
+<li>een gedicht mooi <b>voordragen</b></li></ul></div>`
++`<h5 class="sub">Een bijzondere tekstsoort</h5>`
++`<div class="box"><h4>Gedichten</h4><p>Gedichten hoeven <b>niet</b> altijd te <b>rijmen</b>, en je kunt een gedicht mooi vinden ook als je het <b>niet helemaal</b> snapt. Ze gaan over <b>gewone dingen</b> of over grote <b>gevoelens</b>: verdriet, liefde, gemis.</p></div>`
++`<div class="term"><b>Rijm</b><span>Als de laatste stukjes van twee woorden hetzelfde klinken, rijmen ze: verdriet &ndash; niet.</span></div>`
++`<div class="term"><b>Voordragen</b><span>Een gedicht voor een publiek uitspreken.</span></div>`
++`<div class="call reken"><b>Zo draag je een gedicht mooi voor</b><ol class="num">
+<li>Lees het niet zomaar voor: <b>spreek</b> het uit voor je publiek.</li>
+<li>Praat <b>langzamer</b> dan normaal.</li>
+<li>Laat aan het <b>einde van een regel</b> een <b>pauze</b> vallen.</li></ol></div>`
++`<div class="vergelijk"><div class="vergelijk-kant"><h4>Voorlezen</h4><p>Gewoon de woorden <b>lezen</b>.</p></div><div class="vergelijk-vs">vs</div><div class="vergelijk-kant"><h4>Voordragen</h4><p>Het gedicht <b>laten klinken</b>: rustig tempo, pauzes, gevoel.</p></div></div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Moet een gedicht altijd rijmen?</p><p class="check-a"><b>Nee</b>.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden</b><ul class="lst">
+<li>Een gedicht hoeft <b>niet</b> te rijmen.</li>
+<li>Voordragen: <b>langzaam</b>, <b>pauze</b> na elke regel.</li></ul></div>`}
 ],
 terms:[
 ['Fictie','Verhalen die de schrijver heeft verzonnen, met als doel amuseren.',0],

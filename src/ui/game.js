@@ -25,11 +25,14 @@ import { $, setHtml, escapeHtml, icon } from '../lib/dom.js';
 import { judgeAnswer, usableTerms } from '../lib/answers.js';
 import { chapterContent, currentChapterKey } from '../state/selection.js';
 import { levelsForChapter } from '../content/levels.js';
-import { completeLevel, levelResult, xpForResult } from '../state/gameLevels.js';
+import { completeLevel, levelResult, xpForResult, isLevelDone, scoreVerdict } from '../state/gameLevels.js';
+import { updateStreak } from '../state/progress.js';
+import { pushStudyStatus } from '../services/studyStatus.js';
 import { buildSession, shuffle, plainText } from './exercises.js';
 import { pushLevel } from '../services/gameProgress.js';
 import { renderPath } from './path.js';
 import { showToast } from './toast.js';
+import { stopTimeRace } from './timeRace.js';
 
 const SESSION_STEPS = 8;
 const WRONG_FLASH_MS = 500;
@@ -108,6 +111,7 @@ export function closeLevel() {
   $('spelwrap').classList.remove('show');
   document.body.classList.remove('spel-open');
   resetGameState();
+  stopTimeRace();   // the overlay is shared with Tijdrace
   const chapter = chapterContent();
   if (chapter) renderPath(chapter);
 }
@@ -436,8 +440,17 @@ export function gameNext() {
   if (!session || session.done || !step || !step.finished) return;
   if (session.index === session.steps.length - 1) {
     session.done = true;
+    const levels = levelsForChapter(chapterContent());
+    const allDone = () => levels.every((l) => isLevelDone(session.chapterKey, l.index));
+    const wasComplete = allDone();
     session.result = completeLevel(session.chapterKey, session.level.index,
       session.correct, session.steps.length);
+    // The first time every level of the chapter is done: celebrate it once.
+    session.chapterComplete = !wasComplete && allDone();
+    // Playing a level is practice, so it keeps the daily streak going (it did
+    // not before 2.7.1), and the streak feeds the badges a teacher sees.
+    updateStreak();
+    pushStudyStatus();
     // Mirrored so a teacher can see it; the result is already saved locally,
     // so a failure here changes nothing the student sees.
     pushLevel(session.chapterKey, session.level.index,
@@ -453,11 +466,21 @@ export function gameNext() {
 function scoreScreenHtml() {
   const total = session.steps.length;
   const perfect = session.correct === total;
+  const verdict = scoreVerdict(session.correct, total);
   const gained = session.result ? session.result.gained : xpForResult(session.correct, total);
+  const complete = session.chapterComplete
+    ? '<div class="call sum quest-voltooid hoofdstuk-af"><b>' + icon('trophy') + ' Hoofdstuk af!</b><br>'
+      + 'Je hebt alle levels van dit hoofdstuk gehaald, de eindtoets ook. Dat is de badge <b>Hoofdstuk af</b>.</div>'
+    : '';
   return '<div class="spel-klaar">'
-    + '<div class="spel-vinkje">' + icon('check') + '</div>'
-    + '<h3>' + (perfect ? 'Perfect!' : 'Level gehaald!') + '</h3>'
-    + '<p class="dim">' + session.level.title + ' is klaar.</p>'
+    + complete
+    + (verdict.low
+      ? '<div class="spel-vinkje opnieuw">' + icon('rotate-ccw') + '</div>'
+      : '<div class="spel-vinkje">' + icon('check') + '</div>')
+    + '<h3>' + verdict.heading + '</h3>'
+    + '<p class="dim">' + session.level.title + ' is klaar.'
+    + (verdict.low ? ' Speel hem nog eens: je beste score telt, en wat je beter doet levert XP op.' : '')
+    + '</p>'
     + '<div class="spel-buit">'
     + '<div class="spel-buit-vak"><b>' + session.correct + '/' + total + '</b><small>goed</small></div>'
     + '<div class="spel-buit-vak"><b>+' + gained + '</b><small>XP</small></div>'

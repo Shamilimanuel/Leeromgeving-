@@ -1,97 +1,23 @@
 import { registerChapter } from '../../../registry.js';
 
+/* Upgraded 2026-09-25 to the recipe of Economie TL4 H1 (change 6): every paragraph
+   got "Dit leer je" and a "Check jezelf" (taken from its own flashcard where
+   there was none), plus bold on its own glossary terms where it had little.
+   The text itself is unchanged. */
 registerChapter('economie|tl|3|5', {
 title:'Is er werk voor jou?',
 summary:[
 {heading:'5.1 Wat levert werken op?',html:
- '<div class="box"><h4>Waar dit hoofdstuk over gaat</h4><p>Straks ga jij misschien ook werken. Je leert wat werken je oplevert (bruto- en nettoloon), welke ondernemingsvormen er zijn, hoe de arbeidsmarkt werkt en wat er gebeurt als je (tijdelijk) geen werk hebt.</p></div>'
-
- +'<h5 class="sub">Geschoold of ongeschoold?</h5>'
- +'<div class="g2">'
- +'<div class="box"><h4>Geschoold werk</h4><p>Voor <b>geschoold werk</b> heb je een beroepsopleiding nodig.</p></div>'
- +'<div class="box"><h4>Ongeschoold werk</h4><p>Voor ongeschoold werk, zoals een bijbaantje in een supermarkt, heb je geen opleiding nodig.</p></div></div>'
-
- +'<h5 class="sub">Van brutoloon naar nettoloon</h5>'
- +'<div class="g2">'
- +'<div class="box"><h4>Brutoloon</h4><p>Het <b>brutoloon</b> is het loon waarop nog niets is ingehouden.</p></div>'
- +'<div class="box"><h4>Nettoloon</h4><p>Het <b>nettoloon</b> is het loon dat je uiteindelijk ontvangt, waar de inhoudingen al vanaf zijn gehaald.</p></div></div>'
- +'<div class="box"><h4>Wat houdt je werkgever in?</h4><p>Op je brutoloon houdt je werkgever loonbelasting en sociale premies in. Hij draagt deze af aan de overheid.</p></div>'
-
- +'<div class="call reken"><b>Reken mee: van bruto naar netto</b>'
- +'<p>Je brutoloon is € 1.850. Daarop wordt € 165 loonbelasting en € 92 sociale premies ingehouden.</p>'
- +'<ol class="num">'
- +'<li><b>Stap 1</b>. Tel de inhoudingen bij elkaar op: € 165 + € 92 = € 257.</li>'
- +'<li><b>Stap 2</b>. Trek dit af van het brutoloon: € 1.850 − € 257.</li>'
- +'<li class="eind"><b>Antwoord</b>: Nettoloon = <b>€ 1.593</b>.</li></ol></div>'
-
- +'<div class="box"><h4>Het minimumloon</h4><p>Iedereen vanaf 21 jaar moet minstens het <b>minimumloon</b> per uur verdienen.</p></div>'
- +'<div class="box"><h4>De cao</h4><p>De meeste afspraken in je arbeidsovereenkomst komen uit de <b>cao</b> (collectieve arbeidsovereenkomst). Hierin staan de gezamenlijke afspraken over de arbeidsvoorwaarden in een bedrijfstak, zoals de bouw, de industrie of het onderwijs. Cao-afspraken worden gemaakt door vakbonden (die opkomen voor de belangen van werknemers) en organisaties van werkgevers.</p></div>'
-
- +'<div class="call warn"><b>Veelgemaakte fout:</b> verwar brutoloon en nettoloon niet. Het brutoloon staat in je arbeidsovereenkomst, maar het nettoloon is het bedrag dat écht op je bankrekening binnenkomt.</div>'
-
- +'<div class="call sum"><b>Om te onthouden</b><ul class="lst">'
- +'<li>Nettoloon = brutoloon − (loonbelasting + sociale premies).</li>'
- +'<li>Het minimumloon geldt vanaf 21 jaar.</li>'
- +'<li>De cao bevat afspraken over arbeidsvoorwaarden in een bedrijfstak, gemaakt door vakbonden en werkgevers.</li></ul></div>'},
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst"><li><b>geschoold</b> en <b>ongeschoold</b> werk</li><li>van <b>brutoloon</b> naar <b>nettoloon</b>, <b>minimumloon</b> en <b>cao</b></li></ul></div><div class="box"><h4>Waar dit hoofdstuk over gaat</h4><p>Straks ga jij misschien ook werken. Je leert wat werken je oplevert (bruto- en nettoloon), welke ondernemingsvormen er zijn, hoe de arbeidsmarkt werkt en wat er gebeurt als je (tijdelijk) geen werk hebt.</p></div><h5 class="sub">Geschoold of ongeschoold?</h5><div class="g2"><div class="box"><h4>Geschoold werk</h4><p>Voor <b>geschoold werk</b> heb je een beroepsopleiding nodig.</p></div><div class="box"><h4>Ongeschoold werk</h4><p>Voor ongeschoold werk, zoals een bijbaantje in een supermarkt, heb je geen opleiding nodig.</p></div></div><h5 class="sub">Van brutoloon naar nettoloon</h5><div class="g2"><div class="box"><h4>Brutoloon</h4><p>Het <b>brutoloon</b> is het loon waarop nog niets is ingehouden.</p></div><div class="box"><h4>Nettoloon</h4><p>Het <b>nettoloon</b> is het loon dat je uiteindelijk ontvangt, waar de inhoudingen al vanaf zijn gehaald.</p></div></div><div class="box"><h4>Wat houdt je werkgever in?</h4><p>Op je brutoloon houdt je werkgever loonbelasting en sociale premies in. Hij draagt deze af aan de overheid.</p></div><div class="call reken"><b>Reken mee: van bruto naar netto</b><p>Je brutoloon is € 1.850. Daarop wordt € 165 loonbelasting en € 92 sociale premies ingehouden.</p><ol class="num"><li><b>Stap 1</b>. Tel de inhoudingen bij elkaar op: € 165 + € 92 = € 257.</li><li><b>Stap 2</b>. Trek dit af van het brutoloon: € 1.850 − € 257.</li><li class="eind"><b>Antwoord</b>: Nettoloon = <b>€ 1.593</b>.</li></ol></div><div class="box"><h4>Het minimumloon</h4><p>Iedereen vanaf 21 jaar moet minstens het <b>minimumloon</b> per uur verdienen.</p></div><div class="box"><h4>De cao</h4><p>De meeste afspraken in je arbeidsovereenkomst komen uit de <b>cao</b> (collectieve arbeidsovereenkomst). Hierin staan de gezamenlijke afspraken over de arbeidsvoorwaarden in een bedrijfstak, zoals de bouw, de industrie of het onderwijs. Cao-afspraken worden gemaakt door vakbonden (die opkomen voor de belangen van werknemers) en organisaties van werkgevers.</p></div><div class="call warn"><b>Veelgemaakte fout:</b> verwar brutoloon en nettoloon niet. Het brutoloon staat in je arbeidsovereenkomst, maar het nettoloon is het bedrag dat écht op je bankrekening binnenkomt.</div><div class="check" onclick="toonCheck(this)"><p class="check-v">Wat is het verschil tussen brutoloon en nettoloon?</p><p class="check-a">Brutoloon is het loon vóór inhoudingen; nettoloon is wat je overhoudt nadat loonbelasting en sociale premies zijn ingehouden.</p><span class="check-hint">Tik voor het antwoord</span></div><div class="call sum"><b>Om te onthouden</b><ul class="lst"><li>Nettoloon = brutoloon − (loonbelasting + sociale premies).</li><li>Het minimumloon geldt vanaf 21 jaar.</li><li>De cao bevat afspraken over arbeidsvoorwaarden in een bedrijfstak, gemaakt door vakbonden en werkgevers.</li></ul></div>`},
 
 {heading:'5.2 Wat voor ondernemingen?',html:
- '<div class="box"><h4>Werken voor jezelf</h4><p>De meeste mensen met een betaalde baan zijn werknemer in loondienst. Maar je kunt ook als <b>zelfstandige</b> werken: iemand die met een eigen onderneming een inkomen verdient, door goederen of diensten te leveren aan klanten.</p><p>Wie een bedrijf begint, schrijft zich in bij de Kamer van Koophandel (KvK) en kiest een ondernemingsvorm.</p></div>'
-
- +'<h5 class="sub">De ondernemingsvormen</h5>'
- +'<div class="tblwrap"><table class="tbl"><tr><th>Vorm</th><th>Kenmerken</th></tr>'
- +'<tr><td>Eenmanszaak</td><td>Eén eigenaar. Kan personeel in dienst hebben. Bij schulden moet de eigenaar die desnoods met privégeld afbetalen.</td></tr>'
- +'<tr><td>Zzp\'er</td><td>Zelfstandige zonder personeel. Kiest meestal voor een eenmanszaak als ondernemingsvorm.</td></tr>'
- +'<tr><td>VOF</td><td>Vennootschap onder firma. Meerdere eigenaren die samen de leiding hebben.</td></tr>'
- +'<tr><td>BV</td><td>Besloten vennootschap. Eén of meer eigenaren als aandeelhouder; de aandelen zijn niet voor iedereen te koop.</td></tr>'
- +'<tr><td>NV</td><td>Naamloze vennootschap. Meerdere eigenaren als aandeelhouder; iedereen kan aandelen kopen.</td></tr></table></div>'
-
- +'<h5 class="sub">Elk bedrijf in z\'n eigen sector</h5>'
- +'<div class="box"><p>Bedrijven en instellingen kun je indelen in vier <b>productiesectoren</b>:</p></div>'
- +'<div class="tblwrap"><table class="tbl"><tr><th>Sector</th><th>Voorbeelden</th></tr>'
- +'<tr><td>Primaire sector</td><td>Agrarische bedrijven: landbouw, visserij, winning van grondstoffen</td></tr>'
- +'<tr><td>Secundaire sector</td><td>Industriële bedrijven: fabrieken, de bouw, ambachten (zoals een bakker)</td></tr>'
- +'<tr><td>Tertiaire sector</td><td>Commerciële dienstverlening: winkels, banken, transportbedrijven</td></tr>'
- +'<tr><td>Quartaire sector</td><td>Niet-commerciële dienstverlening: onderwijs, gezondheidszorg, overheid</td></tr></table></div>'
-
- +'<div class="call sum"><b>Om te onthouden</b><ul class="lst">'
- +'<li>Eenmanszaak en zzp: één eigenaar. VOF: meerdere eigenaren die samen leiden. BV/NV: eigenaren zijn aandeelhouders.</li>'
- +'<li>Vier productiesectoren: primair (grondstoffen), secundair (industrie), tertiair (commerciële dienstverlening), quartair (niet-commerciële dienstverlening).</li></ul></div>'},
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst"><li>werken voor <b>jezelf</b></li><li>de <b>ondernemingsvormen</b> en de <b>sectoren</b></li></ul></div><div class="box"><h4>Werken voor jezelf</h4><p>De meeste mensen met een betaalde baan zijn werknemer in loondienst. Maar je kunt ook als <b>zelfstandige</b> werken: iemand die met een eigen onderneming een inkomen verdient, door goederen of diensten te leveren aan klanten.</p><p>Wie een bedrijf begint, schrijft zich in bij de Kamer van Koophandel (KvK) en kiest een ondernemingsvorm.</p></div><h5 class="sub">De ondernemingsvormen</h5><div class="tblwrap"><table class="tbl"><tr><th>Vorm</th><th>Kenmerken</th></tr><tr><td><b>Eenmanszaak</b></td><td>Eén eigenaar. Kan personeel in dienst hebben. Bij schulden moet de eigenaar die desnoods met privégeld afbetalen.</td></tr><tr><td>Zzp'er</td><td>Zelfstandige zonder personeel. Kiest meestal voor een eenmanszaak als ondernemingsvorm.</td></tr><tr><td>VOF</td><td>Vennootschap onder firma. Meerdere eigenaren die samen de leiding hebben.</td></tr><tr><td>BV</td><td>Besloten vennootschap. Eén of meer eigenaren als aandeelhouder; de aandelen zijn niet voor iedereen te koop.</td></tr><tr><td>NV</td><td>Naamloze vennootschap. Meerdere eigenaren als aandeelhouder; iedereen kan aandelen kopen.</td></tr></table></div><h5 class="sub">Elk bedrijf in z'n eigen sector</h5><div class="box"><p>Bedrijven en instellingen kun je indelen in vier <b>productiesectoren</b>:</p></div><div class="tblwrap"><table class="tbl"><tr><th>Sector</th><th>Voorbeelden</th></tr><tr><td>Primaire sector</td><td>Agrarische bedrijven: landbouw, visserij, winning van grondstoffen</td></tr><tr><td>Secundaire sector</td><td>Industriële bedrijven: fabrieken, de bouw, ambachten (zoals een bakker)</td></tr><tr><td>Tertiaire sector</td><td>Commerciële dienstverlening: winkels, banken, transportbedrijven</td></tr><tr><td>Quartaire sector</td><td>Niet-commerciële dienstverlening: onderwijs, gezondheidszorg, overheid</td></tr></table></div><div class="check" onclick="toonCheck(this)"><p class="check-v">Wat is het verschil tussen een eenmanszaak en een zzp'er?</p><p class="check-a">Een eenmanszaak kan personeel hebben; een zzp'er is een zelfstandige zonder personeel (en kiest meestal ook voor een eenmanszaak als vorm).</p><span class="check-hint">Tik voor het antwoord</span></div><div class="call sum"><b>Om te onthouden</b><ul class="lst"><li>Eenmanszaak en zzp: één eigenaar. VOF: meerdere eigenaren die samen leiden. BV/NV: eigenaren zijn aandeelhouders.</li><li>Vier productiesectoren: primair (grondstoffen), secundair (industrie), tertiair (commerciële dienstverlening), quartair (niet-commerciële dienstverlening).</li></ul></div>`},
 
 {heading:'5.3 Doe jij mee op de arbeidsmarkt?',html:
- '<div class="box"><h4>De arbeidsmarkt</h4><p>Heb je een baantje, zoek je werk of heb je als ondernemer personeel nodig? Dan ben je actief op de <b>arbeidsmarkt</b>: het geheel van vraag naar arbeid en aanbod van arbeid.</p></div>'
-
- +'<h5 class="sub">Vraag en aanbod van arbeid</h5>'
- +'<div class="g2">'
- +'<div class="box"><h4>Vraag naar arbeid</h4><p>Komt van bedrijven en de overheid: zij vragen mensen om voor hen te komen werken. De vraag naar arbeid bepaalt de <b>werkgelegenheid</b>: alle arbeidsplaatsen bij bedrijven en de overheid. Groeit de economie, dan verkopen bedrijven meer en hebben ze meer mensen nodig: de werkgelegenheid neemt toe.</p></div>'
- +'<div class="box"><h4>Aanbod van arbeid</h4><p>Komt van de <b>beroepsbevolking</b>: iedereen van vijftien jaar tot de pensioenleeftijd die werkt of als werkloze op zoek is naar werk. De beroepsbevolking groeit bijvoorbeeld elke zomer doordat jongeren na hun opleiding een baan zoeken, en krimpt als mensen met pensioen gaan, overlijden of niet meer willen werken.</p></div></div>'
-
- +'<div class="call">De <b>arbeidsparticipatie</b> (arbeidsdeelname) is het percentage van de bevolking dat tot de beroepsbevolking behoort.</div>'
- +'<div class="call">De <b>Algemene wet gelijke behandeling</b> verbiedt het maken van onderscheid op basis van gender, religie, leeftijd of afkomst bij bijvoorbeeld solliciteren.</div>'
- +'<div class="call">Heb je alleen werk wanneer je werkgever je nodig heeft? Dan heb je een <b>flexibele baan</b>.</div>'
-
- +'<div class="call sum"><b>Om te onthouden</b><ul class="lst">'
- +'<li>Arbeidsmarkt = vraag naar arbeid (werkgelegenheid) + aanbod van arbeid (beroepsbevolking).</li>'
- +'<li>Beroepsbevolking: 15 jaar tot pensioenleeftijd, werkend of werkzoekend.</li>'
- +'<li>De Algemene wet gelijke behandeling verbiedt discriminatie op de arbeidsmarkt.</li></ul></div>'},
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst"><li>hoe de <b>arbeidsmarkt</b> werkt</li><li><b>vraag</b> en <b>aanbod</b> van arbeid</li></ul></div><div class="box"><h4>De arbeidsmarkt</h4><p>Heb je een baantje, zoek je werk of heb je als ondernemer personeel nodig? Dan ben je actief op de <b>arbeidsmarkt</b>: het geheel van vraag naar arbeid en aanbod van arbeid.</p></div><h5 class="sub">Vraag en aanbod van arbeid</h5><div class="g2"><div class="box"><h4>Vraag naar arbeid</h4><p>Komt van bedrijven en de overheid: zij vragen mensen om voor hen te komen werken. De vraag naar arbeid bepaalt de <b>werkgelegenheid</b>: alle arbeidsplaatsen bij bedrijven en de overheid. Groeit de economie, dan verkopen bedrijven meer en hebben ze meer mensen nodig: de werkgelegenheid neemt toe.</p></div><div class="box"><h4>Aanbod van arbeid</h4><p>Komt van de <b>beroepsbevolking</b>: iedereen van vijftien jaar tot de pensioenleeftijd die werkt of als werkloze op zoek is naar werk. De beroepsbevolking groeit bijvoorbeeld elke zomer doordat jongeren na hun opleiding een baan zoeken, en krimpt als mensen met pensioen gaan, overlijden of niet meer willen werken.</p></div></div><div class="call">De <b>arbeidsparticipatie</b> (arbeidsdeelname) is het percentage van de bevolking dat tot de beroepsbevolking behoort.</div><div class="call">De <b>Algemene wet gelijke behandeling</b> verbiedt het maken van onderscheid op basis van gender, religie, leeftijd of afkomst bij bijvoorbeeld solliciteren.</div><div class="call">Heb je alleen werk wanneer je werkgever je nodig heeft? Dan heb je een <b>flexibele baan</b>.</div><div class="check" onclick="toonCheck(this)"><p class="check-v">Wat is de arbeidsmarkt?</p><p class="check-a">Het geheel van vraag naar arbeid en aanbod van arbeid.</p><span class="check-hint">Tik voor het antwoord</span></div><div class="call sum"><b>Om te onthouden</b><ul class="lst"><li>Arbeidsmarkt = vraag naar arbeid (werkgelegenheid) + aanbod van arbeid (beroepsbevolking).</li><li>Beroepsbevolking: 15 jaar tot pensioenleeftijd, werkend of werkzoekend.</li><li>De Algemene wet gelijke behandeling verbiedt discriminatie op de arbeidsmarkt.</li></ul></div>`},
 
 {heading:'5.4 Als je zonder werk zit',html:
- '<div class="box"><h4>Waarom raak je werkloos?</h4><p><b>Werkloosheid</b> ontstaat als het aanbod van arbeid groter is dan de vraag ernaar. Er zijn verschillende soorten werkloosheid, met elk een andere oorzaak:</p></div>'
-
- +'<div class="tblwrap"><table class="tbl"><tr><th>Soort werkloosheid</th><th>Oorzaak</th></tr>'
- +'<tr><td>Frictiewerkloosheid</td><td>Kortdurende werkloosheid omdat je tijd nodig hebt om een nieuwe baan te vinden</td></tr>'
- +'<tr><td>Conjuncturele werkloosheid</td><td>Gevolg van een daling van de vraag naar goederen en diensten door vermindering van koopkracht</td></tr>'
- +'<tr><td>Structurele werkloosheid</td><td>Gevolg van veranderingen in de aanbodkant van de economie, bijvoorbeeld automatisering</td></tr>'
- +'<tr><td>Seizoenwerkloosheid</td><td>Werk kan alleen in een deel van het jaar gedaan worden</td></tr>'
- +'<tr><td>Regionale werkloosheid</td><td>Werkloosheid die in bepaalde gebieden hoger is dan gemiddeld in het land</td></tr></table></div>'
-
- +'<div class="call">Het <b>UWV</b> is de overheidsinstelling die je helpt bij het zoeken naar een nieuwe baan en die beoordeelt of je recht hebt op een WW-uitkering.</div>'
-
- +'<div class="call warn"><b>Veelgemaakte fout:</b> gooi de soorten werkloosheid niet op één hoop. Kijk steeds naar de oorzaak: ligt het aan de economie als geheel (conjunctureel), aan blijvende veranderingen (structureel), aan het seizoen, aan de regio of gewoon aan de tijd die zoeken kost (frictie)?</div>'
-
- +'<div class="call sum"><b>Om te onthouden</b><ul class="lst">'
- +'<li>Werkloosheid = aanbod van arbeid groter dan de vraag.</li>'
- +'<li>Vijf soorten: frictie-, conjuncturele, structurele, seizoen- en regionale werkloosheid.</li>'
- +'<li>Het UWV helpt bij het zoeken naar werk en beoordeelt het recht op een WW-uitkering.</li></ul></div>'}
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst"><li>waarom mensen <b>werkloos</b> raken</li></ul></div><h5 class="sub">Oorzaken van werkloosheid</h5><div class="box"><h4>Waarom raak je werkloos?</h4><p><b>Werkloosheid</b> ontstaat als het aanbod van arbeid groter is dan de vraag ernaar. Er zijn verschillende soorten <b>werkloosheid</b>, met elk een andere oorzaak:</p></div><div class="tblwrap"><table class="tbl"><tr><th>Soort werkloosheid</th><th>Oorzaak</th></tr><tr><td><b>Frictiewerkloosheid</b></td><td>Kortdurende werkloosheid omdat je tijd nodig hebt om een nieuwe baan te vinden</td></tr><tr><td>Conjuncturele werkloosheid</td><td>Gevolg van een daling van de vraag naar goederen en diensten door vermindering van koopkracht</td></tr><tr><td>Structurele werkloosheid</td><td>Gevolg van veranderingen in de aanbodkant van de economie, bijvoorbeeld automatisering</td></tr><tr><td>Seizoenwerkloosheid</td><td>Werk kan alleen in een deel van het jaar gedaan worden</td></tr><tr><td>Regionale werkloosheid</td><td>Werkloosheid die in bepaalde gebieden hoger is dan gemiddeld in het land</td></tr></table></div><div class="call">Het <b>UWV</b> is de overheidsinstelling die je helpt bij het zoeken naar een nieuwe baan en die beoordeelt of je recht hebt op een WW-uitkering.</div><div class="call warn"><b>Veelgemaakte fout:</b> gooi de soorten werkloosheid niet op één hoop. Kijk steeds naar de oorzaak: ligt het aan de economie als geheel (conjunctureel), aan blijvende veranderingen (structureel), aan het seizoen, aan de regio of gewoon aan de tijd die zoeken kost (frictie)?</div><div class="check" onclick="toonCheck(this)"><p class="check-v">Wat is frictiewerkloosheid?</p><p class="check-a">Kortdurende werkloosheid omdat je tijd nodig hebt om een nieuwe baan te vinden.</p><span class="check-hint">Tik voor het antwoord</span></div><div class="call sum"><b>Om te onthouden</b><ul class="lst"><li>Werkloosheid = aanbod van arbeid groter dan de vraag.</li><li>Vijf soorten: frictie-, conjuncturele, structurele, seizoen- en regionale werkloosheid.</li><li>Het UWV helpt bij het zoeken naar werk en beoordeelt het recht op een WW-uitkering.</li></ul></div>`}
 ],
 terms:[
 ['Brutoloon','Het loon waarop nog niets is ingehouden.',0],

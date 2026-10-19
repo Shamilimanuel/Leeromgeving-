@@ -78,6 +78,10 @@ describe('subject → level → book → chapter', () => {
     expect(screenIsOn('book')).toBe(true);
     expect(document.querySelectorAll('#bookBody .chapter').length).toBe(6);
     expect(document.getElementById('bkTitle').textContent).toContain('Biologie');
+    // Chapters are called chapters, not "missies" (changed in 2.7.1).
+    const first = document.querySelector('#bookBody .n');
+    expect(first.textContent).toBe('Hoofdstuk 1');
+    expect(document.getElementById('bookBody').textContent).not.toMatch(/missie/i);
   });
 
   it('opens a chapter on the summary tab', async () => {
@@ -86,8 +90,16 @@ describe('subject → level → book → chapter', () => {
     expect(screenIsOn('chapter')).toBe(true);
     expect(document.getElementById('chTitle').textContent).toBe('Bewegen');
     expect(document.querySelectorAll('#chBody .sect').length).toBeGreaterThan(0);
-    expect([...document.querySelectorAll('#chTabs .tab')].map((t) => t.textContent.trim().split(' ')[0]))
-      .toEqual(['Samenvatting', 'Flashcards', 'Oefenspel', 'Oefenquiz', 'Begrippenlijst', 'Notities']);
+    // Since 2.7.1 a route of three steps, with Begrippen and Notities beside it.
+    const steps = [...document.querySelectorAll('#chTabs .route-step b')].map((b) => b.textContent.trim());
+    expect(steps).toEqual(['1Lezen', '2Oefenen', '3Toetsen']);
+    expect(document.querySelector('#chTabs .route-step[aria-current]').textContent).toContain('Lezen');
+    expect([...document.querySelectorAll('#chTabs .route-side button')].map((b) => b.textContent.trim().split(' ')[0]))
+      .toEqual(['Begrippen', 'Notities']);
+    // Opening the summary is not reading it: step 1 is only done after "Klaar met lezen".
+    expect(document.querySelector('#chTabs .route-step').classList.contains('klaar')).toBe(false);
+    // This book's parts are named, so the part is shown.
+    expect(document.getElementById('chPill').textContent).toBe('Hoofdstuk 2 · deel A');
     expect(localStorage.getItem('voortgang')).toContain('biologie|bbl|1|2');
   });
 
@@ -232,8 +244,22 @@ describe('subject → level → book → chapter', () => {
     window.setTab('summary');
   });
 
+  it('marks the summary as read only when the student says so', () => {
+    window.setTab('summary');
+    expect(document.querySelector('#chBody .read-done')).toBeTruthy();
+    window.finishReading();
+    expect(document.querySelector('#chTabs .route-step').classList.contains('klaar')).toBe(true);
+    expect(document.querySelector('#chTabs .route-step small').textContent).toBe('Gelezen');
+    // It moves on to step 2, the practice path.
+    expect(document.querySelector('#chBody .pad-stap')).toBeTruthy();
+    expect(document.querySelector('#chTabs .route-step[aria-current]').textContent).toContain('Oefenen');
+  });
+
   it('shows flashcards and marks one as known', () => {
     window.setTab('flashcards');
+    // Flashcards live inside step 2, with a switch back to the practice path.
+    expect(document.querySelector('#chTabs .route-step[aria-current]').textContent).toContain('Oefenen');
+    expect(document.querySelector('#chTabs .route-sub [aria-pressed="true"]').textContent).toContain('Flashcards');
     const cards = document.querySelectorAll('#chBody .fc');
     expect(cards.length).toBeGreaterThan(0);
     const fakeEvent = { stopPropagation() {}, target: cards[0] };
@@ -297,10 +323,17 @@ describe('overlays', () => {
     window.closeExam();
   });
 
-  it('shows character cards with a streak badge', () => {
+  it('shows character cards with a streak badge', async () => {
     window.go('personage');
     expect(document.querySelectorAll('#personageGrid .persona-card').length).toBeGreaterThan(5);
     expect(document.getElementById('streakBadge').textContent).toContain('1 dag');
+    // Level 1 was played earlier in this walk, so "Eerste stap" is earned.
+    await new Promise((resolve) => setTimeout(resolve, 0));
+    const earned = [...document.querySelectorAll('#badgeGrid .badge-tile.gehaald b')].map((b) => b.textContent);
+    expect(earned).toContain('Eerste stap');
+    expect(earned).not.toContain('Doorzetter');
+    // "Klaar met lezen" was pressed once: Lezer shows 1 van 5, not earned.
+    expect(document.getElementById('badgeGrid').textContent).toContain('1 van 5');
   });
 
   /* src/ui/account.js reads these by id, so a rename in index.html would
@@ -324,5 +357,18 @@ describe('overlays', () => {
     window.toggleDyslexia();
     window.cycleTextSize();
     expect(document.documentElement.classList.contains('txt-groot')).toBe(true);
+  });
+});
+
+describe('a book whose parts have no name', () => {
+  /* 24 books (Economie, Engels, Nederlands, ...) have one unnamed part, and
+     until 2.7.1 every one of their chapters read "Missie 1 · deel" with
+     nothing after it. */
+  it('does not say "deel" at all', async () => {
+    const { openChapterFromKey } = await import('../src/ui/chapter.js');
+    expect(await openChapterFromKey('economie|tl|4|1', 'summary')).toBe(true);
+    expect(document.getElementById('chTitle').textContent).toBe('Inkomen en welvaart');
+    expect(document.getElementById('chPill').textContent).not.toContain('deel');
+    expect(document.getElementById('chCrumb').textContent).not.toContain('deel');
   });
 });

@@ -1,16 +1,145 @@
 import { registerChapter } from '../../../registry.js';
 
+/* Rebuilt 2026-09-25 to the recipe of Economie TL4 H1 (change 6). Fixed:
+   the summary and a flashcard said days and months get a capital letter;
+   the book says they do not (nor seasons and compass directions). Added from
+   the book: words made from names (Turkse) and the 's-rule. Also fixed:
+   "tafel -> tafels" was listed as an -en plural. Terms and quiz unchanged;
+   one card fixed. */
 registerChapter('nederlands|tl|2|7', {
 title:'Spelling',
 summary:[
-{heading:'Hoofdletters',html:'<div class=\'box\'><h4>Waar gaat dit hoofdstuk over?</h4><p>In dit hoofdstuk oefen je spellingregels: hoofdletters, leestekens (komma, dubbele punt, aanhalingstekens), bijvoeglijke naamwoorden, meervouden, verkleinwoorden en werkwoordspelling (voltooid deelwoord en werkwoordalarm).</p></div><div class=\'box\'><h4>Hoofdletters</h4><p>Je gebruikt een <b>hoofdletter</b>:</p><ul class=\'lst\'><li>aan het begin van een zin;</li><li>bij namen van personen, plaatsen, landen en merken (eigennamen), bijvoorbeeld <i>Amsterdam, LEGO</i>;</li><li>bij afkortingen die uit hoofdletters bestaan, zoals <i>NOS, EHBO</i>;</li><li>bij namen van dagen, maanden en feestdagen, bijvoorbeeld <i>maandag, augustus, Koningsdag</i>.</li></ul></div><div class=\'call warn\'><b>Veelgemaakte fout:</b> een hoofdletter vergeten na een dubbele punt bij een nieuwe volledige zin, of juist onterecht een hoofdletter gebruiken bij een gewoon zelfstandig naamwoord zoals \'de zomer\'.</div>'},
-{heading:'Leestekens: komma',html:'<div class=\'box\'><h4>De komma</h4><p>Je gebruikt een <b>komma</b>:</p><ul class=\'lst\'><li>tussen de delen van een opsomming: <i>Voor de cake heb je bloem, boter, suiker en een ei nodig.</i></li><li>voor een samengestelde zin met voegwoorden als <i>maar, want, dus</i>: <i>Ik wilde nog blijven, maar ik moest naar huis.</i></li><li>om een bijzin die middenin de zin staat, af te bakken: <i>Mijn broer, die in Utrecht woont, komt op bezoek.</i></li><li>na een bijzin die vooraan de zin staat: <i>Toen het begon te regenen, gingen we naar binnen.</i></li></ul></div>'},
-{heading:'Leestekens: dubbele punt en aanhalingstekens',html:'<div class=\'box\'><h4>De dubbele punt</h4><p>Je gebruikt een <b>dubbele punt</b>:</p><ul class=\'lst\'><li>vóór een opsomming: <i>Neem het volgende mee: een jas, laarzen en een paraplu.</i></li><li>vóór een citaat of letterlijke uitspraak: <i>Ze zei: \'Ik kom eraan.\'</i></li><li>vóór een uitleg of conclusie die volgt uit het voorgaande.</li></ul></div><div class=\'box\'><h4>Aanhalingstekens</h4><p>Je gebruikt <b>aanhalingstekens</b> om een letterlijke uitspraak (citaat) van iemand weer te geven. Het leesteken dat bij de uitspraak hoort (punt, vraagteken) komt bínnen de aanhalingstekens te staan.</p></div>'},
-{heading:'Bijvoeglijk naamwoord',html:'<div class=\'box\'><h4>Bijvoeglijk naamwoord</h4><p>De meeste <b>bijvoeglijke naamwoorden</b> hebben een korte vorm (zonder -e) en een lange vorm (met -e):</p><ul class=\'lst\'><li><i>lekker</i>: een lekker dessert; het lekkere dessert;</li><li><i>saai</i>: een saai verhaal; het saaie verhaal.</li></ul></div><div class=\'box\'><h4>Zo maak je de lange vorm</h4><p>Zet een <b>-e</b> achter het woord: <i>klein → kleine; sterk → sterke; nieuw → nieuwe.</i></p><p>Let op, soms moet je daarnaast:</p><ul class=\'lst\'><li>een <i>-f-</i> in een <i>-v-</i> veranderen (de f/v-regel): <i>lief → lieve; naïef → naïeve</i>;</li><li>een <i>-s-</i> in een <i>-z-</i> veranderen (de s/z-regel): <i>grijs → grijze; serieus → serieuze</i>;</li><li>de laatste letter (medeklinker) verdubbelen: <i>fris → frisse; glad → gladde</i>;</li><li>een a, e, o of u (klinker) weghalen: <i>traag → trage; zuur → zure.</i></li></ul></div><div class=\'call\'><b>Stoffelijke bijvoeglijke naamwoorden</b> (die aangeven waar iets van gemaakt is) eindigen meestal op -en: <i>houten, papieren, wollen</i>, maar niet altijd (een polyester T-shirt).</div>'},
-{heading:'Meervouden op -s en -en',html:'<div class=\'box\'><h4>Meervoud op -en</h4><p>De meeste zelfstandige naamwoorden krijgen in het meervoud <b>-en</b>: <i>boek → boeken; tafel → tafels</i> (let op: bij sommige woorden gebeurt hier een klinker- of medeklinkerwijziging, bijvoorbeeld <i>dag → dagen, glas → glazen</i>).</p></div><div class=\'box\'><h4>Meervoud op -s</h4><p>Woorden die eindigen op een onbeklemtoonde lettergreep met <i>-el, -em, -en, -er, -aar</i> of op een klinker, krijgen meestal <b>-s</b>: <i>tafel → tafels; foto → foto\'s; auto → auto\'s</i> (met apostrof als het woord eindigt op a, i, o, u of y).</p></div>'},
-{heading:'Verkleinwoorden',html:'<div class=\'box\'><h4>Verkleinwoorden</h4><p>Een <b>verkleinwoord</b> maak je meestal door <b>-je</b> achter het woord te zetten. Afhankelijk van de laatste letters van het woord gebruik je een andere vorm:</p><ul class=\'lst\'><li><b>-tje</b> na een klinker of na l, n, r: <i>auto → autootje; stoel → stoeltje</i>;</li><li><b>-pje</b> na m: <i>boom → boompje</i>;</li><li><b>-kje</b> na -ing (met verlies van de g): <i>koning → koninkje</i>;</li><li><b>-etje</b> na een korte klinker + m, ng, l, n, r: <i>bal → balletje</i>.</li></ul></div>'},
-{heading:'Voltooid deelwoord',html:'<div class=\'box\'><h4>Het voltooid deelwoord</h4><p>Het <b>voltooid deelwoord</b> gebruik je in de voltooide tijd, samen met een vorm van <i>hebben</i> of <i>zijn</i>: <i>Ik heb gewerkt. Zij is vertrokken.</i></p></div><div class=\'box\'><h4>\'t Kofschip</h4><p>Om te weten of een voltooid deelwoord eindigt op <b>-t</b> of <b>-d</b>, gebruik je het regelmatige werkwoord en het rijtje \'t kofschip\' (of \'\'t fokschaap\'): letters <i>t, k, f, s, ch, p</i>.</p><ul class=\'lst\'><li>Eindigt de <b>stam</b> van het werkwoord op een van deze letters? Dan krijgt het voltooid deelwoord een <b>-t</b>: <i>werk-en → gewerkt.</i></li><li>Eindigt de stam op een andere letter? Dan krijgt het voltooid deelwoord een <b>-d</b>: <i>speel-en → gespeeld.</i></li></ul></div>'},
-{heading:'Werkwoordalarm',html:'<div class=\'box\'><h4>Werkwoordalarm</h4><p>Let extra op bij deze lastige gevallen van werkwoordspelling:</p><ul class=\'lst\'><li>Persoonsvorm in de tegenwoordige tijd: bij <i>ik</i> gebruik je de <b>stam</b> (<i>ik werk</i>); bij <i>jij/u/hij/zij</i> de stam + <b>-t</b> (<i>jij werkt</i>), behalve als <i>jij/je</i> ná de persoonsvorm komt (<i>werk jij?</i>).</li><li>Werkwoorden met een stam die al op -t eindigt, krijgen bij <i>jij/hij/zij</i> geen extra -t: <i>hij zit</i> (niet \'zitt\').</li><li>Controleer bij twijfel de persoonsvorm altijd met de <b>ik-vorm</b> (stam) en de <b>hij/zij-vorm</b> (stam+t).</li></ul></div>'}
+{heading:'Hoofdletters',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>wanneer je wel en <b>niet</b> een <b>hoofdletter</b> gebruikt</li></ul></div>`
++`<div class="box"><h4>Waar dit hoofdstuk over gaat</h4><p>Je oefent <b>spellingregels</b>: <b>hoofdletters</b>, <b>leestekens</b> (komma, dubbele punt, aanhalingstekens), <b>bijvoeglijke naamwoorden</b>, <b>meervouden</b>, <b>verkleinwoorden</b> en <b>werkwoordspelling</b>.</p></div>`
++`<h5 class="sub">Wel en niet</h5>`
++`<div class="vergelijk"><div class="vergelijk-kant"><h4>Wel een hoofdletter</h4><p>Aan het <b>begin van een zin</b>. Bij <b>namen</b>: Jan Klaassen, Leeuwarden, NEC, Mercedes, <b>Pasen</b>. Bij woorden die van <b>namen</b> zijn gemaakt: <b>Turkse</b>, Noord-Franse. Bij afkortingen als <b>NOS</b>.</p></div><div class="vergelijk-vs">vs</div><div class="vergelijk-kant"><h4>Geen hoofdletter</h4><p><b>Dagen</b> (woensdag), <b>maanden</b> (augustus), <b>seizoenen</b> (winter) en <b>windstreken</b> (westen).</p></div></div>`
++`<div class="box"><h4>Begint de zin met 's?</h4><p>Dan komt er een <b>spatie</b> en krijgt het <b>volgende</b> woord de hoofdletter: <b>'s Morgens</b> ben ik vrolijk.</p></div>`
++`<div class="call warn"><b>Veelgemaakte fout:</b> een hoofdletter bij <b>maandag</b> of <b>de zomer</b>. Feestdagen wel (<b>Koningsdag</b>), gewone dagen niet.</div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Hoofdletter of niet: &lsquo;in de winter gaan we naar het westen van turkije&rsquo;?</p><p class="check-a">Alleen <b>Turkije</b>: winter en westen krijgen geen hoofdletter.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden</b><ul class="lst">
+<li><b>Wel</b>: begin van de zin, namen, feestdagen, woorden van namen.</li>
+<li><b>Niet</b>: dagen, maanden, seizoenen, windstreken.</li>
+<li><b>'s Morgens</b>: hoofdletter bij het tweede woord.</li></ul></div>`},
+
+{heading:'Leestekens: komma',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>waar je een <b>komma</b> zet</li></ul></div>`
++`<h5 class="sub">Vier plekken voor een komma</h5>`
++`<div class="call reken"><b>Hier zet je een komma</b><ol class="num">
+<li>Tussen de delen van een <b>opsomming</b>: bloem, boter, suiker en een ei.</li>
+<li>Vóór <b>maar</b>, <b>want</b> en <b>dus</b> in een samengestelde zin: Ik wilde blijven, <b>maar</b> ik moest naar huis.</li>
+<li>Om een <b>bijzin middenin</b> de zin: Mijn broer, <b>die in Utrecht woont</b>, komt op bezoek.</li>
+<li><b>Na een bijzin vooraan</b>: Toen het begon te regenen, gingen we naar binnen.</li></ol></div>`
++`<div class="call warn"><b>Let op:</b> in een opsomming komt <b>geen komma</b> vóór het laatste <b>en</b>: bloem, boter, suiker <b>en</b> een ei.</div>`
++`<div class="voorbeeld"><h4>Voorbeeld: waar moet de komma?</h4><p>&lsquo;Omdat de trein vertraging had kwam ik te laat.&rsquo;</p><div class="antwoord">De bijzin staat <b>vooraan</b>, dus erna een komma: &lsquo;Omdat de trein vertraging had<b>,</b> kwam ik te laat.&rsquo;</div></div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Zet je een komma vóór want?</p><p class="check-a"><b>Ja</b>: Ik blijf thuis, want ik ben ziek.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden</b><ul class="lst">
+<li>Komma bij een <b>opsomming</b> (niet vóór het laatste en).</li>
+<li>Vóór <b>maar, want, dus</b>.</li>
+<li>Om en na een <b>bijzin</b>.</li></ul></div>`},
+
+{heading:'Leestekens: dubbele punt en aanhalingstekens',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>de <b>dubbele punt</b> en <b>aanhalingstekens</b> goed gebruiken</li></ul></div>`
++`<h5 class="sub">Aankondigen en citeren</h5>`
++`<div class="g2">`
++`<div class="box"><h4>Dubbele punt</h4><p>Vóór een <b>opsomming</b>: neem mee: een jas en laarzen. Vóór een <b>citaat</b>. Vóór een <b>uitleg</b> of <b>conclusie</b>.</p></div>`
++`<div class="box"><h4>Aanhalingstekens</h4><p>Om een <b>letterlijke uitspraak</b> (citaat): wat iemand <b>precies</b> zei.</p></div></div>`
++`<div class="call reken"><b>Stappenplan: een citaat schrijven</b><ol class="num">
+<li>Kondig het citaat aan met een <b>dubbele punt</b>.</li>
+<li>Zet de gezegde woorden tussen <b>aanhalingstekens</b>.</li>
+<li>Het citaat begint met een <b>hoofdletter</b>.</li>
+<li>Het leesteken van de uitspraak (punt, vraagteken) komt <b>binnen</b> de aanhalingstekens.</li></ol></div>`
++`<div class="voorbeeld"><h4>Voorbeeld: Jasper</h4><p>Schrijf goed: jasper zei overmorgen ben ik jarig</p><div class="antwoord">Jasper zei<b>:</b> <b>&lsquo;O</b>vermorgen ben ik jarig<b>!&rsquo;</b></div></div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Komt het vraagteken binnen of buiten de aanhalingstekens?</p><p class="check-a"><b>Binnen</b>, als het bij de uitspraak hoort.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden</b><ul class="lst">
+<li><b>Dubbele punt</b> vóór opsomming, citaat of uitleg.</li>
+<li>Citaat: tussen <b>aanhalingstekens</b>, met hoofdletter, leesteken <b>binnen</b>.</li></ul></div>`},
+
+{heading:'Bijvoeglijk naamwoord',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>de <b>lange vorm</b> van een bijvoeglijk naamwoord goed spellen</li></ul></div>`
++`<h5 class="sub">Kort en lang</h5>`
++`<div class="vergelijk"><div class="vergelijk-kant"><h4>Korte vorm</h4><p>Zonder -e: een <b>lekker</b> dessert, een <b>saai</b> verhaal.</p></div><div class="vergelijk-vs">vs</div><div class="vergelijk-kant"><h4>Lange vorm</h4><p>Met -e: het <b>lekkere</b> dessert, het <b>saaie</b> verhaal.</p></div></div>`
++`<div class="call reken"><b>Zo maak je de lange vorm</b><ol class="num">
+<li>Zet er een <b>-e</b> achter: klein &rarr; kleine, nieuw &rarr; nieuwe.</li>
+<li><b>f wordt v</b>: lief &rarr; lieve, naïef &rarr; naïeve.</li>
+<li><b>s wordt z</b>: grijs &rarr; grijze, serieus &rarr; serieuze.</li>
+<li><b>Medeklinker verdubbelen</b> na een korte klank: fris &rarr; frisse, glad &rarr; gladde.</li>
+<li><b>Klinker weghalen</b> na een lange klank: traag &rarr; trage, zuur &rarr; zure.</li></ol></div>`
++`<div class="call waarom">Waarom verdubbelen of weghalen? Zo blijft de <b>klank</b> hetzelfde. Met één s zou &lsquo;frise&rsquo; klinken als &lsquo;frieze&rsquo;; met twee a's zou &lsquo;traage&rsquo; er vreemd uitzien, want na een open lettergreep is één a al lang.</div>`
++`<div class="box"><h4>Stoffelijk bijvoeglijk naamwoord</h4><p>Zegt waar iets <b>van gemaakt</b> is en eindigt meestal op <b>-en</b>: <b>houten</b>, <b>papieren</b>, <b>wollen</b>. Niet altijd: een <b>polyester</b> T-shirt.</p></div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Wat is de lange vorm van grijs?</p><p class="check-a"><b>grijze</b>: s wordt z.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden</b><ul class="lst">
+<li>Lange vorm: <b>+ e</b>.</li>
+<li><b>f &rarr; v</b>, <b>s &rarr; z</b>, <b>verdubbelen</b> of <b>klinker weg</b>.</li>
+<li>Stoffelijk: meestal <b>-en</b>.</li></ul></div>`},
+
+{heading:'Meervouden op -s en -en',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>kiezen tussen een <b>meervoud</b> op <b>-en</b> en op <b>-s</b></li></ul></div>`
++`<h5 class="sub">-en of -s?</h5>`
++`<div class="vergelijk"><div class="vergelijk-kant"><h4>Meervoud op -en</h4><p>De <b>meeste</b> woorden: boek &rarr; <b>boeken</b>. Let op klankregels: dag &rarr; <b>dagen</b>, glas &rarr; <b>glazen</b>.</p></div><div class="vergelijk-vs">vs</div><div class="vergelijk-kant"><h4>Meervoud op -s</h4><p>Woorden op een <b>onbeklemtoonde</b> -el, -em, -en, -er of -aar, en woorden op een <b>klinker</b>: tafel &rarr; <b>tafels</b>, foto &rarr; <b>foto's</b>.</p></div></div>`
++`<div class="call reken"><b>Zo kies je</b><ol class="num">
+<li>Eindigt het woord op een onbeklemtoonde <b>-el, -em, -en, -er</b> of <b>-aar</b>? Meestal <b>-s</b>.</li>
+<li>Eindigt het op een <b>klinker</b>? <b>-s</b>, en bij a, i, o, u of y met een <b>apostrof</b>: auto's.</li>
+<li>Anders meestal <b>-en</b>.</li></ol></div>`
++`<div class="call waarom">Waarom een apostrof bij <b>auto's</b>? Zonder apostrof zou je &lsquo;autos&rsquo; lezen met een <b>korte</b> o. De apostrof houdt de <b>lange klank</b>.</div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Wat is het meervoud van tafel?</p><p class="check-a"><b>tafels</b>: het eindigt op een onbeklemtoonde -el.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden</b><ul class="lst">
+<li>Meestal <b>-en</b>.</li>
+<li><b>-el, -em, -en, -er, -aar</b> en klinkers: <b>-s</b>.</li>
+<li>Na a, i, o, u, y: <b>'s</b>.</li></ul></div>`},
+
+{heading:'Verkleinwoorden',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>de goede uitgang kiezen voor een <b>verkleinwoord</b></li></ul></div>`
++`<h5 class="sub">-je, -tje, -pje, -kje, -etje</h5>`
++`<div class="tblwrap"><table class="tbl"><tr><th>Uitgang</th><th>Wanneer</th><th>Voorbeeld</th></tr><tr><td><b>-je</b></td><td>meestal</td><td>boek &rarr; boekje</td></tr><tr><td><b>-tje</b></td><td>na een <b>klinker</b> of na <b>l, n, r</b></td><td>auto &rarr; autootje, stoel &rarr; stoeltje</td></tr><tr><td><b>-pje</b></td><td>na <b>m</b></td><td>boom &rarr; boompje</td></tr><tr><td><b>-kje</b></td><td>na <b>-ing</b> (de g valt weg)</td><td>koning &rarr; koninkje</td></tr><tr><td><b>-etje</b></td><td><b>korte klinker</b> + m, ng, l, n, r</td><td>bal &rarr; balletje</td></tr></table></div>`
++`<div class="call reken"><b>Zo kies je</b><ol class="num">
+<li>Kijk naar de <b>laatste letters</b> van het woord.</li>
+<li>Staat er een <b>korte klank</b> vlak voor m, ng, l, n of r? Dan <b>-etje</b>, met verdubbeling.</li>
+<li>Anders kies je uit de tabel.</li></ol></div>`
++`<div class="call warn"><b>Instinker:</b> <b>bal</b> en <b>stoel</b> eindigen allebei op l. Bij bal is de klank <b>kort</b>: balletje. Bij stoel is hij <b>lang</b>: stoeltje.</div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Wat is het verkleinwoord van boom?</p><p class="check-a"><b>boompje</b>: na m komt -pje.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden</b><ul class="lst">
+<li><b>-je</b>, <b>-tje</b>, <b>-pje</b>, <b>-kje</b>, <b>-etje</b>.</li>
+<li>Korte klank + l/n/r/m/ng: <b>-etje</b>.</li></ul></div>`},
+
+{heading:'Voltooid deelwoord',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>kiezen tussen <b>-t</b> en <b>-d</b> aan het eind van een <b>voltooid deelwoord</b></li></ul></div>`
++`<h5 class="sub">'t Kofschip</h5>`
++`<div class="box"><h4>Voltooid deelwoord</h4><p>Het <b>voltooid deelwoord</b> gebruik je in de voltooide tijd, met <b>hebben</b> of <b>zijn</b>: Ik heb <b>gewerkt</b>. Zij is <b>vertrokken</b>.</p></div>`
++`<div class="call reken"><b>Stappenplan: -t of -d</b><ol class="num">
+<li>Zoek de <b>stam</b>: haal -en van het hele werkwoord af (werk-en &rarr; <b>werk</b>).</li>
+<li>Eindigt de stam op een letter uit <b>'t kofschip</b> (t, k, f, s, ch, p)? Dan <b>-t</b>: <b>gewerkt</b>.</li>
+<li>Anders <b>-d</b>: speel-en &rarr; <b>gespeeld</b>.</li></ol></div>`
++`<div class="vergelijk"><div class="vergelijk-kant"><h4>-t</h4><p>werk &rarr; gewerk<b>t</b>, fiets &rarr; gefiets<b>t</b>.</p></div><div class="vergelijk-vs">vs</div><div class="vergelijk-kant"><h4>-d</h4><p>speel &rarr; gespeel<b>d</b>, woon &rarr; gewoon<b>d</b>.</p></div></div>`
++`<div class="call waarom">Waarom het rijtje? Je <b>hoort</b> het verschil niet: gewerkt en gespeeld klinken allebei met een t aan het eind. Het rijtje <b>'t kofschip</b> (of <b>'t fokschaap</b>) vertelt je welke letter je <b>schrijft</b>.</div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Voltooid deelwoord van fietsen?</p><p class="check-a"><b>gefietst</b>: de stam fiets eindigt op s.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden</b><ul class="lst">
+<li>Stam op <b>t, k, f, s, ch, p</b>: <b>-t</b>.</li>
+<li>Anders: <b>-d</b>.</li></ul></div>`},
+
+{heading:'Werkwoordalarm',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>de lastige gevallen van de <b>persoonsvorm</b> in de tegenwoordige tijd</li></ul></div>`
++`<h5 class="sub">Stam of stam + t?</h5>`
++`<div class="call reken"><b>Zo spel je de persoonsvorm (tegenwoordige tijd)</b><ol class="num">
+<li>Bij <b>ik</b>: alleen de <b>stam</b>. Ik <b>werk</b>.</li>
+<li>Bij <b>jij, u, hij, zij</b>: stam <b>+ t</b>. Jij <b>werkt</b>.</li>
+<li>Staat <b>jij/je</b> ná de persoonsvorm? Dan <b>geen t</b>: <b>Werk</b> jij?</li>
+<li>Eindigt de stam al op <b>t</b>? Geen extra t: hij <b>zit</b>.</li></ol></div>`
++`<div class="vergelijk"><div class="vergelijk-kant"><h4>Jij vóór</h4><p>Jij <b>werkt</b> hard.</p></div><div class="vergelijk-vs">vs</div><div class="vergelijk-kant"><h4>Jij ná</h4><p><b>Werk</b> jij hard?</p></div></div>`
++`<div class="call warn"><b>Twijfel je?</b> Vervang het werkwoord door <b>lopen</b>: hij <b>loopt</b> (t), <b>loop</b> jij (geen t). Dezelfde vorm geldt voor je werkwoord.</div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Vul in: ... jij morgen ook? (wachten)</p><p class="check-a"><b>Wacht</b> jij: jij staat ná de persoonsvorm; de stam eindigt al op t.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden</b><ul class="lst">
+<li><b>ik</b>: stam. <b>hij/zij/jij</b>: stam + t.</li>
+<li><b>jij ná</b> de pv: geen t.</li>
+<li>Stam op t: geen extra t.</li></ul></div>`}
 ],
 terms:[
 ['hoofdletter','wordt gebruikt aan het begin van een zin, bij eigennamen en bij afkortingen van hoofdletters',0],
@@ -27,7 +156,7 @@ terms:[
 ['stam','de ik-vorm van een werkwoord, de basis waarop je persoonsvormen en het voltooid deelwoord vormt',7]
 ],
 cards:[
-['Wanneer gebruik je een hoofdletter?','Aan het begin van een zin, bij eigennamen, bij afkortingen van hoofdletters en bij dagen/maanden/feestdagen.',0],
+['Wanneer gebruik je een hoofdletter?','Aan het begin van een zin, bij namen (ook van feestdagen, zoals Pasen), bij woorden die van namen zijn gemaakt en bij afkortingen van hoofdletters. Niet bij dagen, maanden, seizoenen en windstreken.',0],
 ['Wanneer gebruik je een komma voor een samengestelde zin?','Bij voegwoorden als maar, want en dus.',1],
 ['Wanneer gebruik je een dubbele punt?','Vóór een opsomming, een citaat of een uitleg/conclusie.',2],
 ['Waarvoor gebruik je aanhalingstekens?','Om een letterlijke uitspraak (citaat) van iemand weer te geven.',2],

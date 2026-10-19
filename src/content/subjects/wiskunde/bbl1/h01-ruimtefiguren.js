@@ -1,13 +1,111 @@
 import { registerChapter } from '../../../registry.js';
 
+/* Rebuilt 2026-09-25 to the recipe of Economie TL4 H1 (change 6), short
+   sentences for BBL. Checked against the book: the uitslag/bouwplaat
+   difference (1.2) and the letters of a balk (1.3, A-D below, E-H above)
+   were missing. The drawing is unchanged. Terms, cards and quiz unchanged. */
 registerChapter('wiskunde|bbl|1|1', {
 title:'Ruimtefiguren',
 summary:[
-{heading:'1.1 Vlakken, ribben en hoekpunten',html:'<div class="g2"><div class="box"><h4>Vlakken</h4><p>De buitenkant van een <b>ruimtefiguur</b> bestaat uit vlakken. Dat kunnen <b>platte vlakken</b> zijn of <b>gebogen vlakken</b>.</p></div><div class="box"><h4>Ribben en hoekpunten</h4><p>De randen van de platte vlakken heten <b>ribben</b>. De ribben komen bij elkaar in een <b>hoekpunt</b>. Ribben die je niet direct ziet, worden gestippeld getekend: dat kan alleen als de figuur doorzichtig getekend is.</p></div></div><div class="tblwrap"><table class="tbl"><tr><th>Ruimtefiguur</th><th>Platte vlakken</th><th>Gebogen vlakken</th><th>Ribben</th><th>Hoekpunten</th></tr><tr><td>Balk</td><td>6</td><td>0</td><td>12</td><td>8</td></tr><tr><td>Cilinder</td><td>2</td><td>1</td><td>0</td><td>0</td></tr></table></div><div class="call">Een cilinder heeft wél 2 platte vlakken, maar géén ribben en géén hoekpunten: er is geen scherpe rand waar vlakken samenkomen.</div><div class="call sum"><b>Om te onthouden (1.1)</b><ul class="lst"><li>De buitenkant van een ruimtefiguur bestaat uit <b>platte</b> of <b>gebogen vlakken</b>.</li><li>De rand van een plat vlak heet een <b>ribbe</b>.</li><li>Ribben komen samen in een <b>hoekpunt</b>.</li><li>Een balk heeft 6 platte vlakken, 12 ribben en 8 hoekpunten.</li><li>Een cilinder heeft 2 platte vlakken, 1 gebogen vlak, geen ribben en geen hoekpunten.</li></ul></div><figure class=\'fig\'><svg viewBox="0 0 340 265" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="De zes ruimtefiguren: kubus, balk, prisma, piramide, cilinder en kegel"><g fill="var(--accent)" fill-opacity=".16" stroke="var(--txt)" stroke-width="1.5" stroke-linejoin="round" opacity=".9"><path d="M20 100 L64 100 L64 56 L20 56 Z"/><path d="M20 56 L34 42 L78 42 L64 56 Z"/><path d="M64 56 L78 42 L78 86 L64 100 Z"/><path d="M132 100 L188 100 L188 66 L132 66 Z"/><path d="M132 66 L146 52 L202 52 L188 66 Z"/><path d="M188 66 L202 52 L202 86 L188 100 Z"/><path d="M248 100 L292 100 L270 62 Z"/><path d="M248 100 L262 86 L306 86 L292 100 Z"/><path d="M292 100 L306 86 L284 48 L270 62 Z"/><path d="M26 222 L74 222 L57 168 Z"/><path d="M74 222 L88 208 L57 168 Z"/></g><g fill="none" stroke="var(--mut)" stroke-width="1.1" stroke-dasharray="4 3" opacity=".8"><path d="M26 222 L40 208"/><path d="M40 208 L88 208"/><path d="M40 208 L57 168"/></g><g fill="var(--accent)" fill-opacity=".16" stroke="var(--txt)" stroke-width="1.5" opacity=".9"><path d="M142 182 L142 222 A 24 9 0 0 0 190 222 L190 182 Z"/><ellipse cx="166" cy="182" rx="24" ry="9"/><path d="M254 222 L278 168 L302 222 Z"/><ellipse cx="278" cy="222" rx="24" ry="9"/></g><g fill="var(--txt)" font-size="10.5" font-family="inherit" text-anchor="middle"><text x="49" y="124">kubus</text><text x="167" y="124">balk</text><text x="277" y="124">prisma</text><text x="57" y="246">piramide</text><text x="166" y="246">cilinder</text><text x="278" y="246">kegel</text></g><g fill="var(--mut)" font-size="8.5" font-family="inherit" text-anchor="middle"><text x="49" y="136">6 vierkanten</text><text x="167" y="136">6 rechthoeken</text><text x="277" y="136">2 grondvlakken</text><text x="57" y="258">1 top</text><text x="166" y="258">2 cirkels</text><text x="278" y="258">1 cirkel + top</text></g></svg><figcaption>Zes ruimtefiguren die je uit je hoofd moet kunnen herkennen. Alleen de cilinder en de kegel hebben een gebogen zijvlak &mdash; daarom rollen die wel en de andere niet.</figcaption></figure>'},
-{heading:'1.2 Kubus en vierkant',html:'<div class="g2"><div class="box"><h4>Kubus</h4><p>Een <b>kubus</b> heeft 6 platte vlakken. Elk vlak heeft de vorm van een vierkant. Een kubus heeft 8 hoekpunten en 12 ribben. Bij de hoekpunten kun je letters zetten.</p></div><div class="box"><h4>Uitslag van een kubus</h4><p>De <b>uitslag</b> van een kubus bestaat uit zes vierkanten die aan elkaar vast zitten. Dat kan op verschillende manieren.</p></div></div><div class="box"><h4>Vierkant</h4><p>Een <b>vierkant</b> is een vlakke figuur met twee dimensies: de lengte en de breedte. Een vierkant heeft vier zijden die allemaal even lang zijn. Alle hoeken zijn recht (90°): dat kun je controleren met je geodriehoek.</p></div><div class="term"><b>Dimensie</b><span>Een richting waarin je iets kunt meten. Een vierkant heeft er twee: lengte en breedte.</span></div><div class="call">Moet je zelf letters bij een vierkant zetten? Begin linksonder en ga daarna rechtsom.</div><div class="call sum"><b>Om te onthouden (1.2)</b><ul class="lst"><li>Een kubus heeft 6 vlakken (allemaal vierkanten), 12 ribben en 8 hoekpunten.</li><li>De uitslag van een kubus bestaat uit zes aan elkaar vaste vierkanten.</li><li>Een vierkant heeft 4 even lange zijden, 4 rechte hoeken en twee dimensies: lengte en breedte.</li><li>Zet je zelf letters bij een vierkant: begin linksonder en ga rechtsom.</li></ul></div>'},
-{heading:'1.3 Balk en rechthoek',html:'<div class="g2"><div class="box"><h4>Balk</h4><p>Een <b>balk</b> is een ruimtefiguur met drie dimensies: de lengte, de breedte en de hoogte. Net als een kubus heeft een balk 12 ribben, 8 hoekpunten en 6 platte vlakken. Bij sommige balken hebben twee vlakken de vorm van een vierkant.</p></div><div class="box"><h4>Uitslag van een balk</h4><p>De uitslag van een balk heeft zes vlakken, allemaal in de vorm van een rechthoek. Een <b>bouwplaat</b> is een uitslag met <b>plakranden</b>, waarmee je de balk weer in elkaar kunt zetten.</p></div></div><div class="box"><h4>Rechthoek</h4><p>Een <b>rechthoek</b> heeft vier zijden. De zijden die tegenover elkaar liggen, zijn even lang. Zijde PQ is dus even lang als zijde RS. Alle hoeken van een rechthoek zijn recht.</p></div><div class="call warn"><b>Let op:</b> een balk heeft, net als een kubus, altijd 12 ribben, 8 hoekpunten en 6 vlakken. Het verschil zit in de vorm van de vlakken: bij een kubus zijn ze allemaal vierkant, bij een balk zijn ze rechthoekig (soms met twee vierkante vlakken erbij).</div><div class="call sum"><b>Om te onthouden (1.3)</b><ul class="lst"><li>Een balk heeft drie dimensies: lengte, breedte en hoogte.</li><li>Een balk heeft 6 platte vlakken, 12 ribben en 8 hoekpunten.</li><li>De uitslag van een balk bestaat uit zes rechthoeken; met plakranden erbij heet dat een bouwplaat.</li><li>Bij een rechthoek zijn de zijden tegenover elkaar even lang en zijn alle hoeken recht.</li></ul></div>'},
-{heading:'1.4 Cilinder en cirkel',html:'<div class="g2"><div class="box"><h4>Cilinder</h4><p>Een <b>cilinder</b> heeft 1 gebogen vlak en 2 platte vlakken. De twee platte vlakken hebben de vorm van een cirkel. Een cilinder heeft geen ribben en geen hoekpunten.</p></div><div class="box"><h4>Cirkel</h4><p>Een <b>cirkel</b> is rond. Je tekent een cirkel met een <b>passer</b>. Daar waar de passerpunt stond, ligt het <b>middelpunt</b> van de cirkel.</p></div></div><div class="g2"><div class="term"><b>Straal</b><span>Het lijnstuk van het middelpunt van de cirkel naar de rand.</span></div><div class="term"><b>Diameter (middellijn)</b><span>Het lijnstuk dat dwars door het middelpunt gaat, van rand tot rand. De straal past er twee keer in.</span></div></div><div class="call">De diameter is altijd twee keer zo lang als de straal.</div><div class="call sum"><b>Om te onthouden (1.4)</b><ul class="lst"><li>Een cilinder heeft 2 platte (cirkelvormige) vlakken en 1 gebogen vlak, en geen ribben of hoekpunten.</li><li>Het middelpunt van een cirkel is het punt waar de passerpunt stond.</li><li>De straal loopt van het middelpunt naar de rand; de diameter (middellijn) loopt dwars door het middelpunt en is twee keer zo lang als de straal.</li></ul></div>'},
-{heading:'1.5 Piramide, prisma en driehoek',html:'<div class="g2"><div class="box"><h4>Prisma</h4><p>Bij een <b>prisma</b> hebben bijna alle vlakken de vorm van een rechthoek. Twee vlakken hebben een andere vorm: één daarvan is het <b>grondvlak</b>. Het grondvlak kan de vorm hebben van een driehoek, vierhoek, vijfhoek of zeshoek. Een prisma staat niet altijd op zijn grondvlak.</p></div><div class="box"><h4>Piramide</h4><p>Bij een <b>piramide</b> hebben alle vlakken, behalve het grondvlak, de vorm van een driehoek. Deze driehoekige vlakken komen samen in de <b>top</b> (letter T). Het vlak tegenover de top is het grondvlak.</p></div></div><div class="box"><h4>Hoe je een prisma of piramide benoemt</h4><p>Je noemt een prisma of piramide naar de letters van de hoekpunten. Een prisma met grondvlak ABCDE en bovenvlak FGHIJ heet <b>prisma ABCDE FGHIJ</b>. Een piramide met grondvlak ABCD en top T heet <b>piramide TABCD</b>.</p></div><div class="g2"><div class="box"><h4>Voorbeeld: prisma met driehoekig grondvlak</h4><p>Zo’n prisma heeft 5 platte vlakken: twee driehoeken (het grondvlak en het vlak erboven) en drie rechthoeken.</p></div><div class="term"><b>Driehoek</b><span>Een vlakke figuur met drie hoekpunten en drie zijden. Bij een driehoek kun je meten of zijden even lang zijn.</span></div></div><div class="call warn"><b>Let op het verschil:</b> bij een prisma zijn bijna alle vlakken rechthoeken. Bij een piramide zijn, behalve het grondvlak, alle vlakken driehoeken die samenkomen in één punt: de top.</div><div class="call sum"><b>Om te onthouden (1.5)</b><ul class="lst"><li>Een prisma heeft een grondvlak en een gelijk vlak erboven; de andere vlakken zijn rechthoeken.</li><li>Een piramide heeft een grondvlak en driehoekige zijvlakken die samenkomen in de top (T).</li><li>Je benoemt een ruimtefiguur met de letters van de hoekpunten, bijvoorbeeld prisma ABCDE FGHIJ of piramide TABCD.</li><li>Een driehoek heeft drie zijden en drie hoekpunten.</li></ul></div>'}
+{heading:'1.1 Vlakken, ribben en hoekpunten',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>de <b>vlakken</b>, <b>ribben</b> en <b>hoekpunten</b> van een ruimtefiguur aanwijzen</li>
+<li>ze <b>tellen</b>, ook als je ze niet allemaal ziet</li></ul></div>`
++`<div class="box"><h4>Waar dit hoofdstuk over gaat</h4><p>Je leert de namen van <b>ruimtefiguren</b>: kubus, balk, cilinder, prisma en piramide. En van de <b>vlakke figuren</b> die erbij horen: vierkant, rechthoek, cirkel en driehoek.</p></div>`
++`<h5 class="sub">Waar bestaat een ruimtefiguur uit?</h5>`
++`<div class="g3">`
++`<div class="term"><b>Vlak</b><p>De buitenkant van een ruimtefiguur. Een vlak is <b>plat</b> of <b>gebogen</b>.</p></div>`
++`<div class="term"><b>Ribbe</b><p>De <b>rand</b> tussen twee platte vlakken.</p></div>`
++`<div class="term"><b>Hoekpunt</b><p>De punt waar <b>ribben</b> bij elkaar komen.</p></div></div>`
++`<div class="box"><h4>Stippellijnen</h4><p>Een ruimtefiguur wordt vaak <b>doorzichtig</b> getekend. Ribben die je eigenlijk niet ziet, teken je dan <b>gestippeld</b>. Zo kun je alle ribben en hoekpunten tellen.</p></div>`
++`<h5 class="sub">Tellen</h5>`
++`<div class="tblwrap"><table class="tbl"><tr><th>Ruimtefiguur</th><th>Platte vlakken</th><th>Gebogen vlakken</th><th>Ribben</th><th>Hoekpunten</th></tr><tr><td>Balk</td><td>6</td><td>0</td><td>12</td><td>8</td></tr><tr><td>Cilinder</td><td>2</td><td>1</td><td>0</td><td>0</td></tr></table></div>`
++`<div class="call waarom">Waarom heeft een cilinder <b>geen ribben</b>? Een ribbe is de rand tussen <b>twee platte vlakken</b>. Bij een cilinder komt een plat vlak alleen tegen het <b>gebogen vlak</b> aan. Daarom zijn er ook <b>geen hoekpunten</b>.</div>`
++`<figure class='fig'><svg viewBox="0 0 340 265" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="De zes ruimtefiguren: kubus, balk, prisma, piramide, cilinder en kegel"><g fill="var(--accent)" fill-opacity=".16" stroke="var(--txt)" stroke-width="1.5" stroke-linejoin="round" opacity=".9"><path d="M20 100 L64 100 L64 56 L20 56 Z"/><path d="M20 56 L34 42 L78 42 L64 56 Z"/><path d="M64 56 L78 42 L78 86 L64 100 Z"/><path d="M132 100 L188 100 L188 66 L132 66 Z"/><path d="M132 66 L146 52 L202 52 L188 66 Z"/><path d="M188 66 L202 52 L202 86 L188 100 Z"/><path d="M248 100 L292 100 L270 62 Z"/><path d="M248 100 L262 86 L306 86 L292 100 Z"/><path d="M292 100 L306 86 L284 48 L270 62 Z"/><path d="M26 222 L74 222 L57 168 Z"/><path d="M74 222 L88 208 L57 168 Z"/></g><g fill="none" stroke="var(--mut)" stroke-width="1.1" stroke-dasharray="4 3" opacity=".8"><path d="M26 222 L40 208"/><path d="M40 208 L88 208"/><path d="M40 208 L57 168"/></g><g fill="var(--accent)" fill-opacity=".16" stroke="var(--txt)" stroke-width="1.5" opacity=".9"><path d="M142 182 L142 222 A 24 9 0 0 0 190 222 L190 182 Z"/><ellipse cx="166" cy="182" rx="24" ry="9"/><path d="M254 222 L278 168 L302 222 Z"/><ellipse cx="278" cy="222" rx="24" ry="9"/></g><g fill="var(--txt)" font-size="10.5" font-family="inherit" text-anchor="middle"><text x="49" y="124">kubus</text><text x="167" y="124">balk</text><text x="277" y="124">prisma</text><text x="57" y="246">piramide</text><text x="166" y="246">cilinder</text><text x="278" y="246">kegel</text></g><g fill="var(--mut)" font-size="8.5" font-family="inherit" text-anchor="middle"><text x="49" y="136">6 vierkanten</text><text x="167" y="136">6 rechthoeken</text><text x="277" y="136">2 grondvlakken</text><text x="57" y="258">1 top</text><text x="166" y="258">2 cirkels</text><text x="278" y="258">1 cirkel + top</text></g></svg><figcaption>Zes ruimtefiguren die je uit je hoofd moet kunnen herkennen. Alleen de cilinder en de kegel hebben een gebogen zijvlak &mdash; daarom rollen die wel en de andere niet.</figcaption></figure>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Hoeveel ribben en hoekpunten heeft een balk?</p><p class="check-a"><b>12 ribben</b> en <b>8 hoekpunten</b>.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden (1.1)</b><ul class="lst">
+<li>De buitenkant bestaat uit <b>platte</b> of <b>gebogen</b> vlakken.</li>
+<li>De rand tussen twee platte vlakken is een <b>ribbe</b>. Ribben komen samen in een <b>hoekpunt</b>.</li>
+<li>Een <b>balk</b>: 6 vlakken, 12 ribben, 8 hoekpunten. Een <b>cilinder</b>: 2 platte vlakken, 1 gebogen vlak, geen ribben.</li></ul></div>`},
+
+{heading:'1.2 Kubus en vierkant',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>wat een <b>kubus</b> en een <b>vierkant</b> zijn</li>
+<li>wat een <b>uitslag</b> en een <b>bouwplaat</b> zijn</li></ul></div>`
++`<h5 class="sub">De kubus</h5>`
++`<div class="box"><h4>Kubus</h4><p>Een <b>kubus</b> heeft <b>6 vlakken</b>. Elk vlak is een <b>vierkant</b>. Een kubus heeft <b>12 ribben</b> en <b>8 hoekpunten</b>. Bij de hoekpunten kun je letters zetten.</p></div>`
++`<div class="vergelijk"><div class="vergelijk-kant"><h4>Uitslag</h4><p>Alle vlakken van de kubus <b>plat</b> naast elkaar. Bij een kubus zijn dat <b>zes vierkanten</b> die aan elkaar vast zitten. Dat kan op verschillende manieren.</p></div><div class="vergelijk-vs">vs</div><div class="vergelijk-kant"><h4>Bouwplaat</h4><p>Een uitslag <b>met plakrandjes</b>. Die kun je knippen, vouwen en plakken tot een kubus.</p></div></div>`
++`<h5 class="sub">Het vierkant</h5>`
++`<div class="g2">`
++`<div class="box"><h4>Vierkant</h4><p>Een <b>vlakke figuur</b> met <b>4 even lange zijden</b>. Alle hoeken zijn <b>recht</b> (90&deg;). Dat controleer je met je <b>geodriehoek</b>.</p></div>`
++`<div class="term"><b>Dimensie</b><p>Een richting waarin je meet. Een vierkant heeft er <b>twee</b>: lengte en breedte.</p></div></div>`
++`<div class="call reken"><b>Zo zet je letters bij een vierkant</b><ol class="num">
+<li>Begin <b>linksonder</b> met de A.</li>
+<li>Ga <b>rechtsom</b> verder met B, C en D.</li></ol></div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Wat is het verschil tussen een uitslag en een bouwplaat?</p><p class="check-a">Een bouwplaat heeft <b>plakrandjes</b>, een uitslag niet.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden (1.2)</b><ul class="lst">
+<li>Een <b>kubus</b>: 6 vierkante vlakken, 12 ribben, 8 hoekpunten.</li>
+<li>De <b>uitslag</b> van een kubus is zes vierkanten aan elkaar. Met plakrandjes heet het een <b>bouwplaat</b>.</li>
+<li>Een <b>vierkant</b>: 4 even lange zijden, 4 rechte hoeken, 2 dimensies.</li></ul></div>`},
+
+{heading:'1.3 Balk en rechthoek',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>wat een <b>balk</b> en een <b>rechthoek</b> zijn</li>
+<li>letters bij de <b>hoekpunten</b> van een balk zetten</li></ul></div>`
++`<h5 class="sub">De balk</h5>`
++`<div class="box"><h4>Balk</h4><p>Een <b>balk</b> heeft <b>drie dimensies</b>: lengte, breedte en hoogte. Net als een kubus heeft hij <b>6 vlakken</b>, <b>12 ribben</b> en <b>8 hoekpunten</b>. De vlakken zijn <b>rechthoeken</b>. Soms zijn twee vlakken een vierkant.</p></div>`
++`<div class="vergelijk"><div class="vergelijk-kant"><h4>Kubus</h4><p>Alle vlakken zijn <b>vierkanten</b>. Alle ribben zijn even lang.</p></div><div class="vergelijk-vs">vs</div><div class="vergelijk-kant"><h4>Balk</h4><p>De vlakken zijn <b>rechthoeken</b>. Vlakken die <b>tegenover elkaar</b> liggen, zijn even groot.</p></div></div>`
++`<div class="call reken"><b>Zo zet je letters bij een balk</b><ol class="num">
+<li>Begin in het <b>ondervlak</b>. Zet <b>linksonder</b> de A.</li>
+<li>Ga <b>rechtsom</b>: B, C en D.</li>
+<li>Ga naar het <b>bovenvlak</b>. Zet de E <b>boven de A</b>.</li>
+<li>Ga weer rechtsom: F, G en H.</li></ol></div>`
++`<h5 class="sub">Uitslag en rechthoek</h5>`
++`<div class="g2">`
++`<div class="box"><h4>Uitslag van een balk</h4><p>Zes <b>rechthoeken</b> aan elkaar. Met plakranden erbij is het een <b>bouwplaat</b>.</p></div>`
++`<div class="box"><h4>Rechthoek</h4><p><b>4 rechte hoeken</b>. De zijden <b>tegenover elkaar</b> zijn even lang. Zijde PQ is dus even lang als zijde RS.</p></div></div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Bij welke letter zet je de E in een balk ABCD EFGH?</p><p class="check-a"><b>Boven de A</b>, in het bovenvlak.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden (1.3)</b><ul class="lst">
+<li>Een <b>balk</b> heeft 3 dimensies, 6 vlakken, 12 ribben en 8 hoekpunten.</li>
+<li>Letters: ondervlak <b>A-D</b>, bovenvlak <b>E-H</b>, steeds rechtsom.</li>
+<li>Bij een <b>rechthoek</b> zijn de zijden tegenover elkaar even lang.</li></ul></div>`},
+
+{heading:'1.4 Cilinder en cirkel',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>wat een <b>cilinder</b> is</li>
+<li>het verschil tussen <b>straal</b> en <b>diameter</b> van een cirkel</li></ul></div>`
++`<h5 class="sub">De cilinder</h5>`
++`<div class="box"><h4>Cilinder</h4><p>Een <b>cilinder</b> heeft <b>1 gebogen vlak</b> en <b>2 platte vlakken</b>. De platte vlakken zijn <b>cirkels</b>. Een cilinder heeft geen ribben en geen hoekpunten. Daarom kan hij <b>rollen</b>.</p></div>`
++`<h5 class="sub">De cirkel</h5>`
++`<div class="box"><h4>Cirkel</h4><p>Een cirkel teken je met een <b>passer</b>. Waar de passerpunt stond, ligt het <b>middelpunt</b>.</p></div>`
++`<div class="vergelijk"><div class="vergelijk-kant"><h4>Straal</h4><p>Van het <b>middelpunt</b> naar de <b>rand</b>.</p></div><div class="vergelijk-vs">vs</div><div class="vergelijk-kant"><h4>Diameter</h4><p>Van <b>rand tot rand</b>, dwars door het middelpunt. Ook wel <b>middellijn</b>.</p></div></div>`
++`<div class="voorbeeld"><h4>Voorbeeld: straal 3 cm</h4><p>Hoe lang is de diameter?</p><div class="antwoord">De straal past <b>twee keer</b> in de diameter. Diameter = 2 &times; 3 = <b>6 cm</b>.</div></div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">De diameter van een cirkel is 10 cm. Hoe lang is de straal?</p><p class="check-a">10 : 2 = <b>5 cm</b>.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden (1.4)</b><ul class="lst">
+<li>Een <b>cilinder</b>: 2 platte vlakken (cirkels), 1 gebogen vlak, geen ribben.</li>
+<li>Het <b>middelpunt</b> is waar de passerpunt stond.</li>
+<li>De <b>diameter</b> is twee keer zo lang als de <b>straal</b>.</li></ul></div>`},
+
+{heading:'1.5 Piramide, prisma en driehoek',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>het verschil tussen een <b>prisma</b> en een <b>piramide</b></li>
+<li>een ruimtefiguur een <b>naam</b> geven met letters</li></ul></div>`
++`<h5 class="sub">Prisma en piramide</h5>`
++`<div class="vergelijk"><div class="vergelijk-kant"><h4>Prisma</h4><p>Een <b>grondvlak</b> en een gelijk vlak erboven. Die kunnen een driehoek, vierhoek, vijfhoek of zeshoek zijn. De andere vlakken zijn <b>rechthoeken</b>.</p></div><div class="vergelijk-vs">vs</div><div class="vergelijk-kant"><h4>Piramide</h4><p>Een <b>grondvlak</b>. De andere vlakken zijn <b>driehoeken</b>. Die komen samen in de <b>top</b> (letter T).</p></div></div>`
++`<div class="call warn"><b>Let op:</b> een prisma staat <b>niet altijd</b> op zijn grondvlak. Zoek de twee vlakken die <b>geen rechthoek</b> zijn.</div>`
++`<h5 class="sub">Een naam geven</h5>`
++`<div class="call reken"><b>Zo geef je een ruimtefiguur een naam</b><ol class="num">
+<li>Noem de letters van het <b>grondvlak</b>.</li>
+<li>Prisma: noem daarna de letters van het <b>bovenvlak</b>. Piramide: zet de <b>T</b> vooraan.</li></ol></div>`
++`<div class="g2">`
++`<div class="voorbeeld"><h4>Voorbeeld: prisma</h4><p>Grondvlak ABCDE, bovenvlak FGHIJ.</p><div class="antwoord">Het heet <b>prisma ABCDE FGHIJ</b>.</div></div>`
++`<div class="voorbeeld"><h4>Voorbeeld: piramide</h4><p>Grondvlak ABCD, top T.</p><div class="antwoord">Het heet <b>piramide TABCD</b>.</div></div></div>`
++`<div class="box"><h4>Driehoek</h4><p>Een <b>driehoek</b> heeft <b>3 zijden</b> en <b>3 hoekpunten</b>. Een prisma met een driehoek als grondvlak heeft 5 vlakken: 2 driehoeken en 3 rechthoeken.</p></div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Een figuur heeft een vierkant grondvlak en vier driehoeken die in één punt samenkomen. Wat is het?</p><p class="check-a">Een <b>piramide</b>.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden (1.5)</b><ul class="lst">
+<li><b>Prisma</b>: grondvlak, gelijk bovenvlak, de rest rechthoeken.</li>
+<li><b>Piramide</b>: grondvlak, de rest driehoeken die samenkomen in de <b>top T</b>.</li>
+<li>Naam geven: <b>prisma ABCDE FGHIJ</b>, <b>piramide TABCD</b>.</li></ul></div>`}
 ],
 terms:[
 ['ruimtefiguur','Figuur met drie dimensies (lengte, breedte en hoogte), waarvan de buitenkant uit vlakken bestaat.',2],

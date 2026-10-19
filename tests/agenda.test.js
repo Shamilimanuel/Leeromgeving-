@@ -1,7 +1,24 @@
 /* buildStudyPlan() is pure (an explicit "today" argument, like screenFor() in
    authGate.js), so the spacing rules can be tested without localStorage. */
 import { describe, it, expect } from 'vitest';
-import { buildStudyPlan, studyStepsFor } from '../src/state/agenda.js';
+import { buildStudyPlan, studyStepsFor, calendarMonths } from '../src/state/agenda.js';
+
+describe('calendarMonths', () => {
+  it('starts at the current month, not January', () => {
+    const months = calendarMonths('2026-10-18');
+    expect(months).toHaveLength(12);
+    expect(months[0]).toEqual({ year: 2026, month: 9 });
+    expect(months[2]).toEqual({ year: 2026, month: 11 });
+    expect(months[3]).toEqual({ year: 2027, month: 0 });
+    expect(months[11]).toEqual({ year: 2027, month: 8 });
+  });
+
+  it('stays in one year when today is in January', () => {
+    const months = calendarMonths('2027-01-05');
+    expect(months[0]).toEqual({ year: 2027, month: 0 });
+    expect(months[11]).toEqual({ year: 2027, month: 11 });
+  });
+});
 
 const TODAY = '2026-08-31';
 

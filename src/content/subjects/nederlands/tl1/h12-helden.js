@@ -1,12 +1,80 @@
 import { registerChapter } from '../../../registry.js';
 
+/* Rebuilt 2026-09-25 to the recipe of Economie TL4 H1 (change 6). Same
+   content, term boxes and "builds on" links, restructured. Terms, cards and
+   quiz unchanged. */
 registerChapter('nederlands|tl|1|12', {
 title:'Helden',
 summary:[
-{heading:'Vragen stellen',html:'<div class=\'box\'><h4>Waar gaat dit hoofdstuk over?</h4><p>In dit thema draait alles om helden: wie is voor jou een held, en waarom? Je leert hoe je goede interviewvragen stelt, hoe interviews zijn opgebouwd, hoe je een interview uitwerkt tot een artikel en hoe je een zakelijke e-mail schrijft. Aan het eind interview je zelf iemand die jij een held vindt.</p></div><div class=\'box\'><h4>Goede interviewvragen bedenken</h4><p>Voor een goed interview bedenk je vooraf verschillende soorten vragen.</p></div><div class=\'g2\'><div class=\'box\'><h4>Gesloten vraag</h4><p>Een vraag waarop je met \'ja\' of \'nee\' kunt antwoorden, bijvoorbeeld: \'Speel je al lang voetbal?\'</p></div><div class=\'box\'><h4>Open vraag</h4><p>Een vraag die om een uitgebreider antwoord vraagt, bijvoorbeeld: \'Hoe ben je begonnen met voetballen?\'</p></div></div><div class=\'call sum\'><b>Zo bereid je goede interviewvragen voor</b><ul class=\'lst\'><li>Bedenk zowel gesloten als open vragen.</li><li>Stel ook een vraag naar een gevoel en een vraag naar een mening.</li><li>Bedenk vervolgvragen die je kunt stellen als je iets niet begrijpt of meer wilt weten.</li></ul></div><div class=\'term\'><b>Gesloten vraag</b><span>een vraag waarop je met \'ja\' of \'nee\' kunt antwoorden</span></div><div class=\'term\'><b>Open vraag</b><span>een vraag die om een uitgebreider antwoord vraagt</span></div><div class=\'term\'><b>Vervolgvraag</b><span>een vraag die je stelt als je iets niet begrijpt of meer wilt weten over het antwoord</span></div>'},
-{heading:'Interviews',html:'<div class=\'box\'><h4>Hoe lees en herken je een interview?</h4><p>Een <b>interview</b> is een gesprek waarin de ene persoon (de interviewer) vragen stelt aan de andere persoon (de geïnterviewde) om meer over hem of haar te weten te komen. Een interview kan worden uitgewerkt tot een geschreven artikel, met vraag-en-antwoordvorm of in lopende tekst met citaten.</p></div><div class=\'term\'><b>Interview</b><span>een gesprek waarin iemand vragen stelt aan een ander om meer over die persoon te weten te komen</span></div><div class=\'term\'><b>Interviewer</b><span>degene die de vragen stelt tijdens een interview</span></div><div class=\'term\'><b>Geïnterviewde</b><span>degene aan wie de vragen worden gesteld tijdens een interview</span></div><div class=\'call link\'><b>Dit bouwt voort op:</b> Thema D § 3 Vragen stellen</div>'},
-{heading:'Een interview uitwerken',html:'<div class=\'box\'><h4>Van gesprek naar artikel</h4><p>Als je een interview hebt afgenomen, moet je het uitwerken tot een tekst, bijvoorbeeld een artikel voor een tijdschrift. Ook een uitgewerkt interview heeft een inleiding, middenstuk en slot.</p></div><div class=\'call sum\'><b>Zo werk je een interview uit</b><ul class=\'lst\'><li><b>Inleiding:</b> stel de geïnterviewde voor en vertel waarom je deze persoon een held vindt.</li><li><b>Middenstuk:</b> verwerk de belangrijkste antwoorden uit het interview, eventueel met citaten (letterlijke uitspraken tussen aanhalingstekens).</li><li><b>Slot:</b> rond het artikel af, bijvoorbeeld met een korte conclusie of laatste opvallende uitspraak.</li></ul></div><div class=\'term\'><b>Citaat</b><span>een letterlijke uitspraak van de geïnterviewde, weergegeven tussen aanhalingstekens</span></div><div class=\'call link\'><b>Dit bouwt voort op:</b> Meer dan lezen § 5 Inleiding, middenstuk en slot</div>'},
-{heading:'Zakelijke e-mail',html:'<div class=\'box\'><h4>Een e-mail schrijven om iets te vragen</h4><p>Als je iemand die je niet kent wilt vragen om een interview, schrijf je een <b>zakelijke e-mail</b>. Hierin gebruik je formele taal en een duidelijke opbouw.</p></div><div class=\'call sum\'><b>Zo schrijf je een zakelijke e-mail</b><ul class=\'lst\'><li>Vul een duidelijke onderwerpregel in.</li><li>Begin met een beleefde aanhef, bijvoorbeeld: <i>Beste meneer/mevrouw ...,</i></li><li><b>Inleiding:</b> leg uit wie je bent en waarom je deze e-mail schrijft.</li><li><b>Middenstuk:</b> leg je verzoek duidelijk uit, bijvoorbeeld: mag je diegene interviewen, en hoe lang duurt dat ongeveer?</li><li><b>Slot:</b> vertel wat je hoopt of verwacht.</li><li>Sluit af met een beleefde afsluiting en je voor- en achternaam, bijvoorbeeld: <i>Met vriendelijke groet,</i></li><li>Gebruik witregels tussen de verschillende onderdelen.</li></ul></div><div class=\'call link\'><b>Dit bouwt voort op:</b> Taal § 5 Formeel en informeel</div>'}
+{heading:'Vragen stellen',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>goede <b>interviewvragen</b> bedenken: <b>open</b>, <b>gesloten</b> en <b>vervolgvragen</b></li></ul></div>`
++`<div class="box"><h4>Waar dit hoofdstuk over gaat</h4><p>In dit thema draait alles om <b>helden</b>: wie is voor jou een held, en waarom? Je stelt goede <b>interviewvragen</b>, leert hoe <b>interviews</b> zijn opgebouwd, <b>werkt</b> een interview <b>uit</b> en schrijft een <b>zakelijke e-mail</b>. Aan het eind interview je zelf je held.</p></div>`
++`<h5 class="sub">Soorten vragen</h5>`
++`<div class="vergelijk"><div class="vergelijk-kant"><h4>Gesloten vraag</h4><p>Antwoord met <b>ja</b> of <b>nee</b>: &lsquo;Speel je al lang voetbal?&rsquo;</p></div><div class="vergelijk-vs">vs</div><div class="vergelijk-kant"><h4>Open vraag</h4><p>Vraagt om een <b>uitgebreid</b> antwoord: &lsquo;Hoe ben je begonnen met voetballen?&rsquo;</p></div></div>`
++`<div class="term"><b>Vervolgvraag</b><span>Een vraag die je stelt als je iets niet begrijpt of meer wilt weten over het antwoord.</span></div>`
++`<div class="call reken"><b>Stappenplan: interviewvragen voorbereiden</b><ol class="num">
+<li>Bedenk <b>open</b> én <b>gesloten</b> vragen.</li>
+<li>Stel ook een vraag naar een <b>gevoel</b> en naar een <b>mening</b>.</li>
+<li>Bedenk alvast <b>vervolgvragen</b>.</li></ol></div>`
++`<div class="call waarom">Waarom vooral <b>open</b> vragen? Op een gesloten vraag krijg je vaak alleen &lsquo;ja&rsquo;. Een open vraag laat iemand <b>vertellen</b>, en daar heb je voor je artikel meer aan.</div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Is &lsquo;Wat vond je het mooiste moment?&rsquo; open of gesloten?</p><p class="check-a"><b>Open</b>: je kunt niet met ja of nee antwoorden.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden</b><ul class="lst">
+<li><b>Gesloten</b>: ja/nee. <b>Open</b>: uitgebreid antwoord.</li>
+<li>Bereid <b>vervolgvragen</b> voor, ook over <b>gevoel</b> en <b>mening</b>.</li></ul></div>`},
+
+{heading:'Interviews',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>wat een <b>interview</b> is en hoe je het herkent</li></ul></div>`
++`<div class="call link"><b>Dit bouwt voort op:</b> Thema D &sect; 3 Vragen stellen</div>`
++`<h5 class="sub">Wie vraagt, wie antwoordt?</h5>`
++`<div class="term"><b>Interview</b><span>Een gesprek waarin iemand vragen stelt aan een ander om meer over die persoon te weten te komen.</span></div>`
++`<div class="vergelijk"><div class="vergelijk-kant"><h4>Interviewer</h4><p>Degene die de <b>vragen stelt</b>.</p></div><div class="vergelijk-vs">vs</div><div class="vergelijk-kant"><h4>Geïnterviewde</h4><p>Degene die de vragen <b>beantwoordt</b>.</p></div></div>`
++`<div class="box"><h4>Twee vormen op papier</h4><p>Een interview kan worden uitgewerkt in <b>vraag-en-antwoordvorm</b>, of in <b>lopende tekst</b> met <b>citaten</b>.</p></div>`
++`<div class="call reken"><b>Zo herken je een interview</b><ol class="num">
+<li>Zie je <b>vragen</b> en <b>antwoorden</b> om en om? Dan is het de vraag-en-antwoordvorm.</li>
+<li>Staan er stukken tussen <b>aanhalingstekens</b> in een lopende tekst? Dat zijn <b>citaten</b> uit het gesprek.</li></ol></div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Hoe heet degene die de vragen beantwoordt?</p><p class="check-a">De <b>geïnterviewde</b>.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden</b><ul class="lst">
+<li><b>Interviewer</b> vraagt, <b>geïnterviewde</b> antwoordt.</li>
+<li>Op papier: <b>vraag-en-antwoord</b> of <b>lopende tekst</b> met citaten.</li></ul></div>`},
+
+{heading:'Een interview uitwerken',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>een interview <b>uitwerken</b> tot een <b>artikel</b></li></ul></div>`
++`<div class="call link"><b>Dit bouwt voort op:</b> Meer dan lezen &sect; 5 Inleiding, middenstuk en slot</div>`
++`<h5 class="sub">Van gesprek naar artikel</h5>`
++`<div class="call reken"><b>Stappenplan: een interview uitwerken</b><ol class="num">
+<li><b>Inleiding</b>: stel de geïnterviewde voor en vertel <b>waarom</b> hij voor jou een held is.</li>
+<li><b>Middenstuk</b>: verwerk de belangrijkste <b>antwoorden</b>, eventueel met <b>citaten</b>.</li>
+<li><b>Slot</b>: rond af met een korte <b>conclusie</b> of een laatste opvallende <b>uitspraak</b>.</li></ol></div>`
++`<div class="term"><b>Citaat</b><span>Een letterlijke uitspraak van de geïnterviewde, tussen aanhalingstekens.</span></div>`
++`<div class="voorbeeld"><h4>Voorbeeld: een citaat verwerken</h4><p>Je held zei in het interview dat ze elke ochtend om zes uur traint.</p><div class="antwoord">&lsquo;<b>Ik train elke ochtend om zes uur</b>,&rsquo; vertelt ze. &lsquo;Ook als ik geen zin heb.&rsquo; Het citaat maakt je artikel <b>levendig</b>.</div></div>`
++`<div class="call warn"><b>Let op:</b> in een <b>citaat</b> zet je <b>precies</b> wat iemand zei. Verander het niet.</div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Wat schrijf je in de inleiding van je artikel?</p><p class="check-a">Wie de geïnterviewde is en <b>waarom</b> hij een held is.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden</b><ul class="lst">
+<li>Inleiding, middenstuk met <b>citaten</b>, slot.</li>
+<li>Een citaat is <b>letterlijk</b>.</li></ul></div>`},
+
+{heading:'Zakelijke e-mail',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>een <b>zakelijke e-mail</b> schrijven met een duidelijke opbouw</li></ul></div>`
++`<div class="call link"><b>Dit bouwt voort op:</b> Taal &sect; 5 Formeel en informeel</div>`
++`<h5 class="sub">Iets vragen aan iemand die je niet kent</h5>`
++`<div class="box"><h4>Formeel</h4><p>Wil je iemand die je niet kent om een interview vragen, dan schrijf je een <b>zakelijke e-mail</b>: <b>formele</b> taal en een duidelijke <b>opbouw</b>.</p></div>`
++`<div class="call reken"><b>Stappenplan: een zakelijke e-mail</b><ol class="num">
+<li>Een duidelijke <b>onderwerpregel</b>.</li>
+<li>Een beleefde <b>aanhef</b>: Beste meneer/mevrouw &hellip;,</li>
+<li><b>Inleiding</b>: wie je bent en waarom je schrijft.</li>
+<li><b>Middenstuk</b>: je verzoek. Mag je iemand interviewen, en hoe lang duurt het?</li>
+<li><b>Slot</b>: wat je hoopt of verwacht.</li>
+<li><b>Afsluiting</b>: Met vriendelijke groet, en je voor- en achternaam.</li></ol></div>`
++`<div class="vergelijk"><div class="vergelijk-kant"><h4>Appje aan een vriend</h4><p>&lsquo;Hoi! Heb je tijd?&rsquo;</p></div><div class="vergelijk-vs">vs</div><div class="vergelijk-kant"><h4>Zakelijke e-mail</h4><p>&lsquo;Beste mevrouw Jansen, mijn naam is &hellip;&rsquo;</p></div></div>`
++`<div class="call warn"><b>Vergeet niet:</b> <b>witregels</b> tussen de onderdelen en je <b>volledige naam</b> onderaan.</div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Hoe sluit je een zakelijke e-mail af?</p><p class="check-a">Met <b>Met vriendelijke groet</b> en je <b>voor- en achternaam</b>.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden</b><ul class="lst">
+<li><b>Onderwerpregel</b>, <b>aanhef</b>, inleiding, verzoek, slot, <b>afsluiting</b>.</li>
+<li>Formele taal en <b>witregels</b>.</li></ul></div>`}
 ],
 terms:[
 ['Gesloten vraag','Een vraag waarop je met \'ja\' of \'nee\' kunt antwoorden.',0],

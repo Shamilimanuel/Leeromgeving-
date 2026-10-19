@@ -1,12 +1,81 @@
 import { registerChapter } from '../../../registry.js';
 
+/* Rebuilt 2026-09-25 to the recipe of Economie TL4 H1 (change 6). Same
+   content, restructured. Terms, cards and quiz unchanged. */
 registerChapter('nederlands|tl|2|10', {
 title:'Mysterie',
 summary:[
-{heading:'Inleiding en slot',html:'<div class=\'box\'><h4>Waar gaat dit hoofdstuk over?</h4><p>In dit thema duik je in mysteries: je leert een tekst logisch opbouwen met een inleiding en slot, hoe verhalende podcasts werken, hoe je een intro en outro schrijft en hoe je goed spreekt in een podcast, als voorbereiding op je eigen podcast.</p></div><div class=\'box\'><h4>Inleiding en slot</h4><p>Een tekst heeft een duidelijke opbouw met een <b>inleiding</b>, een middenstuk en een <b>slot</b>. In de inleiding maak je de lezer nieuwsgierig en geef je de <b>hoofdgedachte</b> of het onderwerp van de tekst aan. Een inleiding kan bijvoorbeeld beginnen met een <b>anekdote</b> (een kort, pakkend verhaaltje) om de aandacht te trekken.</p></div><div class=\'box\'><h4>Het slot</h4><p>In het slot rond je de tekst af. Je kunt bijvoorbeeld terugkomen op de inleiding, de belangrijkste punten samenvatten of een <b>vooruitblik</b> geven: iets vertellen over wat er hierna nog kan gebeuren.</p></div>'},
-{heading:'Verhalende podcasts',html:'<div class=\'box\'><h4>Verhalende podcasts</h4><p>Een <b>verhalende podcast</b> vertelt een verhaal of onderzoekt een onderwerp in de vorm van een gesproken audioprogramma. Een verhalende podcast is meestal opgebouwd uit een <b>intro</b>, een <b>middenstuk</b> en een <b>outro</b>.</p></div><div class=\'box\'><h4>Doel van een podcast</h4><p>Een podcast kan verschillende doelen hebben, bijvoorbeeld <b>informeren</b> (feiten en uitleg geven) of <b>amuseren</b> (vermaken, entertainen). Vaak doet een podcast allebei tegelijk.</p></div>'},
-{heading:'Een intro en outro voor een podcast schrijven',html:'<div class=\'box\'><h4>Intro en outro</h4><p>De <b>intro</b> van een podcastaflevering trekt de aandacht van de luisteraar en vertelt waar de aflevering over gaat. De <b>outro</b> sluit de aflevering af, bijvoorbeeld met een samenvatting of een vooruitblik naar de volgende aflevering. Tussen de intro, het middenstuk en de outro gebruik je vaak een <b>jingle</b>: een kort muziekje dat de overgang markeert.</p></div><div class=\'call sum\'><b>Zo schrijf je een goede intro/outro</b><ul class=\'lst\'><li>Schrijf kort en pakkend, in gesproken taal.</li><li>Controleer je tekst door hem hardop te lezen: lopen de zinnen lekker?</li><li>Bepaal welke woorden extra nadruk moeten krijgen (maak ze GROOT) en waar je wilt pauzeren (zet daar een schuin streepje).</li></ul></div>'},
-{heading:'Spreken in een podcast',html:'<div class=\'box\'><h4>Duidelijk spreken in een podcast</h4><p>Omdat luisteraars je niet kunnen zien, is het extra belangrijk om duidelijk en verstaanbaar te spreken. Let op:</p><ul class=\'lst\'><li>je <b>tempo</b>: spreek niet te snel en niet te langzaam;</li><li>je <b>intonatie</b>: laat je stem niet plat klinken, gebruik afwisseling;</li><li>je <b>volume</b>: spreek luid genoeg, maar schreeuw niet;</li><li>storende achtergrondgeluiden: zorg voor een rustige opnameomgeving.</li></ul></div>'}
+{heading:'Inleiding en slot',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>een <b>inleiding</b> schrijven die nieuwsgierig maakt</li>
+<li>een tekst goed <b>afronden</b> met een slot</li></ul></div>`
++`<div class="box"><h4>Waar dit hoofdstuk over gaat</h4><p>In dit thema duik je in <b>mysteries</b>. Je bouwt een tekst logisch op met een <b>inleiding</b> en <b>slot</b>, je leert hoe <b>verhalende podcasts</b> werken, je schrijft een <b>intro</b> en <b>outro</b> en je oefent met <b>spreken</b> in een podcast.</p></div>`
++`<h5 class="sub">Begin en einde</h5>`
++`<div class="vergelijk"><div class="vergelijk-kant"><h4>Inleiding</h4><p>Maak de lezer <b>nieuwsgierig</b> en noem het <b>onderwerp</b> of de <b>hoofdgedachte</b>.</p></div><div class="vergelijk-vs">vs</div><div class="vergelijk-kant"><h4>Slot</h4><p>Rond af: kom terug op de <b>inleiding</b>, <b>vat samen</b> of geef een <b>vooruitblik</b>.</p></div></div>`
++`<div class="term"><b>Anekdote</b><span>Een kort, pakkend verhaaltje. Een goede manier om een inleiding te beginnen en de aandacht te trekken.</span></div>`
++`<div class="term"><b>Vooruitblik</b><span>In het slot vertellen wat er hierna nog kan gebeuren.</span></div>`
++`<div class="call reken"><b>Stappenplan: inleiding en slot</b><ol class="num">
+<li>Begin met iets <b>pakkends</b>, bijvoorbeeld een <b>anekdote</b>.</li>
+<li>Noem daarna waar de tekst <b>over gaat</b>.</li>
+<li>Schrijf het <b>middenstuk</b>.</li>
+<li>Kies voor het slot: <b>terugkoppelen</b>, <b>samenvatten</b> of een <b>vooruitblik</b>.</li></ol></div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Noem een manier om een tekst af te sluiten.</p><p class="check-a">Terugkomen op de <b>inleiding</b>, de punten <b>samenvatten</b> of een <b>vooruitblik</b> geven.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden</b><ul class="lst">
+<li><b>Inleiding</b>: nieuwsgierig maken + onderwerp.</li>
+<li><b>Slot</b>: terugkoppelen, samenvatten of vooruitblik.</li></ul></div>`},
+
+{heading:'Verhalende podcasts',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>hoe een <b>verhalende podcast</b> is opgebouwd</li>
+<li>welke <b>doelen</b> een podcast kan hebben</li></ul></div>`
++`<h5 class="sub">Een verhaal om naar te luisteren</h5>`
++`<div class="box"><h4>Verhalende podcast</h4><p>Een <b>verhalende podcast</b> vertelt een <b>verhaal</b> of onderzoekt een <b>onderwerp</b> in een gesproken <b>audioprogramma</b>.</p></div>`
++`<div class="call reken"><b>De opbouw van een aflevering</b><ol class="num">
+<li><b>Intro</b>: aandacht trekken en vertellen waar het over gaat.</li>
+<li><b>Middenstuk</b>: het verhaal of het onderzoek.</li>
+<li><b>Outro</b>: afsluiten.</li></ol></div>`
++`<div class="vergelijk"><div class="vergelijk-kant"><h4>Informeren</h4><p><b>Feiten</b> en <b>uitleg</b> geven.</p></div><div class="vergelijk-vs">vs</div><div class="vergelijk-kant"><h4>Amuseren</h4><p><b>Vermaken</b>, entertainen.</p></div></div>`
++`<div class="call waarom">Waarom werkt een mysterie goed als podcast? Een podcast doet vaak <b>allebei</b>: je leert iets over de zaak (<b>informeren</b>) en je wilt weten hoe het afloopt (<b>amuseren</b>, spanning).</div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Uit welke drie delen bestaat een verhalende podcast?</p><p class="check-a"><b>Intro</b>, <b>middenstuk</b> en <b>outro</b>.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden</b><ul class="lst">
+<li><b>Intro</b>, <b>middenstuk</b>, <b>outro</b>.</li>
+<li>Doel: <b>informeren</b> en/of <b>amuseren</b>.</li></ul></div>`},
+
+{heading:'Een intro en outro voor een podcast schrijven',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>een <b>intro</b> en <b>outro</b> schrijven</li>
+<li>je tekst klaarmaken om <b>hardop</b> te lezen</li></ul></div>`
++`<h5 class="sub">Intro, jingle, outro</h5>`
++`<div class="vergelijk"><div class="vergelijk-kant"><h4>Intro</h4><p>Trekt de <b>aandacht</b> en vertelt waar de aflevering over gaat.</p></div><div class="vergelijk-vs">vs</div><div class="vergelijk-kant"><h4>Outro</h4><p>Sluit af, met een <b>samenvatting</b> of een <b>vooruitblik</b> op de volgende aflevering.</p></div></div>`
++`<div class="term"><b>Jingle</b><span>Een kort muziekje dat de overgang tussen intro, middenstuk en outro laat horen.</span></div>`
++`<div class="call reken"><b>Stappenplan: intro of outro schrijven</b><ol class="num">
+<li>Schrijf <b>kort</b> en <b>pakkend</b>, in <b>gesproken taal</b>.</li>
+<li>Lees het <b>hardop</b>: lopen de zinnen lekker?</li>
+<li>Maak woorden met <b>nadruk</b> GROOT.</li>
+<li>Zet een <b>schuin streepje</b> waar je wilt <b>pauzeren</b>.</li></ol></div>`
++`<div class="voorbeeld"><h4>Voorbeeld: tekens in je tekst</h4><p>Zo ziet een stukje intro eruit als je het klaarmaakt.</p><div class="antwoord">Welkom bij Mysterie. / Vandaag: een huis waar al JAREN niemand woont. / Of toch wel?</div></div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Wat is een jingle?</p><p class="check-a">Een <b>kort muziekje</b> dat een overgang markeert.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden</b><ul class="lst">
+<li>Kort, pakkend, <b>gesproken taal</b>.</li>
+<li>Nadruk <b>GROOT</b>, pauze met een <b>/</b>.</li></ul></div>`},
+
+{heading:'Spreken in een podcast',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li><b>duidelijk</b> en <b>verstaanbaar</b> spreken in een podcast</li></ul></div>`
++`<h5 class="sub">Alleen je stem</h5>`
++`<div class="box"><h4>Ze kunnen je niet zien</h4><p>Luisteraars zien je <b>niet</b>: geen gezicht, geen gebaren. Je <b>stem</b> moet alles doen. Daarom is duidelijk spreken extra belangrijk.</p></div>`
++`<div class="g3">`
++`<div class="box"><h4>Tempo</h4><p>Niet te <b>snel</b> en niet te <b>langzaam</b>.</p></div>`
++`<div class="box"><h4>Intonatie</h4><p>Niet <b>plat</b>: gebruik <b>afwisseling</b>.</p></div>`
++`<div class="box"><h4>Volume</h4><p><b>Luid genoeg</b>, maar niet schreeuwen.</p></div></div>`
++`<div class="call reken"><b>Voor je opneemt</b><ol class="num">
+<li>Zoek een <b>rustige</b> plek zonder <b>achtergrondgeluid</b>.</li>
+<li>Lees je tekst een keer <b>hardop</b> met je nadruk- en pauzetekens.</li>
+<li>Neem een stukje op en <b>luister terug</b>: tempo, intonatie en volume goed?</li></ol></div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Wat is intonatie?</p><p class="check-a">De <b>melodie</b> van je stem: afwisselend in plaats van plat.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden</b><ul class="lst">
+<li>Let op <b>tempo</b>, <b>intonatie</b> en <b>volume</b>.</li>
+<li>Neem op in een <b>rustige</b> omgeving.</li></ul></div>`}
 ],
 terms:[
 ['inleiding','het eerste deel van een tekst, waarin je de lezer nieuwsgierig maakt en het onderwerp aangeeft',0],

@@ -23,6 +23,7 @@ export const STORAGE_KEYS = {
   agenda: 'agenda',
   openedBooks: 'geopendeBoeken',
   helpSeen: 'uitlegGezien',
+  timeRace: 'tijdrace',
 };
 
 export function readJson(key, fallback) {

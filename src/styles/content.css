@@ -17,6 +17,11 @@ h5.sub{font-family:'Cinzel',serif;font-size:1rem;color:var(--accent);margin:1.8r
 .call b{color:var(--txt)}
 .call.warn{border-left-color:#f9c116}
 .call.sum{margin-top:1.6rem;background:rgba(255,255,255,.06);border-left-width:4px}
+/* "Dit leer je" (2.8): the learning goals that open a paragraph. Gold, like
+   the subject accent's quieter sibling, so it reads as a guide, not content. */
+.leerdoelen{background:rgba(240,207,120,.06);border:1px solid rgba(240,207,120,.28);border-radius:14px;padding:.85rem 1.1rem;margin:0 0 1rem}
+.leerdoelen>b{display:block;font-family:'Cinzel',serif;font-size:.95rem;color:var(--goud);margin-bottom:.2rem}
+.leerdoelen .lst{margin:0}
 .lst{list-style:none;margin:.4rem 0}
 .lst li{padding:.32rem 0 .32rem 1.3rem;position:relative;font-size:.86rem;color:var(--mut);border-bottom:1px solid var(--line)}
 .lst li:last-child{border:none}

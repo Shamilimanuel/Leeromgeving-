@@ -4,6 +4,7 @@ import { $, setHtml, escapeHtml, warningBox, infoBox, icon } from '../lib/dom.js
 import * as auth from '../services/auth.js';
 import { go, SCREENS } from './navigation.js';
 import { syncAllLevels, pullMyLevels } from '../services/gameProgress.js';
+import { pushStudyStatus } from '../services/studyStatus.js';
 import { showToast } from './toast.js';
 import { isGateEnabled } from './authGate.js';
 import { resetIntro } from './intro.js';
@@ -83,6 +84,7 @@ export async function logout() {
 async function syncPathProgress() {
   try {
     await syncAllLevels();
+    await pushStudyStatus();
     const pulled = await pullMyLevels();
     if (pulled) showToast('Je voortgang van een ander apparaat is opgehaald.');
   } catch { /* offline or not signed in: the path keeps working locally */ }
@@ -127,13 +129,18 @@ export async function renderAccount() {
     if (lede) lede.style.display = '';
     if (crumb) crumb.textContent = 'Inloggen';
     /* With mandatory login there is no way past this screen, so the copy must
-       not keep promising that an account is optional. */
+       not promise that an account is optional. index.html carries the
+       mandatory text, so nothing optional flashes up while loadProfile() is
+       still waiting; only a build with VITE_REQUIRE_LOGIN=0 swaps it. */
     if (isGateEnabled()) {
       if (title) title.textContent = 'Log in om te beginnen';
       if (lede) {
         lede.textContent = 'Je hebt een account nodig om de samenvattingen te '
           + 'gebruiken. Kreeg je een uitnodigingscode van Shamil? Maak hieronder je account.';
       }
+    } else if (lede) {
+      lede.textContent = 'Een account is optioneel: je kunt ook gewoon zonder leren. '
+        + 'Een account krijg je met een uitnodigingscode van Shamil.';
     }
   }
   toggleGuestExits();

@@ -1,12 +1,73 @@
 import { registerChapter } from '../../../registry.js';
 
+/* Rebuilt 2026-09-25 to the recipe of Economie TL4 H1 (change 6). Added
+   from the book: the full table of persoonlijke and bezittelijke
+   voornaamwoorden (the paragraph only had a verwijswoorden table), and that
+   a bezittelijk voornaamwoord always stands before its noun. Terms, cards
+   and quiz unchanged. */
 registerChapter('nederlands|tl|2|5', {
 title:'Grammatica',
 summary:[
-{heading:'Voegwoord herkennen',html:'<div class=\'box\'><h4>Waar gaat dit hoofdstuk over?</h4><p>In dit hoofdstuk leer je meer over woordsoorten (het voegwoord en het persoonlijk/bezittelijk voornaamwoord) en over zinsdelen (de samengestelde zin en het lijdend voorwerp).</p></div><div class=\'box\'><h4>Voegwoord</h4><p>Een <b>voegwoord</b> is een woord waarmee je twee zinnen aan elkaar plakt tot een samengestelde zin. Voorbeelden van voegwoorden zijn: <i>en, terwijl, omdat, zodat, nadat, als, toen, want, maar, of, dus</i>. Het voegwoord staat vaak tussen de twee zinnen, maar kan ook vooraan staan.</p></div>'},
-{heading:'Samengestelde zinnen',html:'<div class=\'box\'><h4>Samengestelde zinnen</h4><p>In teksten kunnen losse en <b>samengestelde zinnen</b> staan. Samengestelde zinnen bestaan uit twee losse zinnen die aan elkaar geplakt zijn. Een samengestelde zin heeft twee <b>persoonsvormen</b>.</p></div><div class=\'tblwrap\'><table class=\'tbl\'><tr><th>losse zinnen</th><th>samengestelde zin</th></tr><tr><td>Annelies bestelt een tosti. Bernd wil een broodje gezond.</td><td>Annelies bestelt een tosti en Bernd wil een broodje gezond.</td></tr><tr><td>Ik leg mijn mobiel in de woonkamer. Ik word niet afgeleid bij het leren.</td><td>Ik leg mijn mobiel in de woonkamer, zodat ik niet word afgeleid bij het leren.</td></tr><tr><td>Het regent. De wedstrijd is afgelast.</td><td>Omdat het regent, is de wedstrijd afgelast.</td></tr></table></div><div class=\'box\'><h4>Het voegwoord</h4><p>In een samengestelde zin staat ook een <b>voegwoord</b>: een woord waarmee je de zinnen aan elkaar plakt. Voegwoorden zijn bijvoorbeeld: <i>en, terwijl, omdat, zodat, nadat, als, toen, want, maar, of, dus</i>. Vaak staat het voegwoord tussen de twee zinnen, maar het kan ook vooraan staan.</p></div>'},
-{heading:'Persoonlijk en bezittelijk voornaamwoord',html:'<div class=\'box\'><h4>Verwijswoorden</h4><p>Om een tekst prettiger te maken en herhaling te voorkomen, gebruik je <b>verwijswoorden</b> in plaats van steeds hetzelfde woord: persoonlijke voornaamwoorden (zoals <i>hij, zij, het</i>) en bezittelijke voornaamwoorden (zoals <i>zijn, haar, hun</i>).</p></div><div class=\'tblwrap\'><table class=\'tbl\'><tr><th>zelfstandig naamwoord</th><th>verwijswoorden</th></tr><tr><td>het-woorden (onzijdig)</td><td>het, zijn, dat, dit</td></tr><tr><td>de-woorden (mannelijk)</td><td>hij, hem, zijn, die, deze</td></tr><tr><td>de-woorden (vrouwelijk)</td><td>zij/ze, haar, die, deze</td></tr><tr><td>meervoud</td><td>zij/ze, hun, die, deze</td></tr></table></div><div class=\'call\'>Weet je niet of een woord mannelijk, vrouwelijk of onzijdig is? Kijk dan in een woordenboek.</div>'},
-{heading:'Lijdend voorwerp',html:'<div class=\'box\'><h4>Lijdend voorwerp</h4><p>Bijna alle zinnen hebben een onderwerp en een gezegde. Een zin kan nog meer zinsdelen hebben, bijvoorbeeld een <b>lijdend voorwerp (lv)</b>. Een lijdend voorwerp geeft meestal aan wie of wat iets overkomt.</p></div><div class=\'box\'><h4>Zo vind je een lijdend voorwerp</h4><p>Bijvoorbeeld: <i>Sifan Hassan heeft een gouden medaille gewonnen.</i></p><ol class=\'num\'><li>Zoek de persoonsvorm (pv). Gebruik de vraagproef of de tijdproef. → pv = heeft</li><li>Zoek het onderwerp (ow). Vraag: wie of wat + pv? → ow = Sifan Hassan</li><li>Zoek het werkwoordelijk gezegde (wg). Noteer alle werkwoorden in de zin. → wg = heeft gewonnen</li><li>Zoek het lijdend voorwerp (lv). Vraag: <i>wat</i> (soms: <i>wie</i>) + werkwoordelijk gezegde + onderwerp? Het antwoord op die vraag is het lijdend voorwerp. → lv = een gouden medaille</li></ol></div><div class=\'call\'>In samengestelde zinnen kun je soms meerdere lijdende voorwerpen vinden: één per losse zin.</div>'}
+{heading:'Voegwoord herkennen',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>een <b>voegwoord</b> herkennen</li></ul></div>`
++`<div class="box"><h4>Waar dit hoofdstuk over gaat</h4><p>Je leert meer <b>woordsoorten</b>: het <b>voegwoord</b> en het <b>persoonlijk</b> en <b>bezittelijk voornaamwoord</b>. En twee <b>zinsdelen</b>-onderwerpen: de <b>samengestelde zin</b> en het <b>lijdend voorwerp</b>.</p></div>`
++`<h5 class="sub">Zinnen aan elkaar plakken</h5>`
++`<div class="box"><h4>Voegwoord</h4><p>Met een <b>voegwoord</b> plak je twee zinnen aan elkaar. Voorbeelden: <b>en</b>, <b>terwijl</b>, <b>omdat</b>, <b>zodat</b>, <b>nadat</b>, <b>als</b>, <b>toen</b>, <b>want</b>, <b>maar</b>, <b>of</b>, <b>dus</b>.</p></div>`
++`<div class="vergelijk"><div class="vergelijk-kant"><h4>Tussen de zinnen</h4><p>Ik blijf thuis, <b>want</b> ik ben ziek.</p></div><div class="vergelijk-vs">vs</div><div class="vergelijk-kant"><h4>Vooraan</h4><p><b>Omdat</b> het regent, is de wedstrijd afgelast.</p></div></div>`
++`<div class="call reken"><b>Zo vind je het voegwoord</b><ol class="num">
+<li>Zoek de <b>twee zinnen</b> in de lange zin.</li>
+<li>Kijk welk woord ze <b>verbindt</b>.</li>
+<li>Staat dat woord in het rijtje? Dan is het het <b>voegwoord</b>.</li></ol></div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Wat is het voegwoord: Ik fiets naar school, terwijl mijn broer de bus neemt.</p><p class="check-a"><b>terwijl</b>.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden</b><ul class="lst">
+<li><b>Voegwoord</b> = plakt twee zinnen aan elkaar.</li>
+<li>Staat <b>tussen</b> de zinnen of <b>vooraan</b>.</li></ul></div>`},
+
+{heading:'Samengestelde zinnen',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li><b>samengestelde zinnen</b> herkennen</li></ul></div>`
++`<h5 class="sub">Twee zinnen in één</h5>`
++`<div class="box"><h4>Twee persoonsvormen</h4><p>Een <b>samengestelde zin</b> bestaat uit twee losse zinnen die met een <b>voegwoord</b> aan elkaar zijn geplakt. Daarom heeft hij <b>twee persoonsvormen</b>.</p></div>`
++`<div class="tblwrap"><table class="tbl"><tr><th>Losse zinnen</th><th>Samengestelde zin</th></tr><tr><td>Annelies bestelt een tosti. Bernd wil een broodje gezond.</td><td>Annelies bestelt een tosti <b>en</b> Bernd wil een broodje gezond.</td></tr><tr><td>Ik leg mijn mobiel in de woonkamer. Ik word niet afgeleid.</td><td>Ik leg mijn mobiel in de woonkamer, <b>zodat</b> ik niet word afgeleid.</td></tr><tr><td>Het regent. De wedstrijd is afgelast.</td><td><b>Omdat</b> het regent, is de wedstrijd afgelast.</td></tr></table></div>`
++`<div class="call reken"><b>Is het een samengestelde zin?</b><ol class="num">
+<li>Zoek de <b>persoonsvormen</b>.</li>
+<li><b>Twee</b> persoonsvormen? Dan is het een samengestelde zin.</li>
+<li>Zoek het <b>voegwoord</b> ertussen of vooraan.</li></ol></div>`
++`<div class="call warn"><b>Let op:</b> in de tweede zin verandert soms de <b>woordvolgorde</b>: &lsquo;ik word niet afgeleid&rsquo; wordt &lsquo;zodat ik niet <b>word</b> afgeleid&rsquo;.</div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Hoeveel persoonsvormen heeft een samengestelde zin?</p><p class="check-a"><b>Twee</b>.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden</b><ul class="lst">
+<li>Samengestelde zin = <b>twee zinnen</b> + een <b>voegwoord</b>.</li>
+<li>Herkennen aan <b>twee persoonsvormen</b>.</li></ul></div>`},
+
+{heading:'Persoonlijk en bezittelijk voornaamwoord',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li><b>persoonlijke</b> en <b>bezittelijke voornaamwoorden</b> herkennen en gebruiken</li></ul></div>`
++`<h5 class="sub">Verwijzen naar wie of wat, en van wie</h5>`
++`<div class="vergelijk"><div class="vergelijk-kant"><h4>Persoonlijk</h4><p>Verwijst naar een <b>persoon</b>, <b>dier</b> of <b>ding</b>: <b>Ik</b> heb <b>het</b> ingepakt.</p></div><div class="vergelijk-vs">vs</div><div class="vergelijk-kant"><h4>Bezittelijk</h4><p>Zegt <b>van wie</b> iets is. Staat altijd <b>vóór</b> het zelfstandig naamwoord: <b>jullie</b> huis, <b>onze</b> klas.</p></div></div>`
++`<div class="tblwrap"><table class="tbl"><tr><th>Persoonlijk (onderwerp)</th><th>Persoonlijk (ander zinsdeel)</th><th>Bezittelijk</th></tr><tr><td>ik</td><td>mij / me</td><td><b>mijn</b></td></tr><tr><td>jij / je</td><td>jou / je</td><td><b>jouw / je</b></td></tr><tr><td>u</td><td>u</td><td><b>uw</b></td></tr><tr><td>hij</td><td>hem</td><td><b>zijn</b></td></tr><tr><td>zij / ze</td><td>haar</td><td><b>haar</b></td></tr><tr><td>het</td><td>het</td><td><b>zijn</b></td></tr><tr><td>wij / we</td><td>ons</td><td><b>ons / onze</b></td></tr><tr><td>jullie</td><td>jullie</td><td><b>jullie</b></td></tr><tr><td>zij / ze</td><td>hun / hen</td><td><b>hun</b></td></tr></table></div>`
++`<div class="call waarom">Waarom verwijzen? Zo voorkom je dat je steeds <b>hetzelfde woord</b> herhaalt: dat leest prettiger. Een de-woord dat <b>mannelijk</b> is, krijgt hij/zijn; een <b>vrouwelijk</b> de-woord zij/haar; een <b>het-woord</b> het/zijn. Twijfel je? Kijk in het <b>woordenboek</b>.</div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Is &lsquo;onze&rsquo; in &lsquo;onze klas&rsquo; persoonlijk of bezittelijk?</p><p class="check-a"><b>Bezittelijk</b>: het zegt van wie de klas is.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden</b><ul class="lst">
+<li><b>Persoonlijk</b>: ik, jij, hij, wij &hellip; verwijst naar wie of wat.</li>
+<li><b>Bezittelijk</b>: mijn, jouw, zijn, hun &hellip; van wie, <b>vóór</b> het zelfstandig naamwoord.</li></ul></div>`},
+
+{heading:'Lijdend voorwerp',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>het <b>lijdend voorwerp</b> vinden</li></ul></div>`
++`<h5 class="sub">Wie of wat overkomt het?</h5>`
++`<div class="box"><h4>Lijdend voorwerp (lv)</h4><p>Bijna elke zin heeft een <b>onderwerp</b> en een <b>gezegde</b>. Een zin kan ook een <b>lijdend voorwerp</b> hebben: het geeft aan <b>wie</b> of <b>wat</b> iets overkomt.</p></div>`
++`<div class="call reken"><b>Stappenplan: het lijdend voorwerp vinden</b><ol class="num">
+<li>Zoek de <b>persoonsvorm</b> (pv) met de vraagproef of tijdproef.</li>
+<li>Zoek het <b>onderwerp</b> (ow): wie of wat + pv?</li>
+<li>Zoek het <b>werkwoordelijk gezegde</b> (wg): alle werkwoorden.</li>
+<li>Vraag: <b>wat</b> (of wie) + wg + ow? Het antwoord is het <b>lijdend voorwerp</b>.</li></ol></div>`
++`<div class="voorbeeld"><h4>Voorbeeld: Sifan Hassan</h4><p>&lsquo;Sifan Hassan heeft een gouden medaille gewonnen.&rsquo;</p><div class="antwoord">pv = <b>heeft</b>. ow = <b>Sifan Hassan</b>. wg = <b>heeft gewonnen</b>. Wat heeft Sifan Hassan gewonnen? <b>Een gouden medaille</b>: dat is het lv.</div></div>`
++`<div class="call warn"><b>Let op:</b> in een <b>samengestelde zin</b> kan elke losse zin een eigen lijdend voorwerp hebben.</div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Welke vraag stel je om het lijdend voorwerp te vinden?</p><p class="check-a"><b>Wat</b> (of wie) + werkwoordelijk gezegde + onderwerp?</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden</b><ul class="lst">
+<li>Eerst <b>pv</b>, dan <b>ow</b>, dan <b>wg</b>, dan <b>lv</b>.</li>
+<li>lv-vraag: <b>wat + wg + ow?</b></li></ul></div>`}
 ],
 terms:[
 ['voegwoord','een woord waarmee je twee zinnen aan elkaar plakt tot een samengestelde zin, bijvoorbeeld en, omdat, terwijl',0],

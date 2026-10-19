@@ -1,98 +1,23 @@
 import { registerChapter } from '../../../registry.js';
 
+/* Upgraded 2026-09-25 to the recipe of Economie TL4 H1 (change 6): every paragraph
+   got "Dit leer je" and a "Check jezelf" (taken from its own flashcard where
+   there was none), plus bold on its own glossary terms where it had little.
+   The text itself is unchanged. */
 registerChapter('economie|tl|4|1', {
 title:'Inkomen en welvaart',
 summary:[
 {heading:'1.1 Wat heb je te besteden?',html:
- '<div class="box"><h4>Waar dit hoofdstuk over gaat</h4><p>Je geeft dagelijks geld uit, maar niet iedereen heeft evenveel te besteden. Je leert wat je bestedingen bepaalt, hoe inkomens verschillen, wat het verschil is tussen welvaart en welzijn, en wat inflatie met je koopkracht doet.</p></div>'
-
- +'<h5 class="sub">Waaraan geef je je geld uit?</h5>'
- +'<div class="g2">'
- +'<div class="box"><h4>Bestedingen</h4><p><b>Bestedingen</b> zijn de uitgaven aan goederen en diensten.</p></div>'
- +'<div class="box"><h4>Doelgroep</h4><p>Een product of boodschap is vaak gericht op een <b>doelgroep</b>: een groep consumenten met dezelfde kenmerken voor wie het bedoeld is.</p></div></div>'
-
- +'<div class="box"><h4>De 6 marketinginstrumenten</h4><p>Bedrijven proberen jouw bestedingen te beïnvloeden met marketinginstrumenten: de <b>6 P\'s</b>:</p>'
- +'<ul class="lst" style="margin-top:.6rem">'
- +'<li><b>Prijs</b></li><li><b>Product</b></li><li><b>Plaats</b></li>'
- +'<li><b>Promotie</b></li><li><b>Personeel</b></li><li><b>Presentatie</b></li></ul></div>'
-
- +'<h5 class="sub">Bewust consumeren</h5>'
- +'<div class="g2">'
- +'<div class="box"><h4>Duurzaam consumeren</h4><p>Bij <b>duurzaam consumeren</b> houd je bij je aankopen rekening met de gevolgen voor andere mensen en het milieu.</p></div>'
- +'<div class="box"><h4>Maatschappelijke kosten</h4><p>Nadelen die we als samenleving ondervinden, bijvoorbeeld van milieuschade, noem je <b>maatschappelijke kosten</b>.</p></div></div>'
-
- +'<h5 class="sub">Waar komt je inkomen vandaan?</h5>'
- +'<div class="box">'
- +'<div class="term"><b>Primaire inkomens</b><span>Inkomens die je verdient door een productiefactor te leveren: inkomen uit arbeid (loon) en uit bezit (rente, huur).</span></div>'
- +'<div class="term" style="margin-bottom:0"><b>Secundaire inkomens</b><span>Inkomens uit overdrachten, zoals uitkeringen, plus alle netto-inkomens.</span></div></div>'
-
- +'<div class="call sum"><b>Om te onthouden (1.1)</b><ul class="lst">'
- +'<li><b>Bestedingen</b> zijn de uitgaven aan goederen en diensten; bedrijven sturen dit met de <b>6 marketinginstrumenten</b> (de 6 P\'s).</li>'
- +'<li><b>Duurzaam consumeren</b> houdt rekening met mens en milieu; nadelen daarvan zijn <b>maatschappelijke kosten</b>.</li>'
- +'<li><b>Primaire inkomens</b> komen uit arbeid en bezit; <b>secundaire inkomens</b> komen uit overdrachten.</li></ul></div>'},
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst"><li>waar je je <b>geld</b> aan uitgeeft en hoe <b>marketing</b> je beïnvloedt</li><li>wat <b>bewust</b> en <b>duurzaam consumeren</b> is</li></ul></div><div class="box"><h4>Waar dit hoofdstuk over gaat</h4><p>Je geeft dagelijks geld uit, maar niet iedereen heeft evenveel te besteden. Je leert wat je bestedingen bepaalt, hoe inkomens verschillen, wat het verschil is tussen welvaart en welzijn, en wat inflatie met je koopkracht doet.</p></div><h5 class="sub">Waaraan geef je je geld uit?</h5><div class="g2"><div class="box"><h4>Bestedingen</h4><p><b>Bestedingen</b> zijn de uitgaven aan goederen en diensten.</p></div><div class="box"><h4>Doelgroep</h4><p>Een product of boodschap is vaak gericht op een <b>doelgroep</b>: een groep consumenten met dezelfde kenmerken voor wie het bedoeld is.</p></div></div><div class="box"><h4>De 6 marketinginstrumenten</h4><p>Bedrijven proberen jouw bestedingen te beïnvloeden met marketinginstrumenten: de <b>6 P's</b>:</p><ul class="lst" style="margin-top:.6rem"><li><b>Prijs</b></li><li><b>Product</b></li><li><b>Plaats</b></li><li><b>Promotie</b></li><li><b>Personeel</b></li><li><b>Presentatie</b></li></ul></div><h5 class="sub">Bewust consumeren</h5><div class="g2"><div class="box"><h4>Duurzaam consumeren</h4><p>Bij <b>duurzaam consumeren</b> houd je bij je aankopen rekening met de gevolgen voor andere mensen en het milieu.</p></div><div class="box"><h4>Maatschappelijke kosten</h4><p>Nadelen die we als samenleving ondervinden, bijvoorbeeld van milieuschade, noem je <b>maatschappelijke kosten</b>.</p></div></div><h5 class="sub">Waar komt je inkomen vandaan?</h5><div class="box"><div class="term"><b>Primaire inkomens</b><span>Inkomens die je verdient door een productiefactor te leveren: inkomen uit arbeid (loon) en uit bezit (rente, huur).</span></div><div class="term" style="margin-bottom:0"><b>Secundaire inkomens</b><span>Inkomens uit overdrachten, zoals uitkeringen, plus alle netto-inkomens.</span></div></div><div class="check" onclick="toonCheck(this)"><p class="check-v">Noem de 6 marketinginstrumenten.</p><p class="check-a">Prijs, product, plaats, promotie, personeel en presentatie.</p><span class="check-hint">Tik voor het antwoord</span></div><div class="call sum"><b>Om te onthouden (1.1)</b><ul class="lst"><li><b>Bestedingen</b> zijn de uitgaven aan goederen en diensten; bedrijven sturen dit met de <b>6 marketinginstrumenten</b> (de 6 P's).</li><li><b>Duurzaam consumeren</b> houdt rekening met mens en milieu; nadelen daarvan zijn <b>maatschappelijke kosten</b>.</li><li><b>Primaire inkomens</b> komen uit arbeid en bezit; <b>secundaire inkomens</b> komen uit overdrachten.</li></ul></div>`},
 
 {heading:'1.2 Niet ieder inkomen is hetzelfde',html:
- '<div class="g2">'
- +'<div class="box"><h4>Van bruto naar besteedbaar</h4><p>Het <b>besteedbaar inkomen</b> is het deel van je inkomen dat je vrij kunt uitgeven, dus na aftrek van belasting en premies.</p></div>'
- +'<div class="box"><h4>Nationaal inkomen</h4><p>Het <b>nationaal inkomen</b> is wat alle inwoners van een land samen aan inkomen hebben uit arbeid en bezit. Dit inkomen is niet gelijk verdeeld.</p></div></div>'
-
- +'<h5 class="sub">Hoe zie je de verdeling?</h5>'
- +'<div class="g2">'
- +'<div class="box"><h4>Modaal inkomen</h4><p>Het <b>modaal inkomen</b> is het inkomen dat het meest voorkomt, maar er zijn ook mensen die veel meer of veel minder verdienen.</p></div>'
- +'<div class="box"><h4>Lorenzcurve</h4><p>Een <b>Lorenzcurve</b> is een grafiek die de verdeling van het nationaal inkomen over de bevolking laat zien. Hoe verder de curve van de rechte lijn van perfecte gelijkheid af buigt, hoe ongelijker de inkomens verdeeld zijn.</p></div></div>'
-
- +'<div class="call warn"><b>Veelgemaakte fout:</b> verwar het <b>modaal inkomen</b> niet met het <b>gemiddelde inkomen</b>. Het modaal inkomen is het inkomen dat het vaakst voorkomt, niet het rekenkundig gemiddelde van alle inkomens.</div>'
-
- +'<div class="call sum"><b>Om te onthouden (1.2)</b><ul class="lst">'
- +'<li><b>Besteedbaar inkomen</b> is wat je overhoudt na belasting en premies.</li>'
- +'<li>Het <b>nationaal inkomen</b> is ongelijk verdeeld; het <b>modaal inkomen</b> komt het meest voor (niet hetzelfde als gemiddeld).</li>'
- +'<li>De <b>Lorenzcurve</b> laat de inkomensverdeling van een land zien.</li></ul></div>'},
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst"><li>van <b>bruto</b> naar <b>besteedbaar inkomen</b> rekenen</li><li>de <b>inkomensverdeling</b> lezen met een <b>Lorenzcurve</b></li></ul></div><div class="g2"><div class="box"><h4>Van bruto naar besteedbaar</h4><p>Het <b>besteedbaar inkomen</b> is het deel van je inkomen dat je vrij kunt uitgeven, dus na aftrek van belasting en premies.</p></div><div class="box"><h4>Nationaal inkomen</h4><p>Het <b>nationaal inkomen</b> is wat alle inwoners van een land samen aan inkomen hebben uit arbeid en bezit. Dit inkomen is niet gelijk verdeeld.</p></div></div><h5 class="sub">Hoe zie je de verdeling?</h5><div class="g2"><div class="box"><h4>Modaal inkomen</h4><p>Het <b>modaal inkomen</b> is het inkomen dat het meest voorkomt, maar er zijn ook mensen die veel meer of veel minder verdienen.</p></div><div class="box"><h4>Lorenzcurve</h4><p>Een <b>Lorenzcurve</b> is een grafiek die de verdeling van het nationaal inkomen over de bevolking laat zien. Hoe verder de curve van de rechte lijn van perfecte gelijkheid af buigt, hoe ongelijker de inkomens verdeeld zijn.</p></div></div><div class="call warn"><b>Veelgemaakte fout:</b> verwar het <b>modaal inkomen</b> niet met het <b>gemiddelde inkomen</b>. Het modaal inkomen is het inkomen dat het vaakst voorkomt, niet het rekenkundig gemiddelde van alle inkomens.</div><div class="check" onclick="toonCheck(this)"><p class="check-v">Wat is het besteedbaar inkomen?</p><p class="check-a">Het deel van je inkomen dat je vrij kunt uitgeven.</p><span class="check-hint">Tik voor het antwoord</span></div><div class="call sum"><b>Om te onthouden (1.2)</b><ul class="lst"><li><b>Besteedbaar inkomen</b> is wat je overhoudt na belasting en premies.</li><li>Het <b>nationaal inkomen</b> is ongelijk verdeeld; het <b>modaal inkomen</b> komt het meest voor (niet hetzelfde als gemiddeld).</li><li>De <b>Lorenzcurve</b> laat de inkomensverdeling van een land zien.</li></ul></div>`},
 
 {heading:'1.3 Wil je welvaart of welzijn?',html:
- '<div class="g2">'
- +'<div class="box"><h4>Middelen zijn beperkt</h4><p>Voor het vervullen van je behoeften heb je <b>middelen</b> nodig: de belangrijkste zijn geld en tijd, en daarvan heb je maar een beperkte hoeveelheid.</p></div>'
- +'<div class="box"><h4>Prioriteiten stellen</h4><p>Heb je meer behoeften dan middelen, dan moet je <b>prioriteiten stellen</b>: kiezen welke behoeften voor jou het belangrijkst zijn.</p></div></div>'
-
- +'<div class="box"><h4>Waarom kost het geld?</h4><p>Goederen zijn <b>schaars</b>: ze zijn er niet vanzelf, er zijn productiemiddelen (zoals machines, grond of arbeid) gebruikt om ze te maken. Daarom betaal je voor schaarse goederen een prijs. Worden goederen schaarser, dan gaat de prijs omhoog.</p></div>'
-
- +'<h5 class="sub">Welvaart en welzijn: niet hetzelfde</h5>'
- +'<div class="g2">'
- +'<div class="box"><h4>Welvaart</h4><p><b>Welvaart</b> is de mate waarin je in je behoeften kunt voorzien met schaarse middelen.</p></div>'
- +'<div class="box"><h4>Welzijn</h4><p><b>Welzijn</b> gaat over de kwaliteit van je leven in bredere zin: denk aan gezondheid, vrije tijd, relaties en een schoon milieu.</p></div></div>'
-
- +'<div class="call waarom">Meer welvaart (meer produceren en consumeren) betekent <b>niet automatisch</b> meer welzijn, soms gaat het zelfs ten koste van elkaar, bijvoorbeeld als productie het milieu aantast.</div>'
- +'<div class="call">Het <b>CBS</b> (Centraal Bureau voor de Statistiek) verzamelt informatie over onder andere economische veranderingen in Nederland.</div>'
-
- +'<div class="call sum"><b>Om te onthouden (1.3)</b><ul class="lst">'
- +'<li><b>Middelen</b> (geld en tijd) zijn schaars, dus je moet <b>prioriteiten stellen</b>.</li>'
- +'<li>Schaarse goederen kosten geld omdat er productiemiddelen voor nodig zijn.</li>'
- +'<li><b>Welvaart</b> = kunnen voorzien in behoeften; <b>welzijn</b> = brede kwaliteit van leven. Meer welvaart betekent niet automatisch meer welzijn.</li></ul></div>'},
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst"><li>waarom je <b>keuzes</b> moet maken met beperkte middelen</li><li>het verschil tussen <b>welvaart</b> en <b>welzijn</b></li></ul></div><div class="g2"><div class="box"><h4>Middelen zijn beperkt</h4><p>Voor het vervullen van je behoeften heb je <b>middelen</b> nodig: de belangrijkste zijn geld en tijd, en daarvan heb je maar een beperkte hoeveelheid.</p></div><div class="box"><h4>Prioriteiten stellen</h4><p>Heb je meer behoeften dan middelen, dan moet je <b>prioriteiten stellen</b>: kiezen welke behoeften voor jou het belangrijkst zijn.</p></div></div><div class="box"><h4>Waarom kost het geld?</h4><p>Goederen zijn <b>schaars</b>: ze zijn er niet vanzelf, er zijn productiemiddelen (zoals machines, grond of arbeid) gebruikt om ze te maken. Daarom betaal je voor schaarse goederen een prijs. Worden goederen schaarser, dan gaat de prijs omhoog.</p></div><h5 class="sub">Welvaart en welzijn: niet hetzelfde</h5><div class="g2"><div class="box"><h4>Welvaart</h4><p><b>Welvaart</b> is de mate waarin je in je behoeften kunt voorzien met schaarse middelen.</p></div><div class="box"><h4>Welzijn</h4><p><b>Welzijn</b> gaat over de kwaliteit van je leven in bredere zin: denk aan gezondheid, vrije tijd, relaties en een schoon milieu.</p></div></div><div class="call waarom">Meer welvaart (meer produceren en consumeren) betekent <b>niet automatisch</b> meer welzijn, soms gaat het zelfs ten koste van elkaar, bijvoorbeeld als productie het milieu aantast.</div><div class="call">Het <b>CBS</b> (Centraal Bureau voor de Statistiek) verzamelt informatie over onder andere economische veranderingen in Nederland.</div><div class="check" onclick="toonCheck(this)"><p class="check-v">Wat zijn de twee belangrijkste middelen om in je behoeften te voorzien?</p><p class="check-a">Geld en tijd.</p><span class="check-hint">Tik voor het antwoord</span></div><div class="call sum"><b>Om te onthouden (1.3)</b><ul class="lst"><li><b>Middelen</b> (geld en tijd) zijn schaars, dus je moet <b>prioriteiten stellen</b>.</li><li>Schaarse goederen kosten geld omdat er productiemiddelen voor nodig zijn.</li><li><b>Welvaart</b> = kunnen voorzien in behoeften; <b>welzijn</b> = brede kwaliteit van leven. Meer welvaart betekent niet automatisch meer welzijn.</li></ul></div>`},
 
 {heading:'1.4 Help, de prijzen stijgen!',html:
- '<div class="g2">'
- +'<div class="box"><h4>Cpi</h4><p>Aan de hand van alle prijsveranderingen berekent het CBS het <b>cpi</b> (het consumentenprijsindexcijfer): dit laat zien hoeveel de prijzen gestegen zijn ten opzichte van het basisjaar.</p></div>'
- +'<div class="box"><h4>Inflatie en geldontwaarding</h4><p>Een algemene stijging van de prijzen noem je <b>inflatie</b>. Door inflatie wordt je geld minder waard: dit heet <b>geldontwaarding</b>.</p></div></div>'
-
- +'<h5 class="sub">Nominaal of reëel?</h5>'
- +'<div class="box">'
- +'<div class="term"><b>Nominale verandering</b><span>Een verandering (bijvoorbeeld van je loon) waarbij je geen rekening houdt met inflatie.</span></div>'
- +'<div class="term" style="margin-bottom:0"><b>Reële verandering</b><span>Een verandering waarbij je wél rekening houdt met inflatie.</span></div></div>'
-
- +'<div class="call reken"><b>Reken mee: nominaal vs. reëel</b>'
- +'<p style="margin-top:.4rem">Je loon stijgt van €2.000 naar €2.040 per maand. De inflatie is dat jaar 3%.</p>'
- +'<ol class="num">'
- +'<li><b>Nominale verandering</b>, de stijging zonder rekening te houden met inflatie: (€2.040 − €2.000) ÷ €2.000 × 100% = <b>+2%</b>.</li>'
- +'<li><b>Inflatie</b> dat jaar: <b>3%</b>.</li>'
- +'<li class="eind"><b>Reële verandering</b> ≈ nominale verandering − inflatie = 2% − 3% = <b>−1%</b>. Je loon steeg wel in euro\'s, maar je koopkracht daalde toch een beetje.</li></ol></div>'
-
- +'<div class="g2">'
- +'<div class="box"><h4>Prijscompensatie</h4><p>Bij <b>prijscompensatie</b> stijgen de lonen precies zoveel als de prijzen, waardoor je koopkracht gelijk blijft.</p></div>'
- +'<div class="box"><h4>Loon-prijsspiraal</h4><p>Vragen werknemers om hogere lonen omdat de koopkracht daalt, en leiden die hogere lonen weer tot hogere prijzen? Dan noem je die vicieuze cirkel de <b>loon-prijsspiraal</b>.</p></div></div>'
-
- +'<div class="call sum"><b>Om te onthouden (1.4)</b><ul class="lst">'
- +'<li>Het <b>cpi</b> meet prijsveranderingen ten opzichte van een basisjaar; een algemene prijsstijging is <b>inflatie</b>.</li>'
- +'<li><b>Nominale verandering</b> = zonder inflatie meegerekend; <b>reële verandering</b> = mét inflatie meegerekend (reëel ≈ nominaal − inflatie).</li>'
- +'<li>De <b>loon-prijsspiraal</b>: loonstijgingen en prijsstijgingen jagen elkaar op.</li></ul></div>'}
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst"><li>wat <b>inflatie</b> en de <b>cpi</b> zijn</li><li>het verschil tussen <b>nominaal</b> en <b>reëel</b>, en wat <b>prijscompensatie</b> is</li></ul></div><div class="g2"><div class="box"><h4>Cpi</h4><p>Aan de hand van alle prijsveranderingen berekent het CBS het <b>cpi</b> (het consumentenprijsindexcijfer): dit laat zien hoeveel de prijzen gestegen zijn ten opzichte van het basisjaar.</p></div><div class="box"><h4>Inflatie en geldontwaarding</h4><p>Een algemene stijging van de prijzen noem je <b>inflatie</b>. Door inflatie wordt je geld minder waard: dit heet <b>geldontwaarding</b>.</p></div></div><h5 class="sub">Nominaal of reëel?</h5><div class="box"><div class="term"><b>Nominale verandering</b><span>Een verandering (bijvoorbeeld van je loon) waarbij je geen rekening houdt met inflatie.</span></div><div class="term" style="margin-bottom:0"><b>Reële verandering</b><span>Een verandering waarbij je wél rekening houdt met inflatie.</span></div></div><div class="call reken"><b>Reken mee: nominaal vs. reëel</b><p style="margin-top:.4rem">Je loon stijgt van €2.000 naar €2.040 per maand. De inflatie is dat jaar 3%.</p><ol class="num"><li><b>Nominale verandering</b>, de stijging zonder rekening te houden met inflatie: (€2.040 − €2.000) ÷ €2.000 × 100% = <b>+2%</b>.</li><li><b>Inflatie</b> dat jaar: <b>3%</b>.</li><li class="eind"><b>Reële verandering</b> ≈ nominale verandering − inflatie = 2% − 3% = <b>−1%</b>. Je loon steeg wel in euro's, maar je koopkracht daalde toch een beetje.</li></ol></div><div class="g2"><div class="box"><h4>Prijscompensatie</h4><p>Bij <b>prijscompensatie</b> stijgen de lonen precies zoveel als de prijzen, waardoor je koopkracht gelijk blijft.</p></div><div class="box"><h4>Loon-prijsspiraal</h4><p>Vragen werknemers om hogere lonen omdat de koopkracht daalt, en leiden die hogere lonen weer tot hogere prijzen? Dan noem je die vicieuze cirkel de <b>loon-prijsspiraal</b>.</p></div></div><div class="check" onclick="toonCheck(this)"><p class="check-v">Wat meet het cpi?</p><p class="check-a">Hoeveel de prijzen gestegen zijn ten opzichte van een basisjaar.</p><span class="check-hint">Tik voor het antwoord</span></div><div class="call sum"><b>Om te onthouden (1.4)</b><ul class="lst"><li>Het <b>cpi</b> meet prijsveranderingen ten opzichte van een basisjaar; een algemene prijsstijging is <b>inflatie</b>.</li><li><b>Nominale verandering</b> = zonder inflatie meegerekend; <b>reële verandering</b> = mét inflatie meegerekend (reëel ≈ nominaal − inflatie).</li><li>De <b>loon-prijsspiraal</b>: loonstijgingen en prijsstijgingen jagen elkaar op.</li></ul></div>`}
 ],
 terms:[
 ['Bestedingen','De uitgaven aan goederen en diensten.',0],

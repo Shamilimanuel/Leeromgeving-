@@ -1,16 +1,140 @@
 import { registerChapter } from '../../../registry.js';
 
+/* Rebuilt 2026-09-25 to the recipe of Economie TL4 H1 (change 6). Fixed:
+   "iemand de kop koud maken" is not a standard idiom and not in the book;
+   the book's own examples (voor aap staan, van een mug een olifant maken,
+   ik tril van woede) are used instead. Terms, cards and quiz unchanged. */
 registerChapter('nederlands|tl|1|4', {
 title:'Taal',
 summary:[
-{heading:'Moedertaal',html:'<div class=\'box\'><h4>Waar gaat dit hoofdstuk over?</h4><p>In dit hoofdstuk ontdek je hoe bijzonder taal eigenlijk is: je leert over je moedertaal, taal uit je eigen buurt (dialecten), hoe taal in de loop van de tijd verandert, waar taal uit is opgebouwd, het verschil tussen formeel en informeel taalgebruik, letterlijk en figuurlijk taalgebruik, beeldtaal en dyslexie.</p></div><div class=\'box\'><h4>Wat is je moedertaal?</h4><p>Je <b>moedertaal</b> is de taal die je als kind als eerste hebt geleerd, meestal van je ouders. Voor de meeste leerlingen in Nederland is dat Nederlands, maar voor sommige leerlingen is dat een andere taal. Een taal die je later erbij leert en bijna net zo goed leert spreken als je moedertaal, is je <b>tweede taal</b>.</p></div><div class=\'term\'><b>Moedertaal</b><span>de taal die je als kind als eerste hebt geleerd</span></div><div class=\'term\'><b>Tweede taal</b><span>een taal die je later erbij leert en bijna net zo goed leert spreken als je moedertaal</span></div>'},
-{heading:'Taal uit de buurt',html:'<div class=\'box\'><h4>Dialecten en streektaal</h4><p>Niet iedereen in Nederland spreekt precies dezelfde taal. Op verschillende plekken in het land worden woorden soms anders uitgesproken of gebruikt men andere woorden voor hetzelfde begrip. Zo\'n taalvariant die typisch is voor een bepaalde regio, noem je een <b>dialect</b> of <b>streektaal</b>.</p></div><div class=\'term\'><b>Dialect</b><span>een taalvariant die typisch is voor een bepaalde regio of streek</span></div><div class=\'call\'>Dialecten laten zien dat taal verbonden is met waar je vandaan komt: ze horen bij de identiteit van een regio.</div>'},
-{heading:'Taalverandering',html:'<div class=\'box\'><h4>Taal verandert steeds</h4><p>Taal staat niet stil: ze verandert voortdurend. Er komen nieuwe woorden bij (bijvoorbeeld door nieuwe technologie of trends) en oude woorden verdwijnen langzaam uit gebruik, omdat niemand ze meer gebruikt. Ook de betekenis van woorden kan in de loop van de tijd veranderen.</p></div><div class=\'term\'><b>Taalverandering</b><span>het proces waarbij taal in de loop van de tijd verandert: er komen woorden bij en woorden verdwijnen</span></div><div class=\'call waarom\'>Taal verandert onder andere doordat de maatschappij verandert: nieuwe uitvindingen, nieuwe gewoontes en contact met andere talen zorgen voor nieuwe woorden.</div>'},
-{heading:'Bouwstenen',html:'<div class=\'box\'><h4>Waaruit bestaat taal?</h4><p>Taal is opgebouwd uit bouwstenen. Je kunt ze vergelijken met legostukjes. Die stukjes kun je aan elkaar vastmaken. Meerdere stukjes LEGO aan elkaar vormen een bouwwerk. Bij taal zijn de losse legostukjes de <b>letters</b>. Maak je losse letters aan elkaar, dan heb je een <b>woord</b>. Je kunt een woord verdelen in <b>lettergrepen</b>. Een lettergreep is een groepje letters dat samen één klank maakt. Maak je woorden aan elkaar, dan heb je een zin. En als je zinnen aan elkaar maakt, dan wordt het een tekst.</p><p>Letters zijn in een volgorde gezet, zodat ze makkelijker te gebruiken zijn. Dit heet het <b>alfabet</b>. Ons alfabet bestaat uit 26 letters.</p><p>Sommige talen gebruiken geen letters, maar <b>karakters</b>. Een karakter is een teken dat een klank of begrip weergeeft. Het Chinese karakterschrift heeft de meeste tekens: tienduizenden karakters, waarvan een groot deel niet meer gebruikt wordt.</p><p>De richting waarin je leest en schrijft, heet de <b>schrijfrichting</b>. In de meeste talen lezen en schrijven we van links naar rechts, maar bijvoorbeeld het Arabisch wordt van rechts naar links gelezen en geschreven, en Chinees lees je van boven naar beneden.</p></div><div class=\'term\'><b>Alfabet</b><span>de verzameling letters van een taal</span></div><div class=\'term\'><b>Karakter</b><span>een teken dat een klank of begrip weergeeft (bijvoorbeeld in het Chinees)</span></div><div class=\'term\'><b>Lettergreep</b><span>een groepje letters dat samen één klank maakt</span></div><div class=\'term\'><b>Schrijfrichting</b><span>de richting waarin je een taal leest en schrijft</span></div>'},
-{heading:'Formeel en informeel',html:'<div class=\'box\'><h4>Hoe pas je je taalgebruik aan?</h4><p>Je praat en schrijft niet op dezelfde manier tegen iedereen. Tegen vrienden gebruik je vaak <b>informele taal</b>: makkelijke, spreektaalachtige woorden en de aanspreekvorm \'je\' of \'jij\'. Tegen bijvoorbeeld een docent, een onbekende volwassene of in een officiële brief gebruik je <b>formele taal</b>: nettere woorden en vaak de beleefdheidsvorm \'u\'.</p></div><div class=\'term\'><b>Formele taal</b><span>taal voor serieuze, officiële situaties, vaak met \'u\' als aanspreekvorm</span></div><div class=\'term\'><b>Informele taal</b><span>taal voor situaties met bijvoorbeeld vrienden en familie, vaak met \'je\'/\'jij\'</span></div><div class=\'call sum\'><b>Bij het kiezen van formeel of informeel taalgebruik let je op</b><ul class=\'lst\'><li>wie je publiek is (bijvoorbeeld leeftijd en relatie tot jou);</li><li>de situatie: is het officieel of juist ontspannen?</li><li>de aanspreekvorm: \'je/jij\' (informeel) of \'u\' (formeel).</li></ul></div>'},
-{heading:'Letterlijk en figuurlijk',html:'<div class=\'box\'><h4>Zeg je het echt zo, of bedoel je iets anders?</h4><p>Bij <b>letterlijk taalgebruik</b> zeg je iets zoals het is volgens de letter: als iemand zegt \'ik lach van blijdschap\', dan is dat een feit. Bij <b>figuurlijk taalgebruik</b> zeg je iets met fantasie: je bedoelt iets anders dan wat er letterlijk staat. Bijvoorbeeld: \'ik schrok me een hoedje\' betekent niet dat er letterlijk een hoedje verscheen, maar dat je erg schrok.</p><p>Bij figuurlijk taalgebruik gebruik je vaak vaste uitdrukkingen, zoals \'een wit voetje halen\' of \'iemand de kop koud maken\'.</p></div><div class=\'term\'><b>Letterlijk taalgebruik</b><span>taal waarmee je precies bedoelt wat er staat</span></div><div class=\'term\'><b>Figuurlijk taalgebruik</b><span>taal waarmee je iets anders bedoelt dan wat er staat</span></div>'},
-{heading:'Beeldtaal',html:'<div class=\'box\'><h4>Communiceren met beelden</h4><p><b>Beeldtaal</b> helpt ons om snel te kunnen zien wat de bedoeling is. Overal worden tekens gebruikt om mensen iets te vertellen: in het verkeer, online, op de televisie. Beelden geven snel informatie.</p><p>In het verkeer kennen we veel afspraken. Als die afspraken er niet zouden zijn, dan zouden er ongelukken kunnen gebeuren. Deze afspraken worden weergegeven met tekens, <b>verkeersborden</b>. Als je die tekens herkent, weet je wat je moet doen in het verkeer.</p><p>Een andere beeldtaal is de taal van de <b>emoji</b>. De \'e\' in het woord emoji betekent \'afbeelding\' en \'moji\' betekent karakter of schriftteken. Emoji\'s komen oorspronkelijk uit Japan, maar worden nu over de hele wereld gebruikt.</p><p>Naast verkeerstekens en emoji\'s bestaat er nog veel meer beeldtaal, zoals <b>pictogrammen</b>: eenvoudige afbeeldingen en symbolen die de plaats innemen van tekst. Pictogrammen worden overal gebruikt om regels aan te geven, bijvoorbeeld een wasvoorschrift op een kledinglabel, of een kijkwijzer bij een film.</p></div><div class=\'term\'><b>Beeldtaal</b><span>taal in beelden</span></div><div class=\'term\'><b>Pictogram</b><span>een symbool of eenvoudig plaatje dat een tekst vervangt</span></div><div class=\'term\'><b>Emoji</b><span>een plaatje dat je bijvoorbeeld in een appje gebruikt om iets duidelijk te maken</span></div>'},
-{heading:'Dyslexie',html:'<div class=\'box\'><h4>Wat is dyslexie?</h4><p><b>Dyslexie</b> is een aandoening waarbij iemand moeite heeft met het goed en snel lezen en/of spellen van woorden, doordat de informatie niet goed wordt verwerkt in de hersenen. Dyslexie heeft dus niets te maken met hoe slim iemand is. Mensen met dyslexie kunnen vaak wel goed leren lezen en schrijven met de juiste hulp en extra tijd.</p></div><div class=\'term\'><b>Dyslexie</b><span>het niet goed kunnen lezen en schrijven van letters, woorden en zinnen, doordat de informatie niet goed wordt verwerkt in de hersenen</span></div>'}
+{heading:'Moedertaal',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>wat je <b>moedertaal</b> en een <b>tweede taal</b> zijn</li></ul></div>`
++`<div class="box"><h4>Waar dit hoofdstuk over gaat</h4><p>Je ontdekt hoe bijzonder <b>taal</b> is: je <b>moedertaal</b>, <b>dialecten</b>, hoe taal <b>verandert</b>, de <b>bouwstenen</b> van taal, <b>formeel en informeel</b>, <b>letterlijk en figuurlijk</b>, <b>beeldtaal</b> en <b>dyslexie</b>.</p></div>`
++`<h5 class="sub">Je eerste taal</h5>`
++`<div class="vergelijk"><div class="vergelijk-kant"><h4>Moedertaal</h4><p>De taal die je als kind als <b>eerste</b> leerde, meestal van je <b>ouders</b>.</p></div><div class="vergelijk-vs">vs</div><div class="vergelijk-kant"><h4>Tweede taal</h4><p>Een taal die je <b>later</b> leert en bijna net zo <b>goed</b> spreekt.</p></div></div>`
++`<div class="box"><h4>Niet voor iedereen hetzelfde</h4><p>Voor de meeste leerlingen in Nederland is de moedertaal <b>Nederlands</b>, maar voor sommigen is dat een <b>andere</b> taal. Dan is Nederlands vaak hun <b>tweede taal</b>.</p></div>`
++`<div class="call reken"><b>Vraag jezelf af</b><ol class="num">
+<li>Welke taal leerde je als <b>eerste</b>? Dat is je moedertaal.</li>
+<li>Welke taal leerde je <b>later</b> bijna net zo goed? Dat is een tweede taal.</li></ol></div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Wat is je moedertaal?</p><p class="check-a">De taal die je als kind als <b>eerste</b> hebt geleerd.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden</b><ul class="lst">
+<li><b>Moedertaal</b>: als eerste geleerd.</li>
+<li><b>Tweede taal</b>: later geleerd, bijna even goed.</li></ul></div>`},
+
+{heading:'Taal uit de buurt',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>wat een <b>dialect</b> of <b>streektaal</b> is</li></ul></div>`
++`<h5 class="sub">Anders per regio</h5>`
++`<div class="box"><h4>Dialect</h4><p>Niet iedereen in Nederland spreekt precies <b>dezelfde</b> taal. Per plek worden woorden anders <b>uitgesproken</b>, of gebruikt men <b>andere woorden</b> voor hetzelfde. Zo'n taalvariant die typisch is voor een <b>regio</b>, heet een <b>dialect</b> of <b>streektaal</b>.</p></div>`
++`<div class="vergelijk"><div class="vergelijk-kant"><h4>Standaardtaal</h4><p>Het Nederlands dat je <b>overal</b> in het land begrijpt, zoals op het nieuws.</p></div><div class="vergelijk-vs">vs</div><div class="vergelijk-kant"><h4>Dialect</h4><p>Taal van één <b>streek</b>, met eigen <b>klanken</b> en <b>woorden</b>.</p></div></div>`
++`<div class="call waarom">Waarom zijn dialecten bijzonder? Ze laten zien dat taal verbonden is met <b>waar je vandaan komt</b>: een dialect hoort bij de <b>identiteit</b> van een regio.</div>`
++`<div class="call reken"><b>Zo herken je een dialect</b><ol class="num">
+<li>Klinken woorden <b>anders</b> dan je gewend bent?</li>
+<li>Hoor je <b>woorden</b> die je niet kent voor gewone dingen?</li>
+<li>Hoort het bij één <b>streek</b>? Dan is het een dialect.</li></ol></div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Wat is een ander woord voor dialect?</p><p class="check-a"><b>Streektaal</b>.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden</b><ul class="lst">
+<li><b>Dialect</b> = taal van een <b>regio</b>.</li>
+<li>Het hoort bij de <b>identiteit</b> van een streek.</li></ul></div>`},
+
+{heading:'Taalverandering',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>hoe en waarom <b>taal verandert</b></li></ul></div>`
++`<h5 class="sub">Taal staat niet stil</h5>`
++`<div class="term"><b>Taalverandering</b><span>Taal verandert in de loop van de tijd: er komen woorden bij en er verdwijnen woorden.</span></div>`
++`<div class="call reken"><b>Drie manieren waarop taal verandert</b><ol class="num">
+<li>Er komen <b>nieuwe woorden</b> bij, bijvoorbeeld door nieuwe <b>technologie</b> of <b>trends</b>.</li>
+<li><b>Oude woorden</b> verdwijnen, omdat niemand ze meer gebruikt.</li>
+<li>De <b>betekenis</b> van een woord verandert.</li></ol></div>`
++`<div class="call waarom">Waarom verandert taal? Omdat de <b>maatschappij</b> verandert: nieuwe <b>uitvindingen</b>, nieuwe <b>gewoontes</b> en contact met <b>andere talen</b> zorgen voor nieuwe woorden.</div>`
++`<div class="voorbeeld"><h4>Voorbeeld: een nieuw woord</h4><p>Waar komt een woord als &lsquo;appen&rsquo; vandaan?</p><div class="antwoord">Van een nieuwe <b>technologie</b>: berichten sturen met een app. Het woord bestond vroeger niet.</div></div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Noem een oorzaak van taalverandering.</p><p class="check-a">Bijvoorbeeld nieuwe <b>technologie</b>, nieuwe <b>gewoontes</b> of contact met <b>andere talen</b>.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden</b><ul class="lst">
+<li>Woorden komen <b>bij</b>, verdwijnen, of krijgen een andere <b>betekenis</b>.</li>
+<li>Taal verandert omdat de <b>maatschappij</b> verandert.</li></ul></div>`},
+
+{heading:'Bouwstenen',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>de <b>bouwstenen</b> van taal: letters, lettergrepen, woorden, zinnen, tekst</li>
+<li>wat het <b>alfabet</b>, <b>karakters</b> en de <b>schrijfrichting</b> zijn</li></ul></div>`
++`<h5 class="sub">Zoals legostukjes</h5>`
++`<div class="call reken"><b>Van klein naar groot</b><ol class="num">
+<li><b>Letters</b>: de losse legostukjes.</li>
+<li><b>Lettergrepen</b>: groepjes letters die samen één <b>klank</b> maken.</li>
+<li><b>Woorden</b>: letters aan elkaar.</li>
+<li><b>Zinnen</b>: woorden aan elkaar.</li>
+<li><b>Tekst</b>: zinnen aan elkaar.</li></ol></div>`
++`<h5 class="sub">Letters of karakters</h5>`
++`<div class="vergelijk"><div class="vergelijk-kant"><h4>Alfabet</h4><p>Letters in een vaste <b>volgorde</b>. Ons alfabet heeft <b>26 letters</b>.</p></div><div class="vergelijk-vs">vs</div><div class="vergelijk-kant"><h4>Karakters</h4><p>Tekens die een <b>klank</b> of <b>begrip</b> weergeven. Het Chinees heeft er <b>tienduizenden</b>.</p></div></div>`
++`<div class="term"><b>Schrijfrichting</b><span>De richting waarin je leest en schrijft. Meestal van links naar rechts; Arabisch van rechts naar links; Chinees van boven naar beneden.</span></div>`
++`<div class="voorbeeld"><h4>Voorbeeld: lettergrepen</h4><p>In hoeveel lettergrepen verdeel je &lsquo;schoolboek&rsquo;?</p><div class="antwoord"><b>school-boek</b>: twee lettergrepen, twee klanken.</div></div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Hoeveel letters heeft ons alfabet?</p><p class="check-a"><b>26</b>.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden</b><ul class="lst">
+<li>Letters &rarr; lettergrepen &rarr; woorden &rarr; zinnen &rarr; <b>tekst</b>.</li>
+<li><b>Alfabet</b>: 26 letters. <b>Karakters</b>: tekens voor klank of begrip.</li></ul></div>`},
+
+{heading:'Formeel en informeel',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>kiezen tussen <b>formele</b> en <b>informele</b> taal</li></ul></div>`
++`<h5 class="sub">Je taal aanpassen</h5>`
++`<div class="vergelijk"><div class="vergelijk-kant"><h4>Informele taal</h4><p>Tegen <b>vrienden</b> en familie: makkelijke woorden, spreektaal, <b>je</b> of <b>jij</b>.</p></div><div class="vergelijk-vs">vs</div><div class="vergelijk-kant"><h4>Formele taal</h4><p>Tegen een <b>docent</b>, een onbekende volwassene of in een officiële <b>brief</b>: nettere woorden, vaak <b>u</b>.</p></div></div>`
++`<div class="call reken"><b>Zo kies je</b><ol class="num">
+<li>Wie is je <b>publiek</b>? Leeftijd, en hoe goed ken je iemand?</li>
+<li>Hoe is de <b>situatie</b>: officieel of ontspannen?</li>
+<li>Kies de <b>aanspreekvorm</b>: je/jij of u.</li></ol></div>`
++`<div class="voorbeeld"><h4>Voorbeeld: twee berichten</h4><p>Hetzelfde vragen aan een vriend en aan de directeur.</p><div class="antwoord">Vriend: &lsquo;Hé, heb <b>jij</b> morgen tijd?&rsquo; Directeur: &lsquo;Geachte heer, heeft <b>u</b> morgen tijd voor een gesprek?&rsquo;</div></div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Welke aanspreekvorm hoort bij formele taal?</p><p class="check-a"><b>u</b>.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden</b><ul class="lst">
+<li><b>Informeel</b>: je/jij, spreektaal.</li>
+<li><b>Formeel</b>: u, nette woorden.</li>
+<li>Let op <b>publiek</b> en <b>situatie</b>.</li></ul></div>`},
+
+{heading:'Letterlijk en figuurlijk',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>het verschil tussen <b>letterlijk</b> en <b>figuurlijk</b> taalgebruik herkennen</li></ul></div>`
++`<h5 class="sub">Echt zo, of anders bedoeld?</h5>`
++`<div class="vergelijk"><div class="vergelijk-kant"><h4>Letterlijk</h4><p>Je bedoelt <b>precies</b> wat er staat.</p></div><div class="vergelijk-vs">vs</div><div class="vergelijk-kant"><h4>Figuurlijk</h4><p>Je bedoelt iets <b>anders</b> dan er letterlijk staat.</p></div></div>`
++`<div class="voorbeeld"><h4>Voorbeeld: uit het gedicht in het boek</h4><p>&lsquo;Hij roept: <b>ik tril van woede</b>! &hellip; En ja hoor, hij trilt letterlijk. Want van een vieze kamer wordt m'n pa <b>figuurlijk wild</b>.&rsquo;</p><div class="antwoord">Hij <b>trilt echt</b>: letterlijk. Hij wordt geen <b>wild dier</b>: &lsquo;wild&rsquo; is figuurlijk, hij wordt heel boos.</div></div>`
++`<div class="box"><h4>Vaste uitdrukkingen</h4><p>Figuurlijk taalgebruik zit vaak in <b>vaste uitdrukkingen</b>: <b>voor aap staan</b> (je belachelijk voelen), <b>van een mug een olifant maken</b> (iets erger maken dan het is), <b>je een hoedje schrikken</b> (heel erg schrikken).</p></div>`
++`<div class="call reken"><b>Zo herken je figuurlijk taalgebruik</b><ol class="num">
+<li>Stel je voor wat er <b>letterlijk</b> staat.</li>
+<li>Kan dat <b>echt</b>? Zo niet, dan is het figuurlijk.</li>
+<li>Bedenk wat er <b>eigenlijk</b> bedoeld wordt.</li></ol></div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">&lsquo;Van een mug een olifant maken&rsquo;: letterlijk of figuurlijk?</p><p class="check-a"><b>Figuurlijk</b>: je maakt iets erger dan het is.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden</b><ul class="lst">
+<li><b>Letterlijk</b>: precies zoals het staat.</li>
+<li><b>Figuurlijk</b>: iets anders bedoeld, vaak een <b>uitdrukking</b>.</li></ul></div>`},
+
+{heading:'Beeldtaal',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>wat <b>beeldtaal</b> is: <b>verkeersborden</b>, <b>emoji</b> en <b>pictogrammen</b></li></ul></div>`
++`<h5 class="sub">Communiceren met beelden</h5>`
++`<div class="term"><b>Beeldtaal</b><span>Taal in beelden. Beelden geven snel informatie.</span></div>`
++`<div class="g3">`
++`<div class="box"><h4>Verkeersborden</h4><p>Tekens voor de <b>afspraken</b> in het verkeer. Zonder die afspraken zouden er <b>ongelukken</b> gebeuren.</p></div>`
++`<div class="box"><h4>Emoji</h4><p><b>e</b> = afbeelding, <b>moji</b> = teken. Ze komen uit <b>Japan</b> en worden nu <b>overal</b> gebruikt.</p></div>`
++`<div class="box"><h4>Pictogrammen</h4><p>Eenvoudige <b>symbolen</b> die tekst vervangen: een <b>wasvoorschrift</b> op een label, de <b>kijkwijzer</b> bij een film.</p></div></div>`
++`<div class="call waarom">Waarom beeldtaal? Een beeld zie je in één <b>oogopslag</b> en begrijp je ook als je de <b>taal</b> niet spreekt. Handig in het verkeer en op reis.</div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Waar komen emoji's oorspronkelijk vandaan?</p><p class="check-a">Uit <b>Japan</b>.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden</b><ul class="lst">
+<li><b>Beeldtaal</b>: verkeersborden, emoji, pictogrammen.</li>
+<li>Een <b>pictogram</b> vervangt tekst.</li></ul></div>`},
+
+{heading:'Dyslexie',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>wat <b>dyslexie</b> is</li></ul></div>`
++`<h5 class="sub">Moeite met lezen en spellen</h5>`
++`<div class="term"><b>Dyslexie</b><span>Moeite met het goed en snel lezen en/of spellen van woorden, doordat de informatie niet goed wordt verwerkt in de hersenen.</span></div>`
++`<div class="vergelijk"><div class="vergelijk-kant"><h4>Wat het wel is</h4><p>Informatie over <b>letters</b> en <b>woorden</b> wordt anders verwerkt in de <b>hersenen</b>.</p></div><div class="vergelijk-vs">vs</div><div class="vergelijk-kant"><h4>Wat het niet is</h4><p>Het heeft <b>niets</b> te maken met hoe <b>slim</b> iemand is.</p></div></div>`
++`<div class="call reken"><b>Wat helpt?</b><ol class="num">
+<li>De juiste <b>hulp</b>, bijvoorbeeld van een docent of specialist.</li>
+<li><b>Extra tijd</b> bij lezen en toetsen.</li></ol></div>`
++`<div class="call waarom">Met de juiste hulp en extra tijd kunnen mensen met dyslexie vaak <b>goed</b> leren lezen en schrijven.</div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Heeft dyslexie te maken met hoe slim je bent?</p><p class="check-a"><b>Nee</b>.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden</b><ul class="lst">
+<li><b>Dyslexie</b>: moeite met lezen en/of spellen.</li>
+<li>Niets te maken met <b>slimheid</b>; <b>hulp</b> en <b>extra tijd</b> helpen.</li></ul></div>`}
 ],
 terms:[
 ['Moedertaal','De taal die je als kind als eerste hebt geleerd.',0],

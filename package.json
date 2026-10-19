@@ -1,6 +1,6 @@
 {
   "name": "leeromgeving",
-  "version": "2.7.0",
+  "version": "2.8.0",
   "private": true,
   "description": "Study site for Dutch VMBO students: chapter summaries, flashcards, quizzes and glossaries.",
   "type": "module",
@@ -14,7 +14,8 @@
     "lint": "eslint .",
     "check": "npm run lint && npm test && npm run build",
     "content:build": "python scripts/build_content.py",
-    "content:check": "python scripts/check_content.py"
+    "content:check": "python scripts/check_content.py",
+    "tasks": "node scripts/task-progress.mjs"
   },
   "engines": {
     "node": ">=22"

@@ -3,7 +3,6 @@ import { $, setHtml, icon } from '../lib/dom.js';
 import { chapterKey, hasChapter, loadBook } from '../content/index.js';
 import { selection, currentSubject, currentLevel, currentBook, selectionLabel } from '../state/selection.js';
 import { progressFor } from '../state/progress.js';
-import { questLabel } from './chapter.js';
 
 export function renderBook() {
   const subject = currentSubject();
@@ -59,7 +58,7 @@ export function renderBook() {
         return '<button class="' + cls + '" style="animation-delay:' + (i * 70) + 'ms"' + action + '>'
           + '<i class="frame"></i>'
           + badge
-          + '<div class="n">' + questLabel('HOOFDSTUK ' + c[0]) + '</div><h4>' + c[1] + '</h4><p>' + (c[2] || '&nbsp;') + '</p></button>';
+          + '<div class="n">Hoofdstuk ' + c[0] + '</div><h4>' + c[1] + '</h4><p>' + (c[2] || '&nbsp;') + '</p></button>';
       }).join('') + '</div></div>';
   }).join(''));
 }

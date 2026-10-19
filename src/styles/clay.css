@@ -176,6 +176,11 @@ body.ruime-letters .font-demo{letter-spacing:.12em;word-spacing:.16em}
   .set-back{display:inline-flex;align-items:center;justify-self:start;border:0;font:inherit;font-weight:700;font-size:.82rem;
     color:var(--txt);background:var(--klei);box-shadow:var(--klei-hoog-klein);border-radius:99px;padding:.45rem .9rem;min-height:40px}
   .set-row{flex-wrap:wrap}
+  /* The text size buttons always get their own line. Side by side, "A++"
+     (20px text) squeezed the label until the single long word "Tekstgrootte"
+     ran underneath the buttons -- and breaking the word itself is the last
+     thing a dyslexic reader needs. */
+  .set-row-stack .set-rt{flex-basis:calc(100% - 34px - .85rem)}
   .set-row .clay-seg{margin-left:calc(34px + .85rem)}
   .font-opt{grid-template-columns:auto minmax(0,1fr)}
   .font-demo{grid-column:2}
@@ -239,14 +244,20 @@ body.ruime-letters .font-demo{letter-spacing:.12em;word-spacing:.16em}
   display:inline-flex;align-items:center;gap:.3rem;cursor:pointer;padding:.35rem .1rem}
 
 @media (max-width:560px){
-  /* The trigger joins the top bar, as since 2.3.1. Home also carries the bell
-     and avatar, so there it sits three slots in (.op-home, radialMenu.js). */
+  /* The trigger joins the top bar, as since 2.3.1, in the slot at the far right
+     that .top-in reserves on every screen (mobile.css) -- home included, so it
+     is always in the same place. Until 2.7.1 home pushed it three slots left,
+     where it landed on top of the "Samenvattingen" title. */
   .radialmenu{left:auto;bottom:auto;top:var(--safe-top);height:var(--top-h);width:38px;
     right:calc(var(--gut) - .15rem + env(safe-area-inset-right))}
-  .radialmenu.op-home{right:calc(var(--gut) - .15rem + env(safe-area-inset-right) + 3 * (38px + .55rem))}
   /* A plain offset, not translateY(-50%): a hover stuck after a tap blanks
      transform on touch screens (mobile.css). (var(--top-h) - 38px) / 2 = 7px. */
-  .radialtrigger{top:7px;bottom:auto;width:38px;height:38px;font-size:1.1rem;box-shadow:var(--klei-hoog-klein)}
+  /* Drawn like its neighbours in the bar (.homebtn, the bell, the avatar): a
+     thin gold ring, no clay lift. A raised button among flat rings looked
+     crooked. */
+  .radialtrigger{top:7px;bottom:auto;width:38px;height:38px;font-size:1.1rem;
+    background:none;border:1px solid var(--goud-line);box-shadow:none}
+  .radialmenu.open .radialtrigger{background:var(--klei-put);border-color:var(--klei-goud);box-shadow:var(--klei-diep)}
   .tools-timer{bottom:-.7rem}
   .tools-scrim{display:block;position:fixed;inset:0;z-index:1;background:rgba(3,5,12,.55);
     opacity:0;visibility:hidden;transition:opacity .2s,visibility .2s}
@@ -260,3 +271,101 @@ body.ruime-letters .font-demo{letter-spacing:.12em;word-spacing:.16em}
   .tools-link{min-height:40px}
 }
 @media (prefers-reduced-motion:reduce){.tools-panel,.tools-scrim{transition:none}}
+
+/* ══ The chapter route (2.7.1) ═════════════════════════════════════════
+   Lezen -> Oefenen -> Toetsen replaces the row of six equal tabs; Begrippen
+   and Notities sit beside it as quiet links. Rendered by src/ui/chapter.js.
+   Not sticky, unlike the old tab row: reading keeps the whole screen, and the
+   quiz score bar now sticks under the top bar instead (study.css, mobile.css). */
+.route-wrap{max-width:1080px;margin:0 auto;padding:1.1rem 1.5rem .2rem;display:grid;gap:.7rem}
+.route{display:grid;grid-template-columns:repeat(3,minmax(0,1fr)) auto;gap:.7rem;align-items:stretch}
+.route-step{border:0;text-align:left;border-radius:16px;padding:.65rem .85rem;display:grid;gap:.12rem;cursor:pointer;
+  font:inherit;color:var(--txt);background:var(--klei);box-shadow:var(--klei-hoog-klein);min-width:0}
+.route-step b{display:flex;align-items:center;gap:.5rem;font-size:.92rem;font-weight:700}
+.route-step b em{font-style:normal;width:1.35rem;height:1.35rem;border-radius:50%;display:grid;place-items:center;flex:none;
+  font-size:.72rem;line-height:1;background:var(--klei-put);box-shadow:var(--klei-diep);color:var(--mut)}
+.route-step small{font-size:.76rem;color:var(--mut);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-variant-numeric:tabular-nums}
+.route-step.klaar b em{background:#2f7d53;color:#fff;box-shadow:none}
+.route-step[aria-current]{background:var(--klei-put);box-shadow:var(--klei-diep),inset 0 0 0 1.5px var(--klei-goud)}
+.route-step[aria-current] b{color:var(--klei-goud)}
+.route-step:not([aria-current]):not(:disabled):hover{filter:brightness(1.08)}
+.route-step:disabled{opacity:.45;cursor:default}
+.route-side{display:flex;flex-direction:column;justify-content:center;gap:.25rem}
+.route-side button{border:0;background:none;color:var(--mut);font:600 .8rem/1.2 'DM Sans',sans-serif;display:inline-flex;align-items:center;
+  gap:.4rem;cursor:pointer;padding:.3rem .2rem;border-radius:8px;white-space:nowrap}
+.route-side button:hover,.route-side button[aria-current]{color:var(--klei-goud)}
+.route .tel,.route-sub .tel{font-size:.7rem;opacity:.7;font-variant-numeric:tabular-nums}
+.route-sub{justify-self:start}
+.route-sub button{font-size:.8rem;padding:.42rem .8rem}
+
+/* End of the summary: the student marks step 1 as done. */
+.read-done{display:flex;align-items:center;gap:1rem;flex-wrap:wrap;margin:2rem 0 .5rem;padding:1rem 1.15rem;border-radius:18px;
+  background:linear-gradient(90deg,rgba(240,207,120,.10),transparent 70%),var(--klei);
+  box-shadow:var(--klei-hoog-klein),inset 0 0 0 1px rgba(240,207,120,.3)}
+.read-done-t{flex:1;min-width:12rem;display:grid;line-height:1.4}
+.read-done-t small{color:var(--mut);font-size:.84rem}
+.read-done .bt{background:var(--klei-glazuur);color:#241a04;box-shadow:var(--klei-glazuur-schaduw);border:0;border-radius:14px;padding:.7rem 1.1rem;font-weight:700}
+
+@media (max-width:560px){
+  .route-wrap{padding:.8rem var(--gut) .1rem;gap:.55rem}
+  .route{grid-template-columns:repeat(3,minmax(0,1fr));gap:.45rem}
+  .route-step{padding:.55rem .5rem;border-radius:14px;min-height:56px}
+  .route-step b{font-size:.84rem;gap:.35rem}
+  .route-step b em{width:1.2rem;height:1.2rem;font-size:.66rem}
+  .route-step small{font-size:.7rem}
+  .route-side{grid-column:1/-1;flex-direction:row;justify-content:flex-end;gap:1rem}
+  .route-side button{min-height:36px}
+}
+
+/* ══ Badges (2.7.1) ═════════════════════════════════════════════════════
+   On "Jouw voortgang" and, as one line per student, in the admin panel.
+   Earned: a gold-glazed coin. Not yet: a well with a lock and progress. */
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.badges{margin:1.4rem 0 2rem;display:grid;gap:.9rem}
+.badges-kop{display:flex;align-items:baseline;gap:.8rem}
+.badges-kop h2{font-family:'Cinzel',serif;font-weight:600;font-size:1.25rem;color:var(--klei-goud);margin:0}
+.badges-telling{font-size:.82rem;color:var(--mut);font-variant-numeric:tabular-nums}
+.badges-sub{font-size:.7rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--mut);margin:.4rem 0 -.2rem;
+  display:flex;flex-wrap:wrap;gap:.3rem .7rem;align-items:baseline}
+.badges-sub small{font-size:.74rem;font-weight:500;letter-spacing:0;text-transform:none}
+.badge-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(15rem,1fr));gap:.7rem}
+.badge-tile{display:flex;align-items:center;gap:.8rem;padding:.75rem .9rem;border-radius:16px;
+  background:var(--klei-put);box-shadow:var(--klei-diep)}
+.badge-tile.gehaald{background:var(--klei);box-shadow:var(--klei-hoog-klein)}
+.badge-coin{width:2.6rem;height:2.6rem;border-radius:50%;display:grid;place-items:center;flex:none;font-size:1.1rem;line-height:1;
+  background:var(--klei);box-shadow:var(--klei-hoog-klein);color:var(--mut)}
+.badge-tile.gehaald .badge-coin{background:var(--klei-glazuur);box-shadow:var(--klei-glazuur-schaduw);color:#241a04}
+.badge-t{display:grid;min-width:0;line-height:1.35}
+.badge-t b{font-size:.9rem}
+.badge-tile:not(.gehaald) .badge-t b{color:var(--mut)}
+.badge-t small{font-size:.76rem;color:var(--mut)}
+.badge-status{font-size:.7rem;font-weight:700;color:var(--mut);font-variant-numeric:tabular-nums;margin-top:.1rem}
+.badge-tile.gehaald .badge-status{color:var(--klei-goud)}
+
+.admpad-badges{display:flex;flex-wrap:wrap;align-items:center;gap:.4rem .5rem;margin:.2rem 0 .8rem;font-size:.8rem}
+.admpad-badge{display:inline-flex;align-items:center;gap:.3rem;padding:.2rem .55rem;border-radius:99px;
+  background:var(--klei);box-shadow:var(--klei-hoog-klein);color:var(--klei-goud);font-weight:600}
+
+@media (max-width:560px){
+  .badge-grid{grid-template-columns:1fr;gap:.55rem}
+}
+.badges-noot{margin:0;font-size:.8rem;color:var(--mut)}
+
+/* The daily goal on the practice path (2.7.1). */
+.pad-reeks{display:inline-flex;align-items:center;gap:.5rem;margin:1rem 0 .2rem;padding:.5rem .9rem;border-radius:99px;
+  font-size:.84rem;font-weight:600;color:var(--mut);background:var(--klei-put);box-shadow:var(--klei-diep)}
+.pad-reeks.gehaald{color:var(--klei-goud);background:var(--klei);box-shadow:var(--klei-hoog-klein)}
+.pad-reeks .icon{font-size:1rem}
+.spel-klaar .hoofdstuk-af{margin:0 0 1rem;text-align:center}
+
+/* Tijdrace (2.7.1): the card under the path, and the race's own bits. */
+.race-kaart{display:flex;align-items:center;gap:.9rem;flex-wrap:wrap;margin:1.6rem 0 .6rem;padding:.9rem 1.1rem;border-radius:18px;
+  background:var(--klei);box-shadow:var(--klei-hoog)}
+.race-ico{width:2.5rem;height:2.5rem;border-radius:50%;display:grid;place-items:center;flex:none;font-size:1.1rem;line-height:1;
+  background:var(--klei-put);box-shadow:var(--klei-diep);color:var(--klei-goud)}
+.race-t{flex:1;min-width:11rem;display:grid;line-height:1.35}
+.race-t small{color:var(--mut);font-size:.8rem}
+.race-kaart .bt{background:var(--klei-glazuur);color:#241a04;box-shadow:var(--klei-glazuur-schaduw);border:0;border-radius:14px;padding:.6rem 1.1rem;font-weight:700}
+.race-stand{display:flex;justify-content:center;gap:1.2rem;font-weight:700;font-variant-numeric:tabular-nums;margin-bottom:.8rem}
+.race-record{font-weight:700;color:var(--klei-goud);display:flex;align-items:center;justify-content:center;gap:.4rem}
+.race-knoppen{display:flex;gap:.6rem;justify-content:center;flex-wrap:wrap;margin-top:1rem}

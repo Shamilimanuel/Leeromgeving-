@@ -214,6 +214,26 @@ export async function restoreSession() {
   }
 }
 
+/* "Has this account seen the help tour?" lives in the Supabase Auth user
+   metadata, so the tour shows once per account instead of once per device.
+   A user may edit their own metadata; that is fine for a UI flag. */
+const HELP_SEEN_FLAG = 'uitleg_gezien';
+
+export function accountHelpSeen() {
+  return session?.user?.user_metadata?.[HELP_SEEN_FLAG] === true;
+}
+
+/* Best effort: offline or on an error the device flag still holds. */
+export async function rememberAccountHelpSeen() {
+  if (!session || accountHelpSeen()) return;
+  try {
+    const { data, error } = await supabase.auth.updateUser({ data: { [HELP_SEEN_FLAG]: true } });
+    if (!error && data?.user && session) session = { ...session, user: data.user };
+  } catch {
+    /* ignored */
+  }
+}
+
 /* True when a session exists, whether or not the profile could be loaded. */
 export function hasSession() {
   return !!session;

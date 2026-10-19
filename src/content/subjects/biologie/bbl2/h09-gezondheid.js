@@ -1,162 +1,24 @@
 import { registerChapter } from '../../../registry.js';
 
 /* Chapter 9 content: Gezond (Nectar BBL year 2, part A) */
+/* Upgraded 2026-09-25 to the recipe of Economie TL4 H1 (change 6): every paragraph
+   got "Dit leer je" and a "Check jezelf" (taken from its own flashcard where
+   there was none), plus bold on its own glossary terms where it had little.
+   The text itself is unchanged. */
 registerChapter('biologie|bbl|2|9', {
 title:'Gezondheid',
 summary:[
-{
- heading:'9.1 Ongezond',
- html:
- '<div class="box"><h4>Wat is leefstijl?</h4>'
- +'<p>Je <b>leefstijl</b> is het geheel van je gewoonten: eten, drinken, roken, slapen, schoolwerk, bewegen en ontspannen. Al die dingen bepalen samen hoe gezond je bent.</p></div>'
+{heading:'9.1 Ongezond',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst"><li>wat <b>leefstijl</b> is</li><li>wat <b>alcohol</b>, <b>roken</b> en <b>drugs</b> met je lichaam doen</li></ul></div><div class="box"><h4>Wat is leefstijl?</h4><p>Je <b>leefstijl</b> is het geheel van je gewoonten: eten, drinken, roken, slapen, schoolwerk, bewegen en ontspannen. Al die dingen bepalen samen hoe gezond je bent.</p></div><div class="box" style="margin-top:1rem"><h4>Genotmiddelen</h4><p><b>Genotmiddelen</b> zijn producten die je een lekker gevoel geven als je ze binnenkrijgt, zoals alcohol en sigaretten.</p><div class="term" style="margin-top:.7rem"><b>Verslavend</b><span>Je kunt er moeilijk mee stoppen.</span></div><div class="term" style="margin-bottom:0"><b>Ontwenningsverschijnselen</b><span>Klachten die je krijgt ná het stoppen, zoals hoofdpijn of prikkelbaar zijn.</span></div></div><h5 class="sub">Alcohol</h5><div class="box"><p>Alcohol <b>verdooft je hersenen</b>. Daardoor reageer je langzamer en neem je slechtere beslissingen. Alcohol is een <b>verslavende</b> stof.</p><div class="call" style="margin-bottom:0">Bij jongeren zijn de hersenen nog volop in ontwikkeling. Daarom is alcohol op jonge leeftijd extra schadelijk.</div></div><h5 class="sub">Roken</h5><div class="g3"><div class="box"><h4>Nicotine</h4><p>De <b>verslavende</b> stof in tabak. Hierdoor kun je moeilijk stoppen.</p></div><div class="box"><h4>Teer</h4><p>Zwarte stof die aan de binnenkant van je longen blijft <b>kleven</b>. Beschadigt de longblaasjes en kan longkanker veroorzaken.</p></div><div class="box"><h4>Koolmonoxide</h4><p>Giftig gas dat de <b>plaats van zuurstof</b> in je bloed inneemt. Je krijgt dus minder zuurstof binnen.</p></div></div><div class="call warn"><b>Onthoud welke stof wat doet:</b> nicotine → verslaving. Teer → longschade. Koolmonoxide → minder zuurstof.</div><h5 class="sub">Drugs</h5><div class="box"><p><b>Drugs</b> zijn stoffen die je hersenen beïnvloeden, zoals wiet, cocaïne en xtc. <b>Blowen</b> is het roken van een joint: een sigaret met wiet of hasj.</p><div class="call" style="margin-bottom:0">Zit je hier zelf mee, of maak je je zorgen om iemand? Praat erover met je mentor, de schoolarts of bel anoniem met de Alcohol Infolijn of Drugs Infolijn.</div></div><div class="check" onclick="toonCheck(this)"><p class="check-v">Wat is je leefstijl?</p><p class="check-a">Al je gewoonten: eten, drinken, roken, slapen, schoolwerk, bewegen en ontspannen.</p><span class="check-hint">Tik voor het antwoord</span></div><div class="call sum"><b>Om te onthouden (9.1)</b><ul class="lst"><li>Je <b>leefstijl</b> is alles wat je gewoonlijk doet: eten, bewegen, slapen, roken, ontspannen.</li><li><b>Genotmiddelen</b> geven een lekker gevoel maar zijn vaak <b>verslavend</b>.</li><li>Alcohol <b>verdooft je hersenen</b>.</li><li>In tabaksrook: <b>nicotine</b> (verslavend), <b>teer</b> (longschade), <b>koolmonoxide</b> (verdringt zuurstof).</li></ul></div>`},
 
- +'<div class="box" style="margin-top:1rem"><h4>Genotmiddelen</h4>'
- +'<p><b>Genotmiddelen</b> zijn producten die je een lekker gevoel geven als je ze binnenkrijgt, zoals alcohol en sigaretten.</p>'
- +'<div class="term" style="margin-top:.7rem"><b>Verslavend</b><span>Je kunt er moeilijk mee stoppen.</span></div>'
- +'<div class="term" style="margin-bottom:0"><b>Ontwenningsverschijnselen</b><span>Klachten die je krijgt ná het stoppen, zoals hoofdpijn of prikkelbaar zijn.</span></div></div>'
+{heading:'9.2 Goed geregeld',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst"><li>wat <b>uitscheiding</b> is</li><li>de vier <b>uitscheidingsorganen</b> en de weg van de <b>urine</b></li></ul></div><div class="box"><h4>Wat is uitscheiding?</h4><p>Bij de verbranding in je cellen ontstaan <b>afvalstoffen</b>. Die moeten je lichaam uit. <b>Uitscheiding</b> is het uit je bloed halen van afvalstoffen en ze buiten je lichaam brengen.</p></div><h5 class="sub">De vier uitscheidingsorganen</h5><div class="g2"><div class="box"><h4>Nieren</h4><p>Halen afvalstoffen uit het bloed en maken daar <b>urine</b> van.</p></div><div class="box"><h4>Longen</h4><p>Scheiden <b>koolstofdioxide</b> en waterdamp uit als je uitademt.</p></div><div class="box"><h4>Huid</h4><p>Scheidt <b>water en zouten</b> uit door te zweten.</p></div><div class="box"><h4>Lever</h4><p>Zet giftige stoffen zoals <b>alcohol</b> om in minder schadelijke stoffen.</p></div></div><div class="box" style="margin-top:1rem"><h4>De weg van de urine</h4><ol class="num"><li><b>Nieren</b>: halen afvalstoffen uit het bloed en maken urine</li><li><b>Urineleiders</b>: buisjes van de nieren naar de blaas</li><li><b>Blaas</b>: hier wordt de urine tijdelijk opgeslagen</li><li><b>Urinebuis</b>: hierdoor verlaat de urine je lichaam</li></ol><div class="call warn" style="margin-bottom:0"><b>Let op de namen:</b> urine<b>leiders</b> gaan van nier naar blaas. De urine<b>buis</b> gaat van de blaas naar buiten. Die twee worden vaak verwisseld.</div></div><div class="check" onclick="toonCheck(this)"><p class="check-v">Wat is uitscheiding?</p><p class="check-a">Afvalstoffen uit je bloed halen en buiten je lichaam brengen.</p><span class="check-hint">Tik voor het antwoord</span></div><div class="call sum"><b>Om te onthouden (9.2)</b><ul class="lst"><li><b>Uitscheiding</b> = afvalstoffen uit je bloed halen en buiten je lichaam brengen.</li><li>Vier uitscheidingsorganen: <b>nieren, longen, huid en lever</b>.</li><li>Weg van de urine: nieren → <b>urineleiders</b> → <b>blaas</b> → <b>urinebuis</b>.</li><li>De <b>lever</b> maakt giftige stoffen zoals alcohol minder schadelijk.</li></ul></div>`},
 
- +'<h5 class="sub">Alcohol</h5>'
- +'<div class="box"><p>Alcohol <b>verdooft je hersenen</b>. Daardoor reageer je langzamer en neem je slechtere beslissingen. Alcohol is een <b>verslavende</b> stof.</p>'
- +'<div class="call" style="margin-bottom:0">Bij jongeren zijn de hersenen nog volop in ontwikkeling. Daarom is alcohol op jonge leeftijd extra schadelijk.</div></div>'
+{heading:'9.3 Je huid',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst"><li>de drie <b>lagen</b> van je <b>huid</b></li><li>hoe je huid je <b>beschermt</b> en op <b>temperatuur</b> houdt</li></ul></div><div class="g2"><div class="box"><h4>De drie lagen</h4><div class="term"><b>1. Opperhuid</b><span>De buitenste laag. Bestaat uit de <b>hoornlaag</b> (bovenop, slijt steeds af) en de <b>kiemlaag</b> (eronder, maakt steeds nieuwe huidcellen).</span></div><div class="term"><b>2. Lederhuid</b><span>De middelste laag, met haarzakjes, talgkliertjes, zweetklieren, zintuigen en bloedvaatjes.</span></div><div class="term" style="margin-bottom:0"><b>3. Onderhuids bindweefsel</b><span>De onderste laag, met bloedvaatjes, zenuwen en opgeslagen vet. Het vet isoleert tegen kou.</span></div></div><div class="box"><h4>Wat zit er in de lederhuid?</h4><ul class="lst"><li><b>Haarzakjes</b>: hieruit groeien haren, met een spiertje eraan</li><li><b>Talgkliertjes</b>: maken <b>talg</b>, een vettige stof die haar en huid soepel houdt</li><li><b>Zweetklieren</b>: maken zweet</li><li><b>Zintuigen</b>: voor warmte, kou, pijn en aanraking</li><li><b>Bloedvaatjes</b>: brengen stoffen naar de huid</li></ul></div></div><h5 class="sub">Op temperatuur blijven</h5><div class="box"><p>Je huid helpt je lichaamstemperatuur op ongeveer <b>37 °C</b> te houden.</p><div class="tblwrap" style="margin-top:.7rem"><table class="tbl"><tr><th></th><th>Als je het te warm hebt</th><th>Als je het koud hebt</th></tr><tr><td>Bloedvaatjes</td><td class="yes">worden wijder</td><td class="no">worden nauwer</td></tr><tr><td>Gevolg</td><td>warmte gaat eruit → afkoelen</td><td>warmte blijft binnen</td></tr><tr><td>Verder</td><td>je gaat <b>zweten</b></td><td>je gaat <b>rillen</b></td></tr></table></div><div class="call" style="margin-bottom:0"><b>Kippenvel:</b> bij kou gaan de haartjes op je huid rechtop staan. Bij dieren met een vacht houdt dat warmte vast, bij mensen helpt het eigenlijk niet meer.</div></div><h5 class="sub">Hoe gaat een wondje dicht?</h5><div class="box"><p>Je huid beschermt je tegen vuil en ziekteverwekkers. Een wondje wordt daarom zo snel mogelijk gedicht door de <b>bloedplaatjes</b>. Dat heet <b>bloedstolling</b>.</p><ol class="num" style="margin-top:.6rem"><li>Bloedplaatjes gaan naar de wond</li><li>Ze maken een netwerk van fijne draadjes</li><li>Rode bloedcellen blijven in de draadjes hangen</li><li>Er vormt zich een <b>korstje</b></li><li>Daaronder herstelt de huid zich</li></ol></div><h5 class="sub">Bescherming tegen de zon</h5><div class="g2"><div class="box"><h4>Pigment</h4><p><b>Uv-straling</b> van de zon kan je huidcellen beschadigen. Je huid beschermt zich door <b>pigment</b> te maken: korreltjes bruine kleurstof.</p><p style="margin-top:.6rem">Pigment wordt gemaakt door <b>pigmentcellen</b> in de kiemlaag.</p><ul class="lst" style="margin-top:.5rem"><li>Een <b>donkere huid</b> maakt veel pigment</li><li>Een <b>lichte huid</b> maakt weinig pigment</li></ul></div><div class="box"><h4>Huidkanker</h4><p>Beschadig je je huid te vaak, dan kan <b>huidkanker</b> ontstaan. Dat gaat in drie stappen:</p><ol class="num" style="margin-top:.5rem"><li>Uv-straling maakt van een gewone cel in de <b>kiemlaag</b> een kankercel</li><li>Die cel blijft zich delen; er ontstaat een <b>gezwel</b> (tumor)</li><li>Groeit het gezwel door een bloedvat, dan kunnen cellen losraken en elders nieuwe gezwellen vormen: <b>uitzaaiingen</b></li></ol></div></div><div class="check" onclick="toonCheck(this)"><p class="check-v">De drie lagen van de huid</p><p class="check-a">Opperhuid, lederhuid en onderhuids bindweefsel.</p><span class="check-hint">Tik voor het antwoord</span></div><div class="call sum"><b>Om te onthouden (9.3)</b><ul class="lst"><li>Drie lagen: <b>opperhuid</b> (hoornlaag + kiemlaag), <b>lederhuid</b>, <b>onderhuids bindweefsel</b>.</li><li>De <b>kiemlaag</b> maakt nieuwe huidcellen; de <b>hoornlaag</b> slijt af.</li><li>Afkoelen: bloedvaatjes wijder + zweten. Opwarmen: bloedvaatjes nauwer + rillen.</li><li><b>Bloedplaatjes</b> zorgen voor de <b>bloedstolling</b> en dus voor het korstje.</li><li><b>Pigment</b> beschermt tegen uv-straling. Te veel schade → <b>huidkanker</b>, met kans op <b>uitzaaiingen</b>.</li></ul></div>`},
 
- +'<h5 class="sub">Roken</h5>'
- +'<div class="g3">'
- +'<div class="box"><h4>Nicotine</h4><p>De <b>verslavende</b> stof in tabak. Hierdoor kun je moeilijk stoppen.</p></div>'
- +'<div class="box"><h4>Teer</h4><p>Zwarte stof die aan de binnenkant van je longen blijft <b>kleven</b>. Beschadigt de longblaasjes en kan longkanker veroorzaken.</p></div>'
- +'<div class="box"><h4>Koolmonoxide</h4><p>Giftig gas dat de <b>plaats van zuurstof</b> in je bloed inneemt. Je krijgt dus minder zuurstof binnen.</p></div></div>'
-
- +'<div class="call warn"><b>Onthoud welke stof wat doet:</b> nicotine → verslaving. Teer → longschade. Koolmonoxide → minder zuurstof.</div>'
-
- +'<h5 class="sub">Drugs</h5>'
- +'<div class="box"><p><b>Drugs</b> zijn stoffen die je hersenen beïnvloeden, zoals wiet, cocaïne en xtc. <b>Blowen</b> is het roken van een joint: een sigaret met wiet of hasj.</p>'
- +'<div class="call" style="margin-bottom:0">Zit je hier zelf mee, of maak je je zorgen om iemand? Praat erover met je mentor, de schoolarts of bel anoniem met de Alcohol Infolijn of Drugs Infolijn.</div></div>'
-
- +'<div class="call sum"><b>Om te onthouden (9.1)</b><ul class="lst">'
- +'<li>Je <b>leefstijl</b> is alles wat je gewoonlijk doet: eten, bewegen, slapen, roken, ontspannen.</li>'
- +'<li><b>Genotmiddelen</b> geven een lekker gevoel maar zijn vaak <b>verslavend</b>.</li>'
- +'<li>Alcohol <b>verdooft je hersenen</b>.</li>'
- +'<li>In tabaksrook: <b>nicotine</b> (verslavend), <b>teer</b> (longschade), <b>koolmonoxide</b> (verdringt zuurstof).</li></ul></div>'
-},
-{
- heading:'9.2 Goed geregeld',
- html:
- '<div class="box"><h4>Wat is uitscheiding?</h4>'
- +'<p>Bij de verbranding in je cellen ontstaan <b>afvalstoffen</b>. Die moeten je lichaam uit. <b>Uitscheiding</b> is het uit je bloed halen van afvalstoffen en ze buiten je lichaam brengen.</p></div>'
-
- +'<h5 class="sub">De vier uitscheidingsorganen</h5>'
- +'<div class="g2">'
- +'<div class="box"><h4>Nieren</h4><p>Halen afvalstoffen uit het bloed en maken daar <b>urine</b> van.</p></div>'
- +'<div class="box"><h4>Longen</h4><p>Scheiden <b>koolstofdioxide</b> en waterdamp uit als je uitademt.</p></div>'
- +'<div class="box"><h4>Huid</h4><p>Scheidt <b>water en zouten</b> uit door te zweten.</p></div>'
- +'<div class="box"><h4>Lever</h4><p>Zet giftige stoffen zoals <b>alcohol</b> om in minder schadelijke stoffen.</p></div></div>'
-
- +'<div class="box" style="margin-top:1rem"><h4>De weg van de urine</h4>'
- +'<ol class="num">'
- +'<li><b>Nieren</b>: halen afvalstoffen uit het bloed en maken urine</li>'
- +'<li><b>Urineleiders</b>: buisjes van de nieren naar de blaas</li>'
- +'<li><b>Blaas</b>: hier wordt de urine tijdelijk opgeslagen</li>'
- +'<li><b>Urinebuis</b>: hierdoor verlaat de urine je lichaam</li></ol>'
- +'<div class="call warn" style="margin-bottom:0"><b>Let op de namen:</b> urine<b>leiders</b> gaan van nier naar blaas. De urine<b>buis</b> gaat van de blaas naar buiten. Die twee worden vaak verwisseld.</div></div>'
-
- +'<div class="call sum"><b>Om te onthouden (9.2)</b><ul class="lst">'
- +'<li><b>Uitscheiding</b> = afvalstoffen uit je bloed halen en buiten je lichaam brengen.</li>'
- +'<li>Vier uitscheidingsorganen: <b>nieren, longen, huid en lever</b>.</li>'
- +'<li>Weg van de urine: nieren → <b>urineleiders</b> → <b>blaas</b> → <b>urinebuis</b>.</li>'
- +'<li>De <b>lever</b> maakt giftige stoffen zoals alcohol minder schadelijk.</li></ul></div>'
-},
-{
- heading:'9.3 Je huid',
- html:
- '<div class="g2">'
- +'<div class="box"><h4>De drie lagen</h4>'
- +'<div class="term"><b>1. Opperhuid</b><span>De buitenste laag. Bestaat uit de <b>hoornlaag</b> (bovenop, slijt steeds af) en de <b>kiemlaag</b> (eronder, maakt steeds nieuwe huidcellen).</span></div>'
- +'<div class="term"><b>2. Lederhuid</b><span>De middelste laag, met haarzakjes, talgkliertjes, zweetklieren, zintuigen en bloedvaatjes.</span></div>'
- +'<div class="term" style="margin-bottom:0"><b>3. Onderhuids bindweefsel</b><span>De onderste laag, met bloedvaatjes, zenuwen en opgeslagen vet. Het vet isoleert tegen kou.</span></div></div>'
- +'<div class="box"><h4>Wat zit er in de lederhuid?</h4><ul class="lst">'
- +'<li><b>Haarzakjes</b>: hieruit groeien haren, met een spiertje eraan</li>'
- +'<li><b>Talgkliertjes</b>: maken <b>talg</b>, een vettige stof die haar en huid soepel houdt</li>'
- +'<li><b>Zweetklieren</b>: maken zweet</li>'
- +'<li><b>Zintuigen</b>: voor warmte, kou, pijn en aanraking</li>'
- +'<li><b>Bloedvaatjes</b>: brengen stoffen naar de huid</li></ul></div></div>'
-
- +'<h5 class="sub">Op temperatuur blijven</h5>'
- +'<div class="box"><p>Je huid helpt je lichaamstemperatuur op ongeveer <b>37 °C</b> te houden.</p>'
- +'<div class="tblwrap" style="margin-top:.7rem"><table class="tbl">'
- +'<tr><th></th><th>Als je het te warm hebt</th><th>Als je het koud hebt</th></tr>'
- +'<tr><td>Bloedvaatjes</td><td class="yes">worden wijder</td><td class="no">worden nauwer</td></tr>'
- +'<tr><td>Gevolg</td><td>warmte gaat eruit → afkoelen</td><td>warmte blijft binnen</td></tr>'
- +'<tr><td>Verder</td><td>je gaat <b>zweten</b></td><td>je gaat <b>rillen</b></td></tr></table></div>'
- +'<div class="call" style="margin-bottom:0"><b>Kippenvel:</b> bij kou gaan de haartjes op je huid rechtop staan. Bij dieren met een vacht houdt dat warmte vast, bij mensen helpt het eigenlijk niet meer.</div></div>'
-
- +'<h5 class="sub">Hoe gaat een wondje dicht?</h5>'
- +'<div class="box"><p>Je huid beschermt je tegen vuil en ziekteverwekkers. Een wondje wordt daarom zo snel mogelijk gedicht door de <b>bloedplaatjes</b>. Dat heet <b>bloedstolling</b>.</p>'
- +'<ol class="num" style="margin-top:.6rem">'
- +'<li>Bloedplaatjes gaan naar de wond</li>'
- +'<li>Ze maken een netwerk van fijne draadjes</li>'
- +'<li>Rode bloedcellen blijven in de draadjes hangen</li>'
- +'<li>Er vormt zich een <b>korstje</b></li>'
- +'<li>Daaronder herstelt de huid zich</li></ol></div>'
-
- +'<h5 class="sub">Bescherming tegen de zon</h5>'
- +'<div class="g2">'
- +'<div class="box"><h4>Pigment</h4>'
- +'<p><b>Uv-straling</b> van de zon kan je huidcellen beschadigen. Je huid beschermt zich door <b>pigment</b> te maken: korreltjes bruine kleurstof.</p>'
- +'<p style="margin-top:.6rem">Pigment wordt gemaakt door <b>pigmentcellen</b> in de kiemlaag.</p>'
- +'<ul class="lst" style="margin-top:.5rem">'
- +'<li>Een <b>donkere huid</b> maakt veel pigment</li>'
- +'<li>Een <b>lichte huid</b> maakt weinig pigment</li></ul></div>'
- +'<div class="box"><h4>Huidkanker</h4>'
- +'<p>Beschadig je je huid te vaak, dan kan <b>huidkanker</b> ontstaan. Dat gaat in drie stappen:</p>'
- +'<ol class="num" style="margin-top:.5rem">'
- +'<li>Uv-straling maakt van een gewone cel in de <b>kiemlaag</b> een kankercel</li>'
- +'<li>Die cel blijft zich delen; er ontstaat een <b>gezwel</b> (tumor)</li>'
- +'<li>Groeit het gezwel door een bloedvat, dan kunnen cellen losraken en elders nieuwe gezwellen vormen: <b>uitzaaiingen</b></li></ol></div></div>'
-
- +'<div class="call sum"><b>Om te onthouden (9.3)</b><ul class="lst">'
- +'<li>Drie lagen: <b>opperhuid</b> (hoornlaag + kiemlaag), <b>lederhuid</b>, <b>onderhuids bindweefsel</b>.</li>'
- +'<li>De <b>kiemlaag</b> maakt nieuwe huidcellen; de <b>hoornlaag</b> slijt af.</li>'
- +'<li>Afkoelen: bloedvaatjes wijder + zweten. Opwarmen: bloedvaatjes nauwer + rillen.</li>'
- +'<li><b>Bloedplaatjes</b> zorgen voor de <b>bloedstolling</b> en dus voor het korstje.</li>'
- +'<li><b>Pigment</b> beschermt tegen uv-straling. Te veel schade → <b>huidkanker</b>, met kans op <b>uitzaaiingen</b>.</li></ul></div>'
-},
-{
- heading:'9.4 Ziek',
- html:
- '<div class="g2">'
- +'<div class="box"><h4>Ziekteverwekkers</h4>'
- +'<p><b>Ziekteverwekkers</b> veroorzaken infectieziekten. Er zijn twee soorten:</p>'
- +'<div class="term" style="margin-top:.7rem"><b>Bacteriën</b><span>Microscopisch kleine organismen. Ze vermeerderen zich door te <b>delen</b>.</span></div>'
- +'<div class="term" style="margin-bottom:0"><b>Virussen</b><span>Nog veel kleiner. Ze vermeerderen zich <b>in je cellen</b>.</span></div>'
- +'<div class="call warn" style="margin-bottom:0;margin-top:.8rem"><b>Het verschil:</b> bacteriën delen zichzelf, virussen hebben jouw cellen nodig.</div></div>'
- +'<div class="box"><h4>Besmetting en infectie</h4>'
- +'<p>Zijn ziekteverwekkers je lichaam binnengedrongen, dan is er sprake van <b>besmetting</b>: een ander woord is <b>infectie</b>.</p>'
- +'<p style="margin-top:.6rem">Ziekten die zo ontstaan heten <b>infectieziekten</b>.</p>'
- +'<ul class="lst" style="margin-top:.5rem">'
- +'<li><b>Griep</b>, door het griepvirus: spierpijn, hoofdpijn, koorts</li>'
- +'<li><b>Verkoudheid</b>, door het verkoudheidsvirus: slijmvliescellen in je neus gaan kapot, je krijgt een loopneus</li></ul></div></div>'
-
- +'<h5 class="sub">Je afweer</h5>'
- +'<div class="box"><p><b>Afweer</b> is het uitschakelen van ziekteverwekkers door <b>witte bloedcellen</b>. Zij doen dat op twee manieren:</p>'
- +'<ol class="num" style="margin-top:.5rem">'
- +'<li>Ziekteverwekkers <b>insluiten</b> en verteren</li>'
- +'<li><b>Afweerstoffen</b> maken die de ziekteverwekker uitschakelen</li></ol>'
- +'<div class="call" style="margin-bottom:0"><b>Belangrijk:</b> tegen elke soort ziekteverwekker maken de witte bloedcellen een <b>andere</b> afweerstof. Er bestaat dus geen afweerstof die tegen alles werkt.</div></div>'
-
- +'<div class="g2" style="margin-top:1rem">'
- +'<div class="box"><h4>Etter</h4>'
- +'<p><b>Etter</b> (ook wel <b>pus</b>) komt uit een ontstoken wond. Het bestaat uit dode witte bloedcellen, verteerde bacteriën en resten van kapotte huidcellen.</p>'
- +'<p class="dim" style="margin-top:.5rem">Etter is dus eigenlijk het bewijs dat je afweer aan het werk is geweest.</p></div>'
- +'<div class="box"><h4>Immuun worden</h4>'
- +'<p>Ben je <b>immuun</b>, dan word je niet (meer) ziek van een ziekteverwekker. Je witte bloedcellen maken dan zó snel de juiste afweerstoffen dat je er niets van merkt.</p>'
- +'<p style="margin-top:.6rem">Bij <b>inenten</b> (vaccineren) spuit de dokter <b>verzwakte</b> ziekteverwekkers in je bloed. Je witte bloedcellen leren daar de juiste afweerstof bij te maken, zonder dat je echt ziek wordt.</p></div></div>'
-
- +'<div class="call sum"><b>Om te onthouden (9.4)</b><ul class="lst">'
- +'<li>Ziekteverwekkers: <b>bacteriën</b> (delen zich) en <b>virussen</b> (vermeerderen zich in je cellen).</li>'
- +'<li><b>Besmetting</b> = <b>infectie</b>: ziekteverwekkers zijn binnengedrongen.</li>'
- +'<li><b>Witte bloedcellen</b> zorgen voor de afweer: insluiten of <b>afweerstoffen</b> maken.</li>'
- +'<li>Tegen elke ziekteverwekker een <b>andere</b> afweerstof.</li>'
- +'<li>Bij <b>inenten</b> krijg je verzwakte ziekteverwekkers, zodat je <b>immuun</b> wordt.</li></ul></div>'
-}
+{heading:'9.4 Ziek',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst"><li>hoe <b>ziekteverwekkers</b> je besmetten</li><li>hoe je <b>afweer</b> werkt en hoe je <b>immuun</b> wordt</li></ul></div><div class="g2"><div class="box"><h4>Ziekteverwekkers</h4><p><b>Ziekteverwekkers</b> veroorzaken infectieziekten. Er zijn twee soorten:</p><div class="term" style="margin-top:.7rem"><b>Bacteriën</b><span>Microscopisch kleine organismen. Ze vermeerderen zich door te <b>delen</b>.</span></div><div class="term" style="margin-bottom:0"><b>Virussen</b><span>Nog veel kleiner. Ze vermeerderen zich <b>in je cellen</b>.</span></div><div class="call warn" style="margin-bottom:0;margin-top:.8rem"><b>Het verschil:</b> bacteriën delen zichzelf, virussen hebben jouw cellen nodig.</div></div><div class="box"><h4>Besmetting en infectie</h4><p>Zijn ziekteverwekkers je lichaam binnengedrongen, dan is er sprake van <b>besmetting</b>: een ander woord is <b>infectie</b>.</p><p style="margin-top:.6rem">Ziekten die zo ontstaan heten <b>infectieziekten</b>.</p><ul class="lst" style="margin-top:.5rem"><li><b>Griep</b>, door het griepvirus: spierpijn, hoofdpijn, koorts</li><li><b>Verkoudheid</b>, door het verkoudheidsvirus: slijmvliescellen in je neus gaan kapot, je krijgt een loopneus</li></ul></div></div><h5 class="sub">Je afweer</h5><div class="box"><p><b>Afweer</b> is het uitschakelen van ziekteverwekkers door <b>witte bloedcellen</b>. Zij doen dat op twee manieren:</p><ol class="num" style="margin-top:.5rem"><li>Ziekteverwekkers <b>insluiten</b> en verteren</li><li><b>Afweerstoffen</b> maken die de ziekteverwekker uitschakelen</li></ol><div class="call" style="margin-bottom:0"><b>Belangrijk:</b> tegen elke soort ziekteverwekker maken de witte bloedcellen een <b>andere</b> afweerstof. Er bestaat dus geen afweerstof die tegen alles werkt.</div></div><div class="g2" style="margin-top:1rem"><div class="box"><h4>Etter</h4><p><b>Etter</b> (ook wel <b>pus</b>) komt uit een ontstoken wond. Het bestaat uit dode witte bloedcellen, verteerde bacteriën en resten van kapotte huidcellen.</p><p class="dim" style="margin-top:.5rem">Etter is dus eigenlijk het bewijs dat je afweer aan het werk is geweest.</p></div><div class="box"><h4>Immuun worden</h4><p>Ben je <b>immuun</b>, dan word je niet (meer) ziek van een ziekteverwekker. Je witte bloedcellen maken dan zó snel de juiste afweerstoffen dat je er niets van merkt.</p><p style="margin-top:.6rem">Bij <b>inenten</b> (vaccineren) spuit de dokter <b>verzwakte</b> ziekteverwekkers in je bloed. Je witte bloedcellen leren daar de juiste afweerstof bij te maken, zonder dat je echt ziek wordt.</p></div></div><div class="check" onclick="toonCheck(this)"><p class="check-v">De twee soorten ziekteverwekkers</p><p class="check-a">Bacteriën en virussen.</p><span class="check-hint">Tik voor het antwoord</span></div><div class="call sum"><b>Om te onthouden (9.4)</b><ul class="lst"><li>Ziekteverwekkers: <b>bacteriën</b> (delen zich) en <b>virussen</b> (vermeerderen zich in je cellen).</li><li><b>Besmetting</b> = <b>infectie</b>: ziekteverwekkers zijn binnengedrongen.</li><li><b>Witte bloedcellen</b> zorgen voor de afweer: insluiten of <b>afweerstoffen</b> maken.</li><li>Tegen elke ziekteverwekker een <b>andere</b> afweerstof.</li><li>Bij <b>inenten</b> krijg je verzwakte ziekteverwekkers, zodat je <b>immuun</b> wordt.</li></ul></div>`}
 ],
 terms:[
 ['afweer','Het uitschakelen van ziekteverwekkers door witte bloedcellen.'],

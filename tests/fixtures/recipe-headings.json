@@ -1,0 +1,1140 @@
+{
+  "wiskunde|tl|4": {
+    "wiskunde|tl|4|1": [
+      "1.1 Kans",
+      "1.2 Staafdiagram, lijndiagram en cirkeldiagram",
+      "1.3 Steelbladdiagram",
+      "1.4 Boxplot",
+      "1.5 Grafen",
+      "1.6 Telproblemen"
+    ],
+    "wiskunde|tl|4|2": [
+      "2.1 Lineair verband",
+      "2.2 Kwadratisch verband",
+      "2.3 Machtsverband",
+      "2.4 Wortelverband",
+      "2.5 Exponenti&euml;el verband",
+      "2.6 Exponenti&euml;le groei"
+    ],
+    "wiskunde|tl|4|3": [
+      "3.1 Tekenen in perspectief",
+      "3.2 Hoeken in vlakke figuren",
+      "3.3 Hoeken berekenen met goniometrie",
+      "3.4 Zijden berekenen in een driehoek",
+      "3.5 Co&ouml;rdinaten in de ruimte",
+      "3.6 Berekeningen in de ruimte"
+    ],
+    "wiskunde|tl|4|4": [
+      "4.1 Omgekeerd evenredig",
+      "4.2 Stippengrafiek en trapgrafiek",
+      "4.3 Formules en tijd",
+      "4.4 Formules bij hetzelfde verband",
+      "4.5 Vergelijkingen oplossen"
+    ],
+    "wiskunde|tl|4|5": [
+      "Procenten berekenen",
+      "Grote getallen",
+      "Verhoudingen en vuistregels",
+      "Eenheden omrekenen",
+      "Tijd en snelheid"
+    ],
+    "wiskunde|tl|4|6": [
+      "Oppervlakte en omtrek",
+      "Symmetrie",
+      "Kijkhoek en koershoek",
+      "Goniometrie in vlakke figuren",
+      "Gelijkvormigheid en vergroten"
+    ],
+    "wiskunde|tl|4|7": [
+      "Lineaire formules maken",
+      "Exponenti&euml;le verbanden",
+      "Periodieke verbanden",
+      "Som- en verschilgrafieken"
+    ],
+    "wiskunde|tl|4|8": [
+      "Ruimtefiguren en inhoud",
+      "Diagonalen en doorsneden",
+      "Goniometrie in de ruimte",
+      "Hoogtekaarten en doorsneden",
+      "Co&ouml;rdinaten in de ruimte"
+    ]
+  },
+  "wiskunde|tl|2": {
+    "wiskunde|tl|2|1": [
+      "1.1 Namen van vlakke figuren",
+      "1.2 Hoeken berekenen in driehoeken",
+      "1.3 Driehoeken tekenen",
+      "1.4 Parallellogram en ruit tekenen",
+      "1.5 Vlieger en trapezium tekenen",
+      "1.6 Hoeken berekenen in vierhoeken"
+    ],
+    "wiskunde|tl|2|2": [
+      "2.1 Oplossen met grafieken",
+      "2.2 Oplossen met inklemmen",
+      "2.3 Oplossen met de balansmethode",
+      "2.4 Formule maken bij een grafiek",
+      "2.5 Formule maken bij een tabel"
+    ],
+    "wiskunde|tl|2|3": [
+      "3.1 Oppervlakte rechthoek",
+      "3.2 Oppervlakte driehoek",
+      "3.3 Oppervlakte parallellogram",
+      "3.4 Oppervlakte vierhoeken",
+      "3.5 Omtrek en oppervlakte cirkel",
+      "3.6 Oppervlakte ruimtefiguren"
+    ],
+    "wiskunde|tl|2|4": [
+      "4.1 Toename en afname in procenten",
+      "4.2 Beelddiagram en staafdiagram",
+      "4.3 Lijndiagram en cirkeldiagram",
+      "4.4 Histogram en steelbladdiagram",
+      "4.5 Gemiddelde, mediaan en modus"
+    ],
+    "wiskunde|tl|2|5": [
+      "5.1 Kwadraten en wortels",
+      "5.2 Machten",
+      "5.3 Zijden benoemen",
+      "5.4 De stelling van Pythagoras",
+      "5.5 De stelling van Pythagoras toepassen"
+    ],
+    "wiskunde|tl|2|6": [
+      "6.1 Vergrotingsfactor",
+      "6.2 Gelijkvormige driehoeken",
+      "6.3 Oppervlakte en inhoud vergroten",
+      "6.4 Schaal",
+      "6.5 Schaalmodel"
+    ],
+    "wiskunde|tl|2|7": [
+      "7.1 Formules met een deelstreep",
+      "7.2 Formules met haakjes",
+      "7.3 Formules met kwadraten",
+      "7.4 Formules met wortels",
+      "7.5 Periodieke grafiek"
+    ],
+    "wiskunde|tl|2|8": [
+      "8.1 Ruimtelijk tekenen",
+      "8.2 Aanzichten",
+      "8.3 Doorsnede",
+      "8.4 Inhoud prisma en cilinder",
+      "8.5 Inhoud piramide en kegel"
+    ]
+  },
+  "wiskunde|tl|3": {
+    "wiskunde|tl|3|1": [
+      "1.1 Percentage gegeven",
+      "1.2 Procentuele toename en afname",
+      "1.3 Procenten en grote getallen",
+      "1.4 Terugrekenen naar 100%",
+      "1.5 Promille",
+      "1.6 Exponentiële formule"
+    ],
+    "wiskunde|tl|3|10": [
+      "10.1 Bijzondere formules en grafieken",
+      "10.2 Somgrafiek en verschilgrafiek",
+      "10.3 Vergelijkingen oplossen met de balansmethode",
+      "10.4 Oplossen met inklemmen"
+    ],
+    "wiskunde|tl|3|2": [
+      "2.1 Schaal en schaallijn",
+      "2.2 Koershoek",
+      "2.3 Hoogtelijnen",
+      "2.4 Doorsnede en lichaamsdiagonaal",
+      "2.5 Aanzichten",
+      "2.6 Hoeken"
+    ],
+    "wiskunde|tl|3|3": [
+      "3.1 Lineair of niet",
+      "3.2 Lineaire grafiek bij een formule",
+      "3.3 Regelmaat in tabellen",
+      "3.4 Formule bij een tabel",
+      "3.5 Formule bij een grafiek",
+      "3.6 Richtingscoëfficiënt berekenen"
+    ],
+    "wiskunde|tl|3|4": [
+      "4.1 Informatie",
+      "4.2 Gemiddelde",
+      "4.3 Modus en mediaan",
+      "4.4 Diagrammen lezen",
+      "4.5 Samengestelde diagrammen"
+    ],
+    "wiskunde|tl|3|5": [
+      "5.1 Namen rechthoekszijden",
+      "5.2 Hoek berekenen met sinus",
+      "5.3 Hoek berekenen met cosinus",
+      "5.4 Hoek berekenen met tangens",
+      "5.5 Hoek berekenen met goniometrie",
+      "5.6 Hoeken berekenen in ruimtefiguren"
+    ],
+    "wiskunde|tl|3|6": [
+      "6.1 Kwadratische verbanden",
+      "6.2 Wortelverbanden",
+      "6.3 Machtsverbanden",
+      "6.4 Periodieke verbanden"
+    ],
+    "wiskunde|tl|3|7": [
+      "7.1 De stelling van Pythagoras",
+      "7.2 Hoek berekenen met goniometrie",
+      "7.3 Zijden berekenen met goniometrie",
+      "7.4 Zijden en hoeken berekenen",
+      "7.5 Goniometrie in ruimtefiguren"
+    ],
+    "wiskunde|tl|3|8": [
+      "8.1 Grote getallen",
+      "8.2 Wetenschappelijke notatie",
+      "8.3 Eenheden van tijd",
+      "8.4 Eenheden van snelheid",
+      "8.5 Verhoudingen"
+    ],
+    "wiskunde|tl|3|9": [
+      "9.1 Eenheden",
+      "9.2 Oppervlakte en omtrek vlakke figuren",
+      "9.3 Oppervlakte en omtrek samengestelde vlakke figuren",
+      "9.4 Oppervlakte ruimtefiguren",
+      "9.5 Inhoud ruimtefiguren",
+      "9.6 Oppervlakte vergroten",
+      "9.7 Inhoud vergroten"
+    ]
+  },
+  "engels|tl|1": {
+    "engels|tl|1|1": [
+      "My family",
+      "My timetable",
+      "My home",
+      "My body, my clothes"
+    ],
+    "engels|tl|1|2": [
+      "Looks en Numbers",
+      "Jezelf voorstellen",
+      "Present simple",
+      "Voornaamwoorden: I (me, he) him",
+      "Mensen beschrijven",
+      "Lezen en luisteren"
+    ],
+    "engels|tl|1|3": [
+      "School en ordinals",
+      "Vragen en ontkenningen",
+      "Tijd en rooster",
+      "Woordvolgorde en likes/dislikes",
+      "Lezen en uitspraak"
+    ],
+    "engels|tl|1|4": [
+      "Boodschappen doen",
+      "Some en any, meervoud",
+      "Aan tafel",
+      "This, that, these, those",
+      "Lezen"
+    ]
+  },
+  "engels|tl|2": {
+    "engels|tl|2|1": [
+      "Travelling",
+      "Packing your suitcase",
+      "The weather",
+      "Past simple: bevestigende zin",
+      "Past simple: vragen",
+      "Past simple: ontkenningen"
+    ],
+    "engels|tl|2|2": [
+      "At the doctor's",
+      "Health conditions",
+      "Tips and advice",
+      "Past continuous",
+      "Past continuous en past simple",
+      "Can, could en should"
+    ],
+    "engels|tl|2|3": [
+      "Showbiz and entertainment",
+      "Linking words",
+      "Expressing your opinion",
+      "Films and series",
+      "Bijvoeglijke naamwoorden",
+      "Present perfect"
+    ]
+  },
+  "engels|tl|3": {
+    "engels|tl|3|1": [
+      "Present tenses",
+      "Tag questions",
+      "Gerunds and infinitives",
+      "Some-, any-, every- en no-",
+      "Een gesprek starten en je mening geven",
+      "Mensen beschrijven en relaties"
+    ],
+    "engels|tl|3|2": [
+      "Present perfect",
+      "Onregelmatige werkwoorden",
+      "Modale werkwoorden",
+      "Een misdaad melden",
+      "Mensen waarschuwen",
+      "Misdadigers en gedrag beschrijven"
+    ],
+    "engels|tl|3|3": [
+      "Voorzetsels van tijd en plaats",
+      "Toekomstige tijden",
+      "Bijvoeglijke naamwoorden en bijwoorden",
+      "Bijwoorden van frequentie",
+      "Praten over de toekomst en uitvindingen",
+      "Wetenschap en technologie"
+    ]
+  },
+  "nederlands|tl|2": {
+    "nederlands|tl|2|1": [
+      "Onbekende woorden",
+      "Alinea's en kernzinnen",
+      "Tekstverbanden en signaalwoorden",
+      "Hoofd- en bijzaken"
+    ],
+    "nederlands|tl|2|10": [
+      "Inleiding en slot",
+      "Verhalende podcasts",
+      "Een intro en outro voor een podcast schrijven",
+      "Spreken in een podcast"
+    ],
+    "nederlands|tl|2|11": [
+      "Aantekeningen maken",
+      "Meningen beoordelen",
+      "Discussiëren",
+      "Recensies lezen",
+      "Recensie schrijven"
+    ],
+    "nederlands|tl|2|12": [
+      "Online informatie beoordelen",
+      "Video's als bron",
+      "Online informerende teksten",
+      "Spreken voor publiek",
+      "Een webtekst schrijven"
+    ],
+    "nederlands|tl|2|2": [
+      "Waarom werkt online reclame?",
+      "Persona",
+      "Storyboard maken",
+      "Reclameplan presenteren",
+      "Een stop-motion-reclame"
+    ],
+    "nederlands|tl|2|3": [
+      "Setting en sfeer",
+      "Perspectief",
+      "Tijd",
+      "Spanning",
+      "Over gedichten"
+    ],
+    "nederlands|tl|2|4": [
+      "NT2/Tweedetaalverwerving",
+      "Stijl",
+      "Jongerentaal en nieuwe taal",
+      "Voor- en achtervoegsels",
+      "Thematische uitdrukkingen"
+    ],
+    "nederlands|tl|2|5": [
+      "Voegwoord herkennen",
+      "Samengestelde zinnen",
+      "Persoonlijk en bezittelijk voornaamwoord",
+      "Lijdend voorwerp"
+    ],
+    "nederlands|tl|2|6": [
+      "Verwijzen naar personen en dingen",
+      "Verwijzen naar bezit",
+      "Meer oefenen met verwijzen",
+      "Samengestelde zinnen schrijven"
+    ],
+    "nederlands|tl|2|7": [
+      "Hoofdletters",
+      "Leestekens: komma",
+      "Leestekens: dubbele punt en aanhalingstekens",
+      "Bijvoeglijk naamwoord",
+      "Meervouden op -s en -en",
+      "Verkleinwoorden",
+      "Voltooid deelwoord",
+      "Werkwoordalarm"
+    ],
+    "nederlands|tl|2|8": [
+      "Woordraadstrategieën",
+      "5w+h-vragen"
+    ],
+    "nederlands|tl|2|9": [
+      "Woordweb",
+      "Parafraseren",
+      "Schema's maken",
+      "Mondeling verslag doen"
+    ]
+  },
+  "nederlands|tl|1": {
+    "nederlands|tl|1|1": [
+      "Onbekende woorden",
+      "Onderwerp",
+      "Hoofdgedachte",
+      "Tekstdoelen en tekstsoorten",
+      "Inleiding, middenstuk en slot",
+      "Deelonderwerpen",
+      "Stappenplan lezen"
+    ],
+    "nederlands|tl|1|10": [
+      "De 5w+h-vragen",
+      "Een presentatie geven",
+      "Instrueren",
+      "Een korte instructie schrijven"
+    ],
+    "nederlands|tl|1|11": [
+      "Vlogs",
+      "Mening geven",
+      "Aandacht trekken van publiek"
+    ],
+    "nederlands|tl|1|12": [
+      "Vragen stellen",
+      "Interviews",
+      "Een interview uitwerken",
+      "Zakelijke e-mail"
+    ],
+    "nederlands|tl|1|2": [
+      "Apps",
+      "Betrouwbaarheid",
+      "Online brainstormen",
+      "Een prototype ontwerpen",
+      "Pitchen",
+      "Evalueren en verslag doen"
+    ],
+    "nederlands|tl|1|3": [
+      "Fictie en non-fictie",
+      "Personages",
+      "Smaak",
+      "Over gedichten"
+    ],
+    "nederlands|tl|1|4": [
+      "Moedertaal",
+      "Taal uit de buurt",
+      "Taalverandering",
+      "Bouwstenen",
+      "Formeel en informeel",
+      "Letterlijk en figuurlijk",
+      "Beeldtaal",
+      "Dyslexie"
+    ],
+    "nederlands|tl|1|5": [
+      "Werkwoord",
+      "Persoonsvorm",
+      "Lidwoord en zelfstandig naamwoord",
+      "Onderwerp",
+      "Bijvoeglijk naamwoord",
+      "Werkwoordelijk gezegde",
+      "Voorzetsel"
+    ],
+    "nederlands|tl|1|6": [
+      "Volledige zinnen",
+      "De- en het-woorden",
+      "Verwijswoorden"
+    ],
+    "nederlands|tl|1|7": [
+      "Hoofdletters",
+      "Leestekens: punt, uitroepteken, vraagteken",
+      "Laatste letter -d of -t",
+      "Meervouden",
+      "Verkleinwoorden",
+      "Persoonsvorm tegenwoordige tijd",
+      "Sterke en zwakke werkwoorden",
+      "Persoonsvorm verleden tijd van zwakke werkwoorden",
+      "Persoonsvorm verleden tijd van sterke werkwoorden",
+      "Onregelmatige werkwoorden"
+    ],
+    "nederlands|tl|1|8": [
+      "Feedback geven en ontvangen",
+      "Stappenplan lezen",
+      "Stappenplan schrijven",
+      "Stappenplan spreken (presentatie geven)",
+      "Schema werkwoordspelling",
+      "Overzicht woordraadstrategieën",
+      "5w+h-vragen"
+    ],
+    "nederlands|tl|1|9": [
+      "Tekstdoelen: activeren",
+      "Publiek",
+      "Tekst en beeld",
+      "Stemgebruik"
+    ]
+  },
+  "economie|tl|4": {
+    "economie|tl|4|1": [
+      "1.1 Wat heb je te besteden?",
+      "1.2 Niet ieder inkomen is hetzelfde",
+      "1.3 Wil je welvaart of welzijn?",
+      "1.4 Help, de prijzen stijgen!"
+    ],
+    "economie|tl|4|2": [
+      "2.1 Hoe geef jij je geld uit?",
+      "2.2 Ga je sparen of beleggen?",
+      "2.3 Wie leent, maakt schulden",
+      "2.4 Geld moet rollen!"
+    ],
+    "economie|tl|4|3": [
+      "3.1 Wat zijn de kosten?",
+      "3.2 Wat levert het op?",
+      "3.3 Vraag en aanbod",
+      "3.4 Macht op de markt?"
+    ],
+    "economie|tl|4|4": [
+      "4.1 Sta je sterk in je werk?",
+      "4.2 Wat voor werk wil jij?",
+      "4.3 Kun je aan het werk?",
+      "4.4 Werk voor iedereen?"
+    ],
+    "economie|tl|4|5": [
+      "5.1 Overheid, burgers en bedrijven",
+      "5.2 De overheid en de economie",
+      "5.3 Zijn wij sociaal?",
+      "5.4 Geld genoeg?"
+    ],
+    "economie|tl|4|6": [
+      "6.1 Je inkomen wordt belast",
+      "6.2 Hoeveel belasting betaal je?",
+      "6.3 Eerlijk zullen we alles delen?",
+      "6.4 Iedereen betaalt mee"
+    ],
+    "economie|tl|4|7": [
+      "7.1 Nederland handelsland",
+      "7.2 Nederland en de EU",
+      "7.3 Kunnen we vrij handelen?",
+      "7.4 De wereld wordt kleiner"
+    ],
+    "economie|tl|4|8": [
+      "8.1 Verschillen in welvaart",
+      "8.2 Wat is een ontwikkelingsland?",
+      "8.3 Is vooruitgang mogelijk?",
+      "8.4 Een steentje bijdragen"
+    ]
+  },
+  "economie|tl|3": {
+    "economie|tl|3|1": [
+      "1.1 Kun jij kopen wat je wilt?",
+      "1.2 Hoe word je beïnvloed?",
+      "1.3 Je inkomsten en uitgaven",
+      "1.4 Wordt alles duurder?"
+    ],
+    "economie|tl|3|2": [
+      "2.1 Samen sta je sterker",
+      "2.2 Waar heb je recht op?",
+      "2.3 Hoe wil je wonen?",
+      "2.4 Wat doe jij voor het milieu?"
+    ],
+    "economie|tl|3|3": [
+      "3.1 Hoe betaal je?",
+      "3.2 Waarvoor zou je sparen?",
+      "3.3 Geldlenen kost geld!",
+      "3.4 Nog meer bankzaken?"
+    ],
+    "economie|tl|3|4": [
+      "4.1 Waarom verzeker je dat?",
+      "4.2 Wat is er thuis verzekerd?",
+      "4.3 Rijschadevrij!",
+      "4.4 Zorg voor een zorgverzekering!"
+    ],
+    "economie|tl|3|5": [
+      "5.1 Wat levert werken op?",
+      "5.2 Wat voor ondernemingen?",
+      "5.3 Doe jij mee op de arbeidsmarkt?",
+      "5.4 Als je zonder werk zit"
+    ],
+    "economie|tl|3|6": [
+      "6.1 Produceren maar!",
+      "6.2 Het gaat om de winst!",
+      "6.3 Op de markt",
+      "6.4 Meer of minder productie?"
+    ],
+    "economie|tl|3|7": [
+      "7.1 Wat is de overheid?",
+      "7.2 Sociale zekerheid",
+      "7.3 Hoe komt de overheid aan geld?",
+      "7.4 Wat geeft de overheid uit?"
+    ],
+    "economie|tl|3|8": [
+      "8.1 Waarom de grens over?",
+      "8.2 Wereldwijde handel",
+      "8.3 Samenwerken is slimmer",
+      "8.4 Is de welvaart eerlijk verdeeld?"
+    ]
+  },
+  "biologie|bbl|1": {
+    "biologie|bbl|1|1": [
+      "1.1 Ontdek je binnenste",
+      "1.2 Je omgeving ontdekken",
+      "1.3 Gegevens vastleggen",
+      "1.4 Onderzoek doen"
+    ],
+    "biologie|bbl|1|2": [
+      "2.1 Botten",
+      "2.2 Botten bewegen",
+      "2.3 Spieren",
+      "2.4 Blessures"
+    ],
+    "biologie|bbl|1|3": [
+      "3.1 Zintuigen en prikkels",
+      "3.2 Zien",
+      "3.3 Horen",
+      "3.4 Ruiken en proeven"
+    ],
+    "biologie|bbl|1|4": [
+      "4.1 Prikkels en gedrag",
+      "4.2 Leren",
+      "4.3 Lichaamstaal",
+      "4.4 Samenleven"
+    ],
+    "biologie|bbl|1|5": [
+      "5.1 Planten bekijken",
+      "5.2 Planten groeien",
+      "5.3 Planten maken voedingsstoffen",
+      "5.4 Voortplanten"
+    ],
+    "biologie|bbl|1|6": [
+      "6.1 Naast de deur",
+      "6.2 Leefomgeving onder de loep",
+      "6.3 Eten of gegeten worden",
+      "6.4 Een kringloop"
+    ]
+  },
+  "biologie|bbl|2": {
+    "biologie|bbl|2|10": [
+      "10.1 Opgroeien",
+      "10.2 Puberteit",
+      "10.3 Relaties",
+      "10.4 Ziek van de liefde"
+    ],
+    "biologie|bbl|2|11": [
+      "11.1 Mannen",
+      "11.2 Vrouwen",
+      "11.3 Zwanger worden",
+      "11.4 Zwangerschap en geboorte"
+    ],
+    "biologie|bbl|2|12": [
+      "12.1 Eten en gegeten worden",
+      "12.2 Transport in planten en dieren",
+      "12.3 Op temperatuur blijven",
+      "12.4 Aanpassingen en evolutie"
+    ],
+    "biologie|bbl|2|13": [
+      "13.1 Je invloed op aarde",
+      "13.2 Voedsel produceren",
+      "13.3 Vervuiling",
+      "13.4 Duurzaam kiezen"
+    ],
+    "biologie|bbl|2|7": [
+      "7.1 Gezond eten",
+      "7.2 Energie",
+      "7.3 Bouwen en beschermen",
+      "7.4 Voedsel verteren"
+    ],
+    "biologie|bbl|2|8": [
+      "8.1 Het werkt",
+      "8.2 Je ademt",
+      "8.3 Je bloed vervoert",
+      "8.4 Je bloedsomloop"
+    ],
+    "biologie|bbl|2|9": [
+      "9.1 Ongezond",
+      "9.2 Goed geregeld",
+      "9.3 Je huid",
+      "9.4 Ziek"
+    ]
+  },
+  "biologie|tl|1": {
+    "biologie|tl|1|1": [
+      "1.1 Ontdek je binnenste",
+      "1.2 Je omgeving ontdekken",
+      "1.3 Gegevens vastleggen",
+      "1.4 Onderzoek doen",
+      "1.5 Samenhang - De natuur ontdekken"
+    ],
+    "biologie|tl|1|2": [
+      "2.1 Botten",
+      "2.2 Botten bewegen",
+      "2.3 Spieren",
+      "2.4 Blessures",
+      "2.5 Samenhang - Trainen voor de sprint"
+    ],
+    "biologie|tl|1|3": [
+      "3.1 Zintuigen en prikkels",
+      "3.2 Zien",
+      "3.3 Horen",
+      "3.4 Ruiken en proeven",
+      "3.5 Samenhang - Gamen en gezondheid"
+    ],
+    "biologie|tl|1|4": [
+      "4.1 Prikkels en gedrag",
+      "4.2 Leren",
+      "4.3 Lichaamstaal",
+      "4.4 Samenleven",
+      "4.5 Samenhang - De dierenopvang"
+    ],
+    "biologie|tl|1|5": [
+      "5.1 Planten bekijken",
+      "5.2 Planten groeien",
+      "5.3 Planten voeden zich",
+      "5.4 Voortplanten",
+      "5.5 Samenhang - De aardbeienkwekerij"
+    ],
+    "biologie|tl|1|6": [
+      "6.1 Naast de deur",
+      "6.2 Biotoop onder de loep",
+      "6.3 Eten of gegeten worden",
+      "6.4 Een kringloop",
+      "6.5 Samenhang - De Weerribben"
+    ]
+  },
+  "biologie|tl|2": {
+    "biologie|tl|2|1": [
+      "7.1 Gezond eten",
+      "7.2 Energie",
+      "7.3 Bouwen en beschermen",
+      "7.4 Voedsel verteren",
+      "7.5 Samenhang - De schoolkantine"
+    ],
+    "biologie|tl|2|2": [
+      "8.1 Het werkt",
+      "8.2 Je ademt",
+      "8.3 Je bloed vervoert",
+      "8.4 Je bloedsomloop",
+      "8.5 Samenhang - De sportkeuring"
+    ],
+    "biologie|tl|2|3": [
+      "9.1 Ongezond",
+      "9.2 Goed geregeld",
+      "9.3 Je huid",
+      "9.4 Ziek",
+      "9.5 Samenhang - Naar het ziekenhuis"
+    ],
+    "biologie|tl|2|4": [
+      "10.1 Opgroeien",
+      "10.2 Puberteit",
+      "10.3 Relaties",
+      "10.4 Ziek van de liefde",
+      "10.5 Samenhang - De schoolarts"
+    ],
+    "biologie|tl|2|5": [
+      "11.1 Man en vrouw",
+      "11.2 Bevruchting",
+      "11.3 Zwangerschap",
+      "11.4 Je lijkt op...",
+      "11.5 Samenhang - Olifanten fokken"
+    ],
+    "biologie|tl|2|6": [
+      "12.1 Eten",
+      "12.2 Ademhalen",
+      "12.3 Vervoer",
+      "12.4 Hitte en kou",
+      "12.5 Samenhang - Op expeditie in de tropen"
+    ],
+    "biologie|tl|2|7": [
+      "13.1 Je invloed op aarde",
+      "13.2 Voedsel produceren",
+      "13.3 Vervuiling",
+      "13.4 Duurzaam kiezen",
+      "13.5 Samenhang - Een patatje met"
+    ]
+  },
+  "biologie|tl|3": {
+    "biologie|tl|3|1": [
+      "1.1 Organismen indelen",
+      "1.2 Plantenrijk",
+      "1.3 Dierenrijk",
+      "1.4 Schimmelrijk en bacterierijk",
+      "1.5 Voedselkringloop",
+      "1.6 Biotechniek",
+      "1.7 Samenhang - Kaas maken"
+    ],
+    "biologie|tl|3|2": [
+      "2.1 Het skelet",
+      "2.2 Skelet en houding",
+      "2.3 In beweging",
+      "2.4 Blessures",
+      "2.5 Dieren bewegen",
+      "2.6 Samenhang - Bewegen in de ruimte"
+    ],
+    "biologie|tl|3|3": [
+      "3.1 Organismen in hun omgeving",
+      "3.2 Planten",
+      "3.3 Energierijke stoffen",
+      "3.4 Voedselrelaties",
+      "3.5 Kringlopen",
+      "3.6 Samenhang - Safari op de savanne"
+    ],
+    "biologie|tl|3|4": [
+      "4.1 Waarnemen",
+      "4.2 Zien en horen",
+      "4.3 Proeven, ruiken, voelen",
+      "4.4 Zenuwstelsel",
+      "4.5 Reageren door impulsen",
+      "4.6 Reageren door hormonen",
+      "4.7 Samenhang - Stress"
+    ],
+    "biologie|tl|3|5": [
+      "5.1 Prikkels en signalen",
+      "5.2 Sociaal gedrag",
+      "5.3 Gedrag onderzoeken",
+      "5.4 Gedrag leren",
+      "5.5 Omgaan met dieren",
+      "5.6 Samenhang - Exoskelet"
+    ],
+    "biologie|tl|3|6": [
+      "6.1 De aarde gebruiken",
+      "6.2 Voedsel voor veel mensen",
+      "6.3 Afval",
+      "6.4 Duurzaam leven",
+      "6.5 Samenhang - Energie uit planten en champignons"
+    ]
+  },
+  "biologie|tl|4": {
+    "biologie|tl|4|1": [
+      "7.1 Alles werkt samen",
+      "7.2 Ademen",
+      "7.3 Eten",
+      "7.4 Verteren",
+      "7.5 Eten en ademen bij dieren",
+      "7.6 Samenhang - Leven in het hooggebergte"
+    ],
+    "biologie|tl|4|2": [
+      "8.1 Bloed",
+      "8.2 Bloed stroomt",
+      "8.3 Rond je cellen",
+      "8.4 Afvalstoffen",
+      "8.5 Doping en drugs",
+      "8.6 Samenhang - Bloedonderzoek"
+    ],
+    "biologie|tl|4|3": [
+      "9.1 De huid",
+      "9.2 Infecties bestrijden",
+      "9.3 Ziekten bestrijden",
+      "9.4 Bloed- en orgaandonatie",
+      "9.5 Soa's",
+      "9.6 Samenhang - Griep"
+    ],
+    "biologie|tl|4|4": [
+      "10.1 Man en vrouw",
+      "10.2 Zwanger en bevallen",
+      "10.3 Opgroeien",
+      "10.4 Voortplanting met bloemen",
+      "10.5 Voortplanting zonder bloemen",
+      "10.6 Samenhang - Buideldieren"
+    ],
+    "biologie|tl|4|5": [
+      "11.1 Eigenschappen en chromosomen",
+      "11.2 Chromosomen doorgeven",
+      "11.3 Je lijkt op ...",
+      "11.4 Uiterlijk voorspellen",
+      "11.5 Erfelijke aandoeningen",
+      "11.6 Samenhang - Gentherapie bij diabetes"
+    ],
+    "biologie|tl|4|6": [
+      "12.1 Selectie",
+      "12.2 Verwantschap",
+      "12.3 Evolutie van ziekteverwekkers",
+      "12.4 Samenhang - Geschiedenis van de aardappel"
+    ]
+  },
+  "mensmaatschappij|bbl|1": {
+    "mensmaatschappij|bbl|1|1": [
+      "1.1 Het leven van jager-verzamelaars",
+      "1.2 Het leven van de eerste boeren",
+      "1.3 Basisbehoeften voor arm en rijk",
+      "1.4 Verschillen in de wereld"
+    ],
+    "mensmaatschappij|bbl|1|10": [
+      "2.1 Geld maakt het makkelijker",
+      "2.2 Geld voor later",
+      "2.3 Geld lenen kost geld",
+      "2.4 De verzekering dekt de schade"
+    ],
+    "mensmaatschappij|bbl|1|11": [
+      "3.1 Je eigen bedrijf",
+      "3.2 Personeel gezocht!",
+      "3.3 Wat spreken we af?",
+      "3.4 Je hebt geen werk meer"
+    ],
+    "mensmaatschappij|bbl|1|2": [
+      "2.1 De Romeinse samenleving",
+      "2.2 Van meerdere goden naar één god",
+      "2.3 De aarde beeft",
+      "2.4 De aarde spuwt vuur"
+    ],
+    "mensmaatschappij|bbl|1|3": [
+      "3.1 Monniken en ridders",
+      "3.2 Het ontstaan van de Arabische wereld",
+      "3.3 Godsdiensten in onze samenleving",
+      "3.4 Omgaan met verschillen"
+    ],
+    "mensmaatschappij|bbl|1|4": [
+      "4.1 Het ontstaan van steden",
+      "4.2 De macht van koningen",
+      "4.3 Steden in de wereld",
+      "4.4 Steden in Nederland"
+    ],
+    "mensmaatschappij|bbl|1|5": [
+      "5.1 De kerk valt uiteen",
+      "5.2 De Nederlandse Opstand",
+      "5.3 Bevolkingsgroei en migratie",
+      "5.4 Cultuur en cultuurverspreiding"
+    ],
+    "mensmaatschappij|bbl|1|6": [
+      "6.1 Ontdekkers",
+      "6.2 Veroveraars",
+      "6.3 Weer en klimaat",
+      "6.4 Klimaatgebieden"
+    ],
+    "mensmaatschappij|bbl|1|7": [
+      "7.1 Een sterk groeiende economie in Nederland",
+      "7.2 Buiten Nederland",
+      "7.3 Landschappen in soorten en maten",
+      "7.4 De vorming van het Nederlandse landschap"
+    ],
+    "mensmaatschappij|bbl|1|8": [
+      "8.1 Hoe verloren vorsten hun macht?",
+      "8.2 Ondertussen in Nederland",
+      "8.3 Wat zijn je rechten en plichten?",
+      "8.4 Hoe vrij ben je?"
+    ],
+    "mensmaatschappij|bbl|1|9": [
+      "1.1 Wat wil je kopen?",
+      "1.2 Wie bepaalt wat je koopt?",
+      "1.3 Een steuntje in de rug",
+      "1.4 Uitkomen met je geld"
+    ]
+  },
+  "mensmaatschappij|bbl|2": {
+    "mensmaatschappij|bbl|2|1": [
+      "1.1 Hoe ontstond de industrie?",
+      "1.2 Westerse wereldrijken",
+      "1.3 Waar komen de grondstoffen vandaan?",
+      "1.4 Aan het werk"
+    ],
+    "mensmaatschappij|bbl|2|10": [
+      "2.1 Over de grens",
+      "2.2 Meer of minder buitenlandse handel?",
+      "2.3 De Europese Unie helpt ons verder",
+      "2.4 Welvaart voor iedereen?"
+    ],
+    "mensmaatschappij|bbl|2|11": [
+      "3.1 Wie is de overheid?",
+      "3.2 De overheid werkt voor ons",
+      "3.3 De overheid heeft geld nodig",
+      "3.4 Kan de overheid rondkomen?"
+    ],
+    "mensmaatschappij|bbl|2|2": [
+      "2.1 Naar een ander soort leven",
+      "2.2 Stromingen in de samenleving",
+      "2.3 De regering en de volksvertegenwoordiging",
+      "2.4 Provincies en gemeenten"
+    ],
+    "mensmaatschappij|bbl|2|3": [
+      "3.1 De Eerste Wereldoorlog",
+      "3.2 Welvaart, crisis en dreiging",
+      "3.3 Water op aarde",
+      "3.4 Water in natte en droge gebieden"
+    ],
+    "mensmaatschappij|bbl|2|4": [
+      "4.1 Oorlog in Europa",
+      "4.2 Oorlog in Nederland en buiten Europa",
+      "4.3 Internationale samenwerking",
+      "4.4 Herdenken en vieren"
+    ],
+    "mensmaatschappij|bbl|2|5": [
+      "5.1 Kolonies maken zich los",
+      "5.2 De Koude Oorlog",
+      "5.3 Globalisering: één wereld?",
+      "5.4 Economische globalisering"
+    ],
+    "mensmaatschappij|bbl|2|6": [
+      "6.1 Vooruitgang en onrust",
+      "6.2 Conflicten wereldwijd",
+      "6.3 Migratie in de wereld",
+      "6.4 Gevolgen van migratie"
+    ],
+    "mensmaatschappij|bbl|2|7": [
+      "7.1 Een nieuwe wereldorde",
+      "7.2 Het klimaat verandert",
+      "7.3 Opkomst van duurzame energie",
+      "7.4 Nederland verduurzaamt"
+    ],
+    "mensmaatschappij|bbl|2|8": [
+      "8.1 Nederland, de EU en de wereld",
+      "8.2 Nederland en de zee",
+      "8.3 Nederland en de rivieren",
+      "8.4 Inkomsten en uitgaven"
+    ],
+    "mensmaatschappij|bbl|2|9": [
+      "1.1 Producten maken",
+      "1.2 De winkelier wil winst",
+      "1.3 Wat wordt de prijs?",
+      "1.4 Op de markt"
+    ]
+  },
+  "wiskunde|tl|1": {
+    "wiskunde|tl|1|1": [
+      "1.1 Ruimtefiguren",
+      "1.2 Kubus en vierkant",
+      "1.3 Balk en rechthoek",
+      "1.4 Cilinder, kegel en cirkel",
+      "1.5 Piramide en driehoek",
+      "1.6 Prisma",
+      "1.7 Uitslagen aftekenen"
+    ],
+    "wiskunde|tl|1|2": [
+      "2.1 Positieve en negatieve getallen",
+      "2.2 Optellen en aftrekken met negatieve getallen",
+      "2.3 Vermenigvuldigen en delen met negatieve getallen",
+      "2.4 Rekenvolgorde"
+    ],
+    "wiskunde|tl|1|3": [
+      "3.1 Gps-co&ouml;rdinaten",
+      "3.2 Assenstelsel",
+      "3.3 Assenstelsel uitbreiden",
+      "3.4 Informatie in een assenstelsel"
+    ],
+    "wiskunde|tl|1|4": [
+      "4.1 Getallen",
+      "4.2 Grote getallen",
+      "4.3 Afronden",
+      "4.4 Afronden in praktische situaties",
+      "4.5 Verhoudingstabellen",
+      "4.6 Prijs berekenen"
+    ],
+    "wiskunde|tl|1|5": [
+      "5.1 Lijnen",
+      "5.2 Hoeken",
+      "5.3 Hoeken meten",
+      "5.4 Hoeken tekenen",
+      "5.5 Kijkhoek"
+    ],
+    "wiskunde|tl|1|6": [
+      "6.1 Rekenen met breuken",
+      "6.2 Breuken op de rekenmachine",
+      "6.3 Breuken en procenten",
+      "6.4 Rekenen met procenten",
+      "6.5 Percentage berekenen"
+    ],
+    "wiskunde|tl|1|7": [
+      "7.1 Grootheden en eenheden",
+      "7.2 Eenheden van lengte",
+      "7.3 Eenheden van oppervlakte",
+      "7.4 Eenheden van tijd",
+      "7.5 Eenheden van gewicht",
+      "7.6 Eenheden van inhoud",
+      "7.7 Eenheden van snelheid",
+      "7.8 Eenheden van informatie"
+    ],
+    "wiskunde|tl|1|8": [
+      "8.1 Regelmaat",
+      "8.2 Grafieken",
+      "8.3 Woordformules",
+      "8.4 Grafiek bij een woordformule",
+      "8.5 Formules met letters",
+      "8.6 Formules veranderen"
+    ],
+    "wiskunde|tl|1|9": [
+      "9.1 Lijnsymmetrie",
+      "9.2 Spiegelen",
+      "9.3 Draaisymmetrie",
+      "9.4 Schuifsymmetrie",
+      "9.5 Symmetrie in vlakke figuren",
+      "9.6 Symmetrie bij lijnen",
+      "9.7 Middelloodlijn en deellijn"
+    ]
+  },
+  "maatschleer|tl|3": {
+    "maatschleer|tl|3|1": [
+      "1.1 De maatschappij",
+      "1.2 Kernbegrippen bij maatschappijleer",
+      "1.3 Maatschappelijke problemen",
+      "1.4 Kritisch denken"
+    ],
+    "maatschleer|tl|3|2": [
+      "2.1 Communicatie en media",
+      "2.2 Mediasamenleving",
+      "2.3 Nieuws",
+      "2.4 Invloed van de media",
+      "2.5 Geld verdienen met media"
+    ],
+    "maatschleer|tl|3|3": [
+      "3.1 Cultuur",
+      "3.2 Socialisatie",
+      "3.3 Identiteit",
+      "3.4 Wat is normaal?"
+    ],
+    "maatschleer|tl|3|4": [
+      "4.1 Wat is politiek?",
+      "4.2 Wat valt er te kiezen?",
+      "4.3 Het parlement",
+      "4.4 De regering",
+      "4.5 Wie heeft de macht?",
+      "4.6 Politiek in de buurt"
+    ],
+    "maatschleer|tl|3|5": [
+      "5.1 Vrijheid en onvrijheid",
+      "5.2 Grondwet en grondrechten",
+      "5.3 Scheiding van machten",
+      "5.4 Criminaliteit",
+      "5.5 Opgepakt... en dan?",
+      "5.6 Straffen of voorkomen"
+    ],
+    "maatschleer|tl|3|6": [
+      "6.1 Globalisering",
+      "6.2 Migratie",
+      "6.3 Problemen zonder grenzen",
+      "6.4 Europese Unie",
+      "6.5 Werken aan een betere wereld"
+    ],
+    "maatschleer|tl|3|7": [
+      "7.1 Samen leven",
+      "7.2 Hokjesdenken",
+      "7.3 Integratie",
+      "7.4 Nederland is veranderd",
+      "7.5 Een inclusieve samenleving"
+    ],
+    "maatschleer|tl|3|8": [
+      "8.1 Waarom werken we?",
+      "8.2 Met werk kom je verder",
+      "8.3 Ken je rechten?",
+      "8.4 Als het tegenzit",
+      "8.5 De verzorgingsstaat"
+    ],
+    "maatschleer|tl|3|9": [
+      "9.1 Onze basiswaarden",
+      "9.2 Sociale media en ik",
+      "9.3 Mijn invloed",
+      "9.4 Omgaan met diversiteit"
+    ]
+  },
+  "wiskunde|bbl|1": {
+    "wiskunde|bbl|1|1": [
+      "1.1 Vlakken, ribben en hoekpunten",
+      "1.2 Kubus en vierkant",
+      "1.3 Balk en rechthoek",
+      "1.4 Cilinder en cirkel",
+      "1.5 Piramide, prisma en driehoek"
+    ],
+    "wiskunde|bbl|1|2": [
+      "2.1 Getallen",
+      "2.2 Afronden",
+      "2.3 Afronden in de praktijk",
+      "2.4 Groter, kleiner of gelijk",
+      "2.5 Verhoudingstabellen"
+    ],
+    "wiskunde|bbl|1|3": [
+      "3.1 Plaats op aarde",
+      "3.2 Gps-coördinaten",
+      "3.3 Assenstelsel",
+      "3.4 Tekenen in een assenstelsel"
+    ],
+    "wiskunde|bbl|1|4": [
+      "4.1 Eenheden",
+      "4.2 Eenheden van lengte",
+      "4.3 Eenheden van oppervlakte",
+      "4.4 Oppervlakte rechthoek",
+      "4.5 Oppervlakte driehoek",
+      "4.6 Eenheden van inhoud",
+      "4.7 Inhoud balk en kubus",
+      "4.8 Eenheden van snelheid"
+    ],
+    "wiskunde|bbl|1|5": [
+      "5.1 Lijnen",
+      "5.2 Hoeken",
+      "5.3 Hoeken meten",
+      "5.4 Hoeken tekenen"
+    ]
+  }
+}

@@ -1,13 +1,111 @@
 import { registerChapter } from '../../../registry.js';
 
+/* Rebuilt 2026-09-25 to the recipe of Economie TL4 H1 (change 6). Fixed:
+   8.2 said the zero before the comma does not count; it does (the book:
+   "voor het eerste cijfer zet je zoveel nullen als de negatieve exponent
+   aangeeft": 0,0000000409 has 8 zeros, 4,09 x 10^-8). Added from the book:
+   45 360 000 000 = 45,36 miljard in groups of three (8.1), 3,6 dagen and
+   the kwartaal (8.3), and the verhouding 1 : 7 as fractions (8.5). Terms,
+   cards and quiz unchanged. */
 registerChapter('wiskunde|tl|3|8', {
 title:'Getallen',
 summary:[
-{heading:'8.1 Grote getallen',html:'<div class=\'box\'><h4>Waar gaat dit hoofdstuk over?</h4><p>In dit hoofdstuk reken je met grote en kleine getallen. Je schrijft grote getallen in de wetenschappelijke notatie, en later ook kleine getallen. Ook reken je eenheden van tijd en snelheid om, en werk je met verhoudingen in een verhoudingstabel.</p></div><div class=\'call\'>In ons digitale leven maken we vaak gebruik van de cloud. In de cloud sla je data zoals foto\'s, video\'s en tekstdocumenten op. Deze data worden opgeslagen in een datacentrum: een goed beveiligd gebouw waar alles blijft draaien, 365 dagen per jaar, 7 dagen per week, 24 uur per dag.</div><div class=\'box\'><h4>Rekenen met grote getallen</h4><p>In kranten en op internet kom je vaak grote getallen tegen, geschreven met het woord miljoen of miljard: 1 miljoen = 1 000 000 en 1 miljard = 1 000 000 000. Bij het rekenen schrijf je het getal eerst helemaal in cijfers, rekent daarna en schrijft het antwoord op de manier die gevraagd wordt (in cijfers, of met het woord miljoen/miljard).</p></div><div class=\'voorbeeld\'><h4>Voorbeeld: rekenen met grote getallen</h4><p>In 2022 had Amsterdam 881 933 inwoners. Gemiddeld geven we in Nederland €1270 per persoon per jaar uit aan kleding. Hoeveel euro hebben de inwoners van Amsterdam in 2022 uitgegeven aan kleding? Schrijf je antwoord met het woord miljard, afgerond op twee decimalen.</p><ol class=\'num\'><li>881 933 × 1270 = 1 120 054 910.</li><li>1 120 054 910 = 1,120... miljard.</li></ol><div class=\'antwoord\'>Antwoord: ongeveer 1,12 miljard euro.</div></div><div class=\'call\'><b>Eenheden van informatie</b>: op computers wordt informatie (data) opgeslagen in eenheden zoals byte, kilobyte, megabyte, gigabyte en terabyte. Een grotere eenheid staat voor veel meer opslagcapaciteit.</div>'},
-{heading:'8.2 Wetenschappelijke notatie',html:'<div class=\'box\'><h4>Grote getallen in de wetenschappelijke notatie</h4><p>Een heel groot getal kun je korter schrijven in de <b>wetenschappelijke notatie</b>: een getal tussen 1 en 10, vermenigvuldigd met een macht van 10. Bijvoorbeeld 239 000 000 = 2,39 × 10⁸. De exponent geeft aan hoeveel plaatsen de komma naar links is verschoven (of hoeveel nullen er achter het eerste cijfer staan).</p></div><div class=\'voorbeeld\'><h4>Voorbeeld: grote getallen</h4><p>Schrijf 8,45 × 10⁶ voluit.</p><ol class=\'num\'><li>De exponent is 6, dus de komma schuift 6 plaatsen naar rechts.</li><li>8,45 × 10⁶ = 8 450 000.</li></ol><div class=\'antwoord\'>Antwoord: 8 450 000.</div></div><div class=\'box\'><h4>Kleine getallen in de wetenschappelijke notatie</h4><p>Ook heel kleine getallen (met veel nullen na de komma) schrijf je in de wetenschappelijke notatie, maar dan met een <b>negatieve exponent</b>: bijvoorbeeld 0,0000000409 = 4,09 × 10⁻⁸. Voor het eerste cijfer zet je zoveel nullen als de negatieve exponent aangeeft.</p></div><div class=\'voorbeeld\'><h4>Voorbeeld: kleine getallen</h4><p>Schrijf 0,0000000061808 in de wetenschappelijke notatie. Rond af op één decimaal.</p><ol class=\'num\'><li>Vooraan staan 8 nullen vóór het eerste cijfer (6), dus de exponent is −9.</li><li>0,0000000061808 = 6,1808 × 10⁻⁹ ≈ 6,2 × 10⁻⁹.</li></ol><div class=\'antwoord\'>Antwoord: 6,2 × 10⁻⁹.</div></div><div class=\'call warn\'><b>Veelgemaakte fout:</b> bij kleine getallen is de exponent negatief. Tel het aantal nullen vóór het eerste significante cijfer (inclusief de nul vóór de komma telt niet mee) om de juiste (negatieve) exponent te vinden.</div>'},
-{heading:'8.3 Eenheden van tijd',html:'<div class=\'box\'><h4>Eenheden van tijd omrekenen</h4><p>De meest gebruikte eenheden van tijd zijn millennium, eeuw, jaar, kwartaal, maand, week, dag, uur, minuut en seconde. Belangrijke omrekeningen: 1 millennium = 1000 jaar, 1 eeuw = 100 jaar, 1 jaar = 12 maanden = 52 weken = 365 dagen, 1 dag = 24 uur, 1 uur = 60 minuten, 1 minuut = 60 seconden.</p></div><div class=\'voorbeeld\'><h4>Voorbeeld: tijdrekenen</h4><p>Wessel woont 9 km van school. Hij fietst gemiddeld 15 km/uur en vertrekt om 08:15 uur van huis. Hoe laat is Wessel op school?</p><ol class=\'num\'><li>Tijd: 9 : 15 = 0,6 uur.</li><li>0,6 uur = 0,6 × 60 = 36 minuten.</li><li>08:15 uur + 36 minuten = 08:51 uur.</li></ol><div class=\'antwoord\'>Antwoord: Wessel is om 08:51 uur op school.</div></div><div class=\'call warn\'><b>Veelgemaakte fout:</b> een decimale tijd zoals 3,4 uur betekent NIET 3 uur en 4 minuten. Je moet het decimale deel (0,4 uur) apart vermenigvuldigen met 60 om het in minuten om te rekenen: 3,4 uur = 3 uur en 24 minuten.</div>'},
-{heading:'8.4 Eenheden van snelheid',html:'<div class=\'box\'><h4>Snelheid omrekenen</h4><p>De twee belangrijkste eenheden van snelheid zijn kilometer per uur (km/uur) en meter per seconde (m/s). Met het schema m/s ↔ km/uur reken je snel om: van m/s naar km/uur vermenigvuldig je met 3,6, van km/uur naar m/s deel je door 3,6.</p></div><div class=\'voorbeeld\'><h4>Voorbeeld: snelheid berekenen</h4><p>Jos loopt een marathon: 39,5 km in een tijd van 02:14:50 (uren:minuten:seconden). Bereken zijn gemiddelde snelheid in m/s (twee decimalen) en in km/uur (één decimaal).</p><ol class=\'num\'><li>39,5 km = 39 500 m.</li><li>02:14:50 = 2 × 3600 + 14 × 60 + 50 = 8090 seconden.</li><li>39 500 : 8090 = 4,882... m/s.</li><li>4,88 × 3,6 = 17,568 km/uur.</li></ol><div class=\'antwoord\'>Antwoord: 4,88 m/s, oftewel 17,6 km/uur.</div></div><div class=\'call sum\'><b>Om te onthouden</b><ul class=\'lst\'><li>m/s → km/uur: vermenigvuldig met 3,6.</li><li>km/uur → m/s: deel door 3,6.</li><li>snelheid = afstand (m) : tijd (seconden), voor m/s.</li></ul></div>'},
-{heading:'8.5 Verhoudingen',html:'<div class=\'box\'><h4>Verhoudingstabel</h4><p>Bij een verhouding (bijvoorbeeld het mengen van verf of het maken van limonade) kun je een <b>verhoudingstabel</b> maken met de delen en de bijbehorende hoeveelheden. Je vermenigvuldigt (of deelt) alle getallen in de tabel met hetzelfde getal om van delen naar hoeveelheden (of andersom) te rekenen.</p></div><div class=\'voorbeeld\'><h4>Voorbeeld: verhoudingstabel gebruiken</h4><p>Anneke maakt 500 mL vruchtenlimonade van 1 deel siroop op 9 delen water (10 delen totaal). Hoeveel milliliter siroop en water heeft ze nodig, en hoeveel procent van de limonade is siroop?</p><ol class=\'num\'><li>500 : 10 = 50, dus je vermenigvuldigt elk deel met 50.</li><li>Siroop: 1 × 50 = 50 mL. Water: 9 × 50 = 450 mL.</li><li>1 van de 10 delen is siroop: (1/10) × 100% = 10%.</li></ol><div class=\'antwoord\'>Antwoord: 50 mL siroop, 450 mL water; 10% van de limonade is siroop.</div></div><div class=\'call\'>Om een percentage uit een verhouding te berekenen, deel je het aantal delen van één bestanddeel door het totale aantal delen, en vermenigvuldig je met 100%.</div>'}
+{heading:'8.1 Grote getallen',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>grote getallen schrijven in <b>cijfers</b> en met de woorden <b>miljoen</b> of <b>miljard</b></li>
+<li><b>rekenen</b> met grote getallen</li></ul></div>`
++`<div class="box"><h4>Waar dit hoofdstuk over gaat</h4><p>Je rekent met <b>grote</b> en <b>kleine getallen</b> en schrijft ze in de <b>wetenschappelijke notatie</b>. Je rekent <b>eenheden van tijd</b> en <b>snelheid</b> om en werkt met <b>verhoudingen</b>.</p></div>`
++`<h5 class="sub">Van cijfers naar woorden</h5>`
++`<div class="call reken"><b>Stappenplan: 45 360 000 000 in woorden</b><ol class="num">
+<li>Verdeel het getal van <b>achter naar voren</b> in groepjes van <b>3 cijfers</b>: 45 | 360 | 000 | 000.</li>
+<li>Het voorste groepje is <b>45 miljard</b> waard.</li>
+<li>De cijfers erachter komen <b>achter de komma</b>: 45,360000000 miljard.</li>
+<li>Laat de <b>nullen aan het eind</b> weg: <b>45,36 miljard</b>.</li></ol></div>`
++`<div class="tblwrap"><table class="tbl"><tr><th>Woord</th><th>Cijfers</th><th>Nullen</th></tr><tr><td><b>1 miljoen</b></td><td>1 000 000</td><td>6</td></tr><tr><td><b>1 miljard</b></td><td>1 000 000 000</td><td>9</td></tr></table></div>`
++`<h5 class="sub">Rekenen</h5>`
++`<div class="voorbeeld"><h4>Voorbeeld: kleding in Amsterdam</h4><p>Amsterdam had in 2022 <b>881 933</b> inwoners. Gemiddeld geeft iemand <b>&euro;1270</b> per jaar uit aan kleding. Hoeveel is dat samen, in miljard, op twee decimalen?</p><div class="antwoord">881 933 &times; 1270 = <b>1 120 054 910</b>. Groepjes van drie: 1 | 120 | 054 | 910, dus 1,120&hellip; miljard &asymp; <b>1,12 miljard euro</b>.</div></div>`
++`<div class="box"><h4>Eenheden van informatie</h4><p>Een ander woord voor informatie is <b>data</b>. Computers slaan data op in <b>byte</b>, <b>kilobyte</b>, <b>megabyte</b>, <b>gigabyte</b> en <b>terabyte</b>: hoe groter de eenheid, hoe meer <b>opslagcapaciteit</b>.</p></div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Schrijf 89 340 000 met het woord miljoen.</p><p class="check-a"><b>89,34 miljoen</b>.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden (8.1)</b><ul class="lst">
+<li>Groepjes van <b>3 cijfers</b>, van achter naar voren.</li>
+<li><b>Miljoen</b> = 6 nullen, <b>miljard</b> = 9 nullen.</li>
+<li>Geef het antwoord in de <b>gevraagde</b> vorm.</li></ul></div>`},
+
+{heading:'8.2 Wetenschappelijke notatie',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li><b>grote</b> en <b>kleine</b> getallen schrijven in de <b>wetenschappelijke notatie</b></li>
+<li>de notatie <b>voluit</b> schrijven</li></ul></div>`
++`<h5 class="sub">Grote getallen</h5>`
++`<div class="box"><h4>Getal tussen 1 en 10, keer een macht van 10</h4><p>In de <b>wetenschappelijke notatie</b> schrijf je een getal als <b>een getal tussen 1 en 10</b> &times; <b>een macht van 10</b>. Bijvoorbeeld 239 000 000 = <b>2,39 &times; 10<sup>8</sup></b>. De exponent zegt hoeveel plaatsen de komma <b>schuift</b>.</p></div>`
++`<div class="voorbeeld"><h4>Voorbeeld: 8,45 &times; 10<sup>6</sup> voluit</h4><p>Schrijf voluit.</p><div class="antwoord">Exponent 6: de komma schuift <b>6 plaatsen naar rechts</b>. 8,45 &times; 10<sup>6</sup> = <b>8 450 000</b>.</div></div>`
++`<h5 class="sub">Kleine getallen</h5>`
++`<div class="box"><h4>Een negatieve exponent</h4><p>Ook een heel <b>klein</b> getal kun je zo schrijven, met een <b>negatieve exponent</b>. Je rekenmachine doet dat vanzelf als een antwoord niet op het scherm past: 0,004 : 250 000 000 = <b>1,6 &times; 10<sup>&minus;11</sup></b>. Voluit schuift de komma naar <b>links</b>.</p></div>`
++`<div class="call reken"><b>Stappenplan: klein getal voluit</b><ol class="num">
+<li>Kijk naar de <b>negatieve exponent</b>, bijvoorbeeld &minus;8.</li>
+<li>Zet <b>zoveel nullen</b> vóór het eerste cijfer, de nul vóór de komma <b>meegeteld</b>.</li>
+<li>4,09 &times; 10<sup>&minus;8</sup> = <b>0,0000000409</b>: acht nullen.</li></ol></div>`
++`<div class="voorbeeld"><h4>Voorbeeld: 0,0000000061808</h4><p>Schrijf in de wetenschappelijke notatie. Rond af op één decimaal.</p><div class="antwoord">Tel de nullen vóór de 6, de nul vóór de komma meegeteld: <b>9</b>. Dus 6,1808 &times; 10<sup>&minus;9</sup> &asymp; <b>6,2 &times; 10<sup>&minus;9</sup></b>.</div></div>`
++`<div class="call warn"><b>Veelgemaakte fout:</b> de nul <b>vóór de komma</b> vergeten te tellen. Dan kom je één uit: 10<sup>&minus;8</sup> in plaats van 10<sup>&minus;9</sup>.</div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Schrijf 239 000 000 in de wetenschappelijke notatie.</p><p class="check-a"><b>2,39 &times; 10<sup>8</sup></b>.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden (8.2)</b><ul class="lst">
+<li><b>Getal tussen 1 en 10 &times; 10<sup>n</sup></b>.</li>
+<li>Groot getal: <b>positieve</b> exponent. Klein getal: <b>negatieve</b>.</li>
+<li>Klein getal voluit: zoveel <b>nullen</b> als de exponent, de nul vóór de komma meegeteld.</li></ul></div>`},
+
+{heading:'8.3 Eenheden van tijd',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li><b>eenheden van tijd</b> omrekenen</li>
+<li>een <b>decimale tijd</b> omzetten naar uren en minuten</li></ul></div>`
++`<h5 class="sub">Uit je hoofd</h5>`
++`<div class="tblwrap"><table class="tbl"><tr><th>Eenheid</th><th>Is gelijk aan</th></tr><tr><td><b>1 millennium</b></td><td>1000 jaar</td></tr><tr><td><b>1 eeuw</b></td><td>100 jaar</td></tr><tr><td><b>1 jaar</b></td><td>4 kwartalen = 12 maanden = 52 weken = 365 dagen</td></tr><tr><td><b>1 schrikkeljaar</b></td><td>366 dagen</td></tr><tr><td><b>1 kwartaal</b></td><td>3 maanden = 13 weken</td></tr><tr><td><b>1 week</b></td><td>7 dagen</td></tr><tr><td><b>1 dag</b></td><td>24 uur</td></tr><tr><td><b>1 uur</b></td><td>60 minuten</td></tr><tr><td><b>1 minuut</b></td><td>60 seconden</td></tr></table></div>`
++`<h5 class="sub">Decimale tijd</h5>`
++`<div class="call reken"><b>Stappenplan: 3,6 dagen omrekenen</b><ol class="num">
+<li>Hele deel apart: <b>3 dagen</b> + 0,6 dag.</li>
+<li>0,6 dag &times; 24 = <b>14,4 uur</b>: 14 uur + 0,4 uur.</li>
+<li>0,4 uur &times; 60 = <b>24 minuten</b>.</li>
+<li>Samen: <b>3 dagen, 14 uur en 24 minuten</b>.</li></ol></div>`
++`<div class="voorbeeld"><h4>Voorbeeld: Wessel fietst naar school</h4><p>Hij woont <b>9 km</b> van school, fietst <b>15 km/uur</b> en vertrekt om <b>08:15</b>.</p><div class="antwoord">9 : 15 = <b>0,6 uur</b> = 0,6 &times; 60 = <b>36 minuten</b>. 08:15 + 36 minuten = <b>08:51</b>.</div></div>`
++`<div class="call warn"><b>Veelgemaakte fout:</b> 3,4 uur is <b>niet</b> 3 uur en 4 minuten. 0,4 uur &times; 60 = 24, dus <b>3 uur en 24 minuten</b>.</div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Hoeveel maanden is 4,5 jaar?</p><p class="check-a">4 jaar en 0,5 &times; 12 = <b>6 maanden</b>, dus 54 maanden.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden (8.3)</b><ul class="lst">
+<li>Ken de <b>omrekeningen</b> uit je hoofd.</li>
+<li>Decimaal deel apart omrekenen: <b>&times; 60</b>, &times; 24 of &times; 12.</li></ul></div>`},
+
+{heading:'8.4 Eenheden van snelheid',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li><b>snelheid</b> berekenen in <b>m/s</b> en <b>km/uur</b></li>
+<li>omrekenen tussen m/s en km/uur</li></ul></div>`
++`<h5 class="sub">Het schema</h5>`
++`<div class="vergelijk"><div class="vergelijk-kant"><h4>m/s naar km/uur</h4><p><b>&times; 3,6</b></p></div><div class="vergelijk-vs">vs</div><div class="vergelijk-kant"><h4>km/uur naar m/s</h4><p><b>: 3,6</b></p></div></div>`
++`<div class="call waarom">Waarom 3,6? In een uur zitten <b>3600</b> seconden en een km is <b>1000</b> m. Eén m/s is dus 3600 m per uur = <b>3,6 km/uur</b>. Een km/uur-getal is daarom altijd het <b>grotere</b> getal.</div>`
++`<div class="call reken"><b>Stappenplan: gemiddelde snelheid in m/s</b><ol class="num">
+<li>Reken de afstand om naar <b>meters</b>.</li>
+<li>Reken de tijd om naar <b>seconden</b>.</li>
+<li>Deel: <b>afstand (m) : tijd (s)</b>.</li>
+<li>Voor km/uur: <b>&times; 3,6</b>.</li></ol></div>`
++`<div class="voorbeeld"><h4>Voorbeeld: Jos loopt 39,5 km</h4><p>Zijn tijd is <b>02:14:50</b> (uren:minuten:seconden).</p><div class="antwoord">39,5 km = <b>39 500 m</b>. 2 &times; 3600 + 14 &times; 60 + 50 = <b>8090 s</b>. 39 500 : 8090 = 4,882&hellip; &asymp; <b>4,88 m/s</b>. &times; 3,6 &asymp; <b>17,6 km/uur</b>.</div></div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Hoe reken je 10 m/s om naar km/uur?</p><p class="check-a">10 &times; 3,6 = <b>36 km/uur</b>.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden (8.4)</b><ul class="lst">
+<li><b>m/s &times; 3,6 = km/uur</b>, <b>km/uur : 3,6 = m/s</b>.</li>
+<li>m/s: eerst <b>meters</b> en <b>seconden</b>, dan delen.</li></ul></div>`},
+
+{heading:'8.5 Verhoudingen',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>een <b>verhouding</b> lezen en als <b>breuk</b> schrijven</li>
+<li>hoeveelheden berekenen met een <b>verhoudingstabel</b></li></ul></div>`
++`<h5 class="sub">Delen</h5>`
++`<div class="box"><h4>1 : 7</h4><p>Meng je <b>1 deel</b> frambozensiroop met <b>7 delen</b> water, dan is de verhouding <b>1 : 7</b> (&ldquo;1 staat tot 7&rdquo;). Een verhouding bestaat altijd uit <b>hele getallen</b>. Samen zijn het 1 + 7 = <b>8 delen</b>, dus de limonade is voor <b>1/8</b> siroop en <b>7/8</b> water.</p></div>`
++`<div class="call reken"><b>Stappenplan: verhoudingstabel</b><ol class="num">
+<li>Zet de <b>delen</b> in de bovenste rij, met het <b>totaal</b> erbij.</li>
+<li>Reken uit hoeveel <b>één deel</b> is: totale hoeveelheid : totaal aantal delen.</li>
+<li>Vermenigvuldig <b>elk deel</b> met dat getal.</li></ol></div>`
++`<div class="voorbeeld"><h4>Voorbeeld: Anneke maakt limonade</h4><p><b>500 mL</b>, van 1 deel siroop op 9 delen water.</p><div class="antwoord">Samen <b>10 delen</b>. Eén deel: 500 : 10 = <b>50 mL</b>. Siroop 1 &times; 50 = <b>50 mL</b>, water 9 &times; 50 = <b>450 mL</b>. Siroop is 1/10 = <b>10%</b>.</div></div>`
++`<div class="call warn"><b>Veelgemaakte fout:</b> bij 1 : 9 denken dat siroop 1/9 is. De breuk gaat over het <b>totaal</b>: 1 + 9 = 10 delen, dus <b>1/10</b>.</div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Welke breuken horen bij de verhouding 1 : 7?</p><p class="check-a"><b>1/8</b> en <b>7/8</b>.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden (8.5)</b><ul class="lst">
+<li>Verhouding in <b>hele getallen</b>, zoals 1 : 7.</li>
+<li>Breuk = deel : <b>totaal aantal delen</b>.</li>
+<li>Percentage = die breuk <b>&times; 100%</b>.</li></ul></div>`}
 ],
 terms:[
 ['Miljoen','Het getal 1 000 000.',0],

@@ -64,9 +64,6 @@ export function initRadialMenu() {
     if (!menu) return;
     const hide = id === SCREENS.splash || isLockedOut();
     menu.classList.toggle('show', !hide);
-    // Home is the only screen with the bell and account buttons, so the
-    // trigger has to sit further left there (see src/styles/mobile.css).
-    menu.classList.toggle('op-home', id === SCREENS.home);
     if (hide) closeRadialMenu();
   });
 }

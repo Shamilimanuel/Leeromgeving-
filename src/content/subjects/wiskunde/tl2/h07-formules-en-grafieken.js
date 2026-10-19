@@ -1,13 +1,98 @@
 import { registerChapter } from '../../../registry.js';
 
+/* Rebuilt 2026-09-24 to the recipe of Economie TL4 H1 (change 6). Fixed: the
+   7.1 example said 347 : 2 = 171,5 (it is 173,5; minus 2 gives 171,5) and
+   told students to check it themselves. Added from the book: the order of
+   operations on the calculator, the kubussen formula n^2 + 1 (7.3) and
+   maximum and minimum on the reuzenrad graph (7.5). Terms, cards and quiz
+   unchanged. */
 registerChapter('wiskunde|tl|2|7', {
 title:'Formules en grafieken',
 summary:[
-{heading:'7.1 Formules met een deelstreep',html:'<div class=\'box\'><h4>Waar gaat dit hoofdstuk over?</h4><p>In dit hoofdstuk leer je rekenen met lastigere formules: formules met een deelstreep, met haakjes, met kwadraten en met wortels. Ook leer je wat een periodieke grafiek is.</p></div><div class=\'call\'>Een paraboolboog is in de architectuur een boogconstructie in de vorm van een parabool. Zulke gebogen vormen zie je terug in gebouwen, kerken en bruggen: ze zien er mooi uit en een boog is ook een stevige constructie.</div><div class=\'box\'><h4>Rekenvolgorde</h4><p>Bij het berekenen van formules gebruik je altijd de vaste rekenvolgorde: eerst wat binnen de haakjes staat, dan machtsverheffen en worteltrekken, dan vermenigvuldigen en delen, en ten slotte optellen en aftrekken (steeds van links naar rechts).</p></div><div class=\'box\'><h4>Deelstreep op de rekenmachine</h4><p>Bij een formule met een <b>deelstreep</b> moet je eerst alles boven de streep en alles onder de streep apart berekenen, voordat je deelt. Op de rekenmachine gebruik je hiervoor de <b>breukentoets</b>.</p></div><div class=\'voorbeeld\'><h4>Voorbeeld: deelstreep op de rekenmachine</h4><p>Bereken (165 + 182) / (8 : 4) − 2.</p><ol class=\'num\'><li>Vul de breukentoets in: boven 165 + 182, onder 8 : 4.</li><li>Dat geeft 347 : 2 = 171,5 (let op je eigen rekenmachine bij het optellen).</li><li>Trek er ten slotte 2 vanaf.</li></ol><div class=\'antwoord\'>Antwoord: 171,5 (reken de tussenstappen zelf na op je rekenmachine).</div></div>'},
-{heading:'7.2 Formules met haakjes',html:'<div class=\'box\'><h4>Haakjes wegwerken</h4><p>In sommige formules staan haakjes, bijvoorbeeld prijs (€) = 5 × (t + 3). Je berekent eerst wat er in de haakjes staat, en vermenigvuldigt daarna met het getal ervoor. Je mag ook eerst de haakjes wegwerken door elk getal in de haakjes apart te vermenigvuldigen: 5 × (t + 3) = 5 × t + 5 × 3 = 5t + 15.</p></div><div class=\'voorbeeld\'><h4>Voorbeeld: formule met haakjes berekenen</h4><p>Bij een formule hoort: kosten (€) = 8 × (t + 5). Bereken de kosten als t = 4.</p><ol class=\'num\'><li>Bereken eerst wat in de haakjes staat: 4 + 5 = 9.</li><li>Vermenigvuldig met het getal ervoor: 8 × 9 = 72.</li></ol><div class=\'antwoord\'>Antwoord: de kosten zijn €72.</div></div><div class=\'call sum\'><b>Om te onthouden</b><ul class=\'lst\'><li>Bereken eerst binnen de haakjes, en vermenigvuldig daarna met het getal ervoor.</li><li>Of werk de haakjes weg: a × (b + c) = a × b + a × c.</li></ul></div>'},
-{heading:'7.3 Formules met kwadraten',html:'<div class=\'box\'><h4>Kwadraten in een formule</h4><p>In sommige formules komt een kwadraat voor, bijvoorbeeld oppervlakte (m²) = 3 × r². Volgens de rekenvolgorde bereken je eerst het kwadraat, en pas daarna de vermenigvuldiging.</p></div><div class=\'voorbeeld\'><h4>Voorbeeld: formule met een kwadraat berekenen</h4><p>Bij een formule hoort: oppervlakte (m²) = 3 × r². Bereken de oppervlakte als r = 4.</p><ol class=\'num\'><li>Bereken eerst het kwadraat: 4² = 16.</li><li>Vermenigvuldig met 3: 3 × 16 = 48.</li></ol><div class=\'antwoord\'>Antwoord: de oppervlakte is 48 m².</div></div><div class=\'call warn\'><b>Veelgemaakte fout:</b> reken niet eerst 3 × r uit en kwadrateer dat pas; volgens de rekenvolgorde moet je eerst r kwadrateren en dan pas met 3 vermenigvuldigen.</div>'},
-{heading:'7.4 Formules met wortels',html:'<div class=\'box\'><h4>Wortels in een formule</h4><p>Ook een wortelteken kan in een formule voorkomen, bijvoorbeeld tijd (s) = √(2h / g). Bij het berekenen bepaal je eerst wat er onder het wortelteken staat, en trek je daarna pas de wortel.</p></div><div class=\'voorbeeld\'><h4>Voorbeeld: formule met een wortel berekenen</h4><p>Bij een formule hoort: snelheid = √(20 × h). Bereken de snelheid als h = 5. Rond af op één decimaal.</p><ol class=\'num\'><li>Bereken eerst wat onder de wortel staat: 20 × 5 = 100.</li><li>Trek daarna de wortel: √100 = 10.</li></ol><div class=\'antwoord\'>Antwoord: de snelheid is 10,0.</div></div><div class=\'call\'>Gebruik op de rekenmachine de worteltoets pas nadat je de berekening onder het wortelteken hebt afgerond, of gebruik de haakjes van je rekenmachine.</div>'},
-{heading:'7.5 Periodieke grafiek',html:'<div class=\'box\'><h4>Wat is een periodieke grafiek?</h4><p>Een <b>periodieke grafiek</b> is een grafiek waarbij hetzelfde patroon zich steeds herhaalt, bijvoorbeeld bij eb en vloed, de stand van de zon op een dag, of de hoogte van een punt op een draaiend reuzenrad. De lengte van één herhaling noem je de <b>periode</b>.</p></div><div class=\'call\'>Bij een periodieke grafiek kun je, als je één periode kent, voorspellen hoe de grafiek er verderop uit zal zien: het patroon herhaalt zich steeds opnieuw.</div>'}
+{heading:'7.1 Formules met een deelstreep',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>de <b>rekenvolgorde</b> gebruiken, ook op je <b>rekenmachine</b></li>
+<li>rekenen met een <b>deelstreep</b> en de <b>breukentoets</b></li></ul></div>`
++`<div class="box"><h4>Waar dit hoofdstuk over gaat</h4><p>Je rekent met lastigere <b>formules</b>: met een <b>deelstreep</b>, met <b>haakjes</b>, met <b>kwadraten</b> en met <b>wortels</b>. Aan het eind lees je <b>periodieke grafieken</b> af.</p></div>`
++`<h5 class="sub">De rekenvolgorde</h5>`
++`<div class="call reken"><b>Rekenvolgorde</b><ol class="num">
+<li>Wat binnen de <b>haakjes</b> staat.</li>
+<li><b>Machtsverheffen</b> en <b>worteltrekken</b>, van links naar rechts.</li>
+<li><b>Vermenigvuldigen</b> en <b>delen</b>, van links naar rechts.</li>
+<li><b>Optellen</b> en <b>aftrekken</b>, van links naar rechts.</li></ol></div>`
++`<div class="box"><h4>Je rekenmachine kent de volgorde</h4><p>Tik alles <b>achter elkaar</b> in en druk pas aan het eind op <b>=</b>. Voor een macht gebruik je de <b>machttoets</b>: 8,9<sup>4</sup> = <b>6274,2241</b>.</p></div>`
++`<h5 class="sub">De deelstreep</h5>`
++`<div class="box"><h4>Boven en onder apart</h4><p>Bij een <b>deelstreep</b> reken je eerst alles <b>boven</b> en alles <b>onder</b> de streep uit, en dan pas <b>deel</b> je. Op je rekenmachine gebruik je de <b>breukentoets</b>; met de <b>cursortoets</b> ga je naar rechts, achter de deelstreep. Krijg je een breuk, maak er dan met de <b>wisseltoets</b> een decimaal getal van.</p></div>`
++`<div class="voorbeeld"><h4>Voorbeeld: (165 + 182) gedeeld door (8 : 4), min 2</h4><p>Bereken.</p><div class="antwoord">Boven: 165 + 182 = <b>347</b>. Onder: 8 : 4 = <b>2</b>. Delen: 347 : 2 = <b>173,5</b>. Dan nog &minus; 2: <b>171,5</b>.</div></div>`
++`<div class="call waarom">Waarom de breukentoets? Tik je 165 + 182 : 8 : 4 gewoon achter elkaar in, dan deelt je rekenmachine <b>alleen</b> 182 (delen gaat vóór optellen). De deelstreep werkt als <b>haakjes</b> om boven en onder.</div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Wat gaat voor: vermenigvuldigen of optellen?</p><p class="check-a"><b>Vermenigvuldigen</b> (en delen) gaat vóór optellen en aftrekken.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden (7.1)</b><ul class="lst">
+<li><b>Haakjes</b>, <b>machten en wortels</b>, <b>keer en delen</b>, <b>plus en min</b>.</li>
+<li>Deelstreep: eerst <b>boven</b> en <b>onder</b> uitrekenen.</li>
+<li>Gebruik de <b>breukentoets</b>.</li></ul></div>`},
+
+{heading:'7.2 Formules met haakjes',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>een formule met <b>haakjes</b> uitrekenen</li>
+<li><b>haakjes wegwerken</b></li></ul></div>`
++`<h5 class="sub">Eerst de haakjes</h5>`
++`<div class="box"><h4>Twee manieren</h4><p>In <b>prijs (&euro;) = 5 &times; (t + 3)</b> reken je eerst uit wat <b>binnen de haakjes</b> staat en vermenigvuldig je daarna met het getal <b>ervoor</b>. Je mag de haakjes ook <b>wegwerken</b>: vermenigvuldig <b>elk</b> getal binnen de haakjes: 5 &times; (t + 3) = 5t + 15.</p></div>`
++`<div class="voorbeeld"><h4>Voorbeeld: kosten (&euro;) = 8 &times; (t + 5)</h4><p>Bereken de kosten als <b>t = 4</b>.</p><div class="antwoord">Binnen de haakjes: 4 + 5 = <b>9</b>. Dan 8 &times; 9 = <b>&euro;72</b>. Met weggewerkte haakjes: 8 &times; 4 + 8 &times; 5 = 32 + 40 = <b>72</b>. Hetzelfde.</div></div>`
++`<div class="vergelijk"><div class="vergelijk-kant"><h4>Met haakjes</h4><p><b>8 &times; (t + 5)</b></p></div><div class="vergelijk-vs">=</div><div class="vergelijk-kant"><h4>Haakjes weggewerkt</h4><p><b>8t + 40</b></p></div></div>`
++`<div class="call warn"><b>Veelgemaakte fout:</b> alleen het <b>eerste</b> getal vermenigvuldigen: 8 &times; (t + 5) wordt dan 8t + 5. Het getal voor de haakjes gaat keer <b>alles</b> wat erin staat.</div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Werk de haakjes weg: 5 &times; (t + 3).</p><p class="check-a"><b>5t + 15</b>.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden (7.2)</b><ul class="lst">
+<li>Eerst <b>binnen de haakjes</b>, dan keer het getal ervoor.</li>
+<li>Wegwerken: <b>a &times; (b + c) = a &times; b + a &times; c</b>.</li></ul></div>`},
+
+{heading:'7.3 Formules met kwadraten',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>rekenen met een <b>kwadratische formule</b></li></ul></div>`
++`<h5 class="sub">Een kwadraat in de formule</h5>`
++`<div class="box"><h4>Kwadratische formule</h4><p>Bij een rij bouwwerken hoort <b>aantal kubussen = n&sup2; + 1</b>, met n het <b>nummer</b> van het bouwwerk. Er staat een <b>kwadraat</b> in, daarom heet dit een <b>kwadratische formule</b>. Voor n = 8: 8&sup2; + 1 = <b>65</b> kubussen.</p></div>`
++`<div class="call reken"><b>Stappenplan: invullen in een kwadratische formule</b><ol class="num">
+<li>Vul het getal in op de plaats van de <b>letter</b>.</li>
+<li>Reken eerst het <b>kwadraat</b> uit.</li>
+<li>Dan <b>keer</b> en <b>delen</b>, daarna <b>plus</b> en <b>min</b>.</li></ol></div>`
++`<div class="voorbeeld"><h4>Voorbeeld: oppervlakte (m&sup2;) = 3 &times; r&sup2;</h4><p>Bereken de oppervlakte als <b>r = 4</b>.</p><div class="antwoord">Eerst het kwadraat: 4&sup2; = <b>16</b>. Dan 3 &times; 16 = <b>48 m&sup2;</b>.</div></div>`
++`<div class="call warn"><b>Veelgemaakte fout:</b> eerst 3 &times; 4 = 12 en dan 12&sup2; = 144. Het kwadraat hoort alleen bij de <b>r</b>, dus eerst <b>kwadrateren</b>.</div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Hoeveel kubussen heeft bouwwerk 5 bij aantal = n&sup2; + 1?</p><p class="check-a">5&sup2; + 1 = <b>26</b>.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden (7.3)</b><ul class="lst">
+<li>Een formule met een <b>kwadraat</b> heet <b>kwadratisch</b>.</li>
+<li>Het kwadraat reken je <b>eerst</b> uit.</li></ul></div>`},
+
+{heading:'7.4 Formules met wortels',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>rekenen met een formule met een <b>wortel</b></li></ul></div>`
++`<h5 class="sub">Wat onder de wortel staat</h5>`
++`<div class="box"><h4>Eerst onder het wortelteken</h4><p>Staat er een <b>wortelteken</b> in een formule, dan reken je eerst alles uit wat <b>onder</b> het wortelteken staat. Pas daarna trek je de <b>wortel</b>.</p></div>`
++`<div class="call reken"><b>Stappenplan: formule met een wortel</b><ol class="num">
+<li>Vul het getal in.</li>
+<li>Reken uit wat <b>onder</b> de wortel staat.</li>
+<li>Trek de <b>wortel</b> en rond af zoals gevraagd.</li></ol></div>`
++`<div class="voorbeeld"><h4>Voorbeeld: snelheid = &radic;(20 &times; h)</h4><p>Bereken de snelheid als <b>h = 5</b>. Rond af op één decimaal.</p><div class="antwoord">Onder de wortel: 20 &times; 5 = <b>100</b>. &radic;100 = <b>10,0</b>.</div></div>`
++`<div class="call warn"><b>Rekenmachine:</b> na het wortelteken tik je alles in wat eronder hoort. Kom je <b>onder het wortelteken uit</b> met de <b>cursortoets</b>, pas dan gaat de rest van de som verder.</div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Wat reken je eerst uit bij een formule met een wortel?</p><p class="check-a">Alles wat <b>onder</b> het wortelteken staat.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden (7.4)</b><ul class="lst">
+<li>Eerst <b>onder</b> de wortel uitrekenen, dan de <b>wortel</b> trekken.</li>
+<li>Gebruik de <b>cursortoets</b> om onder de wortel uit te komen.</li></ul></div>`},
+
+{heading:'7.5 Periodieke grafiek',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>een <b>periodieke grafiek</b> herkennen</li>
+<li>de <b>periode</b>, het <b>maximum</b> en het <b>minimum</b> aflezen</li></ul></div>`
++`<h5 class="sub">Een patroon dat terugkomt</h5>`
++`<div class="box"><h4>Periodiek</h4><p>Bij een <b>periodieke grafiek</b> herhaalt <b>hetzelfde patroon</b> zich steeds. Denk aan <b>eb en vloed</b> of de hoogte van een bakje in een <b>reuzenrad</b>. De tijd van één herhaling is de <b>periode</b>.</p></div>`
++`<div class="g2">`
++`<div class="box"><h4>Maximum</h4><p>De <b>hoogste</b> waarde van de grafiek.</p></div>`
++`<div class="box"><h4>Minimum</h4><p>De <b>laagste</b> waarde van de grafiek.</p></div></div>`
++`<div class="voorbeeld"><h4>Voorbeeld: Fatma in het reuzenrad</h4><p>In de grafiek zijn <b>3 perioden</b> getekend.</p><div class="antwoord">Het <b>maximum</b> is <b>18 m</b>, het <b>minimum</b> is <b>0 m</b>. Eén periode is één <b>rondje</b> van het rad.</div></div>`
++`<div class="call waarom">Waarom is dat handig? Ken je <b>één periode</b>, dan weet je hoe de grafiek <b>verder</b> gaat: het patroon herhaalt zich gewoon.</div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Wat is de periode van een periodieke grafiek?</p><p class="check-a">De tijd van <b>één herhaling</b> van het patroon.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden (7.5)</b><ul class="lst">
+<li><b>Periodiek</b>: het patroon herhaalt zich.</li>
+<li><b>Periode</b>: de tijd van één herhaling.</li>
+<li><b>Maximum</b> = hoogste, <b>minimum</b> = laagste waarde.</li></ul></div>`}
 ],
 terms:[
 ['Deelstreep','Een streep in een formule die aangeeft dat je eerst boven en onder de streep apart moet uitrekenen, voordat je deelt.',0],

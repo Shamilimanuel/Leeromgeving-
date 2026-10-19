@@ -1,133 +1,24 @@
 import { registerChapter } from '../../../registry.js';
 
 /* Chapter 4 content: Gedrag (Nectar BBL year 1, part B) */
+/* Upgraded 2026-09-25 to the recipe of Economie TL4 H1 (change 6): every paragraph
+   got "Dit leer je" and a "Check jezelf" (taken from its own flashcard where
+   there was none), plus bold on its own glossary terms where it had little.
+   The text itself is unchanged. */
 registerChapter('biologie|bbl|1|4', {
 title:'Gedrag',
 summary:[
-{
- heading:'4.1 Prikkels en gedrag',
- html:
- '<div class="g2">'
- +'<div class="box"><h4>Wat is gedrag?</h4><p><b>Gedrag</b> is alles wat een mens of een dier doet. Rennen, eten, slapen, blaffen: het is allemaal gedrag.</p>'
- +'<div class="call" style="margin-bottom:0">Ook stilstaan is gedrag. Maar een plant die naast de voerbak staat is dat niet: die <i>doet</i> niets.</div></div>'
- +'<div class="box"><h4>Wat is een prikkel?</h4><p>Een <b>prikkel</b> is informatie waarop dieren en mensen kunnen reageren. Er zijn twee soorten:</p>'
- +'<ul class="lst" style="margin-top:.5rem">'
- +'<li><b>Van buiten je lichaam</b>: een voerbak zien, iemand die aankomt lopen</li>'
- +'<li><b>Van binnenuit je lichaam</b>: honger, dorst, moe zijn</li></ul></div></div>'
+{heading:'4.1 Prikkels en gedrag',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst"><li>wat <b>gedrag</b> is en hoe het ontstaat</li><li>gedrag beschrijven met een <b>ethogram</b></li></ul></div><div class="g2"><div class="box"><h4>Wat is gedrag?</h4><p><b>Gedrag</b> is alles wat een mens of een dier doet. Rennen, eten, slapen, blaffen: het is allemaal gedrag.</p><div class="call" style="margin-bottom:0">Ook stilstaan is gedrag. Maar een plant die naast de voerbak staat is dat niet: die <i>doet</i> niets.</div></div><div class="box"><h4>Wat is een prikkel?</h4><p>Een <b>prikkel</b> is informatie waarop dieren en mensen kunnen reageren. Er zijn twee soorten:</p><ul class="lst" style="margin-top:.5rem"><li><b>Van buiten je lichaam</b>: een voerbak zien, iemand die aankomt lopen</li><li><b>Van binnenuit je lichaam</b>: honger, dorst, moe zijn</li></ul></div></div><div class="box"><h4>Hoe ontstaat gedrag?</h4><p>Gedrag ontstaat doordat mensen en dieren <b>reageren</b> op prikkels. Alle reacties op prikkels samen vormen het gedrag.</p><div class="call warn" style="margin-bottom:0"><b>Voorbeeld:</b> een hond ziet de voerbak (prikkel van buiten) én heeft honger (prikkel van binnen). Hij loopt ernaartoe en gaat eten: dat is het gedrag.</div></div><h5 class="sub">Gedrag beschrijven</h5><div class="g2"><div class="box"><h4>Handelingen</h4><p>Gedrag bestaat uit meerdere kleine stukjes. Zo'n klein stukje gedrag heet een <b>handeling</b>. Een kat die zijn kop omdraait, in elkaar duikt en gaat blazen voert drie handelingen uit.</p></div><div class="box"><h4>Ethogram</h4><p>Een <b>ethogram</b> is een lijst met beschrijvingen van de verschillende handelingen van een mens of dier. Vaak staat er een afkorting bij, zodat je snel kunt noteren wat je ziet.</p></div></div><div class="call warn"><b>Belangrijk bij biologie:</b> beschrijf gedrag zoals je het <i>ziet</i>, zonder er iets bij te bedenken. "De kip pikt een zaadje op" is een biologische beschrijving. "De kippen kijken dom om zich heen" is dat niet: dat is jouw mening.</div><div class="check" onclick="toonCheck(this)"><p class="check-v">Wat is een prikkel?</p><p class="check-a">Informatie waarop dieren en mensen kunnen reageren.</p><span class="check-hint">Tik voor het antwoord</span></div><div class="call sum"><b>Om te onthouden (4.1)</b><ul class="lst"><li><b>Gedrag</b> is alles wat een mens of dier doet.</li><li>Een <b>prikkel</b> is informatie waarop je kunt reageren; van buiten of van binnenuit je lichaam.</li><li>Gedrag ontstaat doordat je op prikkels <b>reageert</b>.</li><li>Een <b>handeling</b> is een klein stukje gedrag. Een <b>ethogram</b> is een lijst van handelingen.</li></ul></div>`},
 
- +'<div class="box"><h4>Hoe ontstaat gedrag?</h4><p>Gedrag ontstaat doordat mensen en dieren <b>reageren</b> op prikkels. Alle reacties op prikkels samen vormen het gedrag.</p>'
- +'<div class="call warn" style="margin-bottom:0"><b>Voorbeeld:</b> een hond ziet de voerbak (prikkel van buiten) én heeft honger (prikkel van binnen). Hij loopt ernaartoe en gaat eten: dat is het gedrag.</div></div>'
+{heading:'4.2 Leren',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst"><li>drie manieren van <b>leren</b>: <b>imiteren</b>, <b>oefenen</b> en <b>inzicht</b></li><li><b>aangeboren gedrag</b> en <b>reflexen</b></li></ul></div><h5 class="sub" style="margin-top:0">Drie manieren om te leren</h5><div class="g3"><div class="box"><h4>Imiteren</h4><p>Leren door gedrag <b>na te doen</b>. Leeuwenwelpjes leren drinken en jagen door hun moeder te imiteren.</p></div><div class="box"><h4>Oefenen</h4><p>Leren door hetzelfde gedrag <b>vaak te herhalen</b>. Een jonge leeuw vangt pas na veel pogingen zijn eerste prooi.</p></div><div class="box"><h4>Inzicht</h4><p>Nieuw gedrag leren door <b>na te denken</b>, zonder het van iemand af te kijken. Een chimpansee bedenkt zelf dat hij mieren met een stokje uit het nest kan halen.</p></div></div><h5 class="sub">Dieren trainen</h5><div class="g2"><div class="box"><h4>Belonen</h4><p>Het <b>juiste</b> gedrag beloon je, bijvoorbeeld met een snoepje of een aai. Het dier gaat dat gedrag vaker vertonen.</p></div><div class="box"><h4>Straffen</h4><p>Het <b>verkeerde</b> gedrag bestraf je. Het dier gaat dat gedrag minder vaak vertonen.</p></div></div><h5 class="sub">Gedrag dat je niet hoeft te leren</h5><div class="g2"><div class="box"><h4>Aangeboren gedrag</h4><p>Gedrag dat je <b>vanaf je geboorte</b> al hebt en niet hoeft te leren.</p><p style="margin-top:.6rem"><b>Sperren:</b> jonge vogels doen hun snavel wijd open zodra de oudervogel met voer bij het nest komt. Dat kunnen ze meteen al.</p></div><div class="box"><h4>Reflex</h4><p>Een <b>vaste, snelle reactie</b> op een prikkel. Een reflex gaat vanzelf: je hoeft er niet over na te denken.</p><ul class="lst" style="margin-top:.6rem"><li><b>Zuigreflex</b>: baby's gaan zuigen zodra de tepel in hun mond komt</li><li><b>Terugtrekreflex</b>: je trekt je hand weg van een vlam voordat je doorhebt dat je het doet</li></ul></div></div><div class="call warn"><b>Waarom is dit handig?</b> Aangeboren gedrag en reflexen vergroten de <b>kans om te overleven</b>. Zou je eerst moeten nadenken voordat je je hand terugtrok, dan was je al verbrand.</div><div class="check" onclick="toonCheck(this)"><p class="check-v">Wat is leren door oefenen?</p><p class="check-a">Leren door hetzelfde gedrag vaak te herhalen.</p><span class="check-hint">Tik voor het antwoord</span></div><div class="call sum"><b>Om te onthouden (4.2)</b><ul class="lst"><li>Leren kan door <b>imiteren</b> (nadoen), <b>oefenen</b> (herhalen) en <b>inzicht</b> (zelf bedenken).</li><li>Dieren train je door <b>belonen</b> en <b>straffen</b>.</li><li><b>Aangeboren gedrag</b> heb je vanaf je geboorte, zoals sperren.</li><li>Een <b>reflex</b> is een vaste, snelle reactie waar je niet bij nadenkt.</li><li>Aangeboren gedrag en reflexen vergroten de <b>overlevingskans</b>.</li></ul></div>`},
 
- +'<h5 class="sub">Gedrag beschrijven</h5>'
- +'<div class="g2">'
- +'<div class="box"><h4>Handelingen</h4><p>Gedrag bestaat uit meerdere kleine stukjes. Zo\'n klein stukje gedrag heet een <b>handeling</b>. Een kat die zijn kop omdraait, in elkaar duikt en gaat blazen voert drie handelingen uit.</p></div>'
- +'<div class="box"><h4>Ethogram</h4><p>Een <b>ethogram</b> is een lijst met beschrijvingen van de verschillende handelingen van een mens of dier. Vaak staat er een afkorting bij, zodat je snel kunt noteren wat je ziet.</p></div></div>'
+{heading:'4.3 Lichaamstaal',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst"><li><b>lichaamstaal</b> en de zes <b>emoties</b></li><li>hoe dieren <b>signalen</b> geven</li></ul></div><div class="g2"><div class="box"><h4>Praten zonder woorden</h4><p>Met je lichaamshouding en je gezicht laat je zien hoe je je voelt, zonder iets te zeggen. Dat heet <b>lichaamstaal</b>.</p><p style="margin-top:.6rem">Aan de <b>ogen</b>, de stand van de <b>wenkbrauwen</b> en de <b>mond</b> zie je vooral hoe iemand zich voelt.</p></div><div class="box"><h4>De zes emoties</h4><p>Aan iemands gezicht kun je zes <b>emoties</b> herkennen:</p><ol class="num" style="margin-top:.5rem"><li>Vreugde</li><li>Verbazing</li><li>Afschuw</li><li>Woede</li><li>Verdriet</li><li>Angst</li></ol></div></div><h5 class="sub">Hoe praten dieren met hun lichaam?</h5><div class="g2"><div class="box"><h4>Signalen</h4><p>Dieren kunnen niet praten, maar maken elkaar veel duidelijk met lichaamstaal. Een boodschap voor een soortgenoot heet een <b>signaal</b>.</p><div class="call" style="margin-bottom:0">Een signaal is een <b>prikkel</b> waar een soortgenoot op kan reageren. Laat een hond zijn tanden zien, dan loopt een andere hond weg.</div></div><div class="box"><h4>Wat honden laten zien</h4><div class="tblwrap"><table class="tbl"><tr><th>Signaal</th><th>Betekenis</th></tr><tr><td>Staart omhoog</td><td>bazig, zelfverzekerd</td></tr><tr><td>Staart tussen de poten</td><td>bang</td></tr><tr><td>Tanden laten zien</td><td>dreigen</td></tr><tr><td>Op de rug liggen</td><td>overgeven: "jij bent de baas"</td></tr></table></div></div></div><h5 class="sub">Waardoor verzorgen ouders hun jongen?</h5><div class="g2"><div class="box"><h4>Baby-kenmerken zijn signalen</h4><p>Baby's hebben een <b>groot, rond hoofd</b>, <b>grote ogen</b>, een <b>klein neusje</b> en een zacht, mollig lijf. Dat zijn signalen waardoor volwassenen ze lief vinden en willen verzorgen.</p><p style="margin-top:.6rem">Bij jonge dieren werkt het net zo: puppy's en katjes hebben ook een rond hoofd, een korte snuit en grote ogen.</p></div><div class="box"><h4>Overdreven signalen</h4><p><b>Overdreven signalen</b> zijn signalen die erg opvallen en een <b>sterke reactie</b> oproepen.</p><div class="call warn" style="margin-bottom:0">Speelgoedmakers gebruiken dit bewust: knuffelbeesten krijgen een nóg groter hoofd, nóg grotere ogen en een nóg kortere snuit dan echte dieren. Daardoor wil je ze graag hebben.</div></div></div><div class="check" onclick="toonCheck(this)"><p class="check-v">Wat is lichaamstaal?</p><p class="check-a">Zonder te praten met je lichaam laten zien hoe je je voelt.</p><span class="check-hint">Tik voor het antwoord</span></div><div class="call sum"><b>Om te onthouden (4.3)</b><ul class="lst"><li>Met je lichaam laten zien hoe je je voelt heet <b>lichaamstaal</b>.</li><li>De zes emoties: <b>vreugde, verbazing, afschuw, woede, verdriet, angst</b>.</li><li>Dieren geven elkaar <b>signalen</b>: prikkels met een boodschap voor soortgenoten.</li><li><b>Overdreven signalen</b> vallen erg op en roepen een sterke reactie op.</li></ul></div>`},
 
- +'<div class="call warn"><b>Belangrijk bij biologie:</b> beschrijf gedrag zoals je het <i>ziet</i>, zonder er iets bij te bedenken. "De kip pikt een zaadje op" is een biologische beschrijving. "De kippen kijken dom om zich heen" is dat niet: dat is jouw mening.</div>'
-
- +'<div class="call sum"><b>Om te onthouden (4.1)</b><ul class="lst">'
- +'<li><b>Gedrag</b> is alles wat een mens of dier doet.</li>'
- +'<li>Een <b>prikkel</b> is informatie waarop je kunt reageren; van buiten of van binnenuit je lichaam.</li>'
- +'<li>Gedrag ontstaat doordat je op prikkels <b>reageert</b>.</li>'
- +'<li>Een <b>handeling</b> is een klein stukje gedrag. Een <b>ethogram</b> is een lijst van handelingen.</li></ul></div>'
-},
-{
- heading:'4.2 Leren',
- html:
- '<h5 class="sub" style="margin-top:0">Drie manieren om te leren</h5>'
- +'<div class="g3">'
- +'<div class="box"><h4>Imiteren</h4><p>Leren door gedrag <b>na te doen</b>. Leeuwenwelpjes leren drinken en jagen door hun moeder te imiteren.</p></div>'
- +'<div class="box"><h4>Oefenen</h4><p>Leren door hetzelfde gedrag <b>vaak te herhalen</b>. Een jonge leeuw vangt pas na veel pogingen zijn eerste prooi.</p></div>'
- +'<div class="box"><h4>Inzicht</h4><p>Nieuw gedrag leren door <b>na te denken</b>, zonder het van iemand af te kijken. Een chimpansee bedenkt zelf dat hij mieren met een stokje uit het nest kan halen.</p></div></div>'
-
- +'<h5 class="sub">Dieren trainen</h5>'
- +'<div class="g2">'
- +'<div class="box"><h4>Belonen</h4><p>Het <b>juiste</b> gedrag beloon je, bijvoorbeeld met een snoepje of een aai. Het dier gaat dat gedrag vaker vertonen.</p></div>'
- +'<div class="box"><h4>Straffen</h4><p>Het <b>verkeerde</b> gedrag bestraf je. Het dier gaat dat gedrag minder vaak vertonen.</p></div></div>'
-
- +'<h5 class="sub">Gedrag dat je niet hoeft te leren</h5>'
- +'<div class="g2">'
- +'<div class="box"><h4>Aangeboren gedrag</h4><p>Gedrag dat je <b>vanaf je geboorte</b> al hebt en niet hoeft te leren.</p>'
- +'<p style="margin-top:.6rem"><b>Sperren:</b> jonge vogels doen hun snavel wijd open zodra de oudervogel met voer bij het nest komt. Dat kunnen ze meteen al.</p></div>'
- +'<div class="box"><h4>Reflex</h4><p>Een <b>vaste, snelle reactie</b> op een prikkel. Een reflex gaat vanzelf: je hoeft er niet over na te denken.</p>'
- +'<ul class="lst" style="margin-top:.6rem">'
- +'<li><b>Zuigreflex</b>: baby\'s gaan zuigen zodra de tepel in hun mond komt</li>'
- +'<li><b>Terugtrekreflex</b>: je trekt je hand weg van een vlam voordat je doorhebt dat je het doet</li></ul></div></div>'
-
- +'<div class="call warn"><b>Waarom is dit handig?</b> Aangeboren gedrag en reflexen vergroten de <b>kans om te overleven</b>. Zou je eerst moeten nadenken voordat je je hand terugtrok, dan was je al verbrand.</div>'
-
- +'<div class="call sum"><b>Om te onthouden (4.2)</b><ul class="lst">'
- +'<li>Leren kan door <b>imiteren</b> (nadoen), <b>oefenen</b> (herhalen) en <b>inzicht</b> (zelf bedenken).</li>'
- +'<li>Dieren train je door <b>belonen</b> en <b>straffen</b>.</li>'
- +'<li><b>Aangeboren gedrag</b> heb je vanaf je geboorte, zoals sperren.</li>'
- +'<li>Een <b>reflex</b> is een vaste, snelle reactie waar je niet bij nadenkt.</li>'
- +'<li>Aangeboren gedrag en reflexen vergroten de <b>overlevingskans</b>.</li></ul></div>'
-},
-{
- heading:'4.3 Lichaamstaal',
- html:
- '<div class="g2">'
- +'<div class="box"><h4>Praten zonder woorden</h4><p>Met je lichaamshouding en je gezicht laat je zien hoe je je voelt, zonder iets te zeggen. Dat heet <b>lichaamstaal</b>.</p>'
- +'<p style="margin-top:.6rem">Aan de <b>ogen</b>, de stand van de <b>wenkbrauwen</b> en de <b>mond</b> zie je vooral hoe iemand zich voelt.</p></div>'
- +'<div class="box"><h4>De zes emoties</h4><p>Aan iemands gezicht kun je zes <b>emoties</b> herkennen:</p>'
- +'<ol class="num" style="margin-top:.5rem">'
- +'<li>Vreugde</li><li>Verbazing</li><li>Afschuw</li>'
- +'<li>Woede</li><li>Verdriet</li><li>Angst</li></ol></div></div>'
-
- +'<h5 class="sub">Hoe praten dieren met hun lichaam?</h5>'
- +'<div class="g2">'
- +'<div class="box"><h4>Signalen</h4><p>Dieren kunnen niet praten, maar maken elkaar veel duidelijk met lichaamstaal. Een boodschap voor een soortgenoot heet een <b>signaal</b>.</p>'
- +'<div class="call" style="margin-bottom:0">Een signaal is een <b>prikkel</b> waar een soortgenoot op kan reageren. Laat een hond zijn tanden zien, dan loopt een andere hond weg.</div></div>'
- +'<div class="box"><h4>Wat honden laten zien</h4><div class="tblwrap"><table class="tbl">'
- +'<tr><th>Signaal</th><th>Betekenis</th></tr>'
- +'<tr><td>Staart omhoog</td><td>bazig, zelfverzekerd</td></tr>'
- +'<tr><td>Staart tussen de poten</td><td>bang</td></tr>'
- +'<tr><td>Tanden laten zien</td><td>dreigen</td></tr>'
- +'<tr><td>Op de rug liggen</td><td>overgeven: "jij bent de baas"</td></tr></table></div></div></div>'
-
- +'<h5 class="sub">Waardoor verzorgen ouders hun jongen?</h5>'
- +'<div class="g2">'
- +'<div class="box"><h4>Baby-kenmerken zijn signalen</h4><p>Baby\'s hebben een <b>groot, rond hoofd</b>, <b>grote ogen</b>, een <b>klein neusje</b> en een zacht, mollig lijf. Dat zijn signalen waardoor volwassenen ze lief vinden en willen verzorgen.</p>'
- +'<p style="margin-top:.6rem">Bij jonge dieren werkt het net zo: puppy\'s en katjes hebben ook een rond hoofd, een korte snuit en grote ogen.</p></div>'
- +'<div class="box"><h4>Overdreven signalen</h4><p><b>Overdreven signalen</b> zijn signalen die erg opvallen en een <b>sterke reactie</b> oproepen.</p>'
- +'<div class="call warn" style="margin-bottom:0">Speelgoedmakers gebruiken dit bewust: knuffelbeesten krijgen een nóg groter hoofd, nóg grotere ogen en een nóg kortere snuit dan echte dieren. Daardoor wil je ze graag hebben.</div></div></div>'
-
- +'<div class="call sum"><b>Om te onthouden (4.3)</b><ul class="lst">'
- +'<li>Met je lichaam laten zien hoe je je voelt heet <b>lichaamstaal</b>.</li>'
- +'<li>De zes emoties: <b>vreugde, verbazing, afschuw, woede, verdriet, angst</b>.</li>'
- +'<li>Dieren geven elkaar <b>signalen</b>: prikkels met een boodschap voor soortgenoten.</li>'
- +'<li><b>Overdreven signalen</b> vallen erg op en roepen een sterke reactie op.</li></ul></div>'
-},
-{
- heading:'4.4 Samenleven',
- html:
- '<div class="g2">'
- +'<div class="box"><h4>Groepsdieren</h4><p>Een dier dat samenleeft in een groep heet een <b>groepsdier</b>. Door <b>samen te werken</b> vergroten ze hun kans om te overleven.</p>'
- +'<p style="margin-top:.6rem"><b>Voorbeeld:</b> spreeuwen vliegen dicht bij elkaar en maken precies dezelfde bewegingen. Daardoor ontsnappen ze aan een roofvogel.</p></div>'
- +'<div class="box"><h4>Taakverdeling</h4><p>Samenwerken gaat het best met een <b>taakverdeling</b>: het is duidelijk wie wat doet.</p>'
- +'<p style="margin-top:.6rem"><b>Voorbeeld:</b> jagende wolven omsingelen hun prooi. De een bewaakt de zijkant, de ander de achterkant. Ieder weet precies wat hij moet doen.</p></div></div>'
-
- +'<h5 class="sub">Wie is de baas?</h5>'
- +'<div class="g2">'
- +'<div class="box"><h4>Dominant en onderdanig</h4>'
- +'<div class="term"><b>Dominant</b><span>Het dier dat de baas is over de andere dieren.</span></div>'
- +'<div class="term" style="margin-bottom:0"><b>Onderdanig</b><span>Het dier dat een baas boven zich heeft en gehoorzaamt.</span></div>'
- +'<p style="margin-top:.7rem">Dieren laten met <b>signalen</b> weten wie dominant is en wie onderdanig. Een hond die op zijn rug gaat liggen zegt daarmee: "jij bent de baas".</p></div>'
- +'<div class="box"><h4>Rangorde</h4><p>Als er in een groep dominante en onderdanige dieren zijn en <b>elk dier zijn plaats kent</b>, heet dat een <b>rangorde</b>.</p>'
- +'<div class="call" style="margin-bottom:0">Door een rangorde is er <b>rust</b> in de groep. Iedereen kent zijn plek, dus er zijn weinig ruzies.</div></div></div>'
-
- +'<div class="box"><h4>Dreigen</h4>'
- +'<p>Bij <b>dreigen</b> bepaal je wie de sterkste is <b>zonder te vechten</b>. Twee katten met ruzie zetten een hoge rug op en blazen. Meestal loopt er dan één weg.</p>'
- +'<p style="margin-top:.6rem">Dieren en mensen maken zichzelf bij dreigen vaak <b>groot</b>: een hoge rug, handen in de zij, gebalde vuisten.</p>'
- +'<div class="call warn" style="margin-bottom:0"><b>Waarom is dit slim?</b> Door te dreigen kunnen ze een gevecht voorkomen. Dan raakt niemand gewond.</div></div>'
-
- +'<div class="call sum"><b>Om te onthouden (4.4)</b><ul class="lst">'
- +'<li><b>Groepsdieren</b> werken samen; dat vergroot de kans om te overleven.</li>'
- +'<li>Bij <b>taakverdeling</b> is duidelijk wie wat doet.</li>'
- +'<li>Een <b>dominant</b> dier is de baas, een <b>onderdanig</b> dier heeft een baas boven zich.</li>'
- +'<li>Bij een <b>rangorde</b> kent elk dier zijn plaats. Dat geeft rust in de groep.</li>'
- +'<li>Bij <b>dreigen</b> bepaal je wie de sterkste is zonder te vechten.</li></ul></div>'
-}
+{heading:'4.4 Samenleven',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst"><li>waarom dieren in <b>groepen</b> leven</li><li><b>rangorde</b>: <b>dominant</b> en <b>onderdanig</b></li></ul></div><div class="g2"><div class="box"><h4>Groepsdieren</h4><p>Een dier dat samenleeft in een groep heet een <b>groepsdier</b>. Door <b>samen te werken</b> vergroten ze hun kans om te overleven.</p><p style="margin-top:.6rem"><b>Voorbeeld:</b> spreeuwen vliegen dicht bij elkaar en maken precies dezelfde bewegingen. Daardoor ontsnappen ze aan een roofvogel.</p></div><div class="box"><h4>Taakverdeling</h4><p>Samenwerken gaat het best met een <b>taakverdeling</b>: het is duidelijk wie wat doet.</p><p style="margin-top:.6rem"><b>Voorbeeld:</b> jagende wolven omsingelen hun prooi. De een bewaakt de zijkant, de ander de achterkant. Ieder weet precies wat hij moet doen.</p></div></div><h5 class="sub">Wie is de baas?</h5><div class="g2"><div class="box"><h4>Dominant en onderdanig</h4><div class="term"><b>Dominant</b><span>Het dier dat de baas is over de andere dieren.</span></div><div class="term" style="margin-bottom:0"><b>Onderdanig</b><span>Het dier dat een baas boven zich heeft en gehoorzaamt.</span></div><p style="margin-top:.7rem">Dieren laten met <b>signalen</b> weten wie dominant is en wie onderdanig. Een hond die op zijn rug gaat liggen zegt daarmee: "jij bent de baas".</p></div><div class="box"><h4>Rangorde</h4><p>Als er in een groep dominante en onderdanige dieren zijn en <b>elk dier zijn plaats kent</b>, heet dat een <b>rangorde</b>.</p><div class="call" style="margin-bottom:0">Door een rangorde is er <b>rust</b> in de groep. Iedereen kent zijn plek, dus er zijn weinig ruzies.</div></div></div><div class="box"><h4>Dreigen</h4><p>Bij <b>dreigen</b> bepaal je wie de sterkste is <b>zonder te vechten</b>. Twee katten met ruzie zetten een hoge rug op en blazen. Meestal loopt er dan één weg.</p><p style="margin-top:.6rem">Dieren en mensen maken zichzelf bij dreigen vaak <b>groot</b>: een hoge rug, handen in de zij, gebalde vuisten.</p><div class="call warn" style="margin-bottom:0"><b>Waarom is dit slim?</b> Door te dreigen kunnen ze een gevecht voorkomen. Dan raakt niemand gewond.</div></div><div class="check" onclick="toonCheck(this)"><p class="check-v">Wat is een groepsdier?</p><p class="check-a">Een dier dat samenleeft in een groep.</p><span class="check-hint">Tik voor het antwoord</span></div><div class="call sum"><b>Om te onthouden (4.4)</b><ul class="lst"><li><b>Groepsdieren</b> werken samen; dat vergroot de kans om te overleven.</li><li>Bij <b>taakverdeling</b> is duidelijk wie wat doet.</li><li>Een <b>dominant</b> dier is de baas, een <b>onderdanig</b> dier heeft een baas boven zich.</li><li>Bij een <b>rangorde</b> kent elk dier zijn plaats. Dat geeft rust in de groep.</li><li>Bij <b>dreigen</b> bepaal je wie de sterkste is zonder te vechten.</li></ul></div>`}
 ],
 terms:[
 ['aangeboren gedrag','Gedrag dat je vanaf de geboorte al hebt, bijvoorbeeld reflexen.'],

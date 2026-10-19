@@ -12,12 +12,17 @@ export function today() {
   return Math.floor(Date.now() / 86400000);
 }
 
-/* ── Chapter progress: viewed + last quiz result ─────────────────────── */
+/* ── Chapter progress: viewed, read, last quiz result ────────────────── */
+/* `bekeken` is set as soon as the summary is shown -- which happens on every
+   chapter open -- so it cannot mean "read". `gelezen` (2.7.1) is set only when
+   the student says so with "Klaar met lezen", and is what turns step 1 of the
+   chapter route green. */
 
 function toProgress(row) {
   if (!row) return null;
   return {
     viewed: !!row.bekeken,
+    read: !!row.gelezen,
     quizCompleted: !!row.quizAfgerond,
     quizCorrect: row.quizGoed,
     quizTotal: row.quizTotaal,
@@ -48,6 +53,16 @@ export function markChapterViewed() {
   table[key] = table[key] || {};
   table[key].bekeken = true;
   writeJson(K.progress, table);
+}
+
+export function markChapterRead() {
+  const table = readProgressTable();
+  const key = currentChapterKey();
+  table[key] = table[key] || {};
+  table[key].bekeken = true;
+  table[key].gelezen = true;
+  writeJson(K.progress, table);
+  updateStreak();
 }
 
 export function markQuizCompleted(correct, total) {
@@ -143,7 +158,8 @@ export function isCardDueToday(cardId) {
 
 export function getStreak() {
   const s = readJson(K.streak, {});
-  return { length: s.lengte || 0, lastDay: s.laatsteDag };
+  // `beste` exists since 2.7.1; before that only the current run was kept.
+  return { length: s.lengte || 0, lastDay: s.laatsteDag, best: Math.max(s.beste || 0, s.lengte || 0) };
 }
 
 export function updateStreak() {
@@ -151,6 +167,7 @@ export function updateStreak() {
   const day = today();
   if (s.laatsteDag === day) return;
   s.lengte = s.laatsteDag === day - 1 ? (s.lengte || 0) + 1 : 1;
+  s.beste = Math.max(s.beste || 0, s.lengte);   // a broken streak keeps its record
   s.laatsteDag = day;
   writeJson(K.streak, s);
 }

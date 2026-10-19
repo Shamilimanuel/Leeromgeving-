@@ -13,9 +13,24 @@
    The entries are Dutch because students read them. Keep the lines short and
    concrete: what can you do now that you could not do yesterday? */
 
-export const APP_VERSION = '2.7.0';
+export const APP_VERSION = '2.8.0';
 
 export const CHANGELOG = [
+  {
+    version: '2.8.0',
+    date: '2026-10-19',
+    title: 'Een route door elk hoofdstuk, badges en betere boeken',
+    changes: [
+      'Een hoofdstuk is nu een route: Lezen, Oefenen, Toetsen. Bij elke stap zie je hoe ver je bent. Begrippen en Notities staan er rustig naast.',
+      'Overal heet het nu gewoon "Hoofdstuk".',
+      'Nieuw: badges. Je verdient ze met het Oefenspel, met elke dag leren, met een foutloze quiz en met lezen. Je docent ziet ze ook.',
+      'Nieuw: Tijdrace. In 45 seconden zoveel mogelijk begrippen goed. Per hoofdstuk houd je je record bij.',
+      'Wiskunde TL2 tot en met 4, Engels TL1 tot en met 3 en Nederlands TL1 en 2 zijn opnieuw geschreven, met duidelijkere uitleg, voorbeelden en checkvragen.',
+      'De Agenda begint nu bij deze maand en loopt door in het volgende jaar. Een toets toevoegen werkt nu ook goed op je telefoon.',
+      'Had je minder dan de helft goed in een level? Dan staat er niet meer "Level gehaald!", maar je krijgt een knop om hem nog eens te spelen.',
+      'Op je telefoon staan de knoppen bij Tekstgrootte en de knop met de drie puntjes niet meer over andere dingen heen.',
+    ],
+  },
   {
     version: '2.7.0',
     date: '2026-09-24',

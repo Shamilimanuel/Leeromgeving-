@@ -14,6 +14,9 @@ import { levelsForChapter, levelSubtitle } from '../content/levels.js';
 import { levelsForStudent } from '../services/gameProgress.js';
 import { clearStudentGameProgress } from '../services/auth.js';
 import { showToast } from './toast.js';
+import { levelsFromRows, deviceBadges } from '../state/badges.js';
+import { studyStatusForStudent, statusFromRow } from '../services/studyStatus.js';
+import { computeGameBadges, adminBadgeLine } from './badges.js';
 
 let openFor = null;      // student id whose path is on screen
 let chapterKeys = [];    // chapter keys of the rows shown, indexed for handlers
@@ -91,20 +94,31 @@ export async function adminToggleProgress(studentId) {
 async function refresh() {
   if (!openFor) return;
   try {
-    const rows = await levelsForStudent(openFor);
+    const [rows, status] = await Promise.all([
+      levelsForStudent(openFor),
+      studyStatusForStudent(openFor).catch(() => null),
+    ]);
     if (!rows.length) {
-      setHtml(panel(openFor), '<div class="admpad"><p class="lede">Deze leerling heeft nog geen level gehaald in het oefenspel.</p></div>');
+      // No levels yet, but streak/quiz/reading badges can still be earned.
+      const noGame = await computeGameBadges([]);
+      setHtml(panel(openFor), '<div class="admpad">'
+        + adminBadgeLine(Object.assign({}, noGame, deviceBadges(statusFromRow(status))))
+        + '<p class="lede">Deze leerling heeft nog geen level gehaald in het oefenspel.</p></div>');
       chapterKeys = [];
       return;
     }
     // Paragraph names need the chapters' books. A book that cannot load (or a
     // chapter key that no longer exists) falls back to "Level N" in levelLabel.
     await Promise.allSettled([...new Set(rows.map((r) => r.hoofdstuk))].map(loadChapter));
+    // The same Oefenspel badges the student sees on their own page.
+    const game = await computeGameBadges(levelsFromRows(rows));
+    const badges = Object.assign({}, game, deviceBadges(statusFromRow(status)));
     if (!openFor) return;
     const total = rows.reduce((sum, r) => sum + (r.xp || 0), 0);
     setHtml(panel(openFor), '<div class="admpad">'
       + '<div class="admpad-totaal"><b>' + rows.length + ' levels gehaald</b> · ' + total + ' XP'
       + '<button class="bt gh" onclick="adminClearAllProgress()">Alles wissen</button></div>'
+      + adminBadgeLine(badges)
       + rowsHtml(rows) + '</div>');
   } catch (err) {
     setHtml(panel(openFor), warningBox(err.message));

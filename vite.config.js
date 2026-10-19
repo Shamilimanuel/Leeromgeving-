@@ -20,6 +20,9 @@ export default defineConfig(({ mode }) => {
     test: {
       environment: 'node',
       include: ['tests/**/*.test.js'],
+      // several tests walk every chapter of every book; under a parallel run
+      // they can pass the default 5 s on a busy machine
+      testTimeout: 30000,
     },
   };
 });

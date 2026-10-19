@@ -1,13 +1,106 @@
 import { registerChapter } from '../../../registry.js';
 
+/* Rebuilt 2026-09-24 to the recipe of Economie TL4 H1 (change 6). Added
+   from the book: the copier at 71% (6.1), the "is gelijkvormig met" sign
+   (6.2), and the 3x3 rectangle and 4x4x4 balk that explain squared and
+   cubed (6.3). The drawing is unchanged. Terms, cards and quiz unchanged. */
 registerChapter('wiskunde|tl|2|6', {
 title:'Vergroten en verkleinen',
 summary:[
-{heading:'6.1 Vergrotingsfactor',html:'<div class=\'box\'><h4>Waar gaat dit hoofdstuk over?</h4><p>In dit hoofdstuk leer je rekenen met de vergrotingsfactor: hoeveel groter of kleiner een figuur wordt bij een vergroting of verkleining. Je leert ook rekenen met gelijkvormige driehoeken, met schaal en met schaalmodellen.</p></div><div class=\'call\'>Bij een verkleining is de vergrotingsfactor kleiner dan 1.</div><div class=\'box\'><h4>Wat is een vergrotingsfactor?</h4><p>Als een figuur vergroot of verkleind wordt, blijft de vorm hetzelfde. De oorspronkelijke figuur heet het <b>origineel</b>, de nieuwe figuur het <b>beeld</b>. De <b>vergrotingsfactor</b> bereken je met de formule <b>vergrotingsfactor = lengte beeld : lengte origineel</b>.</p></div><div class=\'box\'><h4>Gelijkvormig</h4><p>Je mag alleen spreken van een vergroting als <i>alle</i> maten dezelfde vergrotingsfactor hebben. De figuren hebben dan dezelfde vorm: de figuren zijn <b>gelijkvormig</b>.</p></div><div class=\'voorbeeld\'><h4>Voorbeeld: vergrotingsfactor berekenen</h4><p>Rechthoek A\'B\'C\'D\' is een vergroting van rechthoek ABCD. AB = 2,2 cm en A\'B\' = 3,6 cm. Bereken de vergrotingsfactor. Rond af op twee decimalen.</p><ol class=\'num\'><li>Zijde A\'B\' is het beeld, zijde AB is het origineel.</li><li>vergrotingsfactor = 3,6 : 2,2 = 1,636...</li></ol><div class=\'antwoord\'>Antwoord: de vergrotingsfactor is 1,64.</div></div><div class=\'call\'>Bij een verkleining is de vergrotingsfactor kleiner dan 1.</div><figure class=\'fig\'><svg viewBox="0 0 340 175" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Twee gelijkvormige driehoeken, de grote is twee keer zo groot als de kleine"><g fill="var(--accent)" fill-opacity=".16" stroke="var(--accent)" stroke-width="1.8" stroke-linejoin="round"><path d="M30 110 L90 110 L30 70 Z"/><path d="M170 130 L290 130 L170 50 Z"/></g><polyline points="42,110 42,98 30,98" fill="none" stroke="var(--accent)" stroke-width="1.5"/><polyline points="182,130 182,118 170,118" fill="none" stroke="var(--accent)" stroke-width="1.5"/><g fill="var(--mut)" font-size="9.5" font-family="inherit" text-anchor="middle"><text x="60" y="126">3 cm</text><text x="230" y="146">6 cm</text></g><g fill="var(--mut)" font-size="9.5" font-family="inherit" text-anchor="end"><text x="26" y="94">2 cm</text><text x="166" y="94">4 cm</text></g><g stroke="var(--accent)" stroke-width="1.8" fill="none"><path d="M104 90 H144"/></g><polygon points="144,85 156,90 144,95" fill="var(--accent)"/><text x="130" y="80" fill="var(--accent)" font-size="11" font-weight="600" font-family="inherit" text-anchor="middle">&times; 2</text><g fill="var(--txt)" font-size="10.5" font-family="inherit" text-anchor="middle"><text x="60" y="160">origineel</text><text x="230" y="166">vergroting</text></g><text x="170" y="20" fill="var(--mut)" font-size="9.5" font-family="inherit" text-anchor="middle">de hoeken blijven precies gelijk &mdash; alleen de zijden worden langer</text></svg><figcaption>Bij een vergrotingsfactor van 2 wordt elke zijde twee keer zo lang, maar de <b>oppervlakte</b> wordt 2<sup>2</sup> = 4 keer zo groot. Dat is de val bij deze opgaven.</figcaption></figure>'},
-{heading:'6.2 Gelijkvormige driehoeken',html:'<div class=\'box\'><h4>Overeenkomstige zijden en hoeken</h4><p>Bij gelijkvormige driehoeken zijn de hoeken die bij elkaar horen (<b>overeenkomstige hoeken</b>) even groot. De zijden die bij elkaar horen (<b>overeenkomstige zijden</b>) hebben allemaal dezelfde vergrotingsfactor.</p></div><div class=\'box\'><h4>Zijden berekenen met een tabel</h4><p>In gelijkvormige driehoeken kun je onbekende zijden berekenen met behulp van een tabel en de vergrotingsfactor. Zet de kleinste driehoek boven in de tabel en de grootste driehoek eronder, met de overeenkomstige zijden onder elkaar.</p></div><div class=\'voorbeeld\'><h4>Voorbeeld: zijden berekenen met gelijkvormigheid</h4><p>Driehoek PQR en driehoek CAB zijn gelijkvormig. PQ = 15 cm, CA = 30 cm en PR = 25 cm. Bereken CB.</p><ol class=\'num\'><li>Zet de zijden in een tabel: △PQR boven (PQ = 15, PR = 25), △CAB onder (CA = 30, CB = ?).</li><li>Bereken de vergrotingsfactor: 30 : 15 = 2.</li><li>CB = 25 × 2 = 50.</li></ol><div class=\'antwoord\'>Antwoord: CB is 50 cm.</div></div>'},
-{heading:'6.3 Oppervlakte en inhoud vergroten',html:'<div class=\'box\'><h4>Van vergrotingsfactor naar oppervlakte</h4><p>Wordt een figuur vergroot met een vergrotingsfactor, dan wordt de oppervlakte <i>niet</i> met dezelfde factor vergroot. De lengte en de breedte worden allebei met de vergrotingsfactor vermenigvuldigd, dus de oppervlakte wordt vergroot met het <b>kwadraat</b> van de vergrotingsfactor: <b>oppervlakte vergroting = vergrotingsfactor² × oppervlakte origineel</b>.</p></div><div class=\'box\'><h4>Van vergrotingsfactor naar inhoud</h4><p>Bij een ruimtefiguur wordt de inhoud vergroot met de <b>derde macht</b> van de vergrotingsfactor: <b>inhoud vergroting = vergrotingsfactor³ × inhoud origineel</b>.</p></div><div class=\'voorbeeld\'><h4>Voorbeeld: oppervlakte van een vergroting</h4><p>De oppervlakte van een figuur is 8,5 cm². De figuur wordt vergroot met factor 1,7. Bereken de oppervlakte van de vergroting. Rond af op één decimaal.</p><ol class=\'num\'><li>oppervlakte vergroting = 1,7² × 8,5.</li><li>1,7² × 8,5 = 24,565.</li></ol><div class=\'antwoord\'>Antwoord: de oppervlakte van de vergroting is 24,6 cm².</div></div><div class=\'call warn\'><b>Veelgemaakte fout:</b> denk niet dat de oppervlakte met dezelfde factor vergroot wordt als de lengtematen. Gebruik het kwadraat van de vergrotingsfactor voor oppervlakte en de derde macht voor inhoud.</div>'},
-{heading:'6.4 Schaal',html:'<div class=\'box\'><h4>Wat is een schaal?</h4><p>Onder een plattegrond of kaart staat vaak een <b>schaal</b>, bijvoorbeeld schaal 1 : 100. Dat betekent dat de maten in het echt 100 keer zo groot zijn als op de tekening. De vergrotingsfactor die bij deze schaal hoort, is dus 100.</p></div><div class=\'box\'><h4>Hemelsbreed</h4><p>Op een kaart bereken je afstanden vaak <b>hemelsbreed</b>: dan meet je de afstand in een rechte lijn, zonder rekening te houden met wegen of bochten.</p></div><div class=\'voorbeeld\'><h4>Voorbeeld: afstand met schaal</h4><p>Onder een kaart staat: 1 cm op de kaart is 30 km in het echt. Twee plaatsen liggen 4 cm van elkaar op de kaart. Bereken de echte afstand.</p><ol class=\'num\'><li>4 × 30 = 120.</li></ol><div class=\'antwoord\'>Antwoord: de plaatsen liggen 120 km hemelsbreed van elkaar.</div></div>'},
-{heading:'6.5 Schaalmodel',html:'<div class=\'box\'><h4>Rekenen met schaalmodellen</h4><p>Van gebouwen en voorwerpen worden vaak <b>schaalmodellen</b> gemaakt, bijvoorbeeld op schaal 1 : 87. Met de schaal kun je de echte maat berekenen als je de maat van het model weet, of andersom.</p></div><div class=\'voorbeeld\'><h4>Voorbeeld: echte hoogte berekenen</h4><p>Een model van de Domtoren is gemaakt op schaal 1 : 300. Het model is 37,4 cm hoog. Bereken de echte hoogte van de Domtoren in meters.</p><ol class=\'num\'><li>De echte toren is 300 keer zo hoog als het model: 37,4 × 300 = 11 220 cm.</li><li>Reken om naar meters: 11 220 cm = 112,2 m.</li></ol><div class=\'antwoord\'>Antwoord: de Domtoren is 112,2 m hoog.</div></div><div class=\'call\'>Reken bij schaalmodellen altijd goed op welke eenheid gevraagd wordt (centimeters of meters) en reken zo nodig om.</div>'}
+{heading:'6.1 Vergrotingsfactor',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>de <b>vergrotingsfactor</b> berekenen bij <b>vergroten</b> en <b>verkleinen</b></li>
+<li>met een vergrotingsfactor <b>tekenen</b></li></ul></div>`
++`<div class="box"><h4>Waar dit hoofdstuk over gaat</h4><p>Je rekent met de <b>vergrotingsfactor</b>: hoeveel groter of kleiner een figuur wordt. Daarna werk je met <b>gelijkvormige driehoeken</b>, <b>oppervlakte</b> en <b>inhoud</b> van vergrotingen, <b>schaal</b> en <b>schaalmodellen</b>.</p></div>`
++`<h5 class="sub">Origineel en beeld</h5>`
++`<div class="box"><h4>De formule</h4><p>Bij vergroten of verkleinen blijft de <b>vorm</b> hetzelfde en blijven de <b>hoeken</b> even groot. De figuur waar je mee begint is het <b>origineel</b>, de nieuwe figuur het <b>beeld</b>.</p><p><b>vergrotingsfactor = lengte beeld : lengte origineel</b></p></div>`
++`<div class="vergelijk"><div class="vergelijk-kant"><h4>Vergroten</h4><p>Vergrotingsfactor <b>groter dan 1</b>. Het beeld is groter.</p></div><div class="vergelijk-vs">vs</div><div class="vergelijk-kant"><h4>Verkleinen</h4><p>Vergrotingsfactor <b>kleiner dan 1</b>. Het beeld is kleiner.</p></div></div>`
++`<div class="voorbeeld"><h4>Voorbeeld: een rechthoek vergroten</h4><p>AB = <b>2,2 cm</b> en het beeld A'B' = <b>3,6 cm</b>. Bereken de vergrotingsfactor. Rond af op twee decimalen.</p><div class="antwoord">A'B' is het beeld, AB het origineel. 3,6 : 2,2 = 1,636&hellip;, dus <b>1,64</b>.</div></div>`
++`<figure class='fig'><svg viewBox="0 0 340 175" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Twee gelijkvormige driehoeken, de grote is twee keer zo groot als de kleine"><g fill="var(--accent)" fill-opacity=".16" stroke="var(--accent)" stroke-width="1.8" stroke-linejoin="round"><path d="M30 110 L90 110 L30 70 Z"/><path d="M170 130 L290 130 L170 50 Z"/></g><polyline points="42,110 42,98 30,98" fill="none" stroke="var(--accent)" stroke-width="1.5"/><polyline points="182,130 182,118 170,118" fill="none" stroke="var(--accent)" stroke-width="1.5"/><g fill="var(--mut)" font-size="9.5" font-family="inherit" text-anchor="middle"><text x="60" y="126">3 cm</text><text x="230" y="146">6 cm</text></g><g fill="var(--mut)" font-size="9.5" font-family="inherit" text-anchor="end"><text x="26" y="94">2 cm</text><text x="166" y="94">4 cm</text></g><g stroke="var(--accent)" stroke-width="1.8" fill="none"><path d="M104 90 H144"/></g><polygon points="144,85 156,90 144,95" fill="var(--accent)"/><text x="130" y="80" fill="var(--accent)" font-size="11" font-weight="600" font-family="inherit" text-anchor="middle">&times; 2</text><g fill="var(--txt)" font-size="10.5" font-family="inherit" text-anchor="middle"><text x="60" y="160">origineel</text><text x="230" y="166">vergroting</text></g><text x="170" y="20" fill="var(--mut)" font-size="9.5" font-family="inherit" text-anchor="middle">de hoeken blijven precies gelijk &mdash; alleen de zijden worden langer</text></svg><figcaption>Bij een vergrotingsfactor van 2 wordt elke zijde twee keer zo lang, maar de <b>oppervlakte</b> wordt 2<sup>2</sup> = 4 keer zo groot. Dat is de val bij deze opgaven.</figcaption></figure>`
++`<h5 class="sub">Rekenen en tekenen met de factor</h5>`
++`<div class="voorbeeld"><h4>Voorbeeld: het kopieerapparaat</h4><p>Bowien verkleint een tekening van <b>420 bij 297 mm</b>. Het apparaat staat op <b>71%</b>.</p><div class="antwoord">71% is een vergrotingsfactor van <b>0,71</b>. 420 &times; 0,71 &asymp; <b>298 mm</b> en 297 &times; 0,71 &asymp; <b>211 mm</b>.</div></div>`
++`<div class="call reken"><b>Stappenplan: tekenen met een vergrotingsfactor</b><ol class="num">
+<li>Tel hoe lang elke zijde van het origineel is, bijvoorbeeld in <b>hokjes</b>.</li>
+<li>Vermenigvuldig elke lengte met de <b>vergrotingsfactor</b>.</li>
+<li>Teken het beeld; de <b>hoeken</b> blijven even groot.</li></ol></div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Is het beeld groter of kleiner bij vergrotingsfactor 0,3?</p><p class="check-a"><b>Kleiner</b>, want de factor is kleiner dan 1.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden (6.1)</b><ul class="lst">
+<li><b>vergrotingsfactor = beeld : origineel</b>.</li>
+<li>Groter dan 1: <b>vergroten</b>. Kleiner dan 1: <b>verkleinen</b>.</li>
+<li>Een percentage als <b>71%</b> is factor <b>0,71</b>.</li></ul></div>`},
+
+{heading:'6.2 Gelijkvormige driehoeken',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li><b>gelijkvormige driehoeken</b> herkennen</li>
+<li>zijden berekenen met een <b>tabel</b> en de <b>vergrotingsfactor</b></li></ul></div>`
++`<h5 class="sub">Gelijkvormig</h5>`
++`<div class="box"><h4>Dezelfde vorm</h4><p>Is &triangle;DEF een vergroting van &triangle;ABC, dan zijn ze <b>gelijkvormig</b>. Je schrijft <b>&triangle;ABC &sim; &triangle;DEF</b>; het teken <b>&sim;</b> spreek je uit als &ldquo;<b>is gelijkvormig met</b>&rdquo;.</p></div>`
++`<div class="g2">`
++`<div class="box"><h4>Overeenkomstige hoeken</h4><p>De hoeken die bij elkaar horen zijn <b>even groot</b>. Dat zie je aan de <b>tekens</b> in de hoeken.</p></div>`
++`<div class="box"><h4>Overeenkomstige zijden</h4><p>De zijden die bij elkaar horen hebben allemaal <b>dezelfde vergrotingsfactor</b>.</p></div></div>`
++`<h5 class="sub">Zijden berekenen</h5>`
++`<div class="call reken"><b>Stappenplan: zijden in gelijkvormige driehoeken</b><ol class="num">
+<li>Maak een <b>tabel</b>: de <b>kleine</b> driehoek boven, de <b>grote</b> eronder.</li>
+<li>Zet de <b>overeenkomstige zijden</b> onder elkaar.</li>
+<li>Bereken de <b>vergrotingsfactor</b> met een kolom waarin beide getallen staan.</li>
+<li>Reken de onbekende zijde uit: <b>&times;</b> de factor (of <b>:</b> de factor als je terugrekent).</li></ol></div>`
++`<div class="voorbeeld"><h4>Voorbeeld: &triangle;PQR &sim; &triangle;CAB</h4><p>PQ = <b>15 cm</b>, CA = <b>30 cm</b>, PR = <b>25 cm</b>. Bereken CB.</p><div class="antwoord">Tabel: PQ en CA onder elkaar, PR en CB onder elkaar. Factor: 30 : 15 = <b>2</b>. CB = 25 &times; 2 = <b>50 cm</b>.</div></div>`
++`<div class="call warn"><b>Let op de volgorde van de letters.</b> In &triangle;PQR &sim; &triangle;CAB hoort P bij C, Q bij A en R bij B. Zo weet je welke zijden <b>overeenkomen</b>.</div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Wat weet je van de hoeken van twee gelijkvormige driehoeken?</p><p class="check-a">De <b>overeenkomstige hoeken</b> zijn even groot.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden (6.2)</b><ul class="lst">
+<li><b>&sim;</b> betekent: is gelijkvormig met.</li>
+<li>Hoeken <b>gelijk</b>, zijden met <b>dezelfde factor</b>.</li>
+<li>Werk met een <b>tabel</b>: klein boven, groot onder.</li></ul></div>`},
+
+{heading:'6.3 Oppervlakte en inhoud vergroten',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>de <b>oppervlakte</b> van een vergroting berekenen</li>
+<li>de <b>inhoud</b> van een vergroting berekenen</li></ul></div>`
++`<h5 class="sub">Oppervlakte</h5>`
++`<div class="box"><h4>Vergrotingsfactor in het kwadraat</h4><p>Een rechthoek van <b>3,22 cm&sup2;</b> wordt vergroot met factor <b>3</b>. De kleine rechthoek past <b>3 keer</b> in de lengte en <b>3 keer</b> in de breedte, dus <b>3 &times; 3 = 3&sup2; = 9 keer</b>.</p><p><b>oppervlakte vergroting = vergrotingsfactor&sup2; &times; oppervlakte origineel</b></p></div>`
++`<div class="voorbeeld"><h4>Voorbeeld: 8,5 cm&sup2; met factor 1,7</h4><p>Bereken de oppervlakte van de vergroting. Rond af op één decimaal.</p><div class="antwoord">1,7&sup2; &times; 8,5 = 2,89 &times; 8,5 = 24,565, dus <b>24,6 cm&sup2;</b>.</div></div>`
++`<h5 class="sub">Inhoud</h5>`
++`<div class="box"><h4>Vergrotingsfactor tot de derde</h4><p>Een balk van <b>3,6 dm&sup3;</b> wordt vergroot met factor <b>4</b>. De kleine balk past 4 keer in de lengte, 4 keer in de breedte en 4 keer in de hoogte: <b>4 &times; 4 &times; 4 = 4&sup3; = 64 keer</b>. De grote balk is dus 64 &times; 3,6 = <b>230,4 dm&sup3;</b>.</p><p><b>inhoud vergroting = vergrotingsfactor&sup3; &times; inhoud origineel</b></p></div>`
++`<div class="vergelijk"><div class="vergelijk-kant"><h4>Oppervlakte</h4><p>Twee richtingen: <b>factor&sup2;</b></p></div><div class="vergelijk-vs">vs</div><div class="vergelijk-kant"><h4>Inhoud</h4><p>Drie richtingen: <b>factor&sup3;</b></p></div></div>`
++`<div class="call warn"><b>Veelgemaakte fout:</b> de oppervlakte gewoon <b>&times; de factor</b> doen. Bij factor 3 wordt een oppervlakte <b>9 keer</b> zo groot, niet 3 keer.</div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Een balk wordt vergroot met factor 2. Hoeveel keer zo groot wordt de inhoud?</p><p class="check-a">2&sup3; = <b>8 keer</b>.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden (6.3)</b><ul class="lst">
+<li>Lengtes: <b>&times; factor</b>.</li>
+<li>Oppervlakte: <b>&times; factor&sup2;</b>.</li>
+<li>Inhoud: <b>&times; factor&sup3;</b>.</li></ul></div>`},
+
+{heading:'6.4 Schaal',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>rekenen met de <b>schaal</b> van een <b>kaart</b> of <b>plattegrond</b></li>
+<li>afstanden <b>hemelsbreed</b> berekenen</li></ul></div>`
++`<h5 class="sub">Wat betekent een schaal?</h5>`
++`<div class="box"><h4>Schaal 1 : 100</h4><p>Staat onder een plattegrond <b>schaal 1 : 100</b> (&ldquo;één op honderd&rdquo;), dan zijn de maten in het echt <b>100 keer zo groot</b>. De vergrotingsfactor is dus <b>100</b>.</p></div>`
++`<div class="term"><b>Hemelsbreed</b><span>De afstand in een rechte lijn, zonder rekening te houden met wegen en bochten.</span></div>`
++`<div class="call reken"><b>Stappenplan: echte afstand met een schaal</b><ol class="num">
+<li><b>Meet</b> de afstand op de kaart.</li>
+<li>Vermenigvuldig met het getal van de <b>schaal</b>.</li>
+<li>Reken om naar een handige <b>eenheid</b> (m of km).</li></ol></div>`
++`<div class="voorbeeld"><h4>Voorbeeld: 1 cm is 30 km</h4><p>Twee plaatsen liggen <b>4 cm</b> uit elkaar op de kaart.</p><div class="antwoord">4 &times; 30 = <b>120 km</b> hemelsbreed.</div></div>`
++`<div class="call waarom">Waarom is de echte weg <b>langer</b>? Een weg gaat om <b>obstakels</b> heen en maakt <b>bochten</b>. Hemelsbreed is altijd de <b>kortste</b> afstand.</div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Welke vergrotingsfactor hoort bij schaal 1 : 100?</p><p class="check-a"><b>100</b>.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden (6.4)</b><ul class="lst">
+<li><b>Schaal 1 : n</b>: in het echt <b>n keer</b> zo groot.</li>
+<li><b>Hemelsbreed</b> = in een rechte lijn.</li>
+<li>Reken om naar een <b>handige eenheid</b>.</li></ul></div>`},
+
+{heading:'6.5 Schaalmodel',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>rekenen met <b>schaalmodellen</b>, van model naar echt en terug</li></ul></div>`
++`<h5 class="sub">Model en werkelijkheid</h5>`
++`<div class="box"><h4>Schaal 1 : 25</h4><p>Een architect maakt een <b>model</b> van nieuwe huizen op <b>schaal 1 : 25</b>. De vergrotingsfactor is <b>25</b>.</p></div>`
++`<div class="vergelijk"><div class="vergelijk-kant"><h4>Model naar echt</h4><p>Maat model <b>&times; 25</b>.</p></div><div class="vergelijk-vs">vs</div><div class="vergelijk-kant"><h4>Echt naar model</h4><p>Echte maat <b>: 25</b>.</p></div></div>`
++`<div class="voorbeeld"><h4>Voorbeeld: de Domtoren</h4><p>Een model op schaal <b>1 : 300</b> is <b>37,4 cm</b> hoog. Hoe hoog is de echte toren in meters?</p><div class="antwoord">37,4 &times; 300 = <b>11 220 cm</b>. Omrekenen: 11 220 cm = <b>112,2 m</b>.</div></div>`
++`<div class="call warn"><b>Let op de eenheid.</b> Het antwoord komt eerst in <b>dezelfde eenheid</b> als het model (hier cm). Reken daarna om naar wat er <b>gevraagd</b> wordt.</div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Een model is op schaal 1 : 25. Hoe reken je van de echte maat naar het model?</p><p class="check-a">Echte maat <b>: 25</b>.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden (6.5)</b><ul class="lst">
+<li>Model naar echt: <b>&times;</b> het schaalgetal.</li>
+<li>Echt naar model: <b>:</b> het schaalgetal.</li>
+<li>Reken daarna om naar de <b>gevraagde eenheid</b>.</li></ul></div>`}
 ],
 terms:[
 ['Vergrotingsfactor','Het getal waarmee de maten van een origineel vermenigvuldigd worden om het beeld te krijgen: lengte beeld : lengte origineel.',0],

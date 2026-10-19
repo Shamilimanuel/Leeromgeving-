@@ -1,108 +1,23 @@
 import { registerChapter } from '../../../registry.js';
 
+/* Upgraded 2026-09-25 to the recipe of Economie TL4 H1 (change 6): every paragraph
+   got "Dit leer je" and a "Check jezelf" (taken from its own flashcard where
+   there was none), plus bold on its own glossary terms where it had little.
+   The text itself is unchanged. */
 registerChapter('economie|tl|4|2', {
 title:'Geld genoeg?',
 summary:[
 {heading:'2.1 Hoe geef jij je geld uit?',html:
- '<div class="box"><h4>Waar dit hoofdstuk over gaat</h4><p>Geld verdienen is één ding, er verstandig mee omgaan is minstens zo belangrijk. Je leert hoe je een budgetplan maakt, wat sparen en beleggen oplevert, wat lenen je kost en welke rol banken en de ECB spelen in de geldkringloop.</p></div>'
-
- +'<h5 class="sub">Grip op je geld</h5>'
- +'<div class="g2">'
- +'<div class="box"><h4>Budgetplan</h4><p>Een <b>budgetplan</b> is een overzicht van je verwachte inkomsten en uitgaven.</p></div>'
- +'<div class="box"><h4>Nibud</h4><p>Het <b>Nibud</b> (Nationaal Instituut voor Budgetvoorlichting) adviseert om je uitgaven te verdelen in dagelijkse uitgaven, vaste lasten en incidentele uitgaven, en je inkomsten en uitgaven zo op elkaar af te stemmen.</p></div></div>'
-
- +'<div class="box"><h4>Sparen voor later</h4><p>Door te <b>reserveren</b> spaar je gericht voor een grote, incidentele uitgave (bijvoorbeeld een nieuwe laptop of een vakantie) zodat je op tijd genoeg geld hebt.</p></div>'
-
- +'<div class="call">Door bewust te kiezen waar je je geld aan uitgeeft, of bij welke bank je spaart, kun je bijdragen aan een betere wereld.</div>'
-
- +'<div class="call sum"><b>Om te onthouden</b><ul class="lst"><li>Een budgetplan is een overzicht van verwachte inkomsten en uitgaven.</li><li>Het Nibud adviseert over dagelijkse uitgaven, vaste lasten en incidentele uitgaven.</li><li>Reserveren is sparen voor een grote, incidentele uitgave.</li></ul></div>'},
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst"><li>grip houden op je geld met een <b>budgetplan</b></li><li>wat het <b>Nibud</b> doet en waarom je <b>spaart</b></li></ul></div><div class="box"><h4>Waar dit hoofdstuk over gaat</h4><p>Geld verdienen is één ding, er verstandig mee omgaan is minstens zo belangrijk. Je leert hoe je een budgetplan maakt, wat sparen en beleggen oplevert, wat lenen je kost en welke rol banken en de ECB spelen in de geldkringloop.</p></div><h5 class="sub">Grip op je geld</h5><div class="g2"><div class="box"><h4>Budgetplan</h4><p>Een <b>budgetplan</b> is een overzicht van je verwachte inkomsten en uitgaven.</p></div><div class="box"><h4>Nibud</h4><p>Het <b>Nibud</b> (Nationaal Instituut voor Budgetvoorlichting) adviseert om je uitgaven te verdelen in dagelijkse uitgaven, vaste lasten en incidentele uitgaven, en je inkomsten en uitgaven zo op elkaar af te stemmen.</p></div></div><div class="box"><h4>Sparen voor later</h4><p>Door te <b>reserveren</b> spaar je gericht voor een grote, incidentele uitgave (bijvoorbeeld een nieuwe laptop of een vakantie) zodat je op tijd genoeg geld hebt.</p></div><div class="call">Door bewust te kiezen waar je je geld aan uitgeeft, of bij welke bank je spaart, kun je bijdragen aan een betere wereld.</div><div class="check" onclick="toonCheck(this)"><p class="check-v">Wat is een budgetplan?</p><p class="check-a">Een overzicht van je verwachte inkomsten en uitgaven.</p><span class="check-hint">Tik voor het antwoord</span></div><div class="call sum"><b>Om te onthouden</b><ul class="lst"><li>Een budgetplan is een overzicht van verwachte inkomsten en uitgaven.</li><li>Het Nibud adviseert over dagelijkse uitgaven, vaste lasten en incidentele uitgaven.</li><li>Reserveren is sparen voor een grote, incidentele uitgave.</li></ul></div>`},
 
 {heading:'2.2 Ga je sparen of beleggen?',html:
- '<h5 class="sub">Waarom spaar je?</h5>'
- +'<div class="g2">'
- +'<div class="box"><h4>Spaarmotieven</h4><p>Je kunt sparen voor een doel, voor de rente of uit voorzorg: dit noem je je <b>spaarmotieven</b>.</p></div>'
- +'<div class="box"><h4>Spaardeposito</h4><p>Op een <b>spaardeposito</b> zet je geld voor langere tijd weg tegen een vast rentepercentage.</p></div></div>'
-
- +'<h5 class="sub">Enkelvoudig of samengesteld?</h5>'
- +'<div class="g2">'
- +'<div class="box"><h4>Enkelvoudige rente</h4><p>Bij een spaardeposito reken je met <b>enkelvoudige rente</b>: rente die telkens na afloop van een jaar apart wordt uitgekeerd. Je spaartegoed zelf verandert niet.</p></div>'
- +'<div class="box"><h4>Samengestelde rente</h4><p>Bij andere spaarrekeningen krijg je vaak <b>samengestelde rente</b> (rente-op-rente): de rente wordt bij je spaartegoed bijgeschreven, en daar krijg je later weer rente over. Zo groeit je spaargeld sneller.</p></div></div>'
-
- +'<div class="call reken"><b>Reken mee: enkelvoudig vs. samengesteld</b>'
- +'<p>Je zet €1.000 voor 2 jaar op een rekening met 5% rente per jaar.</p>'
- +'<ol class="num">'
- +'<li><b>Enkelvoudige rente</b>: elk jaar krijg je €1.000 × 5% = €50 apart uitgekeerd. Na 2 jaar heb je €1.000 + €50 + €50 = <b>€1.100</b>.</li>'
- +'<li><b>Samengestelde rente, jaar 1</b>: €1.000 × 5% = €50 rente wordt bijgeschreven: je hebt nu €1.050.</li>'
- +'<li class="eind"><b>Samengestelde rente, jaar 2</b>, je krijgt nu ook rente over de bijgeschreven rente: €1.050 × 5% = €52,50. Totaal: <b>€1.102,50</b>, meer dan bij enkelvoudige rente.</li></ol></div>'
-
- +'<h5 class="sub">Nominaal versus reëel</h5>'
- +'<div class="g2">'
- +'<div class="box"><h4>Nominale rente</h4><p>De rente die de bank noemt, is de <b>nominale rente</b>.</p></div>'
- +'<div class="box"><h4>Reële rente</h4><p>Trek je daar de inflatie van af, dan krijg je de <b>reële rente</b>: die laat zien hoe de koopkracht van je spaargeld verandert.</p></div></div>'
-
- +'<div class="call reken"><b>Reken mee: reële rente</b>'
- +'<p>Je spaarrekening geeft 3% nominale rente. De inflatie is dat jaar 4%.</p>'
- +'<ol class="num">'
- +'<li><b>Nominale rente</b>, het percentage dat de bank noemt: <b>3%</b>.</li>'
- +'<li><b>Inflatie</b> dat jaar: <b>4%</b>.</li>'
- +'<li class="eind"><b>Reële rente</b> = nominale rente − inflatie = 3% − 4% = <b>−1%</b>. Er staat in euro\'s meer op je rekening, maar de koopkracht van je spaargeld daalt toch.</li></ol></div>'
-
- +'<h5 class="sub">Of toch maar beleggen?</h5>'
- +'<div class="g2">'
- +'<div class="box"><h4>Beleggen</h4><p>In plaats van sparen kun je ook <b>beleggen</b>: je koopt dan bijvoorbeeld aandelen, obligaties, goud of gebouwen waarvan je verwacht dat ze meer waard worden. De waardestijging bepaalt het <b>rendement</b> van je belegging: de opbrengst, meestal uitgedrukt in een percentage.</p></div>'
- +'<div class="box"><h4>Beleggen in crypto\'s</h4><p>Je kunt ook beleggen in crypto\'s, maar dat is riskant: crypto\'s hebben geen vaste waarde en de prijs kan snel stijgen én dalen. Beleggen kan meer opleveren dan sparen, maar brengt ook meer risico met zich mee.</p></div></div>'
-
- +'<div class="call warn"><b>Veelgemaakte fout:</b> verwar nominale rente niet met reële rente. De nominale rente is het percentage dat de bank noemt; pas na aftrek van de inflatie weet je wat je spaargeld écht meer waard wordt (de reële rente).</div>'
-
- +'<div class="call sum"><b>Om te onthouden</b><ul class="lst"><li>Drie spaarmotieven: voor een doel, voor de rente, uit voorzorg.</li><li>Enkelvoudige rente verandert je spaartegoed niet; samengestelde rente is rente-op-rente.</li><li>Reële rente = nominale rente − inflatie. Beleggen (bijvoorbeeld in aandelen, obligaties of crypto\'s) kent meer rendement én meer risico dan sparen.</li></ul></div>'},
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst"><li><b>enkelvoudige</b> en <b>samengestelde rente</b> berekenen</li><li>het verschil tussen <b>sparen</b> en <b>beleggen</b></li></ul></div><h5 class="sub">Waarom spaar je?</h5><div class="g2"><div class="box"><h4>Spaarmotieven</h4><p>Je kunt sparen voor een doel, voor de rente of uit voorzorg: dit noem je je <b>spaarmotieven</b>.</p></div><div class="box"><h4>Spaardeposito</h4><p>Op een <b>spaardeposito</b> zet je geld voor langere tijd weg tegen een vast rentepercentage.</p></div></div><h5 class="sub">Enkelvoudig of samengesteld?</h5><div class="g2"><div class="box"><h4>Enkelvoudige rente</h4><p>Bij een spaardeposito reken je met <b>enkelvoudige rente</b>: rente die telkens na afloop van een jaar apart wordt uitgekeerd. Je spaartegoed zelf verandert niet.</p></div><div class="box"><h4>Samengestelde rente</h4><p>Bij andere spaarrekeningen krijg je vaak <b>samengestelde rente</b> (rente-op-rente): de rente wordt bij je spaartegoed bijgeschreven, en daar krijg je later weer rente over. Zo groeit je spaargeld sneller.</p></div></div><div class="call reken"><b>Reken mee: enkelvoudig vs. samengesteld</b><p>Je zet €1.000 voor 2 jaar op een rekening met 5% rente per jaar.</p><ol class="num"><li><b>Enkelvoudige rente</b>: elk jaar krijg je €1.000 × 5% = €50 apart uitgekeerd. Na 2 jaar heb je €1.000 + €50 + €50 = <b>€1.100</b>.</li><li><b>Samengestelde rente, jaar 1</b>: €1.000 × 5% = €50 rente wordt bijgeschreven: je hebt nu €1.050.</li><li class="eind"><b>Samengestelde rente, jaar 2</b>, je krijgt nu ook rente over de bijgeschreven rente: €1.050 × 5% = €52,50. Totaal: <b>€1.102,50</b>, meer dan bij enkelvoudige rente.</li></ol></div><h5 class="sub">Nominaal versus reëel</h5><div class="g2"><div class="box"><h4>Nominale rente</h4><p>De rente die de bank noemt, is de <b>nominale rente</b>.</p></div><div class="box"><h4>Reële rente</h4><p>Trek je daar de inflatie van af, dan krijg je de <b>reële rente</b>: die laat zien hoe de koopkracht van je spaargeld verandert.</p></div></div><div class="call reken"><b>Reken mee: reële rente</b><p>Je spaarrekening geeft 3% nominale rente. De inflatie is dat jaar 4%.</p><ol class="num"><li><b>Nominale rente</b>, het percentage dat de bank noemt: <b>3%</b>.</li><li><b>Inflatie</b> dat jaar: <b>4%</b>.</li><li class="eind"><b>Reële rente</b> = nominale rente − inflatie = 3% − 4% = <b>−1%</b>. Er staat in euro's meer op je rekening, maar de koopkracht van je spaargeld daalt toch.</li></ol></div><h5 class="sub">Of toch maar beleggen?</h5><div class="g2"><div class="box"><h4>Beleggen</h4><p>In plaats van sparen kun je ook <b>beleggen</b>: je koopt dan bijvoorbeeld aandelen, obligaties, goud of gebouwen waarvan je verwacht dat ze meer waard worden. De waardestijging bepaalt het <b>rendement</b> van je belegging: de opbrengst, meestal uitgedrukt in een percentage.</p></div><div class="box"><h4>Beleggen in crypto's</h4><p>Je kunt ook beleggen in crypto's, maar dat is riskant: crypto's hebben geen vaste waarde en de prijs kan snel stijgen én dalen. Beleggen kan meer opleveren dan sparen, maar brengt ook meer risico met zich mee.</p></div></div><div class="call warn"><b>Veelgemaakte fout:</b> verwar nominale rente niet met reële rente. De nominale rente is het percentage dat de bank noemt; pas na aftrek van de inflatie weet je wat je spaargeld écht meer waard wordt (de reële rente).</div><div class="check" onclick="toonCheck(this)"><p class="check-v">Noem de drie spaarmotieven.</p><p class="check-a">Sparen voor een doel, voor de rente of uit voorzorg.</p><span class="check-hint">Tik voor het antwoord</span></div><div class="call sum"><b>Om te onthouden</b><ul class="lst"><li>Drie spaarmotieven: voor een doel, voor de rente, uit voorzorg.</li><li>Enkelvoudige rente verandert je spaartegoed niet; samengestelde rente is rente-op-rente.</li><li>Reële rente = nominale rente − inflatie. Beleggen (bijvoorbeeld in aandelen, obligaties of crypto's) kent meer rendement én meer risico dan sparen.</li></ul></div>`},
 
 {heading:'2.3 Wie leent, maakt schulden',html:
- '<div class="box"><h4>Waarom leen je?</h4><p>Mensen kunnen verschillende <b>leenmotieven</b> hebben om een lening te willen nemen. Je kunt lenen:</p>'
- +'<ul class="lst"><li>om een tijdelijk geldtekort te overbruggen;</li><li>omdat je een dure aankoop niet wilt uitstellen;</li><li>omdat je onverwacht dringend geld nodig hebt;</li><li>voor het kopen van een woning.</li></ul></div>'
-
- +'<div class="call">Bij een lening moet je altijd rekening houden met kosten.</div>'
-
- +'<h5 class="sub">Soorten leningen</h5>'
- +'<div class="g2">'
- +'<div class="box"><h4>Via de bank</h4><p>Voor de aanschaf van een consumptiegoed kun je <b>consumptief krediet</b> nemen. Bij een bank zijn de <b>kredietvormen</b>: de persoonlijke lening (vaste looptijd en vaste termijnbedragen) en het salariskrediet (rood staan op je betaalrekening tot een afgesproken bedrag, met een hoge rente).</p></div>'
- +'<div class="box"><h4>Via de leverancier</h4><p>Bij leveranciers zijn de kredietvormen koop op afbetaling of private lease.</p></div></div>'
-
- +'<div class="box"><h4>Hypothecaire lening</h4><p>Voor de koop van een huis sluit je een <b>hypothecaire lening</b> af. Daarbij dient het huis zelf als onderpand voor de bank.</p></div>'
-
- +'<div class="call reken"><b>Reken mee: kosten van lenen</b>'
- +'<p>Je leent €1.000 tegen 8% rente per jaar en betaalt na 1 jaar alles in één keer terug.</p>'
- +'<ol class="num">'
- +'<li><b>Geleend bedrag</b>: <b>€1.000</b>.</li>'
- +'<li><b>Rente</b>: €1.000 × 8% = <b>€80</b>.</li>'
- +'<li class="eind"><b>Terug te betalen</b> = geleend bedrag + rente = €1.000 + €80 = <b>€1.080</b>. Lenen kost dus geld: hoe hoger de rente, hoe duurder de lening.</li></ol></div>'
-
- +'<div class="call sum"><b>Om te onthouden</b><ul class="lst"><li>Leenmotieven: geldtekort overbruggen, dure aankoop, onverwachte uitgave, woning kopen.</li><li>Kredietvormen bij een bank zijn de persoonlijke lening en het salariskrediet; bij leveranciers zijn dat koop op afbetaling en private lease.</li><li>Consumptief krediet is voor consumptiegoederen; een hypothecaire lening is voor een woning.</li></ul></div>'},
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst"><li>waarom mensen <b>lenen</b></li><li>de <b>soorten leningen</b>: via de bank, de leverancier en de <b>hypotheek</b></li></ul></div><div class="box"><h4>Waarom leen je?</h4><p>Mensen kunnen verschillende <b>leenmotieven</b> hebben om een lening te willen nemen. Je kunt lenen:</p><ul class="lst"><li>om een tijdelijk geldtekort te overbruggen;</li><li>omdat je een dure aankoop niet wilt uitstellen;</li><li>omdat je onverwacht dringend geld nodig hebt;</li><li>voor het kopen van een woning.</li></ul></div><div class="call">Bij een lening moet je altijd rekening houden met kosten.</div><h5 class="sub">Soorten leningen</h5><div class="g2"><div class="box"><h4>Via de bank</h4><p>Voor de aanschaf van een consumptiegoed kun je <b>consumptief krediet</b> nemen. Bij een bank zijn de <b>kredietvormen</b>: de persoonlijke lening (vaste looptijd en vaste termijnbedragen) en het salariskrediet (rood staan op je betaalrekening tot een afgesproken bedrag, met een hoge rente).</p></div><div class="box"><h4>Via de leverancier</h4><p>Bij leveranciers zijn de kredietvormen koop op afbetaling of private lease.</p></div></div><div class="box"><h4>Hypothecaire lening</h4><p>Voor de koop van een huis sluit je een <b>hypothecaire lening</b> af. Daarbij dient het huis zelf als onderpand voor de bank.</p></div><div class="call reken"><b>Reken mee: kosten van lenen</b><p>Je leent €1.000 tegen 8% rente per jaar en betaalt na 1 jaar alles in één keer terug.</p><ol class="num"><li><b>Geleend bedrag</b>: <b>€1.000</b>.</li><li><b>Rente</b>: €1.000 × 8% = <b>€80</b>.</li><li class="eind"><b>Terug te betalen</b> = geleend bedrag + rente = €1.000 + €80 = <b>€1.080</b>. Lenen kost dus geld: hoe hoger de rente, hoe duurder de lening.</li></ol></div><div class="check" onclick="toonCheck(this)"><p class="check-v">Noem twee leenmotieven.</p><p class="check-a">Bijvoorbeeld een tijdelijk geldtekort overbruggen, of een dure aankoop niet willen uitstellen.</p><span class="check-hint">Tik voor het antwoord</span></div><div class="call sum"><b>Om te onthouden</b><ul class="lst"><li>Leenmotieven: geldtekort overbruggen, dure aankoop, onverwachte uitgave, woning kopen.</li><li>Kredietvormen bij een bank zijn de persoonlijke lening en het salariskrediet; bij leveranciers zijn dat koop op afbetaling en private lease.</li><li>Consumptief krediet is voor consumptiegoederen; een hypothecaire lening is voor een woning.</li></ul></div>`},
 
 {heading:'2.4 Geld moet rollen!',html:
- '<div class="box"><h4>Geldfuncties</h4><p>Geld heeft verschillende <b>geldfuncties</b>: het kan dienen als ruilmiddel, als rekenmiddel en als spaarmiddel.</p></div>'
-
- +'<h5 class="sub">De geldkringloop</h5>'
- +'<div class="box"><p>De uitdrukking \'geld moet rollen\' laat zien dat een goed functionerend geldverkeer onmisbaar is voor onze economie. Banken bemiddelen tussen de vraag naar geld en het aanbod van geld.</p></div>'
-
- +'<div class="g2">'
- +'<div class="box"><h4>Aanbod van geld</h4><p>Het <b>aanbod van geld</b> komt van spaarders: geld op spaarrekeningen. Zij ontvangen daarvoor rente.</p></div>'
- +'<div class="box"><h4>Vraag naar geld</h4><p>De <b>vraag naar geld</b> komt van gezinnen en bedrijven die willen lenen: gezinnen vooral voor consumptiegoederen, bedrijven vooral om te investeren. Zij betalen rente.</p></div></div>'
-
- +'<div class="call waarom"><b>Rente</b> is de prijs voor geld: net als bij een gewoon product bepalen vraag en aanbod hoe hoog die prijs is.</div>'
-
- +'<h5 class="sub">Wie bepaalt de rente?</h5>'
- +'<div class="g2">'
- +'<div class="box"><h4>ECB</h4><p>De basisrente wordt vastgesteld door de <b>ECB</b> (Europese Centrale Bank), de centrale bank van de eurozone. Neemt de vraag naar geld toe, dan stijgt de rente meestal.</p></div>'
- +'<div class="box"><h4>Commerciële banken</h4><p>Commerciële banken rekenen een hogere rente voor leningen waarbij zij meer risico lopen.</p></div></div>'
-
- +'<div class="call reken"><b>Reken mee: hoe verdient een bank?</b>'
- +'<p>Een bank geeft 1% rente aan spaarders en vraagt 5% rente aan mensen die geld lenen.</p>'
- +'<ol class="num">'
- +'<li><b>Rente die de bank betaalt</b> aan spaarders: <b>1%</b>.</li>'
- +'<li><b>Rente die de bank ontvangt</b> van leners: <b>5%</b>.</li>'
- +'<li class="eind"><b>Verdienste van de bank</b> = 5% − 1% = <b>4 procentpunt</b> marge over het uitgeleende geld. Zo verdienen banken geld door op leningen een hogere rente te vragen dan ze vergoeden op spaarrekeningen.</li></ol></div>'
-
- +'<div class="call sum"><b>Om te onthouden</b><ul class="lst"><li>De drie geldfuncties: ruilmiddel, rekenmiddel, spaarmiddel.</li><li>Aanbod van geld komt van spaarders; vraag naar geld komt van leners. Rente is de prijs voor geld.</li><li>De ECB stelt de basisrente vast; banken verdienen aan het verschil tussen leen- en spaarrente.</li></ul></div>'}
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst"><li>de <b>functies van geld</b> en de <b>geldkringloop</b></li><li>wie de <b>rente</b> bepaalt: <b>ECB</b> en <b>commerciële banken</b></li></ul></div><div class="box"><h4>Geldfuncties</h4><p>Geld heeft verschillende <b>geldfuncties</b>: het kan dienen als ruilmiddel, als rekenmiddel en als spaarmiddel.</p></div><h5 class="sub">De geldkringloop</h5><div class="box"><p>De uitdrukking 'geld moet rollen' laat zien dat een goed functionerend geldverkeer onmisbaar is voor onze economie. Banken bemiddelen tussen de vraag naar geld en het aanbod van geld.</p></div><div class="g2"><div class="box"><h4>Aanbod van geld</h4><p>Het <b>aanbod van geld</b> komt van spaarders: geld op spaarrekeningen. Zij ontvangen daarvoor rente.</p></div><div class="box"><h4>Vraag naar geld</h4><p>De <b>vraag naar geld</b> komt van gezinnen en bedrijven die willen lenen: gezinnen vooral voor consumptiegoederen, bedrijven vooral om te investeren. Zij betalen rente.</p></div></div><div class="call waarom"><b>Rente</b> is de prijs voor geld: net als bij een gewoon product bepalen vraag en aanbod hoe hoog die prijs is.</div><h5 class="sub">Wie bepaalt de rente?</h5><div class="g2"><div class="box"><h4>ECB</h4><p>De basisrente wordt vastgesteld door de <b>ECB</b> (Europese Centrale Bank), de centrale bank van de eurozone. Neemt de vraag naar geld toe, dan stijgt de rente meestal.</p></div><div class="box"><h4>Commerciële banken</h4><p>Commerciële banken rekenen een hogere rente voor leningen waarbij zij meer risico lopen.</p></div></div><div class="call reken"><b>Reken mee: hoe verdient een bank?</b><p>Een bank geeft 1% rente aan spaarders en vraagt 5% rente aan mensen die geld lenen.</p><ol class="num"><li><b>Rente die de bank betaalt</b> aan spaarders: <b>1%</b>.</li><li><b>Rente die de bank ontvangt</b> van leners: <b>5%</b>.</li><li class="eind"><b>Verdienste van de bank</b> = 5% − 1% = <b>4 procentpunt</b> marge over het uitgeleende geld. Zo verdienen banken geld door op leningen een hogere rente te vragen dan ze vergoeden op spaarrekeningen.</li></ol></div><div class="check" onclick="toonCheck(this)"><p class="check-v">Noem de drie geldfuncties.</p><p class="check-a">Ruilmiddel, rekenmiddel en spaarmiddel.</p><span class="check-hint">Tik voor het antwoord</span></div><div class="call sum"><b>Om te onthouden</b><ul class="lst"><li>De drie geldfuncties: ruilmiddel, rekenmiddel, spaarmiddel.</li><li>Aanbod van geld komt van spaarders; vraag naar geld komt van leners. Rente is de prijs voor geld.</li><li>De ECB stelt de basisrente vast; banken verdienen aan het verschil tussen leen- en spaarrente.</li></ul></div>`}
 ],
 terms:[
 ['Budgetplan','Een overzicht van je verwachte inkomsten en uitgaven.',0],

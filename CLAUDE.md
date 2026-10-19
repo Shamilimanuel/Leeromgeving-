@@ -5,28 +5,11 @@ Vite, Supabase backend, Python content pipeline. Full documentation: `README.md`
 
 **Starting cold? Read `TASK.md` first** — where the project stands today,
 what is done, and the ordered checklist of what comes next. When an item is
-finished, tick it, move it to *Recently done*, and update the date at the top.
+finished, tick it, move it to *Recently done*, update the date at the top, and
+run `npm run tasks` to refresh the progress bar (a test fails if you forget).
 
 **Language rule:** code, comments, file names and docs are English; every
 string a student sees (UI text, summaries, error messages) stays Dutch.
-
-## Layout
-
-```
-index.html              static shell with all screens (Dutch UI text)
-src/main.js             entry point
-src/config.js           Supabase URL/key, edge-function names, limits
-src/lib/                DOM, localStorage and Supabase-client helpers
-src/content/            registry, structure, queries, loader + subjects/<subject>/<level><year>/hNN-*.js
-src/state/              selection, progress (localStorage), notes, stats
-src/services/           auth, chat: the only modules that call Supabase
-src/ui/                 one module per screen/feature; globals.js = window bridge for inline handlers
-src/styles/             CSS split by concern; main.css imports them in order
-data/<subject>/*.json   raw book JSON (input)
-scripts/                build_content.py, check_content.py, content_formatter.py
-supabase/               migrations, Edge Functions, deploy notes
-tests/                  Vitest
-```
 
 ## Commands
 

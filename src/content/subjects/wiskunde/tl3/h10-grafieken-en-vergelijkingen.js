@@ -1,12 +1,86 @@
 import { registerChapter } from '../../../registry.js';
 
+/* Rebuilt 2026-09-25 to the recipe of Economie TL4 H1 (change 6). Added
+   from the book: the two rental tents (10.2: sum 100 + 520w, difference
+   60 - 20w), used again in 10.3 to make an equation of two formules
+   (w = 3). Terms, cards and quiz unchanged. */
 registerChapter('wiskunde|tl|3|10', {
 title:'Grafieken en vergelijkingen',
 summary:[
-{heading:'10.1 Bijzondere formules en grafieken',html:'<div class=\'box\'><h4>Waar gaat dit hoofdstuk over?</h4><p>In dit hoofdstuk teken je bijzondere grafieken (zoals y = getal en x = getal), en leer je grafieken bij elkaar op te tellen of van elkaar af te trekken (somgrafiek en verschilgrafiek). Ook leer je vergelijkingen oplossen met de balansmethode en met inklemmen.</p></div><div class=\'call\'>Wanneer je wilt leren hoe je een bepaalde make-up aanbrengt of hoe je een gerecht klaarmaakt, kun je daar uitlegfilmpjes bij zoeken. Ook voor veel schoolvakken zijn online uitlegfilmpjes, vaak gemaakt door leraren of leerlingen zelf.</div><div class=\'box\'><h4>Bijzondere grafieken</h4><p>Formules met maar één variabele geven <b>bijzondere grafieken</b>. Bij y = getal krijg je een <b>horizontale</b> lijn (bijvoorbeeld y = 3). Bij x = getal krijg je een <b>verticale</b> lijn (bijvoorbeeld x = 2). Bij y = x liggen alle punten met gelijke x- en y-coördinaat op de grafiek. Bij y = −x zijn de x- en y-coördinaat van elk punt elkaars tegengestelde.</p></div><div class=\'tblwrap\'><table class=\'tbl\'><tr><th>Formule</th><th>Soort grafiek</th></tr><tr><td>y = getal</td><td>horizontale lijn</td></tr><tr><td>x = getal</td><td>verticale lijn</td></tr><tr><td>y = x</td><td>lijn door (0,0), (1,1), (2,2), ...</td></tr><tr><td>y = −x</td><td>lijn door (0,0), (1,−1), (−1,1), ...</td></tr></table></div><div class=\'call warn\'><b>Veelgemaakte fout:</b> verwissel niet y = getal (horizontaal) met x = getal (verticaal). Bij y = getal is de y-coördinaat van elk punt hetzelfde; bij x = getal is de x-coördinaat van elk punt hetzelfde.</div>'},
-{heading:'10.2 Somgrafiek en verschilgrafiek',html:'<div class=\'box\'><h4>Grafieken optellen en aftrekken</h4><p>Twee formules met dezelfde variabele kun je bij elkaar optellen (<b>somformule</b>) of van elkaar aftrekken (<b>verschilformule</b>). De grafiek van de somformule heet de <b>somgrafiek</b>, de grafiek van de verschilformule heet de <b>verschilgrafiek</b>. Ook grafieken zonder bekende formule kun je optellen of aftrekken: maak dan eerst een somtabel of verschiltabel.</p></div><div class=\'voorbeeld\'><h4>Voorbeeld: verschilgrafiek</h4><p>De eigenaar van een kiosk berekent elke dag de omzet en de kosten. Teken de verschilgrafiek omzet − kosten (de winst).</p><ol class=\'num\'><li>Zet de gegevens uit de grafieken in een tabel.</li><li>Bereken steeds winst = omzet − kosten.</li><li>Teken de verschilgrafiek in hetzelfde assenstelsel.</li></ol><div class=\'antwoord\'>Antwoord: is de winst op een dag negatief, dan is er die dag verlies.</div></div><div class=\'call\'>Snijdt een verschilgrafiek de horizontale as, dan zijn de twee oorspronkelijke grafieken op dat punt gelijk aan elkaar (het verschil is dan 0).</div>'},
-{heading:'10.3 Vergelijkingen oplossen met de balansmethode',html:'<div class=\'box\'><h4>Linkerlid en rechterlid</h4><p>Bij een vergelijking heb je, net als bij een balans, twee kanten: links van het = teken is het <b>linkerlid</b>, rechts van het = teken is het <b>rechterlid</b>. De letter in de vergelijking heet de <b>variabele</b>. Je lost een vergelijking op met de <b>balansmethode</b>: houd de balans in evenwicht, doe links en rechts hetzelfde.</p></div><div class=\'box\'><h4>Stappenplan balansmethode</h4><p>1. Zorg dat de variabele uit het rechterlid verdwijnt. 2. Zorg dat in het linkerlid de losse getallen verdwijnen. 3. Deel door het getal dat voor de variabele staat.</p></div><div class=\'voorbeeld\'><h4>Voorbeeld: vergelijking oplossen</h4><p>Los op met de balansmethode: −3a + 2 = 6 + 5a.</p><ol class=\'num\'><li>Rechterlid: trek 5a af van beide kanten: −8a + 2 = 6.</li><li>Linkerlid: trek 2 af van beide kanten: −8a = 4.</li><li>Deel door −8: a = −0,5.</li></ol><div class=\'antwoord\'>Antwoord: a = −0,5.</div></div><div class=\'box\'><h4>Vergelijking maken van twee formules</h4><p>Twee formules met dezelfde variabele kun je met elkaar vergelijken. Je neemt van beide formules het rechterlid en stelt die aan elkaar gelijk; daarna los je de vergelijking op met de balansmethode.</p></div><div class=\'call warn\'><b>Veelgemaakte fout:</b> bij het wegwerken van een term aan één kant moet je precies dezelfde bewerking aan de andere kant ook uitvoeren, anders is de balans niet meer in evenwicht.</div>'},
-{heading:'10.4 Oplossen met inklemmen',html:'<div class=\'box\'><h4>Inklemmen</h4><p>Vergelijkingen met een macht of een wortel los je op met <b>inklemmen</b>: je vult steeds een ander getal in, tot je zo dicht mogelijk bij de oplossing bent. Je \'klemt\' de oplossing in tussen een getal dat te weinig geeft en een getal dat te veel geeft.</p></div><div class=\'voorbeeld\'><h4>Voorbeeld: vergelijking oplossen met inklemmen</h4><p>Los de vergelijking 7b³ = 786 op met inklemmen.</p><ol class=\'num\'><li>Probeer b = 4,8: 7 × 4,8³ = 774,144 (te weinig).</li><li>Probeer b = 4,9: 7 × 4,9³ = 823,543 (te veel).</li><li>Bij b = 4,8 ligt de uitkomst het dichtst bij 786.</li></ol><div class=\'antwoord\'>Antwoord: b = 4,8.</div></div><div class=\'call\'>Bij inklemmen laat je altijd zien welke waarde te veel en welke waarde te weinig geeft, zodat duidelijk is tussen welke twee getallen de oplossing ligt.</div>'}
+{heading:'10.1 Bijzondere formules en grafieken',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>de grafieken van <b>y = getal</b>, <b>x = getal</b>, <b>y = x</b> en <b>y = &minus;x</b> tekenen</li></ul></div>`
++`<div class="box"><h4>Waar dit hoofdstuk over gaat</h4><p>Je tekent <b>bijzondere grafieken</b>, maakt <b>somgrafieken</b> en <b>verschilgrafieken</b>, en lost <b>vergelijkingen</b> op met de <b>balansmethode</b> en met <b>inklemmen</b>.</p></div>`
++`<h5 class="sub">Rechte lijnen met één variabele</h5>`
++`<div class="tblwrap"><table class="tbl"><tr><th>Formule</th><th>Grafiek</th></tr><tr><td><b>y = getal</b>, bijv. y = 3</td><td><b>horizontale</b> lijn</td></tr><tr><td><b>x = getal</b>, bijv. x = 2</td><td><b>verticale</b> lijn</td></tr><tr><td><b>y = x</b></td><td>schuin omhoog door (0, 0), (1, 1), (2, 2)</td></tr><tr><td><b>y = &minus;x</b></td><td>schuin omlaag door (0, 0), (1, &minus;1), (&minus;1, 1)</td></tr></table></div>`
++`<div class="call waarom">Waarom is y = 3 <b>horizontaal</b>? Elk punt op die lijn heeft <b>y-coördinaat 3</b>, wat x ook is. Alle punten liggen dus op <b>dezelfde hoogte</b>.</div>`
++`<div class="call reken"><b>Stappenplan: zo'n grafiek tekenen</b><ol class="num">
+<li>Kies een paar <b>x-waarden</b> (of y-waarden bij x = getal).</li>
+<li>Zoek de bijbehorende <b>punten</b>.</li>
+<li>Trek een <b>rechte lijn</b> door de punten.</li></ol></div>`
++`<div class="call warn"><b>Veelgemaakte fout:</b> y = getal en x = getal verwisselen. <b>y = getal</b>: overal dezelfde <b>hoogte</b>, dus horizontaal. <b>x = getal</b>: overal even ver naar <b>rechts</b>, dus verticaal.</div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Hoe loopt de grafiek van x = 2?</p><p class="check-a"><b>Verticaal</b>, door alle punten met x = 2.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden (10.1)</b><ul class="lst">
+<li><b>y = getal</b>: horizontaal. <b>x = getal</b>: verticaal.</li>
+<li><b>y = x</b>: x en y gelijk. <b>y = &minus;x</b>: elkaars tegengestelde.</li></ul></div>`},
+
+{heading:'10.2 Somgrafiek en verschilgrafiek',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>een <b>somformule</b> en een <b>verschilformule</b> maken</li>
+<li>een <b>somgrafiek</b> en een <b>verschilgrafiek</b> tekenen</li></ul></div>`
++`<h5 class="sub">Formules optellen en aftrekken</h5>`
++`<div class="box"><h4>Som is plus, verschil is min</h4><p>Formules met <b>dezelfde variabelen</b> kun je <b>optellen</b> (<b>somformule</b>) of <b>aftrekken</b> (<b>verschilformule</b>). Je telt de <b>getallen</b> op of trekt ze af; de variabelen blijven hetzelfde.</p></div>`
++`<div class="voorbeeld"><h4>Voorbeeld: twee tenten huren</h4><p>Tent 1: <b>huurprijs (&euro;) = 20 + 270w</b>. Tent 2: <b>huurprijs (&euro;) = 80 + 250w</b>. Hierin is w de tijd in weken.</p><div class="antwoord">Samen: 20 + 80 = 100 en 270 + 250 = 520, dus <b>huurprijs = 100 + 520w</b>. Tent 2 &minus; tent 1: 80 &minus; 20 = 60 en 250 &minus; 270 = &minus;20, dus <b>huurprijs = 60 &minus; 20w</b>.</div></div>`
++`<h5 class="sub">Zonder formule</h5>`
++`<div class="call reken"><b>Stappenplan: verschilgrafiek uit twee grafieken</b><ol class="num">
+<li>Lees de twee grafieken af en zet de getallen in een <b>tabel</b>.</li>
+<li>Reken per kolom het <b>verschil</b> uit (bij een somgrafiek de <b>som</b>).</li>
+<li>Teken de nieuwe grafiek in <b>hetzelfde assenstelsel</b>.</li></ol></div>`
++`<div class="voorbeeld"><h4>Voorbeeld: winst van een kiosk</h4><p>Een kiosk heeft elke dag <b>omzet</b> en <b>kosten</b>. Teken de winst: omzet &minus; kosten.</p><div class="antwoord">Per dag: <b>winst = omzet &minus; kosten</b>. Komt de verschilgrafiek <b>onder de horizontale as</b>, dan is er die dag <b>verlies</b>.</div></div>`
++`<div class="call waarom">Waarom zegt het snijpunt met de horizontale as iets? Daar is het verschil <b>0</b>: de twee oorspronkelijke grafieken zijn daar <b>even hoog</b>.</div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Wat is een verschilformule?</p><p class="check-a">Twee formules met dezelfde variabelen <b>van elkaar afgetrokken</b>.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden (10.2)</b><ul class="lst">
+<li><b>Som</b> = optellen, <b>verschil</b> = aftrekken.</li>
+<li>Zonder formule: eerst een <b>tabel</b>.</li>
+<li>Verschilgrafiek op 0: de grafieken zijn daar <b>gelijk</b>.</li></ul></div>`},
+
+{heading:'10.3 Vergelijkingen oplossen met de balansmethode',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>een vergelijking met de <b>variabele aan twee kanten</b> oplossen met de <b>balansmethode</b></li>
+<li>een <b>vergelijking maken</b> van twee formules</li></ul></div>`
++`<h5 class="sub">Linkerlid en rechterlid</h5>`
++`<div class="box"><h4>Twee kanten</h4><p>Links van het = teken staat het <b>linkerlid</b>, rechts het <b>rechterlid</b>. De letter is de <b>variabele</b>. Bij de <b>balansmethode</b> doe je links en rechts <b>hetzelfde</b>, zodat de balans in evenwicht blijft.</p></div>`
++`<div class="call reken"><b>Stappenplan: balansmethode</b><ol class="num">
+<li>Laat de <b>variabele</b> uit het <b>rechterlid</b> verdwijnen.</li>
+<li>Laat de <b>losse getallen</b> uit het <b>linkerlid</b> verdwijnen.</li>
+<li><b>Deel</b> door het getal vóór de variabele.</li></ol></div>`
++`<div class="voorbeeld"><h4>Voorbeeld: &minus;3a + 2 = 6 + 5a</h4><p>Los op.</p><div class="antwoord">Beide kanten <b>&minus; 5a</b>: &minus;8a + 2 = 6. Beide kanten <b>&minus; 2</b>: &minus;8a = 4. Delen door <b>&minus;8</b>: <b>a = &minus;0,5</b>.</div></div>`
++`<h5 class="sub">Twee formules gelijkstellen</h5>`
++`<div class="voorbeeld"><h4>Voorbeeld: wanneer kosten de tenten evenveel?</h4><p>Tent 1: 20 + 270w. Tent 2: 80 + 250w.</p><div class="antwoord">Stel de rechterleden gelijk: <b>20 + 270w = 80 + 250w</b>. &minus; 250w: 20 + 20w = 80. &minus; 20: 20w = 60. : 20: <b>w = 3</b>. Na 3 weken kosten ze allebei 20 + 810 = <b>&euro;830</b>.</div></div>`
++`<div class="call warn"><b>Let op het minteken:</b> deel je door een <b>negatief</b> getal, dan klapt het teken van je antwoord om: 4 : &minus;8 = <b>&minus;0,5</b>.</div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Wat is stap 1 van de balansmethode?</p><p class="check-a">De <b>variabele</b> uit het <b>rechterlid</b> laten verdwijnen.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden (10.3)</b><ul class="lst">
+<li>Variabele rechts weg, losse getallen links weg, dan <b>delen</b>.</li>
+<li>Twee formules: <b>rechterleden gelijkstellen</b>.</li>
+<li>Links en rechts steeds <b>hetzelfde</b> doen.</li></ul></div>`},
+
+{heading:'10.4 Oplossen met inklemmen',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>een vergelijking met een <b>macht</b> oplossen met <b>inklemmen</b></li></ul></div>`
++`<h5 class="sub">Proberen en insluiten</h5>`
++`<div class="box"><h4>Waarom inklemmen?</h4><p>Staat er een <b>macht</b> in een vergelijking, dan werkt de balansmethode niet. Je <b>probeert</b> steeds een ander getal en klemt de oplossing in tussen een getal dat <b>te weinig</b> en een getal dat <b>te veel</b> geeft.</p></div>`
++`<div class="call reken"><b>Stappenplan: inklemmen</b><ol class="num">
+<li>Probeer een getal en reken uit.</li>
+<li>Noteer of het <b>te weinig</b> of <b>te veel</b> is.</li>
+<li>Kies het volgende getal <b>tussen</b> je grenzen.</li>
+<li>Ga door tot de gevraagde <b>nauwkeurigheid</b>, en kies het getal dat het <b>dichtst</b> bij de uitkomst komt.</li></ol></div>`
++`<div class="voorbeeld"><h4>Voorbeeld: 7b&sup3; = 786</h4><p>Los op in één decimaal.</p><div class="antwoord">b = 4,8: 7 &times; 4,8&sup3; = 774,144, <b>te weinig</b>. b = 4,9: 823,543, <b>te veel</b>. 786 ligt veel dichter bij 774 dan bij 824, dus <b>b &asymp; 4,8</b>.</div></div>`
++`<div class="call warn"><b>Laat je werk zien:</b> schrijf bij elk getal dat je probeert de <b>uitkomst</b> en of het te weinig of te veel is. Zo ziet de lezer tussen welke twee getallen de oplossing ligt.</div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Wanneer gebruik je inklemmen in plaats van de balansmethode?</p><p class="check-a">Als er een <b>macht</b> (of wortel) in de vergelijking staat.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden (10.4)</b><ul class="lst">
+<li><b>Macht</b> in de vergelijking: inklemmen.</li>
+<li>Noteer steeds <b>te weinig</b> of <b>te veel</b>.</li>
+<li>Kies het getal dat het <b>dichtst</b> bij de uitkomst komt.</li></ul></div>`}
 ],
 terms:[
 ['Bijzondere grafiek','Een grafiek die hoort bij een formule met maar één variabele, zoals y = getal, x = getal, y = x of y = −x.',0],

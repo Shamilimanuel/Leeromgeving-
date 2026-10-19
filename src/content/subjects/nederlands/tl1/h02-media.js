@@ -1,14 +1,114 @@
 import { registerChapter } from '../../../registry.js';
 
+/* Rebuilt 2026-09-25 to the recipe of Economie TL4 H1 (change 6). Same
+   content and term boxes, restructured. Terms, cards and quiz unchanged. */
 registerChapter('nederlands|tl|1|2', {
 title:'Media',
 summary:[
-{heading:'Apps',html:'<div class=\'box\'><h4>Waar gaat dit hoofdstuk over?</h4><p>In dit hoofdstuk leer je kritisch omgaan met media: hoe herken je een startscherm en volgscherm van een app, hoe beoordeel je of informatie betrouwbaar is, hoe brainstorm je online over een idee, hoe ontwerp je een prototype (mock-up) van een app, hoe geef je een pitch en hoe evalueer je je eigen aanpak en product aan het einde van een project.</p></div><div class=\'box\'><h4>Hoe zit een app in elkaar?</h4><p>Een app heeft verschillende schermen waar je doorheen navigeert. Het <b>startscherm</b> is het eerste scherm dat je ziet als je een app of site opent. Vanaf het startscherm kom je via knoppen op <b>volgschermen</b> terecht: schermen die pas verschijnen nadat je ergens op hebt geklikt.</p></div><div class=\'term\'><b>Startscherm</b><span>eerste scherm dat je ziet als je een app of site opent</span></div><div class=\'term\'><b>Volgscherm</b><span>een scherm dat na het startscherm komt; je komt er door op iets in het startscherm te klikken</span></div><div class=\'call\'>Bij het bekijken en beoordelen van een app let je op hoe duidelijk de knoppen zijn en of je makkelijk van het startscherm naar de juiste informatie navigeert.</div>'},
-{heading:'Betrouwbaarheid',html:'<div class=\'box\'><h4>Is deze informatie betrouwbaar?</h4><p>Niet alle informatie die je online tegenkomt klopt. Sommige berichten zijn <b>nepnieuws</b>: nieuws dat opzettelijk verspreid wordt, vaak via sociale media, terwijl het niet waar is. Voordat je informatie gebruikt of deelt, controleer je daarom of de bron betrouwbaar is.</p></div><div class=\'term\'><b>Nepnieuws</b><span>nieuws dat opzettelijk verspreid wordt, vaak via sociale media en niet klopt</span></div><div class=\'call sum\'><b>Zo controleer je of informatie betrouwbaar is</b><ul class=\'lst\'><li>Kijk wie de afzender is: is het een bekende, betrouwbare organisatie?</li><li>Controleer of andere bronnen hetzelfde beweren.</li><li>Let op of het bericht bedoeld is om je te overtuigen of te choqueren (een teken van nepnieuws).</li><li>Kijk of de informatie recent en actueel is.</li></ul></div>'},
-{heading:'Online brainstormen',html:'<div class=\'box\'><h4>Ideeën verzamelen</h4><p>Bij <b>brainstormen</b> wissel je ideeën uit met anderen. Dat kan ook online, bijvoorbeeld met een gedeeld document of digitaal bord. Het doel is om zoveel mogelijk ideeën te verzamelen, zonder ze meteen te beoordelen.</p></div><div class=\'term\'><b>Brainstormen</b><span>ideeën uitwisselen met anderen om tot een goed plan of ontwerp te komen</span></div><div class=\'call sum\'><b>Zo brainstorm je online</b><ul class=\'lst\'><li>Noteer eerst zelf een paar ideeën.</li><li>Deel je ideeën in een gezamenlijk document of digitaal bord.</li><li>Reageer op de ideeën van anderen en bouw erop voort.</li><li>Selecteer aan het eind samen de beste ideeën.</li></ul></div>'},
-{heading:'Een prototype ontwerpen',html:'<div class=\'box\'><h4>Een proefmodel maken</h4><p>Een <b>prototype</b> is een proefmodel van een product. Als je een product wilt maken, bijvoorbeeld een nieuwe auto, dan is het handig om eerst een proefmodel te maken. Zo kun je snel en goedkoop je idee testen, om zo te leren wat werkt en wat niet.</p><p>Een prototype kan van alles zijn: een tekening, een voorwerp van karton, papier of klei, een stripverhaal, een toneelstukje enzovoort. Alles kan, als het maar helpt om een duidelijk beeld te geven van het idee of het product.</p><p>Een prototype van een app noem je ook wel een <b>mock-up</b>: een voorbeeldscherm (of voorbeeldschermen) van de app dat laat zien hoe de app eruit komt te zien en wat de app straks allemaal kan.</p></div><div class=\'term\'><b>Prototype</b><span>een proefmodel van een product, waarmee je je idee snel en goedkoop kunt testen</span></div><div class=\'term\'><b>Mock-up</b><span>een prototype van een app: een voorbeeldscherm dat laat zien hoe de app eruitziet en wat hij kan</span></div><div class=\'term\'><b>Projectsjabloon</b><span>een soort invulvragenlijst die je steeds weer kunt gebruiken bij projecten die op elkaar lijken</span></div><div class=\'call\'>Bij het maken van een mock-up moet je aan heel veel dingen denken. Om zeker te weten dat je niks vergeet, kun je een projectsjabloon invullen.</div>'},
-{heading:'Pitchen',html:'<div class=\'box\'><h4>Kort en overtuigend presenteren</h4><p>Bij <b>pitchen</b> presenteer je heel kort, soms zelfs maximaal één minuut. Tijdens het pitchen wil je je publiek overhalen, bijvoorbeeld om jouw product te kopen of jouw idee te steunen.</p></div><div class=\'term\'><b>Pitchen</b><span>heel kort presenteren, waarbij je probeert je publiek te overtuigen van jouw idee of product</span></div><div class=\'call sum\'><b>Zo geef je een goede pitch</b><ul class=\'lst\'><li>Vertel meteen wat je idee of product is en wat het bijzonder maakt.</li><li>Wees kort en bondig: je hebt maar weinig tijd.</li><li>Sluit af met een duidelijke oproep, bijvoorbeeld waarom het publiek \'ja\' moet zeggen.</li></ul></div>'},
-{heading:'Evalueren en verslag doen',html:'<div class=\'box\'><h4>Terugkijken op je product en aanpak</h4><p>Aan het einde van een project is het belangrijk om te <b>evalueren</b>: kritisch terugkijken op wat je hebt gemaakt en hoe je te werk bent gegaan. Je bekijkt wat goed ging en wat de volgende keer beter kan.</p></div><div class=\'call sum\'><b>Waar let je op bij evalueren?</b><ul class=\'lst\'><li>Is het product geworden zoals je van tevoren had bedacht?</li><li>Wat vond je van de samenwerking met anderen?</li><li>Welke feedback heb je gekregen en wat heb je daarmee gedaan?</li><li>Wat zou je een volgende keer anders aanpakken?</li></ul></div><div class=\'call waarom\'>Evalueren helpt je om van een project te leren, zodat je het de volgende keer nog beter aanpakt.</div>'}
+{heading:'Apps',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>hoe een <b>app</b> in elkaar zit: <b>startscherm</b> en <b>volgschermen</b></li></ul></div>`
++`<div class="box"><h4>Waar dit hoofdstuk over gaat</h4><p>Je leert <b>kritisch</b> met media omgaan: hoe een <b>app</b> werkt, of informatie <b>betrouwbaar</b> is, online <b>brainstormen</b>, een <b>prototype</b> van een app ontwerpen, <b>pitchen</b> en aan het eind <b>evalueren</b>.</p></div>`
++`<h5 class="sub">Schermen</h5>`
++`<div class="vergelijk"><div class="vergelijk-kant"><h4>Startscherm</h4><p>Het <b>eerste</b> scherm dat je ziet als je een app of site opent.</p></div><div class="vergelijk-vs">vs</div><div class="vergelijk-kant"><h4>Volgscherm</h4><p>Een scherm dat pas komt als je op iets <b>klikt</b> in het startscherm.</p></div></div>`
++`<div class="call reken"><b>Zo beoordeel je een app</b><ol class="num">
+<li>Bekijk het <b>startscherm</b>: is meteen duidelijk wat de app doet?</li>
+<li>Zijn de <b>knoppen</b> duidelijk?</li>
+<li>Kom je makkelijk bij de juiste <b>informatie</b> via de volgschermen?</li></ol></div>`
++`<div class="voorbeeld"><h4>Voorbeeld: een weer-app</h4><p>Je opent de app en ziet het weer van vandaag. Je tikt op &lsquo;morgen&rsquo;.</p><div class="antwoord">Het weer van vandaag is het <b>startscherm</b>. Het scherm met morgen is een <b>volgscherm</b>: het komt pas na een <b>klik</b>.</div></div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Hoe kom je op een volgscherm?</p><p class="check-a">Door op iets in het <b>startscherm</b> te <b>klikken</b>.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden</b><ul class="lst">
+<li><b>Startscherm</b>: het eerste scherm.</li>
+<li><b>Volgscherm</b>: komt na een klik.</li>
+<li>Goede app: duidelijke <b>knoppen</b>, makkelijk <b>navigeren</b>.</li></ul></div>`},
+
+{heading:'Betrouwbaarheid',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>controleren of <b>online informatie</b> <b>betrouwbaar</b> is</li>
+<li><b>nepnieuws</b> herkennen</li></ul></div>`
++`<h5 class="sub">Klopt het wel?</h5>`
++`<div class="term"><b>Nepnieuws</b><span>Nieuws dat opzettelijk verspreid wordt, vaak via sociale media, terwijl het niet klopt.</span></div>`
++`<div class="call reken"><b>Stappenplan: is het betrouwbaar?</b><ol class="num">
+<li>Wie is de <b>afzender</b>? Een bekende, betrouwbare organisatie?</li>
+<li>Zeggen <b>andere bronnen</b> hetzelfde?</li>
+<li>Wil het bericht je vooral <b>overtuigen</b> of <b>choqueren</b>? Dan oppassen.</li>
+<li>Is de informatie <b>recent</b>?</li></ol></div>`
++`<div class="vergelijk"><div class="vergelijk-kant"><h4>Betrouwbaar</h4><p>Bekende <b>afzender</b>, andere bronnen zeggen hetzelfde, <b>actueel</b>.</p></div><div class="vergelijk-vs">vs</div><div class="vergelijk-kant"><h4>Verdacht</h4><p>Onbekende afzender, <b>schokkende</b> kop, nergens anders te vinden.</p></div></div>`
++`<div class="call waarom">Waarom eerst checken voordat je <b>deelt</b>? Als je nepnieuws deelt, help je het <b>verspreiden</b>, ook als je het niet zo bedoelt.</div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Wat is nepnieuws?</p><p class="check-a">Nieuws dat <b>opzettelijk</b> verspreid wordt terwijl het <b>niet klopt</b>.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden</b><ul class="lst">
+<li>Check <b>afzender</b>, <b>andere bronnen</b>, <b>doel</b> en <b>datum</b>.</li>
+<li>Eerst checken, dan pas <b>delen</b>.</li></ul></div>`},
+
+{heading:'Online brainstormen',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>samen <b>online brainstormen</b></li></ul></div>`
++`<h5 class="sub">Zoveel mogelijk ideeën</h5>`
++`<div class="term"><b>Brainstormen</b><span>Ideeën uitwisselen met anderen om tot een goed plan of ontwerp te komen.</span></div>`
++`<div class="box"><h4>Online</h4><p>Brainstormen kan ook <b>online</b>, met een <b>gedeeld document</b> of een <b>digitaal bord</b>. Het doel: zoveel mogelijk <b>ideeën</b>, zonder ze meteen te <b>beoordelen</b>.</p></div>`
++`<div class="call reken"><b>Stappenplan: online brainstormen</b><ol class="num">
+<li>Noteer eerst <b>zelf</b> een paar ideeën.</li>
+<li>Zet ze in het <b>gezamenlijke</b> document of bord.</li>
+<li><b>Reageer</b> op ideeën van anderen en bouw erop voort.</li>
+<li>Kies aan het eind <b>samen</b> de beste ideeën.</li></ol></div>`
++`<div class="call waarom">Waarom niet meteen <b>beoordelen</b>? Als je elk idee meteen afkeurt, durven mensen minder te zeggen. Een raar idee kan juist een <b>goed</b> idee opleveren.</div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Wat doe je aan het eind van een brainstorm?</p><p class="check-a">Samen de <b>beste ideeën</b> kiezen.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden</b><ul class="lst">
+<li>Eerst <b>veel</b> ideeën, pas later <b>kiezen</b>.</li>
+<li>Bouw voort op ideeën van <b>anderen</b>.</li></ul></div>`},
+
+{heading:'Een prototype ontwerpen',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>wat een <b>prototype</b> en een <b>mock-up</b> zijn</li>
+<li>een <b>projectsjabloon</b> gebruiken</li></ul></div>`
++`<h5 class="sub">Eerst een proefmodel</h5>`
++`<div class="term"><b>Prototype</b><span>Een proefmodel van een product, waarmee je je idee snel en goedkoop kunt testen.</span></div>`
++`<div class="box"><h4>Van alles mogelijk</h4><p>Een <b>prototype</b> kan een <b>tekening</b> zijn, iets van <b>karton</b> of <b>klei</b>, een stripverhaal of een toneelstukje. Alles mag, als het maar een <b>duidelijk beeld</b> geeft van het idee.</p></div>`
++`<div class="term"><b>Mock-up</b><span>Een prototype van een app: voorbeeldschermen die laten zien hoe de app eruitziet en wat hij kan.</span></div>`
++`<div class="term"><b>Projectsjabloon</b><span>Een soort invulvragenlijst die je steeds opnieuw kunt gebruiken bij projecten die op elkaar lijken.</span></div>`
++`<div class="call reken"><b>Stappenplan: een mock-up maken</b><ol class="num">
+<li>Vul het <b>projectsjabloon</b> in, zodat je niets vergeet.</li>
+<li>Teken het <b>startscherm</b>.</li>
+<li>Teken de belangrijkste <b>volgschermen</b> en wat erop staat.</li>
+<li><b>Test</b>: snapt iemand anders hoe de app werkt?</li></ol></div>`
++`<div class="call waarom">Waarom een prototype? Zo leer je <b>snel en goedkoop</b> wat werkt en wat niet, <b>voordat</b> je het echte product maakt.</div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Hoe heet een prototype van een app?</p><p class="check-a">Een <b>mock-up</b>.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden</b><ul class="lst">
+<li><b>Prototype</b> = proefmodel; bij een app: <b>mock-up</b>.</li>
+<li><b>Projectsjabloon</b> zodat je niets vergeet.</li></ul></div>`},
+
+{heading:'Pitchen',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li><b>kort</b> en <b>overtuigend</b> presenteren: pitchen</li></ul></div>`
++`<h5 class="sub">In één minuut overtuigen</h5>`
++`<div class="term"><b>Pitchen</b><span>Heel kort presenteren (soms maximaal één minuut), waarbij je je publiek probeert te overtuigen van je idee of product.</span></div>`
++`<div class="call reken"><b>Stappenplan: een goede pitch</b><ol class="num">
+<li>Vertel <b>meteen</b> wat je idee of product is.</li>
+<li>Zeg wat het <b>bijzonder</b> maakt.</li>
+<li>Wees <b>kort en bondig</b>.</li>
+<li>Sluit af met een duidelijke <b>oproep</b>: waarom moet je publiek &lsquo;ja&rsquo; zeggen?</li></ol></div>`
++`<div class="vergelijk"><div class="vergelijk-kant"><h4>Presentatie</h4><p>Langer, met veel <b>uitleg</b>.</p></div><div class="vergelijk-vs">vs</div><div class="vergelijk-kant"><h4>Pitch</h4><p><b>Heel kort</b>, gericht op <b>overtuigen</b>.</p></div></div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Hoe sluit je een pitch af?</p><p class="check-a">Met een duidelijke <b>oproep</b>: waarom moet het publiek &lsquo;ja&rsquo; zeggen?</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden</b><ul class="lst">
+<li>Pitch = <b>kort</b> en <b>overtuigend</b>.</li>
+<li>Wat is het, wat maakt het <b>bijzonder</b>, en een <b>oproep</b>.</li></ul></div>`},
+
+{heading:'Evalueren en verslag doen',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>je <b>product</b> en je <b>aanpak</b> evalueren</li></ul></div>`
++`<h5 class="sub">Terugkijken</h5>`
++`<div class="box"><h4>Evalueren</h4><p><b>Evalueren</b> is kritisch <b>terugkijken</b> op wat je hebt gemaakt en hoe je te werk bent gegaan: wat ging <b>goed</b>, wat kan <b>beter</b>?</p></div>`
++`<div class="call reken"><b>Vragen bij het evalueren</b><ol class="num">
+<li>Is het <b>product</b> geworden zoals je had bedacht?</li>
+<li>Hoe ging de <b>samenwerking</b>?</li>
+<li>Welke <b>feedback</b> kreeg je, en wat deed je ermee?</li>
+<li>Wat zou je de volgende keer <b>anders</b> doen?</li></ol></div>`
++`<div class="vergelijk"><div class="vergelijk-kant"><h4>Product</h4><p><b>Wat</b> je hebt gemaakt.</p></div><div class="vergelijk-vs">vs</div><div class="vergelijk-kant"><h4>Aanpak</h4><p><b>Hoe</b> je het hebt gemaakt: planning, samenwerking.</p></div></div>`
++`<div class="call waarom">Evalueren helpt je om van een project te <b>leren</b>, zodat je het de volgende keer nog <b>beter</b> aanpakt.</div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Wat is evalueren?</p><p class="check-a">Kritisch <b>terugkijken</b> op je product en je aanpak.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden</b><ul class="lst">
+<li>Evalueer je <b>product</b> én je <b>aanpak</b>.</li>
+<li>Wat ging <b>goed</b>, wat kan <b>beter</b>?</li></ul></div>`}
 ],
 terms:[
 ['Startscherm','Het eerste scherm dat je ziet als je een app of site opent.',0],

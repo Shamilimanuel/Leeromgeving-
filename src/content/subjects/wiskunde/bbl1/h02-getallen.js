@@ -1,13 +1,117 @@
 import { registerChapter } from '../../../registry.js';
 
+/* Rebuilt 2026-09-25 to the recipe of Economie TL4 H1 (change 6), short
+   sentences for BBL. Checked against the book: the seven Roman letters (2.1)
+   and "zet een vraagteken bij wat je zoekt" in the verhoudingstabel (2.5)
+   were missing. Terms, cards and quiz unchanged. */
 registerChapter('wiskunde|bbl|1|2', {
 title:'Getallen',
 summary:[
-{heading:'2.1 Getallen',html:'<div class="g2"><div class="box"><h4>Cijfers en de waarde van een cijfer</h4><p>Een <b>getal</b> bestaat uit <b>cijfers</b>. Elk cijfer heeft een waarde; die waarde hangt af van de plek van het cijfer in het getal. In het getal 2305 geldt: de 2 is 2 x 1000 = 2000 waard, de 3 is 3 x 100 = 300 waard, de 0 is 0 x 10 = 0 waard en de 5 is 5 x 1 = 5 waard.</p></div><div class="box"><h4>Grote getallen</h4><p>Grote getallen schrijf je vaak met het woord miljoen of miljard.</p><div class="tblwrap" style="margin-top:.6rem"><table class="tbl"><tr><th>Woord</th><th>Getal</th><th>Aantal nullen</th></tr><tr><td>duizend</td><td>1.000</td><td>3</td></tr><tr><td>miljoen</td><td>1.000.000</td><td>6</td></tr><tr><td>miljard</td><td>1.000.000.000</td><td>9</td></tr></table></div><p style="margin-top:.6rem">17,1 miljoen schrijf je met alleen cijfers als 17.100.000.</p></div></div><div class="g2"><div class="box"><h4>Delers</h4><p>24 : 6 = 4, een heel getal. Daarom is 6 een <b>deler</b> van 24. Maar 24 : 10 = 2,4, geen heel getal. Daarom is 10 géén deler van 24. De delers van 24 zijn 1, 2, 3, 4, 6, 8, 12 en 24.</p></div><div class="box"><h4>Veelvouden</h4><p>45 : 5 = 9, een heel getal. Daarom is 45 een <b>veelvoud</b> van 5. Andere veelvouden van 5 zijn 5, 10, 15, 20, 25, …</p></div></div><div class="g2"><div class="box"><h4>Even of oneven</h4><p><b>Even getallen</b> eindigen op 0, 2, 4, 6 of 8. <b>Oneven getallen</b> eindigen op 1, 3, 5, 7 of 9.</p></div><div class="box"><h4>Decimale en hele getallen</h4><p>Een getal met cijfers achter de komma heet een <b>decimaal getal</b>, bijvoorbeeld 8,95 (twee decimalen). Een getal zonder komma, zoals 72, is een <b>heel getal</b>. Op de <b>getallenlijn</b> geldt: hoe verder naar rechts, hoe groter het getal.</p></div></div><div class="box"><h4>Extra: Romeinse cijfers</h4><p>Romeinse cijfers zijn letters uit het Latijnse alfabet. Regels: nooit meer dan 3 dezelfde cijfers achter elkaar (de symbolen V, L en D gebruik je maar één keer) je schrijft ze van hoog naar laag, en je telt de waarden bij elkaar op, behalve als een lagere waarde vóór een hogere staat: dan trek je de lagere waarde ervan af. Bijvoorbeeld: IX = 10 - 1 = 9, en CM = 1000 - 100 = 900.</p></div><div class="call sum"><b>Om te onthouden (2.1)</b><ul class="lst"><li>Elk cijfer in een getal heeft een waarde die afhangt van zijn plek in het getal.</li><li>Duizend heeft 3 nullen, miljoen heeft 6 nullen, miljard heeft 9 nullen.</li><li>Een deler van een getal geeft bij deling een heel getal; een veelvoud van een getal is deelbaar door dat getal.</li><li>Even getallen eindigen op 0, 2, 4, 6, 8; oneven getallen eindigen op 1, 3, 5, 7, 9.</li><li>Een decimaal getal heeft cijfers achter de komma; een heel getal niet.</li></ul></div>'},
-{heading:'2.2 Afronden',html:'<div class="box"><h4>De afrondregel</h4><p>Je kijkt naar de eerste decimaal (of het eerste cijfer) die je weglaat.</p><ul class="lst"><li>Is die 5 of hoger? Dan wordt het cijfer ervoor <b>1 hoger</b>: dat heet <b>afronden naar boven</b>.</li><li>Is die 4 of lager? Dan blijft het cijfer ervoor gelijk: dat heet <b>afronden naar beneden</b>.</li></ul></div><div class="g2"><div class="box"><h4>Voorbeeld: afronden op decimalen</h4><p>21,4678 afgerond op twee decimalen is 21,47. 21,4678 afgerond op een heel getal is 21.</p></div><div class="box"><h4>Voorbeeld: afronden op ronde getallen</h4><p>Je kijkt naar het ronde getal dat het dichtst bij ligt. Ligt het precies in het midden? Dan rond je naar boven af. 56.289 ligt tussen 50.000 en 60.000, en dichter bij 60.000, dus afgerond op tienduizendtallen is dat 60.000.</p></div></div><div class="call sum"><b>Om te onthouden (2.2)</b><ul class="lst"><li>Kijk naar het eerste cijfer dat je weglaat: 5 of hoger → naar boven, 4 of lager → naar beneden.</li><li>Bij afronden op een rond getal kijk je welk rond getal het dichtstbij ligt; precies in het midden → naar boven.</li></ul></div>'},
-{heading:'2.3 Afronden in de praktijk',html:'<div class="box"><h4>Als niet gezegd wordt hoe je moet afronden</h4><p>Kijk dan goed naar de situatie. Twee vaste regels:</p><ul class="lst"><li><b>Geldbedragen</b> rond je af op twee decimalen.</li><li>Bij <b>contante betaling</b> rond je af op een veelvoud van vijf cent.</li></ul></div><div class="g2"><div class="box"><h4>Voorbeeld: praktisch afronden</h4><p>Chantal trakteert haar klas (18 leerlingen) en de docent op ijs: 18 + 1 = 19 ijsjes nodig. In een doos zitten 6 ijsjes; 19 : 6 = 3,1666… dozen. Wiskundig rond je dat af op 3, maar dan heeft Chantal niet genoeg ijsjes. Ze moet daarom 4 dozen kopen.</p></div><div class="box"><h4>Voorbeeld: contante betaling</h4><p>Job betaalt contant en moet € 7,43 betalen. Contant rond je af op een veelvoud van 5 cent, dus € 7,43 wordt € 7,45.</p></div></div><div class="call warn"><b>Let op:</b> reken eerst het exacte antwoord uit en rond daarna pas af, en rond altijd zo af dat de situatie klopt (bijvoorbeeld genoeg ijsjes, of een bedrag dat je echt kunt betalen).</div><div class="call sum"><b>Om te onthouden (2.3)</b><ul class="lst"><li>Staat er niet hoe je moet afronden? Kijk dan naar de situatie.</li><li>Geldbedragen rond je af op twee decimalen.</li><li>Bij contant betalen rond je af op een veelvoud van vijf cent.</li></ul></div>'},
-{heading:'2.4 Groter, kleiner of gelijk',html:'<div class="g2"><div class="box"><h4>De tekens</h4><div class="tblwrap"><table class="tbl"><tr><th>Teken</th><th>Betekenis</th><th>Voorbeeld</th></tr><tr><td>&lt;</td><td>is kleiner dan</td><td>4 &lt; 7</td></tr><tr><td>&gt;</td><td>is groter dan</td><td>18 &gt; 17</td></tr><tr><td>=</td><td>is gelijk aan</td><td>2 + 4 = 6</td></tr></table></div></div><div class="box"><h4>Vergelijken</h4><p>Moet je twee getallen vergelijken? Zorg dan voor evenveel decimalen, of maak eerst de berekeningen. 0,8 = 0,800, dus 0,8 &gt; 0,008. En 12 : 4 = 3 en 30 : 10 = 3, dus 12 : 4 = 30 : 10.</p></div></div><div class="call">De tekens &lt; en &gt; wijzen altijd naar het kleinste getal.</div><div class="call sum"><b>Om te onthouden (2.4)</b><ul class="lst"><li>&lt; betekent ‘is kleiner dan’, &gt; betekent ‘is groter dan’, = betekent ‘is gelijk aan’.</li><li>Om getallen te vergelijken, zorg je voor evenveel decimalen of je maakt eerst de berekening.</li></ul></div>'},
-{heading:'2.5 Verhoudingstabellen',html:'<div class="box"><h4>Rekenen met een verhoudingstabel</h4><p>In een verhoudingstabel mag je:</p><ul class="lst"><li>boven en onder met hetzelfde getal <b>vermenigvuldigen</b></li><li>boven en onder door hetzelfde getal <b>delen</b></li></ul></div><div class="box"><h4>Voorbeeld</h4><p>40 mandarijnen kosten € 6. Hoeveel kosten 15 mandarijnen? Je rekent eerst terug naar 1 mandarijn: € 6 : 40 = € 0,15. Daarna vermenigvuldig je met 15: € 0,15 x 15 = € 2,25. 15 mandarijnen kosten dus € 2,25.</p><div class="tblwrap" style="margin-top:.6rem"><table class="tbl"><tr><th>aantal mandarijnen</th><td>40</td><td>1</td><td>15</td></tr><tr><th>prijs in €</th><td>6</td><td>0,15</td><td>2,25</td></tr></table></div></div><div class="call sum"><b>Om te onthouden (2.5)</b><ul class="lst"><li>In een verhoudingstabel vermenigvuldig of deel je boven en onder altijd met hetzelfde getal.</li><li>Handig hulpmiddel: reken eerst terug naar 1 stuk, en vermenigvuldig dan met het aantal dat je zoekt.</li></ul></div>'}
+{heading:'2.1 Getallen',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>de <b>waarde</b> van een cijfer in een getal</li>
+<li>grote getallen, <b>delers</b>, <b>veelvouden</b> en <b>decimale</b> getallen</li></ul></div>`
++`<div class="box"><h4>Waar dit hoofdstuk over gaat</h4><p>Je leert hoe getallen in elkaar zitten, hoe je <b>afrondt</b>, hoe je getallen <b>vergelijkt</b> en hoe je rekent met een <b>verhoudingstabel</b>.</p></div>`
++`<h5 class="sub">Cijfers en hun waarde</h5>`
++`<div class="box"><h4>Cijfer of getal?</h4><p>Met de <b>cijfers</b> 0 tot en met 9 maak je <b>getallen</b>. De <b>plek</b> van een cijfer bepaalt hoeveel het waard is.</p></div>`
++`<div class="voorbeeld"><h4>Voorbeeld: het getal 2305</h4><p>Wat is elk cijfer waard?</p><div class="antwoord">De 2 is 2 &times; 1000 = <b>2000</b>. De 3 is 3 &times; 100 = <b>300</b>. De 0 is <b>0</b>. De 5 is 5 &times; 1 = <b>5</b>.</div></div>`
++`<div class="tblwrap"><table class="tbl"><tr><th>Woord</th><th>Getal</th><th>Nullen</th></tr><tr><td>duizend</td><td>1.000</td><td>3</td></tr><tr><td>miljoen</td><td>1.000.000</td><td>6</td></tr><tr><td>miljard</td><td>1.000.000.000</td><td>9</td></tr></table></div>`
++`<p>17,1 miljoen schrijf je in cijfers als <b>17.100.000</b>.</p>`
++`<h5 class="sub">Delers, veelvouden, even en oneven</h5>`
++`<div class="vergelijk"><div class="vergelijk-kant"><h4>Deler</h4><p>24 : 6 = 4, een <b>heel getal</b>. Dus 6 is een <b>deler</b> van 24. De delers van 24 zijn 1, 2, 3, 4, 6, 8, 12 en 24.</p></div><div class="vergelijk-vs">vs</div><div class="vergelijk-kant"><h4>Veelvoud</h4><p>45 : 5 = 9, een heel getal. Dus 45 is een <b>veelvoud</b> van 5. Andere veelvouden van 5: 5, 10, 15, 20, ...</p></div></div>`
++`<div class="g2">`
++`<div class="box"><h4>Even en oneven</h4><p><b>Even</b> getallen eindigen op 0, 2, 4, 6 of 8. <b>Oneven</b> getallen eindigen op 1, 3, 5, 7 of 9.</p></div>`
++`<div class="box"><h4>Decimaal of heel</h4><p>8,95 heeft cijfers achter de komma: een <b>decimaal getal</b>. 72 heeft geen komma: een <b>heel getal</b>. Op de getallenlijn is <b>rechts</b> altijd groter.</p></div></div>`
++`<h5 class="sub">Extra: Romeinse cijfers</h5>`
++`<div class="box"><h4>Zeven letters</h4><p>Romeinse cijfers zijn <b>7 letters</b>: I = 1, V = 5, X = 10, L = 50, C = 100, D = 500, M = 1000.</p></div>`
++`<div class="call reken"><b>Zo lees je een Romeins getal</b><ol class="num">
+<li>Nooit meer dan <b>3 dezelfde</b> letters achter elkaar. V, L en D komen maar <b>één keer</b> voor.</li>
+<li>Je schrijft van <b>hoog naar laag</b> en telt de waarden <b>op</b>.</li>
+<li>Staat een lagere letter <b>vóór</b> een hogere? Dan trek je hem <b>af</b>: IX = 10 &minus; 1 = 9, CM = 1000 &minus; 100 = 900.</li></ol></div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Is 10 een deler van 24?</p><p class="check-a"><b>Nee</b>: 24 : 10 = 2,4. Dat is geen heel getal.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden (2.1)</b><ul class="lst">
+<li>De <b>plek</b> van een cijfer bepaalt zijn waarde.</li>
+<li>Duizend: 3 nullen. Miljoen: 6 nullen. Miljard: 9 nullen.</li>
+<li>Een <b>deler</b> geeft een heel getal als uitkomst. Een <b>veelvoud</b> is deelbaar door dat getal.</li>
+<li>Een <b>decimaal getal</b> heeft cijfers achter de komma.</li></ul></div>`},
+
+{heading:'2.2 Afronden',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li><b>afronden</b> op decimalen en op hele getallen</li>
+<li>afronden op <b>ronde getallen</b></li></ul></div>`
++`<h5 class="sub">De afrondregel</h5>`
++`<div class="call reken"><b>Zo rond je af</b><ol class="num">
+<li>Kijk naar het <b>eerste cijfer</b> dat je weglaat.</li>
+<li>Is dat <b>5 of hoger</b>? Maak het cijfer ervoor <b>1 hoger</b>. Dat is <b>naar boven</b> afronden.</li>
+<li>Is dat <b>4 of lager</b>? Het cijfer ervoor blijft <b>gelijk</b>. Dat is <b>naar beneden</b> afronden.</li></ol></div>`
++`<div class="g2">`
++`<div class="voorbeeld"><h4>Voorbeeld: op twee decimalen</h4><p>Rond 21,4678 af op twee decimalen.</p><div class="antwoord">Je laat de <b>7</b> weg: 5 of hoger. Dus <b>21,47</b>.</div></div>`
++`<div class="voorbeeld"><h4>Voorbeeld: op een heel getal</h4><p>Rond 21,4678 af op een heel getal.</p><div class="antwoord">Je laat de <b>4</b> weg: 4 of lager. Dus <b>21</b>.</div></div></div>`
++`<h5 class="sub">Afronden op ronde getallen</h5>`
++`<div class="box"><h4>Welk rond getal ligt het dichtst bij?</h4><p>Kies het <b>ronde getal</b> dat het dichtst bij ligt. Ligt het getal <b>precies in het midden</b>? Dan rond je <b>naar boven</b> af.</p></div>`
++`<div class="voorbeeld"><h4>Voorbeeld: op tienduizendtallen</h4><p>Rond 56.289 af op tienduizendtallen.</p><div class="antwoord">56.289 ligt tussen 50.000 en 60.000, dichter bij <b>60.000</b>.</div></div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Rond 3,45 af op één decimaal.</p><p class="check-a">Je laat de <b>5</b> weg: 5 of hoger. Dus <b>3,5</b>.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden (2.2)</b><ul class="lst">
+<li>Kijk naar het <b>eerste cijfer</b> dat je weglaat.</li>
+<li><b>5 of hoger</b>: naar boven. <b>4 of lager</b>: naar beneden.</li>
+<li>Rond getal: kies het <b>dichtstbijzijnde</b>. Precies in het midden: naar boven.</li></ul></div>`},
+
+{heading:'2.3 Afronden in de praktijk',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>afronden als er <b>niet staat hoe</b></li>
+<li>afronden bij <b>geld</b> en bij <b>contant betalen</b></li></ul></div>`
++`<h5 class="sub">Kijk naar de situatie</h5>`
++`<div class="box"><h4>Twee vaste regels</h4><p><b>Geldbedragen</b> rond je af op <b>twee decimalen</b>. Bij <b>contant betalen</b> rond je af op een <b>veelvoud van 5 cent</b>.</p></div>`
++`<div class="voorbeeld"><h4>Voorbeeld: ijsjes voor de klas</h4><p>Chantal trakteert 18 leerlingen en de docent: <b>19 ijsjes</b>. In een doos zitten 6 ijsjes. Hoeveel dozen koopt ze?</p><div class="antwoord">19 : 6 = 3,166... Met 3 dozen heeft ze te weinig. Ze koopt <b>4 dozen</b>.</div></div>`
++`<div class="voorbeeld"><h4>Voorbeeld: contant betalen</h4><p>Job moet &euro; 7,43 contant betalen.</p><div class="antwoord">Afronden op 5 cent: <b>&euro; 7,45</b>.</div></div>`
++`<div class="call waarom">Waarom rond je bij de ijsjes <b>naar boven</b> af, terwijl de regel zegt naar beneden? Omdat je <b>genoeg</b> ijsjes nodig hebt. De <b>situatie</b> is belangrijker dan de regel.</div>`
++`<div class="call warn"><b>Let op:</b> reken eerst het <b>precieze antwoord</b> uit. Rond pas <b>aan het eind</b> af.</div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Je betaalt contant &euro; 3,98. Wat betaal je echt?</p><p class="check-a">Afronden op 5 cent: <b>&euro; 4,00</b>.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden (2.3)</b><ul class="lst">
+<li>Staat er niet hoe je afrondt? Kijk naar de <b>situatie</b>.</li>
+<li><b>Geld</b>: twee decimalen. <b>Contant</b>: op 5 cent.</li>
+<li>Rond af <b>aan het eind</b> van je berekening.</li></ul></div>`},
+
+{heading:'2.4 Groter, kleiner of gelijk',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>de tekens <b>&lt;</b>, <b>&gt;</b> en <b>=</b> gebruiken</li>
+<li>twee getallen of sommen <b>vergelijken</b></li></ul></div>`
++`<h5 class="sub">De tekens</h5>`
++`<div class="tblwrap"><table class="tbl"><tr><th>Teken</th><th>Betekenis</th><th>Voorbeeld</th></tr><tr><td><b>&lt;</b></td><td>is kleiner dan</td><td>4 &lt; 7</td></tr><tr><td><b>&gt;</b></td><td>is groter dan</td><td>18 &gt; 17</td></tr><tr><td><b>=</b></td><td>is gelijk aan</td><td>2 + 4 = 6</td></tr></table></div>`
++`<div class="call warn"><b>Tip:</b> de <b>punt</b> van &lt; en &gt; wijst altijd naar het <b>kleinste</b> getal.</div>`
++`<h5 class="sub">Vergelijken</h5>`
++`<div class="call reken"><b>Zo vergelijk je</b><ol class="num">
+<li>Decimale getallen? Maak ze <b>even lang</b> achter de komma.</li>
+<li>Sommen? Reken ze eerst <b>uit</b>.</li>
+<li>Zet het goede <b>teken</b> ertussen.</li></ol></div>`
++`<div class="g2">`
++`<div class="voorbeeld"><h4>Voorbeeld: 0,8 en 0,008</h4><p>Welk getal is groter?</p><div class="antwoord">0,8 = <b>0,800</b>. 800 duizendsten is meer dan 8. Dus <b>0,8 &gt; 0,008</b>.</div></div>`
++`<div class="voorbeeld"><h4>Voorbeeld: 12 : 4 en 30 : 10</h4><p>Welk teken hoort ertussen?</p><div class="antwoord">12 : 4 = 3 en 30 : 10 = 3. Dus <b>12 : 4 = 30 : 10</b>.</div></div></div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Welk teken hoort tussen 2,5 en 2,48?</p><p class="check-a">2,50 en 2,48: <b>2,5 &gt; 2,48</b>.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden (2.4)</b><ul class="lst">
+<li><b>&lt;</b> is kleiner dan, <b>&gt;</b> is groter dan, <b>=</b> is gelijk aan.</li>
+<li>Maak decimale getallen eerst <b>even lang</b>.</li>
+<li>Reken <b>sommen</b> eerst uit, vergelijk daarna.</li></ul></div>`},
+
+{heading:'2.5 Verhoudingstabellen',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>rekenen met een <b>verhoudingstabel</b></li>
+<li>een <b>prijs</b> uitrekenen via de prijs van <b>1 stuk</b></li></ul></div>`
++`<h5 class="sub">Wat mag in een verhoudingstabel?</h5>`
++`<div class="box"><h4>Boven en onder hetzelfde</h4><p>Je mag boven en onder met <b>hetzelfde getal</b> <b>vermenigvuldigen</b>. Of boven en onder door hetzelfde getal <b>delen</b>.</p></div>`
++`<h5 class="sub">Een prijs uitrekenen</h5>`
++`<div class="call reken"><b>Stappenplan</b><ol class="num">
+<li>Maak een <b>verhoudingstabel</b>.</li>
+<li>Zet een <b>vraagteken</b> bij wat je zoekt.</li>
+<li>Reken <b>terug naar 1</b> stuk.</li>
+<li>Vermenigvuldig met het <b>aantal</b> dat je zoekt.</li></ol></div>`
++`<div class="voorbeeld"><h4>Voorbeeld: mandarijnen</h4><p>40 mandarijnen kosten &euro; 6. Wat kosten 15 mandarijnen?</p><div class="tblwrap"><table class="tbl"><tr><th>aantal</th><td>40</td><td>1</td><td>15</td></tr><tr><th>prijs in &euro;</th><td>6</td><td>0,15</td><td>?</td></tr></table></div><div class="antwoord">1 mandarijn: 6 : 40 = <b>&euro; 0,15</b>. 15 mandarijnen: 0,15 &times; 15 = <b>&euro; 2,25</b>.</div></div>`
++`<div class="call waarom">Waarom eerst terug naar <b>1</b>? Vanaf 1 kom je met <b>één keer vermenigvuldigen</b> bij elk ander aantal.</div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">4 pakken sap kosten &euro; 6. Wat kosten 10 pakken?</p><p class="check-a">1 pak: 6 : 4 = &euro; 1,50. 10 pakken: 1,50 &times; 10 = <b>&euro; 15</b>.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden (2.5)</b><ul class="lst">
+<li>Boven en onder altijd met <b>hetzelfde getal</b> vermenigvuldigen of delen.</li>
+<li>Zet een <b>vraagteken</b> bij wat je zoekt.</li>
+<li>Reken eerst <b>terug naar 1</b>, dan naar het aantal dat je zoekt.</li></ul></div>`}
 ],
 terms:[
 ['cijfer','Een van de tekens 0 tot en met 9 waarmee je getallen schrijft.',0],

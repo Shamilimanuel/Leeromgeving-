@@ -4,8 +4,21 @@ import { describe, it, expect, beforeEach } from 'vitest';
 import { levelsForChapter, levelSubtitle } from '../src/content/levels.js';
 import {
   completeLevel, isLevelDone, isLevelUnlocked, currentLevelIndex,
-  levelResult, totalGameXp, gameXpForChapters, clearGameLevels, xpForResult,
+  levelResult, totalGameXp, gameXpForChapters, clearGameLevels, xpForResult, scoreVerdict,
 } from '../src/state/gameLevels.js';
+
+describe('scoreVerdict', () => {
+  it('does not cheer a low score', () => {
+    expect(scoreVerdict(3, 8)).toEqual({ heading: 'Level klaar', low: true });
+    expect(scoreVerdict(0, 8).low).toBe(true);
+  });
+
+  it('grades the rest by how much was right', () => {
+    expect(scoreVerdict(4, 8)).toEqual({ heading: 'Level gehaald!', low: false });
+    expect(scoreVerdict(6, 8)).toEqual({ heading: 'Goed gedaan!', low: false });
+    expect(scoreVerdict(8, 8)).toEqual({ heading: 'Perfect!', low: false });
+  });
+});
 
 /* A chapter with `perSection` terms and cards in each of `sections` paragraphs. */
 function fakeChapter(sections, perSection) {

@@ -127,6 +127,7 @@
     <h1 class="page">Hoe ver ben je per vak?</h1>
     <p class="lede">Level en XP zijn gebaseerd op wat je al hebt gelezen, welke quizzen je hebt gemaakt en hoeveel flashcards je al goed kent &mdash; geen losse punten, gewoon je echte voortgang.</p>
     <div id="streakBadge"></div>
+    <div id="badgeGrid"></div>
     <div class="persona-grid" id="personageGrid"></div>
   </div>
 </section>
@@ -141,7 +142,7 @@
   <div class="wrap">
     <div class="eyebrow" id="acctEyebrow">Mijn account</div>
     <h1 class="page" id="acctTitel">Log in of maak een account</h1>
-    <p class="lede" id="acctLede">Een account is optioneel &mdash; je kunt ook gewoon zonder leren. Een account krijg je met een uitnodigingscode van Shamil.</p>
+    <p class="lede" id="acctLede">Je hebt een account nodig om de samenvattingen te gebruiken. Kreeg je een uitnodigingscode van Shamil? Maak hieronder je account.</p>
     <div id="accountMelding"></div>
     <div id="accountGast">
       <div class="box" style="margin-bottom:1rem">
@@ -252,7 +253,7 @@
           <h2 class="set-h" id="setHWeergave">Weergave</h2>
           <p class="set-note">Wat je hier kiest, onthoudt dit apparaat.</p>
           <div class="set-list">
-            <div class="set-row">
+            <div class="set-row set-row-stack">
               <span class="set-ri"><span class="icon icon-a-large-small" aria-hidden="true"></span></span>
               <span class="set-rt"><b id="setLblTekst">Tekstgrootte</b><small>Voor de hele site</small></span>
               <div class="clay-seg" role="group" aria-labelledby="setLblTekst" id="setTekstgrootte">
@@ -424,7 +425,10 @@
     <h1 id="chTitle">Hoofdstuk</h1>
     <p class="tagline" id="chTag"></p>
   </div></div>
-  <div class="tabs"><div class="tabs-in" id="chTabs"></div></div>
+  <!-- The route: Lezen -> Oefenen -> Toetsen, plus Begrippen and Notities.
+       Rendered by src/ui/chapter.js. It scrolls with the page, unlike the old
+       sticky tab row, so reading keeps the whole screen. -->
+  <div class="route-wrap" id="chTabs"></div>
   <div class="wrap" style="padding-top:0"><div id="chBody"></div></div>
 </section>
 
@@ -519,6 +523,7 @@
   <div class="helpcard agendacard" role="dialog" aria-label="Dag in de agenda">
     <button class="helpclose" onclick="agendaCloseDag()" aria-label="Sluiten">&times;</button>
     <h3 id="agendaDagTitel">&nbsp;</h3>
+    <div class="agenda-body">
     <div id="agendaDagItems"></div>
     <form id="agendaForm" onsubmit="agendaSubmit(event)">
       <label for="agendaTitel" class="dim">Toets toevoegen</label>
@@ -535,6 +540,7 @@
       <button class="bt" type="submit">Toevoegen</button>
       <div id="agendaMelding"></div>
     </form>
+    </div>
   </div>
 </div>
 

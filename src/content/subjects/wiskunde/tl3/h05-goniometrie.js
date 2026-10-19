@@ -1,14 +1,117 @@
 import { registerChapter } from '../../../registry.js';
 
+/* Rebuilt 2026-09-25 to the recipe of Economie TL4 H1 (change 6). Fixed:
+   the 5.6 example stopped without an answer; it now works out AH = sqrt(41)
+   and angle AHB = 43 degrees (the measures 6, 4 and 5 cm are the old
+   summary's; the scan's drawing is unreadable). The existing SOSCASTOA
+   ezelsbruggetje stays. The drawing is unchanged. Terms, cards and quiz
+   unchanged. */
 registerChapter('wiskunde|tl|3|5', {
 title:'Goniometrie',
 summary:[
-{heading:'5.1 Namen rechthoekszijden',html:'<div class=\'box\'><h4>Waar gaat dit hoofdstuk over?</h4><p>In dit hoofdstuk leer je hoeken berekenen in rechthoekige driehoeken met behulp van goniometrie: de sinus, de cosinus en de tangens. Je leert de rechthoekszijden benoemen, je berekent een hoek met sinus, cosinus of tangens, je kiest zelf welke van de drie je nodig hebt, en je past dit ook toe op hoeken in ruimtefiguren zoals een balk of een piramide.</p></div><div class=\'call\'>Zonnepanelen leveren de meeste elektriciteit als ze op het zuiden liggen met een hellingshoek tussen 34° en 38°. Met goniometrie kun je berekenen of een dak geschikt is voor zonnepanelen.</div><div class=\'box\'><h4>Rechthoekszijden en schuine zijde</h4><p>Een rechthoekige driehoek heeft twee <b>rechthoekszijden</b>: die zijden maken samen de rechte hoek. De langste zijde, tegenover de rechte hoek, is de <b>schuine zijde</b>. Van elke scherpe hoek in de driehoek is er een <b>overstaande rechthoekszijde</b> (de zijde tegenover de hoek) en een <b>aanliggende rechthoekszijde</b> (de rechthoekszijde die aan de hoek ligt).</p></div><div class=\'voorbeeld\'><h4>Voorbeeld: zijden benoemen</h4><p>In driehoek ABC (rechte hoek bij C) ligt tegenover hoek B de zijde AC. Daarom is AC de overstaande rechthoekszijde van hoek B. Aan hoek B ligt zijde BC. Daarom is BC de aanliggende rechthoekszijde van hoek B.</p></div><div class=\'call sum\'><b>Om te onthouden</b><ul class=\'lst\'><li>schuine zijde: de langste zijde, tegenover de rechte hoek</li><li>overstaande rechthoekszijde van een hoek: de zijde tegenover die hoek</li><li>aanliggende rechthoekszijde van een hoek: de rechthoekszijde die aan die hoek ligt</li></ul></div><figure class=\'fig\'><svg viewBox="0 0 340 210" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Rechthoekige driehoek met hoek A, waarbij de overstaande, aanliggende en schuine zijde zijn aangewezen"><path d="M60 165 L250 165 L250 60 Z" fill="var(--accent)" fill-opacity=".14" stroke="var(--accent)" stroke-width="2" stroke-linejoin="round"/><polyline points="237,165 237,152 250,152" fill="none" stroke="var(--accent)" stroke-width="1.7"/><path d="M88 165 A 28 28 0 0 0 84 150" fill="none" stroke="#e2564f" stroke-width="1.8"/><text x="94" y="158" fill="#e2564f" font-size="12" font-weight="600" font-family="inherit">A</text><g fill="var(--mut)" font-size="10" font-family="inherit"><text x="155" y="182" text-anchor="middle">aanliggende zijde</text><text x="258" y="115">overstaande</text><text x="258" y="128">zijde</text><text x="132" y="102">schuine zijde</text></g><path d="M148 106 L163 116" stroke="var(--mut)" stroke-width="1" fill="none" opacity=".7"/><g fill="var(--txt)" font-size="11" font-family="inherit"><text x="48" y="172">A</text><text x="256" y="178">C</text><text x="256" y="54">B</text></g></svg><figcaption>Overstaand en aanliggend hangen af van <b>welke hoek</b> je bekijkt; de schuine zijde ligt altijd tegenover de rechte hoek en verandert dus nooit. Kijk je vanuit hoek B, dan wisselen overstaand en aanliggend om.</figcaption></figure><div class=\'call sum\'><b>Om te onthouden</b><ul class=\'lst\'><li><b>S</b>OS: <b>s</b>inus = <b>o</b>verstaande : <b>s</b>chuine</li><li><b>C</b>AS: <b>c</b>osinus = <b>a</b>anliggende : <b>s</b>chuine</li><li><b>T</b>OA: <b>t</b>angens = <b>o</b>verstaande : <b>a</b>anliggende</li></ul></div>'},
-{heading:'5.2 Hoek berekenen met sinus',html:'<div class=\'box\'><h4>Sinus</h4><p>De <b>sinus</b> van een hoek is de verhouding tussen de overstaande rechthoekszijde en de schuine zijde in een rechthoekige driehoek. Weet je deze twee zijden, dan kun je de hoek berekenen met de sinus. Op de rekenmachine gebruik je sin<sup>-1</sup> (boven de sin-toets, met 2nd of SHIFT).</p></div><div class=\'call sum\'><b>Om te onthouden</b><ul class=\'lst\'><li>sinus van een hoek = overstaande rechthoekszijde : schuine zijde</li><li>afkorting: S = O/S, ofwel SOS</li><li>hoeken rond je af op hele graden</li></ul></div><div class=\'voorbeeld\'><h4>Voorbeeld: hoek berekenen met sinus</h4><p>Bereken hoek K in driehoek KLM, met de rechte hoek bij L. De overstaande rechthoekszijde van hoek K is 4,4 cm, de schuine zijde is 5,6 cm.</p><ol class=\'num\'><li>sin ∠K = 4,4 : 5,6.</li><li>Gebruik sin<sup>-1</sup> op de rekenmachine.</li></ol><div class=\'antwoord\'>Antwoord: hoek K is 52°.</div></div>'},
-{heading:'5.3 Hoek berekenen met cosinus',html:'<div class=\'box\'><h4>Cosinus</h4><p>De <b>cosinus</b> van een hoek is de verhouding tussen de aanliggende rechthoekszijde en de schuine zijde in een rechthoekige driehoek. Weet je deze twee zijden, dan kun je de hoek berekenen met de cosinus. Op de rekenmachine gebruik je cos<sup>-1</sup>.</p></div><div class=\'call sum\'><b>Om te onthouden</b><ul class=\'lst\'><li>cosinus van een hoek = aanliggende rechthoekszijde : schuine zijde</li><li>afkorting: C = A/S, ofwel CAS</li></ul></div><div class=\'voorbeeld\'><h4>Voorbeeld: hoek berekenen met cosinus</h4><p>Bereken hoek M in driehoek KLM, met de rechte hoek bij L. De aanliggende rechthoekszijde van hoek M is 6 cm, de schuine zijde is 8 cm.</p><ol class=\'num\'><li>cos ∠M = 6 : 8.</li><li>Gebruik cos<sup>-1</sup>.</li></ol><div class=\'antwoord\'>Antwoord: hoek M is 41°.</div></div>'},
-{heading:'5.4 Hoek berekenen met tangens',html:'<div class=\'box\'><h4>Tangens</h4><p>De <b>tangens</b> van een hoek is de verhouding tussen de overstaande rechthoekszijde en de aanliggende rechthoekszijde in een rechthoekige driehoek. Weet je deze twee zijden, dan kun je de hoek berekenen met de tangens. Op de rekenmachine gebruik je tan<sup>-1</sup>.</p></div><div class=\'call sum\'><b>Om te onthouden</b><ul class=\'lst\'><li>tangens van een hoek = overstaande rechthoekszijde : aanliggende rechthoekszijde</li><li>afkorting: T = O/A, ofwel TOA</li></ul></div><div class=\'voorbeeld\'><h4>Voorbeeld: hoek berekenen met tangens</h4><p>Bereken hoek B, met de rechte hoek bij A. De overstaande rechthoekszijde van hoek B is 6 cm, de aanliggende rechthoekszijde is 18 cm.</p><ol class=\'num\'><li>tan ∠B = 6 : 18.</li><li>Gebruik tan<sup>-1</sup>.</li></ol><div class=\'antwoord\'>Antwoord: hoek B is 18°.</div></div><div class=\'call warn\'><b>Veelgemaakte fout:</b> verwissel bij de tangens niet de overstaande en de aanliggende zijde. Bij de tangens is de schuine zijde niet nodig.</div>'},
-{heading:'5.5 Hoek berekenen met goniometrie',html:'<div class=\'box\'><h4>SOSCASTOA</h4><p>Weet je twee zijden van een rechthoekige driehoek, dan kun je daarmee de scherpe hoeken berekenen met sinus, cosinus of tangens. Om te kiezen welke van de drie je nodig hebt, kijk je welke twee zijden je weet en gebruik je het ezelsbruggetje <b>SOSCASTOA</b>.</p></div><div class=\'call ezel\'><b>SOSCASTOA</b>: SOS (sinus = overstaand/schuin), CAS (cosinus = aanliggend/schuin), TOA (tangens = overstaand/aanliggend).</div><div class=\'voorbeeld\'><h4>Voorbeeld: de juiste verhouding kiezen</h4><p>Van hoek Q weet je de overstaande rechthoekszijde (O) en de schuine zijde (S). Welke verhouding gebruik je?</p><div class=\'antwoord\'>Antwoord: je gebruikt SOS, dus de sinus: sin ∠Q = O : S.</div></div><div class=\'box\'><h4>Hoeken benoemen met drieletternotatie</h4><p>Een hoek kun je ook noteren met drie letters. ∠D₁₂ wordt bijvoorbeeld ook wel ∠ADC genoemd: je gaat met je vinger vanuit A via D naar C, en de <b>middelste letter</b> is het hoekpunt van de hoek.</p></div><div class=\'call sum\'><b>Om te onthouden</b><ul class=\'lst\'><li>weet je O en S → sinus (SOS)</li><li>weet je A en S → cosinus (CAS)</li><li>weet je O en A → tangens (TOA)</li></ul></div>'},
-{heading:'5.6 Hoeken berekenen in ruimtefiguren',html:'<div class=\'box\'><h4>Hoeken in ruimtefiguren</h4><p>Ook in ruimtefiguren, zoals een balk, een kubus of een piramide, kun je hoeken berekenen. Je zoekt dan een <b>rechthoekige driehoek</b> in een zijvlak of in een doorsnede van de ruimtefiguur. Met de sinus, de cosinus of de tangens kun je vervolgens de hoek berekenen.</p></div><div class=\'voorbeeld\'><h4>Voorbeeld: hoek berekenen in een balk</h4><p>Bereken ∠AHB in balk ABCD.EFGH. AB = 6 cm, BC = 4 cm en BF = 5 cm.</p><ol class=\'num\'><li>∠AHB ligt in △AHB, dat ligt in het diagonaalvlak ABGH.</li><li>Maak een schets van het diagonaalvlak met daarin diagonaal BH.</li><li>Bereken eerst BH met de stelling van Pythagoras in de rechthoek ABGH (of gebruik de gegeven lengte).</li><li>Gebruik de tangens om ∠H in driehoek AHB te berekenen: tan ∠AHB = AB : AH.</li></ol><div class=\'antwoord\'>Antwoord: je vindt ∠AHB door eerst AH te berekenen en dan de tangens toe te passen.</div></div><div class=\'call\'>Maak bij dit soort opgaven altijd eerst een schets van het platte vlak waarin de hoek ligt, met de letters en de bekende maten erin. Zet daarna een vraagteken bij de hoek die je wilt berekenen, zodat je goed ziet welke verhouding (SOS, CAS of TOA) je nodig hebt.</div>'}
+{heading:'5.1 Namen rechthoekszijden',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>de <b>schuine zijde</b> en de <b>rechthoekszijden</b> benoemen</li>
+<li>de <b>overstaande</b> en <b>aanliggende</b> rechthoekszijde van een hoek aanwijzen</li></ul></div>`
++`<div class="box"><h4>Waar dit hoofdstuk over gaat</h4><p>Met <b>goniometrie</b> bereken je <b>hoeken</b> in een <b>rechthoekige driehoek</b>: met de <b>sinus</b>, de <b>cosinus</b> en de <b>tangens</b>. Zo reken je bijvoorbeeld uit of een dak de goede <b>hellingshoek</b> heeft voor zonnepanelen (tussen 34&deg; en 38&deg;).</p></div>`
++`<h5 class="sub">Drie zijden, vanuit een hoek bekeken</h5>`
++`<div class="box"><h4>Rechthoekszijden en schuine zijde</h4><p>De twee <b>rechthoekszijden</b> maken samen de <b>rechte hoek</b>. De <b>schuine zijde</b> ligt tegenover de rechte hoek en is de <b>langste</b>.</p></div>`
++`<div class="vergelijk"><div class="vergelijk-kant"><h4>Overstaande rechthoekszijde</h4><p>De rechthoekszijde <b>tegenover</b> de hoek.</p></div><div class="vergelijk-vs">vs</div><div class="vergelijk-kant"><h4>Aanliggende rechthoekszijde</h4><p>De rechthoekszijde die <b>aan</b> de hoek ligt.</p></div></div>`
++`<div class="voorbeeld"><h4>Voorbeeld: driehoek KLM</h4><p>De rechte hoek ligt bij <b>K</b>. Benoem de zijden vanuit &ang;L.</p><div class="antwoord">KL en KM zijn de <b>rechthoekszijden</b>, LM is de <b>schuine zijde</b>. Tegenover &ang;L ligt <b>KM</b>: de <b>overstaande</b>. Aan &ang;L ligt <b>KL</b>: de <b>aanliggende</b>.</div></div>`
++`<figure class='fig'><svg viewBox="0 0 340 210" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Rechthoekige driehoek met hoek A, waarbij de overstaande, aanliggende en schuine zijde zijn aangewezen"><path d="M60 165 L250 165 L250 60 Z" fill="var(--accent)" fill-opacity=".14" stroke="var(--accent)" stroke-width="2" stroke-linejoin="round"/><polyline points="237,165 237,152 250,152" fill="none" stroke="var(--accent)" stroke-width="1.7"/><path d="M88 165 A 28 28 0 0 0 84 150" fill="none" stroke="#e2564f" stroke-width="1.8"/><text x="94" y="158" fill="#e2564f" font-size="12" font-weight="600" font-family="inherit">A</text><g fill="var(--mut)" font-size="10" font-family="inherit"><text x="155" y="182" text-anchor="middle">aanliggende zijde</text><text x="258" y="115">overstaande</text><text x="258" y="128">zijde</text><text x="132" y="102">schuine zijde</text></g><path d="M148 106 L163 116" stroke="var(--mut)" stroke-width="1" fill="none" opacity=".7"/><g fill="var(--txt)" font-size="11" font-family="inherit"><text x="48" y="172">A</text><text x="256" y="178">C</text><text x="256" y="54">B</text></g></svg><figcaption>Overstaand en aanliggend hangen af van <b>welke hoek</b> je bekijkt; de schuine zijde ligt altijd tegenover de rechte hoek en verandert dus nooit. Kijk je vanuit hoek B, dan wisselen overstaand en aanliggend om.</figcaption></figure>`
++`<div class="call warn"><b>Let op:</b> welke zijde overstaand of aanliggend is, hangt af van <b>welke hoek</b> je bekijkt. Vanuit de andere scherpe hoek draaien ze <b>om</b>.</div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Welke zijde van een rechthoekige driehoek is altijd de langste?</p><p class="check-a">De <b>schuine zijde</b>, tegenover de rechte hoek.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden (5.1)</b><ul class="lst">
+<li><b>Schuine zijde</b>: tegenover de rechte hoek, de langste.</li>
+<li><b>Overstaande</b>: tegenover de hoek. <b>Aanliggende</b>: aan de hoek.</li>
+<li>Het hangt af van de <b>hoek</b> die je bekijkt.</li></ul></div>`},
+
+{heading:'5.2 Hoek berekenen met sinus',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>een hoek berekenen met de <b>sinus</b></li></ul></div>`
++`<h5 class="sub">SOS</h5>`
++`<div class="box"><h4>Sinus = overstaande : schuine</h4><p>De <b>sinus</b> van een hoek is de verhouding <b>overstaande rechthoekszijde : schuine zijde</b>. Weet je die twee zijden, dan vind je de hoek met <b>sin<sup>&minus;1</sup></b> op je rekenmachine (boven de sin-toets, met <b>SHIFT</b> of <b>2nd</b>).</p></div>`
++`<div class="call reken"><b>Stappenplan: hoek met de sinus</b><ol class="num">
+<li>Zoek de <b>overstaande</b> zijde en de <b>schuine</b> zijde van de hoek.</li>
+<li>Schrijf op: <b>sin &ang; = O : S</b>.</li>
+<li>Reken uit met <b>sin<sup>&minus;1</sup></b>.</li>
+<li>Rond af op <b>hele graden</b>.</li></ol></div>`
++`<div class="voorbeeld"><h4>Voorbeeld: &ang;K in driehoek KLM</h4><p>De rechte hoek ligt bij L. Overstaande van &ang;K: <b>4,4 cm</b>. Schuine zijde: <b>5,6 cm</b>.</p><div class="antwoord">sin &ang;K = 4,4 : 5,6. Met sin<sup>&minus;1</sup>: &ang;K = 51,8&hellip;&deg;, dus <b>52&deg;</b>.</div></div>`
++`<div class="call waarom">Waarom kan de sinus nooit groter dan 1 zijn? De <b>schuine zijde</b> is altijd de langste. Deel je een kortere zijde door de langste, dan kom je altijd <b>onder 1</b>.</div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Welke twee zijden heb je nodig voor de sinus?</p><p class="check-a">De <b>overstaande</b> rechthoekszijde en de <b>schuine</b> zijde.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden (5.2)</b><ul class="lst">
+<li><b>sin &ang; = overstaande : schuine</b> (SOS).</li>
+<li>Hoek vinden met <b>sin<sup>&minus;1</sup></b>.</li>
+<li>Hoeken op <b>hele graden</b>.</li></ul></div>`},
+
+{heading:'5.3 Hoek berekenen met cosinus',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>een hoek berekenen met de <b>cosinus</b></li></ul></div>`
++`<h5 class="sub">CAS</h5>`
++`<div class="box"><h4>Cosinus = aanliggende : schuine</h4><p>De <b>cosinus</b> van een hoek is <b>aanliggende rechthoekszijde : schuine zijde</b>. De hoek vind je met <b>cos<sup>&minus;1</sup></b>. Na het haakje tik je de <b>deling</b> in; je mag de <b>breukentoets</b> gebruiken.</p></div>`
++`<div class="call reken"><b>Stappenplan: hoek met de cosinus</b><ol class="num">
+<li>Zoek de <b>aanliggende</b> zijde en de <b>schuine</b> zijde.</li>
+<li>Schrijf op: <b>cos &ang; = A : S</b>.</li>
+<li>Reken uit met <b>cos<sup>&minus;1</sup></b> en rond af op hele graden.</li></ol></div>`
++`<div class="voorbeeld"><h4>Voorbeeld: &ang;M in driehoek KLM</h4><p>De rechte hoek ligt bij L. Aanliggende van &ang;M: <b>6 cm</b>. Schuine zijde: <b>8 cm</b>.</p><div class="antwoord">cos &ang;M = 6 : 8. Met cos<sup>&minus;1</sup>: &ang;M = 41,4&hellip;&deg;, dus <b>41&deg;</b>.</div></div>`
++`<div class="vergelijk"><div class="vergelijk-kant"><h4>Sinus</h4><p><b>Overstaande</b> : schuine</p></div><div class="vergelijk-vs">vs</div><div class="vergelijk-kant"><h4>Cosinus</h4><p><b>Aanliggende</b> : schuine</p></div></div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Waar staat cos<sup>&minus;1</sup> op je rekenmachine?</p><p class="check-a"><b>Boven de cos-toets</b>; je gebruikt SHIFT of 2nd.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden (5.3)</b><ul class="lst">
+<li><b>cos &ang; = aanliggende : schuine</b> (CAS).</li>
+<li>Hoek vinden met <b>cos<sup>&minus;1</sup></b>.</li></ul></div>`},
+
+{heading:'5.4 Hoek berekenen met tangens',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>een hoek berekenen met de <b>tangens</b></li></ul></div>`
++`<h5 class="sub">TOA</h5>`
++`<div class="box"><h4>Tangens = overstaande : aanliggende</h4><p>De <b>tangens</b> van een hoek is <b>overstaande rechthoekszijde : aanliggende rechthoekszijde</b>. De <b>schuine zijde</b> heb je hier <b>niet</b> nodig. De hoek vind je met <b>tan<sup>&minus;1</sup></b>.</p></div>`
++`<div class="call reken"><b>Stappenplan: hoek met de tangens</b><ol class="num">
+<li>Zoek de <b>overstaande</b> en de <b>aanliggende</b> zijde.</li>
+<li>Schrijf op: <b>tan &ang; = O : A</b>.</li>
+<li>Reken uit met <b>tan<sup>&minus;1</sup></b> en rond af op hele graden.</li></ol></div>`
++`<div class="voorbeeld"><h4>Voorbeeld: &ang;B</h4><p>De rechte hoek ligt bij A. Overstaande van &ang;B: <b>6 cm</b>. Aanliggende: <b>18 cm</b>.</p><div class="antwoord">tan &ang;B = 6 : 18. Met tan<sup>&minus;1</sup>: &ang;B = 18,4&hellip;&deg;, dus <b>18&deg;</b>.</div></div>`
++`<div class="call warn"><b>Veelgemaakte fout:</b> overstaande en aanliggende <b>omwisselen</b>. Met 18 : 6 krijg je 72&deg;: dat is de <b>andere</b> scherpe hoek.</div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Heb je de schuine zijde nodig voor de tangens?</p><p class="check-a"><b>Nee</b>: tangens = overstaande : aanliggende.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden (5.4)</b><ul class="lst">
+<li><b>tan &ang; = overstaande : aanliggende</b> (TOA).</li>
+<li>De schuine zijde doet <b>niet</b> mee.</li></ul></div>`},
+
+{heading:'5.5 Hoek berekenen met goniometrie',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>zelf <b>kiezen</b> tussen sinus, cosinus en tangens</li>
+<li>hoeken noteren met <b>drie letters</b></li></ul></div>`
++`<h5 class="sub">Kiezen</h5>`
++`<div class="box"><h4>Welke twee zijden weet je?</h4><p>Weet je <b>twee zijden</b> van een rechthoekige driehoek, dan bereken je de <b>scherpe hoeken</b>. Welke verhouding je gebruikt, hangt af van <b>welke</b> twee zijden je weet.</p></div>`
++`<div class="call ezel"><b>SOSCASTOA</b>: SOS (sinus = overstaand/schuin), CAS (cosinus = aanliggend/schuin), TOA (tangens = overstaand/aanliggend).</div>`
++`<div class="call reken"><b>Stappenplan: de juiste verhouding kiezen</b><ol class="num">
+<li>Zet een <b>vraagteken</b> in de hoek die je zoekt.</li>
+<li>Schrijf bij de bekende zijden <b>O</b>, <b>A</b> of <b>S</b>.</li>
+<li>Kies het woord met die twee letters: <b>SOS</b>, <b>CAS</b> of <b>TOA</b>.</li></ol></div>`
++`<div class="voorbeeld"><h4>Voorbeeld: &ang;Q</h4><p>Van &ang;Q weet je de <b>overstaande</b> zijde en de <b>schuine</b> zijde.</p><div class="antwoord">O en S: dat is <b>SOS</b>. Je gebruikt de <b>sinus</b>: sin &ang;Q = O : S.</div></div>`
++`<h5 class="sub">Drie letters</h5>`
++`<div class="box"><h4>&ang;ADC</h4><p>Komen bij één punt meer hoeken samen, dan gebruik je <b>drie letters</b>. &ang;D<sub>1,2</sub> heet ook <b>&ang;ADC</b>: ga van A via D naar C. De <b>middelste letter</b> is het hoekpunt.</p></div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Je weet de aanliggende en de schuine zijde. Welke gebruik je?</p><p class="check-a">De <b>cosinus</b> (CAS).</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden (5.5)</b><ul class="lst">
+<li><b>O en S</b>: sinus. <b>A en S</b>: cosinus. <b>O en A</b>: tangens.</li>
+<li><b>Drieletternotatie</b>: de middelste letter is het hoekpunt.</li></ul></div>`},
+
+{heading:'5.6 Hoeken berekenen in ruimtefiguren',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>een <b>hoek</b> berekenen in een <b>ruimtefiguur</b></li></ul></div>`
++`<h5 class="sub">Zoek de rechthoekige driehoek</h5>`
++`<div class="box"><h4>In een zijvlak of doorsnede</h4><p>Ook in een <b>balk</b>, <b>kubus</b> of <b>piramide</b> kun je hoeken berekenen. Zoek een <b>rechthoekige driehoek</b> in een <b>zijvlak</b> of in een <b>doorsnede</b>, en gebruik dan <b>sinus</b>, <b>cosinus</b> of <b>tangens</b>.</p></div>`
++`<div class="call reken"><b>Stappenplan: hoek in een ruimtefiguur</b><ol class="num">
+<li>In welke <b>driehoek</b> ligt de hoek? En in welk <b>vlak</b> ligt die driehoek?</li>
+<li>Maak een <b>schets</b> van dat vlak, met letters, maten en een <b>vraagteken</b> in de hoek.</li>
+<li>Ontbreekt er een zijde? Bereken hem met <b>Pythagoras</b>.</li>
+<li>Kies <b>SOS</b>, <b>CAS</b> of <b>TOA</b> en bereken de hoek.</li></ol></div>`
++`<div class="voorbeeld"><h4>Voorbeeld: &ang;AHB in balk ABCD EFGH</h4><p><b>AB = 6 cm</b>, <b>AD = 4 cm</b>, <b>AE = 5 cm</b>. Rond af op hele graden.</p><div class="antwoord">&ang;AHB ligt in driehoek AHB, met de <b>rechte hoek bij A</b> (AB staat loodrecht op het zijvlak ADHE). Eerst AH in zijvlak ADHE: AH&sup2; = 4&sup2; + 5&sup2; = 41, AH = &radic;41 &asymp; 6,40. Vanuit H is AB <b>overstaand</b> en AH <b>aanliggend</b>: <b>TOA</b>. tan &ang;AHB = 6 : &radic;41, dus &ang;AHB &asymp; <b>43&deg;</b>.</div></div>`
++`<div class="call warn"><b>Rond tussendoor niet af.</b> Reken met &radic;41 op je rekenmachine, niet met 6,40. Rond pas de <b>hoek</b> af.</div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Waar zoek je een rechthoekige driehoek in een ruimtefiguur?</p><p class="check-a">In een <b>zijvlak</b> of in een <b>doorsnede</b>.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden (5.6)</b><ul class="lst">
+<li>Zoek een <b>rechthoekige driehoek</b> in een zijvlak of doorsnede.</li>
+<li>Maak een <b>schets</b> van dat vlak.</li>
+<li>Eerst Pythagoras, dan <b>SOS, CAS of TOA</b>.</li></ul></div>`}
 ],
 terms:[
 ['Rechthoekszijde','Een van de twee zijden van een rechthoekige driehoek die samen de rechte hoek vormen.',0],

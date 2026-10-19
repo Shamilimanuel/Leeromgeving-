@@ -1,14 +1,97 @@
 import { registerChapter } from '../../../registry.js';
 
+/* Rebuilt 2026-09-25 to the recipe of Economie TL4 H1 (change 6). Same
+   grammar and Theme words, restructured. Terms, cards and quiz unchanged. */
 registerChapter('engels|tl|2|2', {
 title:'Health',
 summary:[
-{heading:'At the doctor\'s',html:'<div class=\'box\'><h4>Waar gaat dit hoofdstuk over?</h4><p>Dit hoofdstuk gaat over gezondheid: naar de dokter gaan, ziektes en blessures, en hoe je iemand advies geeft en gerust kunt stellen. Je leert de <b>past continuous</b> (was/were + -ing) om te vertellen wat je aan het doen was toen er iets gebeurde, en hoe je die combineert met de past simple. Ook leer je <b>can</b>, <b>could</b> en <b>should</b> gebruiken om advies te geven. Het hoofdstuk gaat over Singapore, een van de gezondste landen ter wereld.</p></div> <div class=\'call\'>Weetje: de eindopdracht (Task) van dit hoofdstuk is het maken van een strip (comic) over een bezoek aan de dokter, met minstens vijf foto\'s.</div><div class=\'box\'><h4>At the doctor\'s</h4><p>Deze Theme words gebruik je om te praten over een bezoek aan de dokter.</p></div> <div class=\'tblwrap\'><table class=\'tbl\'> <tr><th>Engels</th><th>Nederlands</th></tr> <tr><td>appointment</td><td>afspraak</td></tr> <tr><td>crutches</td><td>krukken</td></tr> <tr><td>dentist</td><td>tandarts</td></tr> <tr><td>(to) examine</td><td>onderzoeken</td></tr> <tr><td>(to) feel worse</td><td>je slechter voelen</td></tr> <tr><td>(to) get better</td><td>beter worden</td></tr> <tr><td>(to) hurt</td><td>pijn doen</td></tr> <tr><td>plaster</td><td>pleister</td></tr> <tr><td>stitches</td><td>hechtingen</td></tr> <tr><td>(to) treat</td><td>behandelen</td></tr> <tr><td>waiting room</td><td>wachtkamer</td></tr> <tr><td>X-ray</td><td>röntgenfoto</td></tr> </table></div> <div class=\'voorbeeld\'><p>I had an appointment with the dentist. She examined my tooth and gave me stitches.</p></div>'},
-{heading:'Health conditions',html:'<div class=\'box\'><h4>Health conditions</h4><p>Met deze Theme words vertel je wat er met je aan de hand is.</p></div> <div class=\'tblwrap\'><table class=\'tbl\'> <tr><th>Engels</th><th>Nederlands</th></tr> <tr><td>black eye</td><td>blauw oog</td></tr> <tr><td>headache</td><td>hoofdpijn</td></tr> <tr><td>runny nose</td><td>loopneus</td></tr> <tr><td>sore throat</td><td>zere keel</td></tr> <tr><td>stomach ache</td><td>buikpijn</td></tr> <tr><td>toothache</td><td>kiespijn</td></tr> <tr><td>(to) feel dizzy</td><td>duizelig zijn</td></tr> <tr><td>(to) feel miserable</td><td>je ellendig voelen</td></tr> <tr><td>(to) have a cold</td><td>verkouden zijn</td></tr> <tr><td>(to) have a fever</td><td>koorts hebben</td></tr> <tr><td>(to) have the flu</td><td>griep hebben</td></tr> <tr><td>(to) look pale</td><td>er bleek uitzien</td></tr> </table></div> <div class=\'call warn\'><b>Veelgemaakte fout:</b> je zegt \'I have a headache\', niet \'I have headache\', vergeet het lidwoord \'a\' niet.</div>'},
-{heading:'Tips and advice',html:'<div class=\'box\'><h4>Tips and advice</h4><p>Deze Theme words gebruik je om iemand advies te geven of gerust te stellen.</p></div> <div class=\'tblwrap\'><table class=\'tbl\'> <tr><th>Engels</th><th>Nederlands</th></tr> <tr><td>(to) avoid</td><td>vermijden</td></tr> <tr><td>(to) breathe in/out</td><td>in-/uitademen</td></tr> <tr><td>(to) cure</td><td>genezen</td></tr> <tr><td>(to) cut down on</td><td>minderen met</td></tr> <tr><td>(to) hang in there</td><td>volhouden</td></tr> <tr><td>(to) heal</td><td>genezen, helen</td></tr> <tr><td>(to) improve</td><td>verbeteren</td></tr> <tr><td>(to) recover</td><td>herstellen</td></tr> <tr><td>(to) rest</td><td>rusten</td></tr> <tr><td>(to) take a break</td><td>een pauze nemen</td></tr> <tr><td>(to) take it easy</td><td>het rustig aan doen</td></tr> <tr><td>(to) worry</td><td>je zorgen maken</td></tr> </table></div> <div class=\'voorbeeld\'><p>You should rest and take it easy. Don\'t worry, you will recover soon.</p></div>'},
-{heading:'Past continuous',html:'<div class=\'box\'><h4>Past continuous: was living</h4><p>Je gebruikt de <b>past continuous</b> voor een activiteit die in het verleden aan de gang was.</p></div> <div class=\'tblwrap\'><table class=\'tbl\'> <tr><th>Onderwerp</th><th>Vorm van \'was/were\'</th><th>Werkwoord + -ing</th></tr> <tr><td>I / he / she / it</td><td>was</td><td>running, cooking, ...</td></tr> <tr><td>you / we / they</td><td>were</td><td>running, cooking, ...</td></tr> </table></div> <div class=\'voorbeeld\'><p>I was running in the park. We were warming up for the game. They were working out in the gym.</p></div> <div class=\'call\'>Je gebruikt de past continuous vaak samen met \'when\' om te vertellen wat er gebeurde tijdens die activiteit: \'I was running in the park when I felt dizzy.\'</div>'},
-{heading:'Past continuous en past simple',html:'<div class=\'box\'><h4>She was doing her homework when I called her</h4><p>Als twee gebeurtenissen tegelijk gebeurden, kun je de past continuous en de past simple in één zin gebruiken.</p></div> <div class=\'call sum\'><b>Om te onthouden</b><ul class=\'lst\'> <li>Gebruik de <b>past continuous</b> voor de activiteit die het langst duurde.</li> <li>Gebruik de <b>past simple</b> voor de kortere gebeurtenis die de langere activiteit onderbrak.</li> </ul></div> <div class=\'voorbeeld\'><p>He was swimming in the ocean when he saw a dolphin.<br>They were listening to Spotify until Jimmy\'s phone broke.<br>I bumped my head while I was taking a photo.</p></div> <div class=\'call warn\'><b>Veelgemaakte fout:</b> gebruik niet twee keer de past continuous in zo\'n zin. De korte, plotselinge gebeurtenis staat altijd in de past simple.</div>'},
-{heading:'Can, could en should',html:'<div class=\'box\'><h4>Can, could en should</h4><p>Met deze werkwoorden geef je advies of vraag je of iets mogelijk is.</p></div> <div class=\'tblwrap\'><table class=\'tbl\'> <tr><th>Woord</th><th>Gebruik</th><th>Voorbeeld</th></tr> <tr><td>can</td><td>iets is mogelijk / een feit (in het heden)</td><td>You can never leave your phone unlocked.</td></tr> <tr><td>could</td><td>een optie, mildere suggestie</td><td>You could take a hot bath.</td></tr> <tr><td>should</td><td>advies: wat iemand het beste kan doen</td><td>You should exercise to get more energy.</td></tr> </table></div> <div class=\'voorbeeld\'><p>If I were you, I would relax for a couple of days. You must get some rest and not worry too much.</p></div> <div class=\'call warn\'><b>Veelgemaakte fout:</b> je schrijft \'can + not\' als één woord: <i>cannot</i>. Bij \'could\' en \'should\' schrijf je gewoon \'could not\' / \'couldn\'t\' en \'should not\' / \'shouldn\'t\'.</div> <div class=\'call\'>\'Should\' gebruik je om advies te geven, \'could\' om een mogelijkheid te noemen. \'You should see a doctor\' klinkt sterker dan \'You could see a doctor\'.</div>'}
+{heading:'At the doctor\'s',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>woorden voor een bezoek aan de <b>dokter</b></li></ul></div>`
++`<div class="box"><h4>Waar dit hoofdstuk over gaat</h4><p>Dit hoofdstuk gaat over <b>gezondheid</b>: naar de <b>dokter</b>, <b>ziektes</b> en blessures, en iemand <b>advies</b> geven. Je leert de <b>past continuous</b> (was/were + -ing), hoe je die combineert met de <b>past simple</b>, en <b>can</b>, <b>could</b> en <b>should</b>. Het hoofdstuk speelt in <b>Singapore</b>, een van de gezondste landen ter wereld.</p></div>`
++`<h5 class="sub">Theme words: at the doctor's</h5>`
++`<div class="tblwrap"><table class="tbl"><tr><th>Engels</th><th>Nederlands</th></tr><tr><td><b>appointment</b></td><td>afspraak</td></tr><tr><td><b>crutches</b></td><td>krukken</td></tr><tr><td><b>dentist</b></td><td>tandarts</td></tr><tr><td><b>(to) examine</b></td><td>onderzoeken</td></tr><tr><td><b>(to) feel worse</b></td><td>je slechter voelen</td></tr><tr><td><b>(to) get better</b></td><td>beter worden</td></tr><tr><td><b>(to) hurt</b></td><td>pijn doen</td></tr><tr><td><b>plaster</b></td><td>pleister</td></tr><tr><td><b>stitches</b></td><td>hechtingen</td></tr><tr><td><b>(to) treat</b></td><td>behandelen</td></tr><tr><td><b>waiting room</b></td><td>wachtkamer</td></tr><tr><td><b>X-ray</b></td><td>röntgenfoto</td></tr></table></div>`
++`<div class="vergelijk"><div class="vergelijk-kant"><h4>feel worse</h4><p>Je voelt je <b>slechter</b>.</p></div><div class="vergelijk-vs">vs</div><div class="vergelijk-kant"><h4>get better</h4><p>Je wordt <b>beter</b>.</p></div></div>`
++`<div class="voorbeeld"><h4>Voorbeeld: bij de tandarts</h4><p>Vertel over een afspraak.</p><div class="antwoord">I had an <b>appointment</b> with the <b>dentist</b>. She <b>examined</b> my tooth.</div></div>`
++`<div class="call warn"><b>Instinker:</b> een <b>plaster</b> is een <b>pleister</b>, geen gips.</div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Wat is een waiting room?</p><p class="check-a">Een <b>wachtkamer</b>.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden</b><ul class="lst">
+<li><b>appointment</b>, <b>examine</b>, <b>treat</b>: het bezoek.</li>
+<li><b>feel worse</b> tegenover <b>get better</b>.</li></ul></div>`},
+
+{heading:'Health conditions',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>vertellen wat er met je <b>aan de hand</b> is</li></ul></div>`
++`<h5 class="sub">Theme words: health conditions</h5>`
++`<div class="tblwrap"><table class="tbl"><tr><th>Engels</th><th>Nederlands</th></tr><tr><td><b>black eye</b></td><td>blauw oog</td></tr><tr><td><b>headache</b></td><td>hoofdpijn</td></tr><tr><td><b>runny nose</b></td><td>loopneus</td></tr><tr><td><b>sore throat</b></td><td>zere keel</td></tr><tr><td><b>stomach ache</b></td><td>buikpijn</td></tr><tr><td><b>toothache</b></td><td>kiespijn</td></tr><tr><td><b>(to) feel dizzy</b></td><td>duizelig zijn</td></tr><tr><td><b>(to) feel miserable</b></td><td>je ellendig voelen</td></tr><tr><td><b>(to) have a cold</b></td><td>verkouden zijn</td></tr><tr><td><b>(to) have a fever</b></td><td>koorts hebben</td></tr><tr><td><b>(to) have the flu</b></td><td>griep hebben</td></tr><tr><td><b>(to) look pale</b></td><td>er bleek uitzien</td></tr></table></div>`
++`<div class="call reken"><b>Zo vertel je wat je hebt</b><ol class="num">
+<li>Een pijn: <b>I have a</b> headache / toothache.</li>
+<li>Een ziekte: <b>I have a</b> cold / fever, <b>I have the</b> flu.</li>
+<li>Een gevoel: <b>I feel</b> dizzy / miserable.</li></ol></div>`
++`<div class="call waarom">Waarom zijn <b>headache</b> en <b>toothache</b> handig? Het zijn <b>samenstellingen</b> met <b>ache</b> (pijn). Ken je ache, dan snap je ook stomach ache.</div>`
++`<div class="call warn"><b>Veelgemaakte fout:</b> &ldquo;I have headache&rdquo;. Vergeet het lidwoord niet: <b>I have a headache</b>.</div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Hoe zeg je: ik heb griep?</p><p class="check-a"><b>I have the flu.</b></p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden</b><ul class="lst">
+<li><b>I have a</b> headache / cold / fever; <b>I have the</b> flu.</li>
+<li><b>I feel</b> dizzy / miserable.</li></ul></div>`},
+
+{heading:'Tips and advice',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>iemand <b>advies</b> geven en <b>gerust</b> stellen</li></ul></div>`
++`<h5 class="sub">Theme words: tips and advice</h5>`
++`<div class="tblwrap"><table class="tbl"><tr><th>Engels</th><th>Nederlands</th></tr><tr><td><b>(to) avoid</b></td><td>vermijden</td></tr><tr><td><b>(to) breathe in/out</b></td><td>in-/uitademen</td></tr><tr><td><b>(to) cure</b></td><td>genezen</td></tr><tr><td><b>(to) cut down on</b></td><td>minderen met</td></tr><tr><td><b>(to) hang in there</b></td><td>volhouden</td></tr><tr><td><b>(to) heal</b></td><td>genezen, helen</td></tr><tr><td><b>(to) improve</b></td><td>verbeteren</td></tr><tr><td><b>(to) recover</b></td><td>herstellen</td></tr><tr><td><b>(to) rest</b></td><td>rusten</td></tr><tr><td><b>(to) take a break</b></td><td>een pauze nemen</td></tr><tr><td><b>(to) take it easy</b></td><td>het rustig aan doen</td></tr><tr><td><b>(to) worry</b></td><td>je zorgen maken</td></tr></table></div>`
++`<div class="vergelijk"><div class="vergelijk-kant"><h4>Advies geven</h4><p>You should <b>rest</b>. <b>Take it easy</b>. <b>Cut down on</b> sugar.</p></div><div class="vergelijk-vs">vs</div><div class="vergelijk-kant"><h4>Gerust stellen</h4><p><b>Don't worry</b>. <b>Hang in there</b>. You will <b>recover</b> soon.</p></div></div>`
++`<div class="voorbeeld"><h4>Voorbeeld: een vriend is ziek</h4><p>Geef advies en stel gerust.</p><div class="antwoord">You should <b>rest</b> and <b>take it easy</b>. <b>Don't worry</b>, you will <b>recover</b> soon.</div></div>`
++`<div class="call warn"><b>Let op:</b> <b>cure</b> en <b>heal</b> betekenen allebei genezen. Een dokter <b>cures</b> een ziekte; een wond <b>heals</b>.</div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Wat betekent to hang in there?</p><p class="check-a"><b>Volhouden</b>.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden</b><ul class="lst">
+<li>Advies: <b>rest</b>, <b>take it easy</b>, <b>avoid</b>, <b>cut down on</b>.</li>
+<li>Gerust stellen: <b>don't worry</b>, <b>hang in there</b>.</li></ul></div>`},
+
+{heading:'Past continuous',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>de <b>past continuous</b> maken en gebruiken</li></ul></div>`
++`<h5 class="sub">Was living</h5>`
++`<div class="box"><h4>Bezig in het verleden</h4><p>De <b>past continuous</b> gebruik je voor een activiteit die in het verleden <b>aan de gang</b> was: je was er <b>mee bezig</b>.</p></div>`
++`<div class="call reken"><b>Zo maak je de past continuous</b><ol class="num">
+<li>Kies <b>was</b> (I, he, she, it) of <b>were</b> (you, we, they).</li>
+<li>Zet het werkwoord erachter met <b>-ing</b>.</li>
+<li>Klaar: I <b>was running</b>, they <b>were cooking</b>.</li></ol></div>`
++`<div class="voorbeeld"><h4>Voorbeeld: bezig zijn</h4><p>Drie zinnen met was of were.</p><div class="antwoord">I <b>was running</b> in the park. We <b>were warming up</b> for the game. They <b>were working out</b> in the gym.</div></div>`
++`<div class="vergelijk"><div class="vergelijk-kant"><h4>Past simple</h4><p>Het gebeurde, <b>klaar</b>: I ran.</p></div><div class="vergelijk-vs">vs</div><div class="vergelijk-kant"><h4>Past continuous</h4><p>Je was <b>bezig</b>: I was running.</p></div></div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Vul in: We (warm up) for the game.</p><p class="check-a">We <b>were warming up</b>.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden</b><ul class="lst">
+<li><b>was/were</b> + werkwoord<b>-ing</b>.</li>
+<li>Voor iets waar je <b>mee bezig</b> was.</li></ul></div>`},
+
+{heading:'Past continuous en past simple',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>de <b>past continuous</b> en de <b>past simple</b> samen in één zin gebruiken</li></ul></div>`
++`<h5 class="sub">Lang en kort</h5>`
++`<div class="vergelijk"><div class="vergelijk-kant"><h4>Past continuous</h4><p>De <b>langere</b> activiteit die al bezig was.</p></div><div class="vergelijk-vs">vs</div><div class="vergelijk-kant"><h4>Past simple</h4><p>De <b>korte</b> gebeurtenis die ertussen komt.</p></div></div>`
++`<div class="call reken"><b>Zo combineer je ze</b><ol class="num">
+<li>Welke actie duurde <b>lang</b>? Die krijgt <b>was/were + -ing</b>.</li>
+<li>Welke actie was <b>kort</b> of <b>plotseling</b>? Die krijgt de <b>past simple</b>.</li>
+<li>Verbind ze met <b>when</b> of <b>while</b>.</li></ol></div>`
++`<div class="voorbeeld"><h4>Voorbeeld: onderbroken</h4><p>Wat duurde lang, wat was kort?</p><div class="antwoord">He <b>was swimming</b> in the ocean when he <b>saw</b> a dolphin. I <b>bumped</b> my head while I <b>was taking</b> a photo. She <b>was doing</b> her homework when I <b>called</b> her.</div></div>`
++`<div class="call warn"><b>Veelgemaakte fout:</b> twee keer de past continuous. De <b>korte, plotselinge</b> gebeurtenis staat altijd in de <b>past simple</b>.</div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Vul in: I (run) in the park when I (feel) dizzy.</p><p class="check-a">I <b>was running</b> in the park when I <b>felt</b> dizzy.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden</b><ul class="lst">
+<li><b>Lang</b>: past continuous. <b>Kort</b>: past simple.</li>
+<li>Verbinden met <b>when</b> of <b>while</b>.</li></ul></div>`},
+
+{heading:'Can, could en should',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li><b>can</b>, <b>could</b> en <b>should</b> gebruiken om advies te geven</li></ul></div>`
++`<h5 class="sub">Hoe sterk is je advies?</h5>`
++`<div class="tblwrap"><table class="tbl"><tr><th>Woord</th><th>Gebruik</th><th>Voorbeeld</th></tr><tr><td><b>can</b></td><td>iets is <b>mogelijk</b> of een feit</td><td>You can never leave your phone unlocked.</td></tr><tr><td><b>could</b></td><td>een <b>optie</b>, een milde suggestie</td><td>You could take a hot bath.</td></tr><tr><td><b>should</b></td><td><b>advies</b>: wat het beste is</td><td>You should exercise to get more energy.</td></tr></table></div>`
++`<div class="vergelijk"><div class="vergelijk-kant"><h4>could</h4><p>You <b>could</b> see a doctor. Een <b>mogelijkheid</b>.</p></div><div class="vergelijk-vs">vs</div><div class="vergelijk-kant"><h4>should</h4><p>You <b>should</b> see a doctor. <b>Sterker</b>: echt een advies.</p></div></div>`
++`<div class="voorbeeld"><h4>Voorbeeld: meer manieren om advies te geven</h4><p>Andere zinnen uit het hoofdstuk.</p><div class="antwoord"><b>If I were you, I would</b> relax for a couple of days. You <b>must</b> get some rest and not worry too much.</div></div>`
++`<div class="call warn"><b>Spelling:</b> <b>cannot</b> is één woord. Bij could en should schrijf je <b>could not / couldn't</b> en <b>should not / shouldn't</b>.</div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Wat klinkt sterker: You could rest of You should rest?</p><p class="check-a"><b>You should rest</b>.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden</b><ul class="lst">
+<li><b>can</b>: mogelijk. <b>could</b>: optie. <b>should</b>: advies.</li>
+<li><b>cannot</b> aan elkaar.</li></ul></div>`}
 ],
 terms:[
 ['appointment','afspraak',0],

@@ -1,173 +1,24 @@
 import { registerChapter } from '../../../registry.js';
 
 /* Chapter 13 content: Duurzaam leven (Nectar BBL year 2, part B) */
+/* Upgraded 2026-09-25 to the recipe of Economie TL4 H1 (change 6): every paragraph
+   got "Dit leer je" and a "Check jezelf" (taken from its own flashcard where
+   there was none), plus bold on its own glossary terms where it had little.
+   The text itself is unchanged. */
 registerChapter('biologie|bbl|2|13', {
 title:'Duurzaam leven',
 summary:[
-{
- heading:'13.1 Je invloed op aarde',
- html:
- '<div class="box"><h4>Wat is het milieu?</h4>'
- +'<p>Het <b>milieu</b> is alles om je heen: de lucht, het water, de bodem, de planten en de dieren. Alles wat je doet, heeft daar invloed op.</p></div>'
+{heading:'13.1 Je invloed op aarde',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst"><li>wat het <b>milieu</b> is</li><li>wat <b>duurzaam</b> betekent</li></ul></div><div class="box"><h4>Wat is het milieu?</h4><p>Het <b>milieu</b> is alles om je heen: de lucht, het water, de bodem, de planten en de dieren. Alles wat je doet, heeft daar invloed op.</p></div><div class="box" style="margin-top:1rem"><h4>Vier dingen die je gebruikt</h4><p>Er leven meer dan 8 miljard mensen op aarde. Iedereen gebruikt:</p><div class="tblwrap" style="margin-top:.6rem"><table class="tbl"><tr><th></th><th>Wat</th><th>Voorbeeld</th></tr><tr><td><b>Grondstoffen</b></td><td>materialen om spullen van te maken</td><td>hout, metaal, olie voor plastic</td></tr><tr><td><b>Energie</b></td><td>elektriciteit en brandstof</td><td>verwarming, vervoer, je telefoon opladen</td></tr><tr><td><b>Voedsel en water</b></td><td>om te leven</td><td>eten, drinken, douchen</td></tr><tr><td><b>Afval</b></td><td>wat je weggooit</td><td>verpakkingen, kapotte spullen</td></tr></table></div><div class="call warn" style="margin-bottom:0"><b>Het probleem:</b> grondstoffen raken <b>op</b> en afval vervuilt. Met zoveel mensen tikt dat hard aan.</div></div><div class="box" style="margin-top:1rem"><h4>Wat is duurzaam?</h4><p><b>Duurzaam</b> leven betekent: zuinig omgaan met de aarde, zodat er in de toekomst voor iedereen genoeg voedsel, drinkwater, energie en grondstoffen overblijft. Een ander woord is <b>milieubewust</b>.</p></div><h5 class="sub">De voedselkringloop</h5><div class="box"><p>De aarde zorgt er zelf voor dat voedsel nooit opraakt, door de <b>voedselkringloop</b>. Dit ken je al uit hoofdstuk 6, hier krijgen de groepen alleen hun officiële naam:</p><div class="tblwrap" style="margin-top:.7rem"><table class="tbl"><tr><th>Groep</th><th>Officiële naam</th><th>Wie</th></tr><tr><td>Makers</td><td><b>Producenten</b></td><td>planten</td></tr><tr><td>Gebruikers</td><td><b>Consumenten</b></td><td>dieren en mensen</td></tr><tr><td>Afvaleters</td><td>-</td><td>bodemdieren</td></tr><tr><td>Afbrekers</td><td><b>Reducenten</b></td><td>schimmels en bacteriën</td></tr></table></div><div class="call" style="margin-bottom:0">Bij een <b>gesloten kringloop</b> gaan er geen stoffen verloren: alles wat verbruikt wordt, wordt weer aangevuld. Dan ontstaat er nooit een tekort.</div></div><div class="check" onclick="toonCheck(this)"><p class="check-v">Wat is het milieu?</p><p class="check-a">Alles om je heen: lucht, water, bodem, planten en dieren.</p><span class="check-hint">Tik voor het antwoord</span></div><div class="call sum"><b>Om te onthouden (13.1)</b><ul class="lst"><li>Het <b>milieu</b> is alles om je heen; alles wat je doet heeft er invloed op.</li><li>Je gebruikt <b>grondstoffen</b>, <b>energie</b>, <b>voedsel en water</b>, en je produceert <b>afval</b>.</li><li><b>Duurzaam</b> = zuinig omgaan met de aarde, zodat er genoeg overblijft.</li><li>Voedselkringloop: <b>producenten</b> (planten), <b>consumenten</b> (dieren en mensen), afvaleters, <b>reducenten</b> (schimmels en bacteriën).</li></ul></div>`},
 
- +'<div class="box" style="margin-top:1rem"><h4>Vier dingen die je gebruikt</h4>'
- +'<p>Er leven meer dan 8 miljard mensen op aarde. Iedereen gebruikt:</p>'
- +'<div class="tblwrap" style="margin-top:.6rem"><table class="tbl">'
- +'<tr><th></th><th>Wat</th><th>Voorbeeld</th></tr>'
- +'<tr><td><b>Grondstoffen</b></td><td>materialen om spullen van te maken</td><td>hout, metaal, olie voor plastic</td></tr>'
- +'<tr><td><b>Energie</b></td><td>elektriciteit en brandstof</td><td>verwarming, vervoer, je telefoon opladen</td></tr>'
- +'<tr><td><b>Voedsel en water</b></td><td>om te leven</td><td>eten, drinken, douchen</td></tr>'
- +'<tr><td><b>Afval</b></td><td>wat je weggooit</td><td>verpakkingen, kapotte spullen</td></tr></table></div>'
- +'<div class="call warn" style="margin-bottom:0"><b>Het probleem:</b> grondstoffen raken <b>op</b> en afval vervuilt. Met zoveel mensen tikt dat hard aan.</div></div>'
+{heading:'13.2 Voedsel produceren',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst"><li>hoe <b>akkerbouwers</b>, <b>tuinbouwers</b> en <b>veehouders</b> voedsel maken</li><li>wat <b>monocultuur</b> en <b>bio-industrie</b> zijn</li></ul></div><div class="g3"><div class="box"><h4>Akkerbouwers</h4><p>Verbouwen <b>voedingsgewassen</b> op akkers, zoals aardappelen, graan en suikerbieten.</p></div><div class="box"><h4>Tuinbouwers</h4><p>Kweken groente, fruit en bloemen, vaak in <b>kassen</b>.</p></div><div class="box"><h4>Veehouders</h4><p>Houden dieren voor melk, vlees of eieren.</p></div></div><p class="dim" style="margin-top:.7rem">Een <b style="color:var(--txt)">gemengd bedrijf</b> doet allebei: akkerbouw én veeteelt.</p><h5 class="sub">Zo veel mogelijk voedsel, zo goedkoop mogelijk</h5><div class="g2"><div class="box"><h4>Monocultuur</h4><p>Op een groot stuk land staat maar <b>één soort</b> gewas. Dat is makkelijk oogsten en dus goedkoop.</p><div class="call warn" style="margin-bottom:0"><b>Nadeel:</b> <b>plaagorganismen</b> die van dat gewas leven, hebben ineens heel veel voedsel. Ze vermeerderen zich snel en de plaag is zo groot.</div></div><div class="box"><h4>Mest</h4><p>Planten hebben <b>mineralen</b> nodig om te groeien. Die haalt de boer uit mest:</p><div class="term" style="margin-top:.6rem"><b>Dierlijke mest</b><span>Poep en plas van dieren, met mineralen erin.</span></div><div class="term" style="margin-bottom:0"><b>Kunstmest</b><span>Mestkorrels met mineralen, gemaakt in een fabriek.</span></div></div></div><div class="box" style="margin-top:1rem"><h4>Gewasbeschermingsmiddelen</h4><p><b>Gewasbeschermingsmiddelen</b> doden plaagorganismen zoals insecten en schimmels. Zo verliest de boer minder oogst.</p><div class="call warn" style="margin-bottom:0"><b>Nadeel:</b> ze doden ook <b>nuttige</b> dieren, zoals bijen. En er kunnen resten achterblijven op je eten en in het grondwater.</div></div><h5 class="sub">Bio-industrie</h5><div class="g2"><div class="box"><h4>Wat is het?</h4><p>Bij <b>bio-industrie</b> (ook wel intensieve veehouderij) houdt een veehouder <b>zo veel mogelijk dieren</b> in de beschikbare ruimte.</p><ul class="lst" style="margin-top:.5rem"><li>Dieren krijgen <b>krachtvoer</b>, zodat ze snel groeien</li><li>Ze krijgen soms <b>medicijnen</b> om ziektes te voorkomen</li><li>Ze hebben weinig ruimte</li></ul></div><div class="box"><h4>Het mestoverschot</h4><p>Veel dieren op een klein oppervlak leveren <b>meer mest</b> dan er op het bedrijf nodig is. Dat heet een <b>mestoverschot</b>.</p><p style="margin-top:.6rem">Wordt er te veel mest op het land gebracht, dan spoelen de mineralen uit naar sloten en grondwater: <b>overbemesting</b>.</p><div class="call warn" style="margin-bottom:0"><b>Gevolg:</b> in de sloot groeien <b>algen</b> explosief door al die mineralen. Het water raakt overwoekerd, er komt geen licht meer bij en andere waterplanten en dieren gaan dood.</div></div></div><div class="check" onclick="toonCheck(this)"><p class="check-v">Wat is monocultuur?</p><p class="check-a">Eén soort gewas op een groot stuk land.</p><span class="check-hint">Tik voor het antwoord</span></div><div class="call sum"><b>Om te onthouden (13.2)</b><ul class="lst"><li><b>Akkerbouwers</b>, <b>tuinbouwers</b> en <b>veehouders</b> produceren ons voedsel.</li><li><b>Monocultuur</b> is goedkoop, maar geeft snel <b>plagen</b>.</li><li>Mineralen komen uit <b>dierlijke mest</b> of <b>kunstmest</b>.</li><li><b>Gewasbeschermingsmiddelen</b> doden plagen, maar ook nuttige dieren.</li><li><b>Bio-industrie</b> geeft een <b>mestoverschot</b>, en te veel mest leidt tot <b>overbemesting</b> en algengroei.</li></ul></div>`},
 
- +'<div class="box" style="margin-top:1rem"><h4>Wat is duurzaam?</h4>'
- +'<p><b>Duurzaam</b> leven betekent: zuinig omgaan met de aarde, zodat er in de toekomst voor iedereen genoeg voedsel, drinkwater, energie en grondstoffen overblijft. Een ander woord is <b>milieubewust</b>.</p></div>'
+{heading:'13.3 Vervuiling',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst"><li><b>afval</b> scheiden</li><li><b>luchtvervuiling</b> en het versterkte <b>broeikaseffect</b></li></ul></div><h5 class="sub" style="margin-top:0">Afval</h5><div class="g2"><div class="box"><h4>Scheiden loont</h4><div class="tblwrap"><table class="tbl"><tr><th>Soort</th><th>Wat ermee gebeurt</th></tr><tr><td><b>Gft-afval</b></td><td>wordt <b>compost</b>: mest voor de tuin</td></tr><tr><td><b>Papier, glas, plastic</b></td><td><b>hergebruik</b>: er worden nieuwe spullen van gemaakt</td></tr><tr><td><b>Restafval</b></td><td>gaat naar de <b>verbrandingsoven</b></td></tr></table></div><p style="margin-top:.7rem"><b>Hergebruik</b> is belangrijk: je hebt dan minder nieuwe grondstoffen nodig, en er is minder afval.</p></div><div class="box"><h4>Zwerfafval en riolering</h4><p><b>Zwerfafval</b> is afval dat mensen op straat of in de natuur gooien. Dieren kunnen erin verstrikt raken of het opeten.</p><p style="margin-top:.6rem">Vuil water gaat via de <b>riolering</b> naar een zuiveringsinstallatie. Daar wordt het schoongemaakt voordat het weer in het oppervlaktewater komt.</p><div class="call" style="margin-bottom:0">Gooi daarom geen verf, olie of medicijnen door de gootsteen of wc: de zuivering krijgt die er niet uit.</div></div></div><h5 class="sub">Luchtvervuiling</h5><div class="box"><p><b>Fossiele brandstoffen</b> zijn aardolie, aardgas en steenkool. Ze zijn miljoenen jaren geleden ontstaan uit resten van planten en dieren, en <b>raken op</b>.</p><p style="margin-top:.6rem">Bij het verbranden ervan komen <b>afvalgassen</b> vrij. Die veroorzaken <b>luchtvervuiling</b>.</p><div class="term" style="margin-top:.8rem"><b>Fijnstof</b><span>Heel kleine stofdeeltjes in de lucht. Je ademt ze in; ze zijn slecht voor je longen.</span></div><div class="term" style="margin-bottom:0"><b>Smog</b><span>Een mengsel van rook en mist bij windstil weer. Mensen met astma krijgen het dan benauwd.</span></div></div><h5 class="sub">Het versterkte broeikaseffect</h5><div class="box"><p>In de dampkring zitten gassen die warmte vasthouden, zoals <b>koolstofdioxide</b>. Dat is het <b>natuurlijke broeikaseffect</b>: zonder dat zou het op aarde veel te koud zijn om te leven.</p><p style="margin-top:.7rem">Maar door het verbranden van fossiele brandstoffen komt er <b>steeds meer koolstofdioxide</b> in de lucht. Er wordt dus meer warmte vastgehouden dan vroeger. Dat heet het <b>versterkte broeikaseffect</b>.</p><div class="call warn" style="margin-bottom:0"><b>Gevolg:</b> de aarde wordt warmer. Het ijs op de polen smelt, de zeespiegel stijgt en het weer wordt extremer.</div><p style="margin-top:.8rem;color:var(--mut);font-size:.86rem"><b>Ontbossing</b> maakt het erger: bomen nemen juist koolstofdioxide op bij de fotosynthese. Minder bos = minder opname.</p></div><div class="check" onclick="toonCheck(this)"><p class="check-v">Wat gebeurt er met gft-afval?</p><p class="check-a">Daar wordt compost van gemaakt: mest voor de tuin.</p><span class="check-hint">Tik voor het antwoord</span></div><div class="call sum"><b>Om te onthouden (13.3)</b><ul class="lst"><li>Afval scheiden: <b>gft</b> → compost, <b>papier/glas/plastic</b> → hergebruik, <b>restafval</b> → verbrandingsoven.</li><li>Vuil water gaat via de <b>riolering</b> naar de zuivering.</li><li><b>Fossiele brandstoffen</b> raken op; bij verbranding ontstaan <b>afvalgassen</b>.</li><li><b>Fijnstof</b> is slecht voor je longen; <b>smog</b> ontstaat bij windstil weer.</li><li>Meer <b>koolstofdioxide</b> → <b>versterkt broeikaseffect</b> → de aarde wordt warmer.</li></ul></div>`},
 
- +'<h5 class="sub">De voedselkringloop</h5>'
- +'<div class="box">'
- +'<p>De aarde zorgt er zelf voor dat voedsel nooit opraakt, door de <b>voedselkringloop</b>. Dit ken je al uit hoofdstuk 6, hier krijgen de groepen alleen hun officiële naam:</p>'
- +'<div class="tblwrap" style="margin-top:.7rem"><table class="tbl">'
- +'<tr><th>Groep</th><th>Officiële naam</th><th>Wie</th></tr>'
- +'<tr><td>Makers</td><td><b>Producenten</b></td><td>planten</td></tr>'
- +'<tr><td>Gebruikers</td><td><b>Consumenten</b></td><td>dieren en mensen</td></tr>'
- +'<tr><td>Afvaleters</td><td>-</td><td>bodemdieren</td></tr>'
- +'<tr><td>Afbrekers</td><td><b>Reducenten</b></td><td>schimmels en bacteriën</td></tr></table></div>'
- +'<div class="call" style="margin-bottom:0">Bij een <b>gesloten kringloop</b> gaan er geen stoffen verloren: alles wat verbruikt wordt, wordt weer aangevuld. Dan ontstaat er nooit een tekort.</div></div>'
-
- +'<div class="call sum"><b>Om te onthouden (13.1)</b><ul class="lst">'
- +'<li>Het <b>milieu</b> is alles om je heen; alles wat je doet heeft er invloed op.</li>'
- +'<li>Je gebruikt <b>grondstoffen</b>, <b>energie</b>, <b>voedsel en water</b>, en je produceert <b>afval</b>.</li>'
- +'<li><b>Duurzaam</b> = zuinig omgaan met de aarde, zodat er genoeg overblijft.</li>'
- +'<li>Voedselkringloop: <b>producenten</b> (planten), <b>consumenten</b> (dieren en mensen), afvaleters, <b>reducenten</b> (schimmels en bacteriën).</li></ul></div>'
-},
-{
- heading:'13.2 Voedsel produceren',
- html:
- '<div class="g3">'
- +'<div class="box"><h4>Akkerbouwers</h4><p>Verbouwen <b>voedingsgewassen</b> op akkers, zoals aardappelen, graan en suikerbieten.</p></div>'
- +'<div class="box"><h4>Tuinbouwers</h4><p>Kweken groente, fruit en bloemen, vaak in <b>kassen</b>.</p></div>'
- +'<div class="box"><h4>Veehouders</h4><p>Houden dieren voor melk, vlees of eieren.</p></div></div>'
- +'<p class="dim" style="margin-top:.7rem">Een <b style="color:var(--txt)">gemengd bedrijf</b> doet allebei: akkerbouw én veeteelt.</p>'
-
- +'<h5 class="sub">Zo veel mogelijk voedsel, zo goedkoop mogelijk</h5>'
- +'<div class="g2">'
- +'<div class="box"><h4>Monocultuur</h4>'
- +'<p>Op een groot stuk land staat maar <b>één soort</b> gewas. Dat is makkelijk oogsten en dus goedkoop.</p>'
- +'<div class="call warn" style="margin-bottom:0"><b>Nadeel:</b> <b>plaagorganismen</b> die van dat gewas leven, hebben ineens heel veel voedsel. Ze vermeerderen zich snel en de plaag is zo groot.</div></div>'
- +'<div class="box"><h4>Mest</h4>'
- +'<p>Planten hebben <b>mineralen</b> nodig om te groeien. Die haalt de boer uit mest:</p>'
- +'<div class="term" style="margin-top:.6rem"><b>Dierlijke mest</b><span>Poep en plas van dieren, met mineralen erin.</span></div>'
- +'<div class="term" style="margin-bottom:0"><b>Kunstmest</b><span>Mestkorrels met mineralen, gemaakt in een fabriek.</span></div></div></div>'
-
- +'<div class="box" style="margin-top:1rem"><h4>Gewasbeschermingsmiddelen</h4>'
- +'<p><b>Gewasbeschermingsmiddelen</b> doden plaagorganismen zoals insecten en schimmels. Zo verliest de boer minder oogst.</p>'
- +'<div class="call warn" style="margin-bottom:0"><b>Nadeel:</b> ze doden ook <b>nuttige</b> dieren, zoals bijen. En er kunnen resten achterblijven op je eten en in het grondwater.</div></div>'
-
- +'<h5 class="sub">Bio-industrie</h5>'
- +'<div class="g2">'
- +'<div class="box"><h4>Wat is het?</h4>'
- +'<p>Bij <b>bio-industrie</b> (ook wel intensieve veehouderij) houdt een veehouder <b>zo veel mogelijk dieren</b> in de beschikbare ruimte.</p>'
- +'<ul class="lst" style="margin-top:.5rem">'
- +'<li>Dieren krijgen <b>krachtvoer</b>, zodat ze snel groeien</li>'
- +'<li>Ze krijgen soms <b>medicijnen</b> om ziektes te voorkomen</li>'
- +'<li>Ze hebben weinig ruimte</li></ul></div>'
- +'<div class="box"><h4>Het mestoverschot</h4>'
- +'<p>Veel dieren op een klein oppervlak leveren <b>meer mest</b> dan er op het bedrijf nodig is. Dat heet een <b>mestoverschot</b>.</p>'
- +'<p style="margin-top:.6rem">Wordt er te veel mest op het land gebracht, dan spoelen de mineralen uit naar sloten en grondwater: <b>overbemesting</b>.</p>'
- +'<div class="call warn" style="margin-bottom:0"><b>Gevolg:</b> in de sloot groeien <b>algen</b> explosief door al die mineralen. Het water raakt overwoekerd, er komt geen licht meer bij en andere waterplanten en dieren gaan dood.</div></div></div>'
-
- +'<div class="call sum"><b>Om te onthouden (13.2)</b><ul class="lst">'
- +'<li><b>Akkerbouwers</b>, <b>tuinbouwers</b> en <b>veehouders</b> produceren ons voedsel.</li>'
- +'<li><b>Monocultuur</b> is goedkoop, maar geeft snel <b>plagen</b>.</li>'
- +'<li>Mineralen komen uit <b>dierlijke mest</b> of <b>kunstmest</b>.</li>'
- +'<li><b>Gewasbeschermingsmiddelen</b> doden plagen, maar ook nuttige dieren.</li>'
- +'<li><b>Bio-industrie</b> geeft een <b>mestoverschot</b>, en te veel mest leidt tot <b>overbemesting</b> en algengroei.</li></ul></div>'
-},
-{
- heading:'13.3 Vervuiling',
- html:
- '<h5 class="sub" style="margin-top:0">Afval</h5>'
- +'<div class="g2">'
- +'<div class="box"><h4>Scheiden loont</h4>'
- +'<div class="tblwrap"><table class="tbl">'
- +'<tr><th>Soort</th><th>Wat ermee gebeurt</th></tr>'
- +'<tr><td><b>Gft-afval</b></td><td>wordt <b>compost</b>: mest voor de tuin</td></tr>'
- +'<tr><td><b>Papier, glas, plastic</b></td><td><b>hergebruik</b>: er worden nieuwe spullen van gemaakt</td></tr>'
- +'<tr><td><b>Restafval</b></td><td>gaat naar de <b>verbrandingsoven</b></td></tr></table></div>'
- +'<p style="margin-top:.7rem"><b>Hergebruik</b> is belangrijk: je hebt dan minder nieuwe grondstoffen nodig, en er is minder afval.</p></div>'
- +'<div class="box"><h4>Zwerfafval en riolering</h4>'
- +'<p><b>Zwerfafval</b> is afval dat mensen op straat of in de natuur gooien. Dieren kunnen erin verstrikt raken of het opeten.</p>'
- +'<p style="margin-top:.6rem">Vuil water gaat via de <b>riolering</b> naar een zuiveringsinstallatie. Daar wordt het schoongemaakt voordat het weer in het oppervlaktewater komt.</p>'
- +'<div class="call" style="margin-bottom:0">Gooi daarom geen verf, olie of medicijnen door de gootsteen of wc: de zuivering krijgt die er niet uit.</div></div></div>'
-
- +'<h5 class="sub">Luchtvervuiling</h5>'
- +'<div class="box">'
- +'<p><b>Fossiele brandstoffen</b> zijn aardolie, aardgas en steenkool. Ze zijn miljoenen jaren geleden ontstaan uit resten van planten en dieren, en <b>raken op</b>.</p>'
- +'<p style="margin-top:.6rem">Bij het verbranden ervan komen <b>afvalgassen</b> vrij. Die veroorzaken <b>luchtvervuiling</b>.</p>'
- +'<div class="term" style="margin-top:.8rem"><b>Fijnstof</b><span>Heel kleine stofdeeltjes in de lucht. Je ademt ze in; ze zijn slecht voor je longen.</span></div>'
- +'<div class="term" style="margin-bottom:0"><b>Smog</b><span>Een mengsel van rook en mist bij windstil weer. Mensen met astma krijgen het dan benauwd.</span></div></div>'
-
- +'<h5 class="sub">Het versterkte broeikaseffect</h5>'
- +'<div class="box">'
- +'<p>In de dampkring zitten gassen die warmte vasthouden, zoals <b>koolstofdioxide</b>. Dat is het <b>natuurlijke broeikaseffect</b>: zonder dat zou het op aarde veel te koud zijn om te leven.</p>'
- +'<p style="margin-top:.7rem">Maar door het verbranden van fossiele brandstoffen komt er <b>steeds meer koolstofdioxide</b> in de lucht. Er wordt dus meer warmte vastgehouden dan vroeger. Dat heet het <b>versterkte broeikaseffect</b>.</p>'
- +'<div class="call warn" style="margin-bottom:0"><b>Gevolg:</b> de aarde wordt warmer. Het ijs op de polen smelt, de zeespiegel stijgt en het weer wordt extremer.</div>'
- +'<p style="margin-top:.8rem;color:var(--mut);font-size:.86rem"><b>Ontbossing</b> maakt het erger: bomen nemen juist koolstofdioxide op bij de fotosynthese. Minder bos = minder opname.</p></div>'
-
- +'<div class="call sum"><b>Om te onthouden (13.3)</b><ul class="lst">'
- +'<li>Afval scheiden: <b>gft</b> → compost, <b>papier/glas/plastic</b> → hergebruik, <b>restafval</b> → verbrandingsoven.</li>'
- +'<li>Vuil water gaat via de <b>riolering</b> naar de zuivering.</li>'
- +'<li><b>Fossiele brandstoffen</b> raken op; bij verbranding ontstaan <b>afvalgassen</b>.</li>'
- +'<li><b>Fijnstof</b> is slecht voor je longen; <b>smog</b> ontstaat bij windstil weer.</li>'
- +'<li>Meer <b>koolstofdioxide</b> → <b>versterkt broeikaseffect</b> → de aarde wordt warmer.</li></ul></div>'
-},
-{
- heading:'13.4 Duurzaam kiezen',
- html:
- '<div class="box"><h4>Wat kun je zelf doen?</h4>'
- +'<p><b>Milieubewust</b> leven betekent: bij alles wat je koopt en doet nadenken over de gevolgen voor het milieu.</p>'
- +'<ul class="lst" style="margin-top:.6rem">'
- +'<li><b>Minder gebruiken</b>: korter douchen, licht uit, verwarming lager</li>'
- +'<li><b>Langer gebruiken</b>: spullen repareren in plaats van weggooien</li>'
- +'<li><b>Hergebruiken</b>: tweedehands kopen, afval scheiden</li>'
- +'<li><b>Anders vervoeren</b>: vaker met de fiets of het openbaar vervoer</li></ul></div>'
-
- +'<h5 class="sub">Duurzame energie</h5>'
- +'<div class="box">'
- +'<p><b>Duurzame energie</b> komt uit bronnen die <b>nooit opraken</b> en <b>niet schadelijk</b> zijn voor het milieu.</p>'
- +'<div class="g3" style="margin-top:.8rem;margin-bottom:0">'
- +'<div><p><b>Windenergie</b><br><span class="dim">windmolens</span></p></div>'
- +'<div><p><b>Zonne-energie</b><br><span class="dim">zonnepanelen</span></p></div>'
- +'<div><p><b>Waterkracht</b><br><span class="dim">stromend water</span></p></div></div>'
- +'<div class="call warn" style="margin-bottom:0;margin-top:.9rem"><b>Het verschil met fossiele brandstoffen:</b> die raken op en geven afvalgassen. Duurzame bronnen raken niet op en vervuilen niet.</div></div>'
-
- +'<div class="g2" style="margin-top:1rem">'
- +'<div class="box"><h4>Energielabel</h4>'
- +'<p>Op apparaten staat een <b>energielabel</b>: van A (zuinig) tot G (onzuinig). Een zuinig apparaat kost minder stroom en dus minder geld én minder milieu.</p></div>'
- +'<div class="box"><h4>Katalysator</h4>'
- +'<p>In de uitlaat van een auto zit een <b>katalysator</b>. Die zet giftige uitlaatgassen om in minder schadelijke stoffen.</p></div></div>'
-
- +'<h5 class="sub">Duurzame landbouw</h5>'
- +'<div class="g2">'
- +'<div class="box"><h4>Biologische landbouw</h4>'
- +'<p>Bij <b>biologische landbouw</b> houdt de boer zo veel mogelijk rekening met het milieu, en werkt hij diervriendelijk.</p>'
- +'<ul class="lst" style="margin-top:.5rem">'
- +'<li>Geen kunstmest, maar <b>dierlijke mest</b></li>'
- +'<li>Geen chemische bestrijdingsmiddelen</li>'
- +'<li>Meer ruimte voor de dieren</li>'
- +'<li>Vaak <b>meerdere gewassen</b> in plaats van monocultuur</li></ul></div>'
- +'<div class="box"><h4>Biologische plaagbestrijding</h4>'
- +'<p>In plaats van gif zet de boer de <b>natuurlijke vijand</b> van de plaag in.</p>'
- +'<p style="margin-top:.6rem"><b>Voorbeeld:</b> heeft een tuinder last van bladluizen, dan zet hij <b>roofwantsen</b> of lieveheersbeestjes in. Die eten de bladluizen op.</p>'
- +'<div class="call" style="margin-bottom:0">Voordeel: geen gif op je eten en geen schade aan nuttige dieren.</div></div></div>'
-
- +'<div class="call sum"><b>Om te onthouden (13.4)</b><ul class="lst">'
- +'<li><b>Milieubewust</b> = nadenken over de gevolgen van wat je koopt en doet.</li>'
- +'<li><b>Duurzame energie</b> raakt niet op en vervuilt niet: wind, zon en water.</li>'
- +'<li>Het <b>energielabel</b> laat zien hoe zuinig een apparaat is.</li>'
- +'<li>Een <b>katalysator</b> maakt uitlaatgassen minder schadelijk.</li>'
- +'<li>Bij <b>biologische landbouw</b> wordt rekening gehouden met milieu en dieren; plagen bestrijd je met hun <b>natuurlijke vijand</b>.</li></ul></div>'
-}
+{heading:'13.4 Duurzaam kiezen',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst"><li>wat je zelf <b>duurzaam</b> kunt kiezen</li><li><b>duurzame energie</b> en <b>biologische landbouw</b></li></ul></div><div class="box"><h4>Wat kun je zelf doen?</h4><p><b>Milieubewust</b> leven betekent: bij alles wat je koopt en doet nadenken over de gevolgen voor het milieu.</p><ul class="lst" style="margin-top:.6rem"><li><b>Minder gebruiken</b>: korter douchen, licht uit, verwarming lager</li><li><b>Langer gebruiken</b>: spullen repareren in plaats van weggooien</li><li><b>Hergebruiken</b>: tweedehands kopen, afval scheiden</li><li><b>Anders vervoeren</b>: vaker met de fiets of het openbaar vervoer</li></ul></div><h5 class="sub">Duurzame energie</h5><div class="box"><p><b>Duurzame energie</b> komt uit bronnen die <b>nooit opraken</b> en <b>niet schadelijk</b> zijn voor het milieu.</p><div class="g3" style="margin-top:.8rem;margin-bottom:0"><div><p><b>Windenergie</b><br><span class="dim">windmolens</span></p></div><div><p><b>Zonne-energie</b><br><span class="dim">zonnepanelen</span></p></div><div><p><b>Waterkracht</b><br><span class="dim">stromend water</span></p></div></div><div class="call warn" style="margin-bottom:0;margin-top:.9rem"><b>Het verschil met fossiele brandstoffen:</b> die raken op en geven afvalgassen. Duurzame bronnen raken niet op en vervuilen niet.</div></div><div class="g2" style="margin-top:1rem"><div class="box"><h4>Energielabel</h4><p>Op apparaten staat een <b>energielabel</b>: van A (zuinig) tot G (onzuinig). Een zuinig apparaat kost minder stroom en dus minder geld én minder milieu.</p></div><div class="box"><h4>Katalysator</h4><p>In de uitlaat van een auto zit een <b>katalysator</b>. Die zet giftige uitlaatgassen om in minder schadelijke stoffen.</p></div></div><h5 class="sub">Duurzame landbouw</h5><div class="g2"><div class="box"><h4>Biologische landbouw</h4><p>Bij <b>biologische landbouw</b> houdt de boer zo veel mogelijk rekening met het milieu, en werkt hij diervriendelijk.</p><ul class="lst" style="margin-top:.5rem"><li>Geen kunstmest, maar <b>dierlijke mest</b></li><li>Geen chemische bestrijdingsmiddelen</li><li>Meer ruimte voor de dieren</li><li>Vaak <b>meerdere gewassen</b> in plaats van monocultuur</li></ul></div><div class="box"><h4>Biologische plaagbestrijding</h4><p>In plaats van gif zet de boer de <b>natuurlijke vijand</b> van de plaag in.</p><p style="margin-top:.6rem"><b>Voorbeeld:</b> heeft een tuinder last van bladluizen, dan zet hij <b>roofwantsen</b> of lieveheersbeestjes in. Die eten de bladluizen op.</p><div class="call" style="margin-bottom:0">Voordeel: geen gif op je eten en geen schade aan nuttige dieren.</div></div></div><div class="check" onclick="toonCheck(this)"><p class="check-v">Wat doet een katalysator?</p><p class="check-a">Die zet giftige uitlaatgassen om in minder schadelijke stoffen.</p><span class="check-hint">Tik voor het antwoord</span></div><div class="call sum"><b>Om te onthouden (13.4)</b><ul class="lst"><li><b>Milieubewust</b> = nadenken over de gevolgen van wat je koopt en doet.</li><li><b>Duurzame energie</b> raakt niet op en vervuilt niet: wind, zon en water.</li><li>Het <b>energielabel</b> laat zien hoe zuinig een apparaat is.</li><li>Een <b>katalysator</b> maakt uitlaatgassen minder schadelijk.</li><li>Bij <b>biologische landbouw</b> wordt rekening gehouden met milieu en dieren; plagen bestrijd je met hun <b>natuurlijke vijand</b>.</li></ul></div>`}
 ],
 terms:[
 ['afbrekers','Schimmels en bacteriën die natuurlijk afval omzetten in mineralen. Ander woord: reducenten.'],

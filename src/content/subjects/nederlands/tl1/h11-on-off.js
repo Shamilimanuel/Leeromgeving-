@@ -1,11 +1,63 @@
 import { registerChapter } from '../../../registry.js';
 
+/* Rebuilt 2026-09-25 to the recipe of Economie TL4 H1 (change 6). Same
+   content, term boxes and "builds on" link, restructured. Terms, cards and
+   quiz unchanged. */
 registerChapter('nederlands|tl|1|11', {
 title:'On/off',
 summary:[
-{heading:'Vlogs',html:'<div class=\'box\'><h4>Waar gaat dit hoofdstuk over?</h4><p>Dit thema gaat over online en offline zijn: sociale media, blogs en vlogs. Je leert hoe een vlog in elkaar zit, hoe je op een duidelijke manier je mening geeft en onderbouwt, en hoe je de aandacht van je publiek trekt en vasthoudt. Aan het eind maak je zelf een blog of vlog.</p></div><div class=\'box\'><h4>Wat is een vlog?</h4><p>Een <b>vlog</b> (video-blog) is een filmpje waarin de maker (de <b>vlogger</b>) direct tot de kijker spreekt, vaak over zijn eigen leven, mening of ervaringen. Een vlogger gebruikt beeld, geluid en soms muziek om de kijker enthousiast te maken en om te laten zien wat hij bedoelt.</p></div><div class=\'term\'><b>Vlog</b><span>een videofilmpje waarin de maker rechtstreeks tot de kijker spreekt, vaak over zijn eigen leven of mening</span></div><div class=\'term\'><b>Vlogger</b><span>de maker van een vlog</span></div><div class=\'call sum\'><b>Waar let je op bij het bekijken (en maken) van een vlog?</b><ul class=\'lst\'><li>Wie filmt en vertelt in de vlog?</li><li>Welk effect heeft de muziek of het geluid?</li><li>Word je door de vlog enthousiast gemaakt? Waarom wel of niet?</li></ul></div>'},
-{heading:'Mening geven',html:'<div class=\'box\'><h4>Je mening onderbouwen</h4><p>Als je online je <b>mening</b> geeft, bijvoorbeeld in een reactie op sociale media, is het belangrijk dat je duidelijk maakt wat je vindt én waarom. Een mening zonder onderbouwing is minder overtuigend.</p></div><div class=\'call sum\'><b>Zo geef je duidelijk je mening</b><ul class=\'lst\'><li>Zeg duidelijk wat je vindt (je mening).</li><li>Geef minstens één reden waarom je dat vindt.</li><li>Gebruik eventueel een voorbeeld om je mening te ondersteunen.</li><li>Blijf respectvol, ook als je het ergens niet mee eens bent.</li></ul></div><div class=\'term\'><b>Mening</b><span>wat je van iets vindt; iets wat je nog kunt onderbouwen met een reden, in tegenstelling tot een feit</span></div><div class=\'call warn\'><b>Veelgemaakte fout:</b> een mening geven zonder reden, bijvoorbeeld alleen \'dit is stom\' zonder uit te leggen waarom.</div>'},
-{heading:'Aandacht trekken van publiek',html:'<div class=\'box\'><h4>Hoe houd je de aandacht van je publiek vast?</h4><p>Of je nu een blog schrijft, een vlog maakt of een presentatie geeft: je wilt dat je publiek geboeid blijft luisteren of kijken. Er zijn een aantal manieren om de aandacht van je publiek te trekken en vast te houden.</p></div><div class=\'call sum\'><b>Zo trek je de aandacht van je publiek</b><ul class=\'lst\'><li>Begin met iets pakkends: een vraag, een verrassend weetje of een korte anekdote.</li><li>Gebruik afwisseling in je stem (intonatie, tempo, volume) of in je beeld.</li><li>Betrek je publiek, bijvoorbeeld door een vraag te stellen.</li><li>Houd het kort en bondig: te veel informatie zorgt ervoor dat je publiek afhaakt.</li></ul></div><div class=\'call link\'><b>Dit bouwt voort op:</b> Thema A § 7 Stemgebruik</div>'}
+{heading:'Vlogs',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>hoe een <b>vlog</b> in elkaar zit</li>
+<li>kritisch naar een vlog <b>kijken</b></li></ul></div>`
++`<div class="box"><h4>Waar dit hoofdstuk over gaat</h4><p>Dit thema gaat over <b>online</b> en <b>offline</b> zijn: sociale media, <b>blogs</b> en <b>vlogs</b>. Je leert hoe een vlog werkt, hoe je je <b>mening</b> geeft en onderbouwt, en hoe je de <b>aandacht</b> van je publiek vasthoudt. Aan het eind maak je zelf een blog of vlog.</p></div>`
++`<h5 class="sub">Video-blog</h5>`
++`<div class="term"><b>Vlog</b><span>Een videofilmpje waarin de maker rechtstreeks tot de kijker spreekt, vaak over zijn eigen leven of mening.</span></div>`
++`<div class="term"><b>Vlogger</b><span>De maker van een vlog.</span></div>`
++`<div class="vergelijk"><div class="vergelijk-kant"><h4>Blog</h4><p>Een <b>geschreven</b> stuk online.</p></div><div class="vergelijk-vs">vs</div><div class="vergelijk-kant"><h4>Vlog</h4><p>Een <b>video</b>, met <b>beeld</b>, <b>geluid</b> en soms <b>muziek</b>.</p></div></div>`
++`<div class="call reken"><b>Zo bekijk je een vlog kritisch</b><ol class="num">
+<li><b>Wie</b> filmt en vertelt?</li>
+<li>Welk <b>effect</b> hebben de muziek en het geluid?</li>
+<li>Word je <b>enthousiast</b>? Waarom wel of niet?</li></ol></div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Waar staat de v in vlog voor?</p><p class="check-a"><b>Video</b>: een vlog is een video-blog.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden</b><ul class="lst">
+<li><b>Vlog</b> = video-blog; de <b>vlogger</b> spreekt jou direct aan.</li>
+<li>Let op <b>wie</b>, het <b>geluid</b> en het <b>effect</b>.</li></ul></div>`},
+
+{heading:'Mening geven',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>je <b>mening</b> duidelijk geven en <b>onderbouwen</b></li></ul></div>`
++`<h5 class="sub">Wat vind je, en waarom?</h5>`
++`<div class="term"><b>Mening</b><span>Wat je van iets vindt. Je kunt het onderbouwen met een reden, in tegenstelling tot een feit.</span></div>`
++`<div class="vergelijk"><div class="vergelijk-kant"><h4>Feit</h4><p>Klopt voor <b>iedereen</b>: de vlog duurt tien minuten.</p></div><div class="vergelijk-vs">vs</div><div class="vergelijk-kant"><h4>Mening</h4><p>Wat <b>jij</b> vindt: de vlog is te lang.</p></div></div>`
++`<div class="call reken"><b>Zo geef je je mening</b><ol class="num">
+<li>Zeg <b>duidelijk</b> wat je vindt.</li>
+<li>Geef minstens <b>één reden</b>.</li>
+<li>Gebruik eventueel een <b>voorbeeld</b>.</li>
+<li>Blijf <b>respectvol</b>, ook als je het oneens bent.</li></ol></div>`
++`<div class="voorbeeld"><h4>Voorbeeld: een reactie online</h4><p>Vergelijk &lsquo;Dit is stom.&rsquo; met een betere reactie.</p><div class="antwoord">&lsquo;Ik vind deze vlog saai, <b>omdat</b> hij tien minuten over hetzelfde praat. <b>Bijvoorbeeld</b> het stuk over zijn schoenen duurt heel lang.&rsquo; Mening, <b>reden</b> en <b>voorbeeld</b>.</div></div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Wat maakt een mening overtuigend?</p><p class="check-a">Een <b>reden</b> (en eventueel een <b>voorbeeld</b>).</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden</b><ul class="lst">
+<li>Mening + <b>reden</b> + eventueel <b>voorbeeld</b>.</li>
+<li>Blijf <b>respectvol</b>.</li></ul></div>`},
+
+{heading:'Aandacht trekken van publiek',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>de <b>aandacht</b> van je publiek trekken en <b>vasthouden</b></li></ul></div>`
++`<div class="call link"><b>Dit bouwt voort op:</b> Thema A &sect; 7 Stemgebruik</div>`
++`<h5 class="sub">Geboeid houden</h5>`
++`<div class="box"><h4>Blog, vlog of presentatie</h4><p>Wat je ook maakt, je wilt dat je publiek <b>geboeid</b> blijft kijken of luisteren.</p></div>`
++`<div class="call reken"><b>Zo trek en houd je de aandacht</b><ol class="num">
+<li>Begin <b>pakkend</b>: een vraag, een verrassend weetje of een korte <b>anekdote</b>.</li>
+<li>Gebruik <b>afwisseling</b> in je stem (intonatie, tempo, volume) of in je beeld.</li>
+<li><b>Betrek</b> je publiek, bijvoorbeeld met een vraag.</li>
+<li>Houd het <b>kort en bondig</b>.</li></ol></div>`
++`<div class="vergelijk"><div class="vergelijk-kant"><h4>Saai begin</h4><p>&lsquo;Ik ga het hebben over mijn telefoon.&rsquo;</p></div><div class="vergelijk-vs">vs</div><div class="vergelijk-kant"><h4>Pakkend begin</h4><p>&lsquo;Wat zou <b>jij</b> doen als je telefoon een week <b>kwijt</b> was?&rsquo;</p></div></div>`
++`<div class="call warn"><b>Veelgemaakte fout:</b> te <b>veel</b> informatie. Dan haakt je publiek af.</div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Noem een manier om pakkend te beginnen.</p><p class="check-a">Een <b>vraag</b>, een verrassend <b>weetje</b> of een korte <b>anekdote</b>.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden</b><ul class="lst">
+<li><b>Pakkend</b> beginnen, <b>afwisselen</b>, publiek <b>betrekken</b>.</li>
+<li><b>Kort en bondig</b>.</li></ul></div>`}
 ],
 terms:[
 ['Vlog','Een videofilmpje waarin de maker rechtstreeks tot de kijker spreekt, vaak over zijn eigen leven of mening.',0],

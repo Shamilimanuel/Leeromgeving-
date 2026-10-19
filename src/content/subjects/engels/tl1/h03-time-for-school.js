@@ -1,13 +1,108 @@
 import { registerChapter } from '../../../registry.js';
 
+/* Rebuilt 2026-09-25 to the recipe of Economie TL4 H1 (change 6). Fixed:
+   the ordinals note said every number ending in 1, 2 or 3 is irregular,
+   which would give "11st"; 11, 12 and 13 end in -th (the old table already
+   had 12th = twelfth). Otherwise the same grammar, Stones and words,
+   restructured. The "builds on" link stays. Terms, cards and quiz
+   unchanged. */
 registerChapter('engels|tl|1|3', {
 title:'Time for school',
 summary:[
-{heading:'School en ordinals',html:'<div class=\'box\'><h4>Waar gaat dit hoofdstuk over?</h4><p>In dit hoofdstuk praat je over school: vakken, roosters, de klok en of je iets wel of niet leuk vindt. Je leert ja/nee-vragen en ontkenningen maken, en je leert de juiste woordvolgorde gebruiken in een Engelse zin.</p></div><div class=\'call link\'><b>Dit bouwt voort op:</b> Bridging the Gap Primary &ndash; My timetable (dagen en maanden) en Chapter 1 &ndash; This is me (present simple, vraagwoorden)</div><div class=\'box\'><h4>At school</h4><p>caretaker (conciërge), classroom (klaslokaal), desk (bureau), diary (agenda), (to) fail (onvoldoende halen), homework (huiswerk), locker (kluisje), mark (cijfer), notebook (schrift), (to) pass (voldoende halen), (to) study for (leren voor), timetable (lesrooster)</p></div><div class=\'box\'><h4>Ordinals (rangtelwoorden)</h4><p>Rangtelwoorden gebruik je om aan te geven op welke plek iets staat (1e, 2e, 3e, ...). Ze zijn anders dan gewone telwoorden (one, two, three).</p><div class=\'tblwrap\'><table class=\'tbl\'><tr><th>Telwoord</th><th>Rangtelwoord</th><th>Betekenis</th></tr><tr><td>one</td><td>1st, first</td><td>eerste</td></tr><tr><td>two</td><td>2nd, second</td><td>tweede</td></tr><tr><td>three</td><td>3rd, third</td><td>derde</td></tr><tr><td>four</td><td>4th, fourth</td><td>vierde</td></tr><tr><td>five</td><td>5th, fifth</td><td>vijfde</td></tr><tr><td>twelve</td><td>12th, twelfth</td><td>twaalfde</td></tr><tr><td>twenty</td><td>20th, twentieth</td><td>twintigste</td></tr><tr><td>twenty-one</td><td>21st, twenty-first</td><td>eenentwintigste</td></tr></table></div><div class=\'call\'>De meeste rangtelwoorden eindigen op \'-th\' (fourth, fifth), maar 1e, 2e en 3e (en getallen die daarop eindigen, zoals 21, 22, 23) zijn onregelmatig: first, second, third.</div></div>'},
-{heading:'Vragen en ontkenningen',html:'<div class=\'box\'><h4>Grammar 4 &ndash; Vragen: ja/nee-vragen</h4><p>Ja/nee-vragen zijn vragen die je met \'ja\' of \'nee\' kunt beantwoorden.</p><div class=\'tblwrap\'><table class=\'tbl\'><tr><th>Regel</th><th>Voorbeeld</th></tr><tr><td>1 Met am, are, is of can: zet dit woord aan het begin van de zin</td><td>You are the teacher. &rarr; Are you the teacher?<br>You can walk the dog. &rarr; Can you walk the dog?</td></tr><tr><td>2 Met een ander werkwoord: voeg do of does toe aan het begin en gebruik het hele werkwoord (do bij I, you, we, they &ndash; does bij he, she, it)</td><td>They work well together. &rarr; Do they work well together?<br>He studies a lot. &rarr; Does he study a lot?</td></tr></table></div><p>Antwoorden zijn kort: <i>Yes, I am. / No, they can\'t.</i></p></div><div class=\'box\'><h4>Grammar 5 &ndash; Ontkenningen: not, -n\'t</h4><div class=\'tblwrap\'><table class=\'tbl\'><tr><th>Volledige vorm (+ not)</th><th>Korte vorm (+ -n\'t)</th></tr><tr><td>I am not in class today.</td><td>I\'m not in class today.</td></tr><tr><td>You are not at home.</td><td>You aren\'t at home.</td></tr><tr><td>She is not here.</td><td>She isn\'t here.</td></tr><tr><td>We cannot study tonight.</td><td>We can\'t study tonight.</td></tr><tr><td>I do not like maths.</td><td>I don\'t like maths.</td></tr><tr><td>He does not know the answers.</td><td>He doesn\'t know the answers.</td></tr></table></div><div class=\'call warn\'><b>Veelgemaakte fout:</b> Je schrijft <i>can + not</i> als één woord: <b>cannot</b>. De korte vorm van \'I am not\' is altijd \'<b>I\'m not</b>\' (niet \'I amn\'t\').</div></div>'},
-{heading:'Tijd en rooster',html:'<div class=\'box\'><h4>Stone 4 &ndash; Talking about the time</h4><ul class=\'lst\'><li>What time is it? / Can you tell me the time? &ndash; Hoe laat is het? / Kun je me vertellen hoe laat het is?</li><li>It\'s two o\'clock. &ndash; Het is twee uur.</li><li>It\'s half past two. &ndash; Het is half drie.</li><li>It\'s a quarter past two. &ndash; Het is kwart over twee.</li><li>It\'s a quarter to three. &ndash; Het is kwart voor drie.</li><li>It\'s twenty minutes past two. &ndash; Het is twintig minuten over twee.</li><li>It\'s ten to three. &ndash; Het is tien voor drie.</li></ul></div><div class=\'box\'><h4>Stone 5 &ndash; Talking about timetables</h4><ul class=\'lst\'><li>When is the next English lesson? / When is the first break?</li><li>Do we have music before or after the lunch break?</li><li>Do we have French in classroom 34?</li><li>We have geography in the afternoon. I don\'t have Dutch after maths.</li><li>My day starts with PE lessons. The school week ends with history.</li></ul></div><div class=\'call\'>\'am\' is vóór 12 uur \'s middags en \'pm\' is ná 12 uur \'s middags.</div>'},
-{heading:'Woordvolgorde en likes/dislikes',html:'<div class=\'box\'><h4>Grammar 6 &ndash; Woordvolgorde</h4><p>De woordvolgorde is in de meeste Engelse zinnen hetzelfde: <b>Who does what where when?</b> (Wie doet wat waar wanneer?)</p><div class=\'tblwrap\'><table class=\'tbl\'><tr><th>Who</th><th>does</th><th>what</th><th>where</th><th>when?</th></tr><tr><td>We</td><td>have</td><td>a test</td><td>in class</td><td>on Tuesday.</td></tr><tr><td>They</td><td>have</td><td>class</td><td>outside.</td><td></td></tr><tr><td>I</td><td>cycle</td><td></td><td>to school</td><td>every Monday.</td></tr></table></div><p>Niet elke zin heeft alle onderdelen. Let op: soms zet je \'when\' (wanneer) aan het begin van de zin: <i>Today I have English in classroom 14.</i></p></div><div class=\'box\'><h4>Stone 6 &ndash; Talking about likes and dislikes</h4><ul class=\'lst\'><li>What do you like about school? / What do you love to do after school?</li><li>I love to make music at school. I like to read comics in my free time.</li><li>My favourite subject is biology. I am crazy about art. The teacher is kind. It\'s interesting.</li><li>I don\'t enjoy German. I hate maths. I think it\'s a difficult subject. I\'m not good at it.</li></ul></div><div class=\'box\'><h4>Likes and dislikes (woorden)</h4><p>(to) be crazy about (gek zijn op), boring (saai), difficult (moeilijk), (to) enjoy (genieten van), favourite (favoriete), fine (prima), great (geweldig), (to) hate (haten), horrible (vreselijk), interesting (interessant), (to) like (leuk vinden), (to) love (houden van)</p></div>'},
-{heading:'Lezen en uitspraak',html:'<div class=\'box\'><h4>How to make maths fun</h4><p>Kurt Minnaar is een 33-jarige wiskundeleraar op een school in Kaapstad (Zuid-Afrika). Hij gebruikt hiphopmuziek om zijn wiskundelessen leuker te maken: hij maakt raps van 60 seconden over tafels van vermenigvuldiging. Als kind vond hij wiskundelessen zelf saai en moeilijk. Sinds hij muziek gebruikt in de klas, zijn er minder problemen tijdens de les en gaan de cijfers van zijn leerlingen omhoog.</p></div><div class=\'box\'><h4>More unusual schools</h4><p>Deze tekst gaat over bijzondere scholen in de wereld. In India geeft schooljuf Inderjit Khurana les aan kinderen op treinstations, omdat die kinderen normaal geld ophalen bij reizigers in plaats van naar school te gaan. In China moeten sommige leerlingen een gevaarlijke bergweg beklimmen om bij hun school te komen; de school heeft maar één leraar, Shen Qijun.</p></div><div class=\'box\'><h4>Uitspraak: /w/ in het Engels</h4><p>De Engelse /w/ is niet hetzelfde als de Nederlandse uitspraak van de \'w\'. Om de /w/ in het Engels uit te spreken, tuit je je lippen alsof je iemand een kus wilt geven. Maak een zachte /oe/ klank. Raak je lippen niet aan met je tanden.</p><p>Voorbeelden: what, where, wish, wild.</p><div class=\'call\'>Je spreekt de \'w\' <b>niet</b> uit in <i>whole, whose</i> en <i>who</i> (daar spreek je \'wh\' uit als /h/), en ook niet in woorden die beginnen met \'wr\' (daar spreek je \'wr\' uit als de Engelse /r/): <i>write, wrist</i>.</div></div>'}
+{heading:'School en ordinals',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>woorden over <b>school</b></li>
+<li><b>rangtelwoorden</b> (ordinals): first, second, third</li></ul></div>`
++`<div class="box"><h4>Waar dit hoofdstuk over gaat</h4><p>Je praat over <b>school</b>: vakken, <b>roosters</b>, de <b>klok</b> en wat je wel of niet <b>leuk</b> vindt. Je maakt <b>ja/nee-vragen</b> en <b>ontkenningen</b>, en je leert de <b>woordvolgorde</b> van een Engelse zin.</p></div>`
++`<div class="call link"><b>Dit bouwt voort op:</b> Bridging the Gap Primary &ndash; My timetable (dagen en maanden) en Chapter 1 &ndash; This is me (present simple, vraagwoorden)</div>`
++`<h5 class="sub">At school</h5>`
++`<div class="box"><h4>Woorden</h4><p><b>caretaker</b> (conciërge), <b>classroom</b> (klaslokaal), <b>desk</b> (bureau), <b>diary</b> (agenda), <b>(to) fail</b> (onvoldoende halen), <b>homework</b>, <b>locker</b> (kluisje), <b>mark</b> (cijfer), <b>notebook</b> (schrift), <b>(to) pass</b> (voldoende halen), <b>(to) study for</b> (leren voor), <b>timetable</b> (lesrooster).</p></div>`
++`<h5 class="sub">Ordinals</h5>`
++`<div class="vergelijk"><div class="vergelijk-kant"><h4>Telwoord</h4><p><b>Hoeveel</b>: one, two, three.</p></div><div class="vergelijk-vs">vs</div><div class="vergelijk-kant"><h4>Rangtelwoord</h4><p><b>Op welke plek</b>: first, second, third.</p></div></div>`
++`<div class="tblwrap"><table class="tbl"><tr><th>Telwoord</th><th>Rangtelwoord</th><th>Nederlands</th></tr><tr><td>one</td><td><b>1st, first</b></td><td>eerste</td></tr><tr><td>two</td><td><b>2nd, second</b></td><td>tweede</td></tr><tr><td>three</td><td><b>3rd, third</b></td><td>derde</td></tr><tr><td>four</td><td><b>4th, fourth</b></td><td>vierde</td></tr><tr><td>five</td><td><b>5th, fifth</b></td><td>vijfde</td></tr><tr><td>twelve</td><td><b>12th, twelfth</b></td><td>twaalfde</td></tr><tr><td>twenty</td><td><b>20th, twentieth</b></td><td>twintigste</td></tr><tr><td>twenty-one</td><td><b>21st, twenty-first</b></td><td>eenentwintigste</td></tr></table></div>`
++`<div class="call warn"><b>Let op:</b> de meeste rangtelwoorden eindigen op <b>-th</b>. Alleen <b>first</b>, <b>second</b> en <b>third</b> zijn anders, ook in 21st, 22nd, 23rd. Maar <b>11th, 12th en 13th</b> eindigen gewoon op -th.</div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Hoe schrijf je 22e in het Engels?</p><p class="check-a"><b>22nd</b>, twenty-second.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden</b><ul class="lst">
+<li><b>Rangtelwoord</b>: de plek. Meestal <b>-th</b>.</li>
+<li><b>first, second, third</b> zijn onregelmatig.</li>
+<li><b>pass</b> = voldoende, <b>fail</b> = onvoldoende.</li></ul></div>`},
+
+{heading:'Vragen en ontkenningen',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li><b>ja/nee-vragen</b> maken (Grammar 4)</li>
+<li><b>ontkenningen</b> maken met not en -n't (Grammar 5)</li></ul></div>`
++`<h5 class="sub">Grammar 4: ja/nee-vragen</h5>`
++`<div class="call reken"><b>Zo maak je een ja/nee-vraag</b><ol class="num">
+<li>Staat er <b>am, are, is</b> of <b>can</b>? Zet dat woord <b>vooraan</b>. You are the teacher. &rarr; <b>Are</b> you the teacher?</li>
+<li>Een <b>ander</b> werkwoord? Zet <b>do</b> (I, you, we, they) of <b>does</b> (he, she, it) vooraan en gebruik het <b>hele werkwoord</b>. He studies a lot. &rarr; <b>Does</b> he <b>study</b> a lot?</li>
+<li>Antwoord <b>kort</b>: Yes, I am. / No, they can't.</li></ol></div>`
++`<div class="call warn"><b>Veelgemaakte fout:</b> na <b>does</b> toch -s schrijven. Niet &ldquo;Does he studies&rdquo;, maar <b>Does he study</b>: de -s zit al in does.</div>`
++`<h5 class="sub">Grammar 5: not en -n't</h5>`
++`<div class="tblwrap"><table class="tbl"><tr><th>Volledig (not)</th><th>Kort (-n't)</th></tr><tr><td>I am not in class today.</td><td><b>I'm not</b> in class today.</td></tr><tr><td>You are not at home.</td><td>You <b>aren't</b> at home.</td></tr><tr><td>She is not here.</td><td>She <b>isn't</b> here.</td></tr><tr><td>We cannot study tonight.</td><td>We <b>can't</b> study tonight.</td></tr><tr><td>I do not like maths.</td><td>I <b>don't</b> like maths.</td></tr><tr><td>He does not know the answers.</td><td>He <b>doesn't</b> know the answers.</td></tr></table></div>`
++`<div class="call waarom">Let op twee uitzonderingen: <b>cannot</b> schrijf je als <b>één woord</b>, en de korte vorm van I am not is altijd <b>I'm not</b> (niet &ldquo;I amn't&rdquo;).</div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Maak een vraag: They work well together.</p><p class="check-a"><b>Do they work well together?</b></p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden</b><ul class="lst">
+<li><b>am/are/is/can</b> naar voren; anders <b>do/does</b> + heel werkwoord.</li>
+<li>Ontkennen: <b>don't/doesn't</b> + heel werkwoord.</li>
+<li><b>cannot</b> is één woord.</li></ul></div>`},
+
+{heading:'Tijd en rooster',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>zeggen hoe laat het is (Stone 4)</li>
+<li>praten over je <b>rooster</b> (Stone 5)</li></ul></div>`
++`<h5 class="sub">Stone 4: talking about the time</h5>`
++`<div class="tblwrap"><table class="tbl"><tr><th>Engels</th><th>Nederlands</th></tr><tr><td><b>What time is it?</b> / Can you tell me the time?</td><td>Hoe laat is het?</td></tr><tr><td>It's two <b>o'clock</b>.</td><td>twee uur</td></tr><tr><td>It's <b>half past two</b>.</td><td>half drie</td></tr><tr><td>It's a <b>quarter past</b> two.</td><td>kwart over twee</td></tr><tr><td>It's a <b>quarter to</b> three.</td><td>kwart voor drie</td></tr><tr><td>It's twenty minutes past two.</td><td>twintig over twee</td></tr><tr><td>It's ten to three.</td><td>tien voor drie</td></tr></table></div>`
++`<div class="call warn"><b>Instinker:</b> <b>half past two</b> is <b>half drie</b>, niet half twee. In het Engels tel je vanaf het <b>vorige</b> uur: een half uur <b>na</b> twee.</div>`
++`<div class="vergelijk"><div class="vergelijk-kant"><h4>am</h4><p><b>Vóór</b> 12 uur 's middags.</p></div><div class="vergelijk-vs">vs</div><div class="vergelijk-kant"><h4>pm</h4><p><b>Na</b> 12 uur 's middags.</p></div></div>`
++`<h5 class="sub">Stone 5: talking about timetables</h5>`
++`<div class="voorbeeld"><h4>Voorbeeld: vragen over je rooster</h4><p>Vraag en vertel wanneer je welke les hebt.</p><div class="antwoord"><b>When is</b> the next English lesson? <b>Do we have</b> music before or after the lunch break? We have geography <b>in the afternoon</b>. My day <b>starts with</b> PE. The school week <b>ends with</b> history.</div></div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Hoe zeg je kwart voor drie?</p><p class="check-a">It's a <b>quarter to three</b>.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden</b><ul class="lst">
+<li><b>past</b> = over, <b>to</b> = voor.</li>
+<li><b>half past two</b> = half drie.</li>
+<li><b>am</b> vóór, <b>pm</b> na 12 uur 's middags.</li></ul></div>`},
+
+{heading:'Woordvolgorde en likes/dislikes',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>de <b>woordvolgorde</b> van een Engelse zin (Grammar 6)</li>
+<li>zeggen wat je wel en niet <b>leuk</b> vindt (Stone 6)</li></ul></div>`
++`<h5 class="sub">Grammar 6: who does what where when?</h5>`
++`<div class="call reken"><b>De vaste volgorde</b><ol class="num">
+<li><b>Who</b>: wie (het onderwerp).</li>
+<li><b>does</b>: het werkwoord.</li>
+<li><b>what</b>: wat.</li>
+<li><b>where</b>: waar.</li>
+<li><b>when</b>: wanneer.</li></ol></div>`
++`<div class="voorbeeld"><h4>Voorbeeld: in de goede volgorde</h4><p>Zet de delen op hun plek.</p><div class="antwoord"><b>We</b> (who) <b>have</b> (does) <b>a test</b> (what) <b>in class</b> (where) <b>on Tuesday</b> (when). I cycle to school every Monday.</div></div>`
++`<div class="call waarom">Anders dan in het Nederlands: je zegt <b>niet</b> &ldquo;On Tuesday have we a test&rdquo;. <b>When</b> mag wel vooraan, maar dan blijft de rest op zijn plek: <b>Today I have</b> English in classroom 14.</div>`
++`<h5 class="sub">Stone 6: likes and dislikes</h5>`
++`<div class="vergelijk"><div class="vergelijk-kant"><h4>Likes</h4><p>I <b>love</b> to make music. I <b>like</b> to read comics. My <b>favourite</b> subject is biology. I'm <b>crazy about</b> art.</p></div><div class="vergelijk-vs">vs</div><div class="vergelijk-kant"><h4>Dislikes</h4><p>I <b>don't enjoy</b> German. I <b>hate</b> maths. I think it's a <b>difficult</b> subject. I'm <b>not good at</b> it.</p></div></div>`
++`<div class="box"><h4>Woorden</h4><p><b>boring</b> (saai), <b>difficult</b> (moeilijk), <b>(to) enjoy</b> (genieten van), <b>fine</b> (prima), <b>great</b> (geweldig), <b>horrible</b> (vreselijk), <b>interesting</b> (interessant).</p></div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Wat is de Engelse woordvolgorde?</p><p class="check-a"><b>Who does what where when?</b></p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden</b><ul class="lst">
+<li><b>Who does what where when</b>.</li>
+<li><b>When</b> mag vooraan; de rest blijft op zijn plek.</li>
+<li>Likes: love, like, crazy about. Dislikes: hate, don't enjoy.</li></ul></div>`},
+
+{heading:'Lezen en uitspraak',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>teksten lezen over <b>bijzondere scholen</b></li>
+<li>de Engelse <b>/w/</b> goed uitspreken</li></ul></div>`
++`<h5 class="sub">De teksten</h5>`
++`<div class="g2">`
++`<div class="box"><h4>How to make maths fun</h4><p><b>Kurt Minnaar</b> is wiskundeleraar in <b>Kaapstad</b>. Hij maakt <b>raps van 60 seconden</b> over de tafels. Als kind vond hij wiskunde zelf <b>saai</b>. Sinds hij muziek gebruikt, zijn er <b>minder problemen</b> in de les en gaan de <b>cijfers omhoog</b>.</p></div>`
++`<div class="box"><h4>More unusual schools</h4><p>In <b>India</b> geeft <b>Inderjit Khurana</b> les op <b>treinstations</b>, aan kinderen die daar anders geld ophalen. In <b>China</b> klimmen sommige leerlingen over een <b>gevaarlijke bergweg</b> naar een school met één leraar, <b>Shen Qijun</b>.</p></div></div>`
++`<h5 class="sub">Uitspraak: /w/</h5>`
++`<div class="call reken"><b>Zo zeg je de Engelse /w/</b><ol class="num">
+<li>Tuit je <b>lippen</b> alsof je iemand een kus geeft.</li>
+<li>Maak een zachte <b>oe</b>-klank.</li>
+<li>Raak je lippen <b>niet</b> aan met je tanden.</li>
+<li>Oefen: <b>what</b>, <b>where</b>, <b>wish</b>, <b>wild</b>.</li></ol></div>`
++`<div class="call warn"><b>Stille w:</b> in <b>who</b>, <b>whose</b> en <b>whole</b> klinkt wh als een <b>h</b>. In woorden met <b>wr</b> hoor je alleen de r: <b>write</b>, <b>wrist</b>.</div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Hoe gebruikt Kurt Minnaar muziek in zijn lessen?</p><p class="check-a">Hij maakt <b>raps van 60 seconden</b> over de tafels.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden</b><ul class="lst">
+<li>Engelse <b>/w/</b>: lippen tuiten, geen tanden.</li>
+<li><b>who, whose, whole</b>: klinkt als h. <b>wr</b>: klinkt als r.</li></ul></div>`}
 ],
 terms:[
 ['classroom','klaslokaal',0],

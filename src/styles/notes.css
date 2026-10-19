@@ -26,7 +26,7 @@
 
 /* ═══ print / PDF export (Cornell notes) ═══ */
 @media print{
-  .top,.tabs,.bookhero,.aurora,.grain,.sparkles,.bar,.radialmenu,.leesliniaal,
+  .top,.route-wrap,.bookhero,.aurora,.grain,.sparkles,.bar,.radialmenu,.leesliniaal,
   .cornell-del,.helpwrap,.zoekwrap,.favwrap,.examenwrap{display:none!important}
   html,body{overflow:visible!important;background:#fff!important;color:#000!important}
   .cornell-row textarea,.groot-veld{background:#fff!important;color:#000!important;border:1px solid #999!important}

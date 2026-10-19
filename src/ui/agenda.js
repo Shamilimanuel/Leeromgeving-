@@ -14,7 +14,7 @@
 import { $, setHtml, escapeHtml, warningBox, icon } from '../lib/dom.js';
 import { SUBJECTS, parseKey, levelById } from '../content/index.js';
 import { chapterKeysForSubject, chapterTitle } from '../content/queries.js';
-import { getAgendaItems, addAgendaItem, removeAgendaItem, toggleSession, todayDateStr } from '../state/agenda.js';
+import { getAgendaItems, addAgendaItem, removeAgendaItem, toggleSession, todayDateStr, calendarMonths } from '../state/agenda.js';
 import { TABS } from '../state/selection.js';
 import { openChapterFromKey } from './chapter.js';
 
@@ -61,7 +61,7 @@ function itemById(id) {
 
 /* ── Calendar ─────────────────────────────────────────────────────────── */
 
-function monthGridHtml(year, month) {
+function monthGridHtml(year, month, showYear) {
   const startOffset = new Date(Date.UTC(year, month, 1)).getUTCDay(); // 0=Sun..6=Sat
   const mondayFirstOffset = (startOffset + 6) % 7; // 0=Mon..6=Sun
   const daysInMonth = new Date(Date.UTC(year, month + 1, 0)).getUTCDate();
@@ -84,7 +84,7 @@ function monthGridHtml(year, month) {
   }
 
   return '<div class="agenda-maand">'
-    + '<h3>' + MONTH_LABELS[month] + '</h3>'
+    + '<h3>' + MONTH_LABELS[month] + (showYear ? ' ' + year : '') + '</h3>'
     + '<div class="agenda-weekdagen">' + WEEKDAY_LABELS.map((w) => '<span>' + w + '</span>').join('') + '</div>'
     + '<div class="agenda-dagen">' + cells + '</div>'
     + '</div>';
@@ -94,11 +94,13 @@ function drawCalendar() {
   const target = $('agendaKalender');
   if (!target) return;
   lastItems = getAgendaItems();
-  const year = new Date().getFullYear();
+  const months = calendarMonths();
+  const firstYear = months[0].year;
+  const lastYear = months[months.length - 1].year;
   const label = $('agendaJaar');
-  if (label) label.textContent = String(year);
+  if (label) label.textContent = firstYear === lastYear ? String(firstYear) : firstYear + '–' + lastYear;
   let html = '';
-  for (let month = 0; month < 12; month += 1) html += monthGridHtml(year, month);
+  for (const { year, month } of months) html += monthGridHtml(year, month, year !== firstYear);
   target.innerHTML = html;
 }
 

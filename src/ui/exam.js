@@ -117,7 +117,7 @@ function checkExamFinished() {
   const pct = Math.round(correct / questions.length * 100);
   const result = $('examenres');
   if (!result) return;
-  const title = icon('trophy') + ' Questreeks voltooid! +' + (correct * XP_PER_CORRECT_ANSWER) + ' XP, ' + correct + '/' + questions.length + ' (' + pct + '%)';
+  const title = icon('trophy') + ' Oefentoets klaar! +' + (correct * XP_PER_CORRECT_ANSWER) + ' XP, ' + correct + '/' + questions.length + ' (' + pct + '%)';
   result.innerHTML = '<div class="call sum quest-voltooid"><b>' + title + '</b><br>'
     + Object.keys(perSubject).map((name) => name + ': ' + perSubject[name].correct + '/' + perSubject[name].total).join(' · ')
     + '</div><div class="bar"><button class="bt gh" onclick="renderExamStart()">← Terug naar overzicht</button></div>';

@@ -1,14 +1,138 @@
 import { registerChapter } from '../../../registry.js';
 
+/* Rebuilt 2026-09-25 to the recipe of Economie TL4 H1 (change 6). Fixed:
+   2.1 said cm to km is dividing by 10 six times (it is five; its own
+   example showed five). Added from the book: the schaallijn of Venlo -
+   Roermond (2.1), ZW = 225 degrees (2.2), the steps for a verticale
+   doorsnede (2.3) and doorsnede PCGQ via Pythagoras (2.4). The vague
+   "about 172 m" estimate is now a rule. The drawing is unchanged. Terms,
+   cards and quiz unchanged. */
 registerChapter('wiskunde|tl|3|2', {
 title:'Meetkunde',
 summary:[
-{heading:'2.1 Schaal en schaallijn',html:'<div class=\'box\'><h4>Waar gaat dit hoofdstuk over?</h4><p>In dit hoofdstuk werk je met kaarten en ruimtefiguren. Je rekent met schaal en schaallijn, je bepaalt een koershoek, je leest een hoogtekaart af en tekent een verticale doorsnede, je tekent doorsneden en lichaamsdiagonalen van ruimtefiguren, je herkent aanzichten van bouwwerken en je berekent hoeken in vlakke figuren.</p></div><div class=\'call\'>Een schip dat op zee vaart, gebruikt geen straatnamen om de koers te bepalen, maar een koershoek in graden. Een architect gebruikt hoogtelijnen en aanzichten om een gebouw op papier te ontwerpen. In dit hoofdstuk leer je deze technieken zelf toepassen.</div><div class=\'box\'><h4>Schaal</h4><p>Op een kaart meet je de afstand <b>hemelsbreed</b>: in een rechte lijn van het ene punt naar het andere. Onder een kaart staat vaak een schaal, bijvoorbeeld 1 : 500 000. Dat betekent dat 1 cm op de kaart in werkelijkheid 500 000 cm is. Om sneller te kunnen rekenen, zet je dat om naar kilometers door zes keer door 10 te delen (cm → dm → m → dam → hm → km).</p></div><div class=\'voorbeeld\'><h4>Voorbeeld: schaal gebruiken</h4><p>Carl fietst van Amersfoort naar Apeldoorn. De schaal is 1 : 800 000. Hoelang doet Carl daar ongeveer over?</p><ol class=\'num\'><li>800 000 cm = 800 000 : 10 : 10 : 10 : 10 : 10 = 8 km. Dus 1 cm op de kaart is 8 km in werkelijkheid.</li><li>Meet de afstand op de kaart, bijvoorbeeld 5 cm.</li><li>Afstand hemelsbreed: 5 × 8 = 40 km.</li><li>Afstand over de weg (vuistregel): 1,2 × 40 = 48 km.</li><li>Fietsend doe je daar 48 : 15 = 3,2 uur over.</li></ol><div class=\'antwoord\'>Antwoord: Carl doet er ruim 3 uur over.</div></div><div class=\'call sum\'><b>Om te onthouden</b><ul class=\'lst\'><li>De afstand over de weg is ongeveer 1,2 keer de afstand hemelsbreed.</li><li>Je fietst ongeveer 15 km in een uur.</li><li>Je loopt ongeveer 5 km in een uur.</li></ul></div><div class=\'call\'>Een <b>schaallijn</b> is een lijn onder de kaart die is verdeeld in gelijke stukken, waarbij bij elk streepje een afstand in werkelijkheid staat. Zo kun je snel afstanden opmeten zonder te rekenen met de schaal.</div>'},
-{heading:'2.2 Koershoek',html:'<div class=\'box\'><h4>Windroos en koershoekmeter</h4><p>Een <b>windroos</b> heeft 16 windrichtingen, van noord (N) via noordoost (NO), oost (O), zuidoost (ZO), zuid (Z), zuidwest (ZW), west (W) tot noordwest (NW) en weer terug naar noord. Deze verdeling is niet nauwkeurig genoeg. Daarom bestaat er een verdeling in graden op de <b>koershoekmeter</b>: de telling begint in het noorden bij 0°, gaat rechtsom en eindigt weer in het noorden bij 360°. Oost is 90°, zuid is 180°, west is 270°.</p></div><div class=\'voorbeeld\'><h4>Voorbeeld: koershoek meten</h4><p>Een vissersboot vaart van Urk naar Den Oever. Welke koershoek vaart de boot?</p><ol class=\'num\'><li>Teken een lijn van Urk naar Den Oever.</li><li>Leg de koershoekmeter met het midden op Urk (het vertrekpunt).</li><li>Zorg dat de noordpijl van de koershoekmeter naar het noorden wijst.</li><li>Draai de rode lijn op de lijn Urk-Den Oever en lees de koershoek af.</li></ol><div class=\'antwoord\'>Antwoord: de boot vaart een koershoek van 309°.</div></div><div class=\'call warn\'><b>Veelgemaakte fout:</b> je legt de koershoekmeter altijd met het midden op het <b>vertrekpunt</b>, niet op het eindpunt.</div>'},
-{heading:'2.3 Hoogtelijnen',html:'<div class=\'box\'><h4>Hoogtekaart aflezen</h4><p>Op een hoogtekaart geven de lijnen (de <b>hoogtelijnen</b>) een hoogte in meters aan ten opzichte van NAP (Normaal Amsterdams Peil, de gemiddelde zeespiegel). Wandel je precies op zo\'n lijn, dan blijf je op dezelfde hoogte. Hoe dichter de hoogtelijnen bij elkaar liggen, hoe steiler de helling is.</p></div><div class=\'voorbeeld\'><h4>Voorbeeld: hoogte schatten</h4><p>Punt C ligt tussen de hoogtelijnen van 170 m en 180 m, dichter bij de hoogtelijn van 170 m. Schat de hoogte van punt C.</p><div class=\'antwoord\'>Antwoord: punt C ligt op ongeveer 172 m hoogte.</div></div><div class=\'box\'><h4>Verticale doorsnede van een landschap</h4><p>Met de hoogtes van een hoogtekaart kun je een schets maken van het hoogteverloop langs een lijn: dat heet een <b>verticale doorsnede</b>. Je zet op de horizontale as de afstand langs de lijn uit en op de verticale as de hoogte. Bij elk snijpunt met een hoogtelijn zet je een stip op de juiste hoogte, en door de stippen teken je een vloeiende kromme.</p></div><div class=\'call sum\'><b>Om te onthouden</b><ul class=\'lst\'><li>een hoogtelijn geeft plekken met gelijke hoogte aan</li><li>hoogtelijnen dicht bij elkaar → steile helling</li><li>een verticale doorsnede toont het hoogteverloop langs een lijn</li></ul></div><figure class=\'fig\'><svg viewBox="0 0 340 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Hoogtekaart met hoogtelijnen van 10, 20 en 30 meter en een lijn van A naar B, met daaronder de verticale doorsnede van die lijn"><g fill="none" stroke="var(--txt)" stroke-width="1.3" opacity=".55"><ellipse cx="170" cy="90" rx="125" ry="58"/><ellipse cx="170" cy="90" rx="82" ry="38"/><ellipse cx="170" cy="90" rx="40" ry="18"/></g><g fill="var(--mut)" font-size="9.5" font-family="inherit"><text x="50" y="122">10</text><text x="94" y="112">20</text><text x="137" y="100">30</text></g><path d="M50 140 L292 60" stroke="#e2564f" stroke-width="2" fill="none"/><g fill="#e2564f"><circle cx="50" cy="140" r="4"/><circle cx="292" cy="60" r="4"/></g><g fill="var(--txt)" font-size="12" font-family="inherit"><text x="38" y="154">A</text><text x="298" y="54">B</text></g><g stroke="var(--line)" stroke-width="1" stroke-dasharray="3 3" fill="none"><path d="M50 150 V196"/><path d="M292 70 V196"/></g><g stroke="var(--txt)" stroke-width="1.6" fill="none" opacity=".8"><path d="M45 292 H305"/><path d="M45 292 V200"/></g><g stroke="var(--line)" stroke-width="1" fill="none"><path d="M45 272 H305 M45 247 H305 M45 222 H305"/></g><g fill="var(--mut)" font-size="9.5" font-family="inherit" text-anchor="end"><text x="41" y="276">10</text><text x="41" y="251">20</text><text x="41" y="226">30</text></g><path d="M50 285 C 100 280, 122 226, 170 219 C 218 212, 250 262, 292 273" fill="none" stroke="#e2564f" stroke-width="2.2" stroke-linecap="round"/><g fill="var(--txt)" font-size="12" font-family="inherit" text-anchor="middle"><text x="50" y="308">A</text><text x="292" y="308">B</text></g><text x="60" y="212" fill="var(--mut)" font-size="9.5" font-family="inherit">hoogte in m</text></svg><figcaption>Boven de kaart met hoogtelijnen: hoe dichter de lijnen bij elkaar liggen, hoe steiler het is. Onder de doorsnede langs A&ndash;B: elke hoogtelijn die je kruist, is een punt op de kromme.</figcaption></figure>'},
-{heading:'2.4 Doorsnede en lichaamsdiagonaal',html:'<div class=\'box\'><h4>Doorsnede tekenen</h4><p>Als je een ruimtefiguur (zoals een balk of een piramide) met een vlak doorsnijdt, ontstaat een platte figuur: de <b>doorsnede</b>. Een doorsnede teken je \'op ware grootte\', dus met de echte maten en rechte hoeken waar die horen. Je maakt eerst een schets van het vlak waarin de doorsnede ligt, met de letters en maten erbij.</p></div><div class=\'box\'><h4>Lichaamsdiagonaal berekenen</h4><p>Een lijnstuk dat dwars door een ruimtefiguur loopt, van het ene hoekpunt naar het tegenoverliggende hoekpunt, heet een <b>lichaamsdiagonaal</b>. Je berekent de lengte van een lichaamsdiagonaal met de <b>verlengde stelling van Pythagoras</b>: daarbij gebruik je altijd drie ribben.</p></div><div class=\'voorbeeld\'><h4>Voorbeeld: lichaamsdiagonaal berekenen</h4><p>Bereken de lengte van CE in balk ABCD.EFGH met AB = 4 cm, BC = 6 cm en CG = 8 cm. Rond af op één decimaal.</p><ol class=\'num\'><li>Kies een route over drie ribben van C naar E, bijvoorbeeld CB, BA en AE.</li><li>rhz² = 36, rhz² = 16, rhz² = 64.</li><li>sz² = 36 + 16 + 64 = 116.</li><li>sz = √116 = 10,770...</li></ol><div class=\'antwoord\'>Antwoord: CE is 10,8 cm.</div></div><div class=\'call warn\'><b>Veelgemaakte fout:</b> bij de verlengde stelling van Pythagoras gebruik je drie ribben (rechthoekszijden), niet twee zoals bij de gewone stelling van Pythagoras.</div>'},
-{heading:'2.5 Aanzichten',html:'<div class=\'box\'><h4>Aanzichten van een bouwwerk</h4><p>Als je vanuit verschillende richtingen naar een bouwwerk of technisch werkstuk kijkt, zie je verschillende platte tekeningen: de <b>aanzichten</b>. De belangrijkste zijn het <b>vooraanzicht</b> (recht van voren), het <b>bovenaanzicht</b> (recht van boven) en het <b>rechterzijaanzicht</b> (recht van rechts). Bij een bovenaanzicht van blokkenbouwwerken geven de getallen vaak aan hoeveel kubussen op elkaar gestapeld zijn.</p></div><div class=\'call\'>Bij het tekenen van een bovenaanzicht met stapels kubussen schrijf je in elk vakje het aantal kubussen dat daar op elkaar staat. Vanuit het bovenaanzicht kun je dan het vooraanzicht en het zijaanzicht afleiden: je neemt steeds het hoogste aantal in elke rij of kolom.</div><div class=\'call sum\'><b>Om te onthouden</b><ul class=\'lst\'><li>vooraanzicht: recht van voren gezien</li><li>bovenaanzicht: recht van boven gezien</li><li>rechterzijaanzicht: recht van rechts gezien</li><li>let bij bovenaanzichten met kubussen op de hoogte per vakje</li></ul></div>'},
-{heading:'2.6 Hoeken',html:'<div class=\'box\'><h4>Hoeken berekenen in vlakke figuren</h4><p>In vlakke figuren kun je hoeken berekenen met een aantal vaste regels: helemaal rond is 360°, een gestrekte hoek is 180°, een rechte hoek is 90°, de hoeken van een driehoek zijn samen 180° en de hoeken van een vierhoek zijn samen 360°. Ook lijnsymmetrie, draaisymmetrie en schuifsymmetrie kunnen je helpen bij het berekenen van hoeken.</p></div><div class=\'voorbeeld\'><h4>Voorbeeld: hoek berekenen</h4><p>Van driehoek ABC is hoek B = 44°, hoek C = 60° en hoek A₁ = hoek A₂. Bereken hoek D₂ (D ligt op BC, met AD getekend).</p><ol class=\'num\'><li>Bereken eerst hoek A₁₂ in driehoek ABC: 180 − 44 − 60 = 76°.</li><li>hoek A₂ = hoek A₁ = 76 : 2 = 38°.</li><li>hoek D₂ = 180 − 38 − 60 = 82°.</li></ol><div class=\'antwoord\'>Antwoord: hoek D₂ is 82°.</div></div><div class=\'call\'>Bij hoeken met een gemeenschappelijk hoekpunt kun je de <b>drieletternotatie</b> gebruiken. ∠D₁₂ wordt bijvoorbeeld ook wel ∠ADC genoemd: je gaat met je vinger vanuit A via D naar C, en bij de middelste letter vind je het hoekpunt van de hoek.</div><div class=\'call sum\'><b>Om te onthouden</b><ul class=\'lst\'><li>hoekensom driehoek: 180°</li><li>hoekensom vierhoek: 360°</li><li>gestrekte hoek: 180°</li><li>rechte hoek: 90°</li></ul></div>'}
+{heading:'2.1 Schaal en schaallijn',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>rekenen met een <b>schaal</b> en een <b>schaallijn</b></li>
+<li>de afstand <b>over de weg</b> en de <b>reistijd</b> schatten met een <b>vuistregel</b></li></ul></div>`
++`<div class="box"><h4>Waar dit hoofdstuk over gaat</h4><p>Je werkt met <b>kaarten</b> en <b>ruimtefiguren</b>: <b>schaal</b>, <b>koershoek</b>, <b>hoogtekaarten</b>, <b>doorsneden</b> en <b>lichaamsdiagonalen</b>, <b>aanzichten</b> en <b>hoeken</b>.</p></div>`
++`<h5 class="sub">Schaal</h5>`
++`<div class="box"><h4>1 : 500 000</h4><p>Schaal <b>1 : 500 000</b> betekent: 1 cm op de kaart is <b>500 000 cm</b> in het echt. Van cm naar km deel je <b>vijf keer door 10</b> (cm &rarr; dm &rarr; m &rarr; dam &rarr; hm &rarr; km): 500 000 cm = <b>5 km</b>.</p></div>`
++`<div class="box"><h4>Schaallijn</h4><p>Een <b>schaallijn</b> onder de kaart laat met streepjes zien hoeveel km bij een stuk kaart hoort. Venlo&ndash;Roermond is op de kaart <b>4,7 cm</b>; 1 cm is 5 km, dus in het echt <b>4,7 &times; 5 = 23,5 km</b> hemelsbreed.</p></div>`
++`<h5 class="sub">Vuistregels</h5>`
++`<div class="g3">`
++`<div class="box"><h4>Over de weg</h4><p>Ongeveer <b>1,2 &times;</b> de afstand hemelsbreed.</p></div>`
++`<div class="box"><h4>Fietsen</h4><p>Ongeveer <b>15 km</b> per uur.</p></div>`
++`<div class="box"><h4>Lopen</h4><p>Ongeveer <b>5 km</b> per uur.</p></div></div>`
++`<div class="call reken"><b>Stappenplan: reistijd schatten</b><ol class="num">
+<li>Reken <b>1 cm</b> op de kaart om naar <b>km</b>.</li>
+<li><b>Meet</b> de afstand hemelsbreed en reken om.</li>
+<li>Afstand over de weg: <b>&times; 1,2</b>.</li>
+<li>Reistijd: afstand <b>: 15</b> (fietsen) of <b>: 5</b> (lopen).</li></ol></div>`
++`<div class="voorbeeld"><h4>Voorbeeld: Carl fietst naar Apeldoorn</h4><p>Schaal <b>1 : 800 000</b>. Hemelsbreed is het <b>40 km</b>.</p><div class="antwoord">800 000 cm = <b>8 km</b>, dus 1 cm is 8 km. Over de weg: 1,2 &times; 40 = <b>48 km</b>. Fietsen: 48 : 15 = <b>3,2 uur</b>, ruim 3 uur.</div></div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Hoeveel keer deel je door 10 om cm om te rekenen naar km?</p><p class="check-a"><b>Vijf keer</b>: dm, m, dam, hm, km.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden (2.1)</b><ul class="lst">
+<li><b>Schaal 1 : n</b>: 1 cm op de kaart is n cm in het echt.</li>
+<li>Over de weg <b>&times; 1,2</b>; fietsen <b>15 km/u</b>, lopen <b>5 km/u</b>.</li>
+<li><b>Hemelsbreed</b> = in een rechte lijn.</li></ul></div>`},
+
+{heading:'2.2 Koershoek',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>werken met de <b>windroos</b> en <b>koershoeken</b> in graden</li>
+<li>een koershoek <b>meten</b> met de <b>koershoekmeter</b></li></ul></div>`
++`<h5 class="sub">Van windrichting naar graden</h5>`
++`<div class="box"><h4>Rechtsom vanaf noord</h4><p>Een <b>windroos</b> heeft <b>16 windrichtingen</b>. Nauwkeuriger zijn <b>graden</b>: de telling begint in het <b>noorden bij 0&deg;</b> en gaat <b>rechtsom</b> tot 360&deg;.</p></div>`
++`<div class="tblwrap"><table class="tbl"><tr><th>Richting</th><th>Koershoek</th></tr><tr><td><b>Noord</b></td><td>0&deg; (of 360&deg;)</td></tr><tr><td><b>Oost</b></td><td>90&deg;</td></tr><tr><td><b>Zuid</b></td><td>180&deg;</td></tr><tr><td><b>Zuidwest</b></td><td>225&deg;</td></tr><tr><td><b>West</b></td><td>270&deg;</td></tr></table></div>`
++`<h5 class="sub">Meten</h5>`
++`<div class="call reken"><b>Stappenplan: een koershoek meten</b><ol class="num">
+<li>Teken een lijn van het <b>vertrekpunt</b> naar het doel.</li>
+<li>Leg het <b>midden</b> van de koershoekmeter op het <b>vertrekpunt</b>.</li>
+<li>Laat de <b>noordpijl</b> naar het noorden wijzen.</li>
+<li>Draai de <b>rode lijn</b> op je getekende lijn en lees de koershoek af.</li></ol></div>`
++`<div class="voorbeeld"><h4>Voorbeeld: van Urk naar Den Oever</h4><p>Welke koershoek vaart een vissersboot?</p><div class="antwoord">De boot vertrekt uit <b>Urk</b>, dus daar ligt het midden van de koershoekmeter. Je leest af: <b>309&deg;</b>, iets ten westen van noordwest (315&deg;).</div></div>`
++`<div class="call warn"><b>Veelgemaakte fout:</b> de koershoekmeter op het <b>eindpunt</b> leggen. Dan meet je de weg <b>terug</b>, 180&deg; anders.</div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Welke koershoek hoort bij west?</p><p class="check-a"><b>270&deg;</b>.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden (2.2)</b><ul class="lst">
+<li>Koershoek: vanaf <b>noord (0&deg;)</b>, <b>rechtsom</b>.</li>
+<li>O = 90&deg;, Z = 180&deg;, W = 270&deg;.</li>
+<li>Meten vanaf het <b>vertrekpunt</b>.</li></ul></div>`},
+
+{heading:'2.3 Hoogtelijnen',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>een <b>hoogtekaart</b> met <b>hoogtelijnen</b> lezen</li>
+<li>een <b>verticale doorsnede</b> van een landschap tekenen</li></ul></div>`
++`<h5 class="sub">Hoogtelijnen</h5>`
++`<div class="box"><h4>Op dezelfde hoogte</h4><p>Een <b>hoogtelijn</b> verbindt plekken die even hoog liggen, gemeten vanaf <b>NAP</b> (Normaal Amsterdams Peil). Loop je precies op zo'n lijn, dan ga je <b>niet omhoog of omlaag</b>. Liggen de lijnen <b>dicht bij elkaar</b>, dan is de helling <b>steil</b>.</p></div>`
++`<div class="voorbeeld"><h4>Voorbeeld: een punt tussen twee lijnen</h4><p>Punt C ligt tussen de hoogtelijnen van <b>170 m</b> en <b>180 m</b>, dicht bij de lijn van 170 m.</p><div class="antwoord">C ligt <b>tussen 170 en 180 m</b>, en dichter bij <b>170 m</b> dan bij 180 m.</div></div>`
++`<figure class='fig'><svg viewBox="0 0 340 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Hoogtekaart met hoogtelijnen van 10, 20 en 30 meter en een lijn van A naar B, met daaronder de verticale doorsnede van die lijn"><g fill="none" stroke="var(--txt)" stroke-width="1.3" opacity=".55"><ellipse cx="170" cy="90" rx="125" ry="58"/><ellipse cx="170" cy="90" rx="82" ry="38"/><ellipse cx="170" cy="90" rx="40" ry="18"/></g><g fill="var(--mut)" font-size="9.5" font-family="inherit"><text x="50" y="122">10</text><text x="94" y="112">20</text><text x="137" y="100">30</text></g><path d="M50 140 L292 60" stroke="#e2564f" stroke-width="2" fill="none"/><g fill="#e2564f"><circle cx="50" cy="140" r="4"/><circle cx="292" cy="60" r="4"/></g><g fill="var(--txt)" font-size="12" font-family="inherit"><text x="38" y="154">A</text><text x="298" y="54">B</text></g><g stroke="var(--line)" stroke-width="1" stroke-dasharray="3 3" fill="none"><path d="M50 150 V196"/><path d="M292 70 V196"/></g><g stroke="var(--txt)" stroke-width="1.6" fill="none" opacity=".8"><path d="M45 292 H305"/><path d="M45 292 V200"/></g><g stroke="var(--line)" stroke-width="1" fill="none"><path d="M45 272 H305 M45 247 H305 M45 222 H305"/></g><g fill="var(--mut)" font-size="9.5" font-family="inherit" text-anchor="end"><text x="41" y="276">10</text><text x="41" y="251">20</text><text x="41" y="226">30</text></g><path d="M50 285 C 100 280, 122 226, 170 219 C 218 212, 250 262, 292 273" fill="none" stroke="#e2564f" stroke-width="2.2" stroke-linecap="round"/><g fill="var(--txt)" font-size="12" font-family="inherit" text-anchor="middle"><text x="50" y="308">A</text><text x="292" y="308">B</text></g><text x="60" y="212" fill="var(--mut)" font-size="9.5" font-family="inherit">hoogte in m</text></svg><figcaption>Boven de kaart met hoogtelijnen: hoe dichter de lijnen bij elkaar liggen, hoe steiler het is. Onder de doorsnede langs A&ndash;B: elke hoogtelijn die je kruist, is een punt op de kromme.</figcaption></figure>`
++`<h5 class="sub">Verticale doorsnede</h5>`
++`<div class="call reken"><b>Stappenplan: verticale doorsnede van A naar B</b><ol class="num">
+<li>Draai de kaart zo dat <b>AB horizontaal</b> ligt.</li>
+<li>Teken precies onder A een <b>verticale as</b> met de hoogtes.</li>
+<li>Zet een <b>stip</b> waar AB een <b>hoogtelijn snijdt</b>, recht daaronder op de goede hoogte.</li>
+<li>Verbind de stippen met een <b>vloeiende kromme</b>.</li></ol></div>`
++`<div class="call waarom">Waarom een vloeiende lijn en geen rechte stukjes? Een landschap heeft geen <b>knikken</b>: tussen twee hoogtelijnen loopt de grond <b>geleidelijk</b> op of af.</div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Wat betekent het als hoogtelijnen dicht bij elkaar liggen?</p><p class="check-a">Daar is de helling <b>steil</b>.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden (2.3)</b><ul class="lst">
+<li><b>Hoogtelijn</b>: overal dezelfde hoogte boven NAP.</li>
+<li><b>Dicht bij elkaar</b> = steil.</li>
+<li><b>Verticale doorsnede</b>: het hoogteverloop langs een lijn.</li></ul></div>`},
+
+{heading:'2.4 Doorsnede en lichaamsdiagonaal',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>een <b>doorsnede</b> van een kubus of balk op <b>ware grootte</b> tekenen</li>
+<li>een <b>lichaamsdiagonaal</b> berekenen met de <b>verlengde stelling van Pythagoras</b></li></ul></div>`
++`<h5 class="sub">Doorsnede op ware grootte</h5>`
++`<div class="box"><h4>Een plat snijvlak</h4><p>Snijd je een ruimtefiguur door, dan krijg je een <b>doorsnede</b>. Op <b>ware grootte</b> teken je hem met de <b>echte maten</b> en de <b>rechte hoeken</b> waar ze horen. Een <b>diagonaalvlak</b> gaat door twee ribben die schuin tegenover elkaar liggen; een kubus heeft er <b>zes</b>.</p></div>`
++`<div class="call reken"><b>Stappenplan: doorsnede PCGQ tekenen</b><ol class="num">
+<li>Welke zijden weet je al? Bijvoorbeeld <b>CG</b>.</li>
+<li>Maak een <b>schets</b> van het vlak waarin een onbekende zijde ligt (bijvoorbeeld het bovenvlak) met letters en maten.</li>
+<li>Bereken die zijde met de <b>stelling van Pythagoras</b>.</li>
+<li>Teken de doorsnede met de <b>echte maten</b> en zet letters en maten erbij.</li></ol></div>`
++`<h5 class="sub">Lichaamsdiagonaal</h5>`
++`<div class="box"><h4>Dwars door de balk</h4><p>Een <b>lichaamsdiagonaal</b> loopt <b>dwars door</b> de figuur, van een hoekpunt naar het hoekpunt dat er het verst vandaan ligt. In de <b>verlengde stelling van Pythagoras</b> gebruik je altijd <b>drie ribben</b>.</p></div>`
++`<div class="voorbeeld"><h4>Voorbeeld: CE in balk ABCD EFGH</h4><p><b>AB = 4 cm</b>, <b>BC = 6 cm</b>, <b>CG = 8 cm</b>. Rond af op één decimaal.</p><div class="antwoord">Route over drie ribben: CB, BA, AE. rhz&sup2; = 36, rhz&sup2; = 16, rhz&sup2; = 64. sz&sup2; = <b>116</b>. CE = &radic;116 &asymp; <b>10,8 cm</b>.</div></div>`
++`<div class="call warn"><b>Veelgemaakte fout:</b> maar <b>twee</b> ribben gebruiken. Dan bereken je de diagonaal van een <b>zijvlak</b>, niet die door de balk.</div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Hoeveel ribben gebruik je bij de verlengde stelling van Pythagoras?</p><p class="check-a"><b>Drie</b>.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden (2.4)</b><ul class="lst">
+<li><b>Doorsnede</b> op ware grootte: onbekende zijden eerst met Pythagoras.</li>
+<li><b>Lichaamsdiagonaal&sup2;</b> = ribbe&sup2; + ribbe&sup2; + ribbe&sup2;.</li></ul></div>`},
+
+{heading:'2.5 Aanzichten',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>de <b>aanzichten</b> van een bouwwerk herkennen en tekenen</li>
+<li>van een <b>bovenaanzicht met getallen</b> de andere aanzichten afleiden</li></ul></div>`
++`<h5 class="sub">Zes kanten</h5>`
++`<div class="box"><h4>Recht van één kant</h4><p>Van een voorwerp kun je <b>zes aanzichten</b> tekenen: <b>voor</b>, <b>achter</b>, <b>boven</b>, <b>onder</b>, <b>links</b> en <b>rechts</b>. De belangrijkste zijn het <b>vooraanzicht</b>, het <b>bovenaanzicht</b> en het <b>rechterzijaanzicht</b>.</p></div>`
++`<div class="g3">`
++`<div class="box"><h4>Vooraanzicht</h4><p>Recht van <b>voren</b>.</p></div>`
++`<div class="box"><h4>Bovenaanzicht</h4><p>Recht van <b>boven</b>.</p></div>`
++`<div class="box"><h4>Rechterzijaanzicht</h4><p>Recht van <b>rechts</b>.</p></div></div>`
++`<h5 class="sub">Rekenen met het bovenaanzicht</h5>`
++`<div class="call reken"><b>Stappenplan: van bovenaanzicht naar vooraanzicht</b><ol class="num">
+<li>Schrijf in elk vakje van het bovenaanzicht hoeveel <b>kubussen</b> er op elkaar staan.</li>
+<li>Kijk per <b>kolom</b> (van voren gezien) welk getal het <b>hoogst</b> is.</li>
+<li>Teken in het vooraanzicht zo'n <b>hoge stapel</b>. Voor het zijaanzicht doe je hetzelfde per <b>rij</b>.</li></ol></div>`
++`<div class="call waarom">Waarom het <b>hoogste</b> getal? Van voren zie je alleen de <b>buitenkant</b>: een lage stapel achter een hoge valt <b>weg</b>.</div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Wat schrijf je in de vakjes van een bovenaanzicht van een blokkenbouwwerk?</p><p class="check-a">Hoeveel <b>kubussen</b> er op die plek <b>op elkaar</b> staan.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden (2.5)</b><ul class="lst">
+<li><b>Vooraanzicht</b>, <b>bovenaanzicht</b>, <b>rechterzijaanzicht</b>: recht van één kant.</li>
+<li>Vooraanzicht uit het bovenaanzicht: het <b>hoogste</b> getal per kolom.</li></ul></div>`},
+
+{heading:'2.6 Hoeken',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li><b>hoeken berekenen</b> in vlakke figuren met vaste regels</li>
+<li>de <b>drieletternotatie</b> van een hoek gebruiken</li></ul></div>`
++`<h5 class="sub">De vaste regels</h5>`
++`<div class="tblwrap"><table class="tbl"><tr><th>Regel</th><th>Graden</th></tr><tr><td>Helemaal <b>rond</b></td><td>360&deg;</td></tr><tr><td><b>Gestrekte</b> hoek</td><td>180&deg;</td></tr><tr><td><b>Rechte</b> hoek</td><td>90&deg;</td></tr><tr><td>Hoekensom <b>driehoek</b></td><td>180&deg;</td></tr><tr><td>Hoekensom <b>vierhoek</b></td><td>360&deg;</td></tr></table></div>`
++`<div class="box"><h4>Symmetrie helpt</h4><p>Ook <b>lijnsymmetrie</b>, <b>draaisymmetrie</b> en <b>schuifsymmetrie</b> vertellen je welke hoeken <b>even groot</b> zijn.</p></div>`
++`<h5 class="sub">Drie letters</h5>`
++`<div class="box"><h4>&ang;ADC</h4><p>Komen bij één hoekpunt meer hoeken samen, dan gebruik je <b>drie letters</b>. &ang;D<sub>2</sub> heet ook <b>&ang;ADC</b>: ga met je vinger van A via D naar C. De <b>middelste letter</b> is het hoekpunt.</p></div>`
++`<div class="voorbeeld"><h4>Voorbeeld: een hoek in stappen</h4><p>In driehoek ABC is <b>&ang;B = 44&deg;</b>, <b>&ang;C = 60&deg;</b> en <b>&ang;A<sub>1</sub> = &ang;A<sub>2</sub></b>. D ligt op BC. Bereken &ang;D<sub>2</sub> (in driehoek ADC).</p><div class="antwoord">&ang;A = 180 &minus; 44 &minus; 60 = <b>76&deg;</b>. &ang;A<sub>2</sub> = 76 : 2 = <b>38&deg;</b>. In driehoek ADC: &ang;D<sub>2</sub> = 180 &minus; 38 &minus; 60 = <b>82&deg;</b>.</div></div>`
++`<div class="call warn"><b>Werk in stappen</b> en schrijf bij elke stap in <b>welke driehoek</b> of welke regel je gebruikt.</div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Welke letter van &ang;ADC is het hoekpunt?</p><p class="check-a">De <b>middelste</b>: D.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden (2.6)</b><ul class="lst">
+<li><b>Driehoek</b> 180&deg;, <b>vierhoek</b> 360&deg;, <b>gestrekt</b> 180&deg;, <b>recht</b> 90&deg;.</li>
+<li><b>Drieletternotatie</b>: de middelste letter is het hoekpunt.</li></ul></div>`}
 ],
 terms:[
 ['Hemelsbreed','De afstand in een rechte lijn tussen twee punten, gemeten op de kaart.',0],

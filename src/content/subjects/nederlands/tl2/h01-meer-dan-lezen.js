@@ -1,12 +1,86 @@
 import { registerChapter } from '../../../registry.js';
 
+/* Rebuilt 2026-09-25 to the recipe of Economie TL4 H1 (change 6). Same
+   strategies, rules and examples, restructured. Terms, cards and quiz
+   unchanged. */
 registerChapter('nederlands|tl|2|1', {
 title:'Meer dan lezen',
 summary:[
-{heading:'Onbekende woorden',html:'<div class=\'box\'><h4>Waar gaat dit hoofdstuk over?</h4><p>In dit hoofdstuk leer je hoe je lastige teksten beter begrijpt: hoe je onbekende woorden raadt, hoe een tekst is opgebouwd in alinea\'s en kernzinnen, hoe je het verband tussen zinnen herkent aan signaalwoorden en hoe je hoofdzaken van bijzaken onderscheidt.</p></div><div class=\'box\'><h4>Twee nieuwe woordraadstrategieën</h4><p>Kom je een onbekend woord tegen in een tekst? Kijk dan eerst of je de betekenis uit de tekst kunt halen met een <b>woordraadstrategie</b>. Je kent al: een synoniem zoeken, een omschrijving zoeken en een voorbeeld zoeken. Hier leer je twee nieuwe strategieën.</p></div><div class=\'g2\'><div class=\'box\'><h4>1. Een tegenstelling zoeken</h4><p>Soms staat er in de tekst een woord dat het tegenovergestelde betekent van het onbekende woord. Let op signaalwoorden als <i>maar, echter, toch, daarentegen</i>: die verraden dat er een tegenstelling volgt.</p></div><div class=\'box\'><h4>2. Een bekend woorddeel zoeken</h4><p>Bij samengestelde woorden en woorden met een voor- of achtervoegsel kun je op zoek gaan naar een deel dat je al kent.</p></div></div><div class=\'voorbeeld\'><h4>Voorbeeld: tegenstelling</h4><p>\'Nieuwe games zijn vaak prijzig, maar in de uitverkoop zijn ze goedkoop.\'</p><div class=\'antwoord\'>Antwoord: \'maar\' wijst op een tegenstelling met \'goedkoop\'. Prijzig betekent dus \'duur\'.</div></div><div class=\'g3\'><div class=\'box\'><h4>Samenstelling</h4><p><i>inkoopmedewerker</i> = inkoop + medewerker: iemand die meehelpt met de inkoop.</p></div><div class=\'box\'><h4>Voorvoegsel</h4><p><i>on-</i> betekent \'niet\' of \'zonder\': <i>ongezond</i> = niet gezond. <i>her-</i> betekent \'opnieuw\': <i>hergebruiken</i> = opnieuw gebruiken.</p></div><div class=\'box\'><h4>Achtervoegsel</h4><p><i>-loos</i> betekent \'zonder\': <i>naamloos</i> = zonder naam.</p></div></div>'},
-{heading:'Alinea\'s en kernzinnen',html:'<div class=\'box\'><h4>Alinea\'s</h4><p>Een tekst is meestal verdeeld in <b>alinea\'s</b>. Een alinea bestaat uit een aantal zinnen die bij elkaar horen, omdat ze over hetzelfde deelonderwerp gaan. In een tekst over vakanties kunnen de alinea\'s bijvoorbeeld gaan over wandelvakanties, kampeervakanties of verre reizen.</p></div><div class=\'g2\'><div class=\'box\'><h4>Zo herken je alinea\'s</h4><ul class=\'lst\'><li>Een nieuwe alinea begint altijd op een nieuwe regel.</li><li>Zinnen die samen één alinea vormen, beginnen niet op een nieuwe regel.</li><li>Soms begint de eerste regel van een alinea met een stukje wit (inspringen).</li><li>Soms wordt tussen twee alinea\'s een regel overgeslagen (witregel).</li></ul></div><div class=\'box\'><h4>De kernzin</h4><p>De belangrijkste informatie van een alinea staat in de <b>kernzin</b>. Vaak is dat de eerste, tweede of laatste zin van de alinea. In de zinnen voor of na de kernzin staat een voorbeeld of een verdere uitleg.</p></div></div><div class=\'voorbeeld\'><h4>Voorbeeld</h4><p>\'Het programma voor Bevrijdingsdag in Amersfoort is bekend. Het begint \'s morgens bij het stadhuis met het hijsen van de vlag door de burgemeester. Daarna zijn er op verschillende tijden en plekken in de stad feesten. Voor de jonge kinderen is er een poppenspeler en een goochelaar. Voor de jongeren is er later op de dag een muziekfeest met bekende artiesten. Het feest wordt afgesloten met een knallend vuurwerk.\'</p><div class=\'antwoord\'>Antwoord: de eerste zin is de kernzin, daarin staat de belangrijkste informatie, de rest is uitleg en voorbeelden.</div></div><div class=\'call sum\'><b>Om te onthouden</b><ul class=\'lst\'><li>Zorg dat een alinea over één onderwerp gaat.</li><li>Begin of eindig een alinea met de kernzin.</li><li>Geef naast de kernzin aanvullende informatie of voorbeelden.</li><li>Een alinea heeft minimaal twee en maximaal vijf zinnen.</li></ul></div>'},
-{heading:'Tekstverbanden en signaalwoorden',html:'<div class=\'box\'><h4>Verband tussen zinnen</h4><p>In teksten hebben zinnen en alinea\'s met elkaar te maken. Ze houden <b>verband</b> met elkaar. Aan een <b>signaalwoord</b> zie je welk verband je te maken hebt. Als je weet welk signaalwoord bij een verband hoort, helpt dit je om de tekst beter te begrijpen. Er zijn drie tekstverbanden die je hier leert.</p></div><div class=\'g3\'><div class=\'box\'><h4>1. Opsomming</h4><p>Meerdere dingen die bij elkaar horen, worden achter elkaar genoemd. De volgorde is niet belangrijk. Signaalwoorden: <i>ten eerste, ten tweede, om te beginnen, ook, verder, ten slotte, en</i>. Ook streepjes, dots, getallen of een dubbele punt geven een opsomming aan.</p></div><div class=\'box\'><h4>2. Tijdsvolgorde (chronologie)</h4><p>Geeft aan dat dingen in een bepaalde volgorde gebeuren. De volgorde is nu wél belangrijk. Signaalwoorden: <i>vroeger, later, nu, eerst, daarna, vervolgens, ten slotte, nadat, terwijl, dadelijk, intussen</i>.</p></div><div class=\'box\'><h4>3. Voorbeeld (toelichting)</h4><p>Er wordt een uitleg of voorbeeld gegeven om iets duidelijker te maken. Je krijgt dus meer informatie. Signaalwoorden: <i>bijvoorbeeld, zo, als, zoals, denk aan, neem nou</i>.</p></div></div><div class=\'voorbeeld\'><h4>Voorbeeld: opsomming</h4><p>\'Voor een cake heb je nodig: bloem, boter, suiker, een ei en bakpoeder.\'</p><div class=\'antwoord\'>Antwoord: de dubbele punt en de komma\'s geven een opsomming aan.</div></div><div class=\'voorbeeld\'><h4>Voorbeeld: tijdsvolgorde</h4><p>\'Eerst tekenen we de figuren en maken we een kartonnen bordspel van de game. Daarna gaan de programmeurs aan de slag. Ten slotte wordt het spel getest.\'</p><div class=\'antwoord\'>Antwoord: eerst, daarna en ten slotte geven de volgorde in tijd aan.</div></div><div class=\'call sum\'><b>Zo gebruik je signaalwoorden</b><ul class=\'lst\'><li>Bedenk welk verband je wilt gebruiken: opsomming, tijdsvolgorde of voorbeeld.</li><li>Kies signaalwoorden die bij het verband passen en zorg dat deze woorden in je tekst terugkomen.</li></ul></div>'},
-{heading:'Hoofd- en bijzaken',html:'<div class=\'box\'><h4>Hoofdzaken</h4><p>De belangrijkste informatie in een tekst of programma noem je <b>hoofdzaken</b>. Hoofdzaken lees je vaak in de inleiding en in het slot. Lees ook de eerste en laatste zin van elke alinea, want in een van deze zinnen staan ook vaak hoofdzaken.</p></div><div class=\'box\'><h4>Bijzaken</h4><p>Wat niet zo belangrijk is, zijn de <b>bijzaken</b>. Bijzaken zijn vaak voorbeelden of een uitleg. Er zijn woorden waaraan je kunt zien dat er een voorbeeld of een uitleg komt: <i>bijvoorbeeld, neem nou, zo, zoals</i> of <i>onder andere</i>.</p></div><div class=\'call sum\'><b>Zo gebruik je hoofd- en bijzaken</b><ul class=\'lst\'><li>Je kunt de alinea beginnen met het noemen van de hoofdzaak.</li><li>Denk je dat de hoofdzaak voor je publiek nieuw of moeilijk is? Geef er dan meer uitleg en/of voorbeelden bij. Dat zijn de bijzaken.</li><li>Denk je dat je publiek goed snapt wat jij bedoelt? Dan is het niet altijd nodig om een bijzaak toe te voegen.</li></ul></div>'}
+{heading:'Onbekende woorden',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>twee nieuwe <b>woordraadstrategieën</b>: een <b>tegenstelling</b> zoeken en een <b>bekend woorddeel</b> zoeken</li></ul></div>`
++`<div class="box"><h4>Waar dit hoofdstuk over gaat</h4><p>Je leert lastige teksten beter begrijpen: <b>onbekende woorden</b> raden, de opbouw in <b>alinea's</b> en <b>kernzinnen</b>, <b>signaalwoorden</b> die het verband tussen zinnen tonen, en <b>hoofdzaken</b> en <b>bijzaken</b> uit elkaar houden.</p></div>`
++`<h5 class="sub">Woorden raden</h5>`
++`<div class="box"><h4>Wat je al kent</h4><p>Bij een onbekend woord kijk je eerst of je de betekenis uit de <b>tekst</b> kunt halen. Je kent al: een <b>synoniem</b> zoeken, een <b>omschrijving</b> zoeken en een <b>voorbeeld</b> zoeken. Daar komen er nu twee bij.</p></div>`
++`<div class="vergelijk"><div class="vergelijk-kant"><h4>Tegenstelling zoeken</h4><p>Er staat een woord met de <b>tegenovergestelde</b> betekenis. Signaalwoorden: <b>maar</b>, <b>echter</b>, <b>toch</b>, <b>daarentegen</b>.</p></div><div class="vergelijk-vs">vs</div><div class="vergelijk-kant"><h4>Bekend woorddeel zoeken</h4><p>In een <b>samenstelling</b> of een woord met een <b>voor-</b> of <b>achtervoegsel</b> zit een deel dat je al kent.</p></div></div>`
++`<div class="voorbeeld"><h4>Voorbeeld: tegenstelling</h4><p>&lsquo;Nieuwe games zijn vaak <b>prijzig</b>, maar in de uitverkoop zijn ze goedkoop.&rsquo;</p><div class="antwoord"><b>Maar</b> wijst op een tegenstelling met <b>goedkoop</b>. Prijzig betekent dus <b>duur</b>.</div></div>`
++`<div class="g3">`
++`<div class="box"><h4>Samenstelling</h4><p><b>inkoopmedewerker</b> = inkoop + medewerker: iemand die meehelpt met de inkoop.</p></div>`
++`<div class="box"><h4>Voorvoegsel</h4><p><b>on-</b> = niet of zonder: ongezond. <b>her-</b> = opnieuw: hergebruiken.</p></div>`
++`<div class="box"><h4>Achtervoegsel</h4><p><b>-loos</b> = zonder: naamloos.</p></div></div>`
++`<div class="call reken"><b>Stappenplan: een onbekend woord</b><ol class="num">
+<li>Lees de zinnen <b>eromheen</b>.</li>
+<li>Zoek een <b>synoniem</b>, <b>omschrijving</b>, <b>voorbeeld</b> of <b>tegenstelling</b>.</li>
+<li>Lukt dat niet? Zoek een <b>bekend woorddeel</b>.</li>
+<li>Pas daarna: het <b>woordenboek</b>.</li></ol></div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Wat betekent het voorvoegsel her-?</p><p class="check-a"><b>Opnieuw</b>, zoals in hergebruiken.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden</b><ul class="lst">
+<li><b>Tegenstelling</b>: let op maar, echter, toch.</li>
+<li><b>Woorddeel</b>: samenstelling, voorvoegsel, achtervoegsel.</li>
+<li><b>on-</b> = niet, <b>her-</b> = opnieuw, <b>-loos</b> = zonder.</li></ul></div>`},
+
+{heading:'Alinea\'s en kernzinnen',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li><b>alinea's</b> herkennen</li>
+<li>de <b>kernzin</b> van een alinea vinden</li></ul></div>`
++`<h5 class="sub">Alinea's</h5>`
++`<div class="box"><h4>Zinnen die bij elkaar horen</h4><p>Een <b>alinea</b> is een groepje zinnen over <b>hetzelfde deelonderwerp</b>. In een tekst over vakanties kan de ene alinea over <b>wandelvakanties</b> gaan en de volgende over <b>kamperen</b>.</p></div>`
++`<div class="call reken"><b>Zo herken je een alinea</b><ol class="num">
+<li>Een nieuwe alinea begint op een <b>nieuwe regel</b>.</li>
+<li>Soms <b>springt</b> de eerste regel in.</li>
+<li>Soms staat er een <b>witregel</b> tussen twee alinea's.</li></ol></div>`
++`<h5 class="sub">De kernzin</h5>`
++`<div class="box"><h4>Het belangrijkste</h4><p>De <b>kernzin</b> bevat de <b>belangrijkste informatie</b> van de alinea. Vaak is het de <b>eerste</b>, <b>tweede</b> of <b>laatste</b> zin. De andere zinnen geven een <b>voorbeeld</b> of meer <b>uitleg</b>.</p></div>`
++`<div class="voorbeeld"><h4>Voorbeeld: Bevrijdingsdag in Amersfoort</h4><p>&lsquo;Het programma voor Bevrijdingsdag in Amersfoort is bekend. Het begint 's morgens bij het stadhuis met het hijsen van de vlag. Daarna zijn er feesten in de stad. Voor jonge kinderen is er een poppenspeler, voor jongeren een muziekfeest. Het feest eindigt met vuurwerk.&rsquo;</p><div class="antwoord">De <b>eerste zin</b> is de kernzin: daar staat waar het om gaat. De rest is <b>uitleg</b> en <b>voorbeelden</b>.</div></div>`
++`<div class="call waarom">Waarom de kernzin zoeken? Lees je alleen de <b>kernzinnen</b>, dan heb je snel een <b>samenvatting</b> van de hele tekst.</div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Waar staat de kernzin meestal?</p><p class="check-a">In de <b>eerste</b>, <b>tweede</b> of <b>laatste</b> zin van de alinea.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden</b><ul class="lst">
+<li>Een alinea gaat over <b>één</b> deelonderwerp.</li>
+<li>Begin of eindig een alinea met de <b>kernzin</b>.</li>
+<li>Een alinea heeft <b>twee tot vijf</b> zinnen.</li></ul></div>`},
+
+{heading:'Tekstverbanden en signaalwoorden',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>drie <b>tekstverbanden</b>: opsomming, tijdsvolgorde en voorbeeld</li>
+<li>de <b>signaalwoorden</b> die erbij horen</li></ul></div>`
++`<h5 class="sub">Drie verbanden</h5>`
++`<div class="box"><h4>Signaalwoorden</h4><p>Zinnen en alinea's hebben met elkaar te maken: ze hebben een <b>verband</b>. Een <b>signaalwoord</b> laat zien welk verband het is. Zo begrijp je de tekst <b>beter</b>.</p></div>`
++`<div class="g3">`
++`<div class="box"><h4>Opsomming</h4><p>Dingen die bij elkaar horen, <b>achter elkaar</b>; de volgorde maakt niet uit. <b>ten eerste</b>, <b>ook</b>, <b>verder</b>, <b>en</b>. Ook streepjes, getallen of een <b>dubbele punt</b>.</p></div>`
++`<div class="box"><h4>Tijdsvolgorde</h4><p>De <b>volgorde</b> is wél belangrijk. <b>eerst</b>, <b>daarna</b>, <b>vervolgens</b>, <b>ten slotte</b>, <b>nadat</b>, <b>intussen</b>.</p></div>`
++`<div class="box"><h4>Voorbeeld</h4><p>Een <b>uitleg</b> of voorbeeld maakt iets duidelijker. <b>bijvoorbeeld</b>, <b>zoals</b>, <b>denk aan</b>, <b>neem nou</b>.</p></div></div>`
++`<div class="voorbeeld"><h4>Voorbeeld: welk verband?</h4><p>&lsquo;Eerst tekenen we de figuren. Daarna gaan de programmeurs aan de slag. Ten slotte wordt het spel getest.&rsquo;</p><div class="antwoord"><b>Eerst</b>, <b>daarna</b> en <b>ten slotte</b>: een <b>tijdsvolgorde</b>.</div></div>`
++`<div class="vergelijk"><div class="vergelijk-kant"><h4>Opsomming</h4><p>De volgorde maakt <b>niet</b> uit: bloem, boter, suiker.</p></div><div class="vergelijk-vs">vs</div><div class="vergelijk-kant"><h4>Tijdsvolgorde</h4><p>De volgorde maakt <b>wel</b> uit: eerst, daarna, ten slotte.</p></div></div>`
++`<div class="call warn"><b>Let op:</b> <b>ten slotte</b> kan bij allebei. Kijk of de volgorde in <b>tijd</b> belangrijk is.</div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Welk verband hoort bij &lsquo;neem nou&rsquo;?</p><p class="check-a">Een <b>voorbeeld</b> (toelichting).</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden</b><ul class="lst">
+<li><b>Opsomming</b>, <b>tijdsvolgorde</b>, <b>voorbeeld</b>.</li>
+<li>Kies bij het schrijven signaalwoorden die bij je <b>verband</b> passen.</li></ul></div>`},
+
+{heading:'Hoofd- en bijzaken',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li><b>hoofdzaken</b> en <b>bijzaken</b> uit elkaar houden</li></ul></div>`
++`<h5 class="sub">Belangrijk of minder belangrijk?</h5>`
++`<div class="vergelijk"><div class="vergelijk-kant"><h4>Hoofdzaken</h4><p>De <b>belangrijkste</b> informatie. Vaak in de <b>inleiding</b>, het <b>slot</b> en de <b>eerste of laatste zin</b> van een alinea.</p></div><div class="vergelijk-vs">vs</div><div class="vergelijk-kant"><h4>Bijzaken</h4><p>Minder belangrijk: <b>voorbeelden</b> en <b>uitleg</b>. Herken je aan <b>bijvoorbeeld</b>, <b>neem nou</b>, <b>zoals</b>, <b>onder andere</b>.</p></div></div>`
++`<div class="call reken"><b>Stappenplan: hoofdzaken vinden</b><ol class="num">
+<li>Lees de <b>inleiding</b> en het <b>slot</b>.</li>
+<li>Lees van elke alinea de <b>eerste</b> en <b>laatste</b> zin.</li>
+<li>Streep in gedachten de <b>voorbeelden</b> en uitleg weg: wat overblijft zijn de hoofdzaken.</li></ol></div>`
++`<div class="call waarom">Zelf schrijven? Begin een alinea met de <b>hoofdzaak</b>. Is die <b>nieuw</b> of <b>moeilijk</b> voor je publiek, geef dan bijzaken: uitleg en voorbeelden. Snapt je publiek het al, dan kun je ze <b>weglaten</b>.</div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Is een voorbeeld een hoofdzaak of een bijzaak?</p><p class="check-a">Een <b>bijzaak</b>.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden</b><ul class="lst">
+<li><b>Hoofdzaken</b>: inleiding, slot, eerste en laatste zinnen.</li>
+<li><b>Bijzaken</b>: voorbeelden en uitleg.</li></ul></div>`}
 ],
 terms:[
 ['woordraadstrategie','manier om de betekenis van een onbekend woord te achterhalen, zonder woordenboek',0],

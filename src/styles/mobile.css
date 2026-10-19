@@ -26,11 +26,11 @@
 
   .subj:active,.chapter:active,.snel:active,.tool.live:active,.persona-card:active,
   .niv-card:active,.jaar-card:active{transform:scale(.975);filter:brightness(1.06)}
-  .bt:active,.chip:active,.back:active,.opt:not(:disabled):active,.tab:active{opacity:.72}
+  .bt:active,.chip:active,.back:active,.opt:not(:disabled):active,.route-step:not(:disabled):active{opacity:.72}
 
   /* No blue flash and no accidental text selection when tapping a card. */
   *{-webkit-tap-highlight-color:transparent}
-  button,.subj,.chapter,.snel,.opt,.tab,.chip,.pad-knop,.spel-tegel,.fc{
+  button,.subj,.chapter,.snel,.opt,.chip,.pad-knop,.spel-tegel,.fc{
     user-select:none;-webkit-user-select:none;touch-action:manipulation}
   /* Summaries stay selectable: students copy sentences into their notes. */
   .hslide p,.box,.term,.parblok p,.parblok li,.spel-omschrijving{
@@ -49,7 +49,6 @@
 @media (max-width:560px){
   :root{
     --top-h:52px;       /* height of .top-in              */
-    --tabs-h:44px;      /* height of one .tab             */
     --safe-top:0px;     /* only set in standalone, below  */
     --gut:1rem;         /* the single horizontal gutter   */
   }
@@ -80,11 +79,10 @@
   .profiledrop{min-width:220px}
   .profiledrop button{padding:.7rem .8rem;font-size:.86rem}
 
-  /* -- tabs + score bar: stacked stickies, so the offsets must line up -- */
-  .tabs{top:calc(var(--top-h) + var(--safe-top))}
-  .tabs-in{padding:0 calc(var(--gut) - .4rem);scroll-snap-type:x proximity}
-  .tab{padding:.72rem .8rem;font-size:.8rem;min-height:var(--tabs-h);scroll-snap-align:start}
-  .scorebar{top:calc(var(--top-h) + var(--tabs-h) + var(--safe-top));
+  /* -- quiz score bar -- */
+  /* The chapter route scrolls with the page (clay.css), so the quiz score bar
+     sticks right under the top bar instead of under a sticky tab row. */
+  .scorebar{top:calc(var(--top-h) + var(--safe-top) + .5rem);
     padding:.7rem .9rem;margin:1.1rem 0 .9rem;gap:.7rem;font-size:.85rem}
 
   /* -- headings -- */
@@ -150,7 +148,7 @@
   .zoek{padding:.75rem 1.1rem;margin:1.2rem 0 1rem}
 
   /* -- dialogs become bottom sheets: reachable with a thumb -- */
-  .helpwrap,.zoekwrap,.favwrap,.examenwrap,.nieuwwrap{align-items:flex-end;padding:0}
+  .helpwrap,.zoekwrap,.favwrap,.examenwrap,.nieuwwrap,.agendawrap{align-items:flex-end;padding:0}
   /* The close button is absolute inside the card, so when the card itself
      scrolled the X drifted off with the content. Scroll the body instead and
      the header stays put. */
@@ -159,9 +157,9 @@
     border-radius:20px 20px 0 0;border-bottom:none;
     padding:1.6rem 1.15rem calc(1.2rem + env(safe-area-inset-bottom));
     animation:sheetUp .3s cubic-bezier(.2,.85,.3,1) both}
-  .zoekcard,.favcard,.examencard,.nieuwcard{width:100%;max-width:none;max-height:88vh}
+  .zoekcard,.favcard,.examencard,.nieuwcard,.agendacard{width:100%;max-width:none;max-height:88vh}
   .helpcard > #helpBody,.helpcard > #nieuwBody,.helpcard > #zoekres,
-  .helpcard > #favlist,.helpcard > #examenBody{overflow-y:auto;min-height:0}
+  .helpcard > #favlist,.helpcard > #examenBody,.helpcard > .agenda-body{overflow-y:auto;min-height:0}
   .helpcard::before{content:'';position:absolute;top:.5rem;left:50%;transform:translateX(-50%);
     width:38px;height:4px;border-radius:100px;background:var(--line)}
   .helpclose{width:38px;height:38px;top:.75rem;right:.75rem}

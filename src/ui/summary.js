@@ -1,8 +1,8 @@
 /* Summary tab, including the optional SQ3R guided-reading mode
    (Survey, Question, Read, Recite, Review). */
 import { setHtml, escapeHtml, icon } from '../lib/dom.js';
-import { chapterContent } from '../state/selection.js';
-import { markChapterViewed } from '../state/progress.js';
+import { chapterContent, currentChapterKey } from '../state/selection.js';
+import { markChapterViewed, progressFor } from '../state/progress.js';
 import { sq3rQuestionFor, sq3rReciteText } from '../state/notes.js';
 import { SCREENS, scrollScreenToTop } from './navigation.js';
 
@@ -24,11 +24,22 @@ export function renderSummary(chapter) {
   const toggle = '<div class="bar sq3r-toggle"><button class="bt' + (sq3rActive ? '' : ' gh') + '" onclick="toggleSq3r()">' + icon('compass') + ' '
     + (sq3rActive ? 'Stop begeleide leeswijzer' : 'Begeleide leeswijzer (SQ3R)') + '</button></div>';
   if (!sq3rActive) {
-    setHtml('chBody', toggle + chapter.summary.map(sectionHtml).join(''));
+    setHtml('chBody', toggle + chapter.summary.map(sectionHtml).join('') + readDoneHtml());
   } else {
     setHtml('chBody', toggle + sq3rHtml(chapter));
   }
   markChapterViewed();
+}
+
+/* The end of the summary: step 1 of the chapter route is finished when the
+   student says so here, not when the page merely opened (that is `bekeken`). */
+function readDoneHtml() {
+  const read = (progressFor(currentChapterKey()) || {}).read;
+  return '<div class="read-done">'
+    + '<span class="read-done-t"><b>' + (read ? 'Je hebt dit hoofdstuk gelezen' : 'Klaar met lezen?') + '</b>'
+    + '<small>' + (read ? 'Oefen verder in stap 2.' : 'Dan is stap 1 af. In stap 2 oefen je per paragraaf.') + '</small></span>'
+    + '<button type="button" class="bt" onclick="finishReading()">' + (read ? 'Naar oefenen' : 'Klaar, naar oefenen') + '</button>'
+    + '</div>';
 }
 
 /* Self-check blocks inside a summary: the content modules generate

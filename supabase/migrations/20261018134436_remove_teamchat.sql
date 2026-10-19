@@ -26,5 +26,11 @@ drop view if exists public.chat_namen;
 drop table if exists public.chatberichten;
 drop function if exists public.mag_chatten();
 
--- Muting was only ever a chat moderation tool; nothing else read this column.
-alter table public.profiles drop column if exists gemute;
+-- `profiles.gemute` is kept on purpose. Muting was only ever a chat
+-- moderation tool, but the deployed Edge Functions still use the column:
+-- `registreren` writes it and `_shared/helpers.ts` `requireCaller()` selects
+-- it for every `admin-acties` call. Drop it in a later migration, after both
+-- functions are redeployed without it.
+--
+-- Written 31 Aug, applied to the live database on 18 Oct 2026 (without the
+-- column drop); the file was renamed to the version the database recorded.

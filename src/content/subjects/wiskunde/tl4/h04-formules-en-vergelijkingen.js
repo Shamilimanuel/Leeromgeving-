@@ -1,13 +1,93 @@
 import { registerChapter } from '../../../registry.js';
 
+/* Rebuilt 2026-09-24 to the recipe of Economie TL4 H1 (change 6), from the
+   book scan. Terms, cards and quiz unchanged. */
 registerChapter('wiskunde|tl|4|4', {
 title:'Formules en vergelijkingen',
 summary:[
-{heading:'4.1 Omgekeerd evenredig',html:'<div class=\'box\'>In dit hoofdstuk werk je met omgekeerd evenredige verbanden, stippen- en trapgrafieken, formules met tijd, formules die hetzelfde verband beschrijven, en het oplossen van vergelijkingen met de balansmethode en met inklemmen.</div><div class=\'box\'>Bij een <span class=\'term\'>omgekeerd evenredig verband</span> wordt de ene variabele n keer zo klein als de andere n keer zo groot wordt.</div><div class=\'voorbeeld\'><p><b>Voorbeeld</b><br>Bij het huren van een foodtruck hoort de formule B = 3000/a, met B het bedrag per medewerker in euro\'s en a het aantal medewerkers. Bij 50 medewerkers is B = 3000/50 = &euro;60.</p></div><div class=\'call warn\'>Voor a = 0 heeft de formule geen betekenis: je kunt niet delen door 0.</div>'},
-{heading:'4.2 Stippengrafiek en trapgrafiek',html:'<div class=\'box\'>Bij een <span class=\'term\'>stippengrafiek</span> horen alleen losse punten bij een grafiek, bijvoorbeeld omdat je alleen hele aantallen kunt kopen. Er is geen lijn getekend tussen de punten.</div><div class=\'voorbeeld\'><p><b>Voorbeeld</b><br>Een reep chocola kost &euro;0,50. Omdat je alleen hele repen kunt kopen, hoort bij de prijs een stippengrafiek: bij 1 reep &euro;0,50, bij 2 repen &euro;1, enzovoort.</p></div><div class=\'call\'>Bij een <span class=\'term\'>trapgrafiek</span> is de uitkomst binnen een bepaald interval steeds hetzelfde (een horizontaal lijnstuk = een trede). Bij een volgend interval springt de grafiek naar een andere waarde.</div><div class=\'voorbeeld\'><p><b>Voorbeeld</b><br>Bij het huren van een scooter kost het van 0 tot 2 uur &euro;25, van 2 tot 4 uur &euro;35, en van 4 tot 8 uur &euro;55. Dit is een trapgrafiek: elke trede geeft het bedrag binnen dat tijdsinterval aan.</p></div>'},
-{heading:'4.3 Formules en tijd',html:'<div class=\'box\'>Een assenstelsel heeft een horizontale en een verticale as. Bij een grafiek over tijd kun je de horizontale as ook naar links doortrekken: daar staan negatieve getallen, die betekenen dat je teruggaat in de tijd.</div><div class=\'voorbeeld\'><p><b>Voorbeeld</b><br>Bij de voorraad hondenvoer hoort de formule V = 13 &minus; 0,4t, met V de voorraad in kilogrammen en t de tijd in dagen met t = 0 op 5 juli. Bij t = &minus;2 hoort dus 2 dagen v&oacute;&oacute;r 5 juli, dat is 3 juli. Bij t = 4 hoort 9 juli.</p></div><div class=\'call\'>Om een datum bij een gegeven waarde te vinden, verleng je de grafiek en lees je af welke t-waarde erbij hoort. Reken die t-waarde vervolgens om naar een datum.</div>'},
-{heading:'4.4 Formules bij hetzelfde verband',html:'<div class=\'box\'>Twee formules beschrijven <span class=\'term\'>hetzelfde verband</span> als ze bij elkaar horende waarden opleveren, ongeacht welk getal je invult.</div><div class=\'num\'><ol><li>Vul in de eerste formule een getal in voor de ene variabele en bereken de uitkomst.</li><li>Vul die uitkomst in de tweede formule in en kijk of je weer het oorspronkelijke getal terugkrijgt.</li><li>Herhaal dit met een ander getal. Klopt het weer, dan beschrijven de formules hetzelfde verband.</li></ol></div><div class=\'voorbeeld\'><p><b>Voorbeeld</b><br>Beschrijven B = 15 + 2a en a = (B &minus; 15)/2 hetzelfde verband?<br>Bij a = 5 hoort B = 15 + 2 &times; 5 = 25. Bij B = 25 hoort a = (25 &minus; 15)/2 = 5. Het klopt, dus de formules beschrijven hetzelfde verband.</p></div>'},
-{heading:'4.5 Vergelijkingen oplossen',html:'<div class=\'box\'>Een <span class=\'term\'>vergelijking</span> los je bij een lineaire formule op met de <span class=\'term\'>balansmethode</span>: je voert aan beide kanten van het is-teken dezelfde bewerking uit, totdat de variabele alleen staat.</div><div class=\'voorbeeld\'><p><b>Voorbeeld</b><br>Los op: 7a + 9 = 5a + 3.<br>Trek 5a van beide kanten af: 2a + 9 = 3.<br>Trek 9 van beide kanten af: 2a = &minus;6.<br>Deel beide kanten door 2: a = &minus;3.</p></div><div class=\'call\'>Bij een <span class=\'term\'>kwadratische vergelijking</span> (met een kwadraat) of een vergelijking met een wortel of macht gebruik je <span class=\'term\'>inklemmen</span>: je probeert waarden en kijkt of de uitkomst net te veel of net te weinig is, en verfijnt daarna steeds verder.</div><div class=\'voorbeeld\'><p><b>Voorbeeld</b><br>Bij een bungeejump hoort h = t&sup2; &minus; 7t + 16. Marleen is twee keer op een hoogte van 8 m. Los op: t&sup2; &minus; 7t + 16 = 8.<br>Bij t = 1,4 is h = 8,16 (te veel); bij t = 1,5 is h = 7,75 (te weinig). Marleen is dus na ongeveer 1,4 seconden op 8 m (en op een tweede moment rond 5,6 seconden).</p></div>'}
+{heading:'4.1 Omgekeerd evenredig',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>een <b>omgekeerd evenredig verband</b> herkennen</li>
+<li>de <b>grafiek</b> tekenen: een <b>hyperbool</b></li></ul></div>`
++`<div class="box"><h4>Waar dit hoofdstuk over gaat</h4><p>Je werkt met <b>omgekeerd evenredige verbanden</b>, <b>stippen-</b> en <b>trapgrafieken</b>, <b>formules met tijd</b>, formules bij <b>hetzelfde verband</b>, en je lost <b>vergelijkingen</b> op met de <b>balansmethode</b> en met <b>inklemmen</b>.</p></div>`
++`<h5 class="sub">n keer zo groot, n keer zo klein</h5>`
++`<div class="g2">`
++`<div class="box"><h4>Het verband</h4><p>Een band voor het schoolfeest kost <b>&euro;600</b>. Per leerling betaal je <b>B = 600 / a</b>. Worden het <b>4 keer zo veel</b> leerlingen, dan wordt het bedrag <b>4 keer zo klein</b>. Dat is een <b>omgekeerd evenredig verband</b>.</p></div>`
++`<div class="box"><h4>De grafiek</h4><p>De grafiek is een <b>hyperbool</b>. Het punt <b>(10, 40)</b> betekent: bij 10 leerlingen betaal je &euro;40. Het punt <b>(40, 10)</b>: bij 40 leerlingen &euro;10.</p></div></div>`
++`<div class="call waarom">Waarom mag a <b>niet 0</b> zijn? Dan moet je <b>delen door 0</b>, en dat kan niet. Voor a = 0 heeft de formule <b>geen betekenis</b>.</div>`
++`<div class="voorbeeld"><h4>Voorbeeld: een foodtruck huren</h4><p>Bij het huren van een foodtruck hoort <b>B = 3000 / a</b>, met B het bedrag per medewerker en a het aantal medewerkers.</p><div class="antwoord">Bij 50 medewerkers: 3000 / 50 = <b>&euro;60</b> per persoon.</div></div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Waarom heeft B = 3000 / a geen betekenis voor a = 0?</p><p class="check-a">Omdat je dan zou moeten <b>delen door 0</b>, en dat kan niet.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden (4.1)</b><ul class="lst">
+<li><b>Omgekeerd evenredig</b>: n keer zo groot geeft n keer zo klein.</li>
+<li>De grafiek is een <b>hyperbool</b>.</li>
+<li>Je kunt <b>niet delen door 0</b>.</li></ul></div>`},
+
+{heading:'4.2 Stippengrafiek en trapgrafiek',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>een <b>stippengrafiek</b> aflezen</li>
+<li>een <b>trapgrafiek</b> aflezen</li></ul></div>`
++`<h5 class="sub">Twee soorten grafieken</h5>`
++`<div class="vergelijk"><div class="vergelijk-kant"><h4>Stippengrafiek</h4><p>Alleen <b>losse punten</b>, <b>geen lijn</b> ertussen. Je kunt alleen <b>hele</b> dingen kopen: één reep chocola kost &euro;0,50, twee repen &euro;1.</p></div><div class="vergelijk-vs">vs</div><div class="vergelijk-kant"><h4>Trapgrafiek</h4><p>Alleen <b>horizontale lijnen</b> die in <b>treden</b> omhoog gaan. De treden zitten <b>niet aan elkaar vast</b>. Binnen een trede blijft de uitkomst <b>hetzelfde</b>.</p></div></div>`
++`<div class="voorbeeld"><h4>Voorbeeld: een scooter huren</h4><p>Van <b>0 tot 2 uur</b> kost het &euro;25, van <b>2 tot 4 uur</b> &euro;35, van <b>4 tot 8 uur</b> &euro;55.</p><div class="antwoord">Elke trede is één <b>prijs</b> voor een hele periode. Huur je 3 uur, dan zit je op de tweede trede: <b>&euro;35</b>.</div></div>`
++`<div class="call warn"><b>Let op de randen van een trede.</b> Kijk goed bij welke trede het <b>precieze grensgetal</b> hoort, bijvoorbeeld bij het gewicht van een brief en het aantal postzegels.</div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Wanneer teken je een stippengrafiek in plaats van een lijn?</p><p class="check-a">Als alleen <b>losse (hele) waarden</b> mogelijk zijn, bijvoorbeeld omdat je alleen hele producten kunt kopen.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden (4.2)</b><ul class="lst">
+<li><b>Stippengrafiek</b>: losse punten, geen lijn.</li>
+<li><b>Trapgrafiek</b>: horizontale treden die niet aan elkaar vastzitten.</li>
+<li>Binnen een trede is de uitkomst <b>hetzelfde</b>.</li></ul></div>`},
+
+{heading:'4.3 Formules en tijd',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li><b>formules</b> gebruiken om <b>voorspellingen</b> te doen</li>
+<li>de <b>tijd</b> bepalen met een <b>grafiek</b></li></ul></div>`
++`<h5 class="sub">Terug in de tijd</h5>`
++`<div class="box"><h4>Negatieve tijd</h4><p>Bij een grafiek over tijd kun je de horizontale as <b>naar links</b> doortrekken. Daar staan <b>negatieve</b> getallen: die betekenen dat je <b>teruggaat in de tijd</b> vanaf t = 0.</p></div>`
++`<div class="voorbeeld"><h4>Voorbeeld: hondenvoer</h4><p>De voorraad is <b>V = 13 &minus; 0,4t</b>, in kilogram, met t in dagen en <b>t = 0 op 5 juli</b>.</p><div class="antwoord">t = &minus;2 is <b>2 dagen vóór</b> 5 juli: <b>3 juli</b>. t = 4 is <b>9 juli</b>.</div></div>`
++`<h5 class="sub">Voorspellen</h5>`
++`<div class="box"><h4>Een formule bij echte gegevens</h4><p>Door stippen van echte metingen, zoals de gemiddelde <b>lengte van 19-jarigen</b> per jaar, kun je een <b>rechte lijn</b> trekken. Bij die lijn hoort een <b>lineaire formule</b>. Niet alle stippen liggen precies op de lijn, maar met de formule kun je goed <b>voorspellen</b>.</p></div>`
++`<div class="call reken"><b>Stappenplan: welke datum hoort bij een waarde?</b><ol class="num">
+<li><b>Verleng</b> de grafiek of los de vergelijking op.</li>
+<li>Lees de <b>t</b> af die bij de waarde hoort.</li>
+<li>Reken t om naar een <b>datum</b>, vanaf de dag waarop t = 0 is.</li></ol></div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Wat betekent een negatieve waarde van t in een formule met tijd?</p><p class="check-a">Dat je <b>teruggaat in de tijd</b>, van vóór t = 0.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden (4.3)</b><ul class="lst">
+<li><b>Negatieve t</b> = terug in de tijd vanaf t = 0.</li>
+<li>Met een formule kun je <b>voorspellen</b>, ook al kloppen echte metingen niet precies.</li>
+<li>Een datum vind je door t af te lezen en <b>om te rekenen</b>.</li></ul></div>`},
+
+{heading:'4.4 Formules bij hetzelfde verband',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>bepalen of twee formules <b>hetzelfde verband</b> beschrijven</li></ul></div>`
++`<h5 class="sub">Controleren met getallen</h5>`
++`<div class="box"><h4>Wat betekent het?</h4><p>Twee formules beschrijven <b>hetzelfde verband</b> als ze bij <b>elk getal</b> dezelfde paren waarden geven. Je laat dat zien met <b>berekeningen</b>.</p></div>`
++`<div class="call reken"><b>Stappenplan: hetzelfde verband?</b><ol class="num">
+<li>Kies een getal en vul het in de <b>eerste formule</b> in.</li>
+<li>Vul de uitkomst in de <b>tweede formule</b> in. Krijg je het <b>begingetal</b> terug?</li>
+<li>Doe het nog een keer met een <b>ander getal</b>. Klopt het <b>twee keer</b>, dan is het hetzelfde verband.</li></ol></div>`
++`<div class="voorbeeld"><h4>Voorbeeld: B = 15 + 2a en a = (B &minus; 15) / 2</h4><p>Kies eerst <b>a = 5</b>, daarna <b>a = 10</b>.</p><div class="antwoord">a = 5 geeft B = 25, en B = 25 geeft a = (25 &minus; 15) / 2 = <b>5</b>. a = 10 geeft B = 35, en B = 35 geeft a = <b>10</b>. Het klopt twee keer: <b>hetzelfde verband</b>.</div></div>`
++`<div class="call waarom">Waarom <b>twee</b> keer controleren? Twee formules kunnen toevallig bij <b>één getal</b> kloppen. Bij een tweede getal zie je of het echt <b>altijd</b> klopt.</div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Hoe controleer je of twee formules hetzelfde verband beschrijven?</p><p class="check-a">Vul een getal in de eerste formule in, vul de uitkomst in de tweede in en kijk of je het <b>oorspronkelijke getal</b> terugkrijgt. Herhaal met een <b>ander getal</b>.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden (4.4)</b><ul class="lst">
+<li><b>Hetzelfde verband</b>: bij elk getal dezelfde paren waarden.</li>
+<li>Invullen, <b>terugrekenen</b>, en het begingetal terugkrijgen.</li>
+<li>Controleer met <b>twee</b> verschillende getallen.</li></ul></div>`},
+
+{heading:'4.5 Vergelijkingen oplossen',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>een <b>vergelijking</b> oplossen met de <b>balansmethode</b></li>
+<li>een vergelijking oplossen met <b>inklemmen</b></li></ul></div>`
++`<h5 class="sub">De balansmethode</h5>`
++`<div class="box"><h4>Als een weegschaal</h4><p>Een <b>vergelijking</b> is als een <b>weegschaal</b> in evenwicht. Doe je aan <b>beide kanten</b> van het is-teken <b>hetzelfde</b>, dan blijft het in balans. Ga door tot de variabele <b>alleen</b> staat.</p></div>`
++`<div class="voorbeeld"><h4>Voorbeeld: 7a + 9 = 5a + 3</h4><p>Werk stap voor stap aan <b>beide kanten</b>.</p><div class="antwoord">&minus;5a: 2a + 9 = 3. &nbsp;&minus;9: 2a = &minus;6. &nbsp;: 2: <b>a = &minus;3</b>.</div></div>`
++`<div class="voorbeeld"><h4>Voorbeeld: wanneer verdienen ze evenveel?</h4><p>Spelers van twee clubs verdienen <b>25 + 0,5k</b> en <b>75 + 0,3k</b> euro, met k het aantal verkochte kaartjes. Los op: <b>25 + 0,5k = 75 + 0,3k</b>.</p><div class="antwoord">&minus;0,3k: 25 + 0,2k = 75. &nbsp;&minus;25: 0,2k = 50. &nbsp;: 0,2: <b>k = 250</b>. Dan verdienen ze allebei <b>&euro;150</b>.</div></div>`
++`<h5 class="sub">Inklemmen</h5>`
++`<div class="vergelijk"><div class="vergelijk-kant"><h4>Balansmethode</h4><p>Bij een <b>lineaire</b> vergelijking: alleen a en getallen, <b>geen kwadraat</b>.</p></div><div class="vergelijk-vs">vs</div><div class="vergelijk-kant"><h4>Inklemmen</h4><p>Bij een <b>kwadraat</b>, een <b>wortel</b> of een <b>macht</b>. Probeer waarden tot de uitkomst net te veel en net te weinig is.</p></div></div>`
++`<div class="voorbeeld"><h4>Voorbeeld: een bungeejump</h4><p>De hoogte is <b>h = t&sup2; &minus; 7t + 16</b>. Wanneer is Marleen op <b>8 m</b>?</p><div class="antwoord">t = 1,4 geeft 8,16 (<b>net te veel</b>), t = 1,5 geeft 7,75 (<b>net te weinig</b>). Dus na ongeveer <b>1,4 seconde</b>, en een tweede keer rond <b>5,6 seconde</b>.</div></div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Wanneer gebruik je inklemmen in plaats van de balansmethode?</p><p class="check-a">Bij een vergelijking met een <b>kwadraat</b>, <b>wortel</b> of <b>macht</b>.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden (4.5)</b><ul class="lst">
+<li><b>Balansmethode</b>: aan beide kanten hetzelfde doen, tot de variabele alleen staat.</li>
+<li>Waar twee grafieken <b>snijden</b>, zijn de uitkomsten <b>gelijk</b>: los de vergelijking op.</li>
+<li><b>Inklemmen</b> bij een kwadraat, wortel of macht.</li></ul></div>`}
 ],
 terms:[
 ['omgekeerd evenredig verband','een verband waarbij de ene variabele n keer zo klein wordt als de andere n keer zo groot wordt',0],

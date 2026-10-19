@@ -1,13 +1,110 @@
 import { registerChapter } from '../../../registry.js';
 
+/* Rebuilt 2026-09-24 to the recipe of Economie TL4 H1 (change 6). Examples
+   from the book: the swimming-pool ticket (4.1), class 2M's pie chart (4.3),
+   Marco's dice (4.4), Michael's weighted grade and the median of an even
+   row (4.5). Terms, cards and quiz unchanged. */
 registerChapter('wiskunde|tl|2|4', {
 title:'Statistiek',
 summary:[
-{heading:'4.1 Toename en afname in procenten',html:'<div class=\'box\'><h4>Waar gaat dit hoofdstuk over?</h4><p>In dit hoofdstuk leer je omgaan met gegevens (data): procentuele toename en afname berekenen, verschillende soorten diagrammen tekenen en aflezen, en het gemiddelde, de mediaan en de modus van een rij getallen bepalen.</p></div><div class=\'call\'>Statistiek gaat over het verzamelen, ordenen en samenvatten van gegevens, zodat je er makkelijker iets over kunt zeggen.</div><div class=\'box\'><h4>Procentuele toename</h4><p>Bij een prijsverhoging kun je eerst de toename in euro\'s berekenen. Daarna bereken je de <b>procentuele toename</b>: het percentage waarmee de prijs is gestegen, ten opzichte van de oude prijs.</p></div><div class=\'box\'><h4>Procentuele afname</h4><p>Bij een prijsverlaging werkt het net zo: je berekent de afname in euro\'s en daarna de <b>procentuele afname</b> ten opzichte van de oude prijs.</p></div><div class=\'voorbeeld\'><h4>Voorbeeld: procentuele afname</h4><p>De prijs van een broek wordt verlaagd van €79 naar €55. Bereken de procentuele afname.</p><ol class=\'num\'><li>Er gaat 79 − 55 = €24 af.</li><li>24 / 79 × 100% = 30,4% (afgerond).</li></ol><div class=\'antwoord\'>Antwoord: de prijs is met 30,4% verlaagd.</div></div><div class=\'call warn\'><b>Veelgemaakte fout:</b> gebruik bij het berekenen van het percentage altijd de oude (begin)prijs, niet de nieuwe prijs.</div>'},
-{heading:'4.2 Beelddiagram en staafdiagram',html:'<div class=\'box\'><h4>Beelddiagram</h4><p>In een <b>beelddiagram</b> laat je aantallen zien met plaatjes. Bij het diagram staat hoeveel elk plaatje voorstelt, bijvoorbeeld één filmrolletje = 100 bezoekers.</p></div><div class=\'box\'><h4>Staafdiagram</h4><p>In een <b>staafdiagram</b> gebruik je staven in plaats van plaatjes. De staven staan los van elkaar. De hoogte van een staaf laat het aantal zien.</p></div><div class=\'voorbeeld\'><h4>Voorbeeld: staafdiagram tekenen</h4><p>Teken een staafdiagram bij hobby\'s van tweedeklassers: gamen 14, lezen 30, sporten 33.</p><ol class=\'num\'><li>Bedenk welke getallen bij de verticale as komen. Het hoogste aantal is 33, gebruik bijvoorbeeld 1 cm = 5 leerlingen.</li><li>Teken de staven los van elkaar.</li><li>Zet het aantal boven elke staaf.</li></ol></div><div class=\'call\'>Bij een staafdiagram staan de staven altijd los van elkaar; dat is het verschil met een histogram, waar de staven tegen elkaar aan staan.</div>'},
-{heading:'4.3 Lijndiagram en cirkeldiagram',html:'<div class=\'box\'><h4>Lijndiagram</h4><p>Een <b>lijndiagram</b> gebruik je om een verandering te laten zien, bijvoorbeeld hoe de temperatuur verandert in een week. Op de horizontale as staat meestal de tijd. Met een <b>kreukellijn</b> geef je aan dat je een stuk van de as hebt weggelaten.</p></div><div class=\'box\'><h4>Cirkeldiagram</h4><p>Een <b>cirkeldiagram</b> laat zien hoe een geheel verdeeld is in stukken (sectoren). Voor elk stuk bereken je eerst het percentage en daarna de bijbehorende hoek: <b>hoek = percentage × 3,6</b> (want 100% hoort bij 360°).</p></div><div class=\'voorbeeld\'><h4>Voorbeeld: hoek in een cirkeldiagram</h4><p>Van de 26 leerlingen kiezen 7 voor voetbal. Bereken het percentage en de hoek.</p><ol class=\'num\'><li>7 / 26 × 100% = 26,9% (afgerond).</li><li>26,9 × 3,6 = 96,84°, afgerond 97°.</li></ol><div class=\'antwoord\'>Antwoord: voetbal krijgt een percentage van 26,9% en een hoek van 97°.</div></div>'},
-{heading:'4.4 Histogram en steelbladdiagram',html:'<div class=\'box\'><h4>Frequentietabel</h4><p>Bij het turven van gegevens maak je een <b>frequentietabel</b>. De <b>frequentie</b> geeft aan hoe vaak een waarde voorkomt.</p></div><div class=\'box\'><h4>Histogram</h4><p>Bij een frequentietabel kun je een <b>histogram</b> maken. Een histogram is een staafdiagram waarbij de staven tegen elkaar aan staan (in tegenstelling tot een gewoon staafdiagram, waar de staven los van elkaar staan).</p></div><div class=\'box\'><h4>Steelbladdiagram</h4><p>In een <b>steelbladdiagram</b> splits je elk getal in een \'steel\' (bijvoorbeeld de tientallen) en een \'blad\' (de eenheden). Zo kun je snel zien hoe de getallen verdeeld zijn.</p></div><div class=\'call sum\'><b>Om te onthouden</b><ul class=\'lst\'><li>Frequentie = hoe vaak iets voorkomt.</li><li>Histogram: staven tegen elkaar aan.</li><li>Staafdiagram: staven los van elkaar.</li></ul></div>'},
-{heading:'4.5 Gemiddelde, mediaan en modus',html:'<div class=\'box\'><h4>Gemiddelde</h4><p>Het <b>gemiddelde</b> bereken je door alle getallen bij elkaar op te tellen en de uitkomst te delen door het aantal getallen.</p></div><div class=\'box\'><h4>Gewogen gemiddelde</h4><p>Tellen niet alle cijfers even zwaar mee, dan bereken je een <b>gewogen gemiddelde</b>. Het aantal keer dat een cijfer meetelt, noem je het <b>gewicht</b> van dat cijfer.</p></div><div class=\'voorbeeld\'><h4>Voorbeeld: gemiddelde</h4><p>De minimumtemperaturen in een week zijn 2,9 / −0,8 / −1,3 / 1,6 / 2,4 / −0,2 / 1,9. Bereken het gemiddelde.</p><ol class=\'num\'><li>Tel alle temperaturen bij elkaar op: 2,9 + −0,8 + −1,3 + 1,6 + 2,4 + −0,2 + 1,9 = 6,5.</li><li>Er zijn 7 temperaturen. Deel 6,5 door 7: 6,5 : 7 = 0,928...</li></ol><div class=\'antwoord\'>Antwoord: de gemiddelde minimumtemperatuur is 0,9 °C.</div></div><div class=\'call\'>De <b>mediaan</b> is de middelste waarde als je alle getallen op volgorde zet. De <b>modus</b> is de waarde die het vaakst voorkomt.</div>'}
+{heading:'4.1 Toename en afname in procenten',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>uitrekenen <b>hoeveel procent</b> een deel is van het geheel</li>
+<li>de <b>procentuele toename</b> en <b>afname</b> berekenen</li></ul></div>`
++`<div class="box"><h4>Waar dit hoofdstuk over gaat</h4><p><b>Statistiek</b> gaat over <b>gegevens</b> verzamelen, ordenen en samenvatten. Je rekent met <b>procenten</b>, tekent en leest <b>diagrammen</b>, en bepaalt het <b>gemiddelde</b>, de <b>mediaan</b> en de <b>modus</b>.</p></div>`
++`<h5 class="sub">Hoeveel procent?</h5>`
++`<div class="box"><h4>Deel : geheel &times; 100%</h4><p>In een aquarium met <b>229</b> vissen zwemmen <b>53</b> goudvissen. 53 : 229 &times; 100% = 23,144&hellip;%, dus <b>23,1%</b> is een goudvis. Procenten rond je af op <b>één decimaal</b>.</p></div>`
++`<h5 class="sub">Toename en afname</h5>`
++`<div class="call reken"><b>Stappenplan: procentuele toename of afname</b><ol class="num">
+<li>Bereken de toename of afname <b>in euro's</b>: nieuw &minus; oud.</li>
+<li>Deel door de <b>oude prijs</b>.</li>
+<li>Doe <b>&times; 100%</b> en rond af op één decimaal.</li></ol></div>`
++`<div class="voorbeeld"><h4>Voorbeeld: een zwembadkaartje</h4><p>De prijs gaat van <b>&euro;4,30</b> naar <b>&euro;5,20</b>. Bereken de procentuele toename.</p><div class="antwoord">Toename: 5,20 &minus; 4,30 = <b>&euro;0,90</b>. 0,90 : 4,30 &times; 100% &asymp; <b>20,9%</b>.</div></div>`
++`<div class="voorbeeld"><h4>Voorbeeld: een broek in de uitverkoop</h4><p>De prijs gaat van <b>&euro;79</b> naar <b>&euro;55</b>. Bereken de procentuele afname.</p><div class="antwoord">Afname: 79 &minus; 55 = <b>&euro;24</b>. 24 : 79 &times; 100% &asymp; <b>30,4%</b>.</div></div>`
++`<div class="call waarom">Waarom delen door de <b>oude</b> prijs? Je wilt weten hoeveel het is veranderd <b>ten opzichte van</b> hoe het was. De oude prijs is je <b>100%</b>.</div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Door welke prijs deel je bij een procentuele toename?</p><p class="check-a">Door de <b>oude</b> prijs (de beginprijs).</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden (4.1)</b><ul class="lst">
+<li>Percentage = <b>deel : geheel &times; 100%</b>.</li>
+<li>Procentuele verandering = <b>verschil : oud &times; 100%</b>.</li>
+<li>Rond procenten af op <b>één decimaal</b>.</li></ul></div>`},
+
+{heading:'4.2 Beelddiagram en staafdiagram',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>een <b>beelddiagram</b> aflezen</li>
+<li>een <b>staafdiagram</b> tekenen</li></ul></div>`
++`<h5 class="sub">Twee diagrammen</h5>`
++`<div class="vergelijk"><div class="vergelijk-kant"><h4>Beelddiagram</h4><p>Aantallen als <b>plaatjes</b>. Bij het diagram staat wat <b>één plaatje</b> betekent, bijvoorbeeld 1 filmrolletje = <b>100 bezoekers</b>.</p></div><div class="vergelijk-vs">vs</div><div class="vergelijk-kant"><h4>Staafdiagram</h4><p>Aantallen als <b>staven</b>. De <b>hoogte</b> is het aantal; de staven staan <b>los</b> van elkaar.</p></div></div>`
++`<h5 class="sub">Een staafdiagram tekenen</h5>`
++`<div class="call reken"><b>Stappenplan: staafdiagram</b><ol class="num">
+<li>Kijk wat het <b>grootste aantal</b> is en kies een handige <b>schaal</b> voor de verticale as.</li>
+<li>Teken de staven even <b>breed</b> en <b>los</b> van elkaar.</li>
+<li>Zet bij elke staaf <b>wat</b> hij voorstelt, en geef het diagram een <b>titel</b>.</li></ol></div>`
++`<div class="voorbeeld"><h4>Voorbeeld: hobby's van tweedeklassers</h4><p>Gamen <b>14</b>, lezen <b>30</b>, sporten <b>33</b>.</p><div class="antwoord">Het grootste aantal is 33. Neem bijvoorbeeld <b>1 cm = 5 leerlingen</b>: de as loopt tot 35. Sporten wordt dan 33 : 5 = <b>6,6 cm</b> hoog.</div></div>`
++`<div class="call warn"><b>Niet verwarren:</b> bij een <b>staafdiagram</b> staan de staven <b>los</b>, bij een <b>histogram</b> staan ze <b>tegen elkaar</b> aan (4.4).</div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Wat moet altijd bij een beelddiagram staan?</p><p class="check-a">Hoeveel <b>één plaatje</b> voorstelt.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden (4.2)</b><ul class="lst">
+<li><b>Beelddiagram</b>: plaatjes, met wat één plaatje betekent.</li>
+<li><b>Staafdiagram</b>: staven los van elkaar.</li>
+<li>Kies een <b>schaal</b> die past bij het grootste aantal.</li></ul></div>`},
+
+{heading:'4.3 Lijndiagram en cirkeldiagram',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>een <b>lijndiagram</b> tekenen en aflezen</li>
+<li>een <b>cirkeldiagram</b> tekenen met <b>percentages</b> en <b>hoeken</b></li></ul></div>`
++`<h5 class="sub">Lijndiagram</h5>`
++`<div class="box"><h4>Een verandering</h4><p>Een <b>lijndiagram</b> laat zien hoe iets <b>verandert</b>, bijvoorbeeld de <b>temperatuur</b> in een week. Op de horizontale as staat meestal de <b>tijd</b>. Met een <b>kreukellijn</b> laat je zien dat je een stuk van de as hebt <b>weggelaten</b>.</p></div>`
++`<h5 class="sub">Cirkeldiagram</h5>`
++`<div class="box"><h4>Een geheel in stukken</h4><p>Een <b>cirkeldiagram</b> laat zien hoe een <b>geheel</b> verdeeld is in <b>sectoren</b>. De hele cirkel is <b>100%</b> en ook <b>360&deg;</b>. Daarom is <b>1% = 3,6&deg;</b>.</p></div>`
++`<div class="call reken"><b>Stappenplan: cirkeldiagram tekenen</b><ol class="num">
+<li>Bereken per groep het <b>percentage</b>.</li>
+<li>Bereken de <b>hoek</b>: percentage &times; <b>3,6</b>.</li>
+<li>Teken de hoeken met je <b>geodriehoek</b> en zet bij elke sector wat hij betekent.</li></ol></div>`
++`<div class="voorbeeld"><h4>Voorbeeld: naar je zin op school?</h4><p>Klas 2M (<b>26</b> leerlingen): slecht 2, matig 3, goed 16, heel goed 5.</p><div class="antwoord">Matig: 3 : 26 &times; 100% &asymp; <b>11,5%</b>. Hoek: 11,5 &times; 3,6 &asymp; <b>41&deg;</b>. Zo reken je elke sector uit; samen zijn ze 100% en 360&deg;.</div></div>`
++`<div class="call waarom">Waarom <b>&times; 3,6</b>? 100% hoort bij 360&deg;, dus 1% hoort bij 360 : 100 = <b>3,6&deg;</b>.</div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Hoe bereken je de hoek bij een percentage in een cirkeldiagram?</p><p class="check-a"><b>percentage &times; 3,6</b>.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden (4.3)</b><ul class="lst">
+<li><b>Lijndiagram</b>: een verandering in de tijd.</li>
+<li><b>Cirkeldiagram</b>: een geheel in sectoren.</li>
+<li><b>Hoek = percentage &times; 3,6</b>.</li></ul></div>`},
+
+{heading:'4.4 Histogram en steelbladdiagram',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>een <b>frequentietabel</b> maken met <b>turven</b></li>
+<li>een <b>histogram</b> en een <b>steelbladdiagram</b> maken</li></ul></div>`
++`<h5 class="sub">Frequentietabel</h5>`
++`<div class="call reken"><b>Stappenplan: frequentietabel</b><ol class="num">
+<li>Zet in de eerste kolom alle <b>mogelijke waarden</b>, bijvoorbeeld 1 tot en met 6 ogen.</li>
+<li><b>Turf</b> in de tweede kolom elke keer dat een waarde voorkomt.</li>
+<li>Tel de turven: dat is de <b>frequentie</b>.</li></ol></div>`
++`<div class="voorbeeld"><h4>Voorbeeld: Marco gooit een dobbelsteen</h4><p>Marco gooit <b>20 keer</b>.</p><div class="antwoord">Per aantal ogen (1 tot en met 6) turf je hoe vaak hij het gooide. Alle <b>frequenties</b> samen moeten weer <b>20</b> zijn: zo controleer je je tabel.</div></div>`
++`<h5 class="sub">Histogram en steelbladdiagram</h5>`
++`<div class="g2">`
++`<div class="box"><h4>Histogram</h4><p>Een diagram bij een frequentietabel waarbij de staven <b>tegen elkaar aan</b> staan.</p></div>`
++`<div class="box"><h4>Steelbladdiagram</h4><p>Je splitst elk getal in een <b>steel</b> (de tientallen) en een <b>blad</b> (de eenheden). Zo zie je snel hoe de getallen <b>verdeeld</b> zijn.</p></div></div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Wat is de frequentie?</p><p class="check-a">Hoe <b>vaak</b> een waarde voorkomt.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden (4.4)</b><ul class="lst">
+<li><b>Frequentie</b> = hoe vaak iets voorkomt.</li>
+<li><b>Histogram</b>: staven tegen elkaar aan. <b>Staafdiagram</b>: los.</li>
+<li><b>Steelblad</b>: tientallen links, eenheden rechts.</li></ul></div>`},
+
+{heading:'4.5 Gemiddelde, mediaan en modus',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>het <b>gemiddelde</b> en het <b>gewogen gemiddelde</b> berekenen</li>
+<li>de <b>mediaan</b> en de <b>modus</b> bepalen</li></ul></div>`
++`<h5 class="sub">Gemiddelde</h5>`
++`<div class="box"><h4>Optellen en delen</h4><p>Het <b>gemiddelde</b>: tel alle getallen <b>op</b> en deel door het <b>aantal</b> getallen.</p></div>`
++`<div class="voorbeeld"><h4>Voorbeeld: minimumtemperaturen</h4><p>2,9 / &minus;0,8 / &minus;1,3 / 1,6 / 2,4 / &minus;0,2 / 1,9 &deg;C.</p><div class="antwoord">Samen <b>6,5</b>. Er zijn <b>7</b> getallen: 6,5 : 7 &asymp; <b>0,9 &deg;C</b>.</div></div>`
++`<div class="box"><h4>Gewogen gemiddelde</h4><p>Tellen niet alle cijfers even zwaar, dan bereken je een <b>gewogen gemiddelde</b>. Hoe vaak een cijfer meetelt, heet het <b>gewicht</b>. Je deelt door de som van de <b>gewichten</b>.</p></div>`
++`<div class="voorbeeld"><h4>Voorbeeld: het rapportcijfer van Michael</h4><p>6,4, 5,4 en 6,6 tellen <b>één keer</b>; 7,3 en 6,8 tellen <b>dubbel</b>.</p><div class="antwoord">6,4 + 5,4 + 6,6 + 2 &times; 7,3 + 2 &times; 6,8 = 46,6. Gewichten: 1 + 1 + 1 + 2 + 2 = <b>7</b>. 46,6 : 7 &asymp; <b>6,7</b>.</div></div>`
++`<div class="call warn"><b>Veelgemaakte fout:</b> bij een gewogen gemiddelde delen door het aantal <b>cijfers</b> (5). Je deelt door de som van de <b>gewichten</b> (7).</div>`
++`<h5 class="sub">Mediaan en modus</h5>`
++`<div class="vergelijk"><div class="vergelijk-kant"><h4>Mediaan</h4><p>Het <b>middelste</b> getal, als de getallen <b>op volgorde</b> staan. Bij een <b>even</b> aantal: het gemiddelde van de <b>twee middelste</b>.</p></div><div class="vergelijk-vs">vs</div><div class="vergelijk-kant"><h4>Modus</h4><p>Het getal dat het <b>vaakst</b> voorkomt. Komt geen getal het vaakst voor, dan is er <b>geen modus</b>.</p></div></div>`
++`<div class="voorbeeld"><h4>Voorbeeld: 9 6 8 7 4 8 6 5</h4><p>Bepaal de mediaan.</p><div class="antwoord">Op volgorde: 4 5 6 <b>6 7</b> 8 8 9. Het zijn er <b>8</b>, dus twee middelste: (6 + 7) : 2 = <b>6,5</b>.</div></div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Wat moet je eerst doen voordat je de mediaan bepaalt?</p><p class="check-a">De getallen <b>op volgorde</b> zetten, van klein naar groot.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden (4.5)</b><ul class="lst">
+<li><b>Gemiddelde</b> = som : aantal. <b>Gewogen</b>: som : som van de gewichten.</li>
+<li><b>Mediaan</b>: het middelste getal, eerst op volgorde.</li>
+<li><b>Modus</b>: komt het vaakst voor.</li></ul></div>`}
 ],
 terms:[
 ['Procentuele toename','Het percentage waarmee een waarde is toegenomen, berekend ten opzichte van de oude waarde.',0],

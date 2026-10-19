@@ -1,13 +1,91 @@
 import { registerChapter } from '../../../registry.js';
 
+/* Rebuilt 2026-09-25 to the recipe of Economie TL4 H1 (change 6). Same
+   content, restructured. Terms, cards and quiz unchanged. */
 registerChapter('nederlands|tl|2|12', {
 title:'(On)gezond',
 summary:[
-{heading:'Online informatie beoordelen',html:'<div class=\'box\'><h4>Waar gaat dit hoofdstuk over?</h4><p>In dit thema draait het om gezondheid. Je leert online informatie op betrouwbaarheid te beoordelen, video\'s als bron te gebruiken, online informerende teksten te lezen, te spreken voor publiek en zelf een webtekst te schrijven.</p></div><div class=\'box\'><h4>Betrouwbaarheid van online informatie</h4><p>Niet alle informatie die je online vindt, is even betrouwbaar. Om te beoordelen of een tekst betrouwbaar is, let je op vijf punten:</p></div><div class=\'g3\'><div class=\'box\'><h4>Maker</h4><p>Wie heeft de tekst geschreven? Is dit een expert of een betrouwbare organisatie?</p></div><div class=\'box\'><h4>Bron</h4><p>Welke bronnen zijn gebruikt om de tekst te schrijven?</p></div><div class=\'box\'><h4>Datum</h4><p>Is de informatie nog actueel, of is de tekst verouderd?</p></div></div><div class=\'g2\'><div class=\'box\'><h4>Doel</h4><p>Wil de tekst informeren, overtuigen of misschien iets verkopen?</p></div><div class=\'box\'><h4>Taalgebruik</h4><p>Is de tekst zakelijk en zorgvuldig geschreven, of staan er veel spelfouten en overdrijvingen in?</p></div></div><div class=\'call\'>Onthoud: de inhoud van een tekst zelf zegt niet alles, controleer ook wie de tekst gemaakt heeft en met welk doel.</div>'},
-{heading:'Video\'s als bron',html:'<div class=\'box\'><h4>Video\'s als bron gebruiken</h4><p>Ook video\'s kun je als bron gebruiken bij een onderzoek, net als geschreven teksten. Bekijk een video eerst oriënterend (waar gaat het over?), daarna precies (welke details zijn belangrijk?).</p></div><div class=\'call sum\'><b>Zo maak je aantekeningen bij een video</b><ul class=\'lst\'><li>Noteer het onderwerp van de video.</li><li>Let op de belangrijkste informatie: namen, cijfers, uitspraken.</li><li>Kijk de video zo nodig nog een keer terug om details te controleren.</li></ul></div>'},
-{heading:'Online informerende teksten',html:'<div class=\'box\'><h4>Opbouw van een webpagina</h4><p>Een webpagina heeft vaak een vaste opbouw, met onder andere:</p><ul class=\'lst\'><li>een <b>bovenbalk</b>: het menu bovenaan de pagina;</li><li>een <b>menu</b>: een lijst met keuzemogelijkheden op de website;</li><li><b>hyperlinks</b>: koppelingen naar meer informatie over een onderwerp, vaak blauw of onderstreept;</li><li>korte alinea\'s met <b>tussenkopjes</b>, zodat de tekst makkelijk doorzoekbaar is.</li></ul></div>'},
-{heading:'Spreken voor publiek',html:'<div class=\'box\'><h4>Spreken voor publiek</h4><p>Als je een presentatie geeft, is het belangrijk om je publiek en hun <b>voorkennis</b> (wat ze al weten over het onderwerp) in te schatten. Pas je taalgebruik en de hoeveelheid informatie daarop aan.</p></div><div class=\'call sum\'><b>Tips voor een presentatie</b><ul class=\'lst\'><li>Bepaal voor wie je de presentatie houdt en wat zij al weten.</li><li>Gebruik woorden die passen bij je publiek; leg moeilijke woorden uit.</li><li>Trek de aandacht in de inleiding, bijvoorbeeld met een vraag of persoonlijke ervaring.</li><li>Gebruik signaalwoorden om de opbouw van je presentatie duidelijk te maken.</li><li>Vat in het slot de belangrijkste punten samen.</li></ul></div>'},
-{heading:'Een webtekst schrijven',html:'<div class=\'box\'><h4>Een webtekst schrijven</h4><p>Als je een <b>webtekst</b> schrijft, moet snel duidelijk zijn waar je tekst over gaat. Zo kan een lezer snel bepalen of jouw tekst voor hem interessant of nuttig is.</p></div><div class=\'call sum\'><b>Zo schrijf je een webtekst</b><ul class=\'lst\'><li>Bedenk van tevoren wat je wilt bereiken: lezers informeren, overtuigen of overhalen iets te doen?</li><li>Wat is het belangrijkste wat je over het onderwerp wilt schrijven? Zet dat bovenaan.</li><li>Verderop in de tekst ga je dieper in op het onderwerp met bijvoorbeeld voorbeelden en argumenten. Hoe verder in de tekst, hoe meer details je geeft.</li><li>Schrijf in korte, begrijpelijke zinnen.</li><li>Zorg dat de webtekst makkelijk doorzoekbaar is: gebruik vetgedrukte woorden, tussenkopjes en witregels. Gebruik eventueel hyperlinks.</li><li>Gebruik een passende afbeelding die de aandacht trekt of je tekst duidelijker maakt.</li></ul></div>'}
+{heading:'Online informatie beoordelen',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>beoordelen of <b>online informatie</b> <b>betrouwbaar</b> is</li></ul></div>`
++`<div class="box"><h4>Waar dit hoofdstuk over gaat</h4><p>In dit thema draait het om <b>gezondheid</b>. Je beoordeelt <b>online informatie</b>, gebruikt <b>video's als bron</b>, leest <b>webteksten</b>, <b>spreekt</b> voor publiek en schrijft zelf een <b>webtekst</b>.</p></div>`
++`<h5 class="sub">Vijf punten</h5>`
++`<div class="tblwrap"><table class="tbl"><tr><th>Let op</th><th>Vraag</th></tr><tr><td><b>Maker</b></td><td>Wie schreef het? Een <b>expert</b> of een betrouwbare <b>organisatie</b>?</td></tr><tr><td><b>Bron</b></td><td>Welke <b>bronnen</b> zijn gebruikt?</td></tr><tr><td><b>Datum</b></td><td>Is het nog <b>actueel</b>?</td></tr><tr><td><b>Doel</b></td><td>Wil de tekst <b>informeren</b>, <b>overtuigen</b> of iets <b>verkopen</b>?</td></tr><tr><td><b>Taalgebruik</b></td><td><b>Zakelijk</b> en zorgvuldig, of vol <b>spelfouten</b> en <b>overdrijvingen</b>?</td></tr></table></div>`
++`<div class="voorbeeld"><h4>Voorbeeld: twee websites over suiker</h4><p>Site A is van een gezondheidsorganisatie, van dit jaar, met bronnen. Site B verkoopt een &lsquo;wondermiddel&rsquo; en roept &lsquo;SUIKER IS VERGIF!!!&rsquo;.</p><div class="antwoord">Site <b>A</b> is betrouwbaarder: goede <b>maker</b>, <b>bronnen</b> en <b>actueel</b>. Site B wil iets <b>verkopen</b> en <b>overdrijft</b>.</div></div>`
++`<div class="call waarom">Waarom niet alleen de <b>inhoud</b> lezen? Een tekst kan heel <b>overtuigend</b> klinken en toch niet kloppen. Wie hem maakte en <b>waarom</b>, zegt veel.</div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Noem drie punten waarop je betrouwbaarheid beoordeelt.</p><p class="check-a">Bijvoorbeeld <b>maker</b>, <b>bron</b> en <b>datum</b> (ook doel en taalgebruik).</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden</b><ul class="lst">
+<li><b>Maker</b>, <b>bron</b>, <b>datum</b>, <b>doel</b>, <b>taalgebruik</b>.</li>
+<li>Wil de tekst iets <b>verkopen</b>? Extra kritisch zijn.</li></ul></div>`},
+
+{heading:'Video\'s als bron',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>een <b>video</b> als <b>bron</b> gebruiken</li>
+<li><b>aantekeningen</b> maken bij een video</li></ul></div>`
++`<h5 class="sub">Twee keer kijken</h5>`
++`<div class="vergelijk"><div class="vergelijk-kant"><h4>Oriënterend kijken</h4><p>Eerst: <b>waar</b> gaat de video over?</p></div><div class="vergelijk-vs">vs</div><div class="vergelijk-kant"><h4>Precies kijken</h4><p>Daarna: welke <b>details</b> zijn belangrijk?</p></div></div>`
++`<div class="call reken"><b>Stappenplan: aantekeningen bij een video</b><ol class="num">
+<li>Noteer het <b>onderwerp</b>.</li>
+<li>Noteer de belangrijkste informatie: <b>namen</b>, <b>cijfers</b>, <b>uitspraken</b>.</li>
+<li>Kijk zo nodig een stuk <b>terug</b> om details te controleren.</li></ol></div>`
++`<div class="call warn"><b>Let op:</b> ook voor een video gelden de vijf betrouwbaarheidspunten. Wie heeft hem <b>gemaakt</b>, en met welk <b>doel</b>?</div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Wat doe je bij de eerste keer kijken?</p><p class="check-a"><b>Oriënterend</b> kijken: waar gaat de video over?</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden</b><ul class="lst">
+<li>Eerst <b>oriënterend</b>, dan <b>precies</b> kijken.</li>
+<li>Noteer <b>namen</b>, <b>cijfers</b> en <b>uitspraken</b>.</li></ul></div>`},
+
+{heading:'Online informerende teksten',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>de <b>opbouw</b> van een <b>webpagina</b> herkennen</li></ul></div>`
++`<h5 class="sub">Hoe een webpagina werkt</h5>`
++`<div class="g2">`
++`<div class="box"><h4>Bovenbalk en menu</h4><p>De <b>bovenbalk</b> met het <b>menu</b>: een lijst met keuzes op de website.</p></div>`
++`<div class="box"><h4>Hyperlinks</h4><p><b>Koppelingen</b> naar meer informatie, vaak <b>blauw</b> of <b>onderstreept</b>.</p></div></div>`
++`<div class="box"><h4>Tussenkopjes en korte alinea's</h4><p>Korte alinea's met <b>tussenkopjes</b> maken de tekst makkelijk <b>doorzoekbaar</b>.</p></div>`
++`<div class="call reken"><b>Zo lees je een webpagina</b><ol class="num">
+<li>Lees de <b>titel</b> en de <b>tussenkopjes</b>: waar staat wat?</li>
+<li>Ga naar het stuk dat je <b>nodig</b> hebt.</li>
+<li>Klik op een <b>hyperlink</b> als je meer wilt weten.</li></ol></div>`
++`<div class="call waarom">Waarom tussenkopjes? Online lezen mensen vaak <b>scannend</b>: ze zoeken snel het stuk dat ze nodig hebben.</div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Wat is een hyperlink?</p><p class="check-a">Een <b>koppeling</b> naar meer informatie, vaak blauw of onderstreept.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden</b><ul class="lst">
+<li><b>Bovenbalk</b>, <b>menu</b>, <b>hyperlinks</b>, <b>tussenkopjes</b>.</li>
+<li>Webteksten lees je vaak <b>scannend</b>.</li></ul></div>`},
+
+{heading:'Spreken voor publiek',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>een presentatie afstemmen op je <b>publiek</b> en hun <b>voorkennis</b></li></ul></div>`
++`<h5 class="sub">Wie luistert er?</h5>`
++`<div class="term"><b>Voorkennis</b><span>Wat je publiek al weet over het onderwerp.</span></div>`
++`<div class="call reken"><b>Stappenplan: een presentatie voorbereiden</b><ol class="num">
+<li>Bepaal <b>voor wie</b> je spreekt en wat zij al <b>weten</b>.</li>
+<li>Kies <b>woorden</b> die passen; leg moeilijke woorden uit.</li>
+<li>Trek de <b>aandacht</b> in de inleiding, met een vraag of een persoonlijke ervaring.</li>
+<li>Maak de opbouw duidelijk met <b>signaalwoorden</b>.</li>
+<li>Vat in het slot de belangrijkste punten <b>samen</b>.</li></ol></div>`
++`<div class="vergelijk"><div class="vergelijk-kant"><h4>Weinig voorkennis</h4><p>Meer <b>uitleg</b>, eenvoudige woorden, voorbeelden.</p></div><div class="vergelijk-vs">vs</div><div class="vergelijk-kant"><h4>Veel voorkennis</h4><p>Minder uitleg, meer <b>nieuwe</b> informatie.</p></div></div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Hoe trek je de aandacht in je inleiding?</p><p class="check-a">Met een <b>vraag</b> of een <b>persoonlijke ervaring</b>.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden</b><ul class="lst">
+<li>Stem af op <b>publiek</b> en <b>voorkennis</b>.</li>
+<li>Aandacht trekken, <b>signaalwoorden</b>, <b>samenvatten</b>.</li></ul></div>`},
+
+{heading:'Een webtekst schrijven',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>een duidelijke <b>webtekst</b> schrijven</li></ul></div>`
++`<h5 class="sub">Het belangrijkste bovenaan</h5>`
++`<div class="box"><h4>Snel duidelijk</h4><p>Bij een <b>webtekst</b> moet <b>snel</b> duidelijk zijn waar hij over gaat. Zo bepaalt de lezer meteen of hij <b>interessant</b> of <b>nuttig</b> is.</p></div>`
++`<div class="call reken"><b>Stappenplan: een webtekst schrijven</b><ol class="num">
+<li>Bepaal je <b>doel</b>: informeren, overtuigen of overhalen iets te doen?</li>
+<li>Zet het <b>belangrijkste</b> <b>bovenaan</b>.</li>
+<li>Ga verderop <b>dieper</b> in: hoe verder, hoe meer <b>details</b>.</li>
+<li>Schrijf <b>korte</b>, begrijpelijke zinnen.</li>
+<li>Maak het <b>doorzoekbaar</b>: vetgedrukte woorden, tussenkopjes, witregels en eventueel hyperlinks.</li>
+<li>Kies een passende <b>afbeelding</b>.</li></ol></div>`
++`<div class="vergelijk"><div class="vergelijk-kant"><h4>Verhaal</h4><p>Spanning opbouwen; het belangrijkste komt <b>aan het eind</b>.</p></div><div class="vergelijk-vs">vs</div><div class="vergelijk-kant"><h4>Webtekst</h4><p>Het belangrijkste <b>eerst</b>, daarna de details.</p></div></div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Waar zet je in een webtekst het belangrijkste?</p><p class="check-a"><b>Bovenaan</b>.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden</b><ul class="lst">
+<li>Belangrijkste <b>bovenaan</b>, details verderop.</li>
+<li>Korte zinnen, <b>tussenkopjes</b>, <b>vet</b>, witregels.</li></ul></div>`}
 ],
 terms:[
 ['betrouwbaarheid','de mate waarin je een tekst kunt vertrouwen, te beoordelen aan maker, bron, datum, doel en taalgebruik',0],

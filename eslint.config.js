@@ -3,7 +3,8 @@ import globals from 'globals';
 
 export default [
   {
-    ignores: ['dist/**', 'dist-single/**', 'node_modules/**', 'supabase/**'],
+    // Reference/ holds the textbook scans and stale working copies (gitignored).
+    ignores: ['dist/**', 'dist-single/**', 'node_modules/**', 'supabase/**', 'Reference/**'],
   },
   js.configs.recommended,
   {
@@ -20,6 +21,15 @@ export default [
       ecmaVersion: 2022,
       sourceType: 'script',
       globals: { ...globals.serviceworker },
+    },
+  },
+  {
+    // Node scripts run from npm (npm run tasks).
+    files: ['scripts/**/*.mjs'],
+    languageOptions: {
+      ecmaVersion: 2022,
+      sourceType: 'module',
+      globals: { ...globals.node },
     },
   },
   {

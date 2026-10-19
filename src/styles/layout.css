@@ -179,15 +179,3 @@ h1.page{font-family:'Cinzel',serif;font-size:clamp(1.8rem,4.5vw,2.6rem);font-wei
 .empty h3{font-family:'Cinzel',serif;color:var(--txt);font-size:1.1rem;margin-bottom:.4rem}
 
 /* ══ CHAPTER SCREEN ══ */
-.tabs{position:sticky;top:58px;z-index:40;background:rgba(10,14,26,.86);backdrop-filter:blur(16px);
-  border-bottom:1px solid var(--goud-line)}
-.tabs-in{max-width:1080px;margin:0 auto;padding:0 1.5rem;display:flex;gap:.3rem;overflow-x:auto;scrollbar-width:none;position:relative}
-.tabs-in::-webkit-scrollbar{display:none}
-.tab{background:none;border:none;color:var(--mut);font-size:.82rem;font-weight:500;padding:.9rem 1rem;
-  white-space:nowrap;border-bottom:2px solid transparent;transition:.2s}
-.tab:hover{color:var(--txt)}
-.tab.on{color:var(--goud);border-bottom-color:transparent}
-.tabslide{position:absolute;bottom:-1px;height:2px;background:linear-gradient(90deg,var(--goud-d),var(--goud));
-  box-shadow:0 0 12px rgba(243,215,138,.7);transition:left .35s cubic-bezier(.2,.85,.3,1), width .35s cubic-bezier(.2,.85,.3,1);
-  pointer-events:none}
-@media (prefers-reduced-motion:reduce){.tabslide{transition:none}}

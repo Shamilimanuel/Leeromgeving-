@@ -1,12 +1,81 @@
 import { registerChapter } from '../../../registry.js';
 
+/* Rebuilt 2026-09-25 to the recipe of Economie TL4 H1 (change 6). The book
+   has little extra theory here (mostly assignments), so the same skills are
+   restructured; the "at least fifteen words" for a woordweb is the book's.
+   Terms, cards and quiz unchanged. */
 registerChapter('nederlands|tl|2|9', {
 title:'Water',
 summary:[
-{heading:'Woordweb',html:'<div class=\'box\'><h4>Waar gaat dit hoofdstuk over?</h4><p>In dit thema maak je kennis met Nederland als waterland. Je leert een woordweb gebruiken, een tekst parafraseren, een schema maken en een mondeling verslag doen: vaardigheden die je uiteindelijk gebruikt om een lapbook te maken.</p></div><div class=\'box\'><h4>Een woordweb maken</h4><p>Nederland is een land met heel veel water. Water was in het verleden van Nederland ook belangrijk, daarom hebben we in de Nederlandse taal veel woorden die daarmee te maken hebben. De <b>woordenschat</b> over water is dus enorm.</p></div><div class=\'box\'><h4>Zo maak je een woordweb</h4><p>Met een <b>woordweb</b> kun je voor jezelf duidelijk maken welke woorden met elkaar te maken hebben. Het woord midden in het woordweb is het belangrijkst. Daaromheen staan andere woorden die met dat centrale woord te maken hebben. Je kunt de betekenis van een woord in een woordweb ook verduidelijken met bijvoorbeeld een tegenstelling, een synoniem of een zin waarin het woord gebruikt wordt.</p></div>'},
-{heading:'Parafraseren',html:'<div class=\'box\'><h4>Parafraseren</h4><p><b>Parafraseren</b> betekent dat je de informatie uit een brontekst in je eigen woorden opschrijft. Zo laat je zien dat je de tekst begrepen hebt, en voorkom je dat je zomaar zinnen overneemt.</p></div><div class=\'call sum\'><b>Zo parafraseer je een tekst</b><ul class=\'lst\'><li>Lees de tekst goed en zoek op wat je niet begrijpt.</li><li>Noteer in steekwoorden waar de tekst over gaat.</li><li>Schrijf de informatie daarna in je eigen woorden op, zonder de brontekst erbij te houden.</li><li>Controleer of je geen belangrijke informatie vergeten bent.</li></ul></div>'},
-{heading:'Schema\'s maken',html:'<div class=\'box\'><h4>Informatie schematiseren</h4><p>Als een tekst veel feitelijke informatie bevat (bijvoorbeeld getallen, namen of stappen), kun je die informatie overzichtelijk maken door hem in een <b>schema</b> te zetten. Zo kun je informatie snel terugvinden en met elkaar vergelijken.</p></div><div class=\'call sum\'><b>Zo maak je een schema</b><ul class=\'lst\'><li>Bepaal welke categorieën (kolommen) je nodig hebt.</li><li>Zoek per categorie de juiste informatie in de tekst.</li><li>Vul de informatie kort en bondig in, bijvoorbeeld in steekwoorden.</li><li>Controleer of het schema klopt met de tekst.</li></ul></div>'},
-{heading:'Mondeling verslag doen',html:'<div class=\'box\'><h4>Mondeling verslag</h4><p>Bij een <b>mondeling verslag</b> vertel je mondeling (dus niet op papier) over iets wat je hebt meegemaakt, gezien of onderzocht. Je vertelt in <b>chronologische volgorde</b> (de volgorde in de tijd) wat er is gebeurd.</p></div><div class=\'call sum\'><b>Zo doe je een goed mondeling verslag</b><ul class=\'lst\'><li>Bedenk wat je in de inleiding, het middenstuk en het slot wilt vertellen. Doe dit in steekwoorden.</li><li>Vertel wat er gebeurde en wat je daarbij dacht en voelde.</li><li>Gebruik signaalwoorden voor tijdsvolgorde, zoals eerst, daarna, ten slotte.</li><li>Oefen je verslag voordat je het presenteert.</li></ul></div>'}
+{heading:'Woordweb',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>een <b>woordweb</b> maken</li>
+<li>de <b>betekenis</b> van woorden in een woordweb verduidelijken</li></ul></div>`
++`<div class="box"><h4>Waar dit hoofdstuk over gaat</h4><p>In dit thema leer je Nederland kennen als <b>waterland</b>. Je gebruikt een <b>woordweb</b>, <b>parafraseert</b> een tekst, maakt een <b>schema</b> en doet <b>mondeling verslag</b>. Met die vaardigheden maak je aan het eind een <b>lapbook</b>.</p></div>`
++`<h5 class="sub">Woorden die bij elkaar horen</h5>`
++`<div class="box"><h4>Veel woorden over water</h4><p>Water was altijd <b>belangrijk</b> voor Nederland. Daarom heeft het Nederlands <b>heel veel</b> woorden die ermee te maken hebben: de <b>woordenschat</b> over water is enorm.</p></div>`
++`<div class="call reken"><b>Stappenplan: een woordweb maken</b><ol class="num">
+<li>Zet het <b>belangrijkste woord</b> in het midden.</li>
+<li>Zet er woorden <b>omheen</b> die ermee te maken hebben; verbind ze met lijnen.</li>
+<li>Maak het web groot genoeg: minimaal <b>vijftien woorden</b>.</li>
+<li>Verduidelijk lastige woorden met een <b>synoniem</b>, een <b>tegenstelling</b> of een <b>zin</b>.</li></ol></div>`
++`<div class="voorbeeld"><h4>Voorbeeld: een begin van een woordweb</h4><p>Middelpunt: <b>water</b>.</p><div class="antwoord">Eromheen bijvoorbeeld <b>dijk</b>, <b>rivier</b>, <b>overstroming</b>, <b>gemaal</b>. Bij dijk kun je een <b>zin</b> zetten: &lsquo;De dijk houdt het water tegen.&rsquo;</div></div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Welk woord staat in het midden van een woordweb?</p><p class="check-a">Het <b>belangrijkste</b> woord, het onderwerp.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden</b><ul class="lst">
+<li>Het belangrijkste woord in het <b>midden</b>.</li>
+<li>Eromheen woorden die ermee te maken hebben.</li>
+<li>Verduidelijk met <b>synoniem</b>, <b>tegenstelling</b> of <b>zin</b>.</li></ul></div>`},
+
+{heading:'Parafraseren',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>een tekst <b>parafraseren</b>: in je eigen woorden navertellen</li></ul></div>`
++`<h5 class="sub">In je eigen woorden</h5>`
++`<div class="box"><h4>Parafraseren</h4><p><b>Parafraseren</b> is de informatie uit een <b>brontekst</b> in je <b>eigen woorden</b> opschrijven. Zo laat je zien dat je de tekst <b>begrijpt</b>, en neem je niet zomaar <b>zinnen</b> over.</p></div>`
++`<div class="call reken"><b>Stappenplan: parafraseren</b><ol class="num">
+<li>Lees de tekst goed en zoek op wat je <b>niet</b> begrijpt.</li>
+<li>Noteer in <b>steekwoorden</b> waar de tekst over gaat.</li>
+<li>Leg de brontekst <b>weg</b> en schrijf de informatie in je eigen woorden.</li>
+<li>Controleer of je geen <b>belangrijke informatie</b> bent vergeten.</li></ol></div>`
++`<div class="vergelijk"><div class="vergelijk-kant"><h4>Overnemen</h4><p>Zinnen <b>letterlijk</b> kopiëren. Dan weet niemand of je het begrijpt.</p></div><div class="vergelijk-vs">vs</div><div class="vergelijk-kant"><h4>Parafraseren</h4><p>Dezelfde <b>informatie</b>, maar in <b>jouw</b> woorden.</p></div></div>`
++`<div class="call waarom">Waarom de brontekst <b>weg</b> leggen? Anders ga je ongemerkt toch <b>zinnen overnemen</b>. Met alleen je steekwoorden moet je het wel in je eigen woorden zeggen.</div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Wat betekent parafraseren?</p><p class="check-a">Informatie uit een tekst in je <b>eigen woorden</b> opschrijven.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden</b><ul class="lst">
+<li>Parafraseren = <b>eigen woorden</b>, zelfde informatie.</li>
+<li>Eerst <b>steekwoorden</b>, dan brontekst weg, dan schrijven.</li></ul></div>`},
+
+{heading:'Schema\'s maken',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>feitelijke informatie in een <b>schema</b> zetten</li></ul></div>`
++`<h5 class="sub">Overzicht maken</h5>`
++`<div class="box"><h4>Informatie schematiseren</h4><p>Staat er in een tekst veel <b>feitelijke informatie</b> (getallen, namen, stappen)? Zet het dan in een <b>schema</b>. Zo vind je informatie snel <b>terug</b> en kun je dingen <b>vergelijken</b>.</p></div>`
++`<div class="call reken"><b>Stappenplan: een schema maken</b><ol class="num">
+<li>Bepaal welke <b>categorieën</b> (kolommen) je nodig hebt.</li>
+<li>Zoek per categorie de juiste informatie in de tekst.</li>
+<li>Vul <b>kort</b> in, in <b>steekwoorden</b>.</li>
+<li><b>Controleer</b> of het schema klopt met de tekst.</li></ol></div>`
++`<div class="voorbeeld"><h4>Voorbeeld: drie rivieren</h4><p>Een tekst noemt van elke rivier de naam, waar hij Nederland binnenkomt en waar hij heen stroomt.</p><div class="antwoord">Kolommen: <b>rivier</b> | <b>komt binnen bij</b> | <b>stroomt naar</b>. Per rivier één <b>rij</b>, in steekwoorden.</div></div>`
++`<div class="call warn"><b>Let op:</b> een schema is <b>kort</b>. Schrijf geen hele zinnen in de vakjes.</div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Wat bepaal je als eerste bij een schema?</p><p class="check-a">Welke <b>categorieën</b> (kolommen) je nodig hebt.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden</b><ul class="lst">
+<li>Schema bij veel <b>feiten</b>: getallen, namen, stappen.</li>
+<li>Eerst <b>kolommen</b>, dan invullen in <b>steekwoorden</b>.</li></ul></div>`},
+
+{heading:'Mondeling verslag doen',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>een <b>mondeling verslag</b> geven in de juiste volgorde</li></ul></div>`
++`<h5 class="sub">Vertellen wat er gebeurde</h5>`
++`<div class="box"><h4>Mondeling verslag</h4><p>Bij een <b>mondeling verslag</b> vertel je (dus niet op papier) over iets wat je hebt <b>meegemaakt</b>, <b>gezien</b> of <b>onderzocht</b>. Je vertelt in <b>chronologische volgorde</b>: de volgorde in de tijd.</p></div>`
++`<div class="call reken"><b>Stappenplan: een mondeling verslag</b><ol class="num">
+<li>Bedenk in <b>steekwoorden</b> wat in de <b>inleiding</b>, het <b>middenstuk</b> en het <b>slot</b> komt.</li>
+<li>Vertel wat er <b>gebeurde</b> en wat je <b>dacht en voelde</b>.</li>
+<li>Gebruik signaalwoorden voor <b>tijdsvolgorde</b>: eerst, daarna, ten slotte.</li>
+<li><b>Oefen</b> je verslag voordat je het presenteert.</li></ol></div>`
++`<div class="vergelijk"><div class="vergelijk-kant"><h4>Schriftelijk verslag</h4><p>Op <b>papier</b>; de lezer kan teruglezen.</p></div><div class="vergelijk-vs">vs</div><div class="vergelijk-kant"><h4>Mondeling verslag</h4><p><b>Hardop</b>; je luisteraar hoort het maar één keer, dus een duidelijke <b>volgorde</b> is extra belangrijk.</p></div></div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">In welke volgorde vertel je een mondeling verslag?</p><p class="check-a">In <b>chronologische</b> volgorde: de volgorde in de tijd.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden</b><ul class="lst">
+<li><b>Chronologisch</b> vertellen.</li>
+<li>Inleiding, middenstuk, slot in <b>steekwoorden</b>.</li>
+<li>Signaalwoorden: <b>eerst, daarna, ten slotte</b>.</li></ul></div>`}
 ],
 terms:[
 ['woordweb','een schema waarmee je woorden die met elkaar te maken hebben rond een centraal woord groepeert',0],

@@ -1,85 +1,23 @@
 import { registerChapter } from '../../../registry.js';
 
+/* Upgraded 2026-09-25 to the recipe of Economie TL4 H1 (change 6): every paragraph
+   got "Dit leer je" and a "Check jezelf" (taken from its own flashcard where
+   there was none), plus bold on its own glossary terms where it had little.
+   The text itself is unchanged. */
 registerChapter('economie|tl|3|6', {
 title:'Productie en markt',
 summary:[
 {heading:'6.1 Produceren maar!',html:
- '<div class="box"><h4>Waar dit hoofdstuk over gaat</h4><p>Achter elk product dat je koopt zit een heel productieproces. Je leert wat er nodig is om te produceren, hoe een bedrijf winst maakt, hoe vraag en aanbod de prijs op een markt bepalen, en wat bepaalt of een bedrijf veel of weinig kan produceren.</p></div>'
-
- +'<div class="box"><h4>Productiefactoren</h4><p>Om iets te produceren heb je <b>productiefactoren</b> nodig: natuur, arbeid, kapitaal en ondernemerschap.</p></div>'
-
- +'<h5 class="sub">Van grondstof tot winkel</h5>'
- +'<div class="box"><h4>Toegevoegde waarde en bedrijfskolom</h4><p>Bedrijven bewerken producten en zorgen zo voor <b>toegevoegde waarde</b>: wat producten meer waard worden doordat bedrijven ze bewerken. De <b>bedrijfskolom</b> bestaat uit alle bedrijven die na elkaar aan een product meewerken, van grondstof tot eindproduct in de winkel. Bedrijven aan het begin van de bedrijfskolom halen grondstoffen uit de natuur; aan het eind staat de detailhandel (de winkel).</p></div>'
-
- +'<h5 class="sub">Hoe wordt er geproduceerd?</h5>'
- +'<div class="g2">'
- +'<div class="box"><h4>Arbeidsintensief</h4><p>Er wordt naar verhouding meer met mensen dan met machines geproduceerd.</p></div>'
- +'<div class="box"><h4>Kapitaalintensief</h4><p>Er wordt naar verhouding meer met machines dan met mensen geproduceerd.</p></div></div>'
-
- +'<div class="call">Kapitaalgoederen, zoals machines, verliezen in de loop van de tijd waarde. Deze waardevermindering noem je <b>afschrijving</b>.</div>'
-
- +'<div class="call sum"><b>Om te onthouden (6.1)</b><ul class="lst">'
- +'<li>Vier productiefactoren: natuur, arbeid, kapitaal, ondernemerschap.</li>'
- +'<li>De bedrijfskolom loopt van grondstof tot winkel; elke schakel voegt waarde toe.</li>'
- +'<li>Arbeidsintensief = veel mensen, weinig machines. Kapitaalintensief = andersom.</li></ul></div>'},
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst"><li>de <b>productiefactoren</b> en de <b>bedrijfskolom</b></li><li><b>arbeidsintensief</b> en <b>kapitaalintensief</b> produceren</li></ul></div><div class="box"><h4>Waar dit hoofdstuk over gaat</h4><p>Achter elk product dat je koopt zit een heel productieproces. Je leert wat er nodig is om te produceren, hoe een bedrijf winst maakt, hoe vraag en aanbod de prijs op een markt bepalen, en wat bepaalt of een bedrijf veel of weinig kan produceren.</p></div><div class="box"><h4>Productiefactoren</h4><p>Om iets te produceren heb je <b>productiefactoren</b> nodig: natuur, arbeid, kapitaal en ondernemerschap.</p></div><h5 class="sub">Van grondstof tot winkel</h5><div class="box"><h4>Toegevoegde waarde en bedrijfskolom</h4><p>Bedrijven bewerken producten en zorgen zo voor <b>toegevoegde waarde</b>: wat producten meer waard worden doordat bedrijven ze bewerken. De <b>bedrijfskolom</b> bestaat uit alle bedrijven die na elkaar aan een product meewerken, van grondstof tot eindproduct in de winkel. Bedrijven aan het begin van de bedrijfskolom halen grondstoffen uit de natuur; aan het eind staat de detailhandel (de winkel).</p></div><h5 class="sub">Hoe wordt er geproduceerd?</h5><div class="g2"><div class="box"><h4>Arbeidsintensief</h4><p>Er wordt naar verhouding meer met mensen dan met machines geproduceerd.</p></div><div class="box"><h4>Kapitaalintensief</h4><p>Er wordt naar verhouding meer met machines dan met mensen geproduceerd.</p></div></div><div class="call">Kapitaalgoederen, zoals machines, verliezen in de loop van de tijd waarde. Deze waardevermindering noem je <b>afschrijving</b>.</div><div class="check" onclick="toonCheck(this)"><p class="check-v">Noem de vier productiefactoren.</p><p class="check-a">Natuur, arbeid, kapitaal en ondernemerschap.</p><span class="check-hint">Tik voor het antwoord</span></div><div class="call sum"><b>Om te onthouden (6.1)</b><ul class="lst"><li>Vier productiefactoren: natuur, arbeid, kapitaal, ondernemerschap.</li><li>De bedrijfskolom loopt van grondstof tot winkel; elke schakel voegt waarde toe.</li><li>Arbeidsintensief = veel mensen, weinig machines. Kapitaalintensief = andersom.</li></ul></div>`},
 
 {heading:'6.2 Het gaat om de winst!',html:
- '<div class="box"><h4>Van inkoopprijs naar verkoopprijs</h4><p>Een winkelier telt bij de inkoopprijs een bedrag op om de verkoopprijs te berekenen. Dat bedrag is de <b>brutowinstopslag</b>.</p></div>'
-
- +'<div class="call reken"><b>Reken mee: verkoopprijs berekenen</b>'
- +'<p>Verkoopprijs = inkoopprijs + brutowinstopslag. De inkoopprijs van een boeket rozen is € 7,50, de brutowinstopslag is 125% van de inkoopprijs.</p>'
- +'<ol class="num">'
- +'<li><b>Stap 1</b>. Bereken de brutowinstopslag: 125% × € 7,50 = € 9,38.</li>'
- +'<li class="eind"><b>Antwoord</b>: Verkoopprijs = € 7,50 + € 9,38 = <b>€ 16,88</b> (afgerond).</li></ol></div>'
-
- +'<h5 class="sub">Van omzet naar nettoresultaat</h5>'
- +'<div class="g2">'
- +'<div class="box"><h4>Omzet</h4><p>De <b>omzet</b> (verkoopopbrengst) is het totaalbedrag dat je ontvangt door de verkoop van producten.</p></div>'
- +'<div class="box"><h4>Btw en consumentenprijs</h4><p>De klant betaalt de verkoopprijs inclusief <b>btw</b> (belasting over de toegevoegde waarde, 21% of 9%), die de winkelier moet afdragen aan de Belastingdienst. De prijs inclusief btw noem je de <b>consumentenprijs</b>.</p></div></div>'
-
- +'<div class="g2">'
- +'<div class="box"><h4>Brutowinst</h4><p>Trek je van de omzet de inkoopwaarde af, dan hou je de <b>brutowinst</b> over.</p></div>'
- +'<div class="box"><h4>Nettoresultaat</h4><p>Trek je van de brutowinst ook alle <b>bedrijfskosten</b> af (zoals huur, loonkosten en reclame), dan hou je het <b>nettoresultaat</b> over: nettowinst of nettoverlies.</p></div></div>'
-
- +'<div class="call warn"><b>Veelgemaakte fout:</b> verwar brutowinst niet met nettoresultaat. Brutowinst is omzet min inkoopwaarde; het nettoresultaat is pas bekend nadat ook alle bedrijfskosten zijn afgetrokken.</div>'
-
- +'<div class="call sum"><b>Om te onthouden (6.2)</b><ul class="lst">'
- +'<li>Verkoopprijs = inkoopprijs + brutowinstopslag.</li>'
- +'<li>Omzet − inkoopwaarde = brutowinst. Brutowinst − bedrijfskosten = nettoresultaat.</li>'
- +'<li>Consumentenprijs = verkoopprijs inclusief btw.</li></ul></div>'},
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst"><li>van <b>inkoopprijs</b> naar <b>verkoopprijs</b></li><li>van <b>omzet</b> naar <b>nettoresultaat</b></li></ul></div><div class="box"><h4>Van inkoopprijs naar verkoopprijs</h4><p>Een winkelier telt bij de inkoopprijs een bedrag op om de verkoopprijs te berekenen. Dat bedrag is de <b>brutowinstopslag</b>.</p></div><div class="call reken"><b>Reken mee: verkoopprijs berekenen</b><p>Verkoopprijs = inkoopprijs + brutowinstopslag. De inkoopprijs van een boeket rozen is € 7,50, de brutowinstopslag is 125% van de inkoopprijs.</p><ol class="num"><li><b>Stap 1</b>. Bereken de brutowinstopslag: 125% × € 7,50 = € 9,38.</li><li class="eind"><b>Antwoord</b>: Verkoopprijs = € 7,50 + € 9,38 = <b>€ 16,88</b> (afgerond).</li></ol></div><h5 class="sub">Van omzet naar nettoresultaat</h5><div class="g2"><div class="box"><h4>Omzet</h4><p>De <b>omzet</b> (verkoopopbrengst) is het totaalbedrag dat je ontvangt door de verkoop van producten.</p></div><div class="box"><h4>Btw en consumentenprijs</h4><p>De klant betaalt de verkoopprijs inclusief <b>btw</b> (belasting over de toegevoegde waarde, 21% of 9%), die de winkelier moet afdragen aan de Belastingdienst. De prijs inclusief btw noem je de <b>consumentenprijs</b>.</p></div></div><div class="g2"><div class="box"><h4>Brutowinst</h4><p>Trek je van de omzet de inkoopwaarde af, dan hou je de <b>brutowinst</b> over.</p></div><div class="box"><h4>Nettoresultaat</h4><p>Trek je van de brutowinst ook alle <b>bedrijfskosten</b> af (zoals huur, loonkosten en reclame), dan hou je het <b>nettoresultaat</b> over: nettowinst of nettoverlies.</p></div></div><div class="call warn"><b>Veelgemaakte fout:</b> verwar brutowinst niet met nettoresultaat. Brutowinst is omzet min inkoopwaarde; het nettoresultaat is pas bekend nadat ook alle bedrijfskosten zijn afgetrokken.</div><div class="check" onclick="toonCheck(this)"><p class="check-v">Hoe bereken je de verkoopprijs vanuit de inkoopprijs?</p><p class="check-a">Verkoopprijs = inkoopprijs + brutowinstopslag.</p><span class="check-hint">Tik voor het antwoord</span></div><div class="call sum"><b>Om te onthouden (6.2)</b><ul class="lst"><li>Verkoopprijs = inkoopprijs + brutowinstopslag.</li><li>Omzet − inkoopwaarde = brutowinst. Brutowinst − bedrijfskosten = nettoresultaat.</li><li>Consumentenprijs = verkoopprijs inclusief btw.</li></ul></div>`},
 
 {heading:'6.3 Op de markt',html:
- '<div class="g2">'
- +'<div class="box"><h4>Concrete markt</h4><p>Een markt waar je bijvoorbeeld bloemen koopt, is een <b>concrete markt</b>: een plaats waar op bepaalde tijden goederen verhandeld worden.</p></div>'
- +'<div class="box"><h4>Abstracte markt</h4><p>Heb je het over alle vraag naar en aanbod van een product, dan gaat het over een <b>abstracte markt</b>.</p></div></div>'
-
- +'<div class="box"><h4>Vraag, aanbod en prijs</h4><p>Op een markt is er een wisselwerking tussen vraag, aanbod en prijs. Zijn vraag en aanbod aan elkaar gelijk, dan ontstaat de <b>evenwichtsprijs</b>: de prijs waarbij vraag en aanbod aan elkaar gelijk zijn. De hoeveelheid die dan gevraagd en aangeboden wordt, noem je de <b>evenwichtshoeveelheid</b>.</p></div>'
-
- +'<div class="box"><h4>Marktaandeel</h4><p>Producenten willen weten of zij het goed doen in vergelijking met de concurrentie. Dat kunnen ze zien aan het <b>marktaandeel</b>: de eigen afzet in procenten van de totale afzet, of de eigen omzet in procenten van de totale omzet op de markt.</p></div>'
-
- +'<div class="call sum"><b>Om te onthouden (6.3)</b><ul class="lst">'
- +'<li>Concrete markt = fysieke plek; abstracte markt = alle vraag en aanbod samen.</li>'
- +'<li>Evenwichtsprijs: waar vraag en aanbod gelijk zijn. De bijbehorende hoeveelheid is de evenwichtshoeveelheid.</li>'
- +'<li>Marktaandeel = eigen afzet of omzet in procenten van het totaal op de markt.</li></ul></div>'},
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst"><li><b>concrete</b> en <b>abstracte markten</b></li><li>hoe <b>vraag</b>, <b>aanbod</b> en <b>prijs</b> samenhangen</li></ul></div><h5 class="sub">Soorten markten</h5><div class="g2"><div class="box"><h4>Concrete markt</h4><p>Een markt waar je bijvoorbeeld bloemen koopt, is een <b>concrete markt</b>: een plaats waar op bepaalde tijden goederen verhandeld worden.</p></div><div class="box"><h4>Abstracte markt</h4><p>Heb je het over alle vraag naar en aanbod van een product, dan gaat het over een <b>abstracte markt</b>.</p></div></div><div class="box"><h4>Vraag, aanbod en prijs</h4><p>Op een markt is er een wisselwerking tussen vraag, aanbod en prijs. Zijn vraag en aanbod aan elkaar gelijk, dan ontstaat de <b>evenwichtsprijs</b>: de prijs waarbij vraag en aanbod aan elkaar gelijk zijn. De hoeveelheid die dan gevraagd en aangeboden wordt, noem je de <b>evenwichtshoeveelheid</b>.</p></div><div class="box"><h4>Marktaandeel</h4><p>Producenten willen weten of zij het goed doen in vergelijking met de concurrentie. Dat kunnen ze zien aan het <b>marktaandeel</b>: de eigen afzet in procenten van de totale afzet, of de eigen omzet in procenten van de totale omzet op de markt.</p></div><div class="check" onclick="toonCheck(this)"><p class="check-v">Wat is het verschil tussen een concrete en een abstracte markt?</p><p class="check-a">Een concrete markt is een fysieke plek; een abstracte markt is alle vraag en aanbod van een product samen.</p><span class="check-hint">Tik voor het antwoord</span></div><div class="call sum"><b>Om te onthouden (6.3)</b><ul class="lst"><li>Concrete markt = fysieke plek; abstracte markt = alle vraag en aanbod samen.</li><li>Evenwichtsprijs: waar vraag en aanbod gelijk zijn. De bijbehorende hoeveelheid is de evenwichtshoeveelheid.</li><li>Marktaandeel = eigen afzet of omzet in procenten van het totaal op de markt.</li></ul></div>`},
 
 {heading:'6.4 Meer of minder productie?',html:
- '<div class="g2">'
- +'<div class="box"><h4>Vaste kosten</h4><p><b>Vaste kosten</b> blijven gelijk, ook als je meer of minder produceert (bijvoorbeeld de huur).</p></div>'
- +'<div class="box"><h4>Variabele kosten</h4><p><b>Variabele kosten</b>, zoals grondstofkosten, veranderen mee met de productieomvang: hoe meer je produceert, hoe hoger deze kosten.</p></div></div>'
-
- +'<h5 class="sub">Productiviteit en capaciteit</h5>'
- +'<div class="g2">'
- +'<div class="box"><h4>Arbeidsproductiviteit</h4><p>De <b>arbeidsproductiviteit</b> is de productie per persoon in een bepaalde tijd. Stijgt de arbeidsproductiviteit, dan kun je met minder personen evenveel produceren.</p></div>'
- +'<div class="box"><h4>Productiecapaciteit</h4><p>De <b>productiecapaciteit</b> is de maximale hoeveelheid die een bedrijf kan produceren.</p></div></div>'
-
- +'<div class="box"><h4>Maatschappelijk verantwoord ondernemen</h4><p>Bedrijven die <b>maatschappelijk verantwoord</b> ondernemen, houden bij hun productie rekening met de gevolgen voor mens, milieu en dieren. Ze proberen maatschappelijke kosten, zoals geluidsoverlast of CO₂-uitstoot, te voorkomen.</p></div>'
-
- +'<div class="call">Draagt de productie van een bedrijf juist positief bij aan de samenleving, dan spreek je van <b>maatschappelijke opbrengsten</b>.</div>'
-
- +'<div class="call sum"><b>Om te onthouden (6.4)</b><ul class="lst">'
- +'<li>Vaste kosten veranderen niet met de productie; variabele kosten wel.</li>'
- +'<li>Arbeidsproductiviteit = productie per persoon; productiecapaciteit = maximale productie.</li>'
- +'<li>Maatschappelijk verantwoord ondernemen houdt rekening met mens, milieu en dieren; positieve gevolgen daarvan heten maatschappelijke opbrengsten.</li></ul></div>'}
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst"><li><b>vaste</b> en <b>variabele kosten</b></li><li><b>productiviteit</b>, <b>capaciteit</b> en <b>MVO</b></li></ul></div><div class="g2"><div class="box"><h4>Vaste kosten</h4><p><b>Vaste kosten</b> blijven gelijk, ook als je meer of minder produceert (bijvoorbeeld de huur).</p></div><div class="box"><h4>Variabele kosten</h4><p><b>Variabele kosten</b>, zoals grondstofkosten, veranderen mee met de productieomvang: hoe meer je produceert, hoe hoger deze kosten.</p></div></div><h5 class="sub">Productiviteit en capaciteit</h5><div class="g2"><div class="box"><h4>Arbeidsproductiviteit</h4><p>De <b>arbeidsproductiviteit</b> is de productie per persoon in een bepaalde tijd. Stijgt de arbeidsproductiviteit, dan kun je met minder personen evenveel produceren.</p></div><div class="box"><h4>Productiecapaciteit</h4><p>De <b>productiecapaciteit</b> is de maximale hoeveelheid die een bedrijf kan produceren.</p></div></div><div class="box"><h4>Maatschappelijk verantwoord ondernemen</h4><p>Bedrijven die <b>maatschappelijk verantwoord</b> ondernemen, houden bij hun productie rekening met de gevolgen voor mens, milieu en dieren. Ze proberen maatschappelijke kosten, zoals geluidsoverlast of CO₂-uitstoot, te voorkomen.</p></div><div class="call">Draagt de productie van een bedrijf juist positief bij aan de samenleving, dan spreek je van <b>maatschappelijke opbrengsten</b>.</div><div class="check" onclick="toonCheck(this)"><p class="check-v">Wat is het verschil tussen vaste en variabele kosten?</p><p class="check-a">Vaste kosten blijven gelijk bij een andere productieomvang; variabele kosten veranderen mee.</p><span class="check-hint">Tik voor het antwoord</span></div><div class="call sum"><b>Om te onthouden (6.4)</b><ul class="lst"><li>Vaste kosten veranderen niet met de productie; variabele kosten wel.</li><li>Arbeidsproductiviteit = productie per persoon; productiecapaciteit = maximale productie.</li><li>Maatschappelijk verantwoord ondernemen houdt rekening met mens, milieu en dieren; positieve gevolgen daarvan heten maatschappelijke opbrengsten.</li></ul></div>`}
 ],
 terms:[
 ['Productiefactoren','De middelen die je nodig hebt om iets te produceren: natuur, arbeid, kapitaal en ondernemerschap.',0],

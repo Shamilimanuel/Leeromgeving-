@@ -11,8 +11,15 @@ export function renderSubjectGrid() {
     + '<i class="frame"></i><span class="bigico">' + icon(s.icon) + '</span>'
     + '<span class="badge"><i class="ring"></i><i class="core">' + icon(s.icon) + '</i></span>'
     + '<span class="swatch"><i class="dot"></i>' + s.colorName + '</span>'
-    + '<h3>' + s.name + '</h3><small>Bekijk de samenvattingen <span>→</span></small></button>',
+    + '<h3>' + cardName(s.name) + '</h3><small>Bekijk de samenvattingen <span>→</span></small></button>',
   ).join(''));
+}
+
+/* On a phone two cards share a row, and "Maatschappijkunde" in Cinzel capitals
+   is wider than its card; the phone CSS then broke it anywhere
+   ("Maatschappijkund-e"). A soft hyphen offers the right place instead. */
+function cardName(name) {
+  return name.replace(/^Maatschappij(?=[a-z])/, 'Maatschappij&shy;');
 }
 
 /* Cards light up where the mouse is (see --mx/--my in the CSS). */

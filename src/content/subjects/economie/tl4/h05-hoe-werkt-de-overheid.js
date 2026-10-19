@@ -1,108 +1,23 @@
 import { registerChapter } from '../../../registry.js';
 
+/* Upgraded 2026-09-25 to the recipe of Economie TL4 H1 (change 6): every paragraph
+   got "Dit leer je" and a "Check jezelf" (taken from its own flashcard where
+   there was none), plus bold on its own glossary terms where it had little.
+   The text itself is unchanged. */
 registerChapter('economie|tl|4|5', {
 title:'Hoe werkt de overheid?',
 summary:[
 {heading:'5.1 Overheid, burgers en bedrijven',html:
- '<div class="box"><h4>Waar dit hoofdstuk over gaat</h4><p>De overheid speelt een grote rol in de economie. Je leert wat de overheid doet naast burgers en bedrijven, hoe economen de economie meten en volgen, hoe sociaal Nederland is geregeld, en waar de overheid haar geld vandaan haalt en aan uitgeeft.</p></div>'
-
- +'<h5 class="sub">Twee sectoren</h5>'
- +'<div class="g2">'
- +'<div class="box"><h4>Collectieve sector</h4><p>De <b>collectieve sector</b> bestaat uit de overheid en de instellingen voor de sociale zekerheid.</p></div>'
- +'<div class="box"><h4>Particuliere sector</h4><p>De <b>particuliere sector</b> bestaat uit alle burgers en bedrijven.</p></div></div>'
-
- +'<h5 class="sub">Marktwerking en aanbesteding</h5>'
- +'<div class="box"><h4>Marktwerking</h4><p>Bij <b>marktwerking</b> concurreren aanbieders van producten met elkaar op kwaliteit en prijs.</p></div>'
- +'<div class="box"><h4>Aanbesteding</h4><p>Wil de overheid een taak liever door een particulier bedrijf laten uitvoeren? Dan gebruikt ze vaak een <b>aanbesteding</b>: ze maakt bekend om welke taak of opdracht het gaat, particuliere bedrijven doen een aanbod, en het bedrijf met het beste aanbod mag de opdracht uitvoeren (bijvoorbeeld bij busvervoer).</p></div>'
-
- +'<h5 class="sub">Privatiseren of nationaliseren</h5>'
- +'<div class="g2">'
- +'<div class="box"><h4>Privatisering</h4><p>Vindt de overheid dat een taak beter door de particuliere sector uitgevoerd kan worden? Dan verkoopt ze zo\'n dienst of activiteit aan een particulier bedrijf: dit heet <b>privatisering</b>.</p></div>'
- +'<div class="box"><h4>Nationaliseren</h4><p>Het tegenovergestelde heet <b>nationaliseren</b>: de overheid neemt dan juist een particulier bedrijf over. Zo werd in 2008 bank ABN AMRO genationaliseerd om de financiële dienstverlening in Nederland veilig te stellen.</p></div></div>'
-
- +'<h5 class="sub">De overheid stuurt gedrag</h5>'
- +'<div class="g2">'
- +'<div class="box"><h4>Subsidie</h4><p>Om gewenst gedrag te stimuleren geeft de overheid <b>subsidie</b>, bijvoorbeeld voor de aanschaf van een warmtepomp of via belastingvoordeel voor elektrisch rijden.</p></div>'
- +'<div class="box"><h4>Accijns</h4><p>Om ongewenst gedrag te ontmoedigen heft de overheid <b>accijns</b> op producten zoals sigaretten, alcohol en benzine.</p></div></div>'
-
- +'<div class="call sum"><b>Om te onthouden</b><ul class="lst">'
- +'<li>Collectieve sector = overheid + sociale zekerheid. Particuliere sector = burgers + bedrijven.</li>'
- +'<li>Bij een aanbesteding bieden particuliere bedrijven op een overheidstaak; het beste aanbod krijgt de opdracht.</li>'
- +'<li>Privatisering: de overheid verkoopt een taak aan een particulier bedrijf. Nationaliseren is het omgekeerde.</li>'
- +'<li>Subsidie stimuleert gewenst gedrag, accijns ontmoedigt ongewenst gedrag.</li></ul></div>'},
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst"><li>de <b>collectieve</b> en de <b>particuliere sector</b></li><li>hoe de overheid gedrag stuurt: <b>subsidie</b> en <b>accijns</b></li></ul></div><div class="box"><h4>Waar dit hoofdstuk over gaat</h4><p>De overheid speelt een grote rol in de economie. Je leert wat de overheid doet naast burgers en bedrijven, hoe economen de economie meten en volgen, hoe sociaal Nederland is geregeld, en waar de overheid haar geld vandaan haalt en aan uitgeeft.</p></div><h5 class="sub">Twee sectoren</h5><div class="g2"><div class="box"><h4>Collectieve sector</h4><p>De <b>collectieve sector</b> bestaat uit de overheid en de instellingen voor de sociale zekerheid.</p></div><div class="box"><h4>Particuliere sector</h4><p>De <b>particuliere sector</b> bestaat uit alle burgers en bedrijven.</p></div></div><h5 class="sub">Marktwerking en aanbesteding</h5><div class="box"><h4>Marktwerking</h4><p>Bij <b>marktwerking</b> concurreren aanbieders van producten met elkaar op kwaliteit en prijs.</p></div><div class="box"><h4>Aanbesteding</h4><p>Wil de overheid een taak liever door een particulier bedrijf laten uitvoeren? Dan gebruikt ze vaak een <b>aanbesteding</b>: ze maakt bekend om welke taak of opdracht het gaat, particuliere bedrijven doen een aanbod, en het bedrijf met het beste aanbod mag de opdracht uitvoeren (bijvoorbeeld bij busvervoer).</p></div><h5 class="sub">Privatiseren of nationaliseren</h5><div class="g2"><div class="box"><h4>Privatisering</h4><p>Vindt de overheid dat een taak beter door de particuliere sector uitgevoerd kan worden? Dan verkoopt ze zo'n dienst of activiteit aan een particulier bedrijf: dit heet <b>privatisering</b>.</p></div><div class="box"><h4>Nationaliseren</h4><p>Het tegenovergestelde heet <b>nationaliseren</b>: de overheid neemt dan juist een particulier bedrijf over. Zo werd in 2008 bank ABN AMRO genationaliseerd om de financiële dienstverlening in Nederland veilig te stellen.</p></div></div><h5 class="sub">De overheid stuurt gedrag</h5><div class="g2"><div class="box"><h4>Subsidie</h4><p>Om gewenst gedrag te stimuleren geeft de overheid <b>subsidie</b>, bijvoorbeeld voor de aanschaf van een warmtepomp of via belastingvoordeel voor elektrisch rijden.</p></div><div class="box"><h4>Accijns</h4><p>Om ongewenst gedrag te ontmoedigen heft de overheid <b>accijns</b> op producten zoals sigaretten, alcohol en benzine.</p></div></div><div class="check" onclick="toonCheck(this)"><p class="check-v">Wat is het verschil tussen de collectieve en de particuliere sector?</p><p class="check-a">De collectieve sector is de overheid en de sociale zekerheid; de particuliere sector is alle burgers en bedrijven.</p><span class="check-hint">Tik voor het antwoord</span></div><div class="call sum"><b>Om te onthouden</b><ul class="lst"><li>Collectieve sector = overheid + sociale zekerheid. Particuliere sector = burgers + bedrijven.</li><li>Bij een aanbesteding bieden particuliere bedrijven op een overheidstaak; het beste aanbod krijgt de opdracht.</li><li>Privatisering: de overheid verkoopt een taak aan een particulier bedrijf. Nationaliseren is het omgekeerde.</li><li>Subsidie stimuleert gewenst gedrag, accijns ontmoedigt ongewenst gedrag.</li></ul></div>`},
 
 {heading:'5.2 De overheid en de economie',html:
- '<h5 class="sub">Hoe meet je de economie?</h5>'
- +'<div class="g2">'
- +'<div class="box"><h4>Bbp</h4><p>Het <b>bbp</b> (bruto binnenlands product) is de totale waarde van alle goederen en diensten die in een land geproduceerd zijn.</p></div>'
- +'<div class="box"><h4>Economische groei</h4><p>Stijgt het bbp, dan is er <b>economische groei</b>: een toename van de totale productie in een land.</p></div></div>'
-
- +'<div class="g2">'
- +'<div class="box"><h4>Recessie</h4><p>Is de economische groei tijdens twee kwartalen achter elkaar lager dan in de voorgaande periode én lager dan gemiddeld? Dan spreek je van een <b>recessie</b>.</p></div>'
- +'<div class="box"><h4>Economische crisis</h4><p>Krimpt het bbp, of houdt een recessie langere tijd aan, dan is er een <b>economische crisis</b>.</p></div></div>'
-
- +'<h5 class="sub">Wie geeft advies?</h5>'
- +'<div class="g2">'
- +'<div class="box"><h4>CPB</h4><p>Het <b>CPB</b> (Centraal Planbureau) onderzoekt de mogelijke gevolgen van economische maatregelen van de overheid.</p></div>'
- +'<div class="box"><h4>SER</h4><p>De <b>SER</b> (Sociaal-Economische Raad) adviseert de regering over sociaaleconomische onderwerpen, zoals werkgelegenheid, lonen, uitkeringen en pensioenen.</p></div></div>'
- +'<div class="call">Het CBS verzamelt de cijfers waarmee het CPB en de SER werken.</div>'
-
- +'<h5 class="sub">Wie bepaalt de prijzen?</h5>'
- +'<div class="g3">'
- +'<div class="box"><h4>Vrijemarkteconomie</h4><p>Vraag en aanbod bepalen de prijzen, zonder dat de overheid ingrijpt met regels of wetgeving.</p></div>'
- +'<div class="box"><h4>Sociale markteconomie</h4><p>Vraag en aanbod bepalen de prijzen, maar de overheid kan ingrijpen om basisbehoeften betaalbaar te houden en iedereen een redelijk bestaan te garanderen: zo werkt het in Nederland.</p></div>'
- +'<div class="box"><h4>Planeconomie</h4><p>De overheid bepaalt wat er geproduceerd wordt, hoeveel, door wie en tegen welke prijs.</p></div></div>'
-
- +'<div class="call waarom"><b>Bij een recessie</b> kan de overheid de economie stimuleren: meer geld investeren in infrastructuur, de inkomstenbelasting verlagen, subsidie geven aan bedrijven die vernieuwen, of investeren in het onderwijs.</div>'
-
- +'<div class="call sum"><b>Om te onthouden</b><ul class="lst">'
- +'<li>Bbp meet de totale productie van een land; economische groei is een stijging van het bbp.</li>'
- +'<li>Recessie: twee kwartalen lagere groei op rij. Aanhoudende krimp = economische crisis.</li>'
- +'<li>Vrijemarkteconomie: geen overheidsingrijpen. Sociale markteconomie: overheid grijpt soms in (Nederland). Planeconomie: overheid bepaalt alles.</li></ul></div>'},
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst"><li>de economie meten met het <b>bbp</b></li><li>wat <b>recessie</b> en <b>crisis</b> zijn en welke <b>economische systemen</b> er zijn</li></ul></div><h5 class="sub">Hoe meet je de economie?</h5><div class="g2"><div class="box"><h4>Bbp</h4><p>Het <b>bbp</b> (bruto binnenlands product) is de totale waarde van alle goederen en diensten die in een land geproduceerd zijn.</p></div><div class="box"><h4>Economische groei</h4><p>Stijgt het bbp, dan is er <b>economische groei</b>: een toename van de totale productie in een land.</p></div></div><div class="g2"><div class="box"><h4>Recessie</h4><p>Is de economische groei tijdens twee kwartalen achter elkaar lager dan in de voorgaande periode én lager dan gemiddeld? Dan spreek je van een <b>recessie</b>.</p></div><div class="box"><h4>Economische crisis</h4><p>Krimpt het bbp, of houdt een recessie langere tijd aan, dan is er een <b>economische crisis</b>.</p></div></div><h5 class="sub">Wie geeft advies?</h5><div class="g2"><div class="box"><h4>CPB</h4><p>Het <b>CPB</b> (Centraal Planbureau) onderzoekt de mogelijke gevolgen van economische maatregelen van de overheid.</p></div><div class="box"><h4>SER</h4><p>De <b>SER</b> (Sociaal-Economische Raad) adviseert de regering over sociaaleconomische onderwerpen, zoals werkgelegenheid, lonen, uitkeringen en pensioenen.</p></div></div><div class="call">Het CBS verzamelt de cijfers waarmee het CPB en de SER werken.</div><h5 class="sub">Wie bepaalt de prijzen?</h5><div class="g3"><div class="box"><h4>Vrijemarkteconomie</h4><p>Vraag en aanbod bepalen de prijzen, zonder dat de overheid ingrijpt met regels of wetgeving.</p></div><div class="box"><h4>Sociale markteconomie</h4><p>Vraag en aanbod bepalen de prijzen, maar de overheid kan ingrijpen om basisbehoeften betaalbaar te houden en iedereen een redelijk bestaan te garanderen: zo werkt het in Nederland.</p></div><div class="box"><h4>Planeconomie</h4><p>De overheid bepaalt wat er geproduceerd wordt, hoeveel, door wie en tegen welke prijs.</p></div></div><div class="call waarom"><b>Bij een recessie</b> kan de overheid de economie stimuleren: meer geld investeren in infrastructuur, de inkomstenbelasting verlagen, subsidie geven aan bedrijven die vernieuwen, of investeren in het onderwijs.</div><div class="check" onclick="toonCheck(this)"><p class="check-v">Wat is het bbp?</p><p class="check-a">De totale waarde van alle goederen en diensten die in een land geproduceerd zijn.</p><span class="check-hint">Tik voor het antwoord</span></div><div class="call sum"><b>Om te onthouden</b><ul class="lst"><li>Bbp meet de totale productie van een land; economische groei is een stijging van het bbp.</li><li>Recessie: twee kwartalen lagere groei op rij. Aanhoudende krimp = economische crisis.</li><li>Vrijemarkteconomie: geen overheidsingrijpen. Sociale markteconomie: overheid grijpt soms in (Nederland). Planeconomie: overheid bepaalt alles.</li></ul></div>`},
 
 {heading:'5.3 Zijn wij sociaal?',html:
- '<div class="box"><h4>Een vangnet voor iedereen</h4><p>De overheid heeft een <b>sociaal minimum</b> vastgesteld: het bedrag dat je minimaal nodig hebt om van te leven. Voor een alleenstaande van 21 jaar of ouder is dat in 2025 € 1.570,13 per maand. Kom je daaronder, dan kun je een toeslag krijgen tot het sociaal minimum.</p></div>'
-
- +'<h5 class="sub">Sociale verzekeringen</h5>'
- +'<div class="box"><h4>Wat beschermen ze?</h4><p><b>Sociale verzekeringen</b> beschermen je tegen verlies van inkomen.</p></div>'
- +'<div class="g2">'
- +'<div class="box"><h4>Volksverzekeringen</h4><p>Er voor iedere inwoner van Nederland, zoals de AOW (Algemene Ouderdomswet), de Anw (Algemene nabestaandenwet) en de Wlz (Wet langdurige zorg).</p></div>'
- +'<div class="box"><h4>Werknemersverzekeringen</h4><p>Er voor mensen die in loondienst werken of hebben gewerkt, zoals de WW (Werkloosheidswet) en de WIA (Wet werk en inkomen naar arbeidsvermogen). De premies hiervoor worden door de werkgever betaald.</p></div></div>'
-
- +'<div class="call warn"><b>Veelgemaakte fout:</b> verwar <b>sociale verzekeringen</b> niet met <b>sociale voorzieningen</b>. Voor een sociale verzekering (zoals de AOW of WW) is premie betaald; een sociale voorziening (zoals bijstand) wordt betaald uit algemeen belastinggeld, zonder dat je er premie voor betaald hebt.</div>'
-
- +'<div class="box"><h4>Sociale voorzieningen</h4><p><b>Sociale voorzieningen</b> zijn uitkeringen die de overheid met belastinggeld betaalt, zoals de bijstandsuitkering, de huurtoeslag en de zorgtoeslag.</p></div>'
- +'<div class="box"><h4>Solidariteitsbeginsel</h4><p>Bij het <b>solidariteitsbeginsel</b> staat iedereen met een inkomen een deel daarvan af voor mensen die zelf geen inkomen kunnen verdienen.</p></div>'
-
- +'<h5 class="sub">Verzorgingsstaat en vergrijzing</h5>'
- +'<div class="g2">'
- +'<div class="box"><h4>Verzorgingsstaat</h4><p>Door de sociale zekerheid en voorzieningen is Nederland een <b>verzorgingsstaat</b>: een land waarin de overheid zorgt voor goede sociale zekerheid, gezondheidszorg, huisvesting en onderwijs voor iedere burger.</p></div>'
- +'<div class="box"><h4>Vergrijzing</h4><p>Doordat Nederland vergrijst, groeit het aantal AOW\'ers. Om de AOW betaalbaar te houden, stijgt de AOW-leeftijd mee met de levensverwachting: vanaf 2028 wordt deze 67 jaar en 3 maanden.</p></div></div>'
-
- +'<div class="call sum"><b>Om te onthouden</b><ul class="lst">'
- +'<li>Sociale verzekeringen: volksverzekeringen (AOW, Anw, Wlz) en werknemersverzekeringen (WW, WIA).</li>'
- +'<li>Sociale voorzieningen worden betaald uit belastinggeld.</li>'
- +'<li>Solidariteitsbeginsel: actieven dragen bij aan inkomen voor wie dat zelf niet kan.</li>'
- +'<li>De AOW-leeftijd stijgt mee met de levensverwachting.</li></ul></div>'},
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst"><li><b>sociale verzekeringen</b> en <b>voorzieningen</b></li><li>wat de <b>verzorgingsstaat</b> is en wat <b>vergrijzing</b> betekent</li></ul></div><div class="box"><h4>Een vangnet voor iedereen</h4><p>De overheid heeft een <b>sociaal minimum</b> vastgesteld: het bedrag dat je minimaal nodig hebt om van te leven. Voor een alleenstaande van 21 jaar of ouder is dat in 2025 € 1.570,13 per maand. Kom je daaronder, dan kun je een toeslag krijgen tot het sociaal minimum.</p></div><h5 class="sub">Sociale verzekeringen</h5><div class="box"><h4>Wat beschermen ze?</h4><p><b>Sociale verzekeringen</b> beschermen je tegen verlies van inkomen.</p></div><div class="g2"><div class="box"><h4>Volksverzekeringen</h4><p>Er voor iedere inwoner van Nederland, zoals de AOW (Algemene Ouderdomswet), de Anw (Algemene nabestaandenwet) en de Wlz (Wet langdurige zorg).</p></div><div class="box"><h4>Werknemersverzekeringen</h4><p>Er voor mensen die in loondienst werken of hebben gewerkt, zoals de WW (Werkloosheidswet) en de WIA (Wet werk en inkomen naar arbeidsvermogen). De premies hiervoor worden door de werkgever betaald.</p></div></div><div class="call warn"><b>Veelgemaakte fout:</b> verwar <b>sociale verzekeringen</b> niet met <b>sociale voorzieningen</b>. Voor een sociale verzekering (zoals de AOW of WW) is premie betaald; een sociale voorziening (zoals bijstand) wordt betaald uit algemeen belastinggeld, zonder dat je er premie voor betaald hebt.</div><div class="box"><h4>Sociale voorzieningen</h4><p><b>Sociale voorzieningen</b> zijn uitkeringen die de overheid met belastinggeld betaalt, zoals de bijstandsuitkering, de huurtoeslag en de zorgtoeslag.</p></div><div class="box"><h4>Solidariteitsbeginsel</h4><p>Bij het <b>solidariteitsbeginsel</b> staat iedereen met een inkomen een deel daarvan af voor mensen die zelf geen inkomen kunnen verdienen.</p></div><h5 class="sub">Verzorgingsstaat en vergrijzing</h5><div class="g2"><div class="box"><h4>Verzorgingsstaat</h4><p>Door de sociale zekerheid en voorzieningen is Nederland een <b>verzorgingsstaat</b>: een land waarin de overheid zorgt voor goede sociale zekerheid, gezondheidszorg, huisvesting en onderwijs voor iedere burger.</p></div><div class="box"><h4>Vergrijzing</h4><p>Doordat Nederland vergrijst, groeit het aantal AOW'ers. Om de AOW betaalbaar te houden, stijgt de AOW-leeftijd mee met de levensverwachting: vanaf 2028 wordt deze 67 jaar en 3 maanden.</p></div></div><div class="check" onclick="toonCheck(this)"><p class="check-v">Hoe hoog is het sociaal minimum voor een alleenstaande van 21 jaar of ouder in 2025?</p><p class="check-a">€ 1.570,13 per maand.</p><span class="check-hint">Tik voor het antwoord</span></div><div class="call sum"><b>Om te onthouden</b><ul class="lst"><li>Sociale verzekeringen: volksverzekeringen (AOW, Anw, Wlz) en werknemersverzekeringen (WW, WIA).</li><li>Sociale voorzieningen worden betaald uit belastinggeld.</li><li>Solidariteitsbeginsel: actieven dragen bij aan inkomen voor wie dat zelf niet kan.</li><li>De AOW-leeftijd stijgt mee met de levensverwachting.</li></ul></div>`},
 
 {heading:'5.4 Geld genoeg?',html:
- '<h5 class="sub">De rijksbegroting</h5>'
- +'<div class="box"><h4>Overschot of tekort</h4><p>De <b>rijksbegroting</b> is de verwachte inkomsten en uitgaven van het rijk in het komende jaar. Zijn de verwachte inkomsten hoger dan de verwachte uitgaven, dan is er een begrotingsoverschot; zijn de verwachte uitgaven hoger, dan is er een begrotingstekort.</p></div>'
- +'<div class="g2">'
- +'<div class="box"><h4>Miljoenennota</h4><p>In de <b>Miljoenennota</b> legt de regering uit welke keuzes zij daarbij maakt.</p></div>'
- +'<div class="box"><h4>Staatsschuld</h4><p>Moet de overheid geld tekortkomen lenen, dan ontstaat in de loop der jaren de <b>staatsschuld</b>: schuld van de overheid door te lenen in alle jaren met een begrotingstekort.</p></div></div>'
-
- +'<h5 class="sub">Waar komt het geld vandaan?</h5>'
- +'<div class="g2">'
- +'<div class="box"><h4>Directe belastingen</h4><p><b>Directe belastingen</b> betaal je rechtstreeks aan de overheid, zoals de inkomstenbelasting.</p></div>'
- +'<div class="box"><h4>Indirecte belastingen</h4><p><b>Indirecte belastingen</b> zitten verwerkt in de prijs van een product, zoals btw en accijns.</p></div></div>'
-
- +'<div class="box"><h4>Ozb</h4><p>De belangrijkste gemeentelijke belasting is de <b>ozb</b> (onroerendezaakbelasting), die je als woningeigenaar aan de gemeente betaalt. Landelijk is de ozb goed voor gemiddeld zo\'n 8% van de gemeentelijke inkomsten, samen ongeveer € 3 miljard per jaar.</p></div>'
-
- +'<div class="call sum"><b>Om te onthouden</b><ul class="lst">'
- +'<li>Begrotingsoverschot: inkomsten hoger dan uitgaven. Begrotingstekort: andersom.</li>'
- +'<li>De Miljoenennota licht de keuzes in de rijksbegroting toe.</li>'
- +'<li>Directe belastingen gaan rechtstreeks naar de overheid; indirecte belastingen zitten in de prijs.</li></ul></div>'}
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst"><li>hoe de <b>rijksbegroting</b> werkt</li><li><b>directe</b> en <b>indirecte belastingen</b></li></ul></div><h5 class="sub">De rijksbegroting</h5><div class="box"><h4>Overschot of tekort</h4><p>De <b>rijksbegroting</b> is de verwachte inkomsten en uitgaven van het rijk in het komende jaar. Zijn de verwachte inkomsten hoger dan de verwachte uitgaven, dan is er een begrotingsoverschot; zijn de verwachte uitgaven hoger, dan is er een begrotingstekort.</p></div><div class="g2"><div class="box"><h4>Miljoenennota</h4><p>In de <b>Miljoenennota</b> legt de regering uit welke keuzes zij daarbij maakt.</p></div><div class="box"><h4>Staatsschuld</h4><p>Moet de overheid geld tekortkomen lenen, dan ontstaat in de loop der jaren de <b>staatsschuld</b>: schuld van de overheid door te lenen in alle jaren met een begrotingstekort.</p></div></div><h5 class="sub">Waar komt het geld vandaan?</h5><div class="g2"><div class="box"><h4>Directe belastingen</h4><p><b>Directe belastingen</b> betaal je rechtstreeks aan de overheid, zoals de inkomstenbelasting.</p></div><div class="box"><h4>Indirecte belastingen</h4><p><b>Indirecte belastingen</b> zitten verwerkt in de prijs van een product, zoals btw en accijns.</p></div></div><div class="box"><h4>Ozb</h4><p>De belangrijkste gemeentelijke belasting is de <b>ozb</b> (onroerendezaakbelasting), die je als woningeigenaar aan de gemeente betaalt. Landelijk is de ozb goed voor gemiddeld zo'n 8% van de gemeentelijke inkomsten, samen ongeveer € 3 miljard per jaar.</p></div><div class="check" onclick="toonCheck(this)"><p class="check-v">Wat staat er in de Miljoenennota?</p><p class="check-a">Een toelichting op de rijksbegroting waarin de regering haar keuzes uitlegt.</p><span class="check-hint">Tik voor het antwoord</span></div><div class="call sum"><b>Om te onthouden</b><ul class="lst"><li>Begrotingsoverschot: inkomsten hoger dan uitgaven. Begrotingstekort: andersom.</li><li>De Miljoenennota licht de keuzes in de rijksbegroting toe.</li><li>Directe belastingen gaan rechtstreeks naar de overheid; indirecte belastingen zitten in de prijs.</li></ul></div>`}
 ],
 terms:[
 ['Collectieve sector','De overheid en de instellingen voor de sociale zekerheid.',0],

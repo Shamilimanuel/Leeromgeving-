@@ -7,6 +7,16 @@ import { APP_VERSION, CHANGELOG } from '../src/content/changelog.js';
 /* Derived from CHANGELOG, never written out: adding a release entry must not
    break these tests, or every future release would have to fix them. */
 const OLDEST = CHANGELOG[CHANGELOG.length - 1].version;
+
+/* help.js asks the account whether the tour was seen. The real Supabase
+   client runs its own timers, which never settle under fake timers, so the
+   account is a stub here. */
+const account = vi.hoisted(() => ({ seen: false, remembered: 0 }));
+vi.mock('../src/services/auth.js', () => ({
+  restoreSession: async () => null,
+  accountHelpSeen: () => account.seen,
+  rememberAccountHelpSeen: async () => { account.remembered += 1; },
+}));
 const THIRD_NEWEST = CHANGELOG[2] && CHANGELOG[2].version;
 
 const SHEET = '<div id="home" class="screen"></div>'
@@ -49,6 +59,8 @@ const helpIsOpen = () => document.getElementById('helpwrap').classList.contains(
 
 beforeEach(() => {
   vi.useFakeTimers();
+  account.seen = false;
+  account.remembered = 0;
 });
 
 describe('after an update', () => {
@@ -110,9 +122,21 @@ describe('a first-time visitor', () => {
     expect(storage.getItem('gezienVersie')).toBe(APP_VERSION);
 
     navigation.go('home');
-    vi.runAllTimers();
+    await vi.runAllTimersAsync();
     expect(isOpen()).toBe(false);
     expect(helpIsOpen()).toBe(true);   // the control: the slides do still open
+    expect(account.remembered).toBeGreaterThan(0);
+  });
+
+  it('does not get them when the account already saw them on another device', async () => {
+    account.seen = true;
+    const { whatsNew, navigation, help, storage } = await boot(null);
+    help.initHelp();
+    whatsNew.initWhatsNew();
+    navigation.go('home');
+    await vi.runAllTimersAsync();
+    expect(helpIsOpen()).toBe(false);
+    expect(storage.getItem('uitlegGezien')).toBe('1');   // and this device remembers it too
   });
 });
 

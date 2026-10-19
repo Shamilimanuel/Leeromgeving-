@@ -1,13 +1,108 @@
 import { registerChapter } from '../../../registry.js';
 
+/* Rebuilt 2026-09-24 to the recipe of Economie TL4 H1 (change 6). Examples
+   from the book: the e-bikes of Koen and Leah (2.1), Imke and Dave (2.2),
+   the foal (2.4) and the weight table (2.5). The old 2.1 tip about reading
+   "far apart" graphs at the intersection made no sense and is gone. The
+   drawing is unchanged. Terms, cards and quiz unchanged. */
 registerChapter('wiskunde|tl|2|2', {
 title:'Oplossen en formules',
 summary:[
-{heading:'2.1 Oplossen met grafieken',html:'<div class=\'box\'><h4>Waar gaat dit hoofdstuk over?</h4><p>In dit hoofdstuk leer je vergelijkingen oplossen op drie manieren: met grafieken, met inklemmen en met de balansmethode. Ook leer je hoe je bij een grafiek of een tabel een formule maakt.</p></div><div class=\'call\'>Een vergelijking is een wiskundige zin met een is-gelijk-teken (=) waarin een onbekende letter voorkomt, bijvoorbeeld 2b + 14 = 36.</div><div class=\'box\'><h4>Twee grafieken vergelijken</h4><p>Bij veel situaties horen twee formules met elk een eigen grafiek, bijvoorbeeld de huurprijs bij twee verschillende verhuurbedrijven. Je kunt de grafieken gebruiken om uit te rekenen wanneer beide formules hetzelfde antwoord geven.</p></div><div class=\'box\'><h4>Werkwijze</h4><ol class=\'num\'><li>Maak bij elke formule een tabel met een paar waarden van t.</li><li>Teken bij beide tabellen een grafiek in hetzelfde assenstelsel.</li><li>Het snijpunt van de twee grafieken is de oplossing: daar zijn de twee formules gelijk.</li><li>Lees bij het snijpunt af welke t-waarde en welk bedrag erbij horen.</li></ol></div><div class=\'call\'>Hoe verder de grafieken van elkaar af liggen bij het snijpunt, hoe nauwkeuriger je moet aflezen. Teken daarom altijd netjes op ruitjespapier.</div>'},
-{heading:'2.2 Oplossen met inklemmen',html:'<div class=\'box\'><h4>Wat is inklemmen?</h4><p>Bij inklemmen vul je voor de onbekende letter steeds een getal in en kijk je of de uitkomst te veel of te weinig is. Zo zoek je steeds nauwkeuriger tussen twee grenzen, totdat je de juiste oplossing hebt gevonden.</p></div><div class=\'voorbeeld\'><h4>Voorbeeld: inklemmen</h4><p>Los op: 15 + 4,35t = 115,05.</p><ol class=\'num\'><li>Probeer t = 20: 15 + 4,35 × 20 = 102. Dat is te weinig.</li><li>Probeer t = 25: 15 + 4,35 × 25 = 123,75. Dat is te veel.</li><li>De oplossing ligt dus tussen 20 en 25. Probeer een tussenwaarde, bijvoorbeeld t = 23.</li><li>Ga zo door tot de uitkomst precies klopt.</li></ol><div class=\'antwoord\'>Antwoord: t = 23.</div></div><div class=\'call sum\'><b>Om te onthouden</b><ul class=\'lst\'><li>Is de uitkomst te veel, dan probeer je een kleiner getal.</li><li>Is de uitkomst te weinig, dan probeer je een groter getal.</li><li>Zo klem je de oplossing steeds verder in tussen twee grenzen.</li></ul></div>'},
-{heading:'2.3 Oplossen met de balansmethode',html:'<div class=\'box\'><h4>Een vergelijking als een balans</h4><p>Je kunt een vergelijking zien als een balans die in evenwicht is. Wat je aan de ene kant doet, moet je ook aan de andere kant doen: dan blijft de balans in evenwicht. Zo kun je de onbekende letter stap voor stap vrijmaken.</p></div><div class=\'voorbeeld\'><h4>Voorbeeld: balansmethode</h4><p>Los op: 2b + 14 = 36.</p><ol class=\'num\'><li>Het losse getal is 14. Trek dit aan beide kanten af: 2b = 22.</li><li>Voor b staat 2. Deel beide kanten door 2: b = 11.</li></ol><div class=\'antwoord\'>Antwoord: b = 11.</div></div><div class=\'call sum\'><b>Om te onthouden</b><ul class=\'lst\'><li>Je mag bij een vergelijking aan beide kanten hetzelfde getal optellen of aftrekken.</li><li>Je mag beide kanten door hetzelfde getal delen of ermee vermenigvuldigen.</li><li>Doe steeds het tegenovergestelde van wat er bij de letter staat.</li></ul></div><div class=\'call warn\'><b>Veelgemaakte fout:</b> vergeet niet om de bewerking echt aan beide kanten van het is-teken uit te voeren, anders raakt de balans uit evenwicht en klopt de uitkomst niet meer.</div><figure class=\'fig\'><svg viewBox="0 0 340 190" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="De balansmethode: aan beide kanten hetzelfde doen houdt de vergelijking in evenwicht"><g stroke="var(--txt)" stroke-width="2" fill="none" opacity=".8"><path d="M40 60 H300"/><path d="M170 60 V96"/><path d="M150 96 H190"/><path d="M156 108 L184 108"/></g><g fill="var(--accent)" fill-opacity=".18" stroke="var(--accent)" stroke-width="1.6"><rect x="60" y="28" width="90" height="26" rx="5"/><rect x="190" y="28" width="90" height="26" rx="5"/></g><g fill="var(--txt)" font-size="12" font-family="inherit" text-anchor="middle"><text x="105" y="46">3x + 5</text><text x="235" y="46">20</text><text x="170" y="132">=</text></g><g fill="var(--accent)" fill-opacity=".18" stroke="var(--accent)" stroke-width="1.6"><rect x="60" y="146" width="90" height="26" rx="5"/><rect x="190" y="146" width="90" height="26" rx="5"/></g><g fill="var(--txt)" font-size="12" font-family="inherit" text-anchor="middle"><text x="105" y="164">3x</text><text x="235" y="164">15</text></g><g fill="#e2564f" font-size="10" font-weight="600" font-family="inherit" text-anchor="middle"><text x="105" y="122">&minus; 5</text><text x="235" y="122">&minus; 5</text></g><g stroke="#e2564f" stroke-width="1.5" fill="none" stroke-dasharray="4 3"><path d="M105 96 V112"/><path d="M235 96 V112"/></g></svg><figcaption>Wat je links doet, doe je ook rechts &mdash; anders slaat de balans door. Trek je links 5 af, dan moet dat rechts ook, en 3x = 15 geeft x = 5.</figcaption></figure>'},
-{heading:'2.4 Formule maken bij een grafiek',html:'<div class=\'box\'><h4>Van grafiek naar formule</h4><p>Bij een rechte grafiek hoort een formule van de vorm <b>y = begingetal + stijggetal × t</b>. Het begingetal is de waarde waar de grafiek de verticale as snijdt (bij t = 0). Het stijggetal is hoeveel de grafiek per stap omhoog gaat. Daalt de grafiek, dan gebruik je een daalgetal en een minteken.</p></div><div class=\'voorbeeld\'><h4>Voorbeeld: formule bij een grafiek</h4><p>Een grafiek begint bij 2000 en stijgt: bij 1 jaar erbij komt er steeds 500 bij.</p><ol class=\'num\'><li>Het begingetal is 2000: bedrag (€) = 2000 +</li><li>Het stijggetal is 500: bedrag (€) = 2000 + 500</li><li>Zet de letter van de horizontale as achter het stijggetal.</li></ol><div class=\'antwoord\'>Antwoord: bedrag (€) = 2000 + 500t. Hierin is t de tijd in jaren.</div></div><div class=\'call\'>Om het stijg- of daalgetal te vinden, zoek je twee punten die je goed kunt aflezen en bereken je hoeveel de grafiek per 1 stap op de horizontale as verandert.</div>'},
-{heading:'2.5 Formule maken bij een tabel',html:'<div class=\'box\'><h4>Van tabel naar formule</h4><p>Ook bij een tabel met regelmaat kun je een formule maken. Het begingetal staat in de tabel onder de 0. Het stijggetal bereken je door te kijken hoeveel de waarde toeneemt per stap.</p></div><div class=\'voorbeeld\'><h4>Voorbeeld: formule bij een tabel</h4><p>In een tabel hoort bij t = 0 de waarde 450, en bij t = 5 de waarde 1250.</p><ol class=\'num\'><li>Het begingetal staat onder de 0: dat is 450.</li><li>In 5 minuten komt er 1250 − 450 = 800 bij.</li><li>Dus in 1 minuut komt er 800 : 5 = 160 bij. Het stijggetal is 160.</li></ol><div class=\'antwoord\'>Antwoord: afstand (m) = 450 + 160t. Hierin is t de tijd in minuten.</div></div><div class=\'call warn\'><b>Veelgemaakte fout:</b> je mag het stijggetal alleen zo berekenen als de stappen in de tabel gelijk zijn (bijvoorbeeld steeds 5 minuten verschil).</div>'}
+{heading:'2.1 Oplossen met grafieken',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>een <b>vergelijking</b> oplossen met <b>twee grafieken</b></li>
+<li>het <b>snijpunt</b> aflezen en uitleggen wat het betekent</li></ul></div>`
++`<div class="box"><h4>Waar dit hoofdstuk over gaat</h4><p>Je lost <b>vergelijkingen</b> op met <b>grafieken</b>, met <b>inklemmen</b> en met de <b>balansmethode</b>. Daarna maak je zelf een <b>formule</b> bij een grafiek en bij een tabel.</p></div>`
++`<h5 class="sub">Twee formules, twee grafieken</h5>`
++`<div class="box"><h4>Wanneer zijn ze gelijk?</h4><p>Vaak horen bij een situatie <b>twee formules</b>, bijvoorbeeld de huurprijs bij twee <b>verhuurbedrijven</b>. Teken je beide grafieken in <b>hetzelfde assenstelsel</b>, dan zie je bij het <b>snijpunt</b> wanneer ze <b>hetzelfde</b> opleveren.</p></div>`
++`<div class="call reken"><b>Stappenplan: oplossen met grafieken</b><ol class="num">
+<li>Maak bij elke formule een <b>tabel</b>.</li>
+<li>Teken beide grafieken in <b>één assenstelsel</b>.</li>
+<li>Zoek het <b>snijpunt</b>.</li>
+<li>Lees af welke <b>t</b> en welk <b>bedrag</b> erbij horen.</li></ol></div>`
++`<div class="voorbeeld"><h4>Voorbeeld: twee e-bikes</h4><p>Koen: <b>huurprijs (&euro;) = 10 + 20t</b>. Leah: <b>huurprijs (&euro;) = 40 + 10t</b>. Hierin is t de tijd in dagen. Wanneer betalen ze evenveel?</p><div class="antwoord">Tabel: bij t = 3 betaalt Koen 10 + 60 = 70 en Leah 40 + 30 = 70. De grafieken <b>snijden</b> elkaar bij <b>t = 3</b>: na 3 dagen betalen ze allebei <b>&euro;70</b>.</div></div>`
++`<div class="call waarom">Waarom is het snijpunt de oplossing? Het is het <b>enige punt</b> dat op <b>beide grafieken</b> ligt. Alleen daar geven de twee formules <b>dezelfde uitkomst</b>.</div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Wat is het snijpunt van twee grafieken?</p><p class="check-a">Het punt waar de grafieken elkaar <b>kruisen</b>; daar zijn beide formules <b>gelijk</b>.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden (2.1)</b><ul class="lst">
+<li>Teken beide grafieken in <b>één assenstelsel</b>.</li>
+<li>Bij het <b>snijpunt</b> zijn de formules gelijk.</li>
+<li>Teken <b>netjes</b>, anders lees je het snijpunt verkeerd af.</li></ul></div>`},
+
+{heading:'2.2 Oplossen met inklemmen',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>van een <b>formule</b> een <b>vergelijking</b> maken</li>
+<li>een vergelijking oplossen met <b>inklemmen</b></li></ul></div>`
++`<h5 class="sub">Van formule naar vergelijking</h5>`
++`<div class="box"><h4>Wat is een vergelijking?</h4><p>Imke verdient <b>inkomsten (&euro;) = 5 + 3,40t</b>, met t in uren. Weet je dat ze <b>&euro;28,80</b> verdiende, dan vul je dat in: <b>5 + 3,40t = 28,80</b>. Dat is een <b>vergelijking</b>. De <b>oplossing</b> is het getal voor t waarbij hij <b>klopt</b>: hier <b>t = 7</b>.</p></div>`
++`<h5 class="sub">Inklemmen</h5>`
++`<div class="call reken"><b>Stappenplan: inklemmen</b><ol class="num">
+<li>Vul een getal in voor de letter.</li>
+<li>Is de uitkomst <b>te weinig</b>? Probeer een <b>groter</b> getal.</li>
+<li>Is de uitkomst <b>te veel</b>? Probeer een <b>kleiner</b> getal.</li>
+<li>Ga door tot de uitkomst <b>precies klopt</b>.</li></ol></div>`
++`<div class="voorbeeld"><h4>Voorbeeld: 15 + 4,35t = 115,05</h4><p>Los op met inklemmen.</p><div class="antwoord">t = 20 geeft 102: <b>te weinig</b>. t = 25 geeft 123,75: <b>te veel</b>. De oplossing ligt dus <b>tussen 20 en 25</b>. t = 23 geeft 15 + 100,05 = 115,05: dat <b>klopt</b>. De oplossing is <b>t = 23</b>.</div></div>`
++`<div class="call waarom">Waarom heet het <b>inklemmen</b>? Je zet de oplossing steeds vast tussen een getal dat <b>te weinig</b> geeft en een getal dat <b>te veel</b> geeft, en je maakt die ruimte steeds <b>kleiner</b>.</div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Wat doe je als de uitkomst bij inklemmen te veel is?</p><p class="check-a">Je probeert een <b>kleiner</b> getal.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden (2.2)</b><ul class="lst">
+<li>Vul de uitkomst in de formule in: dan heb je een <b>vergelijking</b>.</li>
+<li><b>Te weinig</b>: groter getal. <b>Te veel</b>: kleiner getal.</li>
+<li>Klopt het precies, dan heb je de <b>oplossing</b>.</li></ul></div>`},
+
+{heading:'2.3 Oplossen met de balansmethode',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>een vergelijking oplossen met de <b>balansmethode</b></li></ul></div>`
++`<h5 class="sub">Een vergelijking als balans</h5>`
++`<div class="box"><h4>In evenwicht</h4><p>Een <b>balans</b> is in evenwicht als op beide schalen <b>hetzelfde gewicht</b> ligt. Haal je van <b>beide</b> schalen evenveel af, dan blijft hij in evenwicht. Zo werk je ook met een vergelijking: je mag aan <b>beide kanten</b> van het <b>=</b> teken evenveel <b>optellen</b> of <b>aftrekken</b>, en beide kanten door <b>hetzelfde getal delen</b>.</p></div>`
++`<figure class='fig'><svg viewBox="0 0 340 190" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="De balansmethode: aan beide kanten hetzelfde doen houdt de vergelijking in evenwicht"><g stroke="var(--txt)" stroke-width="2" fill="none" opacity=".8"><path d="M40 60 H300"/><path d="M170 60 V96"/><path d="M150 96 H190"/><path d="M156 108 L184 108"/></g><g fill="var(--accent)" fill-opacity=".18" stroke="var(--accent)" stroke-width="1.6"><rect x="60" y="28" width="90" height="26" rx="5"/><rect x="190" y="28" width="90" height="26" rx="5"/></g><g fill="var(--txt)" font-size="12" font-family="inherit" text-anchor="middle"><text x="105" y="46">3x + 5</text><text x="235" y="46">20</text><text x="170" y="132">=</text></g><g fill="var(--accent)" fill-opacity=".18" stroke="var(--accent)" stroke-width="1.6"><rect x="60" y="146" width="90" height="26" rx="5"/><rect x="190" y="146" width="90" height="26" rx="5"/></g><g fill="var(--txt)" font-size="12" font-family="inherit" text-anchor="middle"><text x="105" y="164">3x</text><text x="235" y="164">15</text></g><g fill="#e2564f" font-size="10" font-weight="600" font-family="inherit" text-anchor="middle"><text x="105" y="122">&minus; 5</text><text x="235" y="122">&minus; 5</text></g><g stroke="#e2564f" stroke-width="1.5" fill="none" stroke-dasharray="4 3"><path d="M105 96 V112"/><path d="M235 96 V112"/></g></svg><figcaption>Wat je links doet, doe je ook rechts &mdash; anders slaat de balans door. Trek je links 5 af, dan moet dat rechts ook, en 3x = 15 geeft x = 5.</figcaption></figure>`
++`<div class="call reken"><b>Stappenplan: balansmethode</b><ol class="num">
+<li>Haal het <b>losse getal</b> weg: aan beide kanten aftrekken (of optellen).</li>
+<li>Deel beide kanten door het getal <b>vóór de letter</b>.</li>
+<li><b>Controleer</b>: vul je antwoord in de vergelijking in.</li></ol></div>`
++`<div class="voorbeeld"><h4>Voorbeeld: 2b + 14 = 36</h4><p>Los op met de balansmethode.</p><div class="antwoord">Het losse getal is 14, dus aan beide kanten <b>&minus;14</b>: 2b = 22. Voor b staat 2, dus beide kanten <b>: 2</b>: <b>b = 11</b>. Controle: 2 &times; 11 + 14 = 36. Klopt.</div></div>`
++`<div class="vergelijk"><div class="vergelijk-kant"><h4>Inklemmen</h4><p><b>Proberen</b> tot het klopt. Werkt altijd, maar kost tijd.</p></div><div class="vergelijk-vs">vs</div><div class="vergelijk-kant"><h4>Balansmethode</h4><p><b>Terugrekenen</b> in een paar stappen. Snel en precies.</p></div></div>`
++`<div class="call warn"><b>Veelgemaakte fout:</b> je doet de bewerking maar aan <b>één kant</b>. Dan raakt de balans uit evenwicht en klopt je antwoord niet meer.</div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Los op met de balansmethode: 3n + 35 = 38.</p><p class="check-a">3n = 3, dus <b>n = 1</b>.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden (2.3)</b><ul class="lst">
+<li>Wat je aan de ene kant doet, doe je ook aan de <b>andere kant</b>.</li>
+<li>Eerst het <b>losse getal</b> weg, dan <b>delen</b> door het getal voor de letter.</li>
+<li><b>Controleer</b> door in te vullen.</li></ul></div>`},
+
+{heading:'2.4 Formule maken bij een grafiek',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>een <b>formule</b> maken bij een <b>rechte grafiek</b></li>
+<li>het <b>stijggetal</b> of <b>daalgetal</b> berekenen</li></ul></div>`
++`<h5 class="sub">Begingetal en stijggetal</h5>`
++`<div class="box"><h4>De vorm van de formule</h4><p>Bij een <b>rechte lijn</b> hoort een formule als <b>y = begingetal + stijggetal &times; t</b>. Het <b>begingetal</b> is de waarde bij <b>t = 0</b>, waar de grafiek de verticale as snijdt. Het <b>stijggetal</b> is wat er <b>per stap</b> bijkomt. Daalt de grafiek, dan gebruik je een <b>daalgetal</b> met een <b>minteken</b>.</p></div>`
++`<div class="call reken"><b>Stappenplan: het stijggetal berekenen</b><ol class="num">
+<li>Zoek <b>twee punten</b> die je goed kunt aflezen.</li>
+<li>Bereken hoeveel het <b>omhoog</b> gaat en hoeveel <b>stappen</b> dat kost.</li>
+<li>Deel: <b>toename : aantal stappen</b>.</li></ol></div>`
++`<div class="voorbeeld"><h4>Voorbeeld: een veulen groeit</h4><p>De grafiek gaat door <b>(0, 40)</b> en <b>(20, 180)</b>. Hierin is t de tijd in weken.</p><div class="antwoord">In 20 weken komt er 180 &minus; 40 = <b>140 kg</b> bij. In 1 week: 140 : 20 = <b>7 kg</b>. Het begingetal is <b>40</b>. Formule: <b>gewicht (kg) = 40 + 7t</b>. Hierin is t de tijd in weken.</div></div>`
++`<div class="call warn"><b>Vergeet niet</b> onder de formule te zetten wat de <b>letter</b> betekent, met de <b>eenheid</b>: &ldquo;Hierin is t de tijd in weken.&rdquo;</div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Wat gebruik je in de formule als een grafiek daalt?</p><p class="check-a">Een <b>daalgetal</b> met een <b>minteken</b>.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden (2.4)</b><ul class="lst">
+<li><b>y = begingetal + stijggetal &times; t</b>.</li>
+<li><b>Begingetal</b>: de waarde bij t = 0.</li>
+<li><b>Stijggetal</b> = toename : aantal stappen.</li></ul></div>`},
+
+{heading:'2.5 Formule maken bij een tabel',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>een <b>formule</b> maken bij een <b>tabel met regelmaat</b></li></ul></div>`
++`<h5 class="sub">Van tabel naar formule</h5>`
++`<div class="call reken"><b>Stappenplan: formule bij een tabel</b><ol class="num">
+<li>Wat <b>onder</b> in de tabel staat, zet je vooraan, met een <b>=</b> erachter.</li>
+<li>Het <b>begingetal</b> staat in de tabel <b>onder de 0</b>.</li>
+<li>Bereken het <b>stijggetal</b> of <b>daalgetal</b>: wat er <b>per 1 stap</b> bij komt of af gaat.</li>
+<li>De letter <b>boven</b> in de tabel komt achter het stijggetal.</li>
+<li>Schrijf eronder wat de <b>letter</b> betekent.</li></ol></div>`
++`<div class="voorbeeld"><h4>Voorbeeld: minder gewicht</h4><p>Bij <b>t = 0</b> is het gewicht <b>93 kg</b>, bij <b>t = 3</b> is het <b>87 kg</b>. Hierin is t de tijd in maanden.</p><div class="antwoord">Het begingetal is <b>93</b>. In 3 maanden gaat er 6 kg af, dus per maand 6 : 3 = <b>2</b>: het daalgetal. Formule: <b>gewicht (kg) = 93 &minus; 2t</b>. Hierin is t de tijd in maanden.</div></div>`
++`<div class="voorbeeld"><h4>Voorbeeld: een afstand</h4><p>Bij <b>t = 0</b> hoort <b>450</b> m, bij <b>t = 5</b> hoort <b>1250</b> m. Hierin is t de tijd in minuten.</p><div class="antwoord">In 5 minuten komt er 1250 &minus; 450 = 800 bij, per minuut 800 : 5 = <b>160</b>. Formule: <b>afstand (m) = 450 + 160t</b>.</div></div>`
++`<div class="call warn"><b>Let op:</b> deel altijd door het <b>aantal stappen</b> tussen de twee getallen. Van t = 0 naar t = 5 zijn het <b>5 stappen</b>, niet 1.</div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Waar staat het begingetal in een tabel?</p><p class="check-a"><b>Onder de 0</b>.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden (2.5)</b><ul class="lst">
+<li><b>Begingetal</b>: onder de 0 in de tabel.</li>
+<li><b>Stijggetal</b> of <b>daalgetal</b>: wat er per 1 stap bij komt of af gaat.</li>
+<li>Schrijf altijd op wat de <b>letter</b> betekent.</li></ul></div>`}
 ],
 terms:[
 ['Vergelijking','Een wiskundige zin met een is-gelijk-teken waarin een onbekende letter voorkomt.',2],

@@ -7,6 +7,8 @@ import { setHtml, icon } from '../lib/dom.js';
 import { currentChapterKey } from '../state/selection.js';
 import { levelsForChapter, levelSubtitle } from '../content/levels.js';
 import { isLevelDone, isLevelUnlocked, levelResult, currentLevelIndex } from '../state/gameLevels.js';
+import { getStreak, today } from '../state/progress.js';
+import { canRace, raceRecord, RACE_SECONDS } from './timeRace.js';
 
 /* How far a node leans out of the middle, per position in the path. Repeating
    the pattern is what gives the column its winding shape. */
@@ -37,6 +39,32 @@ function nodeHtml(chapter, level, chapterKey, currentIndex) {
     + '</li>';
 }
 
+/* The daily goal: practise once a day (one level is enough) to keep the
+   streak. Says which of three situations the student is in. */
+export function streakLine(streak, day) {
+  const n = streak.length;
+  const days = n + (n === 1 ? ' dag' : ' dagen');
+  if (n && streak.lastDay === day) {
+    return { done: true, text: 'Vandaag geoefend · ' + days + ' op rij' };
+  }
+  if (n && streak.lastDay === day - 1) {
+    return { done: false, text: 'Speel vandaag een level om je reeks van ' + days + ' te houden' };
+  }
+  return { done: false, text: 'Speel een level om een reeks te beginnen' };
+}
+
+/* Tijdrace sits under the path: open from the start, it is extra practice
+   rather than a level, and pays no XP (see src/ui/timeRace.js). */
+function raceCardHtml(chapter, chapterKey) {
+  if (!canRace(chapter)) return '';
+  const record = raceRecord(chapterKey);
+  return '<div class="race-kaart">'
+    + '<span class="race-ico">' + icon('timer') + '</span>'
+    + '<span class="race-t"><b>Tijdrace</b><small>Zoveel mogelijk goed in ' + RACE_SECONDS + ' seconden'
+    + (record ? ' · je record: ' + record + ' goed' : '') + '</small></span>'
+    + '<button type="button" class="bt" onclick="startTimeRace()">Start</button></div>';
+}
+
 export function renderPath(chapter) {
   const levels = levelsForChapter(chapter);
   if (!levels.length) {
@@ -55,13 +83,16 @@ export function renderPath(chapter) {
     return sum + (result ? result.xp : 0);
   }, 0);
 
+  const goal = streakLine(getStreak(), today());
   setHtml('chBody',
-    '<div class="pad-kop">'
+    '<div class="pad-reeks' + (goal.done ? ' gehaald' : '') + '">' + icon(goal.done ? 'flame' : 'target') + ' ' + goal.text + '</div>'
+    + '<div class="pad-kop">'
     + '<div class="pad-kop-tel"><b>' + doneCount + ' van de ' + levels.length + '</b> levels gehaald</div>'
     + '<div class="pad-kop-xp">' + xp + ' XP</div>'
     + '<div class="prog pad-prog"><i style="width:' + Math.round((doneCount / levels.length) * 100) + '%"></i></div>'
     + '</div>'
     + '<ol class="pad">' + levels.map((l) => nodeHtml(chapter, l, chapterKey, currentIndex)).join('') + '</ol>'
+    + raceCardHtml(chapter, chapterKey)
     + (doneCount === levels.length
       ? '<div class="pad-af"><span class="icon icon-trophy" aria-hidden="true"></span> Dit hoofdstuk is helemaal uitgespeeld. Je kunt elk level opnieuw doen.</div>'
       : ''));

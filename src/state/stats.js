@@ -26,6 +26,7 @@ export function subjectStatistics(subjectId) {
   const leitner = allLeitner();
   const chapters = keys.length;
   let read = 0;
+  let finished = 0;
   let xp = 0;
   let quizAttempts = 0;
   let quizPctSum = 0;
@@ -35,10 +36,14 @@ export function subjectStatistics(subjectId) {
 
   keys.forEach((key) => {
     const p = progress[key];
+    // XP still follows `viewed` (opening), as it always has: recounting it
+    // would lower levels students already reached. The "gelezen" count shown
+    // on the card follows `read` ("Klaar met lezen", 2.7.1).
     if (p && p.viewed) {
       read++;
       xp += XP_PER_CHAPTER_READ;
     }
+    if (p && p.read) finished++;
     if (p && p.quizCompleted && p.quizTotal) {
       quizAttempts++;
       quizPctSum += p.quizCorrect / p.quizTotal;
@@ -72,6 +77,7 @@ export function subjectStatistics(subjectId) {
   return {
     chapters,
     read,
+    finished,
     xp,
     level,
     xpNext: thresholdNext,

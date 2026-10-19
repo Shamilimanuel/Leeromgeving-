@@ -4,6 +4,7 @@ import { SUBJECTS } from '../content/index.js';
 import { subjectHasContent } from '../content/queries.js';
 import { getStreak, today } from '../state/progress.js';
 import { subjectStatistics } from '../state/stats.js';
+import { renderOwnBadges } from './badges.js';
 
 function streakHtml() {
   const s = getStreak();
@@ -18,6 +19,7 @@ export function renderCharacterCards() {
   if (!grid) return;
   const streakEl = $('streakBadge');
   if (streakEl) streakEl.innerHTML = streakHtml();
+  renderOwnBadges();
 
   const subjects = SUBJECTS.filter((s) => subjectHasContent(s.id));
   if (!subjects.length) {
@@ -34,7 +36,7 @@ export function renderCharacterCards() {
       + '<span class="persona-bigico">' + icon(subject.icon) + '</span>'
       + '<div class="persona-head">'
         + '<span class="badge"><i class="ring"></i><i class="core">' + icon(subject.icon) + '</i></span>'
-        + '<div><h3>' + subject.name + '</h3><small>' + s.read + '/' + s.chapters + ' hoofdstukken gelezen</small></div>'
+        + '<div><h3>' + subject.name + '</h3><small>' + s.finished + '/' + s.chapters + ' hoofdstukken gelezen</small></div>'
         + '<div class="persona-lvl"><b>Lv. ' + s.level + '</b><span>Level</span></div>'
       + '</div>'
       + '<div class="persona-row"><div class="lbl"><span>XP</span><span>' + s.xp + ' / ' + s.xpNext + '</span></div>'

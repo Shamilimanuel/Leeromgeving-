@@ -1,181 +1,24 @@
 import { registerChapter } from '../../../registry.js';
 
 /* Chapter 7 content: Voeding (Nectar BBL year 2, part A) */
+/* Upgraded 2026-09-25 to the recipe of Economie TL4 H1 (change 6): every paragraph
+   got "Dit leer je" and a "Check jezelf" (taken from its own flashcard where
+   there was none), plus bold on its own glossary terms where it had little.
+   The text itself is unchanged. */
 registerChapter('biologie|bbl|2|7', {
 title:'Eten en verteren',
 summary:[
-{
- heading:'7.1 Gezond eten',
- html:
- '<div class="g2">'
- +'<div class="box"><h4>Voedingsmiddel of voedingsstof?</h4>'
- +'<p>Iets wat je <b>eet of drinkt</b> is een <b>voedingsmiddel</b>. Denk aan melk, brood, een appel.</p>'
- +'<p style="margin-top:.6rem">In elk voedingsmiddel zitten <b>voedingsstoffen</b>. Die staan meestal op de verpakking.</p>'
- +'<div class="call warn" style="margin-bottom:0"><b>Onthoud het verschil:</b> een appel is een voedingsmiddel. De vitaminen erín zijn voedingsstoffen.</div></div>'
- +'<div class="box"><h4>De zes voedingsstoffen</h4><ol class="num">'
- +'<li><b>Koolhydraten</b>: zetmeel en suikers</li>'
- +'<li><b>Vetten</b></li>'
- +'<li><b>Eiwitten</b></li>'
- +'<li><b>Vitaminen</b></li>'
- +'<li><b>Mineralen</b></li>'
- +'<li><b>Water</b></li></ol></div></div>'
+{heading:'7.1 Gezond eten',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst"><li>het verschil tussen <b>voedingsmiddel</b> en <b>voedingsstof</b></li><li>de zes <b>voedingsstoffen</b> in drie groepen</li></ul></div><div class="g2"><div class="box"><h4>Voedingsmiddel of voedingsstof?</h4><p>Iets wat je <b>eet of drinkt</b> is een <b>voedingsmiddel</b>. Denk aan melk, brood, een appel.</p><p style="margin-top:.6rem">In elk voedingsmiddel zitten <b>voedingsstoffen</b>. Die staan meestal op de verpakking.</p><div class="call warn" style="margin-bottom:0"><b>Onthoud het verschil:</b> een appel is een voedingsmiddel. De vitaminen erín zijn voedingsstoffen.</div></div><div class="box"><h4>De zes voedingsstoffen</h4><ol class="num"><li><b>Koolhydraten</b>: zetmeel en suikers</li><li><b>Vetten</b></li><li><b>Eiwitten</b></li><li><b>Vitaminen</b></li><li><b>Mineralen</b></li><li><b>Water</b></li></ol></div></div><div class="box"><h4>En vezels dan?</h4><p><b>Vezels</b> zitten in volkorenbrood, groente en fruit. Ze zijn geen voedingsstof, maar wel belangrijk: ze zorgen dat de spieren in je darmen actief blijven, zodat je goed kunt poepen.</p></div><h5 class="sub">De drie groepen voedingsstoffen</h5><div class="g3"><div class="box"><h4>Energierijke stoffen</h4><p>Om te <b>bewegen</b> en <b>warm te blijven</b>.</p><ul class="lst" style="margin-top:.5rem"><li>Koolhydraten</li><li>Vetten</li></ul></div><div class="box"><h4>Bouwstoffen</h4><p>Om te <b>groeien</b> en je botten en spieren sterk te houden.</p><ul class="lst" style="margin-top:.5rem"><li>Eiwitten</li><li>Vetten</li><li>Mineralen</li><li>Water</li></ul></div><div class="box"><h4>Beschermende stoffen</h4><p>Om <b>gezond te blijven</b>.</p><ul class="lst" style="margin-top:.5rem"><li>Vitaminen</li><li>Mineralen</li></ul></div></div><div class="call warn"><b>Let op:</b> sommige voedingsstoffen horen bij <b>twee</b> groepen. Vetten zijn energierijk én bouwstof. Mineralen zijn bouwstof én beschermende stof.</div><div class="check" onclick="toonCheck(this)"><p class="check-v">De zes voedingsstoffen</p><p class="check-a">Koolhydraten, vetten, eiwitten, vitaminen, mineralen en water.</p><span class="check-hint">Tik voor het antwoord</span></div><div class="call sum"><b>Om te onthouden (7.1)</b><ul class="lst"><li>Een <b>voedingsmiddel</b> is wat je eet of drinkt; daarin zitten <b>voedingsstoffen</b>.</li><li>Zes voedingsstoffen: koolhydraten, vetten, eiwitten, vitaminen, mineralen en water.</li><li><b>Energierijke stoffen</b> = bewegen en warm blijven. <b>Bouwstoffen</b> = groeien. <b>Beschermende stoffen</b> = gezond blijven.</li><li><b>Vezels</b> houden je darmen actief.</li></ul></div>`},
 
- +'<div class="box"><h4>En vezels dan?</h4>'
- +'<p><b>Vezels</b> zitten in volkorenbrood, groente en fruit. Ze zijn geen voedingsstof, maar wel belangrijk: ze zorgen dat de spieren in je darmen actief blijven, zodat je goed kunt poepen.</p></div>'
+{heading:'7.2 Energie',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst"><li>hoe je <b>energie</b> uit voedsel haalt en meet</li><li>wat er gebeurt als je <b>te veel</b> eet</li></ul></div><div class="g2"><div class="box"><h4>Waar haal je energie uit?</h4><p><b>Energierijke stoffen</b> geven je lichaam energie: <b>koolhydraten</b> (zetmeel en suikers) en <b>vetten</b>.</p><p style="margin-top:.6rem">Je lichaam gebruikt die energie om te <b>bewegen</b> en om <b>warm te blijven</b>.</p></div><div class="box"><h4>Hoe meet je energie?</h4><p>De hoeveelheid energie in voeding geef je aan in <b>kilocalorieën (kcal)</b> of in <b>kilojoule (kJ)</b>. Beide staan op de verpakking.</p></div></div><div class="box"><h4>Hoeveel energie heb jij nodig?</h4><p>Dat verschilt per persoon en hangt af van drie dingen:</p><ol class="num"><li>Je <b>leeftijd</b></li><li>Hoeveel je <b>beweegt</b></li><li>Je <b>lichaamsbouw</b> en geslacht</li></ol><div class="call" style="margin-bottom:0">Een voetballer heeft veel meer energie nodig dan iemand die de hele dag zit.</div></div><h5 class="sub">Wat als je te veel eet?</h5><div class="g2"><div class="box"><h4>Overgewicht</h4><p>Eet je <b>meer</b> energierijke stoffen dan je nodig hebt, dan slaat je lichaam die op als <b>vet</b>. Je wordt dan te dik: <b>overgewicht</b>.</p></div><div class="box"><h4>Tandbederf</h4><p><b>Bacteriën</b> in je mond maken van <b>suiker</b> een <b>zuur</b>. Dat zuur tast eerst het <b>glazuur</b> van je tanden aan en daarna het tandbeen. Zo ontstaan gaatjes.</p><div class="call" style="margin-bottom:0">Het mineraal <b>fluoride</b> maakt je tandglazuur sterker. Daarom zit het in tandpasta.</div></div></div><div class="check" onclick="toonCheck(this)"><p class="check-v">Waar hangt het van af hoeveel energie je nodig hebt?</p><p class="check-a">Van je leeftijd, hoeveel je beweegt en je lichaamsbouw.</p><span class="check-hint">Tik voor het antwoord</span></div><div class="call sum"><b>Om te onthouden (7.2)</b><ul class="lst"><li>Energierijke stoffen zijn <b>koolhydraten</b> en <b>vetten</b>.</li><li>Energie meet je in <b>kilocalorieën (kcal)</b> of <b>kilojoule (kJ)</b>.</li><li>Hoeveel je nodig hebt hangt af van leeftijd, beweging en lichaamsbouw.</li><li>Te veel energierijke stoffen → <b>overgewicht</b>. Te veel suiker → <b>tandbederf</b>.</li></ul></div>`},
 
- +'<h5 class="sub">De drie groepen voedingsstoffen</h5>'
- +'<div class="g3">'
- +'<div class="box"><h4>Energierijke stoffen</h4><p>Om te <b>bewegen</b> en <b>warm te blijven</b>.</p>'
- +'<ul class="lst" style="margin-top:.5rem"><li>Koolhydraten</li><li>Vetten</li></ul></div>'
- +'<div class="box"><h4>Bouwstoffen</h4><p>Om te <b>groeien</b> en je botten en spieren sterk te houden.</p>'
- +'<ul class="lst" style="margin-top:.5rem"><li>Eiwitten</li><li>Vetten</li><li>Mineralen</li><li>Water</li></ul></div>'
- +'<div class="box"><h4>Beschermende stoffen</h4><p>Om <b>gezond te blijven</b>.</p>'
- +'<ul class="lst" style="margin-top:.5rem"><li>Vitaminen</li><li>Mineralen</li></ul></div></div>'
+{heading:'7.3 Bouwen en beschermen',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst"><li><b>bouwstoffen</b> en <b>beschermende stoffen</b></li><li>gezond eten met de <b>Schijf van Vijf</b></li></ul></div><div class="g2"><div class="box"><h4>Bouwstoffen</h4><p>Bouwstoffen heb je nodig om te <b>groeien</b> en om je <b>botten en spieren sterk</b> te houden.</p><div class="term" style="margin-top:.7rem"><b>Eiwitten</b><span>Om nieuwe cellen te maken.</span></div><div class="term"><b>Vetten</b><span>Om celmembranen te maken.</span></div><div class="term"><b>Mineralen</b><span>Zoals calcium (kalk) voor botcellen en ijzer voor bloedcellen.</span></div><div class="term" style="margin-bottom:0"><b>Water</b><span>Je lichaam bestaat voor een groot deel uit water.</span></div></div><div class="box"><h4>Beschermende stoffen</h4><p>Beschermende stoffen heb je nodig om <b>gezond te blijven</b> en om je lichaam goed te laten werken.</p><div class="term" style="margin-top:.7rem"><b>Vitaminen</b><span>Er zijn verschillende soorten. Elke soort heeft een eigen taak.</span></div><div class="term" style="margin-bottom:0"><b>Mineralen</b><span>Zoals calcium, ijzer en fluoride.</span></div></div></div><div class="call warn"><b>Twee mineralen om te kennen:</b> <b>calcium</b> (ook wel kalk) voor je botten, en <b>ijzer</b> om nieuwe bloedcellen te maken.</div><h5 class="sub">Gezond eten: de schijf van vijf</h5><div class="box"><p>Voor een gezond lichaam moet je <b>gevarieerd</b> eten: niet elke dag hetzelfde. De <b>schijf van vijf</b> helpt daarbij. Die heeft vijf vakken:</p><ol class="num"><li>Groente en fruit</li><li>Brood, pasta, rijst, aardappelen</li><li>Vlees, vis, ei, melkproducten, peulvruchten, noten</li><li>Olie en vetten</li><li>Dranken</li></ol><div class="call" style="margin-bottom:0">Je eet gezond als je elke dag <b>iets uit elk vak</b> eet. Uit een groter vak eet je méér dan uit een kleiner vak.</div></div><div class="g2" style="margin-top:1rem"><div class="box"><h4>Ontbijten en tussendoortjes</h4><ul class="lst"><li>Eet <b>drie maaltijden</b> per dag</li><li><b>Ontbijten</b> is belangrijk: anders heb je te weinig energie om te presteren</li><li>Sla je het ontbijt over, dan neem je vaker ongezonde <b>tussendoortjes</b></li><li>Veel zoete en vette tussendoortjes → te weinig bouwstoffen en beschermende stoffen</li></ul></div><div class="box"><h4>Eetstoornissen</h4><p>Bij een <b>eetstoornis</b> eet iemand niet normaal. Dat is slecht voor je gezondheid: je krijgt te weinig bouwstoffen en beschermende stoffen binnen.</p><div class="term" style="margin-top:.7rem"><b>Anorexia</b><span>Iemand blijft lijnen en wordt daardoor heel erg mager.</span></div><div class="term" style="margin-bottom:0"><b>Boulimia</b><span>Iemand heeft vreetbuien en wil het voedsel daarna weer uit zijn lichaam krijgen.</span></div><div class="call" style="margin-bottom:0;margin-top:.8rem">Heb je hier zelf mee te maken, of maak je je zorgen om iemand? Praat erover met je mentor, de schoolarts of je huisarts.</div></div></div><div class="check" onclick="toonCheck(this)"><p class="check-v">Waar heb je calcium voor nodig?</p><p class="check-a">Om botcellen te maken. Calcium heet ook wel kalk.</p><span class="check-hint">Tik voor het antwoord</span></div><div class="call sum"><b>Om te onthouden (7.3)</b><ul class="lst"><li><b>Bouwstoffen</b>: eiwitten, vetten, mineralen en water, om te groeien en sterk te blijven.</li><li><b>Beschermende stoffen</b>: vitaminen en mineralen, om gezond te blijven.</li><li><b>Calcium</b> is voor je botten, <b>ijzer</b> voor je bloedcellen.</li><li>De <b>schijf van vijf</b> heeft vijf vakken; eet elke dag iets uit elk vak.</li><li>Twee eetstoornissen: <b>anorexia</b> en <b>boulimia</b>.</li></ul></div>`},
 
- +'<div class="call warn"><b>Let op:</b> sommige voedingsstoffen horen bij <b>twee</b> groepen. Vetten zijn energierijk én bouwstof. Mineralen zijn bouwstof én beschermende stof.</div>'
-
- +'<div class="call sum"><b>Om te onthouden (7.1)</b><ul class="lst">'
- +'<li>Een <b>voedingsmiddel</b> is wat je eet of drinkt; daarin zitten <b>voedingsstoffen</b>.</li>'
- +'<li>Zes voedingsstoffen: koolhydraten, vetten, eiwitten, vitaminen, mineralen en water.</li>'
- +'<li><b>Energierijke stoffen</b> = bewegen en warm blijven. <b>Bouwstoffen</b> = groeien. <b>Beschermende stoffen</b> = gezond blijven.</li>'
- +'<li><b>Vezels</b> houden je darmen actief.</li></ul></div>'
-},
-{
- heading:'7.2 Energie',
- html:
- '<div class="g2">'
- +'<div class="box"><h4>Waar haal je energie uit?</h4>'
- +'<p><b>Energierijke stoffen</b> geven je lichaam energie: <b>koolhydraten</b> (zetmeel en suikers) en <b>vetten</b>.</p>'
- +'<p style="margin-top:.6rem">Je lichaam gebruikt die energie om te <b>bewegen</b> en om <b>warm te blijven</b>.</p></div>'
- +'<div class="box"><h4>Hoe meet je energie?</h4>'
- +'<p>De hoeveelheid energie in voeding geef je aan in <b>kilocalorieën (kcal)</b> of in <b>kilojoule (kJ)</b>. Beide staan op de verpakking.</p></div></div>'
-
- +'<div class="box"><h4>Hoeveel energie heb jij nodig?</h4>'
- +'<p>Dat verschilt per persoon en hangt af van drie dingen:</p>'
- +'<ol class="num"><li>Je <b>leeftijd</b></li><li>Hoeveel je <b>beweegt</b></li><li>Je <b>lichaamsbouw</b> en geslacht</li></ol>'
- +'<div class="call" style="margin-bottom:0">Een voetballer heeft veel meer energie nodig dan iemand die de hele dag zit.</div></div>'
-
- +'<h5 class="sub">Wat als je te veel eet?</h5>'
- +'<div class="g2">'
- +'<div class="box"><h4>Overgewicht</h4>'
- +'<p>Eet je <b>meer</b> energierijke stoffen dan je nodig hebt, dan slaat je lichaam die op als <b>vet</b>. Je wordt dan te dik: <b>overgewicht</b>.</p></div>'
- +'<div class="box"><h4>Tandbederf</h4>'
- +'<p><b>Bacteriën</b> in je mond maken van <b>suiker</b> een <b>zuur</b>. Dat zuur tast eerst het <b>glazuur</b> van je tanden aan en daarna het tandbeen. Zo ontstaan gaatjes.</p>'
- +'<div class="call" style="margin-bottom:0">Het mineraal <b>fluoride</b> maakt je tandglazuur sterker. Daarom zit het in tandpasta.</div></div></div>'
-
- +'<div class="call sum"><b>Om te onthouden (7.2)</b><ul class="lst">'
- +'<li>Energierijke stoffen zijn <b>koolhydraten</b> en <b>vetten</b>.</li>'
- +'<li>Energie meet je in <b>kilocalorieën (kcal)</b> of <b>kilojoule (kJ)</b>.</li>'
- +'<li>Hoeveel je nodig hebt hangt af van leeftijd, beweging en lichaamsbouw.</li>'
- +'<li>Te veel energierijke stoffen → <b>overgewicht</b>. Te veel suiker → <b>tandbederf</b>.</li></ul></div>'
-},
-{
- heading:'7.3 Bouwen en beschermen',
- html:
- '<div class="g2">'
- +'<div class="box"><h4>Bouwstoffen</h4>'
- +'<p>Bouwstoffen heb je nodig om te <b>groeien</b> en om je <b>botten en spieren sterk</b> te houden.</p>'
- +'<div class="term" style="margin-top:.7rem"><b>Eiwitten</b><span>Om nieuwe cellen te maken.</span></div>'
- +'<div class="term"><b>Vetten</b><span>Om celmembranen te maken.</span></div>'
- +'<div class="term"><b>Mineralen</b><span>Zoals calcium (kalk) voor botcellen en ijzer voor bloedcellen.</span></div>'
- +'<div class="term" style="margin-bottom:0"><b>Water</b><span>Je lichaam bestaat voor een groot deel uit water.</span></div></div>'
- +'<div class="box"><h4>Beschermende stoffen</h4>'
- +'<p>Beschermende stoffen heb je nodig om <b>gezond te blijven</b> en om je lichaam goed te laten werken.</p>'
- +'<div class="term" style="margin-top:.7rem"><b>Vitaminen</b><span>Er zijn verschillende soorten. Elke soort heeft een eigen taak.</span></div>'
- +'<div class="term" style="margin-bottom:0"><b>Mineralen</b><span>Zoals calcium, ijzer en fluoride.</span></div></div></div>'
-
- +'<div class="call warn"><b>Twee mineralen om te kennen:</b> <b>calcium</b> (ook wel kalk) voor je botten, en <b>ijzer</b> om nieuwe bloedcellen te maken.</div>'
-
- +'<h5 class="sub">Gezond eten: de schijf van vijf</h5>'
- +'<div class="box">'
- +'<p>Voor een gezond lichaam moet je <b>gevarieerd</b> eten: niet elke dag hetzelfde. De <b>schijf van vijf</b> helpt daarbij. Die heeft vijf vakken:</p>'
- +'<ol class="num"><li>Groente en fruit</li><li>Brood, pasta, rijst, aardappelen</li>'
- +'<li>Vlees, vis, ei, melkproducten, peulvruchten, noten</li><li>Olie en vetten</li><li>Dranken</li></ol>'
- +'<div class="call" style="margin-bottom:0">Je eet gezond als je elke dag <b>iets uit elk vak</b> eet. Uit een groter vak eet je méér dan uit een kleiner vak.</div></div>'
-
- +'<div class="g2" style="margin-top:1rem">'
- +'<div class="box"><h4>Ontbijten en tussendoortjes</h4>'
- +'<ul class="lst">'
- +'<li>Eet <b>drie maaltijden</b> per dag</li>'
- +'<li><b>Ontbijten</b> is belangrijk: anders heb je te weinig energie om te presteren</li>'
- +'<li>Sla je het ontbijt over, dan neem je vaker ongezonde <b>tussendoortjes</b></li>'
- +'<li>Veel zoete en vette tussendoortjes → te weinig bouwstoffen en beschermende stoffen</li></ul></div>'
- +'<div class="box"><h4>Eetstoornissen</h4>'
- +'<p>Bij een <b>eetstoornis</b> eet iemand niet normaal. Dat is slecht voor je gezondheid: je krijgt te weinig bouwstoffen en beschermende stoffen binnen.</p>'
- +'<div class="term" style="margin-top:.7rem"><b>Anorexia</b><span>Iemand blijft lijnen en wordt daardoor heel erg mager.</span></div>'
- +'<div class="term" style="margin-bottom:0"><b>Boulimia</b><span>Iemand heeft vreetbuien en wil het voedsel daarna weer uit zijn lichaam krijgen.</span></div>'
- +'<div class="call" style="margin-bottom:0;margin-top:.8rem">Heb je hier zelf mee te maken, of maak je je zorgen om iemand? Praat erover met je mentor, de schoolarts of je huisarts.</div></div></div>'
-
- +'<div class="call sum"><b>Om te onthouden (7.3)</b><ul class="lst">'
- +'<li><b>Bouwstoffen</b>: eiwitten, vetten, mineralen en water, om te groeien en sterk te blijven.</li>'
- +'<li><b>Beschermende stoffen</b>: vitaminen en mineralen, om gezond te blijven.</li>'
- +'<li><b>Calcium</b> is voor je botten, <b>ijzer</b> voor je bloedcellen.</li>'
- +'<li>De <b>schijf van vijf</b> heeft vijf vakken; eet elke dag iets uit elk vak.</li>'
- +'<li>Twee eetstoornissen: <b>anorexia</b> en <b>boulimia</b>.</li></ul></div>'
-},
-{
- heading:'7.4 Voedsel verteren',
- html:
- '<div class="g2">'
- +'<div class="box"><h4>Hoe slik je je eten door?</h4>'
- +'<p>Je bijt een hap af en kauwt hem fijn. Er komt <b>speeksel</b> bij en het eten verandert in een <b>voedselbrij</b>. Je tong duwt die in de keelholte.</p>'
- +'<p style="margin-top:.6rem">Bij het slikken kan het eten maar één kant op:</p>'
- +'<div class="term" style="margin-top:.5rem"><b>Huig</b><span>Sluit je <b>neusholte</b> af tijdens het slikken.</span></div>'
- +'<div class="term" style="margin-bottom:0"><b>Strotklepje</b><span>Sluit je <b>luchtpijp</b> af tijdens het slikken.</span></div>'
- +'<div class="call warn" style="margin-bottom:0;margin-top:.8rem">Moet je lachen terwijl je eet, dan sluit het <b>strotklepje</b> de luchtpijp niet goed af. Daarom verslik je je.</div></div>'
- +'<div class="box"><h4>De weg door je verteringsstelsel</h4>'
- +'<p class="dim">Je verteringsstelsel is eigenlijk één lange buis, opgevouwen in je buik.</p>'
- +'<ol class="num" style="margin-top:.5rem">'
- +'<li>Mond</li><li>Slokdarm</li><li>Maag</li><li>Twaalfvingerige darm</li>'
- +'<li>Dunne darm</li><li>Dikke darm</li><li>Endeldarm</li><li>Anus</li></ol></div></div>'
-
- +'<h5 class="sub">Vertering</h5>'
- +'<div class="g2">'
- +'<div class="box"><h4>Waarom is vertering nodig?</h4>'
- +'<p>Je organen krijgen voedingsstoffen via je <b>bloed</b>. Maar niet alles past er zomaar in:</p>'
- +'<ul class="lst" style="margin-top:.5rem">'
- +'<li><b>Water, mineralen en vitaminen</b> zijn klein genoeg en kunnen direct het bloed in</li>'
- +'<li><b>Eiwitten, vetten en koolhydraten</b> zijn te groot en moeten eerst kleiner</li></ul>'
- +'<p style="margin-top:.6rem">Het kleinmaken van voedingsstoffen heet <b>vertering</b>.</p></div>'
- +'<div class="box"><h4>De vier verteringssappen</h4>'
- +'<p><b>Verteringssappen</b> knippen grote voedingsstoffen in kleine stukjes.</p>'
- +'<div class="tblwrap" style="margin-top:.6rem"><table class="tbl">'
- +'<tr><th>Sap</th><th>Waar</th></tr>'
- +'<tr><td>Speeksel</td><td>in de mond</td></tr>'
- +'<tr><td>Maagsap</td><td>in de maag</td></tr>'
- +'<tr><td>Alvleessap</td><td>in de twaalfvingerige darm</td></tr>'
- +'<tr><td>Darmsap</td><td>in de dunne darm</td></tr></table></div></div></div>'
-
- +'<div class="call"><b>Zo werkt het:</b> zetmeel in brood is een lange ketting van glucosedeeltjes. Een verteringssap knipt die ketting stap voor stap door, tot er losse glucosedeeltjes overblijven. Die zijn klein genoeg om het bloed in te gaan.</div>'
-
- +'<h5 class="sub">Waar gaan de voedingsstoffen het bloed in?</h5>'
- +'<div class="g2">'
- +'<div class="box"><h4>De dunne darm</h4>'
- +'<p>In de <b>dunne darm</b> is de vertering klaar. Daar gaan de voedingsstoffen naar het bloed.</p>'
- +'<p style="margin-top:.6rem">De binnenkant bestaat uit <b>darmplooien</b>. Daardoor is het oppervlak heel <b>groot</b>, en passen er veel bloedvaatjes in de wand.</p>'
- +'<ol class="num" style="margin-top:.6rem">'
- +'<li>Door de wand van de dunne darm</li>'
- +'<li>Door de wand van de bloedvaatjes</li>'
- +'<li>Het bloed brengt ze naar alle organen</li></ol></div>'
- +'<div class="box"><h4>Wat blijft er over?</h4>'
- +'<p>Aan het eind van de dunne darm blijft een waterige pap over met onverteerbare resten, zoals vezels.</p>'
- +'<ul class="lst" style="margin-top:.5rem">'
- +'<li>In de <b>dikke darm</b> gaat het meeste <b>water</b> uit de pap naar het bloed</li>'
- +'<li>Er blijft een dikke massa over: de <b>ontlasting</b> (poep)</li>'
- +'<li>Die verzamelt in de <b>endeldarm</b> en verlaat je lichaam via de <b>anus</b></li></ul></div></div>'
-
- +'<div class="box" style="margin-top:1rem"><h4>Peristaltische bewegingen</h4>'
- +'<p>In de wanden van je verteringsorganen zitten <b>spieren</b>. Die trekken samen <b>achter</b> het voedsel en duwen de voedselbrij zo verder. Dat heten <b>peristaltische bewegingen</b>.</p>'
- +'<div class="call" style="margin-bottom:0">Vergelijk het met een balletje in een rubberen slang: je knijpt steeds áchter het balletje, en zo schuift het vooruit. Daarom kun je ook drinken terwijl je op je kop hangt.</div></div>'
-
- +'<div class="call sum"><b>Om te onthouden (7.4)</b><ul class="lst">'
- +'<li>Bij het slikken sluit de <b>huig</b> je neusholte en het <b>strotklepje</b> je luchtpijp af.</li>'
- +'<li>De weg: mond → slokdarm → maag → twaalfvingerige darm → dunne darm → dikke darm → endeldarm → anus.</li>'
- +'<li><b>Vertering</b> = voedingsstoffen zo klein maken dat ze het bloed in kunnen.</li>'
- +'<li>Vier verteringssappen: <b>speeksel, maagsap, alvleessap, darmsap</b>.</li>'
- +'<li>In de <b>dunne darm</b> gaan de voedingsstoffen naar het bloed, via de <b>darmplooien</b>.</li>'
- +'<li>In de <b>dikke darm</b> gaat het water eruit; wat overblijft is de <b>ontlasting</b>.</li></ul></div>'
-}
+{heading:'7.4 Voedsel verteren',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst"><li>de weg door je <b>verteringsstelsel</b></li><li>waarom <b>vertering</b> nodig is</li></ul></div><div class="g2"><div class="box"><h4>Hoe slik je je eten door?</h4><p>Je bijt een hap af en kauwt hem fijn. Er komt <b>speeksel</b> bij en het eten verandert in een <b>voedselbrij</b>. Je tong duwt die in de keelholte.</p><p style="margin-top:.6rem">Bij het slikken kan het eten maar één kant op:</p><div class="term" style="margin-top:.5rem"><b>Huig</b><span>Sluit je <b>neusholte</b> af tijdens het slikken.</span></div><div class="term" style="margin-bottom:0"><b>Strotklepje</b><span>Sluit je <b>luchtpijp</b> af tijdens het slikken.</span></div><div class="call warn" style="margin-bottom:0;margin-top:.8rem">Moet je lachen terwijl je eet, dan sluit het <b>strotklepje</b> de luchtpijp niet goed af. Daarom verslik je je.</div></div><div class="box"><h4>De weg door je verteringsstelsel</h4><p class="dim">Je verteringsstelsel is eigenlijk één lange buis, opgevouwen in je buik.</p><ol class="num" style="margin-top:.5rem"><li>Mond</li><li>Slokdarm</li><li>Maag</li><li>Twaalfvingerige darm</li><li>Dunne darm</li><li>Dikke darm</li><li>Endeldarm</li><li>Anus</li></ol></div></div><h5 class="sub">Vertering</h5><div class="g2"><div class="box"><h4>Waarom is vertering nodig?</h4><p>Je organen krijgen voedingsstoffen via je <b>bloed</b>. Maar niet alles past er zomaar in:</p><ul class="lst" style="margin-top:.5rem"><li><b>Water, mineralen en vitaminen</b> zijn klein genoeg en kunnen direct het bloed in</li><li><b>Eiwitten, vetten en koolhydraten</b> zijn te groot en moeten eerst kleiner</li></ul><p style="margin-top:.6rem">Het kleinmaken van voedingsstoffen heet <b>vertering</b>.</p></div><div class="box"><h4>De vier verteringssappen</h4><p><b>Verteringssappen</b> knippen grote voedingsstoffen in kleine stukjes.</p><div class="tblwrap" style="margin-top:.6rem"><table class="tbl"><tr><th>Sap</th><th>Waar</th></tr><tr><td>Speeksel</td><td>in de mond</td></tr><tr><td>Maagsap</td><td>in de maag</td></tr><tr><td>Alvleessap</td><td>in de twaalfvingerige darm</td></tr><tr><td>Darmsap</td><td>in de dunne darm</td></tr></table></div></div></div><div class="call"><b>Zo werkt het:</b> zetmeel in brood is een lange ketting van glucosedeeltjes. Een verteringssap knipt die ketting stap voor stap door, tot er losse glucosedeeltjes overblijven. Die zijn klein genoeg om het bloed in te gaan.</div><h5 class="sub">Waar gaan de voedingsstoffen het bloed in?</h5><div class="g2"><div class="box"><h4>De dunne darm</h4><p>In de <b>dunne darm</b> is de vertering klaar. Daar gaan de voedingsstoffen naar het bloed.</p><p style="margin-top:.6rem">De binnenkant bestaat uit <b>darmplooien</b>. Daardoor is het oppervlak heel <b>groot</b>, en passen er veel bloedvaatjes in de wand.</p><ol class="num" style="margin-top:.6rem"><li>Door de wand van de dunne darm</li><li>Door de wand van de bloedvaatjes</li><li>Het bloed brengt ze naar alle organen</li></ol></div><div class="box"><h4>Wat blijft er over?</h4><p>Aan het eind van de dunne darm blijft een waterige pap over met onverteerbare resten, zoals vezels.</p><ul class="lst" style="margin-top:.5rem"><li>In de <b>dikke darm</b> gaat het meeste <b>water</b> uit de pap naar het bloed</li><li>Er blijft een dikke massa over: de <b>ontlasting</b> (poep)</li><li>Die verzamelt in de <b>endeldarm</b> en verlaat je lichaam via de <b>anus</b></li></ul></div></div><div class="box" style="margin-top:1rem"><h4>Peristaltische bewegingen</h4><p>In de wanden van je verteringsorganen zitten <b>spieren</b>. Die trekken samen <b>achter</b> het voedsel en duwen de voedselbrij zo verder. Dat heten <b>peristaltische bewegingen</b>.</p><div class="call" style="margin-bottom:0">Vergelijk het met een balletje in een rubberen slang: je knijpt steeds áchter het balletje, en zo schuift het vooruit. Daarom kun je ook drinken terwijl je op je kop hangt.</div></div><div class="check" onclick="toonCheck(this)"><p class="check-v">Wat doet de huig bij het slikken?</p><p class="check-a">Die sluit je neusholte af.</p><span class="check-hint">Tik voor het antwoord</span></div><div class="call sum"><b>Om te onthouden (7.4)</b><ul class="lst"><li>Bij het slikken sluit de <b>huig</b> je neusholte en het <b>strotklepje</b> je luchtpijp af.</li><li>De weg: mond → slokdarm → maag → twaalfvingerige darm → dunne darm → dikke darm → endeldarm → anus.</li><li><b>Vertering</b> = voedingsstoffen zo klein maken dat ze het bloed in kunnen.</li><li>Vier verteringssappen: <b>speeksel, maagsap, alvleessap, darmsap</b>.</li><li>In de <b>dunne darm</b> gaan de voedingsstoffen naar het bloed, via de <b>darmplooien</b>.</li><li>In de <b>dikke darm</b> gaat het water eruit; wat overblijft is de <b>ontlasting</b>.</li></ul></div>`}
 ],
 terms:[
 ['alvleessap','Verteringssap dat in de twaalfvingerige darm bij het voedsel komt.'],

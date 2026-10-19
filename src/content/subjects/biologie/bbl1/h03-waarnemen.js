@@ -1,193 +1,24 @@
 import { registerChapter } from '../../../registry.js';
 
 /* Chapter 3 content: Zintuigen en prikkels (Nectar BBL year 1, part A) */
+/* Upgraded 2026-09-25 to the recipe of Economie TL4 H1 (change 6): every paragraph
+   got "Dit leer je" and a "Check jezelf" (taken from its own flashcard where
+   there was none), plus bold on its own glossary terms where it had little.
+   The text itself is unchanged. */
 registerChapter('biologie|bbl|1|3', {
 title:'Waarnemen',
 summary:[
-{
- heading:'3.1 Zintuigen en prikkels',
- html:
- '<div class="g2">'
- +'<div class="box"><h4>Wat is een prikkel?</h4><p>Met je <b>zintuigen</b> neem je waar wat er om je heen gebeurt. Een <b>prikkel</b> is informatie uit je omgeving. Elk zintuig is gevoelig voor een eigen prikkel.</p></div>'
- +'<div class="box"><h4>Zintuig en prikkel</h4><div class="tblwrap"><table class="tbl">'
- +'<tr><th>Zintuig</th><th>Prikkel</th></tr>'
- +'<tr><td>Oog</td><td>licht</td></tr>'
- +'<tr><td>Oor</td><td>geluid</td></tr>'
- +'<tr><td>Neus</td><td>geurstoffen</td></tr>'
- +'<tr><td>Tong</td><td>smaakstoffen</td></tr>'
- +'<tr><td>Huid</td><td>warmte, kou, pijn en aanraking</td></tr></table></div>'
- +'<div class="call" style="margin-bottom:0">De huid is het enige zintuig met <b>vier</b> verschillende prikkels.</div></div></div>'
+{heading:'3.1 Zintuigen en prikkels',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst"><li>wat een <b>prikkel</b> en een <b>zintuig</b> zijn</li><li>van <b>prikkel</b> naar <b>reactie</b> via je <b>zenuwstelsel</b></li></ul></div><div class="g2"><div class="box"><h4>Wat is een prikkel?</h4><p>Met je <b>zintuigen</b> neem je waar wat er om je heen gebeurt. Een <b>prikkel</b> is informatie uit je omgeving. Elk zintuig is gevoelig voor een eigen prikkel.</p></div><div class="box"><h4>Zintuig en prikkel</h4><div class="tblwrap"><table class="tbl"><tr><th>Zintuig</th><th>Prikkel</th></tr><tr><td>Oog</td><td>licht</td></tr><tr><td>Oor</td><td>geluid</td></tr><tr><td>Neus</td><td>geurstoffen</td></tr><tr><td>Tong</td><td>smaakstoffen</td></tr><tr><td>Huid</td><td>warmte, kou, pijn en aanraking</td></tr></table></div><div class="call" style="margin-bottom:0">De huid is het enige zintuig met <b>vier</b> verschillende prikkels.</div></div></div><h5 class="sub">Van prikkel naar reactie</h5><div class="box"><p>Als er een prikkel bij een zintuig komt, reageer je niet meteen. Er gebeurt eerst een hele reeks stappen:</p><ol class="num"><li>Het <b>zintuig</b> vangt de prikkel op</li><li>Het zintuig maakt van de prikkel een <b>bericht</b></li><li>Het bericht gaat via een <b>zenuw</b> naar je <b>hersenen</b></li><li>Pas in je hersenen <b>weet</b> je wat je waarneemt, en daar wordt beslist hoe je reageert</li><li>De hersenen sturen via een zenuw een bericht naar je <b>spieren</b></li><li>Je lichaam <b>reageert</b></li></ol><div class="call warn" style="margin-bottom:0"><b>Let op:</b> je weet pas wat je waarneemt als het bericht in je <b>hersenen</b> is. Niet in het zintuig, en ook niet in het ruggenmerg.</div></div><h5 class="sub">Het zenuwstelsel</h5><div class="g2"><div class="box"><h4>Drie delen</h4><div class="term"><b>Zenuwen</b><span>Dunne draden die berichten vervoeren.</span></div><div class="term"><b>Ruggenmerg</b><span>Ligt beschermd in je wervelkolom. Berichten gaan hier doorheen.</span></div><div class="term" style="margin-bottom:0"><b>Hersenen</b><span>Hier weet je wat je waarneemt en beslis je hoe je reageert.</span></div></div><div class="box"><h4>Waar liggen de zenuwen?</h4><ul class="lst"><li>Tussen de <b>zintuigen</b> en de hersenen</li><li>Tussen de <b>hersenen</b> en de spieren</li></ul><p style="margin-top:.6rem">De zenuwen lopen via je rug door het <b>ruggenmerg</b> naar je hersenen.</p></div></div><div class="check" onclick="toonCheck(this)"><p class="check-v">De weg van prikkel naar reactie</p><p class="check-a">Zintuig → bericht → zenuw → hersenen → zenuw → spieren → reactie.</p><span class="check-hint">Tik voor het antwoord</span></div><div class="call sum"><b>Om te onthouden (3.1)</b><ul class="lst"><li>Zintuigen vangen <b>prikkels</b> op: oog-licht, oor-geluid, neus-geurstoffen, tong-smaakstoffen, huid-warmte/kou/pijn/aanraking.</li><li>Zintuigen zetten prikkels om in <b>berichten</b>.</li><li>In je <b>hersenen</b> weet je wat je waarneemt en wordt beslist hoe je reageert.</li><li>Het <b>zenuwstelsel</b> bestaat uit zenuwen, ruggenmerg en hersenen.</li></ul></div>`},
 
- +'<h5 class="sub">Van prikkel naar reactie</h5>'
- +'<div class="box"><p>Als er een prikkel bij een zintuig komt, reageer je niet meteen. Er gebeurt eerst een hele reeks stappen:</p>'
- +'<ol class="num">'
- +'<li>Het <b>zintuig</b> vangt de prikkel op</li>'
- +'<li>Het zintuig maakt van de prikkel een <b>bericht</b></li>'
- +'<li>Het bericht gaat via een <b>zenuw</b> naar je <b>hersenen</b></li>'
- +'<li>Pas in je hersenen <b>weet</b> je wat je waarneemt, en daar wordt beslist hoe je reageert</li>'
- +'<li>De hersenen sturen via een zenuw een bericht naar je <b>spieren</b></li>'
- +'<li>Je lichaam <b>reageert</b></li></ol>'
- +'<div class="call warn" style="margin-bottom:0"><b>Let op:</b> je weet pas wat je waarneemt als het bericht in je <b>hersenen</b> is. Niet in het zintuig, en ook niet in het ruggenmerg.</div></div>'
+{heading:'3.2 Zien',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst"><li>de <b>bouw</b> van het <b>oog</b></li><li>hoe <b>zien</b> werkt en wat je <b>pupil</b> doet</li></ul></div><div class="g2"><div class="box"><h4>Wat zie je aan de buitenkant?</h4><ul class="lst"><li><b>Oogwit</b>: het witte deel dat je ziet, hoort bij het harde oogvlies</li><li><b>Iris</b>: het gekleurde deel (blauw, bruin, groen)</li><li><b>Pupil</b>: het zwarte gat midden in de iris</li></ul><p style="margin-top:.6rem">Je ogen liggen in de <b>oogkassen</b>, holtes in je schedel. Met <b>oogspieren</b> beweeg je ze.</p></div><div class="box"><h4>Hoe worden je ogen beschermd?</h4><div class="term"><b>Wenkbrauwen, oogleden en wimpers</b><span>Beschermen tegen stof en zweet.</span></div><div class="term"><b>Traanklier</b><span>Zit boven je oog en maakt traanvocht.</span></div><div class="term"><b>Traanvocht</b><span>Voorkomt uitdrogen en spoelt stof en vuiltjes weg.</span></div><div class="term" style="margin-bottom:0"><b>Traanbuis</b><span>Voert het traanvocht met vuil af naar je neus.</span></div></div></div><h5 class="sub">De drie lagen van het oog</h5><div class="g2"><div class="box"><h4>Van buiten naar binnen</h4><div class="tblwrap"><table class="tbl"><tr><th>Laag</th><th>Taak</th></tr><tr><td><b>Harde oogvlies</b></td><td>Buitenste laag, wit en stevig. Beschermt alles wat binnenin ligt. Het doorzichtige deel vooraan heet het <b>hoornvlies</b>.</td></tr><tr><td><b>Vaatvlies</b></td><td>Middelste laag met bloedvaatjes. Levert het oog de stoffen die het nodig heeft. Het gekleurde deel is de <b>iris</b>.</td></tr><tr><td><b>Netvlies</b></td><td>Binnenste laag. Zet de prikkel <i>licht</i> om in een bericht.</td></tr></table></div></div><figure class="fig"><svg viewBox="0 0 280 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Doorsnede van het oog"><circle cx="140" cy="110" r="82" fill="#f2ede2" stroke="#9aa4ae" stroke-width="5"/><circle cx="140" cy="110" r="72" fill="none" stroke="#c96a6a" stroke-width="6" opacity=".65"/><circle cx="140" cy="110" r="62" fill="none" stroke="var(--accent)" stroke-width="6" opacity=".85"/><path d="M58 110 a82 82 0 0 1 6-31 l0 62 a82 82 0 0 1 -6 -31Z" fill="none"/><path d="M62 82 Q44 110 62 138" fill="none" stroke="#bcd6e8" stroke-width="7"/><path d="M70 74 L70 96 M70 124 L70 146" stroke="#7a848e" stroke-width="8" stroke-linecap="round"/><ellipse cx="86" cy="110" rx="13" ry="26" fill="#cfe4f2" stroke="#7fa8c4" stroke-width="2"/><line x1="10" y1="110" x2="60" y2="110" stroke="#f9c116" stroke-width="3"/><line x1="60" y1="110" x2="200" y2="110" stroke="#f9c116" stroke-width="3" stroke-dasharray="5 4"/><path d="M212 92 Q250 96 268 78" fill="none" stroke="#b48ce0" stroke-width="7" stroke-linecap="round"/><g font-family="DM Sans" font-size="10" fill="#8b949e"><text x="8" y="102">licht</text><line x1="62" y1="150" x2="46" y2="182" stroke="#8b949e"/><text x="6" y="194">hoornvlies</text><line x1="86" y1="142" x2="96" y2="188" stroke="#8b949e"/><text x="76" y="200">lens</text><line x1="70" y1="66" x2="58" y2="34" stroke="#8b949e"/><text x="24" y="28">iris + pupil</text><line x1="200" y1="60" x2="228" y2="34" stroke="var(--accent)"/><text x="200" y="26" fill="var(--accent)">netvlies</text><line x1="206" y1="146" x2="238" y2="170" stroke="#c96a6a"/><text x="206" y="184" fill="#c96a6a">vaatvlies</text><text x="230" y="72" fill="#b48ce0">oogzenuw</text></g></svg><figcaption>Het licht gaat door: hoornvlies → pupil → lens → netvlies.</figcaption></figure></div><div class="box"><h4>Hoe werkt zien?</h4><ol class="num"><li>Licht kaatst terug van het voorwerp waar je naar kijkt</li><li>Het licht gaat je oog binnen: <b>hoornvlies → pupil → lens → netvlies</b></li><li>De <b>lens</b> zorgt dat je scherp ziet</li><li>Het <b>netvlies</b> zet de lichtprikkels om in een bericht</li><li>Dat bericht gaat via de <b>oogzenuw</b> naar je hersenen: dan pas weet je wat je ziet</li></ol></div><h5 class="sub">Drie dingen die je ogen zelf regelen</h5><div class="g3"><div class="box"><h4>Pupil groter of kleiner</h4><p>Spiertjes in de iris regelen hoeveel licht binnenkomt.</p><ul class="lst" style="margin-top:.5rem"><li><b>Weinig licht</b> → pupil groter</li><li><b>Veel licht</b> → pupil kleiner</li></ul><p class="dim" style="margin-top:.5rem">Zo beschadigt je netvlies niet bij fel licht.</p></div><div class="box"><h4>Diepte zien</h4><p>Je linkeroog ziet een iets ander beeld dan je rechteroog. Je hersenen maken van die twee beelden <b>één</b> beeld. Daardoor kun je afstand schatten.</p></div><div class="box"><h4>Scherp zien</h4><p>Je ooglens kan van vorm veranderen.</p><ul class="lst" style="margin-top:.5rem"><li><b>Bolle lens</b> → dichtbij scherp</li><li><b>Platte lens</b> → veraf scherp</li></ul></div></div><div class="check" onclick="toonCheck(this)"><p class="check-v">Wat zie je aan de buitenkant van je oog?</p><p class="check-a">Oogwit, iris en pupil.</p><span class="check-hint">Tik voor het antwoord</span></div><div class="call sum"><b>Om te onthouden (3.2)</b><ul class="lst"><li>Buitenkant: <b>oogwit, iris, pupil</b>. Bescherming: wenkbrauwen, oogleden, wimpers en traanvocht.</li><li>Drie lagen: <b>harde oogvlies</b> (met hoornvlies), <b>vaatvlies</b> (met iris), <b>netvlies</b>.</li><li>Weg van het licht: <b>hoornvlies → pupil → lens → netvlies</b>, daarna via de oogzenuw naar de hersenen.</li><li>Veel licht = pupil kleiner. Weinig licht = pupil groter.</li><li>Bolle lens = dichtbij scherp. Platte lens = veraf scherp.</li></ul></div>`},
 
- +'<h5 class="sub">Het zenuwstelsel</h5>'
- +'<div class="g2">'
- +'<div class="box"><h4>Drie delen</h4>'
- +'<div class="term"><b>Zenuwen</b><span>Dunne draden die berichten vervoeren.</span></div>'
- +'<div class="term"><b>Ruggenmerg</b><span>Ligt beschermd in je wervelkolom. Berichten gaan hier doorheen.</span></div>'
- +'<div class="term" style="margin-bottom:0"><b>Hersenen</b><span>Hier weet je wat je waarneemt en beslis je hoe je reageert.</span></div></div>'
- +'<div class="box"><h4>Waar liggen de zenuwen?</h4><ul class="lst">'
- +'<li>Tussen de <b>zintuigen</b> en de hersenen</li>'
- +'<li>Tussen de <b>hersenen</b> en de spieren</li></ul>'
- +'<p style="margin-top:.6rem">De zenuwen lopen via je rug door het <b>ruggenmerg</b> naar je hersenen.</p></div></div>'
+{heading:'3.3 Horen',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst"><li>de <b>bouw</b> van je <b>oor</b></li><li>hoe je geluid <b>hoort</b>: <b>sterkte</b> en <b>gehoorbereik</b></li></ul></div><div class="g2"><div class="box"><h4>De bouw van je oor</h4><p>Van buiten zie je maar een klein deel: de <b>oorschelp</b>. De rest zit in je schedel.</p><div class="term" style="margin-top:.6rem"><b>Oorschelp</b><span>Vangt geluidstrillingen op.</span></div><div class="term"><b>Gehoorgang</b><span>Hierin komt het opgevangen geluid.</span></div><div class="term"><b>Oorsmeerklieren</b><span>Maken oorsmeer. Dat houdt het trommelvlies soepel en beschermt tegen uitdroging en vuil.</span></div><div class="term"><b>Trommelvlies</b><span>Een vel dat strak gespannen staat, zoals bij een trommel.</span></div><div class="term"><b>Gehoorbeentjes</b><span>Drie botjes: <b>hamer, aambeeld, stijgbeugel</b>.</span></div><div class="term"><b>Slakkenhuis</b><span>Het gehoorzintuig. Bevat vloeistof en duizenden haartjes.</span></div><div class="term" style="margin-bottom:0"><b>Gehoorzenuw</b><span>Brengt de berichten naar je hersenen.</span></div></div><div class="box"><h4>Hoe hoor je geluid?</h4><p><b>Geluid is trillende lucht.</b> Een gitaar, een telefoon en een vliegtuig laten allemaal de lucht trillen.</p><ol class="num" style="margin-top:.6rem"><li>De <b>oorschelp</b> vangt de trillingen op</li><li>De trillende lucht gaat door de <b>gehoorgang</b></li><li>Het <b>trommelvlies</b> gaat trillen</li><li>De <b>gehoorbeentjes</b> gaan mee trillen</li><li>Zij geven de trillingen door aan het <b>slakkenhuis</b></li><li>De <b>haartjes</b> in het slakkenhuis zetten de trillingen om in een bericht</li><li>Via de <b>gehoorzenuw</b> gaat het bericht naar je hersenen</li></ol></div></div><h5 class="sub">Hoe hard en hoe hoog?</h5><div class="g2"><div class="box"><h4>Geluidssterkte</h4><p>Hoe hard een geluid is, noem je de <b>geluidssterkte</b>. Die meet je in <b>decibels</b>.</p><div class="call warn" style="margin-bottom:0">Te hard geluid kan je gehoor beschadigen. Werk je met lawaai, draag dan gehoorbescherming.</div></div><div class="box"><h4>Gehoorbereik</h4><p>Het <b>gehoorbereik</b> is het gebied tussen de laagste en de hoogste toon die je kunt horen.</p><div class="tblwrap" style="margin-top:.6rem"><table class="tbl"><tr><th></th><th>Mens</th></tr><tr><td>Onderste gehoorgrens</td><td>20 Hz</td></tr><tr><td>Bovenste gehoorgrens</td><td>20.000 Hz</td></tr></table></div><p class="dim" style="margin-top:.5rem">Honden, dolfijnen en vleermuizen horen veel hogere tonen. Daarom werkt een hondenfluitje wel bij een hond, maar hoor jij hem niet.</p></div></div><div class="check" onclick="toonCheck(this)"><p class="check-v">Welk deel van je oor zie je van buiten?</p><p class="check-a">Alleen de oorschelp.</p><span class="check-hint">Tik voor het antwoord</span></div><div class="call sum"><b>Om te onthouden (3.3)</b><ul class="lst"><li>Van buiten zie je alleen de <b>oorschelp</b>.</li><li>Weg van het geluid: oorschelp → gehoorgang → <b>trommelvlies</b> → <b>gehoorbeentjes</b> → <b>slakkenhuis</b> → gehoorzenuw → hersenen.</li><li>De drie gehoorbeentjes: <b>hamer, aambeeld, stijgbeugel</b>.</li><li><b>Geluid is trillende lucht.</b> De sterkte meet je in <b>decibels</b>.</li><li>Gehoorbereik van de mens: <b>20 tot 20.000 Hz</b>.</li></ul></div>`},
 
- +'<div class="call sum"><b>Om te onthouden (3.1)</b><ul class="lst">'
- +'<li>Zintuigen vangen <b>prikkels</b> op: oog-licht, oor-geluid, neus-geurstoffen, tong-smaakstoffen, huid-warmte/kou/pijn/aanraking.</li>'
- +'<li>Zintuigen zetten prikkels om in <b>berichten</b>.</li>'
- +'<li>In je <b>hersenen</b> weet je wat je waarneemt en wordt beslist hoe je reageert.</li>'
- +'<li>Het <b>zenuwstelsel</b> bestaat uit zenuwen, ruggenmerg en hersenen.</li></ul></div>'
-},
-{
- heading:'3.2 Zien',
- html:
- '<div class="g2">'
- +'<div class="box"><h4>Wat zie je aan de buitenkant?</h4><ul class="lst">'
- +'<li><b>Oogwit</b>: het witte deel dat je ziet, hoort bij het harde oogvlies</li>'
- +'<li><b>Iris</b>: het gekleurde deel (blauw, bruin, groen)</li>'
- +'<li><b>Pupil</b>: het zwarte gat midden in de iris</li></ul>'
- +'<p style="margin-top:.6rem">Je ogen liggen in de <b>oogkassen</b>, holtes in je schedel. Met <b>oogspieren</b> beweeg je ze.</p></div>'
- +'<div class="box"><h4>Hoe worden je ogen beschermd?</h4>'
- +'<div class="term"><b>Wenkbrauwen, oogleden en wimpers</b><span>Beschermen tegen stof en zweet.</span></div>'
- +'<div class="term"><b>Traanklier</b><span>Zit boven je oog en maakt traanvocht.</span></div>'
- +'<div class="term"><b>Traanvocht</b><span>Voorkomt uitdrogen en spoelt stof en vuiltjes weg.</span></div>'
- +'<div class="term" style="margin-bottom:0"><b>Traanbuis</b><span>Voert het traanvocht met vuil af naar je neus.</span></div></div></div>'
-
- +'<h5 class="sub">De drie lagen van het oog</h5>'
- +'<div class="g2">'
- +'<div class="box"><h4>Van buiten naar binnen</h4><div class="tblwrap"><table class="tbl">'
- +'<tr><th>Laag</th><th>Taak</th></tr>'
- +'<tr><td><b>Harde oogvlies</b></td><td>Buitenste laag, wit en stevig. Beschermt alles wat binnenin ligt. Het doorzichtige deel vooraan heet het <b>hoornvlies</b>.</td></tr>'
- +'<tr><td><b>Vaatvlies</b></td><td>Middelste laag met bloedvaatjes. Levert het oog de stoffen die het nodig heeft. Het gekleurde deel is de <b>iris</b>.</td></tr>'
- +'<tr><td><b>Netvlies</b></td><td>Binnenste laag. Zet de prikkel <i>licht</i> om in een bericht.</td></tr></table></div></div>'
- +'<figure class="fig"><svg viewBox="0 0 280 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Doorsnede van het oog">'
- +'<circle cx="140" cy="110" r="82" fill="#f2ede2" stroke="#9aa4ae" stroke-width="5"/>'
- +'<circle cx="140" cy="110" r="72" fill="none" stroke="#c96a6a" stroke-width="6" opacity=".65"/>'
- +'<circle cx="140" cy="110" r="62" fill="none" stroke="var(--accent)" stroke-width="6" opacity=".85"/>'
- +'<path d="M58 110 a82 82 0 0 1 6-31 l0 62 a82 82 0 0 1 -6 -31Z" fill="none"/>'
- +'<path d="M62 82 Q44 110 62 138" fill="none" stroke="#bcd6e8" stroke-width="7"/>'
- +'<path d="M70 74 L70 96 M70 124 L70 146" stroke="#7a848e" stroke-width="8" stroke-linecap="round"/>'
- +'<ellipse cx="86" cy="110" rx="13" ry="26" fill="#cfe4f2" stroke="#7fa8c4" stroke-width="2"/>'
- +'<line x1="10" y1="110" x2="60" y2="110" stroke="#f9c116" stroke-width="3"/>'
- +'<line x1="60" y1="110" x2="200" y2="110" stroke="#f9c116" stroke-width="3" stroke-dasharray="5 4"/>'
- +'<path d="M212 92 Q250 96 268 78" fill="none" stroke="#b48ce0" stroke-width="7" stroke-linecap="round"/>'
- +'<g font-family="DM Sans" font-size="10" fill="#8b949e">'
- +'<text x="8" y="102">licht</text>'
- +'<line x1="62" y1="150" x2="46" y2="182" stroke="#8b949e"/><text x="6" y="194">hoornvlies</text>'
- +'<line x1="86" y1="142" x2="96" y2="188" stroke="#8b949e"/><text x="76" y="200">lens</text>'
- +'<line x1="70" y1="66" x2="58" y2="34" stroke="#8b949e"/><text x="24" y="28">iris + pupil</text>'
- +'<line x1="200" y1="60" x2="228" y2="34" stroke="var(--accent)"/><text x="200" y="26" fill="var(--accent)">netvlies</text>'
- +'<line x1="206" y1="146" x2="238" y2="170" stroke="#c96a6a"/><text x="206" y="184" fill="#c96a6a">vaatvlies</text>'
- +'<text x="230" y="72" fill="#b48ce0">oogzenuw</text></g>'
- +'</svg><figcaption>Het licht gaat door: hoornvlies → pupil → lens → netvlies.</figcaption></figure></div>'
-
- +'<div class="box"><h4>Hoe werkt zien?</h4><ol class="num">'
- +'<li>Licht kaatst terug van het voorwerp waar je naar kijkt</li>'
- +'<li>Het licht gaat je oog binnen: <b>hoornvlies → pupil → lens → netvlies</b></li>'
- +'<li>De <b>lens</b> zorgt dat je scherp ziet</li>'
- +'<li>Het <b>netvlies</b> zet de lichtprikkels om in een bericht</li>'
- +'<li>Dat bericht gaat via de <b>oogzenuw</b> naar je hersenen: dan pas weet je wat je ziet</li></ol></div>'
-
- +'<h5 class="sub">Drie dingen die je ogen zelf regelen</h5>'
- +'<div class="g3">'
- +'<div class="box"><h4>Pupil groter of kleiner</h4><p>Spiertjes in de iris regelen hoeveel licht binnenkomt.</p>'
- +'<ul class="lst" style="margin-top:.5rem"><li><b>Weinig licht</b> → pupil groter</li><li><b>Veel licht</b> → pupil kleiner</li></ul>'
- +'<p class="dim" style="margin-top:.5rem">Zo beschadigt je netvlies niet bij fel licht.</p></div>'
- +'<div class="box"><h4>Diepte zien</h4><p>Je linkeroog ziet een iets ander beeld dan je rechteroog. Je hersenen maken van die twee beelden <b>één</b> beeld. Daardoor kun je afstand schatten.</p></div>'
- +'<div class="box"><h4>Scherp zien</h4><p>Je ooglens kan van vorm veranderen.</p>'
- +'<ul class="lst" style="margin-top:.5rem"><li><b>Bolle lens</b> → dichtbij scherp</li><li><b>Platte lens</b> → veraf scherp</li></ul></div></div>'
-
- +'<div class="call sum"><b>Om te onthouden (3.2)</b><ul class="lst">'
- +'<li>Buitenkant: <b>oogwit, iris, pupil</b>. Bescherming: wenkbrauwen, oogleden, wimpers en traanvocht.</li>'
- +'<li>Drie lagen: <b>harde oogvlies</b> (met hoornvlies), <b>vaatvlies</b> (met iris), <b>netvlies</b>.</li>'
- +'<li>Weg van het licht: <b>hoornvlies → pupil → lens → netvlies</b>, daarna via de oogzenuw naar de hersenen.</li>'
- +'<li>Veel licht = pupil kleiner. Weinig licht = pupil groter.</li>'
- +'<li>Bolle lens = dichtbij scherp. Platte lens = veraf scherp.</li></ul></div>'
-},
-{
- heading:'3.3 Horen',
- html:
- '<div class="g2">'
- +'<div class="box"><h4>De bouw van je oor</h4><p>Van buiten zie je maar een klein deel: de <b>oorschelp</b>. De rest zit in je schedel.</p>'
- +'<div class="term" style="margin-top:.6rem"><b>Oorschelp</b><span>Vangt geluidstrillingen op.</span></div>'
- +'<div class="term"><b>Gehoorgang</b><span>Hierin komt het opgevangen geluid.</span></div>'
- +'<div class="term"><b>Oorsmeerklieren</b><span>Maken oorsmeer. Dat houdt het trommelvlies soepel en beschermt tegen uitdroging en vuil.</span></div>'
- +'<div class="term"><b>Trommelvlies</b><span>Een vel dat strak gespannen staat, zoals bij een trommel.</span></div>'
- +'<div class="term"><b>Gehoorbeentjes</b><span>Drie botjes: <b>hamer, aambeeld, stijgbeugel</b>.</span></div>'
- +'<div class="term"><b>Slakkenhuis</b><span>Het gehoorzintuig. Bevat vloeistof en duizenden haartjes.</span></div>'
- +'<div class="term" style="margin-bottom:0"><b>Gehoorzenuw</b><span>Brengt de berichten naar je hersenen.</span></div></div>'
- +'<div class="box"><h4>Hoe hoor je geluid?</h4><p><b>Geluid is trillende lucht.</b> Een gitaar, een telefoon en een vliegtuig laten allemaal de lucht trillen.</p>'
- +'<ol class="num" style="margin-top:.6rem">'
- +'<li>De <b>oorschelp</b> vangt de trillingen op</li>'
- +'<li>De trillende lucht gaat door de <b>gehoorgang</b></li>'
- +'<li>Het <b>trommelvlies</b> gaat trillen</li>'
- +'<li>De <b>gehoorbeentjes</b> gaan mee trillen</li>'
- +'<li>Zij geven de trillingen door aan het <b>slakkenhuis</b></li>'
- +'<li>De <b>haartjes</b> in het slakkenhuis zetten de trillingen om in een bericht</li>'
- +'<li>Via de <b>gehoorzenuw</b> gaat het bericht naar je hersenen</li></ol></div></div>'
-
- +'<h5 class="sub">Hoe hard en hoe hoog?</h5>'
- +'<div class="g2">'
- +'<div class="box"><h4>Geluidssterkte</h4><p>Hoe hard een geluid is, noem je de <b>geluidssterkte</b>. Die meet je in <b>decibels</b>.</p>'
- +'<div class="call warn" style="margin-bottom:0">Te hard geluid kan je gehoor beschadigen. Werk je met lawaai, draag dan gehoorbescherming.</div></div>'
- +'<div class="box"><h4>Gehoorbereik</h4><p>Het <b>gehoorbereik</b> is het gebied tussen de laagste en de hoogste toon die je kunt horen.</p>'
- +'<div class="tblwrap" style="margin-top:.6rem"><table class="tbl">'
- +'<tr><th></th><th>Mens</th></tr>'
- +'<tr><td>Onderste gehoorgrens</td><td>20 Hz</td></tr>'
- +'<tr><td>Bovenste gehoorgrens</td><td>20.000 Hz</td></tr></table></div>'
- +'<p class="dim" style="margin-top:.5rem">Honden, dolfijnen en vleermuizen horen veel hogere tonen. Daarom werkt een hondenfluitje wel bij een hond, maar hoor jij hem niet.</p></div></div>'
-
- +'<div class="call sum"><b>Om te onthouden (3.3)</b><ul class="lst">'
- +'<li>Van buiten zie je alleen de <b>oorschelp</b>.</li>'
- +'<li>Weg van het geluid: oorschelp → gehoorgang → <b>trommelvlies</b> → <b>gehoorbeentjes</b> → <b>slakkenhuis</b> → gehoorzenuw → hersenen.</li>'
- +'<li>De drie gehoorbeentjes: <b>hamer, aambeeld, stijgbeugel</b>.</li>'
- +'<li><b>Geluid is trillende lucht.</b> De sterkte meet je in <b>decibels</b>.</li>'
- +'<li>Gehoorbereik van de mens: <b>20 tot 20.000 Hz</b>.</li></ul></div>'
-},
-{
- heading:'3.4 Ruiken en proeven',
- html:
- '<div class="g2">'
- +'<div class="box"><h4>Hoe ruik je?</h4><p>Het <b>reukzintuig</b> ligt bovenin je neusholte, in het <b>neusslijmvlies</b>. Dat slijmvlies houdt je neusholte vochtig.</p>'
- +'<ol class="num" style="margin-top:.6rem">'
- +'<li>Met de lucht die je inademt komen <b>geurstoffen</b> mee</li>'
- +'<li>Die prikkelen het <b>reukzintuig</b></li>'
- +'<li>Het reukzintuig maakt er een bericht van</li>'
- +'<li>Via de <b>reukzenuw</b> gaat het naar je hersenen</li>'
- +'<li>Je ruikt de geur</li></ol>'
- +'<div class="call" style="margin-bottom:0">Ruiken is belangrijk: je kunt eraan ruiken of eten bedorven is, en je neus waarschuwt je voor gevaarlijke stoffen zoals aardgas.</div></div>'
- +'<div class="box"><h4>Hoe proef je?</h4><p>Het oppervlak van je tong is ruw door de <b>smaakpapillen</b>: kleine uitsteeksels. Daartússen liggen de <b>smaakzintuigen</b>.</p>'
- +'<p style="margin-top:.6rem">Als je eet, komen er <b>smaakstoffen</b> op je tong. Die prikkelen de smaakzintuigen, die berichten naar je hersenen sturen.</p>'
- +'<div class="call warn" style="margin-bottom:0"><b>Let op het verschil:</b> smaakpapillen zijn de <i>uitsteeksels</i>, smaakzintuigen zijn de <i>zintuigen ertussen</i>. Die twee worden vaak verwisseld.</div></div></div>'
-
- +'<h5 class="sub">De vijf smaken</h5>'
- +'<div class="box"><p>Je hebt <b>vijf soorten smaakzintuigen</b>. Elke soort is gevoelig voor één smaak:</p>'
- +'<div class="tblwrap"><table class="tbl">'
- +'<tr><th>Smaak</th><th>Voorbeeld</th></tr>'
- +'<tr><td>Zoet</td><td>suiker, snoep</td></tr>'
- +'<tr><td>Zout</td><td>chips, spekjes</td></tr>'
- +'<tr><td>Zuur</td><td>citroen, azijn</td></tr>'
- +'<tr><td>Bitter</td><td>koffie, pure chocolade</td></tr>'
- +'<tr><td>Umami (hartig)</td><td>oude kaas, vlees</td></tr></table></div></div>'
-
- +'<div class="box" style="margin-top:1rem"><h4>Proeven is smaak én geur samen</h4>'
- +'<p>Als je iets eet, gebruik je niet alleen je tong. Je hersenen voegen de informatie van je <b>smaakzintuigen</b> en je <b>reukzintuig</b> samen. Dat noem je <b>proeven</b>.</p>'
- +'<div class="call" style="margin-bottom:0">Daarom proef je bijna niets als je verkouden bent: je reukzintuig doet dan niet mee.</div></div>'
-
- +'<div class="call sum"><b>Om te onthouden (3.4)</b><ul class="lst">'
- +'<li>Het <b>reukzintuig</b> ligt in het neusslijmvlies bovenin je neus. De prikkel is <b>geurstoffen</b>.</li>'
- +'<li>Op je tong liggen <b>smaakpapillen</b>; daartussen de <b>smaakzintuigen</b>. De prikkel is <b>smaakstoffen</b>.</li>'
- +'<li>Vijf smaken: <b>zoet, zout, zuur, bitter, umami</b>.</li>'
- +'<li><b>Proeven</b> = je hersenen voegen smaak en geur samen.</li></ul></div>'
-}
+{heading:'3.4 Ruiken en proeven',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst"><li>hoe je <b>ruikt</b> en <b>proeft</b></li><li>de <b>vijf smaken</b></li></ul></div><div class="g2"><div class="box"><h4>Hoe ruik je?</h4><p>Het <b>reukzintuig</b> ligt bovenin je neusholte, in het <b>neusslijmvlies</b>. Dat slijmvlies houdt je neusholte vochtig.</p><ol class="num" style="margin-top:.6rem"><li>Met de lucht die je inademt komen <b>geurstoffen</b> mee</li><li>Die prikkelen het <b>reukzintuig</b></li><li>Het reukzintuig maakt er een bericht van</li><li>Via de <b>reukzenuw</b> gaat het naar je hersenen</li><li>Je ruikt de geur</li></ol><div class="call" style="margin-bottom:0">Ruiken is belangrijk: je kunt eraan ruiken of eten bedorven is, en je neus waarschuwt je voor gevaarlijke stoffen zoals aardgas.</div></div><div class="box"><h4>Hoe proef je?</h4><p>Het oppervlak van je tong is ruw door de <b>smaakpapillen</b>: kleine uitsteeksels. Daartússen liggen de <b>smaakzintuigen</b>.</p><p style="margin-top:.6rem">Als je eet, komen er <b>smaakstoffen</b> op je tong. Die prikkelen de smaakzintuigen, die berichten naar je hersenen sturen.</p><div class="call warn" style="margin-bottom:0"><b>Let op het verschil:</b> smaakpapillen zijn de <i>uitsteeksels</i>, smaakzintuigen zijn de <i>zintuigen ertussen</i>. Die twee worden vaak verwisseld.</div></div></div><h5 class="sub">De vijf smaken</h5><div class="box"><p>Je hebt <b>vijf soorten smaakzintuigen</b>. Elke soort is gevoelig voor één smaak:</p><div class="tblwrap"><table class="tbl"><tr><th>Smaak</th><th>Voorbeeld</th></tr><tr><td>Zoet</td><td>suiker, snoep</td></tr><tr><td>Zout</td><td>chips, spekjes</td></tr><tr><td>Zuur</td><td>citroen, azijn</td></tr><tr><td>Bitter</td><td>koffie, pure chocolade</td></tr><tr><td>Umami (hartig)</td><td>oude kaas, vlees</td></tr></table></div></div><div class="box" style="margin-top:1rem"><h4>Proeven is smaak én geur samen</h4><p>Als je iets eet, gebruik je niet alleen je tong. Je hersenen voegen de informatie van je <b>smaakzintuigen</b> en je <b>reukzintuig</b> samen. Dat noem je <b>proeven</b>.</p><div class="call" style="margin-bottom:0">Daarom proef je bijna niets als je verkouden bent: je reukzintuig doet dan niet mee.</div></div><div class="check" onclick="toonCheck(this)"><p class="check-v">Waar ligt het reukzintuig?</p><p class="check-a">In het neusslijmvlies, bovenin je neusholte.</p><span class="check-hint">Tik voor het antwoord</span></div><div class="call sum"><b>Om te onthouden (3.4)</b><ul class="lst"><li>Het <b>reukzintuig</b> ligt in het neusslijmvlies bovenin je neus. De prikkel is <b>geurstoffen</b>.</li><li>Op je tong liggen <b>smaakpapillen</b>; daartussen de <b>smaakzintuigen</b>. De prikkel is <b>smaakstoffen</b>.</li><li>Vijf smaken: <b>zoet, zout, zuur, bitter, umami</b>.</li><li><b>Proeven</b> = je hersenen voegen smaak en geur samen.</li></ul></div>`}
 ],
 terms:[
 ['berichten','Ontstaan in een zintuig uit een prikkel; gaan via zenuwen naar je hersenen en van je hersenen naar je spieren.'],

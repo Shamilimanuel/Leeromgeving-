@@ -1,10 +1,13 @@
-/* Help dialog with a few slides. Opens by itself the first time a device
+/* Help dialog with a few slides. Opens by itself the first time a student
    reaches the home screen, and never again after that -- until 2.7 the
    "seen" flag lived only in memory, so the tour came back on every visit.
-   Uitleg in the tools menu opens it on demand. */
+   Since 2.8 the flag is kept on the device and on the account, so a
+   signed-in student also doesn't get it again on a new phone or after
+   clearing the browser. Uitleg in the tools menu opens it on demand. */
 import { $, setHtml, icon } from '../lib/dom.js';
 import { onEnter, SCREENS } from './navigation.js';
 import { readString, writeString, STORAGE_KEYS as K } from '../lib/storage.js';
+import { restoreSession, accountHelpSeen, rememberAccountHelpSeen } from '../services/auth.js';
 
 const SLIDES = [
   ['Welkom bij Samenvattingen', 'Deze site helpt je stap voor stap naar de juiste samenvatting. Los overhoren, quizzen maken en flashcards oefenen.', 'hand'],
@@ -33,6 +36,7 @@ export function openHelp(n) {
 function rememberSeen() {
   helpSeen = true;
   writeString(K.helpSeen, '1');
+  rememberAccountHelpSeen();
 }
 
 export function closeHelp() {
@@ -76,7 +80,14 @@ export function initHelp() {
   onEnter((id) => {
     if (id === SCREENS.home && !helpSeen) {
       helpSeen = true;          // in memory only: "Wat is er nieuw?" may still cancel it
-      setTimeout(() => { if (!$('helpwrap').classList.contains('open')) openHelp(0); rememberSeen(); }, AUTO_OPEN_DELAY_MS);
+      setTimeout(async () => {
+        await restoreSession();
+        if (!accountHelpSeen() && !$('helpwrap').classList.contains('open')) openHelp(0);
+        rememberSeen();
+      }, AUTO_OPEN_DELAY_MS);
+    } else if (id === SCREENS.home) {
+      /* Seen on this device before 2.8: carry that over to the account. */
+      restoreSession().then(rememberAccountHelpSeen);
     }
   });
 }

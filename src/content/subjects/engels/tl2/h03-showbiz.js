@@ -1,14 +1,104 @@
 import { registerChapter } from '../../../registry.js';
 
+/* Rebuilt 2026-09-25 to the recipe of Economie TL4 H1 (change 6). Same
+   grammar and Theme words, restructured. Terms, cards and quiz unchanged. */
 registerChapter('engels|tl|2|3', {
 title:'Showbiz',
 summary:[
-{heading:'Showbiz and entertainment',html:'<div class=\'box\'><h4>Waar gaat dit hoofdstuk over?</h4><p>Dit hoofdstuk gaat over showbiz en entertainment: beroemdheden, films en series. Je leert hoe je je mening geeft, iets aanraadt en films of series met elkaar vergelijkt. Ook leer je <b>bijvoeglijke naamwoorden</b> gebruiken om mensen en dingen te beschrijven, en de <b>present perfect</b> (has helped) om te praten over ervaringen en over dingen die in het verleden begonnen zijn en nog steeds doorgaan. Het hoofdstuk speelt zich af in Los Angeles, met de beroemde Hollywood Walk of Fame.</p></div> <div class=\'call\'>Weetje: de eindopdracht (Task) van dit hoofdstuk is het schrijven van een review over een film of serie, van minstens 120 woorden, met een sterrenbeoordeling en een quote.</div><div class=\'box\'><h4>Showbiz and entertainment</h4><p>Deze Theme words gebruik je om over beroemdheden en optredens te praten.</p></div> <div class=\'tblwrap\'><table class=\'tbl\'> <tr><th>Engels</th><th>Nederlands</th></tr> <tr><td>(to) applaud</td><td>applaudisseren, toejuichen</td></tr> <tr><td>audience</td><td>publiek</td></tr> <tr><td>autograph</td><td>handtekening</td></tr> <tr><td>backstage</td><td>achter de schermen</td></tr> <tr><td>breakthrough</td><td>doorbraak</td></tr> <tr><td>celebrity</td><td>beroemdheid</td></tr> <tr><td>dressing room</td><td>kleedkamer</td></tr> <tr><td>(to) entertain</td><td>vermaken</td></tr> <tr><td>glamorous</td><td>aantrekkelijk, betoverend</td></tr> <tr><td>publicity</td><td>bekendheid, publiciteit</td></tr> <tr><td>red carpet</td><td>rode loper</td></tr> <tr><td>(to) rehearse</td><td>repeteren</td></tr> </table></div> <div class=\'voorbeeld\'><p>The celebrity walked the red carpet and signed autographs for the audience before going backstage to her dressing room.</p></div>'},
-{heading:'Linking words',html:'<div class=\'box\'><h4>Linking words</h4><p>Met <b>linking words</b> (voegwoorden) verbind je zinnen in een tekst met elkaar. Sommige laten een connectie tussen zinnen zien, andere laten zien dat nieuwe informatie eerdere informatie tegenspreekt. Linking words kunnen aan het begin, het midden of het einde van een zin staan.</p></div> <div class=\'tblwrap\'><table class=\'tbl\'> <tr><th>Engels</th><th>Nederlands</th></tr> <tr><td>also</td><td>ook, bovendien</td></tr> <tr><td>although</td><td>hoewel, alhoewel</td></tr> <tr><td>because</td><td>omdat</td></tr> <tr><td>but</td><td>maar</td></tr> <tr><td>clearly</td><td>duidelijk</td></tr> <tr><td>first</td><td>ten eerste</td></tr> <tr><td>for example</td><td>bijvoorbeeld</td></tr> <tr><td>however</td><td>echter</td></tr> <tr><td>in fact</td><td>in feite, eigenlijk</td></tr> <tr><td>next</td><td>vervolgens</td></tr> <tr><td>obviously</td><td>duidelijk, vanzelfsprekend</td></tr> <tr><td>since</td><td>aangezien</td></tr> <tr><td>such as</td><td>zoals</td></tr> <tr><td>too</td><td>ook</td></tr> </table></div> <div class=\'call sum\'><b>Om te onthouden</b><ul class=\'lst\'> <li>Voorbeelden van linking words die een <b>connectie</b> laten zien: also, because, for example, since, such as.</li> <li>Voorbeelden van linking words die een <b>tegenstelling</b> laten zien: but, however, although.</li> </ul></div> <div class=\'call warn\'><b>Veelgemaakte fout:</b> na \'although\' gebruik je een volledige zin (onderwerp + werkwoord), niet alleen een woord. \'Although he\'s very famous, he is still nice.\'</div>'},
-{heading:'Expressing your opinion',html:'<div class=\'box\'><h4>Expressing your opinion</h4><p>Deze Theme words gebruik je om te zeggen wat je van iets vindt.</p></div> <div class=\'tblwrap\'><table class=\'tbl\'> <tr><th>Engels</th><th>Nederlands</th></tr> <tr><td>annoying</td><td>ergerlijk, vervelend</td></tr> <tr><td>awful</td><td>verschrikkelijk</td></tr> <tr><td>charming</td><td>aantrekkelijk, charmant</td></tr> <tr><td>disappointing</td><td>teleurstellend</td></tr> <tr><td>impressive</td><td>indrukwekkend</td></tr> <tr><td>remarkable</td><td>opmerkelijk, opvallend</td></tr> <tr><td>silly</td><td>dwaas, onnozel</td></tr> <tr><td>surprising</td><td>verrassend</td></tr> <tr><td>terrible</td><td>verschrikkelijk, vreselijk</td></tr> <tr><td>thrilling</td><td>spannend, opwindend</td></tr> <tr><td>weird</td><td>raar, vreemd</td></tr> <tr><td>wonderful</td><td>prachtig, schitterend</td></tr> </table></div> <div class=\'voorbeeld\'><p>I would recommend this romantic comedy, it\'s a must-see. The movie\'s a bit like Pirates of the Caribbean, although it\'s not as funny or entertaining.</p></div>'},
-{heading:'Films and series',html:'<div class=\'box\'><h4>Films and series</h4><p>Deze Theme words gebruik je om films en series te beschrijven en te vergelijken.</p></div> <div class=\'tblwrap\'><table class=\'tbl\'> <tr><th>Engels</th><th>Nederlands</th></tr> <tr><td>blockbuster</td><td>kaskraker</td></tr> <tr><td>cast</td><td>rolverdeling</td></tr> <tr><td>director</td><td>regisseur</td></tr> <tr><td>episode</td><td>aflevering</td></tr> <tr><td>preview</td><td>voorvertoning</td></tr> <tr><td>(to) rate</td><td>waarderen, beoordelen</td></tr> <tr><td>remake</td><td>nieuwe versie</td></tr> <tr><td>sequel</td><td>vervolg</td></tr> <tr><td>(to) shoot (a film)</td><td>filmen, een film opnemen</td></tr> <tr><td>(to) star</td><td>de hoofdrol spelen</td></tr> <tr><td>storyline</td><td>verhaallijn</td></tr> <tr><td>subtitles</td><td>ondertiteling</td></tr> </table></div> <div class=\'call\'>De nieuwe Star Wars film is \'not as thrilling as I expected\'. The second Bourne movie is \'more exciting than other action films\'. Zo vergelijk je twee films met elkaar.</div>'},
-{heading:'Bijvoeglijke naamwoorden',html:'<div class=\'box\'><h4>Bijvoeglijke naamwoorden (adjectives)</h4><p>Je gebruikt bijvoeglijke naamwoorden om mensen, dieren en dingen te beschrijven. Een bijvoeglijk naamwoord geeft meer informatie over het zelfstandig naamwoord.</p></div> <div class=\'g2\'> <div class=\'box\'><h4>Vóór het zelfstandig naamwoord</h4><p>Meestal staat het bijvoeglijk naamwoord direct vóór het zelfstandig naamwoord.<br>My parents have a <b>blue</b> car.<br>She was a <b>famous</b> tennis player.</p></div> <div class=\'box\'><h4>Achter het werkwoord</h4><p>Soms staat het bijvoeglijk naamwoord achter het werkwoord. Dit is zo bij werkwoorden als <i>to be</i>, <i>become</i>, <i>appear</i>, <i>feel</i>, <i>look</i> en <i>seem</i>.<br>Their garden is <b>beautiful</b>.<br>The weather was <b>terrible</b>.</p></div> </div> <div class=\'voorbeeld\'><p>A brave prince is trapped in the tall tower. The mean wizard casts a powerful spell.</p></div> <div class=\'call\'>Tip: gebruik een woordenboek om de betekenis van een bijvoeglijk naamwoord op te zoeken. Zoek altijd de basisvorm op (bijvoorbeeld \'clear\', niet \'clearer\') en kies de betekenis die het beste bij de zin past.</div>'},
-{heading:'Present perfect',html:'<div class=\'box\'><h4>Present perfect: has helped</h4><p>Je gebruikt de <b>present perfect</b> voor twee dingen: ervaringen, en dingen die in het verleden begonnen zijn en nu nog steeds aan de gang zijn.</p></div> <div class=\'tblwrap\'><table class=\'tbl\'> <tr><th>Onderwerp</th><th>Vorm</th><th>Voorbeeld</th></tr> <tr><td>I / you / we / they</td><td>have + voltooid deelwoord</td><td>I have never seen Lana del Rey live.</td></tr> <tr><td>he / she / it</td><td>has + voltooid deelwoord</td><td>The show has been in theatres for weeks.</td></tr> </table></div> <div class=\'call sum\'><b>Om te onthouden</b><ul class=\'lst\'> <li>Gebruik 1: een <b>ervaring</b> uit het verleden (het is niet belangrijk wanneer precies). \'I have never seen Lana del Rey live.\'</li> <li>Gebruik 2: iets dat in het verleden <b>begon</b> en <b>nu nog steeds doorgaat</b>. \'We have lived here since 2014.\'</li> </ul></div> <div class=\'call\'>Signaalwoorden bij de present perfect: <i>since</i>, <i>for</i>, <i>always</i>, <i>ever</i>, <i>never</i>, <i>how long?</i>, <i>often</i>, <i>sometimes</i>, <i>now</i>.</div> <div class=\'vergelijk\'><p><b>Present perfect:</b> It has been in theatres since 5th May. (loopt nog steeds door)<br><b>Past simple:</b> They shot the film in the late 1990s. (helemaal afgesloten, met een tijdsaanduiding uit het verleden)</p></div> <div class=\'call warn\'><b>Veelgemaakte fout:</b> gebruik de present perfect niet samen met een afgesloten tijdsaanduiding zoals \'yesterday\' of \'in 2019\', daarvoor gebruik je de past simple.</div>'}
+{heading:'Showbiz and entertainment',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>woorden over <b>beroemdheden</b> en <b>optredens</b></li></ul></div>`
++`<div class="box"><h4>Waar dit hoofdstuk over gaat</h4><p>Dit hoofdstuk gaat over <b>showbiz</b>: beroemdheden, <b>films</b> en <b>series</b>. Je geeft je <b>mening</b>, raadt iets aan en <b>vergelijkt</b> films. Je leert <b>bijvoeglijke naamwoorden</b> en de <b>present perfect</b>. Het hoofdstuk speelt in <b>Los Angeles</b>, met de Hollywood Walk of Fame. In de eindopdracht schrijf je een <b>review</b> van minstens 120 woorden.</p></div>`
++`<h5 class="sub">Theme words: showbiz</h5>`
++`<div class="tblwrap"><table class="tbl"><tr><th>Engels</th><th>Nederlands</th></tr><tr><td><b>(to) applaud</b></td><td>applaudisseren</td></tr><tr><td><b>audience</b></td><td>publiek</td></tr><tr><td><b>autograph</b></td><td>handtekening</td></tr><tr><td><b>backstage</b></td><td>achter de schermen</td></tr><tr><td><b>breakthrough</b></td><td>doorbraak</td></tr><tr><td><b>celebrity</b></td><td>beroemdheid</td></tr><tr><td><b>dressing room</b></td><td>kleedkamer</td></tr><tr><td><b>(to) entertain</b></td><td>vermaken</td></tr><tr><td><b>glamorous</b></td><td>betoverend</td></tr><tr><td><b>publicity</b></td><td>publiciteit</td></tr><tr><td><b>red carpet</b></td><td>rode loper</td></tr><tr><td><b>(to) rehearse</b></td><td>repeteren</td></tr></table></div>`
++`<div class="voorbeeld"><h4>Voorbeeld: op de rode loper</h4><p>De woorden in één zin.</p><div class="antwoord">The <b>celebrity</b> walked the <b>red carpet</b> and signed <b>autographs</b> for the <b>audience</b> before going <b>backstage</b> to her <b>dressing room</b>.</div></div>`
++`<div class="call warn"><b>Instinker:</b> een <b>autograph</b> is de handtekening van een <b>beroemdheid</b>. Je handtekening onder een brief heet een <b>signature</b>.</div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Wat betekent to rehearse?</p><p class="check-a"><b>Repeteren</b>.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden</b><ul class="lst">
+<li><b>celebrity</b>, <b>audience</b>, <b>red carpet</b>, <b>backstage</b>.</li>
+<li><b>rehearse</b> = repeteren, <b>applaud</b> = applaudisseren.</li></ul></div>`},
+
+{heading:'Linking words',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>zinnen verbinden met <b>linking words</b></li>
+<li>het verschil tussen een <b>connectie</b> en een <b>tegenstelling</b></li></ul></div>`
++`<h5 class="sub">Zinnen aan elkaar knopen</h5>`
++`<div class="box"><h4>Linking words</h4><p>Met <b>linking words</b> (voegwoorden) verbind je zinnen in een tekst. Ze kunnen aan het <b>begin</b>, in het <b>midden</b> of aan het <b>eind</b> van een zin staan.</p></div>`
++`<div class="tblwrap"><table class="tbl"><tr><th>Engels</th><th>Nederlands</th></tr><tr><td><b>also</b> / <b>too</b></td><td>ook, bovendien</td></tr><tr><td><b>although</b></td><td>hoewel</td></tr><tr><td><b>because</b></td><td>omdat</td></tr><tr><td><b>but</b></td><td>maar</td></tr><tr><td><b>clearly</b> / <b>obviously</b></td><td>duidelijk</td></tr><tr><td><b>first</b> / <b>next</b></td><td>ten eerste / vervolgens</td></tr><tr><td><b>for example</b> / <b>such as</b></td><td>bijvoorbeeld / zoals</td></tr><tr><td><b>however</b></td><td>echter</td></tr><tr><td><b>in fact</b></td><td>eigenlijk</td></tr><tr><td><b>since</b></td><td>aangezien</td></tr></table></div>`
++`<div class="vergelijk"><div class="vergelijk-kant"><h4>Connectie</h4><p>Er komt iets <b>bij</b>: <b>also</b>, <b>because</b>, <b>for example</b>, <b>since</b>, <b>such as</b>.</p></div><div class="vergelijk-vs">vs</div><div class="vergelijk-kant"><h4>Tegenstelling</h4><p>Iets <b>spreekt</b> het tegen: <b>but</b>, <b>however</b>, <b>although</b>.</p></div></div>`
++`<div class="voorbeeld"><h4>Voorbeeld: although</h4><p>Verbind twee zinnen die tegen elkaar ingaan.</p><div class="antwoord"><b>Although</b> he's very famous, he is still nice.</div></div>`
++`<div class="call warn"><b>Veelgemaakte fout:</b> na <b>although</b> alleen een woord zetten. Er komt een <b>hele zin</b> achter, met onderwerp en werkwoord.</div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Is however een connectie of een tegenstelling?</p><p class="check-a">Een <b>tegenstelling</b>.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden</b><ul class="lst">
+<li><b>Connectie</b>: also, because, for example.</li>
+<li><b>Tegenstelling</b>: but, however, although.</li>
+<li>Na although een <b>hele zin</b>.</li></ul></div>`},
+
+{heading:'Expressing your opinion',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>je <b>mening</b> geven over een film of serie</li>
+<li>iets <b>aanraden</b></li></ul></div>`
++`<h5 class="sub">Positief of negatief</h5>`
++`<div class="vergelijk"><div class="vergelijk-kant"><h4>Positief</h4><p><b>charming</b> (charmant), <b>impressive</b> (indrukwekkend), <b>remarkable</b> (opmerkelijk), <b>surprising</b> (verrassend), <b>thrilling</b> (spannend), <b>wonderful</b> (prachtig).</p></div><div class="vergelijk-vs">vs</div><div class="vergelijk-kant"><h4>Negatief</h4><p><b>annoying</b> (vervelend), <b>awful</b> / <b>terrible</b> (verschrikkelijk), <b>disappointing</b> (teleurstellend), <b>silly</b> (onnozel), <b>weird</b> (raar).</p></div></div>`
++`<div class="call reken"><b>Zo geef je je mening in een review</b><ol class="num">
+<li>Zeg wat je <b>vond</b>: It was <b>thrilling</b> / <b>disappointing</b>.</li>
+<li>Geef een <b>reden</b> met <b>because</b>.</li>
+<li>Vergelijk met iets anders: It's a bit like &hellip;</li>
+<li>Raad het wel of niet <b>aan</b>: I would <b>recommend</b> it.</li></ol></div>`
++`<div class="voorbeeld"><h4>Voorbeeld: een aanrader</h4><p>Raad een film aan en vergelijk hem.</p><div class="antwoord">I would <b>recommend</b> this romantic comedy, it's a <b>must-see</b>. The movie's <b>a bit like</b> Pirates of the Caribbean, <b>although</b> it's <b>not as funny</b> or entertaining.</div></div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Wat betekent disappointing?</p><p class="check-a"><b>Teleurstellend</b>.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden</b><ul class="lst">
+<li>Mening + <b>reden</b> (because).</li>
+<li>Aanraden: I would <b>recommend</b>, it's a <b>must-see</b>.</li></ul></div>`},
+
+{heading:'Films and series',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>woorden om <b>films en series</b> te beschrijven</li>
+<li>twee films <b>vergelijken</b></li></ul></div>`
++`<h5 class="sub">Theme words: films and series</h5>`
++`<div class="tblwrap"><table class="tbl"><tr><th>Engels</th><th>Nederlands</th></tr><tr><td><b>blockbuster</b></td><td>kaskraker</td></tr><tr><td><b>cast</b></td><td>rolverdeling</td></tr><tr><td><b>director</b></td><td>regisseur</td></tr><tr><td><b>episode</b></td><td>aflevering</td></tr><tr><td><b>preview</b></td><td>voorvertoning</td></tr><tr><td><b>(to) rate</b></td><td>beoordelen</td></tr><tr><td><b>remake</b></td><td>nieuwe versie</td></tr><tr><td><b>sequel</b></td><td>vervolg</td></tr><tr><td><b>(to) shoot</b> (a film)</td><td>een film opnemen</td></tr><tr><td><b>(to) star</b></td><td>de hoofdrol spelen</td></tr><tr><td><b>storyline</b></td><td>verhaallijn</td></tr><tr><td><b>subtitles</b></td><td>ondertiteling</td></tr></table></div>`
++`<div class="vergelijk"><div class="vergelijk-kant"><h4>not as &hellip; as</h4><p>Minder: The new Star Wars film is <b>not as thrilling as</b> I expected.</p></div><div class="vergelijk-vs">vs</div><div class="vergelijk-kant"><h4>more &hellip; than</h4><p>Meer: The second Bourne movie is <b>more exciting than</b> other action films.</p></div></div>`
++`<div class="call warn"><b>Instinker:</b> <b>director</b> is de <b>regisseur</b> van een film, niet de directeur. En een <b>sequel</b> is een <b>vervolg</b>, een <b>remake</b> is een <b>nieuwe versie</b> van hetzelfde verhaal.</div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Wat is een sequel?</p><p class="check-a">Een <b>vervolg</b>.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden</b><ul class="lst">
+<li><b>director</b> = regisseur, <b>episode</b> = aflevering.</li>
+<li>Vergelijken: <b>more &hellip; than</b>, <b>not as &hellip; as</b>.</li></ul></div>`},
+
+{heading:'Bijvoeglijke naamwoorden',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>waar een <b>bijvoeglijk naamwoord</b> in de zin staat</li></ul></div>`
++`<h5 class="sub">Adjectives</h5>`
++`<div class="box"><h4>Meer informatie</h4><p>Een <b>bijvoeglijk naamwoord</b> (adjective) geeft meer informatie over een <b>zelfstandig naamwoord</b>: een persoon, dier of ding.</p></div>`
++`<div class="vergelijk"><div class="vergelijk-kant"><h4>Vóór het zelfstandig naamwoord</h4><p>Meestal: My parents have a <b>blue</b> car. She was a <b>famous</b> tennis player.</p></div><div class="vergelijk-vs">vs</div><div class="vergelijk-kant"><h4>Achter het werkwoord</h4><p>Na <b>be</b>, <b>become</b>, <b>appear</b>, <b>feel</b>, <b>look</b> en <b>seem</b>: Their garden is <b>beautiful</b>.</p></div></div>`
++`<div class="voorbeeld"><h4>Voorbeeld: een sprookje</h4><p>Welke woorden zijn bijvoeglijk?</p><div class="antwoord">A <b>brave</b> prince is trapped in the <b>tall</b> tower. The <b>mean</b> wizard casts a <b>powerful</b> spell.</div></div>`
++`<div class="call reken"><b>Zo zoek je een adjective op</b><ol class="num">
+<li>Zoek de <b>basisvorm</b> op: <b>clear</b>, niet clearer.</li>
+<li>Lees alle <b>betekenissen</b>.</li>
+<li>Kies de betekenis die het best in de <b>zin</b> past.</li></ol></div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Waar staat het adjective in: The weather was terrible?</p><p class="check-a"><b>Achter het werkwoord</b> (was).</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden</b><ul class="lst">
+<li>Meestal <b>vóór</b> het zelfstandig naamwoord.</li>
+<li>Na <b>be, look, feel, seem</b>: achter het werkwoord.</li></ul></div>`},
+
+{heading:'Present perfect',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>de <b>present perfect</b> maken</li>
+<li>het verschil met de <b>past simple</b></li></ul></div>`
++`<h5 class="sub">Has helped</h5>`
++`<div class="call reken"><b>Zo maak je de present perfect</b><ol class="num">
+<li>Kies <b>have</b> (I, you, we, they) of <b>has</b> (he, she, it).</li>
+<li>Zet het <b>voltooid deelwoord</b> erachter: helped, seen, been.</li></ol></div>`
++`<div class="g2">`
++`<div class="box"><h4>Gebruik 1: ervaring</h4><p>Iets wat je ooit <b>meemaakte</b>; <b>wanneer</b> is niet belangrijk. I <b>have never seen</b> Lana del Rey live.</p></div>`
++`<div class="box"><h4>Gebruik 2: nog bezig</h4><p>Het <b>begon</b> in het verleden en <b>gaat nog door</b>. We <b>have lived</b> here since 2014.</p></div></div>`
++`<div class="box"><h4>Signaalwoorden</h4><p><b>since</b>, <b>for</b>, <b>always</b>, <b>ever</b>, <b>never</b>, <b>how long?</b>, <b>often</b>, <b>sometimes</b>, <b>now</b>.</p></div>`
++`<div class="vergelijk"><div class="vergelijk-kant"><h4>Present perfect</h4><p>Loopt <b>nog door</b>: It <b>has been</b> in theatres since 5th May.</p></div><div class="vergelijk-vs">vs</div><div class="vergelijk-kant"><h4>Past simple</h4><p><b>Afgesloten</b>, met een tijd: They <b>shot</b> the film in the late 1990s.</p></div></div>`
++`<div class="call warn"><b>Veelgemaakte fout:</b> de present perfect met <b>yesterday</b> of <b>in 2019</b>. Een afgesloten tijd vraagt de <b>past simple</b>.</div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Vul in: We (live) here since 2014.</p><p class="check-a">We <b>have lived</b> here since 2014.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden</b><ul class="lst">
+<li><b>have/has</b> + voltooid deelwoord.</li>
+<li>Voor <b>ervaringen</b> en dingen die <b>nog doorgaan</b>.</li>
+<li>Met yesterday of een jaartal: <b>past simple</b>.</li></ul></div>`}
 ],
 terms:[
 ['audience','publiek',0],

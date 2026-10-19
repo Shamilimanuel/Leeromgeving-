@@ -1,119 +1,24 @@
 import { registerChapter } from '../../../registry.js';
 
 /* Chapter 1 content: Onderzoeken en ontdekken (Nectar BBL year 1, part A) */
+/* Upgraded 2026-09-25 to the recipe of Economie TL4 H1 (change 6): every paragraph
+   got "Dit leer je" and a "Check jezelf" (taken from its own flashcard where
+   there was none), plus bold on its own glossary terms where it had little.
+   The text itself is unchanged. */
 registerChapter('biologie|bbl|1|1', {
 title:'Onderzoeken en ontdekken',
 summary:[
-{
- heading:'1.1 Ontdek je binnenste',
- html:
- '<div class="g2">'
- +'<div class="box"><h4>Wat is een orgaan?</h4><p>Je lichaam bestaat uit verschillende onderdelen, zoals je hart, je darmen en je longen. Deze delen heten <b>organen</b>. Elk orgaan heeft een eigen taak.</p>'
- +'<ul class="lst" style="margin-top:.6rem">'
- +'<li><b>Hart</b>: pompt het bloed rond</li>'
- +'<li><b>Darmen</b>: maken je eten kleiner</li>'
- +'<li><b>Longen</b>: zorgen voor de ademhaling</li></ul>'
- +'<div class="call">De meeste organen zitten binnenin je lichaam. Met een <b>torso</b> (een plastic lichaam zonder hoofd, armen en benen) kun je zien hoe ze liggen.</div></div>'
- +'<div class="box"><h4>Wat is een orgaanstelsel?</h4><p>Sommige organen werken samen aan een grotere taak. Zo\'n groep samenwerkende organen heet een <b>orgaanstelsel</b>.</p>'
- +'<div class="tblwrap" style="margin-top:.6rem"><table class="tbl">'
- +'<tr><th>Orgaanstelsel</th><th>Organen</th><th>Taak</th></tr>'
- +'<tr><td>Skelet</td><td>alle botten</td><td>stevigheid geven</td></tr>'
- +'<tr><td>Verteringsstelsel</td><td>mond, slokdarm, maag, darmen, anus</td><td>eten kleiner maken</td></tr>'
- +'<tr><td>Ademhalingsstelsel</td><td>neusholte, mondholte, luchtpijp, longen</td><td>lucht in je lichaam krijgen</td></tr>'
- +'<tr><td>Bloedvatenstelsel</td><td>hart, bloedvaten</td><td>stoffen vervoeren</td></tr></table></div></div></div>'
+{heading:'1.1 Ontdek je binnenste',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst"><li>wat <b>organen</b> en <b>orgaanstelsels</b> zijn</li><li>de drie onderdelen van een <b>cel</b></li></ul></div><div class="g2"><div class="box"><h4>Wat is een orgaan?</h4><p>Je lichaam bestaat uit verschillende onderdelen, zoals je hart, je darmen en je longen. Deze delen heten <b>organen</b>. Elk orgaan heeft een eigen taak.</p><ul class="lst" style="margin-top:.6rem"><li><b>Hart</b>: pompt het bloed rond</li><li><b>Darmen</b>: maken je eten kleiner</li><li><b>Longen</b>: zorgen voor de ademhaling</li></ul><div class="call">De meeste organen zitten binnenin je lichaam. Met een <b>torso</b> (een plastic lichaam zonder hoofd, armen en benen) kun je zien hoe ze liggen.</div></div><div class="box"><h4>Wat is een orgaanstelsel?</h4><p>Sommige organen werken samen aan een grotere taak. Zo'n groep samenwerkende organen heet een <b>orgaanstelsel</b>.</p><div class="tblwrap" style="margin-top:.6rem"><table class="tbl"><tr><th>Orgaanstelsel</th><th>Organen</th><th>Taak</th></tr><tr><td>Skelet</td><td>alle botten</td><td>stevigheid geven</td></tr><tr><td>Verteringsstelsel</td><td>mond, slokdarm, maag, darmen, anus</td><td>eten kleiner maken</td></tr><tr><td>Ademhalingsstelsel</td><td>neusholte, mondholte, luchtpijp, longen</td><td>lucht in je lichaam krijgen</td></tr><tr><td>Bloedvatenstelsel</td><td>hart, bloedvaten</td><td>stoffen vervoeren</td></tr></table></div></div></div><h5 class="sub">Waaruit bestaan organen?</h5><div class="g2"><div class="box"><h4>Cellen</h4><p>Je lichaam is opgebouwd uit heel kleine bouwsteentjes: <b>cellen</b>. De meeste organismen bestaan uit heel veel cellen. Cellen zijn zo klein dat je ze alleen met een microscoop kunt zien.</p></div><div class="box"><h4>De drie onderdelen van een cel</h4><div class="term"><b>Celkern</b><span>Rond bolletje in de cel dat alles regelt wat er in de cel gebeurt.</span></div><div class="term"><b>Celplasma</b><span>De dikke vloeistof in de cel.</span></div><div class="term" style="margin-bottom:0"><b>Celmembraan</b><span>Een soort vlies dat de inhoud van de cel bij elkaar houdt.</span></div></div></div><div class="call warn"><b>Van klein naar groot:</b> cel → orgaan → orgaanstelsel → lichaam. Bijvoorbeeld: spiercel → kuitspier → spierstelsel → mens.</div><div class="check" onclick="toonCheck(this)"><p class="check-v">Wat is een orgaan?</p><p class="check-a">Een deel van je lichaam met een bepaalde taak, zoals je hart of je longen.</p><span class="check-hint">Tik voor het antwoord</span></div><div class="call sum"><b>Om te onthouden (1.1)</b><ul class="lst"><li>Je lichaam bestaat uit <b>organen</b>. Een orgaan is een deel van het lichaam met een bepaalde taak.</li><li>Organen die samenwerken vormen een <b>orgaanstelsel</b>.</li><li>Skelet, verteringsstelsel, ademhalingsstelsel en bloedvatenstelsel zijn orgaanstelsels.</li><li>Je lichaam is opgebouwd uit <b>cellen</b>: celkern, celplasma en celmembraan.</li></ul></div>`},
 
- +'<h5 class="sub">Waaruit bestaan organen?</h5>'
- +'<div class="g2">'
- +'<div class="box"><h4>Cellen</h4><p>Je lichaam is opgebouwd uit heel kleine bouwsteentjes: <b>cellen</b>. De meeste organismen bestaan uit heel veel cellen. Cellen zijn zo klein dat je ze alleen met een microscoop kunt zien.</p></div>'
- +'<div class="box"><h4>De drie onderdelen van een cel</h4>'
- +'<div class="term"><b>Celkern</b><span>Rond bolletje in de cel dat alles regelt wat er in de cel gebeurt.</span></div>'
- +'<div class="term"><b>Celplasma</b><span>De dikke vloeistof in de cel.</span></div>'
- +'<div class="term" style="margin-bottom:0"><b>Celmembraan</b><span>Een soort vlies dat de inhoud van de cel bij elkaar houdt.</span></div></div></div>'
+{heading:'1.2 Je omgeving ontdekken',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst"><li>wat een <b>organisme</b> is en hoe je het <b>vergroot</b></li><li>waarnemingen vastleggen: <b>beschrijving</b> en <b>tekening</b></li></ul></div><div class="g2"><div class="box"><h4>Wat is een organisme?</h4><p>Alles wat leeft (mensen, dieren en planten) is een <b>organisme</b>. Als je een organisme goed bekijkt, ernaar luistert of eraan voelt, ben je bezig met <b>waarnemen</b>.</p><p style="margin-top:.6rem">De eigenschappen waaraan je een organisme herkent, heten <b>kenmerken</b>.</p></div><div class="box"><h4>Vergroten: loep en microscoop</h4><div class="term"><b>Loep</b><span>Vergrootglas. Hiermee bekijk je kleine organismen of details beter.</span></div><div class="term" style="margin-bottom:0"><b>Microscoop</b><span>Vergroot veel sterker dan een loep. Voor je iets met de microscoop bekijkt, maak je eerst een <b>preparaat</b>: een dun plakje op een <b>voorwerpglas</b>, met een <b>dekglaasje</b> erop.</span></div></div></div><h5 class="sub">Hoe leg je waarnemingen vast?</h5><div class="g2"><div class="box"><h4>Beschrijving</h4><p>Je zet je waarnemingen in <b>woorden</b> op papier: wat je ziet, voelt, ruikt of hoort.</p></div><div class="box"><h4>Natuurgetrouwe tekening</h4><p>Je tekent heel precies wat je ziet, <b>met alle details</b> en in kleur. Eén bepaald organisme, zoals het echt is.</p></div><div class="box"><h4>Schematische tekening</h4><p>Je tekent alleen de <b>belangrijkste onderdelen</b>, met de namen erbij. Geen persoonlijke details: zo ziet elk exemplaar van die soort er ongeveer uit.</p></div></div><h5 class="sub">Hoe bekijk je iets vanbinnen?</h5><div class="g2"><div class="box"><h4>Buitenaanzicht en doorsnede</h4><p>Wat je ziet als je van buiten naar iets kijkt, heet een <b>buitenaanzicht</b>. Wil je de binnenkant zien, dan snijd je het organisme door.</p></div><div class="box"><h4>Twee soorten doorsneden</h4><div class="term"><b>Lengtedoorsnede</b><span>Je snijdt in de lengte, van boven naar beneden, bijvoorbeeld een peer van steeltje tot kroontje.</span></div><div class="term" style="margin-bottom:0"><b>Dwarsdoorsnede</b><span>Je snijdt dwars door, zodat je een rondje ziet.</span></div></div></div><h5 class="sub">Hoe vind je de naam van een organisme?</h5><div class="box"><p>Ken je de naam van een organisme niet? Dan gebruik je een <b>zoekkaart</b>: een blad met steeds een ja/nee-vraag over een kenmerk. Door de vragen te beantwoorden kom je bij de naam uit. Dit opzoeken heet <b>determineren</b>.</p></div><div class="check" onclick="toonCheck(this)"><p class="check-v">Wat is een organisme?</p><p class="check-a">Alles wat leeft: mensen, dieren en planten.</p><span class="check-hint">Tik voor het antwoord</span></div><div class="call sum"><b>Om te onthouden (1.2)</b><ul class="lst"><li>Alles wat leeft is een <b>organisme</b>. Eigenschappen waaraan je het herkent zijn <b>kenmerken</b>.</li><li>Vastleggen kan met een <b>beschrijving</b>, een <b>natuurgetrouwe tekening</b> (alle details) of een <b>schematische tekening</b> (alleen hoofdzaken).</li><li>Vergroten doe je met een <b>loep</b> of een <b>microscoop</b> (met een preparaat).</li><li>Doorsnijden geeft een <b>lengtedoorsnede</b> of een <b>dwarsdoorsnede</b>.</li><li>De naam van een organisme opzoeken met een zoekkaart heet <b>determineren</b>.</li></ul></div>`},
 
- +'<div class="call warn"><b>Van klein naar groot:</b> cel → orgaan → orgaanstelsel → lichaam. Bijvoorbeeld: spiercel → kuitspier → spierstelsel → mens.</div>'
+{heading:'1.3 Gegevens vastleggen',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst"><li>gegevens van een <b>lijst</b> in een <b>tabel</b> zetten</li><li>een <b>staaf-</b>, <b>lijn-</b> of <b>cirkeldiagram</b> maken en lezen</li></ul></div><h5 class="sub">Van lijst naar diagram</h5><div class="g2"><div class="box"><h4>Van lijst naar tabel</h4><p>Bij biologie moet je vaak tellen of meten. Een lange lijst is niet overzichtelijk. Daarom zet je grote hoeveelheden gegevens in een <b>tabel</b>.</p></div><div class="box"><h4>Van tabel naar diagram</h4><p>Van de gegevens in een tabel kun je een <b>diagram</b> maken. Welk diagram je kiest, hangt af van wat je wilt laten zien.</p></div></div><div class="g3"><div class="box"><h4>Staafdiagram</h4><p>Voor <b>aantallen</b>. De hoogte van elke staaf geeft het aantal weer.</p></div><div class="box"><h4>Lijndiagram</h4><p>Voor <b>groei</b> (toe- of afname). Je zet meetpunten in het diagram en verbindt ze tot een lijn: de <b>grafiek</b>.</p></div><div class="box"><h4>Cirkeldiagram</h4><p>Voor <b>procenten</b>. De hele cirkel is 100%; elke taartpunt is een deel daarvan.</p></div></div><div class="box"><h4>Lijndiagram lezen</h4><p>Op de horizontale as (x-as) staat meestal de leeftijd of tijd. Op de verticale as (y-as) staat bijvoorbeeld de lengte. Je zet de meetpunten neer en trekt er een lijn doorheen: dat is de grafiek. Zo zie je in één oogopslag of iets toeneemt of afneemt.</p></div><div class="call warn"><b>Let op het verschil:</b> een staafdiagram gebruik je voor aparte aantallen (bijvoorbeeld schoenmaten). Een lijndiagram gebruik je alleen als er een logische volgorde in zit, zoals leeftijd: daarom is groei altijd een lijndiagram, nooit een staafdiagram.</div><div class="check" onclick="toonCheck(this)"><p class="check-v">Wat doe je met een lange lijst gegevens?</p><p class="check-a">Je zet ze overzichtelijk in een tabel.</p><span class="check-hint">Tik voor het antwoord</span></div><div class="call sum"><b>Om te onthouden (1.3)</b><ul class="lst"><li>Een lijst met gegevens zet je overzichtelijk in een <b>tabel</b>.</li><li><b>Aantallen</b> → staafdiagram. <b>Groei</b> → lijndiagram. <b>Procenten</b> → cirkeldiagram.</li><li>In een lijndiagram noem je de lijn door de meetpunten de <b>grafiek</b>.</li></ul></div>`},
 
- +'<div class="call sum"><b>Om te onthouden (1.1)</b><ul class="lst">'
- +'<li>Je lichaam bestaat uit <b>organen</b>. Een orgaan is een deel van het lichaam met een bepaalde taak.</li>'
- +'<li>Organen die samenwerken vormen een <b>orgaanstelsel</b>.</li>'
- +'<li>Skelet, verteringsstelsel, ademhalingsstelsel en bloedvatenstelsel zijn orgaanstelsels.</li>'
- +'<li>Je lichaam is opgebouwd uit <b>cellen</b>: celkern, celplasma en celmembraan.</li></ul></div>'
-},
-{
- heading:'1.2 Je omgeving ontdekken',
- html:
- '<div class="g2">'
- +'<div class="box"><h4>Wat is een organisme?</h4><p>Alles wat leeft (mensen, dieren en planten) is een <b>organisme</b>. Als je een organisme goed bekijkt, ernaar luistert of eraan voelt, ben je bezig met <b>waarnemen</b>.</p>'
- +'<p style="margin-top:.6rem">De eigenschappen waaraan je een organisme herkent, heten <b>kenmerken</b>.</p></div>'
- +'<div class="box"><h4>Vergroten: loep en microscoop</h4>'
- +'<div class="term"><b>Loep</b><span>Vergrootglas. Hiermee bekijk je kleine organismen of details beter.</span></div>'
- +'<div class="term" style="margin-bottom:0"><b>Microscoop</b><span>Vergroot veel sterker dan een loep. Voor je iets met de microscoop bekijkt, maak je eerst een <b>preparaat</b>: een dun plakje op een <b>voorwerpglas</b>, met een <b>dekglaasje</b> erop.</span></div></div></div>'
-
- +'<h5 class="sub">Hoe leg je waarnemingen vast?</h5>'
- +'<div class="g2">'
- +'<div class="box"><h4>Beschrijving</h4><p>Je zet je waarnemingen in <b>woorden</b> op papier: wat je ziet, voelt, ruikt of hoort.</p></div>'
- +'<div class="box"><h4>Natuurgetrouwe tekening</h4><p>Je tekent heel precies wat je ziet, <b>met alle details</b> en in kleur. Eén bepaald organisme, zoals het echt is.</p></div>'
- +'<div class="box"><h4>Schematische tekening</h4><p>Je tekent alleen de <b>belangrijkste onderdelen</b>, met de namen erbij. Geen persoonlijke details: zo ziet elk exemplaar van die soort er ongeveer uit.</p></div></div>'
-
- +'<h5 class="sub">Hoe bekijk je iets vanbinnen?</h5>'
- +'<div class="g2">'
- +'<div class="box"><h4>Buitenaanzicht en doorsnede</h4><p>Wat je ziet als je van buiten naar iets kijkt, heet een <b>buitenaanzicht</b>. Wil je de binnenkant zien, dan snijd je het organisme door.</p></div>'
- +'<div class="box"><h4>Twee soorten doorsneden</h4>'
- +'<div class="term"><b>Lengtedoorsnede</b><span>Je snijdt in de lengte, van boven naar beneden, bijvoorbeeld een peer van steeltje tot kroontje.</span></div>'
- +'<div class="term" style="margin-bottom:0"><b>Dwarsdoorsnede</b><span>Je snijdt dwars door, zodat je een rondje ziet.</span></div></div></div>'
-
- +'<h5 class="sub">Hoe vind je de naam van een organisme?</h5>'
- +'<div class="box"><p>Ken je de naam van een organisme niet? Dan gebruik je een <b>zoekkaart</b>: een blad met steeds een ja/nee-vraag over een kenmerk. Door de vragen te beantwoorden kom je bij de naam uit. Dit opzoeken heet <b>determineren</b>.</p></div>'
-
- +'<div class="call sum"><b>Om te onthouden (1.2)</b><ul class="lst">'
- +'<li>Alles wat leeft is een <b>organisme</b>. Eigenschappen waaraan je het herkent zijn <b>kenmerken</b>.</li>'
- +'<li>Vastleggen kan met een <b>beschrijving</b>, een <b>natuurgetrouwe tekening</b> (alle details) of een <b>schematische tekening</b> (alleen hoofdzaken).</li>'
- +'<li>Vergroten doe je met een <b>loep</b> of een <b>microscoop</b> (met een preparaat).</li>'
- +'<li>Doorsnijden geeft een <b>lengtedoorsnede</b> of een <b>dwarsdoorsnede</b>.</li>'
- +'<li>De naam van een organisme opzoeken met een zoekkaart heet <b>determineren</b>.</li></ul></div>'
-},
-{
- heading:'1.3 Gegevens vastleggen',
- html:
- '<div class="g2">'
- +'<div class="box"><h4>Van lijst naar tabel</h4><p>Bij biologie moet je vaak tellen of meten. Een lange lijst is niet overzichtelijk. Daarom zet je grote hoeveelheden gegevens in een <b>tabel</b>.</p></div>'
- +'<div class="box"><h4>Van tabel naar diagram</h4><p>Van de gegevens in een tabel kun je een <b>diagram</b> maken. Welk diagram je kiest, hangt af van wat je wilt laten zien.</p></div></div>'
-
- +'<div class="g3">'
- +'<div class="box"><h4>Staafdiagram</h4><p>Voor <b>aantallen</b>. De hoogte van elke staaf geeft het aantal weer.</p></div>'
- +'<div class="box"><h4>Lijndiagram</h4><p>Voor <b>groei</b> (toe- of afname). Je zet meetpunten in het diagram en verbindt ze tot een lijn: de <b>grafiek</b>.</p></div>'
- +'<div class="box"><h4>Cirkeldiagram</h4><p>Voor <b>procenten</b>. De hele cirkel is 100%; elke taartpunt is een deel daarvan.</p></div></div>'
-
- +'<div class="box"><h4>Lijndiagram lezen</h4><p>Op de horizontale as (x-as) staat meestal de leeftijd of tijd. Op de verticale as (y-as) staat bijvoorbeeld de lengte. Je zet de meetpunten neer en trekt er een lijn doorheen: dat is de grafiek. Zo zie je in één oogopslag of iets toeneemt of afneemt.</p></div>'
-
- +'<div class="call warn"><b>Let op het verschil:</b> een staafdiagram gebruik je voor aparte aantallen (bijvoorbeeld schoenmaten). Een lijndiagram gebruik je alleen als er een logische volgorde in zit, zoals leeftijd: daarom is groei altijd een lijndiagram, nooit een staafdiagram.</div>'
-
- +'<div class="call sum"><b>Om te onthouden (1.3)</b><ul class="lst">'
- +'<li>Een lijst met gegevens zet je overzichtelijk in een <b>tabel</b>.</li>'
- +'<li><b>Aantallen</b> → staafdiagram. <b>Groei</b> → lijndiagram. <b>Procenten</b> → cirkeldiagram.</li>'
- +'<li>In een lijndiagram noem je de lijn door de meetpunten de <b>grafiek</b>.</li></ul></div>'
-},
-{
- heading:'1.4 Onderzoek doen',
- html:
- '<p class="dim">Een onderzoek volgt altijd <b style="color:var(--txt)">vijf vaste stappen</b>.</p>'
- +'<div class="g2">'
- +'<div class="box"><h4>De vijf stappen</h4><ol class="num">'
- +'<li><b>Onderzoeksvraag</b>: wat wil je precies weten?</li>'
- +'<li><b>Werkwijze</b>: hoe ga je het onderzoeken? (waarnemen, tellen, met de microscoop bekijken…)</li>'
- +'<li><b>Benodigdheden</b>: welke spullen heb je nodig?</li>'
- +'<li><b>Resultaten</b>: wat heb je gemeten, geteld of gezien?</li>'
- +'<li><b>Conclusie</b>: het antwoord op je onderzoeksvraag</li></ol></div>'
- +'<div class="box"><h4>Resultaten en conclusie</h4><p>Je <b>resultaten</b> zijn alles wat je hebt waargenomen, geteld of gemeten. Die verwerk je in een tabel, diagram of tekening: wat het duidelijkst overkomt.</p>'
- +'<p style="margin-top:.6rem">Aan het eind kijk je goed naar je resultaten en beantwoord je de onderzoeksvraag. Dat antwoord is de <b>conclusie</b>.</p></div></div>'
-
- +'<div class="call warn"><b>Veelgemaakte fout:</b> de conclusie is niet "wat je gedaan hebt" en ook niet het lijstje benodigdheden, het is specifiek het <b>antwoord op de onderzoeksvraag</b>, gebaseerd op je resultaten.</div>'
-
- +'<div class="call sum"><b>Om te onthouden (1.4)</b><ul class="lst">'
- +'<li>Vijf stappen: <b>onderzoeksvraag, werkwijze, benodigdheden, resultaten, conclusie</b>.</li>'
- +'<li>De <b>werkwijze</b> beschrijft hoe je het onderzoek uitvoert.</li>'
- +'<li><b>Resultaten</b> zijn wat je gemeten, geteld of gezien hebt.</li>'
- +'<li>De <b>conclusie</b> is het antwoord op de onderzoeksvraag.</li></ul></div><figure class=\'fig\'><svg viewBox="0 0 340 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="De vijf stappen van een onderzoek: onderzoeksvraag, hypothese, proef, resultaten en conclusie"><defs><marker id="biooarrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="var(--accent)"/></marker></defs><g fill="var(--accent)" fill-opacity=".14" stroke="var(--accent)" stroke-width="1.7"><rect x="34" y="14" width="272" height="34" rx="10"/><rect x="34" y="62" width="272" height="34" rx="10"/><rect x="34" y="110" width="272" height="34" rx="10"/><rect x="34" y="158" width="272" height="34" rx="10"/><rect x="34" y="206" width="272" height="34" rx="10"/></g><g stroke="var(--accent)" stroke-width="1.7" fill="none" marker-end="url(#biooarrow)"><path d="M170 48 V58"/><path d="M170 96 V106"/><path d="M170 144 V154"/><path d="M170 192 V202"/></g><g fill="var(--txt)" font-size="11.5" font-weight="600" font-family="inherit"><text x="50" y="30">1. Onderzoeksvraag</text><text x="50" y="78">2. Hypothese</text><text x="50" y="126">3. Proef doen</text><text x="50" y="174">4. Gegevens vastleggen</text><text x="50" y="222">5. Conclusie</text></g><g fill="var(--mut)" font-size="9.5" font-family="inherit"><text x="50" y="43">Wat wil je precies te weten komen?</text><text x="50" y="91">Wat verwacht je? Een voorspelling vooraf.</text><text x="50" y="139">E&eacute;n ding tegelijk veranderen, de rest gelijk houden.</text><text x="50" y="187">Meten en opschrijven in een tabel of diagram.</text><text x="50" y="235">Klopte je hypothese? Antwoord op je vraag.</text></g></svg><figcaption>De vaste volgorde van een onderzoek. Stap 2 komt bewust <b>v&oacute;&oacute;r</b> de proef: je voorspelt eerst, anders praat je je uitkomst achteraf goed.</figcaption></figure>'
-}
+{heading:'1.4 Onderzoek doen',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst"><li>de <b>vijf stappen</b> van een onderzoek</li><li>het verschil tussen <b>resultaten</b> en <b>conclusie</b></li></ul></div><h5 class="sub">Een onderzoek in stappen</h5><p class="dim">Een onderzoek volgt altijd <b style="color:var(--txt)">vijf vaste stappen</b>.</p><div class="g2"><div class="box"><h4>De vijf stappen</h4><ol class="num"><li><b>Onderzoeksvraag</b>: wat wil je precies weten?</li><li><b>Werkwijze</b>: hoe ga je het onderzoeken? (waarnemen, tellen, met de microscoop bekijken…)</li><li><b>Benodigdheden</b>: welke spullen heb je nodig?</li><li><b>Resultaten</b>: wat heb je gemeten, geteld of gezien?</li><li><b>Conclusie</b>: het antwoord op je onderzoeksvraag</li></ol></div><div class="box"><h4>Resultaten en conclusie</h4><p>Je <b>resultaten</b> zijn alles wat je hebt waargenomen, geteld of gemeten. Die verwerk je in een tabel, diagram of tekening: wat het duidelijkst overkomt.</p><p style="margin-top:.6rem">Aan het eind kijk je goed naar je resultaten en beantwoord je de onderzoeksvraag. Dat antwoord is de <b>conclusie</b>.</p></div></div><div class="call warn"><b>Veelgemaakte fout:</b> de conclusie is niet "wat je gedaan hebt" en ook niet het lijstje benodigdheden, het is specifiek het <b>antwoord op de onderzoeksvraag</b>, gebaseerd op je resultaten.</div><div class="check" onclick="toonCheck(this)"><p class="check-v">De 5 stappen van een onderzoek</p><p class="check-a">1 Onderzoeksvraag · 2 Werkwijze · 3 Benodigdheden · 4 Resultaten · 5 Conclusie</p><span class="check-hint">Tik voor het antwoord</span></div><div class="call sum"><b>Om te onthouden (1.4)</b><ul class="lst"><li>Vijf stappen: <b>onderzoeksvraag, werkwijze, benodigdheden, resultaten, conclusie</b>.</li><li>De <b>werkwijze</b> beschrijft hoe je het onderzoek uitvoert.</li><li><b>Resultaten</b> zijn wat je gemeten, geteld of gezien hebt.</li><li>De <b>conclusie</b> is het antwoord op de onderzoeksvraag.</li></ul></div><figure class='fig'><svg viewBox="0 0 340 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="De vijf stappen van een onderzoek: onderzoeksvraag, hypothese, proef, resultaten en conclusie"><defs><marker id="biooarrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="var(--accent)"/></marker></defs><g fill="var(--accent)" fill-opacity=".14" stroke="var(--accent)" stroke-width="1.7"><rect x="34" y="14" width="272" height="34" rx="10"/><rect x="34" y="62" width="272" height="34" rx="10"/><rect x="34" y="110" width="272" height="34" rx="10"/><rect x="34" y="158" width="272" height="34" rx="10"/><rect x="34" y="206" width="272" height="34" rx="10"/></g><g stroke="var(--accent)" stroke-width="1.7" fill="none" marker-end="url(#biooarrow)"><path d="M170 48 V58"/><path d="M170 96 V106"/><path d="M170 144 V154"/><path d="M170 192 V202"/></g><g fill="var(--txt)" font-size="11.5" font-weight="600" font-family="inherit"><text x="50" y="30">1. Onderzoeksvraag</text><text x="50" y="78">2. Hypothese</text><text x="50" y="126">3. Proef doen</text><text x="50" y="174">4. Gegevens vastleggen</text><text x="50" y="222">5. Conclusie</text></g><g fill="var(--mut)" font-size="9.5" font-family="inherit"><text x="50" y="43">Wat wil je precies te weten komen?</text><text x="50" y="91">Wat verwacht je? Een voorspelling vooraf.</text><text x="50" y="139">E&eacute;n ding tegelijk veranderen, de rest gelijk houden.</text><text x="50" y="187">Meten en opschrijven in een tabel of diagram.</text><text x="50" y="235">Klopte je hypothese? Antwoord op je vraag.</text></g></svg><figcaption>De vaste volgorde van een onderzoek. Stap 2 komt bewust <b>v&oacute;&oacute;r</b> de proef: je voorspelt eerst, anders praat je je uitkomst achteraf goed.</figcaption></figure>`}
 ],
 terms:[
 ['beschrijving','Waarnemingen in woorden opschrijven of vertellen.'],

@@ -1,14 +1,134 @@
 import { registerChapter } from '../../../registry.js';
 
+/* Rebuilt 2026-09-24 to the recipe of Economie TL4 H1 (change 6), from the
+   book scan (Getal & Ruimte TL4 deel A). Also corrects "wegendiagram": in the
+   book it counts possibilities; arrows between teams are drawn in a graaf. */
 registerChapter('wiskunde|tl|4|1', {
 title:'Statistiek en kans',
 summary:[
-{heading:'1.1 Kans',html:'<div class=\'box\'>In dit hoofdstuk werk je met kansen en met manieren om gegevens overzichtelijk weer te geven: diagrammen, een steelbladdiagram, een boxplot, grafen (netwerken) en telproblemen.</div><div class=\'box\'>Een <span class=\'term\'>kans</span> geeft aan hoe waarschijnlijk het is dat iets gebeurt. Je berekent een kans met:<br><div class=\'tblwrap\'><table class=\'tbl\'><tr><td>kans</td><td>=</td><td>aantal gunstige uitkomsten / totaal aantal mogelijke uitkomsten</td></tr></table></div>Je kunt een kans schrijven als breuk, als kommagetal of als percentage.</div><div class=\'voorbeeld\'><p><b>Voorbeeld</b><br>Je gooit met twee dobbelstenen en telt het aantal ogen op. Om de kans op een bepaalde som te vinden, maak je eerst een schema met alle 36 mogelijke combinaties (6 &times; 6). Daarna tel je hoe vaak de gewenste som voorkomt.<br>Er is bijvoorbeeld 1 manier om 12 te gooien (6+6) en 5 manieren om 8 te gooien (2+6, 3+5, 4+4, 5+3, 6+2). De kans op 8 ogen is dus 5/36 = 13,9%.</p></div><div class=\'call\'>Wil je weten hoe vaak je een uitkomst verwacht bij een groot aantal worpen? Vermenigvuldig de kans (als breuk) met het aantal worpen.</div>'},
-{heading:'1.2 Staafdiagram, lijndiagram en cirkeldiagram',html:'<div class=\'box\'>Bij een <span class=\'term\'>cirkeldiagram</span> is de cirkel verdeeld in taartpunten (sectoren). Hoe groter het percentage, hoe groter de sector.</div><div class=\'num\'><ol><li>Bereken het totaal aantal en vul dat in de tabel in.</li><li>Bereken bij elke groep het percentage: (aantal / totaal) &times; 100%. Rond af op &eacute;&eacute;n decimaal.</li><li>De sectoren samen zijn 360&deg; (100%). Om van percentage naar hoek te gaan, vermenigvuldig je met 3,6.</li><li>Teken de cirkel, teken elke sectorhoek, schrijf de percentages erbij, maak de legenda en zet de titel en het totaal aantal erboven.</li></ol></div><div class=\'call warn\'>Tel je alle afgeronde percentages op, dan krijg je soms 99,9% of 100,1% in plaats van 100%. Dat komt door het afronden en is geen fout.</div><div class=\'call\'>Bij een <span class=\'term\'>lijndiagram</span> zet je punten in een assenstelsel en verbind je ze met lijnstukken, bijvoorbeeld om een ontwikkeling in de tijd te laten zien (zoals het aantal werknemers per jaar). Bij een <span class=\'term\'>staafdiagram</span> gebruik je staven waarvan de hoogte of lengte het aantal of percentage weergeeft.</div>'},
-{heading:'1.3 Steelbladdiagram',html:'<div class=\'box\'>Met een <b>steelbladdiagram</b> orden je een grote reeks getallen overzichtelijk. Elk getal splits je in een <b>steel</b> (bijvoorbeeld de tientallen) en een <b>blad</b> (de eenheid).</div><div class=\'voorbeeld\'><h4>Voorbeeld</h4><p>Het getal 17 heeft steel 1 en blad 7. Je zet alle stelen &eacute;&eacute;n keer in een kolom en schrijft achter elke steel alle bijbehorende bladen op volgorde van klein naar groot.</p></div><ol class=\'num\'><li>Maak eerst een kladversie: schrijf de bladen in de volgorde waarin ze in de gegevens voorkomen.</li><li>Maak daarna het steelbladdiagram in het net: zet de bladen achter elke steel op volgorde.</li><li>Zet een titel boven het steelbladdiagram.</li></ol><div class=\'call\'>Een steelbladdiagram laat, net als een tabel, de precieze waarden zien &eacute;n geeft tegelijk een beeld van de spreiding van de gegevens, zoals een staafdiagram dat doet.</div>'},
-{heading:'1.4 Boxplot',html:'<div class=\'box\'>Een <span class=\'term\'>boxplot</span> (box-and-whisker-diagram) laat in &eacute;&eacute;n oogopslag de spreiding van een groep gegevens zien. Een boxplot bestaat uit vijf kengetallen: het minimum, het eerste kwartiel (Q1), de mediaan, het derde kwartiel (Q3) en het maximum.</div><div class=\'tblwrap\'><table class=\'tbl\'><tr><th>kengetal</th><th>betekenis</th></tr><tr><td>minimum</td><td>de kleinste waarde</td></tr><tr><td>Q1 (eerste kwartiel)</td><td>25% van de gegevens is kleiner dan of gelijk aan Q1</td></tr><tr><td>mediaan</td><td>de middelste waarde (50%)</td></tr><tr><td>Q3 (derde kwartiel)</td><td>75% van de gegevens is kleiner dan of gelijk aan Q3</td></tr><tr><td>maximum</td><td>de grootste waarde</td></tr></table></div><div class=\'call\'>De box loopt van Q1 tot Q3. Deze box bevat de middelste 50% van de gegevens. De \'snorharen\' (whiskers) lopen van de box naar het minimum en het maximum.</div><div class=\'call waarom\'>Met een boxplot vergelijk je snel twee of meer groepen gegevens: hoe breder de box en de snorharen, hoe groter de spreiding in de gegevens.</div>'},
-{heading:'1.5 Grafen',html:'<div class=\'box\'>Een <span class=\'term\'>graaf</span> is een schema van punten (knooppunten) die met lijnen of pijlen zijn verbonden. Grafen worden bijvoorbeeld gebruikt om treindiensten, buslijnen of wegennetten overzichtelijk weer te geven.</div><div class=\'voorbeeld\'><p><b>Voorbeeld</b><br>Op een bord op een treinstation staat een graaf met daaronder een tabel met vertrektijden, spoornummers, soort trein (Sprinter of Intercity) en eindbestemming. Zo kun je aan de graaf zien via welke tussenstations een trein rijdt en waar hij eindigt.</p></div><div class=\'voorbeeld\'><p><b>Voorbeeld</b><br>Op een kaart met buslijnen zie je met kleuren welke buslijn waar rijdt. Bij een overstap zoek je de halte waar twee lijnen elkaar kruisen.</p></div><div class=\'call\'>Een graaf met pijlen (een <span class=\'term\'>wegendiagram</span>) laat zien wie tegen wie speelt of gespeeld heeft, bijvoorbeeld bij een sporttoernooi. Een pijl van A naar C betekent dat A thuis tegen C speelt.</div>'},
-{heading:'1.6 Telproblemen',html:'<div class=\'box\'>Bij een <span class=\'term\'>telprobleem</span> tel je het aantal mogelijkheden. Dat kan met een <span class=\'term\'>boomdiagram</span> of een <span class=\'term\'>wegendiagram</span>.</div><div class=\'voorbeeld\'><p><b>Voorbeeld</b><br>Bij een keuzemenu van 3 soepen, 3 hoofdgerechten en 2 nagerechten maak je een boomdiagram: bij elke tak van de soep teken je de hoofdgerechten, en bij elke tak daarvan de nagerechten. Het totaal aantal mogelijke menu\'s is 3 &times; 3 &times; 2 = 18.</p></div><div class=\'call\'>Het aantal mogelijkheden bij achtereenvolgende keuzes bereken je door de aantallen bij elke keuze met elkaar te vermenigvuldigen.</div><div class=\'call\'>Bij sporttoernooien zijn er verschillende <span class=\'term\'>wedstrijdschema\'s</span>:<div class=\'tblwrap\'><table class=\'tbl\'><tr><th>systeem</th><th>uitleg</th></tr><tr><td>afvalsysteem</td><td>wie verliest ligt eruit; de winnaar speelt steeds door</td></tr><tr><td>halve competitie</td><td>elk team speelt &eacute;&eacute;n keer tegen elk ander team</td></tr><tr><td>hele competitie</td><td>elk team speelt twee keer tegen elk ander team (thuis en uit)</td></tr></table></div>Bij een halve competitie geldt: totaal aantal wedstrijden = 0,5 &times; aantal teams &times; aantal tegenstanders.</div>'}
+{heading:'1.1 Kans',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>een <b>kans</b> uitdrukken als <b>breuk</b> en als <b>percentage</b></li>
+<li>de <b>verwachting</b> berekenen bij een groot aantal pogingen</li></ul></div>`
++`<div class="box"><h4>Waar dit hoofdstuk over gaat</h4><p>Je werkt met <b>kansen</b> en met manieren om gegevens overzichtelijk te maken: <b>diagrammen</b>, een <b>steelbladdiagram</b>, een <b>boxplot</b>, <b>grafen</b> en <b>telproblemen</b>.</p></div>`
++`<h5 class="sub">Wat is een kans?</h5>`
++`<div class="g2">`
++`<div class="box"><h4>Kans in het dagelijks leven</h4><p>Je weet niet zeker wat er gebeurt, maar sommige dingen hebben een <b>grotere kans</b> dan andere. Is de kans op regen <b>90%</b>? Dan neem je een paraplu mee.</p></div>`
++`<div class="box"><h4>Kans berekenen</h4><p>Bij één dobbelsteen zijn er <b>6 mogelijkheden</b>. De kans op een 6 is dus <b>1 op 6</b>.</p><p><b>kans = aantal gunstige uitkomsten / totaal aantal mogelijke uitkomsten</b></p></div></div>`
++`<div class="call warn">Een kans kun je schrijven als <b>breuk</b> (1/6), als <b>kommagetal</b> (0,17) of als <b>percentage</b> (16,7%). Procenten rond je af op <b>één decimaal</b>.</div>`
++`<h5 class="sub">Twee dobbelstenen</h5>`
++`<div class="voorbeeld"><h4>Voorbeeld: de som van twee dobbelstenen</h4><p>Maak een <b>schema</b> met alle combinaties: 6 &times; 6 = <b>36</b> mogelijkheden. Tel dan hoe vaak de som voorkomt die je zoekt.</p><div class="antwoord">Een som van 8 kan op <b>5</b> manieren (2+6, 3+5, 4+4, 5+3, 6+2). De kans op 8 is <b>5/36 = 13,9%</b>.</div></div>`
++`<h5 class="sub">Verwachting</h5>`
++`<div class="call waarom">Hoe vaak verwacht je een uitkomst als je het <b>heel vaak</b> probeert? Vermenigvuldig de <b>kans</b> met het <b>aantal pogingen</b>. Gooi je 120 keer met één dobbelsteen, dan verwacht je 1/6 &times; 120 = <b>20</b> keer een 6. Het is een verwachting: in het echt kan het een paar keer meer of minder zijn.</div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Je gooit met één dobbelsteen. Hoe groot is de kans op een 6?</p><p class="check-a">Eén gunstige uitkomst op zes mogelijke: <b>1/6</b>, dat is ongeveer <b>16,7%</b>.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden (1.1)</b><ul class="lst">
+<li><b>Kans</b> = aantal gunstige uitkomsten / totaal aantal mogelijke uitkomsten.</li>
+<li>Een kans schrijf je als <b>breuk</b>, <b>kommagetal</b> of <b>percentage</b>.</li>
+<li>Bij twee dobbelstenen zijn er <b>36</b> mogelijkheden.</li>
+<li><b>Verwachting</b> = kans &times; aantal pogingen.</li></ul></div>`},
+
+{heading:'1.2 Staafdiagram, lijndiagram en cirkeldiagram',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>een <b>staafdiagram</b> en een <b>lijndiagram</b> tekenen</li>
+<li>een <b>cirkeldiagram</b> tekenen met <b>percentages</b> en <b>sectorhoeken</b></li></ul></div>`
++`<h5 class="sub">Staafdiagram en lijndiagram</h5>`
++`<div class="g2">`
++`<div class="box"><h4>Staafdiagram</h4><p>Bij een <b>staafdiagram</b> teken je de staven <b>los van elkaar</b>. Boven elke staaf zet je het <b>aantal</b>. Soms maak je eerst zelf een <b>verdeling</b> op de verticale as.</p></div>`
++`<div class="box"><h4>Lijndiagram</h4><p>Bij een <b>lijndiagram</b> verbind je de punten met <b>rechte lijnstukken</b>. Zo zie je hoe iets <b>verandert in de tijd</b>, zoals de temperatuur per dag.</p></div></div>`
++`<div class="term"><b>Kreukellijn</b><span>Een zigzaglijntje op de verticale as. Het laat zien dat je een stuk van de as <b>weglaat</b>, bijvoorbeeld als alle temperaturen boven de 15 graden liggen.</span></div>`
++`<h5 class="sub">Cirkeldiagram</h5>`
++`<div class="box"><h4>Taartpunten</h4><p>Bij een <b>cirkeldiagram</b> is de cirkel verdeeld in taartpunten. Zo'n taartpunt heet een <b>sector</b>. Hoe groter het <b>percentage</b>, hoe groter de sector.</p></div>`
++`<div class="call reken"><b>Stappenplan: cirkeldiagram tekenen</b><ol class="num">
+<li>Bereken het <b>totaal</b> en zet het in de tabel.</li>
+<li>Bereken per groep het <b>percentage</b>: aantal / totaal &times; 100%. Rond af op <b>één decimaal</b>.</li>
+<li>Bereken de <b>sectorhoek</b>: percentage &times; <b>3,6</b>. Rond af op <b>hele graden</b>.</li>
+<li>Teken de sectoren, schrijf de percentages erbij, maak een <b>legenda</b> en zet de <b>titel</b> en het totaal erboven.</li></ol></div>`
++`<div class="call waarom">Waarom <b>&times; 3,6</b>? De hele cirkel is <b>360&deg;</b> en dat hoort bij <b>100%</b>. Eén procent is dus 360 / 100 = <b>3,6&deg;</b>.</div>`
++`<div class="call warn">Tel je de afgeronde percentages op, dan krijg je soms <b>99,9%</b> of <b>100,1%</b>. Dat komt door het <b>afronden</b> en is geen fout.</div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Bij een groep hoort 25%. Hoe groot is de sectorhoek?</p><p class="check-a">25 &times; 3,6 = <b>90&deg;</b>, een kwart van de cirkel.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden (1.2)</b><ul class="lst">
+<li><b>Staafdiagram</b>: losse staven met het aantal erboven.</li>
+<li><b>Lijndiagram</b>: punten verbonden met rechte lijnstukken; een <b>kreukellijn</b> laat een stuk van de as weg.</li>
+<li><b>Cirkeldiagram</b>: sectorhoek = percentage &times; <b>3,6</b>.</li></ul></div>`},
+
+{heading:'1.3 Steelbladdiagram',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>een <b>steelbladdiagram</b> maken en aflezen</li></ul></div>`
++`<h5 class="sub">Steel en blad</h5>`
++`<div class="g2">`
++`<div class="box"><h4>Wat is het?</h4><p>Met een <b>steelbladdiagram</b> zet je een lange rij getallen <b>overzichtelijk</b> neer. Elk getal splits je in een <b>steel</b> (de <b>tientallen</b>) en een <b>blad</b> (de <b>eenheden</b>).</p></div>`
++`<div class="box"><h4>Voorbeeld</h4><p>Bij de leeftijd <b>25</b> komt achter steel <b>2</b> het blad <b>5</b>. Bij <b>53</b> komt achter steel <b>5</b> het blad <b>3</b>.</p></div></div>`
++`<div class="call reken"><b>Stappenplan: steelbladdiagram maken</b><ol class="num">
+<li>Maak twee kolommen: <b>tientallen</b> en <b>eenheden</b>. Zet de tientallen van klein naar groot onder elkaar.</li>
+<li>Zet elk <b>blad</b> achter zijn steel, in de volgorde van de gegevens. Dit is je <b>kladversie</b>.</li>
+<li>Maak het <b>in het net</b>: zet de bladen achter elke steel van <b>klein naar groot</b>.</li>
+<li>Zet er een <b>titel</b> boven.</li></ol></div>`
++`<div class="call waarom">Waarom een steelbladdiagram? Je ziet de <b>precieze getallen</b>, net als in een tabel, en tegelijk de <b>spreiding</b>, net als in een staafdiagram.</div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Bij steel 1 staat het blad 7. Welk getal is dat?</p><p class="check-a">Steel 1 is het tiental, blad 7 de eenheid: <b>17</b>.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden (1.3)</b><ul class="lst">
+<li><b>Steel</b> = tientallen, <b>blad</b> = eenheden.</li>
+<li>Eerst een <b>kladversie</b>, daarna <b>in het net</b> met de bladen van klein naar groot.</li>
+<li>Je ziet de <b>precieze waarden</b> én de <b>spreiding</b>.</li></ul></div>`},
+
+{heading:'1.4 Boxplot',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>de <b>mediaan</b> en de <b>kwartielen</b> bepalen</li>
+<li>een <b>boxplot</b> maken en aflezen</li></ul></div>`
++`<h5 class="sub">Vijf getallen</h5>`
++`<div class="box"><h4>Wat is een boxplot?</h4><p>Bij een <b>boxplot</b> deel je een groep getallen in <b>vier stukken van 25%</b>. Je hebt vijf getallen nodig: het <b>minimum</b>, <b>Q1</b>, de <b>mediaan</b>, <b>Q3</b> en het <b>maximum</b>.</p></div>`
++`<div class="tblwrap"><table class="tbl"><tr><th>getal</th><th>betekenis</th></tr><tr><td><b>minimum</b></td><td>de kleinste waarde</td></tr><tr><td><b>Q1</b> (eerste kwartiel)</td><td>de mediaan van de eerste helft: 25% zit eronder</td></tr><tr><td><b>mediaan</b></td><td>het middelste getal: 50% zit eronder</td></tr><tr><td><b>Q3</b> (derde kwartiel)</td><td>de mediaan van de tweede helft: 75% zit eronder</td></tr><tr><td><b>maximum</b></td><td>de grootste waarde</td></tr></table></div>`
++`<h5 class="sub">Een boxplot maken</h5>`
++`<div class="call reken"><b>Stappenplan: boxplot maken</b><ol class="num">
+<li>Zet de getallen van <b>klein naar groot</b>. Nu weet je het <b>minimum</b> en het <b>maximum</b>.</li>
+<li>Bepaal de <b>mediaan</b>.</li>
+<li>Splits de getallen in <b>twee helften</b> en bepaal van elke helft de mediaan: dat zijn <b>Q1</b> en <b>Q3</b>.</li>
+<li>Teken een <b>getallenlijn</b>, zet streepjes bij de vijf getallen en teken de <b>box</b> van Q1 tot Q3. Zet er een <b>titel</b> boven.</li></ol></div>`
++`<div class="vergelijk"><div class="vergelijk-kant"><h4>Oneven aantal getallen</h4><p>De mediaan is het <b>middelste getal</b>.</p></div><div class="vergelijk-vs">vs</div><div class="vergelijk-kant"><h4>Even aantal getallen</h4><p>De mediaan is het <b>gemiddelde van de middelste twee</b> getallen.</p></div></div>`
++`<div class="call waarom">De <b>box</b> bevat de <b>middelste 50%</b> van de getallen. Hoe <b>breder</b> de box en de snorharen, hoe groter de <b>spreiding</b>. Zo vergelijk je snel twee groepen.</div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Wat is de mediaan van 3, 7, 9, 12, 20?</p><p class="check-a">Vijf getallen, dus het middelste getal: <b>9</b>.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden (1.4)</b><ul class="lst">
+<li>Een <b>boxplot</b> gebruikt vijf getallen: <b>minimum, Q1, mediaan, Q3, maximum</b>.</li>
+<li><b>Q1</b> en <b>Q3</b> zijn de medianen van de eerste en de tweede helft.</li>
+<li>De <b>box</b> is de middelste 50%.</li></ul></div>`},
+
+{heading:'1.5 Grafen',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>een <b>graaf</b> lezen en er een <b>afstandstabel</b> bij invullen</li>
+<li>weten wat een <b>pijl</b> in een graaf betekent</li></ul></div>`
++`<h5 class="sub">Punten en verbindingen</h5>`
++`<div class="g2">`
++`<div class="box"><h4>Wat is een graaf?</h4><p>Een <b>graaf</b> is een schema van <b>punten</b> die met <b>lijnen</b> of <b>pijlen</b> verbonden zijn. De punten zijn bijvoorbeeld <b>steden</b>, <b>stations</b> of <b>teams</b>.</p></div>`
++`<div class="box"><h4>Waar je grafen ziet</h4><p>Op een bord op het <b>station</b> zie je via welke stations een trein rijdt. Op een kaart met <b>buslijnen</b> zie je waar je kunt overstappen. Ook een <b>stamboom</b> is een graaf.</p></div></div>`
++`<h5 class="sub">Afstandstabel</h5>`
++`<div class="box"><h4>Afstanden aflezen</h4><p>Bij de lijnen staan vaak de <b>afstanden</b>. In een <b>afstandstabel</b> zet je de afstand tussen elk paar punten. Neem steeds de <b>kortste route</b>.</p></div>`
++`<div class="call warn"><b>Let op de pijlen.</b> In een graaf van wegen betekent een pijl <b>eenrichtingsverkeer</b>. Van Abdam naar Cordo is 10 km, maar terug moet je <b>omrijden</b> via Dors en Emde: 8 + 12 + 9 = <b>29 km</b>.</div>`
++`<div class="vergelijk"><div class="vergelijk-kant"><h4>Pijl bij wegen</h4><p>Je mag alleen <b>in de richting van de pijl</b> rijden.</p></div><div class="vergelijk-vs">vs</div><div class="vergelijk-kant"><h4>Pijl bij een competitie</h4><p>Een pijl van A naar C betekent: <b>A speelt thuis tegen C</b>.</p></div></div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Waarvoor gebruik je een graaf bij treinen of bussen?</p><p class="check-a">Om te zien welke <b>stations of haltes</b> met elkaar verbonden zijn en via welke <b>route</b> je kunt reizen.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden (1.5)</b><ul class="lst">
+<li>Een <b>graaf</b> bestaat uit <b>punten</b> met <b>lijnen of pijlen</b> ertussen.</li>
+<li>In een <b>afstandstabel</b> neem je steeds de <b>kortste route</b>.</li>
+<li>Een <b>pijl</b> betekent bij wegen <b>eenrichtingsverkeer</b>, en bij een competitie <b>wie thuis speelt</b>.</li></ul></div>`},
+
+{heading:'1.6 Telproblemen',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>een <b>boomdiagram</b> en een <b>wegendiagram</b> maken</li>
+<li>het aantal <b>wedstrijden</b> in een competitie berekenen</li></ul></div>`
++`<h5 class="sub">Mogelijkheden tellen</h5>`
++`<div class="g2">`
++`<div class="box"><h4>Boomdiagram</h4><p>Met een <b>boomdiagram</b> schrijf je alle mogelijkheden uit. Bij elke keuze teken je nieuwe <b>takken</b>; je mag <b>afkortingen</b> gebruiken. Je ziet <b>wélke</b> mogelijkheden er zijn.</p></div>`
++`<div class="box"><h4>Wegendiagram</h4><p>Met een <b>wegendiagram</b> reken je snel uit <b>hoevéél</b> mogelijkheden er zijn: je <b>vermenigvuldigt</b> de aantallen per keuze. Milkshakes in 3 formaten en 4 smaken: 3 &times; 4 = <b>12</b>.</p></div></div>`
++`<div class="call warn"><b>Welk diagram?</b> Wil je weten <b>wélke</b> mogelijkheden er zijn, gebruik dan een <b>boomdiagram</b>. Wil je weten <b>hoevéél</b>, gebruik dan een <b>wegendiagram</b>.</div>`
++`<div class="voorbeeld"><h4>Voorbeeld: een pincode</h4><p>Een pincode heeft <b>4 cijfers</b>. Elk cijfer kan 0 tot en met 9 zijn: <b>10</b> mogelijkheden per plek.</p><div class="antwoord">10 &times; 10 &times; 10 &times; 10 = <b>10 000</b> pincodes.</div></div>`
++`<h5 class="sub">Wedstrijden tellen</h5>`
++`<div class="term"><b>Afvalsysteem</b><span>Wie verliest ligt eruit, de winnaar speelt door naar de volgende ronde. Ook wel knock-outsysteem genoemd. Bij 8 spelers zijn er 4 + 2 + 1 = 7 wedstrijden.</span></div>`
++`<div class="vergelijk"><div class="vergelijk-kant"><h4>Halve competitie</h4><p>Elk team speelt <b>één keer</b> tegen elk ander team.</p><p><b>0,5 &times; aantal teams &times; aantal tegenstanders</b></p></div><div class="vergelijk-vs">vs</div><div class="vergelijk-kant"><h4>Hele competitie</h4><p>Elk team speelt <b>twee keer</b> tegen elk ander team: thuis en uit.</p><p><b>aantal teams &times; aantal tegenstanders</b></p></div></div>`
++`<div class="voorbeeld"><h4>Voorbeeld: een hele competitie met 4 teams</h4><p>Elk team heeft <b>3 tegenstanders</b> en speelt tegen elk team één keer <b>thuis</b> en één keer <b>uit</b>.</p><div class="antwoord">Totaal: 4 &times; 3 = <b>12</b> wedstrijden. Elk team speelt 3 &times; 2 = <b>6</b> wedstrijden.</div></div>`
++`<div class="call waarom">Waarom <b>&times; 0,5</b> bij een halve competitie? Team A tegen B is <b>dezelfde wedstrijd</b> als B tegen A. Zonder &times; 0,5 tel je elke wedstrijd <b>twee keer</b>.</div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">8 teams spelen een halve competitie. Hoeveel wedstrijden zijn dat?</p><p class="check-a">Elk team heeft 7 tegenstanders: 0,5 &times; 8 &times; 7 = <b>28</b> wedstrijden.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden (1.6)</b><ul class="lst">
+<li><b>Boomdiagram</b>: wélke mogelijkheden. <b>Wegendiagram</b>: hoevéél, door te <b>vermenigvuldigen</b>.</li>
+<li><b>Afvalsysteem</b>: wie verliest ligt eruit.</li>
+<li><b>Halve competitie</b>: 0,5 &times; teams &times; tegenstanders. <b>Hele competitie</b>: teams &times; tegenstanders.</li></ul></div>`}
 ],
 terms:[
 ['kans','het aantal gunstige uitkomsten gedeeld door het totaal aantal mogelijke uitkomsten',0],
@@ -21,7 +141,7 @@ terms:[
 ['mediaan','de middelste waarde van een van klein naar groot geordende reeks getallen',3],
 ['kwartiel','een grens die de geordende gegevens verdeelt in vier gelijke delen (Q1, mediaan en Q3)',3],
 ['graaf','een schema van knooppunten die met lijnen of pijlen zijn verbonden, bijvoorbeeld om een buslijnennet weer te geven',4],
-['wegendiagram','een graaf met pijlen die aangeeft wie tegen wie speelt of gespeeld heeft',5],
+['wegendiagram','een diagram waarmee je snel berekent hoeveel mogelijkheden er zijn, door de aantallen per keuze te vermenigvuldigen',5],
 ['boomdiagram','een schema met vertakkingen waarmee je alle mogelijkheden van achtereenvolgende keuzes overzichtelijk maakt',5],
 ['afvalsysteem','een toernooisysteem waarbij de verliezer afvalt en de winnaar doorspeelt',5],
 ['halve competitie','een toernooivorm waarbij elk team &eacute;&eacute;n keer tegen elk ander team speelt',5],
@@ -54,7 +174,7 @@ quiz:[
 ['Wat laat de box in een boxplot zien?',['Alleen het minimum en maximum','De middelste 50% van de gegevens (van Q1 tot Q3)','Alleen de mediaan','Alle losse waarnemingen'],1,'De box loopt van Q1 tot Q3 en bevat de middelste 50% van de gegevens.'],
 ['Wat is de mediaan van de reeks 3, 7, 9, 12, 20?',['7','9','12','10,2'],1,'Bij vijf geordende getallen is de mediaan het middelste getal: 9.'],
 ['Wat stelt een knooppunt in een graaf meestal voor?',['Een station, halte of team','Een percentage','Een sectorhoek','Een steel'],0,'In een graaf staan knooppunten voor bijvoorbeeld stations, haltes of teams die met elkaar verbonden zijn.'],
-['Bij een wegendiagram wijst de pijl van team A naar team C. Wat betekent dat?',['A speelt thuis tegen C','C speelt thuis tegen A','A en C spelen niet tegen elkaar','A heeft van C gewonnen'],0,'Een pijl van A naar C betekent dat A thuis speelt tegen C.'],
+['In een graaf van een hele competitie wijst de pijl van team A naar team C. Wat betekent dat?',['A speelt thuis tegen C','C speelt thuis tegen A','A en C spelen niet tegen elkaar','A heeft van C gewonnen'],0,'Een pijl van A naar C betekent dat A thuis speelt tegen C.'],
 ['Bij een keuzemenu kies je uit 3 soepen, 2 hoofdgerechten en 2 nagerechten. Hoeveel verschillende menu\'s zijn er?',['7','12','18','3'],1,'Vermenigvuldig de keuzes: 3 &times; 2 &times; 2 = 12.'],
 ['8 teams spelen een halve competitie. Hoeveel tegenstanders heeft elk team?',['6','7','8','16'],1,'Bij 8 teams speelt elk team tegen alle andere 7 teams.'],
 ['8 teams spelen een halve competitie. Hoeveel wedstrijden worden er in totaal gespeeld?',['28','56','16','64'],0,'totaal = 0,5 &times; 8 &times; 7 = 28 wedstrijden.'],

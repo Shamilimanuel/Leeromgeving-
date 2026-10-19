@@ -56,6 +56,20 @@ export function todayDateStr() {
   return now.getFullYear() + '-' + String(now.getMonth() + 1).padStart(2, '0') + '-' + String(now.getDate()).padStart(2, '0');
 }
 
+/* Pure: the months the calendar shows, starting with the current one and
+   rolling into next year ({ year, month } with month 0-11). The screen used
+   to draw January-December of this year, so in October the first nine
+   months were all in the past. */
+export function calendarMonths(todayStr = todayDateStr(), count = 12) {
+  const [y, m] = todayStr.split('-').map(Number);
+  const months = [];
+  for (let i = 0; i < count; i += 1) {
+    const index = m - 1 + i;
+    months.push({ year: y + Math.floor(index / 12), month: index % 12 });
+  }
+  return months;
+}
+
 function roundToFive(n) {
   return Math.round(n / 5) * 5;
 }

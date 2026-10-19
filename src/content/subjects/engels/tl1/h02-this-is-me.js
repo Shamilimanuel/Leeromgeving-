@@ -1,14 +1,119 @@
 import { registerChapter } from '../../../registry.js';
 
+/* Rebuilt 2026-09-25 to the recipe of Economie TL4 H1 (change 6). Added
+   from the book: the exact /s/ sounds (after p, t, k, f and th). The rest is
+   the same grammar, words and Stones, restructured. Terms, cards and quiz
+   unchanged. */
 registerChapter('engels|tl|1|2', {
 title:'This is me',
 summary:[
-{heading:'Looks en Numbers',html:'<div class=\'box\'><h4>Waar gaat dit hoofdstuk over?</h4><p>In dit hoofdstuk leer je jezelf en anderen voorstellen: je naam, leeftijd, uiterlijk en persoonlijkheid. Je leert de tegenwoordige tijd (present simple) correct te gebruiken bij feiten en gewoontes, en je leert vragen stellen met vraagwoorden zoals what, where en who.</p></div><div class=\'box\'><h4>Uiterlijk beschrijven (Looks)</h4><p>Met deze woorden beschrijf je hoe iemand eruitziet: bald (kaal), beard (baard), big (groot), braces (beugel), curly (krullend), glasses (bril), long hair (lang haar), ponytail (paardenstaart), short (kort/klein), small (klein), straight (steil), tall (lang).</p><div class=\'voorbeeld\'><h4>Voorbeeld: iemand beschrijven</h4><p>She has curly hair. She is short.</p><p>José is thin and has dark hair. He looks great.</p></div></div><div class=\'box\'><h4>Numbers</h4><p>De tientallen: thirty (30), forty (40), fifty (50), sixty (60), seventy (70), eighty (80), ninety (90), one hundred (100).</p><p>Getallen tussen de tientallen schrijf je met een streepje: thirty-two (32), fifty-four (54), seventy-six (76), ninety-eight (98), one hundred and one (101).</p></div>'},
-{heading:'Jezelf voorstellen',html:'<div class=\'box\'><h4>Stone 1 &ndash; Introducing yourself and other people</h4><p>Met deze bouwstenen stel je jezelf en anderen voor:</p><ul class=\'lst\'><li>Hello, my name is Max. / Hi, I\'m your neighbour. &ndash; Hallo, mijn naam is Max. / Hoi, ik ben je buurman.</li><li>I have three sisters. I\'m the youngest. &ndash; Ik heb drie zussen. Ik ben de jongste.</li><li>Who are they? They are my parents. &ndash; Wie zijn zij? Zij zijn mijn ouders.</li><li>That guy with glasses is Sam. He is my uncle. &ndash; Die jongen met een bril is Sam. Hij is mijn oom.</li></ul></div><div class=\'box\'><h4>Stone 2 &ndash; Talking about personal information</h4><ul class=\'lst\'><li>What is your first name? &ndash; My first name is Patrick.</li><li>How old are you? &ndash; I\'m 13 years old.</li><li>When is your birthday? &ndash; My birthday is on the 18th of June.</li><li>Where are you from? &ndash; I\'m from Amsterdam. I\'m Dutch.</li><li>Where do you live? &ndash; I live in Scotland.</li></ul></div><div class=\'call\'>Gebruik het Engelse alfabet om je naam te spellen. Het Engelse alfabet heeft dezelfde 26 letters als het Nederlands, maar de letters worden anders uitgesproken. Bijvoorbeeld: \'It\'s spelled P-A-T-R-I-C-K.\'</div>'},
-{heading:'Present simple',html:'<div class=\'box\'><h4>Grammar 1 &ndash; Present simple: walk, walks</h4><p>Je gebruikt de <b>present simple</b> (tegenwoordige tijd) bij feiten en gewoontes.</p><div class=\'tblwrap\'><table class=\'tbl\'><tr><th>Regel</th><th>Voorbeeld</th></tr><tr><td>Meestal: geen toevoeging (I, you, we, they)</td><td>I walk to the bus stop. We always cycle to school.</td></tr><tr><td>Bij he/she/it: -s achter het werkwoord</td><td>He reads a book. It feels like home.</td></tr><tr><td>Werkwoord eindigt op -s, -x, -z, -ch of -sh: -es achter het werkwoord</td><td>She never catches the ball.</td></tr><tr><td>do en go: -es na he/she/it</td><td>He does his best. She goes to school.</td></tr><tr><td>Werkwoord eindigt op medeklinker + -y: -y wordt -ies</td><td>He tries to be relaxed.</td></tr><tr><td>Werkwoord eindigt op klinker (a,e,i,o,u) + -y: gewoon -s</td><td>She buys her shirts online.</td></tr></table></div><p>Let op: woorden als <i>always, never, sometimes, often, every day</i> en <i>usually</i> worden vaak gebruikt bij feiten en gewoontes, en staan meestal vóór het werkwoord.</p></div><div class=\'box\'><h4>Uitspraak: \'s\' en \'es\' in de present simple</h4><p>Je spreekt de \'s\' of \'es\' na he/she/it op drie manieren uit:</p><div class=\'tblwrap\'><table class=\'tbl\'><tr><th>Klank</th><th>Wanneer</th><th>Voorbeelden</th></tr><tr><td>/s/</td><td>werkwoord eindigt op een stemloze medeklinker</td><td>stops, hopes, looks</td></tr><tr><td>/z/</td><td>werkwoord eindigt op een stemhebbende medeklinker</td><td>swims, seems, explains</td></tr><tr><td>/iz/</td><td>werkwoord eindigt op \'s\', \'z\', \'sh\' of \'ch\'</td><td>kisses, dances, buzzes</td></tr></table></div><div class=\'call\'>Tip: leg een hand op je keel en spreek het woord uit. Voel je iets trillen? Dan is die letter stemhebbend (/z/). Voel je niets? Dan is die letter stemloos (/s/).</div></div>'},
-{heading:'Voornaamwoorden: I (me, he) him',html:'<div class=\'box\'><h4>Grammar 2 &ndash; Persoonlijke voornaamwoorden: I &ndash; me, he &ndash; him</h4><p>Je gebruikt <i>I, you, he, she, it, we, you</i> en <i>they</i> <b>vóór</b> het werkwoord (als onderwerp). Je gebruikt <i>me, you, him, her, it, us, you</i> en <i>them</i> <b>ná</b> het werkwoord (als lijdend voorwerp).</p><div class=\'tblwrap\'><table class=\'tbl\'><tr><th>Vóór het werkwoord</th><th>Ná het werkwoord</th></tr><tr><td>I</td><td>me</td></tr><tr><td>you</td><td>you</td></tr><tr><td>he, she, it</td><td>him, her, it</td></tr><tr><td>we</td><td>us</td></tr><tr><td>you</td><td>you</td></tr><tr><td>they</td><td>them</td></tr></table></div><p>Voorbeelden: <i>He likes me. I like him. I am talking to her. It is looking at them.</i></p><div class=\'call warn\'><b>Veelgemaakte fout:</b> Bij namen en woorden die je kunt vervangen door he, she of it, zet je ook een -s of -es achter het werkwoord. Bijvoorbeeld: <i>The bus (= it) goes to Sheffield.</i></div></div>'},
-{heading:'Mensen beschrijven',html:'<div class=\'box\'><h4>Grammar 3 &ndash; Vragen: vraagwoorden</h4><p>Je gebruikt vaak vraagwoorden om een vraag te stellen. Je zet vraagwoorden aan het begin van de zin. De vraagwoorden beginnen met \'wh\' of met \'h\'. Je noemt ze daarom \'wh-woorden\'.</p><div class=\'tblwrap\'><table class=\'tbl\'><tr><th>Vraagwoord</th><th>Voorbeeld</th></tr><tr><td>What</td><td>What is your name?</td></tr><tr><td>Where</td><td>Where are the toilets?</td></tr><tr><td>When</td><td>When is your birthday?</td></tr><tr><td>Why</td><td>Why are you so angry?</td></tr><tr><td>Who</td><td>Who is that girl?</td></tr><tr><td>Which</td><td>Which colour is your favourite, red or blue?</td></tr><tr><td>How</td><td>How are you?</td></tr></table></div><div class=\'call\'>Let op: je gebruikt <b>which</b> als je weet uit welke opties je kiest. Je gebruikt <b>what</b> als je niet weet wat de opties zijn.</div></div><div class=\'box\'><h4>Stone 3 &ndash; Describing people</h4><ul class=\'lst\'><li>What does your friend look like? &ndash; She has curly hair. She has a ponytail.</li><li>She has braces. She is short.</li><li>José is thin and tall, and has dark hair and blue eyes. He looks great.</li><li>Cleo and Sophie are shy but very nice. They are lazy and friendly.</li></ul></div><div class=\'g2\'><div class=\'box\'><h4>Family members</h4><p>cousin (neef/nicht), divorced (gescheiden), eldest (oudste), grandparents (grootouders), half-brother (halfbroer), married (getrouwd), nephew (neef, kind van broer/zus), niece (nicht, kind van broer/zus), only child (enig kind), stepfather (stiefvader), twins (tweeling), youngest (jongste)</p></div><div class=\'box\'><h4>Personality</h4><p>annoying (irritant), friendly (vriendelijk), funny (grappig), happy (blij), lazy (lui), mean (gemeen), nice (aardig), quiet (stil, rustig), relaxed (ontspannen), serious (serieus), shy (verlegen), smart (slim)</p></div></div>'},
-{heading:'Lezen en luisteren',html:'<div class=\'box\'><h4>All about me</h4><p>Op een website vertellen vier tieners over zichzelf, omdat ze zich aanmelden voor een zomerkamp: Marco (12) uit Kowloon City in Hongkong, Georgia (14) uit Bristol in Engeland, Mina (13) uit Novi Sad in Servië en Siyu (12) uit Ontario in Canada. Ze vertellen over hun familie, hobby\'s en waar ze wonen.</p></div><div class=\'box\'><h4>Archie &amp; Friends (Reading Matters)</h4><p>Dit is een Amerikaans stripverhaal (comic) met hoofdpersoon Archie en zijn vrienden. Bij een stripverhaal (comic) werken meestal meerdere mensen samen: bijvoorbeeld een schrijver en een tekenaar. Dat is anders dan bij een roman (novel), waar meestal maar één schrijver aan werkt.</p></div><div class=\'box\'><h4>Songs</h4><p>In dit hoofdstuk luister je naar <i>Dance Monkey</i> van Tones and I en <i>Nothing breaks like a heart</i> van Mark Ronson en Miley Cyrus, om de werkwoordsvormen uit Grammar 1 en Grammar 2 in het echt te horen.</p></div>'}
+{heading:'Looks en Numbers',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>iemands <b>uiterlijk</b> beschrijven (looks)</li>
+<li>de <b>getallen</b> tot en met honderd schrijven</li></ul></div>`
++`<div class="box"><h4>Waar dit hoofdstuk over gaat</h4><p>Je leert jezelf en anderen <b>voorstellen</b>: naam, leeftijd, uiterlijk en karakter. Je gebruikt de <b>present simple</b> voor feiten en gewoontes, en je stelt vragen met <b>vraagwoorden</b> zoals what, where en who.</p></div>`
++`<h5 class="sub">Looks</h5>`
++`<div class="box"><h4>Hoe ziet iemand eruit?</h4><p><b>bald</b> (kaal), <b>beard</b> (baard), <b>big</b> (groot), <b>braces</b> (beugel), <b>curly</b> (krullend), <b>glasses</b> (bril), <b>long hair</b> (lang haar), <b>ponytail</b> (paardenstaart), <b>short</b> (kort/klein), <b>small</b> (klein), <b>straight</b> (steil), <b>tall</b> (lang).</p></div>`
++`<div class="voorbeeld"><h4>Voorbeeld: iemand beschrijven</h4><p>Beschrijf twee mensen in korte zinnen.</p><div class="antwoord">She <b>has</b> curly hair. She <b>is</b> short. José <b>is</b> thin and <b>has</b> dark hair. He looks great.</div></div>`
++`<div class="vergelijk"><div class="vergelijk-kant"><h4>has</h4><p>Iets wat iemand <b>heeft</b>: has curly hair, has <b>braces</b>.</p></div><div class="vergelijk-vs">vs</div><div class="vergelijk-kant"><h4>is</h4><p>Hoe iemand <b>is</b>: is <b>tall</b>, is short.</p></div></div>`
++`<h5 class="sub">Numbers</h5>`
++`<div class="box"><h4>Tientallen</h4><p><b>thirty</b> (30), <b>forty</b> (40), <b>fifty</b> (50), <b>sixty</b> (60), <b>seventy</b> (70), <b>eighty</b> (80), <b>ninety</b> (90), <b>one hundred</b> (100).</p></div>`
++`<div class="call warn"><b>Streepje!</b> Getallen tussen de tientallen schrijf je met een <b>streepje</b>: thirty-two (32), fifty-four (54), ninety-eight (98). Boven de honderd komt er <b>and</b> bij: one hundred <b>and</b> one (101). Let op: <b>forty</b> zonder u.</div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Hoe schrijf je 76 in het Engels?</p><p class="check-a"><b>seventy-six</b>, met een streepje.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden</b><ul class="lst">
+<li>Uiterlijk: <b>has</b> + iets (braces), <b>is</b> + hoe (tall).</li>
+<li>Getallen met een <b>streepje</b>: thirty-two.</li>
+<li>101 = one hundred <b>and</b> one.</li></ul></div>`},
+
+{heading:'Jezelf voorstellen',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>jezelf en anderen <b>voorstellen</b> (Stone 1)</li>
+<li>vertellen en vragen naar <b>persoonlijke informatie</b> (Stone 2)</li></ul></div>`
++`<h5 class="sub">Stone 1: introducing yourself and other people</h5>`
++`<div class="tblwrap"><table class="tbl"><tr><th>Engels</th><th>Nederlands</th></tr><tr><td><b>Hello, my name is Max.</b></td><td>Hallo, mijn naam is Max.</td></tr><tr><td><b>Hi, I'm your neighbour.</b></td><td>Hoi, ik ben je buurman.</td></tr><tr><td><b>I have three sisters. I'm the youngest.</b></td><td>Ik heb drie zussen. Ik ben de jongste.</td></tr><tr><td><b>Who are they? They are my parents.</b></td><td>Wie zijn zij? Zij zijn mijn ouders.</td></tr><tr><td><b>That guy with glasses is Sam. He is my uncle.</b></td><td>Die jongen met een bril is Sam. Hij is mijn oom.</td></tr></table></div>`
++`<h5 class="sub">Stone 2: personal information</h5>`
++`<div class="tblwrap"><table class="tbl"><tr><th>Vraag</th><th>Antwoord</th></tr><tr><td><b>What is your first name?</b></td><td>My first name is Patrick.</td></tr><tr><td><b>How old are you?</b></td><td>I'm 13 years old.</td></tr><tr><td><b>When is your birthday?</b></td><td>My birthday is on the 18th of June.</td></tr><tr><td><b>Where are you from?</b></td><td>I'm from Amsterdam. I'm Dutch.</td></tr><tr><td><b>Where do you live?</b></td><td>I live in Scotland.</td></tr></table></div>`
++`<div class="call reken"><b>Zo stel je jezelf voor</b><ol class="num">
+<li><b>Groet</b> en zeg je naam: Hello, my name is &hellip;</li>
+<li>Vertel je <b>leeftijd</b> en waar je <b>woont</b>.</li>
+<li>Vertel iets over je <b>familie</b>: I have &hellip;</li>
+<li>Spel je naam als dat nodig is: <b>It's spelled P-A-T-R-I-C-K.</b></li></ol></div>`
++`<div class="call waarom">Waarom oefenen met <b>spellen</b>? Het Engelse alfabet heeft dezelfde <b>26 letters</b>, maar je <b>spreekt</b> ze anders uit. Een e klinkt als &ldquo;ie&rdquo;, een i als &ldquo;aai&rdquo;.</div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Hoe vraag je in het Engels hoe oud iemand is?</p><p class="check-a"><b>How old are you?</b></p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden</b><ul class="lst">
+<li><b>Stone 1</b>: jezelf en anderen voorstellen.</li>
+<li><b>Stone 2</b>: vragen naar naam, leeftijd, verjaardag en woonplaats.</li>
+<li>Leeftijd: I'm 13 <b>years old</b>.</li></ul></div>`},
+
+{heading:'Present simple',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>de <b>present simple</b> gebruiken voor <b>feiten</b> en <b>gewoontes</b></li>
+<li>de <b>-s</b> en <b>-es</b> goed schrijven en uitspreken</li></ul></div>`
++`<h5 class="sub">Grammar 1: walk, walks</h5>`
++`<div class="box"><h4>Feiten en gewoontes</h4><p>De <b>present simple</b> is de tegenwoordige tijd voor <b>feiten</b> en <b>gewoontes</b>. Woorden als <b>always</b>, <b>never</b>, <b>sometimes</b>, <b>often</b>, <b>usually</b> en <b>every day</b> passen er vaak bij; ze staan meestal <b>vóór</b> het werkwoord.</p></div>`
++`<div class="call reken"><b>Zo maak je de present simple</b><ol class="num">
+<li>Bij <b>I, you, we, they</b>: het werkwoord zonder iets erachter. I <b>walk</b> to the bus stop.</li>
+<li>Bij <b>he, she, it</b>: <b>-s</b> erachter. He <b>reads</b> a book.</li>
+<li>Eindigt het werkwoord op <b>-s, -x, -z, -ch</b> of <b>-sh</b>, of is het <b>do</b> of <b>go</b>: <b>-es</b>. She <b>catches</b> the ball. He <b>does</b> his best.</li>
+<li><b>Medeklinker + y</b>: y wordt <b>-ies</b>. He <b>tries</b>. Maar <b>klinker + y</b>: gewoon -s. She <b>buys</b>.</li></ol></div>`
++`<div class="voorbeeld"><h4>Voorbeeld: he, she, it</h4><p>Maak de zin af met go, try en watch.</p><div class="antwoord">She <b>goes</b> to school. He <b>tries</b> to be relaxed. It <b>watches</b> the birds.</div></div>`
++`<h5 class="sub">Uitspraak van de s</h5>`
++`<div class="tblwrap"><table class="tbl"><tr><th>Klank</th><th>Wanneer</th><th>Voorbeelden</th></tr><tr><td><b>/s/</b></td><td>laatste klank is een <b>p, t, k, f</b> of <b>th</b></td><td>stops, hopes, looks</td></tr><tr><td><b>/z/</b></td><td>laatste klank is een <b>andere</b> klank</td><td>swims, seems, explains</td></tr><tr><td><b>/iz/</b></td><td>na een <b>s, z, sh</b> of <b>ch</b>-klank</td><td>kisses, dances, buzzes</td></tr></table></div>`
++`<div class="call waarom">Hoe hoor je het verschil tussen /s/ en /z/? Leg je hand op je <b>keel</b> en zeg het woord. <b>Trilt</b> het? Dan is het /z/. Voel je <b>niets</b>? Dan is het /s/.</div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Vul in: My sister (buy) her shirts online.</p><p class="check-a"><b>buys</b>: klinker + y, dus gewoon -s.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden</b><ul class="lst">
+<li>Present simple: <b>feiten</b> en <b>gewoontes</b>.</li>
+<li><b>he/she/it</b>: -s of -es.</li>
+<li>Medeklinker + y: <b>-ies</b>.</li></ul></div>`},
+
+{heading:'Voornaamwoorden: I (me, he) him',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>het verschil tussen <b>I, he, they</b> en <b>me, him, them</b></li></ul></div>`
++`<h5 class="sub">Grammar 2: vóór en ná het werkwoord</h5>`
++`<div class="vergelijk"><div class="vergelijk-kant"><h4>Vóór het werkwoord</h4><p>Het <b>onderwerp</b>: <b>I, you, he, she, it, we, they</b>.</p></div><div class="vergelijk-vs">vs</div><div class="vergelijk-kant"><h4>Ná het werkwoord</h4><p>Het <b>lijdend voorwerp</b>: <b>me, you, him, her, it, us, them</b>.</p></div></div>`
++`<div class="tblwrap"><table class="tbl"><tr><th>Vóór</th><th>Ná</th></tr><tr><td><b>I</b></td><td><b>me</b></td></tr><tr><td>you</td><td>you</td></tr><tr><td><b>he / she</b> / it</td><td><b>him / her</b> / it</td></tr><tr><td><b>we</b></td><td><b>us</b></td></tr><tr><td><b>they</b></td><td><b>them</b></td></tr></table></div>`
++`<div class="voorbeeld"><h4>Voorbeeld: twee kanten van het werkwoord</h4><p>Wie doet het, en wie krijgt het?</p><div class="antwoord"><b>He</b> likes <b>me</b>. <b>I</b> like <b>him</b>. I am talking to <b>her</b>. It is looking at <b>them</b>.</div></div>`
++`<div class="call warn"><b>Ook bij namen -s:</b> alles wat je kunt vervangen door <b>he, she</b> of <b>it</b> krijgt in de present simple een -s. The bus (= it) <b>goes</b> to Sheffield.</div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Vul in: Daniel likes Jake, so sometimes he buys (he/him) flowers.</p><p class="check-a"><b>him</b>: het staat ná het werkwoord.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden</b><ul class="lst">
+<li>Vóór het werkwoord: <b>I, he, she, we, they</b>.</li>
+<li>Ná het werkwoord: <b>me, him, her, us, them</b>.</li></ul></div>`},
+
+{heading:'Mensen beschrijven',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>vragen stellen met <b>vraagwoorden</b> (Grammar 3)</li>
+<li>mensen beschrijven: <b>familie</b> en <b>karakter</b> (Stone 3)</li></ul></div>`
++`<h5 class="sub">Grammar 3: vraagwoorden</h5>`
++`<div class="box"><h4>Wh-woorden</h4><p>Een <b>vraagwoord</b> zet je aan het <b>begin</b> van de zin. Ze beginnen met <b>wh</b> of <b>h</b>, daarom heten ze <b>wh-woorden</b>.</p></div>`
++`<div class="tblwrap"><table class="tbl"><tr><th>Vraagwoord</th><th>Voorbeeld</th></tr><tr><td><b>What</b></td><td>What is your name?</td></tr><tr><td><b>Where</b></td><td>Where are the toilets?</td></tr><tr><td><b>When</b></td><td>When is your birthday?</td></tr><tr><td><b>Why</b></td><td>Why are you so angry?</td></tr><tr><td><b>Who</b></td><td>Who is that girl?</td></tr><tr><td><b>Which</b></td><td>Which colour is your favourite, red or blue?</td></tr><tr><td><b>How</b></td><td>How are you?</td></tr></table></div>`
++`<div class="vergelijk"><div class="vergelijk-kant"><h4>which</h4><p>Je <b>weet</b> uit welke opties je kiest: red or blue?</p></div><div class="vergelijk-vs">vs</div><div class="vergelijk-kant"><h4>what</h4><p>Je weet de opties <b>niet</b>: What is your name?</p></div></div>`
++`<h5 class="sub">Stone 3: describing people</h5>`
++`<div class="voorbeeld"><h4>Voorbeeld: What does your friend look like?</h4><p>Beschrijf uiterlijk en karakter.</p><div class="antwoord">She has curly hair and a ponytail. She has braces. José is thin and tall, and has dark hair and blue eyes. Cleo and Sophie are <b>shy</b> but very <b>nice</b>.</div></div>`
++`<div class="g2">`
++`<div class="box"><h4>Family members</h4><p><b>cousin</b> (neef/nicht), <b>divorced</b> (gescheiden), <b>eldest</b> (oudste), <b>grandparents</b>, <b>half-brother</b>, <b>married</b> (getrouwd), <b>nephew</b> (neef, kind van broer of zus), <b>niece</b> (nicht, idem), <b>only child</b> (enig kind), <b>stepfather</b>, <b>twins</b> (tweeling), <b>youngest</b>.</p></div>`
++`<div class="box"><h4>Personality</h4><p><b>annoying</b> (irritant), <b>friendly</b>, <b>funny</b> (grappig), <b>happy</b>, <b>lazy</b> (lui), <b>mean</b> (gemeen), <b>nice</b> (aardig), <b>quiet</b> (rustig), <b>relaxed</b>, <b>serious</b>, <b>shy</b> (verlegen), <b>smart</b> (slim).</p></div></div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Wat is het verschil tussen cousin en nephew?</p><p class="check-a"><b>cousin</b> is een kind van je oom of tante; <b>nephew</b> is een kind van je broer of zus.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden</b><ul class="lst">
+<li>Vraagwoord <b>vooraan</b>: what, where, when, why, who, which, how.</li>
+<li><b>which</b> bij bekende opties, <b>what</b> bij onbekende.</li>
+<li>Uiterlijk en <b>karakter</b> samen beschrijven iemand.</li></ul></div>`},
+
+{heading:'Lezen en luisteren',html:
+`<div class="leerdoelen"><b>Dit leer je</b><ul class="lst">
+<li>korte teksten van <b>tieners</b> over zichzelf lezen</li>
+<li>het verschil tussen een <b>comic</b> en een <b>novel</b></li></ul></div>`
++`<h5 class="sub">De teksten in dit hoofdstuk</h5>`
++`<div class="box"><h4>All about me</h4><p>Op een website stellen vier tieners zich voor voor een <b>zomerkamp</b>: <b>Marco</b> (12) uit Hongkong, <b>Georgia</b> (14) uit Bristol, <b>Mina</b> (13) uit Novi Sad in Servië en <b>Siyu</b> (12) uit Ontario in Canada. Ze vertellen over hun <b>familie</b>, <b>hobby's</b> en waar ze <b>wonen</b>.</p></div>`
++`<div class="vergelijk"><div class="vergelijk-kant"><h4>Comic</h4><p>Een <b>stripverhaal</b>, zoals <b>Archie &amp; Friends</b>. Meestal werken er meer mensen aan: een <b>schrijver</b> en een <b>tekenaar</b>.</p></div><div class="vergelijk-vs">vs</div><div class="vergelijk-kant"><h4>Novel</h4><p>Een <b>roman</b>. Meestal werkt er maar <b>één schrijver</b> aan.</p></div></div>`
++`<div class="call reken"><b>Zo lees je een tekst als All about me</b><ol class="num">
+<li>Kijk eerst wie er <b>schrijft</b> en waarom.</li>
+<li>Zoek per persoon: <b>naam</b>, <b>leeftijd</b>, <b>woonplaats</b>.</li>
+<li>Onderstreep wat ze vertellen over <b>familie</b> en <b>hobby's</b>.</li></ol></div>`
++`<div class="box"><h4>Songs</h4><p>Je luistert naar <b>Dance Monkey</b> (Tones and I) en <b>Nothing breaks like a heart</b> (Mark Ronson en Miley Cyrus), om de werkwoordsvormen uit Grammar 1 en 2 <b>in het echt</b> te horen.</p></div>`
++`<div class="check" onclick="toonCheck(this)"><p class="check-v">Waarom stellen de tieners zich voor op de website?</p><p class="check-a">Ze melden zich aan voor een <b>zomerkamp</b>.</p><span class="check-hint">Tik voor het antwoord</span></div>`
++`<div class="call sum"><b>Om te onthouden</b><ul class="lst">
+<li>Zoek in een tekst eerst <b>wie</b>, <b>wat</b> en <b>waar</b>.</li>
+<li><b>Comic</b>: meer makers. <b>Novel</b>: meestal één schrijver.</li></ul></div>`}
 ],
 terms:[
 ['bald','kaal',0],

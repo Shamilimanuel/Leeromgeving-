@@ -44,7 +44,7 @@
 .opt.bad{background:rgba(239,138,138,.13);border-color:#ef8a8a;color:#ffc9c9}
 .fb{font-size:.82rem;margin-top:.6rem;padding:.6rem .9rem;border-radius:10px;background:rgba(255,255,255,.05);color:var(--mut);display:none}
 .fb.on{display:block;animation:up .3s ease both}
-.scorebar{position:sticky;top:105px;z-index:30;background:var(--ink2);border:1px solid var(--line);border-radius:14px;
+.scorebar{position:sticky;top:66px;z-index:30;background:var(--ink2);border:1px solid var(--line);border-radius:14px;
   padding:.85rem 1.1rem;margin:1.6rem 0 1.2rem;display:flex;align-items:center;gap:1rem;flex-wrap:wrap}
 .scorebar b{font-family:'Cinzel',serif}
 .prog{flex:1;min-width:110px;height:7px;background:var(--ink3);border-radius:100px;overflow:hidden}
@@ -172,6 +172,9 @@ body.spel-open{overflow:hidden}
 .spel-vinkje{width:92px;height:92px;margin:0 auto 1.2rem;border-radius:50%;display:grid;place-items:center;
   font-size:2.6rem;color:#06210f;background:linear-gradient(160deg,#5fbf7a,#2f7a49);
   box-shadow:0 0 0 10px rgba(95,191,122,.14)}
+/* Under half right: a replay nudge in gold, not a green "well done". */
+.spel-vinkje.opnieuw{color:#2a1d05;background:linear-gradient(160deg,#f3d78a,#c98f1c);
+  box-shadow:0 0 0 10px rgba(243,215,138,.14)}
 .spel-klaar h3{font-family:'Cinzel',serif;font-size:1.5rem;margin:0 0 .2rem}
 .spel-buit{display:flex;justify-content:center;gap:.7rem;margin:1.6rem 0}
 .spel-buit-vak{min-width:88px;background:var(--ink2);border:1px solid var(--goud-line);border-radius:14px;padding:.8rem .6rem}

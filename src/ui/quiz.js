@@ -2,6 +2,7 @@
 import { $, setHtml, escapeHtml, icon } from '../lib/dom.js';
 import { chapterContent } from '../state/selection.js';
 import { mistakesForChapter, addMistake, removeMistake, markQuizCompleted } from '../state/progress.js';
+import { pushStudyStatus } from '../services/studyStatus.js';
 import { XP_PER_CORRECT_ANSWER } from '../state/stats.js';
 import { SCREENS, scrollScreenToTop } from './navigation.js';
 
@@ -101,9 +102,12 @@ function updateScore(chapter) {
     if (pct >= 85) tip = 'Sterk. Je kent dit hoofdstuk. Herhaal over drie dagen nog een keer de flashcards.';
     else if (pct >= 60) tip = 'Op de goede weg. Lees de paragrafen terug van de vragen die fout gingen.';
     else tip = 'Nog niet genoeg. Lees de samenvatting rustig door en doe daarna de flashcards.';
-    const title = icon('trophy') + ' Missie voltooid! +' + (correct * XP_PER_CORRECT_ANSWER) + ' XP, score ' + correct + '/' + indices.length + ' (' + pct + '%)';
+    const title = icon('trophy') + ' Oefenquiz klaar! +' + (correct * XP_PER_CORRECT_ANSWER) + ' XP, score ' + correct + '/' + indices.length + ' (' + pct + '%)';
     result.innerHTML = '<div class="call sum quest-voltooid"><b>' + title + '</b><br>' + tip + '</div>';
-    if (!mistakeMode) markQuizCompleted(correct, chapter.quiz.length);
+    if (!mistakeMode) {
+      markQuizCompleted(correct, chapter.quiz.length);
+      pushStudyStatus();   // best-effort, for the badges the teacher sees
+    }
   } else {
     result.innerHTML = '';
   }
